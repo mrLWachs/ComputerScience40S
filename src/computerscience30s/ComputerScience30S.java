@@ -525,15 +525,13 @@ public class ComputerScience30S
     }
 
     /**
-     * 
-     * @param size
-     * @param low
-     * @param high
-     * @return 
+     * Generates an array of set size with random values in a range
+     * @param size the size of the array to create
+     * @param low the lowest random number in the range
+     * @param high the highest random number in the range
+     * @return the array of random integers
      */
-    private static int[] random(int size,
-                                int low,
-                                int high) {
+    private static int[] random(int size, int low, int high) {
         int[] a = new int[size];
         for (int i = 0; i < size; i++) {
             a[i] = random(low, high);
@@ -541,6 +539,11 @@ public class ComputerScience30S
         return a;
     }
 
+    /**
+     * Display a matrix (2D array) of chars in a formatted dialog box
+     * 
+     * @param matrix the 2D array of chars to display
+     */
     private static void output(char[][] matrix) {
         String text = "";
         for (int c = 0; c < matrix.length; c++) {
@@ -552,9 +555,7 @@ public class ComputerScience30S
 
         // fancy output in a dialog......
         // create fancy graphics objects:
-        Font font = new Font("Courier New",
-                Font.BOLD,
-                34);
+        Font font = new Font("Courier New",Font.BOLD,34);
         Color background = new Color(0, 0, 0);
         Color foreground = new Color(0, 255, 0);
         JTextArea area = new JTextArea();
@@ -568,9 +569,8 @@ public class ComputerScience30S
         // create a "image" object:
         Icon image = new ImageIcon("matrix.gif");
 
-        JOptionPane.showMessageDialog(null, area,
-                "", JOptionPane.PLAIN_MESSAGE, image);
-
+        JOptionPane.showMessageDialog(null, area,"", 
+                JOptionPane.PLAIN_MESSAGE, image);
     }
 
     /**
@@ -584,34 +584,36 @@ public class ComputerScience30S
         String title = "Input of an integer";
         int number = getInteger(text, title);
         System.out.println("Number = " + number);
-        // an example of a method that gives a fancy "drop down"
-        // input dialog for the user
-        text = "Pick a color";
+        // an example of a method that gives a fancy "drop down" input 
+        // dialog for the user
+        text  = "Pick a color";
         title = "Favorite color?";
-        String[] options = {
-            "Blue","Red","Green","Purple"
-        };                
+        String[] options = { "Blue","Red","Green","Purple" };                
         String user = dropdown(text,title,options);        
         System.out.println("user selected = " + user);   
-        // example of the JOptionPane dialog with custom
-        // buttons options
-        text = "Choose your fighter!";
+        // example of the JOptionPane dialog with custom buttons options
+        text  = "Choose your fighter!";
         title = "Mortal Kombat";
         String[] buttons = {
-            "Zena the Warrior Princess","Wizard",
-            "Shaman","Necromancer",
+            "Zena the Warrior Princess",
+            "Wizard",
+            "Shaman",
+            "Necromancer",
         };        
-        int choice = JOptionPane.showOptionDialog(null, 
-                text, title, 
+        int choice = JOptionPane.showOptionDialog(null, text, title, 
                 JOptionPane.YES_NO_CANCEL_OPTION, 
-                JOptionPane.PLAIN_MESSAGE, null, 
-                buttons, null);
+                JOptionPane.PLAIN_MESSAGE, null, buttons, null);
         System.out.println("User picked button " + choice);        
     }
     
-    
-    private static int getInteger(String text,
-                                  String title) {
+    /**
+     * Gets user input as a integer with dialog box with error checking
+     * 
+     * @param text the text to display in the dialog
+     * @param title the title of the dialog
+     * @return the integer the user entered
+     */
+    private static int getInteger(String text, String title) {
         String error = "";
         while (true) {            
             // get the initial user input
@@ -629,8 +631,7 @@ public class ComputerScience30S
                     // travel through characters in string, get each 
                     char character = user.charAt(i);
                     if (Character.isDigit(character) == false) {
-                        error = "Please do not "
-                                + "enter non numeric "
+                        error = "Please do not enter non numeric "
                                 + "characters\n";
                         i = user.length();
                         valid = false;
@@ -644,16 +645,21 @@ public class ComputerScience30S
         }
     }
 
-    private static String dropdown(String text,
-                                   String title,
+    /**
+     * Dialog with a drop down display for the user to select from
+     * 
+     * @param text the text to display in the dialog
+     * @param title the title of the dialog
+     * @param options all the options to show in the drop down
+     * @return the drop down option the user selects
+     */
+    private static String dropdown(String text, String title, 
                                    String[] options) { 
-        Object object = JOptionPane.showInputDialog(
-                null,text,title,JOptionPane.PLAIN_MESSAGE,
-                null,options,options[0]);
+        Object object = JOptionPane.showInputDialog(null,text,title,
+                JOptionPane.PLAIN_MESSAGE,null,options,options[0]);
         while (object == null) {
-            object = JOptionPane.showInputDialog(
-                null,text,title,JOptionPane.PLAIN_MESSAGE,
-                null,options,options[0]);
+            object = JOptionPane.showInputDialog(null,text,title,
+                    JOptionPane.PLAIN_MESSAGE,null,options,options[0]);
         }
         return object.toString();
     }
