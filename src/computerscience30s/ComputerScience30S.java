@@ -1,5 +1,8 @@
+
+/** required package class namespace */
 package computerscience30s;
 
+/** required imports */
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
@@ -7,23 +10,37 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
+/**
+ * ComputerScience30S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
+ *
+ * @author Mr. Wachs 
+ * @since Feb 20, 2018 
+ * @instructor Mr. Wachs
+ */
 public class ComputerScience30S
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-//        unit1();
-//        unit2();   
-//        unit3();
+        unit1();
+        unit2();   
+        unit3();
         experiments();
     }
 
+    /**
+     * The introduction to Java unit
+     */
     private static void unit1() {
-        /* the slash and star opens
-        a really big
-        comment 
-        area, it closes with a star
-        and a slash
-         */
+        /* the slash and star opens a really big comment area, it closes 
+        with a star and a slash */
 
         // comments can go at the end of code
         System.out.println("Hello World"); // commment
@@ -41,9 +58,10 @@ public class ComputerScience30S
         // \" is how you makes quotes
 
         // GRAPHICAL INPUT AND OUTPUT DIALOG BOXES
-        // Words that start with a capital letter are powerful
-        // meaning they are classes, which means they have 
-        // built-in functions (things they can do!)
+        
+        // Words that start with a capital letter are powerful meaning they 
+        // are classes, which means they have built-in functions (things 
+        // they can do!)
         JOptionPane.showMessageDialog(null, "Version 1");
 
         // ways to vary this output dialog box:        
@@ -70,8 +88,7 @@ public class ComputerScience30S
         // input dialog box
         JOptionPane.showInputDialog("Input 1");
 
-        // I can vary the input the same as I can with the 
-        // message box
+        // I can vary the input the same as I can with the message box
         JOptionPane.showInputDialog(null,
                 "Input 2",
                 "Title",
@@ -87,6 +104,7 @@ public class ComputerScience30S
                 JOptionPane.WARNING_MESSAGE);
 
         // VARIABLES:
+        
         boolean a = true;
         // simplest data type remembers true or false        
         System.out.println("a = " + a);
@@ -209,6 +227,7 @@ public class ComputerScience30S
         System.out.println("new word = " + newWord);
 
         // CONDITIONAL STATEMENTS:
+        
         // basic if, decides 1 thing
         int value1 = 10;
         int value2 = 10;
@@ -226,8 +245,7 @@ public class ComputerScience30S
             System.out.println("greater than");
         }
 
-        // another option, use else if with 
-        // another test for deciding anything 
+        // another option, use else if with another test for deciding anything 
         // more than 2 things
         char letter1 = 'a';
         char letter2 = 'a';
@@ -241,8 +259,7 @@ public class ComputerScience30S
             System.out.println("equal");
         }
 
-        // strings are a little different
-        // with equals
+        // strings are a little different with equals
         String word1 = "cat";
         String word2 = "Cat";
         if (word1.equals(word2)) {
@@ -268,6 +285,7 @@ public class ComputerScience30S
         }
 
         // LOOPS:
+        
         // simple while loop        
         int counter = 1;
         while (counter <= 50) {
@@ -282,15 +300,12 @@ public class ComputerScience30S
             password = JOptionPane.showInputDialog("Enter Password");
         }
 
-        // rarely used loop (may never use?)
-        // while loop that tests at the bottom of the loop
-        // and uses the other word "do"
-        // this loop is used when you want the inside of
-        // the loop to run at least once!
+        // rarely used loop (may never use?) while loop that tests at the 
+        // bottom of the loop and uses the other word "do" this loop is used 
+        // when you want the inside of the loop to run at least once!
         do {
-            password = JOptionPane.showInputDialog("Enter "
-                    + "Password");
-        }
+            password = JOptionPane.showInputDialog("Enter Password");
+        } 
         while (password.equals("qwerty") == false);
 
         // the for loop
@@ -306,7 +321,7 @@ public class ComputerScience30S
     }
 
     /**
-     * Shows how to use methods
+     * The methods (functions, procedures) unit
      */
     private static void unit2() {
         System.out.println("Let's learn about methods");
@@ -328,10 +343,16 @@ public class ComputerScience30S
      * @param something the thing to draw
      */
     private static void draw(String something) {
-        // something is the parameter
+        // something is called the parameter
         System.out.println(something);
     }
 
+    /**
+     * Draws multiple things on the screen
+     * 
+     * @param text the thing to draw
+     * @param times how many times to draw it
+     */
     private static void draws(String text, int times) {
         for (int i = 0; i < times; i++) {
             draw(text);
@@ -363,21 +384,41 @@ public class ComputerScience30S
         return answer;
     }
 
+    /**
+     * Displays text in a dialog box
+     * 
+     * @param text the text to display
+     */
     private static void output(String text) {
         JOptionPane.showMessageDialog(null, text);
     }
 
+    /**
+     * Displays text in a dialog box with a title
+     * 
+     * @param text the text to display
+     * @param title the title to display
+     */
     private static void output(String text, String title) {
         JOptionPane.showMessageDialog(null, text,
                 title, JOptionPane.PLAIN_MESSAGE);
     }
 
+    /**
+     * Displays text in a dialog box multiple times
+     * 
+     * @param text the text to display
+     * @param times how many dialogs to display
+     */
     private static void output(String text, int times) {
         for (int i = 0; i < times; i++) {
             output(text);
         }
     }
 
+    /**
+     * The arrays unit
+     */
     private static void unit3() {
         System.out.println("Let's learn arrays");
 
@@ -387,8 +428,7 @@ public class ComputerScience30S
         // create (declare) an array
         int[] numbers = new int[5];
 
-        // creates an array of 5 slots,
-        // all which can hold integers
+        // creates an array of 5 slots, all which can hold integers
         numbers[0] = 50;
         numbers[1] = -60;
         numbers[2] = 77;
@@ -421,20 +461,18 @@ public class ComputerScience30S
         };
 
         int[] values = new int[100];
-        // when working with an entire array, 
-        // use a loop (for loop)        
+        // when working with an entire array, use a loop (for loop)        
         for (int i = 0; i < 100; i++) {
             values[i] = 25;
         }
 
-        // display the array
-        // use .length to always get 
-        // the size of the array
+        // display the array use .length to always get the size of the array
         for (int i = 0; i < values.length; i++) {
             System.out.println(values[i]);
         }
 
         // using a method with arrays
+        
         // array as a parameter
         output(coins);
         output(values);
@@ -462,6 +500,11 @@ public class ComputerScience30S
 
     }
 
+    /**
+     * Displays a double array on the screen
+     * 
+     * @param array the array to display
+     */
     private static void output(double[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ",");
@@ -469,6 +512,11 @@ public class ComputerScience30S
         System.out.println("");
     }
 
+    /**
+     * Displays a integer array on the screen
+     * 
+     * @param array the array to display
+     */
     private static void output(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + ",");
@@ -476,6 +524,13 @@ public class ComputerScience30S
         System.out.println("");
     }
 
+    /**
+     * 
+     * @param size
+     * @param low
+     * @param high
+     * @return 
+     */
     private static int[] random(int size,
                                 int low,
                                 int high) {
