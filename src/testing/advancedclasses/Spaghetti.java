@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Spaghetti.java - 
+ * Spaghetti.java - represents spaghetti
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 

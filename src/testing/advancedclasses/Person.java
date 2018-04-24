@@ -18,6 +18,9 @@ public class Person
     public String name;
     private int age;                        // encapsulated property
     
+    /**
+     * Protected property representing the person's gender
+     */
     protected boolean isMale;
     
     /** 
@@ -57,15 +60,9 @@ public class Person
     @Override
     public boolean equals(Object object) {
         Person person = (Person)object;        
-        if (!this.name.equalsIgnoreCase(person.name)) {
-            return false;
-        }
-        if (this.isMale != person.isMale) {
-            return false;
-        }
-        if (this.age != person.age) {
-            return false;
-        }        
+        if (!this.name.equalsIgnoreCase(person.name)) return false;
+        if (this.isMale != person.isMale)             return false;
+        if (this.age != person.age)                   return false;    
         return true;
     }
         
@@ -124,12 +121,8 @@ public class Person
      * @param food the abstract food object to eat
      */
     public void eat(Food food) {
-        if (food.canCook()) {
-            System.out.println("Cook and eat");
-        }
-        else {
-            System.out.println("Eat raw");
-        }
+        if (food.canCook()) System.out.println("Cook and eat");
+        else                System.out.println("Eat raw");
     }
     
 }

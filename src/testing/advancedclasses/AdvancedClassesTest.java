@@ -122,11 +122,11 @@ public class AdvancedClassesTest
         HuskyAthlete jen = new HuskyAthlete("Jennifer", 17, 101, false);
         jen.move();
         jen.endOfGame();
-        String x = new String("99");
-        Integer y = new Integer(x);
-        Double z = new Double(x);
-        Boolean w = new Boolean("true");
-        Person v = new Person();
+        String       x = new String("99");
+        Integer      y = new Integer(x);
+        Double       z = new Double(x);
+        Boolean      w = new Boolean("true");
+        Person       v = new Person(x,y);
         HuskyAthlete u = new HuskyAthlete(x, y, y, w);
         output(x);                              // use of generic method
         output(y);

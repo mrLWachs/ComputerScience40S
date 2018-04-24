@@ -52,12 +52,8 @@ public class Student extends Person
     @Override
     public boolean equals(Object object) {
         Student student = (Student)object;        
-        if (super.equals(student) == false) {
-            return false;
-        }
-        if (this.studentNumber != student.studentNumber) {
-            return false;
-        }
+        if (super.equals(student) == false)              return false;
+        if (this.studentNumber != student.studentNumber) return false;
         return true;
     }
     
