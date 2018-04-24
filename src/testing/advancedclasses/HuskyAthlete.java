@@ -25,9 +25,7 @@ public class HuskyAthlete extends Husky implements Hockey, Chess,
      * @param studentNumber the student number of this HuskyAthlete
      * @param isMale the gender of this HuskyAthlete
      */
-    public HuskyAthlete(String name, 
-                        int age, 
-                        int studentNumber, 
+    public HuskyAthlete(String name, int age, int studentNumber, 
                         boolean isMale) {
         super(name, age, studentNumber, isMale);
         wonChess = false;
@@ -130,12 +128,8 @@ public class HuskyAthlete extends Husky implements Hockey, Chess,
     @Override
     public void endOfGame() {
         if (hasBeenSigned()) {
-            if (wonChess) {
-                System.out.println("Chess master");
-            }
-            else {
-                System.out.println("Newby");
-            }
+            if (wonChess) System.out.println("Chess master");
+            else          System.out.println("Newby");
         }
         else {
             System.out.println("Bad student, get it signed!");

@@ -64,12 +64,8 @@ public class Teacher extends Person
     @Override
     public boolean equals(Object object) {
         Teacher that = (Teacher)object;
-        if (super.equals(that) == false) {
-            return false;
-        } 
-        if (this.count != that.count) {
-            return false;
-        }
+        if (super.equals(that) == false) return false;
+        if (this.count != that.count)    return false;
         for (int i = 0; i < count; i++) {
             if (!this.students[i].equals(that.students[i])) {
                 return false;

@@ -122,11 +122,11 @@ public class AdvancedClassesTest
         HuskyAthlete jen = new HuskyAthlete("Jennifer", 17, 101, false);
         jen.move();
         jen.endOfGame();
-        String x = new String("99");
-        Integer y = new Integer(x);
-        Double z = new Double(x);
-        Boolean w = new Boolean("true");
-        Person v = new Person();
+        String       x = new String("99");
+        Integer      y = new Integer(x);
+        Double       z = new Double(x);
+        Boolean      w = new Boolean("true");
+        Person       v = new Person(x,y);
         HuskyAthlete u = new HuskyAthlete(x, y, y, w);
         output(x);                              // use of generic method
         output(y);
@@ -182,18 +182,10 @@ public class AdvancedClassesTest
      * @param object the object type to check
      */
     private void whoIs(Object object) {
-        if (object instanceof Person) {
-            System.out.println("This is a Person!");
-        }
-        if (object instanceof Student) {
-            System.out.println("This is a Student!");
-        }
-        if (object instanceof Teacher) {
-            System.out.println("This is a Teacher!");
-        }
-        if (object instanceof Doctor) {
-            System.out.println("This is a Doctor!");
-        }
+        if (object instanceof Person)  System.out.println("This is a Person");
+        if (object instanceof Student) System.out.println("This is a Student");
+        if (object instanceof Teacher) System.out.println("This is a Teacher");
+        if (object instanceof Doctor)  System.out.println("This is a Doctor");
     }
 
 }
