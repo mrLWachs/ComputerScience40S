@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * HighSchoolStudent.java - 
+ * HighSchoolStudent.java - represents a high school student 
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,22 +13,22 @@ public class HighSchoolStudent extends Student
 {
 
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age
-     * @param studentNumber
-     * @param isMale 
+     * @param name the name of this high school student
+     * @param age the age of this high school student
+     * @param studentNumber the student number of this high school student
+     * @param isMale the gender of this high school student
      */
-    public HighSchoolStudent(String name, 
-                             int age, 
-                             int studentNumber, 
+    public HighSchoolStudent(String name, int age, int studentNumber, 
                              boolean isMale) {
         super(name, age, studentNumber, isMale);
     }
     
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
     @Override
     public String toString() {

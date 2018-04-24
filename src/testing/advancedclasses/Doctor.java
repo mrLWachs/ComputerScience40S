@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Doctor.java - 
+ * Doctor.java - represents a doctor
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,9 +13,10 @@ public class Doctor extends Person
 {
 
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age 
+     * @param name the name of this doctor
+     * @param age the age of this doctor
      */
     public Doctor(String name,
                   int age) {
@@ -23,9 +24,11 @@ public class Doctor extends Person
     }
     
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
+    @Override
     public String toString() {
         return "Dr. " + super.toString();
     }

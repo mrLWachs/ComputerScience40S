@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Apple.java - 
+ * Apple.java - represents an apple
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -20,8 +20,9 @@ public class Apple extends Food
     }
 
     /**
+     * Determines if this food item can be cooked or not 
      * 
-     * @return 
+     * @return can be cooked (true), or not (false)
      */
     @Override
     public boolean canCook() {

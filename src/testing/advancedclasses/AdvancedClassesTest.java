@@ -163,6 +163,12 @@ public class AdvancedClassesTest
         System.out.println("\nAdvanced Classes unit test complete!\n");
     }
         
+    /**
+     * Outputs a generic item with information about the data type
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
     public static <T> void output(T item) {
         String text = "Class ";
         text += item.getClass().getSimpleName();
@@ -170,18 +176,23 @@ public class AdvancedClassesTest
         System.out.println(text);
     }
 
+    /**
+     * Outputs the type of object that is passed to the method
+     * 
+     * @param object the object type to check
+     */
     private void whoIs(Object object) {
         if (object instanceof Person) {
-            System.out.println("have a Person!");
+            System.out.println("This is a Person!");
         }
         if (object instanceof Student) {
-            System.out.println("have a Student!");
+            System.out.println("This is a Student!");
         }
         if (object instanceof Teacher) {
-            System.out.println("have a Teacher!");
+            System.out.println("This is a Teacher!");
         }
         if (object instanceof Doctor) {
-            System.out.println("have a Doctor!");
+            System.out.println("This is a Doctor!");
         }
     }
 

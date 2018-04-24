@@ -20,8 +20,9 @@ public class Spaghetti extends Food
     }
 
     /**
+     * Determines if this food item can be cooked or not 
      * 
-     * @return 
+     * @return can be cooked (true), or not (false)
      */
     @Override
     public boolean canCook() {
@@ -29,7 +30,7 @@ public class Spaghetti extends Food
     }
 
     /**
-     * 
+     * Outputs if the food has spoiled
      */
     @Override
     public void spoil() {

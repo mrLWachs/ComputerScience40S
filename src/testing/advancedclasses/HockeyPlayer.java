@@ -3,9 +3,9 @@
 package testing.advancedclasses;
 
 /**
- * HockeyPlayer.java - description here...
+ * HockeyPlayer.java - represents a hockey player
  *
- * @author Mr. Wachs (login: lawrence.wachs)
+ * @author Mr. Wachs 
  * @since Apr 13, 2018 
  * @instructor Mr. Wachs
  */
@@ -16,14 +16,6 @@ public class HockeyPlayer extends Person implements Hockey
     private String visitingTeam;
     private int homeScore;
     private int visitingScore;
-    
-    
-    /** 
-     * Default constructor for the class 
-     */
-    public HockeyPlayer() {
-
-    }
 
     /**
      * String representation of this object
@@ -56,7 +48,7 @@ public class HockeyPlayer extends Person implements Hockey
     }
 
     /**
-     * 
+     * The home team scores a goal
      */
     @Override
     public void homeTeamScores() {
@@ -64,7 +56,7 @@ public class HockeyPlayer extends Person implements Hockey
     }
 
     /**
-     * 
+     * The visiting team scores a goal
      */
     @Override
     public void visitingTeamScores() {
@@ -72,8 +64,8 @@ public class HockeyPlayer extends Person implements Hockey
     }
 
     /**
-     * 
-     * @param number 
+     * The passed period of hockey is over
+     * @param number the period number
      */
     @Override
     public void endOfPeriod(int number) {
@@ -85,8 +77,8 @@ public class HockeyPlayer extends Person implements Hockey
     }
 
     /**
-     * 
-     * @param name 
+     * Mutator setting the name of the opponent
+     * @param name the name of this opponent
      */
     @Override
     public void setOpponent(String name) {
@@ -94,8 +86,8 @@ public class HockeyPlayer extends Person implements Hockey
     }
 
     /**
-     * 
-     * @param name 
+     * Mutator setting the name of the player
+     * @param name the name of this player
      */
     @Override
     public void setName(String name) {

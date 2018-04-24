@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Hockey.java - 
+ * Hockey.java - interface enforcing the rules of hockey
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,18 +13,18 @@ public interface Hockey extends Sports
 {
 
     /**
-     * 
+     * The home team scores a goal
      */
     void homeTeamScores();
     
     /**
-     * 
+     * The visiting team scores a goal
      */
     void visitingTeamScores();
     
     /**
-     * 
-     * @param number 
+     * The passed period of hockey is over
+     * @param number the period number
      */
     void endOfPeriod(int number);
     
