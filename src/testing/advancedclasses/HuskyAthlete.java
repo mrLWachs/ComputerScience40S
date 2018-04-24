@@ -3,14 +3,14 @@
 package testing.advancedclasses;
 
 /**
- * HuskyAthlete.java - 
+ * HuskyAthlete.java - represents a husky athlete
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
  * @instructor Mr. Wachs
  */
-public class HuskyAthlete extends Husky 
-        implements Hockey, Chess, PermissionForm 
+public class HuskyAthlete extends Husky implements Hockey, Chess, 
+        PermissionForm 
 {
     
     private HockeyPlayer hockeyPlayer;
@@ -18,11 +18,12 @@ public class HuskyAthlete extends Husky
     private boolean hasPermission;    
 
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age
-     * @param studentNumber
-     * @param isMale 
+     * @param name the name of this HuskyAthlete 
+     * @param age the age of this HuskyAthlete 
+     * @param studentNumber the student number of this HuskyAthlete
+     * @param isMale the gender of this HuskyAthlete
      */
     public HuskyAthlete(String name, 
                         int age, 
@@ -33,8 +34,6 @@ public class HuskyAthlete extends Husky
         hockeyPlayer = new HockeyPlayer();
         hasPermission = false;
     }
-
-
 
     /**
      * String representation of this object
@@ -67,7 +66,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * The home team scores a goal
      */
     @Override
     public void homeTeamScores() {
@@ -75,7 +74,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * The visiting team scores a goal
      */
     @Override
     public void visitingTeamScores() {
@@ -83,8 +82,8 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
-     * @param number 
+     * The passed period of hockey is over
+     * @param number the period number
      */
     @Override
     public void endOfPeriod(int number) {
@@ -92,8 +91,8 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
-     * @param name 
+     * Mutator setting the name of the opponent
+     * @param name the name of this opponent
      */
     @Override
     public void setOpponent(String name) {
@@ -101,8 +100,8 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
-     * @param name 
+     * Mutator setting the name of the player
+     * @param name the name of this player
      */
     @Override
     public void setName(String name) {
@@ -110,7 +109,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * The opponent makes a move
      */
     @Override
     public void opponentMove() {
@@ -118,7 +117,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * The player makes a move
      */
     @Override
     public void move() {
@@ -126,7 +125,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * The game of chess is over
      */
     @Override
     public void endOfGame() {
@@ -144,7 +143,7 @@ public class HuskyAthlete extends Husky
     }
 
     /**
-     * 
+     * Signing the permission form
      */
     @Override
     public void sign() {
@@ -152,8 +151,9 @@ public class HuskyAthlete extends Husky
     }
 
     /**
+     * Determines if the form has been signed or not
      * 
-     * @return 
+     * @return has been signed (true), or not (false)
      */
     @Override
     public boolean hasBeenSigned() {

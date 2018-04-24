@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Student.java - 
+ * Student.java - represents a student
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,42 +13,41 @@ public class Student extends Person
 {
     
     private int studentNumber;
+    
     /**
-     * 
+     * Static property that counts the total number of student objects
      */
     public static int totalStudents;
     
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age
-     * @param studentNumber
-     * @param isMale 
+     * @param name the name of this high school student
+     * @param age the age of this high school student
+     * @param studentNumber the student number of this high school student
+     * @param isMale the gender of this high school student
      */
-    public Student(String name,
-                   int age,
-                   int studentNumber,
-                   boolean isMale) {
+    public Student(String name, int age, int studentNumber, boolean isMale) {
         super(name,age);
         this.studentNumber = studentNumber;        
-        super.isMale = isMale;
+        super.isMale       = isMale;
         totalStudents++;
     }
     
     /**
-     * 
+     * Outputs data on this person to the screen
      */
     @Override
     public void talk() {
         super.talk();
-        System.out.println("\tStudent #: " + 
-                studentNumber);        
+        System.out.println("\tStudent #: " + studentNumber);        
     }
     
     /**
-     * 
-     * @param object
-     * @return 
+     * Determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
@@ -56,27 +55,26 @@ public class Student extends Person
         if (super.equals(student) == false) {
             return false;
         }
-        if (this.studentNumber != 
-                student.studentNumber) {
+        if (this.studentNumber != student.studentNumber) {
             return false;
         }
         return true;
     }
     
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
     @Override
     public String toString() {
-        return super.toString() + 
-                " student number " + 
-                studentNumber;
+        return super.toString() + " student number " + studentNumber;
     }
     
     /**
-     * 
-     * @return 
+     * Creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
      */
     @Override
     public Student clone() {

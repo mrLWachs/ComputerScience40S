@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Person.java - 
+ * Person.java - represents a person
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,10 +13,10 @@ public class Person
 {
 
     /**
-     * 
+     * The name of this person object
      */
     public String name;
-    private int age; // encapsulated
+    private int age;                        // encapsulated property
     
     protected boolean isMale;
     
@@ -24,25 +24,25 @@ public class Person
      * Default constructor for the class 
      */
     public Person() {
-        name = "Sam Some";
-        age = 0;
+        name   = "Sam Some";
+        age    = 0;
         isMale = false;
     }
     
     /**
-     * Overloaded constructor
+     * Overloaded constructor sets class properties
      * 
-     * @param name
-     * @param age 
+     * @param name the name of this person object
+     * @param age the age of this person object
      */
     public Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+        this.name   = name;
+        this.age    = age;
         this.isMale = false;
     }
     
     /**
-     * 
+     * Outputs data on this person to the screen
      */
     public void talk() {
         System.out.println(name + " is " + age);
@@ -76,8 +76,7 @@ public class Person
      */
     @Override
     public String toString() {
-        return name + " is " + age +
-                " gender " + isMale;
+        return name + " is " + age + " gender " + isMale;
     }
     
     /**
@@ -88,13 +87,14 @@ public class Person
     @Override
     public Person clone() {
         Person person = new Person();        
-        person.name = this.name;
+        person.name   = this.name;
         person.isMale = this.isMale;
         person.setAge(this.getAge());
         return person;
     }
     
     /**
+     * Accessor method gets the private age property
      * 
      * @return 
      */
@@ -103,28 +103,29 @@ public class Person
     }
     
     /**
+     * Mutator method sets the private age property to a new value
      * 
-     * @param age 
+     * @param age the new age to set to
      */
     public void setAge(int age) {
         this.age = age;
     }
     
     /**
-     * 
+     * Static method outputs the end of the world
      */
     public static void endTheWorld() {
         System.out.println("Boom!!!");
     }
     
     /**
+     * Eats the passed food by outputting to the screen
      * 
-     * @param food 
+     * @param food the abstract food object to eat
      */
     public void eat(Food food) {
         if (food.canCook()) {
-            System.out.println("Cook and "
-                    + "eat");
+            System.out.println("Cook and eat");
         }
         else {
             System.out.println("Eat raw");

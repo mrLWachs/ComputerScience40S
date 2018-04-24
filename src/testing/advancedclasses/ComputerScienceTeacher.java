@@ -19,9 +19,7 @@ public class ComputerScienceTeacher extends Teacher
      * @param age the age of this Computer Science teacher
      * @param isMale the gender of this Computer Science teacher
      */
-    public ComputerScienceTeacher(String name, 
-                                  int age, 
-                                  boolean isMale) {
+    public ComputerScienceTeacher(String name, int age, boolean isMale) {
         super(name, age, isMale);
     }
 

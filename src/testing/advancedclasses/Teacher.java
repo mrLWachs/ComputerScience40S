@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Teacher.java - 
+ * Teacher.java - represents a teacher
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,42 +13,41 @@ public class Teacher extends Person
 {
     
     /**
-     * 
+     * The array of associated student objects
      */
-    public Student[] students; // "has a"
+    public Student[] students;                      // "has a" relationship
     private int count;
     private final int MAX = 200;
     
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age
-     * @param isMale 
+     * @param name the name of this Computer Science teacher
+     * @param age the age of this Computer Science teacher
+     * @param isMale the gender of this Computer Science teacher
      */
-    public Teacher(String name, 
-                   int age,
-                   boolean isMale) {
+    public Teacher(String name, int age, boolean isMale) {
         super(name,age);
         super.isMale = isMale;
-        count = 0;
-        students = new Student[MAX];
+        count        = 0;
+        students     = new Student[MAX];
     }
     
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
     @Override
     public String toString() {
-        return "Teacher " + 
-                super.toString() + 
-                " and teaches " +
-                count + " students";
+        return "Teacher " + super.toString() + " and teaches " + count + 
+               " students";
     }
     
     /**
+     * Adds a student object association to this teacher
      * 
-     * @param student 
+     * @param student the student to associate with
      */
     public void add(Student student) {
         students[count] = student;
@@ -57,9 +56,10 @@ public class Teacher extends Person
     }
     
     /**
-     * 
-     * @param object
-     * @return 
+     * Determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
@@ -79,9 +79,11 @@ public class Teacher extends Person
     }
     
     /**
-     * 
-     * @return 
+     * Creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
      */
+    @Override
     public Teacher clone() {
         Teacher teacher = new Teacher(
                 this.name,
@@ -92,6 +94,5 @@ public class Teacher extends Person
         }
         return teacher;
     }
-    
-    
+        
 }

@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * MrWachs.java - 
+ * MrWachs.java - represents a Mr. Wachs
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -13,20 +13,20 @@ public class MrWachs extends ComputerScienceTeacher
 {
 
     /**
+     * Class constructor sets class properties
      * 
-     * @param name
-     * @param age
-     * @param isMale 
+     * @param name the name of this MrWachs 
+     * @param age the age of this MrWachs 
+     * @param isMale the gender of this MrWachs
      */
-    public MrWachs(String name, 
-                   int age, 
-                   boolean isMale) {
+    public MrWachs(String name, int age, boolean isMale) {
         super(name, age, isMale);
     }
 
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
     @Override
     public String toString() {

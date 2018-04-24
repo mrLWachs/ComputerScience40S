@@ -69,11 +69,9 @@ public class HockeyPlayer extends Person implements Hockey
      */
     @Override
     public void endOfPeriod(int number) {
-        System.out.println("End of period " + number +
-                " and the score is " + homeScore +
-                " for the " + homeTeam +
-                " and " + visitingScore + 
-                " for the " + visitingTeam);
+        System.out.println("End of period " + number + " and the score is " + 
+                           homeScore + " for the " + homeTeam + " and " + 
+                           visitingScore + " for the " + visitingTeam);
     }
 
     /**

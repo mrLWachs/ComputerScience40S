@@ -3,7 +3,7 @@
 package testing.advancedclasses;
 
 /**
- * Meeting.java - 
+ * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs 
  * @since Oct 4, 2017 
@@ -26,8 +26,9 @@ public class Meeting
     }
     
     /**
+     * Have a person attend the meeting
      * 
-     * @param person 
+     * @param person the person object to attend
      */
     public void attend(Person person) {
         members[count] = person;
@@ -36,21 +37,16 @@ public class Meeting
     }
 
     /**
-     * 
+     * Hold the meeting and have all members talk through an output
      */
     void hold() {
-        System.out.println("Caution, watch"
-                + " your language, there"
-                + " are " +
-                Student.totalStudents +
-                " students in the room");
-        // enhanced for loop
+        System.out.println("Caution, watch your language, there are " +
+                Student.totalStudents + " students in the room");
+        for (Person member : members) { // enhanced for loop 
         // read as "for every member in members"
-        for (Person member : members) {
             if (member != null) {
                 if (member instanceof MrWachs) {
-                    System.out.println("Listen,"
-                            + " Wachs is here!");
+                    System.out.println("Listen, Wachs is here!");
                 }
                 member.talk();
             }
