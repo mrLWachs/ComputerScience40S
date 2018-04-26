@@ -668,7 +668,9 @@ public class ComputerScience30S
     private static void unit4() {
         // classes
         
+        Person person = new Person();
         
+        // Random random = new Random();
         
         
     }
