@@ -665,14 +665,19 @@ public class ComputerScience30S
         return object.toString();
     }
 
+    /**
+     * The classes unit
+     */
     private static void unit4() {
-        // classes
+        System.out.println("\nLet's learn about classes...\n");
         
-        Person person = new Person();
+        // create a person object from the Person class
+        Person person = new Person();        
+        // similar to old code like: Random random = new Random();
         
-        // Random random = new Random();
         
         
+        System.out.println("\nClasses unit learning complete!\n");
     }
 
 }
