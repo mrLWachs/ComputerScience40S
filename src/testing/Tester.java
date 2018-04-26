@@ -22,6 +22,7 @@ public class Tester
         System.out.println("\nComputer Science 40S unit testing started...\n");
         RecursionTest       unit1 = new RecursionTest(); 
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        CollectionsTest     unit3 = new CollectionsTest();
         System.out.println("\nComputer Science 40S unit testing scomplete!\n");
     }  
 
