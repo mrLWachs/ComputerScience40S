@@ -13,20 +13,36 @@ public class Person
     
     // methods (things it can do)
     
-    void born() {
-        
+    Person() {
+        // constructor method
+        // called (invoked) when
+        // the class is used to 
+        // build a object
+        name = "Jane Doe";
+        age = 0;
+        isAlive = true;
+        isMale = false;
     }
     
     void die() {
-        
+        isAlive = false;
     }
     
     void talk() {
-        
+        if (isAlive == false) {
+            System.out.println("Boooooo!");
+        }
+        else {
+            System.out.println("My name is " +
+                    name + " and my age is " +
+                    age + " and if you are " +
+                    "wondering if I am a male," +
+                    " the answer is " + isMale);
+        }
     }
     
     void birthday() {
-        
+        age++;
     }
     
 }

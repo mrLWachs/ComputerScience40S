@@ -675,6 +675,24 @@ public class ComputerScience30S
         Person person = new Person();        
         // similar to old code like: Random random = new Random();
         
+        person.name = "Peter Parker";
+        person.age = 15;
+        person.isMale = true;
+        person.isAlive = false;        
+        person.talk();
+        
+        Person natasha = new Person();
+        natasha.name = "Black Widow";
+        natasha.age = 35;
+        natasha.isMale = false;
+        natasha.isAlive = true;
+        natasha.talk();
+        
+        Person bruce = new Person();
+        bruce.birthday();
+        bruce.die();
+        bruce.talk();
+        
         
         
         System.out.println("\nClasses unit learning complete!\n");
