@@ -675,24 +675,27 @@ public class ComputerScience30S
         Person person = new Person();        
         // similar to old code like: Random random = new Random();
         
+        // use the object (the instance of the class) and change
+        // some properties within the object
         person.name = "Peter Parker";
-        person.age = 15;
-        person.isMale = true;
-        person.isAlive = false;        
+        person.isMale = true;       
+        // call (invoke) a method within the object
         person.talk();
         
-        Person natasha = new Person();
-        natasha.name = "Black Widow";
-        natasha.age = 35;
-        natasha.isMale = false;
-        natasha.isAlive = true;
+        // create (instantiate) a second object of the class, using another
+        // constructor (overloaded) to set properties upon construction
+        Person natasha = new Person("Black Widow",35,false,true);
         natasha.talk();
         
-        Person bruce = new Person();
-        bruce.birthday();
+        // a third instance of the class
+        Person bruce = new Person("Bruce Banner");
+        bruce.birthday(30);
+        bruce.talk();
         bruce.die();
         bruce.talk();
         
+        
+        // more to come....
         
         
         System.out.println("\nClasses unit learning complete!\n");
