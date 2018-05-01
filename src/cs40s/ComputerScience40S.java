@@ -24,7 +24,7 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Tester tester = new Tester();       // run the units tester  
+        new Tester();       // run the units tester  
     }
 
 }

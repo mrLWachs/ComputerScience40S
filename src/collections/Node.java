@@ -76,8 +76,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        if (data == null) return null;
-        return data.toString();
+        if (data == null) return null;          // invalid data, output null
+        return data.toString();                 // output data in node
     }
 
     /**
@@ -88,8 +88,8 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
-        Node node = (Node)object;
-        return data.equals(node.data);       
+        Node node = (Node)object;               // cast object into node
+        return data.equals(node.data);          // compare data in nodes
     }
 
     /**
@@ -98,7 +98,7 @@ public class Node <T>
      * @return a "clone" of the object using new memory
      */
     public Node clone() {
-        return this;
+        return new Node(this.data);             // annoynmous object
     }
 
 }
