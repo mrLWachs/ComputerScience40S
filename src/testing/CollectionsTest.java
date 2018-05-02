@@ -3,6 +3,7 @@
 package testing;
 
 /** required imports */
+import collections.LinkedList;
 import collections.Node;
 
 /**
@@ -29,6 +30,13 @@ public class CollectionsTest
         System.out.println(node1);              // output node objects
         System.out.println(node2);
         System.out.println(node3);
+        
+        
+        LinkedList list = new LinkedList();
+        
+        
+        
+        
         
         
         // more to come...

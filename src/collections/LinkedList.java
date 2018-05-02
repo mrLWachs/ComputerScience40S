@@ -13,12 +13,29 @@ package collections;
 public class LinkedList 
 {
 
+    private Node head;  // entry point - front of the list
+    private Node tail;  // entry point - back of the list
+    private int length; // count of all nodes
+        
+    
     /** 
      * Default constructor for the class 
      */
     public LinkedList() {
-
+        
     }
+    
+    /**
+     * Accessor method of the number of nodes
+     * 
+     * @return the length of the list
+     */
+    public int size() {
+        return length;
+    }
+    
+    
+    
 
     /**
      * String representation of this object
