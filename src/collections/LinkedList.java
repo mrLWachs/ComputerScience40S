@@ -10,7 +10,7 @@ package collections;
  * @since Apr 26, 2018 
  * @instructor Mr. Wachs
  */
-public class LinkedList 
+public class LinkedList <T>
 {
 
     private Node head;  // entry point - front of the list
@@ -22,7 +22,11 @@ public class LinkedList
      * Default constructor for the class 
      */
     public LinkedList() {
-        
+        finalize();
+    }
+    
+    public boolean isEmpty() {
+        return length == 0;
     }
     
     /**
@@ -33,6 +37,22 @@ public class LinkedList
     public int size() {
         return length;
     }
+    
+    @Override
+    public final void finalize() {
+        length = 0;
+        head = tail = null;
+    }
+    
+    
+    public void add(T data) {
+        
+    }
+    
+    
+    
+    
+    
     
     
     

@@ -34,8 +34,13 @@ public class CollectionsTest
         
         LinkedList list = new LinkedList();
         
+        System.out.println(list.isEmpty());
+        System.out.println(list.size());
         
-        
+        list.add('A');
+        list.add('B');
+        list.add('C');
+        list.add('D');
         
         
         
