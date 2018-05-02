@@ -695,6 +695,26 @@ public class ComputerScience30S
         bruce.talk();
         
         
+        
+        
+        
+        Student student = new Student();
+        
+        student.die();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // more to come....
         
         
