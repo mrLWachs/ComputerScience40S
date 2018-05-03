@@ -694,10 +694,7 @@ public class ComputerScience30S
         bruce.die();
         bruce.talk();
         
-        
-        
-        
-        
+        // create a student object which inherits ("is a") from person
         Student student = new Student();
         
         student.die();
