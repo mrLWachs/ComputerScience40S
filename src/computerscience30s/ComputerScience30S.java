@@ -696,11 +696,7 @@ public class ComputerScience30S
         
         // create a student object which inherits ("is a") from person
         Student student = new Student();
-        
-        student.die();
-        
-        
-        
+               
         
         
         
