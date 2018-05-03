@@ -31,11 +31,10 @@ public class CollectionsTest
         System.out.println(node2);
         System.out.println(node3);
         
-        
-        LinkedList list = new LinkedList();
-        
-        System.out.println(list.isEmpty());
-        System.out.println(list.size());
+        LinkedList list = new LinkedList();     // create LinkedList object        
+        System.out.println(list.isEmpty());     // see if empty
+        System.out.println(list.size());        // check size
+
         
         list.add('A');
         list.add('B');
@@ -44,7 +43,12 @@ public class CollectionsTest
         
         
         
+        
+        
+        
         // more to come...
+        
+        
         
         
         System.out.println("\nCompleted collections test!\n");

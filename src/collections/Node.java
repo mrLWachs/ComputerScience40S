@@ -88,6 +88,7 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
+        if (object == null) return false;       // error check
         Node node = (Node)object;               // cast object into node
         return data.equals(node.data);          // compare data in nodes
     }

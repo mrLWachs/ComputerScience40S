@@ -7,15 +7,25 @@ package collections;
  * data (dynamic) type (ADT) and its useful methods
  *
  * @author Mr. Wachs 
+ * @param <T> The generic type used 
  * @since Apr 26, 2018 
  * @instructor Mr. Wachs
  */
 public class LinkedList <T>
 {
 
-    private Node head;  // entry point - front of the list
-    private Node tail;  // entry point - back of the list
-    private int length; // count of all nodes
+    /** 
+     * The number of nodes in the list 
+     */
+    private int length;    
+    /** 
+     * Node reference entry point to the first node in the list 
+     */
+    private Node head;
+    /** 
+     * Node reference entry point to the last node in the list 
+     */
+    private Node tail;
         
     
     /** 
@@ -25,24 +35,34 @@ public class LinkedList <T>
         finalize();
     }
     
-    public boolean isEmpty() {
-        return length == 0;
-    }
-    
     /**
-     * Accessor method of the number of nodes
+     * Determines if the list is empty (no content)
      * 
-     * @return the length of the list
+     * @return is empty (true) or not empty (false)
+     */
+    public boolean isEmpty() {
+        return length == 0;                         // compares length to zero
+    }
+       
+    /**
+     * The number of nodes (the length) of the list
+     * 
+     * @return the number of nodes in the list
      */
     public int size() {
         return length;
-    }
+    } 
     
+    /**
+     * Frees up all memory used by this object
+     */
     @Override
     public final void finalize() {
-        length = 0;
-        head = tail = null;
+        length = 0;                                 // length set to zero
+        head = tail = null;                         // references set to nulls
+        System.gc();                                // garbage collector called
     }
+    
     
     
     public void add(T data) {
@@ -51,12 +71,6 @@ public class LinkedList <T>
     
     
     
-    
-    
-    
-    
-    
-
     /**
      * String representation of this object
      *
