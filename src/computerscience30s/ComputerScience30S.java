@@ -325,17 +325,17 @@ public class ComputerScience30S
      * The methods (functions, procedures) unit
      */
     private static void unit2() {
-        System.out.println("Let's learn about methods");
+        System.out.println("\nLet's learn about methods...\n");
         String something = "flaburgasted";
-        draw(something); // calling the method
-        draw("cat");     // cat is the arguement        
-        draws("dalmation", 101);     // mulitple arguments 
-        int number = giveMeNumber();   // returning from a method     
+        draw(something);                        // calling the method
+        draw("cat");                            // cat is the arguement        
+        draws("dalmation", 101);                // mulitple arguments 
+        int number = giveMeNumber();            // returning from a method     
         draw("Your number was " + number);
         output("Hi");
         output("Hello", "My Method");
         output("Good-bye", 3);
-        System.out.println("We're done learning about methods");
+        System.out.println("\nWe're done learning about methods!\n");
     }
 
     /**
@@ -421,7 +421,7 @@ public class ComputerScience30S
      * The arrays unit
      */
     private static void unit3() {
-        System.out.println("Let's learn arrays");
+        System.out.println("\nLet's learn about arrays...\n");
 
         // regular variable for comparison
         int size = 10;
@@ -487,7 +487,6 @@ public class ComputerScience30S
         final int Y = 20; // means rows, height
 
         char[][] matrix = new char[X][Y];
-
         for (int x = 0; x < X; x++) {
             for (int y = 0; y < Y; y++) {
                 int low = (int) 'A';
@@ -496,9 +495,9 @@ public class ComputerScience30S
                 matrix[x][y] = (char) r;
             }
         }
-
         output(matrix);
 
+        System.out.println("\nWe're done learning about arrays!\n");
     }
 
     /**
@@ -729,7 +728,7 @@ public class ComputerScience30S
         meeting.attend(teacher);
         meeting.hold();
         
-        System.out.println("\nClasses unit learning complete!\n");
+        System.out.println("\nWe're done learning about classes!\n");
     }
 
 }
