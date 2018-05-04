@@ -695,10 +695,27 @@ public class ComputerScience30S
         bruce.talk();
         
         // create a student object which inherits ("is a") from person
-        Student student = new Student();
-               
+        Student student = new Student("Peter Parker",15,true,10);        
+        student.cram();
+        student.cram();
+        student.cram();
+        student.slackOff();        
+        student.talk();
         
+        // create a Husky object which inherits ("is a") from student        
+        Husky havoc = new Husky("Havoc Husky",11,true,9);        
+        havoc.pepRally();
+        havoc.defeat();
+        havoc.study();
+        havoc.slackOff();
+        havoc.pepRally();        
+        havoc.talk();
         
+        // create a Teacher object which inherits ("is a") from person
+        Teacher teacher = new Teacher("Prof. Snape",53,true,"potions");
+        teacher.students[0] = student;
+        teacher.students[1] = havoc;
+        teacher.talk();
         
         
         
