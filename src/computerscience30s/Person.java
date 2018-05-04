@@ -18,9 +18,9 @@ public class Person
     // Properties: (things about it, adjectives, descriptors)
     
     public String name;
-    private int age; //encapsualted
-    public boolean isMale;
-    private boolean isAlive;
+    private int age;                        // encapsualted properties marked
+    public boolean isMale;                  // as private are "hidden" data
+    private boolean isAlive;                // only available inside the class
     
     // Methods: (things it can do, verbs, actions)
     
@@ -29,8 +29,8 @@ public class Person
      * build a object
      */
     public Person() {
-        name    = "Jane Doe";
-        age     = 0;
+        name    = "Jane Doe";               // set class properties
+        age     = 0;                        // to default values
         isAlive = true;
         isMale  = false;
     }
@@ -41,8 +41,8 @@ public class Person
      * @param newName the new name to assign
      */
     public Person(String newName) {
-        name    = newName;
-        age     = 0;
+        name    = newName;                  // set property to match parameter
+        age     = 0;                        // others set to defaults
         isAlive = true;
         isMale  = false;
     }
@@ -55,14 +55,11 @@ public class Person
      * @param isMale the new gender to assign
      * @param isAlive the new living/dead to assign
      */
-    public Person(String name,
-                  int age,
-                  boolean isMale,
-                  boolean isAlive) {
-        this.name    = name;
-        this.age     = age;
-        this.isAlive = isAlive;
-        this.isMale  = isMale;
+    public Person(String name, int age, boolean isMale, boolean isAlive) {
+        this.name    = name;                // set property to match parameter
+        this.age     = age;                 // uses "this" to make a reference
+        this.isAlive = isAlive;             // to the curent object to 
+        this.isMale  = isMale;              // distinguish from the parameter
     }
     
     /**
@@ -100,8 +97,8 @@ public class Person
      * @param times the number of years to advance
      */
     public void birthday(int times) {
-        for (int i = 0; i < times; i++) {
-            birthday();
+        for (int i = 0; i < times; i++) {           // use loop
+            birthday();                             // call other method
         }
     }
         

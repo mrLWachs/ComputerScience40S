@@ -27,8 +27,8 @@ public class Student extends Person
      * @param grade the grade for this student 
      */
     public Student(String name, int age, boolean isMale, int grade) {
-        super(name,age,isMale,true);
-        this.grade = grade;
+        super(name,age,isMale,true);            // call to super constructor
+        this.grade = grade;                     // set internal properties
         gpa        = 0.0;
     }
       
@@ -50,21 +50,19 @@ public class Student extends Person
      * Cramming is intense studying
      */
     public void cram() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {          // study 10 times
             study();
         }
     }   
     
     /**
-     * Talking overrides the same talk metho of the parent class
+     * Talking overrides the same talk method of the parent class
      * and outputs additional information to the screen
      */
     @Override
     public void talk() {
-        super.talk();
-        System.out.println("....Grade is " +
-                grade + " and GPA is " + 
-                gpa);
+        super.talk();                       // call to the super talk method
+        System.out.println("\t - Grade is " + grade + " and GPA is " + gpa);
     }
     
 }

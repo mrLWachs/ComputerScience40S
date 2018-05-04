@@ -675,11 +675,12 @@ public class ComputerScience30S
         Person person = new Person();        
         // similar to old code like: Random random = new Random();
         
+        // call (invoke) a method within the object
+        person.talk();
         // use the object (the instance of the class) and change
         // some properties within the object
         person.name = "Peter Parker";
         person.isMale = true;       
-        // call (invoke) a method within the object
         person.talk();
         
         // create (instantiate) a second object of the class, using another
