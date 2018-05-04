@@ -685,15 +685,16 @@ public class ComputerScience30S
         
         // create (instantiate) a second object of the class, using another
         // constructor (overloaded) to set properties upon construction
-        Person natasha = new Person("Black Widow",35,false,true);
-        natasha.talk();
-        
-        // a third instance of the class
         Person bruce = new Person("Bruce Banner");
         bruce.birthday(30);
         bruce.talk();
         bruce.die();
         bruce.talk();
+        
+        // create (instantiate) a third object of the class, using another
+        // constructor (overloaded) to set properties upon construction
+        Person natasha = new Person("Black Widow",35,false,true);
+        natasha.talk();
         
         // create a student object which inherits ("is a") from person
         Student student = new Student("Peter Parker",15,true,10);        
@@ -718,16 +719,15 @@ public class ComputerScience30S
         teacher.students[1] = havoc;
         teacher.talk();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        // more to come....
-        
+        // create a Meeting object, add people, hold the meeting
+        Meeting meeting = new Meeting();
+        meeting.attend(person);
+        meeting.attend(bruce);
+        meeting.attend(natasha);
+        meeting.attend(student);
+        meeting.attend(havoc);
+        meeting.attend(teacher);
+        meeting.hold();
         
         System.out.println("\nClasses unit learning complete!\n");
     }

@@ -26,7 +26,7 @@ public class Person
     
     /**
      * Constructor method called (invoked) when the class is used to 
-     * build a object
+     * build a object, this is called the "default" constructor
      */
     public Person() {
         name    = "Jane Doe";               // set class properties
