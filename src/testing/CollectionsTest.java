@@ -34,14 +34,13 @@ public class CollectionsTest
         LinkedList list = new LinkedList();     // create LinkedList object        
         System.out.println(list.isEmpty());     // see if empty
         System.out.println(list.size());        // check size
-
-        
-        list.add('A');
-        list.add('B');
-        list.add('C');
-        list.add('D');
-        
-        
+        System.out.println(list);               // output list (toString())        
+        list.addFront('A');                     // add data tofront and back
+        list.addBack('B');
+        list.addFront('C');
+        list.addBack('D');        
+        list.addFront('E');        
+        System.out.println(list);               // output list
         
         
         
