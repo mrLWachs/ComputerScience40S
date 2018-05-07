@@ -603,7 +603,7 @@ public class ComputerScience30S
         int choice = JOptionPane.showOptionDialog(null, text, title, 
                 JOptionPane.YES_NO_CANCEL_OPTION, 
                 JOptionPane.PLAIN_MESSAGE, null, buttons, null);
-        System.out.println("User picked button " + choice);        
+        System.out.println("User picked button " + choice); 
     }
     
     /**
