@@ -106,6 +106,32 @@ public class LinkedList <T>
     }
     
     /**
+     * Accessor for the data at the specified index
+     * 
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {        
+        if (!inRange(index)) return null;   // invalid index, return flag        
+        return (T)getNode(index).data;      // get reference and retrieve data  
+    }
+    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        Node current = getNode(index);
+        if (current == null) return false;          // invalid index
+        if (data == null)    return false;        
+        current.data = data;
+        return true;
+    }
+    
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
@@ -143,5 +169,55 @@ public class LinkedList <T>
     public LinkedList clone() {
         return this;
     }
+    
+    /**
+     * Checks to see if the index is in range of the list
+     * 
+     * @param index the location to check
+     * @return it is in range (true) or not (false)
+     */        
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index is valid
+    }
+    
+    /**
+     * Reference to the first (head) node in the list
+     * 
+     * @return reference to the head (first) node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
 
+    /**
+     * Reference to the last (tail) node in the list
+     * 
+     * @return reference to the tail (last) node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accesses the node reference for this index location
+     * 
+     * @param index the index location
+     * @return a reference to the node at this index or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        else {                                          // internal node
+            Node current = head;                        // start at first node
+            for (int i = 0; i < index; i++) {           // move to index
+                current = current.next;                 // advance reference
+            }
+            return current;                             // return reference
+        }
+    }   
+    
 }

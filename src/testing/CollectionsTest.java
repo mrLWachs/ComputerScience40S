@@ -22,6 +22,9 @@ public class CollectionsTest
     public CollectionsTest() {
         System.out.println("\nStarting collections unit test...\n");
         
+        
+        
+        
         Node<Integer> node1 = new Node<>(50);   // create node objects
         Node<Integer> node2 = new Node<>(10);
         Node<Integer> node3 = new Node<>(90);        
@@ -42,6 +45,14 @@ public class CollectionsTest
         list.addFront('E');        
         System.out.println(list);               // output list
         
+        System.out.println(list.get(2));
+        System.out.println(list.get(0));
+        System.out.println(list.get(4));
+        System.out.println(list.get(20));
+        System.out.println(list.get(-2));
+        
+        list.set('W',40);
+        System.out.println(list);
         
         
         
