@@ -44,15 +44,35 @@ public class CollectionsTest
         list.addBack('D');        
         list.addFront('E');        
         System.out.println(list);               // output list
-        
+        System.out.println("Testing get method");
         System.out.println(list.get(2));
         System.out.println(list.get(0));
         System.out.println(list.get(4));
         System.out.println(list.get(20));
         System.out.println(list.get(-2));
-        
-        list.set('W',40);
+        System.out.println("Testing set method");
+        System.out.println(list.set(0,'W'));
+        System.out.println(list.set(2,'T'));
+        System.out.println(list.set(4,'R'));
+        System.out.println(list.set(40,'V'));
+        System.out.println(list.set(-4,'M'));        
         System.out.println(list);
+        
+        System.out.println(list.front());
+        System.out.println(list.back());
+        
+        System.out.println(list.removeFront());
+        System.out.println(list);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

@@ -132,6 +132,67 @@ public class LinkedList <T>
     }
     
     /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);        
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);
+    }
+    
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;
+        else {
+            T data = (T)head.data;            
+            if (length == 1) finalize();
+            else {                
+                head = head.next;                
+                head.previous.next = null;
+                head.previous = null;
+                length--;
+                System.gc();
+            }
+            return data;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
