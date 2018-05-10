@@ -170,46 +170,43 @@ public class LinkedList <T>
         }
     }
     
-    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
     public T removeBack() {
-        if (isEmpty()) return null;        
+        if (isEmpty()) return null;         // no back to remove
         else {
-            T data = (T)tail.data;         
-            if (length == 1) finalize();   
+            T data = (T)tail.data;          // store tail data
+            if (length == 1) finalize();    // 1 node list, wipe list
             else {                
-                tail = tail.previous;          
-                tail.next.previous = null; 
-                tail.next = null;       
-                length--;                  
-                System.gc();              
+                tail = tail.previous;       // advanced tail reference
+                tail.next.previous = null;  // cut old tail reference
+                tail.next = null;           // cut reference to old tail
+                length--;                   // reduce list length
+                System.gc();                // call system garbage collector
             }
-            return data;              
+            return data;                    // return stored data
         }
     }
     
-    
-    
+    /**
+     * Checks if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
     public boolean contains(T data) {
-        Node current = head;
-        while (current != null) {
-            if (current.data.equals(data)) {
-                return true;
+        Node current = head;                    // start reference at head
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return true;                    // indicate found
             }
-            current = current.next;
+            current = current.next;             // move to next node
         }
-        return false;
+        return false;                           // not found in list
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     
     
