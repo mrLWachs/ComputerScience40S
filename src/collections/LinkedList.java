@@ -36,6 +36,112 @@ public class LinkedList <T>
     }
     
     /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {        
+        if (isEmpty()) return "Empty list";             // no nodes to display
+        else {
+            String text = "[";                          // starting character
+            Node current = head;                        // start at head node
+            while (current.next != null) {              // traverse list
+                text += current.toString() + ",";       // append data
+                current = current.next;                 // move to next node
+            }            
+            return text + current.toString() + "]";     // append end character
+        }        
+    }
+
+    /**
+     * Determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        LinkedList<T> list = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != list.size()) return false;   // not same sizes
+        else {            
+            Node current1 = this.getFirstNode();        // get reference to
+            Node current2 = list.getFirstNode();        // nodes in each list    
+            while (current1 != null) {                  // traverse lists
+                if (!current1.equals(current2)) {       // not equal data 
+                    return false;                       // not equal lists
+                }                
+                current1 = current1.next;               // move each reference
+                current2 = current2.next;               // to next node
+            }
+            return true;                                // lists are equal
+        }        
+    }
+
+    /**
+     * Creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    public LinkedList clone() {
+        LinkedList<T> list = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < length; i++) {          // traverse list
+            list.addBack((T)this.getNode(i).data);  // get and add node data          
+        }        
+        return list;                                // new list returned
+    }
+    
+    /**
+     * Checks to see if the index is in range of the list
+     * 
+     * @param index the location to check
+     * @return it is in range (true) or not (false)
+     */        
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index is valid
+    }
+    
+    /**
+     * Reference to the first (head) node in the list
+     * 
+     * @return reference to the head (first) node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+
+    /**
+     * Reference to the last (tail) node in the list
+     * 
+     * @return reference to the tail (last) node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accesses the node reference for this index location
+     * 
+     * @param index the index location
+     * @return a reference to the node at this index or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        else {                                          // internal node
+            Node current = head;                        // start at first node
+            for (int i = 0; i < index; i++) {           // move to index
+                current = current.next;                 // advance reference
+            }
+            return current;                             // return reference
+        }
+    }
+    
+    /**
      * Determines if the list is empty (no content)
      * 
      * @return is empty (true) or not empty (false)
@@ -214,93 +320,6 @@ public class LinkedList <T>
     
     
     
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {        
-        if (isEmpty()) return "Empty list";             // no nodes to display
-        else {
-            String text = "[";                          // starting character
-            Node current = head;                        // start at head node
-            while (current.next != null) {              // traverse list
-                text += current.toString() + ",";       // append data
-                current = current.next;                 // move to next node
-            }            
-            return text + current.toString() + "]";     // append end character
-        }        
-    }
-
-    /**
-     * Determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-
-    /**
-     * Creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    public LinkedList clone() {
-        return this;
-    }
     
-    /**
-     * Checks to see if the index is in range of the list
-     * 
-     * @param index the location to check
-     * @return it is in range (true) or not (false)
-     */        
-    private boolean inRange(int index) {
-        if (isEmpty())       return false;  // empty list no valid index
-        if (index < 0)       return false;  // index before first valid number
-        if (index >= length) return false;  // index after last valid number
-        return true;                        // index is valid
-    }
-    
-    /**
-     * Reference to the first (head) node in the list
-     * 
-     * @return reference to the head (first) node
-     */
-    protected Node getFirstNode() {
-        return head;
-    }
-
-    /**
-     * Reference to the last (tail) node in the list
-     * 
-     * @return reference to the tail (last) node
-     */
-    protected Node getLastNode() {
-        return tail;
-    }
-    
-    /**
-     * Accesses the node reference for this index location
-     * 
-     * @param index the index location
-     * @return a reference to the node at this index or null
-     */
-    protected Node getNode(int index) {
-        if (!inRange(index))   return null;             // not valid index
-        if (index == 0)        return getFirstNode();   // first node returned
-        if (index == length-1) return getLastNode();    // last node returned
-        else {                                          // internal node
-            Node current = head;                        // start at first node
-            for (int i = 0; i < index; i++) {           // move to index
-                current = current.next;                 // advance reference
-            }
-            return current;                             // return reference
-        }
-    }   
     
 }
