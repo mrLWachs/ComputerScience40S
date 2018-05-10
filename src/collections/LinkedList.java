@@ -170,6 +170,53 @@ public class LinkedList <T>
         }
     }
     
+    
+    public T removeBack() {
+        if (isEmpty()) return null;        
+        else {
+            T data = (T)tail.data;         
+            if (length == 1) finalize();   
+            else {                
+                tail = tail.previous;          
+                tail.next.previous = null; 
+                tail.next = null;       
+                length--;                  
+                System.gc();              
+            }
+            return data;              
+        }
+    }
+    
+    
+    
+    public boolean contains(T data) {
+        Node current = head;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * String representation of this object
      *

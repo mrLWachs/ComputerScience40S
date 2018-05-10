@@ -63,6 +63,31 @@ public class CollectionsTest
         System.out.println("List back = " + list.back() + " -> " + list);        
         System.out.print("Remove front = " + list.removeFront());
         System.out.println(" -> " + list);
+        System.out.print("Remove back = " + list.removeBack());
+        System.out.println(" -> " + list);
+        System.out.print("List contains 'C' = " + list.contains('C'));
+        System.out.println(" -> " + list);
+        System.out.print("List contains 'Z' = " + list.contains('Z'));
+        System.out.println(" -> " + list);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
