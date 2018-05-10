@@ -20,54 +20,49 @@ public class CollectionsTest
      * Default constructor for the class 
      */
     public CollectionsTest() {
-        System.out.println("\nStarting collections unit test...\n");
-        
-        
-        
-        
+        System.out.println("\nStarting collections unit test...\n");        
+        System.out.println("Testing Node class......");
         Node<Integer> node1 = new Node<>(50);   // create node objects
         Node<Integer> node2 = new Node<>(10);
         Node<Integer> node3 = new Node<>(90);        
         node1.next     = node2;                 // connect node objects
         node1.previous = node3;
-        System.out.println(node1);              // output node objects
-        System.out.println(node2);
-        System.out.println(node3);
-        
-        LinkedList list = new LinkedList();     // create LinkedList object        
-        System.out.println(list.isEmpty());     // see if empty
-        System.out.println(list.size());        // check size
-        System.out.println(list);               // output list (toString())        
-        list.addFront('A');                     // add data tofront and back
-        list.addBack('B');
-        list.addFront('C');
-        list.addBack('D');        
-        list.addFront('E');        
-        System.out.println(list);               // output list
-        System.out.println("Testing get method");
-        System.out.println(list.get(2));
-        System.out.println(list.get(0));
-        System.out.println(list.get(4));
-        System.out.println(list.get(20));
-        System.out.println(list.get(-2));
-        System.out.println("Testing set method");
-        System.out.println(list.set(0,'W'));
-        System.out.println(list.set(2,'T'));
-        System.out.println(list.set(4,'R'));
-        System.out.println(list.set(40,'V'));
-        System.out.println(list.set(-4,'M'));        
-        System.out.println(list);
-        
-        System.out.println(list.front());
-        System.out.println(list.back());
-        
-        System.out.println(list.removeFront());
-        System.out.println(list);
-        
-        
-        
-        
-        
+        System.out.println("Node data:     " + node1);  // output node objects
+        System.out.println("Next Node:     " + node1.next);
+        System.out.println("Previous Node: " + node1.previous);
+        System.out.println("Testing LinkedList class......");
+        LinkedList list = new LinkedList();     // create LinkedList object 
+        System.out.println("List is empty = " + list.isEmpty());
+        System.out.println("List size = " + list.size());  
+        System.out.println("output list = " + list); 
+        System.out.println("Adding to front and back, then outputing.....");
+        System.out.print("Adding Front A = " + list.addFront('A'));
+        System.out.println(" -> " + list);
+        System.out.print("Adding Back  B = " + list.addBack( 'B'));
+        System.out.println(" -> " + list);
+        System.out.print("Adding Front C = " + list.addFront('C'));
+        System.out.println(" -> " + list);
+        System.out.print("Adding Back  D = " + list.addBack( 'D'));
+        System.out.println(" -> " + list);
+        System.out.print("Adding Front E = " + list.addFront('E'));      
+        System.out.println(" -> " + list);
+        System.out.println("Edge testing get method.....");
+        System.out.println("Get Spot 2  = " + list.get(2) + " -> " + list);
+        System.out.println("Get Spot 0  = " + list.get(0) + " -> " + list);
+        System.out.println("Get Spot 4  = " + list.get(4) + " -> " + list);
+        System.out.println("Get Spot 6  = " + list.get(6) + " -> " + list);
+        System.out.println("Get Spot -2 = " + list.get(-2) + " -> " + list);
+        System.out.println("Edge testing set method......");
+        System.out.println("Before Set = " + list);
+        System.out.println("Set 0  to W = " + list.set(0,'W') + " -> " + list);
+        System.out.println("Set 2  to T = " + list.set(2,'T') + " -> " + list);
+        System.out.println("Set 4  to R = " + list.set(4,'R') + " -> " + list);
+        System.out.println("Set 6  to V = " + list.set(6,'V') + " -> " + list);
+        System.out.println("Set -2 to M = " + list.set(-2,'M') + " -> " + list); 
+        System.out.println("List front = " + list.front() + " -> " + list);
+        System.out.println("List back = " + list.back() + " -> " + list);        
+        System.out.print("Remove front = " + list.removeFront());
+        System.out.println(" -> " + list);
         
         
         
@@ -76,7 +71,6 @@ public class CollectionsTest
         
         
         
-        // more to come...
         
         
         

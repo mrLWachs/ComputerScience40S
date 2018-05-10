@@ -50,7 +50,7 @@ public class LinkedList <T>
      * @return the number of nodes in the list
      */
     public int size() {
-        return length;
+        return length;                              // encapsulated property
     } 
     
     /**
@@ -124,11 +124,11 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean set(int index, T data) {
-        Node current = getNode(index);
+        Node current = getNode(index);              // get to node at index
         if (current == null) return false;          // invalid index
-        if (data == null)    return false;        
-        current.data = data;
-        return true;
+        if (data == null)    return false;          // invalid data
+        current.data = data;                        // change node data
+        return true;                                // operation successful
     }
     
     /**
@@ -137,7 +137,7 @@ public class LinkedList <T>
      * @return the head data
      */
     public T front() {
-        return get(0);        
+        return get(0);                              // first node
     }
     
     /**
@@ -146,7 +146,7 @@ public class LinkedList <T>
      * @return the tail data
      */
     public T back() {
-        return get(length-1);
+        return get(length-1);                       // last node
     }
     
     /**
@@ -155,42 +155,20 @@ public class LinkedList <T>
      * @return the data in the first node (or null)
      */
     public T removeFront() {
-        if (isEmpty()) return null;
+        if (isEmpty()) return null;         // no front to remove
         else {
-            T data = (T)head.data;            
-            if (length == 1) finalize();
+            T data = (T)head.data;          // store head data
+            if (length == 1) finalize();    // 1 node list, wipe list
             else {                
-                head = head.next;                
-                head.previous.next = null;
-                head.previous = null;
-                length--;
-                System.gc();
+                head = head.next;           // advanced head reference
+                head.previous.next = null;  // cut old head reference
+                head.previous = null;       // cut reference to old head
+                length--;                   // reduce list length
+                System.gc();                // call system garbage collector
             }
-            return data;
+            return data;                    // return stored data
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     /**
      * String representation of this object
