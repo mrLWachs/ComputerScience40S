@@ -102,4 +102,14 @@ public class Node <T>
         return new Node(this.data);             // annoynmous object
     }
 
+        
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        data = null;
+        next = previous = null;
+    }
+    
 }
