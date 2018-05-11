@@ -314,6 +314,48 @@ public class LinkedList <T>
         return false;                           // not found in list
     }
     
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        if (!inRange(index)) return false;
+        if (data == null)    return false;
+        if (index == length-1) return addBack(data);
+        else {
+            Node node = new Node(data);
+            Node current = getNode(index);            
+            node.next = current.next;
+            current.next.previous = node;
+            current.next = node;
+            node.previous = current;            
+            length++;
+            return true;
+        }
+     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

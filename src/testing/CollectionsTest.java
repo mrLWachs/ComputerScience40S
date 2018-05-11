@@ -69,8 +69,8 @@ public class CollectionsTest
         System.out.println(" -> " + list);
         System.out.print("List contains 'Z' = " + list.contains('Z'));
         System.out.println(" -> " + list);
-        
-        
+        System.out.println("Adding 'Z' after 1 = " + 
+                list.addAfter('Z',1) + " -> " + list);
         
         
         
