@@ -322,18 +322,18 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean addAfter(T data, int index) {
-        if (!inRange(index)) return false;
-        if (data == null)    return false;
-        if (index == length-1) return addBack(data);
-        else {
-            Node node = new Node(data);
-            Node current = getNode(index);            
-            node.next = current.next;
+        if (!inRange(index)) return false;              // index out of range
+        if (data == null)    return false;              // invalid data to add
+        if (index == length-1) return addBack(data);    // add to end of list
+        else {                                          // adding into middle
+            Node node = new Node(data);                 // create node object
+            Node current = getNode(index);              // get to index spot
+            node.next = current.next;                   // set proper references
             current.next.previous = node;
             current.next = node;
             node.previous = current;            
-            length++;
-            return true;
+            length++;                                   // increase length
+            return true;                                // opperation successful
         }
      }
     

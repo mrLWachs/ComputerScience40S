@@ -58,13 +58,39 @@ public class CollectionsTest
         System.out.println("Set 2  to T = " + list.set(2,'T') + " -> " + list);
         System.out.println("Set 4  to R = " + list.set(4,'R') + " -> " + list);
         System.out.println("Set 6  to V = " + list.set(6,'V') + " -> " + list);
-        System.out.println("Set -2 to M = " + list.set(-2,'M') + " -> " + list); 
+        System.out.println("Set -2 to M = " + list.set(-2,'M') + " -> " + list);         
+        System.out.println("Testing front/back");
         System.out.println("List front = " + list.front() + " -> " + list);
-        System.out.println("List back = " + list.back() + " -> " + list);        
+        System.out.println("List back = " + list.back() + " -> " + list);         
+        LinkedList<Character> test1 = new LinkedList();               
+        System.out.println("Testing front/back with empty list");
+        System.out.println("List front = " + test1.front() + " -> " + test1);
+        System.out.println("List back = " + test1.back() + " -> " + test1);        
+        LinkedList<Character> test2 = new LinkedList();
+        test2.addBack('A'); 
+        System.out.println("Testing front/back with 1 item list");
+        System.out.println("List front = " + test2.front() + " -> " + test2);
+        System.out.println("List back = " + test2.back() + " -> " + test2);        
+        System.out.println("Testing remove front/back");
         System.out.print("Remove front = " + list.removeFront());
         System.out.println(" -> " + list);
         System.out.print("Remove back = " + list.removeBack());
-        System.out.println(" -> " + list);
+        System.out.println(" -> " + list);        
+        System.out.println("Testing remove front/back with empty list");
+        System.out.print("Remove front = " + test1.removeFront());
+        System.out.println(" -> " + test1);
+        test2.addBack('A'); 
+        System.out.print("Remove back = " + test1.removeBack());
+        System.out.println(" -> " + test1);
+        
+        System.out.println("Testing remove front/back with 1 item list");
+        System.out.print("Remove front = " + test2.removeFront());
+        System.out.println(" -> " + test2);
+        System.out.print("Remove back = " + test2.removeBack());
+        System.out.println(" -> " + test2);
+        
+        
+        
         System.out.print("List contains 'C' = " + list.contains('C'));
         System.out.println(" -> " + list);
         System.out.print("List contains 'Z' = " + list.contains('Z'));
