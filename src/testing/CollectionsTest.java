@@ -20,83 +20,72 @@ public class CollectionsTest
      * Default constructor for the class 
      */
     public CollectionsTest() {
-        System.out.println("\nStarting collections unit test...\n");        
-        System.out.println("Testing Node class......");
+        out("\nStarting collections unit test...\n"); 
         Node<Integer> node1 = new Node<>(50);   // create node objects
         Node<Integer> node2 = new Node<>(10);
         Node<Integer> node3 = new Node<>(90);        
         node1.next     = node2;                 // connect node objects
         node1.previous = node3;
-        System.out.println("Node data:     " + node1);  // output node objects
-        System.out.println("Next Node:     " + node1.next);
-        System.out.println("Previous Node: " + node1.previous);
-        System.out.println("Testing LinkedList class......");
+        out("Node data:     " + node1);         // output node objects
+        out("Next Node:     " + node1.next);
+        out("Previous Node: " + node1.previous);
         LinkedList list = new LinkedList();     // create LinkedList object 
-        System.out.println("List is empty = " + list.isEmpty());
-        System.out.println("List size = " + list.size());  
-        System.out.println("output list = " + list); 
-        System.out.println("Adding to front and back, then outputing.....");
-        System.out.print("Adding Front A = " + list.addFront('A'));
-        System.out.println(" -> " + list);
-        System.out.print("Adding Back  B = " + list.addBack( 'B'));
-        System.out.println(" -> " + list);
-        System.out.print("Adding Front C = " + list.addFront('C'));
-        System.out.println(" -> " + list);
-        System.out.print("Adding Back  D = " + list.addBack( 'D'));
-        System.out.println(" -> " + list);
-        System.out.print("Adding Front E = " + list.addFront('E'));      
-        System.out.println(" -> " + list);
-        System.out.println("Edge testing get method.....");
-        System.out.println("Get Spot 2  = " + list.get(2) + " -> " + list);
-        System.out.println("Get Spot 0  = " + list.get(0) + " -> " + list);
-        System.out.println("Get Spot 4  = " + list.get(4) + " -> " + list);
-        System.out.println("Get Spot 6  = " + list.get(6) + " -> " + list);
-        System.out.println("Get Spot -2 = " + list.get(-2) + " -> " + list);
-        System.out.println("Edge testing set method......");
-        System.out.println("Before Set = " + list);
-        System.out.println("Set 0  to W = " + list.set(0,'W') + " -> " + list);
-        System.out.println("Set 2  to T = " + list.set(2,'T') + " -> " + list);
-        System.out.println("Set 4  to R = " + list.set(4,'R') + " -> " + list);
-        System.out.println("Set 6  to V = " + list.set(6,'V') + " -> " + list);
-        System.out.println("Set -2 to M = " + list.set(-2,'M') + " -> " + list);         
-        System.out.println("Testing front/back");
-        System.out.println("List front = " + list.front() + " -> " + list);
-        System.out.println("List back = " + list.back() + " -> " + list);         
-        LinkedList<Character> test1 = new LinkedList();               
-        System.out.println("Testing front/back with empty list");
-        System.out.println("List front = " + test1.front() + " -> " + test1);
-        System.out.println("List back = " + test1.back() + " -> " + test1);        
-        LinkedList<Character> test2 = new LinkedList();
-        test2.addBack('A'); 
-        System.out.println("Testing front/back with 1 item list");
-        System.out.println("List front = " + test2.front() + " -> " + test2);
-        System.out.println("List back = " + test2.back() + " -> " + test2);        
-        System.out.println("Testing remove front/back");
-        System.out.print("Remove front = " + list.removeFront());
-        System.out.println(" -> " + list);
-        System.out.print("Remove back = " + list.removeBack());
-        System.out.println(" -> " + list);        
-        System.out.println("Testing remove front/back with empty list");
-        System.out.print("Remove front = " + test1.removeFront());
-        System.out.println(" -> " + test1);
-        test2.addBack('A'); 
-        System.out.print("Remove back = " + test1.removeBack());
-        System.out.println(" -> " + test1);
+        out("List is empty = " + list.isEmpty());
+        out("List size     = " + list.size());  
+        out("Output list   = " + list); 
+        out("Adding Front A = " + list.addFront('A') + " -> \t" + list);
+        out("Adding Back  B = " + list.addBack( 'B') + " -> \t" + list);
+        out("Adding Front C = " + list.addFront('C') + " -> \t" + list);
+        out("Adding Back  D = " + list.addBack( 'D') + " -> \t" + list);
+        out("Adding Front E = " + list.addFront('E') + " -> \t" + list);
+        out("Get Spot 2  = " + list.get(2) + " -> \t" + list);
+        out("Get Spot 0  = " + list.get(0) + " -> \t" + list);
+        out("Get Spot 4  = " + list.get(4) + " -> \t" + list);
+        out("Get Spot 6  = " + list.get(6) + " -> \t" + list);
+        out("Get Spot -2 = " + list.get(-2) + " -> \t" + list);
+        out("Set 0  to W = " + list.set(0,'W') + " -> \t" + list);
+        out("Set 2  to T = " + list.set(2,'T') + " -> \t" + list);
+        out("Set 4  to R = " + list.set(4,'R') + " -> \t" + list);
+        out("Set 6  to V = " + list.set(6,'V') + " -> \t" + list);
+        out("Set -2 to M = " + list.set(-2,'M') + " -> \t" + list);    
+        out("Front = " + list.front() + " -> \t" + list);
+        out("Back  = " + list.back() + " -> \t" + list);         
+        LinkedList<Character> test = new LinkedList();           
+        out("Front with empty list = " + test.front() + " -> \t" + test);
+        out("Back with empty list  = " + test.back() + " -> \t" + test); 
+        test.addBack('A'); 
+        out("Front with 1 item list = " + test.front() + " -> \t" + test);
+        out("Back  with 1 item list = " + test.back()  + " -> \t" + test);
+        out("Remove front = " + list.removeFront() + " -> \t" + list);
+        test.addBack('A');
+        out("Remove back  = " + list.removeBack() +  " -> \t" + list);  
+        test.finalize();
+        out("Remove front (empty) = " + test.removeFront() + " -> \t" + test);
+        out("Remove back  (empty) = " + test.removeBack() + " -> \t" + test);
+        test.addBack('A');
+        out("Remove front (1 item) = " + test.removeFront() + " -> \t" + test);
+        test.addBack('A');
+        out("Remove back  (1 item) = " + test.removeBack() + " -> \t" + test);
+        out("Contains 'C' = " + list.contains('C') + "  -> \t" + list);
+        out("Contains 'Z' = " + list.contains('Z') + " -> \t" + list);
+        out("Add 'Z' After 1 = " + list.addAfter('Z',1) + " -> \t" + list);        
+        out("Add 'Z' After 3 = " + list.addAfter('Z',3) + " -> \t" + list);
+        out("Add 'Z' After 0 = " + list.addAfter('Z',0) + " -> \t" + list);
+        out("Add 'Z' After 9 = " + list.addAfter('Z',9) + " -> \t" + list);
+        out("Add 'Z' Before 1 = " + list.addBefore('Z',1) + " -> \t" + list);        
+        out("Add 'Z' Before 3 = " + list.addBefore('Z',3) + " -> \t" + list);
+        out("Add 'Z' Before 0 = " + list.addBefore('Z',0) + " -> \t" + list);
+        out("Add 'Z' Before 9 = " + list.addBefore('Z',9) + " -> \t" + list);
+        out("Remove 3 = " + list.remove(3) + " -> \t" + list);
+        out("Remove 0 = " + list.remove(0) + " -> \t" + list);
+        out("Remove 6 = " + list.remove(6) + " -> \t" + list);
+        out("Remove 9 = " + list.remove(9) + " -> \t" + list);        
+        out("First index of Z = " + list.firstIndexOf('Z') + " -> \t" + list);
+        out("Last  index of Z = " + list.lastIndexOf('Z') + " -> \t" + list);
+        out("First index of Q = " + list.firstIndexOf('Q') + " -> \t" + list);
+        out("Last  index of Q = " + list.lastIndexOf('Q') + " -> \t" + list);
         
-        System.out.println("Testing remove front/back with 1 item list");
-        System.out.print("Remove front = " + test2.removeFront());
-        System.out.println(" -> " + test2);
-        System.out.print("Remove back = " + test2.removeBack());
-        System.out.println(" -> " + test2);
-        
-        
-        
-        System.out.print("List contains 'C' = " + list.contains('C'));
-        System.out.println(" -> " + list);
-        System.out.print("List contains 'Z' = " + list.contains('Z'));
-        System.out.println(" -> " + list);
-        System.out.println("Adding 'Z' after 1 = " + 
-                list.addAfter('Z',1) + " -> " + list);
+
         
         
         
@@ -115,18 +104,11 @@ public class CollectionsTest
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        System.out.println("\nCompleted collections test!\n");
+        out("\nCompleted collections test!\n");
+    }
+    
+    private void out(Object object) {
+        System.out.println(object);
     }
 
 }

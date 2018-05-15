@@ -26,7 +26,10 @@ public class LinkedList <T>
      * Node reference entry point to the last node in the list 
      */
     private Node tail;
-        
+    /** 
+     * Flag to indicate a search operation was not found 
+     */
+    public static final int NOT_FOUND = -1;
     
     /** 
      * Default constructor for the class 
@@ -335,21 +338,109 @@ public class LinkedList <T>
             length++;                                   // increase length
             return true;                                // opperation successful
         }
-     }
+    }
     
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (!inRange(index)) return false;              // index out of range
+        if (data == null)    return false;              // invalid data to add
+        if (index == 0)      return addFront(data);     // add to start of list
+        else {                                          // adding into middle
+            Node node = new Node(data);                 // create node object
+            Node current = getNode(index);              // get to index spot
+            node.previous = current.previous;           // set proper references
+            current.previous.next = node;
+            current.previous = node;
+            node.next = current;            
+            length++;                                   // increase length
+            return true;                                // opperation successful
+        }
+    }
     
+    /**
+     * Adds the data to the back of the list
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // wrapper method call
+    }
     
+    /**
+     * Adds the data before the passed index
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
+    }
     
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data
+    }
     
+    /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        Node current = head;                    // start at head
+        int index = 0;                          // start count at 0
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return index;                   // return location
+            }
+            current = current.next;             // advance to next node
+            index++;                            // advance count
+        }
+        return NOT_FOUND;                       // data not found
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        Node current = tail;                    // start at head
+        int index = length-1;                   // start count at total nodes
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found last occurrence
+                return index;                   // return location
+            }
+            current = current.previous;         // return to previous node
+            index--;                            // decrease count
+        }
+        return NOT_FOUND;                       // data not found
+    }
     
     
     
