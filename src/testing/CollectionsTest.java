@@ -84,17 +84,53 @@ public class CollectionsTest
         out("Last  index of Z = " + list.lastIndexOf('Z') + " -> \t" + list);
         out("First index of Q = " + list.firstIndexOf('Q') + " -> \t" + list);
         out("Last  index of Q = " + list.lastIndexOf('Q') + " -> \t" + list);
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        Character item = new Character('Z');
+        Character not  = new Character('N');        
+        out("Remove Z = " + list.remove(item) + " -> \t" + list);
+        out("Remove N = " + list.remove(not)  + " -> \t" + list);        
+        out("Remove Last Z = " + list.removeLast(item) + " -> \t" + list);
+        out("Remove Last N = " + list.removeLast(not)  + " -> \t" + list);
+        for (int i = 0; i < 2; i++) {
+            int random1 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addBefore('Z',random1);
+            int random2 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addAfter('Z',random2);            
+        }
+        out("Rebuild List -> \t" + list);        
+        out("Remove All Z = " + list.removeAll(item) + " -> \t" + list); 
+        out("Remove All N = " + list.removeAll(not)  + " -> \t" + list); 
+        list.clear();
+        for (int i = 0; i < 26; i++) {
+            list.add(new Character((char)(i+65)));
+        }
+        out("Rebuild List -> \t\t" + list); 
+        Character[] vowels = {'A','E','I','O','U'};
+        list.removeAll(vowels);
+        out("Remove All Array -> \t\t" + list);
+        LinkedList<Character> haters = new LinkedList<>();
+        haters.add('H');
+        haters.add('N');
+        haters.add('W');
+        list.removeAll(haters);
+        out("Remove All LinkedList -> \t" + list);
+        for (int i = 0; i < 2; i++) {
+            int random1 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addBefore('Z',random1);
+            int random2 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addAfter('Z',random2);            
+        }
+        out("Rebuild List -> \t" + list);
+        out("Number Of Z = " + list.numberOf('Z') + " -> \t" + list); 
+        out("Number Of N = " + list.numberOf('N') + " -> \t" + list); 
+        list.addAll(haters);
+        out("Add All List: " + haters + " -> \t" + list);
+        list.addAll(haters, 4);
+        out("Add All List: " + haters + " at 4 -> \t" + list);
+        LinkedList<Character> sub = list.subList(2,12);        
+        out("Sub List from 2 to 12 -> \t" + sub);
+        Character[] favs = {'W','A','C','H','S'};
+        list.fromArray(favs);
+        out("List from Array: [W,A,C,H,S] -> \t" + list);
         
         
         
