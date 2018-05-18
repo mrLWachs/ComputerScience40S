@@ -130,16 +130,53 @@ public class CollectionsTest
         out("Sub List from 2 to 12 -> \t\t" + sub);
         Character[] favs = {'W','A','C','H','S'};
         list.fromArray(favs);
-        out("List from Array: [W,A,C,H,S] -> \t" + list);
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        out("List from Array: [W,A,C,H,S] -> \t" + list);        
+        for (int i = 0; i < 2; i++) {
+            int random1 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addBefore('Z',random1);
+            int random2 = (int)((list.size() - 0 + 1) * Math.random() + 0);
+            list.addAfter('Z',random2);            
+        }
+        out("Rebuild List -> \t\t\t" + list);
+        int[] indices = list.allIndices('Z');
+        Integer[] indexValues = new Integer[indices.length];
+        for (int i = 0; i < indices.length; i++) {
+            indexValues[i] = indices[i];
+        }
+        out("All indices of 'Z' -> \t\t\t" + print(indexValues));
+        indices = list.allIndices('X');
+        if (indices != null) {
+            indexValues = new Integer[indices.length];
+            for (int i = 0; i < indices.length; i++) {
+                indexValues[i] = indices[i];
+            }
+        }
+        else {
+            indexValues = null;
+        }
+        out("All indices of 'X' -> \t\t\t" + print(indexValues));        
+        LinkedList<Character> letters = new LinkedList<>();
+        for (int i = 0; i < 26; i++) {
+            letters.add(new Character((char)(i+65)));
+        }
+        out("Build new List -> \t\t\t" + letters);
+        list.fromLinkedList(letters);
+        out("Original from new (method) -> \t\t" + list);
+        LinkedList list1 = new LinkedList(letters);
+        out("New from original (constructor) -> \t" + list1);
+        Character[] name = {'W','A','C','H','S'};
+        LinkedList list2 = new LinkedList(name);
+        out("New from array (constructor) -> \t" + list2);
+        Character[] alpha = new Character[0];
+        alpha = letters.toArray(alpha);
+        out("Array from list - > \t\t\t" + print(alpha));
+        String[] words = {"apple","commercial","marshmellow","catwoman"};
+        out("New array -> \t\t\t\t" + print(words));
+        LinkedList<String> phrases = new LinkedList<>(words);
+        out("New List from array (constructor) -> \t" + phrases);
+        String[] things = new String[0];
+        things = phrases.toArray(things);
+        out("New array from list (constructor) -> \t" + print(words));
         out("\nCompleted collections test!\n");
     }
     
@@ -150,6 +187,22 @@ public class CollectionsTest
      */
     private void out(Object object) {
         System.out.println(object);
+    }
+
+    /**
+     * Turns an array into a 'printable' string formatted
+     * 
+     * @param <T> the generic data type
+     * @param a the array to 'print'
+     * @return a formatted string representing the array
+     */
+    private<T> String print(T[] a) {
+        if (a == null) return "null";
+        String text = "[";
+        for (int i = 0; i < a.length-1; i++) {
+            text += a[i].toString() + ",";
+        }
+        return text + a[a.length-1].toString() + "]";
     }
 
 }

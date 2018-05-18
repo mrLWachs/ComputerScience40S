@@ -2,6 +2,8 @@
 /** required package class namespace */
 package collections;
 
+import java.lang.reflect.Array;
+
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and its useful methods
@@ -40,6 +42,24 @@ public class LinkedList <T>
      */
     public LinkedList() {
         finalize();
+    }
+    
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param array the data objects to create the list from
+     */
+    public LinkedList(T[] array) {
+        fromArray(array);
+    }
+        
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param list the data objects to create the list from
+     */
+    public LinkedList(LinkedList<T> list) {
+        fromLinkedList(list);
     }
     
     /**
@@ -665,7 +685,58 @@ public class LinkedList <T>
         }
     }
     
+    /**
+     * Mutates list into a list only matching the contents of the other list
+     * 
+     * @param list the data objects to form the list from
+     */
+    public final void fromLinkedList(LinkedList<T> list) {
+        finalize();                                 // wipe list memory
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            add(list.get(i));                       // get and add item
+        }
+    }
     
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        array = (T[])(
+                Array.newInstance(
+                        array.getClass().getComponentType(), 
+                        length)
+                );                              // create empty array
+        for (int i = 0; i < length; i++) {      // traverse list
+            array[i] = get(i);                  // add to array
+        }
+        return array;                           // return completed array
+    }
     
+    /**
+     * Accesses all occurrences of the passed data in the list and returns an
+     * integer array containing all index values the data occurred at
+     * 
+     * @param data the data to search for
+     * @return all indices location in an array or null if no indices
+     */
+    public int[] allIndices(T data) {
+        if (!contains(data)) return null;       // no data in the list
+        int size = numberOf(data);              // get number of occurrences
+        int[] array = new int[size];            // create array 
+        Node current = head;                    // start at head
+        int counter = 0;                        // start counter
+        for (int i = 0; i < length; i++) {      // traverse list
+            if (current.data.equals(data)) {    // item encountered
+                array[counter] = i;             // insert index into array
+                counter++;                      // increase counter
+                if (counter >= size) return array;
+            }
+            current = current.next;             // move to next node
+        }
+        return array;                           // return completed array
+    }
     
 }
