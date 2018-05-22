@@ -29,11 +29,12 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        unit1();
-        unit2();   
-        unit3();
-        unit4();
-        experiments();
+//        unit1();
+//        unit2();   
+//        unit3();
+//        unit4();
+//        experiments();
+        
     }
 
     /**
@@ -731,4 +732,6 @@ public class ComputerScience30S
         System.out.println("\nWe're done learning about classes!\n");
     }
 
+    
+    
 }
