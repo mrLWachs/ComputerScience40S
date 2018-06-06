@@ -29,12 +29,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        unit1();
-//        unit2();   
-//        unit3();
-//        unit4();
-//        experiments();
-        
+        unit1();
+        unit2();   
+        unit3();
+        unit4();
     }
 
     /**
@@ -575,97 +573,6 @@ public class ComputerScience30S
     }
 
     /**
-     * Several in class code experiments during work classes 
-     * that students requested to help with programming assignments
-     */
-    private static void experiments() {
-        // method to get numbers, and not letters, 
-        // words, etc
-        String text = "Enter a number";
-        String title = "Input of an integer";
-        int number = getInteger(text, title);
-        System.out.println("Number = " + number);
-        // an example of a method that gives a fancy "drop down" input 
-        // dialog for the user
-        text  = "Pick a color";
-        title = "Favorite color?";
-        String[] options = { "Blue","Red","Green","Purple" };                
-        String user = dropdown(text,title,options);        
-        System.out.println("user selected = " + user);   
-        // example of the JOptionPane dialog with custom buttons options
-        text  = "Choose your fighter!";
-        title = "Mortal Kombat";
-        String[] buttons = {
-            "Zena the Warrior Princess",
-            "Wizard",
-            "Shaman",
-            "Necromancer",
-        };        
-        int choice = JOptionPane.showOptionDialog(null, text, title, 
-                JOptionPane.YES_NO_CANCEL_OPTION, 
-                JOptionPane.PLAIN_MESSAGE, null, buttons, null);
-        System.out.println("User picked button " + choice); 
-    }
-    
-    /**
-     * Gets user input as a integer with dialog box with error checking
-     * 
-     * @param text the text to display in the dialog
-     * @param title the title of the dialog
-     * @return the integer the user entered
-     */
-    private static int getInteger(String text, String title) {
-        String error = "";
-        while (true) {            
-            // get the initial user input
-            String user = JOptionPane.showInputDialog(null,
-                    error + text, title, JOptionPane.PLAIN_MESSAGE);     
-            if (user == null) { // hit cancel or red X
-                error = "Please enter a proper number\n";
-            }
-            else if (user.equals("")) { // hit ok without typing
-                error = "Please enter something\n";
-            }
-            else { // typed in something other than a valid int
-                boolean valid = true;
-                for (int i = 0; i < user.length(); i++) {
-                    // travel through characters in string, get each 
-                    char character = user.charAt(i);
-                    if (Character.isDigit(character) == false) {
-                        error = "Please do not enter non numeric "
-                                + "characters\n";
-                        i = user.length();
-                        valid = false;
-                    }
-                }
-                if (valid == true) { // passes all checks:
-                    int number = Integer.parseInt(user);
-                    return number;    
-                }
-            }
-        }
-    }
-
-    /**
-     * Dialog with a drop down display for the user to select from
-     * 
-     * @param text the text to display in the dialog
-     * @param title the title of the dialog
-     * @param options all the options to show in the drop down
-     * @return the drop down option the user selects
-     */
-    private static String dropdown(String text, String title, 
-                                   String[] options) { 
-        Object object = JOptionPane.showInputDialog(null,text,title,
-                JOptionPane.PLAIN_MESSAGE,null,options,options[0]);
-        while (object == null) {
-            object = JOptionPane.showInputDialog(null,text,title,
-                    JOptionPane.PLAIN_MESSAGE,null,options,options[0]);
-        }
-        return object.toString();
-    }
-
-    /**
      * The classes unit
      */
     private static void unit4() {
@@ -731,7 +638,5 @@ public class ComputerScience30S
         
         System.out.println("\nWe're done learning about classes!\n");
     }
-
-    
     
 }
