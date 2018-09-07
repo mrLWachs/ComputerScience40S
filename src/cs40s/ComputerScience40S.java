@@ -1,30 +1,21 @@
+/*
+ *  Mr. Wachs' classes - Java Computer Science learning file ComputerScience40S.java
+ *  for project ComputerScience40S on 7-Sep-2018 at 8:50:36 AM by lawrence.wachs
+ */
+
 
 /** required package class namespace */
 package cs40s;
 
-/** required imports */
-import testing.Tester;
+
 
 /**
- * ComputerScience40S.java - the large in class example we continue to work 
- * on in each unit adding example code on the new concepts of each unit 
- * along with any in class requests for code examples that might come up 
- * over the course
+ * ComputerScience40S.java - 
  *
  * @author Mr. Wachs 
- * @since Feb 20, 2018 
- * @instructor Mr. Wachs
+ * @since 7-Sep-2018 
  */
 public class ComputerScience40S 
 {
-
-    /**
-     * Main method for the project
-     * 
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        new Tester();       // run the units tester  
-    }
 
 }
