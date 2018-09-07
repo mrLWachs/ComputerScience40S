@@ -5,7 +5,7 @@
 
 
 /** required package class namespace */
-package cs40s;
+package computerscience40s;
 
 
 
