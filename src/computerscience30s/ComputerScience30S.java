@@ -24,6 +24,28 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         
+        // This is a comment, anything after // is a comment
+        
+        /* 
+            This is another way to comment, but it opens a
+            a multiple line comment that continues until a 
+            star and a slash is reached
+        */
+        
+        
+        System.out.print("Hello World..."); // simple output
+        
+        System.out.println("Goodbye world");
+        // sout and tab autocompleted this code
+        
+        // examples of "special" output characters:        
+        System.out.println("Make a quote, \" is a quote");
+        System.out.println("Make a tab, \t is a tab");
+        System.out.println("Make a slash, \\ is a slash");
+        System.out.println("Make a new line, \n is newline");
+        
+        
+        
     }
     
 }
