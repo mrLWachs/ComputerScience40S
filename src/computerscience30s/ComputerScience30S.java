@@ -96,7 +96,14 @@ public class ComputerScience30S
                 "Plain Input dialog",
                 JOptionPane.PLAIN_MESSAGE);
         
+        // input option with set text        
+        JOptionPane.showInputDialog(null,
+                "Input dialog 6",
+                "The starting text set in the textbox");
         
+        // confirm dialog box (may not need this)
+        
+        JOptionPane.showConfirmDialog(null, "Confirm dialog");
         
         
         
