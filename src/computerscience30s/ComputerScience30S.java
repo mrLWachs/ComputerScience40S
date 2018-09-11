@@ -26,14 +26,17 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         
+        ////////////////////////////////////////////////////////////
+        // JAVA BASICS:
+        ////////////////////////////////////////////////////////////
+        
         // This is a comment, anything after // is a comment
         
         /* 
             This is another way to comment, but it opens a
             a multiple line comment that continues until a 
             star and a slash is reached
-        */
-        
+        */        
         
         System.out.print("Hello World..."); // simple output
         
