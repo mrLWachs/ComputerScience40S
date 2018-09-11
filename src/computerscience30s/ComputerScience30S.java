@@ -2,6 +2,8 @@
 /** required package class namespace */
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 /** required imports */
 
 /**
@@ -43,6 +45,21 @@ public class ComputerScience30S
         System.out.println("Make a tab, \t is a tab");
         System.out.println("Make a slash, \\ is a slash");
         System.out.println("Make a new line, \n is newline");
+        
+        // fancy dialog boxes for outputs        
+        JOptionPane.showMessageDialog(null, "Hi there!");
+        
+        // some variations (not need these for any assignments)
+        
+        JOptionPane.showMessageDialog(null,
+                "Message 2, with a i icon",
+                "Information Dialog",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null,
+                "Message 3, with a ? icon",
+                "Question Dialog",
+                JOptionPane.QUESTION_MESSAGE);
         
         
         
