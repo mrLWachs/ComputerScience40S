@@ -61,6 +61,43 @@ public class ComputerScience30S
                 "Question Dialog",
                 JOptionPane.QUESTION_MESSAGE);
         
+        JOptionPane.showMessageDialog(null,
+                "Message 4, with a ! icon",
+                "Warning Dialog",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null,
+                "Message 5, with no icon",
+                "Plain Dialog",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // basic dialog for getting user inputs
+        JOptionPane.showInputDialog("enter something");
+        
+        // some variations on the input (not needed for assignents)
+        
+        JOptionPane.showInputDialog(null,
+                "Input Dialog 2",
+                "Information Input dialog",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Input Dialog 3",
+                "Question Input dialog",
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Input Dialog 4",
+                "Warning Input dialog",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Input Dialog 5",
+                "Plain Input dialog",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        
+        
         
         
     }
