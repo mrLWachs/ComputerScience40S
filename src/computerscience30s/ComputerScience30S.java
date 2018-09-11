@@ -84,29 +84,29 @@ public class ComputerScience30S
         // variations on input dialog (not needed for assignments)
         
         JOptionPane.showInputDialog(null,
-                "Input dialog 2",
-                "Input 2",
+                "Input dialog 2, change to a i icon",
+                "Information Input dialog",
                 JOptionPane.INFORMATION_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input dialog 3",
-                "Input 3",
+                "Input dialog 3, change to a ? icon",
+                "Question Input dialog",
                 JOptionPane.QUESTION_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input dialog 4",
-                "Input 4",
+                "Input dialog 4, change to a ! icon",
+                "Warning Input dialog",
                 JOptionPane.WARNING_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input dialog 5",
-                "Input 5",
+                "Input dialog 5, change to no icon",
+                "Plain Input dialog",
                 JOptionPane.PLAIN_MESSAGE);
         
         // input dialog where you set the text
         JOptionPane.showInputDialog(null,
-                "Input dialog 6",
-                "Input 6");
+                "Input dialog 6, setting the text area",
+                "Set the text area");
         
         // confirm dialog (you may never need this)
         
@@ -115,26 +115,26 @@ public class ComputerScience30S
         // variations on confirm dialog (not needed for assignments)
         
         JOptionPane.showConfirmDialog(null,
-                "Confirm 2",
-                "Confirm 2",
+                "Confirm 2, change to a i icon",
+                "Information Confirm dialog",
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.INFORMATION_MESSAGE);
         
         JOptionPane.showConfirmDialog(null,
-                "Confirm 3",
-                "Confirm 3",
+                "Confirm 3, change to a ? icon",
+                "Question Confirm dialog",
                 JOptionPane.YES_NO_CANCEL_OPTION,
                 JOptionPane.QUESTION_MESSAGE);
         
         JOptionPane.showConfirmDialog(null,
-                "Confirm 4",
-                "Confirm 4",
+                "Confirm 4, change to a ! icon",
+                "Warning Confirm dialog",
                 JOptionPane.DEFAULT_OPTION,
                 JOptionPane.WARNING_MESSAGE);
         
         JOptionPane.showConfirmDialog(null,
-                "Confirm 5",
-                "Confirm 5",
+                "Confirm 5, change to no icon",
+                "Plain Confirm dialog",
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.PLAIN_MESSAGE);
         
