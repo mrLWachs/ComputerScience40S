@@ -49,64 +49,96 @@ public class ComputerScience30S
         System.out.println("Make a slash, \\ is a slash");
         System.out.println("Make a new line, \n is newline");
         
-        // fancy dialog boxes for outputs        
+        // fancy dialog boxes for outputs ........ 
+        
+        // message dialog (shows user a message)
+        
         JOptionPane.showMessageDialog(null, "Hi there!");
         
-        // some variations (not need these for any assignments)
+        // variations on the message dialog (not needed for assignments)
         
         JOptionPane.showMessageDialog(null,
-                "Message 2, with a i icon",
+                "Message 2, change to a i icon",
                 "Information Dialog",
                 JOptionPane.INFORMATION_MESSAGE);
         
         JOptionPane.showMessageDialog(null,
-                "Message 3, with a ? icon",
+                "Message 3, change to a ? icon",
                 "Question Dialog",
                 JOptionPane.QUESTION_MESSAGE);
         
         JOptionPane.showMessageDialog(null,
-                "Message 4, with a ! icon",
+                "Message 4, change to a ! icon",
                 "Warning Dialog",
                 JOptionPane.WARNING_MESSAGE);
         
         JOptionPane.showMessageDialog(null,
-                "Message 5, with no icon",
+                "Message 5, change to no icon",
                 "Plain Dialog",
                 JOptionPane.PLAIN_MESSAGE);
         
-        // basic dialog for getting user inputs
-        JOptionPane.showInputDialog("enter something");
+        // input dialog box (used to get user input information)
         
-        // some variations on the input (not needed for assignents)
+        JOptionPane.showInputDialog("Enter something");
+        
+        // variations on input dialog (not needed for assignments)
         
         JOptionPane.showInputDialog(null,
-                "Input Dialog 2",
-                "Information Input dialog",
+                "Input dialog 2",
+                "Input 2",
                 JOptionPane.INFORMATION_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input Dialog 3",
-                "Question Input dialog",
+                "Input dialog 3",
+                "Input 3",
                 JOptionPane.QUESTION_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input Dialog 4",
-                "Warning Input dialog",
+                "Input dialog 4",
+                "Input 4",
                 JOptionPane.WARNING_MESSAGE);
         
         JOptionPane.showInputDialog(null,
-                "Input Dialog 5",
-                "Plain Input dialog",
+                "Input dialog 5",
+                "Input 5",
                 JOptionPane.PLAIN_MESSAGE);
         
-        // input option with set text        
+        // input dialog where you set the text
         JOptionPane.showInputDialog(null,
                 "Input dialog 6",
-                "The starting text set in the textbox");
+                "Input 6");
         
-        // confirm dialog box (may not need this)
+        // confirm dialog (you may never need this)
         
         JOptionPane.showConfirmDialog(null, "Confirm dialog");
+        
+        // variations on confirm dialog (not needed for assignments)
+        
+        JOptionPane.showConfirmDialog(null,
+                "Confirm 2",
+                "Confirm 2",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Confirm 3",
+                "Confirm 3",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Confirm 4",
+                "Confirm 4",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Confirm 5",
+                "Confirm 5",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.PLAIN_MESSAGE);
+        
+        
         
         
         
