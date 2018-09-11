@@ -2,9 +2,9 @@
 /** required package class namespace */
 package computerscience30s;
 
+/** required imports */
 import javax.swing.JOptionPane;
 
-/** required imports */
 
 /**
  * ComputerScience30S.java - the large in class example we continue to work 
