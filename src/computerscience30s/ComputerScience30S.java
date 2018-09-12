@@ -142,20 +142,20 @@ public class ComputerScience30S
         // VARIABLES:
         ////////////////////////////////////////////////////////////
         
-        // create a simple variable
-        boolean a = true;       // declares the variable
-        a = false;              // change (vary) the variable        
-        // booleans are just true and false
+        // simpliest variable
+        boolean a = true;           // declares the variable
+        a = false;                  // changes (varies) the variable
+        // booleans store only true or false
         
-        // numbers:
-        int    b = 0;           // whole #s, no decimals
-        double c = 0.0;         // allow for decimals
-        
-        // character:
-        char d = '@';
+        // number data types:
+        int    b = 0;               // whole #s, no decimals
+        double c = 0.0;             // allows for decimals
                 
-        // more complex type for words...
-        String e = "zebra";     // multiple characters (including numbers)
+        // character data type:
+        char d = '$';
+        
+        // more complex data type:
+        String e = "chicken bean";
         
         // output the variables:
         System.out.println("a = " + a);
@@ -163,7 +163,6 @@ public class ComputerScience30S
         System.out.println("c = " + c);
         System.out.println("d = " + d);
         System.out.println("e = " + e);
-        
         
         
         
