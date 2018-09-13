@@ -155,7 +155,7 @@ public class ComputerScience30S
         char d = '$';
         
         // more complex data type:
-        String e = "chicken bean";
+        String e = "words";
         
         // output the variables:
         System.out.println("a = " + a);
@@ -164,7 +164,50 @@ public class ComputerScience30S
         System.out.println("d = " + d);
         System.out.println("e = " + e);
         
+        // manipulate (change) variables
+        int x = 10;
+        System.out.println("x = " + x);
+        x = 20;
+        System.out.println("x = " + x);
+        int y = x + 10;
+        System.out.println("y = " + y);
+        y = y + 10;
+        System.out.println("y = " + y);
+        y++;
+        // shorthand for adding 1 to variable
+        System.out.println("y = " + y);
+        y--;
+        // shorthand for subtracting 1 from variable
+        System.out.println("y = " + y);
+        // y++ or y-- can still be y = y + 1, etc.
         
+        // optional shorthand
+        y += 10;        // means y = y + 10
+        y -= 20;        // means y = y - 20
+        y *= 2;         // means y = y * 2
+        y /= 10;        // means y = y / 10;
+        System.out.println("y = " + y);
+        
+        // modulus (gets the remainder) uses %
+        x = 28;
+        y = x % 5;
+        System.out.println("y = " + y);
+        
+        // constants (variables that don't change)
+        // constants are typed in ALL CAPITALS
+        final double  PI           = 3.141592635;
+        final int     PROBLEMS     = 99;
+        final char    YES          = 'y';
+        final boolean FOUND        = true;
+        final String  TEACHER_NAME = "Wachs";
+        
+        System.out.println(PI + " and " + 
+                           PROBLEMS + " and " +
+                           YES + " and " +
+                           FOUND + " and " +
+                           TEACHER_NAME);
+        
+        // converting between variable data types
         
         
         
