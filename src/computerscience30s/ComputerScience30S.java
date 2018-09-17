@@ -205,17 +205,17 @@ public class ComputerScience30S
 //                FOUND + " and " +
 //                TEACHER_NAME);
 //        
-//        // converting between data types
+//        // converting between data types:        
 //        int    f = 15;
 //        double g = f;
-//        g = 15.9;
-//        // when converting from double to int
-//        // need to cast the value, it
-//        // truncates (cut off) the deciaml part
-//        int    h = (int) g;    // made it 15
-//        double k = 2.9999999999;
+//        g = 15.8;
+//        int    h = (int) g;
+//        // casting means it "pretends" to be an int
+//        // this just ignores (truncates or cuts off)
+//        // the decimal part
+//        double k = 2.99999999999;
 //        int    l = (int)k;
-//        double m = (double)l;
+//        double m = (double)l;        
 //        System.out.println("f = " + f);
 //        System.out.println("g = " + g);
 //        System.out.println("h = " + h);
@@ -223,37 +223,79 @@ public class ComputerScience30S
 //        System.out.println("l = " + l);
 //        System.out.println("m = " + m);
 //        
-//        // characters can also be cast into numbers
+//        // cast characters into numbers:
 //        char n = 'a';
-//        int  o = (int)n;
+//        int o = (int)n;
 //        System.out.println("o = " + o);
 //        o++;
 //        char p = (char)o;
 //        System.out.println("p = " + p);
 //        // stores the values in the ASCII table
+        
+//        // use input dialog with a string
 //        
-//        // use input dialog with string
-//        
-//        String q = JOptionPane.showInputDialog("Enter anything");
+//        String q = JOptionPane.showInputDialog("Enter something");
 //        JOptionPane.showMessageDialog(null, q);
-//        // a string variable MUST be used with a input dialog
+//       
+//        // convert strings into numbers
+//        // use parsing (reading) 
 //        
-//        // convert (parsing) strings into numbers        
-//        String r = JOptionPane.showInputDialog("Enter integer");
+//        String r = JOptionPane.showInputDialog("Enter int");
 //        int s = Integer.parseInt(r);
-//        JOptionPane.showMessageDialog(null, "int was " + s);
+//        JOptionPane.showMessageDialog(null, s);
 //        
+//        // with a double
 //        String t = JOptionPane.showInputDialog("Enter double");
 //        double u = Double.parseDouble(t);
-//        JOptionPane.showMessageDialog(null, "double was " + u);
+//        JOptionPane.showMessageDialog(null, u);
+//
+//        // built-in string actions (functions, methods)        
+//        String word = "superman";
+//        int count = word.length();
+//        // the length of the characters in the string
+//        char letter = word.charAt(3);
+//        System.out.println("Letter at 3 is " + letter);
+//        // gets 1 character from the string at the specified
+//        // index number, which starts at zero
+//        
+//        // in Java words that start with a capital letter
+//        // have built-in actions because they are powerful,
+//        // because they are "classes" (cover in more
+//        // detail in a later unit)
         
-        // strings have built-in actions (methods/functions)
+//        // built-in Math library of code:        
+//        double answer1 = Math.abs(-1);      // absolute value
+//        double answer2 = Math.PI;           // the value of Pi
+//        double answer3 = Math.cos(0.5);     // cosine (sin, tan, and arcs also)
+//        double answer4 = Math.log(0.5);     // logarithms
+//        double answer5 = Math.pow(5, 3);    // 5 to the power of 3
+//        double answer6 = Math.sqrt(9);      // square root
+//        System.out.println("answer 1 = " + answer1);
+//        System.out.println("answer 2 = " + answer2);
+//        System.out.println("answer 3 = " + answer3);
+//        System.out.println("answer 4 = " + answer4);
+//        System.out.println("answer 5 = " + answer5);
+//        System.out.println("answer 6 = " + answer6);
+//        
+//        // the Math library and random numbers:
+//        double seed   = Math.random();
+//        double low    = 1.0;
+//        double high   = 10.0;
+//        double random = (high - low + 1.0) * seed + low;
+//        // random number formula 
+//        System.out.println("Random = " + random);
+//        // then convert the number
+//        int value = (int)random;
+//        System.out.println("Value = " + value);
         
-        String word = "spawny";
-        int count = word.length();  // the length of the characters
-        System.out.println(word + " has a count of " + count);
-        char letter = word.charAt(3);
-        System.out.println("Letter at 3 is " + letter);
+        ////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS:
+        ////////////////////////////////////////////////////////////
+        
+        
+
+        
+        
         
         
         
