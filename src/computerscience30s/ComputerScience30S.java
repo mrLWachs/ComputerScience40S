@@ -292,9 +292,48 @@ public class ComputerScience30S
         // CONDITIONAL STATEMENTS:
         ////////////////////////////////////////////////////////////
         
+        int value1 = 10, value2 = 10;
+        // a option for making 2 variables on 1 line
         
+        // simple if statement, when something
+        // is true, it checks 1 thing
+        if (value1 == value2) {
+            System.out.println("Equal");
+        }
 
+        // if with an else, when something is both
+        // true and false, it checks 2 things        
+        double value3 = 1.45, value4 = 1.5;        
+        if (value3 < value4) {
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than, or equal");
+        }
         
+        // use chars and some shorthand for conditional
+        // statements (not recommended), means when
+        // the code is one line, you don't need the { }
+        // brackets        
+        char value5 = 'A', value6 = 'a';        
+        if (value5 != value6) System.out.println("Not equal");
+        
+        // use the else if for multiple cases of more than
+        // 2 things. Same as a switch statement (which I 
+        // do not recommend) using strings
+        
+        String word1 = "cat";
+        String word2 = "cAt";
+        // equals is more complicated with strings
+        if (word1.equals(word2)) {
+            System.out.println("Equal, same case");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("Equal, different cases");
+        }
+        else {
+            System.out.println("Not equal");
+        }
         
         
         
