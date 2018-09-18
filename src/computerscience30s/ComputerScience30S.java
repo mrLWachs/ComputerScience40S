@@ -288,54 +288,108 @@ public class ComputerScience30S
 //        int value = (int)random;
 //        System.out.println("Value = " + value);
         
+//        ////////////////////////////////////////////////////////////
+//        // CONDITIONAL STATEMENTS:
+//        ////////////////////////////////////////////////////////////
+//        
+//        int value1 = 10, value2 = 10;
+//        // a option for making 2 variables on 1 line
+//        
+//        // simple if statement, when something
+//        // is true, it checks 1 thing
+//        if (value1 == value2) {
+//            System.out.println("Equal");
+//        }
+//
+//        // if with an else, when something is both
+//        // true and false, it checks 2 things        
+//        double value3 = 1.45, value4 = 1.5;        
+//        if (value3 < value4) {
+//            System.out.println("Less than");
+//        }
+//        else {
+//            System.out.println("Greater than, or equal");
+//        }
+//        
+//        // use chars and some shorthand for conditional
+//        // statements (not recommended), means when
+//        // the code is one line, you don't need the { }
+//        // brackets        
+//        char value5 = 'A', value6 = 'a';        
+//        if (value5 != value6) System.out.println("Not equal");
+//        
+//        // use the else if for multiple cases of more than
+//        // 2 things. Same as a switch statement (which I 
+//        // do not recommend) using strings
+//        
+//        String word1 = "cat";
+//        String word2 = "cAt";
+//        // equals is more complicated with strings
+//        if (word1.equals(word2)) {
+//            System.out.println("Equal, same case");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("Equal, different cases");
+//        }
+//        else {
+//            System.out.println("Not equal");
+//        }
+//        
+//        // optional (shorthand) for combining logic
+//        // using "and" "or"        
+//        int    age = 20;
+//        double iq  = 0.6;        
+//        if (age >= 15 && iq >= 0.5) { 
+//        // && means "and"
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 15 || iq >= 0.5) { 
+//        // || means "or"
+//            System.out.println("Try again later");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
+        
         ////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS:
+        // LOOPING:
         ////////////////////////////////////////////////////////////
         
-        int value1 = 10, value2 = 10;
-        // a option for making 2 variables on 1 line
-        
-        // simple if statement, when something
-        // is true, it checks 1 thing
-        if (value1 == value2) {
-            System.out.println("Equal");
-        }
-
-        // if with an else, when something is both
-        // true and false, it checks 2 things        
-        double value3 = 1.45, value4 = 1.5;        
-        if (value3 < value4) {
-            System.out.println("Less than");
-        }
-        else {
-            System.out.println("Greater than, or equal");
+        // simple "while" loop
+        int counter = 1;
+        while (counter <= 50) {
+            System.out.println("counter = " + counter);
+            counter++;
         }
         
-        // use chars and some shorthand for conditional
-        // statements (not recommended), means when
-        // the code is one line, you don't need the { }
-        // brackets        
-        char value5 = 'A', value6 = 'a';        
-        if (value5 != value6) System.out.println("Not equal");
-        
-        // use the else if for multiple cases of more than
-        // 2 things. Same as a switch statement (which I 
-        // do not recommend) using strings
-        
-        String word1 = "cat";
-        String word2 = "cAt";
-        // equals is more complicated with strings
-        if (word1.equals(word2)) {
-            System.out.println("Equal, same case");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("Equal, different cases");
-        }
-        else {
-            System.out.println("Not equal");
+        // while loop with a string
+        String password = JOptionPane.showInputDialog("Enter password");        
+        while (password.equals("1234")) {
+            System.out.println("Cannot use this!");
+            password = JOptionPane.showInputDialog("Enter password");
         }
         
+        // second version of the while loop, very rarely used,
+        // tests at the bottom of the loop, this loop always
+        // runs at least once        
+        do {
+            password = JOptionPane.showInputDialog("Enter password");
+        } while(password.equals("qwerty") == false);
         
+        // the "for" loop, designed for counting        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
+        }
+        
+        // second loop with variations
+        for (int j = 10; j <= 100; j=j+5) {
+            System.out.println("j = " + j);
+        }
+        
+        // for loop that counts down
+        for (int i = 100; i >= 0; i--) {
+            System.out.println("i = " + i);
+        }
         
         
         
