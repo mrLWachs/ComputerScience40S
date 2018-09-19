@@ -334,7 +334,7 @@ public class ComputerScience30S
         //////////////////////////////////////////////////////////////////////
         // LOOPING:
         //////////////////////////////////////////////////////////////////////
-        
+                        
         // simple "while" loop
         int counter = 1;
         while (counter <= 50) {
@@ -370,8 +370,26 @@ public class ComputerScience30S
             System.out.println("i = " + i);
         }
         
-        
-        
+        //////////////////////////////////////////////////////////////////////
+        // ASSIGNMENT EXAMPLE:
+        //////////////////////////////////////////////////////////////////////
+         
+        // show a starting screen to welcome the user
+        JOptionPane.showMessageDialog(null, "Welcome to the"
+                + " dog age convertor!");
+        // get the human age from the user (ask them)
+        String userInput = JOptionPane.showInputDialog("Enter "
+                + "your human age:");
+        // convert that string into a number
+        int humanAge = Integer.parseInt(userInput);
+        // use a math formula to change it to dog years
+        int dogAge = humanAge * 7;
+        // show the answer to the user
+        JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
+        // show a ending screen (dialog)
+        JOptionPane.showMessageDialog(null, "Thanks for using the"
+                + " dog age convertor!");
+
     }
     
 }
