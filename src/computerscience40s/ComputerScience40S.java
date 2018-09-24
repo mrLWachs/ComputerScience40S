@@ -15,10 +15,8 @@ public class ComputerScience40S
 {
 
     public static void main(String[] args) {
-        System.out.println("Starting CS40S example...");
-        
-        new Tester();
-                
+        System.out.println("Starting CS40S example...");        
+        new Tester();                
         System.out.println("Completed CS40S example!");
     }
     
