@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file RecursionTest.java
- *  for project ComputerScience40S on 24-Sep-2018 at 10:34:09 AM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing;
 
 
-
 /**
- * RecursionTest.java - 
+ * RecursionTest.java - the unit test to test the concept of recursion
  *
  * @author Mr. Wachs 
  * @since 24-Sep-2018 
@@ -18,13 +12,13 @@ package testing;
 public class RecursionTest 
 {
 
+    /**
+     * Default class constructor, runs on instantiation
+     */
     public RecursionTest() {
-        System.out.println("Recursion testing started...");
-        
-        System.out.println("...");
-        
+        System.out.println("Recursion testing started...");        
+        System.out.println("...");        
         System.out.println("Recusion testing complete!");
-    }
-    
+    }    
     
 }
