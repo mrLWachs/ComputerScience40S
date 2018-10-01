@@ -26,6 +26,11 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         
+        
+    }
+    
+    public static void unit1() {
+        
         //////////////////////////////////////////////////////////////////////
         // JAVA BASICS:
         //////////////////////////////////////////////////////////////////////
@@ -390,6 +395,7 @@ public class ComputerScience30S
         JOptionPane.showMessageDialog(null, "Thanks for using the"
                 + " dog age convertor!");
 
+        
     }
     
 }
