@@ -26,7 +26,15 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         
+        // code to "jump" to our method
+        // "calling" the method
+        //unit1();
         
+        // in NetBeans, you can write the
+        // call to a method first!
+        // and NetBeans will help you 
+        // write the method signature        
+        unit2();
     }
     
     public static void unit1() {
@@ -396,6 +404,24 @@ public class ComputerScience30S
                 + " dog age convertor!");
 
         
+    }
+
+    private static void unit2() {
+        System.out.println("Methods unit started...");
+        
+        drawStar();
+        draw("$");
+        draw("@");
+        
+        System.out.println("Methods unit complete!");
+    }
+
+    private static void drawStar() {
+        draw("*");
+    }
+
+    private static void draw(String item) {
+        System.out.println(item);
     }
     
 }
