@@ -409,9 +409,12 @@ public class ComputerScience30S
     private static void unit2() {
         System.out.println("Methods unit started...");
         
-        drawStar();
-        draw("$");
-        draw("@");
+        drawStar(); // calling a method no parameters
+        draw("$");  // calling method with 1 parameter
+        draw("@");  // calling same method, different argument
+        
+        draws("dalmations",101);
+        draws("problems",99);
         
         System.out.println("Methods unit complete!");
     }
@@ -422,6 +425,12 @@ public class ComputerScience30S
 
     private static void draw(String item) {
         System.out.println(item);
+    }
+
+    private static void draws(String item, int times) {
+        for (int i = 0; i < times; i++) {
+            draw(item);
+        }
     }
     
 }
