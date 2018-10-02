@@ -25,16 +25,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        // code to "jump" to our method
-        // "calling" the method
-        //unit1();
-        
-        // in NetBeans, you can write the
-        // call to a method first!
-        // and NetBeans will help you 
-        // write the method signature        
+        System.out.println("Computer Science 30S Example started...");               
+        // unit1();
         unit2();
+        System.out.println("Computer Science 30S Example completed!");
     }
     
     public static void unit1() {
@@ -49,6 +43,7 @@ public class ComputerScience30S
             This is another way to comment, but it opens a multiple line 
             comment that continues until a star and a slash is reached
         */        
+        System.out.println("Java basics started...");
         
         System.out.print("Hello World..."); // simple output
         
@@ -403,20 +398,24 @@ public class ComputerScience30S
         JOptionPane.showMessageDialog(null, "Thanks for using the"
                 + " dog age convertor!");
 
-        
+        System.out.println("Java basics completed!");
     }
 
     private static void unit2() {
         System.out.println("Methods unit started...");
         
-        drawStar(); // calling a method no parameters
-        draw("$");  // calling method with 1 parameter
-        draw("@");  // calling same method, different argument
+        // code to "jump" to our method, "calling" the method 
+        drawStar();         // calling a method with no parameters
+        
+        // In NetBeans, you can write the call to a method first and NetBeans 
+        // will help you write the method signature 
+        draw("$");          // calling a method with 1 parameter
+        draw("@");          // calling th same method, with a different argument
         
         draws("dalmations",101);
         draws("problems",99);
         
-        System.out.println("Methods unit complete!");
+        System.out.println("Methods unit completed!");
     }
 
     private static void drawStar() {
