@@ -30,6 +30,9 @@ public class ComputerScience30S
         System.out.println("Computer Science 30S Example completed!");
     }
     
+    /**
+     * The example code for this unit
+     */
     public static void unit1() {        
         //////////////////////////////////////////////////////////////////////
         // JAVA BASICS:
@@ -399,35 +402,96 @@ public class ComputerScience30S
         System.out.println("Java basics completed!");
     }
 
+    /**
+     * The example code for this unit
+     */
     private static void unit2() {
-        System.out.println("Methods unit started...");
-        
+        System.out.println("Methods unit started...");        
         // code to "jump" to our method, "calling" the method 
-        drawStar();         // calling a method with no parameters
-        
+        drawStar();         // calling a method with no parameters        
         // In NetBeans, you can write the call to a method first and NetBeans 
         // will help you write the method signature 
         draw("$");          // calling a method with 1 parameter
-        draw("@");          // calling same method, with a different argument
-        
+        draw("@");          // calling same method, with a different argument        
         draws("dalmations",101);            // multiple arguments
-        draws("problems",99);               // seperate with commas
-        
+        draws("problems",99);               // seperate with commas        
+        int number = giveMeNumber();        // method returning       
+        draw("number is " + number);        
+        output("Hello");            // overloaded methods are methods with the
+        output("Hi","Example");     // same name but different parameters
         System.out.println("Methods unit completed!");
     }
 
+    /**
+     * Draws a star
+     */
     private static void drawStar() {
         draw("*");
     }
 
+    /**
+     * Draws an item 
+     * @param item the item to draw
+     */
     private static void draw(String item) {
         System.out.println(item);
     }
 
+    /**
+     * Draws an item on the screen multiple times
+     * 
+     * @param item the item to draw
+     * @param times the number of times to draw the item
+     */
     private static void draws(String item, int times) {
         for (int i = 0; i < times; i++) {
             draw(item);
         }
     }
+
+    /**
+     * Gives a random number
+     * 
+     * @return a random number between 1 - 100
+     */
+    private static int giveMeNumber() {
+        return random(random(1,10),random(10,100));
+    }
     
+    /**
+     * Generates a random number
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return the generated number
+     */
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        int    answer = (int)number;
+        return answer;
+    }
+
+    /**
+     * Display the text in a dialog box
+     * 
+     * @param text the text to display
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+
+    /**
+     * Display the text in a dialog box with a title
+     * 
+     * @param text the text to display
+     * @param title the title at the top of the dialog
+     */
+    private static void output(String text, String title) {
+        JOptionPane.showMessageDialog(null, text,
+                title,JOptionPane.INFORMATION_MESSAGE);
+    }
+        
 }
