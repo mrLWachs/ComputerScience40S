@@ -1,4 +1,3 @@
-
 /** required package class namespace */
 package computerscience30s;
 
@@ -26,13 +25,12 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         System.out.println("Computer Science 30S Example started...");               
-        // unit1();
+//        unit1();
         unit2();
         System.out.println("Computer Science 30S Example completed!");
     }
     
-    public static void unit1() {
-        
+    public static void unit1() {        
         //////////////////////////////////////////////////////////////////////
         // JAVA BASICS:
         //////////////////////////////////////////////////////////////////////
@@ -410,10 +408,10 @@ public class ComputerScience30S
         // In NetBeans, you can write the call to a method first and NetBeans 
         // will help you write the method signature 
         draw("$");          // calling a method with 1 parameter
-        draw("@");          // calling th same method, with a different argument
+        draw("@");          // calling same method, with a different argument
         
-        draws("dalmations",101);
-        draws("problems",99);
+        draws("dalmations",101);            // multiple arguments
+        draws("problems",99);               // seperate with commas
         
         System.out.println("Methods unit completed!");
     }
