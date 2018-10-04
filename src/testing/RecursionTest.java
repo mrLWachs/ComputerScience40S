@@ -17,27 +17,30 @@ public class RecursionTest {
     public RecursionTest() {
         System.out.println("Recursion testing started...");
 
-        int minimum = -1;
-        int maximum = 170;
-                
-        System.out.println("Factorials....");
+        int maximum = 500;
+        int minimum = 0;
+        
+        System.out.println("Factorials...");
         for (int number = minimum; number <= maximum; number++) {
             double answer = Calculator.factorial(number);
-            System.out.println("Number " + number + " factorial = \t"
-                    + answer);
+            System.out.println("Number " + number +
+                           " is factorial " + answer);
         }
         
-        maximum =  143;
-        minimum = -maximum;        
+        System.out.println("Powers...");
+        maximum = 142;
+        minimum = -maximum;
         
-        System.out.println("Powers....");        
         for (int base = minimum; base <= maximum; base++) {
             for (int exponent = minimum; exponent <= maximum; exponent++) {
                 double answer = Calculator.power(base, exponent);
-                System.out.println("Base " + base + " with exponent " +
-                        exponent + " = \t" + answer);                
+                System.out.println("Base " + base +
+                                   " to the exponent " + exponent + 
+                                   " = \t" + answer);
             }
         }
+        
+                
         
         System.out.println("Recusion testing complete!");
     }
