@@ -1,4 +1,3 @@
-
 /** required package class namespace */
 package testing.advancedclasses;
 
@@ -12,6 +11,25 @@ package testing.advancedclasses;
 public class Student extends Person
 {
 
-    public int studentNumber;
+    private int studentNumber;
     
+    /**
+     * Class constructor sets class properties
+     * 
+     * @param studentNumber the student number of this high school student
+     */
+    public Student(int studentNumber) {
+        super();
+        this.studentNumber = studentNumber;
+    }
+    
+    /**
+     * Outputs data on this person to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();
+        System.out.println("\tStudent #" + studentNumber);
+    }
+        
 }
