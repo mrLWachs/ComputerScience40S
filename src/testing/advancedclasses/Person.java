@@ -11,16 +11,18 @@ package testing.advancedclasses;
 public class Person 
 {
     
-    private String name;    // encapsulated property
-    public int age;         // property
+    private   String  name;             // encapsulated property
+    public    int     age;              // public property    
+    protected boolean isMale;           // property available to child classes
     
     /**
      * Default constructor for the class (constructor methods use the same 
      * name as the class and has NO return type - not even void)
      */
     public Person() {
-        name = "Jane doe";
-        age  = 0;
+        name   = "Jane doe";
+        age    = 0;
+        isMale = false;
     }
     
     /**
@@ -28,7 +30,9 @@ public class Person
      * to the screen)
      */
     public void talk() {
-        System.out.println("Person " + name + " is " + age);
+        System.out.println("Person " + name + 
+                           " is " + age +
+                           " and is a male is " + isMale);
     }
 
 }

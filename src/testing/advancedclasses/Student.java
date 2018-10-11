@@ -20,6 +20,7 @@ public class Student extends Person
      */
     public Student(int studentNumber) {
         super();
+        this.isMale        = true;              // modify protected member
         this.studentNumber = studentNumber;
     }
     
