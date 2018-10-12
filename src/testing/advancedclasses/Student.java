@@ -29,8 +29,18 @@ public class Student extends Person
      */
     @Override
     public void talk() {
-        super.talk();
-        System.out.println("\tStudent #" + studentNumber);
+        System.out.println(this.toString());
+    }
+      
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return super.toString() + "\n\tStudent #" + 
+                studentNumber;
     }
         
 }

@@ -28,6 +28,18 @@ public class AdvancedClassesTest
         sharkBoy.talk();                                // call talk     
         lavaGirl.talk();                                // call talk   
         
+        // Using the built-in Object class and it's methods
+        Object object1 = new Object();                  // instantiate objects
+        Object object2 = new Object();
+        Object object3 = object2;
+        System.out.println(object1.toString());         // use ToString
+        System.out.println(object2.toString());
+        System.out.println(object3.toString());
+        if (object1.equals(object2)) System.out.println("1 == 2");
+        else System.out.println("1 != 2");              // compare
+        if (object2.equals(object3)) System.out.println("2 == 3");
+        else System.out.println("2 != 3");
+        
         
         System.out.println("Advanced Classes testing complete!");        
     }
