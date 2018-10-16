@@ -55,10 +55,42 @@ public class Person
     public boolean equals(Object object) {
         Person person = (Person)object; 
         if (person.isMale != this.isMale)  return false;
-        if (person.name.equals(this.name)) return false;
-        // check age?
-        
+        if (person.age != this.age)        return false;
+        if (!person.getName().equals(this.getName()))
+            return false;
         return true;
     }
     
+    /**
+     * Accessor method to "see" the name
+     * 
+     * @return the private property
+     */
+    public String getName() {
+        return name;
+    }
+    
+    /**
+     * Mutator method to "change" the name
+     * 
+     * @param name to mutate the private property
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    /**
+     * Creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        Person person = new Person();
+        person.age    = this.age;
+        person.isMale = this.isMale;
+        person.setName(this.getName());
+        return person;
+    }
+        
 }

@@ -42,5 +42,30 @@ public class Student extends Person
         return super.toString() + "\n\tStudent #" + 
                 studentNumber;
     }
-        
+    
+    /**
+     * Determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        Student student = (Student)object;
+        if (!super.equals(object)) return false;
+        if (student.getStudentNumber() !=
+            this.getStudentNumber()) 
+            return false;
+        return true;
+    }    
+    
+    /**
+     * Accessor method to "see" the student number
+     * 
+     * @return the private property
+     */
+    public int getStudentNumber() {
+        return studentNumber;
+    }
+            
 }
