@@ -12,35 +12,33 @@ package numbers;
 public class Calculator 
 {
 
-    public static double factorial(int number) {
-        // base case
-        if (number <= 1) {
-            return 1;
-        }
-        else {
-            return number * factorial(number-1);
-        }
+    /**
+     * Calculates the factorial of a number
+     * 
+     * @param number the value to calculate
+     * @return the factorial of that number
+     */
+    public static long factorial(int number) {
+        if      (number == 0) return 1;                            // base case
+        else if (number < 0)  return Integer.MIN_VALUE;            // base case
+        else                  return number * factorial(number-1);  
         // recursive case
     }
-    
+
     /**
-     * Calculates a power
+     * Calculates the power of a base to it's exponent 
      * 
-     * @param base the base of the power
-     * @param exponent the exponent of the power
-     * @return the answer (the power itself)
+     * @param base the power's base
+     * @param exponent the power's exponent
+     * @return the base ^ exponent
      */
     public static double power(int base, int exponent) {
-        //base case
-        if      (exponent == 0) return 1;
-        else if (exponent == 1) return base;
-        else if (exponent <  0) 
-            return 1 / power(base, Math.abs(exponent));
-        else 
-            return base * power(base,exponent-1);
-        // recursive case
+        if      (exponent <  0)                         // recursive case
+            return 1 / power(base,Math.abs(exponent));
+        else if (exponent == 0) return 1;               // base case
+        else if (exponent == 1) return base;            // base case
+        else                                            // recursive case
+            return base * power(base, exponent-1);  
     }
-    
-    
     
 }

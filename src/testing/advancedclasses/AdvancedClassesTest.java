@@ -41,7 +41,7 @@ public class AdvancedClassesTest
         else System.out.println("2 != 3");
         
         
-        System.out.println("Advanced Classes testing complete!");        
+        System.out.println("Advanced Classes testing complete!");            
     }
     
 
