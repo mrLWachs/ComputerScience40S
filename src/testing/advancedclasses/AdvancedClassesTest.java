@@ -41,8 +41,18 @@ public class AdvancedClassesTest
         if (object2.equals(object3)) System.out.println("2 == 3");
         else System.out.println("2 != 3");
         
-        
-        
+        // testing toString, equals, clone:        
+        Person peter = new Person("Peter Parker",23,true);
+        Person jimmy = new Person("Jimmy Neutron",12,true);        
+        System.out.println(peter.toString());
+        System.out.println(jimmy.toString());        
+        Person ben = peter.clone();        
+        System.out.println(ben.toString());        
+        if (peter.equals(jimmy))    System.out.println("peter = jimmy");
+        else if (peter.equals(ben)) System.out.println("peter = ben");
+        else                        System.out.println("!=");
+        Student evan = new Student("Evan Dore",18,true,8675309);
+                
         
         System.out.println("Advanced Classes testing complete!");            
     }

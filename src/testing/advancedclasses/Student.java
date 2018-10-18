@@ -25,6 +25,19 @@ public class Student extends Person
     }
     
     /**
+     * Class constructor, sets class properties
+     * 
+     * @param name the name of this student
+     * @param age the age of this student
+     * @param isMale the gender of this student
+     * @param studentNumber the student number of this student
+     */
+    public Student(String name, int age, boolean isMale, int studentNumber) {
+        super(name,age,isMale);
+        this.studentNumber = studentNumber;
+    }
+        
+    /**
      * Outputs data on this person to the screen
      */
     @Override
@@ -65,6 +78,20 @@ public class Student extends Person
         if (student.getStudentNumber() != this.getStudentNumber()) 
             return false;
         return true;
-    }    
-            
+    }   
+    
+    /**
+     * Creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        Student student = new Student(studentNumber);
+        student.age    = this.age;
+        student.isMale = this.isMale;
+        student.setName(this.getName());
+        return student;
+    }
+    
 }

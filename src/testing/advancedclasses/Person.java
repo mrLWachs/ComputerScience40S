@@ -26,6 +26,19 @@ public class Person
     }
     
     /**
+     * Class constructor, sets class properties
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param isMale the gender of this person
+     */
+    public Person(String name, int age, boolean isMale) {
+        this.name   = name;
+        this.age    = age;
+        this.isMale = isMale;        
+    }
+        
+    /**
      * Action method to have the person talk (outputs data on this person 
      * to the screen)
      */
@@ -58,9 +71,7 @@ public class Person
      */
     @Override
     public String toString() {
-        return "Person " + name + 
-               " is " + age +
-               " and is a male is " + isMale;
+        return "Person " + name + " is " + age + " and is a male is " + isMale;
     }
         
     /**
