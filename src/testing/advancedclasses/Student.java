@@ -31,7 +31,16 @@ public class Student extends Person
     public void talk() {
         System.out.println(this.toString());
     }
-      
+              
+    /**
+     * Accessor method to "see" the student number
+     * 
+     * @return the private property
+     */
+    public int getStudentNumber() {
+        return studentNumber;
+    }
+    
     /**
      * String representation of this object
      *
@@ -53,19 +62,9 @@ public class Student extends Person
     public boolean equals(Object object) {
         Student student = (Student)object;
         if (!super.equals(object)) return false;
-        if (student.getStudentNumber() !=
-            this.getStudentNumber()) 
+        if (student.getStudentNumber() != this.getStudentNumber()) 
             return false;
         return true;
     }    
-    
-    /**
-     * Accessor method to "see" the student number
-     * 
-     * @return the private property
-     */
-    public int getStudentNumber() {
-        return studentNumber;
-    }
             
 }

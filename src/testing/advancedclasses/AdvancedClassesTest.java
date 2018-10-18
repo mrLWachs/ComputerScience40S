@@ -23,6 +23,7 @@ public class AdvancedClassesTest
         person.age = 50;                                // modify property        
         person.talk();                                  // call talk
         bart.talk();                                    // call talk        
+        
         Student sharkBoy = new Student(100);            // create student object
         Student lavaGirl = new Student(101);            // create another object        
         sharkBoy.talk();                                // call talk     
@@ -39,6 +40,8 @@ public class AdvancedClassesTest
         else System.out.println("1 != 2");              // compare
         if (object2.equals(object3)) System.out.println("2 == 3");
         else System.out.println("2 != 3");
+        
+        
         
         
         System.out.println("Advanced Classes testing complete!");            

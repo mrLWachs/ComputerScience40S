@@ -32,6 +32,24 @@ public class Person
     public void talk() {
         System.out.println(this.toString());;
     }
+            
+    /**
+     * Accessor method to "see" the name
+     * 
+     * @return the private property
+     */
+    public String getName() {
+        return name;
+    }
+    
+    /**
+     * Mutator method to "change" the name
+     * 
+     * @param name to mutate the private property
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
     
     /**
      * String representation of this object
@@ -59,24 +77,6 @@ public class Person
         if (!person.getName().equals(this.getName()))
             return false;
         return true;
-    }
-    
-    /**
-     * Accessor method to "see" the name
-     * 
-     * @return the private property
-     */
-    public String getName() {
-        return name;
-    }
-    
-    /**
-     * Mutator method to "change" the name
-     * 
-     * @param name to mutate the private property
-     */
-    public void setName(String name) {
-        this.name = name;
     }
     
     /**
