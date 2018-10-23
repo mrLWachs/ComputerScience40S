@@ -51,10 +51,23 @@ public class AdvancedClassesTest
         if (peter.equals(jimmy))    System.out.println("peter = jimmy");
         else if (peter.equals(ben)) System.out.println("peter = ben");
         else                        System.out.println("!=");
-        Student evan = new Student("Evan Dore",18,true,8675309);
+        
+        Student jeff = new Student("Jeff Moore", 21, true, 21);
+        Student jenko = new Student("Jenko Jones", 22, true, 22);        
+        System.out.println(jeff.toString());
+        System.out.println(jenko.toString());        
+        Student bob = jeff.clone();        
+        System.out.println(bob.toString());        
+        if (jeff.equals(bob))    System.out.println("jeff == bob");
+        if (!jeff.equals(jenko)) System.out.println("jeff != jenko");
                 
+        Teacher teacher = new Teacher("Mr. Stein", true);
+        teacher.add(jenko);
+        teacher.add(jeff);
+        teacher.add(sharkBoy);
+        teacher.add(lavaGirl);
         
-        
+        System.out.println(teacher.toString());
         
         System.out.println("Advanced Classes testing complete!");            
     }

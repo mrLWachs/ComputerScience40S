@@ -26,8 +26,21 @@ public class Teacher extends Person
     public Teacher(String name, boolean isMale) {
         super(name,35,isMale);
         MAX_STUDENTS = 150;
+        count        = 0;
+        students     = new Student[MAX_STUDENTS];
     }
 
+    /**
+     * Adds a student to this teacher's collection
+     * 
+     * @param student the student to add
+     */
+    public void add(Student student) {
+        students[count] = student;
+        count++;
+        if (count >= MAX_STUDENTS) count = 0;
+    }
+        
     /**
      * String representation of this object
      *
@@ -35,7 +48,7 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        return super.toString();
+        return "Teacher " + super.toString();
     }
         
     /**

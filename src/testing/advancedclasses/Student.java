@@ -87,11 +87,11 @@ public class Student extends Person
      */
     @Override
     public Student clone() {
-        Student student = new Student(studentNumber);
-        student.age    = this.age;
-        student.isMale = this.isMale;
-        student.setName(this.getName());
-        return student;
+        return new Student(
+                super.getName(), 
+                super.age, 
+                super.isMale, 
+                studentNumber);
     }
     
 }
