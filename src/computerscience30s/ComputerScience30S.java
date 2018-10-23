@@ -26,7 +26,8 @@ public class ComputerScience30S
     public static void main(String[] args) {
         System.out.println("Computer Science 30S Example started...");               
 //        unit1();
-        unit2();
+//        unit2();
+        unit3();
         System.out.println("Computer Science 30S Example completed!");
     }
     
@@ -492,6 +493,51 @@ public class ComputerScience30S
     private static void output(String text, String title) {
         JOptionPane.showMessageDialog(null, text,
                 title,JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private static void unit3() {
+        System.out.println("Arrays unit starting");
+        
+        // creating a variable for comparison
+        int size = 10;
+        
+        // create an array with 10 spots and
+        // it automatically indexes each spot
+        // starting with index 0, and each
+        // spot has undefined contents
+        int[] array = new int[size];        
+        
+        // put stuff in the individual elements:        
+        array[0] = 50;
+        array[1] = -10;
+        array[2] = 0;
+        array[3] = 5;
+        array[4] = 5;
+        array[5] = 555;
+        array[6] = 5555;
+        array[7] = 55555;
+        array[8] = 555555;
+        array[9] = 5555555;        
+        
+        //array[10] = 49;
+        // outside the bounds of the array
+        //array[-1] = 50;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        System.out.println("Arrays unit complete!");
     }
         
 }
