@@ -23,8 +23,8 @@ public class Teacher extends Person
      * @param name the name of this teacher
      * @param isMale the gender of this teacher
      */
-    public Teacher(String name, boolean isMale) {
-        super(name,35,isMale);
+    public Teacher(String name, int age, boolean isMale) {
+        super(name,age,isMale);
         MAX_STUDENTS = 150;
         count        = 0;
         students     = new Student[MAX_STUDENTS];
@@ -48,7 +48,9 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        return "Teacher " + super.toString();
+        return "Teacher " + super.toString() + 
+                " and teaches " + count + 
+                " students out of " + MAX_STUDENTS;
     }
         
     /**
@@ -59,7 +61,15 @@ public class Teacher extends Person
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        Teacher that = (Teacher)object;
+        if (!super.equals(that))      return false;
+        if (this.count != that.count) return false;
+        for (int i = 0; i < count; i++) {
+            Student a = this.students[i];
+            Student b = that.students[i];
+            if (!a.equals(b)) return false;            
+        }
+        return true;
     }
     
     /**
@@ -69,7 +79,14 @@ public class Teacher extends Person
      */
     @Override
     public Teacher clone() {
-        return this;
+        Teacher teacher = new Teacher(
+                this.getName(), 
+                age, 
+                isMale);
+        for (int i = 0; i < count; i++) {
+            teacher.add(this.students[i].clone());
+        }
+        return teacher;
     }
 
 }

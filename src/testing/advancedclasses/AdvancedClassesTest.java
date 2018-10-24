@@ -61,7 +61,7 @@ public class AdvancedClassesTest
         if (jeff.equals(bob))    System.out.println("jeff == bob");
         if (!jeff.equals(jenko)) System.out.println("jeff != jenko");
                 
-        Teacher teacher = new Teacher("Mr. Stein", true);
+        Teacher teacher = new Teacher("Mr. Stein",45,true);
         teacher.add(jenko);
         teacher.add(jeff);
         teacher.add(sharkBoy);
