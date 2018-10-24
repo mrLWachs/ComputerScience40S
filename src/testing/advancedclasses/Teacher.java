@@ -21,6 +21,7 @@ public class Teacher extends Person
      * Class constructor sets class properties
      * 
      * @param name the name of this teacher
+     * @param age the age of this teacher
      * @param isMale the gender of this teacher
      */
     public Teacher(String name, int age, boolean isMale) {
