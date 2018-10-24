@@ -48,9 +48,16 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        return "Teacher " + super.toString() + 
+        String text = 
+                "Teacher " + super.toString() + 
                 " and teaches " + count + 
-                " students out of " + MAX_STUDENTS;
+                " out of " + MAX_STUDENTS +
+                " students:";
+        for (int i = 0; i < count; i++) {
+            text += "\n\t" + i + ": " + 
+                    students[i].toString();
+        }                
+        return text;
     }
         
     /**

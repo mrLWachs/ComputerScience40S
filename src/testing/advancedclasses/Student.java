@@ -61,8 +61,8 @@ public class Student extends Person
      */
     @Override
     public String toString() {
-        return super.toString() + "\n\tStudent #" + 
-                studentNumber;
+        return "Student " + super.toString() + 
+                " with Student #" + studentNumber;
     }
     
     /**
