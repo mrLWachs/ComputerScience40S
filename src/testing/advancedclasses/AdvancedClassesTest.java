@@ -18,16 +18,17 @@ public class AdvancedClassesTest
         System.out.println("Advanced Classes testing started...");
         
         // instantiating (creating an instances of) Person objects
-        Person person = new Person();                   // create person object        
-        Person bart = new Person();                     // create another object        
-        person.age = 50;                                // modify property        
-        person.talk();                                  // call talk
-        bart.talk();                                    // call talk        
+        Person person1 = new Person();                  // create person object        
+        Person person2 = new Person();                  // create another object        
+        person1.age = 50;                               // modify property        
+        person1.talk();                                 // call talk
+        person2.talk();                                 // call talk        
         
-        Student sharkBoy = new Student(100);            // create student object
-        Student lavaGirl = new Student(101);            // create another object        
-        sharkBoy.talk();                                // call talk     
-        lavaGirl.talk();                                // call talk   
+        // creating student objects
+        Student student1 = new Student(100);            // create student object
+        Student student2 = new Student(101);            // create another object        
+        student1.talk();                                // call talk     
+        student2.talk();                                // call talk   
         
         // Using the built-in Object class and it's methods
         Object object1 = new Object();                  // instantiate objects
@@ -37,51 +38,50 @@ public class AdvancedClassesTest
         System.out.println(object2.toString());
         System.out.println(object3.toString());
         if (object1.equals(object2)) System.out.println("1 == 2");
-        else System.out.println("1 != 2");              // compare
+        else                         System.out.println("1 != 2");  
         if (object2.equals(object3)) System.out.println("2 == 3");
-        else System.out.println("2 != 3");
+        else                         System.out.println("2 != 3");
         
         // testing toString, equals, clone:        
-        Person peter = new Person("Peter Parker",23,true);
-        Person jimmy = new Person("Jimmy Neutron",12,true);        
-        System.out.println(peter.toString());
-        System.out.println(jimmy.toString());        
-        Person ben = peter.clone();        
-        System.out.println(ben.toString());        
-        if (peter.equals(jimmy))    System.out.println("peter = jimmy");
-        else if (peter.equals(ben)) System.out.println("peter = ben");
-        else                        System.out.println("!=");
+        Person person3 = new Person("Peter Parker",23,true);
+        Person person4 = new Person("Jimmy Neutron",12,true);        
+        System.out.println(person3.toString());
+        System.out.println(person4.toString());        
+        Person person5 = person3.clone();        
+        System.out.println(person5.toString());        
+        if (person3.equals(person4)) System.out.println("3 == 4");
+        else                         System.out.println("3 != 4");
+        if (person3.equals(person5)) System.out.println("3 == 5");
+        else                         System.out.println("3 != 5");
         
-        Student jeff = new Student("Jeff Moore", 21, true, 21);
-        Student jenko = new Student("Jenko Jones", 22, true, 22);        
-        System.out.println(jeff.toString());
-        System.out.println(jenko.toString());        
-        Student bob = jeff.clone();        
-        System.out.println(bob.toString());        
-        if (jeff.equals(bob))    System.out.println("jeff == bob");
-        if (!jeff.equals(jenko)) System.out.println("jeff != jenko");
+        // creating and testing more student methods
+        Student student3 = new Student("Jeff Moore", 21, true, 21);
+        Student student4 = new Student("Jenko Jones", 22, true, 22);        
+        System.out.println(student3.toString());
+        System.out.println(student4.toString());        
+        Student student5 = student3.clone();        
+        System.out.println(student5.toString());        
+        if (student3.equals(student5))  System.out.println("3 == 5");
+        else                            System.out.println("3 != 5");
                 
-        
-        Teacher teacher = new Teacher("Mr. Stein",45,true);
-        teacher.add(jenko);
-        teacher.add(jeff);
-        teacher.add(sharkBoy);
-        teacher.add(lavaGirl);
-        
-        System.out.println(teacher.toString());
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // create and test teacher class
+        Teacher teacher1 = new Teacher("Mr. Stein",45,true);
+        teacher1.add(student1);
+        teacher1.add(student2);
+        teacher1.add(student3);
+        teacher1.add(student4);        
+        System.out.println(teacher1.toString());
+        // another teacher instance, cloned
+        Teacher teacher2 = teacher1.clone();
+        System.out.println(teacher2);
+        // another new teacher instance
+        Teacher teacher3 = new Teacher("Mr. T", 66, true);
+        System.out.println(teacher3);
+        // test equals between teachers        
+        if (teacher1.equals(teacher2)) System.out.println("1 == 2");
+        else                           System.out.println("1 != 2");
+        if (teacher1.equals(teacher3)) System.out.println("1 == 3");
+        else                           System.out.println("1 != 3");
         
         
         System.out.println("Advanced Classes testing complete!");            
