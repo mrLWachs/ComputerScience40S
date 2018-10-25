@@ -510,24 +510,19 @@ public class ComputerScience30S
         array[1] = -5;
         array[2] = 0;
         array[3] = 55;
-        array[4] = 555;       
-        
+        array[4] = 555; 
         // intentional errors, outside the bounds of the array
         // array[6] = 5555;        
         // array[-1] = 5555;
         
         // create an array with no size
-        double[] a;
-        
+        double[] a;        
         // then give it a size
-        a = new double[3];
-        
+        a = new double[3];        
         // put in some content
-        a[1] = 3.14;
-        
+        a[1] = 3.14;        
         // you can keep resizing (de-dimensioning) the array        
-        a = new double[5];
-        
+        a = new double[5];        
         // every time the array is resized, the content
         // is destroyed (lost)
         
@@ -543,10 +538,23 @@ public class ComputerScience30S
         
         // create an emtpy array
         int[] numbers = new int[100];
-        // use loops with arrays
+        // go through the entire array 
+        // using a for loop
         for (int i = 0; i < 100; i++) {
             numbers[i] = 25;
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
