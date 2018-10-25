@@ -61,6 +61,7 @@ public class AdvancedClassesTest
         if (jeff.equals(bob))    System.out.println("jeff == bob");
         if (!jeff.equals(jenko)) System.out.println("jeff != jenko");
                 
+        
         Teacher teacher = new Teacher("Mr. Stein",45,true);
         teacher.add(jenko);
         teacher.add(jeff);
@@ -68,6 +69,20 @@ public class AdvancedClassesTest
         teacher.add(lavaGirl);
         
         System.out.println(teacher.toString());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("Advanced Classes testing complete!");            
     }

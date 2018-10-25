@@ -49,14 +49,10 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        String text = 
-                "Teacher " + super.toString() + 
-                " and teaches " + count + 
-                " out of " + MAX_STUDENTS +
-                " students:";
+        String text = "Teacher " + super.toString() + " and teaches " + count + 
+                      " out of " + MAX_STUDENTS + " students:";
         for (int i = 0; i < count; i++) {
-            text += "\n\t" + i + ": " + 
-                    students[i].toString();
+            text += "\n\t" + i + ": " + students[i].toString();
         }                
         return text;
     }
@@ -87,12 +83,11 @@ public class Teacher extends Person
      */
     @Override
     public Teacher clone() {
-        Teacher teacher = new Teacher(
-                this.getName(), 
-                age, 
-                isMale);
-        for (int i = 0; i < count; i++) {
-            teacher.add(this.students[i].clone());
+        Teacher teacher = new Teacher(this.getName(), age, isMale);
+        for (int i = 0; i < students.length; i++) {
+            if (students[i] != null) {
+                teacher.add(this.students[i].clone());
+            }
         }
         return teacher;
     }
