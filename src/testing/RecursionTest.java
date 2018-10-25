@@ -15,32 +15,32 @@ public class RecursionTest {
      * Default class constructor, runs on instantiation
      */
     public RecursionTest() {
-        System.out.println("Recursion testing started...");
+        System.out.println("\nRecursion testing started...\n");
 
-        int maximum = 500;
+        int maximum = 65;
         int minimum = 0;
         
         System.out.println("Factorials...");
         for (int number = minimum; number <= maximum; number++) {
             double answer = Calculator.factorial(number);
-            System.out.println("Number " + number +
-                           " is factorial " + answer);
+            System.out.println("Number \t" + number +
+                               " is factorial \t" + answer);
         }
         
         System.out.println("Powers...");
-        maximum = 142;
+        maximum = 143;
         minimum = -maximum;
         
         for (int base = minimum; base <= maximum; base++) {
             for (int exponent = minimum; exponent <= maximum; exponent++) {
                 double answer = Calculator.power(base, exponent);
-                System.out.println("Base " + base +
-                                   " to the exponent " + exponent + 
+                System.out.println("Base \t" + base +
+                                   " to the exponent \t" + exponent + 
                                    " = \t" + answer);
             }
         }
         
-        System.out.println("Recusion testing complete!");
+        System.out.println("\nRecusion testing complete!\n");
     }
 
 }

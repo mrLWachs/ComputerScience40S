@@ -15,7 +15,7 @@ public class AdvancedClassesTest
      * Default constructor for the class 
      */
     public AdvancedClassesTest() {
-        System.out.println("Advanced Classes testing started...");
+        System.out.println("\nAdvanced Classes testing started...\n");
         
         // instantiating (creating an instances of) Person objects
         Person person1 = new Person();                  // create person object        
@@ -84,7 +84,7 @@ public class AdvancedClassesTest
         else                           System.out.println("1 != 3");
         
         
-        System.out.println("Advanced Classes testing complete!");            
+        System.out.println("\nAdvanced Classes testing complete!\n");            
     }
     
 

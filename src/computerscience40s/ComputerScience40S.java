@@ -24,9 +24,9 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Starting CS40S Examples...");        
+        System.out.println("\nStarting CS40S Examples...\n");        
         new Tester();         
-        System.out.println("Completed CS40S Examples!");
+        System.out.println("\nCompleted CS40S Examples!\n");
     }
     
 }

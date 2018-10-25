@@ -17,10 +17,10 @@ public class Tester
      * Default class constructor, runs on instantiation
      */
     public Tester() {
-        System.out.println("Testing begins.....");        
+        System.out.println("\nTesting begins.....\n");        
 //        RecursionTest       unit1 = new RecursionTest();
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
-        System.out.println("Testing complete!");
+        System.out.println("\nTesting complete!\n");
     }
     
 }
