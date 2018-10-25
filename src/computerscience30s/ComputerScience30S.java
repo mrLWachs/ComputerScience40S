@@ -544,9 +544,23 @@ public class ComputerScience30S
             numbers[i] = 25;
         }
         
+        // change indivual indices of an array
+        // just regular variables
+        numbers[49] = 13;
+        System.out.println(numbers[77]);
+                
+        // loop again (traverse), and using
+        // a built in feature of arrays
+        // called the length        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " +
+                    numbers[i]);
+        }
         
+        // arrays working with methods:
         
-        
+        // method that takes a array as a parameter        
+        output(coins);
         
         
         
@@ -567,6 +581,14 @@ public class ComputerScience30S
         
         
         System.out.println("Arrays example complete!");
+    }
+
+    private static void output(double[] a) {
+        String text = "Array: \n";
+        for (int i = 0; i < a.length; i++) {
+            text += a[i] + ", ";
+        }
+        output(text);
     }
  
 }
