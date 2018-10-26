@@ -570,6 +570,14 @@ public class ComputerScience30S
         int[] cards = random(2, 14, 52);
         output(cards);
         
+        // create a 2 dimensional (2D) array also known as a matrix using some 
+        // constants to help "visualize" the array in memory
+        final int ROWS    = 50;
+        final int COLUMNS = 45;
+        // create matrix
+        char[][] matrix = new char[ROWS][COLUMNS];
+        // now fill the matrix with values
+        
                 
         System.out.println("Arrays example complete!");
     }
