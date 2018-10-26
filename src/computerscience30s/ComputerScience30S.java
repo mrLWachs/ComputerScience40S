@@ -561,28 +561,27 @@ public class ComputerScience30S
         
         // method that takes a array as a parameter        
         output(coins);
+        // tested with a different array
+        double[] percents = { 
+            0.0,
+            0.25,
+            0.50,
+            0.75,
+            1.00
+        };        
+        output(percents);        
+        output(numbers);
         
+        int[] cards = random(2, 14, 52);
+        output(cards);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                
         System.out.println("Arrays example complete!");
     }
 
+    
+    
+    
     private static void output(double[] a) {
         String text = "Array: \n";
         for (int i = 0; i < a.length; i++) {
@@ -590,5 +589,36 @@ public class ComputerScience30S
         }
         output(text);
     }
- 
+
+    private static void output(int[] a) {
+        double[] array = convertTo(a);
+        output(array);
+    }
+
+    private static double[] convertTo(int[] a) {
+        double[] array = new double[a.length];
+        for (int i = 0; i < a.length; i++) {
+            array[i] = (double)a[i];
+        }
+        return array;
+    }
+    
+    private static double random(double low, double high) {
+        return (high - low + 1) * Math.random() + low;
+    }
+    
+    private static char random(char low, char high) {
+        return (char)(random( (int)low, (int)high ));
+    }
+    
+    private static int[] random(int low, int high, int size) {
+        int[] a = new int[size];
+        for (int i = 0; i < size; i++) {
+            a[i] = random(low, high);
+        }
+        return a;
+    }
+    
+    
+    
 }
