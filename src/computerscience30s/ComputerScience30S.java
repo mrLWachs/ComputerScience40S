@@ -562,26 +562,23 @@ public class ComputerScience30S
         // method that takes a array as a parameter        
         output(coins);
         // tested with a different array
-        double[] percents = { 
-            0.0,
-            0.25,
-            0.50,
-            0.75,
-            1.00
-        };        
-        output(percents);        
-        output(numbers);
-        
+        double[] percents = { 0.0, 0.25, 0.50, 0.75, 1.00 };        
+        output(percents);
+        // this array is a different type, so the method needs to be overloaded
+        output(numbers);        
+        // returning arrays from methods
         int[] cards = random(2, 14, 52);
         output(cards);
         
                 
         System.out.println("Arrays example complete!");
     }
-
     
-    
-    
+    /**
+     * Display the array in a dialog box
+     * 
+     * @param a the array to display
+     */
     private static void output(double[] a) {
         String text = "Array: \n";
         for (int i = 0; i < a.length; i++) {
@@ -590,11 +587,21 @@ public class ComputerScience30S
         output(text);
     }
 
+    /**
+     * 
+     * @param a 
+     */
     private static void output(int[] a) {
         double[] array = convertTo(a);
         output(array);
     }
 
+    /**
+     * Converts an array of integers into a array of doubles
+     * 
+     * @param a the array to convert
+     * @return an array of doubles
+     */
     private static double[] convertTo(int[] a) {
         double[] array = new double[a.length];
         for (int i = 0; i < a.length; i++) {
@@ -603,14 +610,36 @@ public class ComputerScience30S
         return array;
     }
     
+    /**
+     * Generates a random double
+     * 
+     * @param low the lowest double in the range
+     * @param high the highest double in the range
+     * @return the generated number
+     */
     private static double random(double low, double high) {
         return (high - low + 1) * Math.random() + low;
     }
     
+    /**
+     * Generates a random character
+     * 
+     * @param low the lowest character in the range
+     * @param high the highest character in the range
+     * @return the generated character
+     */
     private static char random(char low, char high) {
         return (char)(random( (int)low, (int)high ));
     }
     
+    /**
+     * Generates a random array of integers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size of the array to generate
+     * @return the generated array of integers
+     */
     private static int[] random(int low, int high, int size) {
         int[] a = new int[size];
         for (int i = 0; i < size; i++) {
@@ -618,7 +647,5 @@ public class ComputerScience30S
         }
         return a;
     }
-    
-    
-    
+        
 }
