@@ -83,9 +83,45 @@ public class AdvancedClassesTest
         if (teacher1.equals(teacher3)) System.out.println("1 == 3");
         else                           System.out.println("1 != 3");
         
+        // checking the status of various objects
+        checkStatus(person1);
+        checkStatus(object1);
+        checkStatus(student1);
+        checkStatus(teacher1);
+        String text = "Hi";
+        checkStatus(text);
+        
+        
         
         System.out.println("\nAdvanced Classes testing complete!\n");            
     }
+    
+    /**
+     * Checks and displays the status of this object
+     * 
+     * @param object the object to check
+     */
+    private void checkStatus(Object object) {
+        if (object instanceof Teacher) {
+            System.out.println("We have a Teacher");
+        }
+        else if (object instanceof Student) {
+            System.out.println("We have a Student");
+        }
+        else if (object instanceof Person) {
+            System.out.println("We have a Person");
+        }
+        else {
+            System.out.println("I don't know what this is?");
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
     
 
 }
