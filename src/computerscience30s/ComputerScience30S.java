@@ -2,7 +2,12 @@
 package computerscience30s;
 
 /** required imports */
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -495,6 +500,9 @@ public class ComputerScience30S
                 title,JOptionPane.INFORMATION_MESSAGE);
     }
 
+    /**
+     * The example code for this unit
+     */
     private static void unit3() {
         System.out.println("Arrays example started");
         
@@ -576,9 +584,15 @@ public class ComputerScience30S
         final int COLUMNS = 45;
         // create matrix
         char[][] matrix = new char[ROWS][COLUMNS];
-        // now fill the matrix with values
+        // now fill the matrix with values        
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random('!', '~');
+            }
+        }
+        // create a method for 2D matrix
+        output(matrix);
         
-                
         System.out.println("Arrays example complete!");
     }
     
@@ -590,14 +604,15 @@ public class ComputerScience30S
     private static void output(double[] a) {
         String text = "Array: \n";
         for (int i = 0; i < a.length; i++) {
-            text += a[i] + ", ";
+            text += "(" + i + ")    " + a[i] + "\n";
         }
         output(text);
     }
 
     /**
+     * Display the array in a dialog box
      * 
-     * @param a 
+     * @param a the array to display
      */
     private static void output(int[] a) {
         double[] array = convertTo(a);
@@ -655,5 +670,54 @@ public class ComputerScience30S
         }
         return a;
     }
-        
+
+    /**
+     * Display the matrix in a dialog box
+     * 
+     * @param matrix the matrix to display
+     */
+    private static void output(char[][] matrix) {
+        String text = "";
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                text += matrix[r][c] + " ";
+            }
+            text += "\n";
+        }
+        display(text);
+    }
+
+    /**
+     * Displays text in a fancy dialog box with formatting
+     * 
+     * @param text the text to display
+     */
+    private static void display(String text) {        
+        // create a "fancy" display area
+        JTextArea area = new JTextArea();
+        // put the text into the area
+        area.setText(text);
+        // create 2 colors
+        Color background = new Color(0,0,0);
+        Color foreground = new Color(0,255,0);
+        // put the colors in the area
+        area.setBackground(background);
+        area.setForeground(foreground);
+        // create a font        
+        Font font = new Font("Consolas",Font.PLAIN,20);
+        // put the font in the area
+        area.setFont(font);        
+        // creating images, using the full path and the full
+        // name of the image file
+        Icon icon = new ImageIcon("C:\\Users\\lawrence.wachs"
+                + "\\Desktop\\matrix.gif");
+        // display in a message box
+        JOptionPane.showMessageDialog(
+                null,
+                area,
+                "",
+                JOptionPane.PLAIN_MESSAGE,
+                icon);
+    }
+       
 }
