@@ -12,6 +12,7 @@ public class Student extends Person
 {
 
     private int studentNumber;
+    public static int totalStudents;
     
     /**
      * Class constructor sets class properties
@@ -22,6 +23,7 @@ public class Student extends Person
         super();
         this.isMale        = true;              // modify protected member
         this.studentNumber = studentNumber;
+        totalStudents++;
     }
     
     /**
@@ -35,6 +37,7 @@ public class Student extends Person
     public Student(String name, int age, boolean isMale, int studentNumber) {
         super(name,age,isMale);
         this.studentNumber = studentNumber;
+        totalStudents++;
     }
         
     /**

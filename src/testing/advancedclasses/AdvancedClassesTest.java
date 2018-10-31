@@ -91,6 +91,34 @@ public class AdvancedClassesTest
         String text = "Hi";
         checkStatus(text);
         
+        // use our static keyword        
+        System.out.println("Total students is " + Student.totalStudents);
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
+        
+        // creating more class objects
+        
+        Husky evan = new Husky("Evan Dore", 19, true, 8675309);
+        evan.talk();
+        Gargoyle gargoyle = new Gargoyle();
+        System.out.println(gargoyle.toString());
+        Werewolf werewolf = new Werewolf("Taylor Lautner", 23, true);
+        werewolf.talk();
+        Flash kidFlash = new Flash("Wally West", 19, true);
+        kidFlash.talk();        
+        MrWachs mrWachs = new MrWachs("Mr. Wachs", 49, true);
+        mrWachs.talk();
+        
+        
+       // create a meeting
+        Meeting meeting = new Meeting();
+        meeting.attend(kidFlash);
+        meeting.attend(werewolf);
+        meeting.attend(mrWachs);
+        meeting.attend(evan);
+        meeting.hold();
+        
         
         
         System.out.println("\nAdvanced Classes testing complete!\n");            

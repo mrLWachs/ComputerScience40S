@@ -103,5 +103,12 @@ public class Person
         person.setName(this.getName());
         return person;
     }
-        
+    
+    /**
+     * Ends the world
+     */
+    public static void endTheWorld() {
+        System.out.println("Booom!!!!");
+    }
+            
 }
