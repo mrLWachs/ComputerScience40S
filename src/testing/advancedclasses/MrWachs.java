@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file MrWachs.java
- *  for project ComputerScience40S on 31-Oct-2018 at 10:09:04 AM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * MrWachs.java - 
+ * MrWachs.java - represents a Mr. Wachs computer science teacher
  *
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
@@ -18,11 +12,16 @@ package testing.advancedclasses;
 public class MrWachs extends ComputerScienceTeacher
 {
 
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this object
+     * @param age the age for this object
+     * @param isMale the gender for this object
+     */
     public MrWachs(String name, int age, boolean isMale) {
         super(name, age, isMale);
     }
-
-
 
     /**
      * String representation of this object

@@ -3,7 +3,6 @@
 package testing.advancedclasses;
 
 
-
 /**
  * SuperHero.java - represents a super-hero person
  *
@@ -14,7 +13,11 @@ public class SuperHero extends MetaHuman
 {
 
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this object
+     * @param age the age for this object
+     * @param isMale the gender for this object
      */
     public SuperHero(String name, int age, boolean isMale) {
         super(name, age, isMale);

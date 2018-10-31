@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file HighSchoolStudent.java
- *  for project ComputerScience40S on 31-Oct-2018 at 10:03:59 AM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * HighSchoolStudent.java - 
+ * HighSchoolStudent.java - represents a high school student
  *
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
@@ -18,10 +12,18 @@ package testing.advancedclasses;
 public class HighSchoolStudent extends Student
 {
 
-    public HighSchoolStudent(String name, int age, boolean isMale, int studentNumber) {
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this object
+     * @param age the age for this object
+     * @param isMale the gender for this object
+     * @param studentNumber the student number for this object
+     */
+    public HighSchoolStudent(String name, int age, boolean isMale, 
+            int studentNumber) {
         super(name, age, isMale, studentNumber);
     }
-
 
     /**
      * String representation of this object

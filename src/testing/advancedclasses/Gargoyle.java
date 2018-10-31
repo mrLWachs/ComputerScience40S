@@ -3,7 +3,6 @@
 package testing.advancedclasses;
 
 
-
 /**
  * Gargoyle.java - represents a gargoyle monster
  *

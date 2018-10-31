@@ -97,8 +97,7 @@ public class AdvancedClassesTest
         Student.endTheWorld();
         Teacher.endTheWorld();
         
-        // creating more class objects
-        
+        // creating more class objects:        
         Husky evan = new Husky("Evan Dore", 19, true, 8675309);
         evan.talk();
         Gargoyle gargoyle = new Gargoyle();
@@ -109,8 +108,7 @@ public class AdvancedClassesTest
         kidFlash.talk();        
         MrWachs mrWachs = new MrWachs("Mr. Wachs", 49, true);
         mrWachs.talk();
-        
-        
+                
        // create a meeting
         Meeting meeting = new Meeting();
         meeting.attend(kidFlash);

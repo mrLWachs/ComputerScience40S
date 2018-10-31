@@ -3,7 +3,6 @@
 package testing.advancedclasses;
 
 
-
 /**
  * Monster.java - represents a monster
  *

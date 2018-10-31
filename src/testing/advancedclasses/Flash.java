@@ -3,7 +3,6 @@
 package testing.advancedclasses;
 
 
-
 /**
  * Flash.java - represents a Flash super-hero
  *
@@ -14,7 +13,11 @@ public class Flash extends SuperHero
 {
 
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this object
+     * @param age the age for this object
+     * @param isMale the gender for this object
      */
     public Flash(String name, int age, boolean isMale) {
         super(name, age, isMale);

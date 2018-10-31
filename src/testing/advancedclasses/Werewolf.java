@@ -3,7 +3,6 @@
 package testing.advancedclasses;
 
 
-
 /**
  * Werewolf.java - represents a werewolf meta-human
  *
@@ -12,9 +11,13 @@ package testing.advancedclasses;
  */
 public class Werewolf extends MetaHuman
 {
-
+    
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this object
+     * @param age the age for this object
+     * @param isMale the gender for this object
      */
     public Werewolf(String name, int age, boolean isMale) {
         super(name, age, isMale);
