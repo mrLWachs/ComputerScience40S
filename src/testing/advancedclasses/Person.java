@@ -110,5 +110,19 @@ public class Person
     public static void endTheWorld() {
         System.out.println("Booom!!!!");
     }
-            
+    
+    /**
+     * How a person can consume food
+     * 
+     * @param food the abstract food item to consume
+     */
+    public void consume(Food food) {
+        if (food.shouldCook()) {
+            food.eat();
+        }
+        else {
+            food.spoil();
+        }
+    }
+                
 }

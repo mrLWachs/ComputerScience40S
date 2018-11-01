@@ -109,7 +109,7 @@ public class AdvancedClassesTest
         MrWachs mrWachs = new MrWachs("Mr. Wachs", 49, true);
         mrWachs.talk();
                 
-       // create a meeting
+       // create a meeting object to show polymorphism
         Meeting meeting = new Meeting();
         meeting.attend(kidFlash);
         meeting.attend(werewolf);
@@ -117,6 +117,16 @@ public class AdvancedClassesTest
         meeting.attend(evan);
         meeting.hold();
         
+        // create abstract food child class objects
+        CheeseCake cake = new CheeseCake();
+        Poutine poutine = new Poutine();
+        
+        // use these objects in the associated person class
+        mrWachs.consume(cake);
+        mrWachs.consume(poutine);
+        mrWachs.consume(new Carrot()); // anonymous object
+        
+
         
         
         System.out.println("\nAdvanced Classes testing complete!\n");            
@@ -142,12 +152,4 @@ public class AdvancedClassesTest
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-
 }
