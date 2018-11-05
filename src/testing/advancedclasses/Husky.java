@@ -5,7 +5,7 @@ package testing.advancedclasses;
 
 /**
  * Husky.java - represents a husky computer science high school 
- * student
+ * student person
  *
  * @author Mr. Wachs 
  * @since 31-Oct-2018 
