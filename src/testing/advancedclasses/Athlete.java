@@ -21,6 +21,7 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
     private int userCards;
     private int opponentCards;
         
+    
     /**
      * Constructor for the class, sets class properties
      * 
@@ -31,6 +32,9 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     public Athlete(String name, int age, boolean isMale, int studentNumber) {
         super(name, age, isMale, studentNumber);
+        userCards      = 52 / 2;
+        opponentCards  = 52 / 2;
+        havePermission = PermissionForm.NOT_SIGNED;
     }
 
     /**
@@ -85,6 +89,9 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public void endHalf() {
+        System.out.println("End of the half, the score is " + homeScore + 
+                           " for the " + homeName + " and " + opponentScore + 
+                           " for the " + opponentName);
     }
 
     /**
@@ -94,10 +101,8 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public String winner() {
-        if (homeScore > opponentScore) 
-            return homeName;
-        else 
-            return opponentName;
+        if (homeScore > opponentScore) return homeName;
+        else                           return opponentName;
     }
 
     /**
@@ -125,7 +130,7 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public void userPlaysCard() {
-        
+        userCards--;
     }
 
     /**
@@ -133,6 +138,7 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */    
     @Override
     public void opponentPlaysCard() {
+        opponentCards--;
     }
 
     /**
@@ -142,7 +148,8 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public boolean didUserWin() {
-        return false;
+        if (userCards > opponentCards) return true;
+        else                           return false;
     }
 
     /**
@@ -150,6 +157,7 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public void sign() {
+        havePermission = PermissionForm.SIGNED;
     }
 
     /**
@@ -159,7 +167,7 @@ public class Athlete extends Husky implements Soccer, War, PermissionForm
      */
     @Override
     public boolean hasBeenSigned() {
-        return false;
+        return havePermission;
     }
 
 }

@@ -109,7 +109,7 @@ public class AdvancedClassesTest
         MrWachs mrWachs = new MrWachs("Mr. Wachs", 49, true);
         mrWachs.talk();
                 
-       // create a meeting object to show polymorphism
+        // create a meeting object to show polymorphism
         Meeting meeting = new Meeting();
         meeting.attend(kidFlash);
         meeting.attend(werewolf);
@@ -126,7 +126,24 @@ public class AdvancedClassesTest
         mrWachs.consume(poutine);
         mrWachs.consume(new Carrot()); // anonymous object
         
-
+        // test our interfaces
+        Athlete moussa = new Athlete("Moussa Diakhite",17,true,10);
+        moussa.setHome("Huskies");
+        moussa.setVisiting("SJR");
+        moussa.homeGoal();
+        moussa.endHalf();
+        if (moussa.hasBeenSigned() == PermissionForm.NOT_SIGNED) {
+            System.out.println("Get it signed!! " + moussa.getName());
+        }
+        moussa.sign();        
+        moussa.consume(new Poutine());
+        moussa.talk();
+        moussa.opponentPlaysCard();
+        if (moussa.didUserWin()) {
+            System.out.println("Won war");
+        }
+        
+        // using generics
         
         
         System.out.println("\nAdvanced Classes testing complete!\n");            
