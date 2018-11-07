@@ -143,8 +143,27 @@ public class AdvancedClassesTest
             System.out.println("Won war");
         }
         
-        // using generics
+        // using generic method:        
+        output(moussa);
+        output(mrWachs);
+        output(werewolf);
+        output(cake);
+        output(new Integer("100"));
         
+        // using generic class:
+        Box<Athlete> box1 = new Box<>(moussa);
+        Box<MrWachs> box2 = new Box<>(mrWachs);
+        Box<String>  box3 = new Box<>(new String("Hi"));        
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        
+        // using advanced generics:
+        Character letter = new Character('#');
+        Food[] fridge = { cake, poutine };
+        Object[] contents = {werewolf,fridge,moussa,evan,letter,box3};
+        House<MrWachs,Object> house = new House<>(mrWachs, contents);
+        house.visit();
         
         System.out.println("\nAdvanced Classes testing complete!\n");            
     }
@@ -167,6 +186,18 @@ public class AdvancedClassesTest
         else {
             System.out.println("I don't know what this is?");
         }
+    }
+
+    /**
+     * Outputs a generic item with information about the data type
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        String text = "Class " + item.getClass().getSimpleName() +
+                " as a string is " + item.toString();
+        System.out.println(text);
     }
     
 }
