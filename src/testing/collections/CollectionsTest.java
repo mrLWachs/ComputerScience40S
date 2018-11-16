@@ -1,12 +1,10 @@
 
-
 /** required package class namespace */
 package testing.collections;
 
 
-
 /**
- * CollectionsTest.java - 
+ * CollectionsTest.java - the unit test to test the concept of collections
  *
  * @author Mr. Wachs 
  * @since 15-Nov-2018 
