@@ -1,16 +1,11 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file LinkedList.java
- *  for project ComputerScience40S on 16-Nov-2018 at 10:41:49 AM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package collections;
 
 
-
 /**
- * LinkedList.java - 
+ * LinkedList.java - an implementation of a linked list abstract (advanced)
+ * data (dynamic) type (ADT) and its useful methods
  *
  * @author Mr. Wachs 
  * @since 16-Nov-2018 

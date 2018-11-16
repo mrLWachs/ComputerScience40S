@@ -1,16 +1,11 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Node.java
- *  for project ComputerScience40S on 16-Nov-2018 at 10:41:54 AM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package collections;
 
 
-
 /**
- * Node.java - 
+ * Node.java - a representation of a generic node for use with
+ * a LinkedList object
  *
  * @author Mr. Wachs 
  * @since 16-Nov-2018 
