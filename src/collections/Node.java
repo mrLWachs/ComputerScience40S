@@ -34,7 +34,7 @@ public class Node <T>
      * Default constructor for the class, sets class properties
      */
     public Node() {
-        this(null,null,null);
+        this(null,null,null);               // one constructor calls another
     }
     
     /**
@@ -43,7 +43,7 @@ public class Node <T>
      * @param data the generic data stored in the node
      */
     public Node(T data) {
-        this(data,null,null);
+        this(data,null,null);               // one constructor calls another
     }
     
     /**
@@ -54,11 +54,10 @@ public class Node <T>
      * @param previous reference (link) to the previous node in the collection
      */
     public Node(T data, Node next, Node previous) {
-        this.next     = next;
+        this.next     = next;               // set parameters to the properties
         this.previous = previous;
         this.data     = data;
-    }
-    
+    }    
 
     /**
      * String representation of this object
