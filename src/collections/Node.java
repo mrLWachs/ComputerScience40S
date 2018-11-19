@@ -8,17 +8,57 @@ package collections;
  * a LinkedList object
  *
  * @author Mr. Wachs 
+ * @param <T> The generic data type used in the class
  * @since 16-Nov-2018 
  */
-public class Node 
+public class Node <T>
 {
 
+    /**
+     * The generic data stored in the node
+     */
+    public T data;
+    
+    /**
+     * A reference (link) to the next node in the collection
+     */
+    public Node next;
+    
+    /**
+     * A reference (link) to the previous node in the collection
+     */
+    public Node previous;
+    
+    
     /**
      * Default constructor for the class, sets class properties
      */
     public Node() {
-        
+        this(null,null,null);
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param data the generic data stored in the node
+     */
+    public Node(T data) {
+        this(data,null,null);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param data the generic data stored in the node
+     * @param next reference (link) to the next node in the collection
+     * @param previous reference (link) to the previous node in the collection
+     */
+    public Node(T data, Node next, Node previous) {
+        this.next     = next;
+        this.previous = previous;
+        this.data     = data;
+    }
+    
 
     /**
      * String representation of this object
@@ -27,7 +67,7 @@ public class Node
      */
     @Override
     public String toString() {
-        return "Node " + super.toString();
+        return data.toString();
     }
         
     /**
@@ -38,7 +78,8 @@ public class Node
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        Node node = (Node)object;               // cast the object into a node
+        return this.data.equals(node.data);     // compare node data
     }
     
     /**
