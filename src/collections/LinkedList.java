@@ -13,10 +13,19 @@ package collections;
 public class LinkedList 
 {
 
+    /**
+     * The number of nodes in the list
+     */
     private int length;
     
+    /**
+     * Reference (link) to the first node in the list (entry point)
+     */
     private Node head;
     
+    /**
+     * Reference (link) to the last node in the list (entry point)
+     */
     private Node tail;
         
     
