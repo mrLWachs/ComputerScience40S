@@ -30,9 +30,10 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {
         System.out.println("Computer Science 30S Example started...");               
-//        unit1();
-//        unit2();
-        unit3();
+//        unit1();    // introduction to java programming
+//        unit2();    // methods in java
+//        unit3();    // arrays in java
+        unit4();    // classes in java
         System.out.println("Computer Science 30S Example completed!");
     }
     
@@ -718,6 +719,17 @@ public class ComputerScience30S
                 "",
                 JOptionPane.PLAIN_MESSAGE,
                 icon);
+    }
+
+    /**
+     * The example code for this unit
+     */
+    private static void unit4() {
+        
+        // create (instantiate) an object for the class
+        Person bobby = new Person();
+        bobby.talk();                   // call a class method
+        
     }
        
 }
