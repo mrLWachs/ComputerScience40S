@@ -49,11 +49,8 @@ public class Person
      * A person talks (by outputting information to the screen)
      */
     void talk() {
-        System.out.println(name + 
-                " is " + age +
-                " if you are wondering"
-              + " if I am a male, "
-              + "the answer is " + isMale);
+        System.out.println(name + " is " + age + " and if you are wondering " +
+                           "if I am a male, the answer is " + isMale);
     }
     
     /**

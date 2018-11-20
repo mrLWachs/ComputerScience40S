@@ -505,7 +505,7 @@ public class ComputerScience30S
      * The example code for this unit
      */
     private static void unit3() {
-        System.out.println("Arrays example started");
+        System.out.println("Arrays example started...");
         
         // creating a variable for comparison
         int size = 5;
@@ -725,11 +725,13 @@ public class ComputerScience30S
      * The example code for this unit
      */
     private static void unit4() {
+        System.out.println("Classes example started...");
         
         // create (instantiate) an object for the class
         Person bobby = new Person();
         bobby.talk();                   // call a class method
         
+        System.out.println("Classes example complete!");
     }
        
 }
