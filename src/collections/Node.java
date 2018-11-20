@@ -66,6 +66,7 @@ public class Node <T>
      */
     @Override
     public String toString() {
+        if (data == null) return "null";
         return data.toString();
     }
         
@@ -88,7 +89,19 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        return new Node(
+            this.data,
+            this.next,
+            this.previous);
+    }
+    
+    /**
+     * Wipes out all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        data = null;
+        next = previous = null;
     }
 
 }

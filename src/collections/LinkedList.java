@@ -13,6 +13,13 @@ package collections;
 public class LinkedList 
 {
 
+    private int length;
+    
+    private Node head;
+    
+    private Node tail;
+        
+    
     /**
      * Default constructor for the class, sets class properties
      */

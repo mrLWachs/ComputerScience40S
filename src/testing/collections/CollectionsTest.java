@@ -33,6 +33,25 @@ public class CollectionsTest
         System.out.println(n2.toString());
         System.out.println(n3.toString());
         
+        // test node class methods
+        n1.finalize();
+        System.out.println(n1.toString());        
+        Node<Character> n4 = n2.clone();
+        if (n2.equals(n4)) 
+            System.out.println("n2 == n4");
+        if (n2.equals(n3)) 
+            System.out.println("n2 == n3");
+        
+        // linked list class
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("\nCompleted Collections Test!\n");
