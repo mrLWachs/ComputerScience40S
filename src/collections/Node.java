@@ -51,6 +51,18 @@ public class Node <T>
      * 
      * @param data the generic data stored in the node
      * @param next reference (link) to the next node in the collection
+     */
+    public Node(T data, Node next) {
+        this(data,next,null);               // one constructor calls another
+    }
+    
+    
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param data the generic data stored in the node
+     * @param next reference (link) to the next node in the collection
      * @param previous reference (link) to the previous node in the collection
      */
     public Node(T data, Node next, Node previous) {
