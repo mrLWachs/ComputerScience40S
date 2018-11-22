@@ -729,8 +729,14 @@ public class ComputerScience30S
         
         // create (instantiate) an object for the class
         Person bobby = new Person();
-        bobby.talk();                   // call a class method
+        bobby.talk();                           // call a class method        
+        bobby.name = "Roberta Shapiro";         // modify properties
+        bobby.birthday(18);                     // call methods
+        bobby.talk(); 
         
+        Person ben = new Person("Ben Shapiro"); // another object
+        ben.talk();                             // with new constructor
+                
         System.out.println("\nClasses example complete!\n");
     }
        

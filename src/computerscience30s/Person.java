@@ -22,12 +22,23 @@ public class Person
     // Methods: ---------------------------------------------------------------
     
     /**
-     * Constructor method for th class, sets class properties to default values
+     * Constructor method for the class, sets class properties to default values
      */
     Person() {
         born();
         isMale = false;
         name   = "Jane Doe";
+    }
+    
+    /**
+     * Constructor method for the class, sets class properties
+     * 
+     * @param nameForThePerson the name for this person
+     */
+    Person(String nameForThePerson) {
+        born();
+        isMale = false;
+        name   = nameForThePerson;
     }
     
     /**
@@ -58,6 +69,17 @@ public class Person
      */
     void birthday() {
         age++;
+    }
+    
+    /**
+     * A person has many birthdays
+     * 
+     * @param times how many birthdays to have
+     */
+    void birthday(int times) {
+        for (int i = 0; i < times; i++) {
+            birthday();
+        }
     }
         
 }
