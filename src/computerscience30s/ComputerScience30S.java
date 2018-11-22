@@ -29,12 +29,12 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Computer Science 30S Example started...");               
+        System.out.println("\nComputer Science 30S Example started...\n");               
 //        unit1();    // introduction to java programming
 //        unit2();    // methods in java
 //        unit3();    // arrays in java
         unit4();    // classes in java
-        System.out.println("Computer Science 30S Example completed!");
+        System.out.println("\nComputer Science 30S Example completed!\n");
     }
     
     /**
@@ -725,13 +725,13 @@ public class ComputerScience30S
      * The example code for this unit
      */
     private static void unit4() {
-        System.out.println("Classes example started...");
+        System.out.println("\nClasses example started...\n");
         
         // create (instantiate) an object for the class
         Person bobby = new Person();
         bobby.talk();                   // call a class method
         
-        System.out.println("Classes example complete!");
+        System.out.println("\nClasses example complete!\n");
     }
        
 }

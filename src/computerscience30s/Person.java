@@ -27,7 +27,7 @@ public class Person
     Person() {
         born();
         isMale = false;
-        name = "Jane Doe";
+        name   = "Jane Doe";
     }
     
     /**
@@ -35,7 +35,7 @@ public class Person
      */
     void born() {
         isAlive = true;
-        age = 0;
+        age     = 0;
     }
     
     /**
@@ -49,8 +49,8 @@ public class Person
      * A person talks (by outputting information to the screen)
      */
     void talk() {
-        System.out.println(name + " is " + age + " and if you are wondering " +
-                           "if I am a male, the answer is " + isMale);
+        System.out.println(name + " is " + age + " and if you are " +
+                        "wondering if I am male, the answer is " + isMale);
     }
     
     /**
