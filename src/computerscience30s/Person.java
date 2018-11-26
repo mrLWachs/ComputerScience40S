@@ -14,17 +14,18 @@ public class Person
     
     // Properties: ------------------------------------------------------------
     
-    String name;
-    int age;
-    boolean isAlive;
-    boolean isMale;
+    public String name;
+    private int age;                                // encapsulated property
+    private boolean isAlive;                        // encapsulated property
+    private boolean isMale;                         // encapsulated property
         
     // Methods: ---------------------------------------------------------------
     
     /**
-     * Constructor method for the class, sets class properties to default values
+     * Default constructor method for the class, sets class properties to 
+     * default values
      */
-    Person() {
+    public Person() {
         born();
         isMale = false;
         name   = "Jane Doe";
@@ -35,16 +36,30 @@ public class Person
      * 
      * @param nameForThePerson the name for this person
      */
-    Person(String nameForThePerson) {
+    public Person(String nameForThePerson) {
         born();
         isMale = false;
         name   = nameForThePerson;
     }
     
     /**
+     * Constructor method for the class, sets class properties
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param isMale the gender for this person
+     */
+    public Person(String name, int age, boolean isMale) {
+        isAlive     = true;
+        this.name   = name;     // keyword this refers to the class property
+        this.age    = age;
+        this.isMale = isMale;
+    }
+    
+    /**
      * When a person is born
      */
-    void born() {
+    public void born() {
         isAlive = true;
         age     = 0;
     }
@@ -52,22 +67,27 @@ public class Person
     /**
      * When a person dies
      */
-    void die() {
+    public void die() {
         isAlive = false;
     }
     
     /**
      * A person talks (by outputting information to the screen)
      */
-    void talk() {
-        System.out.println(name + " is " + age + " and if you are " +
-                        "wondering if I am male, the answer is " + isMale);
+    public void talk() {
+        if (isAlive) {
+            System.out.println(name + " is " + age + " and if you are "
+                    + "wondering if I am male, the answer is " + isMale);
+        }
+        else {
+            System.out.println("Booooooo!");
+        }
     }
     
     /**
      * A person has a birthday (their age goes up by one)
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }
     
@@ -76,10 +96,22 @@ public class Person
      * 
      * @param times how many birthdays to have
      */
-    void birthday(int times) {
+    public void birthday(int times) {
         for (int i = 0; i < times; i++) {
             birthday();
         }
     }
         
+    /**
+     * A way to change genders
+     */
+    public void identify() {
+        if (isMale == true) {
+            isMale = false;
+        }
+        else if (isMale == false) {
+            isMale = true;
+        }
+    }
+    
 }

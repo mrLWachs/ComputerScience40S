@@ -737,6 +737,20 @@ public class ComputerScience30S
         Person ben = new Person("Ben Shapiro"); // another object
         ben.talk();                             // with new constructor
                 
+        // another instance of a person with the 3rd constructor
+        Person sam = new Person("Samatha Bee",45,false);
+        sam.talk();
+        sam.identify();
+        sam.birthday();
+        sam.name = "Sammy Bee";
+        sam.talk();
+        sam.die();
+        sam.talk();
+        
+        
+        // code continues next class.......................................
+        
+                
         System.out.println("\nClasses example complete!\n");
     }
        
