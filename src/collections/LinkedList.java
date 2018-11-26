@@ -118,4 +118,39 @@ public class LinkedList <T>
         return true;                        // operation successful
     }
     
+    /**
+     * Inserts data to the front (head) of the list, for an (1) empty list, 
+     * (2) list of 1 node, (3) list of > 1 node
+     * 
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addFront(T data) {
+        if (data == null) return false;     // null data cannot be added 
+        Node<T> node = new Node<>(data);    // new node memory created    
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
+        }
+        else {                              // subsequent nodes added
+            node.next = head;               // link node to rest of list
+            head.previous = node;           // connect rest of list to node
+            head = node;                    // reassign head reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
+    }
+    
+    /**
+     * Checks to see if the index is in the range of the list
+     * 
+     * @param index the location to check
+     * @return it is in range (true) or not (false)
+     */
+    private boolean inRange(int index) {
+        if (isEmpty())      return false;
+        if (index < 0)      return false;
+        if (index > length) return false;
+        return true;
+    }
+    
 }

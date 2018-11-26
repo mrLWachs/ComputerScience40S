@@ -55,9 +55,7 @@ public class Node <T>
     public Node(T data, Node next) {
         this(data,next,null);               // one constructor calls another
     }
-    
-    
-    
+        
     /**
      * Constructor for the class, sets class properties
      * 

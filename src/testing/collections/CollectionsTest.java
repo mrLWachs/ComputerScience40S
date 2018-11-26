@@ -2,6 +2,7 @@
 /** required package class namespace */
 package testing.collections;
 
+/** required imports */
 import collections.LinkedList;
 import collections.Node;
 
@@ -54,10 +55,19 @@ public class CollectionsTest
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
         System.out.println("Size = " + list.size());        // test size
         
+        list.addFront("potato ");                           // now front adding
+        list.addFront("cheese");                            
+        list.addFront("cat");                              
+        list.addFront("chair");
+        
+        System.out.println("Is empty = " + list.isEmpty()); // test if empty
+        System.out.println("Size = " + list.size());        // test size
+        
+        
+        // code continues next class.......................................
         
         
         System.out.println("\nCompleted Collections Test!\n");
     }
 
-    
 }
