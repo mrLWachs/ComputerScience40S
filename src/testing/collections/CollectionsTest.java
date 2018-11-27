@@ -63,6 +63,7 @@ public class CollectionsTest
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
         System.out.println("Size = " + list.size());        // test size
         
+        System.out.println(list.get(3));
         
         // code continues next class.......................................
         

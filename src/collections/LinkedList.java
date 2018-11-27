@@ -141,6 +141,17 @@ public class LinkedList <T>
     }
     
     /**
+     * Accessor for the data at the specified index
+     * 
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {        
+        if (!inRange(index)) return null;   // invalid index, return flag        
+        return (T)getNode(index).data;      // get reference and retrieve data  
+    }
+    
+    /**
      * Checks to see if the index is in the range of the list
      * 
      * @param index the location to check
@@ -151,6 +162,43 @@ public class LinkedList <T>
         if (index < 0)      return false;
         if (index > length) return false;
         return true;
+    }
+    
+    /**
+     * Reference to the first (head) node in the list
+     * 
+     * @return reference to the head (first) node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+    
+    /**
+     * Reference to the last (tail) node in the list
+     * 
+     * @return reference to the tail (last) node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accesses the node reference for this index location
+     * 
+     * @param index the index location
+     * @return a reference to the node at this index or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        else {                                          // internal node
+            Node current = head;                        // start at first node
+            for (int i = 0; i < index; i++) {           // move to index
+                current = current.next;                 // advance reference
+            }
+            return current;                             // return reference
+        }
     }
     
 }
