@@ -4,7 +4,10 @@ package computerscience30s;
 
 
 /**
- * Person.java - defines what it is to be a person
+ * Person.java - represents a person. This is a class with properties (things 
+ * about the class, adjectives, descriptors) and methods (things the class 
+ * can do, verbs, actions). Classes can be created (instantiated) into 
+ * objects (which are instances of that class).
  *
  * @author Mr. Wachs 
  * @since 19-Nov-2018 
@@ -12,18 +15,18 @@ package computerscience30s;
 public class Person 
 {
     
-    // Properties: ------------------------------------------------------------
+    // Properties: (things about it, adjectives, descriptors).................
     
     public String name;
-    private int age;                                // encapsulated property
-    private boolean isAlive;                        // encapsulated property
-    private boolean isMale;                         // encapsulated property
-        
-    // Methods: ---------------------------------------------------------------
+    private int age;                        // encapsualted properties marked
+    public boolean isMale;                  // as private are "hidden" data
+    private boolean isAlive;                // only available inside the class
+    
+    // Methods: (things it can do, verbs, actions)............................
     
     /**
-     * Default constructor method for the class, sets class properties to 
-     * default values
+     * Constructor method called (invoked) when the class is used to 
+     * build a object, this is called the "default" constructor
      */
     public Person() {
         born();
@@ -32,7 +35,7 @@ public class Person
     }
     
     /**
-     * Constructor method for the class, sets class properties
+     * Constructor (overloaded) sets class properties
      * 
      * @param nameForThePerson the name for this person
      */

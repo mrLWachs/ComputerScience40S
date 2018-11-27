@@ -747,6 +747,10 @@ public class ComputerScience30S
         sam.die();
         sam.talk();
         
+        Student student = new Student();
+        student.talk();
+        
+        
         
         // code continues next class.......................................
         
