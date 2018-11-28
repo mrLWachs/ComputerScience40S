@@ -14,6 +14,22 @@ package computerscience30s;
  */
 public class Student extends Person
 {
-
+    
+    private int studentNumber;
+    private int grade;
+    private double gpa;   
+    
+    
+    public Student(
+            String name,
+            int age,
+            boolean isMale,
+            int grade,
+            int studentNumber) {
+        super(name, age, isMale);
+        gpa = 0;
+        this.grade = grade;
+        this.studentNumber = studentNumber;
+    }
    
 }

@@ -747,7 +747,7 @@ public class ComputerScience30S
         sam.die();
         sam.talk();
         
-        Student student = new Student();
+        Student student = new Student("Greg Heffley",12,true,6,101);
         student.talk();
         
         
