@@ -44,7 +44,17 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList " + super.toString();
+        if (isEmpty()) return "Empty List";
+        else {
+            String text = "[";
+            Node current = head;
+            while (current != null) {
+                text += current.toString() + ",";
+                current = current.next;
+            }            
+            text += "]";
+            return text;
+        }
     }
         
     /**
@@ -151,6 +161,13 @@ public class LinkedList <T>
         return (T)getNode(index).data;      // get reference and retrieve data  
     }
     
+    
+    public void set(int index, T data) {
+        Node current = getNode(index);
+        if (current == null) return;
+        current.data = data;        
+    }
+        
     /**
      * Checks to see if the index is in the range of the list
      * 

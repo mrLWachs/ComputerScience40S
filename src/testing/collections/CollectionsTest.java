@@ -47,6 +47,8 @@ public class CollectionsTest
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
         System.out.println("Size = " + list.size());        // test size
         
+        System.out.println(list.toString());
+        
         list.addBack("pie");                                // add 1st item
         list.addBack("fish");                               // add second item
         list.addBack("crab");                               // add >1 items
@@ -55,7 +57,7 @@ public class CollectionsTest
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
         System.out.println("Size = " + list.size());        // test size
         
-        list.addFront("potato ");                           // now front adding
+        list.addFront("potato");                            // now front adding
         list.addFront("cheese");                            
         list.addFront("cat");                              
         list.addFront("chair");
@@ -63,7 +65,14 @@ public class CollectionsTest
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
         System.out.println("Size = " + list.size());        // test size
         
+        System.out.println(list.toString());
+        
         System.out.println(list.get(3));
+        list.set(3, "graph");
+        System.out.println(list.get(3));
+        
+        System.out.println(list.toString());
+        
         
         // code continues next class.......................................
         
