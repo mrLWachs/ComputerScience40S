@@ -15,21 +15,27 @@ package computerscience30s;
 public class Student extends Person
 {
     
-    private int studentNumber;
-    private int grade;
-    private double gpa;   
+    private int studentNumber;                      // encapsulated property
+    private int grade;                              // encapsulated property
+    private double gpa;                             // encapsulated property
     
     
-    public Student(
-            String name,
-            int age,
-            boolean isMale,
-            int grade,
-            int studentNumber) {
-        super(name, age, isMale);
-        gpa = 0;
+    /**
+     * Constructor for the class sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param grade the grade for this student 
+     * @param studentNumber the student number for this student
+     */
+    public Student(String name, int age, boolean isMale, int grade,
+                   int studentNumber) {
+        super(name, age, isMale);               // call to super constructor
+        gpa = 0;                                // set internal properties
         this.grade = grade;
         this.studentNumber = studentNumber;
     }
    
+    
 }
