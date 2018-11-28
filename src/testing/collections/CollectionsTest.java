@@ -45,33 +45,26 @@ public class CollectionsTest
         // linked list class        
         LinkedList<String> list = new LinkedList<>();       // create list 
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
-        System.out.println("Size = " + list.size());        // test size
-        
-        System.out.println(list.toString());
+        System.out.println("Size = " + list.size());        // test size        
+        System.out.println(list.toString());                // output list
         
         list.addBack("pie");                                // add 1st item
         list.addBack("fish");                               // add second item
         list.addBack("crab");                               // add >1 items
         list.addBack("stool");
-        
-        System.out.println("Is empty = " + list.isEmpty()); // test if empty
-        System.out.println("Size = " + list.size());        // test size
-        
         list.addFront("potato");                            // now front adding
         list.addFront("cheese");                            
         list.addFront("cat");                              
         list.addFront("chair");
         
         System.out.println("Is empty = " + list.isEmpty()); // test if empty
-        System.out.println("Size = " + list.size());        // test size
+        System.out.println("Size = " + list.size());        // test size     
+        System.out.println(list.toString());                // output list
         
-        System.out.println(list.toString());
-        
-        System.out.println(list.get(3));
-        list.set(3, "graph");
-        System.out.println(list.get(3));
-        
-        System.out.println(list.toString());
+        System.out.println(list.get(3));                    // accessor 
+        System.out.println(list.set(3, "graph"));           // modifier
+             
+        System.out.println(list.toString());                // output list
         
         
         // code continues next class.......................................

@@ -44,17 +44,16 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        if (isEmpty()) return "Empty List";
+        if (isEmpty()) return "Empty list";             // no nodes to display
         else {
-            String text = "[";
-            Node current = head;
-            while (current != null) {
-                text += current.toString() + ",";
-                current = current.next;
+            String text = "[";                          // starting character
+            Node current = head;                        // start at head node
+            while (current.next != null) {              // traverse list
+                text += current.toString() + ",";       // append data
+                current = current.next;                 // move to next node
             }            
-            text += "]";
-            return text;
-        }
+            return text + current.toString() + "]";     // append end character
+        } 
     }
         
     /**
@@ -161,11 +160,19 @@ public class LinkedList <T>
         return (T)getNode(index).data;      // get reference and retrieve data  
     }
     
-    
-    public void set(int index, T data) {
-        Node current = getNode(index);
-        if (current == null) return;
-        current.data = data;        
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        Node current = getNode(index);              // get to node at index
+        if (current == null) return false;          // invalid index
+        if (data == null)    return false;          // invalid data
+        current.data = data;                        // change node data
+        return true;                                // operation successful
     }
         
     /**
