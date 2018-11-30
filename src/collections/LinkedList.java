@@ -74,7 +74,11 @@ public class LinkedList <T>
      */
     @Override
     public LinkedList clone() {
-        return this;
+        LinkedList<T> list = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < length; i++) {          // traverse list
+            list.addBack((T)this.getNode(i).data);  // get and add node data          
+        }        
+        return list;                                // new list returned
     }
     
     /**
