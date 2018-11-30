@@ -727,13 +727,14 @@ public class ComputerScience30S
     private static void unit4() {
         System.out.println("\nClasses example started...\n");
         
-        // create (instantiate) an object for the class
+        // create an object for the class
         Person bobby = new Person();
         bobby.talk();                           // call a class method        
         bobby.name = "Roberta Shapiro";         // modify properties
         bobby.birthday(18);                     // call methods
         bobby.talk(); 
         
+        // create (instantiate) another object with different constructor
         Person ben = new Person("Ben Shapiro"); // another object
         ben.talk();                             // with new constructor
                 
@@ -757,19 +758,32 @@ public class ComputerScience30S
         student.cram();
         student.talk();
         
+        // create husky object
+        Husky husky = new Husky("Havoc",12,true,9,2665);
+        husky.talk();
+        husky.meetStaff();
+        husky.talk();
+        husky.eatCafeteriaFood();
+        husky.talk();
         
+        // create teacher object
+        Teacher teacher = new Teacher("Mr. Libby");
+        teacher.students[0] = student;
+        teacher.students[1] = husky;        
+        teacher.talk();
+        teacher.teach();
+        husky.talk();
         
+        // create meeting object
+        Meeting meeting = new Meeting();
+        meeting.attend(bobby);
+        meeting.attend(ben);
+        meeting.attend(sam);
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);        
+        meeting.hold();
         
-        
-        
-        
-        
-        
-        
-        
-        // code continues next class.......................................
-        
-                
         System.out.println("\nClasses example complete!\n");
     }
        
