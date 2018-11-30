@@ -32,10 +32,43 @@ public class Student extends Person
     public Student(String name, int age, boolean isMale, int grade,
                    int studentNumber) {
         super(name, age, isMale);               // call to super constructor
-        gpa = 0;                                // set internal properties
-        this.grade = grade;
+        gpa                = 2.7;               // set internal properties
+        this.grade         = grade;
         this.studentNumber = studentNumber;
     }
    
+    /**
+     * Studying raises the GPA
+     */
+    public void study() {
+        gpa = gpa + (Math.PI * 0.01);
+    }
+    
+    /**
+     * Slacking off lowers the GPA
+     */
+    public void slackOff() {
+        gpa = gpa - (Math.PI * 0.01) / 2;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 6; i++) {          // study 6 times
+            study();
+        }
+    }    
+    
+    /**
+     * Talking overrides the same talk method of the parent class
+     * and outputs additional information to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();
+        System.out.println("\t - Student #: " + studentNumber + 
+                           ", GPA: " + gpa + ", Grade: " +  grade);        
+    }
     
 }

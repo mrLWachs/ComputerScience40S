@@ -747,8 +747,23 @@ public class ComputerScience30S
         sam.die();
         sam.talk();
         
+        // create a student object
         Student student = new Student("Greg Heffley",12,true,6,101);
+        student.talk();                         // call its methods        
+        student.slackOff();
         student.talk();
+        student.study();
+        student.talk();
+        student.cram();
+        student.talk();
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
