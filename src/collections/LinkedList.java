@@ -64,7 +64,17 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> that = (LinkedList<T>)object;
+        if (this.size() != that.size()) return false;
+        Node current1 = this.getFirstNode();
+        Node current2 = that.getFirstNode();
+        while (current1 != null) {
+            if (!current1.equals(current2))
+                return false;
+            current1 = current1.next;
+            current2 = current2.next;
+        }
+        return true;
     }
     
     /**
@@ -179,6 +189,42 @@ public class LinkedList <T>
         return true;                                // operation successful
     }
         
+    
+    public T front() {
+        return get(0);
+    }
+    
+    public T back() {
+        return get(length-1);
+    }
+    
+    
+    public T removeFront() {
+        if (isEmpty()) return null;
+        else {
+            T data = front();
+            if (length == 1) finalize();
+            else {
+                head = head.next;
+                head.previous.next = null;
+                head.previous = null;
+                length--;
+                System.gc();
+            }            
+            return data;
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Checks to see if the index is in the range of the list
      * 

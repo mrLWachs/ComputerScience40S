@@ -69,15 +69,16 @@ public class CollectionsTest
         System.out.println(list.toString());                // output list
         
         // try code with lists of different types
-        LinkedList<Boolean>   values     = new LinkedList<>();
-        LinkedList<Integer>   numbers    = new LinkedList<>();
-        LinkedList<Double>    decimals   = new LinkedList<>();
+        LinkedList<Boolean>   booleans   = new LinkedList<>();
+        LinkedList<Integer>   integers   = new LinkedList<>();
+        LinkedList<Double>    doubles    = new LinkedList<>();
         LinkedList<Character> characters = new LinkedList<>();        
         LinkedList<Athlete>   athletes   = new LinkedList<>();
-        for (int i = 0; i < 10; i++) {
+        final int MAX = 10;
+        for (int i = 0; i < MAX; i++) {
             boolean   random1   = Calculator.random();
-            int       random2   = Calculator.random(1,99);
-            double    random3   = Calculator.random(0.0d,9.9d);
+            int       random2   = Calculator.random(-MAX,MAX);
+            double    random3   = Calculator.random((double)-MAX,(double)MAX);
             char      random4   = Calculator.random('A','Z');
             String    name      = Calculator.random(5);
             int       age       = Calculator.random(18,30);
@@ -88,15 +89,15 @@ public class CollectionsTest
             Double    doub      = new Double(random3);            
             Character character = new Character(random4);
             Athlete   athlete   = new Athlete(name,age,gender,number);            
-            values.addBack(bool);
-            numbers.addFront(integer);
-            decimals.addBack(doub);
+            booleans.addBack(bool);
+            integers.addFront(integer);
+            doubles.addBack(doub);
             characters.addFront(character);
             athletes.addBack(athlete);
         }
-        System.out.println("Boolean   List = " + values.toString());
-        System.out.println("Integer   List = " + numbers.toString());
-        System.out.println("Double    List = " + decimals.toString());
+        System.out.println("Boolean   List = " + booleans.toString());
+        System.out.println("Integer   List = " + integers.toString());
+        System.out.println("Double    List = " + doubles.toString());
         System.out.println("Character List = " + characters.toString());
         System.out.println("Athlete   List = " + athletes.toString());
         
@@ -104,10 +105,18 @@ public class CollectionsTest
         LinkedList<String> clone = list.clone();
         System.out.println(clone.toString());
         
+        if (list.equals(clone)) 
+            System.out.println("list == clone");        
+        LinkedList<String> different = list.clone();
+        different.addBack("Cheese string");        
+        if (!list.equals(different)) 
+            System.out.println("list != different");
         
         
-        
-        
+        // test removing        
+        String removal = list.removeFront();
+        System.out.println(removal);
+        System.out.println(list.toString());
         
         
         
