@@ -64,17 +64,20 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        LinkedList<T> that = (LinkedList<T>)object;
-        if (this.size() != that.size()) return false;
-        Node current1 = this.getFirstNode();
-        Node current2 = that.getFirstNode();
-        while (current1 != null) {
-            if (!current1.equals(current2))
-                return false;
-            current1 = current1.next;
-            current2 = current2.next;
-        }
-        return true;
+        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != that.size()) return false;   // not same sizes
+        else {            
+            Node current1 = this.getFirstNode();        // get reference to
+            Node current2 = that.getFirstNode();        // nodes in each list    
+            while (current1 != null) {                  // traverse lists
+                if (!current1.equals(current2)) {       // not equal data 
+                    return false;                       // not equal lists
+                }                
+                current1 = current1.next;               // move each reference
+                current2 = current2.next;               // to next node
+            }
+            return true;                                // lists are equal
+        }        
     }
     
     /**
@@ -189,41 +192,44 @@ public class LinkedList <T>
         return true;                                // operation successful
     }
         
-    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
     public T front() {
-        return get(0);
+        return get(0);                              // first node
     }
     
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
     public T back() {
-        return get(length-1);
+        return get(length-1);                       // last node
     }
     
-    
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
     public T removeFront() {
-        if (isEmpty()) return null;
+        if (isEmpty()) return null;         // no front to remove
         else {
-            T data = front();
-            if (length == 1) finalize();
-            else {
-                head = head.next;
-                head.previous.next = null;
-                head.previous = null;
-                length--;
-                System.gc();
-            }            
-            return data;
+            T data = front();               // store head data
+            if (length == 1) finalize();    // 1 node list, wipe list
+            else {                
+                head = head.next;           // advanced head reference
+                head.previous.next = null;  // cut old head reference
+                head.previous = null;       // cut reference to old head
+                length--;                   // reduce list length
+                System.gc();                // call system garbage collector
+            }
+            return data;                    // return stored data
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     /**
      * Checks to see if the index is in the range of the list
