@@ -105,18 +105,25 @@ public class CollectionsTest
         LinkedList<String> clone = list.clone();
         System.out.println(clone.toString());
         
+        // testing equals
         if (list.equals(clone)) 
             System.out.println("list == clone");        
         LinkedList<String> different = list.clone();
         different.addBack("Cheese string");        
         if (!list.equals(different)) 
             System.out.println("list != different");
-        
-        
+                
         // test removing        
         String removal = list.removeFront();
         System.out.println(removal);
         System.out.println(list.toString());
+        
+        
+        
+        
+        
+        
+        
         
         
         
