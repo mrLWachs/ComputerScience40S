@@ -232,6 +232,64 @@ public class LinkedList <T>
     }
     
     /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;       
+        else {
+            T data = back();              
+            if (length == 1) finalize();  
+            else {                
+                tail = tail.previous;          
+                tail.next.previous = null; 
+                tail.next = null;      
+                length--;                   
+                System.gc();                
+            }
+            return data;                   
+        }
+    }
+    
+    
+    public boolean contains(T data) {
+        Node current = head;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
+    
+    public boolean addAfter(T data, int index) {
+        if (!inRange(index)) return false;
+        else {
+            // continue tomorrow...
+        }
+        return true;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
      * Checks to see if the index is in the range of the list
      * 
      * @param index the location to check

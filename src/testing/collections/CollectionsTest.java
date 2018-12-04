@@ -113,11 +113,16 @@ public class CollectionsTest
         if (!list.equals(different)) 
             System.out.println("list != different");
                 
-        // test removing        
-        String removal = list.removeFront();
-        System.out.println(removal);
+        // test removing
+        System.out.println(list.toString());        
+        String removal1 = list.removeFront();
+        String removal2 = list.removeBack();
+        System.out.println(removal1);
+        System.out.println(removal2);        
         System.out.println(list.toString());
         
+        System.out.println(list.contains("pie"));
+        System.out.println(list.contains("zebra"));
         
         
         
