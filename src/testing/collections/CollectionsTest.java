@@ -124,10 +124,12 @@ public class CollectionsTest
         System.out.println(list.contains("pie"));
         System.out.println(list.contains("zebra"));
         
-        
-        
-        
-        
+        // test add before and after
+        System.out.println(list.toString());
+        list.addAfter("chart", 2);
+        System.out.println(list.toString());
+        list.addBefore("sardines", 5);
+        System.out.println(list.toString());
         
         
         
