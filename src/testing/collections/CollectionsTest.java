@@ -131,7 +131,9 @@ public class CollectionsTest
         list.addBefore("sardines", 5);
         System.out.println(list.toString());
         
-        
+        // test remove
+        System.out.println(list.remove(5));
+        System.out.println(list.toString());
         
         
         

@@ -337,6 +337,271 @@ public class LinkedList <T>
     }
     
     /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data
+    }
+    
+    /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        Node current = head;                    // start at head
+        int index = 0;                          // start count at 0
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return index;                   // return location
+            }
+            current = current.next;             // advance to next node
+            index++;                            // advance count
+        }
+        return -1;                       // data not found
+    }
+    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        Node current = tail;                    // start at head
+        int index = length-1;                   // start count at total nodes
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found last occurrence
+                return index;                   // return location
+            }
+            current = current.previous;         // return to previous node
+            index--;                            // decrease count
+        }
+        return -1;                       // data not found
+    }
+    
+    /**
+     * Deletes the first occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean remove(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = firstIndexOf(data);         // get first location
+        if (index == -1) return false;          // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes the last occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean removeLast(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = lastIndexOf(data);          // get first location
+        if (index == -1) return false;          // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T data) {
+        if (data == null)    return false;      // nothing to remove
+        if (!contains(data)) return false;      // not in list
+        while(contains(data)) {                 // loop continuously
+            remove(data);                       // removing the data
+        }
+        return true;                            // operation successful
+   }
+    
+    /**
+     * Deletes all occurrences of the different data items in the array 
+     * from the list
+     * 
+     * @param items the node data array items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T[] items) {
+         if (items == null)     return false;   // invalid array
+         if (items.length == 0) return false;   // invalid array
+         for (T item : items) {                 // traverse array
+             removeAll(item);                   // remove array item
+         }
+         return true;                           // operation successful
+    } 
+   
+    /**
+     * Deletes all occurrences of the different data items in the passed
+     * list from the current list
+     * 
+     * @param list the LinkedList of items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(LinkedList<T> list) {
+        if (list == null)   return false;           // invalid list
+        if (list.isEmpty()) return false;           // empty list
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            removeAll(list.get(i));                 // remove list item
+        }
+        return true;                                // operation successful
+    }
+   
+    /**
+     * Wipes out all memory of all contents of the list
+     */
+    public void clear() {
+        Node current = head;                // start at head of the list
+        while (current != null) {           // traverse the list
+            Node next = current.next;       // reference to the next node
+            current.finalize();             // wipe all memory from the node
+            current = next;                 // move to the next node
+        }
+        finalize();                         // wipe all memory from the list
+    }
+   
+    /**
+     * Checks the list to see if it contains all the items in the array
+     * 
+     * @param items the node data array items to check
+     * @return all items are in the array (true) or not (false)
+     */
+    public boolean containsAll(T[] items) {
+        if (items == null)     return false;    // invalid array
+        if (items.length == 0) return false;    // invalid array
+        for (T item : items) {                  // traverse array
+            if (!contains(item)) return false;  // item not in list
+        }
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Checks the list to see if it contains all the items in the array
+     * 
+     * @param list the LinkedList of items to check
+     * @return all items are in the list (true) or not (false)
+     */
+    public boolean containsAll(LinkedList<T> list) {
+        if (list == null)     return false;         // invalid list
+        if (list.size() == 0) return false;         // invalid list
+        for (int i = 0; i < list.size(); i++) {     // traverse array
+            if (!contains((T)list.get(i))) 
+                return false;                       // item not in list
+        }
+        return true;                                // operation successful
+    }
+        
+    /**
+     * The number of instances this data occurs in the list
+     * 
+     * @param data the data to search for
+     * @return the number of instances of the data
+     */
+    public int numberOf(T data) {
+        int counter = 0;                        // start a counter
+        Node current = head;                    // start at head of list
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // item found in list
+                counter++;                      // increase counter
+            }
+            current = current.next;             // advance to next node
+        }
+        return counter;                         // counter returned
+    }
+   
+    /**
+     * Appends all the items from the passed list to the end of the 
+     * current list
+     * 
+     * @param list the Linked list to append on
+     */
+    public void addAll(LinkedList<T> list) {
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            this.add(list.get(i));                  // get and add item
+        }
+    }
+   
+    /**
+     * Appends all the items from the passed list into the current list 
+     * after the passed index
+     * 
+     * @param list the Linked list to append on
+     * @param index the index location to append from
+     */
+    public void addAll(LinkedList<T> list, int index) {
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            this.addAfter(list.get(i), index);      // get and add item after
+            index++;                                // increase index
+        }
+    }
+        
+    /**
+     * Appends all the items from the passed list to the end of the 
+     * current list
+     * 
+     * @param items the array to append on
+     */
+    public void addAll(T[] items) {
+        for (int i = 0; i < items.length; i++) {    // traverse array
+            this.add(items[i]);                     // add array item
+        }
+    }
+    
+    /**
+     * Appends all the items from the passed list into the current list 
+     * after the passed index
+     * 
+     * @param items the array to append on
+     * @param index the index location to append from
+     */
+    public void addAll(T[] items, int index) {
+        for (int i = 0; i < items.length; i++) {    // traverse array
+            this.addAfter(items[i], index);         // add array item after
+            index++;                                // increase index
+        }
+    }
+   
+    /**
+    * Accesses a sub list from the main list based on the passed parameters
+    * 
+    * @param from the index to start the sublist from
+    * @param to the index to end the sub list at
+    * @return a sub list from the main list
+    */
+    public LinkedList<T> subList(int from, int to) {
+        if (!inRange(from)) return null;            // index out of range
+        if (!inRange(to))   return null;            // index out of range
+        if (from > to)      return null;            // index not in line
+        LinkedList<T> list = new LinkedList<>();    // create list
+        for (int i = from; i <= to; i++) {          // traverse indices
+            list.add(this.get(i));                  // add to list from list
+        }
+        return list;                                // return new list
+    }
+        
+    /**
      * Checks to see if the index is in the range of the list
      * 
      * @param index the location to check
