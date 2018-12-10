@@ -33,7 +33,8 @@ public class ComputerScience30S
 //        unit1();    // introduction to java programming
 //        unit2();    // methods in java
 //        unit3();    // arrays in java
-        unit4();    // classes in java
+//        unit4();    // classes in java
+        unit5();    // graphics in java
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
     
@@ -785,6 +786,17 @@ public class ComputerScience30S
         meeting.hold();
         
         System.out.println("\nClasses example complete!\n");
+    }
+
+    /**
+     * The example code for this unit
+     */
+    private static void unit5() {
+        System.out.println("\nGraphics example started...\n");
+        
+        Graphics1 g1 = new Graphics1();
+        
+        System.out.println("\nGraphics example complete!\n");        
     }
        
 }
