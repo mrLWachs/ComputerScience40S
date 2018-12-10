@@ -2,48 +2,75 @@
 /** required package class namespace */
 package collections;
 
+/** required imports */
+import java.lang.reflect.Array;
+
 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and its useful methods
  *
  * @author Mr. Wachs 
- * @param <T> The generic data type used in the class
+ * @param <T> The generic type used 
  * @since 16-Nov-2018 
+ * @instructor Mr. Wachs
  */
 public class LinkedList <T>
 {
 
-    /**
-     * The number of nodes in the list, immutable property
+    /** 
+     * The number of nodes in the list 
      */
-    private int length;
+    private int length;    
     
-    /**
-     * Reference (link) to the first node in the list (entry point)
+    /** 
+     * Node reference entry point to the first node in the list 
      */
     private Node head;
     
-    /**
-     * Reference (link) to the last node in the list (entry point)
+    /** 
+     * Node reference entry point to the last node in the list 
      */
     private Node tail;
-        
     
-    /**
-     * Default constructor for the class, sets class properties
+    /** 
+     * Flag to indicate a search operation was not found 
+     */
+    public static final int NOT_FOUND = -1;
+    
+    
+    /** 
+     * Default constructor for the class 
      */
     public LinkedList() {
         finalize();
     }
-
+    
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param array the data objects to create the list from
+     */
+    public LinkedList(T[] array) {
+        fromArray(array);
+    }
+        
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param list the data objects to create the list from
+     */
+    public LinkedList(LinkedList<T> list) {
+        fromLinkedList(list);
+    }
+    
     /**
      * String representation of this object
      *
      * @return The object represented as a String
      */
     @Override
-    public String toString() {
+    public String toString() {        
         if (isEmpty()) return "Empty list";             // no nodes to display
         else {
             String text = "[";                          // starting character
@@ -53,9 +80,9 @@ public class LinkedList <T>
                 current = current.next;                 // move to next node
             }            
             return text + current.toString() + "]";     // append end character
-        } 
+        }        
     }
-        
+
     /**
      * Determines if two objects are "equal" in this context
      *
@@ -64,11 +91,11 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
-        if (this.size() != that.size()) return false;   // not same sizes
+        LinkedList<T> list = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != list.size()) return false;   // not same sizes
         else {            
             Node current1 = this.getFirstNode();        // get reference to
-            Node current2 = that.getFirstNode();        // nodes in each list    
+            Node current2 = list.getFirstNode();        // nodes in each list    
             while (current1 != null) {                  // traverse lists
                 if (!current1.equals(current2)) {       // not equal data 
                     return false;                       // not equal lists
@@ -79,13 +106,12 @@ public class LinkedList <T>
             return true;                                // lists are equal
         }        
     }
-    
+
     /**
      * Creates a duplicate object using new memory
      *
      * @return a "clone" of the object using new memory
      */
-    @Override
     public LinkedList clone() {
         LinkedList<T> list = new LinkedList<>();    // create new list memory
         for (int i = 0; i < length; i++) {          // traverse list
@@ -93,6 +119,24 @@ public class LinkedList <T>
         }        
         return list;                                // new list returned
     }
+    
+    /**
+     * Determines if the list is empty (no content)
+     * 
+     * @return is empty (true) or not empty (false)
+     */
+    public boolean isEmpty() {
+        return length == 0;                         // compares length to zero
+    }
+       
+    /**
+     * The number of nodes (the length) of the list
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;                              // encapsulated property
+    } 
     
     /**
      * Frees up all memory used by this object
@@ -105,26 +149,28 @@ public class LinkedList <T>
     }
     
     /**
-     * Determines if the list is empty (no content)
+     * Inserts data into the front (head) of the list
      * 
-     * @return is empty (true) or not empty (false)
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
      */
-    public boolean isEmpty() {
-        return length == 0;                         // compares length to zero
+    public boolean addFront(T data) {
+        if (data == null) return false;     // null data cannot be added        
+        Node<T> node = new Node<>(data);    // new node memory created    
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
+        }
+        else {                              // subsequent nodes added
+            node.next = head;               // link node to rest of list
+            head.previous = node;           // connect rest of list to node
+            head = node;                    // reassign head reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
     }
     
     /**
-     * Accessor method for the number of nodes (the length) of the list
-     * 
-     * @return the number of nodes in the list
-     */
-    public int size() {
-        return length;                              // encapsulated property
-    }
-    
-    /**
-     * Inserts data to the back (tail) of the list, for an (1) empty list, 
-     * (2) list of 1 node, (3) list of > 1 node
+     * Inserts data into the back (tail) of the list
      * 
      * @param data the data type to add
      * @return the operation was successful (true) or not (false)
@@ -139,28 +185,6 @@ public class LinkedList <T>
             node.previous = tail;           // link node to rest of list
             tail.next = node;               // connect rest of list to node
             tail = node;                    // reassign tail reference
-        }
-        length++;                           // increase length environmental
-        return true;                        // operation successful
-    }
-    
-    /**
-     * Inserts data to the front (head) of the list, for an (1) empty list, 
-     * (2) list of 1 node, (3) list of > 1 node
-     * 
-     * @param data the data type to add
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean addFront(T data) {
-        if (data == null) return false;     // null data cannot be added 
-        Node<T> node = new Node<>(data);    // new node memory created    
-        if (isEmpty()) {                    // adding first node
-            head = tail = node;             // set references
-        }
-        else {                              // subsequent nodes added
-            node.next = head;               // link node to rest of list
-            head.previous = node;           // connect rest of list to node
-            head = node;                    // reassign head reference
         }
         length++;                           // increase length environmental
         return true;                        // operation successful
@@ -191,7 +215,7 @@ public class LinkedList <T>
         current.data = data;                        // change node data
         return true;                                // operation successful
     }
-        
+    
     /**
      * Accesses the first, head, front data in the list
      * 
@@ -218,7 +242,7 @@ public class LinkedList <T>
     public T removeFront() {
         if (isEmpty()) return null;         // no front to remove
         else {
-            T data = front();               // store head data
+            T data = (T)head.data;          // store head data
             if (length == 1) finalize();    // 1 node list, wipe list
             else {                
                 head = head.next;           // advanced head reference
@@ -277,8 +301,8 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean addAfter(T data, int index) {
-        if (!inRange(index))   return false;            // index out of range
-        if (data == null)      return false;            // invalid data to add
+        if (!inRange(index)) return false;              // index out of range
+        if (data == null)    return false;              // invalid data to add
         if (index == length-1) return addBack(data);    // add to end of list
         else {                                          // adding into middle
             Node node = new Node(data);                 // create node object
@@ -371,7 +395,7 @@ public class LinkedList <T>
             current = current.next;             // advance to next node
             index++;                            // advance count
         }
-        return -1;                       // data not found
+        return NOT_FOUND;                       // data not found
     }
     
     /**
@@ -391,7 +415,7 @@ public class LinkedList <T>
             current = current.previous;         // return to previous node
             index--;                            // decrease count
         }
-        return -1;                       // data not found
+        return NOT_FOUND;                       // data not found
     }
     
     /**
@@ -403,7 +427,7 @@ public class LinkedList <T>
     public boolean remove(T data) {
         if (data == null) return false;         // nothing to remove
         int index = firstIndexOf(data);         // get first location
-        if (index == -1) return false;          // not in list
+        if (index == NOT_FOUND) return false;   // not in list
         remove(index);                          // remove
         return true;                            // operation successful
     }
@@ -417,7 +441,7 @@ public class LinkedList <T>
     public boolean removeLast(T data) {
         if (data == null) return false;         // nothing to remove
         int index = lastIndexOf(data);          // get first location
-        if (index == -1) return false;          // not in list
+        if (index == NOT_FOUND) return false;   // not in list
         remove(index);                          // remove
         return true;                            // operation successful
     }
@@ -600,18 +624,84 @@ public class LinkedList <T>
         }
         return list;                                // return new list
     }
-        
+    
     /**
-     * Checks to see if the index is in the range of the list
+     * Mutates the list into a list only matching the contents of the array
+     * 
+     * @param array the data objects to form the list from
+     */
+    public final void fromArray(T[] array) {
+        finalize();                                 // wipe list memory
+        for (T item : array) {                      // traverse array
+            add(item);                              // add array item
+        }
+    }
+    
+    /**
+     * Mutates list into a list only matching the contents of the other list
+     * 
+     * @param list the data objects to form the list from
+     */
+    public final void fromLinkedList(LinkedList<T> list) {
+        finalize();                                 // wipe list memory
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            add(list.get(i));                       // get and add item
+        }
+    }
+    
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        array = (T[])(
+                Array.newInstance(
+                        array.getClass().getComponentType(), 
+                        length)
+                );                              // create empty array
+        for (int i = 0; i < length; i++) {      // traverse list
+            array[i] = get(i);                  // add to array
+        }
+        return array;                           // return completed array
+    }
+    
+    /**
+     * Accesses all occurrences of the passed data in the list and returns an
+     * integer array containing all index values the data occurred at
+     * 
+     * @param data the data to search for
+     * @return all indices location in an array or null if no indices
+     */
+    public int[] allIndices(T data) {
+        if (!contains(data)) return null;       // no data in the list
+        int size = numberOf(data);              // get number of occurrences
+        int[] array = new int[size];            // create array 
+        Node current = head;                    // start at head
+        int counter = 0;                        // start counter
+        for (int i = 0; i < length; i++) {      // traverse list
+            if (current.data.equals(data)) {    // item encountered
+                array[counter] = i;             // insert index into array
+                counter++;                      // increase counter
+                if (counter >= size) return array;
+            }
+            current = current.next;             // move to next node
+        }
+        return array;                           // return completed array
+    }
+    
+    /**
+     * Checks to see if the index is in range of the list
      * 
      * @param index the location to check
      * @return it is in range (true) or not (false)
-     */
+     */        
     private boolean inRange(int index) {
-        if (isEmpty())      return false;
-        if (index < 0)      return false;
-        if (index > length) return false;
-        return true;
+        if (isEmpty())       return false;  // empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index is valid
     }
     
     /**
@@ -622,7 +712,7 @@ public class LinkedList <T>
     protected Node getFirstNode() {
         return head;
     }
-    
+
     /**
      * Reference to the last (tail) node in the list
      * 
