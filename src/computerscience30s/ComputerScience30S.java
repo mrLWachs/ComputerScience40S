@@ -794,7 +794,11 @@ public class ComputerScience30S
     private static void unit5() {
         System.out.println("\nGraphics example started...\n");
         
-        Graphics1 g1 = new Graphics1();
+        Graphics1 g1 = new Graphics1(); // 1st graphics object all coded    
+        Graphics2 g2 = new Graphics2(); // 2nd graphics object using designer  
+        
+        
+        // code continued next class..................        
         
         System.out.println("\nGraphics example complete!\n");        
     }

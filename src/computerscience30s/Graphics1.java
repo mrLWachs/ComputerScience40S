@@ -3,7 +3,9 @@
 package computerscience30s;
 
 /** required imports */
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 
 /**
@@ -19,13 +21,34 @@ import javax.swing.JFrame;
  */
 public class Graphics1 extends JFrame
 {
+    // properties (controls in my container)
+    
+    private JButton button;     // a command button
+    private JLabel text;        // labels can be for text, images, or both
+    private JLabel picture;     
+        
 
     /**
      * Default class constructor, sets class properties
      */
     public Graphics1() {
-        this.setSize(800, 800);             // sets frame's width and height
-        this.setVisible(true);              // makes the frame visible
+        // set frame's (form) properties:
+        this.setSize(800, 800);                         // set width and height
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);   // when I hit the "X"
+        this.setTitle("Graphics One");                  // title at the top
+        this.setResizable(false);                       // cannot resize
+        this.setLocationRelativeTo(null);               // center on screen
+
+        // build (instantiate) my controls:        
+        text = new JLabel("Hello World");               
+        button = new JButton("Exit");
+        
+        
+        
+        // code continued next class..................        
+                
+        // reveal my design to the user
+        this.setVisible(true);                          // makes frame visible
     }  
    
 }
