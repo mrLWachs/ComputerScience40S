@@ -25,7 +25,6 @@ import javax.swing.JTextField;
  *
  * @author Mr. Wachs 
  * @since December 10, 2018 
- * @instructor Mr. Wachs
  */
 public class Graphics1 extends JFrame
 {

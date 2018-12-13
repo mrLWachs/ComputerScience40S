@@ -2,6 +2,7 @@
 /** required package class namespace */
 package computerscience30s;
 
+/** required imports */
 import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.SpinnerNumberModel;
@@ -9,7 +10,8 @@ import javax.swing.Timer;
 
 
 /**
- * Graphics3.java - 
+ * Graphics3.java - using the NetBeans visual designer in combination
+ * with our custom code to make a "mini final project" type of application
  *
  * @author Mr. Wachs 
  * @since 13-Dec-2018 
@@ -17,7 +19,7 @@ import javax.swing.Timer;
 public class Graphics3 extends javax.swing.JFrame 
 {
 
-    // global variables, properties
+    // Global variables (properties) below ....................................
     
     // constants:
     private final int MIN    = 2;       // for the brushes
@@ -29,12 +31,13 @@ public class Graphics3 extends javax.swing.JFrame
         "3D rectangle", "arc"
     };
     
-    // variables:
+    // primitive variables:
     private String brush;
     private int    size;
     private int    currentX;
     private int    currentY;
     
+    // class object variables:
     private Color              foreground;
     private Color              background;
     private Graphics           graphics;
@@ -42,13 +45,17 @@ public class Graphics3 extends javax.swing.JFrame
     private Timer              timer;
     
     
-    /** Creates new form Graphics4 */
+    /**
+     * Default class constructor, sets class properties
+     */
     public Graphics3() {
         initComponents();
-        setup();
+        setup();                // jump to custom method
         this.setVisible(true);
     }
 
+    // NetBeans designer code below ...........................................
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -197,21 +204,20 @@ public class Graphics3 extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        setForeground();
+        setForeground();        // jump to custom method
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        setBackground();
+        setBackground();        // jump to custom method
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        clear();
+        clear();                // jump to custom method
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        starBurst();
+        starBurst();            // jump to custom method
     }//GEN-LAST:event_jButton4ActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -229,24 +235,41 @@ public class Graphics3 extends javax.swing.JFrame
     private javax.swing.JSpinner jSpinner1;
     // End of variables declaration//GEN-END:variables
 
+    // Custom methods below ...................................................
+    
+    /**
+     * Sets up the objects needed to draw the graphics eventually
+     */
     private void setup() {
-        
+        // TO DO !!!
     }
 
+    /**
+     * Sets the foreground color for the brushes
+     */
     private void setForeground() {
-        
+        // TO DO !!!
     }
 
+    /**
+     * Set the background color of the drawing surface
+     */
     private void setBackground() {
-        
+        // TO DO !!!
     }
 
+    /**
+     * Clears the drawing surface of all graphics
+     */
     private void clear() {
-        
+        // TO DO !!!
     }
 
+    /**
+     * Starts a timer drawing random stars on the drawing surface
+     */
     private void starBurst() {
-        
+        // TO DO !!!
     }
 
 }

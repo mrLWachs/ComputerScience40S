@@ -10,7 +10,6 @@ package computerscience30s;
  *
  * @author Mr. Wachs 
  * @since December 11, 2018 
- * @instructor Mr. Wachs
  */
 public class Graphics2 extends javax.swing.JFrame 
 {
