@@ -796,9 +796,7 @@ public class ComputerScience30S
         
         Graphics1 g1 = new Graphics1(); // 1st graphics object all coded    
         Graphics2 g2 = new Graphics2(); // 2nd graphics object using designer  
-        
-        
-        // code continued next class..................        
+        Graphics3 g3 = new Graphics3(); // 3rd graphics object code / designer  
         
         System.out.println("\nGraphics example complete!\n");        
     }
