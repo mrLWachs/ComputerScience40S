@@ -5,6 +5,12 @@ package computerscience30s;
 /** required imports */
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
+import javax.swing.JColorChooser;
+import javax.swing.JRadioButton;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.Timer;
 
@@ -82,6 +88,16 @@ public class Graphics3 extends javax.swing.JFrame
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel1MouseDragged(evt);
+            }
+        });
+        jPanel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+            public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+                jPanel1MouseWheelMoved(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -95,19 +111,55 @@ public class Graphics3 extends javax.swing.JFrame
         );
 
         jRadioButton1.setText("Filled Oval");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
 
         jRadioButton2.setText("Open Oval");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
 
         jRadioButton3.setText("Filled Rectangle");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
 
         jRadioButton4.setText("Open Rectangle");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
 
         jRadioButton5.setText("3D Rectangle");
+        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton5ActionPerformed(evt);
+            }
+        });
 
         jRadioButton6.setText("Arc");
+        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton6ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("Brush size:");
         jLabel1.setToolTipText("");
+
+        jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner1StateChanged(evt);
+            }
+        });
 
         jButton1.setText("Foreground Color");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -219,6 +271,42 @@ public class Graphics3 extends javax.swing.JFrame
         starBurst();            // jump to custom method
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jPanel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseDragged
+        drag(evt);              // jump to custom method
+    }//GEN-LAST:event_jPanel1MouseDragged
+
+    private void jPanel1MouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_jPanel1MouseWheelMoved
+        wheel(evt);             // jump to custom method
+    }//GEN-LAST:event_jPanel1MouseWheelMoved
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        radio(jRadioButton1,BRUSHES[0]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        radio(jRadioButton2,BRUSHES[1]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        radio(jRadioButton3,BRUSHES[2]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        radio(jRadioButton4,BRUSHES[3]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+        radio(jRadioButton5,BRUSHES[4]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton5ActionPerformed
+
+    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+        radio(jRadioButton6,BRUSHES[5]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton6ActionPerformed
+
+    private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
+        spinner();                          // jump to custom method
+    }//GEN-LAST:event_jSpinner1StateChanged
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -241,21 +329,57 @@ public class Graphics3 extends javax.swing.JFrame
      * Sets up the objects needed to draw the graphics eventually
      */
     private void setup() {
-        // TO DO !!!
+        // setup the primitives
+        size     = MIN;
+        brush    = BRUSHES[0];
+        currentX = 0;
+        currentY = 0;
+        // setup the advanced data types
+        background = Color.white;
+        foreground = Color.black;
+        graphics   = jPanel1.getGraphics();
+        model      = (SpinnerNumberModel)jSpinner1.getModel();        
+        // assign them to the controls
+        model.setValue(size);
+        model.setStepSize(CHANGE);
+        model.setMaximum(MAX);
+        model.setMinimum(MIN);        
+        jRadioButton1.setSelected(true);        
+        graphics.setColor(foreground);
+        jPanel1.setBackground(background);
+        // setup the timer
+        timer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tick();
+            }
+        });
     }
 
     /**
      * Sets the foreground color for the brushes
      */
     private void setForeground() {
-        // TO DO !!!
+        timer.stop();                               // stop timer (if running)
+        foreground = JColorChooser.showDialog(this, 
+                "Choose a foreground color", foreground);   // dialog selection
+        if (foreground == null) {                           // nothing chosen
+            foreground = Color.black;                       // default color
+        }
+        graphics.setColor(foreground);                      // set chosen color
     }
 
     /**
      * Set the background color of the drawing surface
      */
     private void setBackground() {
-        // TO DO !!!
+        timer.stop();                               // stop timer (if running)
+        background = JColorChooser.showDialog(this, 
+                "Choose a background color", background);   // dialog selection
+        if (background == null) {                           // nothing chosen
+            background = Color.white;                       // default color
+        }
+        jPanel1.setBackground(background);                  // set chosen color
     }
 
     /**
@@ -272,4 +396,46 @@ public class Graphics3 extends javax.swing.JFrame
         // TO DO !!!
     }
 
+    /**
+     * The event of dragging a mouse over the panel drawing area
+     * 
+     * @param evt the mouse event 
+     */
+    private void drag(MouseEvent evt) {
+        // TO DO !!!
+    }
+
+    /**
+     * The event of the mouse wheel spinning over the panel drawing area
+     * 
+     * @param evt the mouse wheel event 
+     */
+    private void wheel(MouseWheelEvent evt) {
+        // TO DO !!!
+    }
+
+    /**
+     * User selected a brush radio button
+     * 
+     * @param button the specific radio button selected
+     * @param brush the specific brush selected
+     */
+    private void radio(JRadioButton button, String brush) {
+        // TO DO !!!
+    }
+
+    /**
+     * The event for the brush size spinner
+     */
+    private void spinner() {
+        // TO DO !!!
+    }
+
+    /**
+     * The event the timer runs on it's interval
+     */
+    private void tick() {
+        // TO DO !!!
+    }
+    
 }
