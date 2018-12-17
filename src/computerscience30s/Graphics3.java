@@ -435,14 +435,24 @@ public class Graphics3 extends javax.swing.JFrame
      * @param brush the specific brush selected
      */
     private void radio(JRadioButton button, String brush) {
-        // TO DO !!!
+        timer.stop();
+        JRadioButton[] buttons = {
+            jRadioButton1,jRadioButton2,jRadioButton3,
+            jRadioButton4,jRadioButton5,jRadioButton6
+        };
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i].setSelected(false);
+        }
+        button.setSelected(true);
+        this.brush = brush;
     }
 
     /**
      * The event for the brush size spinner
      */
     private void spinner() {
-        // TO DO !!!
+        if (timer != null) timer.stop();
+        size = (Integer)model.getNumber();
     }
 
     /**
