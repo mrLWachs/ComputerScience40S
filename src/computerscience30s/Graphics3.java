@@ -386,14 +386,16 @@ public class Graphics3 extends javax.swing.JFrame
      * Clears the drawing surface of all graphics
      */
     private void clear() {
-        // TO DO !!!
+        timer.stop();
+        jPanel1.repaint();
     }
 
     /**
      * Starts a timer drawing random stars on the drawing surface
      */
     private void starBurst() {
-        // TO DO !!!
+        jPanel1.repaint();
+        timer.start();
     }
 
     /**
