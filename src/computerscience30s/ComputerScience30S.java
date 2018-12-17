@@ -2,6 +2,7 @@
 package computerscience30s;
 
 /** required imports */
+import game.Game;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
@@ -34,7 +35,8 @@ public class ComputerScience30S
 //        unit2();    // methods in java
 //        unit3();    // arrays in java
 //        unit4();    // classes in java
-        unit5();    // graphics in java
+//        unit5();    // graphics in java
+        Game game = new Game();
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
     
