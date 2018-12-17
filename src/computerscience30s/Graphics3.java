@@ -425,7 +425,12 @@ public class Graphics3 extends javax.swing.JFrame
      * @param evt the mouse wheel event 
      */
     private void wheel(MouseWheelEvent evt) {
-        // TO DO !!!
+        timer.stop();
+        if (evt.getWheelRotation() < 0) size += CHANGE;
+        else                            size -= CHANGE;
+        if (size < MIN) size = MIN;
+        if (size > MAX) size = MAX;
+        model.setValue(size);
     }
 
     /**
