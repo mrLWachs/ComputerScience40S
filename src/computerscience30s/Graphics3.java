@@ -5,6 +5,7 @@ package computerscience30s;
 /** required imports */
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Polygon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -466,7 +467,44 @@ public class Graphics3 extends javax.swing.JFrame
      * The event the timer runs on it's interval
      */
     private void tick() {
-        // TO DO !!!
+        final int SPACE = 8;
+        final int POINTS = 10;
+        int w = jPanel1.getWidth() - (SPACE * 5);
+        int h = jPanel1.getHeight() - (SPACE * 5);
+        currentX = (int)((w-SPACE+1d)*Math.random()+SPACE);
+        currentY = (int)((h-SPACE+1d)*Math.random()+SPACE);
+        // all the points
+        int x1  = currentX;
+        int x2  = x1 + SPACE;
+        int x3  = x2 + SPACE;
+        int x4  = x3 + SPACE;
+        int x5  = x4 + SPACE;
+        int x6  = x5 - SPACE;
+        int x7  = x6 + SPACE;
+        int x8  = x7 - (SPACE * 2);
+        int x9  = x8 - (SPACE * 2);
+        int x10 = x9 + SPACE;
+        // all the y points
+        int y1  = currentY;
+        int y2  = y1;
+        int y3  = y2 - SPACE;
+        int y4  = y3 + SPACE;
+        int y5  = y4;
+        int y6  = y5 + SPACE;
+        int y7  = y6 + (SPACE * 2);
+        int y8  = y7 - SPACE;
+        int y9  = y8 + SPACE;
+        int y10 = y9 - (SPACE * 2);
+        // put all points in a array
+        int xPoints[] = {x1,x2,x3,x4,x5,x6,x7,x8,x9,x10};
+        int yPoints[] = {y1,y2,y3,y4,y5,y6,y7,y8,y9,y10};
+        int r = (int)((255d-0d+1d)*Math.random()+0d);
+        int g = (int)((255d-0d+1d)*Math.random()+0d);
+        int b = (int)((255d-0d+1d)*Math.random()+0d);
+        Color color = new Color(r, g, b);
+        Polygon polygon = new Polygon(xPoints, yPoints, POINTS);
+        graphics.setColor(color);
+        graphics.fillPolygon(polygon);
     }
     
 }
