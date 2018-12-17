@@ -402,7 +402,21 @@ public class Graphics3 extends javax.swing.JFrame
      * @param evt the mouse event 
      */
     private void drag(MouseEvent evt) {
-        // TO DO !!!
+        timer.stop();
+        int x = evt.getX()-(size/2);
+        int y = evt.getY()-(size/2);        
+        if      (brush.equals(BRUSHES[0])) 
+            graphics.fillOval(x, y, size, size);
+        else if (brush.equals(BRUSHES[1])) 
+            graphics.drawOval(x, y, size, size);
+        else if (brush.equals(BRUSHES[2])) 
+            graphics.fillRect(x, y, size, size);
+        else if (brush.equals(BRUSHES[3])) 
+            graphics.drawRect(x, y, size, size);
+        else if (brush.equals(BRUSHES[4])) 
+            graphics.fill3DRect(x, y, size, size,true);
+        else if (brush.equals(BRUSHES[5])) 
+            graphics.drawArc(x, y, size, size,45,120);        
     }
 
     /**
