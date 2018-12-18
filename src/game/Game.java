@@ -3,9 +3,8 @@
 package game;
 
 
-
 /**
- * Game.java - 
+ * Game.java - a test of game mechanics
  *
  * @author Mr. Wachs 
  * @since 17-Dec-2018 
@@ -13,6 +12,9 @@ package game;
 public class Game 
 {
 
+    /**
+     * Default constructor for the class, sets class property data
+     */
     public Game() {
         System.out.println("test");
     }
