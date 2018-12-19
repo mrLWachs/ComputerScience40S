@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package game;
+package game.gametools;
 
 
 /**
@@ -22,13 +22,14 @@ public class Directions
     public static final int STOP = 0;
     
     // 8 directional game constants
-    public static final int NORTH            = 1;
-    public static final int NORTH_EAST       = 2;
-    public static final int EAST             = 3;
-    public static final int SOUTH_EAST       = 4;
-    public static final int SOUTH            = 5;
-    public static final int SOUTH_WEST       = 6;
-    public static final int WEST             = 7;
+    public static final int WEST             = 1;
+    public static final int EAST             = 2;
+    public static final int NORTH            = 3;
+    public static final int SOUTH            = 4;
+    
+    public static final int NORTH_EAST       = 5;    
+    public static final int SOUTH_EAST       = 6;    
+    public static final int SOUTH_WEST       = 7;    
     public static final int NORTH_WEST       = 8;
     
     // 16 directional game constants
@@ -42,9 +43,9 @@ public class Directions
     public static final int NORTH_NORTH_WEST = 16;
     
     // 4 or 2 directional game constants
+    public static final int LEFT  = WEST;
+    public static final int RIGHT = EAST;
     public static final int UP    = NORTH;
     public static final int DOWN  = SOUTH;
-    public static final int LEFT  = WEST;
-    public static final int RIGHT = EAST;    
-    
+            
 }

@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package game;
+package game.gametools;
 
 
 /**
@@ -222,7 +222,7 @@ public class Mover
      * directions in the game
      */
     public void randomDirection() {
-        source.direction = (int)((numberOfDirections) * Math.random() + 1d);        
+        source.direction = (int)((numberOfDirections - 1d + 1d) * Math.random() + 1d);
     }
     
 }

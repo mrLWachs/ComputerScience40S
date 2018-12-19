@@ -1,6 +1,6 @@
 
 /** required package class namespace */
-package game;
+package game.gametools;
 
 
 /**
