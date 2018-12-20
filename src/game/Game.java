@@ -16,7 +16,7 @@ public class Game
      * Default constructor for the class, sets class property data
      */
     public Game() {
-        System.out.println("test");
+        UI ui = new UI();
     }
 
 }
