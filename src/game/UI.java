@@ -2,6 +2,10 @@
 /** required package class namespace */
 package game;
 
+/** required imports */
+import collections.LinkedList;
+import javax.swing.JLabel;
+
 
 /**
  * UI.java - the user interface for the game
@@ -12,13 +16,24 @@ package game;
 public class UI extends javax.swing.JFrame 
 {
 
+    private GameEngine engine;
+    
     /**
      * Default constructor for the class, sets class property data
      */
     public UI() {
-        initComponents();        
-        this.setSize(900, 720);
-        this.setVisible(true);                
+        initComponents();      
+        JLabel heroImage      = jLabel2;    // create the correct label names
+        JLabel enemyImage     = jLabel1;
+        JLabel objectiveImage = jLabel3;
+        LinkedList<JLabel> wallImages = new LinkedList<>();
+        wallImages.add(jLabel4);            // put wall image names into a list  
+        wallImages.add(jLabel5);
+        wallImages.add(jLabel6);
+        wallImages.add(jLabel7);
+        wallImages.add(jLabel8);
+        wallImages.add(jLabel9);     
+        engine = new GameEngine(this, heroImage, objectiveImage, enemyImage, wallImages);          
     }
 
     /** This method is called from within the constructor to
@@ -41,6 +56,11 @@ public class UI extends javax.swing.JFrame
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -105,6 +125,10 @@ public class UI extends javax.swing.JFrame
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        engine.keypress(evt);
+    }//GEN-LAST:event_formKeyPressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
