@@ -1,56 +1,48 @@
-// line below, put in automatically
-// connects this file to the project
+// The line below is put in automatically, and connects file to the project
 package computerscience30s;
-
-// the name of the file matching it in code
 
 import javax.swing.JOptionPane;
 
-// defining a class (learn more about later)
+// Name of the file matching it in code defining a class (learn more later)
 public class ComputerScience30S 
-{   // curly brackets DO NOT remove
+{   // Curly brackets DO NOT remove
     
-    // a method (which we learn in next unit)
+    // A method (which we learn in next unit)
     public static void main(String[] args) {
         
         // JAVA BASIC INPUT AND OUTPUTS
         
-        // a 1 line comment
+        // A single line comment
         
         /*
-            multiple line comment
-            covers as many lines as you want
-            until it sees the closing
+            Multiple line comments, covers as many lines as you want
+            starting with "slash star" until it sees the closing "star slash"
         */
         
-        // basic output
+        // Basic output
         System.out.print("Hello World");
         
-        // words starting with captial letters
-        // are powerful, they are a "class"
+        // Words starting with captial letters are powerful, they are a "class"
         
-        // type "sout" and press TAB        
+        // TIP: type "sout" and press TAB        
         System.out.println("I'm in the world");
         System.out.println("Good-bye world");
         
-        // output "special" characters
+        // Output "special" characters
         System.out.println("Quote \" " );
         System.out.println("\tMake a tab");
         System.out.println("\\Slash");
         System.out.println("New\n\nLine");
         
         
-        // TIP: if your want intellisense
-        // to appear at any time press:
-        // "CTRL" + "SPACE"
+        // TIP: if your want intellisense to appear at any time press:
+        // "CTRL" + "SPACE"        
+        // TIP: "null" is a placeholder for code you don't actually want
         
-        // "null" is a placeholder for code you 
-        // don't actually want
-        
-        // "fancy" ouptut using a dialog
+        // Create "fancy" ouptut using a dialog
         JOptionPane.showMessageDialog(null, "Hi");
         
-        // optional versions of output dialogs
+        // Optional versions of output dialogs:
         
         JOptionPane.showMessageDialog(null, 
                 "Information dialog icon is i");
