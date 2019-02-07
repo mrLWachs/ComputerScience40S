@@ -1,3 +1,4 @@
+
 // The line below is put in automatically, and connects file to the project
 package computerscience30s;
 
@@ -20,7 +21,7 @@ public class ComputerScience30S
         */
         
         // Basic output
-        System.out.print("Hello World");
+        System.out.print("Hello World");    // comments can also go after code
         
         // Words starting with captial letters are powerful, they are a "class"
         
@@ -45,7 +46,36 @@ public class ComputerScience30S
         // Optional versions of output dialogs:
         
         JOptionPane.showMessageDialog(null, 
-                "Information dialog icon is i");
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showMessageDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
