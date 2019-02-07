@@ -91,8 +91,46 @@ public class ComputerScience30S
                 "Plain Title",
                 JOptionPane.PLAIN_MESSAGE);
         
+        // optional confirm dialog:
         
+        JOptionPane.showConfirmDialog(null, "Confirm");
         
+        // more optional examples of confirm dialog
+        
+        JOptionPane.showConfirmDialog(null,
+                "Example 1",
+                "Information",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Example 2",
+                "Question",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Example 3",
+                "Warning",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(null,
+                "Example 4",
+                "Plain",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // VARIABLES:
+        
+        // simple variables
+        
+        boolean a = true;
+        // type name assigned value
+        // when you "create" declare a variable
+        
+        int    b = 0;
+        double c = 0.0;
         
         
         
