@@ -65,11 +65,31 @@ public class ComputerScience30S
                 "Plain Title",
                 JOptionPane.PLAIN_MESSAGE);
         
+        // dialog for inputs
         
+        JOptionPane.showInputDialog("Enter something");
         
+        // some optional versions of input dialog
         
+        JOptionPane.showInputDialog(null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
         
+        JOptionPane.showInputDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showInputDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
         
+        JOptionPane.showInputDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
         
         
         
