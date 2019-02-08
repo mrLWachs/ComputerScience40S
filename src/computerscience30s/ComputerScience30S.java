@@ -132,6 +132,14 @@ public class ComputerScience30S
         int    b = 0;
         double c = 0.0;
         
+        // variables can change (vary)
+        a = false;
+        b = 1;
+        c = 1.2;
+        
+        // variable always goes on the LHS
+        // and the value going in it goes on the RHS
+        
         
         
         
