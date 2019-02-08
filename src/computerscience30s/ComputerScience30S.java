@@ -182,6 +182,35 @@ public class ComputerScience30S
         
         System.out.println("y = " + y); // 4
         
+        // modulus (mod) gives you the remainder
+        // of a division, uses %
+        
+        x     = 28;
+        y     = x / 5;
+        int z = x % 5;
+        
+        System.out.println("x = " + x); 
+        System.out.println("y = " + y); 
+        System.out.println("z = " + z); 
+        
+        // constants are variables that never change
+        // constants are writeen in ALL CAPS
+        final double  PI           = 3.14159265;
+        final int     PROBLEMS     = 99;
+        final char    YES          = 'y';
+        final boolean FOUND        = true;
+        final String  TEACHER_NAME = "Wachs";
+        
+        System.out.println(
+                PI + " and " + 
+                PROBLEMS + " and " + 
+                YES + " and " + 
+                FOUND + " and " + 
+                TEACHER_NAME);
+        
+        
+        
+        
         
         
         
