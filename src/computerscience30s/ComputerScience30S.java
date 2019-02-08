@@ -208,9 +208,32 @@ public class ComputerScience30S
                 FOUND + " and " + 
                 TEACHER_NAME);
         
+        // converting between data types
         
+        int    f = 15;
+        double g = f;
         
+        System.out.println("f = " + f);
+        System.out.println("g = " + g);
         
+        // we use "casting" to convert
+        int h = (int)g;
+        // "ignores" or removes (concatinate) the
+        // decimal portion
+        System.out.println("h = " + h);
+        
+        double k = 2.9999999999;
+        int    l = (int)k;
+        double m = (double)l;
+        // casting can go both ways, and other ways...
+        
+        char n = '&';
+        int  o = (int)n;
+        System.out.println("o = " + o);
+        
+        o = 42;
+        n = (char)o;
+        System.out.println("n = " + n);
         
         
         
