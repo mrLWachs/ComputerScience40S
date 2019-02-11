@@ -301,6 +301,24 @@ public class ComputerScience30S
         int value = (int)number;
         System.out.println("Random # = " + value);
         
+        // Conditional Statements
+        
+        int value1 = 10, value2 = 10;
+        // simple if statement, when something
+        // is true, checks for that 1 thing
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
+        
+        // if with else, for both true and false
+        // checks for 2 things
+        double value3 = 1.45, value4 = 1.5;
+        if (value3 < value4) {
+            System.out.println("less than");
+        }
+        else {
+            System.out.println("greater than");
+        }
         
         
         
