@@ -4,7 +4,6 @@ package computerscience30s;
 
 import javax.swing.JOptionPane;
 
-// Name of the file matching it in code defining a class (learn more later)
 public class ComputerScience30S 
 {   // Curly brackets DO NOT remove
     
@@ -366,6 +365,54 @@ public class ComputerScience30S
 //        else {
 //            System.out.println("Get out");
 //        }
+        
+        // LOOPING
+        
+        // simple loop
+        
+        int counter = 1;
+        while (counter <= 50) {
+            System.out.println("Counter = " + counter);
+            counter++;
+        }
+        
+        // while loop with a string
+        String password = JOptionPane.showInputDialog("Make a password");
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Invalid!");
+            password = JOptionPane.showInputDialog("Make a password");
+        }
+        
+        // the second type of while loop
+        // more rarely used, test at the bottom of the
+        // loop not the top, used when you want the 
+        // body of the loop (block) to run at least
+        // once!
+        
+        String choice = "";
+        do {            
+            choice = JOptionPane.showInputDialog("Password");
+        } while (choice.equalsIgnoreCase(password) == false);
+        
+        // TIP: code shortcuts can autocomplete code, the 
+        // full list of all of these can be found by
+        // clicking : Help -> Keyboard Shortcuts Card
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
