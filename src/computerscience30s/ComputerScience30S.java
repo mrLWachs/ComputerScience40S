@@ -365,63 +365,69 @@ public class ComputerScience30S
 //        else {
 //            System.out.println("Get out");
 //        }
-        
-        // LOOPING
-        
-        // simple loop
-        
-        int counter = 1;
-        while (counter <= 50) {
-            System.out.println("Counter = " + counter);
-            counter++;
-        }
-        
-        // while loop with a string
-        String password = JOptionPane.showInputDialog("Make a password");
-        while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Invalid!");
-            password = JOptionPane.showInputDialog("Make a password");
-        }
-        
-        // the second type of while loop
-        // more rarely used, test at the bottom of the
-        // loop not the top, used when you want the 
-        // body of the loop (block) to run at least
-        // once!
-        
-        String choice = "";
-        do {            
-            choice = JOptionPane.showInputDialog("Password");
-        } while (choice.equalsIgnoreCase(password) == false);
-        
-        // TIP: code shortcuts can autocomplete code, the 
-        // full list of all of these can be found by
-        // clicking : Help -> Keyboard Shortcuts Card
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+//        
+//        // LOOPING
+//        
+//        // simple loop
+//        
+//        int counter = 1;
+//        while (counter <= 50) {
+//            System.out.println("Counter = " + counter);
+//            counter++;
+//        }
+//        
+//        // while loop with a string
+//        String password = JOptionPane.showInputDialog("Make a password");
+//        while (password.equals("1234")) {
+//            JOptionPane.showMessageDialog(null, "Invalid!");
+//            password = JOptionPane.showInputDialog("Make a password");
+//        }
+//        
+//        // the second type of while loop
+//        // more rarely used, test at the bottom of the
+//        // loop not the top, used when you want the 
+//        // body of the loop (block) to run at least
+//        // once!
+//        
+//        String choice = "";
+//        do {            
+//            choice = JOptionPane.showInputDialog("Password");
+//        } while (choice.equalsIgnoreCase(password) == false);
+//        
+//        // TIP: code shortcuts can autocomplete code, the 
+//        // full list of all of these can be found by
+//        // clicking : Help -> Keyboard Shortcuts Card
+//        
+//        
+//        // the for loop is specific to counting
+//        // and the concept of arrays
+//        
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println("i = " + i);
+//        }
+//        
+//        // variation on the for loop
+//        // count down loop, from 100 down to 0, 
+//        // counting by 10s
+//        for (int i = 100; i >= 0; i-=10) {
+//            System.out.println("i = " + i);
+//        }
         
         
+        // EXAMPLE ASSIGNMENT:
         
-        
-        
-        
-
-        
+        // welcoming the user to this program
+        JOptionPane.showMessageDialog(null, "Welcome to dog age convertor");
+        // ask the user for there human age
+        String userInput = JOptionPane.showInputDialog("Enter human age");
+        int humanAge = Integer.parseInt(userInput);
+        // take that number multiply it by 7
+        int dogAge = humanAge * 7;
+        // show the user there dog age
+        JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
+        // say good-bye
+        JOptionPane.showMessageDialog(null, "Good-bye!");
+                        
     }
 
 }
