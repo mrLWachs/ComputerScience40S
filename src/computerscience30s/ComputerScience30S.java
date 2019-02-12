@@ -258,69 +258,114 @@ public class ComputerScience30S
 //        String u = JOptionPane.showInputDialog("Character");
 //        char v = u.charAt(0);
 //        JOptionPane.showMessageDialog(null, v);
+//        
+//        // built-in actions (functions, methods) with strings
+//        
+//        String word = "napolean";
+//        int count = word.length();  // total number of characters
+//        System.out.println(word + " = " + count);
+//        // numbering starts at 0
+//        char letter = word.charAt(0);
+//        System.out.println("Letter 0 = " + letter);        
+//        // one more, many more to explore...
+//        word = word.toUpperCase();
+//        System.out.println(word);
+//        
+//        // built-in math functions (methods)
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.abs(-1);
+//        double answer3 = Math.cos(0.5);
+//        double answer4 = Math.log(0.5);
+//        double answer5 = Math.pow(5,3);
+//        double answer6 = Math.sqrt(9);
+//                
+//        System.out.println("Answer 1 = " + answer1);
+//        System.out.println("Answer 2 = " + answer2);
+//        System.out.println("Answer 3 = " + answer3);
+//        System.out.println("Answer 4 = " + answer4);
+//        System.out.println("Answer 5 = " + answer5);
+//        System.out.println("Answer 6 = " + answer6);
+//        
+//        // math "library" does random numbers        
+//        // like Random random = new Random();
+//        
+//        double seed = Math.random();
+//        double low  = 1.0;
+//        double high = 10.0;
+//        double number = (high - low + 1) * seed + low;
+//        // formula for random numbers
+//        System.out.println("Random # between " +
+//                low + " and " + high + " = " +
+//                number);
+//        int value = (int)number;
+//        System.out.println("Random # = " + value);
         
-        // built-in actions (functions, methods) with strings
-        
-        String word = "napolean";
-        int count = word.length();  // total number of characters
-        System.out.println(word + " = " + count);
-        // numbering starts at 0
-        char letter = word.charAt(0);
-        System.out.println("Letter 0 = " + letter);        
-        // one more, many more to explore...
-        word = word.toUpperCase();
-        System.out.println(word);
-        
-        // built-in math functions (methods)
-        
-        double answer1 = Math.PI;
-        double answer2 = Math.abs(-1);
-        double answer3 = Math.cos(0.5);
-        double answer4 = Math.log(0.5);
-        double answer5 = Math.pow(5,3);
-        double answer6 = Math.sqrt(9);
-                
-        System.out.println("Answer 1 = " + answer1);
-        System.out.println("Answer 2 = " + answer2);
-        System.out.println("Answer 3 = " + answer3);
-        System.out.println("Answer 4 = " + answer4);
-        System.out.println("Answer 5 = " + answer5);
-        System.out.println("Answer 6 = " + answer6);
-        
-        // math "library" does random numbers        
-        // like Random random = new Random();
-        
-        double seed = Math.random();
-        double low  = 1.0;
-        double high = 10.0;
-        double number = (high - low + 1) * seed + low;
-        // formula for random numbers
-        System.out.println("Random # between " +
-                low + " and " + high + " = " +
-                number);
-        int value = (int)number;
-        System.out.println("Random # = " + value);
-        
-        // Conditional Statements
-        
-        int value1 = 10, value2 = 10;
-        // simple if statement, when something
-        // is true, checks for that 1 thing
-        if (value1 == value2) {
-            System.out.println("equal");
-        }
-        
-        // if with else, for both true and false
-        // checks for 2 things
-        double value3 = 1.45, value4 = 1.5;
-        if (value3 < value4) {
-            System.out.println("less than");
-        }
-        else {
-            System.out.println("greater than");
-        }
-        
-        
+//        // Conditional Statements
+//        
+//        int value1 = 10, value2 = 10;
+//        // simple if statement, when something
+//        // is true, checks for that 1 thing
+//        if (value1 == value2) {
+//            System.out.println("equal");
+//        }
+//        
+//        // if with else, for both true and false
+//        // checks for 2 things
+//        double value3 = 1.45, value4 = 1.5;
+//        if (value3 < value4) {
+//            System.out.println("less than");
+//        }
+//        else {
+//            System.out.println("greater than");
+//        }
+//        
+//        
+//        // use chars and some shorthand, means 
+//        // when the code inside the { } is only
+//        // one line, you don't need the { }
+//        
+//        char value5 = 'A', value6 = 'a';
+//        if (value5 != value6) System.out.println("!=");
+//        else                  System.out.println("==");
+//
+//        // above style is NOT recommended, except
+//        // in certain situations
+//
+//        // use "else if" for multiple case of more than
+//        // 2 things (same as switch statement which I
+//        // don't recommend) 
+//        // use strings (more complicated)
+//        
+//        String word1 = "edgy";
+//        String word2 = "edGy";
+//        // with string use .equals() not ==
+//        if (word1.equals(word2)) {
+//            System.out.println("w1==w2");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("w1 kind of == w2");
+//        }
+//        else {
+//            System.out.println("w1!=w2");
+//        }
+//        
+//        // combine logic using:
+//        // "And" "Or" "Not"
+//        //  &&    ||    !
+//        
+//        int age = 17;
+//        double iq = 1.0;
+//        
+//        if (age >= 21 && iq > 1.0) {
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 21 || iq > 1.0) {
+//            System.out.println("Keep trying");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
         
         
         
