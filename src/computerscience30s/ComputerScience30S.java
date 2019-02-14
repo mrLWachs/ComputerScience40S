@@ -427,6 +427,8 @@ public class ComputerScience30S
         JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
         // say good-bye
         JOptionPane.showMessageDialog(null, "Good-bye!");
+                
+        // TIP: Alt + Shift + F will CLEAN your code for you
                         
     }
 
