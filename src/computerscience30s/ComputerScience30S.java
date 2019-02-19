@@ -412,8 +412,7 @@ public class ComputerScience30S
         for (int i = 100; i >= 0; i-=10) {
             System.out.println("i = " + i);
         }
-        
-        
+                
         // EXAMPLE ASSIGNMENT:
         
         // welcoming the user to this program
@@ -429,6 +428,19 @@ public class ComputerScience30S
         JOptionPane.showMessageDialog(null, "Good-bye!");
                 
         // TIP: Alt + Shift + F will CLEAN your code for you
+        
+        // NetBeans Templates: go to Tools -> Templates, scroll down 
+        // to "Java" and click the plus "+" sign to expand, then select
+        // "Java Main Class" and then "Open in Editor"
+        // Then modify the template and save like this:        
+        //   /**
+        //     * ${name}.java - 
+        //     *
+        //     * @author Mr. Wachs 
+        //     * @since ${date} 
+        //     */
+        //    public class ${name} 
+        //    { .... etc .....        
                         
     }
 
