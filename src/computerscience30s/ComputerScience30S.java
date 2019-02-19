@@ -10,7 +10,9 @@ public class ComputerScience30S
     // A method (which we learn in next unit)
     public static void main(String[] args) {
         
+        ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
         
         // A single line comment
         
@@ -33,8 +35,7 @@ public class ComputerScience30S
         System.out.println("\tMake a tab");
         System.out.println("\\Slash");
         System.out.println("New\n\nLine");
-        
-        
+                
         // TIP: if your want intellisense to appear at any time press:
         // "CTRL" + "SPACE"        
         // TIP: "null" is a placeholder for code you don't actually want
@@ -120,14 +121,14 @@ public class ComputerScience30S
                 JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.PLAIN_MESSAGE);
         
-
-
+        ///////////////////////////////////////////////////////////////////////
         // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
         
         // simple variables
         
         boolean a = true;
-        // type name assigned value
+        // type name = value
         // when you "create" declare a variable
         
         int    b = 0;
@@ -138,16 +139,15 @@ public class ComputerScience30S
         b = 1;
         c = 1.2;
         
-        // variable always goes on the LHS
-        // and the value going in it goes on the RHS
+        // variable always goes on the LHS (left hand side) and the value 
+        // going in it goes on the RHS (right hand side)
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
         System.out.println("c = " + c);
         
-        // TIP: on the lower toolbar at the end,
-        // are 2 button to comment an uncomment
-        // code you have selected
+        // TIP: on the lower toolbar at the end, are 2 buttons to comment an 
+        // uncomment code you have selected
         
         char d = '*';
         System.out.println("d = " + d);
@@ -156,10 +156,8 @@ public class ComputerScience30S
         String e = "cats";
         System.out.println("e = " + e);
         
-        // in java words that start with
-        // a capital letter, are more
-        // "powerful" which means they have
-        // built-in actions (they are a class)
+        // in java words that start with a capital letter, are more "powerful" 
+        // which means they have built-in actions (they are a class)
         
         // manipulate, change the variables
         
@@ -172,7 +170,7 @@ public class ComputerScience30S
         // optional shorthand...
         y++;
         // means the same as y = y + 1
-        y--;    // means y = y - 1
+        y--;        // means y = y - 1
         // even more optional....
         y += 10;    // same as y = y + 10
         System.out.println("y = " + y); // 40
@@ -183,8 +181,7 @@ public class ComputerScience30S
         
         System.out.println("y = " + y); // 4
         
-        // modulus (mod) gives you the remainder
-        // of a division, uses %
+        // modulus (mod) gives you the remainder of a division, uses %
         
         x     = 28;
         y     = x / 5;
@@ -219,8 +216,7 @@ public class ComputerScience30S
         
         // we use "casting" to convert
         int h = (int)g;
-        // "ignores" or removes (concatinate) the
-        // decimal portion
+        // "ignores" or removes (concatinate) the decimal portion
         System.out.println("h = " + h);
         
         double k = 2.9999999999;
@@ -300,17 +296,17 @@ public class ComputerScience30S
         int value = (int)number;
         System.out.println("Random # = " + value);
         
-        // Conditional Statements
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
         int value1 = 10, value2 = 10;
-        // simple if statement, when something
-        // is true, checks for that 1 thing
+        // simple if statement, when something is true, checks for that 1 thing
         if (value1 == value2) {
             System.out.println("equal");
         }
         
-        // if with else, for both true and false
-        // checks for 2 things
+        // if with else, for both true and false, checks for 2 things
         double value3 = 1.45, value4 = 1.5;
         if (value3 < value4) {
             System.out.println("less than");
@@ -318,22 +314,18 @@ public class ComputerScience30S
         else {
             System.out.println("greater than");
         }
-        
-        
-        // use chars and some shorthand, means 
-        // when the code inside the { } is only
-        // one line, you don't need the { }
+                
+        // use chars and some shorthand, means when the code inside the { } 
+        // is only one line, you don't need the { }
         
         char value5 = 'A', value6 = 'a';
         if (value5 != value6) System.out.println("!=");
         else                  System.out.println("==");
 
-        // above style is NOT recommended, except
-        // in certain situations
+        // above style is NOT recommended, except in certain situations
 
-        // use "else if" for multiple case of more than
-        // 2 things (same as switch statement which I
-        // don't recommend) 
+        // use "else if" for multiple case of more than 2 things (same as 
+        // switch statement which I don't recommend) 
         // use strings (more complicated)
         
         String word1 = "edgy";
@@ -366,7 +358,9 @@ public class ComputerScience30S
             System.out.println("Get out");
         }
         
+        ///////////////////////////////////////////////////////////////////////
         // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
         // simple loop
         
@@ -383,37 +377,34 @@ public class ComputerScience30S
             password = JOptionPane.showInputDialog("Make a password");
         }
         
-        // the second type of while loop
-        // more rarely used, test at the bottom of the
-        // loop not the top, used when you want the 
-        // body of the loop (block) to run at least
-        // once!
+        // the second type of while loop more rarely used, test at the 
+        // bottom of the loop not the top, used when you want the body of 
+        // the loop (block) to run at least once!
         
         String choice = "";
         do {            
             choice = JOptionPane.showInputDialog("Password");
         } while (choice.equalsIgnoreCase(password) == false);
         
-        // TIP: code shortcuts can autocomplete code, the 
-        // full list of all of these can be found by
-        // clicking : Help -> Keyboard Shortcuts Card
+        // TIP: code shortcuts can autocomplete code, the full list of all of 
+        // these can be found by clicking : Help -> Keyboard Shortcuts Card
         
         
-        // the for loop is specific to counting
-        // and the concept of arrays
+        // the for loop is specific to counting (and the concept of arrays)
         
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
         }
         
-        // variation on the for loop
-        // count down loop, from 100 down to 0, 
+        // variation on the for loop: count down loop, from 100 down to 0, 
         // counting by 10s
         for (int i = 100; i >= 0; i-=10) {
             System.out.println("i = " + i);
         }
                 
+        ///////////////////////////////////////////////////////////////////////
         // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         // welcoming the user to this program
         JOptionPane.showMessageDialog(null, "Welcome to dog age convertor");
