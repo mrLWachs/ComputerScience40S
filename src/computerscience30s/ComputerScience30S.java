@@ -9,6 +9,15 @@ public class ComputerScience30S
     
     // A method (which we learn in next unit)
     public static void main(String[] args) {
+                
+    }
+
+    public static void learnBasicJava() {
+        // methods (functions, procedures) 
+        // are named like variables, but use 
+        // verb type words starting with 
+        // lowercase then using camel casing
+        // the round braces ( ) indicate a method
         
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
@@ -432,7 +441,7 @@ public class ComputerScience30S
         //     */
         //    public class ${name} 
         //    { .... etc .....        
-                        
+                
     }
-
+    
 }
