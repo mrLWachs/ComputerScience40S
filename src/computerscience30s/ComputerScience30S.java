@@ -8,8 +8,10 @@ public class ComputerScience30S
 {   // Curly brackets DO NOT remove
     
     // A method (which we learn in next unit)
-    public static void main(String[] args) {
-                
+    public static void main(String[] args) {                
+        // to "jump" to a method, we "call" the method
+//        learnBasicJava();        
+        learnMethods();        
     }
 
     public static void learnBasicJava() {
@@ -442,6 +444,40 @@ public class ComputerScience30S
         //    public class ${name} 
         //    { .... etc .....        
                 
+    }
+
+    private static void learnMethods() {
+        System.out.println("Methods starting...");
+        
+        // call a method
+        drawStar();
+        // calling a method with a parameter
+        // the item you "pass" is called the'
+        // argument
+        drawStars(5);
+        // multiple arguments/parameter are
+        // seperated with a commas
+        draw(99,"$");
+        
+        System.out.println("Methods complete!");
+    }
+
+    private static void drawStar() {
+        System.out.println("*");
+    }
+
+    private static void drawStars(int howMany) {
+        // information "passed" to a method
+        // is called a parameter
+        for (int i = 0; i < howMany; i++) {
+            drawStar();
+        }
+    }
+
+    private static void draw(int howMany, String thing) {
+        for (int i = 0; i < howMany; i++) {
+            System.out.println(thing);
+        }
     }
     
 }
