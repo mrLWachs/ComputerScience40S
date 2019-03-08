@@ -1,5 +1,3 @@
-
-
 /** required package class namespace */
 package testing;
 
