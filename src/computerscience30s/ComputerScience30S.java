@@ -8,13 +8,18 @@ public class ComputerScience30S
 {   // Curly brackets DO NOT remove
     
     // A method (which we learn in next unit)
-    public static void main(String[] args) {                
+    public static void main(String[] args) {        
+
+        // NetBeans Tips: press (Ctrl + Shift + "+") or 
+        // (Ctrl + Shift + "-") expands or collapses methods
+        // or use the Navigator window        
+        
         // to "jump" to a method, we "call" the method
 //        learnBasicJava();        
         learnMethods();        
     }
 
-    public static void learnBasicJava() {
+    private static void learnBasicJava() {
         // methods (functions, procedures) 
         // are named like variables, but use 
         // verb type words starting with 
@@ -459,6 +464,10 @@ public class ComputerScience30S
         // seperated with a commas
         draw(99,"$");
         
+        int number = giveMeNumber();
+        
+        output("Number = " + number);
+        
         System.out.println("Methods complete!");
     }
 
@@ -478,6 +487,23 @@ public class ComputerScience30S
         for (int i = 0; i < howMany; i++) {
             System.out.println(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        return random(Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+    
+    private static int random(int low, int high) {
+        double seed  = Math.random();
+        double L     = (double)low;
+        double H     = (double)high;
+        double value = (H - L + 1) * seed + L;
+        int answer   = (int)value;
+        return answer;
     }
     
 }
