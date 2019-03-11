@@ -37,5 +37,4 @@ public class Student extends Person {
         super.talk();
         System.out.println("\t # " + studentNumber);
     }
-
 }

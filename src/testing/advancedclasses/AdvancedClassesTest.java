@@ -1,10 +1,19 @@
 
+/** required package class namespace */
 package testing.advancedclasses;
 
-
+/**
+ * AdvancedClassesTest.java - tests the concepts learned in this unit
+ *
+ * @author Mr. Wachs 
+ * @since 09-Mar-2019  
+ */
 public class AdvancedClassesTest 
 {
     
+    /** 
+     * Default constructor for the class 
+     */
     public AdvancedClassesTest() {
         System.out.println("\nStarting advanced classes testing...\n");
         
@@ -16,7 +25,6 @@ public class AdvancedClassesTest
         
         Student student = new Student(99);
         student.talk();
-        
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
