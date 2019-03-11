@@ -2,7 +2,7 @@
 package computerscience40s;
 
 import testing.RecursionTest;
-import testing.advancedclasees.AdvancedClassesTest;
+import testing.advancedclasses.AdvancedClassesTest;
 
 
 /**

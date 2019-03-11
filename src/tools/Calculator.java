@@ -2,7 +2,6 @@
 package tools;
 
 
-
 /**
  * Calculator.java - useful collection of methods for doing calculations.
  *
