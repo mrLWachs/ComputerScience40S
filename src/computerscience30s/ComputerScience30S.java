@@ -10,11 +10,6 @@ public class ComputerScience30S
     // A method (which we learn in next unit)
     public static void main(String[] args) {        
 
-        // NetBeans Tips: press (Ctrl + Shift + "+") or 
-        // (Ctrl + Shift + "-") expands or collapses methods
-        // or use the Navigator window        
-        
-        // to "jump" to a method, we "call" the method
 //        learnBasicJava();        
         learnMethods();        
     }
@@ -454,7 +449,11 @@ public class ComputerScience30S
     private static void learnMethods() {
         System.out.println("Methods starting...");
         
-        // call a method
+        // NetBeans Tips: press (Ctrl + Shift + "+") or 
+        // (Ctrl + Shift + "-") expands or collapses methods
+        // or use the Navigator window        
+        
+        // to "jump" to a method, we "call" the method
         drawStar();
         // calling a method with a parameter
         // the item you "pass" is called the'
@@ -471,10 +470,28 @@ public class ComputerScience30S
         System.out.println("Methods complete!");
     }
 
+    
+    
+    
+    /**
+     * Draws a star for all you kiddos
+     */
     private static void drawStar() {
         System.out.println("*");
     }
 
+    
+    
+    
+    
+    
+    
+    
+    /**
+     * Draws several stars
+     * 
+     * @param howMany how many stars to draw
+     */
     private static void drawStars(int howMany) {
         // information "passed" to a method
         // is called a parameter
@@ -490,13 +507,23 @@ public class ComputerScience30S
     }
 
     private static int giveMeNumber() {
-        return random(Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return random(
+                random(Integer.MIN_VALUE, 0),
+                random(0, Integer.MAX_VALUE)
+        );
     }
 
     private static void output(String text) {
         JOptionPane.showMessageDialog(null, text);
     }
     
+    /**
+     * Generates a random number
+     * 
+     * @param low lowest number in the range
+     * @param high highest number in the range
+     * @return random number in range
+     */
     private static int random(int low, int high) {
         double seed  = Math.random();
         double L     = (double)low;
