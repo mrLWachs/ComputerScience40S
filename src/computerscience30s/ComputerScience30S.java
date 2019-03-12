@@ -2,18 +2,25 @@
 // The line below is put in automatically, and connects file to the project
 package computerscience30s;
 
+/** required imports for the project */
 import javax.swing.JOptionPane;
 
 public class ComputerScience30S 
 {   // Curly brackets DO NOT remove
     
-    // A method (which we learn in next unit)
-    public static void main(String[] args) {        
-
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {     
 //        learnBasicJava();        
         learnMethods();        
     }
 
+    /**
+     * Goes over the content of this unit
+     */
     private static void learnBasicJava() {
         // methods (functions, procedures) 
         // are named like variables, but use 
@@ -446,33 +453,34 @@ public class ComputerScience30S
                 
     }
 
+    /**
+     * Goes over the content of this unit
+     */
     private static void learnMethods() {
         System.out.println("Methods starting...");
         
-        // NetBeans Tips: press (Ctrl + Shift + "+") or 
-        // (Ctrl + Shift + "-") expands or collapses methods
-        // or use the Navigator window        
+        // NetBeans Tips: press (Ctrl + Shift + "+") or (Ctrl + Shift + "-") 
+        // expands or collapses methods, or use the Navigator window        
+        // Also, type /** before the method signature line it will automate
+        // which JavaDoc comments you should make
         
         // to "jump" to a method, we "call" the method
         drawStar();
-        // calling a method with a parameter
-        // the item you "pass" is called the'
+        // calling a method with a parameter the item you "pass" is called the
         // argument
         drawStars(5);
-        // multiple arguments/parameter are
-        // seperated with a commas
+        // multiple arguments/parameter are seperated with a commas
         draw(99,"$");
-        
+        // method that returns a value
         int number = giveMeNumber();
         
         output("Number = " + number);
         
+        output("Hi","Test");
+        
         System.out.println("Methods complete!");
     }
 
-    
-    
-    
     /**
      * Draws a star for all you kiddos
      */
@@ -480,13 +488,6 @@ public class ComputerScience30S
         System.out.println("*");
     }
 
-    
-    
-    
-    
-    
-    
-    
     /**
      * Draws several stars
      * 
@@ -500,12 +501,23 @@ public class ComputerScience30S
         }
     }
 
+    /**
+     * Draws many things on the screen
+     * 
+     * @param howMany how many things to draw
+     * @param thing the item to draw
+     */
     private static void draw(int howMany, String thing) {
         for (int i = 0; i < howMany; i++) {
             System.out.println(thing);
         }
     }
 
+    /**
+     * Gives a random number 
+     * 
+     * @return a random number
+     */
     private static int giveMeNumber() {
         return random(
                 random(Integer.MIN_VALUE, 0),
@@ -513,10 +525,6 @@ public class ComputerScience30S
         );
     }
 
-    private static void output(String text) {
-        JOptionPane.showMessageDialog(null, text);
-    }
-    
     /**
      * Generates a random number
      * 
@@ -533,4 +541,24 @@ public class ComputerScience30S
         return answer;
     }
     
+    /**
+     * Outputs info to a dialog
+     * 
+     * @param text the info to show
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+    
+    /**
+     * Outputs info to a dialog
+     * 
+     * @param text the info to show
+     * @param title the title on the dialog
+     */
+    private static void output(String text, String title) {
+        JOptionPane.showMessageDialog(null, text,
+                title,JOptionPane.PLAIN_MESSAGE);
+    }
+        
 }
