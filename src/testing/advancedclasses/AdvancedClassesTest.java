@@ -29,17 +29,31 @@ public class AdvancedClassesTest
         
         // all classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
-        Object object = new Object();
+        Object object1 = new Object();
+        Object object2 = object1;                       // parent of all classes
+        System.out.println(object1.toString());         // the toString method
+        System.out.println(object2.toString());
+        if (object1.equals(object2)) {                  // the equals method
+            System.out.println("object 1 == object 2");
+        }
         
         // testing equals method:        
         Person sam = new Person();
         sam.isMale = true;
-        if (person.equals(sam)) {
-            System.out.println("==");
+        if (person.equals(sam)) {                       // equals overloaded
+            System.out.println("person == sam");
         }
-        else {
-            System.out.println("!=");
+        
+        sam.age    = 25;
+        sam.isMale = true;
+        sam.setName("Samuel Samson");                   // mutator method used
+        Person samClone = sam.clone();                  // clone method
+        System.out.println(samClone.toString());        // toString overloaded
+        System.out.println(sam.toString());             // display clone
+        if (sam.equals(samClone)) {
+            System.out.println("sam == sam clone");
         }
+        
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
