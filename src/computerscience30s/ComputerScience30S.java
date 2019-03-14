@@ -1,10 +1,22 @@
 
-// The line below is put in automatically, and connects file to the project
+/** required package class namespace - the line below is put in 
+ * automatically, and connects file to the project*/
 package computerscience30s;
 
-/** required imports for the project */
+/** required imports for the project - the lines below are added when your
+  * code needs to connect to another library (API) of code */
 import javax.swing.JOptionPane;
 
+/**
+ * ComputerScience30S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
+ *
+ * @author Mr. Wachs 
+ * @since 09-Feb-2019 
+ * @instructor Mr. Wachs
+ */
 public class ComputerScience30S 
 {   // Curly brackets DO NOT remove
     
@@ -13,15 +25,19 @@ public class ComputerScience30S
      * 
      * @param args the command line arguments
      */
-    public static void main(String[] args) {     
+    public static void main(String[] args) {   
+        System.out.println("\nComputer Science 30S Example started...\n"); 
 //        learnBasicJava();        
-        learnMethods();        
+        learnMethods();     
+        System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
     /**
      * Goes over the content of this unit
      */
     private static void learnBasicJava() {
+        System.out.println("\nJava basics started...\n");
+        
         // methods (functions, procedures) 
         // are named like variables, but use 
         // verb type words starting with 
@@ -450,39 +466,54 @@ public class ComputerScience30S
         //     */
         //    public class ${name} 
         //    { .... etc .....        
-                
+             
+        System.out.println("\nJava basics completed!\n");
     }
 
     /**
      * Goes over the content of this unit
      */
     private static void learnMethods() {
-        System.out.println("Methods starting...");
+        System.out.println("\nMethods unit starting...\n");
         
-        // NetBeans Tips: press (Ctrl + Shift + "+") or (Ctrl + Shift + "-") 
-        // expands or collapses methods, or use the Navigator window        
-        // Also, type /** before the method signature line it will automate
-        // which JavaDoc comments you should make
-        
-        // to "jump" to a method, we "call" the method
-        drawStar();
+        // NetBeans tips:
+        // (1) The + and - signs and grey lines along the side in NetBeans 
+        //     help "expand" and "collapse" the method body (block)        
+        // (2) On the left side window, the Navigator window helps find and 
+        //     jump to methods        
+        // (3) Using the keys CTRL + SHIFT and "+" or "-" also expands and 
+        //     collapses methods
+        // (4) You can call a method that does not yet exist, and netbeans 
+        //     will help you write it with the lightbulb icon (you click on)
+        // (5) You can jump to a method (even ones you don't write) by holding 
+        //     down CTRL and clicking on the method call
+        // (6) If you type /** before the method signature line it will 
+        //     automate which JavaDoc comments you should make
+                
+        // code to "jump" to our method, "calling" the method 
+        drawStar();         // calling a method with no parameters        
         // calling a method with a parameter the item you "pass" is called the
         // argument
-        drawStars(5);
+        drawStars(5);          // calling a method with 1 parameter
+        
+        // In NetBeans, you can write the call to a method first and NetBeans 
+        // will help you write the method signature 
+        
         // multiple arguments/parameter are seperated with a commas
-        draw(99,"$");
-        // method that returns a value
-        int number = giveMeNumber();
+        draw(101,"dalmations");            // multiple arguments
+        draw(99,"problems");               // seperate with commas        
+        int number = giveMeNumber();        // method returning       
+        output("number is " + number);        
+        output("Hello");            
+        output("Hi","Example");     
+        // overloaded methods are methods with the same name but different 
+        // parameters
         
-        output("Number = " + number);
-        
-        output("Hi","Test");
-        
-        System.out.println("Methods complete!");
+        System.out.println("\nMethods unit completed!\n");
     }
 
     /**
-     * Draws a star for all you kiddos
+     * Draws a star for all of you 
      */
     private static void drawStar() {
         System.out.println("*");
@@ -494,8 +525,7 @@ public class ComputerScience30S
      * @param howMany how many stars to draw
      */
     private static void drawStars(int howMany) {
-        // information "passed" to a method
-        // is called a parameter
+        // information "passed" to a method is called a parameter
         for (int i = 0; i < howMany; i++) {
             drawStar();
         }
@@ -519,10 +549,10 @@ public class ComputerScience30S
      * @return a random number
      */
     private static int giveMeNumber() {
-        return random(
-                random(Integer.MIN_VALUE, 0),
-                random(0, Integer.MAX_VALUE)
-        );
+        final int LOW = Integer.MIN_VALUE;
+        final int MID = 0;
+        final int MAX = Integer.MAX_VALUE;
+        return random(random(LOW,MID),random(MID,MAX));
     }
 
     /**
@@ -533,28 +563,28 @@ public class ComputerScience30S
      * @return random number in range
      */
     private static int random(int low, int high) {
-        double seed  = Math.random();
-        double L     = (double)low;
-        double H     = (double)high;
-        double value = (H - L + 1) * seed + L;
-        int answer   = (int)value;
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double value  = (H - L + 1) * seed + L;
+        int    answer = (int)value;
         return answer;
     }
     
     /**
-     * Outputs info to a dialog
+     * Display the text in a dialog box
      * 
-     * @param text the info to show
+     * @param text the text to display
      */
     private static void output(String text) {
         JOptionPane.showMessageDialog(null, text);
     }
     
     /**
-     * Outputs info to a dialog
+     * Display the text in a dialog box with a title
      * 
-     * @param text the info to show
-     * @param title the title on the dialog
+     * @param text the text to display
+     * @param title the title at the top of the dialog
      */
     private static void output(String text, String title) {
         JOptionPane.showMessageDialog(null, text,
