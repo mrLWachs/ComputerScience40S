@@ -3,9 +3,8 @@
 package testing.advancedclasses;
 
 
-
 /**
- * Teacher.java - 
+ * Teacher.java - represents a teacher
  *
  * @author Mr. Wachs 
  * @since 14-Mar-2019 
@@ -13,7 +12,8 @@ package testing.advancedclasses;
 public class Teacher extends Person
 {
     
-    public Student[] students;
+    /** The array of associated student objects */
+    public Student[] students;                      // "has a" relationship
     public String course;
     public String room;
     
