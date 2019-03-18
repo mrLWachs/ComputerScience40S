@@ -54,6 +54,24 @@ public class AdvancedClassesTest
             System.out.println("sam == sam clone");
         }
         
+        Teacher cardinal = new Teacher("Mr. Cardinal", 50, 
+                true, "Media Productions", "B10");        
+        cardinal.add(student);
+        cardinal.add(new Student(13));
+        // annonynomous object
+        Student cersi = new Student(40);
+        cersi.setName("Cersi Lannister");
+        cardinal.add(cersi);
+        
+        System.out.println(cardinal.toString());
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("\nCompleted advanced classes test!\n");
