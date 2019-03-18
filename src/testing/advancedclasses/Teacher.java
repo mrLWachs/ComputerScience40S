@@ -24,33 +24,29 @@ public class Teacher extends Person
     /**
      * Default constructor for the class, sets class properties
      */
-    public Teacher(String name, int age,
-            boolean isMale, String course,
+    public Teacher(String name, int age, boolean isMale, String course,
             String room) {        
-        count = 0;
-        MAX   = 100;
-        super.age = age;
-        super.isMale = isMale;
         super.setName(name);
-        this.course = course;
-        this.room   = room;
-        students = new Student[MAX];
+        super.age    = age;
+        super.isMale = isMale;        
+        count        = 0;
+        MAX          = 100;        
+        this.course  = course;
+        this.room    = room;
+        students     = new Student[MAX];
     }
 
+    /**
+     * Adds a student object association to this teacher
+     * 
+     * @param student the student to associate with
+     */
     public void add(Student student) {
         students[count] = student;
         count++;
         if (count >= MAX) count = 0;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * String representation of this object
      *
@@ -59,10 +55,10 @@ public class Teacher extends Person
     @Override
     public String toString() {
         String text = "Teacher: " + super.toString();
+        text += " teaches " + count + " kids " + course + " in room " + room;
         for (int i = 0; i < MAX; i++) {
             if (students[i] != null) {
-                text += "\n\t" + i + ": " + 
-                        students[i].toString();
+                text += "\n\t" + i + ": " + students[i].toString();
             }            
         }
         return text;
