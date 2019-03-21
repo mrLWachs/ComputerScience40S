@@ -72,7 +72,26 @@ public class Teacher extends Person
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        Teacher that = (Teacher)object;
+        if (!super.equals(that)) return false;
+        if (!this.course.equals(that.course)) return false;
+        if (!this.room.equals(that.room)) return false;        
+        else {
+            for (int i = 0; i < MAX; i++) {
+                if (this.students[i] == null && 
+                    that.students[i] != null) {
+                    return false;
+                }
+                if (this.students[i] != null && 
+                    that.students[i] == null) {
+                    return false;
+                }                
+                if (!this.students[i].equals(that.students[i])) {
+                    return false;
+                }
+            }           
+        }
+        return true;
     }
 
     /**
@@ -82,7 +101,14 @@ public class Teacher extends Person
      */
     @Override
     public Teacher clone() {
-        return this;
+        Teacher that =  new Teacher(super.getName(), 
+                age, isMale, course, room);
+        for (int i = 0; i < MAX; i++) {
+            if (this.students[i] != null) {
+                that.students[i] = this.students[i].clone();
+            }
+        }
+        return that;
     }
 
 }
