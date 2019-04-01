@@ -15,9 +15,11 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
  */
-public class Wizard 
+public class Wizard extends Person
 {
 
+    protected Magic magic;
+    
     /**
      * Default constructor for the class, sets class properties
      */

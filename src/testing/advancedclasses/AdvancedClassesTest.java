@@ -73,8 +73,12 @@ public class AdvancedClassesTest
         String text = "Hello World";
         check(text);
         
+        Hufflepuff luna = new Hufflepuff();
+        Slytherin draco = new Slytherin();
         
-        
+        Hogwarts hogwarts = new Hogwarts();
+        hogwarts.enterStation9ThreeQuarters(luna);
+        hogwarts.enterStation9ThreeQuarters(draco);
         
         
         

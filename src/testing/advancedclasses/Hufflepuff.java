@@ -15,7 +15,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
  */
-public class Hufflepuff 
+public class Hufflepuff extends Wizard
 {
 
     /**
