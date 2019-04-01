@@ -27,8 +27,10 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {   
         System.out.println("\nComputer Science 30S Example started...\n"); 
+        
 //        learnBasicJava();        
         learnMethods();     
+        
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
