@@ -29,7 +29,8 @@ public class ComputerScience30S
         System.out.println("\nComputer Science 30S Example started...\n"); 
         
 //        learnBasicJava();        
-        learnMethods();     
+//        learnMethods();     
+        learnArrays();
         
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
@@ -592,5 +593,29 @@ public class ComputerScience30S
         JOptionPane.showMessageDialog(null, text,
                 title,JOptionPane.PLAIN_MESSAGE);
     }
+
+    
+    
+    
+    private static void learnArrays() {
+        System.out.println("Learn Arrays...");
+        
+        // create (declare) a variable for comparison
+        
+        int size = 10;
+        
+        // declare an array
+        
+        int array[] = new int[size];
+        
+        
+        System.out.println("Arrays complete!");
+    }
+    
+    
+    
+    
+    
+    
         
 }
