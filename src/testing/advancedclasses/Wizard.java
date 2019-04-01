@@ -10,7 +10,7 @@ package testing.advancedclasses;
 
 
 /**
- * Wizzard.java - 
+ * Wizard.java - 
  *
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
