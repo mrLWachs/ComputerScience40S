@@ -65,8 +65,13 @@ public class AdvancedClassesTest
         
         System.out.println(cardinal.toString());
         
-        
-        
+        check(person);
+        check(student);
+        check(object1);
+        check(samClone);
+        check(cardinal);
+        String text = "Hello World";
+        check(text);
         
         
         
@@ -76,5 +81,33 @@ public class AdvancedClassesTest
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
+    
+    
+    
+    
+    private void check(Object object) {        
+        System.out.print("Checking: " + object.toString());        
+        // there is a way to check if an object is in fact
+        // a object of a certain class        
+        if (object instanceof Person) {
+            System.out.print(" is a Person!");
+        }
+        if (object instanceof Student) {
+            System.out.print(" is a Student!");
+        }
+        if (object instanceof Teacher) {
+            System.out.print(" is a Teacher!");
+        }
+        if (object instanceof String) {
+            System.out.print(" is a String!");
+        }
+        System.out.println("\n");        
+    }
+    
+    
+    
+    
+    
+    
     
 }
