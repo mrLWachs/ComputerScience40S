@@ -608,6 +608,15 @@ public class ComputerScience30S
         
         int array[] = new int[size];
         
+        array[0] = 92;
+        array[1] = 8;
+        array[2] = -3;
+        array[3] = 0;
+        array[4] = 123456789;
+        
+        // array[10] = 15; out of bounds error
+        // array[-1] also be out of bounds
+        
         
         System.out.println("Arrays complete!");
     }
