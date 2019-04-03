@@ -23,11 +23,9 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("\nComputer Science 40S starting...\n");
-        
+        System.out.println("\nComputer Science 40S starting...\n");        
 //        RecursionTest       unit1 = new RecursionTest();
-        AdvancedClassesTest unit2 = new AdvancedClassesTest();
-                
+        AdvancedClassesTest unit2 = new AdvancedClassesTest();                
         System.out.println("\nComputer Science 40S complete!\n");
     }
     

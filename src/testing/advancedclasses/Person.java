@@ -23,6 +23,8 @@ public class Person
     /** Protected property representing the person's gender */
     protected boolean isMale;
     
+    public static int total;
+    
     // METHODS (below)......................................................
     
     /**
@@ -33,6 +35,7 @@ public class Person
         name   = "Jane Doe";
         age    = 0;
         isMale = false;
+        total++;
     }
     
     /**

@@ -1,8 +1,3 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Hogwarts.java
- *  for project ComputerScience40S on 1-Apr-2019 at 2:09:40 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
@@ -23,11 +18,17 @@ public class Hogwarts
     
     // encapsulated (locked in the class)
     
+    public Hogwarts() {
+        wizards = new Wizard[1000000];
+    }
+    
     public void enterStation9ThreeQuarters(Wizard wizard){
         wizards[index] = wizard;
         index++;
     }
     
-    
-    
+    public void gobletOfFireTournament() {
+        
+    }
+        
 }

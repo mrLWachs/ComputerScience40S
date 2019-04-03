@@ -18,14 +18,13 @@ public class AdvancedClassesTest
         System.out.println("\nStarting advanced classes testing...\n");
         
         // using the class to create an object with the default constructor:
-        Person person = new Person();
-        //class object = call constructor method (default)
-        person.talk();
-        // calls the method in the class object
-        
+        // class object = call constructor method (default)
+        Person person = new Person();                   // person object
+        person.talk();                                  // calls class method 
+                
         // class using inheritance
-        Student student = new Student(99);
-        student.talk();
+        Student student = new Student(99);              // new student object
+        student.talk();                                 // inherited method
         
         // all classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
@@ -34,51 +33,67 @@ public class AdvancedClassesTest
         System.out.println(object1.toString());         // the toString method
         System.out.println(object2.toString());
         if (object1.equals(object2)) {                  // the equals method
-            System.out.println("object 1 == object 2");
+            System.out.println("object1 == object2"); 
         }
         
         // testing equals method:        
-        Person sam = new Person();
-        sam.isMale = true;
+        Person sam = new Person();                      // new person object
+        sam.age    = 25;                                // changing some 
+        sam.isMale = true;                              // object properties
+        sam.setName("Samuel Samson");                   // mutator method used
+        sam.isMale = true;                              // change property
         if (person.equals(sam)) {                       // equals overloaded
             System.out.println("person == sam");
         }
+        else {
+            System.out.println("person != sam");
+        }
+        System.out.println(sam.toString());             // toString overloaded
         
-        sam.age    = 25;
-        sam.isMale = true;
-        sam.setName("Samuel Samson");                   // mutator method used
         Person samClone = sam.clone();                  // clone method
-        System.out.println(samClone.toString());        // toString overloaded
-        System.out.println(sam.toString());             // display clone
-        if (sam.equals(samClone)) {
-            System.out.println("sam == sam clone");
+        System.out.println(samClone.toString());        // display clone             
+        if (sam.equals(samClone)) {                     // equals again
+            System.out.println("sam == samClone");
         }
         
-        Teacher cardinal = new Teacher("Mr. Cardinal", 50, 
-                true, "Media Productions", "B10");        
-        cardinal.add(student);
-        cardinal.add(new Student(13));
-        // annonynomous object
-        Student cersi = new Student(40);
-        cersi.setName("Cersi Lannister");
-        cardinal.add(cersi);
+        Teacher cardinal = new Teacher("Mr. Cardinal", 
+                50, true, "Media Productions", "B10");  // teacher object
+        cardinal.add(student);                          // add method
+        cardinal.add(new Student(13));                  // annonynomous object
+        Student cersi = new Student(40);                // another student
+        cersi.setName("Cersi Lannister");               // mutate property
+        cardinal.add(cersi);                            // add to array        
+        System.out.println(cardinal.toString());        // output teacher
         
-        System.out.println(cardinal.toString());
+        check(person);                                  // call to method
+        check(student);                                 // which uses the 
+        check(object1);                                 // instanceof operator
+        check(samClone);                                // to check objects to
+        check(cardinal);                                // see if they are 
+        String text = "Hello World";                    // instances of that 
+        check(text);                                    // class
         
-        check(person);
-        check(student);
-        check(object1);
-        check(samClone);
-        check(cardinal);
-        String text = "Hello World";
-        check(text);
-        
-        Hufflepuff luna = new Hufflepuff();
-        Slytherin draco = new Slytherin();
-        
-        Hogwarts hogwarts = new Hogwarts();
-        hogwarts.enterStation9ThreeQuarters(luna);
+        Hufflepuff luna     = new Hufflepuff();         // instances created
+        Slytherin  draco    = new Slytherin();        
+        Hogwarts   hogwarts = new Hogwarts();
+        hogwarts.enterStation9ThreeQuarters(luna);      // methods called
         hogwarts.enterStation9ThreeQuarters(draco);
+        
+        int total = person.total;
+        
+        System.out.println("total people = " + total);
+        
+        draco.castSpell();
+        luna.castSpell();
+        
+        Wizard.castSpell();
+        
+        
+        
+        
+        
+        
+        
         
         
         

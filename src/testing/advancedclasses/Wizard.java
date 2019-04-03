@@ -57,5 +57,10 @@ public class Wizard extends Person
     public Wizard clone() {
         return this;
     }
+    
+    public static void castSpell() {
+        System.out.println("Abra Cadabra...");
+    }
+    
 
 }
