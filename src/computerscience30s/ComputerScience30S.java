@@ -608,6 +608,8 @@ public class ComputerScience30S
         
         int array[] = new int[size];
         
+        // assign values to the individual indices (spots, subscripts, etc.)
+        
         array[0] = 92;
         array[1] = 8;
         array[2] = -3;
@@ -616,6 +618,62 @@ public class ComputerScience30S
         
         // array[10] = 15; out of bounds error
         // array[-1] also be out of bounds
+        
+        // declare an array of no size
+        
+        double[] a;        
+        
+        // later on, you can re-create (re-dimension)
+        // the same array
+        
+        a = new double[3];
+        
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+        
+        // you can re-dimension multiple times,
+        // but every time it wipes out any content 
+        // stored inside the array
+        
+        a = new double[500];
+        
+        // can create arrays with prefilled values
+        
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        
+        // you can also do this and make the array 
+        // a constant
+        
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"
+        };
+        
+        // make a empty array
+        int[] numbers = new int[100];
+        
+        // to travel (go through), traverse
+        // an entire array, you use the 
+        // for loop
+        
+        for (int i = 0; i < 100; i++) {
+            numbers[i] = 99;
+        }
+        
+        // output the entire array
+        // using a feature called the "length"
+        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Arrays complete!");
