@@ -82,15 +82,8 @@ public class AdvancedClassesTest
         int total = person.total;
         
         System.out.println("total people = " + total);
-        
-        draco.castSpell();
-        luna.castSpell();
-        
-        Wizard.castSpell();
-        
-        
-        
-        
+                
+        hogwarts.triWizardTournament();
         
         
         

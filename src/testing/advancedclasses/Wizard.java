@@ -15,16 +15,16 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
  */
-public class Wizard extends Person
+public abstract class Wizard extends Person
 {
 
-    protected Magic magic;
+    protected static Magic magic;
     
     /**
      * Default constructor for the class, sets class properties
      */
     public Wizard() {
-        
+        magic = new Magic();
     }
 
     /**
@@ -59,7 +59,7 @@ public class Wizard extends Person
     }
     
     public static void castSpell() {
-        System.out.println("Abra Cadabra...");
+        System.out.println(magic.toString());
     }
     
 

@@ -27,8 +27,17 @@ public class Hogwarts
         index++;
     }
     
-    public void gobletOfFireTournament() {
-        
+    public void triWizardTournament() {
+        // enhanced for loop
+        // can be read as:
+        // "for every wizard in wizards"
+        for (Wizard wizard : wizards) {
+        // for (int i = 0; i < wizards.length; i++ ) 
+            // wizards[i] = .....
+            if (wizard != null) {
+                wizard.castSpell();
+            }
+        }
     }
         
 }
