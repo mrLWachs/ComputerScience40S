@@ -669,14 +669,78 @@ public class ComputerScience30S
             System.out.println(numbers[i]);
         }
         
+        output(coins);
         
+        double[] percents = { 0.0, 0.25, 0.50, 0.75, 1.00 };
         
+        output(percents);
         
+        int[] randoms = randomGenerate(100,1,10);
         
+        output(randoms);
+        
+        int[] wholes = convert(percents);
+        
+        output(wholes);
         
         
         
         System.out.println("Arrays complete!");
+    }
+
+    
+    /**
+     * Outputs an array of values
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(double[] array) {
+        String text = "Array = [";
+        for (int i = 0; i < array.length; i++) {
+            text += array[i] + ",";
+        }
+        text = text + "]";
+        output(text);
+    }
+
+    /**
+     * Generates an array of random integers in 
+     * the range between low and high
+     * 
+     * @param size the size to make the array
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return an array of random integers
+     */
+    private static int[] randomGenerate(int size, 
+            int low, int high) {
+        int[] a = new int[size];
+        for (int i = 0; i < size; i++) {
+            a[i] = random(low, high);
+        }
+        return a;
+    }
+
+    /**
+     * Outputs an array of values
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(int[] array) {
+        String text = "Array = [";
+        for (int i = 0; i < array.length; i++) {
+            text += array[i] + ",";
+        }
+        text = text + "]";
+        output(text);
+    }
+
+    private static int[] convert(double[] array) {
+        int[] a = new int[array.length];
+        for (int i = 0; i < a.length; i++) {
+            a[i] = (int)array[i];
+        }
+        return a;
     }
     
     
