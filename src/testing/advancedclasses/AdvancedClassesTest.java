@@ -79,14 +79,10 @@ public class AdvancedClassesTest
         hogwarts.enterStation9ThreeQuarters(luna);      // methods called
         hogwarts.enterStation9ThreeQuarters(draco);
         
-        int total = person.total;
-        
-        System.out.println("total people = " + total);
+        int total = person.total;                       // the static property        
+        System.out.println("total people = " + total);  // displayed
                 
-        hogwarts.triWizardTournament();
-        
-        
-        
+        hogwarts.triWizardTournament();                 // call the method
         
         
         
@@ -94,32 +90,26 @@ public class AdvancedClassesTest
         System.out.println("\nCompleted advanced classes test!\n");
     }
     
-    
-    
-    
+    /**
+     * Checks the passed object and outputs if it is a person, student, 
+     * teacher, or string object instance. This method uses the instanceof
+     * operator to do the logic
+     * 
+     * @param object the object type to check
+     */
     private void check(Object object) {        
         System.out.print("Checking: " + object.toString());        
         // there is a way to check if an object is in fact
         // a object of a certain class        
-        if (object instanceof Person) {
+        if (object instanceof Person) 
             System.out.print(" is a Person!");
-        }
-        if (object instanceof Student) {
+        if (object instanceof Student) 
             System.out.print(" is a Student!");
-        }
-        if (object instanceof Teacher) {
+        if (object instanceof Teacher) 
             System.out.print(" is a Teacher!");
-        }
-        if (object instanceof String) {
+        if (object instanceof String) 
             System.out.print(" is a String!");
-        }
         System.out.println("\n");        
     }
-    
-    
-    
-    
-    
-    
     
 }

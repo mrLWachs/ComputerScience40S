@@ -1,16 +1,11 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Wizzard.java
- *  for project ComputerScience40S on 22-Mar-2019 at 2:18:17 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * Wizard.java - 
+ * Wizard.java - represents the fictional character of a wizard, this
+ * is an example of an abstract class (which means it cannot be instantiated)
  *
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
@@ -18,6 +13,7 @@ package testing.advancedclasses;
 public abstract class Wizard extends Person
 {
 
+    // the "has a" relationship (composition) here between the classes
     protected static Magic magic;
     
     /**
@@ -58,9 +54,11 @@ public abstract class Wizard extends Person
         return this;
     }
     
+    /**
+     * Casts a spell (a static method)
+     */
     public static void castSpell() {
         System.out.println(magic.toString());
     }
     
-
 }

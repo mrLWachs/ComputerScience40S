@@ -45,12 +45,9 @@ public class Student extends Person {
     @Override
     public boolean equals(Object object) { 
         Student that = (Student)object;   
-        if (super.equals(that)) {
-            if (this.studentNumber == that.studentNumber) {
-                return true;
-            }
-        }
-        return false;
+        if (!super.equals(that))                      return false;
+        if (this.studentNumber != that.studentNumber) return false;
+        return true;
     }
     
     /**
@@ -73,7 +70,7 @@ public class Student extends Person {
     public Student clone() {
         Student that = new Student(studentNumber);
         that.setName(this.getName());
-        that.age = this.age;
+        that.age    = this.age;
         that.isMale = this.isMale;
         return that;
     }

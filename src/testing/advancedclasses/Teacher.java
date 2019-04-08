@@ -73,17 +73,15 @@ public class Teacher extends Person
     @Override
     public boolean equals(Object object) {
         Teacher that = (Teacher)object;
-        if (!super.equals(that)) return false;
+        if (!super.equals(that))              return false;
         if (!this.course.equals(that.course)) return false;
-        if (!this.room.equals(that.room)) return false;        
+        if (!this.room.equals(that.room))     return false;        
         else {
             for (int i = 0; i < MAX; i++) {
-                if (this.students[i] == null && 
-                    that.students[i] != null) {
+                if (this.students[i] == null && that.students[i] != null) {
                     return false;
                 }
-                if (this.students[i] != null && 
-                    that.students[i] == null) {
+                if (this.students[i] != null && that.students[i] == null) {
                     return false;
                 }                
                 if (!this.students[i].equals(that.students[i])) {
@@ -101,12 +99,10 @@ public class Teacher extends Person
      */
     @Override
     public Teacher clone() {
-        Teacher that =  new Teacher(super.getName(), 
-                age, isMale, course, room);
-        for (int i = 0; i < MAX; i++) {
-            if (this.students[i] != null) {
-                that.students[i] = this.students[i].clone();
-            }
+        String name = super.getName();
+        Teacher that =  new Teacher(name, age, isMale, course, room);
+        for (int i = 0; i < count; i++) {
+            that.add(this.students[i].clone());
         }
         return that;
     }

@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Hufflepuff.java
- *  for project ComputerScience40S on 22-Mar-2019 at 2:18:49 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * Hufflepuff.java - 
+ * Hufflepuff.java - represents the fictional character of Hufflepuff
  *
  * @author Mr. Wachs 
  * @since 22-Mar-2019 

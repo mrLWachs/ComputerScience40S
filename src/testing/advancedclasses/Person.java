@@ -55,14 +55,10 @@ public class Person
     public boolean equals(Object object) {
         // shallow comparison would be: return true; 
         Person that = (Person)object;   // we cast object into other classes   
-        if (this.name.equals(that.name)) {
-            if (this.isMale == that.isMale) {
-                if (this.age == that.age) {
-                    return true;
-                }
-            }
-        }
-        return false;
+        if (!this.name.equals(that.name)) return false;
+        if (this.isMale != that.isMale)   return false;
+        if (this.age    != that.age)      return false;
+        return true;
     }
     
     /**

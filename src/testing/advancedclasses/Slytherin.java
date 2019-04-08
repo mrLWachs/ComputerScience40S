@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Slytherin.java
- *  for project ComputerScience40S on 22-Mar-2019 at 2:19:13 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * Slytherin.java - 
+ * Slytherin.java - represents the fictional character of Slytherin
  *
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
