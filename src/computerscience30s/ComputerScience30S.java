@@ -594,22 +594,19 @@ public class ComputerScience30S
                 title,JOptionPane.PLAIN_MESSAGE);
     }
 
-    
-    
-    
+    /**
+     * Goes over the content of this unit
+     */
     private static void learnArrays() {
         System.out.println("Learn Arrays...");
         
-        // create (declare) a variable for comparison
-        
+        // create (declare) a variable for comparison        
         int size = 10;
         
-        // declare an array
-        
+        // declare an array        
         int array[] = new int[size];
         
-        // assign values to the individual indices (spots, subscripts, etc.)
-        
+        // assign values to the individual indices (spots, subscripts, etc.)        
         array[0] = 92;
         array[1] = 8;
         array[2] = -3;
@@ -619,32 +616,24 @@ public class ComputerScience30S
         // array[10] = 15; out of bounds error
         // array[-1] also be out of bounds
         
-        // declare an array of no size
-        
+        // declare an array of no size        
         double[] a;        
         
-        // later on, you can re-create (re-dimension)
-        // the same array
-        
+        // later on, you can re-create (re-dimension) the same array        
         a = new double[3];
         
         a[0] = 1.1;
         a[1] = 2.2;
         a[2] = 3.3;
         
-        // you can re-dimension multiple times,
-        // but every time it wipes out any content 
-        // stored inside the array
-        
+        // you can re-dimension multiple times, but every time it wipes out 
+        // any content stored inside the array        
         a = new double[500];
         
-        // can create arrays with prefilled values
-        
+        // can create arrays with prefilled values        
         double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
         
-        // you can also do this and make the array 
-        // a constant
-        
+        // you can also do this and make the array a constant        
         final String[] OPTIONS = {
             "New Game",
             "Save Game",
@@ -654,55 +643,38 @@ public class ComputerScience30S
         // make a empty array
         int[] numbers = new int[100];
         
-        // to travel (go through), traverse
-        // an entire array, you use the 
-        // for loop
-        
+        // to travel (go through), traverse an entire array, use a for loop        
         for (int i = 0; i < 100; i++) {
             numbers[i] = 99;
         }
         
-        // output the entire array
-        // using a feature called the "length"
-        
+        // output the entire array, using a feature called the ".length"        
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
         
+        // pass the array to a method as a parameter
         output(coins);
         
-        double[] percents = { 0.0, 0.25, 0.50, 0.75, 1.00 };
-        
+        // make another array and test the method again
+        double[] percents = { 0.0, 0.25, 0.50, 0.75, 1.00 };        
         output(percents);
         
+        // method that returns an array
         int[] randoms = randomGenerate(100,1,10);
         
+        // overloaded version of the other method
         output(randoms);
         
+        // method that takes an array as a parameter and returns an array
         int[] wholes = convert(percents);
-        
         output(wholes);
         
         
         
         System.out.println("Arrays complete!");
     }
-
     
-    /**
-     * Outputs an array of values
-     * 
-     * @param array the array of doubles
-     */
-    private static void output(double[] array) {
-        String text = "Array = [";
-        for (int i = 0; i < array.length; i++) {
-            text += array[i] + ",";
-        }
-        text = text + "]";
-        output(text);
-    }
-
     /**
      * Generates an array of random integers in 
      * the range between low and high
@@ -712,13 +684,40 @@ public class ComputerScience30S
      * @param high the highest number in the range
      * @return an array of random integers
      */
-    private static int[] randomGenerate(int size, 
-            int low, int high) {
-        int[] a = new int[size];
-        for (int i = 0; i < size; i++) {
-            a[i] = random(low, high);
+    private static int[] randomGenerate(int size, int low, int high) {
+        int[] a = new int[size];            // create array of passed size
+        for (int i = 0; i < size; i++) {    // traverse array
+            a[i] = random(low, high);       // fill with random value
         }
-        return a;
+        return a;                           // return completed array
+    }
+
+    /**
+     * Converts an array of doubles into an array of integers
+     * 
+     * @param array the double array to convert
+     * @return an array of integers
+     */
+    private static int[] convert(double[] array) {
+        int[] a = new int[array.length];        // make array of same size
+        for (int i = 0; i < a.length; i++) {    // traverse array
+            a[i] = (int)array[i];               // copy over cast data
+        }
+        return a;                               // return new array
+    }
+    
+    /**
+     * Outputs an array of values
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(int[] array) {
+        String text = "Array = [";                  // start text variable
+        for (int i = 0; i < array.length; i++) {    // traverse array
+            text += array[i] + ",";                 // add to text
+        }
+        text = text + "]";                          // complete text
+        output(text);                               // output the text
     }
 
     /**
@@ -726,27 +725,9 @@ public class ComputerScience30S
      * 
      * @param array the array of doubles
      */
-    private static void output(int[] array) {
-        String text = "Array = [";
-        for (int i = 0; i < array.length; i++) {
-            text += array[i] + ",";
-        }
-        text = text + "]";
-        output(text);
+    private static void output(double[] array) {
+        int[] a = convert(array);           // converts the doubles to ints
+        output(a);                          // then outputs the array
     }
-
-    private static int[] convert(double[] array) {
-        int[] a = new int[array.length];
-        for (int i = 0; i < a.length; i++) {
-            a[i] = (int)array[i];
-        }
-        return a;
-    }
-    
-    
-    
-    
-    
-    
-        
+     
 }
