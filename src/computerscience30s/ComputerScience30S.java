@@ -670,6 +670,24 @@ public class ComputerScience30S
         int[] wholes = convert(percents);
         output(wholes);
         
+        // declared a 2D array (or matrix)
+        final int ROWS    = 50;
+        final int COLUMNS = 45;        
+        char[][] matrix = new char[ROWS][COLUMNS];        
+        // fill the matrix with randoms
+        // with 2D array, use nested for loops
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random('!','~');
+            }
+        }
+        output(matrix);
+        
+        String[][] ticTac = {
+            {"x","o","x"},
+            {"x","o","x"},
+            {"x","o","x"}
+        };
         
         
         System.out.println("Arrays complete!");
@@ -728,6 +746,21 @@ public class ComputerScience30S
     private static void output(double[] array) {
         int[] a = convert(array);           // converts the doubles to ints
         output(a);                          // then outputs the array
+    }
+
+    private static void output(char[][] m) {
+        String text = "";
+        for (int r = 0; r < m.length; r++) {
+            for (int c = 0; c < m[r].length; c++) {
+                text = text + m[r][c] + " ";
+            }
+            text = text + "\n";
+        }
+        output(text);
+    }
+    
+    private static char random(char low, char high) {
+        return (char)(random((int)low, (int)high));
     }
      
 }
