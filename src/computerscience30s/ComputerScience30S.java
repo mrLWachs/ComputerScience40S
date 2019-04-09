@@ -5,7 +5,10 @@ package computerscience30s;
 
 /** required imports for the project - the lines below are added when your
   * code needs to connect to another library (API) of code */
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 /**
  * ComputerScience30S.java - the large in class example we continue to work 
@@ -671,8 +674,8 @@ public class ComputerScience30S
         output(wholes);
         
         // declared a 2D array (or matrix)
-        final int ROWS    = 50;
-        final int COLUMNS = 45;        
+        final int ROWS    = 80;
+        final int COLUMNS = 65;        
         char[][] matrix = new char[ROWS][COLUMNS];        
         // fill the matrix with randoms
         // with 2D array, use nested for loops
@@ -763,7 +766,12 @@ public class ComputerScience30S
             }
             text = text + "\n";
         }
-        output(text);
+        
+        Color background = new Color(0,0,0);
+        Color foreground = new Color(0,255,0);
+        
+        output(text,"Consolas",20,
+                background,foreground);
     }
     
     /**
@@ -775,6 +783,35 @@ public class ComputerScience30S
      */
     private static char random(char low, char high) {
         return (char)(random((int)low, (int)high));
+    }
+
+    /**
+     * 
+     * @param text
+     * @param fontName
+     * @param fontSize
+     * @param background
+     * @param foreground 
+     */
+    private static void output(
+            String text, 
+            String fontName, 
+            int fontSize, 
+            Color background, 
+            Color foreground) {
+        // create a graphics object to display
+        // all the graphical options...        
+        JTextArea area = new JTextArea();
+        // build a font for the area
+        Font font = new Font(fontName,
+                Font.PLAIN,fontSize);
+        // assign the font and other things to the area
+        area.setFont(font);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setText(text);
+        // passed the area to the dialog
+        JOptionPane.showMessageDialog(null, area);
     }
      
 }
