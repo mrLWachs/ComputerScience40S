@@ -683,12 +683,14 @@ public class ComputerScience30S
         }
         output(matrix);
         
-        String[][] ticTac = {
-            {"x","o","x"},
-            {"x","o","x"},
-            {"x","o","x"}
+        // matrices can also be made with pre-set values
+        final char[][] TIC_TAC_TOE = 
+        {
+            {'X','O','X'},
+            {'O','X','O'},
+            {'X','O','X'}
         };
-        
+        output(TIC_TAC_TOE);
         
         System.out.println("Arrays complete!");
     }
@@ -725,9 +727,9 @@ public class ComputerScience30S
     }
     
     /**
-     * Outputs an array of values
+     * Outputs an array of integer values
      * 
-     * @param array the array of doubles
+     * @param array the array of integers
      */
     private static void output(int[] array) {
         String text = "Array = [";                  // start text variable
@@ -739,7 +741,7 @@ public class ComputerScience30S
     }
 
     /**
-     * Outputs an array of values
+     * Outputs an array of double values
      * 
      * @param array the array of doubles
      */
@@ -748,6 +750,11 @@ public class ComputerScience30S
         output(a);                          // then outputs the array
     }
 
+    /**
+     * Outputs an array of character values
+     * 
+     * @param array the array of characters
+     */
     private static void output(char[][] m) {
         String text = "";
         for (int r = 0; r < m.length; r++) {
@@ -759,6 +766,13 @@ public class ComputerScience30S
         output(text);
     }
     
+    /**
+     * Generates a random character
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
     private static char random(char low, char high) {
         return (char)(random((int)low, (int)high));
     }
