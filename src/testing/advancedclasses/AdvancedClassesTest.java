@@ -83,13 +83,7 @@ public class AdvancedClassesTest
         System.out.println("total people = " + total);  // displayed
                 
         hogwarts.triWizardTournament();                 // call the method
-        
-        
-        
-        
-        
-        
-        
+               
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
@@ -103,16 +97,12 @@ public class AdvancedClassesTest
      */
     private void check(Object object) {        
         System.out.print("Checking: " + object.toString());        
-        // there is a way to check if an object is in fact
-        // a object of a certain class        
-        if (object instanceof Person) 
-            System.out.print(" is a Person!");
-        if (object instanceof Student) 
-            System.out.print(" is a Student!");
-        if (object instanceof Teacher) 
-            System.out.print(" is a Teacher!");
-        if (object instanceof String) 
-            System.out.print(" is a String!");
+        // there is a way to check if an object is a object of a certain class 
+        if      (object instanceof Student) System.out.print(" is a Student!");
+        else if (object instanceof Teacher) System.out.print(" is a Teacher!");
+        else if (object instanceof Person)  System.out.print(" is a Person!");        
+        else if (object instanceof String)  System.out.print(" is a String!");
+        else                                System.out.print(" is a ?");
         System.out.println("\n");        
     }
     
