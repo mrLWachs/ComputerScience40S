@@ -794,6 +794,7 @@ public class ComputerScience30S
      * @param fontSize the font size to use in the dialog
      * @param background the background color to use in the dialog
      * @param foreground the foreground color to use in the dialog
+     * @param pictureFileName the name of the image to display
      */
     private static void output(String text, String fontName, int fontSize, 
                                Color background, Color foreground,
