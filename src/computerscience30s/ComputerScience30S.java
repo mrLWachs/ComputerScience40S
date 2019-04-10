@@ -807,7 +807,7 @@ public class ComputerScience30S
         area.setForeground(foreground);
         area.setText(text);
         // passed the area to the dialog
-        JOptionPane.showMessageDialog(null, area);
+        JOptionPane.showMessageDialog(null, area,"",JOptionPane.PLAIN_MESSAGE);
     }
      
 }
