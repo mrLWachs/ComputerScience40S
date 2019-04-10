@@ -7,6 +7,8 @@ package computerscience30s;
   * code needs to connect to another library (API) of code */
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
@@ -29,12 +31,10 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {   
-        System.out.println("\nComputer Science 30S Example started...\n"); 
-        
+        System.out.println("\nComputer Science 30S Example started...\n");
 //        learnBasicJava();        
 //        learnMethods();     
-        learnArrays();
-        
+        learnArrays();        
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
@@ -770,8 +770,8 @@ public class ComputerScience30S
         Color background = new Color(0,0,0);
         Color foreground = new Color(0,255,0);
         
-        output(text,"Consolas",20,
-                background,foreground);
+        output(text,"Consolas",20, background,foreground, 
+                "C:\\Users\\lawrence.wachs\\Desktop\\pictures\\matrix.gif");
     }
     
     /**
@@ -796,7 +796,8 @@ public class ComputerScience30S
      * @param foreground the foreground color to use in the dialog
      */
     private static void output(String text, String fontName, int fontSize, 
-                               Color background, Color foreground) {
+                               Color background, Color foreground,
+                               String pictureFileName) {
         // create a graphics object to display all the graphical options...        
         JTextArea area = new JTextArea();
         // build a font for the area
@@ -806,8 +807,11 @@ public class ComputerScience30S
         area.setBackground(background);
         area.setForeground(foreground);
         area.setText(text);
+        // create an image to add to the dialog
+        Icon picture = new ImageIcon(pictureFileName);        
         // passed the area to the dialog
-        JOptionPane.showMessageDialog(null, area,"",JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null, area,"",
+                JOptionPane.PLAIN_MESSAGE,picture);
     }
      
 }
