@@ -786,25 +786,21 @@ public class ComputerScience30S
     }
 
     /**
+     * Outputs text in a more visual graphical way with the passed font and 
+     * colors in a dialog 
      * 
-     * @param text
-     * @param fontName
-     * @param fontSize
-     * @param background
-     * @param foreground 
+     * @param text the text to display
+     * @param fontName the font name to use in the dialog
+     * @param fontSize the font size to use in the dialog
+     * @param background the background color to use in the dialog
+     * @param foreground the foreground color to use in the dialog
      */
-    private static void output(
-            String text, 
-            String fontName, 
-            int fontSize, 
-            Color background, 
-            Color foreground) {
-        // create a graphics object to display
-        // all the graphical options...        
+    private static void output(String text, String fontName, int fontSize, 
+                               Color background, Color foreground) {
+        // create a graphics object to display all the graphical options...        
         JTextArea area = new JTextArea();
         // build a font for the area
-        Font font = new Font(fontName,
-                Font.PLAIN,fontSize);
+        Font font = new Font(fontName, Font.PLAIN,fontSize);
         // assign the font and other things to the area
         area.setFont(font);
         area.setBackground(background);
