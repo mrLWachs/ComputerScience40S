@@ -674,8 +674,8 @@ public class ComputerScience30S
         output(wholes);
         
         // declared a 2D array (or matrix)
-        final int ROWS    = 80;
-        final int COLUMNS = 65;        
+        final int ROWS    = 30;
+        final int COLUMNS = 40;        
         char[][] matrix = new char[ROWS][COLUMNS];        
         // fill the matrix with randoms
         // with 2D array, use nested for loops
@@ -770,8 +770,9 @@ public class ComputerScience30S
         Color background = new Color(0,0,0);
         Color foreground = new Color(0,255,0);
         
-        output(text,"Consolas",20, background,foreground, 
-                "C:\\Users\\lawrence.wachs\\Desktop\\pictures\\matrix.gif");
+        String file = "C:\\Users\\lawrence.wachs\\Pictures\\matrix.gif";
+        
+        output(text, "Matrix", "Consolas", 20, background, foreground, file);
     }
     
     /**
@@ -790,14 +791,15 @@ public class ComputerScience30S
      * colors in a dialog 
      * 
      * @param text the text to display
+     * @param title the title of the dialog display
      * @param fontName the font name to use in the dialog
      * @param fontSize the font size to use in the dialog
      * @param background the background color to use in the dialog
      * @param foreground the foreground color to use in the dialog
      * @param pictureFileName the name of the image to display
      */
-    private static void output(String text, String fontName, int fontSize, 
-                               Color background, Color foreground,
+    private static void output(String text, String title, String fontName, 
+                               int fontSize, Color background, Color foreground,
                                String pictureFileName) {
         // create a graphics object to display all the graphical options...        
         JTextArea area = new JTextArea();
@@ -811,8 +813,8 @@ public class ComputerScience30S
         // create an image to add to the dialog
         Icon picture = new ImageIcon(pictureFileName);        
         // passed the area to the dialog
-        JOptionPane.showMessageDialog(null, area,"",
-                JOptionPane.PLAIN_MESSAGE,picture);
+        JOptionPane.showMessageDialog(null, area, title,
+                JOptionPane.PLAIN_MESSAGE, picture);
     }
      
 }
