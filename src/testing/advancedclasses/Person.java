@@ -104,6 +104,18 @@ public class Person
         return name;
     }
            
+    public void eat(Food food) {
+        if (food.shouldCook()) {
+            food.eat();
+        }
+        else {
+            food.rot();
+        }
+    }
+    
+    
+    
+    
     /**
      * NetBeans Tip: We once again went into Tools -> Templates and opened the
      * Java class template and added the following:

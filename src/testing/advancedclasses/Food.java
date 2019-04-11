@@ -45,4 +45,13 @@ public abstract class Food
         System.out.println("Food has rotted away and stinks!");
     }
 
+    // abstract methods can only be created in abstract 
+    // classes, abstract methods are methods which have no
+    // method body (no code inside)
+    
+    public abstract void eat();
+    
+    public abstract boolean shouldCook();
+    
+    
 }

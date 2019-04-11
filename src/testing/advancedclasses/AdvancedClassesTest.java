@@ -83,7 +83,17 @@ public class AdvancedClassesTest
         System.out.println("total people = " + total);  // displayed
                 
         hogwarts.triWizardTournament();                 // call the method
-               
+          
+        
+        Banana  banana  = new Banana();
+        Chicken chicken = new Chicken();
+        Sushi   sushi   = new Sushi();
+        
+        draco.eat(banana);
+        draco.eat(chicken);
+        draco.eat(sushi);
+        
+        
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
