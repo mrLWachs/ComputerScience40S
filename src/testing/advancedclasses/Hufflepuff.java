@@ -50,4 +50,9 @@ public class Hufflepuff extends Wizard
         return this;
     }
 
+    @Override
+    public void wearTie() {
+        System.out.println("Wear Yellow");
+    }
+
 }

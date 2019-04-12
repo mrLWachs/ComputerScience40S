@@ -1,26 +1,24 @@
 
+
 /** required package class namespace */
 package testing.advancedclasses;
 
 
+
 /**
- * Wizard.java - represents the fictional character of a wizard, this
- * is an example of an abstract class (which means it cannot be instantiated)
+ * SoccerPlayer.java - 
  *
  * @author Mr. Wachs 
- * @since 22-Mar-2019 
+ * @since 12-Apr-2019 
  */
-public abstract class Wizard extends Person
+public class SoccerPlayer extends Person implements Soccer
 {
 
-    // the "has a" relationship (composition) here between the classes
-    protected static Magic magic;
-    
     /**
      * Default constructor for the class, sets class properties
      */
-    public Wizard() {
-        magic = new Magic();
+    public SoccerPlayer() {
+        
     }
 
     /**
@@ -30,7 +28,7 @@ public abstract class Wizard extends Person
      */
     @Override
     public String toString() {
-        return "Wizzard " + super.toString();
+        return "SoccerPlayer " + super.toString();
     }
         
     /**
@@ -50,18 +48,25 @@ public abstract class Wizard extends Person
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Wizard clone() {
+    public SoccerPlayer clone() {
         return this;
     }
-    
-    /**
-     * Casts a spell (a static method)
-     */
-    public static void castSpell() {
-        System.out.println(magic.toString());
+
+    @Override
+    public void goal(String name) {
     }
-    
-    public abstract void wearTie();
-    
-    
+
+    @Override
+    public void endOfHalf(boolean first) {
+    }
+
+    @Override
+    public void setOpponent(String name) {
+    }
+
+    @Override
+    public boolean didIWin() {
+        return false;
+    }
+
 }

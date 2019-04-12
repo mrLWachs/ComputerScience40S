@@ -50,4 +50,9 @@ public class Slytherin extends Wizard
         return this;
     }
 
+    @Override
+    public void wearTie() {
+        System.out.println("Wear green");
+    }
+
 }
