@@ -10,7 +10,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 12-Apr-2019 
  */
-public interface Quidditch 
+public interface Quidditch extends Sports
 {
 
     boolean catchSnitch();

@@ -49,8 +49,16 @@ public abstract class Food
     // classes, abstract methods are methods which have no
     // method body (no code inside)
     
+    /**
+     * How to eat this food object
+     */
     public abstract void eat();
     
+    /**
+     * Determines if this food item should be cooked or not 
+     * 
+     * @return should be cooked (true), or not (false)
+     */
     public abstract boolean shouldCook();
     
     

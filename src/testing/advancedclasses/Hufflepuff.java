@@ -55,4 +55,20 @@ public class Hufflepuff extends Wizard
         System.out.println("Wear Yellow");
     }
 
+    @Override
+    public boolean catchSnitch() {
+        return true;
+    }
+
+    @Override
+    public void setOpponent(String name) {
+        super.mortalEnemy = name;
+    }
+
+    @Override
+    public boolean didIWin() {
+        if (catchSnitch()) return true;
+        else return false;
+    }
+
 }

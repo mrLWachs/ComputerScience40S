@@ -10,11 +10,13 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
  */
-public abstract class Wizard extends Person
+public abstract class Wizard extends Person implements Quidditch
 {
 
     // the "has a" relationship (composition) here between the classes
     protected static Magic magic;
+    
+    protected String mortalEnemy;
     
     /**
      * Default constructor for the class, sets class properties
@@ -62,6 +64,9 @@ public abstract class Wizard extends Person
     }
     
     public abstract void wearTie();
+
+    @Override
+    public abstract boolean catchSnitch();
     
     
 }

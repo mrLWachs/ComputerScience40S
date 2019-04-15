@@ -93,6 +93,21 @@ public class AdvancedClassesTest
         draco.eat(chicken);
         draco.eat(sushi);
         
+        SoccerPlayer ronaldo = new SoccerPlayer("Juventus");        
+        ronaldo.setOpponent("PSG");
+        ronaldo.goal("Juventus");
+        ronaldo.goal("Juventus");
+        ronaldo.goal("PSG");
+        ronaldo.endOfHalf(true);
+        ronaldo.endOfHalf(false);
+        
+        luna.setOpponent("Griffendore");        
+        if (luna.didIWin()) {
+            System.out.println("Won!");
+        }
+        else {
+            System.out.println("Lost!");
+        }
         
         
         System.out.println("\nCompleted advanced classes test!\n");

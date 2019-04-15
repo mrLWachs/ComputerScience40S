@@ -55,4 +55,20 @@ public class Slytherin extends Wizard
         System.out.println("Wear green");
     }
 
+    @Override
+    public boolean catchSnitch() {
+        return false;
+    }
+
+    @Override
+    public void setOpponent(String name) {
+        super.mortalEnemy = name;
+    }
+
+    @Override
+    public boolean didIWin() {
+        if (catchSnitch()) return true;
+        else return false;
+    }
+
 }

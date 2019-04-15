@@ -11,14 +11,21 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 12-Apr-2019 
  */
-public class SoccerPlayer extends Person implements Soccer
+public class SoccerPlayer extends Person 
+        implements Soccer
 {
 
+    private String teamName;
+    private String opponentName;
+    private int goals;
+    private int opponentGoals;
+    
     /**
      * Default constructor for the class, sets class properties
      */
-    public SoccerPlayer() {
-        
+    public SoccerPlayer(String teamName) {
+        this.teamName = teamName;
+        goals = opponentGoals = 0;
     }
 
     /**
@@ -54,19 +61,46 @@ public class SoccerPlayer extends Person implements Soccer
 
     @Override
     public void goal(String name) {
+        if (name.equals(teamName)) {
+            goals++;
+        }
+        else {
+            opponentGoals++;
+        }
     }
 
     @Override
     public void endOfHalf(boolean first) {
+        if (first) {
+            System.out.println("End of first "
+                    + "half, score is " +
+                    goals + " for " + teamName +
+                    " and " + opponentGoals +
+                    " for " + opponentName);
+        }
+        else {
+            if (didIWin()) {
+                System.out.println("We win!");
+            }
+            else {
+                System.out.println("We lost!");
+            }
+        }
     }
 
     @Override
     public void setOpponent(String name) {
+        opponentName = name;
     }
 
     @Override
     public boolean didIWin() {
-        return false;
+        if (goals > opponentGoals) {
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
 }
