@@ -19,12 +19,19 @@ public class Banana extends Food
         super(1);
     }
 
-    
+    /**
+     * How to eat this food object
+     */
     @Override
     public void eat() {
         System.out.println("Peel from top");
     }
 
+    /**
+     * Determines if this food item should be cooked or not 
+     * 
+     * @return should be cooked (true), or not (false)
+     */
     @Override
     public boolean shouldCook() {
         return false;

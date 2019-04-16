@@ -18,15 +18,26 @@ package testing.advancedclasses;
 public class Chicken extends Food
 {
 
+    /** 
+     * Default constructor for the class 
+     */
     public Chicken() {
         super(2);
     }
 
+    /**
+     * How to eat this food object
+     */
     @Override
     public void eat() {
         System.out.println("Fried chicken");
     }
 
+    /**
+     * Determines if this food item should be cooked or not 
+     * 
+     * @return should be cooked (true), or not (false)
+     */
     @Override
     public boolean shouldCook() {
         return true;

@@ -36,7 +36,7 @@ public class AdvancedClassesTest
             System.out.println("object1 == object2"); 
         }
         
-        // testing equals method:        
+        // testing equals, clone, toString methods overloaded from Object:        
         Person sam = new Person();                      // new person object
         sam.age    = 25;                                // changing some 
         sam.isMale = true;                              // object properties
@@ -49,7 +49,6 @@ public class AdvancedClassesTest
             System.out.println("person != sam");
         }
         System.out.println(sam.toString());             // toString overloaded
-        
         Person samClone = sam.clone();                  // clone method
         System.out.println(samClone.toString());        // display clone             
         if (sam.equals(samClone)) {                     // equals again
@@ -65,6 +64,7 @@ public class AdvancedClassesTest
         cardinal.add(cersi);                            // add to array        
         System.out.println(cardinal.toString());        // output teacher
         
+        // testing method using instanceof operator
         check(person);                                  // call to method
         check(student);                                 // which uses the 
         check(object1);                                 // instanceof operator
@@ -73,6 +73,8 @@ public class AdvancedClassesTest
         String text = "Hello World";                    // instances of that 
         check(text);                                    // class
         
+        // testing complicated class driven class structure with static
+        // methods and static properties
         Hufflepuff luna     = new Hufflepuff();         // instances created
         Slytherin  draco    = new Slytherin();        
         Hogwarts   hogwarts = new Hogwarts();
@@ -80,27 +82,25 @@ public class AdvancedClassesTest
         hogwarts.enterStation9ThreeQuarters(draco);
         
         int total = person.total;                       // the static property        
-        System.out.println("total people = " + total);  // displayed
-                
-        hogwarts.triWizardTournament();                 // call the method
-          
+        System.out.println("total people = " + total);  // displayed                
+        hogwarts.triWizardTournament();                 // call static method
         
-        Banana  banana  = new Banana();
-        Chicken chicken = new Chicken();
-        Sushi   sushi   = new Sushi();
+        // testing abstract classes and abstract methods
+        Banana  banana  = new Banana();                 // create children
+        Chicken chicken = new Chicken();                // of the food abstract
+        Sushi   sushi   = new Sushi();                  // class        
+        draco.eat(banana);                              // use polymorphic
+        draco.eat(chicken);                             // method on food
+        draco.eat(sushi);                               // parameter
         
-        draco.eat(banana);
-        draco.eat(chicken);
-        draco.eat(sushi);
-        
-        SoccerPlayer ronaldo = new SoccerPlayer("Juventus");        
-        ronaldo.setOpponent("PSG");
-        ronaldo.goal("Juventus");
-        ronaldo.goal("Juventus");
-        ronaldo.goal("PSG");
+        // testing interfaces
+        SoccerPlayer ronaldo = new SoccerPlayer("Juventus");   // soccer player        
+        ronaldo.setOpponent("PSG");                     // overloaded methods
+        ronaldo.goal("Juventus");                       // from the various
+        ronaldo.goal("Juventus");                       // interfaces the 
+        ronaldo.goal("PSG");                            // class implements
         ronaldo.endOfHalf(true);
-        ronaldo.endOfHalf(false);
-        
+        ronaldo.endOfHalf(false);        
         luna.setOpponent("Griffendore");        
         if (luna.didIWin()) {
             System.out.println("Won!");
@@ -108,6 +108,8 @@ public class AdvancedClassesTest
         else {
             System.out.println("Lost!");
         }
+        
+        
         
         
         System.out.println("\nCompleted advanced classes test!\n");
