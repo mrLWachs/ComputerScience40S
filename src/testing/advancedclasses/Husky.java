@@ -4,25 +4,35 @@ package testing.advancedclasses;
 
 
 /**
- * SoccerPlayer.java - represents a soccer player
+ * Husky.java - represents a Husky high school student person
  *
  * @author Mr. Wachs 
- * @since 12-Apr-2019 
+ * @since 16-Apr-2019 
  */
-public class SoccerPlayer extends Person implements Soccer
+public class Husky extends HighSchoolStudent 
+        implements PermissionForm, Soccer, Hockey
 {
 
-    private String teamName;
-    private String opponentName;
-    private int goals;
-    private int opponentGoals;
+    private boolean haveForm;
+    private String opponent;
+    private int score;
+    private int oppScore;
+        
     
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
+     * 
+     * @param name
+     * @param age
+     * @param isMale
+     * @param studentNumber 
      */
-    public SoccerPlayer(String teamName) {
-        this.teamName = teamName;
-        goals = opponentGoals = 0;
+    public Husky(String name, int age,
+            boolean isMale, int studentNumber) {
+        super(studentNumber);
+        super.setName(name);
+        super.age = age;
+        super.isMale = isMale;
     }
 
     /**
@@ -32,7 +42,7 @@ public class SoccerPlayer extends Person implements Soccer
      */
     @Override
     public String toString() {
-        return "SoccerPlayer " + super.toString();
+        return "Husky " + super.toString();
     }
         
     /**
@@ -52,8 +62,26 @@ public class SoccerPlayer extends Person implements Soccer
      * @return a "clone" of the object using new memory
      */
     @Override
-    public SoccerPlayer clone() {
+    public Husky clone() {
         return this;
+    }
+
+    /**
+     * Signing the permission form
+     */
+    @Override
+    public void sign() {
+        haveForm = PermissionForm.SIGNED;
+    }
+
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
+    @Override
+    public boolean haveYouGotItSigned() {
+        return haveForm;
     }
 
     /**
@@ -63,11 +91,11 @@ public class SoccerPlayer extends Person implements Soccer
      */
     @Override
     public void goal(String name) {
-        if (name.equals(teamName)) {
-            goals++;
+        if (name.equals(getName())) {
+            score++;
         }
         else {
-            opponentGoals++;
+            oppScore++;
         }
     }
 
@@ -78,21 +106,7 @@ public class SoccerPlayer extends Person implements Soccer
      */
     @Override
     public void endOfHalf(boolean first) {
-        if (first) {
-            System.out.println("End of first "
-                    + "half, score is " +
-                    goals + " for " + teamName +
-                    " and " + opponentGoals +
-                    " for " + opponentName);
-        }
-        else {
-            if (didIWin()) {
-                System.out.println("We win!");
-            }
-            else {
-                System.out.println("We lost!");
-            }
-        }
+        System.out.println("To do...");
     }
 
     /**
@@ -102,7 +116,7 @@ public class SoccerPlayer extends Person implements Soccer
      */
     @Override
     public void setOpponent(String name) {
-        opponentName = name;
+        opponent = name;
     }
 
     /**
@@ -112,12 +126,18 @@ public class SoccerPlayer extends Person implements Soccer
      */
     @Override
     public boolean didIWin() {
-        if (goals > opponentGoals) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        if (score > oppScore) return true;
+        else                  return false;
+    }
+
+    /**
+     * The passed period of hockey is over
+     * 
+     * @param period the period number
+     */
+    @Override
+    public void endOfPeriod(int period) {
+        System.out.println("To do...");
     }
 
 }

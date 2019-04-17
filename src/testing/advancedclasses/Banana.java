@@ -16,7 +16,7 @@ public class Banana extends Food
      * Default constructor for the class 
      */
     public Banana() {
-        super(1);
+        super(Food.GROUPS[1]);
     }
 
     /**
@@ -24,7 +24,7 @@ public class Banana extends Food
      */
     @Override
     public void eat() {
-        System.out.println("Peel from top");
+        System.out.println("Eating by peel from top of group " + group);
     }
 
     /**

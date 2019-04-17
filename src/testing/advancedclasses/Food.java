@@ -26,14 +26,14 @@ public abstract class Food
         "meats",
         "dairy"
     };
-    private int group;
+    public String group;
     
     /**
      * Constructor for the class, sets class properties
      * 
      * @param group the food group number for this food
      */
-    public Food(int group) {
+    public Food(String group) {
         taste = 0;      
         this.group = group;
     }
@@ -42,12 +42,11 @@ public abstract class Food
      * Outputs if the food has rotted 
      */
     public void rot() {
-        System.out.println("Food has rotted away and stinks!");
+        System.out.println("Food from group " +  group + " has rotted!");
     }
 
-    // abstract methods can only be created in abstract 
-    // classes, abstract methods are methods which have no
-    // method body (no code inside)
+    // abstract methods can only be created in abstract classes, abstract 
+    // methods are methods which have no method body (no code inside)
     
     /**
      * How to eat this food object

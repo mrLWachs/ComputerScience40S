@@ -1,3 +1,4 @@
+
 /** required package class namespace */
 package testing.advancedclasses;
 
@@ -103,7 +104,12 @@ public class Person
     public String getName() {
         return name;
     }
-           
+          
+    /**
+     * Eats the passed food by outputting to the screen
+     * 
+     * @param food the abstract food object to eat
+     */
     public void eat(Food food) {
         if (food.shouldCook()) {
             food.eat();

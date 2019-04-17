@@ -63,8 +63,16 @@ public abstract class Wizard extends Person implements Quidditch
         System.out.println(magic.toString());
     }
     
+    /**
+     * What color this wizard's tie is
+     */
     public abstract void wearTie();
 
+    /**
+     * Did this wizard catch a snitch or not (to end the match)
+     * 
+     * @return they did catch it (true) or not (false)
+     */
     @Override
     public abstract boolean catchSnitch();
     

@@ -1,16 +1,10 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Chicken.java
- *  for project ComputerScience40S on 11-Apr-2019 at 1:33:22 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package testing.advancedclasses;
 
 
-
 /**
- * Chicken.java - 
+ * Chicken.java - represents chicken
  *
  * @author Mr. Wachs 
  * @since 11-Apr-2019 
@@ -22,7 +16,7 @@ public class Chicken extends Food
      * Default constructor for the class 
      */
     public Chicken() {
-        super(2);
+        super(Food.GROUPS[2]);
     }
 
     /**
@@ -30,7 +24,7 @@ public class Chicken extends Food
      */
     @Override
     public void eat() {
-        System.out.println("Fried chicken");
+        System.out.println("Eating fried chicken from " + group);
     }
 
     /**

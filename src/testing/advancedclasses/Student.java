@@ -20,7 +20,7 @@ public class Student extends Person {
      * default, usually one is written for you, EXCEPT if you write a 
      * non-default constructor, it will not!
      * 
-     * @param studentNumber the student number of this high school student
+     * @param studentNumber the student number of this student
      */
     public Student(int studentNumber) {
         super();                                // call to super constructor

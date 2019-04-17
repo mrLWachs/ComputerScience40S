@@ -102,13 +102,12 @@ public class AdvancedClassesTest
         ronaldo.endOfHalf(true);
         ronaldo.endOfHalf(false);        
         luna.setOpponent("Griffendore");        
-        if (luna.didIWin()) {
-            System.out.println("Won!");
-        }
-        else {
-            System.out.println("Lost!");
-        }
+        if (luna.didIWin()) System.out.println("Won!");
+        else                System.out.println("Lost!");
         
+        // testing classes with inheritance and multiple implements
+        Husky havoc = new Husky("Havoc Ness", 17, true, 3665);        
+        havoc.setOpponent("John Taylor");
         
         
         
