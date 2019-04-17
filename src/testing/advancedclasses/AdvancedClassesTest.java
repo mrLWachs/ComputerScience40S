@@ -108,29 +108,29 @@ public class AdvancedClassesTest
         // testing classes with inheritance and multiple implements
         Husky havoc = new Husky("Havoc Ness", 17, true, 3665);        
         havoc.setOpponent("John Taylor");
+        havoc.goal("John Taylor");
+        havoc.sign();
         
-        String string = "dufflebag";        
-        output(string);
-        
-        output(havoc);
-        
+        // creating primative data structures
         boolean b = true;
         int     i = 10;
         double  d = 3.14;
         char    c = 'W';
         
+        // creating class ("wrapper class") objects from the primatives   
         Boolean   bool      = new Boolean(b);
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
         Character character = new Character(c);
+        String    string    = new String("dufflebag");  
         
+        // calling the generic method on the variety of objects
         output(bool);
         output(integer);
         output(doub);
         output(character);
-        
-        
-        
+        output(string);
+        output(havoc);
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
@@ -153,33 +153,18 @@ public class AdvancedClassesTest
         System.out.println("\n");        
     }
     
-    
-    
-    
+    /**
+     * Outputs a generic item with information about the data type
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
     private static <T> void output(T item) {
-        String text = "";
-        text += "Class ";
+        String text = "Class ";
         text += item.getClass().getSimpleName();
         text += " as a string is ";
         text += item.toString();
         System.out.println(text);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
