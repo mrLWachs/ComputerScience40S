@@ -109,6 +109,27 @@ public class AdvancedClassesTest
         Husky havoc = new Husky("Havoc Ness", 17, true, 3665);        
         havoc.setOpponent("John Taylor");
         
+        String string = "dufflebag";        
+        output(string);
+        
+        output(havoc);
+        
+        boolean b = true;
+        int     i = 10;
+        double  d = 3.14;
+        char    c = 'W';
+        
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
+        
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        
+        
         
         
         System.out.println("\nCompleted advanced classes test!\n");
@@ -131,5 +152,34 @@ public class AdvancedClassesTest
         else                                System.out.print(" is a ?");
         System.out.println("\n");        
     }
+    
+    
+    
+    
+    private static <T> void output(T item) {
+        String text = "";
+        text += "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is ";
+        text += item.toString();
+        System.out.println(text);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
