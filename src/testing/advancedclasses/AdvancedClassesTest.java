@@ -132,6 +132,35 @@ public class AdvancedClassesTest
         output(string);
         output(havoc);
         
+        // use the generic class..
+        // when a generic class is instantiated
+        // (when an object of the class is created)
+        // then you define what type the generic is
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string);
+        Box<Husky>     box6 = new Box<>(havoc);                
+        // peek in the boxes
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();        
+        // opened the boxes
+        Boolean   newBool      = box1.open();
+        Integer   newInt       = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Husky     newHusky     = box6.open();
+                
+        
+        
+        
+        
         System.out.println("\nCompleted advanced classes test!\n");
     }
     
