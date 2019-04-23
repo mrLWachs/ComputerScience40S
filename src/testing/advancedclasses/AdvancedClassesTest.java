@@ -116,13 +116,14 @@ public class AdvancedClassesTest
         int     i = 10;
         double  d = 3.14;
         char    c = 'W';
+        String  s = "dufflebag";    // Strings not actually a primative
         
         // creating class ("wrapper class") objects from the primatives   
         Boolean   bool      = new Boolean(b);
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
         Character character = new Character(c);
-        String    string    = new String("dufflebag");  
+        String    string    = new String(s);  
         
         // calling the generic method on the variety of objects
         output(bool);
@@ -132,10 +133,9 @@ public class AdvancedClassesTest
         output(string);
         output(havoc);
         
-        // use the generic class..
-        // when a generic class is instantiated
-        // (when an object of the class is created)
-        // then you define what type the generic is
+        // using a generic class, when a generic class is instantiated (an 
+        // object of the class is created), then you define what type the 
+        // generic is
         Box<Boolean>   box1 = new Box<>(bool);
         Box<Integer>   box2 = new Box<>(integer);
         Box<Double>    box3 = new Box<>(doub);
@@ -149,15 +149,20 @@ public class AdvancedClassesTest
         box4.peek();
         box5.peek();
         box6.peek();        
-        // opened the boxes
+        // open the boxes
         Boolean   newBool      = box1.open();
         Integer   newInt       = box2.open();
         Double    newDouble    = box3.open();
         Character newCharacter = box4.open();
         String    newString    = box5.open();
         Husky     newHusky     = box6.open();
-                
-        
+        // output
+        System.out.println(newBool.toString());
+        System.out.println(newInt.toString());
+        System.out.println(newDouble.toString());
+        System.out.println(newCharacter.toString());
+        System.out.println(newString.toString());
+        System.out.println(newHusky.toString());
         
         
         
