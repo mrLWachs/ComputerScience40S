@@ -164,8 +164,17 @@ public class AdvancedClassesTest
         System.out.println(newString.toString());
         System.out.println(newHusky.toString());
         
-        
-        
+        // create a house object and test it
+        House<Slytherin,Husky> house = new House<>();        
+        house.homeOwner = draco;
+        house.contents  = havoc;        
+        Food[] fridge = {
+            banana,
+            sushi,
+            chicken
+        };        
+        house.party(fridge);
+                
         System.out.println("\nCompleted advanced classes test!\n");
     }
     
