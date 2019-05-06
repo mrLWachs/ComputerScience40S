@@ -34,7 +34,8 @@ public class ComputerScience30S
         System.out.println("\nComputer Science 30S Example started...\n");
 //        learnBasicJava();        
 //        learnMethods();     
-        learnArrays();        
+//        learnArrays(); 
+        learnClasses();
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
@@ -815,6 +816,16 @@ public class ComputerScience30S
         // passed the area to the dialog
         JOptionPane.showMessageDialog(null, area, title,
                 JOptionPane.PLAIN_MESSAGE, picture);
+    }
+
+    private static void learnClasses() {
+        System.out.println("\nStart Learning Classes...\n");
+        
+        Person person = new Person();
+        
+        person.talk();
+        
+        System.out.println("\nCompleted Learning classes!\n");
     }
      
 }

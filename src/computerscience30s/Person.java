@@ -22,33 +22,47 @@ public class Person
     boolean isAlive; 
     
     // Methods: (things it can do, verbs, actions)............................
+     
+    /**
+     * Constructor method
+     */
+    Person() {
+        born();
+    }    
+    
+    /**
+     * When a person is born
+     */
+    void born() {
+        isAlive = true;
+        name = "Jane Doe";
+        age = 0;
+        isMale = false;
+    }
     
     /**
      * A person talks (by outputting information to the screen)
      */
     void talk() {
-        
+        System.out.println(name + " is " +
+                age + " years old, "
+                + "and if you are wondering"
+                + " if I am a male, the"
+                + " answer is " + isMale);
     }
     
     /**
      * A person has a birthday (their age goes up by one)
      */
     void birthday() {
-        
-    }
-    
-    /**
-     * When a person is born
-     */
-    void born() {
-        
+        age++;
     }
     
     /**
      * When a person dies
      */
     void die() {
-        
+        isAlive = false;
     }
        
 }
