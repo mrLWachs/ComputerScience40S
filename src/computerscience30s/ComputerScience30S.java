@@ -818,11 +818,17 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE, picture);
     }
 
+    /**
+     * Goes over the content of this unit
+     */
     private static void learnClasses() {
         System.out.println("\nStart Learning Classes...\n");
         
-        Person person = new Person();
+        // create a person object from the Person class
+        Person person = new Person();        
+        // similar to old code like: Random random = new Random();
         
+        // call (invoke) a method within the object
         person.talk();
         
         System.out.println("\nCompleted Learning classes!\n");
