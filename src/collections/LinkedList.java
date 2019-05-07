@@ -3,7 +3,6 @@
 package collections;
 
 
-
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and its useful methods
