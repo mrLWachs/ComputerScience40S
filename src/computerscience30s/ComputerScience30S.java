@@ -831,6 +831,19 @@ public class ComputerScience30S
         // call (invoke) a method within the object
         person.talk();
         
+        
+        Person beth = new Person("Beth Rands");
+        beth.talk();
+        beth.birthday();
+        beth.talk();
+        
+        person.die();
+        person.talk();
+        
+        Person angelica = new Person("Angelica Skylar", 17, false);
+        angelica.talk();
+        
+        
         System.out.println("\nCompleted Learning classes!\n");
     }
      

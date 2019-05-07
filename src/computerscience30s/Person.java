@@ -30,6 +30,22 @@ public class Person
         born();
     }    
     
+    Person(String newName) {
+        born();
+        name = newName;
+    }
+    
+    Person(String name, 
+           int age, 
+           boolean isMale) {
+        this.name   = name;
+        this.age    = age;
+        this.isMale = isMale;
+        isAlive     = true;
+    }
+    
+    
+    
     /**
      * When a person is born
      */
@@ -44,11 +60,16 @@ public class Person
      * A person talks (by outputting information to the screen)
      */
     void talk() {
-        System.out.println(name + " is " +
-                age + " years old, "
-                + "and if you are wondering"
-                + " if I am a male, the"
-                + " answer is " + isMale);
+        if (isAlive == false) {
+            System.out.println("Boooo!!!");
+        }
+        else {
+            System.out.println(name + " is " +
+                    age + " years old, "
+                    + "and if you are wondering"
+                    + " if I am a male, the"
+                    + " answer is " + isMale);
+        }
     }
     
     /**
