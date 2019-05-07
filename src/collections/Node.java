@@ -15,20 +15,43 @@ public class Node <T>
 {
 
     /** Self reference (link) to the next node in the "chain" */
-    Node next;
+    public Node next;
     /** Self reference (pointer) to the previous node in the "list" */
-    Node previous;    
+    public Node previous;    
     /** the generic data to remember */
-    T data;
+    public T data;
     
     
     /**
-     * Default constructor for the class, sets class properties
+     * Class constructor sets class properties 
+     * 
+     * @param data the node data
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
+     */
+    public Node(T data, Node next, Node previous) {
+        this.data     = data;
+        this.next     = next;
+        this.previous = previous;
+    }
+    
+    /**
+     * Class constructor sets class properties 
+     * 
+     * @param data the Node data
+     */
+    public Node(T data) {
+        this.data = data;
+        this.next = this.previous = null;
+    }
+    
+    /** 
+     * Default constructor for the class 
      */
     public Node() {
-        
+        this(null,null,null);
     }
-
+    
     /**
      * String representation of this object
      *
