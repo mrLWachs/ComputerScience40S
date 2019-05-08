@@ -59,8 +59,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        if (data == null) return null;          // invalid data, output null
-        return data.toString();                 // output data in node
+        if (data == null) return "Node " + null;    // invalid data, output null
+        return "Node " + data.toString();           // output data in node
     }
         
     /**
