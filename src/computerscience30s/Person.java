@@ -16,40 +16,36 @@ public class Person
     
     // Properties: (things about it, adjectives, descriptors).................
     
-    String name;
-    int age;       
-    boolean isMale; 
-    boolean isAlive; 
+    public String name;
+    private int age;       
+    public boolean isMale; 
+    private boolean isAlive; 
     
     // Methods: (things it can do, verbs, actions)............................
      
     /**
      * Constructor method
      */
-    Person() {
+    public Person() {
         born();
     }    
     
-    Person(String newName) {
+    public Person(String newName) {
         born();
         name = newName;
     }
     
-    Person(String name, 
-           int age, 
-           boolean isMale) {
+    public Person(String name, int age, boolean isMale) {
         this.name   = name;
         this.age    = age;
         this.isMale = isMale;
         isAlive     = true;
     }
     
-    
-    
     /**
      * When a person is born
      */
-    void born() {
+    private void born() {
         isAlive = true;
         name = "Jane Doe";
         age = 0;
@@ -59,7 +55,7 @@ public class Person
     /**
      * A person talks (by outputting information to the screen)
      */
-    void talk() {
+    public void talk() {
         if (isAlive == false) {
             System.out.println("Boooo!!!");
         }
@@ -75,14 +71,20 @@ public class Person
     /**
      * A person has a birthday (their age goes up by one)
      */
-    void birthday() {
+    public void birthday() {
         age++;
+    }
+    
+    public void birthday(int times) {
+        for (int i = 0; i < times; i++) {
+            birthday();
+        }
     }
     
     /**
      * When a person dies
      */
-    void die() {
+    public void die() {
         isAlive = false;
     }
        

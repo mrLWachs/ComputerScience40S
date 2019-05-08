@@ -834,14 +834,27 @@ public class ComputerScience30S
         
         Person beth = new Person("Beth Rands");
         beth.talk();
-        beth.birthday();
+        beth.birthday(42);
         beth.talk();
         
         person.die();
         person.talk();
         
         Person angelica = new Person("Angelica Skylar", 17, false);
+        
         angelica.talk();
+        
+//        angelica.age = 30;
+//        angelica.isAlive = false;
+        angelica.isMale = true;
+        angelica.name = "Mangelica Skylar";
+        
+        angelica.talk();
+        
+        
+        
+        
+        
         
         
         System.out.println("\nCompleted Learning classes!\n");
