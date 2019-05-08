@@ -73,11 +73,8 @@ public class Person
             System.out.println("Boooo!!!");
         }
         else {
-            System.out.println(name + " is " +
-                    age + " years old, "
-                    + "and if you are wondering"
-                    + " if I am a male, the"
-                    + " answer is " + isMale);
+            System.out.println(name + " is " + age + " years old, and if you "
+                    + "are wondering if I am a male, the answer is " + isMale);
         }
     }
     
