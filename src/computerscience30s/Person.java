@@ -16,25 +16,38 @@ public class Person
     
     // Properties: (things about it, adjectives, descriptors).................
     
-    public String name;
-    private int age;       
-    public boolean isMale; 
+    public String name;             // encapsualted properties marked
+    private int age;                // as private are "hidden" data
+    public boolean isMale;          // only available inside the class
     private boolean isAlive; 
     
     // Methods: (things it can do, verbs, actions)............................
      
     /**
-     * Constructor method
+     * Constructor method called (invoked) when the class is used to 
+     * build a object, this is called the "default" constructor
      */
     public Person() {
         born();
     }    
     
+    /**
+     * Constructor (overloaded) sets class properties
+     * 
+     * @param newName the name for this person
+     */
     public Person(String newName) {
         born();
         name = newName;
     }
     
+    /**
+     * Constructor method for the class, sets class properties
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param isMale the gender for this person
+     */
     public Person(String name, int age, boolean isMale) {
         this.name   = name;
         this.age    = age;
@@ -75,6 +88,11 @@ public class Person
         age++;
     }
     
+    /**
+     * A person has many birthdays
+     * 
+     * @param times how many birthdays to have
+     */
     public void birthday(int times) {
         for (int i = 0; i < times; i++) {
             birthday();

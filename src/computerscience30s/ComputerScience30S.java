@@ -831,7 +831,6 @@ public class ComputerScience30S
         // call (invoke) a method within the object
         person.talk();
         
-        
         Person beth = new Person("Beth Rands");
         beth.talk();
         beth.birthday(42);
