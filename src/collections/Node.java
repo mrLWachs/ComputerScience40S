@@ -59,7 +59,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        return "Node " + super.toString();
+        if (data == null) return null;          // invalid data, output null
+        return data.toString();                 // output data in node
     }
         
     /**
@@ -70,7 +71,9 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (object == null) return false;       // error check
+        Node node = (Node)object;               // cast object into node
+        return data.equals(node.data);          // compare data in nodes
     }
 
     /**
@@ -80,7 +83,17 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        return new Node(this.data);             // annoynmous object
     }
 
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        data = null;
+        next = previous = null;
+        System.gc();                            // garbage collector called
+    }
+    
 }
