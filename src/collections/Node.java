@@ -5,7 +5,15 @@ package collections;
 
 /**
  * Node.java - a representation of a generic node for use with
- * a LinkedList object
+ * a LinkedList object, and could be "visualized" as:
+ * 
+ *                      NODE
+ *                +--------------+
+ * previous <---- |              |
+ *                |     data     |
+ *                |   (generic)  |
+ *                |              |----> next
+ *                +--------------+
  *
  * @author Mr. Wachs 
  * @param <T> the generic data type used in the class
@@ -93,7 +101,7 @@ public class Node <T>
     public void finalize() {
         data = null;
         next = previous = null;
-        System.gc();                            // garbage collector called
+        System.gc();
     }
-    
+        
 }

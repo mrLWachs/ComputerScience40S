@@ -5,14 +5,34 @@ package collections;
 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
- * data (dynamic) type (ADT) and its useful methods
- *
+ * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
+ * 
+ *    LinkedList:
+ * 
+ *             +------+       +------+       +------+       +------+      
+ *  null <---- | NODE | <---- | NODE | <---- | NODE | <---- | NODE |      
+ *             |      |---->  |      |---->  |      |---->  |      |----> null  
+ *             +------+       +------+       +------+       +------+      
+ *                 ^                                           ^
+ *                 |                                           |
+ *                head                                        tail
+ * 
  * @author Mr. Wachs 
  * @since 6-May-2019 
  */
 public class LinkedList 
 {
 
+    /** Reference (link) to the first (front) node in the list (entry point) */
+    private Node head;
+    
+    /** Reference (link) to the last (back) node in the list (entry point) */
+    private Node tail;
+    
+    /** The number of nodes in the list, immutable property */
+    private int length;
+    
+    
     /**
      * Default constructor for the class, sets class properties
      */
