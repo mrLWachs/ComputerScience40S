@@ -7,10 +7,9 @@ package collections;
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
  * 
- *    LinkedList:
- * 
  *             +------+       +------+       +------+       +------+      
- *  null <---- | NODE | <---- | NODE | <---- | NODE | <---- | NODE |      
+ *  null <---- |      | <---- |      | <---- |      | <---- |      |  
+ *             | NODE |       | NODE |       | NODE |       | NODE |       
  *             |      |---->  |      |---->  |      |---->  |      |----> null  
  *             +------+       +------+       +------+       +------+      
  *                 ^                                           ^
