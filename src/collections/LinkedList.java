@@ -43,14 +43,19 @@ public class LinkedList <T>
      * Frees up all memory used by this object
      */
     @Override
-    public void finalize() {
-        length = 0;
-        head = tail = null;
-        System.gc();
+    public final void finalize() {
+        length = 0;                                 // length set to zero
+        head = tail = null;                         // references set to nulls
+        System.gc();                                // garbage collector called
     }
     
+    /**
+     * Determines if the list is empty (no content)
+     * 
+     * @return is empty (true) or not empty (false)
+     */
     public boolean isEmpty() {
-        return length == 0;        
+        return length == 0;                         // compares length to zero       
     }
         
     /**
@@ -59,10 +64,15 @@ public class LinkedList <T>
      * @return the number of nodes in the list
      */
     public int size() {
-        return length;
-    }
+        return length;                              // encapsulated property
+    } 
     
-    
+    /**
+     * Inserts data into the front (head) of the list
+     * 
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
+     */
     public boolean addFront(T data) {
         
         
