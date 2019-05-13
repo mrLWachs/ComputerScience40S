@@ -850,14 +850,11 @@ public class ComputerScience30S
         
         angelica.talk();
         
-        
+        // create a student object
         String[] courses = {
-            "Math", "Computer Science",
-            "Metal Smithing", "Basket Weaving"
-        };
-        
-        Student student = new Student(
-                "Tasha Beifini",17,false,courses);
+            "Math", "Computer Science", "Metal Smithing", "Basket Weaving"
+        };        
+        Student student = new Student("Tasha Beifini",17,false,courses);
         student.talk();
         student.study(8);
         student.slackOff();
