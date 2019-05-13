@@ -19,7 +19,7 @@ package collections;
  * @author Mr. Wachs 
  * @since 6-May-2019 
  */
-public class LinkedList 
+public class LinkedList <T> 
 {
 
     /** Reference (link) to the first (front) node in the list (entry point) */
@@ -36,9 +36,42 @@ public class LinkedList
      * Default constructor for the class, sets class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
 
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        length = 0;
+        head = tail = null;
+        System.gc();
+    }
+    
+    public boolean isEmpty() {
+        return length == 0;        
+    }
+        
+    /**
+     * Accessor method of the immutable property
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
+    
+    
+    public boolean addFront(T data) {
+        
+        
+        return true;
+    }
+    
+    
+    
+    
     /**
      * String representation of this object
      *

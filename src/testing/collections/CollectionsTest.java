@@ -2,6 +2,7 @@
 /** required package class namespace */
 package testing.collections;
 
+import collections.LinkedList;
 import collections.Node;
 
 
@@ -41,9 +42,10 @@ public class CollectionsTest
         System.out.println(f.toString());
         System.out.println(g.toString());
         
+        LinkedList list = new LinkedList();
         
-        
-        
+        System.out.println(list.isEmpty());
+        System.out.println(list.size());
         
         
         
