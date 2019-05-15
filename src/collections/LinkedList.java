@@ -74,11 +74,39 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean addFront(T data) {
-        
-        
+        if (data == null) return false;
+        // When (mutating) changing a linked list
+        // you should consider:
+            // (1) Empty list
+            // (2) List has 1 node
+            // (3) List has > 1 node
+        Node node = new Node(data);
+        if (isEmpty()) {
+            head = tail = node;
+        }
+        else {
+            node.next = head;
+            head.previous = node;
+            head = node;
+        }     
+        length++;
         return true;
     }
     
+    public boolean addBack(T data) {
+        if (data == null) return false;
+        Node node = new Node(data);
+        if (isEmpty()) {
+            head = tail = node;
+        }
+        else {
+            node.previous = tail;
+            tail.next = node;
+            tail = node;
+        }     
+        length++;
+        return true;
+    }
     
     
     
@@ -89,7 +117,16 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList " + super.toString();
+        if (isEmpty()) return "Emtpy Linked List";
+        else {
+            String text = "Linked List [";
+            Node current = head;
+            while (current.next != null) {
+                text += current.toString() + ",";
+                current = current.next;
+            }            
+            return text + current.toString() + "]";
+        }
     }
         
     /**
