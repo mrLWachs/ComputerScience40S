@@ -875,13 +875,14 @@ public class ComputerScience30S
         teacher.talk();
         
         // create meeting object
-        
-        
-        
-        
-        
-        
-        
+        Meeting meeting = new Meeting();
+        meeting.attend(person);
+        meeting.attend(beth);
+        meeting.attend(angelica);
+        meeting.attend(student);
+        meeting.attend(havoc);
+        meeting.attend(teacher);        
+        meeting.hold();        
         
         System.out.println("\nCompleted Learning classes!\n");
     }
