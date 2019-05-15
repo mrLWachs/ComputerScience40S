@@ -42,23 +42,27 @@ public class CollectionsTest
         System.out.println(f.toString());
         System.out.println(g.toString());
         
+        // create Linked List object
         LinkedList<Integer> list = new LinkedList<>();
         
+        // testing isEmpty, size, and toString
         System.out.println(list.isEmpty());
-        System.out.println(list.size());
-        
+        System.out.println(list.size());        
         System.out.println(list.toString());
         
+        // testing add to the front
         System.out.println(list.addFront(null));
         System.out.println(list.addFront(17));
         System.out.println(list.addFront(246));
         System.out.println(list.addFront(59));
         
+        // testing add to the back
         System.out.println(list.addBack(null));
         System.out.println(list.addBack(45));
         System.out.println(list.addBack(99));
         System.out.println(list.addBack(12));
         
+        // testing toString again
         System.out.println(list.toString());
         
         System.out.println("\nCollections complete!\n");
