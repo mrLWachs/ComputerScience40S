@@ -74,41 +74,43 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean addFront(T data) {
-        if (data == null) return false;
-        // When (mutating) changing a linked list
-        // you should consider:
-            // (1) Empty list
-            // (2) List has 1 node
-            // (3) List has > 1 node
-        Node node = new Node(data);
-        if (isEmpty()) {
-            head = tail = node;
+        if (data == null) return false;     // null data cannot be added        
+        Node<T> node = new Node<>(data);    // new node memory created 
+        // Scenarios to consider:    
+        // 1) empty list
+        // 2) list of 1 or more nodes
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
         }
-        else {
-            node.next = head;
-            head.previous = node;
-            head = node;
-        }     
-        length++;
-        return true;
+        else {                              // subsequent nodes added
+            node.next = head;               // link node to rest of list
+            head.previous = node;           // connect rest of list to node
+            head = node;                    // reassign head reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
     }
     
+    /**
+     * Inserts data into the back (tail) of the list
+     * 
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
+     */
     public boolean addBack(T data) {
-        if (data == null) return false;
-        Node node = new Node(data);
-        if (isEmpty()) {
-            head = tail = node;
+        if (data == null) return false;     // null data cannot be added            
+        Node<T> node = new Node<>(data);    // new node memory created    
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
         }
-        else {
-            node.previous = tail;
-            tail.next = node;
-            tail = node;
-        }     
-        length++;
-        return true;
-    }
-    
-    
+        else {                              // subsequent nodes added
+            node.previous = tail;           // link node to rest of list
+            tail.next = node;               // connect rest of list to node
+            tail = node;                    // reassign tail reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
+    }    
     
     /**
      * String representation of this object
@@ -116,17 +118,17 @@ public class LinkedList <T>
      * @return The object represented as a String
      */
     @Override
-    public String toString() {
-        if (isEmpty()) return "Emtpy Linked List";
+    public String toString() {        
+        if (isEmpty()) return "Empty Linked List";      // no nodes to display
         else {
-            String text = "Linked List [";
-            Node current = head;
-            while (current.next != null) {
-                text += current.toString() + ",";
-                current = current.next;
+            String text = "Linked List [";              // starting character
+            Node current = head;                        // start at head node
+            while (current.next != null) {              // traverse list
+                text += current.toString() + ",";       // append data
+                current = current.next;                 // move to next node
             }            
-            return text + current.toString() + "]";
-        }
+            return text + current.toString() + "]";     // append end character
+        }        
     }
         
     /**
