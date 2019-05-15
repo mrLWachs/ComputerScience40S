@@ -831,23 +831,19 @@ public class ComputerScience30S
         // call (invoke) a method within the object
         person.talk();
         
+        // create (instantiate) another object with different constructor
         Person beth = new Person("Beth Rands");
         beth.talk();
         beth.birthday(42);
-        beth.talk();
-        
+        beth.talk();        
         person.die();
         person.talk();
         
-        Person angelica = new Person("Angelica Skylar", 17, false);
-        
-        angelica.talk();
-        
-//        angelica.age = 30;
-//        angelica.isAlive = false;
+        // another instance of a person with the 3rd constructor
+        Person angelica = new Person("Angelica Skylar", 17, false);        
+        angelica.talk();        
         angelica.isMale = true;
-        angelica.name = "Mangelica Skylar";
-        
+        angelica.name = "Mangelica Skylar";        
         angelica.talk();
         
         // create a student object
@@ -861,12 +857,24 @@ public class ComputerScience30S
         student.cram();
         student.talk();
         
+        // create husky object
+        Husky havoc = new Husky("Maria Havoc", 12, false, courses);        
+        havoc.pepRally();
+        havoc.suspended();
+        havoc.study(5);
+        havoc.slackOff();
+        havoc.pepRally();        
+        havoc.talk();
+                
+        // create teacher object
+        Teacher teacher = new Teacher("Mr. Electric",true);
+        teacher.students[0] = student;
+        teacher.students[1] = havoc;
+        teacher.students[2] = new Student("Smelly Teen", 17, true, courses);        
+        teacher.teach();        
+        teacher.talk();
         
-        
-        
-        
-        
-        
+        // create meeting object
         
         
         
