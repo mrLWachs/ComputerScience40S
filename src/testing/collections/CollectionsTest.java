@@ -65,6 +65,47 @@ public class CollectionsTest
         // testing toString again
         System.out.println(list.toString());
         
+        // edge testing the get method (accessor)
+        System.out.println(list.get(0));
+        System.out.println(list.get(1));
+        System.out.println(list.get(5));
+        System.out.println(list.get(-10));
+        System.out.println(list.get(100));
+        
+        // edge testing the set method (mutator)
+        System.out.println(list.set(0,97));
+        System.out.println(list.set(1,65));
+        System.out.println(list.set(5,102));
+        System.out.println(list.set(-10,545));
+        System.out.println(list.set(100,193));
+        System.out.println(list.set(2,null));
+                
+        System.out.println(list.toString());
+        
+        LinkedList<Integer> list2 = new LinkedList<>();
+        
+        if (list.equals(list2)) System.out.println("==");
+        else                    System.out.println("!=");
+        
+        list2 = list.clone();
+        
+        System.out.println(list.toString());
+        System.out.println(list2.toString());
+        
+        if (list.equals(list2)) System.out.println("==");
+        else                    System.out.println("!=");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         System.out.println("\nCollections complete!\n");
     }
 
