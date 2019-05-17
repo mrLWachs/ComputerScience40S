@@ -82,29 +82,48 @@ public class CollectionsTest
                 
         System.out.println(list.toString());
         
+        // created a new list
         LinkedList<Integer> list2 = new LinkedList<>();
         
-        if (list.equals(list2)) System.out.println("==");
-        else                    System.out.println("!=");
+        // test the equals method
+        System.out.println(list.equals(list2));
         
-        list2 = list.clone();
-        
+        // test clone method
+        list2 = list.clone();        
         System.out.println(list.toString());
-        System.out.println(list2.toString());
+        System.out.println(list2.toString());        
+        System.out.println(list.equals(list2));
         
-        if (list.equals(list2)) System.out.println("==");
-        else                    System.out.println("!=");
+        // test front and back
+        System.out.println(list.front());
+        System.out.println(list.back());
+        list2.finalize();
+        System.out.println(list2.front());
+        System.out.println(list2.back());
         
+        // test remove front
+        list2 = list.clone();
+        for (int i = 0; i < 10; i++) {
+            System.out.println(list2.removeFront());
+            System.out.println(list2.toString());
+        }
         
+        // test remove back
+        list2 = list.clone();
+        for (int i = 0; i < 10; i++) {
+            System.out.println(list2.removeBack());
+            System.out.println(list2.toString());
+        }
         
+        // test contains method
+        System.out.println(list);
+        System.out.println(list.contains(12));
+        System.out.println(list.contains(65));
+        System.out.println(list.contains(97));
+        System.out.println(list.contains(102));
+        System.out.println(list2.contains(65));
         
-        
-        
-        
-        
-        
-        
-        
+        // more testing to come......
         
         System.out.println("\nCollections complete!\n");
     }

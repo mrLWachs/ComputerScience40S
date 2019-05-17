@@ -138,6 +138,83 @@ public class LinkedList <T>
         return true;                                // operation successful
     }
     
+     /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // first node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // last node
+    }
+    
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;         // no front to remove
+        else {
+            T data = (T)head.data;          // store head data
+            if (length == 1) finalize();    // 1 node list, wipe list
+            else {                
+                head = head.next;           // advanced head reference
+                head.previous.next = null;  // cut old head reference
+                head.previous = null;       // cut reference to old head
+                length--;                   // reduce list length
+                System.gc();                // call system garbage collector
+            }
+            return data;                    // return stored data
+        }
+    }
+    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;         // no back to remove
+        else {
+            T data = (T)tail.data;          // store tail data
+            if (length == 1) finalize();    // 1 node list, wipe list
+            else {                
+                tail = tail.previous;       // advanced tail reference
+                tail.next.previous = null;  // cut old tail reference
+                tail.next = null;           // cut reference to old tail
+                length--;                   // reduce list length
+                System.gc();                // call system garbage collector
+            }
+            return data;                    // return stored data
+        }
+    }
+    
+    /**
+     * Checks if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
+    public boolean contains(T data) {
+        Node current = head;                    // start reference at head
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return true;                    // indicate found
+            }
+            current = current.next;             // move to next node
+        }
+        return false;                           // not found in list
+    }    
+    
     /**
      * String representation of this object
      *
