@@ -216,6 +216,100 @@ public class LinkedList <T>
     }    
     
     /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        if (!inRange(index)) return false;              // index out of range
+        if (data == null)    return false;              // invalid data to add
+        if (index == length-1) return addBack(data);    // add to end of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.next = current.next;                       // set proper references
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
+    
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == 0)      return addFront(data);     // add to start of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.previous = current.previous;               // set proper references
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
+    
+    /**
+     * Adds the data to the back of the list
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
+    }
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
