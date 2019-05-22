@@ -204,9 +204,9 @@ public class CollectionsTest
         
         
         // test first and last index methods
-        
+        System.out.println("\n\n\nnew testing...");
         list.finalize();
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 30; i++) {
             int n = (int)((3-1+1) * Math.random() + 1);
             list.add(n);
         }
@@ -214,7 +214,20 @@ public class CollectionsTest
         System.out.println(list.firstIndexOf(2));
         System.out.println(list.lastIndexOf(2));
         
+        int[] array = list.allIndices(2);
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + ",");
+        }
         
+        // test remove, remove last, remove all methods
+        System.out.println("");
+        System.out.println("Original \t\t" + list);
+        System.out.println(list.remove(new Integer(2)));
+        System.out.println("After first gone \t" + list);
+        System.out.println(list.removeLast(2));
+        System.out.println("After last gone \t" + list);
+        System.out.println(list.removeAll(2));
+        System.out.println("After all gone \t" + list);
         
         
         
