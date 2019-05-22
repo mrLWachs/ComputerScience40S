@@ -62,39 +62,53 @@ public class CollectionsTest
         
         // testing add to the front
         System.out.println("\nTest LinkedList add front method...\n");
-        System.out.println("null to Front \t= " + list.addFront(null));
-        System.out.println(99 + " to Front \t= " + list.addFront(99));
-        System.out.println(88 + " to Front \t= " + list.addFront(88));
-        System.out.println(77 + " to Front \t= " + list.addFront(77));
-        System.out.println(list.toString());
+        System.out.println("null to Front \t= " + list.addFront(null) 
+                + "\t= " + list.toString());
+        System.out.println(99 + " to Front \t= " + list.addFront(99)
+                + "\t= " + list.toString());
+        System.out.println(88 + " to Front \t= " + list.addFront(88)
+                + "\t= " + list.toString());
+        System.out.println(77 + " to Front \t= " + list.addFront(77)
+                + "\t= " + list.toString());
         
         // testing add to the back
         System.out.println("\nTest LinkedList add back method...\n");
-        System.out.println("null to Back \t= " + list.addBack(null));
-        System.out.println(66 + " to Back \t= " + list.addBack(66));
-        System.out.println(55 + " to Back \t= " + list.addBack(55));
-        System.out.println(44 + " to Back \t= " + list.addBack(44));
-        System.out.println(list.toString());
+        System.out.println("null to Back \t= " + list.addBack(null)
+                + "\t= " + list.toString());
+        System.out.println(66 + " to Back \t= " + list.addBack(66)
+                + "\t= " + list.toString());
+        System.out.println(55 + " to Back \t= " + list.addBack(55)
+                + "\t= " + list.toString());
+        System.out.println(44 + " to Back \t= " + list.addBack(44)
+                + "\t= " + list.toString());
         
         // edge testing the get method (accessor)
         System.out.println("\nTest LinkedList get method...\n");
-        System.out.println(list.toString());
-        System.out.println("Get(" + 0 + ")\t= " + list.get(0));
-        System.out.println("Get(" + 1 + ")\t= " + list.get(1));
-        System.out.println("Get(" + 5 + ")\t= " + list.get(5));
-        System.out.println("Get(" + -3 + ")\t= " + list.get(-3));
-        System.out.println("Get(" + 15 + ")\t= " + list.get(15));
+        System.out.println("Get(" + 0 + ")\t= " + list.get(0)
+                + "\t= " + list.toString());
+        System.out.println("Get(" + 1 + ")\t= " + list.get(1)
+                + "\t= " + list.toString());
+        System.out.println("Get(" + 5 + ")\t= " + list.get(5)
+                + "\t= " + list.toString());
+        System.out.println("Get(" + -3 + ")\t= " + list.get(-3)
+                + "\t= " + list.toString());
+        System.out.println("Get(" + 15 + ")\t= " + list.get(15)
+                + "\t= " + list.toString());
         
         // edge testing the set method (mutator)
         System.out.println("\nTest LinkedList set method...\n");
-        System.out.println(list.toString());
-        System.out.println("Set(" + 0 + "," + 97 + ")\t= " + list.set(0,33));
-        System.out.println("Set(" + 1 + "," + 65 + ")\t= " + list.set(1,22));
-        System.out.println("Set(" + 5 + "," + 15 + ")\t= " + list.set(5,11));
-        System.out.println("Set(" + -3 + "," + 45 + ")\t= " + list.set(-3,98));
-        System.out.println("Set(" + 15 + "," + 93 + ")\t= " + list.set(15,87));
-        System.out.println("Set(" + 2 + ",null)\t= " + list.set(2,null));
-        System.out.println(list.toString());
+        System.out.println("Set(" + 0 + "," + 33 + ")\t= " + list.set(0,33)
+                + "\t= " + list.toString());
+        System.out.println("Set(" + 1 + "," + 22 + ")\t= " + list.set(1,22)
+                + "\t= " + list.toString());
+        System.out.println("Set(" + 5 + "," + 11 + ")\t= " + list.set(5,11)
+                + "\t= " + list.toString());
+        System.out.println("Set(" + -3 + "," + 98 + ")\t= " + list.set(-3,98)
+                + "\t= " + list.toString());
+        System.out.println("Set(" + 15 + "," + 87 + ")\t= " + list.set(15,87)
+                + "\t= " + list.toString());
+        System.out.println("Set(" + 2 + ",null)\t= " + list.set(2,null)
+                + "\t= " + list.toString());
         
         // created a new list
         LinkedList<Integer> list2 = new LinkedList<>();
@@ -113,19 +127,21 @@ public class CollectionsTest
         
         // test front and back
         System.out.println("\nTest LinkedList front and back methods...\n");
-        System.out.println(list.toString());
-        System.out.println("Front \t= " + list.front());
-        System.out.println("Front \t= " + list.back());
+        System.out.println("Front \t= " + list.front()
+                + "\t= " + list.toString());
+        System.out.println("Front \t= " + list.back()
+                + "\t= " + list.toString());
         System.out.println("\nTest LinkedList finalize methods...\n");
         list2.finalize();
-        System.out.println(list.toString());
-        System.out.println("Front \t= " + list.front());
-        System.out.println("Back \t= " + list.back());
+        System.out.println("Front \t= " + list2.front()
+                + "\t= " + list2.toString());
+        System.out.println("Back \t= " + list2.back()
+                + "\t= " + list2.toString());
         
         // test remove front
         System.out.println("\nTest LinkedList remove front method...\n");        
         list2 = list.clone();
-        System.out.println("\t\t\t= " + list.toString());
+        System.out.println("Original\t\t= " + list.toString());
         for (int i = 0; i < list.size()+1; i++) {
             System.out.println("Remove front = " + list2.removeFront() + 
                     "\t= " + list2.toString());
@@ -134,7 +150,7 @@ public class CollectionsTest
         // test remove back
         System.out.println("\nTest LinkedList remove back method...\n");        
         list2 = list.clone();
-        System.out.println("\t\t\t= " + list.toString());
+        System.out.println("Original\t\t= " + list.toString());
         for (int i = 0; i < list.size()+1; i++) {
             System.out.println("Remove back = " + list2.removeBack()+ 
                     "\t= " + list2.toString());
@@ -142,16 +158,20 @@ public class CollectionsTest
         
         // test contains method
         System.out.println("\nTest LinkedList contains method...\n"); 
-        System.out.println(list);
-        System.out.println("Contains " + 99 + "\t= " + list.contains(99));
-        System.out.println("Contains " + 33 + "\t= " + list.contains(33));
-        System.out.println("Contains " + 11 + "\t= " + list.contains(11));
-        System.out.println("Contains " + 76 + "\t= " + list.contains(76));
-        System.out.println("Contains null\t= " + list2.contains(null));
+        System.out.println("Contains " + 99 + "\t= " + list.contains(99)
+                + "\t= " + list.toString());
+        System.out.println("Contains " + 33 + "\t= " + list.contains(33)
+                + "\t= " + list.toString());
+        System.out.println("Contains " + 11 + "\t= " + list.contains(11)
+                + "\t= " + list.toString());
+        System.out.println("Contains " + 76 + "\t= " + list.contains(76)
+                + "\t= " + list.toString());
+        System.out.println("Contains null\t= " + list.contains(null)
+                + "\t= " + list.toString());
         
         // test add after
         System.out.println("\nTest LinkedList add after method...\n"); 
-        System.out.println("\t\t\t= " + list.toString());
+        System.out.println("Original\t\t= " + list.toString());
         System.out.println(list.addAfter(65,2) + "\t= Add(" + 65 + "," + 2 + 
                            ")\t= " + list.toString());
         System.out.println(list.addAfter(54,0) + "\t= Add(" + 54 + "," + 0 + 
@@ -167,7 +187,7 @@ public class CollectionsTest
                 
         // test add before
         System.out.println("\nTest LinkedList add before method...\n"); 
-        System.out.println("\t\t\t= " + list.toString());
+        System.out.println("Original\t\t= " + list.toString());
         System.out.println(list.addBefore(21,2) + "\t= Add(" + 21 + "," + 2 + 
                            ")\t= " + list.toString());
         System.out.println(list.addBefore(97,0) + "\t= Add(" + 97 + "," + 0 + 
@@ -183,8 +203,16 @@ public class CollectionsTest
         
         
         
+        // test first and last index methods
         
-        
+        list.finalize();
+        for (int i = 0; i < 10; i++) {
+            int n = (int)((3-1+1) * Math.random() + 1);
+            list.add(n);
+        }
+        System.out.println(list);
+        System.out.println(list.firstIndexOf(2));
+        System.out.println(list.lastIndexOf(2));
         
         
         

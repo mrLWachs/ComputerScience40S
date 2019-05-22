@@ -31,6 +31,7 @@ public class LinkedList <T>
     /** The number of nodes in the list, immutable property */
     private int length;
     
+    public static final int NOT_FOUND = -1;
     
     /**
      * Default constructor for the class, sets class properties
@@ -298,7 +299,66 @@ public class LinkedList <T>
     
     
     
+    public int firstIndexOf(T data) {
+        Node current = head;
+        int index = 0;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                return index;
+            }
+            current = current.next;
+            index++;
+        }
+        return NOT_FOUND;
+    }
     
+    public int lastIndexOf(T data) {
+        Node current = tail;
+        int index = length-1;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                return index;
+            }
+            current = current.previous;
+            index--;
+        }
+        return NOT_FOUND;
+    }
+    
+    public int numberOf(T data) {
+        if (data == null) return 0;
+        int counter = 0;
+        Node current = head;
+        while (current != null) {
+            if (current.data.equals(data)) {
+                counter++;
+            }
+            current = current.next;
+        }
+        return counter;
+    }
+    
+    
+    
+    public int[] allIndices(T data) {
+        if (data == null)    return null;
+        if (!contains(data)) return null;
+        int size = numberOf(data);
+        int[] array = new int[size];
+        Node current = head;
+        int counter = 0;
+        for (int i = 0; i < length; i++) {            
+            if (current.data.equals(data)) {
+                array[counter] = i;
+                counter++;
+                if (counter >= size) {
+                    return array;
+                }
+            }            
+            current = current.next;
+        }        
+        return array;
+    }
     
     
     
