@@ -35,7 +35,8 @@ public class ComputerScience30S
 //        learnBasicJava();        
 //        learnMethods();     
 //        learnArrays(); 
-        learnClasses();
+//        learnClasses();
+        LearnGraphics learnGraphics = new LearnGraphics();
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
