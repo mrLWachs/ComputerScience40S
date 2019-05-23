@@ -1,11 +1,11 @@
 
 /** required package class namespace */
-package testing.collections;
+package testing;
 
 /** required imports */
 import collections.LinkedList;
 import collections.Node;
-import testing.Output;
+import tools.Output;
 
 
 /**

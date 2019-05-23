@@ -90,6 +90,15 @@ public class Person
     /**
      * Mutator method to change the private property
      * 
+     * @param isMale the property to mutate
+     */
+    public void setMale(boolean isMale) {
+        this.isMale = isMale;
+    }
+    
+    /**
+     * Mutator method to change the private property
+     * 
      * @param name the property to mutate
      */
     public void setName(String name) {
@@ -118,6 +127,7 @@ public class Person
             food.rot();
         }
     }
+
     
     
     

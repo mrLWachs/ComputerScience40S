@@ -1,6 +1,21 @@
 
 /** required package class namespace */
-package testing.advancedclasses;
+package testing;
+
+import testing.advancedclasses.Banana;
+import testing.advancedclasses.Box;
+import testing.advancedclasses.Chicken;
+import testing.advancedclasses.Food;
+import testing.advancedclasses.Hogwarts;
+import testing.advancedclasses.House;
+import testing.advancedclasses.Hufflepuff;
+import testing.advancedclasses.Husky;
+import testing.advancedclasses.Person;
+import testing.advancedclasses.Slytherin;
+import testing.advancedclasses.SoccerPlayer;
+import testing.advancedclasses.Student;
+import testing.advancedclasses.Sushi;
+import testing.advancedclasses.Teacher;
 
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
@@ -39,9 +54,8 @@ public class AdvancedClassesTest
         // testing equals, clone, toString methods overloaded from Object:        
         Person sam = new Person();                      // new person object
         sam.age    = 25;                                // changing some 
-        sam.isMale = true;                              // object properties
+        sam.setMale(true);                              // object properties
         sam.setName("Samuel Samson");                   // mutator method used
-        sam.isMale = true;                              // change property
         if (person.equals(sam)) {                       // equals overloaded
             System.out.println("person == sam");
         }
