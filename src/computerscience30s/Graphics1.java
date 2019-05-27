@@ -4,7 +4,6 @@ package computerscience30s;
 
 /** required imports */
 import java.awt.Container;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -74,19 +73,15 @@ public class Graphics1 extends JFrame
         
         // change any properties we need to
         text.setText("Hello World");
-        // with images, I'm going to do it
-        // in a few steps (could be done in one line)        
+        // with images, I'm will do it in a few steps (could be done in one)        
         String filename = "/computerscience30s/giphy.gif";
         URL url = this.getClass().getResource(filename);
         Icon icon = new ImageIcon(url);
         picture.setIcon(icon);
                 
-        // set the container's layout manager
-        // which is the way it positions the controls        
+        // set container's layout manager (which how it positions the controls)
         Container container = this.getContentPane();
-        container.setLayout(null);
-        // null means you will position everything
-        // yourself
+        container.setLayout(null);          // null means you position yourself
         
         // add the controls to the container        
         container.add(text);
@@ -94,21 +89,22 @@ public class Graphics1 extends JFrame
         container.add(textbox);
         container.add(button);
         
-        // position all the controls
-        text.setBounds(10,10,330,20);
-        picture.setBounds(10, 40, 330, 200);
-        textbox.setBounds(10, 250, 330, 20);
-        button.setBounds(10, 280, 330, 50);
+        // position all the controls with (x, y, width, height)
+        text.setBounds(10, 10, 320, 50);
+        picture.setBounds(10, 70, 320, 180);
+        textbox.setBounds(10, 290, 320, 50);
+        button.setBounds(10, 350, 320, 50);
         
     }
 
+    /**
+     * Adds the actions to the various controls
+     */
     private void setActions() {
         
-        // first make an action "listener"
-        // means it "listens" for a specific
-        // action to take place
+        // Action "listener" means it "listens" for specific actions to occur
         
-        // the click action of the button
+        // create action listener for the click action of the button
         ActionListener buttonClick = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -116,12 +112,10 @@ public class Graphics1 extends JFrame
             }
         };
         
-        // then add this "listener" to the control
+        // then add that "listener" to the control
         button.addActionListener(buttonClick);
         
-        // create and add the listener in one step
-        // for the textbox
-        
+        // create and add the listener in one step for the textbox        
         textbox.addKeyListener( new KeyListener() {
             public void keyTyped(KeyEvent e) {  }
             public void keyPressed(KeyEvent e) {
@@ -130,7 +124,7 @@ public class Graphics1 extends JFrame
             public void keyReleased(KeyEvent e) { }
         }  );
                 
-        // finally the picture        
+        // finally create and add the action listener for the picture        
         picture.addMouseMotionListener(new MouseMotionListener() {
             public void mouseDragged(MouseEvent e) {     }
             public void mouseMoved(MouseEvent e) {
