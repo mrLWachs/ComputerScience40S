@@ -1,15 +1,11 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file Graphics2.java
- *  for project ComputerScience30S on 24-May-2019 at 1:21:17 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package computerscience30s;
 
 
 /**
- * Graphics2.java - 
+ * Graphics2.java - using the NetBeans visual designer to also make a container 
+ * design. It takes care of a lot of the coding for you.
  *
  * @author Mr. Wachs 
  * @since 24-May-2019 
@@ -17,7 +13,9 @@ package computerscience30s;
 public class Graphics2 extends javax.swing.JFrame 
 {
 
-    /** Creates new form Graphics2 */
+    /**
+     * Default class constructor, sets class properties
+     */
     public Graphics2() {
         initComponents();
         this.setVisible(true);
@@ -50,6 +48,22 @@ public class Graphics2 extends javax.swing.JFrame
         jLabel1.setText("Hello World");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/giphy.gif"))); // NOI18N
+        jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel2MouseMoved(evt);
+            }
+        });
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -58,18 +72,18 @@ public class Graphics2 extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(10, 10, 10)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(23, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -80,9 +94,9 @@ public class Graphics2 extends javax.swing.JFrame
                 .addComponent(jLabel2)
                 .addGap(37, 37, 37)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(6, 6, 6)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -91,6 +105,22 @@ public class Graphics2 extends javax.swing.JFrame
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
+        int x = evt.getX();
+        int y = evt.getY();
+        jLabel1.setText("Mouse is at: " + x + "," + y);        
+    }//GEN-LAST:event_jLabel2MouseMoved
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        jLabel1.setText("Key pressed was " + evt.getKeyCode());        
+        // in Visual Studio, it would be like:        
+        // lblDisplay.Text = "words";        
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
