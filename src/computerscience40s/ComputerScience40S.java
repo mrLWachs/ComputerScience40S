@@ -2,6 +2,7 @@
 package computerscience40s;
 
 /** required imports */
+import game.UserInterface;
 import testing.Tester;
 
 
@@ -25,6 +26,7 @@ public class ComputerScience40S
     public static void main(String[] args) {
         System.out.println("\nComputer Science 40S starting...\n");       
         new Tester();
+        new UserInterface();
         System.out.println("\nComputer Science 40S complete!\n");
     }
     

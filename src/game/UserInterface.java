@@ -56,121 +56,205 @@ public class UserInterface extends javax.swing.JFrame
                 formKeyPressed(evt);
             }
         });
-        getContentPane().setLayout(null);
 
         heroLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         heroLabel.setText("HERO");
         heroLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(heroLabel);
-        heroLabel.setBounds(860, 80, 50, 50);
 
         enemy1Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         enemy1Label.setText("ENEMY");
         enemy1Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(enemy1Label);
-        enemy1Label.setBounds(70, 70, 110, 100);
 
         enemy2Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         enemy2Label.setText("ENEMY");
         enemy2Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(enemy2Label);
-        enemy2Label.setBounds(220, 500, 110, 100);
 
         objectiveLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         objectiveLabel.setText("OBJECTIVE");
         objectiveLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(objectiveLabel);
-        objectiveLabel.setBounds(60, 530, 80, 70);
 
         wall01Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall01Label.setText("WALL");
         wall01Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall01Label);
-        wall01Label.setBounds(10, 10, 40, 640);
 
         wall02Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall02Label.setText("WALL");
         wall02Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall02Label);
-        wall02Label.setBounds(10, 10, 990, 40);
 
         wall03Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall03Label.setText("WALL");
         wall03Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall03Label);
-        wall03Label.setBounds(10, 610, 990, 40);
 
         wall04Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall04Label.setText("WALL");
         wall04Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall04Label);
-        wall04Label.setBounds(960, 10, 40, 640);
 
         wall05Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall05Label.setText("WALL");
         wall05Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall05Label);
-        wall05Label.setBounds(160, 450, 40, 200);
 
         wall06Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall06Label.setText("WALL");
         wall06Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall06Label);
-        wall06Label.setBounds(160, 450, 620, 40);
 
         wall07Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall07Label.setText("WALL");
         wall07Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall07Label);
-        wall07Label.setBounds(230, 240, 40, 250);
 
         wall08Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall08Label.setText("WALL");
         wall08Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall08Label);
-        wall08Label.setBounds(430, 150, 40, 150);
 
         wall09Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall09Label.setText("WALL");
         wall09Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall09Label);
-        wall09Label.setBounds(430, 150, 140, 40);
 
         wall10Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         wall10Label.setText("WALL");
         wall10Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(wall10Label);
-        wall10Label.setBounds(530, 10, 40, 180);
 
         prize1Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         prize1Label.setText("PRIZE");
         prize1Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(prize1Label);
-        prize1Label.setBounds(300, 390, 40, 40);
 
         prize2Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         prize2Label.setText("PRIZE");
         prize2Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(prize2Label);
-        prize2Label.setBounds(460, 80, 40, 40);
 
         prize3Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         prize3Label.setText("PRIZE");
         prize3Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(prize3Label);
-        prize3Label.setBounds(610, 80, 40, 40);
 
         prize4Label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         prize4Label.setText("PRIZE");
         prize4Label.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(prize4Label);
-        prize4Label.setBounds(500, 230, 40, 40);
 
         backgroundLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         backgroundLabel.setText("BACKGROUND");
         backgroundLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        getContentPane().add(backgroundLabel);
-        backgroundLabel.setBounds(10, 10, 990, 640);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(610, 610, 610)
+                .addComponent(prize3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(150, 150, 150)
+                        .addComponent(wall05Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
+                        .addComponent(wall07Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(wall03Label, javax.swing.GroupLayout.PREFERRED_SIZE, 990, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(backgroundLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 990, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(enemy1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(430, 430, 430)
+                .addComponent(wall08Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(160, 160, 160)
+                .addComponent(wall06Label, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(960, 960, 960)
+                .addComponent(wall04Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(860, 860, 860)
+                .addComponent(heroLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(300, 300, 300)
+                .addComponent(prize1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall02Label, javax.swing.GroupLayout.PREFERRED_SIZE, 990, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(530, 530, 530)
+                .addComponent(wall10Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(460, 460, 460)
+                .addComponent(prize2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(500, 500, 500)
+                .addComponent(prize4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(430, 430, 430)
+                .addComponent(wall09Label, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(objectiveLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(220, 220, 220)
+                .addComponent(enemy2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall01Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(prize3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(120, 120, 120)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(210, 210, 210)
+                        .addComponent(wall05Label, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(wall07Label, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(370, 370, 370)
+                        .addComponent(wall03Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(backgroundLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(70, 70, 70)
+                .addComponent(enemy1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(wall08Label, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(450, 450, 450)
+                .addComponent(wall06Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall04Label, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(heroLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(390, 390, 390)
+                .addComponent(prize1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall02Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall10Label, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(prize2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(230, 230, 230)
+                .addComponent(prize4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(wall09Label, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(530, 530, 530)
+                .addComponent(objectiveLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(500, 500, 500)
+                .addComponent(enemy2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(wall01Label, javax.swing.GroupLayout.PREFERRED_SIZE, 640, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
