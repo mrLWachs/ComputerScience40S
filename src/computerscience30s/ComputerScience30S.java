@@ -5,6 +5,7 @@ package computerscience30s;
 
 /** required imports for the project - the lines below are added when your
   * code needs to connect to another library (API) of code */
+import game.UserInterface;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;
@@ -36,7 +37,8 @@ public class ComputerScience30S
 //        learnMethods();     
 //        learnArrays(); 
 //        learnClasses();
-        LearnGraphics learnGraphics = new LearnGraphics();
+//        LearnGraphics learnGraphics = new LearnGraphics();
+        UserInterface game = new UserInterface();        
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 

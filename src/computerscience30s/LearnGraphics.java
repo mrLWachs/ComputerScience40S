@@ -22,6 +22,7 @@ public class LearnGraphics
         
         Graphics1 graphics1 = new Graphics1();  // 1st object all coded
         Graphics2 graphics2 = new Graphics2();  // 2nd object using designer 
+        Graphics3 graphics3 = new Graphics3();  // 2nd object using designer 
         
         System.out.println("Learn graphics completed");
     }
