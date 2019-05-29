@@ -1,12 +1,10 @@
 
-
 /** required package class namespace */
 package game;
 
 
-
 /**
- * UserInterface.java - 
+ * UserInterface.java - the user interface for the game
  *
  * @author Mr. Wachs 
  * @since 15-May-2019 
