@@ -14,8 +14,8 @@ public class Reactor
     
     private Coordinates source;
     private Coordinates target;
-    private int        numberOfDirections;
-    private Detector   detector;
+    private int         numberOfDirections;
+    private Detector    detector;
     
     
     /**
