@@ -1,59 +1,65 @@
-/*
- *  Mr. Wachs' classes - Java Computer Science learning file GameCharacter.java
- *  for project ComputerScience30S on 31-May-2019 at 1:23:04 PM by lawrence.wachs
- */
-
 
 /** required package class namespace */
 package game.tools;
 
+/** required imports */
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import javax.swing.JLabel;
+import javax.swing.Timer;
 
 
 /**
- * GameCharacter.java - 
+ * GameCharacter.java - representation of a character in a game 
  *
  * @author Mr. Wachs 
- * @since 31-May-2019 
+ * @since 14-May-2019 
  */
-public class GameCharacter 
+public abstract class GameCharacter extends GameObject
 {
-
+    
+    /** Controls the user input actions for this game character */
+    public UserInput input;
+    /** Timer times the actions of this game character */
+    public Timer timer;
+    
+    
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class property data
+     * 
+     * @param image the label associated with the image for the game character
+     * @param amount the amount the game character will move
+     * @param direction the direction the game character will move
+     * @param delay the delay in milliseconds of the character's timer
+     * @param numberOfDirections the number of directions defined
      */
-    public GameCharacter() {
+    public GameCharacter(JLabel image, 
+                         int amount, 
+                         int direction, 
+                         int delay, 
+                         int numberOfDirections) {
+        super(image, amount, direction, numberOfDirections);
+        input = new UserInput(super.coordinates, numberOfDirections);
+        timer = new Timer(delay, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                action();
+            }
+        });
+        timer.start();
+    }
+    
+    /** The abstract action this character does in it's timer */
+    public abstract void action();
         
-    }
-
     /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
+     * The user's keyboard event of pressing a key to respond to
+     * 
+     * @param event the keyboard event registered
      */
-    @Override
-    public String toString() {
-        return "GameCharacter " + super.toString();
+    public void keypress(KeyEvent event) {
+        if (isAlive) input.keypress(event);
     }
-        
-    /**
-     * Determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-
-    /**
-     * Creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public GameCharacter clone() {
-        return this;
-    }
-
+    
 }
