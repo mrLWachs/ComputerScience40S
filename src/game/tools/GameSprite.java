@@ -291,5 +291,15 @@ public class GameSprite
     public boolean isRunning(int index) {
         return animations[index].isRunning();
     }
+
+    /**
+     * Sets the background color of the label (no animations)
+     * 
+     * @param color the color to set to
+     */
+    public void setColor(Color color) {
+        stop();
+        gameImage.setColor(color);
+    }
         
 }
