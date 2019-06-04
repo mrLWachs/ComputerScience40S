@@ -1,8 +1,8 @@
 
-
 /** required package class namespace */
 package game;
 
+/** required imports */
 import java.awt.event.KeyEvent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
@@ -12,10 +12,11 @@ import game.tools.MediaPlayer;
 
 
 /**
- * GameEngine.java - 
+ * GameEngine.java - the logic connected to the user interface that runs game 
+ * logic
  *
  * @author Mr. Wachs 
- * @since 3-Jun-2019 
+ * @since 15-May-2019 
  */
 public class GameEngine 
 {
@@ -29,6 +30,16 @@ public class GameEngine
     private FileHandler file;
     
     
+    /**
+     * Constructor for the class, sets class property data
+     * 
+     * @param pacmanLabel the label image for the corresponding object
+     * @param backgroundLabel the label image for the corresponding object
+     * @param wallLabels the label image array for the corresponding object
+     * @param dotLabels the label image array for the corresponding object
+     * @param ghostLabels the label image array for the corresponding object
+     * @param ui the user interface container for the game 
+     */
     public GameEngine(
             JLabel pacmanLabel, 
             JLabel backgroundLabel,
@@ -63,15 +74,20 @@ public class GameEngine
             JOptionPane.showMessageDialog(ui, "Previous score for " +
                     data[0] + " was " + data[1] + " points!");
         }        
-        // set UI values
+        // set UI properties
         ui.setSize(710, 800);
         ui.setResizable(false);
         ui.setLocationRelativeTo(null);
         ui.setVisible(true);
     }
 
-    public void keypress(KeyEvent evt) {
-        pacman.keypress(evt);
+    /**
+     * The user's keyboard event of pressing a key to respond to
+     * 
+     * @param event the keyboard event registered
+     */
+    public void keypress(KeyEvent event) {
+        pacman.keypress(event);
     }
     
 }

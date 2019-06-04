@@ -38,9 +38,7 @@ public class ComputerScience30S
 //        learnArrays(); 
 //        learnClasses();
 //        LearnGraphics learnGraphics = new LearnGraphics();
-
-        UserInterface game = new UserInterface();        
-        
+        UserInterface game = new UserInterface();      
         System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
