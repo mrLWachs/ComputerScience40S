@@ -75,6 +75,23 @@ public class GameImage
         setImage(imageFile);                        // set image
         resizeToContainer();                        // resize
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param label the label used to display the image
+     * @param spriteSheet imageFile the new image file to change the label to
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame 
+     */
+    public GameImage(JLabel label, String spriteSheet, int x, int y, 
+                     int width, int height) {
+        this.label = label;                         // set parameter to property
+        setImage(spriteSheet, x, y, width, height); // set image from sheet
+        resizeToContainer();                        // resize
+    }
       
     /** Shows (makes visible) the GameImage in the container */
     public void show() {
@@ -157,14 +174,14 @@ public class GameImage
     }
     
     /**
-     * Change the image inside a label to a new image an possibly resize the 
-     * image to fit the label size
+     * Change the image inside a label to a new image from a sprite sheet and 
+     * possibly resize the image to fit the label size
      * 
      * @param spriteSheet imageFile the new image file to change the label to
-     * @param x
-     * @param y
-     * @param width
-     * @param height 
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame  
      */
     public void setImage(
             String spriteSheet, 
@@ -174,16 +191,16 @@ public class GameImage
             int height) {
         this.imageFile = spriteSheet;             // set property to parameter
         try {
-            URL           url      = getClass().getResource(spriteSheet);   // convert to URL
-            URI           uri      = url.toURI();                        // convert to URI
-            File          file     = new File(uri);                      // create file
+            URL           url      = getClass().getResource(spriteSheet); // URL
+            URI           uri      = url.toURI();           // convert to URI
+            File          file     = new File(uri);         // create file
             BufferedImage bigImage = ImageIO.read(file);            
             BufferedImage subImage = bigImage.getSubimage(x, y, width, height);
-            label.setBorder(null);                  // remove border
-            label.setOpaque(false);                 // remove background color
+            label.setBorder(null);              // remove border
+            label.setOpaque(false);             // remove background color
             label.setText("");
-            icon = new ImageIcon(subImage);    // set icon
-            label.setIcon(icon);                    // set icon to label            
+            icon = new ImageIcon(subImage);     // set icon
+            label.setIcon(icon);                // set icon to label            
         } catch (IOException ex) {
             System.out.println("File read error: " + ex.toString());
         } catch (URISyntaxException ex) {        
@@ -240,6 +257,7 @@ public class GameImage
         return new Color(r,g,b);        // return new color
     }
 
+    /** Sets the game image to be an "invisible" but active game object */
     public void setClear() {
         label.setBorder(null);          // remove any border
         label.setIcon(null);            // remove any icon

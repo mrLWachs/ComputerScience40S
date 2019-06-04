@@ -18,10 +18,9 @@ import javax.swing.Timer;
 public class Animation 
 {
 
-    private JLabel      hitbox;    
+    private JLabel      label;    
     private GameImage[] frames;    
     private Timer       timer;
-    private String[]    imageFiles;
     private boolean     shouldLoop;
     private int         delay;
     private int         fps;
@@ -32,22 +31,51 @@ public class Animation
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the animation inside
+     * @param label the label hitbox use to display the animation inside
      * @param imageFiles the array of relative image file names
      * @param delay the delay (in milliseconds) for the entire animation
      * @param shouldLoop should the animation loop (true) or not (false)
      */
-    public Animation(JLabel hitbox, 
+    public Animation(JLabel label, 
                      String[] imageFiles, 
                      int delay, 
                      boolean shouldLoop) {
-        if (isValid(hitbox,imageFiles)) {           // check objects for nulls       
-            this.hitbox = hitbox;                   // parameter to property
+        if (isValid(label,imageFiles)) {            // check objects for nulls       
+            this.label = label;                     // parameter to property
             setDelay(delay);                        //set the delay
             setLoop(shouldLoop);                    // determine if looping
             setImageFiles(imageFiles);              // set all image files
         }
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param label the label hitbox use to display the animation inside
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames
+     * @param delay the delay (in milliseconds) for the entire animation
+     * @param shouldLoop should the animation loop (true) or not (false)
+     */
+    public Animation(JLabel label, 
+                     String spriteSheet,
+                     int[] imageX,
+                     int[] imageY,
+                     int[] imageWidth,
+                     int[] imageHeight,
+                     int delay, 
+                     boolean shouldLoop) {
+        if (isValid(label,imageX, imageY, imageWidth, imageHeight)) {
+            this.label = label;                     // parameter to property
+            setDelay(delay);                        //set the delay
+            setLoop(shouldLoop);                    // determine if looping
+            setImageFiles(spriteSheet, imageX, imageY, imageWidth, imageHeight);
+        }
+    }
+    
     
     /** Run the animation */
     public void run() {
@@ -94,13 +122,30 @@ public class Animation
      * @param imageFiles the array of relative image file names
      */
     public void setImageFiles(String[] imageFiles) {
-        this.imageFiles = imageFiles;           // set parameter to property
-        setFrames();                            // set all the frames
+        setFrames(imageFiles);                  // set all the frames
         setTimer();                             // set the timer
     }
     
     /**
-     * Resizes the picturebox for all animation frames
+     * Sets all the frame image files for the entire animation
+     * 
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames
+     */
+    public void setImageFiles(String spriteSheet,
+                              int[] imageX,
+                              int[] imageY,
+                              int[] imageWidth,
+                              int[] imageHeight) {
+        setFrames(spriteSheet, imageX, imageY, imageWidth, imageHeight);  
+        setTimer();                                           // set the timer
+    }
+    
+    /**
+     * Resizes the image for all animation frames
      * 
      * @param width the new width to set to
      * @param height the new height to set to 
@@ -112,7 +157,7 @@ public class Animation
         resizeToContainer();                            // resize images
     }
     
-    /** Resizes picturebox for all animation frames to the hitbox container */
+    /** Resizes image for all animation frames to the hitbox container */
     public void resizeToContainer() {
         for (int i = 0; i < frames.length; i++) {       // traverse frames
             frames[i].resizeToContainer();              // resize each frame
@@ -163,10 +208,10 @@ public class Animation
      * Sets all the frames for the animation from the image files, sets the 
      * first frame to visible
      */
-    private void setFrames() {
-        frames = new GameImage[imageFiles.length];         // create array
+    private void setFrames(String[] imageFiles) {
+        frames = new GameImage[imageFiles.length];          // create array
         for (int i = 0; i < frames.length; i++) {           // traverse array
-            frames[i] = new GameImage(hitbox, imageFiles[i]);  // create frame
+            frames[i] = new GameImage(label, imageFiles[i]);  // create frame
             frames[i].hide();                               // hide frame
         }
         lastFrame = frames.length - 1;                      // track laast frame
@@ -175,15 +220,44 @@ public class Animation
     }
 
     /**
+     * Sets all the frames for the animation from the sprite sheet and all
+     * the coordinates locations, then sets the first frame to visible
+     * 
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames 
+     */
+    private void setFrames(String spriteSheet,
+                           int[] imageX,
+                           int[] imageY,
+                           int[] imageWidth,
+                           int[] imageHeight) {
+        frames = new GameImage[imageX.length];              // create array
+        for (int i = 0; i < frames.length; i++) {           // traverse array
+            int x = imageX[i];
+            int y = imageY[i];
+            int w = imageWidth[i];
+            int h = imageHeight[i];
+            frames[i] = new GameImage(label, spriteSheet, x, y, h, h);
+            frames[i].hide();                               // hide frame
+        }
+        lastFrame = frames.length - 1;                      // track laast frame
+        currentFrame = 0;                                   // set first frame
+        frames[currentFrame].show();                        // show first frame
+    }
+    
+    /**
      * Checks the various objects from the constructor to make sure they are
      * valid objects to continue the construction
      * 
-     * @param hitbox the label hitbox use to display the animation inside
+     * @param label the label hitbox use to display the animation inside
      * @param imageFiles the array of relative image file names
      * @return the objects are valid (true) or not (false)
      */
-    private boolean isValid(JLabel hitbox, String[] imageFiles) {
-        if (hitbox == null) {
+    private boolean isValid(JLabel label, String[] imageFiles) {
+        if (label == null) {
             System.out.println("Animation not created, Label null!");
             return false;
         }
@@ -193,6 +267,39 @@ public class Animation
         }
         if (imageFiles.length == 0) {
             System.out.println("Animation not created, imageFiles[] size 0!");
+            return false;
+        }
+        return true;
+    }
+    
+    /**
+     * Checks the various objects from the constructor to make sure they are
+     * valid objects to continue the construction
+     * 
+     * @param label the label hitbox use to display the animation inside
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames
+     * @return the objects are valid (true) or not (false)
+     */
+    private boolean isValid(JLabel label, 
+                            int[] imageX,
+                            int[] imageY,
+                            int[] imageWidth,
+                            int[] imageHeight) {
+        if (label == null) {
+            System.out.println("Animation not created, Label null!");
+            return false;
+        }
+        if (imageX == null || imageY == null || 
+            imageWidth == null || imageHeight == null) {
+            System.out.println("Animation not created, an array[] is null!");
+            return false;
+        }
+        if (imageX.length == 0 || imageY.length == 0 || 
+            imageWidth.length == 0 || imageHeight.length == 0) {
+            System.out.println("Animation not created, an array[] is size 0!");
             return false;
         }
         return true;

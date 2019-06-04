@@ -25,42 +25,57 @@ public class Sprite
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox used to display the image
+     * @param label the label hitbox used to display the image
      * @param animations the animations associated with the object
      */
-    public Sprite(JLabel hitbox, Animation[] animations) {
-        gameImage  = new GameImage(hitbox);                 // set picturebox
+    public Sprite(JLabel label, Animation[] animations) {
+        gameImage  = new GameImage(label);                  // set picturebox
         if (animations != null) setAnimations(animations);  // set animations
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
      * @param imageFile the relative image filename to display
      */
-    public Sprite(JLabel hitbox, String imageFile) {
-        gameImage = new GameImage(hitbox,imageFile);     // set picturebox
+    public Sprite(JLabel label, String imageFile) {
+        gameImage = new GameImage(label,imageFile);     // set picturebox
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
+     * @param spriteSheet the sprite sheet image file to change the label to
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame  
+     */
+    public Sprite(JLabel label, String spriteSheet, int x, int y,
+                  int width, int height) {
+        gameImage = new GameImage(label, spriteSheet, x, y, width, height);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param label the label hitbox use to display the image
      * @param text the text inside the hitbox 
      * @param background the background color of the hitbox
      */
-    public Sprite(JLabel hitbox, String text, Color background) {
-        gameImage = new GameImage(hitbox, text, background);
+    public Sprite(JLabel label, String text, Color background) {
+        gameImage = new GameImage(label, text, background);
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
      */
-    public Sprite(JLabel hitbox) {
-        gameImage  = new GameImage(hitbox);               // set picturebox
+    public Sprite(JLabel label) {
+        gameImage  = new GameImage(label);               // set picturebox
     }
     
     /**
@@ -155,6 +170,25 @@ public class Sprite
      */
     public void setImage(String imageFile) {
         gameImage.setImage(imageFile);
+    }
+    
+    /**
+     * Change the image inside a label to a new image from a sprite sheet and 
+     * possibly resize the image to fit the label size
+     * 
+     * @param spriteSheet imageFile the new image file to change the label to
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame  
+     */
+    public void setImage(
+            String spriteSheet, 
+            int x, 
+            int y, 
+            int width, 
+            int height) {
+        gameImage.setImage(spriteSheet, x, y, width, height);
     }
     
     /**
@@ -302,6 +336,7 @@ public class Sprite
         gameImage.setColor(color);
     }
 
+    /** Sets the sprite to be an "invisible" but active game object */
     public void setClear() {
         gameImage.setClear();
     }
