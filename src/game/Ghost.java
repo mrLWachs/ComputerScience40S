@@ -31,8 +31,7 @@ public class Ghost extends GameCharacter
         this.walls  = walls;
         this.pacman = pacman;
         this.player = player;        
-        this.file   = file;
-        gameSprite.debug("", Color.red);    
+        this.file   = file; 
         mover.randomDirection();
         setAnimations(ghostLabel);
         spawn();
@@ -46,13 +45,14 @@ public class Ghost extends GameCharacter
         for (int i = 0; i < walls.length; i++) {            
             if (detector.isOverLapping(walls[i])) {
                 reactor.bounceOff(walls[i]);
+                mover.randomDirection();
             }            
         }
         
         // checking for pacman
         if (detector.isOverLapping(pacman)) {
             pacman.mover.stop();
-            pacman.gameSprite.animate(0);
+            pacman.sprite.animate(0);
             player.playWAV("/game/media/pacman_death.wav");
             String name = JOptionPane.showInputDialog("Enter name");
             String[] data = { name, "" + pacman.points };
@@ -77,8 +77,8 @@ public class Ghost extends GameCharacter
         int delay = 2000;
         Animation[] animations = new Animation[1];
         animations[0] = new Animation(label, ghostImages, delay, true);
-        gameSprite.setAnimations(animations);
-        gameSprite.animate(0);
+        sprite.setAnimations(animations);
+        sprite.animate(0);
     }
 
     

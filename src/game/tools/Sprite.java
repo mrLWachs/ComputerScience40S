@@ -14,7 +14,7 @@ import javax.swing.JLabel;
  * @author Mr. Wachs 
  * @since 14-May-2019 
  */
-public class GameSprite
+public class Sprite
 {
     
     private Animation[] animations;
@@ -28,7 +28,7 @@ public class GameSprite
      * @param hitbox the label hitbox used to display the image
      * @param animations the animations associated with the object
      */
-    public GameSprite(JLabel hitbox, Animation[] animations) {
+    public Sprite(JLabel hitbox, Animation[] animations) {
         gameImage  = new GameImage(hitbox);                 // set picturebox
         if (animations != null) setAnimations(animations);  // set animations
     }
@@ -39,7 +39,7 @@ public class GameSprite
      * @param hitbox the label hitbox use to display the image
      * @param imageFile the relative image filename to display
      */
-    public GameSprite(JLabel hitbox, String imageFile) {
+    public Sprite(JLabel hitbox, String imageFile) {
         gameImage = new GameImage(hitbox,imageFile);     // set picturebox
     }
     
@@ -50,7 +50,7 @@ public class GameSprite
      * @param text the text inside the hitbox 
      * @param background the background color of the hitbox
      */
-    public GameSprite(JLabel hitbox, String text, Color background) {
+    public Sprite(JLabel hitbox, String text, Color background) {
         gameImage = new GameImage(hitbox, text, background);
     }
     
@@ -59,7 +59,7 @@ public class GameSprite
      * 
      * @param hitbox the label hitbox use to display the image
      */
-    public GameSprite(JLabel hitbox) {
+    public Sprite(JLabel hitbox) {
         gameImage  = new GameImage(hitbox);               // set picturebox
     }
     
@@ -300,6 +300,10 @@ public class GameSprite
     public void setColor(Color color) {
         stop();
         gameImage.setColor(color);
+    }
+
+    public void setClear() {
+        gameImage.setClear();
     }
         
 }

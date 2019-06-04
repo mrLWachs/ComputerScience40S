@@ -2,7 +2,6 @@
 /** required package class namespace */
 package game;
 
-import java.awt.Color;
 import javax.swing.JLabel;
 import game.tools.Animation;
 import game.tools.GameObject;
@@ -23,8 +22,8 @@ public class Dot extends GameObject
         int delay = 250;
         Animation[] animations = new Animation[1];
         animations[0] = new Animation(label, images, delay, true);
-        gameSprite.setAnimations(animations);
-        gameSprite.animate(0);
+        sprite.setAnimations(animations);
+        sprite.animate(0);
     }
 
 }

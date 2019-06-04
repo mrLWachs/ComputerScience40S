@@ -11,8 +11,8 @@ public class Background extends GameObject
 
     public Background(JLabel image) {
         super(image);
-//        gameSprite.setColor(Color.black);
-        gameSprite.setImage("/game/media/background.png");
+        sprite.setColor(Color.black);
+//        sprite.setImage("/game/media/background.png");
     }
     
 }

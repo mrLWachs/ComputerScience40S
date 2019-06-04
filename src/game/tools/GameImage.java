@@ -6,6 +6,13 @@ package game.tools;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.net.URL;
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -150,6 +157,43 @@ public class GameImage
     }
     
     /**
+     * Change the image inside a label to a new image an possibly resize the 
+     * image to fit the label size
+     * 
+     * @param spriteSheet imageFile the new image file to change the label to
+     * @param x
+     * @param y
+     * @param width
+     * @param height 
+     */
+    public void setImage(
+            String spriteSheet, 
+            int x, 
+            int y, 
+            int width, 
+            int height) {
+        this.imageFile = spriteSheet;             // set property to parameter
+        try {
+            URL           url      = getClass().getResource(spriteSheet);   // convert to URL
+            URI           uri      = url.toURI();                        // convert to URI
+            File          file     = new File(uri);                      // create file
+            BufferedImage bigImage = ImageIO.read(file);            
+            BufferedImage subImage = bigImage.getSubimage(x, y, width, height);
+            label.setBorder(null);                  // remove border
+            label.setOpaque(false);                 // remove background color
+            label.setText("");
+            icon = new ImageIcon(subImage);    // set icon
+            label.setIcon(icon);                    // set icon to label            
+        } catch (IOException ex) {
+            System.out.println("File read error: " + ex.toString());
+        } catch (URISyntaxException ex) {        
+            System.out.println("File convert error: " + ex.toString());
+        }
+        show();                                 // display picturebox 
+        resizeToContainer();                    // resize
+    }
+    
+    /**
      * Sets the image to debug mode, meaning it removes any graphics and
      * changes to a colored rectangle with text
      * 
@@ -194,6 +238,15 @@ public class GameImage
         g = 255 - g;                    // calculate opposite green value
         b = 255 - b;                    // calculate opposite blue value
         return new Color(r,g,b);        // return new color
+    }
+
+    public void setClear() {
+        label.setBorder(null);          // remove any border
+        label.setIcon(null);            // remove any icon
+        label.setOpaque(false);         // no background color
+        label.setBackground(null);      // no background color
+        label.setForeground(null);      // no foreground 
+        label.setText("");              // no text
     }
     
 }

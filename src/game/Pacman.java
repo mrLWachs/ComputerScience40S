@@ -101,8 +101,8 @@ public class Pacman extends GameCharacter
         animations[2] = new Animation(label, animateDown, delay, true);
         animations[3] = new Animation(label, animateLeft, delay, true);
         animations[4] = new Animation(label, animateRight, delay, true);        
-        gameSprite.setAnimations(animations);
-        gameSprite.animate(0);
+        sprite.setAnimations(animations);
+        sprite.animate(0);
     }
 
     /**
@@ -125,7 +125,7 @@ public class Pacman extends GameCharacter
             if (detector.isOverLapping(walls[i])) {
                 reactor.stickTo(walls[i]);
                 mover.stop();
-                gameSprite.animate(0);
+                sprite.animate(0);
             }            
         }
         
@@ -149,7 +149,7 @@ public class Pacman extends GameCharacter
         for (int i = 0; i < ghosts.length; i++) {
             ghosts[i].mover.stop();
         }
-        gameSprite.animate(0);
+        sprite.animate(0);
         player.playWAV("/game/media/pacman_eatghost.wav");
         String name = JOptionPane.showInputDialog("You win!\n"
                 + "Enter name");
@@ -160,19 +160,19 @@ public class Pacman extends GameCharacter
 
     private void animate() {
         if (coordinates.direction == Directions.STOP) {
-            gameSprite.animate(0);
+            sprite.animate(0);
         }
         else if (coordinates.direction == Directions.UP) {
-            gameSprite.animate(1);
+            sprite.animate(1);
         }
         else if (coordinates.direction == Directions.DOWN) {
-            gameSprite.animate(2);
+            sprite.animate(2);
         }
         else if (coordinates.direction == Directions.LEFT) {
-            gameSprite.animate(3);
+            sprite.animate(3);
         }
         else if (coordinates.direction == Directions.RIGHT) {
-            gameSprite.animate(4);
+            sprite.animate(4);
         }        
     }
 

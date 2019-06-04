@@ -12,7 +12,8 @@ public class Wall extends GameObject
 
     public Wall(JLabel image) {
         super(image);
-        gameSprite.setColor(Color.blue);
+        sprite.setColor(Color.blue);
+//        sprite.setClear();
     }
 
 }

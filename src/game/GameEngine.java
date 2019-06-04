@@ -3,7 +3,6 @@
 /** required package class namespace */
 package game;
 
-import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
