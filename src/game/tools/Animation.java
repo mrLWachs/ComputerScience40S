@@ -19,36 +19,64 @@ import javax.swing.Timer;
 public class Animation 
 {
 
-    private JLabel                hitbox;    
-    private LinkedList<GameImage> frames;    
-    private Timer                 timer;
-    private LinkedList<String>    imageFiles;
-    private boolean               shouldLoop;
-    private int                   delay;
-    private int                   fps;
-    private int                   currentFrame;    
-    private int                   lastFrame;
-    
+    private JLabel             label;    
+    private LinkedList<Sprite> frames;     
+    private Timer              timer;
+    private boolean            shouldLoop;
+    private int                delay;
+    private int                fps;
+    private int                currentFrame;    
+    private int                lastFrame;
+        
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the animation inside
+     * @param label the label hitbox use to display the animation inside
      * @param imageFiles the list of relative image file names
      * @param delay the delay (in milliseconds) for the entire animation
      * @param shouldLoop should the animation loop (true) or not (false)
      */
-    public Animation(JLabel hitbox, 
+    public Animation(JLabel label, 
                      LinkedList<String> imageFiles, 
                      int delay, 
                      boolean shouldLoop) {
-        if (isValid(hitbox,imageFiles)) {           // check objects for nulls       
-            this.hitbox = hitbox;                   // parameter to property
-            setDelay(delay);                        // set the delay
+        if (isValid(label,imageFiles)) {            // check objects for nulls       
+            this.label = label;                     // parameter to property
+            setDelay(delay);                        //set the delay
             setLoop(shouldLoop);                    // determine if looping
             setImageFiles(imageFiles);              // set all image files
         }
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param label the label hitbox use to display the animation inside
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the list of all frames x coordinates for the frames
+     * @param imageY the list of all frames y coordinates for the frames
+     * @param imageWidth the list of all frames widths for the frames
+     * @param imageHeight the list of all frames heights for the frames
+     * @param delay the delay (in milliseconds) for the entire animation
+     * @param shouldLoop should the animation loop (true) or not (false)
+     */
+    public Animation(JLabel label, 
+                     String spriteSheet,
+                     LinkedList<Integer> imageX,
+                     LinkedList<Integer> imageY,
+                     LinkedList<Integer> imageWidth,
+                     LinkedList<Integer> imageHeight,
+                     int delay, 
+                     boolean shouldLoop) {
+        if (isValid(label,imageX, imageY, imageWidth, imageHeight)) {
+            this.label = label;                     // parameter to property
+            setDelay(delay);                        //set the delay
+            setLoop(shouldLoop);                    // determine if looping
+            setImageFiles(spriteSheet, imageX, imageY, imageWidth, imageHeight);
+        }
+    }
+    
     
     /** Run the animation */
     public void run() {
@@ -66,7 +94,7 @@ public class Animation
         frames.get(currentFrame).hide();            // hide curent image
         currentFrame = 0;                           // reset back to first frame
         frames.get(currentFrame).show();            // show this frame
-        run();                                      // restart animation
+        run();                                      // restart animation                                     // restart animation
     }
     
     /**
@@ -95,13 +123,30 @@ public class Animation
      * @param imageFiles the list of relative image file names
      */
     public void setImageFiles(LinkedList<String> imageFiles) {
-        this.imageFiles = imageFiles;           // set parameter to property
-        setFrames();                            // set all the frames
+        setFrames(imageFiles);                  // set all the frames
         setTimer();                             // set the timer
     }
     
     /**
-     * Resizes the GameImage for all animation frames
+     * Sets all the frame image files for the entire animation
+     * 
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the list of all frames x coordinates for the frames
+     * @param imageY the list of all frames y coordinates for the frames
+     * @param imageWidth the list of all frames widths for the frames
+     * @param imageHeight the list of all frames heights for the frames
+     */
+    public void setImageFiles(String spriteSheet,
+                              LinkedList<Integer> imageX,
+                              LinkedList<Integer> imageY,
+                              LinkedList<Integer> imageWidth,
+                              LinkedList<Integer> imageHeight) {
+        setFrames(spriteSheet, imageX, imageY, imageWidth, imageHeight);  
+        setTimer();                                           // set the timer
+    }
+    
+    /**
+     * Resizes the image for all animation frames
      * 
      * @param width the new width to set to
      * @param height the new height to set to 
@@ -113,7 +158,7 @@ public class Animation
         resizeToContainer();                            // resize images
     }
     
-    /** Resizes GameImage for all animation frames to the hitbox container */
+    /** Resizes image for all animation frames to the hitbox container */
     public void resizeToContainer() {
         for (int i = 0; i < frames.size(); i++) {       // traverse frames
             frames.get(i).resizeToContainer();          // resize each frame
@@ -164,10 +209,10 @@ public class Animation
      * Sets all the frames for the animation from the image files, sets the 
      * first frame to visible
      */
-    private void setFrames() {
+    private void setFrames(LinkedList<String> imageFiles) {
         frames = new LinkedList<>();                        // create list
-        for (int i = 0; i < frames.size(); i++) {           // traverse list
-            frames.set(i, new GameImage(hitbox, imageFiles.get(i)));  // create frame
+        for (int i = 0; i < imageFiles.size(); i++) {       // traverse list
+            frames.add(new Sprite(label, imageFiles.get(i)));  // add frame
             frames.get(i).hide();                           // hide frame
         }
         lastFrame = frames.size() - 1;                      // track laast frame
@@ -175,6 +220,35 @@ public class Animation
         frames.get(currentFrame).show();                    // show first frame
     }
 
+    /**
+     * Sets all the frames for the animation from the sprite sheet and all
+     * the coordinates locations, then sets the first frame to visible
+     * 
+     * @param spriteSheet the sprite sheet image file
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames 
+     */
+    private void setFrames(String spriteSheet,
+                           LinkedList<Integer> imageX,
+                           LinkedList<Integer> imageY,
+                           LinkedList<Integer> imageWidth,
+                           LinkedList<Integer> imageHeight) {
+        frames = new LinkedList<>();                        // create list
+        for (int i = 0; i < imageX.size(); i++) {           // traverse list
+            int x = imageX.get(i);
+            int y = imageY.get(i);
+            int w = imageWidth.get(i);
+            int h = imageHeight.get(i);
+            frames.set(i, new Sprite(label, spriteSheet, x, y, h, h));
+            frames.get(i).hide();                           // hide frame
+        }
+        lastFrame = frames.size() - 1;                      // track laast frame
+        currentFrame = 0;                                   // set first frame
+        frames.get(currentFrame).show();                    // show first frame
+    }
+    
     /**
      * Checks the various objects from the constructor to make sure they are
      * valid objects to continue the construction
@@ -198,5 +272,38 @@ public class Animation
         }
         return true;
     }
-
+    
+    /**
+     * Checks the various objects from the constructor to make sure they are
+     * valid objects to continue the construction
+     * 
+     * @param label the label hitbox use to display the animation inside
+     * @param imageX the array of all frames x coordinates for the frames
+     * @param imageY the array of all frames y coordinates for the frames
+     * @param imageWidth the array of all frames widths for the frames
+     * @param imageHeight the array of all frames heights for the frames
+     * @return the objects are valid (true) or not (false)
+     */
+    private boolean isValid(JLabel label, 
+                            LinkedList<Integer> imageX,
+                            LinkedList<Integer> imageY,
+                            LinkedList<Integer> imageWidth,
+                            LinkedList<Integer> imageHeight) {
+        if (label == null) {
+            System.out.println("Animation not created, Label null!");
+            return false;
+        }
+        if (imageX == null || imageY == null || 
+            imageWidth == null || imageHeight == null) {
+            System.out.println("Animation not created, a list is null!");
+            return false;
+        }
+        if (imageX.size() == 0 || imageY.size() == 0 || 
+            imageWidth.size() == 0 || imageHeight.size() == 0) {
+            System.out.println("Animation not created, a list is size 0!");
+            return false;
+        }
+        return true;
+    }
+    
 }

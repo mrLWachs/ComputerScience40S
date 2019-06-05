@@ -68,7 +68,7 @@ public class LinkedList <T>
     public final void finalize() {
         length = 0;                                 // length set to zero
         head = tail = null;                         // references set to nulls
-        System.gc();                                // garbage collector called
+//        System.gc();                                // garbage collector called
     }
     
     /**

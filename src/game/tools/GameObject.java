@@ -14,11 +14,11 @@ import javax.swing.JLabel;
  */
 public class GameObject 
 {
-
+    
     /** Coordinates to store data on position and movement */    
     public Coordinates coordinates;
-    /** The sprite used for this game object */
-    public GameSprite gameSprite;
+    /** The image used for this game object */
+    public Sprite sprite;
     /** Various methods to move the game object */
     public Mover mover;
     /** Various methods to detect collision for the game object */
@@ -27,6 +27,7 @@ public class GameObject
     public Reactor reactor;    
     /** Flag determines if this object is alive in a game */
     public boolean isAlive;
+    
     
     /**
      * Constructor for the class, sets class property data
@@ -50,8 +51,8 @@ public class GameObject
                       int direction, 
                       int numberOfDirections) {
         coordinates = new Coordinates(amount, direction);        
-        gameSprite  = new GameSprite(image);
-        gameSprite.update(coordinates);
+        sprite  = new Sprite(image);
+        sprite.update(coordinates);
         mover       = new Mover(coordinates,numberOfDirections);
         detector    = new Detector(coordinates);
         reactor     = new Reactor(coordinates,numberOfDirections,detector); 
@@ -60,24 +61,24 @@ public class GameObject
         
     /** Updates the current location of the coordinates for the image */
     public void update() {
-        gameSprite.update(coordinates);
+        sprite.update(coordinates);
     }
     
     /** Re-positions image in it's container based on game character's data */
     public void redraw() {
-        gameSprite.redraw(coordinates);
+        sprite.redraw(coordinates);
     }
     
     /** Spawns the game object, makes it alive and visible */
     public void spawn() {
         isAlive = true;
-        gameSprite.show();
+        sprite.show();
     }
     
     /** De-spawns the game object, makes it not alive and invisible */
     public void despawn() {
         isAlive = false;
-        gameSprite.hide();
+        sprite.hide();
     }
     
 }

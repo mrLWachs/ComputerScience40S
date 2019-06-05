@@ -3,64 +3,80 @@
 package game.tools;
 
 /** required imports */
+import collections.LinkedList;
 import java.awt.Color;
 import javax.swing.JLabel;
-import collections.LinkedList;
 
 
 /**
- * GameSprite.java - represents an image, or number of images (one or more 
- * animations) in a game including the ability to animate, and useful methods
+ * GameSprite.java - represents an image, or multiple animations of images,
+ * in a game including the ability to animate 
  *
  * @author Mr. Wachs 
  * @since 14-May-2019 
  */
-public class GameSprite 
+public class Sprite
 {
-
+    
     private LinkedList<Animation> animations;
     private GameImage             gameImage;
     private int                   currentIndex;
-   
+    
+    
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox used to display the image
+     * @param label the label hitbox used to display the image
      * @param animations the animations associated with the object
      */
-    public GameSprite(JLabel hitbox, LinkedList<Animation> animations) {
-        gameImage = new GameImage(hitbox);                  // set picturebox
+    public Sprite(JLabel label, LinkedList<Animation> animations) {
+        gameImage  = new GameImage(label);                  // set picturebox
         if (animations != null) setAnimations(animations);  // set animations
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
      * @param imageFile the relative image filename to display
      */
-    public GameSprite(JLabel hitbox, String imageFile) {
-        gameImage = new GameImage(hitbox,imageFile);        // set gameImage
+    public Sprite(JLabel label, String imageFile) {
+        gameImage = new GameImage(label,imageFile);     // set picturebox
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
+     * @param spriteSheet the sprite sheet image file to change the label to
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame  
+     */
+    public Sprite(JLabel label, String spriteSheet, int x, int y,
+                  int width, int height) {
+        gameImage = new GameImage(label, spriteSheet, x, y, width, height);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param label the label hitbox use to display the image
      * @param text the text inside the hitbox 
      * @param background the background color of the hitbox
      */
-    public GameSprite(JLabel hitbox, String text, Color background) {
-        gameImage = new GameImage(hitbox, text, background);
+    public Sprite(JLabel label, String text, Color background) {
+        gameImage = new GameImage(label, text, background);
     }
     
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param hitbox the label hitbox use to display the image
+     * @param label the label hitbox use to display the image
      */
-    public GameSprite(JLabel hitbox) {
-        gameImage = new GameImage(hitbox);               // set gameImage
+    public Sprite(JLabel label) {
+        gameImage  = new GameImage(label);               // set picturebox
     }
     
     /**
@@ -70,7 +86,7 @@ public class GameSprite
      */
     public void setAnimations(LinkedList<Animation> animations) {
         this.animations = animations;                   // assign to property
-        for (int i = 0; i < animations.size(); i++) {   // traverse list
+        for (int i = 0; i < animations.size(); i++) {   // traverse array
             animations.get(i).stop();                   // stop each animation
         }   
         run();                                          // run first animation
@@ -82,9 +98,9 @@ public class GameSprite
      * @param index the index of the animation to run
      */
     public void animate(int index) {
-        animations.get(currentIndex).stop();    // stop current animation
-        run(index);                             // run passed animation index
-        currentIndex = index;                   // remember passed index
+        animations.get(index).stop();       // stop current animation
+        run(index);                         // run passed animation index
+        currentIndex = index;               // remember passed index
     }
     
     /**
@@ -131,7 +147,7 @@ public class GameSprite
      * @param height the new height to set to 
      */
     public void resize(int width, int height) {
-        gameImage.resize(width, height);                // resize the gameImage
+        gameImage.resize(width, height);                // resize the image
         if (animations == null) return;                 // error trap
         for (int i = 0; i < animations.size(); i++) {   // traverse animations
             animations.get(i).resize(width,height);     // resize each animation
@@ -155,6 +171,25 @@ public class GameSprite
      */
     public void setImage(String imageFile) {
         gameImage.setImage(imageFile);
+    }
+    
+    /**
+     * Change the image inside a label to a new image from a sprite sheet and 
+     * possibly resize the image to fit the label size
+     * 
+     * @param spriteSheet imageFile the new image file to change the label to
+     * @param x the x coordinate of the sprite sheet frame location
+     * @param y the y coordinate of the sprite sheet frame location
+     * @param width the width of the sprite sheet frame
+     * @param height the height coordinate of the sprite sheet frame  
+     */
+    public void setImage(
+            String spriteSheet, 
+            int x, 
+            int y, 
+            int width, 
+            int height) {
+        gameImage.setImage(spriteSheet, x, y, width, height);
     }
     
     /**
@@ -292,4 +327,19 @@ public class GameSprite
         return animations.get(index).isRunning();
     }
 
+    /**
+     * Sets the background color of the label (no animations)
+     * 
+     * @param color the color to set to
+     */
+    public void setColor(Color color) {
+        stop();
+        gameImage.setColor(color);
+    }
+
+    /** Sets the sprite to be an "invisible" but active game object */
+    public void setClear() {
+        gameImage.setClear();
+    }
+        
 }

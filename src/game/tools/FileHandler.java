@@ -2,8 +2,8 @@
 /** required package class namespace */
 package game.tools;
 
+
 /** required imports */
-import collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -41,20 +41,20 @@ public class FileHandler
      * 
      * @return a string array of all the lines from the file 
      */
-    public LinkedList<String> read() {
+    public String[] read() {
         try {                                                   // error trap
             File           file   = convertToFile(filename);    // create file
             FileReader     reader = new FileReader(file);       // create reader
             BufferedReader buffer = new BufferedReader(reader); // create buffer
             String         line   = buffer.readLine();          // read a line
-            if (line == null) return null;                      // file empty            
-            LinkedList<String> lines = new LinkedList<>();      // create list
-            while (line != null) {                              // traverse
-                lines.add(line);                                // add to list
-                line = buffer.readLine();                       // read line
+            if (line == null) return null;                      // file empty
+            int            length = Integer.parseInt(line);     // array size
+            String[]       lines  = new String[length];         // create array
+            for (int i = 0; i < lines.length; i++) {            // traverse
+                lines[i] = buffer.readLine();                   // reaed lines
             }
             buffer.close();                                     // close file
-            return lines;                                       // return list
+            return lines;                                       // return array
         }
         catch (IOException e) {                                 // no file
             System.out.println("I/O error");
@@ -68,15 +68,16 @@ public class FileHandler
     /**
      * Writes the passed data to the file
      * 
-     * @param data string list to write to the file
+     * @param data string array to write to the file
      */
-    public void write(LinkedList<String> data) {
+    public void write(String[] data) {
         try {                                               // error trap
             File        file    = convertToFile(filename);  // create file
             FileWriter  writer  = new FileWriter(file);     // create writer
             PrintWriter printer = new PrintWriter(writer);  // create printer
-            for (int i = 0; i < data.size(); i++) {         // traverse list
-                printer.println(data.get(i));               // write list item
+            printer.println(data.length);                   // write array size
+            for (int i = 0; i < data.length; i++) {         // traverse array
+                printer.println(data[i]);                   // write array index
             }
             printer.close();                                // close file
         }
