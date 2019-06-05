@@ -61,7 +61,7 @@ public class GameImage
      * @param background the background color of the label
      */
     public GameImage(JLabel label, String text, Color background) {
-        this.label = label;                         // set parameter to property
+        setLabel(label);                            // set parameter to property
         setDebug(text,background);                  // set debug mode
     }
     
@@ -72,7 +72,7 @@ public class GameImage
      * @param imageFile the relative image filename to display
      */
     public GameImage(JLabel label, String imageFile) {
-        this.label = label;                         // set parameter to property
+        setLabel(label);                            // set parameter to property
         setImage(imageFile);                        // set image
         resizeToContainer();                        // resize
     }
@@ -89,7 +89,7 @@ public class GameImage
      */
     public GameImage(JLabel label, String spriteSheet, int x, int y, 
                      int width, int height) {
-        this.label = label;                         // set parameter to property
+        setLabel(label);                            // set parameter to property
         setImage(spriteSheet, x, y, width, height); // set image from sheet
         resizeToContainer();                        // resize
     }
@@ -260,12 +260,26 @@ public class GameImage
 
     /** Sets the game image to be an "invisible" but active game object */
     public void setClear() {
-        label.setBorder(null);          // remove any border
+        removeBorder();                 // remove any border
         label.setIcon(null);            // remove any icon
         label.setOpaque(false);         // no background color
         label.setBackground(null);      // no background color
         label.setForeground(null);      // no foreground 
         label.setText("");              // no text
+    }
+
+    /** removes any border for the label */
+    public void removeBorder() {
+        label.setBorder(null);          // remove any border
+    }
+
+    /**
+     * Sets the label image used on a user interface 
+     * 
+     * @param label the label image used on a user interface
+     */
+    public void setLabel(JLabel label) {
+        this.label = label;
     }
     
 }

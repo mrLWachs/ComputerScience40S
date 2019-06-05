@@ -228,12 +228,14 @@ public class Sprite
      */
     public void run(int index) {
         if (animations == null) return;                 // error trap
+        stop();                                         // stop all animations
         animations.get(index).run();                    // run animation
     }
     
     /** Runs the first animation */
     public void run() {
         if (animations == null) return;                 // error trap
+        stop();                                         // stop all animations
         currentIndex = 0;                               // set first animation 
         run(currentIndex);                              // run first animation
     }
@@ -337,9 +339,23 @@ public class Sprite
         gameImage.setColor(color);
     }
 
+    /** removes any border for the label */
+    public void removeBorder() {
+        gameImage.removeBorder();
+    }
+    
     /** Sets the sprite to be an "invisible" but active game object */
     public void setClear() {
         gameImage.setClear();
+    }
+
+    /**
+     * Sets the label image used on a user interface 
+     * 
+     * @param label the label image used on a user interface
+     */
+    public void setLabel(JLabel label) {
+        gameImage.setLabel(label);
     }
         
 }
