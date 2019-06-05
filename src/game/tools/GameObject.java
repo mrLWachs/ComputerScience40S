@@ -51,7 +51,7 @@ public class GameObject
                       int direction, 
                       int numberOfDirections) {
         coordinates = new Coordinates(amount, direction);        
-        sprite  = new Sprite(image);
+        sprite      = new Sprite(image);
         sprite.update(coordinates);
         mover       = new Mover(coordinates,numberOfDirections);
         detector    = new Detector(coordinates);

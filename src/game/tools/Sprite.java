@@ -336,6 +336,11 @@ public class Sprite
         gameImage.setColor(color);
     }
 
+    /** removes any border for the label */
+    public void removeBorder() {
+        gameImage.removeBorder();
+    }
+
     /** Sets the sprite to be an "invisible" but active game object */
     public void setClear() {
         gameImage.setClear();
