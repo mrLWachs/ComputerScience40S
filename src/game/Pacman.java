@@ -113,8 +113,9 @@ public class Pacman extends GameCharacter
      * 
      * @param event the keyboard event registered
      */
-    public void keypress(KeyEvent evt) {
-        super.keypress(evt);                    // send event to super class
+    @Override
+    public void keypress(KeyEvent event) {
+        super.keypress(event);                  // send event to super class
         animate();                              // change animation to respond
     }
     
