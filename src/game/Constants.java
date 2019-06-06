@@ -12,11 +12,14 @@ package game;
 public class Constants 
 {
 
-    public final static int PACMAN_MOVE_AMOUNT     = 4;
-    public final static int PACMAN_TIMER_DELAY     = 50;
-    public final static int PACMAN_ANIMATION_DELAY = 350;    
-    public final static int GHOST_MOVE_AMOUNT      = 4;
-    public final static int GHOST_TIMER_DELAY      = 100;
-    public final static int GHOST_ANIMATION_DELAY  = 9000;
+    public final static int    PACMAN_MOVE_AMOUNT     = 4;
+    public final static int    PACMAN_TIMER_DELAY     = 50;
+    public final static int    PACMAN_ANIMATION_DELAY = 350;    
+    public final static int    GHOST_MOVE_AMOUNT      = 4;
+    public final static int    GHOST_TIMER_DELAY      = 100;
+    public final static int    GHOST_ANIMATION_DELAY  = 9000;    
+    public final static String GAME_OVER_LOSE_SOUND   = "/game/media/pacman_death.wav";
+    public final static String GAME_OVER_WIN_SOUND    = "/game/media/pacman_eatghost.wav";
+    public final static String EAT_DOT_SOUND          = "/game/media/pacman_eatghost.wav";
         
 }

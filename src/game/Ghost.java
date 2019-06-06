@@ -22,10 +22,11 @@ import game.tools.MediaPlayer;
 public class Ghost extends GameCharacter
 {
 
-    private LinkedList<Wall> walls;
-    private Pacman           pacman;
-    private MediaPlayer      player;    
-    private FileHandler      file;
+    private LinkedList<Wall>  walls;
+    private Pacman            pacman;
+    private MediaPlayer       player;    
+    private FileHandler       file;
+    private LinkedList<Ghost> ghosts;
     
     
     /**
@@ -50,15 +51,29 @@ public class Ghost extends GameCharacter
         this.player = player;        
         this.file   = file; 
         mover.randomDirection();            // start in a random direction
-        LinkedList<String> ghostImages = new LinkedList<>();
-        for (int i = 1; i <= 6; i++) {
-            ghostImages.add("/game/media/ghost0" + i + ".png");
-        }                                   // list of animation images
-        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
-        ghostAnimations.add(new Animation(ghostLabel, ghostImages, 
-                Constants.GHOST_ANIMATION_DELAY, true));
-        sprite.setAnimations(ghostAnimations);
-        sprite.animate(0);                  // start animating
+        
+        LinkedList<Integer> imageX = new LinkedList<>();
+        LinkedList<Integer> imageY = new LinkedList<>();
+        LinkedList<Integer> imageWidth = new LinkedList<>();
+        LinkedList<Integer> imageHeight = new LinkedList<>();
+                
+        Animation ghostAnimation = new Animation(ghostLabel, 
+                "/media/pacmanSpriteSheet.png", 
+                imageX, imageY, imageWidth, imageHeight,
+                 Constants.GHOST_ANIMATION_DELAY, true);
+        
+//        LinkedList<String> ghostImages = new LinkedList<>();
+//        for (int i = 1; i <= 6; i++) {
+//            ghostImages.add("/game/media/ghost0" + i + ".png");
+//        }                                   // list of animation images
+//        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
+//        ghostAnimations.add(new Animation(ghostLabel, ghostImages, 
+//                Constants.GHOST_ANIMATION_DELAY, true));
+//        sprite.setAnimations(ghostAnimations);
+//        sprite.animate(0);                  // start animating
+        
+        
+        
         spawn();                            // spawn this ghost
     }
 
@@ -73,16 +88,32 @@ public class Ghost extends GameCharacter
                 i = walls.size();                   // exit loop early 
             }
         }
-        if (detector.isOverLapping(pacman)) {       // checking for pacman
-            pacman.mover.stop();                    // stop pacman
-            pacman.sprite.animate(0);               // change pacman animation
-            player.playWAV("/game/media/pacman_death.wav"); // play sound
-            String name = JOptionPane.showInputDialog("Enter name"); // get name
-            String[] data = { name, "" + pacman.points };       // make array
-            file.write(data);                       // save array to file
-            System.exit(0);                         // exit application
-        }        
+        if (detector.isOverLapping(pacman)) loseGame();      
         redraw();                                   // redraw ghost
+    }
+    
+    /**
+     * Associates the ghosts list parameter with the class encapsulated 
+     * property
+     * 
+     * @param ghosts the ghost list to associate with
+     */
+    public void setAllGhosts(LinkedList<Ghost> ghosts) {
+        this.ghosts = ghosts;
+    }
+    
+    /** Pacman has lost the game (captured by a ghost) */
+    private void loseGame() {
+        pacman.mover.stop();                            // stop pacman
+        pacman.sprite.animate(0);                       // new pacman animation
+        for (int i = 0; i < ghosts.size(); i++) {       // traverse ghosts
+            ghosts.get(i).mover.stop();                 // stop all ghosts
+        }
+        player.playWAV(Constants.GAME_OVER_LOSE_SOUND); // play sound
+        String name = JOptionPane.showInputDialog("Enter name"); // get name
+        String[] data = { name, "" + pacman.points };   // make array
+        file.write(data);                               // save array to file
+        System.exit(0);                                 // exit application
     }
 
 }

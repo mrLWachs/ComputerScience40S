@@ -145,7 +145,7 @@ public class Pacman extends GameCharacter
         for (int i = 0; i < dots.size(); i++) {         // traverse dots
             if (detector.isOverLapping(dots.get(i))) {  // hit a dot
                 dots.get(i).despawn();                  // remove dot
-                player.playWAV("/game/media/pacman_chomp.wav"); // play sound
+                player.playWAV(Constants.EAT_DOT_SOUND);// play sound
                 points++;                               // add a point
                 if (points == dots.size()) {            // check for end game
                     winGame();
@@ -161,7 +161,7 @@ public class Pacman extends GameCharacter
             ghosts.get(i).mover.stop();             // stop all ghosts
         }
         sprite.animate(0);                          // run first animation
-        player.playWAV("/game/media/pacman_eatghost.wav");  // play sound
+        player.playWAV(Constants.GAME_OVER_WIN_SOUND);  // play sound
         String name = JOptionPane.showInputDialog("You win!\n"
                 + "Enter name");                    // get user's name
         String[] data = { name, "" + points };      // create array

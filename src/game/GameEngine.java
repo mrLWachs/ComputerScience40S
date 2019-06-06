@@ -64,12 +64,14 @@ public class GameEngine
             dots.add(new Dot(dotLabels.get(i)));
         }
         // make the characters
-        pacman = new Pacman(pacmanLabel,walls,dots,player,file);
-        
+        pacman = new Pacman(pacmanLabel,walls,dots,player,file);        
         for (int i = 0; i < ghostLabels.size(); i++) {
             ghosts.add(new Ghost(ghostLabels.get(i),pacman,walls,player,file));
         }     
         pacman.setGhosts(ghosts);
+        for (int i = 0; i < ghostLabels.size(); i++) {
+            ghosts.get(i).setAllGhosts(ghosts);
+        }     
         // check for saved data
         String[] data = file.read();
         if (data != null) {

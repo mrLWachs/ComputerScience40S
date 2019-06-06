@@ -2,6 +2,7 @@
 /** required package class namespace */
 package collections;
 
+import game.Ghost;
 import java.lang.reflect.Array;
 
 
