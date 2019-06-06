@@ -43,24 +43,21 @@ public class Ghost extends GameCharacter
             LinkedList<Wall> walls, 
             MediaPlayer player,
             FileHandler file) {
-        super(ghostLabel, 1, Directions.STOP, 10,
-                Directions.FOUR_DIRECTIONS);
+        super(ghostLabel, Constants.GHOST_MOVE_AMOUNT, Directions.STOP, 
+                Constants.GHOST_TIMER_DELAY, Directions.FOUR_DIRECTIONS);
         this.walls  = walls;                // associate parameters with objects
         this.pacman = pacman;
         this.player = player;        
         this.file   = file; 
         mover.randomDirection();            // start in a random direction
         LinkedList<String> ghostImages = new LinkedList<>();
-        ghostImages.add("/game/media/ghost01.png");
-        ghostImages.add("/game/media/ghost02.png");
-        ghostImages.add("/game/media/ghost03.png");
-        ghostImages.add("/game/media/ghost04.png");
-        ghostImages.add("/game/media/ghost05.png");
-        ghostImages.add("/game/media/ghost06.png"); // list of animation images
-        int delay = 2000;                   // animation delay
-        LinkedList<Animation> animations = new LinkedList<>(); // animation
-        animations.add(new Animation(ghostLabel, ghostImages, delay, true));
-        sprite.setAnimations(animations);
+        for (int i = 1; i <= 6; i++) {
+            ghostImages.add("/game/media/ghost0" + i + ".png");
+        }                                   // list of animation images
+        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
+        ghostAnimations.add(new Animation(ghostLabel, ghostImages, 
+                Constants.GHOST_ANIMATION_DELAY, true));
+        sprite.setAnimations(ghostAnimations);
         sprite.animate(0);                  // start animating
         spawn();                            // spawn this ghost
     }
