@@ -241,7 +241,7 @@ public class Animation
             int y = imageY.get(i);
             int w = imageWidth.get(i);
             int h = imageHeight.get(i);
-            frames.set(i, new Sprite(label, spriteSheet, x, y, h, h));
+            frames.add(new Sprite(label, spriteSheet, x, y, h, h));
             frames.get(i).hide();                           // hide frame
         }
         lastFrame = frames.size() - 1;                      // track laast frame

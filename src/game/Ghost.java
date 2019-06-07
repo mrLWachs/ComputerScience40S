@@ -50,27 +50,11 @@ public class Ghost extends GameCharacter
         this.pacman = pacman;
         this.player = player;        
         this.file   = file; 
+        
+        buildAnimations(ghostLabel);
+        
         mover.randomDirection();            // start in a random direction
         
-        LinkedList<Integer> imageX = new LinkedList<>();
-        LinkedList<Integer> imageY = new LinkedList<>();
-        LinkedList<Integer> imageWidth = new LinkedList<>();
-        LinkedList<Integer> imageHeight = new LinkedList<>();
-                
-        Animation ghostAnimation = new Animation(ghostLabel, 
-                "/media/pacmanSpriteSheet.png", 
-                imageX, imageY, imageWidth, imageHeight,
-                 Constants.GHOST_ANIMATION_DELAY, true);
-        
-//        LinkedList<String> ghostImages = new LinkedList<>();
-//        for (int i = 1; i <= 6; i++) {
-//            ghostImages.add("/game/media/ghost0" + i + ".png");
-//        }                                   // list of animation images
-//        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
-//        ghostAnimations.add(new Animation(ghostLabel, ghostImages, 
-//                Constants.GHOST_ANIMATION_DELAY, true));
-//        sprite.setAnimations(ghostAnimations);
-//        sprite.animate(0);                  // start animating
         
         
         
@@ -80,7 +64,8 @@ public class Ghost extends GameCharacter
     /** The action this ghost does in it's timer */
     @Override
     public void action() {
-        mover.move();                               // move coordinates
+        mover.move();                               // move coordinates.
+        animate();
         for (int i = 0; i < walls.size(); i++) {    // traverse walls
             if (detector.isOverLapping(walls.get(i))) { // colliding with wall
                 reactor.bounceOff(walls.get(i));    // bounce off wall
@@ -116,4 +101,158 @@ public class Ghost extends GameCharacter
         System.exit(0);                                 // exit application
     }
 
+    /** changes the animation set to the appropriate animation based on direction */
+    private void animate() {
+        if (sprite == null) return;
+        if (sprite.hasAnimations() == false) return;
+        if      (coordinates.direction == Directions.RIGHT)  {
+            if (sprite.isRunning(0) == false) sprite.animate(0);
+        }
+        else if (coordinates.direction == Directions.DOWN)    {
+            if (sprite.isRunning(1) == false) sprite.animate(1);
+        }
+        else if (coordinates.direction == Directions.LEFT)    {
+            if (sprite.isRunning(2) == false) sprite.animate(2);
+        }
+        else if (coordinates.direction == Directions.UP)    {
+            if (sprite.isRunning(3) == false) sprite.animate(3);
+        }
+    }
+
+    private void buildAnimations(JLabel label) {
+        String sheet = Constants.SPRITE_SHEET;
+        int    delay = Constants.GHOST_ANIMATION_DELAY; 
+        LinkedList<Integer> imageX      = new LinkedList<>();
+        LinkedList<Integer> imageY      = new LinkedList<>();
+        LinkedList<Integer> imageWidth  = new LinkedList<>();
+        LinkedList<Integer> imageHeight = new LinkedList<>();
+         
+        // RIGHT................................................
+        int x = 0;
+        int y = 0;
+        int w = 50;
+        int h = 50;
+        int count = 1;
+        for (int i = 0; i < 6; i++) {
+            if (count == 1) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 2;
+                y = y + h;
+            }
+            else if (count == 2) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 1;
+                y = y - h;
+                x = x + w;
+            }
+        }                        
+        Animation ghostRight = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // DOWN................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        x = 0;
+        y = y + h + h;
+        count = 1;
+        for (int i = 0; i < 6; i++) {
+            if (count == 1) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 2;
+                y = y + h;
+            }
+            else if (count == 2) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 1;
+                y = y - h;
+                x = x + w;
+            }
+        }        
+        Animation ghostDown = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // LEFT................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        x = 0;
+        y = y + h + h;
+        count = 1;
+        for (int i = 0; i < 6; i++) {
+            if (count == 1) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 2;
+                y = y + h;
+            }
+            else if (count == 2) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 1;
+                y = y - h;
+                x = x + w;
+            }
+        }        
+        Animation ghostLeft = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // UP................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        x = 0;
+        y = y + h + h;
+        count = 1;
+        for (int i = 0; i < 6; i++) {
+            if (count == 1) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 2;
+                y = y + h;
+            }
+            else if (count == 2) {
+                imageX.add(x);
+                imageY.add(y);
+                imageWidth.add(w);
+                imageHeight.add(h); 
+                count = 1;
+                y = y - h;
+                x = x + w;
+            }
+        }        
+        Animation ghostUp = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
+        ghostAnimations.add(ghostRight);
+        ghostAnimations.add(ghostDown);
+        ghostAnimations.add(ghostLeft);
+        ghostAnimations.add(ghostUp);
+                
+        sprite.setAnimations(ghostAnimations);
+        sprite.animate(0);                  // start animating
+    }
+    
 }

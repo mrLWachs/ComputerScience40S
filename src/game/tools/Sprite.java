@@ -357,5 +357,10 @@ public class Sprite
     public void setLabel(JLabel label) {
         gameImage.setLabel(label);
     }
+
+    public boolean hasAnimations() {
+        if (animations == null) return false;
+        return true;
+    }
         
 }

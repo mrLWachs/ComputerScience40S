@@ -72,50 +72,126 @@ public class Pacman extends GameCharacter
      * @param label the label to associate the animation with
      */
     private void setAnimations(JLabel label) {
-        // IDLE ANIMATION...............
-        LinkedList<String> animateIdle = new LinkedList<>();
-        for (int i = 1; i <= 4; i++) {
-            animateIdle.add("/game/media/pacmanIdle0" + i + ".png");
-        }
-        Animation idleAnimation = new Animation(label, animateIdle, 
-                Constants.PACMAN_ANIMATION_DELAY, true);
-        // UP ANIMATION...............
-        LinkedList<String> animateUp = new LinkedList<>();
-        for (int i = 1; i <= 3; i++) {
-            animateUp.add("/game/media/pacmanUp0" + i + ".png");
-        }       
-        Animation upAnimation = new Animation(label, animateUp, 
-                Constants.PACMAN_ANIMATION_DELAY, true);
-        // DOWN ANIMATION...............
-        LinkedList<String> animateDown = new LinkedList<>();
-        for (int i = 1; i <= 3; i++) {
-            animateDown.add("/game/media/pacmanDown0" + i + ".png");
-        }
-        Animation downAnimation = new Animation(label, animateDown, 
-                Constants.PACMAN_ANIMATION_DELAY, true);
-        // LEFT ANIMATION...............
-        LinkedList<String> animateLeft = new LinkedList<>();
-        for (int i = 1; i <= 3; i++) {
-            animateLeft.add("/game/media/pacmanLeft0" + i + ".png");
-        }
-        Animation leftAnimation = new Animation(label, animateLeft, 
-                Constants.PACMAN_ANIMATION_DELAY, true);
-        // RIGHT ANIMATION...............
-        LinkedList<String> animateRight = new LinkedList<>();
-        for (int i = 1; i <= 3; i++) {
-            animateRight.add("/game/media/pacmanRight0" + i + ".png");
-        }
-        Animation rightAnimation = new Animation(label, animateRight, 
-                Constants.PACMAN_ANIMATION_DELAY, true);
-        // ALL ANIMATIONS...............
+        String sheet = Constants.SPRITE_SHEET;
+        int    delay = Constants.PACMAN_ANIMATION_DELAY; 
+        LinkedList<Integer> imageX      = new LinkedList<>();
+        LinkedList<Integer> imageY      = new LinkedList<>();
+        LinkedList<Integer> imageWidth  = new LinkedList<>();
+        LinkedList<Integer> imageHeight = new LinkedList<>();
+         
+        // RIGHT................................................
+        int w = 50;
+        int h = 50;
+        int x = (w * 17);
+        int y = 0;
+        for (int i = 0; i < 3; i++) {
+            imageX.add(x);
+            imageY.add(y);
+            imageWidth.add(w);
+            imageHeight.add(h);
+            y = y + h;
+        }                        
+        Animation pacmanRight = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // Down................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();  
+        for (int i = 0; i < 3; i++) {
+            imageX.add(x);
+            imageY.add(y);
+            imageWidth.add(w);
+            imageHeight.add(h);
+            y = y + h;
+        }                        
+        Animation pacmanDown = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // Left................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        for (int i = 0; i < 3; i++) {
+            imageX.add(x);
+            imageY.add(y);
+            imageWidth.add(w);
+            imageHeight.add(h);
+            y = y + h;
+        }                        
+        Animation pacmanLeft = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
+        // Up................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        for (int i = 0; i < 3; i++) {
+            imageX.add(x);
+            imageY.add(y);
+            imageWidth.add(w);
+            imageHeight.add(h);
+            y = y + h;
+        }                        
+        Animation pacmanUp = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
         LinkedList<Animation> pacmanAnimations = new LinkedList<>(); // animation
-        pacmanAnimations.add(idleAnimation);
-        pacmanAnimations.add(upAnimation);
-        pacmanAnimations.add(downAnimation);
-        pacmanAnimations.add(leftAnimation);
-        pacmanAnimations.add(rightAnimation);              
-        sprite.setAnimations(pacmanAnimations);     // set animations to sprite
-        sprite.animate(0);                          // start first animation
+        pacmanAnimations.add(pacmanUp);
+        pacmanAnimations.add(pacmanDown);
+        pacmanAnimations.add(pacmanLeft);
+        pacmanAnimations.add(pacmanRight);
+                
+        sprite.setAnimations(pacmanAnimations);
+        sprite.animate(0);                  // start animating
+        
+//        // IDLE ANIMATION...............
+//        LinkedList<String> animateIdle = new LinkedList<>();
+//        for (int i = 1; i <= 4; i++) {
+//            animateIdle.add("/game/media/pacmanIdle0" + i + ".png");
+//        }
+//        Animation idleAnimation = new Animation(label, animateIdle, 
+//                Constants.PACMAN_ANIMATION_DELAY, true);
+//        // UP ANIMATION...............
+//        LinkedList<String> animateUp = new LinkedList<>();
+//        for (int i = 1; i <= 3; i++) {
+//            animateUp.add("/game/media/pacmanUp0" + i + ".png");
+//        }       
+//        Animation upAnimation = new Animation(label, animateUp, 
+//                Constants.PACMAN_ANIMATION_DELAY, true);
+//        // DOWN ANIMATION...............
+//        LinkedList<String> animateDown = new LinkedList<>();
+//        for (int i = 1; i <= 3; i++) {
+//            animateDown.add("/game/media/pacmanDown0" + i + ".png");
+//        }
+//        Animation downAnimation = new Animation(label, animateDown, 
+//                Constants.PACMAN_ANIMATION_DELAY, true);
+//        // LEFT ANIMATION...............
+//        LinkedList<String> animateLeft = new LinkedList<>();
+//        for (int i = 1; i <= 3; i++) {
+//            animateLeft.add("/game/media/pacmanLeft0" + i + ".png");
+//        }
+//        Animation leftAnimation = new Animation(label, animateLeft, 
+//                Constants.PACMAN_ANIMATION_DELAY, true);
+//        // RIGHT ANIMATION...............
+//        LinkedList<String> animateRight = new LinkedList<>();
+//        for (int i = 1; i <= 3; i++) {
+//            animateRight.add("/game/media/pacmanRight0" + i + ".png");
+//        }
+//        Animation rightAnimation = new Animation(label, animateRight, 
+//                Constants.PACMAN_ANIMATION_DELAY, true);
+//        // ALL ANIMATIONS...............
+//        LinkedList<Animation> pacmanAnimations = new LinkedList<>(); // animation
+//        pacmanAnimations.add(idleAnimation);
+//        pacmanAnimations.add(upAnimation);
+//        pacmanAnimations.add(downAnimation);
+//        pacmanAnimations.add(leftAnimation);
+//        pacmanAnimations.add(rightAnimation);              
+//        sprite.setAnimations(pacmanAnimations);     // set animations to sprite
+//        sprite.animate(0);                          // start first animation
     }
 
     /**
@@ -171,11 +247,10 @@ public class Pacman extends GameCharacter
 
     /** changes the animation set to the appropriate animation based on direction */
     private void animate() {
-        if      (coordinates.direction == Directions.STOP)  sprite.animate(0);
-        else if (coordinates.direction == Directions.UP)    sprite.animate(1);
-        else if (coordinates.direction == Directions.DOWN)  sprite.animate(2);
-        else if (coordinates.direction == Directions.LEFT)  sprite.animate(3);
-        else if (coordinates.direction == Directions.RIGHT) sprite.animate(4);
+        if      (coordinates.direction == Directions.UP)    sprite.animate(0);
+        else if (coordinates.direction == Directions.DOWN)  sprite.animate(1);
+        else if (coordinates.direction == Directions.LEFT)  sprite.animate(2);
+        else if (coordinates.direction == Directions.RIGHT) sprite.animate(3);
     }
 
 }
