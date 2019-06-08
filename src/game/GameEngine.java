@@ -23,6 +23,7 @@ public class GameEngine
 {
 
     private Pacman            pacman;
+    private Prize             prize;
     private Background        background;    
     private LinkedList<Ghost> ghosts;
     private LinkedList<Wall>  walls;
@@ -43,15 +44,17 @@ public class GameEngine
      */
     public GameEngine(
             JLabel pacmanLabel, 
+            JLabel prizeLabel,
             JLabel backgroundLabel,
             LinkedList<JLabel> wallLabels, 
             LinkedList<JLabel> dotLabels, 
             LinkedList<JLabel> ghostLabels, 
             UserInterface ui) {
         // create objects
-        player = new MediaPlayer();
-        file   = new FileHandler("/game/Media/data.txt");
+        player     = new MediaPlayer();
+        file       = new FileHandler("/game/Media/data.txt");
         background = new Background(backgroundLabel);
+        prize      = new Prize(prizeLabel);
         // build the lists
         walls  = new LinkedList<>();
         dots   = new LinkedList<>();
@@ -64,7 +67,7 @@ public class GameEngine
             dots.add(new Dot(dotLabels.get(i)));
         }
         // make the characters
-        pacman = new Pacman(pacmanLabel,walls,dots,player,file);        
+        pacman = new Pacman(pacmanLabel,prize,walls,dots,player,file);        
         for (int i = 0; i < ghostLabels.size(); i++) {
             ghosts.add(new Ghost(ghostLabels.get(i),pacman,walls,player,file));
         }     

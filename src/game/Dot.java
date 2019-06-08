@@ -25,14 +25,39 @@ public class Dot extends GameObject
      */
     public Dot(JLabel label) {
         super(label);
-        LinkedList<String> images = new LinkedList<>();
-        images.add("/game/media/dot01.png");
-        images.add("/game/media/dot02.png");        // list of image files
-        int delay = 250;                            // animation delay
-        LinkedList<Animation> animations = new LinkedList<>(); // animation
-        animations.add(new Animation(label, images, delay, true));
-        sprite.setAnimations(animations);           // set to the sprite
-        sprite.animate(0);                          // start animation
+        setAnimations(label);
     }
 
+    /**
+     * Set up all the animations for this character
+     * 
+     * @param label the label to associate the animation with
+     */
+    private void setAnimations(JLabel label) {
+        String sheet = Constants.SPRITE_SHEET;
+        int    delay = Constants.DOT_ANIMATION_DELAY; 
+        LinkedList<Integer> imageX      = new LinkedList<>();
+        LinkedList<Integer> imageY      = new LinkedList<>();
+        LinkedList<Integer> imageWidth  = new LinkedList<>();
+        LinkedList<Integer> imageHeight = new LinkedList<>();
+        imageX.add(416);
+        imageY.add(266);
+        imageWidth.add(18);
+        imageHeight.add(18); 
+        
+        imageX.add(533);
+        imageY.add(600);
+        imageWidth.add(30);
+        imageHeight.add(30); 
+        
+        Animation dotAnimation = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);                
+        LinkedList<Animation> dotAnimations = new LinkedList<>(); // animation
+        dotAnimations.add(dotAnimation);                
+        sprite.setAnimations(dotAnimations);
+        sprite.animate(0);                  // start animating
+        
+    }
+
+    
 }

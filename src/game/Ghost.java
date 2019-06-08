@@ -90,7 +90,7 @@ public class Ghost extends GameCharacter
     /** Pacman has lost the game (captured by a ghost) */
     private void loseGame() {
         pacman.mover.stop();                            // stop pacman
-        pacman.sprite.animate(0);                       // new pacman animation
+        pacman.sprite.animate(4);                       // new pacman animation
         for (int i = 0; i < ghosts.size(); i++) {       // traverse ghosts
             ghosts.get(i).mover.stop();                 // stop all ghosts
         }

@@ -23,6 +23,7 @@ import game.tools.MediaPlayer;
 public class Pacman extends GameCharacter
 {
     
+    private Prize             prize;
     private LinkedList<Wall>  walls;
     private LinkedList<Dot>   dots;
     private LinkedList<Ghost> ghosts;    
@@ -44,6 +45,7 @@ public class Pacman extends GameCharacter
      */
     public Pacman(
             JLabel pacmanLabel, 
+            Prize prize,
             LinkedList<Wall> walls, 
             LinkedList<Dot> dots, 
             MediaPlayer player, 
@@ -51,6 +53,7 @@ public class Pacman extends GameCharacter
         super(pacmanLabel, Constants.PACMAN_MOVE_AMOUNT, Directions.STOP, 
                 Constants.PACMAN_TIMER_DELAY, Directions.FOUR_DIRECTIONS);
         this.walls  = walls;                // associate parameters with objects
+        this.prize  = prize;
         this.dots   = dots;
         this.player = player;
         this.file   = file;
@@ -139,59 +142,62 @@ public class Pacman extends GameCharacter
         Animation pacmanUp = new Animation(label, sheet, imageX, imageY, 
                                        imageWidth, imageHeight, delay, true);
         
+        // DEATH................................................
+        imageX.clear();
+        imageY.clear();
+        imageWidth.clear();
+        imageHeight.clear();
+        
+        for (int i = 0; i < 2; i++) {
+        
+            imageX.add(351);
+            imageY.add(3);
+            imageWidth.add(46);
+            imageHeight.add(43);
+
+            imageX.add(357);
+            imageY.add(57);
+            imageWidth.add(36);
+            imageHeight.add(37);
+
+            imageX.add(357);
+            imageY.add(107);
+            imageWidth.add(38);
+            imageHeight.add(35);
+
+            imageX.add(361);
+            imageY.add(160);
+            imageWidth.add(28);
+            imageHeight.add(30);
+        
+        }
+        
+        imageX.add(362);
+        imageY.add(512);
+        imageWidth.add(26);
+        imageHeight.add(26);
+        
+        imageX.add(362);
+        imageY.add(562);
+        imageWidth.add(26);
+        imageHeight.add(26);
+        
+        Animation pacmanDeath = new Animation(label, sheet, imageX, imageY, 
+                                       imageWidth, imageHeight, delay, true);
+        
         LinkedList<Animation> pacmanAnimations = new LinkedList<>(); // animation
         pacmanAnimations.add(pacmanUp);
         pacmanAnimations.add(pacmanDown);
         pacmanAnimations.add(pacmanLeft);
         pacmanAnimations.add(pacmanRight);
+        pacmanAnimations.add(pacmanDeath);
                 
+        pacmanAnimations.get(4).setDelay(1000);
+        pacmanAnimations.get(4).setLoop(false);
+        
         sprite.setAnimations(pacmanAnimations);
         sprite.animate(0);                  // start animating
         
-//        // IDLE ANIMATION...............
-//        LinkedList<String> animateIdle = new LinkedList<>();
-//        for (int i = 1; i <= 4; i++) {
-//            animateIdle.add("/game/media/pacmanIdle0" + i + ".png");
-//        }
-//        Animation idleAnimation = new Animation(label, animateIdle, 
-//                Constants.PACMAN_ANIMATION_DELAY, true);
-//        // UP ANIMATION...............
-//        LinkedList<String> animateUp = new LinkedList<>();
-//        for (int i = 1; i <= 3; i++) {
-//            animateUp.add("/game/media/pacmanUp0" + i + ".png");
-//        }       
-//        Animation upAnimation = new Animation(label, animateUp, 
-//                Constants.PACMAN_ANIMATION_DELAY, true);
-//        // DOWN ANIMATION...............
-//        LinkedList<String> animateDown = new LinkedList<>();
-//        for (int i = 1; i <= 3; i++) {
-//            animateDown.add("/game/media/pacmanDown0" + i + ".png");
-//        }
-//        Animation downAnimation = new Animation(label, animateDown, 
-//                Constants.PACMAN_ANIMATION_DELAY, true);
-//        // LEFT ANIMATION...............
-//        LinkedList<String> animateLeft = new LinkedList<>();
-//        for (int i = 1; i <= 3; i++) {
-//            animateLeft.add("/game/media/pacmanLeft0" + i + ".png");
-//        }
-//        Animation leftAnimation = new Animation(label, animateLeft, 
-//                Constants.PACMAN_ANIMATION_DELAY, true);
-//        // RIGHT ANIMATION...............
-//        LinkedList<String> animateRight = new LinkedList<>();
-//        for (int i = 1; i <= 3; i++) {
-//            animateRight.add("/game/media/pacmanRight0" + i + ".png");
-//        }
-//        Animation rightAnimation = new Animation(label, animateRight, 
-//                Constants.PACMAN_ANIMATION_DELAY, true);
-//        // ALL ANIMATIONS...............
-//        LinkedList<Animation> pacmanAnimations = new LinkedList<>(); // animation
-//        pacmanAnimations.add(idleAnimation);
-//        pacmanAnimations.add(upAnimation);
-//        pacmanAnimations.add(downAnimation);
-//        pacmanAnimations.add(leftAnimation);
-//        pacmanAnimations.add(rightAnimation);              
-//        sprite.setAnimations(pacmanAnimations);     // set animations to sprite
-//        sprite.animate(0);                          // start first animation
     }
 
     /**
@@ -216,17 +222,21 @@ public class Pacman extends GameCharacter
                 mover.stop();                           // stop movement
                 animate();                              // change animation
             }
-        }  
-        
+        }
         for (int i = 0; i < dots.size(); i++) {         // traverse dots
             if (detector.isOverLapping(dots.get(i))) {  // hit a dot
                 dots.get(i).despawn();                  // remove dot
                 player.playWAV(Constants.EAT_DOT_SOUND);// play sound
                 points++;                               // add a point
-                if (points == dots.size()) {            // check for end game
-                    winGame();
-                }
             }
+        }
+        if (detector.isOverLapping(prize)) {
+            prize.despawn();                            // remove prize
+            player.playWAV(Constants.GAME_OVER_WIN_SOUND);    // play sound
+            points+=10;                                 // add 10 points
+        }
+        if (points >= dots.size() + 10) {            // check for end game
+            winGame();
         }
         redraw();                                       // re draw
     }
@@ -236,7 +246,7 @@ public class Pacman extends GameCharacter
         for (int i = 0; i < ghosts.size(); i++) {   // traverse ghosts
             ghosts.get(i).mover.stop();             // stop all ghosts
         }
-        sprite.animate(0);                          // run first animation
+        sprite.animate(4);                          // run first animation
         player.playWAV(Constants.GAME_OVER_WIN_SOUND);  // play sound
         String name = JOptionPane.showInputDialog("You win!\n"
                 + "Enter name");                    // get user's name
