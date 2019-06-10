@@ -14,7 +14,7 @@ import game.tools.MediaPlayer;
 
 
 /**
- * Enemy.java - representation of a enemy in a game 
+ * Ghost.java - representation of a ghost in a pacman game 
  *
  * @author Mr. Wachs 
  * @since 15-May-2019 
@@ -29,15 +29,23 @@ public class Ghost extends GameCharacter
     private FileHandler        file;
     private LinkedList<Ghost>  ghosts;
     
+    private final int ANIMATE_RIGHT = 0;
+    private final int ANIMATE_DOWN  = 1;
+    private final int ANIMATE_LEFT  = 2;
+    private final int ANIMATE_UP    = 3;
+    
+    
     
     /**
      * Constructor for the class, sets class property data
      * 
-     * @param ghostLabel the label associated with the image for the game character
+     * @param ghostLabel the label associated with the image for the character
      * @param pacman the pacman object
      * @param walls the list of wall objects
+     * @param portals the list of portal objects
      * @param player the media player object
      * @param file the file handler object
+     * @param settings the list of setting values for the images 
      */
     public Ghost(
             JLabel ghostLabel, 
@@ -54,7 +62,7 @@ public class Ghost extends GameCharacter
         this.portals = portals;
         this.player  = player;        
         this.file    = file; 
-        buildAnimations(ghostLabel,settings);
+        setAnimations(ghostLabel,settings); // build all animations
         mover.randomDirection();            // start in a random direction
         spawn();                            // spawn this ghost
     }
@@ -63,7 +71,7 @@ public class Ghost extends GameCharacter
     @Override
     public void action() {
         mover.move();                               // move coordinates.
-        animate();
+        animate();                                  // animate character
         for (int i = 0; i < walls.size(); i++) {    // traverse walls
             if (detector.isOverLapping(walls.get(i))) { // colliding with wall
                 reactor.bounceOff(walls.get(i));    // bounce off wall
@@ -71,24 +79,24 @@ public class Ghost extends GameCharacter
                 i = walls.size();                   // exit loop early 
             }
         }
-        if (detector.isOverLapping(portals.get(0))) {
-            reactor.stickToRight(portals.get(1));
+        if (detector.isOverLapping(portals.get(0))) {   // hit portal
+            reactor.stickToRight(portals.get(1));       // teleport
         }
-        if (detector.isOverLapping(portals.get(1))) {
-            reactor.stickToLeft(portals.get(0));
+        if (detector.isOverLapping(portals.get(1))) {   // hit portal
+            reactor.stickToLeft(portals.get(0));        // teleport
         }
-        if (ghosts != null) {
-            for (int i = 0; i < ghosts.size(); i++) {
-                if (!this.equals(ghosts.get(i))) {
+        if (ghosts != null) {                           // ghosts exist
+            for (int i = 0; i < ghosts.size(); i++) {   // traverse ghosts
+                if (!this.equals(ghosts.get(i))) {      // hit a ghost (not me)
                     if (detector.isOverLapping(ghosts.get(i))) {
-                        reactor.bounceOff(ghosts.get(i));   // bounce off wall
-                        i = walls.size();                   // exit loop early 
+                        reactor.bounceOff(ghosts.get(i));   // bounce off ghost
+                        i = ghosts.size();                  // exit loop early 
                     }
                 }
             }
         }
-        if (detector.isOverLapping(pacman)) loseGame();      
-        redraw();                                   // redraw ghost
+        if (detector.isOverLapping(pacman)) loseGame();     // hit pacman  
+        redraw();                                           // redraw ghost
     }
     
     /**
@@ -110,8 +118,8 @@ public class Ghost extends GameCharacter
         }
         player.playWAV(Constants.GAME_OVER_LOSE_SOUND); // play sound
         String name = JOptionPane.showInputDialog("Enter name"); // get name
-        LinkedList<String> data = new LinkedList<>();
-        data.add(name);
+        LinkedList<String> data = new LinkedList<>();   // create list
+        data.add(name);                                 // add values to list
         data.add("" + pacman.points);
         file.write(data);                               // save array to file
         System.exit(0);                                 // exit application
@@ -121,21 +129,31 @@ public class Ghost extends GameCharacter
     private void animate() {
         if (sprite == null) return;
         if (sprite.hasAnimations() == false) return;
-        if      (coordinates.direction == Directions.RIGHT)  {
-            if (sprite.isRunning(0) == false) sprite.animate(0);
+        if (coordinates.direction == Directions.RIGHT)  {
+            if (sprite.isRunning(ANIMATE_RIGHT) == false) 
+                sprite.animate(ANIMATE_RIGHT);
         }
         else if (coordinates.direction == Directions.DOWN)    {
-            if (sprite.isRunning(1) == false) sprite.animate(1);
+            if (sprite.isRunning(ANIMATE_DOWN) == false) 
+                sprite.animate(ANIMATE_DOWN);
         }
         else if (coordinates.direction == Directions.LEFT)    {
-            if (sprite.isRunning(2) == false) sprite.animate(2);
+            if (sprite.isRunning(ANIMATE_LEFT) == false) 
+                sprite.animate(ANIMATE_LEFT);
         }
         else if (coordinates.direction == Directions.UP)    {
-            if (sprite.isRunning(3) == false) sprite.animate(3);
+            if (sprite.isRunning(ANIMATE_UP) == false) 
+                sprite.animate(ANIMATE_UP);
         }
     }
 
-    private void buildAnimations(JLabel label, LinkedList<String> settings) {
+    /**
+     * Set up all the animations for this character
+     * 
+     * @param label the label to associate the animation with
+     * @param settings the list of animation settings
+     */
+    private void setAnimations(JLabel label, LinkedList<String> settings) {
         String sheet = Constants.SPRITE_SHEET;
         int    delay = Constants.GHOST_ANIMATION_DELAY; 
         String tag   = Constants.GHOST_UP_TAG;        
@@ -174,7 +192,7 @@ public class Ghost extends GameCharacter
         tag = Constants.GHOST_DEAD_RIGHT_TAG;        
         Animation ghostDeadRight = Animator.getAnimation(sheet, label, 
                                                        delay, settings, tag);
-        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
+        LinkedList<Animation> ghostAnimations = new LinkedList<>(); 
         ghostAnimations.add(ghostRight);
         ghostAnimations.add(ghostDown);
         ghostAnimations.add(ghostLeft);
@@ -187,145 +205,7 @@ public class Ghost extends GameCharacter
         ghostAnimations.add(ghostDeadDown);
         ghostAnimations.add(ghostDeadLeft);
         ghostAnimations.add(ghostDeadUp);
-        sprite.setAnimations(ghostAnimations);
-        sprite.animate(0);                  // start animating
-        
-        
-        
-        
-//        String sheet = Constants.SPRITE_SHEET;
-//        int    delay = Constants.GHOST_ANIMATION_DELAY; 
-//        LinkedList<Integer> imageX      = new LinkedList<>();
-//        LinkedList<Integer> imageY      = new LinkedList<>();
-//        LinkedList<Integer> imageWidth  = new LinkedList<>();
-//        LinkedList<Integer> imageHeight = new LinkedList<>();
-//         
-//        // RIGHT................................................
-//        int x = 0;
-//        int y = 0;
-//        int w = 50;
-//        int h = 50;
-//        int count = 1;
-//        for (int i = 0; i < 6; i++) {
-//            if (count == 1) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 2;
-//                y = y + h;
-//            }
-//            else if (count == 2) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 1;
-//                y = y - h;
-//                x = x + w;
-//            }
-//        }                        
-//        Animation ghostRight = new Animation(label, sheet, imageX, imageY, 
-//                                       imageWidth, imageHeight, delay, true);
-//        
-//        // DOWN................................................
-//        imageX.clear();
-//        imageY.clear();
-//        imageWidth.clear();
-//        imageHeight.clear();
-//        x = 0;
-//        y = y + h + h;
-//        count = 1;
-//        for (int i = 0; i < 6; i++) {
-//            if (count == 1) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 2;
-//                y = y + h;
-//            }
-//            else if (count == 2) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 1;
-//                y = y - h;
-//                x = x + w;
-//            }
-//        }        
-//        Animation ghostDown = new Animation(label, sheet, imageX, imageY, 
-//                                       imageWidth, imageHeight, delay, true);
-//        
-//        // LEFT................................................
-//        imageX.clear();
-//        imageY.clear();
-//        imageWidth.clear();
-//        imageHeight.clear();
-//        x = 0;
-//        y = y + h + h;
-//        count = 1;
-//        for (int i = 0; i < 6; i++) {
-//            if (count == 1) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 2;
-//                y = y + h;
-//            }
-//            else if (count == 2) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 1;
-//                y = y - h;
-//                x = x + w;
-//            }
-//        }        
-//        Animation ghostLeft = new Animation(label, sheet, imageX, imageY, 
-//                                       imageWidth, imageHeight, delay, true);
-//        
-//        // UP................................................
-//        imageX.clear();
-//        imageY.clear();
-//        imageWidth.clear();
-//        imageHeight.clear();
-//        x = 0;
-//        y = y + h + h;
-//        count = 1;
-//        for (int i = 0; i < 6; i++) {
-//            if (count == 1) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 2;
-//                y = y + h;
-//            }
-//            else if (count == 2) {
-//                imageX.add(x);
-//                imageY.add(y);
-//                imageWidth.add(w);
-//                imageHeight.add(h); 
-//                count = 1;
-//                y = y - h;
-//                x = x + w;
-//            }
-//        }        
-//        Animation ghostUp = new Animation(label, sheet, imageX, imageY, 
-//                                       imageWidth, imageHeight, delay, true);
-//        
-//        LinkedList<Animation> ghostAnimations = new LinkedList<>(); // animation
-//        ghostAnimations.add(ghostRight);
-//        ghostAnimations.add(ghostDown);
-//        ghostAnimations.add(ghostLeft);
-//        ghostAnimations.add(ghostUp);
-//                
-//        sprite.setAnimations(ghostAnimations);
-//        sprite.animate(0);                  // start animating
+        sprite.setAnimations(ghostAnimations);             
     }
     
 }

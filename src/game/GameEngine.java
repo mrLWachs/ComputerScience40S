@@ -11,7 +11,6 @@ import game.tools.FileHandler;
 import game.tools.MediaPlayer;
 
 
-
 /**
  * GameEngine.java - the logic connected to the user interface that runs game 
  * logic
@@ -33,17 +32,19 @@ public class GameEngine
     private MediaPlayer          player;
     private FileHandler          playerData;
     private FileHandler          settingsFile;
-    
-    
+        
     
     /**
      * Constructor for the class, sets class property data
      * 
      * @param pacmanLabel the label image for the corresponding object
+     * @param prizeLabel the label image for the corresponding object
      * @param backgroundLabel the label image for the corresponding object
      * @param wallLabels the label image list for the corresponding object
      * @param dotLabels the label image list for the corresponding object
      * @param ghostLabels the label image list for the corresponding object
+     * @param portalLabels the label image list for the corresponding object
+     * @param powerDotLabels the label image list for the corresponding object
      * @param ui the user interface container for the game 
      */
     public GameEngine(

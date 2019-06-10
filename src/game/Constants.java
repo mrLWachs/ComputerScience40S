@@ -20,6 +20,7 @@ public class Constants
     public final static int    POWER_TIMER_DELAY            = 10000;
     
     public final static int    PACMAN_ANIMATION_DELAY       = 350;
+    public final static int    PACMAN_DEATH_ANIMATION_DELAY = 1000;    
     public final static int    GHOST_ANIMATION_DELAY        = 1000;  
     public final static int    GHOST_DEATH_ANIMATION_DELAY  = 1000;  
     public final static int    DOT_ANIMATION_DELAY          = 250; 

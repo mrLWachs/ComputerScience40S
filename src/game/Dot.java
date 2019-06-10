@@ -22,6 +22,7 @@ public class Dot extends GameObject
      * Constructor for the class, sets class property data
      * 
      * @param label the label associated with the image for the game object
+     * @param settings the list of animation settings
      */
     public Dot(JLabel label, LinkedList<String> settings) {
         super(label);
@@ -32,6 +33,7 @@ public class Dot extends GameObject
      * Set up all the animations for this character
      * 
      * @param label the label to associate the animation with
+     * @param settings the list of animation settings
      */
     private void setAnimations(JLabel label, LinkedList<String> settings) {        
         String sheet = Constants.SPRITE_SHEET;
@@ -39,32 +41,10 @@ public class Dot extends GameObject
         String tag   = Constants.DOT_TAG;        
         Animation dotAnimation = Animator.getAnimation(sheet, label, 
                                                        delay, settings, tag);
-        LinkedList<Animation> dotAnimations = new LinkedList<>(); // animation
+        LinkedList<Animation> dotAnimations = new LinkedList<>(); 
         dotAnimations.add(dotAnimation);                
         sprite.setAnimations(dotAnimations);
-        sprite.animate(0);                  // start animating
-        
-        
-        
-        
-//        String sheet = Constants.SPRITE_SHEET;
-//        int    delay = Constants.DOT_ANIMATION_DELAY; 
-//        LinkedList<Integer> imageX      = new LinkedList<>();
-//        LinkedList<Integer> imageY      = new LinkedList<>();
-//        LinkedList<Integer> imageWidth  = new LinkedList<>();
-//        LinkedList<Integer> imageHeight = new LinkedList<>();
-//        imageX.add(416);
-//        imageY.add(266);
-//        imageWidth.add(18);
-//        imageHeight.add(18);         
-//        Animation dotAnimation = new Animation(label, sheet, imageX, imageY, 
-//                                       imageWidth, imageHeight, delay, true);                
-//        LinkedList<Animation> dotAnimations = new LinkedList<>(); // animation
-//        dotAnimations.add(dotAnimation);                
-//        sprite.setAnimations(dotAnimations);
-//        sprite.animate(0);                  // start animating
-        
+        sprite.animate(0);                  
     }
-
     
 }
