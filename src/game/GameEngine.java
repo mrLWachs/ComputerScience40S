@@ -103,7 +103,7 @@ public class GameEngine
                     data.get(0) + " was " + data.get(1) + " points!");
         }
         // set UI properties
-        ui.setSize(710, 800);
+        ui.setSize(Constants.UI_WIDTH,Constants.UI_HEIGHT);
         ui.setResizable(false);
         ui.setLocationRelativeTo(null);
         ui.setVisible(true);

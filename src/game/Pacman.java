@@ -42,8 +42,13 @@ public class Pacman extends GameCharacter
     private final int ANIMATE_DOWN  = 1;
     private final int ANIMATE_LEFT  = 2;
     private final int ANIMATE_RIGHT = 3;
-    private final int ANIMATE_DEATH = 4;
-        
+    
+    public final  int ANIMATE_DEATH = 4;
+    
+    private final int RIGHT_PORTAL  = 0;
+    private final int LEFT_PORTAL   = 1;
+    
+
     
     /**
      * Constructor for the class, sets class property data
@@ -117,11 +122,11 @@ public class Pacman extends GameCharacter
                 points += Constants.POWER_DOT_POINT;         // add power point
             }
         }
-        if (detector.isOverLapping(portals.get(0))) {       // hit portal
-            reactor.stickToRight(portals.get(1));           // teleport
+        if (detector.isOverLapping(portals.get(RIGHT_PORTAL))) {    // hit portal
+            reactor.stickToRight(portals.get(LEFT_PORTAL));         // teleport
         }
-        if (detector.isOverLapping(portals.get(1))) {       // hit portal
-            reactor.stickToLeft(portals.get(0));            // teleport
+        if (detector.isOverLapping(portals.get(LEFT_PORTAL))) {     // hit portal
+            reactor.stickToLeft(portals.get(RIGHT_PORTAL));         // teleport
         }        
         if (detector.isOverLapping(prize)) {            // hit prize
             prize.despawn();                            // remove prize
@@ -142,10 +147,10 @@ public class Pacman extends GameCharacter
         for (int i = 0; i < ghosts.size(); i++) {   // traverse ghosts
             ghosts.get(i).mover.stop();             // stop all ghosts
         }
-        sprite.animate(4);                          // run first animation
+        sprite.animate(ANIMATE_DEATH);              // run animation
         player.playWAV(Constants.GAME_OVER_WIN_SOUND);  // play sound
-        String name = JOptionPane.showInputDialog("You win!\n"
-                + "Enter name");                    // get user's name
+        String name = JOptionPane.showInputDialog(
+                "You win!\nEnter name");                // get user's name
         LinkedList<String> data = new LinkedList<>();   // create list
         data.add(name);                                 // add values to list
         data.add("" + points);
@@ -177,7 +182,7 @@ public class Pacman extends GameCharacter
 
     /** initiates the timer for when pacman eats a power dot */
     private void setTimer() {
-        powerTimer = new Timer(1, new ActionListener() {
+        powerTimer = new Timer(0, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 tick();

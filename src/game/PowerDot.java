@@ -1,14 +1,19 @@
 
+/** required package class namespace */
 package game;
 
+/** required imports */
 import collections.LinkedList;
 import game.tools.Animation;
 import game.tools.GameObject;
 import javax.swing.JLabel;
 
+
 /**
+ * PowerDot.java - representation of a power dot in pacman
  *
- * @author Lawrence Wachs
+ * @author Mr. Wachs 
+ * @since 15-May-2019 
  */
 public class PowerDot extends GameObject
 {

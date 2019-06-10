@@ -43,8 +43,7 @@ public class Dot extends GameObject
                                                        delay, settings, tag);
         LinkedList<Animation> dotAnimations = new LinkedList<>(); 
         dotAnimations.add(dotAnimation);                
-        sprite.setAnimations(dotAnimations);
-        sprite.animate(0);                  
+        sprite.setAnimations(dotAnimations);                 
     }
     
 }

@@ -12,6 +12,9 @@ package game;
 public class Constants 
 {
 
+    public final static int    UI_WIDTH                     = 710;
+    public final static int    UI_HEIGHT                    = 800;
+    
     public final static int    PACMAN_MOVE_AMOUNT           = 4;
     public final static int    GHOST_MOVE_AMOUNT            = 4;
     
