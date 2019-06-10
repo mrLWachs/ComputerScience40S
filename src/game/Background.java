@@ -4,7 +4,6 @@ package game;
 
 /** required imports */
 import game.tools.GameObject;
-import java.awt.Color;
 import javax.swing.JLabel;
 
 
@@ -24,7 +23,6 @@ public class Background extends GameObject
      */
     public Background(JLabel label) {
         super(label);
-        sprite.setColor(Color.black);
     }
     
 }

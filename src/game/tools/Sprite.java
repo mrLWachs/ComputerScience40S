@@ -98,9 +98,11 @@ public class Sprite
      * @param index the index of the animation to run
      */
     public void animate(int index) {
-        animations.get(index).stop();       // stop current animation
-        run(index);                         // run passed animation index
-        currentIndex = index;               // remember passed index
+        if (!isRunning(index)) {
+            animations.get(currentIndex).stop();// stop current animation
+            run(index);                         // run passed animation index
+            currentIndex = index;               // remember passed index
+        }
     }
     
     /**

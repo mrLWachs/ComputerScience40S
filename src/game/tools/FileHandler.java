@@ -4,6 +4,7 @@ package game.tools;
 
 
 /** required imports */
+import collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -41,17 +42,16 @@ public class FileHandler
      * 
      * @return a string array of all the lines from the file 
      */
-    public String[] read() {
+    public LinkedList<String> read() {
         try {                                                   // error trap
             File           file   = convertToFile(filename);    // create file
             FileReader     reader = new FileReader(file);       // create reader
             BufferedReader buffer = new BufferedReader(reader); // create buffer
-            String         line   = buffer.readLine();          // read a line
-            if (line == null) return null;                      // file empty
-            int            length = Integer.parseInt(line);     // array size
-            String[]       lines  = new String[length];         // create array
-            for (int i = 0; i < lines.length; i++) {            // traverse
-                lines[i] = buffer.readLine();                   // reaed lines
+            LinkedList<String> lines = new LinkedList<>();            
+            String line   = buffer.readLine();                  // read a line
+            while (line != null) {
+                lines.add(line);
+                line = buffer.readLine(); 
             }
             buffer.close();                                     // close file
             return lines;                                       // return array
@@ -70,14 +70,13 @@ public class FileHandler
      * 
      * @param data string array to write to the file
      */
-    public void write(String[] data) {
+    public void write(LinkedList<String> data) {
         try {                                               // error trap
             File        file    = convertToFile(filename);  // create file
             FileWriter  writer  = new FileWriter(file);     // create writer
             PrintWriter printer = new PrintWriter(writer);  // create printer
-            printer.println(data.length);                   // write array size
-            for (int i = 0; i < data.length; i++) {         // traverse array
-                printer.println(data[i]);                   // write array index
+            for (int i = 0; i < data.size(); i++) {         // traverse array
+                printer.println(data.get(i));               // write array index
             }
             printer.close();                                // close file
         }

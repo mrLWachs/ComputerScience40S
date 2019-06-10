@@ -22,14 +22,18 @@ import game.tools.MediaPlayer;
 public class GameEngine 
 {
 
-    private Pacman            pacman;
-    private Prize             prize;
-    private Background        background;    
-    private LinkedList<Ghost> ghosts;
-    private LinkedList<Wall>  walls;
-    private LinkedList<Dot>   dots;
-    private MediaPlayer       player;
-    private FileHandler       file;
+    private Pacman               pacman;
+    private Prize                prize;
+    private Background           background;    
+    private LinkedList<Ghost>    ghosts;
+    private LinkedList<Wall>     walls;
+    private LinkedList<Dot>      dots;
+    private LinkedList<PowerDot> powerDots;    
+    private LinkedList<Portal>   portals;
+    private MediaPlayer          player;
+    private FileHandler          playerData;
+    private FileHandler          settingsFile;
+    
     
     
     /**
@@ -49,38 +53,54 @@ public class GameEngine
             LinkedList<JLabel> wallLabels, 
             LinkedList<JLabel> dotLabels, 
             LinkedList<JLabel> ghostLabels, 
-            UserInterface ui) {
+            LinkedList<JLabel> portalLabels,
+            LinkedList<JLabel> powerDotLabels,
+            UserInterface ui) {        
         // create objects
-        player     = new MediaPlayer();
-        file       = new FileHandler("/game/Media/data.txt");
-        background = new Background(backgroundLabel);
-        prize      = new Prize(prizeLabel);
+        player       = new MediaPlayer();
+        playerData   = new FileHandler(Constants.PLAYER_DATA_FILE);
+        settingsFile = new FileHandler(Constants.SETTINGS_DATA_FILE); 
+        //check for game settings
+        LinkedList<String> settings = settingsFile.read();
+        // create game objects       
+        background   = new Background(backgroundLabel);
+        prize        = new Prize(prizeLabel,settings);       
         // build the lists
-        walls  = new LinkedList<>();
-        dots   = new LinkedList<>();
-        ghosts = new LinkedList<>();
+        walls        = new LinkedList<>();
+        dots         = new LinkedList<>();
+        ghosts       = new LinkedList<>();
+        portals      = new LinkedList<>();
+        powerDots    = new LinkedList<>();
         // fill the lists
         for (int i = 0; i < wallLabels.size(); i++) {
             walls.add(new Wall(wallLabels.get(i)));
         }
         for (int i = 0; i < dotLabels.size(); i++) {
-            dots.add(new Dot(dotLabels.get(i)));
+            dots.add(new Dot(dotLabels.get(i),settings));
+        }
+        for (int i = 0; i < portalLabels.size(); i++) {
+            portals.add(new Portal(portalLabels.get(i)));
+        } 
+        for (int i = 0; i < powerDotLabels.size(); i++) {
+            powerDots.add(new PowerDot(powerDotLabels.get(i),settings));
         }
         // make the characters
-        pacman = new Pacman(pacmanLabel,prize,walls,dots,player,file);        
+        pacman = new Pacman(pacmanLabel,prize,walls,dots,portals,powerDots,
+                player,playerData,settings);        
         for (int i = 0; i < ghostLabels.size(); i++) {
-            ghosts.add(new Ghost(ghostLabels.get(i),pacman,walls,player,file));
+            ghosts.add(new Ghost(ghostLabels.get(i),pacman,walls,portals,
+                                 player,playerData,settings));
         }     
         pacman.setGhosts(ghosts);
         for (int i = 0; i < ghostLabels.size(); i++) {
             ghosts.get(i).setAllGhosts(ghosts);
         }     
         // check for saved data
-        String[] data = file.read();
+        LinkedList<String> data = playerData.read();
         if (data != null) {
             JOptionPane.showMessageDialog(ui, "Previous score for " +
-                    data[0] + " was " + data[1] + " points!");
-        }        
+                    data.get(0) + " was " + data.get(1) + " points!");
+        }
         // set UI properties
         ui.setSize(710, 800);
         ui.setResizable(false);

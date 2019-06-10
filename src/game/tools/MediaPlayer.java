@@ -78,16 +78,22 @@ public class MediaPlayer
             return "playing sound file";
         }
         catch(UnsupportedAudioFileException error) {
-            return "Cannot play this file type!";                    
+            return "playWAV: Cannot play this file type! " + error.toString();
         }
         catch(LineUnavailableException error) {
-            return "Cannot play any audio files!";
+            return "playWAV: Cannot play any audio files! " + error.toString();
         }
         catch(IOException error) {
-            return "File error";
+            return "playWAV: File error " + error.toString();
         }         
         catch (URISyntaxException error) {
-            return "File URI error";
+            return "playWAV: File URI error " + error.toString();
+        }
+        catch (NullPointerException error) {
+            return "playWAV: null error " + error.toString();
+        }
+        catch (IllegalArgumentException error) {
+            return "playWAV: illegal argument error " + error.toString();
         }
     }   
 

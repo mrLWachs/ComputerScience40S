@@ -23,9 +23,9 @@ public class Dot extends GameObject
      * 
      * @param label the label associated with the image for the game object
      */
-    public Dot(JLabel label) {
+    public Dot(JLabel label, LinkedList<String> settings) {
         super(label);
-        setAnimations(label);
+        setAnimations(label,settings);
     }
 
     /**
@@ -33,29 +33,36 @@ public class Dot extends GameObject
      * 
      * @param label the label to associate the animation with
      */
-    private void setAnimations(JLabel label) {
+    private void setAnimations(JLabel label, LinkedList<String> settings) {        
         String sheet = Constants.SPRITE_SHEET;
         int    delay = Constants.DOT_ANIMATION_DELAY; 
-        LinkedList<Integer> imageX      = new LinkedList<>();
-        LinkedList<Integer> imageY      = new LinkedList<>();
-        LinkedList<Integer> imageWidth  = new LinkedList<>();
-        LinkedList<Integer> imageHeight = new LinkedList<>();
-        imageX.add(416);
-        imageY.add(266);
-        imageWidth.add(18);
-        imageHeight.add(18); 
-        
-        imageX.add(533);
-        imageY.add(600);
-        imageWidth.add(30);
-        imageHeight.add(30); 
-        
-        Animation dotAnimation = new Animation(label, sheet, imageX, imageY, 
-                                       imageWidth, imageHeight, delay, true);                
+        String tag   = Constants.DOT_TAG;        
+        Animation dotAnimation = Animator.getAnimation(sheet, label, 
+                                                       delay, settings, tag);
         LinkedList<Animation> dotAnimations = new LinkedList<>(); // animation
         dotAnimations.add(dotAnimation);                
         sprite.setAnimations(dotAnimations);
         sprite.animate(0);                  // start animating
+        
+        
+        
+        
+//        String sheet = Constants.SPRITE_SHEET;
+//        int    delay = Constants.DOT_ANIMATION_DELAY; 
+//        LinkedList<Integer> imageX      = new LinkedList<>();
+//        LinkedList<Integer> imageY      = new LinkedList<>();
+//        LinkedList<Integer> imageWidth  = new LinkedList<>();
+//        LinkedList<Integer> imageHeight = new LinkedList<>();
+//        imageX.add(416);
+//        imageY.add(266);
+//        imageWidth.add(18);
+//        imageHeight.add(18);         
+//        Animation dotAnimation = new Animation(label, sheet, imageX, imageY, 
+//                                       imageWidth, imageHeight, delay, true);                
+//        LinkedList<Animation> dotAnimations = new LinkedList<>(); // animation
+//        dotAnimations.add(dotAnimation);                
+//        sprite.setAnimations(dotAnimations);
+//        sprite.animate(0);                  // start animating
         
     }
 
