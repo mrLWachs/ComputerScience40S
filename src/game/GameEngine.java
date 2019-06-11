@@ -86,16 +86,14 @@ public class GameEngine
             powerDots.add(new PowerDot(powerDotLabels.get(i),settings));
         }
         // make the characters
-        pacman = new Pacman(pacmanLabel,prize,walls,dots,portals,powerDots,
-                player,playerData,settings);        
         for (int i = 0; i < ghostLabels.size(); i++) {
-            ghosts.add(new Ghost(ghostLabels.get(i),pacman,walls,portals,
-                                 player,playerData,settings));
-        }     
-        pacman.setGhosts(ghosts);
+            ghosts.add(new Ghost(ghostLabels.get(i),walls,portals,settings));
+        }
         for (int i = 0; i < ghostLabels.size(); i++) {
             ghosts.get(i).setAllGhosts(ghosts);
-        }     
+        } 
+        pacman = new Pacman(pacmanLabel,ghosts,prize,walls,dots,portals,
+                            powerDots,player,playerData,settings);                  
         // check for saved data
         LinkedList<String> data = playerData.read();
         if (data != null) {

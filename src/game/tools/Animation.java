@@ -76,8 +76,7 @@ public class Animation
             setImageFiles(spriteSheet, imageX, imageY, imageWidth, imageHeight);
         }
     }
-    
-    
+        
     /** Run the animation */
     public void run() {
         timer.start();                              // internal timer starts
@@ -94,7 +93,7 @@ public class Animation
         frames.get(currentFrame).hide();            // hide curent image
         currentFrame = 0;                           // reset back to first frame
         frames.get(currentFrame).show();            // show this frame
-        run();                                      // restart animation                                     // restart animation
+        run();                                      // restart animation
     }
     
     /**

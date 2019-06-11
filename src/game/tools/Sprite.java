@@ -99,9 +99,9 @@ public class Sprite
      */
     public void animate(int index) {
         if (!isRunning(index)) {
-            animations.get(currentIndex).stop();// stop current animation
-            run(index);                         // run passed animation index
-            currentIndex = index;               // remember passed index
+            animations.get(currentIndex).stop(); // stop current animation
+            restart(index);                      // run passed animation index
+            currentIndex = index;                // remember passed index
         }
     }
     
@@ -360,6 +360,11 @@ public class Sprite
         gameImage.setLabel(label);
     }
 
+    /**
+     * Determines if this sprite has animations or not
+     * 
+     * @return the sprite has animations (true) or not (false) 
+     */
     public boolean hasAnimations() {
         if (animations == null) return false;
         return true;

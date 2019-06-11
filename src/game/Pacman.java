@@ -34,6 +34,7 @@ public class Pacman extends GameCharacter
     private MediaPlayer          player;
     private FileHandler          file;
     private Timer                powerTimer;
+    private boolean              inPowerMode;
     
     /** the total points pacman has received in the game */
     public int points;
@@ -41,19 +42,17 @@ public class Pacman extends GameCharacter
     private final int ANIMATE_UP    = 0;
     private final int ANIMATE_DOWN  = 1;
     private final int ANIMATE_LEFT  = 2;
-    private final int ANIMATE_RIGHT = 3;
-    
-    public final  int ANIMATE_DEATH = 4;
-    
+    private final int ANIMATE_RIGHT = 3;    
+    private final int ANIMATE_DEATH = 4;    
     private final int RIGHT_PORTAL  = 0;
     private final int LEFT_PORTAL   = 1;
     
-
     
     /**
      * Constructor for the class, sets class property data
      * 
      * @param pacmanLabel the label associated with the image for the character
+     * @param ghosts the list of wall objects
      * @param prize the prize object
      * @param walls the list of wall objects
      * @param dots the list of dot objects
@@ -65,6 +64,7 @@ public class Pacman extends GameCharacter
      */
     public Pacman(
             JLabel pacmanLabel, 
+            LinkedList<Ghost> ghosts,
             Prize prize,
             LinkedList<Wall> walls, 
             LinkedList<Dot> dots,
@@ -76,23 +76,17 @@ public class Pacman extends GameCharacter
         super(pacmanLabel, Constants.PACMAN_MOVE_AMOUNT, Directions.STOP, 
                 Constants.PACMAN_TIMER_DELAY, Directions.FOUR_DIRECTIONS);
         this.walls     = walls;             // associate parameters with objects
+        this.ghosts    = ghosts;
         this.prize     = prize;
         this.dots      = dots;
         this.portals   = portals;
         this.powerDots = powerDots;
         this.player    = player;
         this.file      = file;
+        inPowerMode    = false;
         setAnimations(pacmanLabel,settings);// sets all the animations
         setTimer();                         // set up a timer
         spawn();                            // spawn this pacman
-    }
-    
-    /**
-     * Associates the ghosts array object with this classes property
-     * @param ghosts 
-     */
-    public void setGhosts(LinkedList<Ghost> ghosts) {
-        this.ghosts = ghosts;
     }
 
     /** The action this pacman does in it's timer */
@@ -117,6 +111,7 @@ public class Pacman extends GameCharacter
         }
         for (int i = 0; i < powerDots.size(); i++) {         // traverse powers
             if (detector.isOverLapping(powerDots.get(i))) {  // hit a power dot
+                setPowerMode(true);
                 powerDots.get(i).despawn();                  // remove power dot
                 player.playWAV(Constants.EAT_DOT_SOUND);     // play sound
                 points += Constants.POWER_DOT_POINT;         // add power point
@@ -132,6 +127,12 @@ public class Pacman extends GameCharacter
             prize.despawn();                            // remove prize
             player.playWAV(Constants.GAME_OVER_WIN_SOUND);    // play sound
             points += Constants.PRIZE_POINT;            // add a point
+        }
+        for (int i = 0; i < ghosts.size(); i++) {
+            if (detector.isOverLapping(ghosts.get(i))) {
+                if(inPowerMode) ghosts.get(i).despawn();
+                else            loseGame();
+            }
         }
         if (points >= 
             (Constants.DOT_POINT * dots.size()) + 
@@ -158,7 +159,23 @@ public class Pacman extends GameCharacter
         System.exit(0);                             // terminate application
     }
 
-    /** changes the animation set to the appropriate animation based on direction */
+    /** Pacman has lost the game (captured by a ghost) */
+    private void loseGame() {
+        mover.stop();                                   // stop pacman
+        sprite.animate(ANIMATE_DEATH);              // new pacman animation
+        for (int i = 0; i < ghosts.size(); i++) {       // traverse ghosts
+            ghosts.get(i).mover.stop();                 // stop all ghosts
+        }
+        player.playWAV(Constants.GAME_OVER_LOSE_SOUND); // play sound
+        String name = JOptionPane.showInputDialog("Enter name"); // get name
+        LinkedList<String> data = new LinkedList<>();   // create list
+        data.add(name);                                 // add values to list
+        data.add("" + points);
+        file.write(data);                               // save array to file
+        System.exit(0);                                 // exit application
+    }
+    
+    /** Changes animation set to appropriate animation based on direction */
     private void animate() {
         if (sprite == null) return;
         if (sprite.hasAnimations() == false) return;
@@ -180,20 +197,26 @@ public class Pacman extends GameCharacter
         }
     }
 
-    /** initiates the timer for when pacman eats a power dot */
-    private void setTimer() {
-        powerTimer = new Timer(0, new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                tick();
-            }
-        });
+    private void setPowerMode(boolean mode) {
+        inPowerMode = mode;
+        for (int i = 0; i < ghosts.size(); i++) {
+            ghosts.get(i).isVulnerable = mode;
+            ghosts.get(i).animate();
+        }
+        if (inPowerMode) powerTimer.start();
+        else             powerTimer.stop();
     }
     
-    /** the timer action */
-    private void tick() {
-        powerTimer.setDelay(Constants.POWER_TIMER_DELAY);
-        
+    
+    /** Initiates the timer for when pacman eats a power dot */
+    private void setTimer() {
+        powerTimer = new Timer(Constants.POWER_TIMER_DELAY, 
+                new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setPowerMode(false);
+            }
+        });
     }
     
     /**

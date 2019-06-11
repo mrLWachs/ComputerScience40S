@@ -5,12 +5,9 @@ package game;
 /** required imports */
 import collections.LinkedList;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import game.tools.Animation;
 import game.tools.Directions;
-import game.tools.FileHandler;
 import game.tools.GameCharacter;
-import game.tools.MediaPlayer;
 
 
 /**
@@ -24,44 +21,39 @@ public class Ghost extends GameCharacter
 
     private LinkedList<Wall>   walls;
     private LinkedList<Portal> portals;
-    private Pacman             pacman;
-    private MediaPlayer        player;    
-    private FileHandler        file;
     private LinkedList<Ghost>  ghosts;
     
-    private final int ANIMATE_RIGHT = 0;
-    private final int ANIMATE_DOWN  = 1;
-    private final int ANIMATE_LEFT  = 2;
-    private final int ANIMATE_UP    = 3;
+    public boolean isVulnerable;
     
+    private final int ANIMATE_RIGHT        = 0;
+    private final int ANIMATE_DOWN         = 1;
+    private final int ANIMATE_LEFT         = 2;
+    private final int ANIMATE_UP           = 3;  
+    private final int ANIMATE_DANGER_RIGHT = 4;
+    private final int ANIMATE_DANGER_DOWN  = 5;
+    private final int ANIMATE_DANGER_LEFT  = 6;
+    private final int ANIMATE_DANGER_UP    = 7;            
+    private final int RIGHT_PORTAL         = 0;
+    private final int LEFT_PORTAL          = 1;
     
     
     /**
      * Constructor for the class, sets class property data
      * 
      * @param ghostLabel the label associated with the image for the character
-     * @param pacman the pacman object
      * @param walls the list of wall objects
      * @param portals the list of portal objects
-     * @param player the media player object
-     * @param file the file handler object
      * @param settings the list of setting values for the images 
      */
     public Ghost(
             JLabel ghostLabel, 
-            Pacman pacman, 
             LinkedList<Wall> walls,
             LinkedList<Portal> portals,
-            MediaPlayer player,
-            FileHandler file,
             LinkedList<String> settings) {
         super(ghostLabel, Constants.GHOST_MOVE_AMOUNT, Directions.STOP, 
                 Constants.GHOST_TIMER_DELAY, Directions.FOUR_DIRECTIONS);
         this.walls   = walls;               // associate parameters with objects
-        this.pacman  = pacman;
         this.portals = portals;
-        this.player  = player;        
-        this.file    = file; 
         setAnimations(ghostLabel,settings); // build all animations
         mover.randomDirection();            // start in a random direction
         spawn();                            // spawn this ghost
@@ -79,12 +71,12 @@ public class Ghost extends GameCharacter
                 i = walls.size();                   // exit loop early 
             }
         }
-        if (detector.isOverLapping(portals.get(0))) {   // hit portal
-            reactor.stickToRight(portals.get(1));       // teleport
+        if (detector.isOverLapping(portals.get(RIGHT_PORTAL))) {  // hit portal
+            reactor.stickToRight(portals.get(LEFT_PORTAL));       // teleport
         }
-        if (detector.isOverLapping(portals.get(1))) {   // hit portal
-            reactor.stickToLeft(portals.get(0));        // teleport
-        }
+        if (detector.isOverLapping(portals.get(LEFT_PORTAL))) {   // hit portal
+            reactor.stickToLeft(portals.get(RIGHT_PORTAL));       // teleport
+        }  
         if (ghosts != null) {                           // ghosts exist
             for (int i = 0; i < ghosts.size(); i++) {   // traverse ghosts
                 if (!this.equals(ghosts.get(i))) {      // hit a ghost (not me)
@@ -94,8 +86,7 @@ public class Ghost extends GameCharacter
                     }
                 }
             }
-        }
-        if (detector.isOverLapping(pacman)) loseGame();     // hit pacman  
+        } 
         redraw();                                           // redraw ghost
     }
     
@@ -109,41 +100,45 @@ public class Ghost extends GameCharacter
         this.ghosts = ghosts;
     }
     
-    /** Pacman has lost the game (captured by a ghost) */
-    private void loseGame() {
-        pacman.mover.stop();                            // stop pacman
-        pacman.sprite.animate(pacman.ANIMATE_DEATH);    // new pacman animation
-        for (int i = 0; i < ghosts.size(); i++) {       // traverse ghosts
-            ghosts.get(i).mover.stop();                 // stop all ghosts
-        }
-        player.playWAV(Constants.GAME_OVER_LOSE_SOUND); // play sound
-        String name = JOptionPane.showInputDialog("Enter name"); // get name
-        LinkedList<String> data = new LinkedList<>();   // create list
-        data.add(name);                                 // add values to list
-        data.add("" + pacman.points);
-        file.write(data);                               // save array to file
-        System.exit(0);                                 // exit application
-    }
-
     /** changes the animation set to the appropriate animation based on direction */
-    private void animate() {
+    public void animate() {
         if (sprite == null) return;
         if (sprite.hasAnimations() == false) return;
-        if (coordinates.direction == Directions.RIGHT)  {
-            if (sprite.isRunning(ANIMATE_RIGHT) == false) 
-                sprite.animate(ANIMATE_RIGHT);
+        if (isVulnerable) {
+            if (coordinates.direction == Directions.RIGHT)  {
+                if (sprite.isRunning(ANIMATE_RIGHT) == false) 
+                    sprite.animate(ANIMATE_DANGER_RIGHT);
+            }
+            else if (coordinates.direction == Directions.DOWN)    {
+                if (sprite.isRunning(ANIMATE_DOWN) == false) 
+                    sprite.animate(ANIMATE_DANGER_DOWN);
+            }
+            else if (coordinates.direction == Directions.LEFT)    {
+                if (sprite.isRunning(ANIMATE_LEFT) == false) 
+                    sprite.animate(ANIMATE_DANGER_LEFT);
+            }
+            else if (coordinates.direction == Directions.UP)    {
+                if (sprite.isRunning(ANIMATE_UP) == false) 
+                    sprite.animate(ANIMATE_DANGER_UP);
+            }
         }
-        else if (coordinates.direction == Directions.DOWN)    {
-            if (sprite.isRunning(ANIMATE_DOWN) == false) 
-                sprite.animate(ANIMATE_DOWN);
-        }
-        else if (coordinates.direction == Directions.LEFT)    {
-            if (sprite.isRunning(ANIMATE_LEFT) == false) 
-                sprite.animate(ANIMATE_LEFT);
-        }
-        else if (coordinates.direction == Directions.UP)    {
-            if (sprite.isRunning(ANIMATE_UP) == false) 
-                sprite.animate(ANIMATE_UP);
+        else {
+            if (coordinates.direction == Directions.RIGHT)  {
+                if (sprite.isRunning(ANIMATE_RIGHT) == false) 
+                    sprite.animate(ANIMATE_RIGHT);
+            }
+            else if (coordinates.direction == Directions.DOWN)    {
+                if (sprite.isRunning(ANIMATE_DOWN) == false) 
+                    sprite.animate(ANIMATE_DOWN);
+            }
+            else if (coordinates.direction == Directions.LEFT)    {
+                if (sprite.isRunning(ANIMATE_LEFT) == false) 
+                    sprite.animate(ANIMATE_LEFT);
+            }
+            else if (coordinates.direction == Directions.UP)    {
+                if (sprite.isRunning(ANIMATE_UP) == false) 
+                    sprite.animate(ANIMATE_UP);
+            }
         }
     }
 
@@ -207,5 +202,5 @@ public class Ghost extends GameCharacter
         ghostAnimations.add(ghostDeadUp);
         sprite.setAnimations(ghostAnimations);             
     }
-    
+
 }

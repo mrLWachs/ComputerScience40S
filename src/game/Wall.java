@@ -3,7 +3,6 @@
 package game;
 
 /** required imports */
-import java.awt.Color;
 import javax.swing.JLabel;
 import game.tools.GameObject;
 
@@ -24,7 +23,6 @@ public class Wall extends GameObject
      */
     public Wall(JLabel label) {
         super(label);
-//        sprite.setColor(Color.blue);
         sprite.setClear();
     }
 

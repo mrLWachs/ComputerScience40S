@@ -41,7 +41,6 @@ public class GameImage
      */
     public GameImage(JLabel label) {
         setLabel(label);
-//        this(label, "", Color.white);               // set debug mode
     }
     
     /**
