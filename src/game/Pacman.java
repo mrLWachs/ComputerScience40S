@@ -143,6 +143,27 @@ public class Pacman extends GameCharacter
         redraw();                                       // re draw
     }
 
+    private void setPowerMode(boolean mode) {
+        inPowerMode = mode;
+        for (int i = 0; i < ghosts.size(); i++) {
+            ghosts.get(i).isVulnerable = mode;
+            ghosts.get(i).animate();
+        }
+        if (inPowerMode) powerTimer.start();
+        else             powerTimer.stop();
+    }
+    
+    /** Initiates the timer for when pacman eats a power dot */
+    private void setTimer() {
+        powerTimer = new Timer(Constants.POWER_TIMER_DELAY, 
+                new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                setPowerMode(false);
+            }
+        });
+    }
+    
     /** Pacman has won the game (eaten all the dots) */
     private void winGame() {
         for (int i = 0; i < ghosts.size(); i++) {   // traverse ghosts
@@ -197,28 +218,6 @@ public class Pacman extends GameCharacter
         }
     }
 
-    private void setPowerMode(boolean mode) {
-        inPowerMode = mode;
-        for (int i = 0; i < ghosts.size(); i++) {
-            ghosts.get(i).isVulnerable = mode;
-            ghosts.get(i).animate();
-        }
-        if (inPowerMode) powerTimer.start();
-        else             powerTimer.stop();
-    }
-    
-    
-    /** Initiates the timer for when pacman eats a power dot */
-    private void setTimer() {
-        powerTimer = new Timer(Constants.POWER_TIMER_DELAY, 
-                new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setPowerMode(false);
-            }
-        });
-    }
-    
     /**
      * Set up all the animations for this character
      * 
