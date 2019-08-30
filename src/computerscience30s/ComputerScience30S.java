@@ -26,7 +26,7 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {   
-        
+              
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
         ///////////////////////////////////////////////////////////////////////
@@ -418,23 +418,7 @@ public class ComputerScience30S
         for (int i = 100; i >= 0; i-=10) {
             System.out.println("i = " + i);
         }
-                
-        ///////////////////////////////////////////////////////////////////////
-        // EXAMPLE ASSIGNMENT:
-        ///////////////////////////////////////////////////////////////////////
-        
-        // welcoming the user to this program
-        JOptionPane.showMessageDialog(null, "Welcome to dog age convertor");
-        // ask the user for there human age
-        String userInput = JOptionPane.showInputDialog("Enter human age");
-        int humanAge = Integer.parseInt(userInput);
-        // take that number multiply it by 7
-        int dogAge = humanAge * 7;
-        // show the user there dog age
-        JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
-        // say good-bye
-        JOptionPane.showMessageDialog(null, "Good-bye!");
-                
+               
         // TIP: Alt + Shift + F will CLEAN your code for you
         
         // NetBeans Templates: go to Tools -> Templates, scroll down 
@@ -450,6 +434,36 @@ public class ComputerScience30S
         //    public class ${name} 
         //    { .... etc .....        
              
+       ///////////////////////////////////////////////////////////////////////
+       // EXAMPLE ASSIGNMENT:
+       ///////////////////////////////////////////////////////////////////////
+
+       /*
+        * DogAgeCalculator.java - The “Dog Gone Fun” Pet shop requires a fun computer 
+        * interface for their customers to use when picking out a dog. To give the 
+        * customers some perspective, you are hired to design the front end for an 
+        * application which will give the customer a little indication of what their 
+        * age would be in dog years. Design your application with a input box in 
+        * which the user can enter a age (their human age) then by clicking a 
+        * button their age in dog years is displayed. You should use a variable that 
+        * stores their human age, and a second variable that holds their dog age 
+        * (after the formula Dog Age = Human Age * 7 is applied), and then this 
+        * variable value is displayed.
+       */ 
+
+        // welcoming the user to this program
+        JOptionPane.showMessageDialog(null, "Welcome to dog age convertor");
+        // ask the user for there human age
+        String humanInput = JOptionPane.showInputDialog("Enter human age");
+        // convert the string into an integer
+        int humanAge = Integer.parseInt(humanInput);
+        // take that number multiply it by 7
+        int dogAge = humanAge * 7;
+        // show the user there dog age
+        JOptionPane.showMessageDialog(null, "Your dog age is " + dogAge);
+        // say good-bye
+        JOptionPane.showMessageDialog(null, "Good-bye!");
+        // terminate the program
         System.exit(0);
         
     }
