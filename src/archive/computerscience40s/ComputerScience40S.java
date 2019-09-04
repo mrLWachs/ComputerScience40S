@@ -1,7 +1,8 @@
 /** required package class namespace */
-package computerscience40s;
+package archive.computerscience40s;
 
 /** required imports */
+import computerscience40s.*;
 import archive.testing.Tester;
 
 
