@@ -3,7 +3,11 @@
 package testing;
 
 /** required imports */
+import testing.advancedclasses.Hogwarts;
+import testing.advancedclasses.Hufflepuff;
+import testing.advancedclasses.Magic;
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Slytherin;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 
@@ -86,6 +90,17 @@ public class AdvancedClassesTest
         Person.endOfTheWorld();                         // or call from the
         Student.endOfTheWorld();                        // class reference
         Teacher.endOfTheWorld();                        // for static methods
+        
+        // testing complicated class driven class structure with static
+        // methods and static properties
+        Hufflepuff luna     = new Hufflepuff();         // instances created
+        Slytherin  draco    = new Slytherin();        
+        Hogwarts   hogwarts = new Hogwarts();
+        hogwarts.enterStation9ThreeQuarters(luna);      // methods called
+        hogwarts.enterStation9ThreeQuarters(draco);
+        
+        System.out.println("total magic = " + Magic.count); // static property
+        hogwarts.triWizardTournament();                 // call static method
         
         System.out.println("\nCompleted advanced classes test!\n");
     }
