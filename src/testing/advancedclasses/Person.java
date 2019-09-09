@@ -122,6 +122,19 @@ public class Person
         System.out.println("Boom!!!");
     }
     
+    /**
+     * Eats the passed food by outputting to the screen
+     * 
+     * @param food the abstract food object to eat
+     */
+    public void eat(Food food) {
+        if (food.shouldCook()) {
+            food.eat();
+        }
+        else {
+            food.rot();
+        }
+    }
     
     /**
      * NetBeans Tip: We once again went into Tools -> Templates and opened the

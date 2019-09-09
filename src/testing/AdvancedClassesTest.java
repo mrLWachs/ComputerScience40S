@@ -3,12 +3,15 @@
 package testing;
 
 /** required imports */
+import testing.advancedclasses.Banana;
+import testing.advancedclasses.Chicken;
 import testing.advancedclasses.Hogwarts;
 import testing.advancedclasses.Hufflepuff;
 import testing.advancedclasses.Magic;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Slytherin;
 import testing.advancedclasses.Student;
+import testing.advancedclasses.Sushi;
 import testing.advancedclasses.Teacher;
 
  
@@ -102,6 +105,14 @@ public class AdvancedClassesTest
         System.out.println("total magic = " + Magic.count); // static property
         hogwarts.triWizardTournament();                 // call static method
         
+        // testing abstract classes and abstract methods
+        Banana  banana  = new Banana();                 // create children
+        Chicken chicken = new Chicken();                // of the food abstract
+        Sushi   sushi   = new Sushi();                  // class        
+        draco.eat(banana);                              // use polymorphic
+        draco.eat(chicken);                             // method on food
+        draco.eat(sushi);                               // parameter
+        
         System.out.println("\nCompleted advanced classes test!\n");
     }
     
@@ -122,4 +133,5 @@ public class AdvancedClassesTest
         else                                System.out.print(" is a ?");
         System.out.println("\n");        
     }
+
 }
