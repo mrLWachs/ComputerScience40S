@@ -93,8 +93,8 @@ public class AdvancedClassesTest
         
         // testing complicated class driven class structure with static
         // methods and static properties
-        Hufflepuff luna     = new Hufflepuff();         // instances created
-        Slytherin  draco    = new Slytherin();        
+        Hufflepuff luna     = new Hufflepuff("Luna Lovegood",false); 
+        Slytherin  draco    = new Slytherin("Draco Malfoy",true);        
         Hogwarts   hogwarts = new Hogwarts();
         hogwarts.enterStation9ThreeQuarters(luna);      // methods called
         hogwarts.enterStation9ThreeQuarters(draco);

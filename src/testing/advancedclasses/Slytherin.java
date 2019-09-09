@@ -13,10 +13,13 @@ public class Slytherin extends Wizard
 {
 
     /**
-     * Default constructor for the class, sets class properties
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name of this Wizard High School student
+     * @param isMale the gender of this Wizard High School student
      */
-    public Slytherin() {
-        super();
+    public Slytherin(String name, boolean isMale) {
+        super(name, isMale);
     }
 
     /**

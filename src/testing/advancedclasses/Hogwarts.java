@@ -41,6 +41,7 @@ public class Hogwarts
         // for (int i = 0; i < wizards.length; i++ ) 
             // wizards[i] = .....
             if (wizard != null) {
+                System.out.println(wizard.toString());
                 wizard.castSpell();
             }
         }

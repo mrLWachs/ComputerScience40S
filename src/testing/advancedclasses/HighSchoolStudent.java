@@ -3,30 +3,27 @@
 package testing.advancedclasses;
 
 /**
- * Wizard.java - represents the fictional character of a wizard
+ * HighSchoolStudent.java - represents a high school student
  *
  * @author Mr. Wachs 
- * @since 22-Mar-2019 
+ * @since 16-Apr-2019 
  */
-public class Wizard extends HighSchoolStudent
+public abstract class HighSchoolStudent extends Student
 {
-
-    // the "has a" relationship (composition) here between the classes
-    protected static Magic magic;
     
-    protected String mortalEnemy;
-
     /**
      * Constructor for the class, sets class properties
      * 
-     * @param name the name of this Wizard High School student
-     * @param isMale the gender of this Wizard High School student
+     * @param name the name of this High School student
+     * @param age the age of this High School student
+     * @param isMale the gender of this High School student
+     * @param studentNumber the student number of this High School student
      */
-    public Wizard(String name, boolean isMale) {
-        super(name,16,isMale,666);
-        magic = new Magic();
+    public HighSchoolStudent(String name, int age, boolean isMale,
+                   int studentNumber) {
+        super(name, age, isMale, studentNumber);
     }
-    
+
     /**
      * String representation of this object
      *
@@ -34,7 +31,7 @@ public class Wizard extends HighSchoolStudent
      */
     @Override
     public String toString() {
-        return "Wizard " + super.toString();
+        return "High School " + super.toString();
     }
         
     /**
@@ -54,15 +51,8 @@ public class Wizard extends HighSchoolStudent
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Wizard clone() {
+    public HighSchoolStudent clone() {
         return this;
-    }
-    
-    /**
-     * Casts a spell (a static method)
-     */
-    public static void castSpell() {
-        System.out.println(magic.toString());
     }
 
 }
