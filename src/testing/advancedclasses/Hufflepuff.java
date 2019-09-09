@@ -53,4 +53,43 @@ public class Hufflepuff extends Wizard
         return this;
     }
 
+    /**
+     * What color this wizard's tie is
+     */
+    @Override
+    public void wearTie() {
+        System.out.println("Wear Yellow");
+    }
+
+    /**
+     * Did this wizard catch a snitch or not (to end the match)
+     * 
+     * @return they did catch it (true) or not (false)
+     */
+    @Override
+    public boolean catchSnitch() {
+        return true;
+    }
+
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
+    @Override
+    public void setOpponent(String name) {
+        super.mortalEnemy = name;
+    }
+
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
+    @Override
+    public boolean didIWin() {
+        if (catchSnitch()) return true;
+        else return false;
+    }
+
 }

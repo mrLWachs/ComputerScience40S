@@ -7,9 +7,11 @@ import testing.advancedclasses.Banana;
 import testing.advancedclasses.Chicken;
 import testing.advancedclasses.Hogwarts;
 import testing.advancedclasses.Hufflepuff;
+import testing.advancedclasses.Husky;
 import testing.advancedclasses.Magic;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Slytherin;
+import testing.advancedclasses.SoccerPlayer;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Sushi;
 import testing.advancedclasses.Teacher;
@@ -112,6 +114,24 @@ public class AdvancedClassesTest
         draco.eat(banana);                              // use polymorphic
         draco.eat(chicken);                             // method on food
         draco.eat(sushi);                               // parameter
+        
+        // testing interfaces
+        SoccerPlayer ronaldo = new SoccerPlayer("Juventus");   // soccer player        
+        ronaldo.setOpponent("PSG");                     // overloaded methods
+        ronaldo.goal("Juventus");                       // from the various
+        ronaldo.goal("Juventus");                       // interfaces the 
+        ronaldo.goal("PSG");                            // class implements
+        ronaldo.endOfHalf(true);
+        ronaldo.endOfHalf(false);        
+        luna.setOpponent("Griffendore");        
+        if (luna.didIWin()) System.out.println("Won!");
+        else                System.out.println("Lost!");
+        
+        // testing classes with inheritance and multiple implements
+        Husky havoc = new Husky("Havoc Ness", 17, true, 3665);        
+        havoc.setOpponent("John Taylor");
+        havoc.goal("John Taylor");
+        havoc.sign();
         
         System.out.println("\nCompleted advanced classes test!\n");
     }

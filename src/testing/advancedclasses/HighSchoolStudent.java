@@ -8,7 +8,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 16-Apr-2019 
  */
-public abstract class HighSchoolStudent extends Student
+public class HighSchoolStudent extends Student
 {
     
     /**

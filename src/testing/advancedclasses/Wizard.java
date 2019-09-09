@@ -8,7 +8,7 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 22-Mar-2019 
  */
-public class Wizard extends HighSchoolStudent
+public abstract class Wizard extends HighSchoolStudent implements Quidditch
 {
 
     // the "has a" relationship (composition) here between the classes
@@ -64,5 +64,18 @@ public class Wizard extends HighSchoolStudent
     public static void castSpell() {
         System.out.println(magic.toString());
     }
+
+    /**
+     * What color this wizard's tie is
+     */
+    public abstract void wearTie();
+
+    /**
+     * Did this wizard catch a snitch or not (to end the match)
+     * 
+     * @return they did catch it (true) or not (false)
+     */
+    @Override
+    public abstract boolean catchSnitch();
 
 }
