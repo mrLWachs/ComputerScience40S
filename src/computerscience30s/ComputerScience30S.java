@@ -2,6 +2,8 @@
  * automatically, and connects file to the project */
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 /**
  * ComputerScience30S.java - the large in class example we continue to work on
  * in each unit adding example code on the new concepts of each unit along with
@@ -37,6 +39,79 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         System.out.println("Line \n break");
         
         // characters \" and \t and \\ and \n are escape sequences
+        
+        // TIP: if your want intellisense to appear at any time press:
+        // "CTRL" + "SPACE"        
+        // TIP: "null" is a placeholder for code you don't actually want
+        
+        // Create "fancy" ouptut using a dialog
+        JOptionPane.showMessageDialog(null, "Hi");
+        
+        // optional versions of this output dialog:
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain dialog has no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // dialogs for inputs
+        
+        // simple one first
+        JOptionPane.showInputDialog("Enter something");
+        
+        // variations on the input dialog
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain dialog has no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     }
