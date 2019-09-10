@@ -22,17 +22,39 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {
 
-        System.out.print("Hello World");
+        System.out.println("\nJava basics started...\n");
         
-        System.out.println("In the world");
+        // methods (functions, procedures) 
+        // are named like variables, but use 
+        // verb type words starting with 
+        // lowercase then using camel casing
+        // the round braces ( ) indicate a method
         
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+        
+        // A single line comment
+        
+        /*
+            Multiple line comments, covers as many lines as you want
+            starting with "slash star" until it sees the closing "star slash"
+        */
+        
+        // Basic output
+        System.out.print("Hello World");    // comments can also go after code
+        
+        // Words starting with captial letters are powerful, they are a "class"
+        
+        // TIP: type "sout" and press TAB        
+        System.out.println("I'm in the world");
         System.out.println("Good-bye world");
         
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
         ///////////////////////////////////////////////////////////////////////
         
-        // special characters
+        // Output "special" characters
         System.out.println("Quote \" ");
         System.out.println("Make a tab \t appear");
         System.out.println("Slash \\ ");
@@ -111,7 +133,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
                 "Confirm dialog");
         
         
-        
+        // TO BE CONTINUED....
         
         
         
