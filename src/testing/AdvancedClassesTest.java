@@ -4,8 +4,11 @@ package testing;
 
 /** required imports */
 import testing.advancedclasses.Banana;
+import testing.advancedclasses.Box;
 import testing.advancedclasses.Chicken;
+import testing.advancedclasses.Food;
 import testing.advancedclasses.Hogwarts;
+import testing.advancedclasses.House;
 import testing.advancedclasses.Hufflepuff;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Magic;
@@ -133,6 +136,70 @@ public class AdvancedClassesTest
         havoc.goal("John Taylor");
         havoc.sign();
         
+        // creating primative data structures
+        boolean b = true;
+        int     i = 10;
+        double  d = 3.14;
+        char    c = 'W';
+        String  s = "dufflebag";    // Strings not actually a primative
+        
+        // creating class ("wrapper class") objects from the primatives   
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
+        String    string    = new String(s);
+        
+        // calling the generic method on the variety of objects
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        output(string);
+        output(havoc);
+        
+        // using a generic class, when a generic class is instantiated (an 
+        // object of the class is created), then you define what type the 
+        // generic is
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string);
+        Box<Husky>     box6 = new Box<>(havoc);                
+        // peek in the boxes
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();        
+        // open the boxes
+        Boolean   newBool      = box1.open();
+        Integer   newInt       = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Husky     newHusky     = box6.open();
+        // output
+        System.out.println(newBool.toString());
+        System.out.println(newInt.toString());
+        System.out.println(newDouble.toString());
+        System.out.println(newCharacter.toString());
+        System.out.println(newString.toString());
+        System.out.println(newHusky.toString());
+        
+        // create a house object and test it
+        House<Slytherin,Husky> house = new House<>();        
+        house.homeOwner = draco;
+        house.contents  = havoc;        
+        Food[] fridge = {
+            banana,
+            sushi,
+            chicken
+        };        
+        house.party(fridge);
+                
         System.out.println("\nCompleted advanced classes test!\n");
     }
     
@@ -154,4 +221,18 @@ public class AdvancedClassesTest
         System.out.println("\n");        
     }
 
+    /**
+     * Outputs a generic item with information about the data type
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is ";
+        text += item.toString();
+        System.out.println(text);
+    }
+    
 }
