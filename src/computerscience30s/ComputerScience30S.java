@@ -55,20 +55,72 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         System.out.println("\tMake a tab");
         System.out.println("\\Slash");
         System.out.println("New\n\nLine");
+                
+        // TIP: if your want intellisense to appear at any time press:
+        // "CTRL" + "SPACE"        
+        // TIP: "null" is a placeholder for code you don't actually want
+        
+        // Create "fancy" ouptut using a dialog
+        JOptionPane.showMessageDialog(null, "Hi");
+        
+        // Optional versions of output dialogs:
+        
+        JOptionPane.showMessageDialog(null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showMessageDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // dialog for inputs
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // some optional versions of input dialog
+        
+        JOptionPane.showInputDialog(null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showInputDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showInputDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // optional confirm dialog:
+        
+        JOptionPane.showConfirmDialog(null, "Confirm");
+        
+        // more optional examples of confirm dialog
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // TO BE CONTINUED....
         
         
         
