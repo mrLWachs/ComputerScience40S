@@ -104,6 +104,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
                 "Plain Title", 
                 JOptionPane.PLAIN_MESSAGE);
         
+        // more optional examples of confirm dialog
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm dialog");
+        
         
         
         
