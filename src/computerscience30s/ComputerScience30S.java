@@ -2,7 +2,10 @@
  * automatically, and connects file to the project */
 package computerscience30s;
 
+/** required imports for the project - the lines below are added when your
+  * code needs to connect to another library (API) of code */
 import javax.swing.JOptionPane;
+
 
 /**
  * ComputerScience30S.java - the large in class example we continue to work on
@@ -21,7 +24,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
+        
         System.out.println("\nJava basics started...\n");
         
         // methods (functions, procedures) 
@@ -154,5 +157,5 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         
         
     }
-
+    
 }
