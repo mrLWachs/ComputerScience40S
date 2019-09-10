@@ -29,6 +29,59 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         
         System.out.println("Good-bye world");
         
+        // output tips
+        
+        // output special characters
+        
+        System.out.println("Quote \" ");
+        System.out.println("Make a \t\t\t tab");
+        System.out.println("Slash \\ ");
+        System.out.println("Make new \n line");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
