@@ -45,207 +45,81 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         */
         
         // Basic output
-//        System.out.print("Hello World");    // comments can also go after code
-//        
-//        // Words starting with captial letters are powerful, they are a "class"
-//        
-//        // TIP: type "sout" and press TAB        
-//        System.out.println("I'm in the world");
-//        System.out.println("Good-bye world");
-//        
-//        // Output "special" characters
-//        System.out.println("Quote \" " );
-//        System.out.println("\tMake a tab");
-//        System.out.println("\\Slash");
-//        System.out.println("New\n\nLine");
-//                
-//        // TIP: if your want intellisense to appear at any time press:
-//        // "CTRL" + "SPACE"        
-//        // TIP: "null" is a placeholder for code you don't actually want
-//        
-//        // Create "fancy" ouptut using a dialog
-//        JOptionPane.showMessageDialog(null, "Hi");
-//        
-//        // Optional versions of output dialogs:
-//        
-//        JOptionPane.showMessageDialog(null, 
-//                "Information dialog icon is i",
-//                "Information Title",
-//                JOptionPane.INFORMATION_MESSAGE);
-//        
-//        JOptionPane.showMessageDialog(null, 
-//                "Question dialog icon is ?",
-//                "Question Title",
-//                JOptionPane.QUESTION_MESSAGE);
-//                
-//        JOptionPane.showMessageDialog(null, 
-//                "Warning dialog icon is !",
-//                "Warning Title",
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showMessageDialog(null, 
-//                "Plain dialog has no icon",
-//                "Plain Title",
-//                JOptionPane.PLAIN_MESSAGE);
-//        
-//        // dialog for inputs
-//        
-//        JOptionPane.showInputDialog("Enter something");
-//        
-//        // some optional versions of input dialog
-//        
-//        JOptionPane.showInputDialog(null, 
-//                "Information dialog icon is i",
-//                "Information Title",
-//                JOptionPane.INFORMATION_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(null, 
-//                "Question dialog icon is ?",
-//                "Question Title",
-//                JOptionPane.QUESTION_MESSAGE);
-//                
-//        JOptionPane.showInputDialog(null, 
-//                "Warning dialog icon is !",
-//                "Warning Title",
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(null, 
-//                "Plain dialog has no icon",
-//                "Plain Title",
-//                JOptionPane.PLAIN_MESSAGE);
-//        
-//        // optional confirm dialog:
-//        
-//        JOptionPane.showConfirmDialog(null, "Confirm");
-//        
-        // more optional examples of confirm dialog
+        System.out.print("Hello World");    // comments can also go after code
         
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Option 1",
-//                "Information",
-//                JOptionPane.DEFAULT_OPTION,
-//                JOptionPane.INFORMATION_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Option 2",
-//                "Question",
-//                JOptionPane.YES_NO_OPTION,
-//                JOptionPane.QUESTION_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Option 3",
-//                "Warning",
-//                JOptionPane.OK_CANCEL_OPTION,
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null, 
-//                "Confirm Option 4",
-//                "Plain",
-//                JOptionPane.YES_NO_CANCEL_OPTION,
-//                JOptionPane.PLAIN_MESSAGE);
+        // Words starting with captial letters are powerful, they are a "class"
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+        // TIP: type "sout" and press TAB        
+        System.out.println("I'm in the world");
+        System.out.println("Good-bye world");
         
-        // simple variables
-        
-        boolean a = true;
-        
-        // type name = value ; 
-        
-        // boolean in java, uses the whole word "boolean" not "bool" 
-        // like in c#
-        
-        int    b = 0;
-        double c = 0.0;
-        
-        // variables can change (vary)
-        
-        a = false;
-        b = 1;
-        c = 1.2;
-        
-        // variables always go on the LHS (left hand side)
-        // and the value going into it always goes on the
-        // RHS (right hand side)
-        
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        
-        // TIP: on the lower toolbar at the end, are 2 buttons to comment an 
-        // uncomment code you have selected
+        // Output "special" characters
+        System.out.println("Quote \" " );
+        System.out.println("\tMake a tab");
+        System.out.println("\\Slash");
+        System.out.println("New\n\nLine");
                 
-        char d = '$';
-        System.out.println("d = " + d);
+        // TIP: if your want intellisense to appear at any time press:
+        // "CTRL" + "SPACE"        
+        // TIP: "null" is a placeholder for code you don't actually want
         
-        // characters, are considered numbers
-        // by the computer
+        // Create "fancy" ouptut using a dialog
+        JOptionPane.showMessageDialog(null, "Hi");
         
-        // more complex data type
-        String e = "cat";
-        System.out.println("e = " + e);
+        // Optional versions of output dialogs:
         
-        // in java, words that start with a capital letter, are
-        // more "powerful" which means they have built-in actions
-        // (they are a class)
+        JOptionPane.showMessageDialog(null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
         
-        // manipulate (change) our variables
+        JOptionPane.showMessageDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showMessageDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
         
-        int x = 10;
-        System.out.println("x = " + x); // 10
-        x = 20;
-        System.out.println("x = " + x); // 20
-        int y = x + 10;
-        System.out.println("y = " + y); // 30
-        // optional shorthand...
-        y++;    // means y = y + 1
-        System.out.println("y = " + y); // 31
-        y--;    // mean y = y - 1
-        System.out.println("y = " + y); // 30
-        // even more optional..
-        y += 10;    // means y = y + 10
-        System.out.println("y = " + y); // 40
+        JOptionPane.showMessageDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
         
-        y -= 20;    // same as y = y - 20 = 20
-        y *= 2;     // same as y = y * 2  = 40
-        y /= 10;    // same as y = y / 10 = 4
+        // dialog for inputs
         
-        System.out.println("y = " + y); // 4
+        JOptionPane.showInputDialog("Enter something");
         
-        // modulus (mod) division that gives
-        // you the remainder, use %
+        // some optional versions of input dialog
         
-        x     = 28;
-        y     = x / 5;
-        int z = x % 5;
+        JOptionPane.showInputDialog(null, 
+                "Information dialog icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE);
         
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
+        JOptionPane.showInputDialog(null, 
+                "Question dialog icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE);
+                
+        JOptionPane.showInputDialog(null, 
+                "Warning dialog icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE);
         
-        // constants are variables that don't change
-        // constants are written ALL CAPITALS
-        // with a _ underscore between words
-        // in java, use the word "final" instead
-        // of the word "const" in c#
+        JOptionPane.showInputDialog(null, 
+                "Plain dialog has no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE);
         
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'Y';
-        final boolean FOUND        = false;
-        final String  TEACHER_NAME = "Wachs";
+        // optional confirm dialog:
         
-        System.out.println(PI + " and " +
-                           PROBLEMS + " and " +
-                           YES + " and " +
-                           FOUND + " and " +
-                           TEACHER_NAME);
+        JOptionPane.showConfirmDialog(null, "Confirm");
+        
+        
+        // TO BE CONTINUED...
         
         
         
