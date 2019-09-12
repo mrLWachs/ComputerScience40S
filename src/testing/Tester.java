@@ -19,6 +19,7 @@ public class Tester
         System.out.println("\nComputer Science 40S Testing begins...\n");     
         new RecursionTest(); 
         new AdvancedClassesTest();
+        new CollectionsTest();
         System.out.println("\nComputer Science 40S Testing complete!\n");
     }
     
