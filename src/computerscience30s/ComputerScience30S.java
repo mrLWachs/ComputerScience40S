@@ -148,95 +148,164 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
 //                "Plain",
 //                JOptionPane.YES_NO_CANCEL_OPTION,
 //                JOptionPane.PLAIN_MESSAGE);
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // simple variables
+//        
+//        boolean a = true;
+//        // type name = value
+//        // when you "create" declare a variable
+//        
+//        int    b = 0;
+//        double c = 0.0;
+//        
+//        // variables can change (vary)
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // variable always goes on the LHS (left hand side) and the value 
+//        // going in it goes on the RHS (right hand side)
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        // TIP: on the lower toolbar at the end, are 2 buttons to comment an 
+//        // uncomment code you have selected
+//        
+//        char d = '*';
+//        System.out.println("d = " + d);
+//        
+//        // more "complex" data type
+//        String e = "cats";
+//        System.out.println("e = " + e);
+//        
+//        // in java words that start with a capital letter, are more "powerful" 
+//        // which means they have built-in actions (they are a class)
+//        
+//        // manipulate, change the variables
+//        
+//        int x = 10;
+//        System.out.println("x = " + x); // 10
+//        x = 20;
+//        System.out.println("x = " + x); // 20
+//        int y = x + 10;
+//        System.out.println("y = " + y); // 30
+//        // optional shorthand...
+//        y++;
+//        // means the same as y = y + 1
+//        y--;        // means y = y - 1
+//        // even more optional....
+//        y += 10;    // same as y = y + 10
+//        System.out.println("y = " + y); // 40
+//        
+//        y -= 20;    // same as y = y - 20
+//        y *= 2;     // same as y = y * 2
+//        y /= 10;    // same as y = y / 10
+//        
+//        System.out.println("y = " + y); // 4
+//        
+//        // modulus (mod) gives you the remainder of a division, uses %
+//        
+//        x     = 28;
+//        y     = x / 5;
+//        int z = x % 5;
+//        
+//        System.out.println("x = " + x); 
+//        System.out.println("y = " + y); 
+//        System.out.println("z = " + z); 
+//        
+//        // constants are variables that don't change
+//        // constants are written in ALL CAPITAL LETTERS
+//        // and use underscore _ to seperate words
+//        
+//        final double  PI           = 3.14159265;
+//        final int     PROBLEMS     = 99;
+//        final char    YES          = 'y';
+//        final boolean FOUND        = true;
+//        final String  TEACHER_NAME = "Wachs";
+//        
+//        System.out.println(PI + " and " +
+//                           PROBLEMS + " and " +
+//                           YES + " and " +
+//                           FOUND + " and " +
+//                           TEACHER_NAME);
+//        
+//        // converting between data types...
+//        
+//        int    f = 15;
+//        double g = f;
+//        
+//        System.out.println("f = " + f);
+//        System.out.println("g = " + g);
+//        
+//        int h = (int) g;
+//        // "casting" converts
+//        // by ignoring the decimal portion
+//        
+//        System.out.println("h = " + h);
+//        
+//        double k = 2.9999999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // casting can happen both ways
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l);
+//        System.out.println("m = " + m);
+//        
+//        // casting can also work with char
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        
+//        System.out.println("n = " + n);
+//        System.out.println("o = " + o);
+//        
+//        o = 42;
+//        n = (char)o;
+//        
+//        System.out.println("o = " + o);
+//        System.out.println("n = " + n);
+//        
+//        // use input dialog with variables
+//        
+//        String p = JOptionPane.showInputDialog("string");
+//        JOptionPane.showMessageDialog(null, p);
+//        
+//        // like Convert.toInt32()... in C#
+//        // uses something called "parsing"
+//        // which means "reading"
+//        
+//        String q = JOptionPane.showInputDialog("int");
+//        int r = Integer.parseInt(q);
+//        JOptionPane.showMessageDialog(null, r);
+//        
+//        // do this with doubles        
+//        String s = JOptionPane.showInputDialog("double");
+//        double t = Double.parseDouble(s);
+//        JOptionPane.showMessageDialog(null, t);
+//        
+//        // dialogs with char
+//        String u = JOptionPane.showInputDialog("char");
+//        char v = u.charAt(0);
+//        JOptionPane.showMessageDialog(null, v);
+//        // numbering usually starts at 0
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+        // built-in actions (functions, methods) for
+        // strings
         
-        // simple variables
+        String word = "quizzaciously";
+        int count = word.length();
+        System.out.println(word +  " length is " + count);
         
-        boolean a = true;
-        // type name = value
-        // when you "create" declare a variable
-        
-        int    b = 0;
-        double c = 0.0;
-        
-        // variables can change (vary)
-        a = false;
-        b = 1;
-        c = 1.2;
-        
-        // variable always goes on the LHS (left hand side) and the value 
-        // going in it goes on the RHS (right hand side)
-        
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        
-        // TIP: on the lower toolbar at the end, are 2 buttons to comment an 
-        // uncomment code you have selected
-        
-        char d = '*';
-        System.out.println("d = " + d);
-        
-        // more "complex" data type
-        String e = "cats";
-        System.out.println("e = " + e);
-        
-        // in java words that start with a capital letter, are more "powerful" 
-        // which means they have built-in actions (they are a class)
-        
-        // manipulate, change the variables
-        
-        int x = 10;
-        System.out.println("x = " + x); // 10
-        x = 20;
-        System.out.println("x = " + x); // 20
-        int y = x + 10;
-        System.out.println("y = " + y); // 30
-        // optional shorthand...
-        y++;
-        // means the same as y = y + 1
-        y--;        // means y = y - 1
-        // even more optional....
-        y += 10;    // same as y = y + 10
-        System.out.println("y = " + y); // 40
-        
-        y -= 20;    // same as y = y - 20
-        y *= 2;     // same as y = y * 2
-        y /= 10;    // same as y = y / 10
-        
-        System.out.println("y = " + y); // 4
-        
-        // modulus (mod) gives you the remainder of a division, uses %
-        
-        x     = 28;
-        y     = x / 5;
-        int z = x % 5;
-        
-        System.out.println("x = " + x); 
-        System.out.println("y = " + y); 
-        System.out.println("z = " + z); 
-        
-        // constants are variables that never change
-        // constants are written in ALL CAPS
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'y';
-        final boolean FOUND        = true;
-        final String  TEACHER_NAME = "Wachs";
-        
-        System.out.println(
-                PI + " and " + 
-                PROBLEMS + " and " + 
-                YES + " and " + 
-                FOUND + " and " + 
-                TEACHER_NAME);
-        
-        
-        
-        
+        char letter = word.charAt(count - 1);
+        System.out.println("letter = " + letter);
         
         
         
