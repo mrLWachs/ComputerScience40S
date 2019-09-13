@@ -297,15 +297,119 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
 //        JOptionPane.showMessageDialog(null, v);
 //        // numbering usually starts at 0
 //        
-        // built-in actions (functions, methods) for
-        // strings
+//        // built-in actions (functions, methods) for
+//        // strings
+//        
+//        String word = "quizzaciously";
+//        int count = word.length();
+//        System.out.println(word +  " length is " + count);
+//        // numbering starts at 0
+//        char letter = word.charAt(0);
+//        System.out.println("Letter 0 = " + letter);  
+//        // one more, many more to explore
+//        word = word.toUpperCase();
+//        System.out.println("word is " + word);
+//        
+//        // built-in math functions (methods)
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.abs(-1);
+//        double answer3 = Math.cos(0.5);
+//        double answer4 = Math.log(0.5);
+//        double answer5 = Math.pow(5,3);
+//        double answer6 = Math.sqrt(9);
+//        
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
+//        
+//        // math "library" does random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        System.out.println("seed = " + seed);
+//        // formula for generating randoms
+//        // in a range between a high and low number
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        int value = (int)number;
+//        System.out.println("value = " + value);
+                
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
-        String word = "quizzaciously";
-        int count = word.length();
-        System.out.println(word +  " length is " + count);
+        // simple if, use it when something is true,
+        // checks for 1 thing
         
-
+        int value1 = 10, value2 = 10;
         
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
+                
+        // if with else, for both true and false,
+        // checks 2 things
+        
+        double value3 = 1.45, value4 = 1.5;
+        if (value3 < value4) {
+            System.out.println("less than");
+        }
+        else {
+            System.out.println("greater than");
+        }
+        
+        // use chars and some shorthand, not usually
+        // recommended (except in certain situations)
+        // used when the code between { } (block)
+        // is only 1 line of code, you don't need
+        // the { }
+        
+        char value5 = 'A', value6 = 'a';
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
+        
+        // use "else if" for multiple case of more
+        // than 2 things (same as the "switch" 
+        // statement - which I do not use!)
+        
+        // use strings (more complicated)
+        // with string NEVER use ==
+        // instead use .equals()...
+        
+        String word1 = "edgy";
+        String word2 = "edGy";
+        
+        if (word1.equals(word2)) {
+            System.out.println("w1==w2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("w1 kind of == w2");
+        }
+        else {
+            System.out.println("w1!=w2");
+        }
+        
+        // combine logic using:
+        // "and" "or" "not"
+        //  &&    ||    !
+        
+        int age = 17;
+        double iq = 1.0;
+        
+        if (age >= 21 && iq > 1.0) {
+            System.out.println("get in");
+        }
+        else if (age >= 18 || iq > 1.0) {
+            System.out.println("keep trying");
+        }
+        else {
+            System.out.println("get out");
+        }
         
         
     }
