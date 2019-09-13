@@ -306,11 +306,38 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         
         char letter = word.charAt(count - 1);
         System.out.println("letter = " + letter);
+        // one more, many more to explore...
+        word = word.toUpperCase();
+        System.out.println(word);
         
+        // built-in math functions (methods)
         
+        double answer1 = Math.PI;
+        double answer2 = Math.abs(-1);
+        double answer3 = Math.cos(0.5);
+        double answer4 = Math.log(0.5);
+        double answer5 = Math.pow(5, 3);
+        double answer6 = Math.sqrt(9);
         
+        System.out.println("Answer 1 = " + answer1);
+        System.out.println("Answer 2 = " + answer2);
+        System.out.println("Answer 3 = " + answer3);
+        System.out.println("Answer 4 = " + answer4);
+        System.out.println("Answer 5 = " + answer5);
+        System.out.println("Answer 6 = " + answer6);
         
+        // math "library" (collection of code)
+        // does random numbers, like...
+        // Random random = new Random();
         
+        double seed = Math.random();
+        System.out.println("seed = " + seed);
+        // use a formula to place randoms in a range
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;        
+        double number = (HIGH - LOW + 1) * seed + LOW;        
+        int value = (int)number;
+        System.out.println("value = " + value);
         
         
         
