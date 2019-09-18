@@ -2,7 +2,6 @@
 /** required package class namespace */
 package computerscience40s;
 
-/** required imports */
 import testing.Tester;
 
 
@@ -24,8 +23,10 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("\nComputer Science 40S starting...\n");       
-        new Tester();
+        System.out.println("\nComputer Science 40S starting...\n"); 
+        
+        Tester tester = new Tester();
+        
         System.out.println("\nComputer Science 40S complete!\n");
     }
     
