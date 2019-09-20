@@ -16,8 +16,10 @@ public class Tester
      * Default constructor for the class, sets class properties
      */
     public Tester() {
-        System.out.println("\nTesting begins...\n");        
-        RecursionTest recursionTest = new RecursionTest();        
+        System.out.println("\nTesting begins...\n");   
+        
+        RecursionTest recursionTest = new RecursionTest(); 
+        
         System.out.println("\nTesting complete!\n");
     }
 
