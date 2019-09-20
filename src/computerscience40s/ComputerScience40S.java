@@ -26,7 +26,7 @@ public class ComputerScience40S
         System.out.println("\nComputer Science 40S starting...\n"); 
         
         Tester tester = new Tester();
-        
+                
         System.out.println("\nComputer Science 40S complete!\n");
     }
     

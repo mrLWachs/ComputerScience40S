@@ -1,29 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /** required package class namespace */
 package testing;
 
  
 /**
- * Tester.java - description
+ * Tester.java - tests the concepts learned in all the units.
  *
  * @author Mr. Wachs
- * @since Sep. 18, 2019, 10:39:43 a.m.
+ * @since Sep. 18, 2019, 11:33:54 a.m.
  */
 public class Tester 
 {
-
+    
+    /**
+     * Default constructor for the class, sets class properties
+     */
     public Tester() {
-        System.out.println("\nTesting Begins...\n");
-        
-        RecursionTest recursionTest = new RecursionTest();
-        
-        System.out.println("\nTesting Complete!\n");
+        System.out.println("\nTesting begins...\n");        
+        RecursionTest recursionTest = new RecursionTest();        
+        System.out.println("\nTesting complete!\n");
     }
-    
-    
+
 }
