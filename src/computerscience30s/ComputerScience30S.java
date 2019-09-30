@@ -25,6 +25,11 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {
         
+        learnBasicJava();
+        
+    }
+
+    private static void learnBasicJava() {
         System.out.println("\nJava basics started...\n");
         
         // methods (functions, procedures) 
@@ -486,5 +491,5 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
              
         System.out.println("\nJava basics completed!\n");
     }
-    
+
 }
