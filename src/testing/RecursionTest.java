@@ -30,20 +30,17 @@ public class RecursionTest
         }
         
         System.out.println("Recursive powers...........................");
-        final long MIN_EXPONENT = -10;
-        final long MAX_EXPONENT =  10;
-        final long MIN_BASE     = -10;
-        final long MAX_BASE     =  10;        
-        for (long exponent = MIN_EXPONENT; 
-                  exponent <= MAX_EXPONENT; 
-                  exponent++) {            
-            for (long base = MIN_BASE; base <= MAX_BASE; base++) {   
-                long answer = Calculator.power(base,exponent);
-                System.out.println(base + "\t to the exponent \t" + 
-                        exponent + "\t = " + answer);
+        
+        final int MIN_POWER = 0;
+        final int MAX_POWER = 10;
+        for (int base = MIN_POWER; base <= MAX_POWER; base++) {
+            for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+                double answer = Calculator.power(base,exponent);        
+                System.out.println(base + " to the exponent " +
+                                   exponent + " = " + answer);
             }
         }
-        
+                
         System.out.println("\nRecursion complete!\n");
     }
 

@@ -18,7 +18,8 @@ public class Tester
     public Tester() {
         System.out.println("\nTesting begins...\n");   
         
-        RecursionTest recursionTest = new RecursionTest(); 
+        new RecursionTest(); 
+        new AdvancedClassesTest();        
         
         System.out.println("\nTesting complete!\n");
     }
