@@ -25,18 +25,15 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {
         
-        // methods (functions, procedures) 
-        // are named like variables, but use 
-        // verb type words starting with 
-        // lowercase then using camel casing
+        // methods (functions, procedures) are named like variables, but use 
+        // verb type words starting with lowercase then using camel casing
         // the round braces ( ) indicate a method
-        
-        
+                
         learnBasicJava();
         
     }
 
-    private static void learnBasicJava() {
+    private static void learnBasicJava() {   
         System.out.println("\nJava basics started...\n");
                 
         ///////////////////////////////////////////////////////////////////////
