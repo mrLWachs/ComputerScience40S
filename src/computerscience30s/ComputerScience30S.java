@@ -24,13 +24,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        // methods (functions, procedures) are named like variables, but use 
-        // verb type words starting with lowercase then using camel casing
-        // the round braces ( ) indicate a method
-                
-        learnBasicJava();
-        
+//        learnBasicJava();
+        learnMethods();
     }
 
     private static void learnBasicJava() {   
@@ -488,6 +483,41 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         //    { .... etc .....        
              
         System.out.println("\nJava basics completed!\n");
+    }
+
+    private static void learnMethods() {
+        System.out.println("\nStart Learning Methods...\n");
+        // methods (functions, procedures) are named like variables, but use 
+        // verb type words starting with lowercase then using camel casing
+        // the round braces ( ) indicate a method
+        
+        
+        // code to "jump" to a method, "calling" the method
+        // in NetBeans, you can write a call to a method
+        // that you haven't written yet, NetBeans will
+        // help you write it with the lightbulb icon
+        
+        drawStar(); // call the method
+        
+        // if you hold down the CTRL key, method calls become 
+        // a link to the method in NetBeans
+        
+        draw("amphibious");
+        // called a method and "passed" the argument
+        draw("dubious");
+        
+        
+        System.out.println("\nLearning Methods Complete!\n");
+    }
+
+    private static void drawStar() {
+        System.out.println("*");
+    }
+
+    private static void draw(String what) {
+        // "what" is the name of the parameter
+        // for this method ( like the x in f(x) in math )
+        System.out.println(what);
     }
 
 }
