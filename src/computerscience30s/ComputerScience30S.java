@@ -496,11 +496,33 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // NetBeans tips:
         // (1) The + and - signs and grey lines along the side in NetBeans 
         //     help "expand" and "collapse" the method body (block)        
-
+        // (2) You can jump to a method (even ones you don't write) by holding 
+        //     down CTRL and clicking on the method call
+        // (3) You can "call" a method without writing the method, and 
+        //     NetBeans will recognize this and help you to write it using 
+        //     the lightbulb (you click on)
         
+        // code to "jump" to our method, "calling" the method 
+        drawStar(); // a call to the method
         
+        // if you hold CTRL key the method call becomes
+        // a link to the method
+        
+        draw("ukulele");
+        draw("tamborine");
+        // calling a method with a parameter the item you "pass" is called the
+        // argument
         
         System.out.println("\nLearning Methods Complete!\n");
+    }
+
+    private static void drawStar() {
+        System.out.println("*");
+    }
+
+    private static void draw(String thing) {
+        // information "passed" to a method is called a parameter
+        System.out.println(thing);
     }
 
 }
