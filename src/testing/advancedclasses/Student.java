@@ -36,7 +36,7 @@ public class Student extends Person
     @Override
     public void talk() {
         super.talk();
-        System.out.println("\t" + studentNumber);
+        System.out.println("\t # " + studentNumber);
     }
 
 }
