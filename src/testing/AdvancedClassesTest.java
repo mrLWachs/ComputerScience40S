@@ -2,7 +2,9 @@
 /** required package class namespace */
 package testing;
 
+/** required imports */
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Student;
 
 
 /**
@@ -14,6 +16,9 @@ import testing.advancedclasses.Person;
 public class AdvancedClassesTest 
 {
     
+    /** 
+     * Default constructor for the class 
+     */
     public AdvancedClassesTest() {
         System.out.println("\nAdvanced classes unit starting...\n");
         
@@ -21,6 +26,10 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
+        
+        // class using inheritance
+        Student student = new Student(99);              // new student object
+        student.talk();                                 // inherited method
         
         
         System.out.println("\nAdvanced classes unit complete!\n");
