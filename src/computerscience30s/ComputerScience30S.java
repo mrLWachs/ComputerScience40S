@@ -23,10 +23,9 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      *
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
-        learnBasicJava();
-        
+    public static void main(String[] args) {        
+//        learnBasicJava();        
+        learnMethods();        
     }
 
     private static void learnBasicJava() {   
@@ -484,6 +483,24 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         //    { .... etc .....        
              
         System.out.println("\nJava basics completed!\n");
+    }
+
+    private static void learnMethods() {
+        System.out.println("\nStart Learing Methods...\n");
+        
+        // methods (functions, procedures) are named like variables, but use 
+        // verb type words starting with lowercase then using camel casing
+        // the round braces ( ) indicate a method
+        
+        
+        // NetBeans tips:
+        // (1) The + and - signs and grey lines along the side in NetBeans 
+        //     help "expand" and "collapse" the method body (block)        
+
+        
+        
+        
+        System.out.println("\nLearning Methods Complete!\n");
     }
 
 }
