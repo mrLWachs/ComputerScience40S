@@ -23,11 +23,21 @@ public class Person
     private String name;
     public int age;                             // encapsulated property
     
+    // METHODS (below)......................................................
+    
+    /**
+     * Default constructor for the class (default constructors have no
+     * parameters)
+     */
+    public Person() {
+        name = "jane doe";
+        age = 0;
+    }
     
     /**
      * Outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(this.toString());
+        System.out.println(name + " is " + age);
     } 
 }
