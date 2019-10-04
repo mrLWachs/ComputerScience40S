@@ -513,6 +513,15 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // calling a method with a parameter the item you "pass" is called the
         // argument
         
+        // multiple arguments/parameter are seperated with a commas
+        draws("dalmations",101);            // multiple arguments
+        draws("problems",99);               // seperate with commas   
+        
+        int number = giveMeNumber();
+        
+        draw("Number is " + number);
+        
+        
         System.out.println("\nLearning Methods Complete!\n");
     }
 
@@ -524,5 +533,16 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // information "passed" to a method is called a parameter
         System.out.println(thing);
     }
+    
+    private static void draws(String thing, int amount) {
+        for (int i = 0; i < amount; i++) {
+            draw(thing);
+        }
+    }
+
+    private static int giveMeNumber() {
+        return 7;
+    }
+    
 
 }
