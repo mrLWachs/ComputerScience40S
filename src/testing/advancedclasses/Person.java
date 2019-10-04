@@ -19,8 +19,11 @@ public class Person
     // PROPERTIES (below)...................................................
     
     /** The name of this person object */
-    private String name;
-    public int age;                             // encapsulated property
+    private String name;                        // encapsulated property
+    public int age;     
+    
+    /** Protected property representing the person's gender */
+    protected boolean isMale;
     
     // METHODS (below)......................................................
     
@@ -29,8 +32,9 @@ public class Person
      * parameters)
      */
     public Person() {
-        name = "jane doe";
-        age = 0;
+        name   = "jane doe";
+        age    = 0;        
+        isMale = false;
     }
     
     /**

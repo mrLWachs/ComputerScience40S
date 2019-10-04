@@ -31,6 +31,10 @@ public class AdvancedClassesTest
         Student student = new Student(99);              // new student object
         student.talk();                                 // inherited method
         
+        Object object1 = new Object();
+        String x = object1.toString();
+        System.out.println(x);
+        
         
         System.out.println("\nAdvanced classes unit complete!\n");
     }    
