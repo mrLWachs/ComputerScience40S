@@ -515,12 +515,10 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         
         // multiple arguments/parameter are seperated with a commas
         draws("dalmations",101);            // multiple arguments
-        draws("problems",99);               // seperate with commas   
+        draws("problems",99);               // seperate with commas  
         
         int number = giveMeNumber();
-        
         draw("Number is " + number);
-        
         
         System.out.println("\nLearning Methods Complete!\n");
     }
@@ -535,6 +533,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     }
     
     private static void draws(String thing, int amount) {
+        // "guts" body of the method
         for (int i = 0; i < amount; i++) {
             draw(thing);
         }
@@ -543,6 +542,5 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     private static int giveMeNumber() {
         return 7;
     }
-    
 
 }
