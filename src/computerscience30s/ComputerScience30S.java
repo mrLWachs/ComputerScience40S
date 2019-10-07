@@ -520,18 +520,34 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         int number = giveMeNumber();
         draw("Number is " + number);
         
+        
+        
         System.out.println("\nLearning Methods Complete!\n");
     }
 
+    /**
+     * Draws a star on the screen
+     */
     private static void drawStar() {
         System.out.println("*");
     }
 
+    /**
+     * Draws a thing on the screen dude!
+     * 
+     * @param thing the thing to draw
+     */
     private static void draw(String thing) {
         // information "passed" to a method is called a parameter
         System.out.println(thing);
     }
     
+    /**
+     * Draws an amount of things
+     * 
+     * @param thing the thing to draw
+     * @param amount the amount to draw them
+     */
     private static void draws(String thing, int amount) {
         // "guts" body of the method
         for (int i = 0; i < amount; i++) {
@@ -539,8 +555,30 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         }
     }
 
+    /**
+     * Gives you a number
+     * 
+     * @return a random integer
+     */
     private static int giveMeNumber() {
-        return 7;
+        int low  = random(-100, 0);
+        int high = random(0, 100);
+        return random(low,high);
+    }
+
+    /**
+     * Generates a random number
+     * 
+     * @param low the lowest in the range
+     * @param high the highest in the range
+     * @return a random integer in the range
+     */
+    private static int random(int low, int high) {
+        double seed  = Math.random();
+        double L     = (double)low;
+        double H     = (double)high;
+        double value = (H - L + 1) * seed + L;
+        return (int)value;
     }
 
 }
