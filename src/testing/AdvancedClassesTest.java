@@ -31,9 +31,20 @@ public class AdvancedClassesTest
         Student student = new Student(99);              // new student object
         student.talk();                                 // inherited method
         
+        // all classes (including ones we create) inherit from the object 
+        // class which is the parent (super) of all classes
         Object object1 = new Object();
-        String x = object1.toString();
-        System.out.println(x);
+        Object object2 = object1;                       // parent of all classes
+        
+        System.out.println(object1.toString());         // the toString method
+        System.out.println(object2.toString());
+        
+                
+        
+        
+        
+        
+        
         
         
         System.out.println("\nAdvanced classes unit complete!\n");

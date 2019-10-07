@@ -15,7 +15,7 @@ package testing.advancedclasses;
 public class Student extends Person
 {
     
-    private int studentNumber;
+    private int studentNumber;                      // encapsulated property
     
     /**
      * Class constructor sets class properties, when a constructor has a 
@@ -28,6 +28,7 @@ public class Student extends Person
     public Student(int studentNumber) {
         super();                                // call to super constructor
         this.studentNumber = studentNumber;     // set property from parameter
+        super.isMale = true;      // child class can modify protected property
     }
     
     /**
