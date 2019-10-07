@@ -520,20 +520,18 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         int number = giveMeNumber();
         draw("Number is " + number);
         
-        
-        
         System.out.println("\nLearning Methods Complete!\n");
     }
 
     /**
-     * Draws a star on the screen
+     * draws a star on the screen
      */
     private static void drawStar() {
         System.out.println("*");
     }
 
     /**
-     * Draws a thing on the screen dude!
+     * draws a thing on the screen
      * 
      * @param thing the thing to draw
      */
@@ -541,12 +539,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // information "passed" to a method is called a parameter
         System.out.println(thing);
     }
-    
+        
     /**
-     * Draws an amount of things
+     * draws multiple things on the screen
      * 
      * @param thing the thing to draw
-     * @param amount the amount to draw them
+     * @param amount the amount to draw
      */
     private static void draws(String thing, int amount) {
         // "guts" body of the method
@@ -556,7 +554,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     }
 
     /**
-     * Gives you a number
+     * gives you a number
      * 
      * @return a random integer
      */
@@ -567,18 +565,18 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     }
 
     /**
-     * Generates a random number
+     * Generate a random number in a range
      * 
-     * @param low the lowest in the range
-     * @param high the highest in the range
-     * @return a random integer in the range
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number in the range
      */
     private static int random(int low, int high) {
         double seed  = Math.random();
         double L     = (double)low;
         double H     = (double)high;
         double value = (H - L + 1) * seed + L;
-        return (int)value;
+        return (int)value;        
     }
 
 }
