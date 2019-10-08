@@ -520,6 +520,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         int number = giveMeNumber();
         draw("Number is " + number);
         
+        
+        
+        
+        
+        
+        
         System.out.println("\nLearning Methods Complete!\n");
     }
 
@@ -559,8 +565,11 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @return a random integer
      */
     private static int giveMeNumber() {
-        int low  = random(-100, 0);
-        int high = random(0, 100);
+        final int MIN = Integer.MIN_VALUE;
+        final int MID = 0;
+        final int MAX = Integer.MAX_VALUE;
+        int low       = random(MIN, MID);
+        int high      = random(MID, MAX);
         return random(low,high);
     }
 
