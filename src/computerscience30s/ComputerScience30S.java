@@ -520,11 +520,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         int number = giveMeNumber();
         draw("Number is " + number);
         
-        
-        
-        
-        
-        
+        output("Hi");        
+        output("Hello","Overload example");
         
         System.out.println("\nLearning Methods Complete!\n");
     }
@@ -586,6 +583,32 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         double H     = (double)high;
         double value = (H - L + 1) * seed + L;
         return (int)value;        
+    }
+
+    /**
+     * To output text in a dialog
+     * 
+     * @param text the string to output
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, 
+                text, 
+                "", 
+                JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * To output text in a dialog
+     * 
+     * @param text the string to output
+     * @param title the title of the dialog
+     */
+    private static void output(String text, 
+            String title) {
+        JOptionPane.showMessageDialog(null, 
+                text, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE);
     }
 
 }
