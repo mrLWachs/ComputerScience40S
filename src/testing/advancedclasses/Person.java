@@ -44,6 +44,24 @@ public class Person
     public void talk() {
         System.out.println(this.toString());
     } 
+      
+    /**
+     * Mutator method to change the private property
+     * 
+     * @param name the property to mutate
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    /**
+     * Accessor method of the private property
+     * 
+     * @return the property to "see"
+     */
+    public String getName() {
+        return name;
+    }
     
     /**
      * String representation of this object
@@ -52,22 +70,38 @@ public class Person
      */
     @Override
     public String toString() {
-        return name + " is " + age;
+        return "Person: " + name + " is " + age + " and " + isMale;
     }
     
     /**
-     * comparison, determines if two objects are "equal" in this context
+     * Deep comparison, determines if two objects are "equal" in this context
      *
      * @param object the object to compare to
      * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
+        // shallow comparison would be: return true; 
         Person that = (Person)object;   // we cast object into other classes  
-        if (this.age    != that.age)    return false;   // public property
-        if (this.isMale != that.isMale) return false;   // protected property
-        // Name????
+        if (this.isMale != that.isMale)   return false;
+        if (this.age    != that.age)      return false;
+        if (!this.name.equals(that.name)) return false;
         return true;
     }
         
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // shallow clone would be: return this;
+        Person person = new Person();        
+        person.age    = this.age;
+        person.isMale = this.isMale;
+        person.setName(this.getName());
+        return person;
+    }
+    
 }

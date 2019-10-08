@@ -38,10 +38,10 @@ public class AdvancedClassesTest
         
         System.out.println(object1.toString());         // the toString method
         System.out.println(object2.toString());
-        
-                
-        
-        
+        if (object1.equals(object2)) {                  // the equals method
+            System.out.println("object1 == object2"); 
+        }
+                        
         
         
         
