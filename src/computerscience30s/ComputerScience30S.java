@@ -496,11 +496,16 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // NetBeans tips:
         // (1) The + and - signs and grey lines along the side in NetBeans 
         //     help "expand" and "collapse" the method body (block)        
-        // (2) You can jump to a method (even ones you don't write) by holding 
+        // (2) On the left side window, the Navigator window helps find and 
+        //     jump to methods        
+        // (3) Using the keys CTRL + SHIFT and "+" or "-" also expands and 
+        //     collapses methods
+        // (4) You can call a method that does not yet exist, and netbeans 
+        //     will help you write it with the lightbulb icon (you click on)
+        // (5) You can jump to a method (even ones you don't write) by holding 
         //     down CTRL and clicking on the method call
-        // (3) You can "call" a method without writing the method, and 
-        //     NetBeans will recognize this and help you to write it using 
-        //     the lightbulb (you click on)
+        // (6) If you type /** before the method signature line it will 
+        //     automate which JavaDoc comments you should make
         
         // code to "jump" to our method, "calling" the method 
         drawStar(); // a call to the method
@@ -520,10 +525,10 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         int number = giveMeNumber();
         draw("Number is " + number);
         
-        output("Hi");
-        
-        output("Hello","Overload example");
-        
+        // overloaded methods are methods with the same name but different 
+        // parameters
+        output("Hi");        
+        output("Hello","Overload example");        
         
         System.out.println("\nLearning Methods Complete!\n");
     }
