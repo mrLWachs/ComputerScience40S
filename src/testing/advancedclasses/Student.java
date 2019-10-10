@@ -40,4 +40,41 @@ public class Student extends Person
         System.out.println("\t # " + studentNumber);
     }
 
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Student: " + super.toString() +
+                " with student number " + studentNumber;
+    }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        Student that = (Student)object;        
+        if (!super.equals(that)) return false;        
+        if (this.studentNumber != that.studentNumber) return false;        
+        return true;
+    }
+        
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        Student that = new Student(this.studentNumber);
+                
+        return that;
+    }    
+    
 }
