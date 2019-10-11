@@ -39,6 +39,8 @@ public class AdvancedClassesTest
         System.out.println(object1.toString());         // the toString method
         System.out.println(object2.toString());
                 
+        // Use of the equals, toString, and clone methods that ate inherited 
+        // (but over-ridden) from the Object class with student objects:        
         Student brayden = new Student("Brayden Ruby",19,false,11);
         Student owen    = new Student("Owen Notplace",6,true,12);
         Student brady   = brayden.clone();
@@ -51,11 +53,13 @@ public class AdvancedClassesTest
         if (brayden.equals(owen)) {
             System.out.println("Brayden == Owen");
         }
-        else if (brayden.equals(brady)) {
+        if (brayden.equals(brady)) {
             System.out.println("Brayden == Brady");
         }
-        
-        
+        if (owen.equals(brady)) {
+            System.out.println("Owen == Brady");
+        }
+                
         
         
         System.out.println("\nAdvanced classes unit complete!\n");
