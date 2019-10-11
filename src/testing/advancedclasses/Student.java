@@ -32,12 +32,24 @@ public class Student extends Person
     }
     
     /**
+     * Class constructor sets class properties to parameter values
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param studentNumber the student number for this student
+     */
+    public Student(String name, int age, boolean isMale, int studentNumber) {
+        super(name,age,isMale);                 // call to super constructor
+        this.studentNumber = studentNumber;     // set property from parameter
+    }
+    
+    /**
      * Outputs data on this student to the screen
      */
     @Override
     public void talk() {
-        super.talk();
-        System.out.println("\t # " + studentNumber);
+        System.out.println(this.toString());
     }
 
     /**
@@ -73,8 +85,77 @@ public class Student extends Person
     @Override
     public Student clone() {
         Student that = new Student(this.studentNumber);
-                
+        that.age     = this.age;
+        that.isMale  = this.isMale;
+        that.setName(this.getName());
         return that;
     }    
     
 }
+
+// NOTE: change to the template for Java Class is recommended, to do this, 
+//       select Tools -> Templates, scroll down and click on the plus "+"
+//       sign next to Java and then "Java Class" then "Open in Editior"
+//       and change to the code below (but uncomment it first using the 
+//       NetBeans button just below the code tab):
+
+//<#assign licenseFirst = "/*">
+//<#assign licensePrefix = " * ">
+//<#assign licenseLast = " */">
+//<#include "${project.licensePath}">
+//
+///** required package class namespace */
+//<#if package?? && package != "">
+//package ${package};
+//
+//</#if>
+// 
+///**
+// * ${name}.java - description
+// *
+// * @author Mr. Wachs
+// * @since ${date}, ${time}
+// */
+//public class ${name} 
+//{
+//
+//    /**
+//     * Default constructor, set class properties
+//     */
+//    public ${name}() {
+//        
+//    }
+//
+//    /**
+//     * String representation of this object
+//     *
+//     * @return The object represented as a String
+//     */
+//    @Override
+//    public String toString() {
+//        return "${name}: " + super.toString();
+//    }
+//    
+//    /**
+//     * Deep comparison, determines if two objects are "equal" in this context
+//     *
+//     * @param object the object to compare to
+//     * @return the objects are "equal" (true) or not (false)
+//     */
+//    @Override
+//    public boolean equals(Object object) {
+//        return super.equals(object);
+//    }
+//        
+//    /**
+//     * a Deep clone, creates a duplicate object using new memory
+//     *
+//     * @return a "clone" of the object using new memory
+//     */
+//    @Override
+//    public ${name} clone() {
+//        return this;
+//    }
+//
+//}
+

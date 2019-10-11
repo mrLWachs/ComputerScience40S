@@ -38,13 +38,22 @@ public class AdvancedClassesTest
         
         System.out.println(object1.toString());         // the toString method
         System.out.println(object2.toString());
+                
+        Student brayden = new Student("Brayden Ruby",19,false,11);
+        Student owen    = new Student("Owen Notplace",6,true,12);
+        Student brady   = brayden.clone();
+        brady.setName("Brady Nemetchek");
         
+        System.out.println(brayden.toString());
+        System.out.println(owen.toString());
+        System.out.println(brady.toString());
         
-        
-        
-        
-        
-        
+        if (brayden.equals(owen)) {
+            System.out.println("Brayden == Owen");
+        }
+        else if (brayden.equals(brady)) {
+            System.out.println("Brayden == Brady");
+        }
         
         
         

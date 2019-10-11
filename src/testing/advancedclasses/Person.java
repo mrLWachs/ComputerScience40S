@@ -39,6 +39,19 @@ public class Person
     }
     
     /**
+     * Class constructor sets class properties to parameter values
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param isMale the gender for this person
+     */
+    public Person(String name, int age, boolean isMale) {
+        this.name   = name;
+        this.age    = age;
+        this.isMale = isMale;
+    }
+        
+    /**
      * Outputs data on this person to the screen
      */
     public void talk() {
