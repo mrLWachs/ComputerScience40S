@@ -4,12 +4,12 @@ package testing.advancedclasses;
 
  
 /**
- * Teacher.java - represents a teacher
+ * Teacher.java - represents a teacher (and "is a" person)
  *
  * @author Mr. Wachs
  * @since Oct. 11, 2019, 11:46:52 a.m.
  */
-public class Teacher 
+public class Teacher extends Person
 {
 
     /**

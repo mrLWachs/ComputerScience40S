@@ -3,8 +3,10 @@
 package testing;
 
 /** required imports */
+import javax.swing.JOptionPane;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
+import testing.advancedclasses.Teacher;
 
 
 /**
@@ -22,6 +24,8 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("\nAdvanced classes unit starting...\n");
         
+        // Review of classes concepts (properties, methods, object, inheritance)
+        
         // using the class to create an object with the default constructor:
         // class object = call constructor method (default)
         Person person = new Person();                   // person object
@@ -31,35 +35,43 @@ public class AdvancedClassesTest
         Student student = new Student(99);              // new student object
         student.talk();                                 // inherited method
         
+        // The Object class (parent class of all classes)
+        
         // all classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
         Object object1 = new Object();
         Object object2 = object1;                       // parent of all classes
         
+        // The toString(), clone(), and equals() methods
+        
         System.out.println(object1.toString());         // the toString method
         System.out.println(object2.toString());
                 
-        // Use of the equals, toString, and clone methods that ate inherited 
+        // Use of the equals, toString, and clone methods that are inherited 
         // (but over-ridden) from the Object class with student objects:        
         Student brayden = new Student("Brayden Ruby",19,false,11);
         Student owen    = new Student("Owen Notplace",6,true,12);
-        Student brady   = brayden.clone();
-        brady.setName("Brady Nemetchek");
+        Student brady   = brayden.clone();              // clone method
+        brady.setName("Brady Nemetchek");               // modifier method
         
-        System.out.println(brayden.toString());
+        System.out.println(brayden.toString());         // toString overloaded
         System.out.println(owen.toString());
         System.out.println(brady.toString());
         
-        if (brayden.equals(owen)) {
-            System.out.println("Brayden == Owen");
-        }
-        if (brayden.equals(brady)) {
-            System.out.println("Brayden == Brady");
-        }
-        if (owen.equals(brady)) {
-            System.out.println("Owen == Brady");
-        }
-                
+        // equals overloaded
+        if (brayden.equals(owen))  System.out.println("Brayden == Owen");
+        if (brayden.equals(brady)) System.out.println("Brayden == Brady");
+        if (owen.equals(brady))    System.out.println("Owen == Brady");
+        
+        // The static keyword (for properties and methods)
+        
+        Student s = new Student(60);    // Instantiate another student object
+        System.out.println(Student.totalStudents);  // access static property
+                               
+        Person.endTheWorld();           // invoking the static method from the      
+        Student.endTheWorld();          // class not the object      
+        Teacher.endTheWorld();
+        
         
         
         System.out.println("\nAdvanced classes unit complete!\n");

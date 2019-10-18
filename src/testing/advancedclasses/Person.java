@@ -117,4 +117,11 @@ public class Person
         return person;
     }
     
+    /**
+     * Ends the world
+     */
+    public static void endTheWorld() {
+        System.out.println("Boom!!!");
+    }
+        
 }
