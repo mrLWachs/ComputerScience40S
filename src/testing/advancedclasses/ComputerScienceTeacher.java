@@ -1,9 +1,6 @@
 
 /** required package class namespace */
-package testing.advancedclasses.disney;
-
-/** required imports */
-import testing.advancedclasses.Teacher;
+package testing.advancedclasses;
 
  
 /**

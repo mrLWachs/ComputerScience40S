@@ -1,26 +1,28 @@
 
 /** required package class namespace */
-package testing.advancedclasses.animal;
+package testing.advancedclasses;
 
-/** required imports */
-import testing.advancedclasses.Teacher;
-
- 
 /**
- * CSTeacher.java - represents a CS teacher person
+ * Husky.java - represents a husky student person
  *
  * @author Mr. Wachs
- * @since Oct. 21, 2019, 11:57:49 a.m.
+ * @since Oct. 21, 2019, 10:44:22 a.m.
  */
-public class CSTeacher extends Teacher
+public class Husky extends Student
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param studentNumber the student number for this student
      */
-    public CSTeacher() {
-        
+    public Husky(String name, int age, boolean isMale, int studentNumber) {
+        super(name, age, isMale, studentNumber);
     }
+
 
     /**
      * String representation of this object
@@ -29,7 +31,7 @@ public class CSTeacher extends Teacher
      */
     @Override
     public String toString() {
-        return "CSTeacher: " + super.toString();
+        return "Husky: " + super.toString();
     }
     
     /**
@@ -49,7 +51,7 @@ public class CSTeacher extends Teacher
      * @return a "clone" of the object using new memory
      */
     @Override
-    public CSTeacher clone() {
+    public Husky clone() {
         return this;
     }
 

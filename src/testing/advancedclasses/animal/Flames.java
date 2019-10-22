@@ -16,10 +16,15 @@ public class Flames extends Student
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param studentNumber the student number for this student
      */
-    public Flames() {
-        
+    public Flames(String name, int age, boolean isMale, int studentNumber) {
+        super(name, age, isMale, studentNumber);
     }
 
     /**
