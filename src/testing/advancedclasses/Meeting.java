@@ -44,10 +44,8 @@ public class Meeting
      * Hold the meeting and have all members talk through an output
      */
     public void hold() {
-        System.out.println("Caution, there "
-                + "are " + Student.totalStudents
-                + " students at this meeting,"
-                + " watch your language!");
+        System.out.println("Caution, there  are " + Student.totalStudents
+                         + " students at this meeting, watch your language!");
         for(Person member: members) {
             member.talk();
         }
