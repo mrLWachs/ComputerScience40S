@@ -11,12 +11,14 @@ package testing.advancedclasses.disney;
  */
 public class Creatures 
 {
+    
+    public Magic magic;             // associated object 
 
     /**
      * Default constructor, set class properties
      */
     public Creatures() {
-        
+        magic = new Magic();        // instantiate object
     }
 
     /**
@@ -26,7 +28,7 @@ public class Creatures
      */
     @Override
     public String toString() {
-        return "Creatures: " + super.toString();
+        return "Creatures: " + super.toString() + " " + magic.toString();
     }
     
     /**

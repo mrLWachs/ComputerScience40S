@@ -15,14 +15,14 @@ import testing.advancedclasses.Person;
 public class Pets extends Animals
 {
 
-    public Person homan;
+    public Person human;        // associated object ("has a")
     
     
     /**
      * Default constructor, set class properties
      */
     public Pets() {
-        
+        human = new Person();   // instantiate object
     }
 
     /**
@@ -32,7 +32,7 @@ public class Pets extends Animals
      */
     @Override
     public String toString() {
-        return "Pets: " + super.toString();
+        return "Pets: " + super.toString() + " " + human.toString();
     }
     
     /**

@@ -11,12 +11,14 @@ package testing.advancedclasses;
  */
 public class Teacher extends Person
 {
-
+    
+    public Student[] students;  // associated object array
+        
     /**
      * Default constructor, set class properties
      */
     public Teacher() {
-        
+        students = new Student[200];    // instantiate array
     }
 
     /**

@@ -12,9 +12,9 @@ package testing.advancedclasses;
 public class Meeting 
 {
     
-    private final int MAX;
-    private int       count;
-    private Person[]  members;    
+    private final int MAX;              // maximum number of students
+    private int       count;            // keeps count of current student
+    private Person[]  members;          // associated object array
 
     /**
      * Default constructor, set class properties
@@ -35,9 +35,9 @@ public class Meeting
      * @param person the person object to attend
      */
     public void attend(Person person) {
-        members[count] = person;
-        count++;
-        if (count > MAX) count = 0;
+        members[count] = person;            // add to array slot
+        count++;                            // advanced counter to next slot
+        if (count > MAX) count = 0;         // reset back to slot 0
     }
     
     /**
@@ -46,8 +46,8 @@ public class Meeting
     public void hold() {
         System.out.println("Caution, there  are " + Student.totalStudents
                          + " students at this meeting, watch your language!");
-        for(Person member: members) {
-            member.talk();
+        for(Person member: members) {       // traverse all members
+            member.talk();                  // have them talk
         }
     }
 

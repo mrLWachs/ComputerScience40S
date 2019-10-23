@@ -4,9 +4,20 @@ package testing;
 
 /** required imports */
 import javax.swing.JOptionPane;
+import testing.advancedclasses.ComputerScienceTeacher;
+import testing.advancedclasses.Husky;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
+import testing.advancedclasses.animal.Dog;
+import testing.advancedclasses.animal.Farm;
+import testing.advancedclasses.animal.Flames;
+import testing.advancedclasses.animal.Wild;
+import testing.advancedclasses.disney.Animals;
+import testing.advancedclasses.disney.Fairy;
+import testing.advancedclasses.disney.Genie;
+import testing.advancedclasses.disney.Hercules;
+import testing.advancedclasses.disney.Rapunzel;
 
 
 /**
@@ -71,6 +82,40 @@ public class AdvancedClassesTest
         Person.endTheWorld();           // invoking the static method from the      
         Student.endTheWorld();          // class not the object      
         Teacher.endTheWorld();
+        
+        // create various custom objects...
+        Rapunzel rapunzel             = new Rapunzel();
+        Hercules hercules             = new Hercules();
+        Genie    genie                = new Genie();
+        Fairy    tinkerbell           = new Fairy();
+        Animals  flounder             = new Animals();
+        ComputerScienceTeacher rogowy = new ComputerScienceTeacher();
+        
+        // and output them (using toString called automatically)
+        System.out.println(rapunzel);
+        System.out.println(hercules);
+        System.out.println(genie);
+        System.out.println(tinkerbell);
+        System.out.println(flounder);
+        System.out.println(rogowy);
+        
+        // create some custom objects.....        
+        Dog  coco                 = new Dog();
+        Farm pig                  = new Farm();
+        Wild pheasant             = new Wild();        
+        Husky  joe                = new Husky("Joe Mama",16,true,100);
+        Flames bradi              = new Flames("Bradi Nohands",17,false,21);        
+        ComputerScienceTeacher jr = new ComputerScienceTeacher();
+        
+        // and output them (using toString called automatically)
+        System.out.println(coco);
+        System.out.println(pig);
+        System.out.println(pheasant);
+        System.out.println(joe);
+        System.out.println(bradi);
+        System.out.println(jr);
+        
+        
         
         
         

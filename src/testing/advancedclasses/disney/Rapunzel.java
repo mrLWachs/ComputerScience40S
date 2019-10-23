@@ -12,11 +12,13 @@ package testing.advancedclasses.disney;
 public class Rapunzel extends Princess
 {
 
+    public Magic hair;              // associated object 
+    
     /**
      * Default constructor, set class properties
      */
     public Rapunzel() {
-        
+        hair = new Magic();         // instantiate object
     }
 
     /**
@@ -26,7 +28,7 @@ public class Rapunzel extends Princess
      */
     @Override
     public String toString() {
-        return "Rapunzel: " + super.toString();
+        return "Rapunzel: " + super.toString() + " " + hair.toString();
     }
     
     /**

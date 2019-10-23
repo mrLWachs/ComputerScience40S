@@ -12,11 +12,13 @@ package testing.advancedclasses.disney;
 public class Hercules extends Prince
 {
 
+    private Magic immortality;          // associated object 
+    
     /**
      * Default constructor, set class properties
      */
     public Hercules() {
-        
+        immortality = new Magic();      // instantiate object
     }
 
     /**
@@ -26,7 +28,7 @@ public class Hercules extends Prince
      */
     @Override
     public String toString() {
-        return "Hercules: " + super.toString();
+        return "Hercules: " + super.toString() + " " + immortality.toString();
     }
     
     /**
