@@ -3,21 +3,29 @@
 package testing;
 
 /** required imports */
-import javax.swing.JOptionPane;
 import testing.advancedclasses.ComputerScienceTeacher;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.Meeting;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 import testing.advancedclasses.animal.Dog;
 import testing.advancedclasses.animal.Farm;
 import testing.advancedclasses.animal.Flames;
+import testing.advancedclasses.animal.Pets;
 import testing.advancedclasses.animal.Wild;
 import testing.advancedclasses.disney.Animals;
+import testing.advancedclasses.disney.Creatures;
 import testing.advancedclasses.disney.Fairy;
 import testing.advancedclasses.disney.Genie;
 import testing.advancedclasses.disney.Hercules;
+import testing.advancedclasses.disney.Jimmies;
+import testing.advancedclasses.disney.King;
+import testing.advancedclasses.disney.Magic;
+import testing.advancedclasses.disney.Prince;
+import testing.advancedclasses.disney.Princess;
 import testing.advancedclasses.disney.Rapunzel;
+import testing.advancedclasses.disney.Royalty;
 
 
 /**
@@ -84,13 +92,15 @@ public class AdvancedClassesTest
         Teacher.endTheWorld();
         
         // create various custom objects...
-        Rapunzel rapunzel             = new Rapunzel();
-        Hercules hercules             = new Hercules();
-        Genie    genie                = new Genie();
-        Fairy    tinkerbell           = new Fairy();
-        Animals  flounder             = new Animals();
-        ComputerScienceTeacher rogowy = new ComputerScienceTeacher();
-        
+        Rapunzel               rapunzel   = new Rapunzel();
+        Hercules               hercules   = new Hercules();
+        Genie                  genie      = new Genie();
+        Fairy                  tinkerbell = new Fairy();
+        Animals                flounder   = new Animals();
+        ComputerScienceTeacher rogowy     = new ComputerScienceTeacher();
+        Husky                  havoc      = new Husky("Havoc Husky", 13, true, 6556);
+        Jimmies                jim        = new Jimmies("Jim Donkey", 17, false, 0);
+                
         // and output them (using toString called automatically)
         System.out.println(rapunzel);
         System.out.println(hercules);
@@ -98,6 +108,8 @@ public class AdvancedClassesTest
         System.out.println(tinkerbell);
         System.out.println(flounder);
         System.out.println(rogowy);
+        System.out.println(havoc);
+        System.out.println(jim);
         
         // create some custom objects.....        
         Dog  coco                 = new Dog();
@@ -115,11 +127,76 @@ public class AdvancedClassesTest
         System.out.println(bradi);
         System.out.println(jr);
         
+        // call a method with new code...        
+        whatIs(bradi);
+        whatIs(coco);
+        whatIs(jr);
+        whatIs(pheasant);
+        whatIs(person);
+        
+        // use some polymorphism....        
+        Meeting meeting = new Meeting();        // create meeting object
+        meeting.attend(person);                 // add various child objects
+        meeting.attend(bradi);                  // using polymorphic method
+        meeting.attend(brady);                  // arguments
+        meeting.attend(brayden);
+        meeting.attend(jr);
+        meeting.attend(joe);
+        meeting.attend(student);
+        meeting.attend(owen);
+        meeting.attend(rapunzel);
+        meeting.attend(havoc);
+        meeting.attend(jim);
+        meeting.attend(hercules);
+        meeting.attend(rogowy);        
+        meeting.hold();                         // hold the mmeting
         
         
         
         
+        
+        
+        
+        
+
         System.out.println("\nAdvanced classes unit complete!\n");
     }    
+
+    /**
+     * Checks the passed object and outputs what class type the object is. 
+     * This method uses the instanceof operator to do the logic
+     * 
+     * @param object the object type to check
+     */
+    private void whatIs(Object object) {
+        String name = "This is a ";
+        if (object instanceof Magic)                  name += "Magic -> ";
+        if (object instanceof Hercules)               name += "Hercules -> ";
+        if (object instanceof Rapunzel)               name += "Rapunzel -> ";
+        if (object instanceof Prince)                 name += "Prince -> ";
+        if (object instanceof Princess)               name += "Student -> ";
+        if (object instanceof King)                   name += "King -> ";
+        if (object instanceof ComputerScienceTeacher) name += "ComputerScienceTeacher -> ";
+        if (object instanceof Jimmies)                name += "Jimmies -> ";
+        if (object instanceof Flames)                 name += "Flames -> ";
+        if (object instanceof Husky)                  name += "Husky -> ";        
+        if (object instanceof Royalty)                name += "Royalty -> ";
+        if (object instanceof Teacher)                name += "Teacher -> ";
+        if (object instanceof Student)                name += "Student -> ";
+        if (object instanceof Person)                 name += "Person -> ";        
+        if (object instanceof Genie)                  name += "Genie -> ";
+        if (object instanceof Fairy)                  name += "Fairy -> ";
+        if (object instanceof testing.advancedclasses.disney.Animals) 
+                                                      name += "Animals -> ";        
+        if (object instanceof Creatures)              name += "Creatures -> ";        
+        if (object instanceof Dog)                    name += "Dog -> ";        
+        if (object instanceof Pets)                   name += "Pets -> ";
+        if (object instanceof Wild)                   name += "Wild -> ";
+        if (object instanceof Farm)                   name += "Farm -> ";        
+        if (object instanceof testing.advancedclasses.animal.Animals) 
+                                                      name += "Animals -> ";
+        if (object instanceof Object)                 name += "Object";
+        System.out.println(name);
+    }
 
 }

@@ -47,7 +47,9 @@ public class Meeting
         System.out.println("Caution, there  are " + Student.totalStudents
                          + " students at this meeting, watch your language!");
         for(Person member: members) {       // traverse all members
-            member.talk();                  // have them talk
+            if (member != null) {           // ignore empty array spots
+                member.talk();              // have them talk
+            }
         }
     }
 
