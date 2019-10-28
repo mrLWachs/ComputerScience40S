@@ -4,6 +4,7 @@ package testing;
 
 /** required imports */
 import testing.advancedclasses.ComputerScienceTeacher;
+import testing.advancedclasses.Food;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.Person;
@@ -151,10 +152,7 @@ public class AdvancedClassesTest
         meeting.attend(rogowy);        
         meeting.hold();                         // hold the mmeting
         
-        
-        
-        
-        
+                
         
         
         
