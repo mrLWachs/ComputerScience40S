@@ -16,7 +16,7 @@ public class Potato extends Food
      * Default constructor for the class 
      */
     public Potato() {
-        super(true, Food.GROUPS[0]);
+        super(true, Food.GROUPS[0], "cheesy");
     }
 
     /**
@@ -26,7 +26,8 @@ public class Potato extends Food
      */
     @Override
     public boolean eat() {
-        return true;
+        System.out.println("Fork and knife");
+        return super.nurishment;
     }
 
     /**
@@ -34,7 +35,15 @@ public class Potato extends Food
      */
     @Override
     public void prepare() {
-        
+        System.out.println("Loaded and baked");
+    }
+
+    /**
+     * Store the potato somehow
+     */
+    @Override
+    public void store() {
+        System.out.println("In a bag");
     }
     
 }

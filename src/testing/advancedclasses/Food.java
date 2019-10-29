@@ -17,20 +17,24 @@ package testing.advancedclasses;
 public abstract class Food 
 {
 
-    String flavour;
+    /**
+     * whether or not this food has nurishment value
+     */
+    protected boolean nurishment;
     
-    private boolean nurishment;
+    private String flavour;
     private String group;
     
     /**
-     * The defined food groups
+     * The food groups: (0) Fruits and Vegetables, (1) Meats, (2) Dairy, 
+     * (3) Grains, (4) Other
      */
-    public static final String[] GROUPS = {
-        "fruits and vegatables",
-        "grains",
-        "meats",
-        "diary",
-        "other"
+    public static final String GROUPS[] = {
+        "Fruits and Vegetables",
+        "Meats",
+        "Dairy",
+        "Grains",
+        "Other"
     };
     
     /**
@@ -38,10 +42,12 @@ public abstract class Food
      * 
      * @param nurishment yes/true (does have), no/false (does not)
      * @param group the food group name
+     * @param flavour the flavor of the food
      */
-    public Food(boolean nurishment, String group) {
+    public Food(boolean nurishment, String group, String flavour) {
         this.nurishment = nurishment;
-        this.group      = group;
+        this.group      = group;        
+        this.flavour    = flavour;
     }
     
     /**
@@ -59,8 +65,19 @@ public abstract class Food
     }
     
     /**
+     * Smell the food
+     */
+    public void smell() {
+        System.out.println("Snifffffff");
+    }
+    /**
      * Prepares it to be eaten
      */
     public abstract void prepare();
-        
+
+    /**
+     * Store the food somehow
+     */
+    public abstract void store();
+
 }
