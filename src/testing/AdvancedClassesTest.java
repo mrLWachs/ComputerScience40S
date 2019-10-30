@@ -3,13 +3,16 @@
 package testing;
 
 /** required imports */
+import testing.advancedclasses.BonelessPizza;
 import testing.advancedclasses.ComputerScienceTeacher;
-import testing.advancedclasses.Food;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.KraftDinner;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Potato;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
+import testing.advancedclasses.WellDoneSteak;
 import testing.advancedclasses.animal.Dog;
 import testing.advancedclasses.animal.Farm;
 import testing.advancedclasses.animal.Flames;
@@ -152,7 +155,26 @@ public class AdvancedClassesTest
         meeting.attend(rogowy);        
         meeting.hold();                         // hold the mmeting
         
-                
+        // create objects from classes that inherited from an abstract class:        
+        Potato        potato = new Potato();
+        BonelessPizza boneyM = new BonelessPizza();
+        KraftDinner   kd     = new KraftDinner();
+        WellDoneSteak meat   = new WellDoneSteak();
+        
+        // call the polymorphic method of person objects        
+        hercules.haveDinner(potato);
+        rapunzel.haveDinner(boneyM);
+        brayden.haveDinner(meat);
+        jr.haveDinner(kd);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

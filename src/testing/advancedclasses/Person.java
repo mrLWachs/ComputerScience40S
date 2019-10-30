@@ -124,4 +124,24 @@ public class Person
         System.out.println("Boom!!!");
     }
         
+    /**
+     * Eats the passed food by outputting to the screen
+     * 
+     * @param food the abstract food object to eat 
+     */
+    public void haveDinner(Food food) {
+        if (food.nurishment) {
+            if (food.flavour.equals("cheesy")) {
+                food.smell();
+            }
+            food.prepare();
+            food.eat();
+            food.digest();
+            food.store();
+        }
+        else {
+            System.out.println("Don't eat it!");
+        }
+    }
+    
 }

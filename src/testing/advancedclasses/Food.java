@@ -22,7 +22,11 @@ public abstract class Food
      */
     protected boolean nurishment;
     
-    private String flavour;
+    /**
+     * The flavor quality of this food
+     */
+    public String flavour;
+    
     private String group;
     
     /**
@@ -70,6 +74,7 @@ public abstract class Food
     public void smell() {
         System.out.println("Snifffffff");
     }
+    
     /**
      * Prepares it to be eaten
      */
