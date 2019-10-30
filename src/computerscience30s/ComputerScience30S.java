@@ -25,7 +25,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {        
 //        learnBasicJava();        
-        learnMethods();        
+//        learnMethods();   
+        learnArrays();
     }
 
     private static void learnBasicJava() {   
@@ -485,6 +486,9 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         System.out.println("\nJava basics completed!\n");
     }
 
+    /**
+     * Learn the content of the methods unit
+     */
     private static void learnMethods() {
         System.out.println("\nStart Learing Methods...\n");
         
@@ -617,6 +621,51 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
                 text, 
                 title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit
+     */
+    private static void learnArrays() {
+        System.out.println("Start learn arrays...");
+        
+        // create (declare) a variable for comparison
+        
+        int size = 5;
+        
+        // declare an array
+        
+        int array[] = new int[size];
+        
+        // assume the "spots", "subscripts", 
+        // "elements", "indices" as unknown
+        
+        // assign values to the individual indices
+        
+        array[0] = 25;
+        array[1] = 18;
+        array[2] = -21;
+        array[3] = 621;
+        array[4] = 1234567890;
+        
+        // the next line would be a "out of bounds" or
+        // "range" error - there is no index 5    
+        
+        // array[5] = 99;
+        
+        // another index # that would be a range error
+        
+//         array[2.5] = 10;
+//         array[-1] = 10;
+        
+        // declare an array of no size
+        
+        double[] a;
+        
+        
+        
+        
+        System.out.println("Completed learning arrays!");
     }
 
 }
