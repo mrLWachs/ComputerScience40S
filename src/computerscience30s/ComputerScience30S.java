@@ -629,37 +629,28 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     private static void learnArrays() {
         System.out.println("Start learn arrays...");
         
-        // create (declare) a variable for comparison
-        
+        // create (declare) a variable for comparison:        
         int size = 5;
         
-        // declare an array
+        // declare an array:        
+        int array[] = new int[size];        
+        // assume the "spots", "subscripts", "elements", "indices" as unknown
         
-        int array[] = new int[size];
-        
-        // assume the "spots", "subscripts", 
-        // "elements", "indices" as unknown
-        
-        // assign values to the individual indices
-        
+        // assign values to the individual indices:        
         array[0] = 25;
         array[1] = 18;
         array[2] = -21;
         array[3] = 621;
         array[4] = 1234567890;
         
-        // the next line would be a "out of bounds" or
-        // "range" error - there is no index 5    
-        
+        // the next line would be a "out of bounds" or "range" error         
         // array[5] = 99;
         
-        // another index # that would be a range error
+        // other index numbers that would be a range error:        
+        // array[2.5] = 10;
+        // array[-1] = 10;
         
-//         array[2.5] = 10;
-//         array[-1] = 10;
-        
-        // declare an array of no size
-        
+        // declare an array of no size:        
         double[] a;
         
         
