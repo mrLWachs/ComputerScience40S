@@ -11,5 +11,19 @@ package testing.advancedclasses;
  */
 public interface WiiBoxing extends Sports
 {
+        
+    /**
+     * Punches an opponent
+     * 
+     * @param name the name of the player punching
+     */
+    void punch(String name);
+    
+    /**
+     * Blocks a punch from the opponent
+     * 
+     * @param name the name of the player blocking
+     */
+    void block(String name);
     
 }
