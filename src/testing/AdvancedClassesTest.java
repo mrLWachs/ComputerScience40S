@@ -6,6 +6,7 @@ package testing;
 import testing.advancedclasses.BonelessPizza;
 import testing.advancedclasses.ComputerScienceTeacher;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.HuskyAthlete;
 import testing.advancedclasses.KraftDinner;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.Person;
@@ -167,19 +168,24 @@ public class AdvancedClassesTest
         brayden.haveDinner(meat);
         jr.haveDinner(kd);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // a class that uses interfaces
+        HuskyAthlete athlete = new HuskyAthlete("Huskies", 16, true, 2665);
+        for (int round = 0; round < 4; round++) {
+            if (athlete.haveYouGotItSigned()) {
+                athlete.setOpponent("Pipers");
+                athlete.backFlipKick(true);
+                athlete.score(6, "Huskies");
+                athlete.score(3, "Pipers");
+                athlete.punch("Huskies");
+                athlete.block("Huskies");                
+                athlete.endOfQuarter(round);
+                athlete.endOfSets(round); 
+            }
+            else {
+                athlete.sign();
+            }
+        }
+        if (athlete.didIWin()) athlete.haveDinner(kd);
         
         
         
