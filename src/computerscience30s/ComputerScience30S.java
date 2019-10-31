@@ -653,6 +653,61 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // declare an array of no size:        
         double[] a;
         
+        // later on, you can re-create 
+        // (re-dimension) the same array
+        
+        a = new double[5];
+        
+        // now use the array
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+        a[3] = 4.4;
+        a[4] = 5.5;
+        
+        // you can re-dimension multiple times, 
+        // but every time it wipes out 
+        // any content stored inside the array  
+        a = new double[500];
+        
+        // another way to create arrays, but
+        // with pre-filled values
+        
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        
+        // you can also do this and make the array
+        // a constant
+        
+        final String[] OPTIONS = {
+            "New game",
+            "Save game",
+            "Quit"
+        };
+        
+        // using the arrays like variables
+        
+        int[] numbers = new int[100];
+        // the names of arrays should be plural words
+        numbers[99] = 99;        
+        System.out.println(numbers[99]);
+        
+        // to travel (go through) the entire array, use 
+        // a for loop        
+        for (int i = 0; i < 100; i++) {
+            numbers[i] = 99;
+        }
+        
+        // output the entire array, by traversing the
+        // array and using a built-in feature that all
+        // arrays have called the ".length" feature        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        
+        
+        
+        
         
         
         
