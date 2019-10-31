@@ -13,8 +13,9 @@ public interface SepakTakraw extends Sports
 {
     
     /**
+     * Does a back flip kick of the ball that may score a point
      * 
-     * @param didIScore 
+     * @param didIScore scored a point (true) or not (false)
      */
     void backFlipKick(boolean didIScore);
     
