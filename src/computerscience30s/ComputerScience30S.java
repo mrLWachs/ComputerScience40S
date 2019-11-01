@@ -698,11 +698,73 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
             System.out.println(numbers[i]);
         }
         
+        // arrays with methods, arrays can be sent to a method
+        // parameter, and arrays can be returned from methods
+        // in other words, arrays can be inputs and outputs
+        // from methods        
+        output(numbers);        
+        output(coins);
+        int[] randoms = random(1,10,50);
+        output(randoms);
         
-        
+                
         
         
         System.out.println("Completed learning arrays!");
     }
+    
+    /**
+     * Outputs an array of integer values
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        String text = "Array = [";        
+        for (int i = 0; i < array.length; i++) {
+            text += array[i] + ",";
+        }        
+        text = text + "]";
+        output(text);
+    }
 
+    /**
+     * Outputs an array of double values
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(double[] array) {
+        int[] a = convert(array);
+        output(a);
+    }
+
+    /**
+     * Converts an array of doubles into an array of integers
+     * 
+     * @param array the double array to convert
+     * @return an array of integers
+     */
+    private static int[] convert(double[] array) {
+        int[] a = new int[array.length];
+        for (int i = 0; i < array.length; i++) {
+            a[i] = (int)array[i];
+        }
+        return a;
+    }
+
+    /**
+     * Generates an array of random integers in the range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size to make the array
+     * @return an array of random integers
+     */
+    private static int[] random(int low, int high, int size) {
+        int[] numbers = new int[size];
+        for (int i = 0; i < size; i++) {
+            numbers[i] = random(low,high);
+        }
+        return numbers;
+    }
+    
 }
