@@ -168,23 +168,21 @@ public class AdvancedClassesTest
         brayden.haveDinner(meat);
         jr.haveDinner(kd);
         
-        // a class that uses interfaces
-        HuskyAthlete athlete = new HuskyAthlete("Huskies", 16, true, 2665);
-        for (int round = 0; round < 4; round++) {
-            if (athlete.haveYouGotItSigned()) {
-                athlete.setOpponent("Pipers");
-                athlete.backFlipKick(true);
-                athlete.score(6, "Huskies");
-                athlete.score(3, "Pipers");
-                athlete.punch("Huskies");
-                athlete.block("Huskies");                
+        // a class that uses interfaces        
+        HuskyAthlete athlete = new HuskyAthlete("Havoc", 17, true, 2665);        
+        for (int round = 0; round < 4; round++) {            
+            if (athlete.haveYouGotItSigned()) {                
+                athlete.setOpponent("Bears");                
+                athlete.score(6, "Havoc");
+                athlete.score(3, "Bears");                
+                athlete.backFlipKick(true);                
                 athlete.endOfQuarter(round);
-                athlete.endOfSets(round); 
+                athlete.endOfSets(round);                
             }
             else {
                 athlete.sign();
-            }
-        }
+            }            
+        }       
         if (athlete.didIWin()) athlete.haveDinner(kd);
         
         
@@ -232,4 +230,14 @@ public class AdvancedClassesTest
         System.out.println(name);
     }
 
+    /**
+     * Outputs a generic item with information about the data type
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        
+    } 
+    
 }
