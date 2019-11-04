@@ -737,12 +737,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param array the array of integers
      */
     private static void output(int[] array) {
-        String text = "Array = [";        
-        for (int i = 0; i < array.length; i++) {
-            text += array[i] + ",";
+        String text = "Array = [";                  // create string to fill
+        for (int i = 0; i < array.length; i++) {    // traverse array
+            text += array[i] + ",";                 // add to the string
         }        
-        text = text + "]";
-        output(text);
+        text = text + "]";                          // add ending to the string
+        output(text);                               // now output the string 
     }
 
     /**
@@ -751,8 +751,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param array the array of doubles
      */
     private static void output(double[] array) {
-        int[] a = convert(array);
-        output(a);
+        int[] a = convert(array);       // create int array of converted doubles
+        output(a);                      // now output the converted array
     }
 
     /**
@@ -762,11 +762,11 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @return an array of integers
      */
     private static int[] convert(double[] array) {
-        int[] a = new int[array.length];
-        for (int i = 0; i < array.length; i++) {
-            a[i] = (int)array[i];
+        int[] a = new int[array.length];            // create empty array 
+        for (int i = 0; i < array.length; i++) {    // traverse array size
+            a[i] = (int)array[i];                   // cast over the index value
         }
-        return a;
+        return a;                                   // return completed array
     }
 
     /**
@@ -778,11 +778,11 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @return an array of random integers
      */
     private static int[] random(int low, int high, int size) {
-        int[] numbers = new int[size];
-        for (int i = 0; i < size; i++) {
-            numbers[i] = random(low,high);
+        int[] numbers = new int[size];      // create empty array of passed size
+        for (int i = 0; i < size; i++) {    // traverse array size
+            numbers[i] = random(low,high);  // assign random value to each index
         }
-        return numbers;
+        return numbers;                     // return completed array
     }
    
     /**
@@ -793,7 +793,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @return random character in range
      */
     private static char random(char low, char high) {
-        return (char)random((int)low,(int)high);       
+        return (char)random((int)low,(int)high);     // cast to int and back  
     }
 
     /**
