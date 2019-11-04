@@ -706,32 +706,28 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         output(coins);
         int[] randoms = random(1,10,50);
         output(randoms);
-        
-        
-        // multi-dimensional array, means an array
-        // of arrays, filled with arrays... etc
-        // 2D, 3D, 4D etc as a way to visualize it
+                
+        // multi-dimensional array, means an array of arrays, filled with 
+        // arrays... etc (2D, 3D, 4D etc as a way to visualize it) it is
         // also know as a matrix
-
         final int  ROWS    = 30;
         final int  COLUMNS = 40;
         final char LOW     = 'a';
-        final char HIGH    = 'z';
-        
-        // create (declare) a matrix        
+        final char HIGH    = 'z';        
+        // create (declare) a matrix:        
         char[][] matrix = new char[ROWS][COLUMNS];
         
         // fill the matrix by traversing and adding
-        // in a random character, using nested for loops
-
+        // in a random character, using nested for loops        
         for (int row = 0; row < ROWS; row++) {
             for (int column = 0; column < COLUMNS; column++) {
                 matrix[row][column] = random(LOW,HIGH);
             }
         }
+        // now output the matrix with another overloaded method that 
+        // incorporates graphical aspects in the dialog
         output(matrix);
-        
-        
+                
         System.out.println("Completed learning arrays!");
     }
     
@@ -788,9 +784,10 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         }
         return numbers;
     }
+   
     
     private static char random(char low, char high) {
-        return (char)random((int)low,(int)high);
+        return (char)random((int)low,(int)high);       
     }
 
     private static void output(char[][] m) {
@@ -804,5 +801,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         
         output(text);
     }
-        
+    
+    
+    
 }
