@@ -785,23 +785,33 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         return numbers;
     }
    
-    
+    /**
+     * Generates a random character
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
     private static char random(char low, char high) {
         return (char)random((int)low,(int)high);       
     }
 
+    /**
+     * Outputs an array of character values
+     * 
+     * @param array the array of characters
+     */
     private static void output(char[][] m) {
-        String text = "";
-        for (int r = 0; r < m.length; r++) {
-            for (int c = 0; c < m[r].length; c++) {
-                text = text + m[r][c] + " ";
+        String text = "";                       // start a string to hold values
+        for (int r = 0; r < m.length; r++) {    // traverse all rows
+            for (int c = 0; c < m[r].length; c++) { // traverse all columns
+                text = text + m[r][c] + " ";    // concatinate to the string
             }
-            text = text + "\n";
+            text = text + "\n";                 // add in a new line break
         }
         
+        // now output that string in a graphical dialog
         output(text);
     }
-    
-    
-    
+        
 }
