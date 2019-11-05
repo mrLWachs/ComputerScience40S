@@ -827,7 +827,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // interesting        
         Color background = new Color(0,0,0);
         Color foreground = new Color(0,255,0);        
-        Font  font       = new Font("Arial",Font.BOLD,10);
+        Font  font       = new Font("Consolas",Font.BOLD,18);
         String imageName = "C:\\Users\\lawrence.wachs\\"
                 + "Desktop\\Images\\matrix.gif";        
         // now output that string in a graphical dialog
