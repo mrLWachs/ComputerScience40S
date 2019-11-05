@@ -733,6 +733,15 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // incorporates graphical aspects in the dialog
         output(matrix);
                 
+        // matrices can also be made with pre-set values
+        final char[][] TIC_TAC_TOE = 
+        {
+            {'X','O','X'},
+            {'O','X','O'},
+            {'X','O','X'}
+        };
+        output(TIC_TAC_TOE);
+        
         System.out.println("Completed learning arrays!");
     }
     
@@ -815,14 +824,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
             text = text + "\n";                 // add in a new line break
         }
         // set up graphical "things" to make the dialog more
-        // interesting
-        
+        // interesting        
         Color background = new Color(0,0,0);
         Color foreground = new Color(0,255,0);        
         Font  font       = new Font("Arial",Font.BOLD,10);
         String imageName = "C:\\Users\\lawrence.wachs\\"
-                + "Desktop\\Images\\matrix.gif";
-        
+                + "Desktop\\Images\\matrix.gif";        
         // now output that string in a graphical dialog
         output(text,"The Matrix",font,
                background,foreground,imageName);
