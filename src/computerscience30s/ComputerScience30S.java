@@ -823,16 +823,14 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
             }
             text = text + "\n";                 // add in a new line break
         }
-        // set up graphical "things" to make the dialog more
-        // interesting        
-        Color background = new Color(0,0,0);
-        Color foreground = new Color(0,255,0);        
-        Font  font       = new Font("Consolas",Font.BOLD,18);
-        String imageName = "C:\\Users\\lawrence.wachs\\"
-                + "Desktop\\Images\\matrix.gif";        
+        // set up graphical "things" to make the dialog more interesting    
+        Color  background = new Color(0,0,0);
+        Color  foreground = new Color(0,255,0);        
+        Font   font       = new Font("Consolas",Font.PLAIN,18);
+        String imageName  = "C:\\Users\\lawrence.wachs"
+                + "\\Desktop\\Images\\matrix.gif";
         // now output that string in a graphical dialog
-        output(text,"The Matrix",font,
-               background,foreground,imageName);
+        output(text,"The Matrix",font,background,foreground,imageName);
     }
 
     /**
@@ -846,13 +844,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param foreground the foreground color to use in the dialog
      * @param imageName the name of the image to display
      */
-    private static void output(
-            String text, 
-            String title, 
-            Font font, 
-            Color background, 
-            Color foreground, 
-            String imageName) {
+    private static void output(String text, String title, Font font, 
+            Color background, Color foreground, String imageName) {
         // create a graphics object to display the graphical things
         JTextArea area = new JTextArea();
         // assign the font and colors to the area
@@ -860,15 +853,11 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         area.setBackground(background);
         area.setForeground(foreground);
         area.setText(text);
-        // now create a "icon" for the image
+        // create a "icon" for the picture
         Icon picture = new ImageIcon(imageName);
-        // pass the area to the dialog
-        JOptionPane.showMessageDialog(
-                null, 
-                area,
-                title,
-                JOptionPane.PLAIN_MESSAGE,
-                picture);
+        // pass the area and the picture to the dialog
+        JOptionPane.showMessageDialog(null,area,title,
+                JOptionPane.PLAIN_MESSAGE,picture);        
     }
-        
+
 }
