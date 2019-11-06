@@ -4,6 +4,7 @@ package testing;
 
 /** required imports */
 import testing.advancedclasses.BonelessPizza;
+import testing.advancedclasses.Box;
 import testing.advancedclasses.ComputerScienceTeacher;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.HuskyAthlete;
@@ -185,6 +186,46 @@ public class AdvancedClassesTest
         }       
         if (athlete.didIWin()) athlete.haveDinner(kd);
         
+        // use our generic method, starting with 
+        // primative data types:
+        
+        boolean b = true;
+        int     i = 0;
+        double  d = 3.14;
+        char    c = 'Z';
+        
+        // now use the primatives with a more complex
+        // data type (class) called a "wrapper" class
+        
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
+        // and also string...
+        String    string    = new String("boomer");
+        
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        output(string);
+        output(athlete);
+        
+        // use a class with a generic data type
+        
+        Box<Boolean>      box1 = new Box<>(bool);
+        Box<Integer>      box2 = new Box<>(integer);
+        Box<Double>       box3 = new Box<>(doub);
+        Box<Character>    box4 = new Box<>(character);
+        Box<String>       box5 = new Box<>(string);
+        Box<HuskyAthlete> box6 = new Box<>(athlete);
+        
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
         
         
         
@@ -237,7 +278,10 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is " + item.toString();
+        System.out.println(text);
     } 
     
 }
