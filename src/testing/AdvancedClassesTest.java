@@ -6,6 +6,8 @@ package testing;
 import testing.advancedclasses.BonelessPizza;
 import testing.advancedclasses.Box;
 import testing.advancedclasses.ComputerScienceTeacher;
+import testing.advancedclasses.Food;
+import testing.advancedclasses.House;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.HuskyAthlete;
 import testing.advancedclasses.KraftDinner;
@@ -169,7 +171,7 @@ public class AdvancedClassesTest
         brayden.haveDinner(meat);
         jr.haveDinner(kd);
         
-        // a class that uses interfaces        
+        // a class that uses interfaces to test the interfaces        
         HuskyAthlete athlete = new HuskyAthlete("Havoc", 17, true, 2665);        
         for (int round = 0; round < 4; round++) {            
             if (athlete.haveYouGotItSigned()) {                
@@ -186,17 +188,14 @@ public class AdvancedClassesTest
         }       
         if (athlete.didIWin()) athlete.haveDinner(kd);
         
-        // use our generic method, starting with 
-        // primative data types:
-        
+        // use our generic method, starting with primative data types:        
         boolean b = true;
         int     i = 0;
         double  d = 3.14;
         char    c = 'Z';
         
-        // now use the primatives with a more complex
-        // data type (class) called a "wrapper" class
-        
+        // now use the primatives with a more complex data type (class) 
+        // called a "wrapper" class from the primatives         
         Boolean   bool      = new Boolean(b);
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
@@ -204,6 +203,7 @@ public class AdvancedClassesTest
         // and also string...
         String    string    = new String("boomer");
         
+        // calling the generic method on the variety of objects
         output(bool);
         output(integer);
         output(doub);
@@ -211,8 +211,9 @@ public class AdvancedClassesTest
         output(string);
         output(athlete);
         
-        // use a class with a generic data type
-        
+        // using a generic class, when a generic class is instantiated (an 
+        // object of the class is created), then you define what type the 
+        // generic is       
         Box<Boolean>      box1 = new Box<>(bool);
         Box<Integer>      box2 = new Box<>(integer);
         Box<Double>       box3 = new Box<>(doub);
@@ -220,6 +221,7 @@ public class AdvancedClassesTest
         Box<String>       box5 = new Box<>(string);
         Box<HuskyAthlete> box6 = new Box<>(athlete);
         
+        // peek in the boxes
         box1.peek();
         box2.peek();
         box3.peek();
@@ -227,9 +229,30 @@ public class AdvancedClassesTest
         box5.peek();
         box6.peek();
         
+        // open the boxes
+        Boolean   newBool   = box1.open();
+        Integer   newInt    = box2.open();
+        Double    newDoub   = box3.open();
+        Character newChar   = box4.open();
+        String    newString = box5.open();
+        Person    newPerson = box6.open();
         
+        // output the new data type variables
+        System.out.println(newBool.toString());
+        System.out.println(newInt.toString());
+        System.out.println(newDoub.toString());
+        System.out.println(newChar.toString());
+        System.out.println(newString.toString());
+        System.out.println(newPerson.toString());
         
-        
+        // generic class with multiple generic types        
+        House<Teacher,WellDoneSteak> house = new House<>();    
+        house.homeOwner = jr;
+        house.contents = meat;
+        Food[] fridge = {
+            kd,meat,boneyM,potato
+        };
+        house.party(fridge);
 
         System.out.println("\nAdvanced classes unit complete!\n");
     }    
