@@ -11,32 +11,20 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since Nov. 6, 2019, 11:38:39 a.m.
  */
-public class House <T extends Person,U>
+public class House <T extends Person,U> 
 {
-
-    /**
-     * The generic owner (parented from Person)
-     */
-    public T homeOwner;
     
-    /**
-     * The generic contents
-     */
-    public U contents;
+    public T homeOwner;
 
-    /**
-     * Holds a house party with a number of generic items (parented from
-     * Food) and eats all the items (outputting them)
-     * 
-     * @param <V> the generic item (parented from Food)
-     * @param items the array of generic items (parented from Food)
-     */
+    public U contents;
+    
     public <V extends Food> void party(V[] items) {
-        System.out.println("Homeowner " + homeOwner.toString() + " and " +
-                           contents.toString());
+        System.out.println("HomeOwner " + 
+                homeOwner.toString() + " and " + 
+                contents.toString());
         for (V item : items) {
             homeOwner.haveDinner(item);
         }
     }
-        
+    
 }

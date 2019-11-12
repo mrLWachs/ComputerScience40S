@@ -229,7 +229,7 @@ public class AdvancedClassesTest
         box5.peek();
         box6.peek();
         
-        // open the boxes
+        // open all the boxes
         Boolean   newBool   = box1.open();
         Integer   newInt    = box2.open();
         Double    newDoub   = box3.open();
@@ -245,15 +245,29 @@ public class AdvancedClassesTest
         System.out.println(newString.toString());
         System.out.println(newPerson.toString());
         
-        // generic class with multiple generic types        
-        House<Teacher,WellDoneSteak> house = new House<>();    
-        house.homeOwner = jr;
-        house.contents = meat;
+        // generic class with multiple generic types   
+        House<Teacher,Royalty> house = new House<>();
+        
+        house.homeOwner = rogowy;
+        house.contents = rapunzel;
+        
+        House<Hercules,Genie> olympus = new House<>();
+        
+        olympus.homeOwner = hercules;
+        olympus.contents = genie;
+        
+        // test our generic method        
         Food[] fridge = {
-            kd,meat,boneyM,potato
-        };
+          boneyM,potato  
+        };        
         house.party(fridge);
-
+        
+        BonelessPizza[] pizzas = new BonelessPizza[100];
+        for (int pizza = 0; pizza < pizzas.length; pizza++) {
+            pizzas[pizza] = new BonelessPizza();
+        }
+        olympus.party(pizzas);
+        
         System.out.println("\nAdvanced classes unit complete!\n");
     }    
 
