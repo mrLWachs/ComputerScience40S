@@ -31,7 +31,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     public static void main(String[] args) {        
 //        learnBasicJava();        
 //        learnMethods();   
-        learnArrays();
+//        learnArrays();
+        learnClasses();
     }
 
     /**
@@ -858,6 +859,17 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // pass the area and the picture to the dialog
         JOptionPane.showMessageDialog(null,area,title,
                 JOptionPane.PLAIN_MESSAGE,picture);        
+    }
+
+    /**
+     * Goes over the content of this unit
+     */
+    private static void learnClasses() {
+        System.out.println("\nStart learning classes...\n");
+        
+        
+        
+        System.out.println("\nLearning classes complete!\n");
     }
 
 }
