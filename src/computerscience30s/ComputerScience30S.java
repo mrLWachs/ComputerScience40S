@@ -867,6 +867,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
     private static void learnClasses() {
         System.out.println("\nStart learning classes...\n");
         
+        // create a person object from the Person class
+        Person person = new Person();        
+        // similar to old code like: Random random = new Random();
+        
+        // call (invoke) a method within the object
+        person.talk();
         
         
         System.out.println("\nLearning classes complete!\n");
