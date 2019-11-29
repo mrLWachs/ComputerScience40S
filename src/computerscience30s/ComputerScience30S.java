@@ -874,27 +874,22 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // call (invoke) a method within the object
         person.talk();
         
-        Person charles = new Person("Charles Darwin");
-        charles.talk();
-        charles.birthday();
-        charles.talk();
-        charles.birthday(72);
-        charles.talk();
-        charles.die();
-        charles.talk();
+        // create (instantiate) another object with different constructor
+        Person joe = new Person("Joseph Diesel");
+        joe.talk();
+        joe.birthday();
+        joe.talk();
+        joe.birthday(17);
+        joe.talk();
+        joe.die();
+        joe.talk();
+           
+        // another instance of a person with the 3rd constructor
+        Person elsa = new Person("Elsa Arendelle",24,false);
+        elsa.talk();     
         
-        Person elsa = new Person("Elsa Arendelle",24,false);        
-        elsa.talk();
         
-                
-                
-                
-                
-                
-                
-                
-                
-                
+        
                 
                 
         

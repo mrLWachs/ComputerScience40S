@@ -27,23 +27,33 @@ public class Person
      * Constructor method called (invoked) when the class is used to 
      * build a object, this is called the "default" constructor
      */
-    Person() {
+    public Person() {
         born();
-    }
+    }    
     
-    Person(String newName) {
+    /**
+     * Constructor (overloaded) sets class properties
+     * 
+     * @param newName the name for this person
+     */
+    public Person(String newName) {
         born();
         name = newName;
     }
     
-    Person(String name, int age, 
-           boolean isMale) {
-        this.name = name;
-        this.age = age;
+    /**
+     * Constructor method for the class, sets class properties
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param isMale the gender for this person
+     */
+    public Person(String name, int age, boolean isMale) {
+        this.name   = name;
+        this.age    = age;
         this.isMale = isMale;
-        isAlive = true;
+        isAlive     = true;
     }
-    
     
     /**
      * When a person is born, it sets the properties of this class to the 
@@ -87,5 +97,7 @@ public class Person
             birthday();
         }
     }
+
+
     
 }
