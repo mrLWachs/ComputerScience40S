@@ -874,6 +874,30 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // call (invoke) a method within the object
         person.talk();
         
+        Person charles = new Person("Charles Darwin");
+        charles.talk();
+        charles.birthday();
+        charles.talk();
+        charles.birthday(72);
+        charles.talk();
+        charles.die();
+        charles.talk();
+        
+        Person elsa = new Person("Elsa Arendelle",24,false);        
+        elsa.talk();
+        
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+        
         
         System.out.println("\nLearning classes complete!\n");
     }

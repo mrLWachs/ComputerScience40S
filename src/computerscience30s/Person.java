@@ -31,6 +31,20 @@ public class Person
         born();
     }
     
+    Person(String newName) {
+        born();
+        name = newName;
+    }
+    
+    Person(String name, int age, 
+           boolean isMale) {
+        this.name = name;
+        this.age = age;
+        this.isMale = isMale;
+        isAlive = true;
+    }
+    
+    
     /**
      * When a person is born, it sets the properties of this class to the 
      * starting values
@@ -66,6 +80,12 @@ public class Person
      */
     void birthday() {
         age++;
+    }
+
+    void birthday(int times) {
+        for (int i = 0; i < times; i++) {
+            birthday();
+        }
     }
     
 }
