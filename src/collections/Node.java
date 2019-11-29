@@ -29,7 +29,7 @@ public class Node <T>
     /** Self reference (pointer) to the previous node in the "list" */
     public Node previous;
     
-    
+        
     /**
      * Class constructor sets class properties 
      * 
@@ -40,20 +40,30 @@ public class Node <T>
     public Node(T data, Node next, Node previous) {
         this.data     = data;
         this.next     = next;
-        this.previous = previous;        
+        this.previous = previous;
     }
-    
+       
     /**
      * Class constructor sets class properties 
      * 
-     * @param data the Node data
+     * @param data the node data
+     * @param next reference to the next Node object
+     */
+    public Node(T data, Node next) {
+        this(data,next,null);
+    }
+        
+    /**
+     * Class constructor sets class properties 
+     * 
+     * @param data the node data
      */
     public Node(T data) {
         this(data,null,null);
     }
     
     /** 
-     * Default constructor for the class 
+     * Default constructor, sets class properties
      */
     public Node() {
         this(null,null,null);
@@ -66,7 +76,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        return "Node: " + super.toString();
+        if (data == null) return null;              // invalid data, output null
+        return data.toString();                     // output data in node
     }
     
     /**
@@ -77,7 +88,9 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        if (object == null) return false;       // error check
+        Node that = (Node)object;               // cast object into node
+        return data.equals(that.data);          // compare data in nodes
     }
         
     /**

@@ -20,14 +20,17 @@ public class CollectionsTest
     public CollectionsTest() {
         System.out.println("\nCollections Test started...\n");
         
+        // build some node objects, testing various constructors
         Node<String> a = new Node<>();
-        Node<String> b = new Node<>("donut");
-        Node<String> c = new Node<>("chicken",a,b);
+        Node<String> b = new Node<>("duck");
+        Node<String> c = new Node<>("waddle",a);
+        Node<String> d = new Node<>("bread",c,b);
         
-        Node<String> d = new Node<>("pee",a,c);        
-        Node<String> e = new Node<>("poop",c,d);        
-        Node<String> f = new Node<>("fart");
-        
+        // text the overloaded toString method
+        System.out.println(a.toString());
+        System.out.println(b.toString());
+        System.out.println(c.toString());
+        System.out.println(d.toString());
         
         
         
