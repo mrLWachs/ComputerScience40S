@@ -4,22 +4,30 @@ package collections;
 
  
 /**
- * LinkedList.java - description
- *
- * @author Mr. Wachs
- * @since Nov. 26, 2019, 10:59:11 a.m.
+ * LinkedList.java - an implementation of a linked list abstract (advanced)
+ * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
+ * 
+ *             +------+       +------+       +------+       +------+      
+ *  null <---- |      | <---- |      | <---- |      | <---- |      |  
+ *             | NODE |       | NODE |       | NODE |       | NODE |       
+ *             |      |---->  |      |---->  |      |---->  |      |----> null  
+ *             +------+       +------+       +------+       +------+      
+ *                 ^                                           ^
+ *                 |                                           |
+ *                head                                        tail
+ * 
+ * @author Mr. Wachs 
+ * @since 6-May-2019 
  */
 public class LinkedList 
 {
-
+    
     /** Reference (link) to the first (front) node in the list (entry point) */
     private Node head;
     
     /** Reference (link) to the last (back) node in the list (entry point) */
     private Node tail;
-    
-    
-    
+
     /**
      * Default constructor, set class properties
      */
@@ -57,14 +65,5 @@ public class LinkedList
     public LinkedList clone() {
         return this;
     }
-    
-    /**
-     * Frees up all memory used by this object
-     */
-    @Override
-    public void finalize() {
-        
-        System.gc();
-    } 
 
 }

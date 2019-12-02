@@ -33,29 +33,23 @@ public class CollectionsTest
         System.out.println(d.toString());
         
         // test the equals method
-        boolean result = false;        
-        result = a.equals(b);        
-        System.out.println("a == b is " + result);
-        result = b.equals(c);        
-        System.out.println("b == c is " + result);
-        result = c.equals(d);        
-        System.out.println("c == d is " + result);
+        boolean result = false;
+        result = a.equals(b);
+        System.out.println("a==b is " + result);
+        result = b.equals(c);
+        System.out.println("b==c is " + result);
+        result = c.equals(d);
+        System.out.println("c==d is " + result);
         
         // test clone method
-        Node<String> e = b.clone();
+        Node<String> e = d.clone();
         System.out.println(e.toString());
-        result = e.equals(b);        
-        System.out.println("e == b is " + result);
+        result = e.equals(d);
+        System.out.println("e==d is " + result);
         
         // test finalize method
         e.finalize();
         System.out.println(e.toString());
-        
-        
-        
-        
-        
-        
         
         
         

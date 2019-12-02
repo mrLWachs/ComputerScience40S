@@ -101,11 +101,8 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return new Node(
-                this.data,
-                this.next,
-                this.previous);
-        // annoyomous object
+        return new Node(data,next,previous);
+        // annonymous object
     }
     
     /**
@@ -115,7 +112,7 @@ public class Node <T>
     public void finalize() {
         data = null;
         next = previous = null;
-        System.gc();
-    }    
+        System.gc();                // runs the garbage collector in Java
+    }
 
 }
