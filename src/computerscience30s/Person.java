@@ -92,12 +92,15 @@ public class Person
         age++;
     }
 
+    /**
+     * A person has many birthdays
+     * 
+     * @param times how many birthdays to have
+     */
     void birthday(int times) {
         for (int i = 0; i < times; i++) {
             birthday();
         }
     }
-
-
     
 }
