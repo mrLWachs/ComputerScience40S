@@ -24,18 +24,28 @@ public class CollectionsTest
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("duck");
         Node<String> c = new Node<>("waddle",a);
-        Node<String> d = new Node<>("bread",c,b);
+        Node<String> d = new Node<>("waddle",c,b);
         
-        // text the overloaded toString method
+        // test the overloaded toString method
         System.out.println(a.toString());
         System.out.println(b.toString());
         System.out.println(c.toString());
         System.out.println(d.toString());
         
+        // test the equals method
+        boolean result = false;        
+        result = a.equals(b);        
+        System.out.println("a == b is " + result);
+        result = b.equals(c);        
+        System.out.println("b == c is " + result);
+        result = c.equals(d);        
+        System.out.println("c == d is " + result);
         
-        
-        
-        
+        // test clone method
+        Node<String> e = b.clone();
+        System.out.println(e.toString());
+        result = e.equals(b);        
+        System.out.println("e == b is " + result);
         
         
         

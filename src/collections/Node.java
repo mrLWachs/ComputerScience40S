@@ -90,6 +90,7 @@ public class Node <T>
     public boolean equals(Object object) {
         if (object == null) return false;       // error check
         Node that = (Node)object;               // cast object into node
+        if (that.data == null || this.data == null) return false;
         return this.data.equals(that.data);     // compare data in nodes
     }
         
@@ -100,7 +101,13 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        return new Node(
+                this.data,
+                this.next,
+                this.previous);
+        // annoyomous object
     }
+    
+    
 
 }
