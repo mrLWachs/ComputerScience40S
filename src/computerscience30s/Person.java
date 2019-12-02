@@ -16,10 +16,10 @@ public class Person
     
     // Properties: (things about it, adjectives, descriptors).................
     
-    String  name;
-    int     age;
-    boolean isMale;
-    boolean isAlive;    
+    public  String  name;
+    private int     age;    // encapsulated property
+    public  boolean isMale;
+    private boolean isAlive;    
     
     // Methods: (things it can do, verbs, actions)............................
   
@@ -59,7 +59,7 @@ public class Person
      * When a person is born, it sets the properties of this class to the 
      * starting values
      */
-    void born() {
+    private void born() {
         isAlive = true;
         age     = 0;
         isMale  = false;
@@ -69,15 +69,16 @@ public class Person
     /**
      * When a person dies
      */
-    void die() {
+    public void die() {
         isAlive = false;
     }
     
     /**
      * A person talks (by outputting information to the screen)
      */
-    void talk() {        
+    public void talk() {        
         if (isAlive) {
+            identify();
             System.out.println(name + " is " + age);
         }
         else {
@@ -88,7 +89,7 @@ public class Person
     /**
      * A person has a birthday (their age goes up by one)
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }
 
@@ -97,10 +98,18 @@ public class Person
      * 
      * @param times how many birthdays to have
      */
-    void birthday(int times) {
+    public void birthday(int times) {
         for (int i = 0; i < times; i++) {
             birthday();
         }
     }
+    
+    /**
+     * Displays the person's gender
+     */
+    private void identify() {
+        if (isMale) System.out.print("Male ");
+        else        System.out.print("Female ");
+    }    
     
 }
