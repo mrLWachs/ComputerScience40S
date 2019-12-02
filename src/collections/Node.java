@@ -90,7 +90,7 @@ public class Node <T>
     public boolean equals(Object object) {
         if (object == null) return false;       // error check
         Node that = (Node)object;               // cast object into node
-        return data.equals(that.data);          // compare data in nodes
+        return this.data.equals(that.data);     // compare data in nodes
     }
         
     /**
