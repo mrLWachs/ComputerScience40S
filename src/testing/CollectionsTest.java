@@ -47,7 +47,9 @@ public class CollectionsTest
         result = e.equals(b);        
         System.out.println("e == b is " + result);
         
-        
+        // test finalize method
+        e.finalize();
+        System.out.println(e.toString());
         
         
         

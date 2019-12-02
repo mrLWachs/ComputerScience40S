@@ -12,6 +12,14 @@ package collections;
 public class LinkedList 
 {
 
+    /** Reference (link) to the first (front) node in the list (entry point) */
+    private Node head;
+    
+    /** Reference (link) to the last (back) node in the list (entry point) */
+    private Node tail;
+    
+    
+    
     /**
      * Default constructor, set class properties
      */
@@ -49,5 +57,14 @@ public class LinkedList
     public LinkedList clone() {
         return this;
     }
+    
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        
+        System.gc();
+    } 
 
 }
