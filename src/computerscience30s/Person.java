@@ -17,9 +17,9 @@ public class Person
     // Properties: (things about it, adjectives, descriptors).................
     
     public  String  name;
-    private int     age;    // encapsulated property
+    private int     age;        // encapsulated property
     public  boolean isMale;
-    private boolean isAlive;    
+    private boolean isAlive;    // "hidden" property
     
     // Methods: (things it can do, verbs, actions)............................
   

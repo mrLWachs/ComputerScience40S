@@ -887,8 +887,9 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         // another instance of a person with the 3rd constructor
         Person elsa = new Person("Elsa Arendelle",24,false);
         elsa.talk();     
-        
-        
+        elsa.isMale = true;
+        elsa.name = "Elliot Arendelle";
+        elsa.talk(); 
         
         
                 
