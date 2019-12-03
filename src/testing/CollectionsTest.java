@@ -2,6 +2,7 @@
 /** required package class namespace */
 package testing;
 
+import collections.LinkedList;
 import collections.Node;
 
  
@@ -50,6 +51,14 @@ public class CollectionsTest
         // test finalize method
         e.finalize();
         System.out.println(e.toString());
+        
+        // create a linked list
+        LinkedList<String> list = new LinkedList<>();
+        
+        
+        
+        
+        
         
         
         

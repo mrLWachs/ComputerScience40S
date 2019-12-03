@@ -19,7 +19,7 @@ package collections;
  * @author Mr. Wachs 
  * @since 6-May-2019 
  */
-public class LinkedList 
+public class LinkedList <T>
 {
     
     /** Reference (link) to the first (front) node in the list (entry point) */
@@ -27,12 +27,15 @@ public class LinkedList
     
     /** Reference (link) to the last (back) node in the list (entry point) */
     private Node tail;
-
+    
+    /** The number of nodes in the list, immutable property */
+    private int length;
+    
     /**
      * Default constructor, set class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
 
     /**
@@ -65,5 +68,15 @@ public class LinkedList
     public LinkedList clone() {
         return this;
     }
-
+        
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        length = 0;                 // length set to zero
+        head = tail = null;         // references set to nulls
+        System.gc();                // runs the garbage collector in Java
+    }
+    
 }
