@@ -891,6 +891,12 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         elsa.name = "Elliot Arendelle";
         elsa.talk(); 
         
+        // create a student object
+        Student student = new Student();
+        student.talk();
+        
+        
+        
         
                 
                 
