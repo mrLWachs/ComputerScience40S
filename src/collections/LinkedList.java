@@ -17,6 +17,7 @@ package collections;
  *                head                                        tail
  * 
  * @author Mr. Wachs 
+ * @param <T> the generic data type used in the class
  * @since 6-May-2019 
  */
 public class LinkedList <T>
