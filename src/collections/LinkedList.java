@@ -38,6 +38,56 @@ public class LinkedList <T>
     public LinkedList() {
         finalize();
     }
+    
+    /**
+     * Determines if the list is empty (no content)
+     * 
+     * @return is empty (true) or not empty (false)
+     */
+    public boolean isEmpty() {
+        return length == 0;
+    }
+    
+    /**
+     * Accessor method of the immutable property
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
+    
+    /**
+     * Inserts data into the front (head) of the list
+     * 
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addFront(T data) {
+        if (data == null) return false;     // null data cannot be added        
+        Node<T> node = new Node<>(data);    // new node memory created 
+        // Scenarios to consider:    
+        // 1) empty list
+        // 2) list of 1 or more nodes
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
+        }
+        else {                              // subsequent nodes added
+            node.next = head;               // link node to rest of list
+            head.previous = node;           // connect rest of list to node
+            head = node;                    // reassign head reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
+    }
+    
+    
+    
+    
+    
+    
+    
+    
 
     /**
      * String representation of this object
