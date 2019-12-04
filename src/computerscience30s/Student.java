@@ -18,28 +18,33 @@ public class Student extends Person
     private double gpa;
     private int stress;
     
-    
-    
-    public Student(String name, 
-                   int age,
-                   boolean isMale, 
-                   int number) {
-        super.isMale = isMale;
+     
+    /**
+     * Constructor for the class sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param number the student number for this student
+     */
+    public Student(String name, int age, boolean isMale, int number) {
         super.name = name;
+        super.isMale = isMale;
         super.birthday(age);
         this.number = number;
     }
     
-    
-    
-    
-    
-    
+    /**
+     * Studying raises the GPA and increases stress
+     */
     public void study() {
-        gpa = gpa + 0.1;
-        stress += 10;
+        gpa = gpa + 0.0001;
+        stress += 20;
     }
     
+    /**
+     * Cramming is intense studying
+     */
     public void cram() {
         for (int i = 0; i < 10; i++) {
             study();
@@ -47,18 +52,23 @@ public class Student extends Person
     }
     
     /**
-     * slacking off reduces my gpa but also
-     * relieves my stress a little
+     * Slacking off lowers the GPA and stress
      */
     public void slackOff() {
-        stress -= 15;
+        stress -= 30;
         gpa = gpa - youtube(60);
     }
     
+    /**
+     * Watching YouTube lowers GPA 
+     * 
+     * @param time how many minutes you watched
+     * @return the amount to reduce the GPA
+     */
     private double youtube(int time) {
         double amount = 0;
         for (int i = 0; i < time; i++) {
-            amount = amount + 0.01;
+            amount = amount + 2.2;
         }
         return amount;
     }
