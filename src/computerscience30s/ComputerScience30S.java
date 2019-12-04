@@ -892,7 +892,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         elsa.talk(); 
         
         // create a student object
-        Student student = new Student();
+        Student student = new Student("Greg Greg",17,false,1234);
         student.talk();
         
         
