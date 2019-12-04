@@ -55,9 +55,9 @@ public class CollectionsTest
         // create a linked list
         LinkedList<String> list = new LinkedList<>();
         
-        // test methods
-        System.out.println("Size is " + list.size());
-        System.out.println("Empty is " + list.isEmpty());
+        // test the methods
+        System.out.println("Size  = " + list.size());
+        System.out.println("Empty = " + list.isEmpty());
         
         
         

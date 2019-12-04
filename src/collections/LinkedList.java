@@ -56,7 +56,7 @@ public class LinkedList <T>
     public int size() {
         return length;
     }
-    
+        
     /**
      * Inserts data into the front (head) of the list
      * 
@@ -80,6 +80,9 @@ public class LinkedList <T>
         length++;                           // increase length environmental
         return true;                        // operation successful
     }
+    
+    
+    
     
     
     
