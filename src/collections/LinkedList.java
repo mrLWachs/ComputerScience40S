@@ -81,16 +81,27 @@ public class LinkedList <T>
         return true;                        // operation successful
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Inserts data into the back (tail) of the list
+     * 
+     * @param data the data type to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBack(T data) {
+        if (data == null) return false;     // null data cannot be added            
+        Node<T> node = new Node<>(data);    // new node memory created    
+        if (isEmpty()) {                    // adding first node
+            head = tail = node;             // set references
+        }
+        else {                              // subsequent nodes added
+            node.previous = tail;           // link node to rest of list
+            tail.next = node;               // connect rest of list to node
+            tail = node;                    // reassign tail reference
+        }
+        length++;                           // increase length environmental
+        return true;                        // operation successful
+    } 
+       
 
     /**
      * String representation of this object
@@ -99,7 +110,14 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList: " + super.toString();
+        if (isEmpty()) return "Empty LinkedList";
+        String text = "Linked List [";              // starting character
+        Node current = head;                        // start at head node
+        while (current.next != null) {              // traverse list
+            text += current.toString() + ",";       // append data
+            current = current.next;                 // move to next node
+        }            
+        return text + current.toString() + "]";     // append end character
     }
     
     /**

@@ -56,12 +56,24 @@ public class CollectionsTest
         LinkedList<String> list = new LinkedList<>();
         
         // test the methods
+        System.out.println(list.toString());
+        
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
         
+        System.out.println(list.addBack(null));
+        System.out.println(list.addBack("fart"));
+        System.out.println(list.addBack("alphagetti"));
+        System.out.println(list.addBack("seventeen"));
         
+        System.out.println(list.addFront(null));
+        System.out.println(list.addFront("samosa"));
+        System.out.println(list.addFront("baller"));
+        System.out.println(list.addFront("gravity"));
         
-        
+        System.out.println(list.toString());
+        System.out.println("Size  = " + list.size());
+        System.out.println("Empty = " + list.isEmpty());
         
         
         
