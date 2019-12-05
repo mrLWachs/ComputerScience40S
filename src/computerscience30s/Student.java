@@ -33,7 +33,19 @@ public class Student extends Person
         super.birthday(age);
         this.number = number;
     }
-    
+
+    /**
+     * Constructor for the class sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     */
+    public Student(String name, int age, boolean isMale) {
+        super(name,age,isMale);
+        number = (int)(99 * Math.random() + 1);
+    }
+        
     /**
      * Studying raises the GPA and increases stress
      */
@@ -72,5 +84,17 @@ public class Student extends Person
         }
         return amount;
     }
-        
+     
+    /**
+     * Talking overrides the same talk method of the parent class
+     * and outputs additional information to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();
+        System.out.println("\t Number: " + number);
+        System.out.println("\t GPA:    " + gpa);
+        System.out.println("\t Stress: " + stress);                
+    }
+    
 }

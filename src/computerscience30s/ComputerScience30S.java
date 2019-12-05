@@ -895,6 +895,29 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         Student student = new Student("Greg Greg",17,false,1234);
         student.talk();
         
+        // create another student object and call it's methods
+        Student larry = new Student("Larry Rogowy",16,true);
+        larry.talk();
+        larry.study();
+        larry.slackOff();
+        larry.cram();
+        larry.birthday();
+        larry.talk();
+        
+        // create a teacher object and call it's methods
+        Teacher teacher = new Teacher("Teacher School", "Course");
+        teacher.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
