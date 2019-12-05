@@ -101,8 +101,7 @@ public class LinkedList <T>
         length++;                           // increase length environmental
         return true;                        // operation successful
     } 
-       
-
+    
     /**
      * String representation of this object
      *
@@ -110,14 +109,14 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        if (isEmpty()) return "Empty LinkedList";
-        String text = "Linked List [";              // starting character
-        Node current = head;                        // start at head node
-        while (current.next != null) {              // traverse list
-            text += current.toString() + ",";       // append data
-            current = current.next;                 // move to next node
+        if (isEmpty()) return "Empty LinkedList";       // no nodes to display
+        String text = "Linked List [";                  // starting character
+        Node current = head;                            // start at head node
+        while (current.next != null) {                  // traverse list
+            text += current.toString() + ",";           // append data
+            current = current.next;                     // move to next node
         }            
-        return text + current.toString() + "]";     // append end character
+        return text + current.toString() + "]";         // append end character      
     }
     
     /**
