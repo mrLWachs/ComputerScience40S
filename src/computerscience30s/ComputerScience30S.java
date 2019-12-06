@@ -908,22 +908,32 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
         Teacher teacher = new Teacher("Teacher School", "Course");
         teacher.talk();
         
+        // create another teacher object
+        Teacher wachs = new Teacher("Mr. Wachs","Math");
+        wachs.students[0] = student;
+        wachs.students[1] = larry;
+        wachs.teach();
+        wachs.talk();
         
+        // create husky object
+        Husky havoc = new Husky("Havoc",12,true);
+        havoc.talk();
+        havoc.homework();
+        havoc.talk();
+        havoc.atLeastImNotAtJohnTaylor();
+        havoc.talk();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-                
-                
-        
+        // create meeting object
+        Meeting meeting = new Meeting();
+        meeting.attend(person);
+        meeting.attend(elsa);
+        meeting.attend(student);
+        meeting.attend(havoc);
+        meeting.attend(teacher);
+        meeting.attend(larry);
+        meeting.attend(wachs);
+        meeting.attend(joe);
+        meeting.hold();
         
         System.out.println("\nLearning classes complete!\n");
     }

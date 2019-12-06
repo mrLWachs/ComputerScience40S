@@ -18,6 +18,9 @@ public class Teacher extends Person
                                                 // of an associate class
     private String    course;                   // encapsulated property
     
+    private final int MAXIMUM = 100;            // constant maximum students
+    
+    
     /**
      * Constructor for the class sets class properties
      * 
@@ -25,8 +28,36 @@ public class Teacher extends Person
      * @param course the course this teacher teaches
      */
     public Teacher(String name, String course) {
-        super(name);
-        this.course = course;
+        super(name);                            // call to super constructor
+        this.course = course;                   // set super private property
+        students = new Student[MAXIMUM];        // build up array
+    }
+    
+    /**
+     * Teaches all the students this teacher has an association with by making
+     * them study
+     */
+    public void teach() {
+        for (int i = 0; i < MAXIMUM; i++) {         // traverse array
+            if (students[i] != null) {              // array spot not a null
+                students[i].study();                // make this spot study
+            }
+        }
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class
+     * and outputs additional information to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();                       // call to the super talk method
+        System.out.println("\t I teach " + course);
+        for (int i = 0; i < MAXIMUM; i++) {
+            if (students[i] != null) {
+                students[i].talk();
+            }
+        }
     }
     
 }
