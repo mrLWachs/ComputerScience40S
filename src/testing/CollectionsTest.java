@@ -64,7 +64,7 @@ public class CollectionsTest
         
         System.out.println(list.addFront(null));
         System.out.println(list.addFront("aardvark"));
-        System.out.println(list.addFront("aardfart"));
+        System.out.println(list.addFront("apple"));
         System.out.println(list.addFront("cheesecake"));
         
         System.out.println(list.addBack(null));

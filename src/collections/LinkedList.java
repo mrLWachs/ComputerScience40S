@@ -119,6 +119,16 @@ public class LinkedList <T>
         return text + current.toString() + "]";         // append end character      
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
