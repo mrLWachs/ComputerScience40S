@@ -36,19 +36,14 @@ public class CollectionsTest
         System.out.println(d.toString());
         
         // test the equals method
-        boolean result = false;
-        result = a.equals(b);
-        System.out.println("a==b is " + result);
-        result = b.equals(c);
-        System.out.println("b==c is " + result);
-        result = c.equals(d);
-        System.out.println("c==d is " + result);
+        System.out.println("a==b is " + a.equals(b));
+        System.out.println("b==c is " + b.equals(c));
+        System.out.println("c==d is " + c.equals(d));
         
         // test clone method
         Node<String> e = d.clone();
         System.out.println(e.toString());
-        result = e.equals(d);
-        System.out.println("e==d is " + result);
+        System.out.println("e==d is " + e.equals(d));
         
         // test finalize method
         e.finalize();
@@ -67,14 +62,14 @@ public class CollectionsTest
         System.out.println(list.toString());
         
         System.out.println(list.addFront(null));
-        System.out.println(list.addFront("aardvark"));
-        System.out.println(list.addFront("apple"));
-        System.out.println(list.addFront("cheesecake"));
+        System.out.println(list.addFront("Aardvark"));
+        System.out.println(list.addFront("Apple"));
+        System.out.println(list.addFront("Cheesecake"));
         
         System.out.println(list.addBack(null));
-        System.out.println(list.addBack("mongral"));
-        System.out.println(list.addBack("mongoose"));
-        System.out.println(list.addBack("monkey"));
+        System.out.println(list.addBack("Mongral"));
+        System.out.println(list.addBack("Mongoose"));
+        System.out.println(list.addBack("Monkey"));
         
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
@@ -89,7 +84,7 @@ public class CollectionsTest
         System.out.println(list.get(list.size()+1));
         System.out.println(list.get(-1));
         
-        System.out.println(list.set(2,"birdy"));
+        System.out.println(list.set(2,"Birdy"));
         System.out.println(list.set(0,"Wheeler"));
         System.out.println(list.set(list.size()-1,"Jets"));
         System.out.println(list.set(list.size()+1,"Potato"));
