@@ -2,12 +2,13 @@
 /** required package class namespace */
 package testing;
 
+/** required imports */
 import collections.LinkedList;
 import collections.Node;
 
  
 /**
- * CollectionsTest.java - description
+ * CollectionsTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
  * @since Nov. 25, 2019, 11:12:06 a.m.
@@ -56,8 +57,10 @@ public class CollectionsTest
         // create a linked list
         LinkedList<String> list = new LinkedList<>();
         
-        // test the methods
+        // test the various LinkedList methods:
+        
         System.out.println("Testing LinkedList code.....................");
+        
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
         
@@ -78,22 +81,33 @@ public class CollectionsTest
         
         System.out.println(list.toString());
         
+        // testing typical index, the list edges, and beyond the edges
+        
         System.out.println(list.get(2));
-        System.out.println(list.get(-1));
-        System.out.println(list.get(list.size()+1));
         System.out.println(list.get(0));
         System.out.println(list.get(list.size()-1));
-                
-        System.out.println(list.set(2,"gratuitous"));
-        System.out.println(list.set(0,"axolotl"));
-        System.out.println(list.set(list.size()-1,"cat"));
-        System.out.println(list.set(list.size()+1,"cat"));
-        System.out.println(list.set(-1,"cat"));
+        System.out.println(list.get(list.size()+1));
+        System.out.println(list.get(-1));
+        
+        System.out.println(list.set(2,"birdy"));
+        System.out.println(list.set(0,"Wheeler"));
+        System.out.println(list.set(list.size()-1,"Jets"));
+        System.out.println(list.set(list.size()+1,"Potato"));
+        System.out.println(list.set(-1,"Gorilla"));
         System.out.println(list.set(2,null));
+                
         System.out.println(list.toString());
         
-        // testing typical index, the list edges and 
-        // beyond the edges
+        
+        
+        ///////////////////////////////////////////////////
+        // MORE TESTING TO COME....
+        ///////////////////////////////////////////////////
+        
+        
+        
+        
+        
         
         
         

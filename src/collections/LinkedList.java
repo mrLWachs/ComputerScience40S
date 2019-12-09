@@ -150,12 +150,9 @@ public class LinkedList <T>
     
     
     
-    
-    
-    
-    
-    
-    
+    /******************************************************************
+     * MORE METHODS TO COME........
+     ******************************************************************/
     
     
     
@@ -208,20 +205,22 @@ public class LinkedList <T>
         head = tail = null;         // references set to nulls
         System.gc();                // runs the garbage collector in Java
     }
-    
+        
     /**
-     * Accessor method to the encapsulated first (head) node in the list
+     * Accessor method to the encapsulated (private) property of the first
+     * (head) node of the list
      * 
-     * @return  a reference to the head node
+     * @return reference to the first node
      */
     protected Node getFirstNode() {
         return head;
     }
     
     /**
-     * Accessor method to the encapsulated last (tail) node in the list
+     * Accessor method to the encapsulated (private) property of the last
+     * (tail) node of the list
      * 
-     * @return  a reference to the tail node
+     * @return reference to the last node
      */
     protected Node getLastNode() {
         return tail;
@@ -241,20 +240,20 @@ public class LinkedList <T>
         for (int i = 0; i < index; i++) {               // move to index
             current = current.next;                     // advance reference
         }
-        return current;                                 // advance reference
+        return current;                                 // return reference
     }
-      
+        
     /**
      * Checks to see if the index is in range of the list
      * 
      * @param index the location to check
      * @return it is in range (true) or not (false)
-     */ 
+     */        
     private boolean inRange(int index) {
         if (isEmpty())       return false;  // empty list no valid index
         if (index < 0)       return false;  // index before first valid number
         if (index >= length) return false;  // index after last valid number
         return true;                        // index is valid
     }
-    
+        
 }
