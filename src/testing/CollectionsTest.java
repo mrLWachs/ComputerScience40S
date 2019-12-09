@@ -22,6 +22,7 @@ public class CollectionsTest
         System.out.println("\nCollections Test started...\n");
         
         // build some node objects, testing various constructors
+        System.out.println("Testing Node code.....................");
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("duck");
         Node<String> c = new Node<>("waddle",a);
@@ -56,7 +57,7 @@ public class CollectionsTest
         LinkedList<String> list = new LinkedList<>();
         
         // test the methods
-        
+        System.out.println("Testing LinkedList code.....................");
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
         
@@ -77,8 +78,22 @@ public class CollectionsTest
         
         System.out.println(list.toString());
         
+        System.out.println(list.get(2));
+        System.out.println(list.get(-1));
+        System.out.println(list.get(list.size()+1));
+        System.out.println(list.get(0));
+        System.out.println(list.get(list.size()-1));
+                
+        System.out.println(list.set(2,"gratuitous"));
+        System.out.println(list.set(0,"axolotl"));
+        System.out.println(list.set(list.size()-1,"cat"));
+        System.out.println(list.set(list.size()+1,"cat"));
+        System.out.println(list.set(-1,"cat"));
+        System.out.println(list.set(2,null));
+        System.out.println(list.toString());
         
-        
+        // testing typical index, the list edges and 
+        // beyond the edges
         
         
         
@@ -87,5 +102,7 @@ public class CollectionsTest
         
         System.out.println("\nCollections Test completed!\n");
     }
+    
+
 
 }

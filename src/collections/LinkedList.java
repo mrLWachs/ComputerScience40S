@@ -103,6 +103,65 @@ public class LinkedList <T>
     } 
     
     /**
+     * Accessor for the data at the specified index
+     * 
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {        
+        if (!inRange(index)) return null;   // invalid index, return flag        
+        return (T)getNode(index).data;      // get reference and retrieve data  
+    }
+    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        if (!inRange(index)) return false;          // invalid index
+        if (data == null)    return false;          // invalid data
+        Node current = getNode(index);              // get to node at index
+        current.data = data;                        // change node data
+        return true;                                // operation successful
+    }
+    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // first node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // last node
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
@@ -118,17 +177,7 @@ public class LinkedList <T>
         }            
         return text + current.toString() + "]";         // append end character      
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -158,6 +207,54 @@ public class LinkedList <T>
         length = 0;                 // length set to zero
         head = tail = null;         // references set to nulls
         System.gc();                // runs the garbage collector in Java
+    }
+    
+    /**
+     * Accessor method to the encapsulated first (head) node in the list
+     * 
+     * @return  a reference to the head node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+    
+    /**
+     * Accessor method to the encapsulated last (tail) node in the list
+     * 
+     * @return  a reference to the tail node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accesses the node reference for this index location
+     * 
+     * @param index the index location
+     * @return a reference to the node at this index or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        Node current = head;                            // start at first node
+        for (int i = 0; i < index; i++) {               // move to index
+            current = current.next;                     // advance reference
+        }
+        return current;                                 // advance reference
+    }
+      
+    /**
+     * Checks to see if the index is in range of the list
+     * 
+     * @param index the location to check
+     * @return it is in range (true) or not (false)
+     */ 
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index is valid
     }
     
 }
