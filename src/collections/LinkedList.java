@@ -146,6 +146,48 @@ public class LinkedList <T>
         return get(length-1);                       // last node
     }
     
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // no front to remove
+        T data = (T)head.data;                  // store head data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            head = head.next;                   // advanced head reference
+            head.previous.next = null;          // cut old head reference
+            head.previous = null;               // cut reference to old head
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
+    }
+    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;             // no back to remove
+        T data = (T)tail.data;                  // store tail data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            tail = tail.previous;               // advanced tail reference
+            tail.next.previous = null;          // cut old tail reference
+            tail.next = null;                   // cut reference to old tail
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
+    }
+    
+    
+    
+    
+    
     
     
     
@@ -153,6 +195,14 @@ public class LinkedList <T>
     /******************************************************************
      * MORE METHODS TO COME........
      ******************************************************************/
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
@@ -183,7 +233,18 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != that.size()) return false;   // not same sizes      
+        Node current1 = this.getFirstNode();            // get reference to
+        Node current2 = that.getFirstNode();            // nodes in each list    
+        while (current1 != null) {                      // traverse lists
+            if (!current1.equals(current2)) {           // not equal data 
+                return false;                           // not equal lists
+            }                
+            current1 = current1.next;                   // move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // lists are equal
     }
         
     /**
@@ -193,7 +254,11 @@ public class LinkedList <T>
      */
     @Override
     public LinkedList clone() {
-        return this;
+        LinkedList<T> list = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < length; i++) {          // traverse list
+            list.addBack((T)this.getNode(i).data);  // get and add node data          
+        }        
+        return list;                                // new list returned
     }
         
     /**

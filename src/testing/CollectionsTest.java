@@ -93,6 +93,31 @@ public class CollectionsTest
                 
         System.out.println(list.toString());
         
+        LinkedList<String> list2 = list.clone();
+        System.out.println(list2.toString());
+        
+        System.out.println("1==2 is " + list.equals(list2));
+        list2.set(2, "Random");
+        System.out.println(list.toString());
+        System.out.println(list2.toString());
+        System.out.println("1==2 is " + list.equals(list2));
+        
+        // make a clone and test remove methods....
+        LinkedList<String> list3 = list2.clone();
+        
+        System.out.println("2 = " + list2.toString());
+        System.out.println("3 = " + list3.toString());
+        
+        for (int i = 0; i < list.size()+1; i++) {            
+            System.out.println("2 = " + list2.removeFront());
+            System.out.println("3 = " + list3.removeBack());
+            System.out.println("2 = " + list2.toString());
+            System.out.println("3 = " + list3.toString());
+        }
+        
+        
+        
+        
         
         
         ///////////////////////////////////////////////////
