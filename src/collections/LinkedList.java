@@ -184,6 +184,49 @@ public class LinkedList <T>
         return data;                            // return stored data
     }
     
+    /**
+     * Checks (searches) if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
+    public boolean contains(T data) {
+        if (data == null) return false;         // invalid data to search for
+        Node current = head;                    // start reference at head
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return true;                    // indicate found
+            }
+            current = current.next;             // move to next node
+        }
+        return false;                           // not found in list
+    } 
+    
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == length-1) return addBack(data);    // add to end of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.next = current.next;                       // set proper references
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
+    
+    
+    
+    
+    
     
     
     
