@@ -24,6 +24,8 @@ public class CollectionsTest
         
         // build some node objects, testing various constructors
         System.out.println("Testing Node code.....................");
+        
+        // various node constructor methods
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("duck");
         Node<String> c = new Node<>("waddle",a);
@@ -49,41 +51,47 @@ public class CollectionsTest
         e.finalize();
         System.out.println(e.toString());
         
+        System.out.println("Testing LinkedList code.....................");
+        
         // create a linked list
         LinkedList<String> list = new LinkedList<>();
         
-        // test the various LinkedList methods:
-        
-        System.out.println("Testing LinkedList code.....................");
-        
+        // test the size and is empty methods
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
         
+        // test the over-ridden to string method
         System.out.println(list.toString());
         
+        // test the add front method 
         System.out.println(list.addFront(null));
         System.out.println(list.addFront("Aardvark"));
         System.out.println(list.addFront("Apple"));
         System.out.println(list.addFront("Cheesecake"));
         
+        // test the add back method 
         System.out.println(list.addBack(null));
         System.out.println(list.addBack("Mongral"));
         System.out.println(list.addBack("Mongoose"));
         System.out.println(list.addBack("Monkey"));
         
+        // re-test the size, is empty, and to string methods
         System.out.println("Size  = " + list.size());
         System.out.println("Empty = " + list.isEmpty());
-        
         System.out.println(list.toString());
         
-        // testing typical index, the list edges, and beyond the edges
-        
+        // test the get method (accessor method), and test edges:
+            // (1) testing typical index (within the list)
+            // (2) the list edges (first and last index)
+            // (3) beyond the edges (past first and last indices)        
         System.out.println(list.get(2));
         System.out.println(list.get(0));
         System.out.println(list.get(list.size()-1));
         System.out.println(list.get(list.size()+1));
         System.out.println(list.get(-1));
         
+        // test the get method (accessor method), and test edges:
+            // also test the second argument
         System.out.println(list.set(2,"Birdy"));
         System.out.println(list.set(0,"Wheeler"));
         System.out.println(list.set(list.size()-1,"Jets"));
@@ -91,26 +99,50 @@ public class CollectionsTest
         System.out.println(list.set(-1,"Gorilla"));
         System.out.println(list.set(2,null));
                 
+        // display the list at this point...
         System.out.println(list.toString());
         
+        // create a second list and text clone method
         LinkedList<String> list2 = list.clone();
+        
+        // display the second list
         System.out.println(list2.toString());
         
+        // test the equals method
         System.out.println("1==2 is " + list.equals(list2));
+        
+        // mutate the second list
         list2.set(2, "Random");
+        
+        // display both lists
         System.out.println(list.toString());
         System.out.println(list2.toString());
+        
+        // re-test the equals method
         System.out.println("1==2 is " + list.equals(list2));
         
-        // make a clone and test remove methods....
+        // make a third list, a clone of the second
         LinkedList<String> list3 = list2.clone();
         
+        // output both lists        
         System.out.println("2 = " + list2.toString());
         System.out.println("3 = " + list3.toString());
         
+        // test the remove front and remove back methods, testing all edges
+        // and using a loop to continually remove unitl after both lists
+        // are empty and beyond, this tests:
+            // (1) list with two or more nodes
+            // (2) list with one node
+            // (3) list with no nodes (empty)             
         for (int i = 0; i < list.size()+1; i++) {            
+            
+            // test remove front
             System.out.println("2 = " + list2.removeFront());
+            
+            // test remove back
             System.out.println("3 = " + list3.removeBack());
+            
+            // output both lists
             System.out.println("2 = " + list2.toString());
             System.out.println("3 = " + list3.toString());
         }
