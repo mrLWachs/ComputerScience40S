@@ -223,12 +223,47 @@ public class LinkedList <T>
         return true;                                    // opperation successful
     }
     
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == 0)      return addFront(data);     // add to start of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.previous = current.previous;               // set proper references
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
     
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // wrapper method call
+    }
     
-    
-    
-    
-    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
+    }
     
     
     

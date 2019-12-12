@@ -147,10 +147,31 @@ public class CollectionsTest
             System.out.println("3 = " + list3.toString());
         }
         
+        // test contains
+        System.out.println(list.toString());
+        System.out.println("Jets is " + list.contains("Jets"));
+        System.out.println("Flames is " + list.contains("Flames"));
+        System.out.println("null is " + list.contains(null));
         
+        // test add before        
+        System.out.println(list.addBefore("Flyers", 2));
+        System.out.println(list.toString());
+        System.out.println(list.addBefore("Kings", 0));
+        System.out.println(list.toString());
+        System.out.println(list.addBefore("Penguins", list.size()-1));
+        System.out.println(list.toString());
+        System.out.println(list.addBefore("Penguins", list.size()));
+        System.out.println(list.toString());
         
-        
-        
+        // test add after        
+        System.out.println(list.addAfter("Pickachu", 2));
+        System.out.println(list.toString());
+        System.out.println(list.addAfter("Eevee", 0));
+        System.out.println(list.toString());
+        System.out.println(list.addAfter("Piplup", list.size()-1));
+        System.out.println(list.toString());
+        System.out.println(list.addAfter("Charmander", list.size()));
+        System.out.println(list.toString());
         
         ///////////////////////////////////////////////////
         // MORE TESTING TO COME....
