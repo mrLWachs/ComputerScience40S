@@ -175,6 +175,15 @@ public class CollectionsTest
         System.out.println(list.addBefore("Habs", list.size()+1));
         System.out.println(list.toString());
         
+        // test remove an index
+        LinkedList<String> list4 = list.clone();
+        int min = -1;
+        int max = list4.size() + 1;
+        for (int i = max; i >= min; i--) {
+            System.out.println(list4.remove(i));
+            System.out.println(list4.toString());
+        }
+        
         
         
         
