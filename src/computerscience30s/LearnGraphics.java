@@ -18,7 +18,8 @@ public class LearnGraphics
      * Constructor method for when an object of this class is instantiated
      */
     public LearnGraphics() {
-        System.out.println("Start learning graphics...");        
+        System.out.println("Start learning graphics..."); 
+        
         Graphics1 graphics1 = new Graphics1();      // 1st object using designer 
         
         System.out.println("Completed learning graphics!");
