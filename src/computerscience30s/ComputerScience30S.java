@@ -29,8 +29,8 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-        
-        new LearnGraphics();
+
+        LearnGraphics learnGraphics = new LearnGraphics();
         
 //        System.out.println("\nComputer Science 30S Example started...\n");
 //        final String[] OPTIONS = {
@@ -50,7 +50,7 @@ public class ComputerScience30S {   // Curly brackets DO NOT remove
 //        else if (choice.equals(OPTIONS[3])) learnClasses();  
 //        else if (choice.equals(OPTIONS[4])) new LearnGraphics();
 //        else                                System.exit(0);
-//        System.out.println("\nComputer Science 30S Example completed!\n");
+//        System.out.println("\nComputer Science 30S Example completed!\n");        
     }
 
     /**
