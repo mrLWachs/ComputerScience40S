@@ -184,8 +184,22 @@ public class CollectionsTest
             System.out.println(list4.toString());
         }
         
+        // test first index and last index of searches
+        list.addAfter("Wheeler", 6);
+        list.addAfter("Wheeler", 2);
+        list.addAfter("Wheeler", 8);
+        System.out.println(list.toString()); 
+        System.out.println(list.firstIndexOf("Wheeler"));
+        System.out.println(list.firstIndexOf("Red Wings"));
+        System.out.println(list.firstIndexOf("Knights"));
+        System.out.println(list.firstIndexOf("Cats"));
+        System.out.println(list.firstIndexOf(null));
         
-        
+        System.out.println(list.lastIndexOf("Wheeler"));
+        System.out.println(list.lastIndexOf("Red Wings"));        
+        System.out.println(list.lastIndexOf("Knights"));        
+        System.out.println(list.lastIndexOf("Cats"));
+        System.out.println(list.lastIndexOf(null));
         
         
         
