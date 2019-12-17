@@ -23,6 +23,9 @@ package collections;
 public class LinkedList <T>
 {
     
+    /** Flag to indicate a search was not found */
+    public final int NOT_FOUND = -1;
+    
     /** Reference (link) to the first (front) node in the list (entry point) */
     private Node head;
     
@@ -282,6 +285,49 @@ public class LinkedList <T>
         length--;                                       // reduce list length
         return (T)current.data;                         // return index data
     }
+    
+    /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = head;                    // start at head
+        int index = 0;                          // start count at 0
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return index;                   // return location
+            }
+            current = current.next;             // advance to next node
+            index++;                            // advance count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = tail;                    // start at head
+        int index = length-1;                   // start count at total nodes
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found last occurrence
+                return index;                   // return location
+            }
+            current = current.previous;         // return to previous node
+            index--;                            // decrease count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+    
     
     
     
