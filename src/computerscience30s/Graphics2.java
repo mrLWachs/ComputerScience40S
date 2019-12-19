@@ -27,7 +27,7 @@ import javax.swing.JTextField;
  * @author Mr. Wachs 
  * @since December 19, 2019 
  */
-class Graphics2 extends JFrame
+public class Graphics2 extends JFrame
 {
 
     // controls for the container (which is the JFrame/Graphics2), also means: 
