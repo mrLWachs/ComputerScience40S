@@ -4,6 +4,12 @@ package computerscience30s;
 
 /** required imports */
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -83,7 +89,7 @@ class Graphics2 extends JFrame
         container.add(button);
         
         // position all controls using: x,y,width,height        
-        text.setBounds(10, 11, 57, 14);
+        text.setBounds(10, 11, 187, 14);
         picture.setBounds(10, 31, 256, 256);
         textbox.setBounds(10, 305, 256, 20);
         button.setBounds(10, 343, 256, 41);
@@ -91,13 +97,48 @@ class Graphics2 extends JFrame
     }
 
     /**
-     * Adds the actions to the various controls
+     * Adds the actions to the various controls using an action listener. 
+     * Action "listener" means it "listens" for specific actions to occur
      */
-    private void setActions() {
+    private void setActions() {            
+        // create an action listener for the click of the button        
+        ActionListener buttonListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        };        
+        // then connect ("add") that listener to the control
+        button.addActionListener(buttonListener);
+        
+        // do this again, but in one step, we create and add the action 
+        // listener in that one step (not two) for textbox        
+        textbox.addKeyListener( new KeyListener() {
+            public void keyTyped(KeyEvent e) { }
+            public void keyPressed(KeyEvent e) {
+                text.setText("Key pressed " + e.getKeyCode()); 
+            }
+            public void keyReleased(KeyEvent e) { }
+        } );
+        
+        // now the mouse and the picture, add action listener specifically for
+        // mouse action, and call an "outside" method for the action        
+        picture.addMouseMotionListener( new MouseMotionListener() {
+            public void mouseDragged(MouseEvent e) {  }
+            public void mouseMoved(MouseEvent e) {
+                mouseMove(e);
+            }
+        });        
+    }
     
-        // Action "listener" means it "listens" for specific actions to occur
-        
-        
+    /**
+     * When the mouse moves over the picture, it updates the label with 
+     * information about where (coordinates) the mouse is
+     * 
+     * @param event the mouse event information from the mouse
+     */
+    private void mouseMove(MouseEvent event) {
+        text.setText("Mouse " + event.getX() + "," + event.getY());  
     }    
 
 }
