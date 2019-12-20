@@ -20,7 +20,8 @@ public class LearnGraphics
     public LearnGraphics() {
         System.out.println("Start learning graphics...");         
         Graphics1 graphics1 = new Graphics1();      // 1st object using designer         
-        Graphics2 graphics2 = new Graphics2();      // 2nd object all coded        
+        Graphics2 graphics2 = new Graphics2();      // 2nd object all coded 
+        Graphics3 graphics3 = new Graphics3();      // 3rd object using a hybrid
         System.out.println("Completed learning graphics!");
     }
     
