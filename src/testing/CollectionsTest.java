@@ -317,7 +317,7 @@ public class CollectionsTest
         output("from list",list19,list22);
         ///////////////////////////////////////////////////////////////////////
         output("test to array");
-        System.out.println(list1);
+        java.lang.System.out.println(list1);
         String[] array6 = new String[0];
         String[] array7 = new String[0];        
         array6 = list1.toArray(array6);
@@ -397,6 +397,13 @@ public class CollectionsTest
         System.out.println("\n" + BLUE + a + RESET + "\n");
     }
     
+    /**
+     * Outputs a variety of values
+     * 
+     * @param <T> the generic data type
+     * @param a a string to display
+     * @param b the generic data type
+     */
     private <T> void output(String a, T b) {
         final String DELIMIT = "\t = ";
         String z = "", y = "";       
@@ -409,6 +416,15 @@ public class CollectionsTest
         System.out.println(z + DELIMIT + y);
     }
 
+    /**
+     * Outputs a variety of values
+     * 
+     * @param <T> the first generic data type
+     * @param <U> the second generic data type
+     * @param a a string to display
+     * @param b the first generic data type
+     * @param c the second generic data type
+     */
     private <T,U> void output(String a, T b, U c) {
         final String DELIMIT = "\t = ";
         String z = "", y = "", x = "";        
@@ -424,6 +440,17 @@ public class CollectionsTest
         System.out.println(z + DELIMIT + y + DELIMIT + x);
     }
 
+    /**
+     * Outputs a variety of values
+     * 
+     * @param <T> the first generic data type
+     * @param <U> the second generic data type
+     * @param <V> the third generic data type
+     * @param a a string to display
+     * @param b the first generic data type
+     * @param c the second generic data type
+     * @param d the third generic data type
+     */
     private <T,U,V> void output(String a, T b, U c, V d) {
         final String DELIMIT = "\t = ";
         String z = "", y = "", x = "", w = "";   
@@ -442,6 +469,19 @@ public class CollectionsTest
         System.out.println(z + DELIMIT + y + DELIMIT + x + DELIMIT + w);
     }
     
+    /**
+     * Outputs a variety of values
+     * 
+     * @param <T> the first generic data type
+     * @param <U> the second generic data type
+     * @param <V> the third generic data type
+     * @param <W> the fourth generic data type
+     * @param a a string to display
+     * @param b the first generic data type
+     * @param c the second generic data type
+     * @param d the third generic data type
+     * @param e the fourth generic data type 
+     */
     private <T,U,V,W> void output(String a, T b, U c, V d, W e) {
         final String DELIMIT = "\t = ";
         String z = "", y = "", x = "", w = "", v = "";        
@@ -464,6 +504,12 @@ public class CollectionsTest
                            x + DELIMIT + w + DELIMIT + v);    
     }
     
+    /**
+     * Adds extra spacing to "pad" the passed word
+     * 
+     * @param word the word to pad
+     * @return a padded word
+     */
     private String pad(String word) {
         if (word == null) word = "null";
         final int MAX = 20;
