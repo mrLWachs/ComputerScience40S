@@ -11,13 +11,15 @@
 // (2) Double click the top of a tab of code to make bigger or smaller
 // (3) Type in lowercase "sout" and hit TAB to write System.out....
 // (4) Words in capital letters and in blue are IMPORTANT code words
-
-
+// (5) Intellisense (autocomplete) can appear if you press CTRL + SPACE
+// (6) The word "null" means "nothing" can be a substitute code some code
 
 
 /** required package class namespace - the line below is put in
  * automatically, and connects file to the project */
 package computerscience30s;
+
+import javax.swing.JOptionPane;
 
 
 /**
@@ -43,6 +45,35 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // if you use println, it adds a line break at the end
         System.out.println("I'm in the world");
+        
+        // additional output tips....
+        
+        // these are "special" characters:        
+        System.out.println("Quote \" ");
+        System.out.println("Make a \t tab");
+        System.out.println("Slash \\ ");
+        System.out.println("New \n Line");
+        
+        // make a "dialog" box appear        
+        JOptionPane.showMessageDialog(null, "Hi");
+        
+        // optional (does not "need" to be in assignments)
+        // dialog boxes
+        
+        // you can hit "enter" in some lines of code
+        // to save going to long of a line
+        JOptionPane.showMessageDialog(null,
+                "Information dialog icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null,
+                "Question dialog icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE);
+        
+        
+        
         
         
         System.out.println("Good-bye World!");
