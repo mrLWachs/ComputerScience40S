@@ -1,9 +1,4 @@
 
-// SHOW YOU THIS WORKS!!!!!!!
-
-
-
-
 // anything following the 2 slashes is a comment, until the end of the line
 
 /*  
@@ -14,15 +9,9 @@
 // TIPS:
 // (1) Hold Alt + scroll mouse to zoom in and out on code
 // (2) Double click the top of a tab of code to make bigger or smaller
+// (3) Type in lowercase "sout" and hit TAB to write System.out....
+// (4) Words in capital letters and in blue are IMPORTANT code words
 
-
-
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 
 
@@ -49,7 +38,17 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
     public static void main(String[] args) {
         // TODO code application logic here
         
+        // Basic output
         System.out.print("Hello World");
+        
+        // if you use println, it adds a line break at the end
+        System.out.println("I'm in the world");
+        
+        
+        System.out.println("Good-bye World!");
+        
+        
+        
         
         
     }
