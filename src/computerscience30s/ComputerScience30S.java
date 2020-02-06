@@ -2,23 +2,32 @@
 // anything following the 2 slashes is a comment, until the end of the line
 
 /*  
-    This is for multiple line comments until it sees a star and a slash.
-    So anything between slash star and start slash is considered a commment.
+    This is for multiple line comments, as it covers as many lines as you want
+    starting with "slash star" until it sees the closing "star slash"
 */
 
-// TIPS:
+// NETBEANS TIPS:
+// ==============
 // (1) Hold Alt + scroll mouse to zoom in and out on code
 // (2) Double click the top of a tab of code to make bigger or smaller
 // (3) Type in lowercase "sout" and hit TAB to write System.out....
-// (4) Words in capital letters and in blue are IMPORTANT code words
-// (5) Intellisense (autocomplete) can appear if you press CTRL + SPACE
-// (6) The word "null" means "nothing" can be a substitute code some code
+// (4) Words in capital letters and in blue are IMPORTANT code words, the words
+//     in captial letters are powerful, they are a "class"
+// (5) Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
+// (6) The word "null" means "nothing" and can act as a placeholder for code 
+//     you don't actually want
 
 
-/** required package class namespace - the line below is put in
- * automatically, and connects file to the project */
+/** 
+ * required package class namespace - the line below is put in
+ * automatically, and connects file to the project 
+ */
 package computerscience30s;
 
+/** 
+ * Required imports for the project - the lines below are added when your
+  * code needs to connect to another library (API) of code 
+  */
 import javax.swing.JOptionPane;
 
 
@@ -40,32 +49,32 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
     public static void main(String[] args) {
         // TODO code application logic here
         
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+                
         // Basic output
-        System.out.print("Hello World");
+        System.out.print("Hello World...");
         
-        // if you use println, it adds a line break at the end
+        // If you use println, it adds a line break at the end
         System.out.println("I'm in the world");
         
-        // additional output tips....
-        
-        // these are "special" characters:        
+        // Additional output tips.... (these are "special" characters):        
         System.out.println("Quote \" ");
         System.out.println("Make a \t tab");
         System.out.println("Slash \\ ");
         System.out.println("New \n Line");
         
-        // make a "dialog" box appear        
+        // Make a "dialog" box appear        
         JOptionPane.showMessageDialog(null, "Hi");
         
-        // optional (does not "need" to be in assignments)
-        // dialog boxes
-        
-        // you can hit "enter" in some lines of code
-        // to save going to long of a line
+        // Optional (does not "need" to be in assignments) dialog boxes:
         JOptionPane.showMessageDialog(null,
                 "Information dialog icon is i",
                 "Information title",
                 JOptionPane.INFORMATION_MESSAGE);
+        // You can hit "enter" in some lines of code at certain places to 
+        // drop the code to the next line and save having too long of a line
         
         JOptionPane.showMessageDialog(null,
                 "Question dialog icon is i",
@@ -77,11 +86,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         
         System.out.println("Good-bye World!");
-        
-        
-        
-        
-        
     }
 
 }
