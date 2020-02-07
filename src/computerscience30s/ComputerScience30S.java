@@ -77,9 +77,67 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // drop the code to the next line and save having too long of a line
         
         JOptionPane.showMessageDialog(null,
-                "Question dialog icon is i",
+                "Question dialog icon is ?",
                 "Question title",
                 JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null,
+                "Warning dialog icon is !",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(null,
+                "Plain dialog icon is !",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // dialogs for inputs
+        
+        // the simpliest version is the one you have to use        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // some optional versions of input dialogs
+        JOptionPane.showInputDialog(null,
+                "Information dialog icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Question dialog icon is ?",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Warning dialog icon is !",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(null,
+                "Plain dialog icon is !",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // NOTE: these examples above are NOT being used 
+        // properly if used in a assignment, correct way
+        // comes up later in this code...
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
