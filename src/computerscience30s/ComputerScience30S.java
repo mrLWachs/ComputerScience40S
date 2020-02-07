@@ -16,10 +16,8 @@
 // (5) Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
 // (6) The word "null" means "nothing" and can act as a placeholder for code 
 //     you don't actually want
-// (7) To "comment out" some code, select 
-//     the code (with your mouse) and 
-//     click on the two buttons under the 
-//     code tab (at the end)
+// (7) To "comment out" some code, select the code (with your mouse) and 
+//     click on the two buttons under the code tab (at the end)
 
 
 /** 
@@ -174,12 +172,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         b = 1;
         c = 1.2;
         
-        // variable always goes on the 
-        // LHS (left hand side) of the
-        // equals sign (=) and the value
-        // going into the variable always
-        // goes on the RHS (right hand
-        // side)
+        // variable always goes on the LHS (left hand side) of the equals 
+        // sign (=) and the value going into the variable always goes on the 
+        // RHS (right hand side)
         
         System.out.println("a = " + a);
         System.out.println("b = " + b);
