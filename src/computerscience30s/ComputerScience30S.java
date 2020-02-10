@@ -180,10 +180,49 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("b = " + b);
         System.out.println("c = " + c);
         
+        char d = 'A';
+        System.out.println("d = " + d);
         
+        // The boolean, int, double and char are all
+        // simple (primitive) data type, now a 
+        // complex data type....
         
+        String e = "banana";
+        System.out.println("e = " + e);
         
+        // manipulate (change) the varaibles...
         
+        int x = 10;        
+        System.out.println("x = " + x); // 10
+        x = 20;
+        System.out.println("x = " + x); // 20
+        int y = x + 10;
+        System.out.println("y = " + y); // 30
+        
+        // optional shorthand
+        
+        y++;    // means y = y + 1
+        y--;    // means y = y - 1
+        
+        // even more optional 
+        
+        y += 10;  // means y = y + 10;
+        y -= 10;  // means y = y - 10;
+        y *= 10;  // means y = y * 10;
+        y /= 10;  // means y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        // modulus (mod) gives you the remainder
+        // of a division, java uses % symbol
+        
+        x = 28;
+        y = x / 5;
+        int z = x % 5;
+        
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
         
         
         
