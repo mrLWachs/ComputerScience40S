@@ -18,9 +18,8 @@
 //     you don't actually want
 // (7) To "comment out" some code, select the code (with your mouse) and 
 //     click on the two buttons under the code tab (at the end)
-// (8) A red squiggily line and/or a "lightbulb" in 
-//     NetBeans means a potential error and a 
-//     potential fix, if you click on the lightbulb
+// (8) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//     error and a potential fix (if you click on the lightbulb)
 
 /** 
  * required package class namespace - the line below is put in
@@ -226,9 +225,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
-        // constants are varaibles that don't change, and
-        // constants are written ALL_CAPS_WITH_UNDERSCORE
-        // with underscore separating words
+        // constants are varaibles that don't change, and constants are 
+        // written ALL_CAPS with underscores separating words
         
         final double  PI           = 3.14159265;
         final int     PROBLEMS     = 99;
@@ -249,8 +247,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         System.out.println("f = " + f);
         System.out.println("g = " + g);
-        
-        // intential error:
         
         // use casting, it "ignores" any decimal places        
         int h = (int)g;
