@@ -186,9 +186,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        char d = 'A';
 //        System.out.println("d = " + d);
 //        
-//        // The boolean, int, double and char are all
-//        // simple (primitive) data type, now a 
-//        // complex data type....
+//        // The boolean, int, double and char are all simple (primitive) data 
+//        // type, now a complex data type....
 //        
 //        String e = "banana";
 //        System.out.println("e = " + e);
@@ -216,8 +215,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        
 //        System.out.println("y = " + y);
 //        
-//        // modulus (mod) gives you the remainder
-//        // of a division, java uses % symbol
+//        // modulus (mod) gives you the remainder of a division, java 
+//        // uses the % symbol
 //        
 //        x = 28;
 //        y = x / 5;
@@ -279,13 +278,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        
 //        // use dialog input with numbers...
 //        
-//        // with numbers, you have to start off with a string
-//        // and then convert it to a number
+//        // with numbers, you have to start off with a string and then convert
+//        // it to a number
 //        
 //        String r = JOptionPane.showInputDialog("Enter int");
-//        // now convert it, in a way like:
-//        // Convert.toInt32().... in C# uses
-//        // something called "parsing" (means "reading")
+//        // now convert it, in a way like: Convert.toInt32()....
+//        // in C# uses something called "parsing" (means "reading")
 //        
 //        int s = Integer.parseInt(r);
 //        
@@ -299,10 +297,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        // example with char:
 //        String v = JOptionPane.showInputDialog("Enter char");
 //        char w = v.charAt(0);
-//        // strings have built-in actions like "charAt" to 
-//        // pull out a character "at" location "0" which means
-//        // the very first character (because numbering in
-//        // computer science usually starts at 0)
+//        // strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
 //        JOptionPane.showMessageDialog(null,w);
 //        
 //        // Strings have many built-in actions (functions, methods)        
@@ -335,19 +332,20 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         double seed = Math.random();
         System.out.println("seed = " + seed);
         
-        // you can use a formula for generating random numbers 
-        // in a range between a low and a high number:
+        // you can use a formula for generating random numbers in a range 
+        // between a low and a high number:
         
         // eg. between 1 and 10 and make it an int
         
+        // start with the constants defining the highest and lowest
         final double LOW  = 1.0;
         final double HIGH = 10.0;
-        
+        // now a formula to generate in that range
         double number = (HIGH - LOW + 1) * seed + LOW;
-        
+        // now cast it to an integer
         int value = (int)number;
-        
-        System.out.println("value = " + value);
+        // and display it
+        System.out.println("random value = " + value);
         
         
         
