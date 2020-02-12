@@ -350,37 +350,78 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
         ///////////////////////////////////////////////////////////////////////
-        
-        
-        // simple if, use it when something is
-        // true, checks for 1 thing
+                
+        // simple if, use it when something is true, checks for 1 thing
         
         int value1 = 10, value2 = 10;
         
-        // ifs use both () round and {} curly
-        // brackets and the code inside of
-        // the curley brackets is said to be
-        // in a "block" of code, and that 
-        // block only runs when the test is true
-        // it also indents the code inside a 
-        // block
+        // ifs use both () round and {} curly brackets and the code inside of
+        // the curley brackets is said to be in a "block" of code, and that 
+        // block only runs when the test is true it also indents the code  
+        // inside a block
         
         if (value1 == value2) {
             System.out.println("equal");
         }
         
+        // if with else, for both true and false, checks 2 things
+        
+        double value3 = 1.45, value4 = 1.5;
+        
+        if (value3 < value4) {
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
+        
+        // use chars and some shorthand, not usually recommended (except in
+        // certain situations) used when the code between { } (block) is only
+        // one line of code! Then, you don't need the { }
+        
+        char value5 = 'A', value6 = 'a';
+        
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
         
         
+        // use "else if" for multiple cases of more than 2 things (same as a 
+        // "switch" statement - which I do not use!) use string for this 
+        // example which are more complex (because they are capital letters),
+        // with string NEVER use == instead use .equals()...
         
+        String word1 = "edgy";
+        String word2 = "edGy";
         
+        if (word1.equals(word2)) {
+            System.out.println("w1==w2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("w1 kind of == w2");
+        }
+        else {
+            System.out.println("w1!=w2");
+        }
         
+        // combine logic using:
+        // "and" "or" "not"
+        // using symbols:
+        //  &&    ||    !
         
+        int age = 17;
+        double iq = 1.0;
         
-        
-        
-        
-        
-        
+        if (age >= 21 && iq > 1.15) {
+            // with "and" BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq > 0.85) {
+            // with "or" EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
         
         
         
