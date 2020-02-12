@@ -325,27 +325,64 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        System.out.println("answer 4 = " + answer4);
 //        System.out.println("answer 5 = " + answer5);
 //        System.out.println("answer 6 = " + answer6);
+//        
+//        // math "library" does random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        System.out.println("seed = " + seed);
+//        
+//        // you can use a formula for generating random numbers in a range 
+//        // between a low and a high number:
+//        
+//        // eg. between 1 and 10 and make it an int
+//        
+//        // start with the constants defining the highest and lowest
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        // now a formula to generate in that range
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        // now cast it to an integer
+//        int value = (int)number;
+//        // and display it
+//        System.out.println("random value = " + value);
+//        
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
-        // math "library" does random numbers, like:
-        // Random random = new Random();
         
-        double seed = Math.random();
-        System.out.println("seed = " + seed);
+        // simple if, use it when something is
+        // true, checks for 1 thing
         
-        // you can use a formula for generating random numbers in a range 
-        // between a low and a high number:
+        int value1 = 10, value2 = 10;
         
-        // eg. between 1 and 10 and make it an int
+        // ifs use both () round and {} curly
+        // brackets and the code inside of
+        // the curley brackets is said to be
+        // in a "block" of code, and that 
+        // block only runs when the test is true
+        // it also indents the code inside a 
+        // block
         
-        // start with the constants defining the highest and lowest
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        // now a formula to generate in that range
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        // now cast it to an integer
-        int value = (int)number;
-        // and display it
-        System.out.println("random value = " + value);
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
