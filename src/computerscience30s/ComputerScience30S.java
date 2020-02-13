@@ -17,7 +17,7 @@
 // (6)  The word "null" means "nothing" and can act as a placeholder for code 
 //      you don't actually want
 // (7)  To "comment out" some code, select the code (with your mouse) and 
-//      click on the two buttons under the code tab (at the end)
+//      click on the two buttons under the code tab (at the right end)
 // (8)  A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
 //      error and a potential fix (if you click on the lightbulb)
 // (9)  You can get more NetBeans tips and autocompletes by selecting 
@@ -36,6 +36,12 @@
 //        */
 //       public class ${name} 
 //       { .... etc .....       
+// (12) When printing code for hand in (this only needs to be done once), click
+//      on "Print Options" and uncheck everything previously checked off, and
+//      then check off "Print as in Editor", then either print it to a PDF 
+//      (which means select "Microsoft Print to PDF" on the next screen), or
+//      cancel and resize the code to fit better (see tip #1) and then print 
+//      again
 
 
 /** 
