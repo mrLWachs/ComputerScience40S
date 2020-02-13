@@ -35,13 +35,17 @@
 //        * @since ${date} 
 //        */
 //       public class ${name} 
-//       { .... etc .....       
+//       { .... etc .....     
+// 
 // (12) When printing code for hand in (this only needs to be done once), click
 //      on "Print Options" and uncheck everything previously checked off, and
 //      then check off "Print as in Editor", then either print it to a PDF 
 //      (which means select "Microsoft Print to PDF" on the next screen), or
 //      cancel and resize the code to fit better (see tip #1) and then print 
 //      again
+// (13) To autoformat code (fixes indents, extra spaces, etc.) select code with
+//      mouse or keyboard (or it will format all if none is selected) and press
+//      ALT + SHIFT + F  (you should do this before hand in!)
 
 
 /** 
