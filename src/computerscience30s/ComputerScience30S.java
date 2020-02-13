@@ -8,20 +8,35 @@
 
 // NETBEANS TIPS:
 // ==============
-// (1) Hold Alt + scroll mouse to zoom in and out on code
-// (2) Double click the top of a tab of code to make bigger or smaller
-// (3) Type in lowercase "sout" and hit TAB to write System.out....
-// (4) Words in capital letters and in blue are IMPORTANT code words, the words
-//     in captial letters are powerful, they are a "class"
-// (5) Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
-// (6) The word "null" means "nothing" and can act as a placeholder for code 
-//     you don't actually want
-// (7) To "comment out" some code, select the code (with your mouse) and 
-//     click on the two buttons under the code tab (at the end)
-// (8) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
-//     error and a potential fix (if you click on the lightbulb)
-// (9) You can get more NetBeans tips and autocompletes by selecting 
-//     Help -> Keyboard Shortcuts Card
+// (1)  Hold Alt + scroll mouse to zoom in and out on code
+// (2)  Double click the top of a tab of code to make bigger or smaller
+// (3)  Type in lowercase "sout" and hit TAB to write System.out....
+// (4)  Words in capital letters and in blue are IMPORTANT code words, the words
+//      in captial letters are powerful, they are a "class"
+// (5)  Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
+// (6)  The word "null" means "nothing" and can act as a placeholder for code 
+//      you don't actually want
+// (7)  To "comment out" some code, select the code (with your mouse) and 
+//      click on the two buttons under the code tab (at the end)
+// (8)  A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//      error and a potential fix (if you click on the lightbulb)
+// (9)  You can get more NetBeans tips and autocompletes by selecting 
+//      Help -> Keyboard Shortcuts Card
+// (10) To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
+// (11) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
+//      this into the temple:
+//
+//      /**
+//        * ${name}.java - 
+//        *
+//        * @author Mr. Wachs 
+//        * @since ${date} 
+//        */
+//       public class ${name} 
+//       { .... etc .....       
+
 
 /** 
  * required package class namespace - the line below is put in
@@ -422,9 +437,62 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             System.out.println("Get out");
         }
         
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
+
+        // simple loop
         
+        int counter = 0;
         
+        while (counter >= 0) {
+            System.out.println("counter = " + counter);
+            counter++;
+        }
         
+        // while loop with a string
+        
+        String password = JOptionPane.showInputDialog("Create "
+                + "a password");        
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Invalid,"
+                    + " please try again!");            
+            password = JOptionPane.showInputDialog("Create "
+                + "a password");
+        }
+                
+        // The next type of loop, more rarely used (you may never need it!), it
+        // test for true/false at the bottom of the loop, you use it when you
+        // want the body (block) of the loop to run at least once!        
+        
+        // the do while loop...
+        
+        String choice = "";        
+        do {                        
+            choice = JOptionPane.showInputDialog(
+                     "Enter password");            
+        } while (choice.equalsIgnoreCase(password) == false);
+        
+        // The for loop is used for counting (and for the upcoming unit of 
+        // arrays)
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
+        }
+        
+        // variations on the for loop:
+            // count down (not up)
+            // start at 100
+            // stop at zero (including zero)
+            // count by 10s
+            
+        for (int i = 100; i >= 0; i = i - 10) {
+            System.out.println("i = " + i);
+        }
+            
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
