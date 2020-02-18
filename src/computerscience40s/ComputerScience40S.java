@@ -2,6 +2,9 @@
 /** required package class namespace */
 package computerscience40s;
 
+/** required imports */
+import testing.Tester;
+
 /**
  * ComputerScience40S.java - the large in class example we continue to work 
  * on in each unit adding example code on the new concepts of each unit 
@@ -20,7 +23,11 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("\nComputer Science 40S starting...\n");
         
+        Tester tester = new Tester();
+        
+        System.out.println("\nComputer Science 40S complete!\n");
     }
     
 }

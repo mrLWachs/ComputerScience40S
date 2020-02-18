@@ -1,0 +1,23 @@
+
+/** required package class namespace */
+package testing;
+
+ 
+/**
+ * Tester.java - tests the concepts learned in all the units.
+ *
+ * @author Mr. Wachs
+ * @since Feb. 18, 2020, 10:37:18 a.m.
+ */
+public class Tester 
+{
+
+    public Tester() {
+        System.out.println("\nTesting begins...\n");
+        
+        new RecursionTest(); // annoynmous object
+        
+        System.out.println("\nTesting complete!\n");
+    }
+    
+}
