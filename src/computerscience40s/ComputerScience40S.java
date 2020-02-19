@@ -1,3 +1,4 @@
+
 // NETBEANS TIPS:
 // ==============
 // (1)  Hold Alt + scroll mouse to zoom in and out on code
@@ -45,6 +46,7 @@ package computerscience40s;
 
 /** required imports */
 import testing.Tester;
+
 
 /**
  * ComputerScience40S.java - the large in class example we continue to work 

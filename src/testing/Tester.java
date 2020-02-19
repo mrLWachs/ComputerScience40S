@@ -7,7 +7,7 @@ package testing;
  * Tester.java - tests the concepts learned in all the units.
  *
  * @author Mr. Wachs
- * @since Feb. 18, 2020, 10:37:18 a.m.
+ * @since Feb. 18, 2020, 1:42:24 p.m.
  */
 public class Tester 
 {
@@ -19,5 +19,5 @@ public class Tester
         
         System.out.println("\nTesting complete!\n");
     }
-    
+
 }
