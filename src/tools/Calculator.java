@@ -13,15 +13,11 @@ public class Calculator
 {
 
     /**
-     * Calculates the factorial on a number
-     * using a recursive method. Recursive
-     * methods need at least one base case
-     * (to stop the recursion), but can have
-     * more than one. They also need to have
-     * at minimum one recursive case (but also 
-     * can have multiple recursive cases). 
-     * Recursive cases means the method calls 
-     * itself!
+     * Calculates the factorial on a number using a recursive method. Recursive
+     * methods need at least one base case (to stop the recursion), but can 
+     * have more than one. They also need to have at minimum one recursive 
+     * case (but also can have multiple recursive cases). Recursive cases 
+     * means the method calls itself!
      * 
      * @param number
      * @return 
@@ -57,7 +53,4 @@ public class Calculator
         return base * power(base, exponent-1);
     }
     
-    
-    
-
 }
