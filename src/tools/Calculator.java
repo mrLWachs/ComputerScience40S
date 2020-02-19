@@ -19,8 +19,8 @@ public class Calculator
      * case (but also can have multiple recursive cases). Recursive cases 
      * means the method calls itself!
      * 
-     * @param number
-     * @return 
+     * @param number the number to calculate the factorial of
+     * @return the factorial of the parameter
      */
     public static long factorial(long number) {
         // base case(s) - stop recursion
