@@ -46,7 +46,14 @@
 // (13) To autoformat code (fixes indents, extra spaces, etc.) select code with
 //      mouse or keyboard (or it will format all if none is selected) and press
 //      ALT + SHIFT + F  (you should do this before hand in!)
-
+// (14) When handing in multiple Java class files, step 1: make sure they are 
+//      all open in tabs, Step 2: use the mouse (and the keyboard, holding 
+//      down the "CTRL" key) to select all the class files in the Projects 
+//      window, Step 3: Go to File -> Print
+// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
 
 /** 
  * required package class namespace - the line below is put in
