@@ -47,7 +47,18 @@
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
-
+// (16) The + and - signs and grey lines along the side in NetBeans 
+//      help "expand" and "collapse" the method body (block)        
+// (17) On the left side window, the Navigator window helps find and 
+//      jump to methods        
+// (18) Using the keys CTRL + SHIFT and "+" or "-" also expands and 
+//      collapses methods
+// (19) You can call a method that does not yet exist, and netbeans 
+//      will help you write it with the lightbulb icon (you click on)
+// (20) You can jump to a method (even ones you don't write) by holding 
+//      down CTRL and clicking on the method call
+// (21) If you type /** before the method signature line it will 
+//      automate which JavaDoc comments you should make
 
 /** required package class namespace */
 package computerscience40s;
