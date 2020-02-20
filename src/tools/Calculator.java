@@ -24,8 +24,7 @@ public class Calculator
      */
     public static long factorial(long number) {
         // base case(s) - stop recursion
-        if (number <= 0) return 0;
-        if (number == 1) return 1;
+        if (number <= 1) return 1;
         // recursive case(s) - like a loop, method calls itself
         return number * factorial(number-1);
     }
