@@ -42,12 +42,12 @@ public class Calculator
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
         // recursive case(s)
-        if (exponent < 0) { // for negative exponents
+        if (exponent < 0) {                     // for negative exponents
             if (base != 0) {
                 return 1 / power(base,exponent * -1);
             }
-            else { // cannot divide by zero!
-                return 0;   // special case
+            else {                              // cannot divide by zero!
+                return Double.MIN_VALUE;        // special case
             }
         }
         return base * power(base, exponent-1);

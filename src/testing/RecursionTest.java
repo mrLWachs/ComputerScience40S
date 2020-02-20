@@ -19,9 +19,9 @@ public class RecursionTest
         System.out.println("\nRecursion test started...\n");
         
         // When testing, think of three scenarios:
-            // 1) typical case
-            // 2) edge cases
-            // 3) beyond edges (bad user)
+            // 1) Typical case
+            // 2) Edge cases
+            // 3) Beyond the edge cases (bad user)
             
         System.out.println("Recursive factorial.............................");        
         final int MIN_FACTORIAL = -1;
