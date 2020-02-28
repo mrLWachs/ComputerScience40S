@@ -55,6 +55,12 @@
  *      number 13) by going to Tools -> Options, then click on the "Editor"
  *      tab at the top, then the "Formatting" below that. Then change the 
  *      settings to what you prefer
+ * (16) If you have to rename a variable or a method, select the
+ *      word and then press CTRL + R, then type in a new name
+ * (17) The + and - signs and gray lines along the side in NetBeans
+ *      help to "expand" and "collapse" the method body (block of code)
+ * 
+ * 
 */
 
 
@@ -87,10 +93,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+//        learnIntroToJava();
         learnMethods();
     }
 
-    private static void learnMethods() {
+    private static void learnIntroToJava() {
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////////////////////
@@ -550,6 +557,17 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // this line terminates any running java program at any point
         System.exit(0);
+    }
+
+    private static void learnMethods() {
+        System.out.println("\n Start Learning Methods... \n");
+        
+        // methods (functions, procedures) are named like variables, but use 
+        // verb type words starting with lowercase then using camel casing
+        // the round braces ( ) indicate a method
+        
+        
+        
     }
 
 }
