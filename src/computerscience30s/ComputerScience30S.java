@@ -59,7 +59,8 @@
  *      word and then press CTRL + R, then type in a new name
  * (17) The + and - signs and gray lines along the side in NetBeans
  *      help to "expand" and "collapse" the method body (block of code)
- * 
+ * (18) If you write the "call" to a method, before writing the method 
+ *      itself, the lightbulb (see tip 8) will help you write it
  * 
 */
 
@@ -566,8 +567,15 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // verb type words starting with lowercase then using camel casing
         // the round braces ( ) indicate a method
         
+        // code to "jump" to our method, is "calling" the method
+        drawStar(); // the method call
         
         
+        
+    }
+
+    private static void drawStar() {
+        System.out.println("*");
     }
 
 }
