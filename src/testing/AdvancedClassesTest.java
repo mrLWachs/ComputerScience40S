@@ -4,6 +4,7 @@ package testing;
 
 /** required imports */
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Student;
 
  
 /**
@@ -28,6 +29,10 @@ public class AdvancedClassesTest
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
         
+        // class using inheritance
+        Student student = new Student(99);              // new student object
+        student.age = 5;                                // modify property
+        student.talk();                                 // inherited method
         
         
         System.out.println("\nAdvanced classes test complete!\n");

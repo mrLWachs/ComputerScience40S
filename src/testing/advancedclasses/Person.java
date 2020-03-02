@@ -34,7 +34,7 @@ public class Person
      * Outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(this.toString());
+        System.out.println(name + " is " + age);
     }
     
 }
