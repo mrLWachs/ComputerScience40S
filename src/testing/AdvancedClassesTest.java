@@ -2,11 +2,12 @@
 /** required package class namespace */
 package testing;
 
+/** required imports */
 import testing.advancedclasses.Person;
 
  
 /**
- * AdvancedClassesTest.java - description
+ * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
  * @since Feb. 28, 2020, 2:00:03 p.m.
@@ -24,7 +25,8 @@ public class AdvancedClassesTest
         
         // using the class to create an object with the default constructor:
         // class object = call constructor method (default)
-        Person person = new Person();
+        Person person = new Person();                   // person object
+        person.talk();                                  // calls class method 
         
         
         
