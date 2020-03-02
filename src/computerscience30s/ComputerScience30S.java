@@ -59,8 +59,12 @@
  *      word and then press CTRL + R, then type in a new name
  * (17) The + and - signs and gray lines along the side in NetBeans
  *      help to "expand" and "collapse" the method body (block of code)
+ *      press CTRL and SHIFT and "-" it collapses all methods, and
+ *      CTRL and SHIFT and "+" expands all code folds
  * (18) If you write the "call" to a method, before writing the method 
  *      itself, the lightbulb (see tip 8) will help you write it
+ * (19) If you hold down the CTRL key, methods calls become links with the 
+        mouse to the method
  * 
 */
 
@@ -570,12 +574,47 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // code to "jump" to our method, is "calling" the method
         drawStar(); // the method call
         
+        // if you hold down the CTRL key, methods calls
+        // become links with the mouse to the method
+        
+        draw("potato");
+        draw("zebra");
+        draw("tamborine");
+        
+        // calling a method with an argument (which
+        // is the "data" items) is "passed" to 
+        // the method itself into the parameter
+        
+        // you can have multiple parameters/arguments
+        // which are seperated with commas
+        
+        draws("dalmations",101);
+        draws("problems",99);
+        
+        
         
         
     }
 
+    
     private static void drawStar() {
         System.out.println("*");
+    }
+
+    private static void draw(String thing) {
+        // information (data) "passed" to this 
+        // method is called the parameter
+        
+        // if you use the lightbulb to write the
+        // method, you often should rewrite the
+        // name of that parameter
+        System.out.println(thing);        
+    }
+
+    private static void draws(String thing, int times) {
+        for (int i = 0; i < times; i++) {
+            draw(thing);
+        }
     }
 
 }
