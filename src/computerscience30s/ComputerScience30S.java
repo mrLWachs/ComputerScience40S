@@ -74,7 +74,9 @@ import javax.swing.JOptionPane;
  * (18) If you write the "call" to a method, before writing the method 
  *      itself, the lightbulb (see tip 8) will help you write it
  * (19) If you hold down the CTRL key, methods calls become links with the 
- *      mouse to the method
+ *      mouse to the method (even ones we don't write)
+ * (20) On the left side window, the Navigator window helps find and jump to
+ *      methods  
  *
  * @author Mr. Wachs
  * @since Feb. 5, 2020, 1:50:54 p.m.
@@ -571,26 +573,25 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // code to "jump" to our method, is "calling" the method
         drawStar(); // the method call
         
-        // if you hold down the CTRL key, methods calls
-        // become links with the mouse to the method
+        // if you hold down the CTRL key, methods calls become links with the
+        // mouse to the method
         
         draw("potato");
         draw("zebra");
         draw("tamborine");
         
-        // calling a method with an argument (which
-        // is the "data" items) is "passed" to 
-        // the method itself into the parameter
+        // calling a method with an argument (which is the "data" items) is
+        // "passed" to the method itself into the parameter
         
-        // you can have multiple parameters/arguments
-        // which are seperated with commas
+        // you can have multiple parameters/arguments which are seperated 
+        // with commas  
         
         draws("dalmations",101);
         draws("problems",99);
         
         
         
-        
+        System.out.println("\n Learning Methods complete! \n");
     }
     
     private static void drawStar() {
