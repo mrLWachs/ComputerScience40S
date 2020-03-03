@@ -1,13 +1,23 @@
 
-// anything following the 2 slashes is a comment, until the end of the line
-
-/*  
-    This is for multiple line comments, as it covers as many lines as you want
-    starting with "slash star" until it sees the closing "star slash"
-*/
+/** 
+ * Required package class namespace - the line below is put in automatically,
+ * and connects file to the project 
+ */
+package computerscience30s;
 
 /**
- * NETBEANS TIPS:
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code 
+ */
+import javax.swing.JOptionPane;
+
+
+/**
+ * ComputerScience30S.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code examples that might come up over the course.
+ * 
+ * * NETBEANS TIPS:
  * ==============
  * (1)  Hold Alt + scroll mouse to zoom in and out on code
  * (2)  Double click the top of a tab of code to make bigger or smaller
@@ -64,28 +74,7 @@
  * (18) If you write the "call" to a method, before writing the method 
  *      itself, the lightbulb (see tip 8) will help you write it
  * (19) If you hold down the CTRL key, methods calls become links with the 
-        mouse to the method
- * 
-*/
-
-
-/** 
- * required package class namespace - the line below is put in
- * automatically, and connects file to the project 
- */
-package computerscience30s;
-
-/** 
- * Required imports for the project - the lines below are added when your
- * code needs to connect to another library (API) of code 
- */
-import javax.swing.JOptionPane;
-
-
-/**
- * ComputerScience30S.java - the large in class example we continue to work on
- * in each unit adding example code on the new concepts of each unit along with
- * any in class requests for code examples that might come up over the course
+ *      mouse to the method
  *
  * @author Mr. Wachs
  * @since Feb. 5, 2020, 1:50:54 p.m.
@@ -104,6 +93,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 
     private static void learnIntroToJava() {
         // TODO code application logic here
+                
+        // anything following 2 slashes is a comment, until the end of the line
+
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
         
         ///////////////////////////////////////////////////////////////////////
         // JAVA BASIC INPUT AND OUTPUTS
@@ -595,7 +592,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         
     }
-
     
     private static void drawStar() {
         System.out.println("*");
