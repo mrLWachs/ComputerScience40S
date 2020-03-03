@@ -589,6 +589,18 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         draws("dalmations",101);
         draws("problems",99);
         
+        // you can methods that "send back"
+        // information from the method
+        
+        int number = giveMeNumber();
+        draw("Number is " + number);
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("\n Learning Methods complete! \n");
@@ -612,6 +624,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         for (int i = 0; i < times; i++) {
             draw(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        // the key word to "give back" 
+        // is "return"
+        return 7;
     }
 
 }
