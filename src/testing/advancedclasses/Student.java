@@ -9,13 +9,12 @@ package testing.advancedclasses;
  * methods of it's parent (super) class
  *
  * @author Mr. Wachs
- * @since Mar. 2, 2020, 1:59:59 p.m.
+ * @since Mar. 3, 2020, 10:07:24 a.m.
  */
 public class Student extends Person
 {
 
-    private int studentNumber;                      // encapsulated property
-    
+    private int studentNumber;
     
     /**
      * Class constructor sets class properties, when a constructor has a 
@@ -27,12 +26,16 @@ public class Student extends Person
      */
     public Student(int studentNumber) {
         super();                                // call to super constructor
-        this.studentNumber = studentNumber;     // set property from parameter     
+        this.studentNumber = studentNumber;     // set property from parameter 
     }
     
+    /**
+     * Outputs data on this student to the screen
+     */
+    @Override
     public void talk() {
-        super.talk();                           // invoke super class method
-        System.out.println("\tStudent number = " + studentNumber);                 
+        super.talk();
+        System.out.println("\tStudent number: " + studentNumber);
     }
-   
+    
 }
