@@ -20,14 +20,32 @@ public class Person
     private String name;    // encapsulated property
     public int age;
     
+    /** Protected property representing the person's gender */
+    protected boolean isMale;
+    
+    
     // METHODS (below)......................................................
     
     /**
      * Default constructor, set class properties
      */
     public Person() {
-        name = "jane doe";
-        age = 0;
+        name   = "jane doe";
+        age    = 0;
+        isMale = false;
+    }
+    
+    /**
+     * Class constructor sets class properties to parameter values
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param isMale the gender for this person
+     */
+    public Person(String name, int age, boolean isMale) {
+        this.name   = name;
+        this.age    = age;
+        this.isMale = isMale;
     }
     
     /**
