@@ -533,22 +533,22 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         int number = giveMeNumber();
         draw("Number is " + number);
-        
-        
-        
-        
-        
-        
-        
-        
-        
+                
         System.out.println("\n Learning Methods complete! \n");
     }
-    
+            
+    /**
+     * Draws a star on the screen
+     */
     private static void drawStar() {
         System.out.println("*");
     }
-
+  
+    /**
+     * Draws a thing on screen
+     * 
+     * @param thing the thing to draw
+     */    
     private static void draw(String thing) {
         // information (data) "passed" to this 
         // method is called the parameter
@@ -559,19 +559,48 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println(thing);        
     }
 
+    /**
+     * Draws a thing on the screen multiple times
+     * 
+     * @param thing the thing to draw
+     * @param times how many time to draw it
+     */    
     private static void draws(String thing, int times) {
         for (int i = 0; i < times; i++) {
             draw(thing);
         }
     }
 
+    /**
+     * Gives you a number
+     * 
+     * @return random number between 1 and 52
+     */
     private static int giveMeNumber() {
-        // the key word to "give back" 
-        // is "return"
-        return 7;
+        // the key word to "give back" is "return"
+        return random(1, 52);
     }
-
+    
+    /**
+     * Generate a random number in a range
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number in the range
+     */
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;
+    }
+    
 }
+
+
+
+
 
 // NETBEANS TIPS:
 // ==============
@@ -632,5 +661,5 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 // (19) If you hold down the CTRL key, methods calls become links with the 
 //      mouse to the method (even ones we don't write)
 // (20) On the left side window, the Navigator window helps find and jump to
-//      methods  
+//      methods if you double click them
 
