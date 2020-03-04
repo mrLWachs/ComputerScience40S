@@ -29,8 +29,9 @@ public class AdvancedClassesTest
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
         
-        Student student = new Student(99);
-        student.talk();
+        // class using inheritance
+        Student student = new Student(99);              // new student object
+        student.talk();                                 // inherited method
                 
         System.out.println("\nAdvanced classes test complete!\n");
     }
