@@ -662,4 +662,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      mouse to the method (even ones we don't write)
 // (20) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
 
