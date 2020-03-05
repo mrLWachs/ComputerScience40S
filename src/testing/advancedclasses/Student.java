@@ -52,4 +52,11 @@ public class Student extends Person
         System.out.println("\tStudent number: " + studentNumber);
     }
     
+    @Override
+    public String toString() {
+        return super.toString() + " is " + studentNumber;
+    }
+    
+    
+    
 }

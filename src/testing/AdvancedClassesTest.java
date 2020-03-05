@@ -32,6 +32,42 @@ public class AdvancedClassesTest
         // class using inheritance
         Student student = new Student(99);              // new student object
         student.talk();                                 // inherited method
+        
+        // The Object class (parent class of all classes)
+        
+        // all classes (including ones we create) inherit from the object 
+        // class which is the parent (super) of all classes
+        
+        Object object1 = new Object();              // parent of all classes
+        Object object2 = new Object();
+        Object object3 = object1;                   // same memory address
+        
+        // The toString(), clone(), and equals() methods
+                
+        System.out.println(object1.toString());         // the toString method
+        System.out.println(object2.toString());
+        System.out.println(object3.toString());
+                        
+        if (object1.equals(object2)) {                  // the equals() method
+            System.out.println("1 == 2");
+        }
+        if (object1.equals(object3)) {
+            System.out.println("1 == 3");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
                 
         System.out.println("\nAdvanced classes test complete!\n");
     }
