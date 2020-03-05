@@ -32,6 +32,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         learnMethods();
     }
 
+    /**
+     * Learn the content of the introduction unit
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
                 
@@ -499,9 +502,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("Good-bye World!");
         
         // this line terminates any running java program at any point
-        System.exit(0);
+        //System.exit(0);
     }
 
+    /**
+     * Learn the content of the methods unit
+     */
     private static void learnMethods() {
         System.out.println("\n Start Learning Methods... \n");
         
@@ -533,6 +539,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         int number = giveMeNumber();
         draw("Number is " + number);
+        
+        // overloaded methods are methods with the same name but different 
+        // parameters        
+        output("Hi");
+        output("Hello","OverLoad Example");
                 
         System.out.println("\n Learning Methods complete! \n");
     }
@@ -576,7 +587,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      */
     private static int giveMeNumber() {
         // the key word to "give back" is "return"
-        return random(1, 10);
+        final int MIN = Integer.MIN_VALUE;
+        final int MID = 0;
+        final int MAX = Integer.MAX_VALUE;
+        int low       = random(MIN, MID);
+        int high      = random(MID, MAX);
+        return random(low,high);
     }
     
     /**
@@ -593,11 +609,28 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         double number = (H - L + 1) * seed + L;
         return (int)number;
     }
-    
+
+    /**
+     * Outputs text in a dialog
+     * 
+     * @param text the text to output
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+
+    /**
+     * Outputs text in a dialog
+     * 
+     * @param text the text to output
+     * @param title the title for the dialog
+     */
+    private static void output(String text, String title) {
+        JOptionPane.showMessageDialog(null, text, 
+                title, JOptionPane.PLAIN_MESSAGE);
+    }
+        
 }
-
-
-
 
 
 // NETBEANS TIPS:
