@@ -1,4 +1,43 @@
 
+/** required package class namespace */
+package computerscience40s;
+
+/** required imports */
+import testing.Tester;
+
+
+/**
+ * ComputerScience40S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
+ *
+ * @author Mr. Wachs 
+ * @since 7-Sep-2018 
+ */
+public class ComputerScience40S 
+{
+
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        System.out.println("\nComputer Science 40S starting...\n");
+        
+        Tester tester = new Tester();
+        
+        System.out.println("\nComputer Science 40S complete!\n");
+    }
+    
+}
+
+
+
+
+
+
 // NETBEANS TIPS:
 // ==============
 // (1)  Hold Alt + scroll mouse to zoom in and out on code
@@ -47,49 +86,18 @@
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
-// (16) The + and - signs and grey lines along the side in NetBeans 
-//      help "expand" and "collapse" the method body (block)        
-// (17) On the left side window, the Navigator window helps find and 
-//      jump to methods        
-// (18) Using the keys CTRL + SHIFT and "+" or "-" also expands and 
-//      collapses methods
-// (19) You can call a method that does not yet exist, and netbeans 
-//      will help you write it with the lightbulb icon (you click on)
-// (20) You can jump to a method (even ones you don't write) by holding 
-//      down CTRL and clicking on the method call
-// (21) If you type /** before the method signature line it will 
-//      automate which JavaDoc comments you should make
+// (16) If you have to rename a variable or a method, select the
+//      word and then press CTRL + R, then type in a new name
+// (17) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 8) will help you write it
+// (19) If you hold down the CTRL key, methods calls become links with the 
+//      mouse to the method (even ones we don't write)
+// (20) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
 
-/** required package class namespace */
-package computerscience40s;
-
-/** required imports */
-import testing.Tester;
-
-
-/**
- * ComputerScience40S.java - the large in class example we continue to work 
- * on in each unit adding example code on the new concepts of each unit 
- * along with any in class requests for code examples that might come up 
- * over the course
- *
- * @author Mr. Wachs 
- * @since 7-Sep-2018 
- */
-public class ComputerScience40S 
-{
-
-    /**
-     * Main method for the project
-     * 
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("\nComputer Science 40S starting...\n");
-        
-        Tester tester = new Tester();
-        
-        System.out.println("\nComputer Science 40S complete!\n");
-    }
-    
-}
