@@ -62,7 +62,7 @@ public class Person
      */
     @Override
     public String toString() {
-        return super.toString() + "," + name + "," + age + "," + isMale;
+        return name + "," + age + "," + isMale;
     }
     
     /**

@@ -55,16 +55,8 @@ public class AdvancedClassesTest
             System.out.println("1 == 3");
         }
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        System.out.println(person.toString());
+        System.out.println(student.toString());
         
         
         

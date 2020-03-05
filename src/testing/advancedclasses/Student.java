@@ -52,11 +52,14 @@ public class Student extends Person
         System.out.println("\tStudent number: " + studentNumber);
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
     @Override
     public String toString() {
-        return super.toString() + " is " + studentNumber;
+        return super.toString() + "," + studentNumber;
     }
-    
-    
     
 }
