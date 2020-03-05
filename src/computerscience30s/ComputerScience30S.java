@@ -550,12 +550,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      * @param thing the thing to draw
      */    
     private static void draw(String thing) {
-        // information (data) "passed" to this 
-        // method is called the parameter
-        
-        // if you use the lightbulb to write the
-        // method, you often should rewrite the
-        // name of that parameter
+        // information (data) "passed" to this method is called the parameter
+        // if you use the lightbulb to write the method, you often should
+        // rewrite the name of that parameter
         System.out.println(thing);        
     }
 
@@ -566,6 +563,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      * @param times how many time to draw it
      */    
     private static void draws(String thing, int times) {
+        // one method can call another method
         for (int i = 0; i < times; i++) {
             draw(thing);
         }
@@ -578,7 +576,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      */
     private static int giveMeNumber() {
         // the key word to "give back" is "return"
-        return random(1, 52);
+        return random(1, 10);
     }
     
     /**
