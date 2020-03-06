@@ -48,8 +48,7 @@ public class Student extends Person
      */
     @Override
     public void talk() {
-        super.talk();
-        System.out.println("\tStudent number: " + studentNumber);
+        System.out.println(this.toString());
     }
     
     /**
