@@ -58,8 +58,10 @@ public class AdvancedClassesTest
         System.out.println(person.toString());
         System.out.println(student.toString());
         
-        Person archie  = new Person("Archie Andrews", 17, true);
-        Person betty   = new Person("Betty Cooper", 17, false);
+        // test toString, clone, and equals on Person
+        
+        Person archie  = new Person("Archie Andrews",17,true);
+        Person betty   = new Person("Betty Cooper",16,false);
         Person jughead = archie.clone();
         
         System.out.println(archie.toString());
@@ -73,8 +75,10 @@ public class AdvancedClassesTest
             System.out.println("archie==jughead");
         }
         
-        Student emma  = new Student("Emma Nelson", 16, false, 100);
-        Student jimmy = new Student("Jimmy Brooks", 17, true, 101);
+        // test toString, equals, clone for Student
+        
+        Student emma  = new Student("Emma Nelson",17,false,100);
+        Student jimmy = new Student("Jimmy Brooks",18,true,101);
         Student terri = emma.clone();
         
         System.out.println(emma.toString());
@@ -87,12 +91,6 @@ public class AdvancedClassesTest
         if (emma.equals(terri)) {
             System.out.println("emma==terri");
         }
-        
-        
-        
-        
-        
-        
         
         
         

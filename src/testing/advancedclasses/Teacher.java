@@ -1,13 +1,12 @@
-
 /** required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * Teacher.java - represents a teacher (and "is a" person)
+ * Teacher.java - description
  *
  * @author Mr. Wachs
- * @since Mar. 9, 2020, 10:08:48 a.m.
+ * @since Mar. 9, 2020, 1:29:28 p.m.
  */
 public class Teacher 
 {
