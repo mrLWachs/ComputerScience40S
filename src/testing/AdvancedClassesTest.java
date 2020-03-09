@@ -58,6 +58,44 @@ public class AdvancedClassesTest
         System.out.println(person.toString());
         System.out.println(student.toString());
         
+        Person archie  = new Person("Archie Andrews", 17, true);
+        Person betty   = new Person("Betty Cooper", 17, false);
+        Person jughead = archie.clone();
+        
+        System.out.println(archie.toString());
+        System.out.println(betty.toString());
+        System.out.println(jughead.toString());
+        
+        if (archie.equals(betty)) {
+            System.out.println("archie==betty");
+        }
+        if (archie.equals(jughead)) {
+            System.out.println("archie==jughead");
+        }
+        
+        Student emma  = new Student("Emma Nelson", 16, false, 100);
+        Student jimmy = new Student("Jimmy Brooks", 17, true, 101);
+        Student terri = emma.clone();
+        
+        System.out.println(emma.toString());
+        System.out.println(jimmy.toString());
+        System.out.println(terri.toString());
+        
+        if (emma.equals(jimmy)) {
+            System.out.println("emma==jimmy");
+        }
+        if (emma.equals(terri)) {
+            System.out.println("emma==terri");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
                 

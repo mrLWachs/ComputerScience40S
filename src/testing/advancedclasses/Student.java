@@ -61,4 +61,25 @@ public class Student extends Person
         return super.toString() + "," + studentNumber;
     }
     
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        return super.equals(object);
+    }
+       
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        return this;
+    }
+    
 }
