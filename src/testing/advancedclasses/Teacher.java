@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /** required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * Teacher.java - description
+ * Teacher.java - represents a teacher (and "is a" person)
  *
  * @author Mr. Wachs
  * @since Mar. 9, 2020, 10:08:48 a.m.
