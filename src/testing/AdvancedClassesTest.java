@@ -48,16 +48,9 @@ public class AdvancedClassesTest
         System.out.println(object2.toString());
         System.out.println(object3.toString());
                         
-        if (object1.equals(object2)) {                  // the equals() method
-            System.out.println("1 == 2");
-        }
-        if (object1.equals(object3)) {
-            System.out.println("1 == 3");
-        }
-        
-        System.out.println(person.toString());
-        System.out.println(student.toString());
-        
+        if (object1.equals(object2)) System.out.println("1 == 2");
+        if (object1.equals(object3)) System.out.println("1 == 3");
+                
         // test toString, clone, and equals on Person
         
         Person archie  = new Person("Archie Andrews",17,true);
@@ -68,14 +61,10 @@ public class AdvancedClassesTest
         System.out.println(betty.toString());
         System.out.println(jughead.toString());
         
-        if (archie.equals(betty)) {
-            System.out.println("archie==betty");
-        }
-        if (archie.equals(jughead)) {
-            System.out.println("archie==jughead");
-        }
+        if (archie.equals(betty))   System.out.println("archie==betty");
+        if (archie.equals(jughead)) System.out.println("archie==jughead");
         
-        // test toString, equals, clone for Student
+        // test toString, equals, clone on Student
         
         Student emma  = new Student("Emma Nelson",17,false,100);
         Student jimmy = new Student("Jimmy Brooks",18,true,101);
@@ -85,12 +74,8 @@ public class AdvancedClassesTest
         System.out.println(jimmy.toString());
         System.out.println(terri.toString());
         
-        if (emma.equals(jimmy)) {
-            System.out.println("emma==jimmy");
-        }
-        if (emma.equals(terri)) {
-            System.out.println("emma==terri");
-        }
+        if (emma.equals(jimmy)) System.out.println("emma==jimmy");
+        if (emma.equals(terri)) System.out.println("emma==terri");
         
         
         
