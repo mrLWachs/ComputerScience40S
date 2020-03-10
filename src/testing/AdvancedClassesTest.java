@@ -5,6 +5,7 @@ package testing;
 /** required imports */
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
+import testing.advancedclasses.Teacher;
 
  
 /**
@@ -76,6 +77,23 @@ public class AdvancedClassesTest
         
         if (emma.equals(jimmy)) System.out.println("emma==jimmy");
         if (emma.equals(terri)) System.out.println("emma==terri");
+        
+        // create teacher object and associate with student objects
+        
+        Teacher teacher = new Teacher("Mr. Perino");
+        teacher.students[0] = student;
+        teacher.students[1] = emma;
+        teacher.students[2] = jimmy;
+        teacher.students[3] = terri;
+        System.out.println(teacher.toString());
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

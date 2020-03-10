@@ -99,4 +99,22 @@ public class Person
         return person;
     }
     
+    /**
+     * Accessor method of the private property
+     * 
+     * @return the property to "see"
+     */
+    public String getName() {
+        return name;
+    }
+    
+    /**
+     * Mutator method to change the private property
+     * 
+     * @param name the property to mutate
+     */
+    public void setName(String name) {
+        this.name = name;
+    }    
+    
 }

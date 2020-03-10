@@ -1,21 +1,25 @@
+
 /** required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * Teacher.java - description
+ * Teacher.java - represents a teacher (and "is a" person)
  *
  * @author Mr. Wachs
  * @since Mar. 9, 2020, 1:29:28 p.m.
  */
-public class Teacher 
+public class Teacher extends Person
 {
 
+    public Student[] students;                      // associated object array
+        
     /**
      * Default constructor, set class properties
      */
-    public Teacher() {
-        
+    public Teacher(String name) {
+        super(name, 40, true);
+        students = new Student[100];                // instantiate array
     }
      
     /**
