@@ -77,7 +77,7 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
-        Person that = (Person)object; 
+        Person that      = (Person)object; 
         if (this.age    != that.age)      return false;
         if (this.isMale != that.isMale)   return false;
         if (!this.name.equals(that.name)) return false; 
@@ -101,21 +101,21 @@ public class Person
     }
     
     /**
-     * Mutator method to change the private property
-     * 
-     * @param name the property to mutate
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-    
-    /**
      * Accessor method of the private property
      * 
      * @return the property to "see"
      */
     public String getName() {
         return name;
+    }
+    
+    /**
+     * Mutator method to change the private property
+     * 
+     * @param name the property to mutate
+     */
+    public void setName(String name) {
+        this.name = name;
     }
     
 }

@@ -11,11 +11,13 @@ package testing.advancedclasses;
  */
 public class Teacher extends Person
 {
-
+    
     public Student[] students;                      // associated object array
         
     /**
      * Default constructor, set class properties
+     * 
+     * @param name the name for this teacher
      */
     public Teacher(String name) {
         super(name, 40, true);

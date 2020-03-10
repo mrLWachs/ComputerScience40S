@@ -70,8 +70,8 @@ public class Student extends Person
     @Override
     public boolean equals(Object object) {
         Student that = (Student)object;             // cast into student object
-        if (!super.equals(that))                      return false;
         if (this.studentNumber != that.studentNumber) return false;
+        if (!super.equals(that))                      return false;        
         return true;                                // passed the tests
     }
        
