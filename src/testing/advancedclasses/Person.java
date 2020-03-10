@@ -67,16 +67,16 @@ public class Person
     
     /**
      * Deep comparison, determines if two objects are "equal" in this context
-     *
+     * "shallow" comparison would be: "return true;" and a "deeper" comparison 
+     * would be to first turn (cast) the object into a person and then compare 
+     * ALL the properties of "this" person with ALL the properties of the 
+     * other person object (which we will call "that")
+     * 
      * @param object the object to compare to
      * @return the objects are "equal" (true) or not (false)
      */
     @Override
     public boolean equals(Object object) {
-        // "shallow" comparison would be: "return true;" and a "deeper" 
-        // comparison would be to first turn (cast) the object into a person
-        // and then compare ALL the properties of "this" person with ALL the
-        // properties of the other person object (which we will call "that")
         Person that = (Person)object; 
         if (this.age    != that.age)      return false;
         if (this.isMale != that.isMale)   return false;
@@ -85,18 +85,28 @@ public class Person
     }
     
     /**
-     * a Deep clone, creates a duplicate object using new memory
+     * A Deep clone, creates a duplicate object using new memory
+     * A shallow clone would be: "return this;" and a deeper clone is shown
+     * below...
      *
      * @return a "clone" of the object using new memory
      */
     @Override
     public Person clone() {
-        // shallow clone would be: "return this;" and a deeper clone would be:
         Person person = new Person();
         person.name   = this.name;
         person.age    = this.age;
         person.isMale = this.isMale;
         return person;
+    }
+    
+    /**
+     * Mutator method to change the private property
+     * 
+     * @param name the property to mutate
+     */
+    public void setName(String name) {
+        this.name = name;
     }
     
     /**
@@ -107,14 +117,5 @@ public class Person
     public String getName() {
         return name;
     }
-    
-    /**
-     * Mutator method to change the private property
-     * 
-     * @param name the property to mutate
-     */
-    public void setName(String name) {
-        this.name = name;
-    }    
     
 }

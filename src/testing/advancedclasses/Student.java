@@ -69,10 +69,10 @@ public class Student extends Person
      */
     @Override
     public boolean equals(Object object) {
-        Student that = (Student)object;
+        Student that = (Student)object;             // cast into student object
         if (!super.equals(that))                      return false;
         if (this.studentNumber != that.studentNumber) return false;
-        return true;
+        return true;                                // passed the tests
     }
        
     /**
@@ -82,11 +82,11 @@ public class Student extends Person
      */
     @Override
     public Student clone() {
-        Student that = new Student(this.studentNumber);
-        that.age = this.age;
-        that.isMale = this.isMale;
-        that.setName(this.getName());
-        return that;
+        Student that = new Student(this.studentNumber); // construct student
+        that.age     = this.age;                        // copy properties
+        that.isMale  = this.isMale;
+        that.setName(this.getName());                   // accessor/mutator
+        return that;                                    // return new memory
     }
     
 }
