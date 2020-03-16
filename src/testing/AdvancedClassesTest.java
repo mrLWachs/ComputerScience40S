@@ -81,14 +81,22 @@ public class AdvancedClassesTest
         // create a Teacher object which associates with student
         
         Teacher teacher = new Teacher("Mr. Perino");
-        teacher.students[0] = student;
-        teacher.students[1] = emma;
-        teacher.students[2] = jimmy;
-        teacher.students[3] = terri;
+        
+        teacher.students[0] = emma;
+        teacher.students[1] = jimmy;
+        teacher.students[2] = terri;
+        teacher.students[3] = student;
+        
         System.out.println(teacher.toString());
         
+        // call method that uses instanceof operator
         
-        
+        whatIs(object1);
+        whatIs(person);
+        whatIs(student);
+        whatIs(teacher);        
+        String thing = "Hello World";        
+        whatIs(thing);
         
         
         
@@ -98,6 +106,21 @@ public class AdvancedClassesTest
                 
         System.out.println("\nAdvanced classes test complete!\n");
     }
+     
+    /**
+     * Checks the passed object and outputs what class type the object is. 
+     * This method uses the instanceof operator to do the logic
+     * 
+     * @param object the object type to check
+     */
+    private void whatIs(Object object) {
+        String name = "This is a ";
+        if (object instanceof Person)  name += "Person -> ";
+        if (object instanceof Student) name += "Student -> ";
+        if (object instanceof Teacher) name += "Teacher -> ";
+        if (object instanceof String)  name += "String -> ";
+        if (object instanceof Object)  name += "Object -> ";
+        System.out.println(name);        
+    }
 
-    
 }

@@ -19,11 +19,11 @@ public class Teacher extends Person
      * 
      * @param name the name for this teacher
      */
-    public Teacher(String name) {
-        super(name, 40, true);
-        students = new Student[100];                // instantiate array
+    public Teacher(String name) {                // instantiate array
+        super(name, 50, true);
+        students = new Student[100];
     }
-     
+         
     /**
      * String representation of this object
      *
