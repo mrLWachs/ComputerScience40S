@@ -3,6 +3,8 @@
 package testing;
 
 /** required imports */
+import testing.advancedclasses.HighSchoolStudent;
+import testing.advancedclasses.Husky;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
@@ -89,6 +91,15 @@ public class AdvancedClassesTest
         
         System.out.println(teacher.toString());
         
+        // create some high school and huskies
+        
+        HighSchoolStudent jeff = new HighSchoolStudent(105);
+        Husky havoc = new Husky(2665);
+        
+        // show the static class variable (property)
+        
+        System.out.println(havoc.totalStudents);
+                
         // call method that uses instanceof operator
         
         whatIs(object1);
@@ -97,13 +108,9 @@ public class AdvancedClassesTest
         whatIs(teacher);        
         String thing = "Hello World";        
         whatIs(thing);
-        
-        
-        
-        
-        
-        
-                
+        whatIs(jeff);
+        whatIs(havoc);
+                        
         System.out.println("\nAdvanced classes test complete!\n");
     }
      
@@ -115,11 +122,13 @@ public class AdvancedClassesTest
      */
     private void whatIs(Object object) {
         String name = "This is a ";
-        if (object instanceof Person)  name += "Person -> ";
-        if (object instanceof Student) name += "Student -> ";
-        if (object instanceof Teacher) name += "Teacher -> ";
-        if (object instanceof String)  name += "String -> ";
-        if (object instanceof Object)  name += "Object -> ";
+        if (object instanceof Object)            name += "Object -> ";
+        if (object instanceof Person)            name += "Person -> ";
+        if (object instanceof Student)           name += "Student -> ";
+        if (object instanceof Teacher)           name += "Teacher -> ";
+        if (object instanceof HighSchoolStudent) name += "High School -> ";
+        if (object instanceof Husky)             name += "Husky -> ";
+        if (object instanceof String)            name += "String -> ";
         System.out.println(name);        
     }
 

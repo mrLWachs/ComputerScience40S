@@ -16,6 +16,10 @@ public class Student extends Person
 
     private int studentNumber;                      // encapsulated property
     
+    /** Static property that counts the total number of student objects */
+    public static int totalStudents;
+    
+    
     /**
      * Class constructor sets class properties, when a constructor has a 
      * parameter, it is no longer a default constructor. If you have no 
@@ -28,6 +32,7 @@ public class Student extends Person
         super();                                // call to super constructor
         this.studentNumber = studentNumber;     // set property from parameter 
         super.isMale = true;
+        totalStudents++;
     }
     
     /**
@@ -41,6 +46,7 @@ public class Student extends Person
     public Student(String name, int age, boolean isMale, int studentNumber) {
         super(name, age, isMale);
         this.studentNumber = studentNumber;
+        totalStudents++;
     }
       
     /**
