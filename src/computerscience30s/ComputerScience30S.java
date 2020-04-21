@@ -9,7 +9,12 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code 
  */
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -638,11 +643,237 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
     private static void learnArrays() {
         System.out.println("\n Start Learning Arrays... \n");
         
+        // create (declare) a variable for comparison: 
+        int size = 5;
         
+        // declare an array:  
+        int array[] = new int[size];
+        
+        // assume the "spots", "subscripts", "elements", "indices" as unknown
+        
+        // assign values to the individual indices:  
+        array[0] = 25;
+        array[1] = 18;
+        array[2] = -21;
+        array[3] = 621;
+        array[4] = 1234567890;
+        
+        // the next line would be a "out of bounds" or "range" error         
+        // array[5] = 99;
+                
+        // other index numbers that would be a range error:        
+        // array[2.5] = 10;
+        // array[-1] = 10;
+        
+        // declare an array of no size:  
+        double[] a;
+        
+        // later on, you can re-create (re-dimension) the same array  
+        a = new double[3];
+        
+        // now put content into the array
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+                
+        // you can re-dimension multiple times, but every time it wipes out 
+        // any content stored inside the array
+        a = new double[500];
+                
+        // another way to create arrays, but with pre-filled values  
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };     
+        
+        // you can also do this and make the array a constant
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"
+        };
+                
+        // using an array like variables  
+        int[] numbers = new int[100];
+        
+        // names for arrays should be plural words
+        numbers[99] = 99;
+        
+        // output array index like a variable
+        System.out.println(numbers[99]);
+                
+        // perform equations with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
+        
+        // to travel (go through) the entire array, use a for loop  
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        // output the entire array, by traversing the array and using a 
+        // built-in feature that all arrays have called the ".length" feature
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        // arrays with methods, arrays can be sent to a method
+        // parameter, and arrays can be returned from methods
+        // in other words, arrays can be inputs and outputs
+        // from methods        
+        output(numbers);    
+        output(coins);
+        int[] randoms = random(1,10,50);
+        output(randoms);
+        
+        // multi-dimensional array, means an array of arrays, filled with 
+        // arrays... etc (2D, 3D, 4D etc as a way to visualize it) it is
+        // also know as a matrix
+        final int  ROWS    = 30;
+        final int  COLUMNS = 40;
+        final char LOW     = 'a';
+        final char HIGH    = 'z';
+                
+        // create (declare) a matrix:                
+        char[][] matrix = new char[ROWS][COLUMNS];
+                
+        // fill the matrix by traversing and adding
+        // in a random character, using nested for loops  
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random(LOW,HIGH);
+            }
+        }
+        
+        // now output the matrix with another overloaded method that 
+        // incorporates graphical aspects in the dialog        
+        output(matrix);
+        
+        // matrices can also be made with pre-set values
+        final char[][] TIC_TAC_TOE = 
+        {
+            {'X','O','X'},
+            {'O','X','O'},
+            {'X','O','X'}
+        };
+        output(TIC_TAC_TOE);
         
         System.out.println("\n Completed Learning Arrays!\n");
     }
-     
+
+    /**
+     * Outputs an array of integer values
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        String text = "Array = [";                  // create string to fill
+        for (int i = 0; i < array.length; i++) {    // traverse array
+            text += array[i] + ",";                 // add to the string
+        }        
+        text = text + "]";                          // add ending to the string
+        output(text);                               // now output the string
+    }
+      
+    
+    /**
+     * Outputs an array of double values
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(double[] array) {
+        int[] a = convert(array);   // create int array of converted  doubles
+        output(a);                  // now output the converted array
+    }
+
+    /**
+     * Converts an array of doubles into an array of integers
+     * 
+     * @param array the double array to convert
+     * @return an array of integers
+     */
+    private static int[] convert(double[] array) {
+        int[] a = new int[array.length];            // create empty array
+        for (int i = 0; i < array.length; i++) {    // traverse array size
+            a[i] = (int)array[i];                   // cast over the index value
+        }
+        return a;                                   // return completed array
+    }
+
+    /**
+     * Generates an array of random integers in the range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size to make the array
+     * @return an array of random integers
+     */
+    private static int[] random(int low, int high, int size) {
+        int[] numbers = new int[size];      // create empty array of passed size
+        for (int i = 0; i < size; i++) {    // traverse array size
+            numbers[i] = random(low,high);  // assign random value to each index
+        }
+        return numbers;                     // return completed array
+    }
+    
+    /**
+     * Generates a random character
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low,(int)high);     // cast to int and back  
+    }
+
+    /**
+     * Outputs an matrix of character values
+     * 
+     * @param m the matrix of characters
+     */
+    private static void output(char[][] m) {
+        String text = "";                       // start a string to hold values
+        for (int r = 0; r < m.length; r++) {    // traverse all rows
+            for (int c = 0; c < m[r].length; c++) { // traverse all columns
+                text = text + m[r][c] + " ";    // concatinate to the string
+            }
+            text = text + "\n";                 // add in a new line break
+        }
+        // set up graphical "things" to make the dialog more interesting    
+        Color  background = new Color(0,0,0);
+        Color  foreground = new Color(0,255,0);        
+        Font   font       = new Font("Consolas",Font.PLAIN,18);
+        String imageName  = "C:\\Users\\lawrence.wachs"
+                + "\\Desktop\\Images\\matrix.gif";
+        // now output that string in a graphical dialog
+        output(text,"The Matrix",font,background,foreground,imageName);
+    }
+    
+    /**
+     * Outputs text in a more visual graphical way with the passed font and 
+     * colors in a dialog 
+     * 
+     * @param text the text to display
+     * @param title the title of the dialog display
+     * @param font the font name to use in the dialog
+     * @param background the background color to use in the dialog
+     * @param foreground the foreground color to use in the dialog
+     * @param imageName the name of the image to display
+     */
+    private static void output(String text, String title, Font font, 
+            Color background, Color foreground, String imageName) {
+        // create a graphics object to display the graphical things
+        JTextArea area = new JTextArea();
+        // assign the font and colors to the area
+        area.setFont(font);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setText(text);
+        // create a "icon" for the picture
+        Icon picture = new ImageIcon(imageName);
+        // pass the area and the picture to the dialog
+        JOptionPane.showMessageDialog(null,area,title,
+                JOptionPane.PLAIN_MESSAGE,picture);        
+    }
+    
 }
 
 
