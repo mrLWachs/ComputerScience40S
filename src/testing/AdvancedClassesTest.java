@@ -3,8 +3,14 @@
 package testing;
 
 /** required imports */
+import testing.advancedclasses.Banana;
+import testing.advancedclasses.CSTeacher;
+import testing.advancedclasses.Doctor;
+import testing.advancedclasses.Donut;
 import testing.advancedclasses.HighSchoolStudent;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.Meeting;
+import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
@@ -91,17 +97,14 @@ public class AdvancedClassesTest
         
         System.out.println(teacher.toString());
         
-        // create some high school and huskies
-        
+        // create some high school and huskies        
         HighSchoolStudent jeff = new HighSchoolStudent(105);
         Husky havoc = new Husky(2665);
         
-        // show the static class variable (property)
-        
+        // show the static class variable (property)        
         System.out.println(havoc.totalStudents);
                 
-        // call method that uses instanceof operator
-        
+        // call method that uses instanceof operator        
         whatIs(object1);
         whatIs(person);
         whatIs(student);
@@ -110,6 +113,46 @@ public class AdvancedClassesTest
         whatIs(thing);
         whatIs(jeff);
         whatIs(havoc);
+        
+        // create more objects
+        Doctor    doctor   = new Doctor();
+        CSTeacher compTech = new CSTeacher("Mr. Code");
+        MrWachs   mrWachs  = new MrWachs("Mr. Wachs");
+                
+        // use the method again
+        whatIs(doctor);
+        whatIs(compTech);
+        whatIs(mrWachs);
+        
+        // use some polymorphism....  
+        Meeting meeting = new Meeting();        // create meeting object
+        meeting.attend(person);                 // add various child objects
+        meeting.attend(student);                // using polymorphic method
+        meeting.attend(doctor);                 // arguments
+        meeting.attend(teacher);
+        meeting.attend(archie);
+        meeting.attend(betty);
+        meeting.attend(compTech);
+        meeting.attend(emma);
+        meeting.attend(havoc);
+        meeting.attend(jeff);
+        meeting.attend(jimmy);
+        meeting.attend(jughead);
+        meeting.attend(terri);
+        meeting.attend(mrWachs);        
+        meeting.hold();                         // hold the mmeting
+        
+        // create objects from classes that inherited from an abstract class:
+        Banana banana = new Banana();
+        Donut  donut  = new Donut();
+        
+        // call the polymorphic method of person objects 
+        mrWachs.haveDinner(donut);
+        mrWachs.haveDinner(banana);
+        
+        
+        // MORE CODE TO COME NEXT WEEK......................
+        
                         
         System.out.println("\nAdvanced classes test complete!\n");
     }
@@ -128,7 +171,11 @@ public class AdvancedClassesTest
         if (object instanceof Teacher)           name += "Teacher -> ";
         if (object instanceof HighSchoolStudent) name += "High School -> ";
         if (object instanceof Husky)             name += "Husky -> ";
+        if (object instanceof Doctor)            name += "Doctor -> ";
+        if (object instanceof CSTeacher)         name += "CS Teacher -> ";
+        if (object instanceof MrWachs)           name += "MrWachs -> ";        
         if (object instanceof String)            name += "String -> ";
+        name += "Object";
         System.out.println(name);        
     }
 
