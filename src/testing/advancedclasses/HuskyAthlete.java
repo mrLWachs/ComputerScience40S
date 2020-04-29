@@ -14,14 +14,36 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since 22-Apr-2020, 1:42:56 PM
  */
-public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Football
+public class HuskyAthlete extends Husky implements PermissionForm, Hockey, 
+                                                   Football
 {
 
-    public HuskyAthlete(int studentNumber) {
+    // class properties:
+    private boolean haveForm;
+    private String opponent;
+    private int score;
+    private int oppScore;
+    
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param isMale the gender for this student
+     * @param studentNumber the student number for this student
+     */
+    public HuskyAthlete(String name, int age, boolean isMale, 
+                        int studentNumber) {
         super(studentNumber);
+        super.age    = age;
+        super.isMale = isMale;
+        super.setName(name);
+        haveForm = PermissionForm.NOT_SIGNED;
+        opponent = "";
+        score    = 0;
+        oppScore = 0;        
     }
-
-
      
     /**
      * String representation of this object
@@ -59,6 +81,9 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void sign() {
+        System.out.println(super.getName() + " has signed the "
+                + "permission form");
+        haveForm = PermissionForm.SIGNED;
     }
 
     /**
@@ -68,7 +93,7 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public boolean haveYouGotItSigned() {
-        return false;
+        return haveForm;
     }
 
     /**
@@ -78,6 +103,14 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void goal(String name) {
+        if (name.equals(super.getName())) {
+            score++;
+            System.out.println(super.getName() + " gets a goal!");
+        }
+        else {
+            oppScore++;
+            System.out.println(opponent + " gets a goal!");
+        }
     }
 
     /**
@@ -87,6 +120,12 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void endOfPeriod(int period) {
+        String text = "End of period " + period;
+        text += " and the score is " + score;
+        text += " for the " + super.getName();
+        text += " and " + oppScore;
+        text += " for the " + opponent;
+        System.out.println(text);
     }
 
     /**
@@ -96,6 +135,7 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void setOpponent(String name) {
+        opponent = name;
     }
 
     /**
@@ -105,7 +145,14 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public boolean didIWin() {
-        return false;
+        if (score > oppScore) {
+            System.out.println(super.getName() + " wins!");
+            return true;
+        }
+        else {
+            System.out.println(opponent + " wins!");
+            return false;
+        }
     }
 
     /**
@@ -116,6 +163,14 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void score(int points, String name) {
+        if (name.equals(super.getName())) {
+            score += points;
+            System.out.println(super.getName() + " scores " + points);
+        }
+        else {
+            oppScore += points;
+            System.out.println(opponent + " scores " + points);
+        }
     }
 
     /**
@@ -125,6 +180,12 @@ public class HuskyAthlete extends Husky implements PermissionForm, Hockey, Footb
      */
     @Override
     public void endOfQuarter(int quarter) {
+        String text = "End of quarter " + quarter;
+        text += " and the score is " + score;
+        text += " for the " + super.getName();
+        text += " and " + oppScore;
+        text += " for the " + opponent;
+        System.out.println(text);
     }
     
 }
