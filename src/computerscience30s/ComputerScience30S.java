@@ -35,7 +35,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
     public static void main(String[] args) {
 //        learnIntroToJava();
 //        learnMethods();
-        learnArrays();
+//        learnArrays();
+        learnClasses();
     }
 
     /**
@@ -870,6 +871,41 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // pass the area and the picture to the dialog
         JOptionPane.showMessageDialog(null,area,title,
                 JOptionPane.PLAIN_MESSAGE,picture);        
+    }
+
+    /**
+     * Goes over the content of this unit
+     */
+    private static void learnClasses() {
+        System.out.println("\nStart learing classes...\n");
+        
+        // create a person object from the Person class
+        Person person = new Person();        
+        // similar to old code like: Random random = new Random();
+        
+        // call (invoke) a method within the object
+        person.talk();
+        
+        // create (instantiate) another object with different constructor
+        Person other = new Person("Another Name");
+        other.talk();
+        other.birthday();
+        other.talk();
+        other.birthday(10);
+        other.talk();
+        other.die();
+        other.talk();
+        
+        // another instance of a person with the 3rd constructor
+        Person third = new Person("Dave Smith",17,true);
+        third.talk();
+        third.isMale = false;
+        third.name = "Darla Smith";
+        third.talk();
+        
+        // create a student object
+        
+        System.out.println("\nLearing classes completed!\n");
     }
     
 }
