@@ -635,7 +635,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         JOptionPane.showMessageDialog(null, text, 
                 title, JOptionPane.PLAIN_MESSAGE);
     }
-
     
     /**
      * Learn the content of the arrays unit
@@ -771,8 +770,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         text = text + "]";                          // add ending to the string
         output(text);                               // now output the string
     }
-      
-    
+          
     /**
      * Outputs an array of double values
      * 
