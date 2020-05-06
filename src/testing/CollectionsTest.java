@@ -47,6 +47,7 @@ public class CollectionsTest
         comment("Test finalize method");
         e.finalize();
         System.out.println("Node e = " + e.toString());
+        System.out.println("d == e is " + d.equals(e));
         
         comment("Create a linked list");
         LinkedList<Integer> list1 = new LinkedList<>();
@@ -63,8 +64,8 @@ public class CollectionsTest
                
         comment("Test addFront method");
         for (int i = 0; i < SIZE; i++) {
-            int primitive = (int)((H - L + 1d)*Math.random() + L);
-            Integer integer = new Integer(primitive);
+            int     primitive = (int)((H - L + 1d)*Math.random() + L);
+            Integer integer   = new Integer(primitive);
             list1.addFront(integer);
             System.out.println("Size " + list1.size() +
                                " = "   + list1.toString());
