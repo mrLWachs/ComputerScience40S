@@ -33,6 +33,59 @@ public class Student extends Person
         super.isMale = isMale;
         super.birthday(age);
         this.number = number;
+        this.gpa    = 0.0;
+        this.stress = 0;
+    }
+    
+    /**
+     * Studying raises the GPA and increases stress
+     */
+    public void study() {
+        gpa = gpa + 1.1;
+        stress += 10;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+    }
+    
+    /**
+     * Slacking off lowers the GPA and stress
+     */
+    public void slackOff() {
+        stress -= 15;
+        gpa = gpa - youTube(15);
+    }
+
+    /**
+     * Watching YouTube lowers GPA 
+     * 
+     * @param time how many minutes you watched
+     * @return the amount to reduce the GPA
+     */
+    private double youTube(int time) {
+        double amount = 0;
+        for (int i = 0; i < time; i++) {
+            amount = amount + 2.2;
+        }
+        return amount;
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();
+        System.out.println("\t Number: " + number);
+        System.out.println("\t GPA:    " + gpa);
+        System.out.println("\t Stress: " + stress);        
     }
     
 }

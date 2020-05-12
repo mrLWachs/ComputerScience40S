@@ -903,7 +903,41 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         third.name = "Darla Smith";
         third.talk();
         
-        // create a student object
+        // create a student object and call it's methods
+        Student student = new Student("Student Person",17,true,100);
+        student.talk();
+        student.study();
+        student.slackOff();
+        student.cram();
+        student.birthday();
+        student.talk();
+        
+        // create a teacher object and call it's methods
+        Teacher teacher = new Teacher("Teacher person","Learning");
+        teacher.students[0] = student;
+        // creating "annonymous" student objects to add to the teacher
+        teacher.students[1] = new Student("Sara Conners",18,false,101);
+        teacher.students[2] = new Student("Peter Parker",16,true,102);        
+        teacher.teach();
+        teacher.talk();
+        
+        // create husky object
+        Husky husky = new Husky("Havoc",18,true);
+        husky.talk();
+        husky.homework();
+        husky.pepRally();
+        husky.homework();
+        husky.talk();
+        
+        // create meeting object
+        Meeting meeting = new Meeting();
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(teacher);
+        meeting.attend(husky);
+        meeting.hold();  
         
         System.out.println("\nLearing classes completed!\n");
     }
