@@ -57,33 +57,145 @@ public class CollectionsTest
         System.out.println(list1.isEmpty());
         System.out.println(list1.size());
         
-        comment("Create constants for creation");
+        comment("Create constants for testing");
         final int SIZE = 5;
         final double L = 0;
         final double H = 9;
+        comment("Create variables for testing");
+        Integer data;
+        int index;
+        
                
         comment("Test addFront method");
         for (int i = 0; i < SIZE; i++) {
-            int     primitive = (int)((H - L + 1d)*Math.random() + L);
-            Integer integer   = new Integer(primitive);
-            list1.addFront(integer);
+            data = new Integer((int)((H-L+1d)*Math.random()+L));
+            list1.addFront(data);
             System.out.println("Size " + list1.size() +
                                " = "   + list1.toString());
         }
         
         comment("Test addBack method");
         for (int i = 0; i < SIZE; i++) {
-            int primitive = (int)((H - L + 1d)*Math.random() + L);
-            Integer integer = new Integer(primitive);
-            list1.addBack(integer);
+            data = new Integer((int)((H-L+1d)*Math.random()+L));
+            list1.addBack(data);
             System.out.println("Size " + list1.size() +
                                " = "   + list1.toString());
         }
         
+        
+        comment("Test get method");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            data = list1.get(i);
+            System.out.println("Get (" + i + ") = " + data);
+        }
+                
+        comment("Test set method");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            data = new Integer(i);
+            System.out.print("Set (" + i + ") to " + data +
+                             " -> " + list1.set(i, data) +
+                             " -> " + list1.toString());
+        }
+                
+        comment("Test clone method");
+        LinkedList<Integer> list2 = list1.clone();
+        System.out.println(list1.toString());
+        System.out.println(list2.toString());
+        
+        comment("Test equals method");
+        System.out.println("list1 == list2 -> " + list1.equals(list2));
+        
         comment("Test finalize method");
-        list1.finalize();
-        System.out.println("Size " + list1.size() +
-                           " = "   + list1.toString());
+        list2.finalize();
+        System.out.println(list1.toString());
+        System.out.println(list2.toString());
+        
+        comment("Test equals method");
+        System.out.println("list1 == list2 -> " + list1.equals(list2));
+
+        comment("Cloning list 2 again");
+        list2 = list1.clone();
+        
+        comment("Test addBefore method");
+        
+        comment("List before adding");
+        System.out.println(list1.toString());
+        
+        comment("Testing inside edges");
+        data  = 0;
+        index = 0;
+        System.out.println("addBefore(" + data + "," + index + 
+                           ") -> " + list1.addBefore(data,index) + 
+                           " -> "  + list1.toString());
+        
+        data  = 0;
+        index = list1.size()-1;
+        System.out.println("addBefore(" + data + "," + index + 
+                           ") -> " + list1.addBefore(data,index) + 
+                           " -> "  + list1.toString());
+                
+        comment("Testing outside edges");
+        data  = 0;
+        index = -1;
+        System.out.println("addBefore(" + data + "," + index + 
+                           ") -> " + list1.addBefore(data,index) + 
+                           " -> "  + list1.toString());
+        
+        data  = 0;
+        index = list1.size();
+        System.out.println("addBefore(" + data + "," + index + 
+                           ") -> " + list1.addBefore(data,index) + 
+                           " -> "  + list1.toString());
+                
+        comment("Testing random insertion points");
+        for (int i = 0; i < SIZE; i++) {
+            data  = new Integer((int)((H-L+1d)*Math.random()+L));
+            index = (int)(((list2.size()-1)-0d+1d)*Math.random()+0d);
+            System.out.println("addBefore(" + data + "," + index + 
+                               ") -> " + list1.addBefore(data,index) + 
+                               " -> "  + list1.toString());
+        }
+        
+        comment("Test addAfter method");
+        
+        comment("List before adding");
+        System.out.println(list2.toString());
+        
+        comment("Testing inside edges");
+        data  = 0;
+        index = 0;
+        System.out.println("addAfter(" + data + "," + index + 
+                           ") -> " + list2.addAfter(data,index) + 
+                           " -> "  + list2.toString());
+        
+        data  = 0;
+        index = list2.size()-1;
+        System.out.println("addAfter(" + data + "," + index + 
+                           ") -> " + list2.addAfter(data,index) + 
+                           " -> "  + list2.toString());
+                
+        comment("Testing outside edges");
+        data  = 0;
+        index = -1;
+        System.out.println("addAfter(" + data + "," + index + 
+                           ") -> " + list2.addAfter(data,index) + 
+                           " -> "  + list2.toString());
+        
+        data  = 0;
+        index = list2.size();
+        System.out.println("addAfter(" + data + "," + index + 
+                           ") -> " + list2.addAfter(data,index) + 
+                           " -> "  + list2.toString());
+                
+        comment("Testing random insertion points");
+        for (int i = 0; i < SIZE; i++) {
+            data  = new Integer((int)((H-L+1d)*Math.random()+L));
+            index = (int)(((list2.size()-1)-0d+1d)*Math.random()+0d);
+            System.out.println("addAfter(" + data + "," + index + 
+                               ") -> " + list2.addAfter(data,index) + 
+                               " -> "  + list2.toString());
+        }
+        
         
         
         comment("Collections test complete!");                  

@@ -116,6 +116,84 @@ public class LinkedList <T>
     }   
      
     /**
+     * Accessor for the data at the specified index
+     * 
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {        
+        if (!inRange(index)) return null;   // invalid index, return flag        
+        return (T)getNode(index).data;      // get reference and retrieve data  
+    }
+    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        if (!inRange(index)) return false;          // invalid index
+        if (data == null)    return false;          // invalid data
+        Node current = getNode(index);              // get to node at index
+        current.data = data;                        // change node data
+        return true;                                // operation successful
+    }
+    
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // wrapper method call
+    }
+    
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == length-1) return addBack(data);    // add to end of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.next = current.next;                       // set proper references
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }
+        
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)    return false;              // invalid data to add
+        if (!inRange(index)) return false;              // index out of range        
+        if (index == 0)      return addFront(data);     // add to start of list
+        Node<T> node = new Node<>(data);                // create node object
+        Node current = getNode(index);                  // get to index spot
+        node.previous = current.previous;               // set proper references
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;            
+        length++;                                       // increase length
+        return true;                                    // opperation successful
+    }    
+    
+    /**
      * String representation of this object
      *
      * @return The object represented as a String
@@ -140,7 +218,18 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != that.size()) return false;   // not same sizes      
+        Node current1 = this.getFirstNode();            // get reference to
+        Node current2 = that.getFirstNode();            // nodes in each list    
+        while (current1 != null) {                      // traverse lists
+            if (!current1.equals(current2)) {           // not equal data 
+                return false;                           // not equal lists
+            }                
+            current1 = current1.next;                   // move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // lists are equal
     }
        
     /**
@@ -150,7 +239,61 @@ public class LinkedList <T>
      */
     @Override
     public LinkedList clone() {
-        return this;
+        LinkedList<T> that = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < this.length; i++) {     // traverse list
+            that.add((T)this.get(i));               // get and add node data
+        }        
+        return that;                                // new list returned
     }
     
+    /**
+     * Accessor method to the encapsulated (private) property of the first
+     * (head) node of the list
+     * 
+     * @return reference to the first node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+    
+    /**
+     * Accessor method to the encapsulated (private) property of the last
+     * (tail) node of the list
+     * 
+     * @return reference to the last node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accesses the node reference for this index location
+     * 
+     * @param index the index location
+     * @return a reference to the node at this index or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        Node current = head;                            // start at first node
+        for (int i = 0; i < index; i++) {               // move to index
+            current = current.next;                     // advance reference
+        }
+        return current;                                 // return reference
+    }
+        
+    /**
+     * Checks to see if the index is in range of the list
+     * 
+     * @param index the location to check
+     * @return it is in range (true) or not (false)
+     */        
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index is valid
+    }
+        
 }
