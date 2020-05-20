@@ -184,7 +184,7 @@ public class CollectionsTest
         System.out.println("addAfter(" + data + "," + index + 
                            ") -> " + list2.addAfter(data,index) + 
                            " -> "  + list2.toString());
-                
+         
         comment("Testing random insertion points");
         for (int i = 0; i < SIZE; i++) {
             data  = new Integer((int)((H-L+1d)*Math.random()+L));
@@ -193,7 +193,7 @@ public class CollectionsTest
                                ") -> " + list2.addAfter(data,index) + 
                                " -> "  + list2.toString());
         }
-                
+        
         comment("Create a third empty list");
         LinkedList<Integer> list3 = new LinkedList<>();
         comment("Create a fourth list with 1 item");
@@ -213,7 +213,7 @@ public class CollectionsTest
                            " -> " + list4.toString());
         System.out.println("List 4 back  -> " + list4.back() +
                            " -> " + list4.toString());
-                
+        
         comment("Test remove front method"); 
         System.out.println(list2.toString());
         int end = list2.size();
@@ -241,18 +241,19 @@ public class CollectionsTest
         
         comment("Test remove edges first");
         System.out.println("Remove index(" + 0 + ") -> " +
-                    list2.remove(0) + " -> " + list2.toString());
+                           list2.remove(0) + " -> " + 
+                           list2.toString());
         System.out.println("Remove index(" + (list2.size()-1) + ") -> " +
-                    list2.remove(list2.size()-1) + " -> " + list2.toString());
+                           list2.remove(list2.size()-1) + " -> " + 
+                           list2.toString());
         
         comment("Test random remove indices");
         end = list2.size();
-        for (int i = 0; i < end; i++) {
+        for (int i = 0; i <= end; i++) {
             index = (int)(((list2.size()-1)-0d+1d)*Math.random()+0d);
             System.out.println("Remove index(" + index + ") -> " +
                     list2.remove(index) + " -> " + list2.toString());
         }
-        
         
         
         

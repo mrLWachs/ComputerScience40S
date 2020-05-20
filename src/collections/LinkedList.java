@@ -246,7 +246,6 @@ public class LinkedList <T>
         return true;                                    // opperation successful
     }    
         
-    
     /**
      * Adds the data before the passed index (wrapper method)
      * 
@@ -283,7 +282,7 @@ public class LinkedList <T>
      */
     public T removeFront() {
         if (isEmpty()) return null;             // no front to remove
-        T data = (T)head.data;                  // store head data
+        T data = front();                       // store head data
         if (length == 1) finalize();            // 1 node list, wipe list
         else {                
             head = head.next;                   // advanced head reference
@@ -302,7 +301,7 @@ public class LinkedList <T>
      */
     public T removeBack() {
         if (isEmpty()) return null;             // no back to remove
-        T data = (T)tail.data;                  // store tail data
+        T data = back();                        // store tail data
         if (length == 1) finalize();            // 1 node list, wipe list
         else {                
             tail = tail.previous;               // advanced tail reference
