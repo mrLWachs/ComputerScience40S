@@ -193,6 +193,65 @@ public class CollectionsTest
                                ") -> " + list2.addAfter(data,index) + 
                                " -> "  + list2.toString());
         }
+                
+        comment("Create a third empty list");
+        LinkedList<Integer> list3 = new LinkedList<>();
+        comment("Create a fourth list with 1 item");
+        LinkedList<Integer> list4 = new LinkedList<>();
+        list4.add(9);
+        
+        comment("Test front and back");
+        System.out.println("List 1 front -> " + list1.front() +
+                           " -> " + list1.toString());
+        System.out.println("List 1 back  -> " + list1.back() +
+                           " -> " + list1.toString());
+        System.out.println("List 3 front -> " + list3.front() +
+                           " -> " + list3.toString());
+        System.out.println("List 3 back  -> " + list3.back() +
+                           " -> " + list3.toString());
+        System.out.println("List 4 front -> " + list4.front() +
+                           " -> " + list4.toString());
+        System.out.println("List 4 back  -> " + list4.back() +
+                           " -> " + list4.toString());
+                
+        comment("Test remove front method"); 
+        System.out.println(list2.toString());
+        int end = list2.size();
+        for (int i = 0; i <= end; i++) {
+            System.out.println("Remove front -> " + list2.removeFront() +
+                    " -> " + list2.toString());
+        }
+        
+        comment("Clone list 1 onto list2");
+        list2 = list1.clone();
+        
+        comment("Test remove back method");
+        System.out.println(list2.toString());
+        end = list2.size();
+        for (int i = 0; i <= end; i++) {
+            System.out.println("Remove back -> " + list2.removeBack() +
+                    " -> " + list2.toString());
+        }
+        
+        comment("Clone list 1 onto list2");
+        list2 = list1.clone();
+        
+        comment("Test Remove index");
+        System.out.println(list2.toString());
+        
+        comment("Test remove edges first");
+        System.out.println("Remove index(" + 0 + ") -> " +
+                    list2.remove(0) + " -> " + list2.toString());
+        System.out.println("Remove index(" + (list2.size()-1) + ") -> " +
+                    list2.remove(list2.size()-1) + " -> " + list2.toString());
+        
+        comment("Test random remove indices");
+        end = list2.size();
+        for (int i = 0; i < end; i++) {
+            index = (int)(((list2.size()-1)-0d+1d)*Math.random()+0d);
+            System.out.println("Remove index(" + index + ") -> " +
+                    list2.remove(index) + " -> " + list2.toString());
+        }
         
         
         

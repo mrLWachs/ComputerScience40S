@@ -71,6 +71,23 @@ public class LinkedList <T>
     }
     
     /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        if (isEmpty()) return "Empty LinkedList";       // no nodes to display
+        String text = "Linked List [";                  // starting character
+        Node current = head;                            // start at head node
+        while (current.next != null) {                  // traverse list
+            text += current.toString() + ",";           // append data
+            current = current.next;                     // move to next node
+        }            
+        return text + current.toString() + "]";         // append end character  
+    }
+       
+    /**
      * Inserts data into the front (head) of the list
      * 
      * @param data the data type to add
@@ -150,6 +167,42 @@ public class LinkedList <T>
     public boolean add(T data) {
         return addBack(data);                           // wrapper method call
     }
+        
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
+        if (this.size() != that.size()) return false;   // not same sizes      
+        Node current1 = this.getFirstNode();            // get reference to
+        Node current2 = that.getFirstNode();            // nodes in each list    
+        while (current1 != null) {                      // traverse lists
+            if (!current1.equals(current2)) {           // not equal data 
+                return false;                           // not equal lists
+            }                
+            current1 = current1.next;                   // move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // lists are equal
+    }
+       
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // create new list memory
+        for (int i = 0; i < this.length; i++) {     // traverse list
+            that.add((T)this.get(i));               // get and add node data
+        }        
+        return that;                                // new list returned
+    }
     
     /**
      * Inserts data as a new node after the passed index
@@ -192,59 +245,98 @@ public class LinkedList <T>
         length++;                                       // increase length
         return true;                                    // opperation successful
     }    
+        
     
     /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
      */
-    @Override
-    public String toString() {
-        if (isEmpty()) return "Empty LinkedList";       // no nodes to display
-        String text = "Linked List [";                  // starting character
-        Node current = head;                            // start at head node
-        while (current.next != null) {                  // traverse list
-            text += current.toString() + ",";           // append data
-            current = current.next;                     // move to next node
-        }            
-        return text + current.toString() + "]";         // append end character  
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
     }
-   
+    
     /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
      */
-    @Override
-    public boolean equals(Object object) {
-        LinkedList<T> that = (LinkedList<T>)object;     // cast object to list
-        if (this.size() != that.size()) return false;   // not same sizes      
-        Node current1 = this.getFirstNode();            // get reference to
-        Node current2 = that.getFirstNode();            // nodes in each list    
-        while (current1 != null) {                      // traverse lists
-            if (!current1.equals(current2)) {           // not equal data 
-                return false;                           // not equal lists
-            }                
-            current1 = current1.next;                   // move each reference
-            current2 = current2.next;                   // to next node
+    public T front() {
+        return get(0);                              // first node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // last node
+    }
+    
+    /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // no front to remove
+        T data = (T)head.data;                  // store head data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            head = head.next;                   // advanced head reference
+            head.previous.next = null;          // cut old head reference
+            head.previous = null;               // cut reference to old head
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
         }
-        return true;                                    // lists are equal
+        return data;                            // return stored data
     }
-       
+    
     /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
      */
-    @Override
-    public LinkedList clone() {
-        LinkedList<T> that = new LinkedList<>();    // create new list memory
-        for (int i = 0; i < this.length; i++) {     // traverse list
-            that.add((T)this.get(i));               // get and add node data
-        }        
-        return that;                                // new list returned
+    public T removeBack() {
+        if (isEmpty()) return null;             // no back to remove
+        T data = (T)tail.data;                  // store tail data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            tail = tail.previous;               // advanced tail reference
+            tail.next.previous = null;          // cut old tail reference
+            tail.next = null;                   // cut reference to old tail
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
     }
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data
+    }
+    
+
+
+
+
+
     
     /**
      * Accessor method to the encapsulated (private) property of the first
