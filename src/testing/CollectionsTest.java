@@ -64,8 +64,7 @@ public class CollectionsTest
         comment("Create variables for testing");
         Integer data;
         int index;
-        
-               
+                       
         comment("Test addFront method");
         for (int i = 0; i < SIZE; i++) {
             data = new Integer((int)((H-L+1d)*Math.random()+L));
@@ -81,8 +80,7 @@ public class CollectionsTest
             System.out.println("Size " + list1.size() +
                                " = "   + list1.toString());
         }
-        
-        
+                
         comment("Test get method");
         for (int i = 0-1; i < list1.size()+1; i++) {
             data = list1.get(i);
@@ -92,9 +90,9 @@ public class CollectionsTest
         comment("Test set method");
         for (int i = 0-1; i < list1.size()+1; i++) {
             data = new Integer(i);
-            System.out.print("Set (" + i + ") to " + data +
-                             " -> " + list1.set(i, data) +
-                             " -> " + list1.toString());
+            System.out.println("Set (" + i + ") to " + data +
+                               " -> " + list1.set(i, data) +
+                               " -> " + list1.toString());
         }
                 
         comment("Test clone method");
@@ -195,6 +193,9 @@ public class CollectionsTest
                                ") -> " + list2.addAfter(data,index) + 
                                " -> "  + list2.toString());
         }
+        
+        
+        
         
         
         
