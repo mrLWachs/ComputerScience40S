@@ -2,8 +2,6 @@
 /** required package class namespace */
 package computerscience30s;
 
-import java.awt.event.MouseEvent;
-
 
 /**
  * Graphics2.java - description
