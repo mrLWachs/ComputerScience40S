@@ -14,9 +14,7 @@ public class Tester
 
     public Tester() {
         System.out.println("\nTesting begins...\n");        
-        new RecursionTest();        // annoymous object
-        new AdvancedClassesTest();
-        new CollectionsTest();        
+        new RecursionTest();        // annoymous object  
         System.out.println("\nTesting complete!\n");
     }
         
