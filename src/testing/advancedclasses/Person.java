@@ -117,25 +117,5 @@ public class Person
     public void setName(String name) {
         this.name = name;
     }
-    
-    /**
-     * Eats the passed food by outputting to the screen
-     * 
-     * @param food the abstract food object to eat 
-     */
-    public void haveDinner(Food food) {
-        if (food.nurishment) {
-            if (food.flavour.equals("sweet")) {
-                food.smell();
-            }
-            food.prepare();
-            food.eat();
-            food.digest();
-            food.store();
-        }
-        else {
-            System.out.println("Don't eat it");
-        }        
-    }
-        
+   
 }
