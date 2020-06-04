@@ -100,14 +100,7 @@ public class AdvancedClassesTest
         teacher.students[3] = student;
         
         System.out.println(teacher.toString());
-        
-        // create some high school and huskies        
-        HighSchoolStudent jeff = new HighSchoolStudent(105);
-        Husky havoc = new Husky(2665);
-        
-        // show the static class variable (property)        
-        System.out.println(havoc.totalStudents);
-                
+                        
         // call method that uses instanceof operator        
         whatIs(object1);
         whatIs(person);
@@ -115,15 +108,22 @@ public class AdvancedClassesTest
         whatIs(teacher);        
         String thing = "Hello World";        
         whatIs(thing);
-        whatIs(jeff);
-        whatIs(havoc);
+        
+        // show the static class variable (property)        
+        System.out.println(jimmy.totalStudents);
+        
+        // create some high school and huskies        
+        HighSchoolStudent jeff = new HighSchoolStudent(105);
+        Husky havoc = new Husky(2665);
         
         // create more objects
         Doctor    doctor   = new Doctor();
         CSTeacher compTech = new CSTeacher("Mr. Code");
         MrWachs   mrWachs  = new MrWachs("Mr. Wachs");
                 
-        // use the method again
+        // use the method again        
+        whatIs(jeff);
+        whatIs(havoc);
         whatIs(doctor);
         whatIs(compTech);
         whatIs(mrWachs);
