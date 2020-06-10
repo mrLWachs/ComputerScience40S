@@ -275,6 +275,80 @@ public class LinkedList <T>
     }
     
     /**
+     * Removes (deletes) the first (head) node of the list
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // no front to remove
+        T data = front();                       // store head data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            head = head.next;                   // advanced head reference
+            head.previous.next = null;          // cut old head reference
+            head.previous = null;               // cut reference to old head
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
+    }
+    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;             // no back to remove
+        T data = back();                        // store tail data
+        if (length == 1) finalize();            // 1 node list, wipe list
+        else {                
+            tail = tail.previous;               // advanced tail reference
+            tail.next.previous = null;          // cut old tail reference
+            tail.next = null;                   // cut reference to old tail
+            length--;                           // reduce list length
+            System.gc();                        // call system garbage collector
+        }
+        return data;                            // return stored data
+    }
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // not in range
+        if (index == 0)        return removeFront();    // remove first
+        if (index == length-1) return removeBack();     // remove last
+        Node current = getNode(index);                  // get to index
+        current.next.previous = current.previous;       // change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // reduce list length
+        return (T)current.data;                         // return index data
+    }
+    
+    /**
+     * Checks (searches) if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
+    public boolean contains(T data) {
+        if (data == null) return false;         // invalid data to search for
+        Node current = head;                    // start reference at head
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return true;                    // indicate found
+            }
+            current = current.next;             // move to next node
+        }
+        return false;                           // not found in list
+    } 
+        
+    /**
      * Accessor method to the encapsulated (private) property of the first
      * (head) node of the list
      * 
