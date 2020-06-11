@@ -347,6 +347,123 @@ public class LinkedList <T>
         }
         return false;                           // not found in list
     } 
+    
+     /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = head;                    // start at head
+        int index = 0;                          // start count at 0
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found first occurrence
+                return index;                   // return location
+            }
+            current = current.next;             // advance to next node
+            index++;                            // advance count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = tail;                    // start at head
+        int index = length-1;                   // start count at total nodes
+        while (current != null) {               // traverse list
+            if (current.data.equals(data)) {    // found last occurrence
+                return index;                   // return location
+            }
+            current = current.previous;         // return to previous node
+            index--;                            // decrease count
+        }
+        return NOT_FOUND;                       // data not found
+    }
+        
+    /**
+     * Deletes the first occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean remove(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = firstIndexOf(data);         // get first location
+        if (index == NOT_FOUND) return false;   // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes the last occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean removeLast(T data) {
+        if (data == null) return false;         // nothing to remove
+        int index = lastIndexOf(data);          // get first location
+        if (index == NOT_FOUND) return false;   // not in list
+        remove(index);                          // remove
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T data) {
+        if (data == null)    return false;      // nothing to remove
+        if (!contains(data)) return false;      // not in list
+        while(contains(data)) {                 // loop continuously
+            remove(data);                       // removing the data
+        }
+        return true;                            // operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the different data items in the array 
+     * from the list
+     * 
+     * @param items the node data array items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T[] items) {
+         if (items == null)     return false;   // invalid array
+         if (items.length == 0) return false;   // invalid array
+         for (T item : items) {                 // traverse array
+             removeAll(item);                   // remove array item
+         }
+         return true;                           // operation successful
+    } 
+   
+    /**
+     * Deletes all occurrences of the different data items in the passed
+     * list from the current list
+     * 
+     * @param list the LinkedList of items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(LinkedList<T> list) {
+        if (list == null)   return false;           // invalid list
+        if (list.isEmpty()) return false;           // empty list
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            removeAll(list.get(i));                 // remove list item
+        }
+        return true;                                // operation successful
+    }
         
     /**
      * Accessor method to the encapsulated (private) property of the first
