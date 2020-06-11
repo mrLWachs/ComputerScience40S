@@ -1,9 +1,11 @@
+
 /** required package class namespace */
 package testing;
 
 /** required imports */
 import collections.LinkedList;
 import collections.Node;
+
  
 /**
  * CollectionsTest.java - tests the concepts learned in this unit
@@ -390,7 +392,24 @@ public class CollectionsTest
         
         Integer[] items5 = null;
         output("removeAll(array)",array(items5),list2.removeAll(items5),list2);
-                     
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test fromArray method");                
+        list3.fromArray(items1);
+        list4.fromArray(items2);
+        list5.fromArray(items3);
+        list6.fromArray(items4);
+        list7.fromArray(items5);        
+        output("fromArray",array(items1),list3);
+        output("fromArray",array(items2),list4);
+        output("fromArray",array(items3),list5);
+        output("fromArray",array(items4),list6);
+        output("fromArray",array(items5),list7);
+                        
         ////////////////////////////////////////////////////////////////////////
         comment("LinkedList Copy list 1 onto list 2");
         list2 = list1.clone();
@@ -437,6 +456,14 @@ public class CollectionsTest
         output("containsAll(array)",array(items9),result,list2);
         result = list2.containsAll(items10);
         output("containsAll(array)",array(items10),result,list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Using fromArray again");
+        list3.fromArray(items6);
+        list4.fromArray(items7);
+        list5.fromArray(items8);
+        list6.fromArray(items9);
+        list7.fromArray(items10);
         
         ////////////////////////////////////////////////////////////////////////
         comment("LinkedList Test containsAll(list) method");
@@ -560,7 +587,32 @@ public class CollectionsTest
             index += 2;
         }
         
-        comment("Collections test complete!"); 
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test fromLinkedList method");
+        list6 = new LinkedList<>();
+        list6.fromLinkedList(list1);
+        output("fromLinkedList",list1,list6);
+        list6.fromLinkedList(list2);
+        output("fromLinkedList",list2,list6);
+        list6.fromLinkedList(list3);
+        output("fromLinkedList",list3,list6);
+        list6.fromLinkedList(list4);
+        output("fromLinkedList",list4,list6);
+        list6.fromLinkedList(list5);
+        output("fromLinkedList",list5,list6);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test toArray method");
+        items1 = list1.toArray(items1);
+        output("toArray",list1,array(items1));
+        items2 = list2.toArray(items2);
+        output("toArray",list2,array(items2));
+        items3 = list3.toArray(items3);
+        output("toArray",list3,array(items3));
+        items4 = list4.toArray(items4);
+        output("toArray",list4,array(items4));        
+        
+        comment("Collections test complete!");                  
     }
     
     /**
@@ -746,5 +798,5 @@ public class CollectionsTest
         else text += e.toString(); 
         System.out.println(text);        
     }
-    
+
 }

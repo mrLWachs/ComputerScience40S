@@ -1,7 +1,10 @@
+
 /** required package class namespace */
 package collections;
 
+import java.lang.reflect.Array;
 
+ 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
  * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
@@ -630,7 +633,70 @@ public class LinkedList <T>
         }
         return list;                                // return new list
     }
+    
+    /**
+     * Mutates the list into a list only matching the contents of the array
+     * 
+     * @param array the data objects to form the list from
+     */
+    public final void fromArray(T[] array) {
+        if (array == null) return;                  // error check
+        finalize();                                 // wipe list memory
+        for (T item : array) {                      // traverse array
+            add(item);                              // add array item
+        }
+    }
+    
+    /**
+     * Mutates list into a list only matching the contents of the other list
+     * 
+     * @param list the data objects to form the list from
+     */
+    public final void fromLinkedList(LinkedList<T> list) {
+        if (list == null) return;                   // error check
+        finalize();                                 // wipe list memory
+        for (int i = 0; i < list.size(); i++) {     // traverse list
+            add(list.get(i));                       // get and add item
+        }
+    }
+    
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        if (array == null) return null;
+        array = (T[])(
+                Array.newInstance(
+                        array.getClass().getComponentType(), 
+                        length)
+                );                              // create empty array
+        for (int i = 0; i < length; i++) {      // traverse list
+            array[i] = get(i);                  // add to array
+        }
+        return array;                           // return completed array
+    }
+            
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param array the data objects to create the list from
+     */
+    public LinkedList(T[] array) {
+        fromArray(array);
+    }
         
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param list the data objects to create the list from
+     */
+    public LinkedList(LinkedList<T> list) {
+        fromLinkedList(list);
+    }
+    
     /**
      * Accessor method to the encapsulated (private) property of the first
      * (head) node of the list
@@ -667,7 +733,7 @@ public class LinkedList <T>
         }
         return current;                                 // return reference
     }
-    
+        
     /**
      * Checks to see if the index is in range of the list
      * 
@@ -680,5 +746,5 @@ public class LinkedList <T>
         if (index >= length) return false;  // index after last valid number
         return true;                        // index is valid
     }
-    
+        
 }
