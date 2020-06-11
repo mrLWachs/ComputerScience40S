@@ -277,7 +277,18 @@ public class CollectionsTest
         output("lastIndexOf",data,list1.lastIndexOf(data),list1); 
         data = ((int)H + 1);
         output("lastIndexOf",data,list1.lastIndexOf(data),list1);
-             
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test numberOf method");
+        data = list1.front();
+        output("numberOf",data,list1.numberOf(data),list1);
+        data = list1.back();
+        output("numberOf",data,list1.numberOf(data),list1);
+        data = random(L, H);
+        output("numberOf",data,list1.numberOf(data),list1);
+        data = ((int)H + 1);
+        output("numberOf",data,list1.numberOf(data),list1);
+                
         ////////////////////////////////////////////////////////////////////////
         comment("LinkedList Test contains method");
         data  = list1.front();
@@ -288,7 +299,25 @@ public class CollectionsTest
         output("contains",data,list1.contains(data),list1);
         data = ((int)H + 1);
         output("contains",data,list1.contains(data),list1);
-              
+                
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test allIndices method");        
+        data    = list1.front();
+        indices = list1.allIndices(data);
+        output("allIndices",data,array(indices),list1);
+        
+        data    = list1.back();
+        indices = list1.allIndices(data);
+        output("allIndices",data,array(indices),list1);
+        
+        data    = random(L, H);
+        indices = list1.allIndices(data);
+        output("allIndices",data,array(indices),list1);
+        
+        data    = ((int)H + 1);
+        indices = list1.allIndices(data);
+        output("allIndices",data,array(indices),list1);
+        
         ////////////////////////////////////////////////////////////////////////
         comment("LinkedList Copy list 1 onto list 2");
         list2 = list1.clone();
@@ -361,6 +390,175 @@ public class CollectionsTest
         
         Integer[] items5 = null;
         output("removeAll(array)",array(items5),list2.removeAll(items5),list2);
+                     
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test removeAll(list) method");
+        output(list2);
+        output("removeAll(list)",list3,list2.removeAll(list3),list2);
+        output("removeAll(list)",list4,list2.removeAll(list4),list2);
+        output("removeAll(list)",list5,list2.removeAll(list5),list2);
+        output("removeAll(list)",list6,list2.removeAll(list6),list2);
+        output("removeAll(list)",list7,list2.removeAll(list7),list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test clear method");
+        output(list2);
+        list2.clear();
+        output(list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test containsAll(array) method");
+        output(list2);        
+        Integer[] items6  = { list2.front() };
+        Integer[] items7  = { list2.front(), list2.back() };
+        Integer[] items8  = { ((int)H+1), ((int)H+2), ((int)L-1) };
+        Integer[] items9  = new Integer[(int)H+1];
+        for (int i = (int)L; i <= (int)H; i++) items9[i] = i;
+        Integer[] items10 = null;        
+        result = list2.containsAll(items6);        
+        output("containsAll(array)",array(items6),result,list2);
+        result = list2.containsAll(items7);
+        output("containsAll(array)",array(items7),result,list2);
+        result = list2.containsAll(items8);
+        output("containsAll(array)",array(items8),result,list2);
+        result = list2.containsAll(items9);
+        output("containsAll(array)",array(items9),result,list2);
+        result = list2.containsAll(items10);
+        output("containsAll(array)",array(items10),result,list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test containsAll(list) method");
+        output(list2);
+        result = list2.containsAll(list3);        
+        output("containsAll(list)",list3,result,list2);
+        result = list2.containsAll(list4);        
+        output("containsAll(list)",list4,result,list2);
+        result = list2.containsAll(list5);        
+        output("containsAll(list)",list5,result,list2);
+        result = list2.containsAll(list6);        
+        output("containsAll(list)",list6,result,list2);
+        result = list2.containsAll(list7);        
+        output("containsAll(list)",list7,result,list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test addAll(array) method");
+        output(list2);        
+        list2.addAll(items6);
+        output("addAll(array)",array(items6),list2);
+        list2.addAll(items7);
+        output("addAll(array)",array(items7),list2);
+        list2.addAll(items10);
+        output("addAll(array)",array(items10),list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Copy list 1 onto list 2");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test addAll(list) method");
+        output(list2);        
+        list2.addAll(list3);
+        output("addAll(list)",list3,list2);
+        list2.addAll(list4);
+        output("addAll(list)",list4,list2);
+        list2.addAll(list7);
+        output("addAll(list)",list7,list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList New list created");
+        list2 = randomList(SIZE,L,H);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test addAll(array,int) method");
+        output(list2);         
+        index = -1;
+        list2.addAll(items7,index);
+        output("addAll(array,int)",index,array(items7),list2);        
+        index = list2.size();
+        list2.addAll(items7,index);
+        output("addAll(array,int)",index,array(items7),list2);
+        index = 0;
+        list2.addAll(items7,index);
+        output("addAll(array,int)",index,array(items7),list2);        
+        index = list2.size()/2;
+        list2.addAll(items7,index);
+        output("addAll(array,int)",index,array(items7),list2);
+        index = list2.size()-1;
+        list2.addAll(items7,index);
+        output("addAll(array,int)",index,array(items7),list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList New list created");
+        list2 = randomList(SIZE,L,H);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test addAll(list,int) method");
+        output(list2);         
+        index = -1;
+        list2.addAll(list4,index);
+        output("addAll(list,int)",index,list4,list2);        
+        index = list2.size();
+        list2.addAll(list4,index);
+        output("addAll(list,int)",index,list4,list2);
+        index = 0;
+        list2.addAll(list4,index);
+        output("addAll(list,int)",index,list4,list2);        
+        index = list2.size()/2;
+        list2.addAll(list4,index);
+        output("addAll(list,int)",index,list4,list2);
+        index = list2.size()-1;
+        list2.addAll(list4,index);
+        output("addAll(list,int)",index,list4,list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Creating empty list 1");
+        list1.clear();
+        output(list1);
+        comment("LinkedList Creating 1 node list 2");
+        list2 = randomList(1, L, H);
+        output(list2);
+        comment("LinkedList Creating 2 node list 3");
+        list3 = randomList(2, L, H);
+        output(list3);
+        comment("LinkedList Creating 3 node list 4");
+        list4 = randomList(3, L, H);
+        output(list4);
+        comment("LinkedList Creating large list 5");
+        list5 = randomList(SIZE, L, H);
+        output(list5);
+        
+        ////////////////////////////////////////////////////////////////////////
+        comment("LinkedList Test subList method");
+        index = 0;
+        for (int i = 0; i < SIZE; i++) {            
+            list6 = list1.subList(i, index);
+            output("1 subList",i,index,list1,list6);
+            list6 = list2.subList(i, index);
+            output("2 subList",i,index,list2,list6);
+            list6 = list3.subList(i, index);
+            output("3 subList",i,index,list3,list6);
+            list6 = list4.subList(i, index);
+            output("4 subList",i,index,list4,list6);
+            list6 = list5.subList(i, index);
+            output("5 subList",i,index,list5,list6);
+            index += 2;
+        }
         
         comment("Collections test complete!"); 
     }
