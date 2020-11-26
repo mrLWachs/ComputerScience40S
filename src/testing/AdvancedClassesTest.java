@@ -28,11 +28,24 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
+     
+        // Second student object (occupies different memory spaces)
+        Person jeanie = new Person();
+        jeanie.name = "Jeanette";
+        jeanie.talk();   
         
-        // class using inheritance
-        Student student = new Student(99);              // new student object
+        // Third person (uses the overloaded constructor)
+        Person dave = new Person("David Davidson",17);
+        dave.talk();
+        
+        // Fourth person...
+        Person david = new Person("David Davidson",17);
+        david.talk();   
+        
+        // class using inheritance of a new student object 
+        Student student = new Student();                // new student object
         student.talk();                                 // inherited method
-                
+                        
         System.out.println("\nAdvanced classes test complete!\n");
     }
              
