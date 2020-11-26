@@ -14,20 +14,18 @@ package testing.advancedclasses;
 public class Student extends Person
 {
 
-    private int studentNumber;                      // encapsulated property
+    private int number;                         // encapsulated property
     
     
     /**
-     * Class constructor sets class properties, when a constructor has a 
-     * parameter, it is no longer a default constructor. If you have no 
+     * Default class constructor sets class properties, when a constructor has 
+     * a parameter, it is no longer a default constructor. If you have no 
      * default, usually one is written for you, EXCEPT if you write a 
      * non-default constructor, it will not!
-     * 
-     * @param studentNumber the student number of this student
      */
-    public Student(int studentNumber) {
+    public Student() {
         super();                                // call to super constructor
-        this.studentNumber = studentNumber;     // set property from parameter
+        this.number = 0;                        // set property
     }
  
     /**
@@ -36,7 +34,7 @@ public class Student extends Person
     @Override
     public void talk() {
         super.talk();
-        System.out.println("#" + studentNumber);
+        System.out.println("Student: " + number);
     }
     
 }
