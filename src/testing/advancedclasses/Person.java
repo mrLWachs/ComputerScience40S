@@ -17,8 +17,8 @@ public class Person
 
     // PROPERTIES (below)...................................................
     
-    private String name;    // encapsulated property
-    public int age;
+    public    String  name;
+    private   int     age;                  // encapsulated property 
     
     /** Protected property representing the person's gender */
     protected boolean isMale;
@@ -35,6 +35,18 @@ public class Person
         isMale = false;
     }
     
+    /**
+     * Class constructor sets class properties to parameter values
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     */
+    public Person(String name, int age) {
+        this.name   = name;
+        this.age    = age;
+        this.isMale = false;
+    }
+ 
     /**
      * Class constructor sets class properties to parameter values
      * 
@@ -62,7 +74,7 @@ public class Person
      */
     @Override
     public String toString() {
-        return name + "," + age + "," + isMale;
+        return "Person: " + name + "," + age + "," + isMale;
     }
     
     /**
@@ -101,6 +113,26 @@ public class Person
     }
     
     /**
+     * "Getter" method to retrieve, for getting a encapsulated property - also 
+     * called "accessor" methods
+     * 
+     * @return the person's age
+     */
+    public int getAge() {
+        return age;
+    }
+    
+    /**
+     * "Setter" method to change a encapsulated property - also called a 
+     * "mutator" method
+     * 
+     * @param name the person's name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    /**
      * Accessor method of the private property
      * 
      * @return the property to "see"
@@ -110,12 +142,12 @@ public class Person
     }
     
     /**
-     * Mutator method to change the private property
-     * 
-     * @param name the property to mutate
+     * Static method that can be called from the class as well as the 
+     * object, so an object does not need to be instantiated before invoking
+     * (calling) the method
      */
-    public void setName(String name) {
-        this.name = name;
+    public static void endTheWorld() {
+        System.out.println("Boom!!!");
     }
    
 }
