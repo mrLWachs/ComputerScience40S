@@ -14,25 +14,25 @@ package testing.advancedclasses;
 public class Student extends Person
 {
 
-    private int studentNumber;                      // encapsulated property
-    
-    /** Static property that counts the total number of student objects */
-    public static int totalStudents;
-    
+    private int number;                         // encapsulated property
     
     /**
-     * Class constructor sets class properties, when a constructor has a 
-     * parameter, it is no longer a default constructor. If you have no 
+     * Static variable (or property, or global variable), the word "static" 
+     * means "shared" - this counts the total number of student objects
+     */
+    public static int total;
+    
+
+    /**
+     * Default class constructor sets class properties, when a constructor has 
+     * a parameter, it is no longer a default constructor. If you have no 
      * default, usually one is written for you, EXCEPT if you write a 
      * non-default constructor, it will not!
-     * 
-     * @param studentNumber the student number of this student
      */
-    public Student(int studentNumber) {
+    public Student() {
         super();                                // call to super constructor
-        this.studentNumber = studentNumber;     // set property from parameter 
-        super.isMale = true;
-        totalStudents++;
+        this.number = 0;                        // set property
+        total++;
     }
     
     /**
@@ -41,14 +41,15 @@ public class Student extends Person
      * @param name the name for this student
      * @param age the age for this student
      * @param isMale the gender for this student
-     * @param studentNumber the student number for this student
+     * @param number the student number for this student
      */
-    public Student(String name, int age, boolean isMale, int studentNumber) {
+    public Student(String name, int age, boolean isMale, int number) {
         super(name, age, isMale);
-        this.studentNumber = studentNumber;
-        totalStudents++;
+        this.number = number;
+        total++;
     }
-      
+    
+
     /**
      * Outputs data on this student to the screen
      */
@@ -64,7 +65,7 @@ public class Student extends Person
      */
     @Override
     public String toString() {
-        return super.toString() + "," + studentNumber;
+        return "Student: " + super.toString() + "," + number;
     }
     
     /**
@@ -75,10 +76,9 @@ public class Student extends Person
      */
     @Override
     public boolean equals(Object object) {
-        Student that = (Student)object;             // cast into student object
-        if (this.studentNumber != that.studentNumber) return false;
-        if (!super.equals(that))                      return false;        
-        return true;                                // passed the tests
+        Student that = (Student)object;
+        if (this.number != that.number) return false;
+        return super.equals(that);
     }
        
     /**
@@ -88,11 +88,13 @@ public class Student extends Person
      */
     @Override
     public Student clone() {
-        Student that = new Student(this.studentNumber); // construct student
-        that.age     = this.age;                        // copy properties
-        that.isMale  = this.isMale;
-        that.setName(this.getName());                   // accessor/mutator
-        return that;                                    // return new memory
+        Student that = new Student(
+                this.name,
+                this.getAge(),
+                this.isMale,
+                this.number
+        );                          // construct student and copy properties
+        return that;                // return that new memory
     }
     
 }
