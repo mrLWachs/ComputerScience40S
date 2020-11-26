@@ -29,9 +29,22 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
+     
+        // Second student object (occupies different memory spaces)
+        Person jeanie = new Person();
+        jeanie.name = "Jeanette";
+        jeanie.talk();   
         
-        // class using inheritance
-        Student student = new Student(99);              // new student object
+        // Third person (uses the overloaded constructor)
+        Person dave = new Person("David Davidson",17);
+        dave.talk();
+        
+        // Fourth person...
+        Person david = new Person("David Davidson",17);
+        david.talk();   
+        
+        // class using inheritance of a new student object 
+        Student student = new Student();                // new student object
         student.talk();                                 // inherited method
         
         // The Object class (parent class of all classes)
@@ -62,8 +75,8 @@ public class AdvancedClassesTest
         System.out.println(betty.toString());
         System.out.println(jughead.toString());
         
-        if (archie.equals(betty))   System.out.println("archie==betty");
-        if (archie.equals(jughead)) System.out.println("archie==jughead");
+        if (archie.equals(betty))   System.out.println("archie == betty");
+        if (archie.equals(jughead)) System.out.println("archie == jughead");
         
         // test toString, equals, clone on Student
         
@@ -75,19 +88,57 @@ public class AdvancedClassesTest
         System.out.println(jimmy.toString());
         System.out.println(terri.toString());
         
-        if (emma.equals(jimmy)) System.out.println("emma==jimmy");
-        if (emma.equals(terri)) System.out.println("emma==terri");
+        if (emma.equals(jimmy)) System.out.println("emma == jimmy");
+        if (emma.equals(terri)) System.out.println("emma == terri");
         
-        // create a Teacher object which associates with student
+        // Create Teacher objects which associates with student
+        // and test this object's toString(), clone(), and 
+        // equals() methods...
         
-        Teacher teacher = new Teacher("Mr. Perino");
+        Teacher teacher = new Teacher("Mr. Teacherson");
+        
+        // assign student objects to the teacher object using the correct
+        // "addressing" to find the correect spot to "put" each student
         
         teacher.students[0] = emma;
         teacher.students[1] = jimmy;
         teacher.students[2] = terri;
         teacher.students[3] = student;
+        teacher.students[4] = new Student("Smelly Teenager",15,true,111);
+        // Here we have added an "annoynomous" object (a student)
         
         System.out.println(teacher.toString());
+     
+        Teacher substitute = teacher.clone();        
+        if (teacher.equals(substitute)) System.out.println("teacher == sub");
+        
+        // Add a new student (an annoynmous object) to the clone teacher        
+        substitute.students[5] = new Student("Young Kid", 10, false, 5);
+        
+        // output both teacher objects (to see the differences)
+        
+        System.out.println(teacher.toString());
+        System.out.println(substitute);
+     
+        if (teacher.equals(substitute)) System.out.println("teacher==sub");
+                        
+        // output our "static" variable
+        
+        System.out.println("Total students is " + zach.total);
+        System.out.println("Total students is " + Student.total);
+        
+        // call (invoke) a static method
+        
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
+        
+        // static methods can be invoked (called) from the class in addition
+        // to the objects
+        
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
                               
         // call method that uses instanceof operator        
         whatIs(object1);
