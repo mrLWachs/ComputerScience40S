@@ -17,8 +17,8 @@ public class Person
 
     // PROPERTIES (below)...................................................
     
-    private String name;    // encapsulated property
-    public int age;
+    public    String  name;
+    private   int     age;                  // encapsulated property 
     
     // METHODS (below)......................................................
     
