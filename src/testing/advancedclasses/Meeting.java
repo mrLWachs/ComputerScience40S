@@ -48,6 +48,9 @@ public class Meeting
                          + " students at this meeting, watch your language!");
         for(Person member: members) {       // traverse all members
             if (member != null) {           // ignore empty array spots
+                if (member instanceof Teacher) {
+                    System.out.println("Shhhh! a Teacher is talking!!!!");    
+                }
                 member.talk();              // have them talk
             }
         }
