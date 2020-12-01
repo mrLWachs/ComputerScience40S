@@ -23,10 +23,6 @@ public class Meeting
         MAX     = 100;
         count   = 0;
         members = new Person[MAX];
-        for (Person member : members) { // enhanced for loop 
-        // read as "for every member in members"
-            member = new Person();
-        }
     }
     
     /**
@@ -44,12 +40,19 @@ public class Meeting
      * Hold the meeting and have all members talk through an output
      */
     public void hold() {
-        System.out.println("Caution, there  are " + Student.totalStudents
-                         + " students at this meeting, watch your language!");
-        for(Person member: members) {       // traverse all members
-            if (member != null) {           // ignore empty array spots
-                member.talk();              // have them talk
-            }
+        // access the "shared" static property (variable)
+        System.out.println("Caution, there are " + 
+                Student.total + " students here!");
+        // enhanced for loop through all members
+        for (Person member : members) {         // traverse all members
+            if (member != null) {               // ignore empty array spots
+                if (member.getAge() != 0) {     // ignore those with age 0
+                    // used the accessor method (get)
+                    if (member instanceof Teacher) {    // is a teacher
+                        member.talk();                  // have them talk
+                    }
+                }
+            }            
         }
     }
     
