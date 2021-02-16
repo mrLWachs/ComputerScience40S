@@ -5,6 +5,8 @@
  */
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author mr.wachs
@@ -38,6 +40,32 @@ public class ComputerScience30S {
         System.out.print("I'm in the world");
         System.out.println("Good-bye World!");
         
+        // Additional output tips... (these are "special" characters)
+        System.out.println("Make a Quote \" ");
+        System.out.println("Make a \t tab ");
+        System.out.println("Make a slash \\ ");
+        System.out.println("Make a new \n line ");
+        
+        // Make a dialog box appear
+        JOptionPane.showMessageDialog(null, "Hello");
+        
+        // Above is the only one need for assignments, final projects, etc.
+        // Optional (not needed, but cool) dialog boxes below:
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
     
@@ -51,6 +79,13 @@ public class ComputerScience30S {
 // (3) The curly brackets (braces, parenthesis) are important "{" and "}"
 // (4) Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (5) Click the green triangle on the top toolbar to run code
+// (6) Intellisense (autocomplete) can appear if you press "CTRL + SPACE"
+// (7) The word "null" means nothing and cat act as a placeholder for code
+//     you don't actually need (right now)
+
+
+
+
 
 
 
