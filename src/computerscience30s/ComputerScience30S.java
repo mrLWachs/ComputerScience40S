@@ -52,15 +52,32 @@ public class ComputerScience30S {
         // Above is the only one need for assignments, final projects, etc.
         // Optional (not needed, but cool) dialog boxes below:
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE);
         
+        // You can hit "enter" in some lines of code at certain places to 
+        // drop the code to the next line and save having too long of a line
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
         
-        
-        
-        
-        
-        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain dialog no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
         
         
         
