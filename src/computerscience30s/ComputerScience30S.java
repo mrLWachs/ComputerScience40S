@@ -58,7 +58,7 @@ public class ComputerScience30S {
                 "Information Title", 
                 JOptionPane.INFORMATION_MESSAGE);
         
-        // You can hit "enter" in some lines of code at certain places to 
+        // NOTE: You can hit "enter" in some lines of code at certain places to 
         // drop the code to the next line and save having too long of a line
         
         JOptionPane.showMessageDialog(
@@ -109,8 +109,7 @@ public class ComputerScience30S {
                 "Plain Title", 
                 JOptionPane.PLAIN_MESSAGE);
         
-        // More different (and optional) dialogs...
-        
+        // More different (and optional) dialogs...        
         JOptionPane.showConfirmDialog(null, "Confirm");
         
         JOptionPane.showConfirmDialog(
