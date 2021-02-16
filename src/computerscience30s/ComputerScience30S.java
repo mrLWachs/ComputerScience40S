@@ -21,7 +21,23 @@ public class ComputerScience30S {
         // Curly brackets (braces, parenthesis) { and } are important        
         // All code right now goes between these two brackets
         
-        System.out.println("Hello World");
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+                
+        // Basic output
+        System.out.println("Hello World...");
+        
+        // Use print without the "ln", does not add a line break at the end
+        System.out.print("I'm in the world");
+        System.out.println("Good-bye World!");
+        
         
     }
     
