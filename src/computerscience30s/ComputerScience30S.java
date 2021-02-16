@@ -34,80 +34,80 @@ public class ComputerScience30S {
         ///////////////////////////////////////////////////////////////////////
                 
         // Basic output
-//        System.out.println("Hello World...");
-//        
-//        // Use print without the "ln", does not add a line break at the end
-//        System.out.print("I'm in the world");
-//        System.out.println("Good-bye World!");
-//        
-//        // Additional output tips... (these are "special" characters)
-//        System.out.println("Make a Quote \" ");
-//        System.out.println("Make a \t tab ");
-//        System.out.println("Make a slash \\ ");
-//        System.out.println("Make a new \n line ");
-//        
-//        // Make a dialog box appear
-//        JOptionPane.showMessageDialog(null, "Hello");
-//        
-//        // Above is the only one need for assignments, final projects, etc.
-//        // Optional (not needed, but cool) dialog boxes below:
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Information dialog icon is i", 
-//                "Information Title", 
-//                JOptionPane.INFORMATION_MESSAGE);
-//        
-//        // You can hit "enter" in some lines of code at certain places to 
-//        // drop the code to the next line and save having too long of a line
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Question dialog icon is ?", 
-//                "Question Title", 
-//                JOptionPane.QUESTION_MESSAGE);
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Warning dialog icon is !", 
-//                "Warning Title", 
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Plain dialog no icon", 
-//                "Plain Title", 
-//                JOptionPane.PLAIN_MESSAGE);
-//        
-//        // Dialogs for inputs....
-//        
-//        // The simpliest version is the one you have to use
-//        JOptionPane.showInputDialog("Enter something");
-//        
-//        // Some optional input dialogs below:
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Information dialog icon is i", 
-//                "Information Title", 
-//                JOptionPane.INFORMATION_MESSAGE);
-//
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Question dialog icon is ?", 
-//                "Question Title", 
-//                JOptionPane.QUESTION_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Warning dialog icon is !", 
-//                "Warning Title", 
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Plain dialog no icon", 
-//                "Plain Title", 
-//                JOptionPane.PLAIN_MESSAGE);
+        System.out.println("Hello World...");
+        
+        // Use print without the "ln", does not add a line break at the end
+        System.out.print("I'm in the world");
+        System.out.println("Good-bye World!");
+        
+        // Additional output tips... (these are "special" characters)
+        System.out.println("Make a Quote \" ");
+        System.out.println("Make a \t tab ");
+        System.out.println("Make a slash \\ ");
+        System.out.println("Make a new \n line ");
+        
+        // Make a dialog box appear
+        JOptionPane.showMessageDialog(null, "Hello");
+        
+        // Above is the only one need for assignments, final projects, etc.
+        // Optional (not needed, but cool) dialog boxes below:
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        // You can hit "enter" in some lines of code at certain places to 
+        // drop the code to the next line and save having too long of a line
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain dialog no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // Dialogs for inputs....
+        
+        // The simpliest version is the one you have to use
+        JOptionPane.showInputDialog("Enter something");
+        
+        // Some optional input dialogs below:
+        JOptionPane.showInputDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE);
+
+        JOptionPane.showInputDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain dialog no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
         
         // More different (and optional) dialogs...
         
@@ -140,6 +140,11 @@ public class ComputerScience30S {
                 "Plain",
                 JOptionPane.YES_NO_CANCEL_OPTION,
                 JOptionPane.PLAIN_MESSAGE);
+        
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
+        
         
         
     }
