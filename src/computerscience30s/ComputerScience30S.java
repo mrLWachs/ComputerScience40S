@@ -173,9 +173,35 @@ public class ComputerScience30S {
         System.out.println("b = " + b);
         System.out.println("c = " + c);
         
+        // The boolean, integer (int), double, character (char) are all simple
+        // data types (primitive), now a complex type...
         
+        String e = "house";
         
+        System.out.println("e = " + e);
         
+        // Manipulate the variables...
+        
+        int x = 10;        
+        System.out.println("x = " + x);        
+        x = 20;        
+        System.out.println("x = " + x);        
+        int y = x + 10;        
+        System.out.println("y = " + y);
+        
+        // Optional shorthand...
+        
+        y++;    // means y = y + 1
+        y--;    // means y = y - 1
+        
+        // Even more optional shorthand...
+        
+        y += 10;    // means y = y + 10
+        y -= 10;    // means y = y - 10
+        y *= 10;    // means y = y * 10
+        y /= 10;    // means y = y / 10
+        
+        System.out.println("y = " + y);
         
         
         
