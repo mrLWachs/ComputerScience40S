@@ -285,6 +285,26 @@ public class ComputerScience30S {
         
         JOptionPane.showMessageDialog(null, t);
         
+        // Same thing with a double:        
+        String u = JOptionPane.showInputDialog("Enter double");
+        double v = Double.parseDouble(u);
+        JOptionPane.showMessageDialog(null, v);
+        
+        // More rare, with a char:
+        String w = JOptionPane.showInputDialog("Enter char");
+        
+        char x1 = w.charAt(0);
+        
+        JOptionPane.showMessageDialog(null, x1);
+        
+        // Strings have built-in actions like "chatAt" to pull out a character
+        // "at" location "0" which means the very first character (because
+        // numbering in Computer Science usually starts at 0)
+        
+        
+        
+        
+        
         
         
         
