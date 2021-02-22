@@ -330,8 +330,7 @@ public class ComputerScience30S {
         // Math "library" does random numbers, like:
         // Random random = new Random();
         
-        double seed = Math.random();
-        
+        double seed = Math.random();        
         System.out.println("seed = " + seed);
         
         // You can use a formula for generating random numbers in a range
@@ -339,21 +338,17 @@ public class ComputerScience30S {
         
         // E.g. between 1 and 10 and make it an int
         
-        // Start with some constants defining these...
-        
+        // Start with some constants defining these...        
         final double LOW  = 1.0;
         final double HIGH = 10.0;
         
-        // Now the formula...
-        
+        // Now the formula...        
         double number = (HIGH - LOW + 1) * seed + LOW;
         
-        // Now cast into an int
-        
+        // Now cast into an int        
         int value = (int)number;
         
-        // and output
-        
+        // and output        
         System.out.println("random value = " + value);
         
         
