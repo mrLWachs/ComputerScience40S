@@ -264,48 +264,50 @@ public class ComputerScience30S {
 //        System.out.println("o = " + o);
 //        System.out.println("p = " + p);
 //        System.out.println("q = " + q);
-        
-        // use input dialogs with variables
-        
-        // ALWAYS use a variable with an input dialog!
-        
-        String r = JOptionPane.showInputDialog("Enter");
-        JOptionPane.showMessageDialog(null, r);
-        
-        // with numbers, you have to start off as a string and then convert
-        // it to a number
-        
-        // like in C# remember Convert.ToInt32(text)....
-        
-        String s = JOptionPane.showInputDialog("Enter int");
-        
-        // now convert it using "parsing" (means "reading it")
-        
-        int t = Integer.parseInt(s);
-        
-        JOptionPane.showMessageDialog(null, t);
-        
-        // Same thing with a double:        
-        String u = JOptionPane.showInputDialog("Enter double");
-        double v = Double.parseDouble(u);
-        JOptionPane.showMessageDialog(null, v);
-        
-        // More rare, with a char:
-        String w = JOptionPane.showInputDialog("Enter char");
-        
-        char x1 = w.charAt(0);
-        
-        JOptionPane.showMessageDialog(null, x1);
+//        
+//        // use input dialogs with variables
+//        
+//        // ALWAYS use a variable with an input dialog!
+//        
+//        String r = JOptionPane.showInputDialog("Enter");
+//        JOptionPane.showMessageDialog(null, r);
+//        
+//        // with numbers, you have to start off as a string and then convert
+//        // it to a number
+//        
+//        // like in C# remember Convert.ToInt32(text)....
+//        
+//        String s = JOptionPane.showInputDialog("Enter int");
+//        
+//        // now convert it using "parsing" (means "reading it")
+//        
+//        int t = Integer.parseInt(s);
+//        
+//        JOptionPane.showMessageDialog(null, t);
+//        
+//        // Same thing with a double:        
+//        String u = JOptionPane.showInputDialog("Enter double");
+//        double v = Double.parseDouble(u);
+//        JOptionPane.showMessageDialog(null, v);
+//        
+//        // More rare, with a char:
+//        String w = JOptionPane.showInputDialog("Enter char");
+//        
+//        char x1 = w.charAt(0);
+//        
+//        JOptionPane.showMessageDialog(null, x1);
         
         // Strings have built-in actions like "chatAt" to pull out a character
         // "at" location "0" which means the very first character (because
         // numbering in Computer Science usually starts at 0)
         
+        // String have many built-in actions (functions, methods)
         
+        String word = "hippopotomonsprosesquippedaiophobia";
         
+        int length = word.length();
         
-        
-        
+        System.out.println("Word " + word + " is length " + length);
         
         
         
