@@ -296,18 +296,38 @@ public class ComputerScience30S {
 //        char x1 = w.charAt(0);
 //        
 //        JOptionPane.showMessageDialog(null, x1);
+//        
+//        // Strings have built-in actions like "chatAt" to pull out a character
+//        // "at" location "0" which means the very first character (because
+//        // numbering in Computer Science usually starts at 0)
+//        
+//        // String have many built-in actions (functions, methods)
+//        
+//        String word = "hippopotomonsprosesquippedaiophobia";        
+//        int length = word.length();        
+//        System.out.println("Word " + word + " is length " + length);        
+//        word = word.toUpperCase();        
+//        System.out.println(word);
         
-        // Strings have built-in actions like "chatAt" to pull out a character
-        // "at" location "0" which means the very first character (because
-        // numbering in Computer Science usually starts at 0)
+        // More can be explored...
         
-        // String have many built-in actions (functions, methods)
+        // Also built-in to Java is a "Math" library of code...
         
-        String word = "hippopotomonsprosesquippedaiophobia";
+        double answer1 = Math.PI;
+        double answer2 = Math.abs(-1);
+        double answer3 = Math.cos(0.5);
+        double answer4 = Math.log(0.5);
+        double answer5 = Math.pow(5,3);
+        double answer6 = Math.sqrt(9);              
         
-        int length = word.length();
+        System.out.println("Answer 1 = " + answer1);
+        System.out.println("Answer 2 = " + answer2);
+        System.out.println("Answer 3 = " + answer3);
+        System.out.println("Answer 4 = " + answer4);
+        System.out.println("Answer 5 = " + answer5);
+        System.out.println("Answer 6 = " + answer6);
         
-        System.out.println("Word " + word + " is length " + length);
+        
         
         
         
