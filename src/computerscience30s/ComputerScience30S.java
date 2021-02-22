@@ -214,8 +214,20 @@ public class ComputerScience30S {
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
+        // constants are varaibles that don't change, and constants are 
+        // written ALL_CAPS with underscores separating words
         
+        final double  PI           = 3.14159265;
+        final int     PROBLEMS     = 99;
+        final char    YES          = 'Y';
+        final boolean FOUND        = true;
+        final String  TEACHER_NAME = "Wachs";
         
+        System.out.println(PI + " and " +
+                           PROBLEMS + " and " +
+                           YES + " and " +
+                           FOUND + " and " +
+                           TEACHER_NAME);
         
         
         
