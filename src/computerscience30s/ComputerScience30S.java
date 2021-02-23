@@ -207,75 +207,101 @@ public class ComputerScience30S {
 //        y /= 10;    // Means y = y / 10
 //        
 //        System.out.println("y = " + y);
-                
-        // Modulus (mod) gives you the remainder of a division, in java
-        // uses the percentage "%" symbol for this
+//                
+//        // Modulus (mod) gives you the remainder of a division, in java
+//        // uses the percentage "%" symbol for this
+//        
+//        int x = 28;
+//        int y = x / 5;
+//        int z = x % 5;
+//        
+//        System.out.println("x = " + x);
+//        System.out.println("y = " + y);
+//        System.out.println("z = " + z);
+//        
+//        // Constants area variables that don't change, and
+//        // constants are written in ALL_CAPITALS with 
+//        // underscores to seperate words
+//        
+//        final double  PI           = 3.14159265;
+//        final int     PROBLEMS     = 99;
+//        final char    YES          = 'Y';
+//        final boolean FOUND        = true;
+//        final String  TEACHER_NAME = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " + 
+//                           FOUND    + ", " + 
+//                           TEACHER_NAME);
+//        
+//        // Convert one data type into another
+//        
+//        int f = 25;
+//        
+//        double g = f;
+//        
+//        System.out.println("f = " +  f);
+//        System.out.println("g = " +  g);
+//        
+//        g = 25.99999999999;
+//        
+//        // "Casting" means it ignores the decimal part
+//        
+//        int h = (int)g;
+//        
+//        System.out.println("g = " +  g);
+//        System.out.println("h = " +  h);
+//        
+//        double k = 2.99999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // casting can happen with other types
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " +  k);
+//        System.out.println("l = " +  l);
+//        System.out.println("m = " +  m);
+//        System.out.println("n = " +  n);
+//        System.out.println("o = " +  o);
+//        System.out.println("p = " +  p);
+//        
+//        // use dialogs with variables
+//        
+//        String q = JOptionPane.showInputDialog("Enter");
+//        
+//        JOptionPane.showMessageDialog(null, q);
+//        
+//        // when using input dialogs, ALWAYS use a variable first
+//        // at the front of the line
+//        
+//        // with numbers, you have to start off with a string,
+//        // and then convert it to a number (like...
+//        // Convert.ToInt32(text) ... )
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // we use code that "parses" (means "reading")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        JOptionPane.showMessageDialog(null, s);
+//        
+//        // same example with a double
+//        String t = JOptionPane.showInputDialog("Enter double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        int x = 28;
-        int y = x / 5;
-        int z = x % 5;
+        // example with a char
+        String v = JOptionPane.showInputDialog("Enter char");
         
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
+        char w = v.charAt(0);
         
-        // Constants area variables that don't change, and
-        // constants are written in ALL_CAPITALS with 
-        // underscores to seperate words
-        
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'Y';
-        final boolean FOUND        = true;
-        final String  TEACHER_NAME = "Wachs";
-        
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           TEACHER_NAME);
-        
-        // Convert one data type into another
-        
-        int f = 25;
-        
-        double g = f;
-        
-        System.out.println("f = " +  f);
-        System.out.println("g = " +  g);
-        
-        g = 25.99999999999;
-        
-        // "Casting" means it ignores the decimal part
-        
-        int h = (int)g;
-        
-        System.out.println("g = " +  g);
-        System.out.println("h = " +  h);
-        
-        double k = 2.99999999;
-        int    l = (int)k;
-        double m = (double)l;
-        
-        // casting can happen with other types
-        
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
-        
-        System.out.println("k = " +  k);
-        System.out.println("l = " +  l);
-        System.out.println("m = " +  m);
-        System.out.println("n = " +  n);
-        System.out.println("o = " +  o);
-        System.out.println("p = " +  p);
-        
-        
-        
-        
-        
-        
-        
+        JOptionPane.showMessageDialog(null, w);
         
         
         
