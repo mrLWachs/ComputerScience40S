@@ -142,71 +142,103 @@ public class ComputerScience30S {
 //                "Plain",
 //                JOptionPane.YES_NO_CANCEL_OPTION,
 //                JOptionPane.PLAIN_MESSAGE);
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // The simpliest variable (variables stores "remembers" data) type:
+//        
+//        boolean a = true;
+//        
+//        // type name = value ;
+//        
+//        // when you write a line of code to create (declare) a variable
+//        
+//        int b = 0;
+//        
+//        double c = 0.0;
+//        
+//        // Variables can change ("vary")
+//        
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // Variables always go on the left hand side (LHS) of the equals 
+//        // sign (=) and the value going into the variable always goes on
+//        // the right hand side (RHS) 
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        char d = 'A';
+//        
+//        // "char" is short for "character" hold (remembers) one character
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean, integer (int), double, character (char) are all
+//        // simple (primitive) data types, now a complex data type...
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
+//        
+//        // Manipulate our variables
+//        
+//        int x = 10;        
+//        System.out.println("x = " + x);
+//        x = 20;        
+//        System.out.println("x = " + x);        
+//        int y = x + 10;        
+//        System.out.println("y = " + y);
+//        
+//        // Optional shorthand...        
+//        y++;    // means y = y + 1
+//        y--;    // means y = y - 1
+//        
+//        // Even more shorthand...
+//        
+//        y += 10;    // Means y = y + 10
+//        y -= 10;    // Means y = y - 10
+//        y *= 10;    // Means y = y * 10
+//        y /= 10;    // Means y = y / 10
+//        
+//        System.out.println("y = " + y);
+                
+        // Modulus (mod) gives you the remainder of a division, in java
+        // uses the percentage "%" symbol for this
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+        int x = 28;
+        int y = x / 5;
+        int z = x % 5;
         
-        // The simpliest variable (variables stores "remembers" data) type:
-        
-        boolean a = true;
-        
-        // type name = value ;
-        
-        // when you write a line of code to create (declare) a variable
-        
-        int b = 0;
-        
-        double c = 0.0;
-        
-        // Variables can change ("vary")
-        
-        a = false;
-        b = 1;
-        c = 1.2;
-        
-        // Variables always go on the left hand side (LHS) of the equals 
-        // sign (=) and the value going into the variable always goes on
-        // the right hand side (RHS) 
-        
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        
-        char d = 'A';
-        
-        // "char" is short for "character" hold (remembers) one character
-        
-        System.out.println("d = " + d);
-        
-        // The boolean, integer (int), double, character (char) are all
-        // simple (primitive) data types, now a complex data type...
-        
-        String e = "apple";
-        
-        System.out.println("e = " + e);
-        
-        // Manipulate our variables
-        
-        int x = 10;        
         System.out.println("x = " + x);
-        x = 20;        
-        System.out.println("x = " + x);        
-        int y = x + 10;        
         System.out.println("y = " + y);
+        System.out.println("z = " + z);
         
-        // Optional shorthand...        
-        y++;    // means y = y + 1
-        y--;    // means y = y - 1
+        // Constants area variables that don't change, and
+        // constants are written in ALL_CAPITALS with 
+        // underscores to seperate words
         
-        // Even more shorthand...
+        final double  PI           = 3.14159265;
+        final int     PROBLEMS     = 99;
+        final char    YES          = 'Y';
+        final boolean FOUND        = true;
+        final String  TEACHER_NAME = "Wachs";
         
-        y += 10;    // Means y = y + 10
-        y -= 10;    // Means y = y - 10
-        y *= 10;    // Means y = y * 10
-        y /= 10;    // Means y = y / 10
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " + 
+                           FOUND    + ", " + 
+                           TEACHER_NAME);
         
-        System.out.println("y = " + y);
+        
+        
+        
+        
         
         
         
