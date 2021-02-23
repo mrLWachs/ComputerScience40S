@@ -17,339 +17,191 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        // TODO code application logic here        
-//        // This is a comment all typing after "//" until the line ends        
-//        // Commments are not code, so you can write what you want        
-//        // Curly brackets (braces, parenthesis) { and } are important        
-//        // All code right now goes between these two brackets
-//        
-//        /*  
-//            This is for multiple line comments, as it covers as many lines as
-//            you want starting with "slash star" until it sees the closing 
-//            "star slash"
-//        */
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // JAVA BASIC INPUT AND OUTPUTS
-//        ///////////////////////////////////////////////////////////////////////
-//                
-//        // Basic output
-//        System.out.println("Hello World...");
-//        // Use print without the "ln", does not add a line break at the end
-//        System.out.println("I'm in the world");
-//        
-//        System.out.println("Good-bye world!");
-//                
-//        // Additional output tips... (these are "special" characters)
-//        
-//        System.out.println("Make a quote \" ");
-//        System.out.println("Make a slash \\ ");
-//        System.out.println("Make a \t tab");
-//        System.out.println("Make a \n new line");
-//        
-//        // Make a dialog box appear
-//        JOptionPane.showMessageDialog(null, "Hello");
-//        
-//        // Above is the only one need for assignments, final projects, etc.
-//        // Optional (not needed, but cool) dialog boxes below:
-//        
-//        JOptionPane.showMessageDialog(
-//                null,
-//                "Information icon is i",
-//                "Information Title",
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null,
-//                "Question icon is ?",
-//                "Question Title",
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null,
-//                "Warning icon is !",
-//                "Warning Title",
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null,
-//                "Plain no no icon",
-//                "Plain Title",
-//                JOptionPane.PLAIN_MESSAGE
-//        );
-//        
-//        // Dialogs for inputs....
-//        
-//        // The simpliest version is the one you have to use
-//        JOptionPane.showInputDialog("Enter something");
-//        
-//        // Some optional input dialogs below:
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Information dialog icon is i", 
-//                "Information Title", 
-//                JOptionPane.INFORMATION_MESSAGE);
-//
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Question dialog icon is ?", 
-//                "Question Title", 
-//                JOptionPane.QUESTION_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Warning dialog icon is !", 
-//                "Warning Title", 
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Plain dialog no icon", 
-//                "Plain Title", 
-//                JOptionPane.PLAIN_MESSAGE);
-//        
-//        // More different (and optional) dialogs...
-//        
-//        JOptionPane.showConfirmDialog(null, "Confirm");
-//        
-//        JOptionPane.showConfirmDialog(
-//                null,
-//                "Example 1",
-//                "Information",
-//                JOptionPane.YES_NO_OPTION,
-//                JOptionPane.INFORMATION_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null,
-//                "Example 2",
-//                "Question",
-//                JOptionPane.DEFAULT_OPTION,
-//                JOptionPane.QUESTION_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null,
-//                "Example 3",
-//                "Warning",
-//                JOptionPane.OK_CANCEL_OPTION,
-//                JOptionPane.WARNING_MESSAGE);
-//        
-//        JOptionPane.showConfirmDialog(
-//                null,
-//                "Example 4",
-//                "Plain",
-//                JOptionPane.YES_NO_CANCEL_OPTION,
-//                JOptionPane.PLAIN_MESSAGE);
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // VARIABLES:
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // The simpliest variable (variables store "remember" data) type
-//        
-//        boolean a = true;
-//        
-//        // When you write a line of code to create (declare) a variable:
-//        
-//        // type name = value ;
-//        
-//        int b = 0;
-//        
-//        double c = 0.0;
-//        
-//        // Variables can change ("vary")
-//        
-//        a = false;
-//        b = 1;
-//        c = 1.2;
-//        
-//        // Variables always go on the left hand side (LHS) of the equals
-//        // sign (=) and the value going into the variable always goes on the 
-//        // right hand side (RHS) 
-//        
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        // The boolean, integer (int), double, character (char) are all simple
-//        // data types (primitive), now a complex type...
-//        
-//        String e = "house";
-//        
-//        System.out.println("e = " + e);
-//        
-//        // Manipulate the variables...
-//        
-//        int x = 10;        
-//        System.out.println("x = " + x);        
-//        x = 20;        
-//        System.out.println("x = " + x);        
-//        int y = x + 10;        
-//        System.out.println("y = " + y);
-//        
-//        // Optional shorthand...
-//        
-//        y++;    // means y = y + 1
-//        y--;    // means y = y - 1
-//        
-//        // Even more optional shorthand...
-//        
-//        y += 10;    // means y = y + 10
-//        y -= 10;    // means y = y - 10
-//        y *= 10;    // means y = y * 10
-//        y /= 10;    // means y = y / 10
-//        
-//        System.out.println("y = " + y);
-//        
-//        // modulus (mod) gives you the remainder of a division, java 
-//        // uses the % symbol
-//        
-//        x = 28;
-//        y = x / 5;
-//        int z = x % 5;
-//        
-//        System.out.println("x = " + x);
-//        System.out.println("y = " + y);
-//        System.out.println("z = " + z);
-//        
-//        // constants are varaibles that don't change, and constants are 
-//        // written ALL_CAPS with underscores separating words
-//        
-//        final double  PI           = 3.14159265;
-//        final int     PROBLEMS     = 99;
-//        final char    YES          = 'Y';
-//        final boolean FOUND        = true;
-//        final String  TEACHER_NAME = "Wachs";
-//        
-//        System.out.println(PI + " and " +
-//                           PROBLEMS + " and " +
-//                           YES + " and " +
-//                           FOUND + " and " +
-//                           TEACHER_NAME);
-//        
-//        // convert one type to another
-//        
-//        int    f = 25;
-//        double g = f;
-//        
-//        System.out.println("f = " + f);
-//        System.out.println("g = " + g);
-//        
-//        // Now change g..
-//        
-//        g = 25.999999999999;
-//        
-//        // uses "casting", it ignores any decimals
-//        int h = (int)g;
-//        
-//        System.out.println("h = " + h);
-//        
-//        double k = 2.9999999999;
-//        int    l = (int)k;
-//        double m = (double)l;
-//        
-//        // casting can happen with other types
-//        
-//        char n = 'A';
-//        int  o = (int)n;
-//        int  p = 72;
-//        char q = (char)p;
-//        
-//        System.out.println("k = " + k);
-//        System.out.println("l = " + l);
-//        System.out.println("m = " + m);
-//        System.out.println("n = " + n);
-//        System.out.println("o = " + o);
-//        System.out.println("p = " + p);
-//        System.out.println("q = " + q);
-//        
-//        // use input dialogs with variables
-//        
-//        // ALWAYS use a variable with an input dialog!
-//        
-//        String r = JOptionPane.showInputDialog("Enter");
-//        JOptionPane.showMessageDialog(null, r);
-//        
-//        // with numbers, you have to start off as a string and then convert
-//        // it to a number
-//        
-//        // like in C# remember Convert.ToInt32(text)....
-//        
-//        String s = JOptionPane.showInputDialog("Enter int");
-//        
-//        // now convert it using "parsing" (means "reading it")
-//        
-//        int t = Integer.parseInt(s);
-//        
-//        JOptionPane.showMessageDialog(null, t);
-//        
-//        // Same thing with a double:        
-//        String u = JOptionPane.showInputDialog("Enter double");
-//        double v = Double.parseDouble(u);
-//        JOptionPane.showMessageDialog(null, v);
-//        
-//        // More rare, with a char:
-//        String w = JOptionPane.showInputDialog("Enter char");
-//        
-//        char x1 = w.charAt(0);
-//        
-//        JOptionPane.showMessageDialog(null, x1);
-//        
-//        // Strings have built-in actions like "chatAt" to pull out a character
-//        // "at" location "0" which means the very first character (because
-//        // numbering in Computer Science usually starts at 0)
-//        
-//        // String have many built-in actions (functions, methods)
-//        
-//        String word = "hippopotomonsprosesquippedaiophobia";        
-//        int length = word.length();        
-//        System.out.println("Word " + word + " is length " + length);        
-//        word = word.toUpperCase();        
-//        System.out.println(word);
-//        
-//        // More can be explored...
-//        
-//        // Also built-in to Java is a "Math" library of code...
-//        
-//        double answer1 = Math.PI;
-//        double answer2 = Math.abs(-1);
-//        double answer3 = Math.cos(0.5);
-//        double answer4 = Math.log(0.5);
-//        double answer5 = Math.pow(5,3);
-//        double answer6 = Math.sqrt(9);              
-//        
-//        System.out.println("Answer 1 = " + answer1);
-//        System.out.println("Answer 2 = " + answer2);
-//        System.out.println("Answer 3 = " + answer3);
-//        System.out.println("Answer 4 = " + answer4);
-//        System.out.println("Answer 5 = " + answer5);
-//        System.out.println("Answer 6 = " + answer6);
+        // TODO code application logic here        
+        // This is a comment all typing after "//" until the line ends        
+        // Commments are not code, so you can write what you want        
+        // Curly brackets (braces, parenthesis) { and } are important        
+        // All code right now goes between these two brackets
         
-        // Math "library" does random numbers, like:
-        // Random random = new Random();
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
         
-        double seed = Math.random();        
-        System.out.println("seed = " + seed);
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+                
+        // Basic output
+        System.out.println("Hello World...");
+        // Use print without the "ln", does not add a line break at the end
+        System.out.println("I'm in the world");
         
-        // You can use a formula for generating random numbers in a range
-        // Between a low and high number
+        System.out.println("Good-bye world!");
+                
+        // Additional output tips... (these are "special" characters)
         
-        // E.g. between 1 and 10 and make it an int
+        System.out.println("Make a quote \" ");
+        System.out.println("Make a slash \\ ");
+        System.out.println("Make a \t tab");
+        System.out.println("Make a \n new line");
         
-        // Start with some constants defining these...        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
+        // Make a dialog box appear
+        JOptionPane.showMessageDialog(null, "Hello");
         
-        // Now the formula...        
-        double number = (HIGH - LOW + 1) * seed + LOW;
+        // Above is the only one need for assignments, final projects, etc.
+        // Optional (not needed, but cool) dialog boxes below:
         
-        // Now cast into an int        
-        int value = (int)number;
+        JOptionPane.showMessageDialog(
+                null,
+                "Information icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
-        // and output        
-        System.out.println("random value = " + value);
+        JOptionPane.showMessageDialog(
+                null,
+                "Question icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null,
+                "Warning icon is !",
+                "Warning Title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null,
+                "Plain no no icon",
+                "Plain Title",
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        // Dialogs for inputs....
+        
+        // The simpliest version is the one you have to use
+        JOptionPane.showInputDialog("Enter something");
+        
+        // Some optional input dialogs below:
+        JOptionPane.showInputDialog(
+                null, 
+                "Information dialog icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE);
+
+        JOptionPane.showInputDialog(
+                null, 
+                "Question dialog icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning dialog icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain dialog no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE);
+        
+        // More different (and optional) dialogs...
+        
+        JOptionPane.showConfirmDialog(null, "Confirm");
+        
+        JOptionPane.showConfirmDialog(
+                null,
+                "Example 1",
+                "Information",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(
+                null,
+                "Example 2",
+                "Question",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(
+                null,
+                "Example 3",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+        
+        JOptionPane.showConfirmDialog(
+                null,
+                "Example 4",
+                "Plain",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.PLAIN_MESSAGE);
+        
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
+        
+        // The simpliest variable (variables store "remember" data) type
+        
+        boolean a = true;
+        
+        // When you write a line of code to create (declare) a variable:
+        
+        // type name = value ;
+        
+        int b = 0;
+        
+        double c = 0.0;
+        
+        // Variables can change ("vary")
+        
+        a = false;
+        b = 1;
+        c = 1.2;
+        
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on the 
+        // right hand side (RHS) 
+        
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        // The boolean, integer (int), double, character (char) are all simple
+        // data types (primitive), now a complex type...
+        
+        String e = "house";
+        
+        System.out.println("e = " + e);
+        
+        // Manipulate the variables...
+        
+        int x = 10;        
+        System.out.println("x = " + x);        
+        x = 20;        
+        System.out.println("x = " + x);        
+        int y = x + 10;        
+        System.out.println("y = " + y);
+        
+        // Optional shorthand...
+        
+        y++;    // means y = y + 1
+        y--;    // means y = y - 1
+        
+        // Even more optional shorthand...
+        
+        y += 10;    // means y = y + 10
+        y -= 10;    // means y = y - 10
+        y *= 10;    // means y = y * 10
+        y /= 10;    // means y = y / 10
+        
+        System.out.println("y = " + y);
         
         
         
