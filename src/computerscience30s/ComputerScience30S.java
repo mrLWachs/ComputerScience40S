@@ -235,13 +235,40 @@ public class ComputerScience30S {
                            FOUND    + ", " + 
                            TEACHER_NAME);
         
+        // Convert one data type into another
         
+        int f = 25;
         
+        double g = f;
         
+        System.out.println("f = " +  f);
+        System.out.println("g = " +  g);
         
+        g = 25.99999999999;
         
+        // "Casting" means it ignores the decimal part
         
+        int h = (int)g;
         
+        System.out.println("g = " +  g);
+        System.out.println("h = " +  h);
+        
+        double k = 2.99999999;
+        int    l = (int)k;
+        double m = (double)l;
+        
+        // casting can happen with other types
+        
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
+        
+        System.out.println("k = " +  k);
+        System.out.println("l = " +  l);
+        System.out.println("m = " +  m);
+        System.out.println("n = " +  n);
+        System.out.println("o = " +  o);
+        System.out.println("p = " +  p);
         
         
         
