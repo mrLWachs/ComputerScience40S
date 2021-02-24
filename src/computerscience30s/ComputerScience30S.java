@@ -379,7 +379,29 @@ public class ComputerScience30S {
             System.out.println("Greater than");
         }
         
+        // use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement
         
+        char value5 = 'A', value6 = 'a';
+        
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
+        
+        // use "else if" for multiple cases of more than 2 things (same as 
+        // the "switch" statement - which I don't use) use string for this
+        // example which are more complex (because they use many characters,
+        // and upper and lower case) 
+        // NOTE: with string NEVER use == ALWAYS use .equals()...
+        
+        String word1 = "edgy";
+        String word2 = "edGy";
+        
+        if (word1.equals(word2)) {
+            System.out.println("w1==w2");
+        }
         
         
         
