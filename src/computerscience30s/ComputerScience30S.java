@@ -300,8 +300,59 @@ public class ComputerScience30S {
         String v = JOptionPane.showInputDialog("Enter char");
         
         char w = v.charAt(0);
+        // strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
+        JOptionPane.showMessageDialog(null,w);
         
-        JOptionPane.showMessageDialog(null, w);
+        // Strings have many built-in actions (functions, methods)        
+        String word = "hippopotomonsprosesquippedaiophobia";        
+        int length = word.length();        
+        System.out.println(word + " is length " + length);        
+        word = word.toUpperCase();        
+        System.out.println(word);        
+        // many more can be explored
+        
+        // also built-in to Java is a "Math" "library" of code
+        
+        double answer1 = Math.PI;
+        double answer2 = Math.abs(-1);
+        double answer3 = Math.cos(0.5);
+        double answer4 = Math.log(0.5);
+        double answer5 = Math.pow(5, 3);
+        double answer6 = Math.sqrt(9);
+        
+        System.out.println("answer 1 = " + answer1);
+        System.out.println("answer 2 = " + answer2);
+        System.out.println("answer 3 = " + answer3);
+        System.out.println("answer 4 = " + answer4);
+        System.out.println("answer 5 = " + answer5);
+        System.out.println("answer 6 = " + answer6);
+        
+        // math "library" does random numbers, like:
+        // Random random = new Random();
+        
+        double seed = Math.random();
+        System.out.println("seed = " + seed);
+        
+        // you can use a formula for generating random numbers in a range 
+        // between a low and a high number:
+        
+        // eg. between 1 and 10 and make it an int
+        
+        // start with the constants defining the highest and lowest
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
+        // now a formula to generate in that range
+        double number = (HIGH - LOW + 1) * seed + LOW;
+        // now cast it to an integer
+        int value = (int)number;
+        // and display it
+        System.out.println("random value = " + value);
+        
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
         
         
