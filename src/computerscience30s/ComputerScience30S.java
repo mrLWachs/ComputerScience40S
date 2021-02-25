@@ -219,140 +219,25 @@ public class ComputerScience30S {
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
-        // Constants area variables that don't change, and
-        // constants are written in ALL_CAPITALS with 
-        // underscores to seperate words
         
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'Y';
-        final boolean FOUND        = true;
-        final String  TEACHER_NAME = "Wachs";
         
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           TEACHER_NAME);
         
-        // Convert one data type into another
         
-        int f = 25;
         
-        double g = f;
         
-        System.out.println("f = " +  f);
-        System.out.println("g = " +  g);
         
-        g = 25.99999999999;
         
-        // "Casting" means it ignores the decimal part
         
-        int h = (int)g;
         
-        System.out.println("g = " +  g);
-        System.out.println("h = " +  h);
         
-        double k = 2.99999999;
-        int    l = (int)k;
-        double m = (double)l;
         
-        // casting can happen with other types
         
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
         
-        System.out.println("k = " +  k);
-        System.out.println("l = " +  l);
-        System.out.println("m = " +  m);
-        System.out.println("n = " +  n);
-        System.out.println("o = " +  o);
-        System.out.println("p = " +  p);
         
-        // use dialogs with variables
         
-        String q = JOptionPane.showInputDialog("Enter");
         
-        JOptionPane.showMessageDialog(null, q);
         
-        // when using input dialogs, ALWAYS use a variable first
-        // at the front of the line
         
-        // with numbers, you have to start off with a string,
-        // and then convert it to a number (like...
-        // Convert.ToInt32(text) ... )
-        
-        String r = JOptionPane.showInputDialog("Enter int");
-        
-        // we use code that "parses" (means "reading")
-        
-        int s = Integer.parseInt(r);
-        
-        JOptionPane.showMessageDialog(null, s);
-        
-        // same example with a double
-        String t = JOptionPane.showInputDialog("Enter double");
-        double u = Double.parseDouble(t);
-        JOptionPane.showMessageDialog(null, u);
-        
-        // example with a char
-        String v = JOptionPane.showInputDialog("Enter char");
-        
-        char w = v.charAt(0);
-        // strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
-        JOptionPane.showMessageDialog(null,w);
-        
-        // Strings have many built-in actions (functions, methods)        
-        String word = "hippopotomonsprosesquippedaiophobia";        
-        int length = word.length();        
-        System.out.println(word + " is length " + length);        
-        word = word.toUpperCase();        
-        System.out.println(word);        
-        // many more can be explored
-        
-        // also built-in to Java is a "Math" "library" of code
-        
-        double answer1 = Math.PI;
-        double answer2 = Math.abs(-1);
-        double answer3 = Math.cos(0.5);
-        double answer4 = Math.log(0.5);
-        double answer5 = Math.pow(5, 3);
-        double answer6 = Math.sqrt(9);
-        
-        System.out.println("answer 1 = " + answer1);
-        System.out.println("answer 2 = " + answer2);
-        System.out.println("answer 3 = " + answer3);
-        System.out.println("answer 4 = " + answer4);
-        System.out.println("answer 5 = " + answer5);
-        System.out.println("answer 6 = " + answer6);
-        
-        // math "library" does random numbers, like:
-        // Random random = new Random();
-        
-        double seed = Math.random();
-        System.out.println("seed = " + seed);
-        
-        // you can use a formula for generating random numbers in a range 
-        // between a low and a high number:
-        
-        // eg. between 1 and 10 and make it an int
-        
-        // start with the constants defining the highest and lowest
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        // now a formula to generate in that range
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        // now cast it to an integer
-        int value = (int)number;
-        // and display it
-        System.out.println("random value = " + value);
-        
-        ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
-        ///////////////////////////////////////////////////////////////////////
         
         
         
