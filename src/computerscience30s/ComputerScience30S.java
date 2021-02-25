@@ -294,17 +294,41 @@ public class ComputerScience30S {
 //        String t = JOptionPane.showInputDialog("Enter double");
 //        double u = Double.parseDouble(t);
 //        JOptionPane.showMessageDialog(null, u);
+//        
+//        // Example with a char
+//        String v = JOptionPane.showInputDialog("Enter char");
+//        
+//        char w = v.charAt(0);
+//        
+//        JOptionPane.showMessageDialog(null, w);
+//        
+//        // Strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
         
-        // Example with a char
-        String v = JOptionPane.showInputDialog("Enter char");
+        // Strings have many built-in actions (functions, methods)
         
-        char w = v.charAt(0);
+        String word = "hippopotomonsprosesquippedaiophobia";
         
-        JOptionPane.showMessageDialog(null, w);
+        int length = word.length();
         
-        // Strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
+        System.out.println(word + " is length " + length);
+        
+        word = word.toUpperCase();
+        
+        System.out.println(word);
+        
+        // many more string functions can be explored
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
