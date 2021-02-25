@@ -281,6 +281,26 @@ public class ComputerScience30S {
         // with numbers, you have to start off with a string, and then convert
         //  it to a number (like: Convert.ToInt32(text) ... )
         
+        String r = JOptionPane.showInputDialog("Enter int");
+        
+        // We use code that "parses" (means "reading")
+        
+        int s = Integer.parseInt(r);
+        
+        JOptionPane.showMessageDialog(null, s);
+        
+        // Same example with a double
+        
+        String t = JOptionPane.showInputDialog("Enter double");
+        double u = Double.parseDouble(t);
+        JOptionPane.showMessageDialog(null, u);
+        
+        
+        
+        
+        
+        
+        
         
         
         
