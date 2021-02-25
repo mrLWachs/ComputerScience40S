@@ -320,11 +320,46 @@ public class ComputerScience30S {
         
         // many more string functions can be explored
         
+        // Also built-in to java is a math "library" of code
         
+        double answer1 = Math.PI;
+        double answer2 = Math.cos(0.5);
+        double answer3 = Math.abs(-1);
+        double answer4 = Math.pow(5, 3);
+        double answer5 = Math.sqrt(9);
+        double answer6 = Math.log(0.5);
         
+        System.out.println("answer1 = " + answer1);
+        System.out.println("answer2 = " + answer2);
+        System.out.println("answer3 = " + answer3);
+        System.out.println("answer4 = " + answer4);
+        System.out.println("answer5 = " + answer5);
+        System.out.println("answer6 = " + answer6);
         
+        // Math "library" does random numbers, like:
+        // Random random = new Random();
         
+        double seed = Math.random();
+        System.out.println("seed = " + seed);
         
+        // you can use a formula for generating random numbers in a range 
+        // between a low and a high number:
+        
+        // eg. between 1 and 10 and make it an int
+        
+        // start with the constants defining the highest and lowest
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
+        // now a formula to generate in that range
+        double number = (HIGH - LOW + 1) * seed + LOW;
+        // now cast it to an integer
+        int value = (int)number;
+        // and display it
+        System.out.println("random value = " + value);
+        
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
         
         
