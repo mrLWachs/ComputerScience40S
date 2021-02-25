@@ -234,9 +234,23 @@ public class ComputerScience30S {
                            FOUND    + ", " + 
                            TEACHER_NAME);
         
+        // Converting one data type to another
         
+        int f = 25;
         
+        double g = f;
         
+        System.out.println("f = " + f);
+        System.out.println("g = " + g);
+        
+        g = 25.9999999999;
+        
+        int h = (int)g;
+        
+        // When we use round brackets ( ) with the data type inside, this is 
+        // called "casting" which means it ignores the decimal part 
+        
+        System.out.println("h = " + h);
         
         
         
