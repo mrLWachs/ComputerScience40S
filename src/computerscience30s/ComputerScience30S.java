@@ -268,38 +268,43 @@ public class ComputerScience30S {
 //        System.out.println("n = " + n);
 //        System.out.println("o = " + o);
 //        System.out.println("p = " + p);
+//        
+//        // Use dialog boxes with variables
+//        
+//        String q = JOptionPane.showInputDialog("Enter");
+//        
+//        JOptionPane.showMessageDialog(null, q);
+//        
+//        // when using input dialogs, ALWAYS use a variable first at the front
+//        // of the line
+//        
+//        // with numbers, you have to start off with a string, and then convert
+//        //  it to a number (like: Convert.ToInt32(text) ... )
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We use code that "parses" (means "reading")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        JOptionPane.showMessageDialog(null, s);
+//        
+//        // Same example with a double
+//        
+//        String t = JOptionPane.showInputDialog("Enter double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        // Use dialog boxes with variables
+        // Example with a char
+        String v = JOptionPane.showInputDialog("Enter char");
         
-        String q = JOptionPane.showInputDialog("Enter");
+        char w = v.charAt(0);
         
-        JOptionPane.showMessageDialog(null, q);
+        JOptionPane.showMessageDialog(null, w);
         
-        // when using input dialogs, ALWAYS use a variable first at the front
-        // of the line
-        
-        // with numbers, you have to start off with a string, and then convert
-        //  it to a number (like: Convert.ToInt32(text) ... )
-        
-        String r = JOptionPane.showInputDialog("Enter int");
-        
-        // We use code that "parses" (means "reading")
-        
-        int s = Integer.parseInt(r);
-        
-        JOptionPane.showMessageDialog(null, s);
-        
-        // Same example with a double
-        
-        String t = JOptionPane.showInputDialog("Enter double");
-        double u = Double.parseDouble(t);
-        JOptionPane.showMessageDialog(null, u);
-        
-        
-        
-        
-        
-        
+        // strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
         
         
