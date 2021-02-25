@@ -302,7 +302,7 @@ public class ComputerScience30S {
         
         JOptionPane.showMessageDialog(null, w);
         
-        // strings have built-in actions like "charAt" to pull out a character
+        // Strings have built-in actions like "charAt" to pull out a character
         // "at" location "0" which means the very first character (because 
         // numbering in Computer Science usually starts at 0)
         
