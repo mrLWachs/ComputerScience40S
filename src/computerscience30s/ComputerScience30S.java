@@ -218,45 +218,68 @@ public class ComputerScience30S {
 //        System.out.println("x = " + x);
 //        System.out.println("y = " + y);
 //        System.out.println("z = " + z);
+//        
+//        // Constants are variables that don't change, and constants are 
+//        // written in ALL_CAPITAL_LETTERS with underscores to seperate words
+//        
+//        final double  PI           = 3.14159265;
+//        final int     PROBLEMS     = 99;
+//        final char    YES          = 'Y';
+//        final boolean FOUND        = true;
+//        final String  TEACHER_NAME = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " + 
+//                           FOUND    + ", " + 
+//                           TEACHER_NAME);
+//        
+//        // Converting one data type to another
+//        
+//        int f = 25;
+//        
+//        double g = f;
+//        
+//        System.out.println("f = " + f);
+//        System.out.println("g = " + g);
+//        
+//        g = 25.9999999999;
+//        
+//        int h = (int)g;
+//        
+//        // When we use round brackets ( ) with the data type inside, this is 
+//        // called "casting" which means it ignores the decimal part 
+//        
+//        System.out.println("h = " + h);
+//        
+//        double k = 2.9999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // Casting can happen with other data types
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l);
+//        System.out.println("m = " + m);
+//        System.out.println("n = " + n);
+//        System.out.println("o = " + o);
+//        System.out.println("p = " + p);
         
-        // Constants are variables that don't change, and constants are 
-        // written in ALL_CAPITAL_LETTERS with underscores to seperate words
+        // Use dialog boxes with variables
         
-        final double  PI           = 3.14159265;
-        final int     PROBLEMS     = 99;
-        final char    YES          = 'Y';
-        final boolean FOUND        = true;
-        final String  TEACHER_NAME = "Wachs";
+        String q = JOptionPane.showInputDialog("Enter");
         
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           TEACHER_NAME);
+        JOptionPane.showMessageDialog(null, q);
         
-        // Converting one data type to another
+        // when using input dialogs, ALWAYS use a variable first at the front
+        // of the line
         
-        int f = 25;
-        
-        double g = f;
-        
-        System.out.println("f = " + f);
-        System.out.println("g = " + g);
-        
-        g = 25.9999999999;
-        
-        int h = (int)g;
-        
-        // When we use round brackets ( ) with the data type inside, this is 
-        // called "casting" which means it ignores the decimal part 
-        
-        System.out.println("h = " + h);
-        
-        
-        
-        
-        
-        
+        // with numbers, you have to start off with a string, and then convert
+        //  it to a number (like: Convert.ToInt32(text) ... )
         
         
         
