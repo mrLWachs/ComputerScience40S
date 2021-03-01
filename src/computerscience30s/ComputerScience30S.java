@@ -411,10 +411,43 @@ public class ComputerScience30S {
         // and upper and lower case) 
         // NOTE: with string NEVER use == ALWAYS use .equals()...
         
+        String word1 = "edgy";
+        String word2 = "edGy";
         
+        if (word1.equals(word2)) {
+            System.out.println("w1==w2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("w1 kind of == w2");
+        }
+        else {
+            System.out.println("w1!=w2");
+        }
         
+        // combine logic using "and" "or" "not"
+        // which uses the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!" for "not"
         
+        int age = 17;
+        double iq = 1.0;
         
+        if (age >= 21 && iq > 1.15) {
+            // with "and" BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq > 0.85) {
+            // with "or" EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
         
         
