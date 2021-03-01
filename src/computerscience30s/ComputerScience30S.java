@@ -335,41 +335,54 @@ public class ComputerScience30S {
 //        System.out.println("answer4 = " + answer4);
 //        System.out.println("answer5 = " + answer5);
 //        System.out.println("answer6 = " + answer6);
-        
-        // Math library also does random numbers, like:
-        // Random random = new Random();
-        
-        double seed = Math.random();
-        
-        System.out.println("seed = " + seed);
-        
-        // You can use a formula for generating random numbers in a range
-        // between a low and a high number
-        
-        // e.g. between 1 and 10 and make it an integer
-        
-        // Start with some constants defining the high and low
-        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        
-        // Now the formula to generate in that range
-        
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        
-        // now "cast" it to an int
-        
-        int value = (int)number;
-        
-        // And display it
-        
-        System.out.println("value = " + value);
+//        
+//        // Math library also does random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        
+//        System.out.println("seed = " + seed);
+//        
+//        // You can use a formula for generating random numbers in a range
+//        // between a low and a high number
+//        
+//        // e.g. between 1 and 10 and make it an integer
+//        
+//        // Start with some constants defining the high and low
+//        
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        
+//        // Now the formula to generate in that range
+//        
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        
+//        // now "cast" it to an int
+//        
+//        int value = (int)number;
+//        
+//        // And display it
+//        
+//        System.out.println("value = " + value);
         
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
         ///////////////////////////////////////////////////////////////////////
         
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
         
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code insode the block
+        
+        
+
+
+
+
+
         
         
         
