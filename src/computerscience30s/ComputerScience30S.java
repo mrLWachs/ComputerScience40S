@@ -444,52 +444,63 @@ public class ComputerScience30S {
 //        else {
 //            System.out.println("Get out");
 //        }
-        
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
-        
-        // Simple loop...
-        
-        int counter = 0;
-        
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++; // counter = counter + 1
-        }
-        
-        // while loop with a string
-        
-        String password = JOptionPane.showInputDialog("Create password");
-        
-        while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Try again!");
-            password = JOptionPane.showInputDialog("Create password");
-        }
-        
-        // The next type of loop is rarely used (you may never need it)
-        // it test for true/false at the bottom of the loop, you use it
-        // when you want the body (block) of the loop to run at least
-        // once!
-        
-        String choice = "";
-        
-        do {            
-            
-            choice = JOptionPane.showInputDialog("Enter password");
-            
-        } while (choice.equalsIgnoreCase(password) == false);
-        
-        
-        JOptionPane.showMessageDialog(null, "You got it");
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // LOOPING
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // Simple loop...
+//        
+//        int counter = 0;
+//        
+//        while (counter < 10) {
+//            System.out.println("counter = " + counter);
+//            counter++; // counter = counter + 1
+//        }
+//        
+//        // while loop with a string
+//        
+//        String password = JOptionPane.showInputDialog("Create password");
+//        
+//        while (password.equals("1234")) {
+//            JOptionPane.showMessageDialog(null, "Try again!");
+//            password = JOptionPane.showInputDialog("Create password");
+//        }
+//        
+//        // The next type of loop is rarely used (you may never need it)
+//        // it test for true/false at the bottom of the loop, you use it
+//        // when you want the body (block) of the loop to run at least
+//        // once!
+//        
+//        String choice = "";
+//        
+//        do {            
+//            
+//            choice = JOptionPane.showInputDialog("Enter password");
+//            
+//        } while (choice.equalsIgnoreCase(password) == false);
+//        
+//        
+//        JOptionPane.showMessageDialog(null, "You got it");
         
         // The "for" loop is used for counting (and for the upcoming unit
         // called "arrays")
         
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
+        }
         
+        // Variations on the for loop:
+            // count down (not up)
+            // start at 100
+            // stop at zero (including zero)
+            // count by 10s
         
+        for (int i = 100; i >= 0; i = i - 10) {
+            System.out.println("i = " + i);
+        }
         
-        
+        // Example assignment...
         
         
         
