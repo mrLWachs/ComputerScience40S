@@ -318,7 +318,7 @@ public class ComputerScience30S {
         
         System.out.println(word);
         
-        // many more string functions can be explored
+        // Many more string functions can be explored
         
         // Also built-in to java is a math "library" of code
         
@@ -357,7 +357,7 @@ public class ComputerScience30S {
         
         double number = (HIGH - LOW + 1) * seed + LOW;
         
-        // now "cast" it to an int
+        // Now "cast" it to an int
         
         int value = (int)number;
         
@@ -394,7 +394,7 @@ public class ComputerScience30S {
             System.out.println("Greater than");
         }
 
-        // use chars and some shorthand, not usually recommended (except in 
+        // Use chars and some shorthand, not usually recommended (except in 
         // certain situations) used when the code in a block - between { } is
         // only one line of code! Then, you don't need the { } 
         // And.. (even further shorthand) the line can be moved up to the
@@ -405,7 +405,7 @@ public class ComputerScience30S {
         if (value5 != value6) System.out.println("!=");
         else                  System.out.println("==");
                
-        // use "else if" for multiple cases of more than 2 things (same as 
+        // Use "else if" for multiple cases of more than 2 things (same as 
         // the "switch" statement - which I don't use) use string for this
         // example which are more complex (because they use many characters,
         // and upper and lower case) 
@@ -424,8 +424,7 @@ public class ComputerScience30S {
             System.out.println("w1!=w2");
         }
         
-        // combine logic using "and" "or" "not"
-        // which uses the symbols:
+        // Combine logic using "and" "or" "not" which uses the symbols:
         // "&&" for "and"
         // "||" for "or"
         // "!" for "not"
@@ -500,7 +499,9 @@ public class ComputerScience30S {
             System.out.println("i = " + i);
         }
         
-        // Example assignment...
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
@@ -531,10 +532,10 @@ public class ComputerScience30S {
 //      keyboard, then click on the two buttons under the code tab
 // (9)  To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
-//      error and a potential fix (if you click on the lightbulb)
-// (11) You can get more NetBeans tips and autocompletes by selecting 
+// (10) You can get more NetBeans tips and autocompletes by selecting 
 //      Help -> Keyboard Shortcuts Card
+// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
+//      error and a potential fix (if you click on the lightbulb)
 // (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
 //      "Java", select "Java Main Class", and "Open in Editor" and the enter 
 //      this into the temple:
