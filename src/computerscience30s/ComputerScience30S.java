@@ -377,14 +377,39 @@ public class ComputerScience30S {
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code insode the block
         
+        int value1 = 10, value2 = 10;
         
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
 
+        // if with "else" (an option) for both true and false, checks 2 things
 
-
-
-
+        double value3 = 1.45, value4 = 1.5;
         
+        if (value3 < value4) {
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
+
+        // use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement        
         
+        char value5 = 'A', value6 = 'a';
+        
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
+               
+        // use "else if" for multiple cases of more than 2 things (same as 
+        // the "switch" statement - which I don't use) use string for this
+        // example which are more complex (because they use many characters,
+        // and upper and lower case) 
+        // NOTE: with string NEVER use == ALWAYS use .equals()...
         
         
         
