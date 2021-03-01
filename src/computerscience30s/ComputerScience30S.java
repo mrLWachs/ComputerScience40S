@@ -302,199 +302,40 @@ public class ComputerScience30S {
 //        
 //        JOptionPane.showMessageDialog(null, w);
 //        
-//        // Strings have built-in actions like "charAt" to pull out a character
-//        // "at" location "0" which means the very first character (because 
-//        // numbering in Computer Science usually starts at 0)
-//        
-//        // Strings have many built-in actions (functions, methods)
-//        
-//        String word = "hippopotomonsprosesquippedaiophobia";
-//        
-//        int length = word.length();
-//        
-//        System.out.println(word + " is length " + length);
-//        
-//        word = word.toUpperCase();
-//        
-//        System.out.println(word);
-//        
-//        // many more string functions can be explored
-//        
-//        // Also built-in to java is a math "library" of code
-//        
-//        double answer1 = Math.PI;
-//        double answer2 = Math.cos(0.5);
-//        double answer3 = Math.abs(-1);
-//        double answer4 = Math.pow(5, 3);
-//        double answer5 = Math.sqrt(9);
-//        double answer6 = Math.log(0.5);
-//        
-//        System.out.println("answer1 = " + answer1);
-//        System.out.println("answer2 = " + answer2);
-//        System.out.println("answer3 = " + answer3);
-//        System.out.println("answer4 = " + answer4);
-//        System.out.println("answer5 = " + answer5);
-//        System.out.println("answer6 = " + answer6);
-//        
-//        // Math "library" does random numbers, like:
-//        // Random random = new Random();
-//        
-//        double seed = Math.random();
-//        System.out.println("seed = " + seed);
-//        
-//        // you can use a formula for generating random numbers in a range 
-//        // between a low and a high number:
-//        
-//        // eg. between 1 and 10 and make it an int
-//        
-//        // start with the constants defining the highest and lowest
-//        final double LOW  = 1.0;
-//        final double HIGH = 10.0;
-//        // now a formula to generate in that range
-//        double number = (HIGH - LOW + 1) * seed + LOW;
-//        // now cast it to an integer
-//        int value = (int)number;
-//        // and display it
-//        System.out.println("random value = " + value);
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // CONDITIONAL STATEMENTS
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // Simple if statement, you use this when comparing if something is
-//        // true, as it checks that one thing ("asks a true/false question")
-//        
-//        // if statements use both round ( ) and curly { } brackets and the 
-//        // code inside of the curly brackets is said to be in a "block" of
-//        // code and that block only run when the test inside of the round 
-//        // brackets tests true. It also indents the code inside the block
-//        
-//        int value1 = 10, value2 = 10;
-//        
-//        if (value1 == value2) {
-//            System.out.println("equal");
-//        }
-//        
-//        // if with "else" (an option), for both true and false, checks 2 things
-//        
-//        double value3 = 1.45, value4 = 1.5;
-//        
-//        if (value3 < value4) {
-//            System.out.println("Less than");
-//        }
-//        else {
-//            System.out.println("Greater than");
-//        }
-//        
-//        // use chars and some shorthand, not usually recommended (except in 
-//        // certain situations) used when the code in a block - between { } is
-//        // only one line of code! Then, you don't need the { } 
-//        // And.. (even further shorthand) the line can be moved up to the
-//        // same line as the if statement
-//        
-//        char value5 = 'A', value6 = 'a';
-//        
-//        if (value5 != value6) System.out.println("!=");
-//        else                  System.out.println("==");
-//               
-//        // use "else if" for multiple cases of more than 2 things (same as 
-//        // the "switch" statement - which I don't use) use string for this
-//        // example which are more complex (because they use many characters,
-//        // and upper and lower case) 
-//        // NOTE: with string NEVER use == ALWAYS use .equals()...
-//                
-//        String word1 = "edgy";
-//        String word2 = "edGy";
-//        
-//        if (word1.equals(word2)) {
-//            System.out.println("w1==w2");
-//        }
-//        else if (word1.equalsIgnoreCase(word2)) {
-//            System.out.println("w1 kind of ==w2");
-//        }
-//        else {
-//            System.out.println("w1!=w2");
-//        }
-//        
-//        // Combine logic using "and" "or" "not" which use symbols: 
-//        // "&&" for "and" 
-//        // "||" for "or" 
-//        // "!" for "not"
-//        
-//        int age = 17;
-//        double iq = 1.0;
-//        
-//        if (age >= 21 && iq > 1.15) {
-//            // with "and" BOTH have to be true
-//            System.out.println("Get in");
-//        }
-//        else if (age >= 18 || iq > 0.85) {
-//            // with "or" EITHER can be true
-//            System.out.println("Keep trying");
-//        }
-//        else {
-//            System.out.println("Get out");
-//        }
+
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
+        // Strings have many built-in actions (functions, methods)
         
-        // Simple loop
+        String word = "hippopotomonsprosesquippedaiophobia";
         
-        int counter = 0;
+        int length = word.length();
         
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++;
-        }
+        System.out.println(word + " is length " + length);
         
-        // while loop with a string
+        word = word.toUpperCase();
         
-        String password = JOptionPane.showInputDialog("Make a password");
+        System.out.println(word);
         
-        while (password.equals("1234")) {
-            
-            JOptionPane.showMessageDialog(null, "Try again");
-            
-            password = JOptionPane.showInputDialog("Make a password");
-            
-        }
+        // many more string functions can be explored
         
-        // The next type of loop, more rarely used (you may never need it)
-        // if tests for true/false at the bottom of the loop, you use it 
-        // when you want the body (block) of the loop to run at least
-        // once!
+        // Also built-in to java is a math "library" of code
         
-        // The do while loop...
+        double answer1 = Math.PI;
+        double answer2 = Math.cos(0.5);
+        double answer3 = Math.abs(-1);
+        double answer4 = Math.pow(5, 3);
+        double answer5 = Math.sqrt(9);
+        double answer6 = Math.log(0.5);
         
-        String choice = "";
-        
-        do {            
-            
-            choice = JOptionPane.showInputDialog("Enter password");
-            
-        } while (choice.equalsIgnoreCase(password) == false);
-        
-        // The "for" loop is used for counting (and for the upcoming unit
-        // called "arrays")
-        
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-        }
-        
-        // Variations on the for loop:
-            // count down (not up)
-            // start at 100
-            // stop at zero (including zero)
-            // count by 10s
-        
-        for (int i = 100; i >= 0; i = i - 10) {
-            System.out.println("i = " + i);
-        }
-        
-        // Example assignment....
-        
+        System.out.println("answer1 = " + answer1);
+        System.out.println("answer2 = " + answer2);
+        System.out.println("answer3 = " + answer3);
+        System.out.println("answer4 = " + answer4);
+        System.out.println("answer5 = " + answer5);
+        System.out.println("answer6 = " + answer6);
         
         
         
