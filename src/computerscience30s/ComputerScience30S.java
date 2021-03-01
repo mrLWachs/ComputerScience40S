@@ -302,40 +302,81 @@ public class ComputerScience30S {
 //        
 //        JOptionPane.showMessageDialog(null, w);
 //        
-
-        // Strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
+//        // Strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
+//        
+//        // Strings have many built-in actions (functions, methods)
+//        
+//        String word = "hippopotomonsprosesquippedaiophobia";
+//        
+//        int length = word.length();
+//        
+//        System.out.println(word + " is length " + length);
+//        
+//        word = word.toUpperCase();
+//        
+//        System.out.println(word);
+//        
+//        // many more string functions can be explored
+//        
+//        // Also built-in to java is a math "library" of code
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.cos(0.5);
+//        double answer3 = Math.abs(-1);
+//        double answer4 = Math.pow(5, 3);
+//        double answer5 = Math.sqrt(9);
+//        double answer6 = Math.log(0.5);
+//        
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
         
-        // Strings have many built-in actions (functions, methods)
+        // Math library also does random numbers, like:
+        // Random random = new Random();
         
-        String word = "hippopotomonsprosesquippedaiophobia";
+        double seed = Math.random();
         
-        int length = word.length();
+        System.out.println("seed = " + seed);
         
-        System.out.println(word + " is length " + length);
+        // You can use a formula for generating random numbers in a range
+        // between a low and a high number
         
-        word = word.toUpperCase();
+        // e.g. between 1 and 10 and make it an integer
         
-        System.out.println(word);
+        // Start with some constants defining the high and low
         
-        // many more string functions can be explored
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
         
-        // Also built-in to java is a math "library" of code
+        // Now the formula to generate in that range
         
-        double answer1 = Math.PI;
-        double answer2 = Math.cos(0.5);
-        double answer3 = Math.abs(-1);
-        double answer4 = Math.pow(5, 3);
-        double answer5 = Math.sqrt(9);
-        double answer6 = Math.log(0.5);
+        double number = (HIGH - LOW + 1) * seed + LOW;
         
-        System.out.println("answer1 = " + answer1);
-        System.out.println("answer2 = " + answer2);
-        System.out.println("answer3 = " + answer3);
-        System.out.println("answer4 = " + answer4);
-        System.out.println("answer5 = " + answer5);
-        System.out.println("answer6 = " + answer6);
+        // now "cast" it to an int
+        
+        int value = (int)number;
+        
+        // And display it
+        
+        System.out.println("value = " + value);
+        
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
