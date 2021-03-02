@@ -1,23 +1,33 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/** 
+ * Required package class namespace - the line below is put in automatically,
+ * and connects file to the project all done
  */
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code 
+ */
 import javax.swing.JOptionPane;
 
 /**
- *
- * @author mr.wachs
+ * ComputerScience30S.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code examples that might come up over the course.
+ * 
+ * @author Mr. Wachs
+ * @since Feb. 9, 2021
  */
 public class ComputerScience30S {       
 
     /**
+     * Main method for the project
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here        
+        // TODO code application logic here  
+        
         // This is a comment all typing after "//" until the line ends        
         // Commments are not code, so you can write what you want        
         // Curly brackets (braces, parenthesis) { and } are important        
@@ -153,7 +163,7 @@ public class ComputerScience30S {
         
         // type name = value ;
         
-        // when you write a line of code to create (declare) a variable
+        // When you write a line of code to create (declare) a variable
         
         int b = 0;
         
@@ -175,7 +185,7 @@ public class ComputerScience30S {
         
         char d = 'A';
         
-        // "char" is short for "character" hold (remembers) one character
+        // The "char" is short for "character" hold (remembers) one character
         
         System.out.println("d = " + d);
         
@@ -195,7 +205,8 @@ public class ComputerScience30S {
         int y = x + 10;        
         System.out.println("y = " + y);
         
-        // Optional shorthand...        
+        // Optional shorthand...      
+        
         y++;    // means y = y + 1
         y--;    // means y = y - 1
         
@@ -275,11 +286,11 @@ public class ComputerScience30S {
         
         JOptionPane.showMessageDialog(null, q);
         
-        // when using input dialogs, ALWAYS use a variable first at the front
+        // When using input dialogs, ALWAYS use a variable first at the front
         // of the line
         
-        // with numbers, you have to start off with a string, and then convert
-        //  it to a number (like: Convert.ToInt32(text) ... )
+        // With numbers, you have to start off with a string, and then convert
+        // it to a number. This is like: Convert.ToInt32(text) in C#
         
         String r = JOptionPane.showInputDialog("Enter int");
         
@@ -296,10 +307,9 @@ public class ComputerScience30S {
         JOptionPane.showMessageDialog(null, u);
         
         // Example with a char
-        String v = JOptionPane.showInputDialog("Enter char");
         
-        char w = v.charAt(0);
-        
+        String v = JOptionPane.showInputDialog("Enter char");        
+        char w = v.charAt(0);        
         JOptionPane.showMessageDialog(null, w);
         
         // Strings have built-in actions like "charAt" to pull out a character
@@ -308,14 +318,10 @@ public class ComputerScience30S {
         
         // Strings have many built-in actions (functions, methods)
         
-        String word = "hippopotomonsprosesquippedaiophobia";
-        
-        int length = word.length();
-        
-        System.out.println(word + " is length " + length);
-        
-        word = word.toUpperCase();
-        
+        String word = "hippopotomonsprosesquippedaiophobia";        
+        int length = word.length();        
+        System.out.println(word + " is length " + length);        
+        word = word.toUpperCase();        
         System.out.println(word);
         
         // Many more string functions can be explored
@@ -503,15 +509,38 @@ public class ComputerScience30S {
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
+        // create welcome screen for the user
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";
+        // show a message dialog box
+        JOptionPane.showMessageDialog(null, "Welcome to the C-RAP number "
+                + "2 radio station\n\n" + message);
+        // get user input
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert to a number variable
+        double celcius = Double.parseDouble(userInput);
+        // apply formula
+        double fahrenheit = (celcius * 1.8) + 32;
+        // show user the results in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        System.out.println("Good-bye World!");
         
-        
-        
-        
-        
-        
-        
-        
-        
+        // this line terminates any running java program at any point
+        //System.exit(0);
         
     }
     
@@ -558,7 +587,12 @@ public class ComputerScience30S {
 // (14) To autoformat code (fixes indents, extra spaces, etc.) select code with
 //      mouse or keyboard (or it will format all if none is selected) and press
 //      ALT + SHIFT + F  (you should do this before hand in!)
-
+// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 14) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
+// (16) If you have to rename a variable or a method, select the
+//      word and then press CTRL + R, then type in a new name
 
 
 
