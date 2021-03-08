@@ -46,7 +46,7 @@ public class RecursionTest
                                    exponent + " = " + answer);                
             }
         }
-                
+        
         System.out.println("\nRecursion test complete!\n");
     }
     
