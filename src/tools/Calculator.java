@@ -12,10 +12,22 @@ package tools;
 public class Calculator 
 {
 
-    public static int factorial(int number) {
-        if (number == 1) {
+    /**
+     * Calculates the factorial on a number using a recursive method. Recursive
+     * methods need at least one base case (to stop the recursion), but can 
+     * have more than one. They also need to have at minimum one recursive 
+     * case (but also can have multiple recursive cases). Recursive cases 
+     * means the method calls itself!
+     * 
+     * @param number the number to calculate the factorial of
+     * @return the factorial of the parameter
+     */
+    public static long factorial(int number) {        
+        // Base case(s) - stops the recursion        
+        if (number <= 1) {
             return 1;
-        }
+        }        
+        // Recursive case(s) - like a loop, method that calls itself
         else {
             return number * factorial(number-1);
         }

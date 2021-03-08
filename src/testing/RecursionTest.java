@@ -28,9 +28,15 @@ public class RecursionTest
             
         System.out.println("Recursive factorial............................."); 
         
-        int number = 5;
-        int answer = Calculator.factorial(number);
-        System.out.println(number + "\t factorial = \t" + answer);       
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;        
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            long answer = Calculator.factorial(i);
+            System.out.println(i + "\t factorial = \t" + answer);
+        }
+        
+        
+        
         
         System.out.println("\nRecursion test complete!\n");
     }
