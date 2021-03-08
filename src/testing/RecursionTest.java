@@ -35,9 +35,18 @@ public class RecursionTest
             System.out.println(i + "\t factorial = \t" + answer);
         }
         
+        System.out.println("Recursive Powers.................................");
         
-        
-        
+        final int MIN_POWER = -10;
+        final int MAX_POWER = 10;                
+        for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+            for (int base = MIN_POWER; base <= MAX_POWER; base++) {                
+                double answer = Calculator.power(base,exponent);                
+                System.out.println(base + " to the exponent " +
+                                   exponent + " = " + answer);                
+            }
+        }
+                
         System.out.println("\nRecursion test complete!\n");
     }
     
