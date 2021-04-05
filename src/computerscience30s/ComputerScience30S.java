@@ -27,6 +27,11 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+//        learnIntroToJava();         // "calling" a method means run the code
+        learnMethods();
+    }
+
+    private static void learnIntroToJava() {
         // TODO code application logic here  
         
         // This is a comment all typing after "//" until the line ends        
@@ -542,7 +547,14 @@ public class ComputerScience30S {
         
         // this line terminates any running java program at any point
         //System.exit(0);
+    }
+
+    private static void learnMethods() {
+        System.out.println("Start learning methods...");
         
+        
+        
+        System.out.println("Completed learning methods!");
     }
     
 }
