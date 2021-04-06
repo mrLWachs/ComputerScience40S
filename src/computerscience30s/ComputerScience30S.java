@@ -554,7 +554,7 @@ public class ComputerScience30S {
         
         
         
-        System.out.println("Completed learning methods!");
+        System.out.println("Learning methods complete!");
     }
     
 }
@@ -606,6 +606,13 @@ public class ComputerScience30S {
 //      settings to what you prefer
 // (16) If you have to rename a variable or a method, select the
 //      word and then press CTRL + R, then type in a new name
-
-
-
+// (17) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 11) will help you write it
+// (19) If you hold down the CTRL key, methods calls become links with the 
+//      mouse to the method (even ones we don't write)
+// (20) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
