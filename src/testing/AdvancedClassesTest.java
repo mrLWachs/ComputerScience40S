@@ -1,9 +1,16 @@
-
+  
+/** Required package class namespace */
 package testing;
 
+/** Required imports */
 import testing.advancedclasses.Person;
 
-
+/**
+ * AdvancedClassesTest.java - tests the concepts learned in this unit
+ *
+ * @author Mr. Wachs
+ * @since Sep. 30, 2019, 11:43:07 a.m.
+ */
 public class AdvancedClassesTest 
 {
     
@@ -13,15 +20,17 @@ public class AdvancedClassesTest
     // is created (or constructed), it makes an object from the class, or it
     // instantiates the class (creates an "instance")
     
-    
+    /**
+     * Default constructor, sets class properties
+     */
     public AdvancedClassesTest() {
-        System.out.println("Start Advanced classes...");
+        System.out.println("\nStarting Advanced classes...\n");
         
         // using the class to create an object with the default constructor:
         // class object = call constructor method (default)
         Person person = new Person();
         
-        System.out.println("Completed Advanced classes!");
+        System.out.println("\nCompleted Advanced classes!\n");
     }
 
 }
