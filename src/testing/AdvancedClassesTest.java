@@ -1,6 +1,9 @@
 
 package testing;
 
+import testing.advancedclasses.Person;
+
+
 public class AdvancedClassesTest 
 {
     
@@ -14,7 +17,9 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("Start Advanced classes...");
         
-        
+        // using the class to create an object with the default constructor:
+        // class object = call constructor method (default)
+        Person person = new Person();
         
         System.out.println("Completed Advanced classes!");
     }
