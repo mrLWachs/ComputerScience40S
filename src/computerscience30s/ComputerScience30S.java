@@ -552,9 +552,34 @@ public class ComputerScience30S {
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
+        // methods (functions, procedures) are named like variables, but use 
+        // verb type words starting with lowercase then using camel casing
+        // the round braces ( ) indicate a method
+        
+        // code to "jump" to a method, is "calling" the method
+        writeStar();
+        
+        // call it again
+        writeStar();
+        
+        // if you hold down the CTRL key, methods calls become links with the
+        // mouse to the method
+        
+        write("Spider-man");
         
         
         System.out.println("Learning methods complete!");
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
+    }
+
+    private static void write(String thing) {
+        // information (data) "passed" to this method is called the parameter
+        // if you use the lightbulb to write the method, you often should
+        // rewrite the name of that parameter
+        System.out.println(thing);
     }
     
 }
