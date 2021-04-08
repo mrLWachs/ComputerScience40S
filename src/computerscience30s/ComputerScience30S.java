@@ -551,7 +551,7 @@ public class ComputerScience30S {
 
     private static void learnMethods() {
         System.out.println("Start learning methods...");
-        
+
         // methods (functions, procedures) are named like variables, but use 
         // verb type words starting with lowercase then using camel casing
         // the round braces ( ) indicate a method
@@ -559,13 +559,29 @@ public class ComputerScience30S {
         // code to "jump" to a method, is "calling" the method
         writeStar();
         
-        // call it again
+        // call it again        
         writeStar();
         
         // if you hold down the CTRL key, methods calls become links with the
         // mouse to the method
         
+        // When we call a method, we can place "data" inside the round 
+        // brackets and that data is "passed" over to the method
+        // the data being passed from the method call is named the
+        // "argument" the variable that recieves the data is named
+        // the "parameter" (you can always change the argument) 
+        
         write("Spider-man");
+        
+        write("Larry");
+        write("Ironman");
+        write("Ben 10");
+        
+        // you can have multiple parameters/arguments in a method
+        // which are separated with commas
+        
+        writeLotsOf("Dalmations",101);
+        writeLotsOf("Problems", 99);
         
         
         System.out.println("Learning methods complete!");
@@ -581,7 +597,13 @@ public class ComputerScience30S {
         // rewrite the name of that parameter
         System.out.println(thing);
     }
-    
+
+    private static void writeLotsOf(String thing, int times) {
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
+    }
+
 }
 
 
