@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing.advancedclasses;
 
+
 /**
  * Person.java - represents a person, remember that classes are composed of
  * properties (things about it, descriptors, adjectives) and methods (things
@@ -9,30 +10,30 @@ package testing.advancedclasses;
  * class to create an object
  *
  * @author Mr. Wachs
- * @since Sep. 30, 2019, 11:43:07 a.m.
+ * @since April 2021
  */
 public class Person 
 {
-
-    // Properties...
-    // (are "things about the class", descriptors, adjectives, variables)
     
+    // Properties...
+    // "things about the class", descriptors, adjectives, variables, storage
     String name;
     int age;
     
+
     // Methods...
-    // (are "things class ca do", action, verb, include "construtor methods")
+    // "things the class can do", actions, verbs, include "construcotr methods"
     
     /**
      * Default constructor, sets class properties
      */
     public Person() {
-        name = "Jane D'oh";
+        name = "Jane D'Oh";
         age = 0;
     }
     
-    void talk() {
+    public void talk() {
         System.out.println(name + " is " + age);
     }
-    
+
 }

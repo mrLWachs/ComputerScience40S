@@ -5,6 +5,7 @@ package testing;
 /** Required imports */
 import testing.advancedclasses.Person;
 
+
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
@@ -26,9 +27,13 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("\nStarting Advanced classes...\n");
         
-        // using the class to create an object with the default constructor:
+        // Using the class to create an object with the default constructor:
         // class object = call constructor method (default)
+        
         Person person = new Person();
+        
+        // Call one of the methods in this object (of the class)
+        person.talk();
         
         System.out.println("\nCompleted Advanced classes!\n");
     }
