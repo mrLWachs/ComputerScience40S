@@ -583,6 +583,17 @@ public class ComputerScience30S {
         writeLotsOf("Dalmations",101);
         writeLotsOf("Problems", 99);
         
+        // you can make methods that "send back"
+        // information. The previous methods, needed
+        // information inputted (as parameters or void)
+        
+       
+        int number = giveMeNumber();
+
+        write("The number is " + number);
+
+        
+        
         
         System.out.println("Learning methods complete!");
     }
@@ -605,6 +616,20 @@ public class ComputerScience30S {
             write(thing);
         }
     }
+
+    private static int giveMeNumber() {
+        return random(1,100);
+    }
+    
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;        
+    }
+    
 
 }
 
