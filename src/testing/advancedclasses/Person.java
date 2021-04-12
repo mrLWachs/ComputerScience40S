@@ -32,6 +32,9 @@ public class Person
         age = 0;
     }
     
+    /**
+     * Method to simulate this person "talking" out information about the object
+     */
     public void talk() {
         System.out.println(name + " is " + age);
     }
