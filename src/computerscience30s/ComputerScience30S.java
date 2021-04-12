@@ -599,6 +599,8 @@ public class ComputerScience30S {
     }
 
     private static void writeLotsOf(String thing, int times) {
+        // A method can have no parameters, one parameter, or lots of
+        // parameters. If it has more than one, they are separated by a comma
         for (int i = 0; i < times; i++) {
             write(thing);
         }
