@@ -37,7 +37,9 @@ public class AdvancedClassesTest
         person.talk();
         
         // Instantiate (create) and object of type student
+        
         Student student = new Student("Smelly Teenager",17,101);
+        
         student.talk();                     // inherited method
         
         
