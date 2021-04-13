@@ -552,24 +552,24 @@ public class ComputerScience30S {
     private static void learnMethods() {
         System.out.println("Start learning methods...");
 
-        // methods (functions, procedures) are named like variables, but use 
+        // Methods (functions, procedures) are named like variables, but use 
         // verb type words starting with lowercase then using camel casing
         // the round braces ( ) indicate a method
         
-        // code to "jump" to a method, is "calling" the method
+        // Code to "jump" to a method, is "calling" the method
         writeStar();
         
-        // call it again        
+        // If you hold down the CTRL key, methods calls become links with the
+        // mouse to the method, or use the "navigator" window on the left
+        
+        // Call it again        
         writeStar();
-        
-        // if you hold down the CTRL key, methods calls become links with the
-        // mouse to the method
-        
-        // When we call a method, we can place "data" inside the round 
-        // brackets and that data is "passed" over to the method
-        // the data being passed from the method call is named the
-        // "argument" the variable that recieves the data is named
-        // the "parameter" (you can always change the argument) 
+                
+        // When we call a method, we can place "data" inside the round brackets
+        // and that data is "passed" over to the method the data being passed
+        // from the method call is named the "argument" the variable that 
+        // receives the data is named the "parameter" (you can always change  
+        // the argument) 
         
         write("Spider-man");
         
@@ -577,23 +577,20 @@ public class ComputerScience30S {
         write("Ironman");
         write("Ben 10");
         
-        // you can have multiple parameters/arguments in a method
-        // which are separated with commas
+        // You can have multiple parameters/arguments in a method which are 
+        // separated with commas
         
-        writeLotsOf("Dalmations",101);
+        writeLotsOf("dalmations",101);
+        
         writeLotsOf("Problems", 99);
         
-        // you can make methods that "send back"
-        // information. The previous methods, needed
-        // information inputted (as parameters or void)
+        // You can make methods that "send back" (output) information, the  
+        // previous methods needed information (inputs) as parameters or empty
+        // brackets () if they did not need information passed
         
-       
         int number = giveMeNumber();
-
-        write("The number is " + number);
-
         
-        
+        write("Number is " + number);
         
         System.out.println("Learning methods complete!");
     }
@@ -603,34 +600,34 @@ public class ComputerScience30S {
     }
 
     private static void write(String thing) {
-        // information (data) "passed" to this method is called the parameter
+        // Information (data) "passed" to this method is called the parameter,
         // if you use the lightbulb to write the method, you often should
         // rewrite the name of that parameter
         System.out.println(thing);
     }
 
     private static void writeLotsOf(String thing, int times) {
-        // A method can have no parameters, one parameter, or lots of
-        // parameters. If it has more than one, they are separated by a comma
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
         for (int i = 0; i < times; i++) {
             write(thing);
         }
     }
 
     private static int giveMeNumber() {
-        return random(1,100);
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
+        return random(1, 100);
     }
-    
     
     private static int random(int low, int high) {
         double seed   = Math.random();
         double L      = (double)low;
         double H      = (double)high;
-        double number = (H - L + 1) * seed + L;
-        return (int)number;        
+        double number = (H - L + 1) * seed + L; 
+        return (int)number;
     }
     
-
 }
 
 
