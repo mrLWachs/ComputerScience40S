@@ -4,6 +4,7 @@ package testing;
 
 /** Required imports */
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Student;
 
 
 /**
@@ -32,7 +33,10 @@ public class AdvancedClassesTest
         Person person = new Person();
         person.talk();  // Call one of the methods in this object (of the class)
         
-        
+        // Instantiate (create) and object of type student        
+        Student student = new Student("Smelly Teenager",17,101);        
+        student.talk();                     // inherited method from person
+        student.study();                    // method for just this class
         
         System.out.println("\nCompleted Advanced classes!\n");
     }
