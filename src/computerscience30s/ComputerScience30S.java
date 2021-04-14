@@ -592,13 +592,22 @@ public class ComputerScience30S {
         
         write("Number is " + number);
         
+        
         System.out.println("Learning methods complete!");
     }
 
+    /**
+     * It writes a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
-
+    
+    /**
+     * To write something on the screen (naturally, you moron!)
+     * 
+     * @param thing the something to write
+     */
     private static void write(String thing) {
         // Information (data) "passed" to this method is called the parameter,
         // if you use the lightbulb to write the method, you often should
@@ -606,6 +615,12 @@ public class ComputerScience30S {
         System.out.println(thing);
     }
 
+    /**
+     * Writes lots of things on the screen
+     * 
+     * @param thing the thing to write
+     * @param times how many times to write it
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // if it has more than one parameter, they are separated by commas
@@ -614,12 +629,25 @@ public class ComputerScience30S {
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return a random number between 1 and 100
+     */    
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
         // which means the method will "return" that data type in the method
         return random(1, 100);
     }
     
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and less than or
+     * equal to the high number
+     */
     private static int random(int low, int high) {
         double seed   = Math.random();
         double L      = (double)low;
