@@ -493,8 +493,7 @@ public class ComputerScience30S {
             choice = JOptionPane.showInputDialog("Enter password");
             
         } while (choice.equalsIgnoreCase(password) == false);
-        
-        
+                
         JOptionPane.showMessageDialog(null, "You got it");
         
         // The "for" loop is used for counting (and for the upcoming unit
@@ -558,9 +557,10 @@ public class ComputerScience30S {
     private static void learnMethods() {
         System.out.println("Start learning methods...");
 
-        // Methods (functions, procedures) are named like variables, but use 
-        // verb type words starting with lowercase then using camel casing
-        // the round braces ( ) indicate a method
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method
         
         // Code to "jump" to a method, is "calling" the method
         writeStar();
@@ -599,12 +599,11 @@ public class ComputerScience30S {
         write("Number is " + number);
         
         // Overloaded methods are methods with the same name, BUT different
-        // parameters
+        // parameters / arguments
         
         output("Hi");
         output("Hello","Overloading example");
-        
-        
+                
         System.out.println("Learning methods complete!");
     }
 
