@@ -601,21 +601,21 @@ public class ComputerScience30S {
         // Overloaded methods are methods with the same name, BUT different
         // parameters / arguments
         
-        output("Hi");
-        output("Hello","Overloading example");
+        output("Hello");
+        output("Good-bye","Learning methods");
                 
         System.out.println("Learning methods complete!");
     }
-
+    
     /**
-     * It writes a star on the screen
+     * Writes a star on the screen
      */
     private static void writeStar() {
         System.out.println("*");
     }
-    
+        
     /**
-     * To write something on the screen (naturally, you moron!)
+     * Writes something on the screen
      * 
      * @param thing the something to write
      */
@@ -625,11 +625,11 @@ public class ComputerScience30S {
         // rewrite the name of that parameter
         System.out.println(thing);
     }
-
+    
     /**
-     * Writes lots of things on the screen
+     * Writes something on the screen multiple times
      * 
-     * @param thing the thing to write
+     * @param thing the something to write
      * @param times how many times to write it
      */
     private static void writeLotsOf(String thing, int times) {
@@ -643,8 +643,8 @@ public class ComputerScience30S {
     /**
      * Gives you a random number
      * 
-     * @return a random number between 1 and 100
-     */    
+     * @return random number between 1 and 100
+     */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
         // which means the method will "return" that data type in the method
@@ -677,16 +677,16 @@ public class ComputerScience30S {
     }
 
     /**
-     * Displays text in a dialog
+     * Displays text in a dialog with a title at the top of the dialog
      * 
      * @param text the text to display
-     * @param title the title at the top of the dialog
+     * @param title what to show at the top of the dialog
      */
     private static void output(String text, String title) {
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }
-    
+
 }
 
 // <editor-fold>   
