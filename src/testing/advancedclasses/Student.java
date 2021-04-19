@@ -24,6 +24,9 @@ public class Student extends Person
 
     int studentNumber; // property of this class (also inherited properties)
     
+    private Book book;  // "has a" relationship (association or "usage")
+    
+    
     /**
      * Class constructor, it sets class properties. When a class has one or 
      * more parameter(s), it is no longer a default constructor.
@@ -39,8 +42,8 @@ public class Student extends Person
      */
     public Student(String name, int age, int studentNumber) {
         super.name         = name;
-        super.age          = age;
         this.studentNumber = studentNumber;
+        super.setAge(age);  // calling the mutator method for private property
     }
     
     /**
@@ -48,6 +51,16 @@ public class Student extends Person
      */
     public void study() {
         System.out.println("working hard");
-    }    
+    } 
+    
+    /**
+     * This is a "over-ride" method, this method will (when called)
+     * run "instead of" the method that was inherited - because it
+     * "over-rides" that other method 
+     */
+    public void talk() {
+        super.talk();           // First call method from super (parent) class
+        System.out.println("\tStudent number: " + studentNumber);
+    }
     
 }

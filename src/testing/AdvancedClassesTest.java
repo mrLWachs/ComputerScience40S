@@ -33,10 +33,15 @@ public class AdvancedClassesTest
         Person person = new Person();
         person.talk();  // Call one of the methods in this object (of the class)
         
+        // The "modifier" words "private" and "public" can be used on properties
+        // and methods to encapsulate private properties or methods as needed
+        person.name = "Dave";   // Public property CAN be accessed
+        // person.age = 18; // Can't change "private" (encapsulated) properties
+                
         // Instantiate (create) and object of type student        
         Student student = new Student("Smelly Teenager",17,101);        
-        student.talk();                     // inherited method from person
-        student.study();                    // method for just this class
+        student.talk();                     // Inherited method from person
+        student.study();                    // Method for just this class
         
         System.out.println("\nCompleted Advanced classes!\n");
     }
