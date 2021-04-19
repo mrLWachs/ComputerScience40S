@@ -16,6 +16,7 @@ public class Person
 {
     
     // Properties...
+    // =============
     // The "things about the class", descriptors, adjectives, variables, storage
     
     public String name;
@@ -25,6 +26,7 @@ public class Person
     
 
     // Methods...
+    // ==========
     // The "things classes can do", actions, verbs, including "constructors"
     
     /**
