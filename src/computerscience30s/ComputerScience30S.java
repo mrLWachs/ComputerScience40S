@@ -27,7 +27,7 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        learnIntroToJava();         // "calling" a method means run the code
+        learnIntroToJava();         // "calling" a method means run the code
         learnMethods();
     }
 
@@ -683,6 +683,8 @@ public class ComputerScience30S {
      * @param title what to show at the top of the dialog
      */
     private static void output(String text, String title) {
+        // Overloaded methods are methods with the same name, BUT different
+        // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }
