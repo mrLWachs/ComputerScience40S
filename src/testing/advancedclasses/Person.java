@@ -19,8 +19,10 @@ public class Person
     // =============
     // The "things about the class", descriptors, adjectives, variables, storage
     
-    String name;
-    int age;      
+    public String name;
+    private int age;                        // encapsulated property uses       
+    // "modifier" words to "encapsulate" a property in a class (means it can 
+    // only be accessed inside the class) like a "private room"
     
 
     // Methods...
