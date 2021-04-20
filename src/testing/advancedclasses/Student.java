@@ -40,14 +40,14 @@ public class Student extends Person
     public Student(String name, int age, int studentNumber) {
         super.name         = name;
         this.studentNumber = studentNumber;
-        
+        super.setAge(age);  // calling the mutator method for private property
     }
     
     /**
      * Method just for this class
      */
     public void study() {
-        System.out.println("working hard!");
+        System.out.println("\tWorking hard!");
     }    
     
     /**
@@ -55,6 +55,7 @@ public class Student extends Person
      * run "instead of" the method that was inherited - because it
      * "over-rides" that other method 
      */
+    @Override
     public void talk() {
         super.talk();           // First call method from super (parent) class
         System.out.println("\tStudent Number = " + studentNumber);

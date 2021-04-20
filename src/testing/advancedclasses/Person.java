@@ -46,5 +46,26 @@ public class Person
     public void talk() {
         System.out.println(name + " is " + age);
     }
+    
+    /**
+     * A mutator method to "change" (or mutate) the private property of this 
+     * class which cannot be changed outside the class
+     * 
+     * @param age the new age to mutate (set) the property to
+     */
+    public void setAge(int age) {
+        // A programmer could potentially write error checking code here..
+        this.age = age;
+    }
+    
+    /**
+     * A accessor method to "access" (or read) the private property of this 
+     * class which cannot be read outside the class
+     * 
+     * @return the object's current age value to "see" (access)
+     */
+    public int getAge() {
+        return age;
+    }
  
 }
