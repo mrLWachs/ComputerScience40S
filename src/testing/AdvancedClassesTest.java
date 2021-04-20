@@ -31,14 +31,14 @@ public class AdvancedClassesTest
         // Using the class to create an object with the default constructor:
         // class object = call constructor method (default)        
         Person person = new Person();
-        person.name = "Dave Smith";
+        person.name = "Dave Smith"; // "public" properties can be accessed
         // person.age = 16; // Can't change "private" (encapsulated) properties
         person.talk();  // Call one of the methods in this object (of the class)
         
         // Instantiate (create) and object of type student        
         Student student = new Student("Smelly Teenager",17,101);        
         student.talk();                     // Inherited method from person
-        student.study();
+        student.study();                    // Method for just this class
         
         System.out.println("\nCompleted Advanced classes!\n");
     }

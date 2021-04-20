@@ -65,7 +65,7 @@ public class Person
      * @return the object's current age value to "see" (access)
      */
     public int getAge() {
-        return age;
+        return this.age;        // The encapsulated ("private") property
     }
  
 }

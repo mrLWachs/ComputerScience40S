@@ -23,6 +23,8 @@ public class Student extends Person
 {
 
     int studentNumber; // property of this class (also inherited properties)
+    
+    private Book book;  // "has a" relationship (association or "usage")
         
     /**
      * Class constructor, it sets class properties. When a class has one or 
