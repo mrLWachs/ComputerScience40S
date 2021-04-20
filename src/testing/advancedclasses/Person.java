@@ -19,10 +19,8 @@ public class Person
     // =============
     // The "things about the class", descriptors, adjectives, variables, storage
     
-    public String name;
-    private int age;                        // encapsulated property uses    
-    // "modifier" words to "encapsulate" a property in a class (means it can 
-    // only be accessed inside the class) like a "private room"
+    String name;
+    int age;      
     
 
     // Methods...
@@ -46,26 +44,5 @@ public class Person
     public void talk() {
         System.out.println(name + " is " + age);
     }
-
-    /**
-     * A mutator method to "change" (or mutate) the private property of this 
-     * class which cannot be changed outside the class
-     * 
-     * @param age the new age to mutate (set) the property to
-     */
-    public void setAge(int age) {
-        // A programmer could potentially write error checking code here..
-        this.age = age;
-    }
-    
-    /**
-     * A accessor method to "access" (or read) the private property of this 
-     * class which cannot be read outside the class
-     * 
-     * @return the object's current age value to "see" (access)
-     */
-    public int getAge() {
-        return age;
-    }
-        
+ 
 }
