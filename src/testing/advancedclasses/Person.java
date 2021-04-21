@@ -15,24 +15,35 @@ package testing.advancedclasses;
 public class Person 
 {
     
-    // Properties...
-    // =============
+    // <editor-fold>  
+    // PROPERTIES..............................................................
     // The "things about the class", descriptors, adjectives, variables, storage
-    
-    public String name;
-    private int age;                        // encapsulated property uses       
-    // "modifier" words to "encapsulate" a property in a class (means it can 
-    // only be accessed inside the class) like a "private room"
-    
-
-    // Methods...
-    // ==========
-    // The "things classes can do", actions, verbs, including "constructors"
+    // </editor-fold>
     
     /**
-     * Default constructor method, sets the class properties when the class is
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by anther class "using" this class
+     */
+    public String name;
+    
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private int age;
+    
+
+    // <editor-fold> 
+    // METHODS.................................................................
+    // The "things classes can do", actions, verbs, including "constructors"
+    // </editor-fold>
+    
+    /**
+     * Class constructor method, sets the class properties when the class is
      * instantiated into an object - in other words, when a person object is
-     * "built" it calls this method to build it
+     * "built" it calls this method to build it. Constructor methods with no 
+     * parameters are called "default" constructors.
      */
     public Person() {
         name = "Jane D'Oh";

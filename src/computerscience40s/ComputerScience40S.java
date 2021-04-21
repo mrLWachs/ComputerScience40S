@@ -32,7 +32,7 @@ public class ComputerScience40S
 }
 
 
-
+// <editor-fold>   
 
 // NETBEANS TIPS:
 // ==============
@@ -54,17 +54,17 @@ public class ComputerScience40S
 //      error and a potential fix (if you click on the lightbulb)
 // (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
 //      "Java", select "Java Main Class", and "Open in Editor" and the enter 
-//      this into the temple:
+//      this into the temple (but use the slash "/" instead of "|"):
 //
-//      /**
-//        * ${name}.java - 
-//        *
-//        * @author Mr. Wachs 
-//        * @since ${date} 
-//        */
-//       public class ${name} 
+//      /** 
+//       * ${name}.java - 
+//       *
+//       * @author Mr. Wachs 
+//       * @since ${date} 
+//       */
+//      public class ${name} 
 //       { .... etc .....     
-// 
+//
 // (13) When printing code for hand in (this only needs to be done once), click
 //      on "Print Options" and uncheck everything previously checked off, and
 //      then check off "Print as in Editor", then either print it to a PDF 
@@ -85,7 +85,7 @@ public class ComputerScience40S
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
 // (18) If you write the "call" to a method, before writing the method 
-//      itself, the lightbulb (see tip 8) will help you write it
+//      itself, the lightbulb (see tip 11) will help you write it
 // (19) If you hold down the CTRL key, methods calls become links with the 
 //      mouse to the method (even ones we don't write)
 // (20) On the left side window, the Navigator window helps find and jump to
@@ -97,3 +97,4 @@ public class ComputerScience40S
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
 
+// </editor-fold>
