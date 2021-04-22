@@ -3,7 +3,6 @@
 package testing;
 
 /** Required imports */
-import testing.advancedclasses.Book;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 
@@ -45,15 +44,22 @@ public class AdvancedClassesTest
         
         // all classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
+       
         Object object1 = new Object();
         Object object2 = new Object();
-        Object object3 = object1;        
+        Object object3 = object1;
         
         // Built into the Object class are a number of methods that all other
         // classes inherit. These include some that are not relevant in this
         // unit, and others like:
         
         // The toString(), clone(), and equals() methods
+        
+        System.out.println("object 1 = " + object1.toString());
+        System.out.println("object 2 = " + object2.toString());
+        System.out.println("object 3 = " + object3.toString());
+        
+        
         
         
         
