@@ -96,5 +96,62 @@ public class ComputerScience40S
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (23) To modify the template of all new classes, Tools -> Templates, scroll 
+//      down and click on the "+" beside "Java", select "Java Class" and use 
+//      ALL the code (uncommented) below:
+///** required package class namespace */
+//<#if package?? && package != "">
+//package ${package};
+//
+//</#if>
+// 
+///**
+// * ${name}.java - description
+// *
+// * @author Mr. Wachs
+// * @since ${date}, ${time}
+// */
+//public class ${name} 
+//{
+//
+//    /**
+//     * Default constructor, set class properties
+//     */
+//    public ${name}() {
+//        
+//    }
+//     
+//    /**
+//     * String representation of this object
+//     *
+//     * @return The object represented as a String
+//     */
+//    @Override
+//    public String toString() {
+//        return "${name}: " + super.toString();
+//    }
+//   
+//    /**
+//     * Deep comparison, determines if two objects are "equal" in this context
+//     *
+//     * @param object the object to compare to
+//     * @return the objects are "equal" (true) or not (false)
+//     */
+//    @Override
+//    public boolean equals(Object object) {
+//        return super.equals(object);
+//    }
+//       
+//    /**
+//     * a Deep clone, creates a duplicate object using new memory
+//     *
+//     * @return a "clone" of the object using new memory
+//     */
+//    @Override
+//    public ${name} clone() {
+//        return this;
+//    }
+//    
+//}
 
 // </editor-fold>
