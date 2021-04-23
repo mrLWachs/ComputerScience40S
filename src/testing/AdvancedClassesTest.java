@@ -55,9 +55,33 @@ public class AdvancedClassesTest
         
         // The toString(), clone(), and equals() methods
         
-        System.out.println("object 1 = " + object1.toString());
-        System.out.println("object 2 = " + object2.toString());
-        System.out.println("object 3 = " + object3.toString());
+        System.out.println("Object 1 is " + object1.toString());
+        System.out.println("Object 2 is " + object2.toString());
+        System.out.println("Object 3 is " + object3.toString());
+        
+        // Use the equals method to check if two objects are "equal"
+        
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
+        
+        // Check the over-ride of the toString() and equals() in person
+        // Create 3 person identifier names, but only one memry location for
+        // all three
+        
+        Person person1 = new Person();        
+        Person person2 = person1;        
+        Person person3 = person2;                
+        
+        System.out.println("P1=" + person1.toString());
+        System.out.println("P2=" + person2.toString());
+        System.out.println("P3=" + person3.toString());
+                
+        if (person1.equals(person2)) System.out.println("P1==P2");
+        if (person2.equals(person3)) System.out.println("P2==P3");
+        if (person1.equals(person3)) System.out.println("P1==P3");
+        
+        
         
         
         

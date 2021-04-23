@@ -78,5 +78,26 @@ public class Person
     public int getAge() {
         return this.age;        // The encapsulated ("private") property
     }
- 
+     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return name + " is " + age;
+    }
+   
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {        
+        return true;
+    }
+    
 }
