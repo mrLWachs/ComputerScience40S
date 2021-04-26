@@ -42,56 +42,69 @@ public class AdvancedClassesTest
         
         // The Object class (parent class of all classes)
         
-        // all classes (including ones we create) inherit from the object 
+        // All classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
        
         Object object1 = new Object();
         Object object2 = new Object();
-        Object object3 = object1;
+        Object object3 = object1;           // Same address as the first object
         
         // Built into the Object class are a number of methods that all other
         // classes inherit. These include some that are not relevant in this
-        // unit, and others like:
+        // unit, and others like the toString(), clone(), and equals() methods
         
-        // The toString(), clone(), and equals() methods
+        // The toString() method of the object class outputs information 
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory
         
-        System.out.println("Object 1 is " + object1.toString());
-        System.out.println("Object 2 is " + object2.toString());
-        System.out.println("Object 3 is " + object3.toString());
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
         
-        // Use the equals method to check if two objects are "equal"
+        // The equals() method of the object class checks if two objects are 
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)
         
-        if (object1.equals(object2)) System.out.println("O1==O2");
-        if (object2.equals(object3)) System.out.println("O2==O3");
-        if (object1.equals(object3)) System.out.println("O1==O3");
+        if (object1.equals(object2)) System.out.println("O1 == O2");
+        if (object2.equals(object3)) System.out.println("O2 == O3");
+        if (object1.equals(object3)) System.out.println("O1 == O3");
         
-        // Check the over-ride of the toString() and equals() in person
-        // Create 3 person identifier names, but only one memory location for
-        // all three
+        // Now since these two methods are inherited by ALL class objects, we
+        // can use this methods with Person class objects:
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three 
         
         Person person1 = new Person();
-        Person person2 = person1;
-        Person person3 = person2;
+        Person person2 = person1;           // Same address as the first object
+        Person person3 = person2;           // Same as address 2 (which is 1)
         
         System.out.println("P1 = " + person1.toString());
         System.out.println("P2 = " + person2.toString());
         System.out.println("P3 = " + person3.toString());
+                
+        if (person1.equals(person2)) System.out.println("P1 == P2");
+        if (person2.equals(person3)) System.out.println("P2 == P3");
+        if (person1.equals(person3)) System.out.println("P1 == P3");
         
-        if (person1.equals(person2)) System.out.println("P1==P2");
-        if (person2.equals(person3)) System.out.println("P2==P3");
-        if (person1.equals(person3)) System.out.println("P1==P3");
-        
-        Student student1 = new Student("S1", 1, 1);
-        Student student2 = new Student("S2", 2, 2);
-        Student student3 = new Student("S1", 1, 1);
+        // Then we will over-ride the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this). 
+                        
+        Student student1 = new Student("Name1", 10, 100);
+        Student student2 = new Student("Name2", 20, 200);
+        Student student3 = new Student("Name1", 10, 100);
         
         System.out.println(student1.toString());
         System.out.println(student2.toString());
         System.out.println(student3.toString());
         
-        if (student1.equals(student2)) System.out.println("S1==S2");
-        if (student2.equals(student3)) System.out.println("S2==S3");
-        if (student1.equals(student3)) System.out.println("S1==S3");  
+        if (student1.equals(student2)) System.out.println("S1 == S2");
+        if (student2.equals(student3)) System.out.println("S2 == S3");
+        if (student1.equals(student3)) System.out.println("S1 == S3");  
             
             
             

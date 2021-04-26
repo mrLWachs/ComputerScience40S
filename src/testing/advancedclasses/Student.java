@@ -70,8 +70,7 @@ public class Student extends Person
      */
     @Override
     public String toString() {
-        return super.toString() + " Student: " + "student number = " + 
-                                  studentNumber;
+        return super.toString() + " Student: " + "number: " + studentNumber;
     }
     
     /**
