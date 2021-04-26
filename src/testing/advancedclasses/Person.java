@@ -86,9 +86,9 @@ public class Person
      */
     @Override
     public String toString() {
-        return name + " is " + age;
+        return "Person: " + name + " is " + age;
     }
-   
+    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -96,7 +96,13 @@ public class Person
      * @return the objects are "equal" (true) or not (false)
      */
     @Override
-    public boolean equals(Object object) {        
+    public boolean equals(Object object) {
+        // shallow comparison might be code like: return true;
+        // We want to over-ride to make a deeper comparison
+        Person that = (Person)object;
+        // We cast the object into a Person object
+        if (!this.name.equals(that.name))   return false;
+        if (this.getAge() != that.getAge()) return false;
         return true;
     }
     

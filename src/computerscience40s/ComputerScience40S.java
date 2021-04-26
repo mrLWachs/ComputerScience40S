@@ -99,6 +99,7 @@ public class ComputerScience40S
 // (23) To modify the template of all new classes, Tools -> Templates, scroll 
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
+//
 ///** required package class namespace */
 //<#if package?? && package != "">
 //package ${package};

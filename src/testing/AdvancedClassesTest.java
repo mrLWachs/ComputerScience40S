@@ -66,22 +66,38 @@ public class AdvancedClassesTest
         if (object1.equals(object3)) System.out.println("O1==O3");
         
         // Check the over-ride of the toString() and equals() in person
-        // Create 3 person identifier names, but only one memry location for
+        // Create 3 person identifier names, but only one memory location for
         // all three
         
-        Person person1 = new Person();        
-        Person person2 = person1;        
-        Person person3 = person2;                
+        Person person1 = new Person();
+        Person person2 = person1;
+        Person person3 = person2;
         
-        System.out.println("P1=" + person1.toString());
-        System.out.println("P2=" + person2.toString());
-        System.out.println("P3=" + person3.toString());
-                
+        System.out.println("P1 = " + person1.toString());
+        System.out.println("P2 = " + person2.toString());
+        System.out.println("P3 = " + person3.toString());
+        
         if (person1.equals(person2)) System.out.println("P1==P2");
         if (person2.equals(person3)) System.out.println("P2==P3");
         if (person1.equals(person3)) System.out.println("P1==P3");
         
+        Student student1 = new Student("S1", 1, 1);
+        Student student2 = new Student("S2", 2, 2);
+        Student student3 = new Student("S1", 1, 1);
         
+        System.out.println(student1.toString());
+        System.out.println(student2.toString());
+        System.out.println(student3.toString());
+        
+        if (student1.equals(student2)) System.out.println("S1==S2");
+        if (student2.equals(student3)) System.out.println("S2==S3");
+        if (student1.equals(student3)) System.out.println("S1==S3");  
+            
+            
+            
+            
+            
+            
         
         
         

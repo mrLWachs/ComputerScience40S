@@ -63,4 +63,28 @@ public class Student extends Person
         System.out.println("\tStudent Number = " + studentNumber);
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return super.toString() + " Student: " + "student number = " + 
+                                  studentNumber;
+    }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        Student that = (Student)object;        
+        if (this.studentNumber != that.studentNumber) return false;
+        return super.equals(that);
+    }
+    
 }
