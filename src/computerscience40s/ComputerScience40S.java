@@ -28,7 +28,7 @@ public class ComputerScience40S
         Tester tester = new Tester();        
         System.out.println("\nComputer Science 40S complete!\n");
     }
-    
+
 }
 
 
@@ -100,7 +100,7 @@ public class ComputerScience40S
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
 //
-///** required package class namespace */
+///** Required package class namespace */
 //<#if package?? && package != "">
 //package ${package};
 //

@@ -97,7 +97,7 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
-        // shallow comparison might be code like: return true;
+        // Shallow comparison might be code like: return true;
         // We want to over-ride to make a deeper comparison
         Person that = (Person)object;
         // We cast the object into a Person object

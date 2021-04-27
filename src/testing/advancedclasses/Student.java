@@ -70,7 +70,7 @@ public class Student extends Person
      */
     @Override
     public String toString() {
-        return super.toString() + " Student: " + "number: " + studentNumber;
+        return super.toString() + " Student: number: " + studentNumber;
     }
     
     /**
@@ -81,9 +81,9 @@ public class Student extends Person
      */
     @Override
     public boolean equals(Object object) {
-        Student that = (Student)object;        
+        Student that = (Student)object;
         if (this.studentNumber != that.studentNumber) return false;
         return super.equals(that);
     }
-    
+        
 }
