@@ -33,6 +33,14 @@ public class Person
      */
     private int age;
     
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean isMale;
+        
 
     // <editor-fold> 
     // METHODS.................................................................
@@ -46,8 +54,9 @@ public class Person
      * parameters are called "default" constructors.
      */
     public Person() {
-        name = "Jane D'Oh";
-        age  = 0;
+        name   = "Jane D'Oh";
+        age    = 0;
+        isMale = false;
     }
     
     /**
@@ -55,7 +64,7 @@ public class Person
      * it outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(name + " is " + age);
+        System.out.println(this.toString());
     }
     
     /**
@@ -86,7 +95,7 @@ public class Person
      */
     @Override
     public String toString() {
-        return "Person: " + name + " is " + age;
+        return "Person: " + name + " is " + age + " is " + isMale;
     }
     
     /**
@@ -103,6 +112,7 @@ public class Person
         // We cast the object into a Person object
         if (!this.name.equals(that.name))   return false;
         if (this.getAge() != that.getAge()) return false;
+        if (this.isMale != that.isMale)     return false;
         return true;
     }
     
