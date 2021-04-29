@@ -16,7 +16,7 @@ public class Teacher extends Person
      * Class constructor, sets class properties
      * 
      * If a constructor has no parameters, it is called a "default constructor"
-     * When make a class, if you never write any constructors, NetBeans 
+     * When you create a class, if you never write any constructors, NetBeans 
      * (any compiler or IDE) will write a default constructor for you! 
      * HOWEVER...If you write a constructor, with parameters (in other words 
      * no longer a default) then it will NOT write a default for you
