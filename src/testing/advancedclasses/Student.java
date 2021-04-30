@@ -86,5 +86,18 @@ public class Student extends Person
         if (this.studentNumber != that.studentNumber) return false;
         return super.equals(that);
     }
+    
+    /**
+     * A deep clone, creates a duplicate object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        Student that = new Student(this.name, this.getAge(), 
+                                   this.studentNumber);
+        that.isAlive = this.isAlive;
+        return that;
+    }
         
 }

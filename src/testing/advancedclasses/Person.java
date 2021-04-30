@@ -117,4 +117,20 @@ public class Person
         return true;
     }
     
+    /**
+     * A deep clone, creates a duplicate object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // shallow clone would be: return this;
+        Person that = new Person();
+        // duplicate all the properties
+        that.name    = this.name;
+        that.isAlive = this.isAlive;
+        that.setAge(that.getAge());
+        return that;
+    }
+    
 }
