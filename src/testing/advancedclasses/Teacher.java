@@ -13,6 +13,12 @@ public class Teacher extends Person
 {
 
     /**
+     * An array of student objects, so the teacher has a association with these
+     * objects (or a "has a" relationship)
+     */
+    public Student[] students;
+    
+    /**
      * Class constructor, sets class properties
      * 
      * If a constructor has no parameters, it is called a "default constructor"
@@ -24,7 +30,11 @@ public class Teacher extends Person
      * @param name the name for this teacher
      */
     public Teacher(String name) {
-        
+        super();
+        super.name = name;
+        // Needs to instantiate (means "make instances of", "instance" is 
+        // another word for "object") the array
+        students = new Student[200];
     }
      
     /**
