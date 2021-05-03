@@ -106,6 +106,22 @@ public class AdvancedClassesTest
         if (student2.equals(student3)) System.out.println("S2 == S3");
         if (student1.equals(student3)) System.out.println("S1 == S3");  
             
+        // Test the deep clone method making a perfect clone with new memory
+        // allocated and test the equals and toString method. With the println
+        // method, it will call the toString method of an object automatically
+        
+        Person  personClone  = person.clone();
+        Student studentClone = student.clone();
+        
+        if (person.equals(personClone))   System.out.println(personClone);
+        if (student.equals(studentClone)) System.out.println(studentClone);
+        
+        
+        
+        
+        
+        
+        
         
             
             
