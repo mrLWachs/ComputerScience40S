@@ -88,16 +88,18 @@ public class Student extends Person
     }
     
     /**
-     * A deep clone, creates a duplicate object using new memory
-     * 
+     * a Deep clone, creates a duplicate object using new memory
+     *
      * @return a "clone" of the object using new memory
      */
     @Override
     public Student clone() {
-        Student that = new Student(this.name, this.getAge(), 
-                                   this.studentNumber);
+        Student that = new Student(this.name,
+                this.getAge(),this.studentNumber);
         that.isAlive = this.isAlive;
-        return that;
+        that.book = this.book;  
+        // book could potentially be cloned as well
+        return that;        
     }
         
 }
