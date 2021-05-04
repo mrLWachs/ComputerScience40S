@@ -98,7 +98,7 @@ public class Student extends Person
                 this.getAge(),this.studentNumber);
         that.isAlive = this.isAlive;
         that.book = this.book;  
-        // book could potentially be cloned as well
+        // Book could potentially be cloned as well
         return that;        
     }
         

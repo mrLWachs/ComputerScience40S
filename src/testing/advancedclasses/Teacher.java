@@ -11,12 +11,13 @@ package testing.advancedclasses;
  */
 public class Teacher extends Person
 {
-
+    
     /**
      * An array of student objects, so the teacher has a association with these
      * objects (or a "has a" relationship)
      */
     public Student[] students;
+    
     
     /**
      * Class constructor, sets class properties
@@ -30,11 +31,11 @@ public class Teacher extends Person
      * @param name the name for this teacher
      */
     public Teacher(String name) {
-        super();
+        super();    // call to the "super constructor"
         super.name = name;
-        // Needs to instantiate (means "make instances of", "instance" is 
+        // Need to instantiate (means "make instances of", "instance" is
         // another word for "object") the array
-        students = new Student[200];
+        students = new Student[100];
     }
      
     /**
@@ -44,7 +45,15 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        return "Teacher: " + super.toString();
+        // Create a temporary variable to hold all the output data
+        String text = "Teacher: " + super.toString();
+        // Now add all the student data to this
+        
+        // Loop through all the array (using a new type of loop)
+        
+        // output only students that "exist"
+                
+        return text;
     }
    
     /**

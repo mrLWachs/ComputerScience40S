@@ -117,18 +117,30 @@ public class AdvancedClassesTest
         if (person.equals(personClone))   System.out.println(personClone);
         if (student.equals(studentClone)) System.out.println(studentClone);
         
-        // Teacher class uses inheritance ("is a" person)
+        // Teacher class uses inheritance ("is a" person), and association
+        // ("has a" person)
         
         Teacher teacher = new Teacher("Ms. Teacherson");
         System.out.println(teacher);
         
-        // "Give our teacher a student" - means we assign a student object 
-        // to the index of the array property of the teacher object
+        // "Give our teacher some students" - mean we will assign a student
+        // object (or "instance") to the index of the array property of the
+        // teacher object
+        
         teacher.students[0] = student;
         teacher.students[1] = student1;
         teacher.students[2] = student2;
         teacher.students[3] = student3;
         teacher.students[4] = studentClone;
+        
+        // Output the teacher object again
+        System.out.println(teacher.toString());
+        
+        
+        
+        
+        
+        
         
         
             

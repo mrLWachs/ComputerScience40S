@@ -126,7 +126,7 @@ public class Person
     public Person clone() {
         // Shallow clone would be: return this;
         Person that = new Person();
-        // duplicate all the properties
+        // Duplicate all the properties
         that.name    = this.name;
         that.isAlive = this.isAlive;
         that.setAge(this.getAge());
