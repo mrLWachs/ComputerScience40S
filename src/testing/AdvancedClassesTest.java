@@ -133,11 +133,8 @@ public class AdvancedClassesTest
         teacher.students[3] = student3;
         teacher.students[4] = studentClone;
         
-        // Output the teacher object again
+        // Output our teacher again
         System.out.println(teacher.toString());
-        
-        
-        
         
         
         

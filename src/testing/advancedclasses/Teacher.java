@@ -47,15 +47,26 @@ public class Teacher extends Person
     public String toString() {
         // Create a temporary variable to hold all the output data
         String text = "Teacher: " + super.toString();
-        // Now add all the student data to this
-        
-        // Loop through all the array (using a new type of loop)
-        
-        // output only students that "exist"
-                
+        // Now add all the student data (from the array) to this variable
+        // by looping through the entire array (start to finish) - using a 
+        // NEW type of loop called the "enhanced for loop". to create the 
+        // enhanced for loop use the shortcut: type "for" then CTRL + SPACE
+        // and pick the fourth option from the top...        
+        for (Student student : students) {
+            
+        }
         return text;
     }
    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
