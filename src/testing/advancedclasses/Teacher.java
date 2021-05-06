@@ -14,7 +14,8 @@ public class Teacher extends Person
     
     /**
      * An array of student objects, so the teacher has a association with these
-     * objects (or a "has a" relationship)
+     * objects (or a "has a" relationship) - it is "composed of" (composition)
+     * student objects
      */
     public Student[] students;
     
@@ -49,19 +50,21 @@ public class Teacher extends Person
         String text = "Teacher: " + super.toString();
         // Now add all the student data (from the array) to this variable by
         // looping through the entire array (start to finish) - using a NEW type
-        // of loop called the "enhanced for loop". to create the enhanced for
+        // of loop called the "enhanced for loop". To create the enhanced for
         // loop use the shortcut: type "for" then CTRL + SPACE and pick the 
-        // fourth option from the top...        
+        // fourth option from the top...           
         for (Student student : students) {
             // The enhanced for loop should be read as:
             // "for every student in students..."
             // The "student" object automatically goes through each element in
             // the array, automatically from the start of the array to the end,
             // changing "student" each time through to each element in order...
-            if (student != null) {  // only count student objects in the array
+            if (student != null) {  // Only count student objects that exist
                 text = text + "\n\t" + student.toString(); // attach to variable
-            }
-        }        
+            }            
+            // "enhanced" for loops can be used with arrays and with more 
+            // advancded data types (like collections)
+        }
         return text;        // Send back the temporary variable
     }
    
