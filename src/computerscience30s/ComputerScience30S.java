@@ -27,8 +27,9 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        learnIntroToJava();         // "calling" a method means run the code
-        learnMethods();
+//        learnIntroToJava();         // "calling" a method means run the code
+//        learnMethods();
+        learnArrays();
     }
 
     /**
@@ -687,6 +688,42 @@ public class ComputerScience30S {
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning arrays...");
+        
+        // Create (declare) a variable for comparison:
+        int variable = 5;
+        
+        // E.g. in memory a variable would "look" like...
+        //
+        //          +-----------+
+        // variable |     5     |
+        //          +-----------+
+        
+        // Now declare (create) an array:
+        int array[] = new int[5];
+        
+        // E.g. in memory an array would "look" like...
+        //
+        //        +-----------+-----------+-----------+-----------+-----------+
+        // array  |           |           |           |           |           |
+        //        +-----------+-----------+-----------+-----------+-----------+
+        
+        // The square brackets "[  ]" indicate an array, the word "new" is used
+        // because arrays (they are technically "advanced" data types) are more
+        // complicated than variables (which are "simple" or "primitive" data 
+        // types) then you repeat the data type ("int" in this case) and the 
+        // square brackets are also repeated with a number (or a variable) 
+        // inside - this number represents the SIZE of the array
+        
+        
+        
+        System.out.println("Completed Learning arrays!");
     }
 
 }
