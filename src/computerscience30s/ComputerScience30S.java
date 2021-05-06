@@ -699,7 +699,7 @@ public class ComputerScience30S {
         // Create (declare) a variable for comparison:
         int variable = 5;
         
-        // E.g. in memory a variable would "look" like...
+        // E.g. in memory a variable could "look" like...
         //
         //          +-----------+
         // variable |     5     |
@@ -708,26 +708,29 @@ public class ComputerScience30S {
         // Now declare (create) an array:
         int array[] = new int[5];
         
-        // E.g. in memory an array would "look" like...
+        // E.g. in memory an array could "look" like...
+        //
+        //        +-----------+-----------+-----------+-----------+-----------+
+        // array  |           |           |           |           |           |
+        //        +-----------+-----------+-----------+-----------+-----------+
+        
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array. When arrays are first created, they are EMPTY.        
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - but the first spot is ALWAYS
+        // numbered as zero and the rest are numberd automatically in order: 
         //
         //        +-----------+-----------+-----------+-----------+-----------+
         // array  |           |           |           |           |           |
         //        +-----------+-----------+-----------+-----------+-----------+
         //             0            1           2           3           4
         
-        // The square brackets "[  ]" indicate an array, the word "new" is used
-        // because arrays (they are technically "advanced" data types) are more
-        // complicated than variables (which are "simple" or "primitive" data 
-        // types) then you repeat the data type ("int" in this case) and the 
-        // square brackets are also repeated with a number (or a variable) 
-        // inside - this number represents the SIZE of the array
-        
-        // The array has now 5 "spots" (or "index", "elements", "subscript")
-        // which automatically numbers them - but the first spot is ALWAYS
-        // numbered as zero!
-        
-        // Assign values to each individual spot (index):
-        
+        // Now we assign values to all individual spots (indices):        
         array[0] = 25;
         array[1] = 250;
         array[2] = 2;
@@ -739,9 +742,7 @@ public class ComputerScience30S {
         //        +----------+----------+----------+----------+----------+
         //              0         1          2          3          4
        
-        // When arrays are created, they are created EMPTY
-        
-        // This next lines would be an error:
+        // This next lines would be errors when the code runs:
         // array[5] = 25;
         // array[-1] = 25;
         // They would be "out of bounds" errors
