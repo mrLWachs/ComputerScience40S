@@ -136,7 +136,8 @@ public class AdvancedClassesTest
         // Output our teacher again
         System.out.println(teacher.toString());
         
-        
+        // Check our static variable:        
+        System.out.println(student.totalStudents);
         
         
         
