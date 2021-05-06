@@ -27,8 +27,9 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        learnIntroToJava();         // "calling" a method means run the code
-        learnMethods();
+//        learnIntroToJava();         // "calling" a method means run the code
+//        learnMethods();
+        learnArrays();
     }
 
     /**
@@ -689,6 +690,33 @@ public class ComputerScience30S {
                 JOptionPane.PLAIN_MESSAGE);
     }
 
+    private static void learnArrays() {
+        System.out.println("Start Learning arrays...");
+        
+        // Create (declare) a variable for comparison        
+        int size = 5;
+        
+        // Now we declare (create) an array:        
+        int array[] = new int[5];
+        
+        // The square brackets "[  ]" indicate an array, the word "new" is used
+        // because arrays (they are technically "advanced" data types) are more
+        // complicated than variables (which are "simple" or "primitive" data 
+        // types
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        System.out.println("Learning array complete!");
+    }
+    
 }
 
 // <editor-fold>   
