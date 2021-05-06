@@ -65,6 +65,12 @@ public class Teacher extends Person
             // "enhanced" for loops can be used with arrays and with more 
             // advancded data types (like collections)
         }
+        // For comparison, this would be the same code using a standard for loop
+        // for (int i = 0; i < students.length; i++) {
+        //     if (students[i] != null) {  
+        //         text = text + "\n\t" + students[i].toString(); 
+        //     }  
+        // }
         return text;        // Send back the temporary variable
     }
    
