@@ -713,6 +713,7 @@ public class ComputerScience30S {
         //        +-----------+-----------+-----------+-----------+-----------+
         // array  |           |           |           |           |           |
         //        +-----------+-----------+-----------+-----------+-----------+
+        //             0            1           2           3           4
         
         // The square brackets "[  ]" indicate an array, the word "new" is used
         // because arrays (they are technically "advanced" data types) are more
@@ -720,6 +721,34 @@ public class ComputerScience30S {
         // types) then you repeat the data type ("int" in this case) and the 
         // square brackets are also repeated with a number (or a variable) 
         // inside - this number represents the SIZE of the array
+        
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - but the first spot is ALWAYS
+        // numbered as zero!
+        
+        // Assign values to each individual spot (index):
+        
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = -25;
+        array[4] = 0;
+        
+        //        +----------+----------+----------+----------+----------+
+        //  array |    25    |    250   |    2     |   -25    |    0     |
+        //        +----------+----------+----------+----------+----------+
+        //              0         1          2          3          4
+       
+        // When arrays are created, they are created EMPTY
+        
+        // This next lines would be an error:
+        // array[5] = 25;
+        // array[-1] = 25;
+        // They would be "out of bounds" errors
+        
+        
+        
+        
         
         
         
