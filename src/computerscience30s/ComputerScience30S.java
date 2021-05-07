@@ -747,6 +747,50 @@ public class ComputerScience30S {
         // array[-1] = 25;
         // They would be "out of bounds" errors
         
+        // Declare an array of NO size
+        double[] a;
+        
+        // In memory....
+        //
+        // a
+        //
+        
+        // Later on (in code) you can re-create (re-dimension or resize)
+        // the same array to give it some size (but empty)       
+        a = new double[3];
+        
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          |
+        //   +----------+----------+----------+
+        //        0          1          2
+        
+        // Now fill with content
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+        
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    |
+        //   +----------+----------+----------+
+        //        0          1          2
+        
+        // You can always re-dimension array multiple times, BUT every time it 
+        // wipes out any content stored in the array        
+        a = new double[300];
+        
+        // Another way to declare array, but create with pre-filled values
+        // (make and fill at the same time - on the same line of code)
+        
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        
+        
+        
+        
+        
+        
+        
         
         
         
