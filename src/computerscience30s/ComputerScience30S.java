@@ -720,7 +720,27 @@ public class ComputerScience30S {
         // are "simple" or "primitive" data types) then you repeat the data 
         // type ("int" in this case) and the square brackets are also repeated 
         // with a number (or a variable) inside - this number represents the 
-        // SIZE of the array. 
+        // SIZE of the array. When arrays are first created, they are EMPTY.        
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - but the first spot is ALWAYS
+        // numbered as zero and the rest are numberd automatically in order: 
+        //
+        //        +-----------+-----------+-----------+-----------+-----------+
+        // array  |           |           |           |           |           |
+        //        +-----------+-----------+-----------+-----------+-----------+
+        //             0            1           2           3           4
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
