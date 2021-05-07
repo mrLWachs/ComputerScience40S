@@ -136,19 +136,6 @@ public class AdvancedClassesTest
         // Output our teacher again
         System.out.println(teacher.toString());
         
-        // Using a static variable, static variables get instantiated once and
-        // all objects share a reference to that same memory location (meaning
-        // the "static" variable "belongs" to the class not the object)
-        
-        // Check our static variable:        
-        System.out.println(student.totalStudents);
-        System.out.println(student1.totalStudents);
-        System.out.println(student2.totalStudents);
-        System.out.println(student3.totalStudents);
-        System.out.println(studentClone.totalStudents);
-        
-        // Notice how we get the same output for each student instance as they
-        // all "share" the same access to the same static variable
         
             
             
