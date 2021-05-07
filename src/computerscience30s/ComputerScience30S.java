@@ -27,9 +27,8 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        learnIntroToJava();         // "calling" a method means run the code
-//        learnMethods();
-        learnArrays();
+        learnIntroToJava();         // "calling" a method means run the code
+        learnMethods();
     }
 
     /**
@@ -688,72 +687,6 @@ public class ComputerScience30S {
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
-    }
-
-    /**
-     * Learn the content of the arrays unit
-     */
-    private static void learnArrays() {
-        System.out.println("Start Learning arrays...");
-        
-        // Create (declare) a variable for comparison:
-        int variable = 5;
-        
-        // E.g. in memory a variable could "look" like...
-        //
-        //          +-----------+
-        // variable |     5     |
-        //          +-----------+
-        
-        // Now declare (create) an array:
-        int array[] = new int[5];
-        
-        // E.g. in memory an array could "look" like...
-        //
-        //        +-----------+-----------+-----------+-----------+-----------+
-        // array  |           |           |           |           |           |
-        //        +-----------+-----------+-----------+-----------+-----------+
-        
-        // The square brackets "[  ]" in code indicate we are using an array, 
-        // the word "new" is used because arrays (they are technically 
-        // "advanced" data types) are more complicated than variables (which 
-        // are "simple" or "primitive" data types) then you repeat the data 
-        // type ("int" in this case) and the square brackets are also repeated 
-        // with a number (or a variable) inside - this number represents the 
-        // SIZE of the array. When arrays are first created, they are EMPTY.        
-        // The array has now 5 "spots" (or "index", "elements", "subscript")
-        // which automatically numbers them - but the first spot is ALWAYS
-        // numbered as zero and the rest are numberd automatically in order: 
-        //
-        //        +-----------+-----------+-----------+-----------+-----------+
-        // array  |           |           |           |           |           |
-        //        +-----------+-----------+-----------+-----------+-----------+
-        //             0            1           2           3           4
-        
-        // Now we assign values to all individual spots (indices):        
-        array[0] = 25;
-        array[1] = 250;
-        array[2] = 2;
-        array[3] = -25;
-        array[4] = 0;
-        
-        //        +----------+----------+----------+----------+----------+
-        //  array |    25    |    250   |    2     |   -25    |    0     |
-        //        +----------+----------+----------+----------+----------+
-        //              0         1          2          3          4
-       
-        // This next lines would be errors when the code runs:
-        // array[5] = 25;
-        // array[-1] = 25;
-        // They would be "out of bounds" errors
-        
-        
-        
-        
-        
-        
-        
-        System.out.println("Completed Learning arrays!");
     }
 
 }
