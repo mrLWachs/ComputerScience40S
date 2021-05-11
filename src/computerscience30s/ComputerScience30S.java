@@ -820,25 +820,21 @@ public class ComputerScience30S {
         numbers[0] = numbers[99] + numbers[99];
         System.out.println(numbers[0]);
         
-        // To work with, and to travel (means 'visit' every spot) the array,
-        // we use a for loop
+        // To work with, and to travel (means "visit" every spot) the array,
+        // we use a for loop        
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // When using the for loop, it is even BETTER to use a built-in feature 
+        // of arrays - all arrays have a ".length" built in, for example...        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // So if the size changes, the loop adapts to it
         
         
         
