@@ -701,18 +701,18 @@ public class ComputerScience30S {
         
         // E.g. in memory a variable could "look" like...
         //
-        //          +------+
-        // variable |   5  | (integer)
-        //          +------+
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
         
         // Now declare (create) an array:
         int array[] = new int[5];
         
         // E.g. in memory an array could "look" like...
         //
-        //       +------+------+------+------+------+
-        // array |      |      |      |      |      |
-        //       +------+------+------+------+------+
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
         
         // The square brackets "[  ]" in code indicate we are using an array, 
         // the word "new" is used because arrays (they are technically 
@@ -725,10 +725,10 @@ public class ComputerScience30S {
         // which automatically numbers them - BUT the first spot is ALWAYS
         // numbered as spot zero and the rest and numbered in order:
         //
-        //       +------+------+------+------+------+
-        // array |      |      |      |      |      |
-        //       +------+------+------+------+------+
-        //          0       1      2      3     4
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (indexed)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
         
         // Now we assign values to all indivisual spots (indices):
         array[0] = 25;
@@ -737,10 +737,11 @@ public class ComputerScience30S {
         array[3] = -25;
         array[4] = 0;
         
-        //       +------+------+------+------+------+
-        // array |  25  |  250 |   2  | -25  |  0   |
-        //       +------+------+------+------+------+
-        //          0       1      2      3     4
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
         
         
         
