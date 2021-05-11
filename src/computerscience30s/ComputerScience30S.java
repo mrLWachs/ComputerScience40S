@@ -785,6 +785,55 @@ public class ComputerScience30S {
         
         double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
         
+        //       +------+------+------+------+------+
+        // coins | 0.05 | 0.10 | 0.25 | 1.00 | 2.00 |  (has a length of 5)
+        //       +------+------+------+------+------+
+        //          0      1      2      3      4 
+        
+        // You can also create constant arrays that are pre-filled, the name
+        // we gives array should be a plural word (e.g. 'scores' (array name)
+        // not 'score' (variable name), 'names' not 'name', etc.)
+        
+        final String[] OPTIONS = { 
+            "New Game",
+            "Save Game",
+            "Quit"        
+        };
+        
+        // When using arrays, use individual elements of the array like regualar
+        // variables, for example...
+        
+        int[] numbers = new int[100];
+        
+        // change a spot
+        numbers[99] = 99;
+        //         +-----+-----+-----+
+        // numbers |     | ... |  99 | 
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always one less than the length
+        
+        // output that spot
+        System.out.println(numbers[99]);
+        
+        // Perform equations with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
+        
+        // To work with, and to travel (means 'visit' every spot) the array,
+        // we use a for loop
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
