@@ -701,14 +701,26 @@ public class ComputerScience30S {
         
         // E.g. in memory a variable could "look" like...
         //
-        //          +-----------+
-        // variable |     5     | (integer)
-        //          +-----------+
+        //          +------+
+        // variable |   5  | (integer)
+        //          +------+
         
+        // Now declare (create) an array:
+        int array[] = new int[5];
         
+        // E.g. in memory an array could "look" like...
+        //
+        //       +------+------+------+------+------+
+        // array |      |      |      |      |      |
+        //       +------+------+------+------+------+
         
-        
-        
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array.
         
         
         
