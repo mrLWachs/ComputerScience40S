@@ -27,8 +27,9 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        learnIntroToJava();         // "calling" a method means run the code
-        learnMethods();
+//        learnIntroToJava();         // "calling" a method means run the code
+//        learnMethods();
+        learnArrays();
     }
 
     /**
@@ -687,6 +688,37 @@ public class ComputerScience30S {
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning Arrays...");
+        
+        // Create (declare) a variable for comparison
+        int variable  = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-----------+
+        // variable |     5     | (integer)
+        //          +-----------+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        System.out.println("Learing Arrays Complete!");
     }
 
 }
