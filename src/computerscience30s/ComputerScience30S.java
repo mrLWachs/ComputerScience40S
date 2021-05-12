@@ -769,7 +769,7 @@ public class ComputerScience30S {
         // Now fill in the content
         a[0] = 1.1;
         a[1] = 2.2;
-        a[3] = 3.3;
+        a[2] = 3.3;
         
         //   +----------+----------+----------+
         // a |   1.1    |   2.2    |   3.3    |
@@ -785,14 +785,65 @@ public class ComputerScience30S {
         //   +----------+----------+----------+----------+----------+
         //        0          1          2          3          4
         
+        // Another way to declare arrays, but this way creates the array of
+        // a set size, BUT with pre-filled values inside (make and fill at the
+        // same time - on the same ONE line of code) - you can as an option,
+        // put the "[]" beside the data type OR the array name
         
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
         
+        //       +------+------+------+------+------+
+        // coins | 0.05 | 0.10 | 0.25 | 1.00 | 2.00 |  (has a length of 5)
+        //       +------+------+------+------+------+
+        //          0      1      2      3      4 
         
+        // You can also create CONSTANT arrays that are pre-filled, the name
+        // we gives array should be a plural word (e.g. 'scores' (array name)
+        // not 'score' (variable name), 'names' not 'name', etc.)
         
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"
+        };
         
+        // When using arrays, use individual elements (spots, index) of the  like
+        // array regualar variables, for example...
         
+        int[] numbers = new int[100];
         
+        // Change a spot (index)
+        numbers[99] = 99;
         
+        //         +-----+-----+-----+
+        // numbers |     | ... |  99 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        // Output that spot
+        System.out.println(numbers[99]);
+        
+        // Perform equations with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
+        
+        // To work with, and to travel (means "visit" every spot) the array,
+        // we use a "for" loop  
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
+        
+        // When using the for loop, it is even BETTER to use a built-in feature 
+        // of arrays - all arrays have a ".length" built in, for example...   
+        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " +  numbers[i]);
+        }
+        // So if the size changes, the loop adapts to it
         
         
         
