@@ -26,6 +26,13 @@ public class Student extends Person
     
     private Book book;  // "has a" relationship (association or "usage")
     
+    /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int totalStudents;
+    
         
     /**
      * Class constructor, it sets class properties. When a class has one or 
@@ -43,7 +50,8 @@ public class Student extends Person
     public Student(String name, int age, int studentNumber) {
         super.name         = name;
         this.studentNumber = studentNumber;
-        super.setAge(age);  // calling the mutator method for private property
+        super.setAge(age);  // Calling the mutator method for private property
+        totalStudents++;    // When a student object is created, count that!
     }
     
     /**
