@@ -747,13 +747,43 @@ public class ComputerScience30S {
         // array[-1] = 25;
         // They would be "out of bounds" errors
         
+        // Declare an array of NO size
+        double a[];
         
+        // In memory...
+        //
+        // a
+        // 
         
+        // Later on (in code) you can re-create (re-declare, re-dimension, or 
+        // resize) using the same array now giving it some size (but empty)
+        a = new double[3];
         
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          | (now has size of 3, but empty)
+        //   +----------+----------+----------+
+        //        0          1          2
         
+        // Now fill in the content
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
         
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
+        //   +----------+----------+----------+
+        //        0          1          2
         
+        // You can always re-dimension (resize) array multiple times, BUT 
+        // every time it wipes out any content stored in the array 
+        a = new double[5];
         
+        //   +----------+----------+----------+----------+----------+
+        // a |          |          |          |          |          | (size 5)
+        //   +----------+----------+----------+----------+----------+
+        //        0          1          2          3          4
         
         
         
