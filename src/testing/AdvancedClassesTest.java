@@ -136,8 +136,12 @@ public class AdvancedClassesTest
         // Output our teacher again
         System.out.println(teacher.toString());
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
         
-            
+        // Check our static variable
+        System.out.println(student.totalStudents);
             
         
         
