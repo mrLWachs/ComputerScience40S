@@ -26,7 +26,6 @@ public class Student extends Person
     
     private Book book;  // "has a" relationship (association or "usage")
     
-    
         
     /**
      * Class constructor, it sets class properties. When a class has one or 

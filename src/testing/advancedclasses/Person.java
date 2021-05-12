@@ -40,8 +40,7 @@ public class Person
      * are "related" to this class through inheritance (subclasses)
      */
     protected boolean isAlive;
-    
-        
+            
 
     // <editor-fold> 
     // METHODS.................................................................
