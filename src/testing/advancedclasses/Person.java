@@ -15,8 +15,7 @@ package testing.advancedclasses;
 public class Person 
 {
     
-    // <editor-fold>  
-    // PROPERTIES..............................................................
+    // <editor-fold desc="PROPERTIES.........................................">
     // The "things about the class", descriptors, adjectives, variables, storage
     // </editor-fold>
     
@@ -42,8 +41,7 @@ public class Person
     protected boolean isAlive;
             
 
-    // <editor-fold> 
-    // METHODS.................................................................
+    // <editor-fold desc="METHODS............................................"> 
     // The "things classes can do", actions, verbs, including "constructors"
     // </editor-fold>
     
