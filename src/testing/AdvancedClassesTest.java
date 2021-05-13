@@ -142,11 +142,11 @@ public class AdvancedClassesTest
         // the "static" variable "belongs" to the class not the object)
         
         // Check our static variable
-        System.out.println(student.name + "~" + student.totalStudents);
-        System.out.println(student1.name + "~" + student1.totalStudents);
-        System.out.println(student2.name + "~" + student2.totalStudents);
-        System.out.println(student3.name + "~" + student3.totalStudents);
-        System.out.println(studentClone.name + "~" + studentClone.totalStudents);
+        System.out.println(student.name + "=" + student.totalStudents);
+        System.out.println(student1.name + "=" + student1.totalStudents);
+        System.out.println(student2.name + "=" + student2.totalStudents);
+        System.out.println(student3.name + "=" + student3.totalStudents);
+        System.out.println(studentClone.name + "=" + studentClone.totalStudents);
         
         // Notice how we get the same output for each student instance as they
         // all "share" the same access to the same static variable
@@ -156,7 +156,7 @@ public class AdvancedClassesTest
         
         System.out.println(Student.totalStudents);
         
-        // Call a static method fromthe class name:
+        // Call a static method from the class name:
         
         Person.endTheWorld();
         
