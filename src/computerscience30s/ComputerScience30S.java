@@ -845,9 +845,12 @@ public class ComputerScience30S {
         // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
         // So if the array size changes, the loop adapts to it
         
+        // Array can easily work with methods, the arrays can be sent into a 
+        // method (as one of multiple parameters, or the only parameter), and 
+        // arrays can be outputted (returned) from a method - in other words:
+        // Arrays can be INPUT(s) or OUTPUT from a method
         
-        
-        
+        output(array);    // Send an array to the method as a parameter
         
         
         
@@ -861,6 +864,21 @@ public class ComputerScience30S {
         
         
         System.out.println("Learing Arrays Complete!");
+    }
+
+    /**
+     * Outputs an array of integer numbers in a dialog
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        // Arrays can be a parameter (or one of the parameters)
+        String text = "Array [";                    // Create string to fill up
+        for (int i = 0; i < array.length; i++) {    // Travel (traverse) array
+            text = text + array[i] + ",";           // Add to the string
+        }        
+        text = text + "]";                          // Adding an ending symbol
+        output(text);                               // Output that string
     }
 
     
