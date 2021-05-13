@@ -908,7 +908,8 @@ public class ComputerScience30S {
     }
 
     /**
-     * Generates an array of random integers in the range between low and high
+     * Generates an array of a set size filled with random integers in the 
+     * range between low and high
      * 
      * @param low the lowest number in the range
      * @param high the highest number in the range
