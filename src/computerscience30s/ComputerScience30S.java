@@ -845,17 +845,14 @@ public class ComputerScience30S {
         // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
         // So if the array size changes, the loop adapts to it
         
-        // Array can easily work with methods, the arrays can be sent into a 
-        // method (as one of multiple parameters, or the only parameter), and 
-        // arrays can be outputted (returned) from a method - in other words:
-        // Arrays can be INPUT(s) or OUTPUT from a method
         
-        output(numbers);    // Send an array to the method as a parameter
-        output(array);      // Call the method with a different argument
-        output(coins);      // Overload the "output" method again
         
-        int[] randoms = random(1,10,50);    // Overload "random" method
-        output(randoms);
+        
+        
+        
+        
+        
+        
         
         
         
@@ -866,62 +863,6 @@ public class ComputerScience30S {
         System.out.println("Learing Arrays Complete!");
     }
 
-    /**
-     * Outputs an array of integer numbers in a dialog
-     * 
-     * @param array the array of integers
-     */
-    private static void output(int[] array) {
-        // Arrays can be a parameter (or one of the parameters)
-        String text = "Array [";                    // Create string to fill up
-        for (int i = 0; i < array.length; i++) {    // Travel (traverse) array
-            text = text + array[i] + ",";           // Add to the string
-        }        
-        text = text + "]";                          // Adding an ending symbol
-        output(text);                               // Output that string
-    }
-
-    /**
-     * Convert all the doubles into integers and then output the array in a 
-     * dialog
-     * 
-     * @param array the array of doubles
-     */
-    private static void output(double[] array) {
-        int[] a = convert(array);   // Create int array of converted doubles
-        output(a);                  // Now output the converted array
-    }
-
-    /**
-     * Converts an array of double into an array of integers
-     * 
-     * @param array the array of doubles
-     * @return an array of integers
-     */
-    private static int[] convert(double[] array) {
-        // Methods can return (output) antire arrays
-        int[] a = new int[array.length];      // Create empty array (same size)
-        for (int i = 0; i < a.length; i++) {  // Traverse array
-            a[i] = (int)array[i];             // Cat over the double into a int
-        }
-        return a;                             // Return the new array
-    }
-
-    /**
-     * Generates an array of random integers in the range between low and high
-     * 
-     * @param low the lowest number in the range
-     * @param high the highest number in the range
-     * @param size the size to make the array
-     * @return an array of random integers
-     */
-    private static int[] random(int low, int high, int size) {
-        int[] numbers = new int[size];      // Create empty array of passed size
-        for (int i = 0; i < size; i++) {    // Traverse array 
-            numbers[i] = random(low,high);  // Assign random value to each index
-        }
-        return numbers;                     // Return completed array
-    }
     
 }
 
