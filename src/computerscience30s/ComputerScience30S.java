@@ -857,6 +857,60 @@ public class ComputerScience30S {
         int[] randoms= random(1,10,50);    // Overload "random" method
         output(randoms);
         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) -and also know as a MATRIX
+        
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 3; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 4; // "dimension" going "across" (like "x" axis)
+        
+        // We create (declare) a matrix, by adding multiple sets of square 
+        // brackets (a set for each dimension)
+        char[][] matrix = new char[ROWS][COLUMNS];
+        
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
+        
+        // Fill my matrix with random characters...
+        // (using a method for random characters)
+        
+        final char LOW  = 'a';
+        final char HIGH = 'z';
+        
+        // Test that method first...
+        char character = random(LOW,HIGH);
+        System.out.println("Random character (between a-z) = " + character);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -922,6 +976,17 @@ public class ComputerScience30S {
             numbers[i] = random(low, high); // Assign random value to each index
         }
         return numbers;                     // Return completed array
+    }
+    
+    /**
+     * Generates a random character
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low,(int)high);     // cast to int and back  
     }
     
 }
