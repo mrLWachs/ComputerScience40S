@@ -854,11 +854,11 @@ public class ComputerScience30S {
         output(numbers);  // Call the method with a different argument
         output(coins);    // Overload the "output" method again
         
-        int[] randoms= random(1,10,50);    // Overload "random" method
+        int[] randoms = random(1,10,50);    // Overload "random" method
         output(randoms);
         
         // Multi-dimensional array (also known as a "array of arrays", or a 
-        // array filled with other arrays, 2D, etc.) -and also know as a MATRIX
+        // array filled with other arrays, 2D, etc.) - and also know as a MATRIX
         
         // Create some constants to use when building the matrix (these are
         // not needed to declare a matrix, but they might help in understanding 
@@ -889,19 +889,15 @@ public class ComputerScience30S {
         // A matrix "row" can also be "visualized" as the matrix "height"
         // A matrix "column" can also be "visualized" as the matrix "width"
         
-        // Fill my matrix with random characters...
+        // Fill the matrix with random characters...
         // (using a method for random characters)
         
-        final char LOW  = 'a';
+        final char LOW = 'a';
         final char HIGH = 'z';
         
         // Test that method first...
         char character = random(LOW,HIGH);
         System.out.println("Random character (between a-z) = " + character);
-        
-        
-        
-        
         
         
         
@@ -979,14 +975,14 @@ public class ComputerScience30S {
     }
     
     /**
-     * Generates a random character
+     * Generates a random character between tow low and high characters
      * 
      * @param low lowest character in the range
      * @param high highest character in the range
      * @return random character in range
      */
     private static char random(char low, char high) {
-        return (char)random((int)low,(int)high);     // cast to int and back  
+        return (char)random((int)low, (int)high);     // cast to int and back  
     }
     
 }
