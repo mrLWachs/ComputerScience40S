@@ -151,7 +151,7 @@ public class AdvancedClassesTest
         // Notice how we get the same output for each student instance as they
         // all "share" the same access to the same static variable
         
-        // You can access static varaibles from the class itself, not just 
+        // You can access static variables from the class itself, not just 
         // the instances (objects) of the class, for example...
         
         System.out.println(Student.totalStudents);
