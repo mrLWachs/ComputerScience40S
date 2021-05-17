@@ -9,14 +9,18 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:39:10 a.m.
  */
-public class Husky 
+public class Husky extends HighSchool
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets the class properties
+     * 
+     * @param name the name for this Husky High School 
+     * @param age the age for this Husky High School 
+     * @param studentNumber the student number for this Husky High School  
      */
-    public Husky() {
-        
+    public Husky(String name, int age, int studentNumber) {
+        super(name, age, studentNumber);
     }
      
     /**

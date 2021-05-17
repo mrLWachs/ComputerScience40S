@@ -4,7 +4,11 @@ package testing;
 
 /** Required imports */
 import javax.swing.JOptionPane;
+import testing.advancedclasses.Baker;
+import testing.advancedclasses.Doctor;
+import testing.advancedclasses.Husky;
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Piper;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 
@@ -174,6 +178,19 @@ public class AdvancedClassesTest
         teacher.endTheWorld();
         Student.endTheWorld();
         Teacher.endTheWorld();
+        
+        // Create (instantiate) objects (instances) of the new classes...
+        Husky  husky  = new Husky("Havoc", 12, 2665);
+        Piper  piper  = new Piper("Yosemite", 51, 470);
+        Doctor doctor = new Doctor();
+        Baker  baker  = new Baker();
+        
+        // Output these new objects (using toString called automatically)
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(doctor);
+        System.out.println(baker);
+        
         
         
                 

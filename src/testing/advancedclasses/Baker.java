@@ -9,14 +9,14 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:40:29 a.m.
  */
-public class Baker 
+public class Baker extends Person
 {
 
     /**
      * Default constructor, set class properties
      */
     public Baker() {
-        
+        super();
     }
      
     /**

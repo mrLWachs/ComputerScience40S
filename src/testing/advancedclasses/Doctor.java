@@ -9,14 +9,14 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:40:22 a.m.
  */
-public class Doctor 
+public class Doctor extends Person
 {
 
     /**
      * Default constructor, set class properties
      */
     public Doctor() {
-        
+        super();
     }
      
     /**

@@ -9,15 +9,20 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:38:45 a.m.
  */
-public class HighSchool 
+public class HighSchool extends Student
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets the class properties
+     * 
+     * @param name the name for this High School student
+     * @param age the age for this High School student
+     * @param studentNumber the student number for this High School student
      */
-    public HighSchool() {
-        
+    public HighSchool(String name, int age, int studentNumber) {
+        super(name, age, studentNumber);
     }
+    
      
     /**
      * String representation of this object

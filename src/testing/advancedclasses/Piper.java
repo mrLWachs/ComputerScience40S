@@ -9,14 +9,18 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:39:42 a.m.
  */
-public class Piper 
+public class Piper extends HighSchool
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets the class properties
+     * 
+     * @param name the name for this Piper High School 
+     * @param age the age for this Piper High School 
+     * @param studentNumber the student number for this Piper High School
      */
-    public Piper() {
-        
+    public Piper(String name, int age, int studentNumber) {
+        super(name, age, studentNumber);
     }
      
     /**
