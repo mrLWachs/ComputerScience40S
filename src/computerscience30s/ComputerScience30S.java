@@ -899,41 +899,34 @@ public class ComputerScience30S {
         char character = random(LOW,HIGH);
         System.out.println("Random character (between a-z) = " + character);
         
-        // Fill our matrix (meaning put content in every location/index/spot
-        // in the matrix) by traversing (travelling, 'visit' every spot) the
-        // matrix and adding random characters (our method) - when traversing
-        // matricies (plural of matrix) we use multiple nested for loops
         
-        // We might rename looping variables to better understand what the 
-        // nested for loops are refering to (e.g. like row, colum, x, y)
-        // With Netbeans, when you rename a loop variable it renames all 3
         
-        for (int row = 0; row < ROWS; row++) {
-            for (int column = 0; column < COLUMNS; column++) {
-                matrix[row][column] = random(LOW, HIGH);
-            }
-        }
         
-        // Output the matrix, by turning it into a single string (using a 
-        // new method)
-        String text1 = toString(matrix);
-        System.out.println(text1);
         
-        // Matrices can also be made with pre-set values (liekk regular arrays)
-        final char[][] TIC_TAC_TOE = 
-        {
-            { 'X', 'O', 'X' },
-            { 'O', 'X', 'O' },
-            { 'X', 'O', 'X' }
-        };
         
-        String text2 = toString(TIC_TAC_TOE);
-        System.out.println(text2);
         
-        // Optional graphical code...        
-        // Use JOptionPane dialogs but with graphics
-        message(text1);
-        message(text2);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("Learing Arrays Complete!");
     }
@@ -1005,34 +998,6 @@ public class ComputerScience30S {
      */
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);     // cast to int and back  
-    }
-
-    /**
-     * Change the matrix into a single string (for outputting)
-     * 
-     * @param matrix the 2D array of characters
-     * @return a single string representing the matrix
-     */
-    private static String toString(char[][] matrix) {
-        String text = "";   // Create string variable to store all the values
-        // Use the nested for loops (with simplier variable names) and use 
-        // '.length' but also in the nested loop, we use '.length' of that 
-        // particular array..
-        for (int r = 0; r < matrix.length; r++) {
-            for (int c = 0; c < matrix[r].length; c++) {
-                text = text + matrix[r][c] + " ";       // Add content to string         
-            }            
-            text = text + "\n";             // Add a new line after each row
-        }
-        return text;                                // Return the filled string
-    }
-
-    /**
-     * 
-     * @param text 
-     */
-    private static void message(String text) {
-        
     }
     
 }
