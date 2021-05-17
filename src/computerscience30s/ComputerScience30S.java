@@ -916,8 +916,8 @@ public class ComputerScience30S {
         
         // Output the matrix, by turning it into a single string (using a 
         // new method)
-        String text = toString(matrix);
-        System.out.println(text);
+        String text1 = toString(matrix);
+        System.out.println(text1);
         
         // Matrices can also be made with pre-set values (liekk regular arrays)
         final char[][] TIC_TAC_TOE = 
@@ -932,8 +932,8 @@ public class ComputerScience30S {
         
         // Optional graphical code...        
         // Use JOptionPane dialogs but with graphics
-        display(text);
-        display(text2);
+        message(text1);
+        message(text2);
         
         System.out.println("Learing Arrays Complete!");
     }
@@ -1014,27 +1014,24 @@ public class ComputerScience30S {
      * @return a single string representing the matrix
      */
     private static String toString(char[][] matrix) {
-        // Create string variable to store all the values
-        String text = "";
-        // Use the nested for loops (simplier variable names)
-        // Use the .length but also in the nested loop, we use
-        // .length of that particular array..
+        String text = "";   // Create string variable to store all the values
+        // Use the nested for loops (with simplier variable names) and use 
+        // '.length' but also in the nested loop, we use '.length' of that 
+        // particular array..
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 0; c < matrix[r].length; c++) {
-                text = text + matrix[r][c] + " ";                
-            }
-            // Add a new line after each row
-            text = text + "\n";
+                text = text + matrix[r][c] + " ";       // Add content to string         
+            }            
+            text = text + "\n";             // Add a new line after each row
         }
-        // Return the filled string
-        return text;
+        return text;                                // Return the filled string
     }
 
     /**
      * 
      * @param text 
      */
-    private static void display(String text) {
+    private static void message(String text) {
         
     }
     
