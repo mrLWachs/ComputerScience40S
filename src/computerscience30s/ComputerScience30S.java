@@ -919,24 +919,21 @@ public class ComputerScience30S {
         String text = toString(matrix);
         System.out.println(text);
         
+        // Matrices can also be made with pre-set values (liekk regular arrays)
+        final char[][] TIC_TAC_TOE = 
+        {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
         
+        String text2 = toString(TIC_TAC_TOE);
+        System.out.println(text2);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Optional graphical code...        
+        // Use JOptionPane dialogs but with graphics
+        display(text);
+        display(text2);
         
         System.out.println("Learing Arrays Complete!");
     }
@@ -1008,6 +1005,37 @@ public class ComputerScience30S {
      */
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);     // cast to int and back  
+    }
+
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        // Create string variable to store all the values
+        String text = "";
+        // Use the nested for loops (simplier variable names)
+        // Use the .length but also in the nested loop, we use
+        // .length of that particular array..
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                text = text + matrix[r][c] + " ";                
+            }
+            // Add a new line after each row
+            text = text + "\n";
+        }
+        // Return the filled string
+        return text;
+    }
+
+    /**
+     * 
+     * @param text 
+     */
+    private static void display(String text) {
+        
     }
     
 }
