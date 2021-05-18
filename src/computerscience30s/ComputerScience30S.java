@@ -735,7 +735,7 @@ public class ComputerScience30S {
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
-        // Now we assign values to all indivisual spots (indices):
+        // Now we assign values to all individual spots (indices):
         array[0] = 25;
         array[1] = 250;
         array[2] = 2;
@@ -1035,73 +1035,66 @@ public class ComputerScience30S {
     }
 
     /**
-     * Display a 'graphical' version of the message
-     * dialog to the user, including an image, fonts,
-     * colors (background/foreground) and size of text
+     * Display a 'graphical' version of the message dialog to the user, 
+     * including an image, fonts, colors (background/foreground) and size of 
+     * text
      * 
-     * @param text the actual text to display
-     * @param title the title at the top of the dialog
+     * @param text The actual text to display
+     * @param title The title at the top of the dialog
      */
     private static void message(String text, String title) {
-        // We set up some 'graphical' "things" to make
-        // the dialog more interesting by 'importing' 
-        // the code that does this (we are not writing that
-        // specific code, we are 'using' others code)
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
         
-        // Using capital letters and importing (using the
-        // lightbulb) and a line similar to the way we 
-        // declare arrays, and using round brackets (implies
-        // a method? - study in the next unit 'classes')
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes')
         
-        Color background = new Color(0,0,0); // black
-        // The three numbers in "Color" are for red, green
-        // and blue values - from 0 (no amount) up to 255 
-        // (the maximum amount of that color)
-        Color foreground = new Color(0,255,0); // bright green
+        Color background = new Color(0,0,0); // Black
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)
+        Color foreground = new Color(0,255,0); // Bright green
         
         // Fonts are done the same way (import, declare them)        
         Font font = new Font("Consolas",Font.PLAIN,12);
-        // Inside the bracket we put the font name (must be
-        // installed on this computer), style (e.g. plain,
-        // bold, underline, etc.) - uses CONSTANT style,
-        // finally the font size (in points)
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
         
-        // For image, we need an image downloaded onto the 
-        // computer and we need the NAME of that image (name 
-        // includes the ending part / extension, and I also 
-        // need the path to get to that image / folder) - to
-        // do this, right click and go to properties and
-        // "Location" and copy/paste. It will change the "\"
-        // to "\\" and put two of those at the end        
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...        
         String path = "C:\\Users\\lawrence.wachs\\Desktop\\";
         String name = path + "matrix.gif";
         
-        // Create a "icon" for the image (icon is like a 
-        // picturebox) and also use "ImageIcon" - connected
-        // to the image name (which is the actual image
-        // on our computer)        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer)        
         Icon image = new ImageIcon(name);
         
-        // Now need something that can display the fonts and 
-        // colors - called a "text area" (can use intellisense)
-        // CTRL + SPACE (automatically import it)
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)
         JTextArea area = new JTextArea();
         
-        // Now we addd things into the area, using methods
-        // built into the text area
+        // Now we add things into the area, using methods built into the text 
+        // area object
         area.setFont(font);
         area.setBackground(background);
         area.setForeground(foreground);
         area.setText(text);
         
-        // Now we finally display the dialog box, BUT we USE
-        // the text area and the image in the dialog
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
         JOptionPane.showMessageDialog(null,
                 area,
                 title,
                 JOptionPane.PLAIN_MESSAGE,
-                image);
-        
+                image);        
     }
     
 }
