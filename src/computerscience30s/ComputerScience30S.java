@@ -938,7 +938,7 @@ public class ComputerScience30S {
         // Optional graphical code... 
         
         // Use JOptionPane dialogs but with graphics
-        message(text1,"Random Matrix");
+        message(text1,"Random Letters (a-z)");
         message(text2,"Tic-Tac-Toe");
         
         System.out.println("Learing Arrays Complete!");
@@ -1054,10 +1054,10 @@ public class ComputerScience30S {
         Color background = new Color(0,0,0); // Black
         // The three numbers in "Color" are for red, green and blue values 
         // from 0 (no amount) up to 255 (the maximum amount of that color)
-        Color foreground = new Color(0,255,0); // Bright green
+        Color foreground = new Color(0,255,0);  // Bright green
         
-        // Fonts are done the same way (import, declare them)        
-        Font font = new Font("Consolas",Font.PLAIN,12);
+        // Fonts are done the same way (import, declare them)
+        Font font = new Font("Consolas",Font.PLAIN, 18);
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
@@ -1067,9 +1067,10 @@ public class ComputerScience30S {
         // extension, and I also need the path to get to that image / folder).
         // To do this, right click and go to properties and "Location" and 
         // copy/paste. It will change the "\" to two "\\" and also type two of 
-        // those at the end...        
+        // those at the end...  
+        
         String path = "C:\\Users\\lawrence.wachs\\Desktop\\";
-        String name = path + "matrix.gif";
+        String name = path + "matrix.gif";        
         
         // Create a "icon" for the image (icon is like a picturebox) and also 
         // use "ImageIcon" - connected to the image name (which is the actual 
@@ -1078,21 +1079,22 @@ public class ComputerScience30S {
         
         // Now need something that can display the fonts and colors - called a 
         // "text area" (can use intellisense, with CTRL + SPACE, which 
-        // automatically imports it)
+        // automatically imports it)        
         JTextArea area = new JTextArea();
         
         // Now we add things into the area, using methods built into the text 
         // area object
+        area.setText(text);
         area.setFont(font);
         area.setBackground(background);
         area.setForeground(foreground);
-        area.setText(text);
-        
+                
         // Now we finally display the dialog box, BUT we USE the text area and 
         // the image in the dialog as parameters
-        JOptionPane.showMessageDialog(null,
-                area,
-                title,
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
                 JOptionPane.PLAIN_MESSAGE,
                 image);        
     }
