@@ -21,18 +21,13 @@ public class Meeting
      * Default constructor, set class properties
      */
     public Meeting() {
-        MAX   = 1000;
+        MAX   = 100;
         count = 0;
         // Need to instantiate our array
         members = new Person[MAX];
         // However, although the array has its size now set up, all the index 
         // values (spots in the array) are filled with "nulls" (no Person 
-        // objects/instances are yet in the array) - so, we are going to fill 
-        // the array with generic person objects
-        for (Person member : members) {
-            //"for every member in members"
-            member = new Person();      // Using the default Person constructor
-        }
+        // objects/instances are yet in the array)
     }
-        
+    
 }
