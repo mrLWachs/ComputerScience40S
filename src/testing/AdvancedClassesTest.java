@@ -7,6 +7,8 @@ import javax.swing.JOptionPane;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.Meeting;
+import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Piper;
 import testing.advancedclasses.Student;
@@ -180,16 +182,24 @@ public class AdvancedClassesTest
         Teacher.endTheWorld();
         
         // Create (instantiate) objects (instances) of the new classes...
-        Husky  husky  = new Husky("Havoc", 12, 2665);
-        Piper  piper  = new Piper("Yosemite", 51, 470);
-        Doctor doctor = new Doctor();
-        Baker  baker  = new Baker();
+        Husky   husky   = new Husky("Havoc", 12, 2665);
+        Piper   piper   = new Piper("Yosemite", 51, 470);
+        Doctor  doctor  = new Doctor();
+        Baker   baker   = new Baker();
+        MrWachs mrWachs = new MrWachs("Mr. Wachs");
+        
+        // Add a student object to that instance of a MrWachs object
+        mrWachs.students[0] = husky;
         
         // Output these new objects (using toString called automatically)
         System.out.println(husky);
         System.out.println(piper);
         System.out.println(doctor);
         System.out.println(baker);
+        System.out.println(mrWachs);
+        
+        // Instantiate ("make an instance of") a meeting object (of that class)        
+        Meeting meeting = new Meeting();
         
         
         

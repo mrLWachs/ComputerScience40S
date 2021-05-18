@@ -12,42 +12,27 @@ package testing.advancedclasses;
 public class Meeting 
 {
 
+    private final int MAX;  // Max number of people who can attend
+    private int count;      // Keeps count of how many people are attending
+    private Person[] members;   // Associated object array
+    
+    
     /**
      * Default constructor, set class properties
      */
     public Meeting() {
+        MAX   = 1000;
+        count = 0;
+        // Need to instantiate our array
+        members = new Person[MAX];
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array) - so, we are going to fill 
+        // the array with generic person objects
+        for (Person member : members) {
+            //"for every member in members"
+            member = new Person();      // Using the default Person constructor
+        }
+    }
         
-    }
-     
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "Meeting: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public Meeting clone() {
-        return this;
-    }
-    
 }

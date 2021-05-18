@@ -9,14 +9,16 @@ package testing.advancedclasses;
  * @author Mr. Wachs
  * @since May 14, 2021, 11:41:06 a.m.
  */
-public class MrWachs 
+public class MrWachs extends Teacher
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets class properties
+     * 
+     * @param name the name for this teacher
      */
-    public MrWachs() {
-        
+    public MrWachs(String name) {
+        super(name);
     }
      
     /**
