@@ -956,7 +956,7 @@ public class ComputerScience30S {
             text = text + array[i] + ",";           // Add to the string
         }        
         text = text + "]";                          // Adding an ending symbol
-        output(text);                               // Output that string
+        message(text,"");                               // Output that string
     }
 
     /**
