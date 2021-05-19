@@ -32,8 +32,8 @@ public class ComputerScience30S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        learnIntroToJava();         // "calling" a method means run the code
-//        learnMethods();
+        learnIntroToJava();         // "calling" a method means run the code
+        learnMethods();
         learnArrays();
     }
 
@@ -956,7 +956,7 @@ public class ComputerScience30S {
             text = text + array[i] + ",";           // Add to the string
         }        
         text = text + "]";                          // Adding an ending symbol
-        message(text,"");                               // Output that string
+        output(text);                               // Output that string
     }
 
     /**
@@ -1069,7 +1069,9 @@ public class ComputerScience30S {
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...  
         
-        String path = "C:\\Users\\lawrence.wachs\\Desktop\\";
+        String path = "C:\\Users\\lawrence.wachs\\Google Drive\\"
+                      + "Computer Science 30S\\Unit 03 - Arrays\\"
+                      + "Board Notes\\";
         String name = path + "matrix.gif";        
         
         // Create a "icon" for the image (icon is like a picturebox) and also 
