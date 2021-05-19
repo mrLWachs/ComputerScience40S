@@ -3,7 +3,6 @@
 package testing;
 
 /** Required imports */
-import javax.swing.JOptionPane;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
 import testing.advancedclasses.Husky;
@@ -201,8 +200,19 @@ public class AdvancedClassesTest
         // Instantiate ("make an instance of") a meeting object (of that class)        
         Meeting meeting = new Meeting();
         
+        // Have person objects (and all children) attend - through polmorphism
+        meeting.attend(person);
+        meeting.attend(student);
+        meeting.attend(teacher);
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(doctor);
+        meeting.attend(baker);
+        meeting.attend(mrWachs);
+        meeting.attend(null);
         
-        
+        // Need to "hold a meeting" of all members
+        meeting.hold();
         
         
         
