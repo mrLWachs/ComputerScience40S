@@ -5,11 +5,16 @@ package testing.advancedclasses;
  
 /**
  * HighSchool.java - represents a high school student person
+ * 
+ * Abstract class - is a class which can NOT ever be instantiated. This means  
+ * this class can only act as a parent class for other child classes (in this 
+ * case are Husky and Piper). To make a class abstract, add the "abstract" 
+ * keyword to the class signature line as seen below...
  *
  * @author Mr. Wachs
  * @since May 14, 2021, 11:38:45 a.m.
  */
-public class HighSchool extends Student
+public abstract class HighSchool extends Student
 {
 
     /**
