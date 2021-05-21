@@ -17,12 +17,55 @@ package testing.advancedclasses;
  */
 public abstract class Food 
 {
+    
+    /**
+     * The food groups: (0) Fruits and Vegetables, (1) Meats, (2) Dairy, 
+     * (3) Grains, (4) Other - "shared" constant array
+     */
+    public static final String[] GROUPS = {
+        "Fruits and Vegetables",
+        "Meats",
+        "Dairy",
+        "Grains",
+        "Other"
+    };
+    
+    /**
+     * Whether or not this 'food' item can be eaten
+     */
+    public boolean eatable;
+    
+    /**
+     * Encapsulated property, which food group the 'food' item is part of
+     */
+    private int group;
+    
+    /**
+     * Available to the class and children of the class, The flavor quality of 
+     * this food
+     */
+    protected String flavour;
+        
 
     /**
      * Constructor for the class, sets class properties
      */
-    public Food() {
-        
+    public Food(int group) {
+        this.group = group;           // Assign parameter to property
+    }
+    
+    /**
+     * How to eat this food object - note: abstract classes can ALSO have 
+     * "regular" methods and properties (not just abstract methods)
+     * 
+     * @return The output of how eating this 'food' item went
+     */
+    public String eat() {
+        if (hasSpoiled()) return "Do not eat!";
+        else {                                  // Food has not spoiled
+            prepare();                          // Prepare it (abstractly)
+            return GROUPS[group] + ", it was " + flavour;
+        }
     }
     
     /**
