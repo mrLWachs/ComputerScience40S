@@ -139,5 +139,14 @@ public class Person
         // you can use the class name then a dot to call static methods
         System.out.println("Boom!!!");
     }
+    
+    /**
+     * Consumes the passed food by outputting to the screen
+     * 
+     * @param food the abstract food object to consume 
+     */
+    public void consume(Food food) {
+        System.out.println(name + " eating " + food.eat());
+    }
         
 }
