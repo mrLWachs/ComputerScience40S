@@ -19,7 +19,7 @@ public abstract class Food
 {
 
     /**
-     * Default constructor, set class properties
+     * Constructor for the class, sets class properties
      */
     public Food() {
         
