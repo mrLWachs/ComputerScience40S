@@ -1,4 +1,5 @@
 
+/** Required package class namespace */
 package testing.advancedclasses;
 
 
@@ -21,11 +22,11 @@ public interface Sports
 
     /**
      * Mutator method, setting the name of the player. Interface method 
-     * signatures, do not need a public/private/protected modifier if you 
-     * like they are by default protected. They contain no method body 
-     * (no curly brackets or code) only the name, and return type (or void)
-     * and parameters (if needed). Like abstract methods (without the
-     * word "abstract")
+     * signatures do not need a public/private/protected modifier (if you don't
+     * want to state it) they are by default protected. They contain no method
+     * body (no curly brackets or code) only the name, and return type (or void)
+     * and parameters (if needed). Like abstract methods (without the word
+     * "abstract")
      * 
      * @param name 
      */
