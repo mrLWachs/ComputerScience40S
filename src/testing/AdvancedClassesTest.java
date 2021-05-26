@@ -246,9 +246,26 @@ public class AdvancedClassesTest
         // the interface ("the set of rules").
         
         Athlete jock = new Athlete("Wayne",18,99);
-        
-        
-        
+        // Have our athlete compete in four round of athletics
+        for (int round = 0; round < 4; round++) {
+            System.out.println("Round " + round + "...");
+            // Check if they can play
+            if (jock.haveYouGotItSigned()) {
+                // They can play...
+                jock.setOpponent("Pipers");
+                jock.score("Wayne");
+                jock.score("Wayne");
+                jock.score("Wayne");
+                jock.score(1, "Pipers");
+                jock.endOfPeriod(round);
+                jock.endOfQuarter(round);
+            }
+            else {
+                jock.sign();    // Sign so they can play
+            }
+        }
+        // Check if we won
+        if (jock.didIWin()) jock.consume(steak);
         
         
         

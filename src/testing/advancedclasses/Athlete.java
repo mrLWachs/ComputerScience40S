@@ -18,6 +18,12 @@ package testing.advancedclasses;
  */
 public class Athlete extends Husky implements Hockey, Football, PermissionForm
 {
+    
+    private boolean haveForm;   // Encapsulated property
+    private String  opponentName;
+    private int     homeScore;
+    private int     opponentScore;
+    
 
     /**
      * Class constructor, sets the class properties
@@ -28,6 +34,10 @@ public class Athlete extends Husky implements Hockey, Football, PermissionForm
      */
     public Athlete(String name, int age, int studentNumber) {
         super(name, age, studentNumber);
+        haveForm      = PermissionForm.NOT_SIGNED;  // Set properties to default
+        opponentName  = "";
+        homeScore     = 0;
+        opponentScore = 0;
     }
      
     /**
@@ -61,40 +71,115 @@ public class Athlete extends Husky implements Hockey, Football, PermissionForm
         return this;
     }
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(String name) {
+        System.out.println(name + " has scored a goal");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.endsWith(super.name)) homeScore++;
     }
 
+    /**
+     * The passed period of hockey is over
+	 *
+     * @param period the period number
+     */
     @Override
     public void endOfPeriod(int period) {
+        String output = "End of period "     + period;
+        output       += " and the score is " + homeScore;
+        output       += " for the "          + super.name;
+        output       += " and "              + opponentScore;
+        output       += " for the "          + opponentName;
+        System.out.println(output);
     }
 
+    /**
+     * Mutator method, setting the name of the player
+     * 
+     * @param name 
+     */
     @Override
     public void setName(String name) {
+        super.name = name;
     }
 
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
     @Override
     public void setOpponent(String name) {
+        opponentName = name;
     }
 
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
     @Override
     public boolean didIWin() {
+        if (homeScore >= opponentScore) {
+            System.out.println(super.name + " wins!");
+            return true;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return false;
+        }
     }
 
+    /**
+     * A team scoring some amount of points 
+     * 
+     * @param points the amount of points scored
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(int points, String name) {
+        System.out.println(name + " has scored " + points + " points");
+        if (name.equals(opponentName)) opponentScore += points;
+        if (name.endsWith(super.name)) homeScore     += points;
     }
 
+    /**
+     * End of this quarter of football
+     * 
+     * @param quarter the quarter ending
+     */
     @Override
     public void endOfQuarter(int quarter) {
+        String output = "End of quarter "    + quarter;
+        output       += " and the score is " + homeScore;
+        output       += " for the "          + super.name;
+        output       += " and "              + opponentScore;
+        output       += " for the "          + opponentName;
+        System.out.println(output);
     }
 
+    /**
+     * Signing the permission form
+     */
     @Override
     public void sign() {
+        System.out.println(super.name + " has gotten it signed!");
+        haveForm = PermissionForm.SIGNED;
     }
 
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
     @Override
     public boolean haveYouGotItSigned() {
+        return haveForm;
     }
     
 }
