@@ -19,7 +19,7 @@ package testing.advancedclasses;
 public class Athlete extends Husky implements Hockey, Football, PermissionForm
 {
     
-    private boolean haveForm;   // Encapsulated property
+    private boolean haveForm;           // Encapsulated properties
     private String  opponentName;
     private int     homeScore;
     private int     opponentScore;
@@ -28,9 +28,9 @@ public class Athlete extends Husky implements Hockey, Football, PermissionForm
     /**
      * Class constructor, sets the class properties
      * 
-     * @param name the name for this Athlete Husky High School 
-     * @param age the age for this Athlete Husky High School 
-     * @param studentNumber the student number for this Athlete Husky HighSchool  
+     * @param name the name for this Athlete Husky  
+     * @param age the age for this Athlete Husky 
+     * @param studentNumber the student number for this Athlete Husky   
      */
     public Athlete(String name, int age, int studentNumber) {
         super(name, age, studentNumber);
