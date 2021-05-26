@@ -4,6 +4,7 @@ package testing;
 
 /** Required imports */
 import testing.advancedclasses.Apple;
+import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
 import testing.advancedclasses.Husky;
@@ -244,7 +245,7 @@ public class AdvancedClassesTest
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
         
-        
+        Athlete jock = new Athlete("Wayne",18,99);
         
         
         
