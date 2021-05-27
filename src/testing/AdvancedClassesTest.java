@@ -6,6 +6,7 @@ package testing;
 import testing.advancedclasses.Apple;
 import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
+import testing.advancedclasses.Box;
 import testing.advancedclasses.Doctor;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Meeting;
@@ -268,29 +269,106 @@ public class AdvancedClassesTest
         // Check if we won
         if (jock.didIWin()) jock.consume(steak);
         
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
+        
+        // Let us start by creating simple ('primitive') data types
+        boolean b = true;
+        int     i = 0;
+        double  d = 3.14;
+        char    c = 'a';
+        
+        // Now use the primatives with a more complex data type (class) 
+        // called a "wrapper" class from the primatives and use the
+        // constructor methods passing the primitives to the method
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
+        
+        // And also String (which was always 'complex' using the capital
+        // 'S' to declare it) and its constructor method (usually not
+        // needed)...
+        String string = new String("text");
+        
+        // Now call the generic method on the variety of 'generic' objects
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        output(string);
+        output(jock);
+        
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.        
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string);
+        Box<Athlete>   box6 = new Box<>(jock);
+        
+        // Peek in the boxes
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
+        
+        // Open all the boxes
+        Boolean   newBoolean   = box1.open();
+        Integer   newInteger   = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Person    newPerson    = box6.open();
+        
+        // Output the newly returned data type objects
+        output(newBoolean);
+        output(newInteger);
+        output(newDouble);
+        output(newCharacter);
+        output(newString);
+        output(newPerson);     
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-                
-        
-        
-        
-            
-            
         
         
         
         
         
         System.out.println("\nCompleted Advanced classes!\n");
+    }
+    
+    /**
+     * Outputs a generic item with information about the data type.
+     * Generic methods use 'generic' references rather than specific
+     * references. You do not define the data type (the parameter) 
+     * when the method is created. Instead of defining the data
+     * type, a set of angle brackets "< >" is used with a single
+     * letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in
+     * the argument when the method is later called
+     *
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is " + item.toString();
+        System.out.println(text);
     }
 
 }
