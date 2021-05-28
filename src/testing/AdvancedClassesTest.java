@@ -347,6 +347,7 @@ public class AdvancedClassesTest
         // enhanced for loop, restricted generics        
         House<Teacher,Meeting> house = new House<>();
         
+        // Associate the objects that match with the generics
         house.homeOwner = mrWachs;
         house.contents  = meeting;
         
