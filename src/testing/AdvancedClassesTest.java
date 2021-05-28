@@ -8,6 +8,8 @@ import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Box;
 import testing.advancedclasses.Doctor;
+import testing.advancedclasses.Food;
+import testing.advancedclasses.House;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.MrWachs;
@@ -341,12 +343,18 @@ public class AdvancedClassesTest
         output(newString);
         output(newPerson);     
         
+        // A generic class with multiple generic types, a generic method, the
+        // enhanced for loop, restricted generics        
+        House<Teacher,Meeting> house = new House<>();
         
+        house.homeOwner = mrWachs;
+        house.contents  = meeting;
         
+        // Create an array of Food objects
+        Food[] fridge = { apple, steak };
         
-        
-        
-        
+        // Test our generic method
+        house.party(fridge);
         
         System.out.println("\nCompleted Advanced classes!\n");
     }
