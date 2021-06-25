@@ -1,8 +1,8 @@
-
-/** required package class namespace */
+  
+/** Required package class namespace */
 package testing.advancedclasses;
 
- 
+
 /**
  * Person.java - represents a person, remember that classes are composed of
  * properties (things about it, descriptors, adjectives) and methods (things
@@ -10,42 +10,57 @@ package testing.advancedclasses;
  * class to create an object
  *
  * @author Mr. Wachs
- * @since Feb. 28, 2020, 2:02:58 p.m.
+ * @since April 2021
  */
 public class Person 
 {
-
-    // PROPERTIES (below)...................................................
     
-    public    String  name;
-    private   int     age;                  // encapsulated property 
-    
-    // METHODS (below)......................................................
+    // PROPERTIES.........................................
+    // The "things about the class", descriptors, adjectives, variables, storage
     
     /**
-     * Default constructor, set class properties
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by anther class "using" this class
+     */
+    public String name;
+    
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private int age;
+    
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean isAlive;
+            
+
+    // METHODS............................................ 
+    // The "things classes can do", actions, verbs, including "constructors"
+    
+    /**
+     * Class constructor method, sets the class properties when the class is
+     * instantiated into an object - in other words, when a person object is
+     * "built" it calls this method to build it. Constructor methods with no 
+     * parameters are called "default" constructors.
      */
     public Person() {
-        name   = "jane doe";
-        age    = 0;
+        name    = "Jane D'Oh";
+        age     = 0;
+        isAlive = true;
     }
     
     /**
-     * Class constructor sets class properties to parameter values
-     * 
-     * @param name the name for this person
-     * @param age the age for this person
-     */
-    public Person(String name, int age) {
-        this.name   = name;
-        this.age    = age;
-    }
-    
-    /**
-     * Outputs data on this person to the screen
+     * Method to simulate this person "talking" out information about the object
+     * it outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(name + "," + age);
-    }
-        
+        System.out.println("Person: " + name + " is " + age + " is " + isAlive);
+    }    
+    
 }
