@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
@@ -7,19 +7,36 @@ package testing.advancedclasses;
  * Teacher.java - represents a teacher (and "is a" person)
  *
  * @author Mr. Wachs
- * @since Mar. 9, 2020, 1:29:28 p.m.
+ * @since Apr. 26, 2021, 11:53:09 a.m.
  */
 public class Teacher extends Person
 {
     
-    public Student[] students;                      // associated object array
+    /**
+     * An array of student objects, so the teacher has a association with these
+     * objects (or a "has a" relationship) - it is "composed of" (composition)
+     * student objects
+     */
+    public Student[] students;
+    
     
     /**
-     * Constructor, set class properties
+     * Class constructor, sets class properties
+     * 
+     * If a constructor has no parameters, it is called a "default constructor"
+     * When you create a class, if you never write any constructors, NetBeans 
+     * (any compiler or IDE) will write a default constructor for you! 
+     * HOWEVER...If you write a constructor, with parameters (in other words 
+     * no longer a default) then it will NOT write a default for you
+     * 
+     * @param name the name for this teacher
      */
     public Teacher(String name) {
-        super(name, 50, true);
-        students = new Student[100];                // instantiate array
+        super();    // call to the "super constructor"
+        super.name = name;
+        // Need to instantiate (means "make instances of", "instance" is
+        // another word for "object") the array
+        students = new Student[100];
     }
      
     /**
@@ -29,18 +46,32 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
+        // Create a temporary variable to hold all the output data
         String text = "Teacher: " + super.toString();
-        // Loop (traverse) through all students (that exist!) 
+        // Now add all the student data (from the array) to this variable by
+        // looping through the entire array (start to finish) - using a NEW type
+        // of loop called the "enhanced for loop". To create the enhanced for
+        // loop use the shortcut: type "for" then CTRL + SPACE and pick the 
+        // fourth option from the top...           
         for (Student student : students) {
-            // Use "enhanced for loop"
-            // should read this loop as "for every student in students"
-            // it is an option for looping with advanced groups of things 
-            // (classes) with arrays and other more advanced things to come...            
-            if (student != null) {
-                text = text + "\n\t" + student.toString();
-            }
+            // The enhanced for loop should be read as:
+            // "for every student in students..."
+            // The "student" object automatically goes through each element in
+            // the array, automatically from the start of the array to the end,
+            // changing "student" each time through to each element in order...
+            if (student != null) {  // Only count student objects that exist
+                text = text + "\n\t" + student.toString(); // attach to variable
+            }            
+            // "enhanced" for loops can be used with arrays and with more 
+            // advancded data types (like collections)
         }
-        return text;
+        // For comparison, this would be the same code using a standard for loop
+        // for (int i = 0; i < students.length; i++) {
+        //     if (students[i] != null) {  
+        //         text = text + "\n\t" + students[i].toString(); 
+        //     }  
+        // }
+        return text;        // Send back the temporary variable
     }
    
     /**
@@ -51,20 +82,9 @@ public class Teacher extends Person
      */
     @Override
     public boolean equals(Object object) {
-        Teacher that = (Teacher)object;
-        // start by comparing array sizes
-        if (that.students.length != this.students.length) return false;
-        // we could go deeper by somparing each student...
-        for (int i = 0; i < this.students.length; i++) {
-            Student s1 = this.students[i];
-            Student s2 = that.students[i];
-            if (s1 != null) {
-                if (!s1.equals(s2)) return false;
-            }
-        }
-        return super.equals(that);
+        return super.equals(object);
     }
-           
+       
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
@@ -72,15 +92,7 @@ public class Teacher extends Person
      */
     @Override
     public Teacher clone() {
-        Teacher that = new Teacher(this.name);
-        // if I wanted to go deeper, clone
-        // all the students        
-        for (int i = 0; i < this.students.length; i++) {
-            if (this.students[i] != null) {
-                that.students[i] = this.students[i].clone();
-            }
-        }        
-        return that;
+        return this;
     }
     
 }
