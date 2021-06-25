@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package tools;
 
  
@@ -7,7 +7,7 @@ package tools;
  * Calculator.java - useful collection of methods for doing calculations.
  *
  * @author Mr. Wachs
- * @since Oct. 5, 2020
+ * @since March 4, 2021
  */
 public class Calculator 
 {
@@ -22,11 +22,15 @@ public class Calculator
      * @param number the number to calculate the factorial of
      * @return the factorial of the parameter
      */
-    public static long factorial(long number) {         
+    public static long factorial(int number) {        
         // Base case(s) - stops the recursion        
-        if (number <= 1) return 1;        
-        // Recursive case(s) - like a loop, method calls itself         
-        return number * factorial(number - 1); 
+        if (number <= 1) {
+            return 1;
+        }        
+        // Recursive case(s) - like a loop, method that calls itself
+        else {
+            return number * factorial(number-1);
+        }
     }
     
     /**
@@ -55,5 +59,5 @@ public class Calculator
         // Default recursive case
         return base * power(base, exponent-1);
     }
- 
+        
 }
