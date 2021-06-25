@@ -1,52 +1,46 @@
-
-/** required package class namespace */
+  
+/** Required package class namespace */
 package testing;
 
-/** required imports */
+/** Required imports */
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 
- 
+
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
- * @since Feb. 28, 2020, 2:00:03 p.m.
+ * @since Sep. 30, 2019, 11:43:07 a.m.
  */
 public class AdvancedClassesTest 
 {
-
+    
     /**
-     * Default constructor, set class properties
+     * Default constructor method, it sets class properties.
+     * 
+     * Special Methods that have the same name as the class (including a
+     * capital at the start of the name) and NO return type (not even "void")
+     * are called "constructor" methods these methods are called when the class
+     * is created (or constructed), it makes an object from the class, or it
+     * instantiates the class (creates an "instance")
      */
     public AdvancedClassesTest() {
-        System.out.println("\nAdvanced classes test started...\n");
+        System.out.println("\nStarting Advanced classes...\n");
         
-        // Review of classes concepts (properties, methods, object, inheritance)
+        // Using the class to create an object with the default constructor:
+        // class object = call constructor method (default)        
+        Person person = new Person();
+        person.name = "Dave Smith"; // "public" properties can be accessed
+        // person.age = 16; // Can't change "private" (encapsulated) properties
+        person.talk();  // Call one of the methods in this object (of the class)
         
-        // using the class to create an object with the default constructor:
-        // class object = call constructor method (default)
-        Person person = new Person();                   // person object
-        person.talk();                                  // calls class method 
-     
-        // Second student object (occupies different memory spaces)
-        Person jeanie = new Person();
-        jeanie.name = "Jeanette";
-        jeanie.talk();   
+        // Instantiate (create) and object of type student        
+        Student student = new Student("Smelly Teenager",17,101);        
+        student.talk();                     // Inherited method from person
+        student.study();                    // Method for just this class
         
-        // Third person (uses the overloaded constructor)
-        Person dave = new Person("David Davidson",17);
-        dave.talk();
-        
-        // Fourth person...
-        Person david = new Person("David Davidson",17);
-        david.talk();   
-        
-        // class using inheritance of a new student object 
-        Student student = new Student();                // new student object
-        student.talk();                                 // inherited method
-                        
-        System.out.println("\nAdvanced classes test complete!\n");
+        System.out.println("\nCompleted Advanced classes!\n");
     }
-             
+
 }
