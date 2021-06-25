@@ -1,40 +1,64 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
- 
 /**
  * Student.java - represents a student, reminder that "extends" causes
  * inheritance (or "is a") meaning this class gets all the properties and
- * methods of it's parent (super) class
- *
+ * methods of it's parent (super) class. The line below is called the 
+ * "signature" line for this class. If we add the "modifier" word "extends" 
+ * it causes inheritance and then the class it inherits from is typed next. 
+ * This is a "is a" relationship, so a "Student is a Person", and this class  
+ * inherits all properties and methods from the "parent" (super) class. The 
+ * line below is called the "signature" line for this class. If we add the 
+ * "modifier" word "extends" it causes inheritance and then the class it 
+ * inherits from is typed next. This is a "is a" relationship, so a 
+ * "Student is a Person", and this class inherits all properties and methods 
+ * from the "parent" (super) class.
+ * 
  * @author Mr. Wachs
- * @since Mar. 3, 2020, 10:07:24 a.m.
+ * @since April 2021
  */
 public class Student extends Person
 {
 
-    private int number;                         // encapsulated property
-    
-    
+    public int studentNumber; // class property (and inherited other properties)
+        
     /**
-     * Default class constructor sets class properties, when a constructor has 
-     * a parameter, it is no longer a default constructor. If you have no 
-     * default, usually one is written for you, EXCEPT if you write a 
-     * non-default constructor, it will not!
+     * Class constructor, it sets class properties. When a class has one or 
+     * more parameter(s), it is no longer a default constructor.
+     * 
+     * If a class does not have any constructor methods, normally the compiler
+     * (IDE, NetBeans, etc.) will write a "default" constructor for you (means
+     * a constructor with no parameters) - HOWEVER, if you write a constructor
+     * (any type) - then the compiler will NOT write one for you
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param studentNumber the student number for this student
      */
-    public Student() {
-        super();                                // call to super constructor
-        this.number = 0;                        // set property
+    public Student(String name, int age, int studentNumber) {
+        super();                               // Call the "super constructor"
+        super.name         = name;             // Modify the public property
+        this.studentNumber = studentNumber;    // Modify this class property
     }
- 
+    
     /**
-     * Outputs data on this student to the screen
+     * Method just for this class
+     */
+    public void study() {
+        System.out.println("\tWorking hard!");
+    }    
+    
+    /**
+     * This is a "over-ride" method, this method will (when called)
+     * run "instead of" the method that was inherited - because it
+     * "over-rides" that other method 
      */
     @Override
     public void talk() {
-        super.talk();
-        System.out.println("Student: " + number);
+        super.talk();           // First call method from super (parent) class
+        System.out.println("\tStudent Number = " + studentNumber);
     }
-    
+        
 }
