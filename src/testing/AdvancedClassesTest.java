@@ -136,44 +136,6 @@ public class AdvancedClassesTest
         // Output our teacher again
         System.out.println(teacher.toString());
         
-        // Using a static variable, static variables get instantiated once and
-        // all objects share a reference to that same memory location (meaning
-        // the "static" variable "belongs" to the class not the object)
-        
-        // Check our static variable
-        System.out.println(student.name + "=" + student.totalStudents);
-        System.out.println(student1.name + "=" + student1.totalStudents);
-        System.out.println(student2.name + "=" + student2.totalStudents);
-        System.out.println(student3.name + "=" + student3.totalStudents);
-        System.out.println(studentClone.name + "=" + studentClone.totalStudents);
-        
-        // Notice how we get the same output for each student instance as they
-        // all "share" the same access to the same static variable
-        
-        // You can access static variables from the class itself, not just 
-        // the instances (objects) of the class, for example...
-        
-        System.out.println(Student.totalStudents);
-        
-        // Call a static method from the class name:
-        
-        Person.endTheWorld();
-        
-        // You have seen calling method like this before, for example in
-        // JOptionPane.showMessageDialog(null, "");
-        // Not doing this...
-        // JOptionPane jop = new JOptionPane();
-        // jop.showMessageDialog(null,"");
-        
-        // You still can call static methods from the instances (but, 
-        // autocomplete/intellisense will not show it)
-        
-        person.endTheWorld();
-        student.endTheWorld();      // Child class inherited the method
-        teacher.endTheWorld();
-        Student.endTheWorld();
-        Teacher.endTheWorld();
-        
         System.out.println("\nCompleted Advanced classes!\n");
     }
 

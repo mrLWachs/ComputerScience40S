@@ -129,15 +129,5 @@ public class Person
         that.setAge(this.getAge());
         return that;
     }
-    
-    /**
-     * Ends the world
-     */
-    public static void endTheWorld() {
-        // "static" methods means the method is "shared" by all objects
-        // of the class - it can also be called from the class itself,
-        // you can use the class name then a dot to call static methods
-        System.out.println("Boom!!!");
-    }
         
 }
