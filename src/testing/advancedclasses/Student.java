@@ -24,6 +24,8 @@ public class Student extends Person
 
     public int studentNumber; // class property (and inherited other properties)
     
+    private Book book;  // "has a" relationship (association or "usage")
+    
     
     /**
      * "static" property: the modifier word "static" simply means "shared" 
