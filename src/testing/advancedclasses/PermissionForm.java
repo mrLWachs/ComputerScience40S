@@ -1,17 +1,17 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
 
 /**
- * PermissionForm.java - interface enforcing the rules of a permission form
- *
+ * PermissionForm.java - enforcing "the rules" of a permission form
+ * 
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:41:27 PM
+ * @since May 25, 2021
  */
 public interface PermissionForm 
 {
-
+    
     /**
      * Represents a signed permission form
      */
@@ -20,7 +20,7 @@ public interface PermissionForm
     /**
      * Represents an unsigned permission form
      */
-    static final boolean NOT_SIGNED = false; 
+    static final boolean NOT_SIGNED = false;
     
     /**
      * Signing the permission form
