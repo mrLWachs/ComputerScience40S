@@ -1,22 +1,22 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * Banana.java - represents a banana
+ * Baker.java - represents a baker person
  *
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:28:54 PM
+ * @since May 14, 2021, 11:40:29 a.m.
  */
-public class Banana extends Food
+public class Baker extends Person
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Banana() {
-        super(true, Food.GROUPS[0], "sweet");
+    public Baker() {
+        super();
     }
      
     /**
@@ -26,7 +26,7 @@ public class Banana extends Food
      */
     @Override
     public String toString() {
-        return "Banana: " + super.toString();
+        return "Baker: " + super.toString();
     }
    
     /**
@@ -46,23 +46,8 @@ public class Banana extends Food
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Banana clone() {
+    public Baker clone() {
         return this;
-    }
-
-    @Override
-    public boolean eat() {
-        return true;
-    }
-
-    @Override
-    public void prepare() {
-        System.out.println("Peel it");
-    }
-
-    @Override
-    public void store() {
-        System.out.println("Not in fridge");
     }
     
 }

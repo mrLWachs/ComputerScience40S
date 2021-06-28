@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
@@ -7,7 +7,7 @@ package testing.advancedclasses;
  * Doctor.java - represents a doctor person
  *
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:08:34 PM
+ * @since May 14, 2021, 11:40:22 a.m.
  */
 public class Doctor extends Person
 {
@@ -16,7 +16,7 @@ public class Doctor extends Person
      * Default constructor, set class properties
      */
     public Doctor() {
-        
+        super();
     }
      
     /**

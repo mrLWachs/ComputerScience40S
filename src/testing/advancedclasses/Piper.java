@@ -1,23 +1,26 @@
-/** required package class namespace */
+
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * HighSchoolStudent.java - represents a husky student person
+ * Piper.java - represents a piper high school student person
  *
  * @author Mr. Wachs
- * @since Mar. 16, 2020, 2:09:51 p.m.
+ * @since May 14, 2021, 11:39:42 a.m.
  */
-public class HighSchoolStudent extends Student
+public class Piper extends HighSchool
 {
 
     /**
-     * Class constructor sets class properties
+     * Class constructor, sets the class properties
      * 
-     * @param studentNumber the student number of this student
+     * @param name the name for this Piper High School 
+     * @param age the age for this Piper High School 
+     * @param studentNumber the student number for this Piper High School
      */
-    public HighSchoolStudent(int studentNumber) {
-        super(studentNumber);
+    public Piper(String name, int age, int studentNumber) {
+        super(name, age, studentNumber);
     }
      
     /**
@@ -27,7 +30,7 @@ public class HighSchoolStudent extends Student
      */
     @Override
     public String toString() {
-        return "HighSchoolStudent: " + super.toString();
+        return "Piper: " + super.toString();
     }
    
     /**
@@ -47,7 +50,7 @@ public class HighSchoolStudent extends Student
      * @return a "clone" of the object using new memory
      */
     @Override
-    public HighSchoolStudent clone() {
+    public Piper clone() {
         return this;
     }
     
