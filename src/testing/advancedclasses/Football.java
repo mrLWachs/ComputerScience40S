@@ -1,17 +1,17 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
 
 /**
- * Football.java - interface enforcing the rules of football
- *
+ * Football.java - enforcing "the rules" of football (and sports)
+ * 
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:40:04 PM
+ * @since May 25, 2021
  */
-public interface Football 
+public interface Football extends Sports
 {
-
+    
     /**
      * A team scoring some amount of points 
      * 
@@ -26,5 +26,5 @@ public interface Football
      * @param quarter the quarter ending
      */
     void endOfQuarter(int quarter);
-    
+
 }

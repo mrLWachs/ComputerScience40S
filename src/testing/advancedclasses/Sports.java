@@ -1,23 +1,34 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
 
 /**
- * Sports.java - the interface for "sports" an interface is a "category" of 
+ * Sports.java - the interface for "sports". An interface is a "category" of 
  * abstract concepts. Even more abstract than a abstract class, it can be 
- * thought of as "a set of rules"
- *
+ * thought of as "a set of rules". It is a bit like a class, except it
+ * can only contain method signatures (no method body, only the name, 
+ * return type, and any parameters) and properties marked as final. 
+ * They use the 'interface' modifier keyword instead of 'class'. You 
+ * cannot create instances of an interface by itself, you must always 
+ * create an instance of some class that 'implements' the interface. This 
+ * means the other class "follows the rules" of that interface.
+ * 
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:37:25 PM
+ * @since May 25, 2021
  */
 public interface Sports 
 {
-    
+
     /**
-     * Mutator setting the name of the player
+     * Mutator method, setting the name of the player. Interface method 
+     * signatures do not need a public/private/protected modifier (if you don't
+     * want to state it) they are by default protected. They contain no method
+     * body (no curly brackets or code) only the name, and return type (or void)
+     * and parameters (if needed). Like abstract methods (without the word
+     * "abstract")
      * 
-     * @param name the name of this player
+     * @param name 
      */
     void setName(String name);
     
@@ -33,6 +44,6 @@ public interface Sports
      * 
      * @return there was a winner (true) or not (false)
      */
-    boolean didIWin();    
-
+    boolean didIWin();
+    
 }
