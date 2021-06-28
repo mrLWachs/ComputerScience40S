@@ -1,25 +1,26 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * ComputerScienceTeacher.java - represents a Computer Science (CS) 
- * teacher person
+ * Piper.java - represents a piper high school student person
  *
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:09:59 PM
+ * @since May 14, 2021, 11:39:42 a.m.
  */
-public class CSTeacher extends Teacher
+public class Piper extends HighSchool
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets the class properties
      * 
-     * @param name the name for this teacher
+     * @param name the name for this Piper High School 
+     * @param age the age for this Piper High School 
+     * @param studentNumber the student number for this Piper High School
      */
-    public CSTeacher(String name) {
-        super(name);
+    public Piper(String name, int age, int studentNumber) {
+        super(name, age, studentNumber);
     }
      
     /**
@@ -29,7 +30,7 @@ public class CSTeacher extends Teacher
      */
     @Override
     public String toString() {
-        return "ComputerScienceTeacher: " + super.toString();
+        return "Piper: " + super.toString();
     }
    
     /**
@@ -49,7 +50,7 @@ public class CSTeacher extends Teacher
      * @return a "clone" of the object using new memory
      */
     @Override
-    public CSTeacher clone() {
+    public Piper clone() {
         return this;
     }
     

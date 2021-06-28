@@ -1,23 +1,22 @@
-/** required package class namespace */
+
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * HighSchoolStudent.java - represents a husky student person
+ * Baker.java - represents a baker person
  *
  * @author Mr. Wachs
- * @since Mar. 16, 2020, 2:09:51 p.m.
+ * @since May 14, 2021, 11:40:29 a.m.
  */
-public class HighSchoolStudent extends Student
+public class Baker extends Person
 {
 
     /**
-     * Class constructor sets class properties
-     * 
-     * @param studentNumber the student number of this student
+     * Default constructor, set class properties
      */
-    public HighSchoolStudent(int studentNumber) {
-        super(studentNumber);
+    public Baker() {
+        super();
     }
      
     /**
@@ -27,7 +26,7 @@ public class HighSchoolStudent extends Student
      */
     @Override
     public String toString() {
-        return "HighSchoolStudent: " + super.toString();
+        return "Baker: " + super.toString();
     }
    
     /**
@@ -47,7 +46,7 @@ public class HighSchoolStudent extends Student
      * @return a "clone" of the object using new memory
      */
     @Override
-    public HighSchoolStudent clone() {
+    public Baker clone() {
         return this;
     }
     

@@ -1,26 +1,26 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
 /**
- * MrWachs.java - represents a MrWachs CS teacher person
+ * MrWachs.java - represents a Mr. Wachs teacher person
  *
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:10:31 PM
+ * @since May 14, 2021, 11:41:06 a.m.
  */
-public class MrWachs extends CSTeacher
+public class MrWachs extends Teacher
 {
 
     /**
-     * Default constructor, set class properties
+     * Class constructor, sets class properties
      * 
      * @param name the name for this teacher
      */
     public MrWachs(String name) {
         super(name);
     }
-
+     
     /**
      * String representation of this object
      *

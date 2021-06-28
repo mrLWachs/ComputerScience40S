@@ -1,219 +1,220 @@
-
-/** required package class namespace */
+ 
+/** Required package class namespace */
 package testing;
 
-/** required imports */
-import testing.advancedclasses.CSTeacher;
+/** Required imports */
+import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
-import testing.advancedclasses.HighSchoolStudent;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Piper;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 
- 
+
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
  * @author Mr. Wachs
- * @since Feb. 28, 2020, 2:00:03 p.m.
+ * @since Sep. 30, 2019, 11:43:07 a.m.
  */
 public class AdvancedClassesTest 
 {
-
+    
     /**
-     * Default constructor, set class properties
+     * Default constructor method, it sets class properties.
+     * 
+     * Special Methods that have the same name as the class (including a
+     * capital at the start of the name) and NO return type (not even "void")
+     * are called "constructor" methods these methods are called when the class
+     * is created (or constructed), it makes an object from the class, or it
+     * instantiates the class (creates an "instance")
      */
     public AdvancedClassesTest() {
-        System.out.println("\nAdvanced classes test started...\n");
+        System.out.println("\nStarting Advanced classes...\n");
         
-        // Review of classes concepts (properties, methods, object, inheritance)
+        // Using the class to create an object with the default constructor:
+        // class object = call constructor method (default)        
+        Person person = new Person();
+        person.name = "Dave Smith"; // "public" properties can be accessed
+        // person.age = 16; // Can't change "private" (encapsulated) properties
+        person.talk();  // Call one of the methods in this object (of the class)
         
-        // using the class to create an object with the default constructor:
-        // class object = call constructor method (default)
-        Person person = new Person();                   // person object
-        person.talk();                                  // calls class method 
-     
-        // Second student object (occupies different memory spaces)
-        Person jeanie = new Person();
-        jeanie.name = "Jeanette";
-        jeanie.talk();   
-        
-        // Third person (uses the overloaded constructor)
-        Person dave = new Person("David Davidson",17);
-        dave.talk();
-        
-        // Fourth person...
-        Person david = new Person("David Davidson",17);
-        david.talk();   
-        
-        // class using inheritance of a new student object 
-        Student student = new Student();                // new student object
-        student.talk();                                 // inherited method
+        // Instantiate (create) and object of type student        
+        Student student = new Student("Smelly Teenager",17,101);        
+        student.talk();                     // Inherited method from person
+        student.study();                    // Method for just this class
         
         // The Object class (parent class of all classes)
         
-        // all classes (including ones we create) inherit from the object 
+        // All classes (including ones we create) inherit from the object 
         // class which is the parent (super) of all classes
-        
-        Object object1 = new Object();              // parent of all classes
+       
+        Object object1 = new Object();
         Object object2 = new Object();
-        Object object3 = object1;                   // same memory address
+        Object object3 = object1;           // Same address as the first object
         
-        // The toString(), clone(), and equals() methods
+        // Built into the Object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this
+        // unit, and others like the toString(), clone(), and equals() methods
+        
+        // The toString() method of the object class outputs information 
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory
+        
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
+        
+        // The equals() method of the object class checks if two objects are 
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)
+        
+        if (object1.equals(object2)) System.out.println("O1 == O2");
+        if (object2.equals(object3)) System.out.println("O2 == O3");
+        if (object1.equals(object3)) System.out.println("O1 == O3");
+        
+        // Now since these two methods are inherited by ALL class objects, we
+        // can use this methods with Person class objects:
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three 
+        
+        Person person1 = new Person();
+        Person person2 = person1;           // Same address as the first object
+        Person person3 = person2;           // Same as address 2 (which is 1)
+        
+        System.out.println("P1 = " + person1.toString());
+        System.out.println("P2 = " + person2.toString());
+        System.out.println("P3 = " + person3.toString());
                 
-        System.out.println(object1.toString());         // the toString method
-        System.out.println(object2.toString());
-        System.out.println(object3.toString());
+        if (person1.equals(person2)) System.out.println("P1 == P2");
+        if (person2.equals(person3)) System.out.println("P2 == P3");
+        if (person1.equals(person3)) System.out.println("P1 == P3");
+        
+        // Then we will over-ride the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this). 
                         
-        if (object1.equals(object2)) System.out.println("1 == 2");
-        if (object1.equals(object3)) System.out.println("1 == 3");
-                
-        // test toString, clone, and equals on Person
+        Student student1 = new Student("Name1", 10, 100);
+        Student student2 = new Student("Name2", 20, 200);
+        Student student3 = new Student("Name1", 10, 100);
         
-        Person archie  = new Person("Archie Andrews",17,true);
-        Person betty   = new Person("Betty Cooper",16,false);
-        Person jughead = archie.clone();
+        System.out.println(student1.toString());
+        System.out.println(student2.toString());
+        System.out.println(student3.toString());
         
-        System.out.println(archie.toString());
-        System.out.println(betty.toString());
-        System.out.println(jughead.toString());
+        if (student1.equals(student2)) System.out.println("S1 == S2");
+        if (student2.equals(student3)) System.out.println("S2 == S3");
+        if (student1.equals(student3)) System.out.println("S1 == S3");  
+            
+        // Test the deep clone method making a perfect clone with new memory
+        // allocated and test the equals and toString method. With the println
+        // method, it will call the toString method of an object automatically
         
-        if (archie.equals(betty))   System.out.println("archie == betty");
-        if (archie.equals(jughead)) System.out.println("archie == jughead");
+        Person  personClone  = person.clone();
+        Student studentClone = student.clone();
         
-        // test toString, equals, clone on Student
+        if (person.equals(personClone))   System.out.println(personClone);
+        if (student.equals(studentClone)) System.out.println(studentClone);
         
-        Student emma  = new Student("Emma Nelson",17,false,100);
-        Student jimmy = new Student("Jimmy Brooks",18,true,101);
-        Student terri = emma.clone();
+        // Teacher class uses inheritance ("is a" person), and association
+        // ("has a" person)
         
-        System.out.println(emma.toString());
-        System.out.println(jimmy.toString());
-        System.out.println(terri.toString());
+        Teacher teacher = new Teacher("Ms. Teacherson");
+        System.out.println(teacher);
         
-        if (emma.equals(jimmy)) System.out.println("emma == jimmy");
-        if (emma.equals(terri)) System.out.println("emma == terri");
+        // "Give our teacher some students" - mean we will assign a student
+        // object (or "instance") to the index of the array property of the
+        // teacher object
         
-        // Create Teacher objects which associates with student
-        // and test this object's toString(), clone(), and 
-        // equals() methods...
+        teacher.students[0] = student;
+        teacher.students[1] = student1;
+        teacher.students[2] = student2;
+        teacher.students[3] = student3;
+        teacher.students[4] = studentClone;
         
-        Teacher teacher = new Teacher("Mr. Teacherson");
-        
-        // assign student objects to the teacher object using the correct
-        // "addressing" to find the correect spot to "put" each student
-        
-        teacher.students[0] = emma;
-        teacher.students[1] = jimmy;
-        teacher.students[2] = terri;
-        teacher.students[3] = student;
-        teacher.students[4] = new Student("Smelly Teenager",15,true,111);
-        // Here we have added an "annoynomous" object (a student)
-        
+        // Output our teacher again
         System.out.println(teacher.toString());
-     
-        Teacher substitute = teacher.clone();        
-        if (teacher.equals(substitute)) System.out.println("teacher == sub");
         
-        // Add a new student (an annoynmous object) to the clone teacher        
-        substitute.students[5] = new Student("Young Kid", 10, false, 5);
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
         
-        // output both teacher objects (to see the differences)
+        // Check our static variable
+        System.out.println(student.name + "=" + student.totalStudents);
+        System.out.println(student1.name + "=" + student1.totalStudents);
+        System.out.println(student2.name + "=" + student2.totalStudents);
+        System.out.println(student3.name + "=" + student3.totalStudents);
+        System.out.println(studentClone.name + "=" + studentClone.totalStudents);
         
-        System.out.println(teacher.toString());
-        System.out.println(substitute);
-     
-        if (teacher.equals(substitute)) System.out.println("teacher==sub");
-                        
-        // output our "static" variable
+        // Notice how we get the same output for each student instance as they
+        // all "share" the same access to the same static variable
         
-        System.out.println("Total students is " + zach.total);
-        System.out.println("Total students is " + Student.total);
+        // You can access static variables from the class itself, not just 
+        // the instances (objects) of the class, for example...
         
-        // call (invoke) a static method
+        System.out.println(Student.totalStudents);
         
-        person.endTheWorld();
-        student.endTheWorld();
-        teacher.endTheWorld();
-        
-        // static methods can be invoked (called) from the class in addition
-        // to the objects
+        // Call a static method from the class name:
         
         Person.endTheWorld();
+        
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
+        
+        // You still can call static methods from the instances (but, 
+        // autocomplete/intellisense will not show it)
+        
+        person.endTheWorld();
+        student.endTheWorld();      // Child class inherited the method
+        teacher.endTheWorld();
         Student.endTheWorld();
         Teacher.endTheWorld();
-                        
-        // call method that uses instanceof operator        
-        whatIs(object1);
-        whatIs(person);
-        whatIs(student);
-        whatIs(teacher);        
-        String thing = "Hello World";        
-        whatIs(thing);
         
-        // show the static class variable (property)        
-        System.out.println(jimmy.totalStudents);
+        // Create (instantiate) objects (instances) of the new classes...
+        Husky   husky   = new Husky("Havoc", 12, 2665);
+        Piper   piper   = new Piper("Yosemite", 51, 470);
+        Doctor  doctor  = new Doctor();
+        Baker   baker   = new Baker();
+        MrWachs mrWachs = new MrWachs("Mr. Wachs");
         
-        // create some high school and huskies        
-        HighSchoolStudent jeff = new HighSchoolStudent(105);
-        Husky havoc = new Husky(2665);
+        // Add a student object to that instance of a MrWachs object
+        mrWachs.students[0] = husky;
         
-        // create more objects
-        Doctor    doctor   = new Doctor();
-        CSTeacher compTech = new CSTeacher("Mr. Code");
-        MrWachs   mrWachs  = new MrWachs("Mr. Wachs");
-                
-        // use the method again        
-        whatIs(jeff);
-        whatIs(havoc);
-        whatIs(doctor);
-        whatIs(compTech);
-        whatIs(mrWachs);
+        // Output these new objects (using toString called automatically)
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(doctor);
+        System.out.println(baker);
+        System.out.println(mrWachs);
         
-        // use some polymorphism....  
-        Meeting meeting = new Meeting();        // create meeting object
-        meeting.attend(person);                 // add various child objects
-        meeting.attend(student);                // using polymorphic method
-        meeting.attend(doctor);                 // arguments
+        // Instantiate ("make an instance of") a meeting object (of that class)        
+        Meeting meeting = new Meeting();
+        
+        // Have person objects (and all children) attend - through polmorphism
+        meeting.attend(person);
+        meeting.attend(student);
         meeting.attend(teacher);
-        meeting.attend(archie);
-        meeting.attend(betty);
-        meeting.attend(compTech);
-        meeting.attend(emma);
-        meeting.attend(havoc);
-        meeting.attend(jeff);
-        meeting.attend(jimmy);
-        meeting.attend(jughead);
-        meeting.attend(terri);
-        meeting.attend(mrWachs);        
-        meeting.hold();                         // hold the mmeting
-                
-        System.out.println("\nAdvanced classes test complete!\n");
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(doctor);
+        meeting.attend(baker);
+        meeting.attend(mrWachs);
+        meeting.attend(null);
+        
+        // Need to "hold a meeting" of all members
+        meeting.hold();
+        
+        System.out.println("\nCompleted Advanced classes!\n");
     }
-     
-    /**
-     * Checks the passed object and outputs what class type the object is. 
-     * This method uses the instanceof operator to do the logic
-     * 
-     * @param object the object type to check
-     */
-    private void whatIs(Object object) {
-        String name = "This is a ";
-        if (object instanceof Object)            name += "Object -> ";
-        if (object instanceof Person)            name += "Person -> ";
-        if (object instanceof Student)           name += "Student -> ";
-        if (object instanceof Teacher)           name += "Teacher -> ";
-        if (object instanceof HighSchoolStudent) name += "High School -> ";
-        if (object instanceof Husky)             name += "Husky -> ";
-        if (object instanceof Doctor)            name += "Doctor -> ";
-        if (object instanceof CSTeacher)         name += "CS Teacher -> ";
-        if (object instanceof MrWachs)           name += "MrWachs -> ";        
-        if (object instanceof String)            name += "String -> ";
-        name += "Object";
-        System.out.println(name);        
-    }
-  
+    
 }

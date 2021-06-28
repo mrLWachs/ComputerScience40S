@@ -1,5 +1,5 @@
 
-/** required package class namespace */
+/** Required package class namespace */
 package testing.advancedclasses;
 
  
@@ -7,22 +7,27 @@ package testing.advancedclasses;
  * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs
- * @since 22-Apr-2020, 1:14:24 PM
+ * @since May 14, 2021, 11:41:36 a.m.
  */
 public class Meeting 
 {
 
-    private final int MAX;              // maximum number of students
-    private int       count;            // keeps count of current student
-    private Person[]  members;          // associated object array
-
+    private final int MAX;  // Max number of people who can attend
+    private int count;      // Keeps count of how many people are attending
+    private Person[] members;   // Associated object array
+    
+    
     /**
      * Default constructor, set class properties
      */
     public Meeting() {
-        MAX     = 100;
-        count   = 0;
+        MAX   = 100;
+        count = 0;
+        // Need to instantiate our array
         members = new Person[MAX];
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array)
     }
     
     /**
@@ -31,29 +36,40 @@ public class Meeting
      * @param person the person object to attend
      */
     public void attend(Person person) {
-        members[count] = person;            // add to array slot
-        count++;                            // advanced counter to next slot
-        if (count > MAX) count = 0;         // reset back to slot 0
+        members[count] = person;            // Add to array slot
+        count++;                            // Advanced counter to next index
+        if (count > MAX) count = 0;         // Error check, reset back to slot 0
     }
-    
+
     /**
-     * Hold the meeting and have all members talk through an output
+     * Hold the meeting for all members 
      */
     public void hold() {
-        // access the "shared" static property (variable)
-        System.out.println("Caution, there are " + 
-                Student.total + " students here!");
-        // enhanced for loop through all members
-        for (Person member : members) {         // traverse all members
-            if (member != null) {               // ignore empty array spots
-                if (member.getAge() != 0) {     // ignore those with age 0
-                    // used the accessor method (get)
-                    if (member instanceof Teacher) {    // is a teacher
-                        member.talk();                  // have them talk
-                    }
-                }
-            }            
-        }
+        // Variable to keep adding to for the output at the end
+        String message = "Meeting is about to begin...";
+        // Enhanced for loop through the array ("for every member in members")
+        for (Person member : members) {
+            // Only going to count members that 'exist' (that are not "null")
+            if (member != null) {
+                message += "\n";                // Line break
+                // The "instanceof" operator takes an object (instance) on the 
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and is true if the object 'comes' from that class
+                if (member instanceof MrWachs)    message += "\t MrWachs ->";
+                if (member instanceof Teacher)    message += "\t Teacher ->";
+                if (member instanceof Husky)      message += "\t Husky ->";
+                if (member instanceof Piper)      message += "\t Piper ->";
+                if (member instanceof HighSchool) message += "\t HighSchool ->";
+                if (member instanceof Student)    message += "\t Student ->";
+                if (member instanceof Doctor)     message += "\t Doctor ->";
+                if (member instanceof Baker)      message += "\t MrWachs ->";
+                if (member instanceof Person)     message += "\t Person ->";
+                message += "\t ATTENDING!";                
+            }
+        }        
+        // Get data from our static (shared) property of Student (variable)
+        message += "\nWith " + Student.totalStudents + " students present!";
+        System.out.println(message);        // Output the message
     }
     
 }
