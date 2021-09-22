@@ -463,6 +463,47 @@ public class ComputerScience30S {
 //        char value5 = 'A', value6 = 'a';        
 //        if (value5 != value6) System.out.println("!=");
 //        else                  System.out.println("==");
+//        
+//        // Use "else if" for multiple cases of more than 2 things (same as
+//        // the "switch" statement - which I don't use) use strings for this
+//        // example which are more complex (because they use many character,
+//        // and upper and lower case)
+//        
+//        // NOTE: with string NEVER use == ALWAYS use .equals()...
+//        
+//        String word1 = "edgy";
+//        String word2 = "edGy";
+//        
+//        if (word1.equals(word2)) {
+//            System.out.println("W1==W2");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("W1 kind of == W2");
+//        }
+//        else {
+//            System.out.println("W1!=W2");
+//        }
+        
+        // Combine logic using "and" "or" "not" which use the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!"  for "not"
+        
+       int age = 17;
+       double iq = 1.0;
+       
+       if (age >= 21 && iq > 90) {
+           // with "and" BOTH have to be true
+           System.out.println("Get in");
+       }
+       else if (age >= 18 || iq > 0) {
+           // with "or" EITHER can be true
+           System.out.println("Keep trying");
+       }
+       else {
+           System.out.println("Get out");
+       }
+        
         
         
         
@@ -506,3 +547,6 @@ public class ComputerScience30S {
 //      output window, or the X in the bottom right of NetBeans
 // (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+
