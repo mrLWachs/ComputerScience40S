@@ -454,17 +454,16 @@ public class ComputerScience30S {
 //            System.out.println("Greater than");
 //        }
 //        
-        // Use chars and some shorthand, not usually recommended (except in 
-        // certain situations) used when the code in a block - between { } is
-        // only one line of code! Then, you don't need the { } 
-        // And.. (even further shorthand) the line can be moved up to the
-        // same line as the if statement
+//        // Use chars and some shorthand, not usually recommended (except in 
+//        // certain situations) used when the code in a block - between { } is
+//        // only one line of code! Then, you don't need the { } 
+//        // And.. (even further shorthand) the line can be moved up to the
+//        // same line as the if statement
+//        
+//        char value5 = 'A', value6 = 'a';        
+//        if (value5 != value6) System.out.println("!=");
+//        else                  System.out.println("==");
         
-        char value5 = 'A', value6 = 'a';        
-        if (value5 != value6) System.out.println("!=");
-        else                  System.out.println("==");
-        
-        // This is a live change!!!!!!!!! (random word - pizza fish)
         
         
         
