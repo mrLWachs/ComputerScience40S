@@ -483,26 +483,50 @@ public class ComputerScience30S {
 //        else {
 //            System.out.println("W1!=W2");
 //        }
+//        
+//        // Combine logic using "and" "or" "not" which use the symbols:
+//        // "&&" for "and"
+//        // "||" for "or"
+//        // "!"  for "not"
+//        
+//       int age = 17;
+//       double iq = 1.0;
+//       
+//       if (age >= 21 && iq > 90) {
+//           // with "and" BOTH have to be true
+//           System.out.println("Get in");
+//       }
+//       else if (age >= 18 || iq > 0) {
+//           // with "or" EITHER can be true
+//           System.out.println("Keep trying");
+//       }
+//       else {
+//           System.out.println("Get out");
+//       }
         
-        // Combine logic using "and" "or" "not" which use the symbols:
-        // "&&" for "and"
-        // "||" for "or"
-        // "!"  for "not"
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
-       int age = 17;
-       double iq = 1.0;
-       
-       if (age >= 21 && iq > 90) {
-           // with "and" BOTH have to be true
-           System.out.println("Get in");
-       }
-       else if (age >= 18 || iq > 0) {
-           // with "or" EITHER can be true
-           System.out.println("Keep trying");
-       }
-       else {
-           System.out.println("Get out");
-       }
+        // Simple loop...
+        
+        int counter = 0;
+        
+        while (counter < 10) {
+            System.out.println("counter = " + counter);
+            counter++;  // counter = counter + 1
+        }
+        
+        // while loop with a string
+        
+        String password = JOptionPane.showInputDialog("Create a password");
+        
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again!");
+            password = JOptionPane.showInputDialog("Create another password");
+        }
+        
+        
         
         
         
