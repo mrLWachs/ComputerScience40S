@@ -540,19 +540,14 @@ public class ComputerScience30S {
         JOptionPane.showMessageDialog(null, "You got it");
         
         // The "for" loop is used for counting (and for the upcoming unit 
-        // called "arrays")
-        
-        // A much more technical ("codey") looking loop
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
         
         for (int i = 0; i < 10; i++) {
             System.out.println("i = " + i);
         }
-        
-        // The inside of the round brackets means:
-        // ( start ; end ; change)  
-        
-        // The for loop creates its own variable (by default NetBeans calls
-        // it "i") - short for "iteration"
         
         // Variations on the for loop:
             // start at 100
@@ -564,22 +559,40 @@ public class ComputerScience30S {
             System.out.println("i = " + i);
         }
         
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
+        // Create welcome screen for the user (message dialog box)
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";        
+        // Get user input (temperature in celcius) - dialog
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert this to a number I can do math with
+        double celcius = Double.parseDouble(userInput);
+        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        double fahrenheit = (celcius * 1.8) + 32;
+        // Show the user the results (fahrenheit) in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        // This line terminates any running java program at any point
+        // System.exit(0);
         
-        
-        
-        
-        
-        
-
-
-
-
-        
-        
-        
-        // Curly brackets (braces, parenthesis) { and } are 
-        // important - all code goes between these two brackets
+        // Curly brackets (braces, parenthesis) { and } are important - all 
+        // code goes between these two brackets
     }
 
 }
