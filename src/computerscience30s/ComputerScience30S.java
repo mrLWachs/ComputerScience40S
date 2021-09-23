@@ -602,4 +602,16 @@ public class ComputerScience30S {
 //      error and a potential fix (if you click on the lightbulb)
 // (11) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-
+// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
+//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
+//      this into the temple (but use the slash "/" instead of "|"):
+//
+//      /** 
+//       * ${name}.java - 
+//       *
+//       * @author Mr. Wachs 
+//       * @since ${date} 
+//       */
+//      public class ${name} 
+//       { .... etc .....     
+//
