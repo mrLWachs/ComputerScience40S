@@ -7,7 +7,7 @@ package testing;
  * Tester.java - tests the concepts learned in all the units.
  *
  * @author Mr. Wachs
- * @since March 4, 2021
+ * @since September 27, 2021
  */
 public class Tester 
 {
@@ -17,8 +17,7 @@ public class Tester
      */
     public Tester() {
         System.out.println("\nTesting begins...\n");  
-        RecursionTest       unit1 = new RecursionTest(); 
-        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        
         System.out.println("\nTesting complete!\n");
     }
         
