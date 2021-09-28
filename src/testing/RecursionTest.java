@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
 
 /**
  * RecursionTest.java - tests the concepts learned in this unit
@@ -17,6 +19,11 @@ public class RecursionTest
      */
     public RecursionTest() {
         System.out.println("\nRecursion test started...\n");
+        
+        
+        int answer = Calculator.factorial(5);
+        
+        System.out.println("5 factorial = " + answer);
         
         System.out.println("\nRecursion test complete!\n");
     }
