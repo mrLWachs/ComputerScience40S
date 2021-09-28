@@ -2,10 +2,7 @@
 /** Required package class namespace */
 package testing;
 
-/** Required imports */
-import tools.Calculator;
 
- 
 /**
  * RecursionTest.java - tests the concepts learned in this unit
  *
@@ -20,7 +17,7 @@ public class RecursionTest
      */
     public RecursionTest() {
         System.out.println("\nRecursion test started...\n");
-                
+        
         System.out.println("\nRecursion test complete!\n");
     }
     
