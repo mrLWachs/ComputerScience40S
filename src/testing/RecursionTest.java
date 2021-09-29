@@ -20,10 +20,33 @@ public class RecursionTest
     public RecursionTest() {
         System.out.println("\nRecursion test started...\n");
         
+        // When testing, think of three scenarios:
+            // 1) Typical case: the user does what they are told to do
+            // 2) Edge cases: the user pushes the "edges"
+            // 3) Beyond the edges: bad users, tying to break things        
         
-        int answer = Calculator.factorial(5);
+        System.out.println("Recursive factorial...............");
         
-        System.out.println("5 factorial = " + answer);
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;
+                
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            long answer = Calculator.factorial(i);
+            System.out.println(i + "\t factorial = \t" + answer);
+        }
+        
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("\nRecursion test complete!\n");
     }
