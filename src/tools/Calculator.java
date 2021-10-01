@@ -32,5 +32,29 @@ public class Calculator
             return number * factorial(number - 1);
         }
     }
+
+    public static double power(int base, int exponent) {
+        // Base case(s):
+        // =============
+        
+        // Special base case for negative exponents and
+        // base of zero (we can never divide by zero)
+        // if a base of base of zerop occurs return a "flag"        
+        if (exponent < 0 && base == 0) return 0;
+                
+        // more base cases...
+        if (exponent == 0) return 1;
+        if (exponent == 1) return base;
+        
+        // Recursive case(s):
+        // ==================
+        
+        // special recursive case for negative expponents
+        if (exponent < 0) return 1 / power(base,exponent*-1);
+        
+        // defualt recursive case
+        return base * power(base,exponent-1);        
+    }
+
  
 }
