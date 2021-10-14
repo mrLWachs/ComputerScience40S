@@ -24,7 +24,12 @@ public class ComputerScience30S {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {        
+//        learnIntroToJava();
+        learnMethods();        
+    }
+
+    private static void learnIntroToJava() {
         // TODO code application logic here
         
         // This is a comment, all typing after "//" foward slashes
@@ -587,6 +592,12 @@ public class ComputerScience30S {
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets
+    }
+
+    private static void learnMethods() {
+        System.out.println("Start learning methods...");
+        
+        System.out.println("Learning methods complete!");
     }
 
 }
