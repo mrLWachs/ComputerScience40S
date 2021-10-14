@@ -596,7 +596,7 @@ public class ComputerScience30S {
 
     private static void learnMethods() {
         System.out.println("Start learning methods...");
-        
+        // To be continued tomorrow mates!
         System.out.println("Learning methods complete!");
     }
 
