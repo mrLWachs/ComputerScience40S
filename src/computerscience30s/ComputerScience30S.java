@@ -604,7 +604,16 @@ public class ComputerScience30S {
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
+        
+        
+        
         System.out.println("Learning methods complete!");
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
     }
 
 }
@@ -658,3 +667,11 @@ public class ComputerScience30S {
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
+// (17) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+
+
