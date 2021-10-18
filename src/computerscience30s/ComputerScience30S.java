@@ -607,13 +607,46 @@ public class ComputerScience30S {
         // Code to "jump" to a method, is "calling" the method (method call)
         writeStar();
         
+        // Call it again
+        writeStar();
         
+        // When we call a method, we place "data" (information) inside the
+        // round brackets and that data is "passed" (sending) over to the 
+        // method. The data being passed is tecehnically called the "argument"
+        // and the data being recieved is called the "parameter(s)". You can
+        // always change the arguement.
+                
+        write("Dogalicious");
+        
+        write("mumble");
+        write("Spider-man");
+        write("Banana bread");
+        
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
+        
+        writeLotsOf("Dalmations",101);
+        
+        writeLotsOf("Problems", 99);
         
         System.out.println("Learning methods complete!");
     }
 
     private static void writeStar() {
         System.out.println("*");
+    }
+
+    private static void write(String thing) {
+        // Information (data) "passed" to this method is called the parameter,
+        // if you use the lightbulb to write this method, you should (do this 
+        // first) rewrite the name of that parameter
+        System.out.println(thing);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
     }
 
 }
@@ -660,7 +693,7 @@ public class ComputerScience30S {
 //      cancel and resize the code to fit better (see tip #1) and then print 
 //      again
 // (15) You can "teach" NetBeans to change the style it uses to autoformat (see
-//      number 14) by going to Tools -> Options, then click on the "Editor"
+//      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
 // (16) The + and - signs and gray lines along the side in NetBeans
