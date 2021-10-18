@@ -23,20 +23,41 @@ public class Person
     
     // Methods: (things it can do, verbs, actions)........................
     
-    void born() {
-        
+    /**
+     * Class constructor method, sets the class properties when the class is
+     * instantiated into an object - in other words, when a person object is
+     * "built" it calls this method to build it. Constructor methods with no 
+     * parameters are called "default" constructors.
+     */
+    Person() {
+        isAlive = true;
+        age = 0;
+        gender = "female";
+        name = "Jane Doe";
     }
     
+    /**
+     * When a person dies
+     */
     void die() {
-        
+        isAlive = false;
     }
     
+    /**
+     * Method to simulate this person "talking" out information about the object
+     * it outputs data on this person to the screen
+     */
     void talk() {
-        
+        System.out.println(name + " is " +
+                           age + " identifies as " +
+                           gender);
     }
     
+    /**
+     * A person has a birthday (their age goes up by one)
+     */
     void birthday() {
-        
+        age++;
     }
     
 }
