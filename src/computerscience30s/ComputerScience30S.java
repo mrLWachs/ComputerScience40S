@@ -629,6 +629,15 @@ public class ComputerScience30S {
         
         writeLotsOf("Problems", 99);
         
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        int number = giveMeNumber();
+        
+        write("Number is " + number);
+        
+        
         System.out.println("Learning methods complete!");
     }
 
@@ -647,6 +656,20 @@ public class ComputerScience30S {
         for (int i = 0; i < times; i++) {
             write(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
+        return random(1, 100);
+    }
+
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;
     }
 
 }
@@ -706,5 +729,8 @@ public class ComputerScience30S {
 //      itself, the lightbulb (see tip 10) will help you write it
 // (19) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
 
 
