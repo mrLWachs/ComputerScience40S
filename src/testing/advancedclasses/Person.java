@@ -31,9 +31,35 @@ public class Person
      */
     Person() {
         isAlive = true;
-        age = 0;
-        gender = "female";
-        name = "Jane Doe";
+        age     = 0;
+        gender  = "female";
+        name    = "Jane Doe";
+    }
+    
+    /**
+     * Constructor method changes object properties
+     * 
+     * @param name the name for this person 
+     */
+    Person(String name) {
+        isAlive   = true;
+        age       = 0;
+        gender    = "female";
+        this.name = name;
+    }
+    
+    /**
+     * Constructor method changes object properties
+     * 
+     * @param name the name for this person 
+     * @param age the age for this person 
+     * @param gender the identified gender for this person 
+     */
+    Person(String name, int age, String gender) {
+        isAlive     = true;
+        this.age    = age;
+        this.gender = gender;
+        this.name   = name;
     }
     
     /**
