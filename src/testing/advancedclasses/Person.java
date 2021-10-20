@@ -29,7 +29,7 @@ public class Person
      * "built" it calls this method to build it. Constructor methods with no 
      * parameters are called "default" constructors.
      */
-    Person() {
+    public Person() {
         isAlive = true;
         age     = 0;
         gender  = "female";
@@ -37,7 +37,7 @@ public class Person
     }
     
     /**
-     * Constructor method changes object properties
+     * Constructor method (overloaded) changes object properties
      * 
      * @param name the name for this person 
      */
@@ -73,7 +73,7 @@ public class Person
      * Method to simulate this person "talking" out information about the object
      * it outputs data on this person to the screen
      */
-    void talk() {
+    public void talk() {
         System.out.println(name + " is " +
                            age + " identifies as " +
                            gender);
