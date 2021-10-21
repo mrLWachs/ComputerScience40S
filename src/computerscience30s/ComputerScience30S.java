@@ -11,6 +11,7 @@ package computerscience30s;
  */
 import javax.swing.JOptionPane;
 
+
 /**
  * ComputerScience30s.java - the large in class example we continue to work on
  * in each unit adding example code on the new concepts of each unit along with
@@ -19,16 +20,21 @@ import javax.swing.JOptionPane;
  * @author Mr. Wachs
  * @since September 2021
  */
-public class ComputerScience30S { 
+public class ComputerScience30S {        // Curly brackets DO NOT remove
 
     /**
+     * Main method for the project
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-//        learnIntroToJava();
+        learnIntroToJava();
         learnMethods();        
     }
 
+    /**
+     * Learn the content of the introduction unit
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
         
@@ -594,6 +600,9 @@ public class ComputerScience30S {
         // code goes between these two brackets
     }
 
+    /**
+     * Learn the content of the methods unit
+     */
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
@@ -673,6 +682,8 @@ public class ComputerScience30S {
      * @param times how many times to write ut
      */
     private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
         for (int i = 0; i < times; i++) {
             write(thing);
         }
@@ -721,11 +732,15 @@ public class ComputerScience30S {
      * @param title what to show at the top of the dialog
      */
     private static void output(String text, String title) {
+        // Overloaded methods are methods with the same name, BUT different
+        // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }
     
 }
+
+// <editor-fold>   
 
 // NETBEANS TIPS:
 // ==============
@@ -786,4 +801,4 @@ public class ComputerScience30S {
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
 
-
+// </editor-fold>
