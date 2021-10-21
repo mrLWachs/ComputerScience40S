@@ -6,6 +6,7 @@ package testing;
 /** Required imports */
 import testing.advancedclasses.Person;
 
+
 /**
  * AdvancedClassesTest.java - tests the concepts learned in this unit
  *
@@ -15,8 +16,17 @@ import testing.advancedclasses.Person;
 public class AdvancedClassesTest 
 {
 
+    /**
+     * Default constructor method, it sets class properties.
+     * 
+     * Special Methods that have the same name as the class (including a
+     * capital at the start of the name) and NO return type (not even "void")
+     * are called "constructor" methods these methods are called when the class
+     * is created (or constructed), it makes an object from the class, or it
+     * instantiates the class (creates an "instance")
+     */
     public AdvancedClassesTest() {
-        System.out.println("Advanced Classes starting...");
+        System.out.println("\nAdvanced Classes starting...\n");
         
         // Using the class to create an object with the default constructor:
         // class object = call constructor method (default)   
@@ -26,7 +36,7 @@ public class AdvancedClassesTest
         person.talk();
         
         
-        System.out.println("Advanced Classes completed!");
+        System.out.println("\nAdvanced Classes completed!\n");
     }
     
 }
