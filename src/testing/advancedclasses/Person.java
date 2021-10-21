@@ -16,10 +16,21 @@ public class Person
 
     // Properties: (things about it, adjectives, descriptors).............
     
-    String name;
-    int age;
-    boolean isAlive;
-    String gender;
+    /**
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by anther class "using" this class
+     */
+    public  String  name;
+    public  String  gender;
+    
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private int     age;
+    private boolean isAlive;
+    
     
     // Methods: (things it can do, verbs, actions)........................
     
@@ -41,7 +52,7 @@ public class Person
      * 
      * @param name the name for this person 
      */
-    Person(String name) {
+    public Person(String name) {
         isAlive   = true;
         age       = 0;
         gender    = "female";
@@ -55,7 +66,7 @@ public class Person
      * @param age the age for this person 
      * @param gender the identified gender for this person 
      */
-    Person(String name, int age, String gender) {
+    public Person(String name, int age, String gender) {
         isAlive     = true;
         this.age    = age;
         this.gender = gender;
@@ -65,7 +76,7 @@ public class Person
     /**
      * When a person dies
      */
-    void die() {
+    public void die() {
         isAlive = false;
     }
     
@@ -74,15 +85,20 @@ public class Person
      * it outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(name + " is " +
-                           age + " identifies as " +
-                           gender);
+        if (isAlive) {
+            System.out.println(name + " is " +
+                               age + " identifies as " +
+                               gender);
+        }
+        else {
+            System.out.println("Boooo!!!");
+        }
     }
     
     /**
-     * A person has a birthday (their age goes up by one)
+     * A person has a birthday (the age goes up by one)
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }
     
