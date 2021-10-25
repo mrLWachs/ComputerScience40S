@@ -86,9 +86,7 @@ public class Person
      */
     public void talk() {
         if (isAlive) {
-            System.out.println(name + " is " +
-                               age + " identifies as " +
-                               gender);
+            System.out.println(name + " is " + age + " identifies " + gender);
         }
         else {
             System.out.println("Boooo!!!");

@@ -22,8 +22,41 @@ package testing.advancedclasses;
 public class Student extends Person
 {
     
+    private int studentNumber;
+    private double average; // class properties (and inherited other properties)
+    
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     */
     public Student(String name, int age) {
         super(name,age,"student");
     }
-
+    
+    /**
+     * Method just for this class, raises the average
+     */
+    public void study() {
+        average *= 1.10;
+    }
+    
+    /**
+     * Slacking off lowers the average
+     */
+    public void slackOff() {
+        average = average - 0.05;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 5; i++) {
+            study();
+        }
+    }
+    
 }
