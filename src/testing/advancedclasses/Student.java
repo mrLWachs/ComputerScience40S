@@ -33,28 +33,28 @@ public class Student extends Person
      * @param age the age for this student
      */
     public Student(String name, int age) {
-        super(name,age,"student");
+        super(name,age,"student");              // Call the "super constructor"
     }
     
     /**
      * Method just for this class, raises the average
      */
     public void study() {
-        average *= 1.10;
+        average *= 1.10;                            // Increase avarage by 10%
     }
     
     /**
      * Slacking off lowers the average
      */
     public void slackOff() {
-        average = average - 0.05;
+        average = average - 0.05;                   // Decrease avarage by 5%
     }
     
     /**
      * Cramming is intense studying
      */
     public void cram() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 5; i++) {               // Study 5 times as hard
             study();
         }
     }
