@@ -51,7 +51,8 @@ public class AdvancedClassesTest
         
         // Instantiate (create) and object of type student 
         Student student = new Student("Flash Thompson",17);
-        student.talk();                     // Inherited method from person
+        student.birthday();
+        student.talk();                     // Inherited methods from person
         
         
         System.out.println("\nAdvanced Classes completed!\n");
