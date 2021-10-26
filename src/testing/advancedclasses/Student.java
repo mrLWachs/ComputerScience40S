@@ -34,6 +34,8 @@ public class Student extends Person
      */
     public Student(String name, int age) {
         super(name,age,"student");              // Call the "super constructor"
+        studentNumber = 1;                      // Set properties to "defaults"
+        average       = 1.0;
     }
     
     /**
@@ -57,6 +59,17 @@ public class Student extends Person
         for (int i = 0; i < 5; i++) {               // Study 5 times as hard
             study();
         }
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
+    @Override
+    public void talk() {
+        super.talk();                      // Invoking super class method
+        System.out.println("\t student number  = " + studentNumber);
+        System.out.println("\t student average = " + average);        
     }
     
 }
