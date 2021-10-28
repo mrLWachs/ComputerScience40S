@@ -15,7 +15,7 @@ public class Teacher extends Person
 {
     
     private int count;                     // How many students this teacher has
-    private final int MAX = 0;             // Constant for the maximum students
+    private final int MAX;                  // Constant for the maximum students
     
     /**
      * An array of student objects, so the teacher has a association with these
@@ -31,7 +31,13 @@ public class Teacher extends Person
      * @param name the name for this Teacher
      */
     public Teacher(String name) {
-        
+        super(name, 52, "teacher");     // Call to the super constructor
+        MAX   = 200;                    // Set the constant to a locked value
+        count = 0;                      // Set the variable to a starting value
+        students = new Student[MAX];
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size
     }
     
     /**
