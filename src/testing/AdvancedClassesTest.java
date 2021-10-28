@@ -51,11 +51,11 @@ public class AdvancedClassesTest
         
         // Instantiate (create) and object of type student 
         Student student = new Student("Flash Thompson",17);
-        student.birthday();                 // Inherited method from parent class
-        student.study();                    // This method is only in student
-        student.cram();                     // This method modifies the private
-        student.slackOff();                 // encapsulated property (average)
-        student.talk();                     // The over-ride method
+        student.birthday();             // Inherited method from parent class
+        student.study();                // This method is only in student
+        student.cram();                 // This method modifies the private
+        student.slackOff();             // encapsulated property (average)
+        student.talk();                 // The over-ride method
         
         
         System.out.println("\nAdvanced Classes completed!\n");

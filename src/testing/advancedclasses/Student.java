@@ -25,6 +25,12 @@ public class Student extends Person
     private int studentNumber;
     private double average; // class properties (and inherited other properties)
     
+    /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
+     */
+    public Book book;
+    
     
     /**
      * Constructor for the class, sets class properties
