@@ -6,6 +6,7 @@ package testing;
 /** Required imports */
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
+import testing.advancedclasses.Teacher;
 
 
 /**
@@ -36,15 +37,13 @@ public class AdvancedClassesTest
         // Call one of the methods in this object (an instance of the class)
         person.talk();
         
-        // Try to change (modify) some of our properties:
-        
+        // Try to change (modify) some of our properties:        
         person.name   = "Bruce Spruce"; // "public" properties can be accessed
         person.gender = "demi-male";        
         // person.age     = 16;  // Cannot do this, property is locked (private)
         // person.isAlive = false; // Cannot do (access) this! (encapsulated)
                 
-        // Try to call (invoke) some of our methods:
-        
+        // Try to call (invoke) some of our methods:        
         person.birthday();
         person.die();
         person.talk();
@@ -57,6 +56,12 @@ public class AdvancedClassesTest
         student.slackOff();             // encapsulated property (average)
         student.talk();                 // The over-ride method
         
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Professor");
+        teacher.add(student);           // Associate object through method
+        teacher.teach();                // Effect associated objects
+        teacher.talk();                 // Inherited method invoked
+                
         
         System.out.println("\nAdvanced Classes completed!\n");
     }
