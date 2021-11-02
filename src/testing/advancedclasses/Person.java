@@ -111,7 +111,7 @@ public class Person
     }
         
     /**
-     * Comparison, determines if two objects are"equal" in this context
+     * Deep comparison, determines if two objects are"equal" in this context
      * 
      * @param object the object to compare to
      * @return the object are "equal" (true) or not (false)
