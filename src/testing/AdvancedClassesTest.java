@@ -89,8 +89,43 @@ public class AdvancedClassesTest
         System.out.println("Student = " + student.toString());
         System.out.println("Teacher = " + teacher.toString());
         
+        // Seeing the object class as the parent class of classes we don't write
+        
+        String string = "puppy";
+        System.out.println("String = " + string.toString());
+        // The string class over-rides the toString() method here
+        
         // The equals() method of the object class checks if two objects are
-        // "equal" 
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)
+        
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
+        
+        // Now since these two methods are inherited by ALL class objects, we
+        // can use this methods with Person class objects:
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
