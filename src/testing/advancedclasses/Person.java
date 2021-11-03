@@ -101,18 +101,22 @@ public class Person
     }
     
     /**
-     * Accessor method (or "getters") that gives you the age of this person
+     * Accessor method (or "getters") that gives you (or 'reads') the age of 
+     * this person (which is a private property of this class which cannot 
+     * be read outside the class)
      * 
-     * @return the age
+     * @return the person's current age value to "see" (access)
      */
     public int getAge() {
         return age;
     }
     
     /**
-     * Accessor method (or "getters") that 'gives' you the gender of this person
+     * Accessor method (or "getters") that 'gives' you (or 'reads') the gender 
+     * of this person (which is a private property of this class which cannot 
+     * be read outside the class)
      * 
-     * @return the gender
+     * @return the person's current gender to "see" (access)
      */
     public String getGender() {
         return gender;
@@ -120,11 +124,13 @@ public class Person
     
     /**
      * Mutator method (or "setters") that 'changes' the encapsulated property
-     * of this person
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
      * 
-     * @param gender the new gender to assign to the property
+     * @param gender the new gender to set (mutate) the property into
      */
     public void setGender(String gender) {
+        // A programmer could potentially write error checking code here..
         this.gender = gender;
     }
         
@@ -160,7 +166,7 @@ public class Person
     
     
     public Person clone() {
-        // Shallow clone would be return this;
+        // Shallow clone would be code like: return this;
         Person that = new Person();
         // Duplicate all the properties
         that.name = this.name;
