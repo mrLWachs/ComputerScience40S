@@ -158,4 +158,14 @@ public class Person
         return true;
     }
     
+    
+    public Person clone() {
+        // Shallow clone would be return this;
+        Person that = new Person();
+        // Duplicate all the properties
+        that.name = this.name;
+        
+        return that;
+    }
+    
 }
