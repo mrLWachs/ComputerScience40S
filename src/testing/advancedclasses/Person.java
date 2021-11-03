@@ -101,6 +101,34 @@ public class Person
     }
     
     /**
+     * Accessor method (or "getters") that gives you the age of this person
+     * 
+     * @return the age
+     */
+    public int getAge() {
+        return age;
+    }
+    
+    /**
+     * Accessor method (or "getters") that 'gives' you the gender of this person
+     * 
+     * @return the gender
+     */
+    public String getGender() {
+        return gender;
+    }
+    
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person
+     * 
+     * @param gender the new gender to assign to the property
+     */
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+        
+    /**
      * String representation of this object
      * 
      * @return the object represented as a String
@@ -118,6 +146,15 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
+        // Shallow comparison might be code like: return true;        
+        // We want to turn the object parameter into a "Person"
+        // object - use casting to turn into a person
+        Person that = (Person)object;
+        // compare the things (properties) we want to compare
+        if (this.isAlive != that.isAlive)          return false;
+        if (this.age     != that.getAge())         return false;
+        if (!this.name.equals(that.name))          return false;
+        if (!this.gender.equals(that.getGender())) return false;
         return true;
     }
     
