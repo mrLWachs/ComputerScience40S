@@ -28,8 +28,15 @@ public class Person
      * this property so that it can only be accessed inside the class (like 
      * a "private room") - this is the concept of encapsulation
      */
-    private int     age;
-    private boolean isAlive;
+    private int age;
+    
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean isAlive;
     
     
     // Methods: (things it can do, verbs, actions)........................
@@ -164,12 +171,19 @@ public class Person
         return true;
     }
     
-    
+    /**
+     * Deep clone, creates a duplicate (all properties?) object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
     public Person clone() {
         // Shallow clone would be code like: return this;
         Person that = new Person();
         // Duplicate all the properties
-        that.name = this.name;
+        that.name   = this.name;
+        that.gender = this.gender;
+        
+        
         
         return that;
     }
