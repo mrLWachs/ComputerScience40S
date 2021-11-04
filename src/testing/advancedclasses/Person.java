@@ -119,6 +119,17 @@ public class Person
     }
     
     /**
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
+     * 
+     * @param age the new age to set (mutate) the property into
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    /**
      * Accessor method (or "getters") that 'gives' you (or 'reads') the gender 
      * of this person (which is a private property of this class which cannot 
      * be read outside the class)
@@ -179,12 +190,13 @@ public class Person
     public Person clone() {
         // Shallow clone would be code like: return this;
         Person that = new Person();
-        // Duplicate all the properties
+        // Duplicate all the public properties
         that.name   = this.name;
         that.gender = this.gender;
-        
-        
-        
+        // Duplicate the protected property
+        that.isAlive = this.isAlive;
+        // Duplicate the private property?
+        that.setAge(this.getAge());
         return that;
     }
     
