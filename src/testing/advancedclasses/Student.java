@@ -78,4 +78,34 @@ public class Student extends Person
         System.out.println("\t student average = " + average);        
     }
     
+    /**
+     * String representation of this object
+     * 
+     * @return the object represented as a String
+     */
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+        
+    /**
+     * Deep comparison, determines if two objects are"equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the object are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        return super.equals(object);
+    }
+    
+    /**
+     * Deep clone, creates a duplicate (all properties?) object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    public Student clone() {
+        return (Student)super.clone();
+    }
+    
 }
