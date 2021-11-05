@@ -135,7 +135,9 @@ public class AdvancedClassesTest
         System.out.println("Clone  is " + clonePerson.toString());        
         if (person.equals(clonePerson)) System.out.println("clone is =");
         
-        
+        // Now we will do the same thing to the student class and over-ride the
+        // toString(), equals(), and clone() methods we inherited from the 
+        // object class:
         
         
         
@@ -152,3 +154,9 @@ public class AdvancedClassesTest
     }
     
 }
+
+
+
+
+
+
