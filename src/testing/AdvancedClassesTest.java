@@ -139,9 +139,20 @@ public class AdvancedClassesTest
         // toString(), equals(), and clone() methods we inherited from the 
         // object class:
         
+        Student student1 = new Student("Name1",10);
+        Student student2 = new Student("Name2",20);
+        Student student3 = new Student("Name3",30);
         
+        // Use the methods to alter the encapsulated property (average)
+        student1.slackOff();
+        student2.study();
+        student3.cram();
         
-        
+        // When doing an output (like System.out... you "can" call "toString()"
+        // but it often calls it automatically for you
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
         
         
         
