@@ -50,6 +50,8 @@ public class Student extends Person
         super(name,age,"student");              // Call the "super constructor"
         studentNumber = 1;                      // Set properties to "defaults"
         average       = 1.0;
+        // Mutate (change) the static (shared) property (global variable)
+        total++;
     }
     
     /**

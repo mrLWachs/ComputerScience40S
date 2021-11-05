@@ -200,4 +200,10 @@ public class Person
         return that;
     }
     
+    
+    
+    public static void endTheWorld() {
+        System.out.println("Booom!!!!");
+    }
+    
 }

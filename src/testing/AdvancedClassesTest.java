@@ -4,6 +4,8 @@
 package testing;
 
 /** Required imports */
+import javax.swing.JOptionPane;
+import testing.advancedclasses.HighSchool;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
@@ -154,10 +156,35 @@ public class AdvancedClassesTest
         System.out.println(student2);
         System.out.println(student3);
         
+        // Now the static variable:
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
+        
+        // Mutate the static variable of one instance
+        student1.total = 3;
+        
+        // output all three again
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
+        
+        // Now our child class (HighSchool) of student (parent)
+        HighSchool highSchool = new HighSchool();        
+        System.out.println(highSchool);
+        System.out.println(highSchool.total);
         
         
+        highSchool.endTheWorld();
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
         
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
+        HighSchool.endTheWorld();
         
         
         
