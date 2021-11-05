@@ -37,8 +37,7 @@ public class Student extends Person
      * variable
      */
     public static int total;
-    
-    
+        
     
     /**
      * Constructor for the class, sets class properties

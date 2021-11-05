@@ -130,8 +130,7 @@ public class AdvancedClassesTest
         // template so those methods are always over-ridden in every new class 
         // created (see the comment in "ComputerScience40S.java" to do this). 
         
-        // Testing the clone() method:
-        
+        // Testing the clone() method:        
         Person clonePerson = person.clone();        
         System.out.println("Person is " + person.toString());
         System.out.println("Clone  is " + clonePerson.toString());        
@@ -156,7 +155,13 @@ public class AdvancedClassesTest
         System.out.println(student2);
         System.out.println(student3);
         
-        // Now the static variable:
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
+        
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable
         System.out.println("S1 total = " + student1.total);
         System.out.println("S2 total = " + student2.total);
         System.out.println("S3 total = " + student3.total);
@@ -164,7 +169,8 @@ public class AdvancedClassesTest
         // Mutate the static variable of one instance
         student1.total = 3;
         
-        // output all three again
+        // Output all three again - showing that it changed (mutated) all
+        // three instances since the variable is static (shared)
         System.out.println("S1 total = " + student1.total);
         System.out.println("S2 total = " + student2.total);
         System.out.println("S3 total = " + student3.total);
@@ -174,17 +180,35 @@ public class AdvancedClassesTest
         System.out.println(highSchool);
         System.out.println(highSchool.total);
         
-        
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
         highSchool.endTheWorld();
         person.endTheWorld();
         student.endTheWorld();
         teacher.endTheWorld();
         
-        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
         Person.endTheWorld();
         Student.endTheWorld();
         Teacher.endTheWorld();
         HighSchool.endTheWorld();
+        
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
+        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        
+        
+        
+        
         
         
         
