@@ -3,32 +3,19 @@ package testing.advancedclasses;
 
  
 /**
- * HighSchool.java - represents a high school student person. Before creating
- * this class we altered the NetBeans template (Tools - Templates) for a 
- * Java class so that the toString(), clone(), and equals() methods are now 
- * always part of any new class we create (whether or not we choose to over-ride
- * those methods).
+ * Piper.java - represents a Piper HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since 5-Nov-2021, 11:15:41 AM
+ * @since 8-Nov-2021, 11:30:44 AM
  */
-public class HighSchool extends Student
+public class Piper extends HighSchool
 {
 
     /**
      * Default constructor, set class properties
      */
-    public HighSchool() {
-        super("Smelly Teenager",15);        // Calling the super constructor
-    }
-    
-    /**
-     * Constructor that sets the class properties to the parameters
-     * 
-     * @param name the name of this HighSchool Student Person
-     */
-    public HighSchool(String name) {
-        super(name,15);
+    public Piper() {
+        super();
     }
      
     /**
@@ -38,7 +25,7 @@ public class HighSchool extends Student
      */
     @Override
     public String toString() {
-        return "HighSchool: " + super.toString();
+        return "Piper: " + super.toString();
     }
    
     /**
@@ -58,7 +45,7 @@ public class HighSchool extends Student
      * @return a "clone" of the object using new memory
      */
     @Override
-    public HighSchool clone() {
+    public Piper clone() {
         return this;
     }
     

@@ -5,8 +5,14 @@ package testing;
 
 /** Required imports */
 import javax.swing.JOptionPane;
+import testing.advancedclasses.Athlete;
+import testing.advancedclasses.Baker;
+import testing.advancedclasses.Doctor;
 import testing.advancedclasses.HighSchool;
+import testing.advancedclasses.Husky;
+import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
+import testing.advancedclasses.Piper;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 
@@ -204,6 +210,26 @@ public class AdvancedClassesTest
         // When we call static methods from the instances, the 
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
+        
+        // Instantiate some other classes:        
+        Doctor  doctor  = new Doctor();
+        Baker   baker   = new Baker();
+        MrWachs mrWachs = new MrWachs();
+        Piper   piper   = new Piper();
+        Husky   husky   = new Husky();
+        Athlete athlete = new Athlete();
+        
+        // And output those objects:
+        System.out.println(doctor);
+        System.out.println(baker);
+        System.out.println(mrWachs);
+        System.out.println(piper);
+        System.out.println(husky);
+        System.out.println(athlete);
+        
+        
+        
+        
         
         
         
