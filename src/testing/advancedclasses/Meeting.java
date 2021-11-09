@@ -36,4 +36,20 @@ public class Meeting
         // objects/instances are yet in the array)
     }
     
+    /**
+     * Have a person attend the meeting
+     * 
+     * @param person the person object to attend
+     */
+    public void attend(Person person) {
+        
+    }
+    
+    /**
+     * Hold the meeting for all members 
+     */
+    public void hold() {
+        
+    }
+    
 }
