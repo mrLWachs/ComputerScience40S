@@ -28,8 +28,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-        learnIntroToJava();
-        learnMethods();        
+//        learnIntroToJava();
+//        learnMethods();       
+        learnArrays();
     }
 
     /**
@@ -736,6 +737,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start learning arrays...");
+        
+        
+        
+        System.out.println("Completed learning arrays!");
     }
     
 }
