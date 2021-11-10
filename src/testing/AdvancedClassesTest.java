@@ -8,6 +8,7 @@ import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
 import testing.advancedclasses.HighSchool;
 import testing.advancedclasses.Husky;
+import testing.advancedclasses.Meeting;
 import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Piper;
@@ -71,8 +72,7 @@ public class AdvancedClassesTest
         // The Object class (parent class of all classes)
         
         // All classes (including ones we create) inherit from the object class
-        // which is the parent (super) class of all classes
-        
+        // which is the parent (super) class of all classes        
         Object object1 = new Object();      // 1st instance of the object class
         Object object2 = new Object();      // 2nd instance of the object class
         Object object3 = object2;
@@ -83,20 +83,17 @@ public class AdvancedClassesTest
         
         // The toString() method of the object class outputs information
         // including the memory address (in hexadecimal code) where this object
-        // is stored in this computer's memory
-        
+        // is stored in this computer's memory        
         System.out.println("O1 = " + object1.toString());
         System.out.println("O2 = " + object2.toString());
         System.out.println("O3 = " + object3.toString());
         
-        // This method is inherited by all sub classes (children), for example:
-        
+        // This method is inherited by all sub classes (children), for example:        
         System.out.println("Person  = " + person.toString());
         System.out.println("Student = " + student.toString());
         System.out.println("Teacher = " + teacher.toString());
         
-        // Seeing the object class as the parent class of classes we don't write
-        
+        // Seeing the object class as the parent class of classes we don't write        
         String string = "puppy";
         System.out.println("String = " + string.toString());
         // The string class over-rides the toString() method here
@@ -104,8 +101,7 @@ public class AdvancedClassesTest
         // The equals() method of the object class checks if two objects are
         // "equal" by using the "memory address" of each object and checks if 
         // the two objects being compared use the same address (true) or not 
-        // (false)
-        
+        // (false)        
         if (object1.equals(object2)) System.out.println("O1==O2");
         if (object2.equals(object3)) System.out.println("O2==O3");
         if (object1.equals(object3)) System.out.println("O1==O3");
@@ -114,8 +110,7 @@ public class AdvancedClassesTest
         // can use this methods with Person class objects:
         
         // Now we will create 3 identifier names, but only one memory location
-        // for all three 
-        
+        // for all three         
         Person person1 = new Person();  // Creating a "new" memory address
         Person person2 = person1;       // Same memory address as person1
         Person person3 = person2;       // Same memory address as person1 and 2
@@ -142,8 +137,7 @@ public class AdvancedClassesTest
         
         // Now we will do the same thing to the student class and over-ride the
         // toString(), equals(), and clone() methods we inherited from the 
-        // object class:
-        
+        // object class:        
         Student student1 = new Student("Name1",10);
         Student student2 = new Student("Name2",20);
         Student student3 = new Student("Name3",30);
@@ -224,6 +218,34 @@ public class AdvancedClassesTest
         System.out.println(piper);
         System.out.println(husky);
         System.out.println(athlete);
+        
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
+        
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism        
+        meeting.attend(person);
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
+        meeting.attend(student);
+        meeting.attend(student1);
+        meeting.attend(student2);
+        meeting.attend(student3);
+        meeting.attend(teacher);
+        meeting.attend(mrWachs);
+        meeting.attend(baker);
+        meeting.attend(clonePerson);
+        meeting.attend(doctor);
+        meeting.attend(athlete);
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(null);
+        
+        
+        
+        
         
         
         

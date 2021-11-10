@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.advancedclasses;
 
