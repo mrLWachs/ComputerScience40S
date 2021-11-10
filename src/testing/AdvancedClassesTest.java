@@ -1,10 +1,8 @@
 
-  
 /** Required package class namespace */
 package testing;
 
 /** Required imports */
-import javax.swing.JOptionPane;
 import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
