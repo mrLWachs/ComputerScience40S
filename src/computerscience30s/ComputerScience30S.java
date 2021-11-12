@@ -745,6 +745,15 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
+        // Create (declare) a variable for comparison
+        int variable = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+     
         
         
         System.out.println("Completed learning arrays!");
