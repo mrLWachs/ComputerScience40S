@@ -243,7 +243,8 @@ public class AdvancedClassesTest
         meeting.attend(piper);
         meeting.attend(null);
         
-        
+        // Need to "hold a meeting" of all members
+        meeting.hold();
         
         
         
