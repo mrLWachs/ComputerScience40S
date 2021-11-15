@@ -753,7 +753,60 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         //          +-------+
         // variable |   5   | (type integer)
         //          +-------+
-     
+        
+        // Now declare (create) an array:
+        
+        int array[] = new int[5];
+        
+        // type name [square brackets] = new type [size of the array];
+        // array names are usually "plural" words
+        
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array. When arrays are first created, they are EMPTY.
+        // The array has now 5 "spots" (or "index", "elements", "subscript")
+        // which automatically numbers them - BUT the first spot is ALWAYS
+        // numbered as spot zero and the rest and numbered in order:
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (indexed)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        // Now we assign values to all individual spots (indices):
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = -25;
+        array[4] = 0;
+        
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[-1] = 25;
+        // They would be "out of bounds" errors
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed learning arrays!");
