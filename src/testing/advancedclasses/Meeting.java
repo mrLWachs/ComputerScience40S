@@ -4,7 +4,7 @@ package testing.advancedclasses;
 
  
 /**
- * Meeting.java - description
+ * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs
  * @since 9-Nov-2021, 11:44:16 AM
