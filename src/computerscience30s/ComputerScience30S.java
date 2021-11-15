@@ -744,29 +744,25 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      */
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
-        
+
         // Create (declare) a variable for comparison
         int variable = 5;
-        
+
         // E.g. in memory a variable could "look" like...
         //
         //          +-------+
         // variable |   5   | (type integer)
         //          +-------+
-        
         // Now declare (create) an array:
-        
         int array[] = new int[5];
-        
+
         // type name [square brackets] = new type [size of the array];
         // array names are usually "plural" words
-        
         // E.g. in memory an array could "look" like...
         //
         //       +-------+-------+-------+-------+-------+
         // array |       |       |       |       |       | (a length of 5)
         //       +-------+-------+-------+-------+-------+
-        
         // The square brackets "[  ]" in code indicate we are using an array, 
         // the word "new" is used because arrays (they are technically 
         // "advanced" data types) are more complicated than variables (which 
@@ -789,32 +785,30 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         array[2] = 2;
         array[3] = -25;
         array[4] = 0;
-        
+
         //       +-------+-------+-------+-------+-------+
         // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
         // These next lines would be errors when the code runs:
-        array[5] = 25;
-        array[-1] = 25;
+        // array[5] = 25;
+        // array[-1] = 25;
         // They would be "out of bounds" errors (or "range" error)
-        
-        
+
         // Declare an array (a little different) of NO size...        
         double a[];
+
+        // In memory...
+        //
+        // a
+        //
         
-       // In memory...
-       //
-       // a
-       //
-       
-       // Later on (in code) you can re-create (re-declare, re-dimension, or
-       // resize) using the same array but now giving it some size (still empty)
-       
-       a = new double[3];
-       
-       // In memory....
+        // Later on (in code) you can re-create (re-declare, re-dimension, or
+        // resize) using the same array but now giving it some size (still empty)
+        a = new double[3];
+
+        // In memory....
         //
         //   +----------+----------+----------+
         // a |          |          |          | (now has size of 3, but empty)
@@ -830,19 +824,15 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
         //   +----------+----------+----------+
         //        0          1          2
-                
+        
         // You can re-dimension (resize) an array multiple times, BUT
         // every time it wipes out any content stored in the array
-        
         a = new double[5];
-       
+
         //   +----------+----------+----------+----------+----------+
         // a |          |          |          |          |          | (size 5)
         //   +----------+----------+----------+----------+----------+
         //        0          1          2          3          4
-        
-        
-        
         
         
         
