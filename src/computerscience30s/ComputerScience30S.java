@@ -818,7 +818,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Now fill the content
         a[0] = 1.1;
         a[1] = 2.2;
-        a[3] = 3.3;
+        a[2] = 3.3;
 
         //   +----------+----------+----------+
         // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
@@ -850,13 +850,54 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // we gives array should be a plural word (e.g. 'scores' (array name)
         // not 'score' (variable name), 'names' not 'name', etc.)    
         
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"
+        };
         
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
         
+        int[] numbers = new int[100];
         
+        // Change (assign) a index (spot)
+        numbers[99] = 333;
         
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
         
+        // Output that spot
+        System.out.println(numbers[99]);
         
+        // Perform equations with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
         
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
+        
+        // Specifically, the FOR loop!
+        
+        // for loops were literally built for arrays
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
+        
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
         
         
         
