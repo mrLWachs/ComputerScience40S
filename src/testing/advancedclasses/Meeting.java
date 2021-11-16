@@ -80,6 +80,25 @@ public class Meeting
             // changing "person" each time through the loop to the next element
             // in order...
             
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")            
+            if (member != null) {
+                message += "\n";            // Line break  
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is ture if the object 'comes from' that
+                // class (is a instance of that class type)                
+                if (member instanceof MrWachs)    message += "\t MrWachs";
+                if (member instanceof Teacher)    message += "\t Teacher";
+                if (member instanceof Husky)      message += "\t Husky";
+                if (member instanceof Piper)      message += "\t Piper";
+                if (member instanceof HighSchool) message += "\t HighSchool";
+                if (member instanceof Student)    message += "\t Student";
+                if (member instanceof Doctor)     message += "\t Doctor";
+                if (member instanceof Baker)      message += "\t Baker";
+                if (member instanceof Person)     message += "\t Person";
+                message += "\t is ATTENDING!";
+            }            
         }
         // For comparison, a regular for loop would be code like this:
         // for (int i = 0; i < members.length; i++) {
