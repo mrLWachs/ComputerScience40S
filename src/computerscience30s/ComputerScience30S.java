@@ -899,6 +899,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
         // So if the array size changes, the loop adapts to it
         
+        // Array can easily work with methods, the arrays can be sent into a 
+        // method (as one of multiple parameters, or the only parameter), and 
+        // arrays can be outputted (returned) from a method - in other words:
+        // Arrays can be INPUT(s) or OUTPUT from a method
+        
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        //output(coins);
+        
+        
+        
         
         
         
@@ -909,6 +920,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         
         System.out.println("Completed learning arrays!");
+    }
+
+    /**
+     * Outputs an array of integers in a dialog
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        // Arrays can be a parameter (or one of the parameters)
+        String text = "Array [";    // Created a string to fill up
+        // Loop (traverse) through the array and add the contents to the string
+        for (int i = 0; i < array.length; i++) {
+            text = text + array[i] + ",";
+        }
+        text = text + "]";
+        output(text);           // Outputs it by calling an overloaded method
     }
     
 }
