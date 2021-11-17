@@ -105,6 +105,9 @@ public class Meeting
         //    Person member = members[i];
         // }
         
+        // Get data from our static (shared) property of Student (variable)
+        message += "\nWith " + Student.total + " students present!";
+        
         // Finally output that message
         System.out.println(message);        
     }
