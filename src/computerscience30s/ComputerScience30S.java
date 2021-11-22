@@ -1058,9 +1058,15 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         return numbers;                     // Return completed array
     }
     
-    
+    /**
+     * Generates a random character between tow low and high characters
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
     private static char random(char low, char high) {
-        return (char)random((int)low, (int)high);
+        return (char)random((int)low, (int)high);     // cast to int and back  
     }
 
     /**
