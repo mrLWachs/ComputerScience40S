@@ -964,11 +964,31 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // nested for loops are refering to (e.g. like row, column, x, y)
         // With Netbeans, when you rename a loop variable it renames all 3
         
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random(LOW, HIGH);
+            }
+        }
         
+        // Output the matrix, by turning it into a single string (using 
+        // a new method)        
+        String text1 = toString(matrix);
+        System.out.println(text1);
         
+        // Matrices can also be made with pre-set values (like regular arrays)
         
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
         
+        String text2 = toString(TIC_TAC_TOE);
+        System.out.println(text2);
         
+        // Optional graphical code...
+        
+        // Use JOptionPane dialogs but with graphics:
         
         
         
@@ -1041,6 +1061,27 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);
+    }
+
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
     }
     
     
