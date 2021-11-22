@@ -904,12 +904,12 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) or OUTPUT from a method
         
-//        output(array);      // Send a array to a method as a parameter
-//        output(numbers);    // Call the method with a different argument
-//        output(coins);      // Overload the "output" method again
-//        
-//        int[] randoms = random(1, 10, 50);    // Overload "random" method
-//        output(randoms);
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
+        
+        int[] randoms = random(1, 10, 50);    // Overload "random" method
+        output(randoms);
         
         // Multi-dimensional array (also known as a "array of arrays", or a 
         // array filled with other arrays, 2D, etc.) - and also known as a 
