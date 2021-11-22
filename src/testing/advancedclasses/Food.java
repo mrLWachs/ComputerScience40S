@@ -66,6 +66,18 @@ public abstract class Food
      */
     public abstract void prepare();
     
+    /**
+     * Determines if this 'food' item has spoiled
+     * 
+     * @return the food has spoiled (true) or not (false)
+     */
+    public abstract boolean hasSpoiled();
     
-    
+    /**
+     * Smell the 'food' item
+     * 
+     * @param seconds how many seconds to smell it
+     */
+    public abstract void smell(int seconds);
+        
 }
