@@ -9,6 +9,8 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
 
 
@@ -1112,6 +1114,36 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Using capital letters and importing (using the lightbulb) and a line
         // similar to the way we declare arrays, and using round brackets 
         // (implies a method? - we will study in the next unit 'classes')
+        
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)
+        
+        Color foreground = new Color(0,255,0);  // Bright green
+        
+        // Fonts are done the same way (import, declare them)
+        
+        Font font = new Font("Consolas", Font.PLAIN, 18);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
+        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer) 
+        
+        
+        
+        
+        
+        
         
         
         
