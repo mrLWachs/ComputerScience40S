@@ -990,26 +990,15 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Optional graphical code...
         
         // Use JOptionPane dialogs but with graphics:
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+        // Have two graphic files (picture files) ready
+        String picture1 = "C:\\Users\\lawrence.wachs\\Desktop\\matrix.gif";
+        String picture2 = "C:\\Users\\lawrence.wachs\\Desktop\\tictactoe.gif";
+                
+        // Call a method to display a "fancy" dialog
+        message(text1,"The Matrix",picture1);
+        message(text2,"Tic-tac-Toe",picture2);
+                
         System.out.println("Completed learning arrays!");
     }
 
@@ -1102,6 +1091,33 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
             text = text + "\n";     // Add a line break after each row
         }     
         return text;            // Return the filled up string
+    }
+
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param title the title at the top of the dialog
+     * @param pictureFileName the full (first, middle, last) name of the image
+     */
+    private static void message(String text, String title, 
+            String pictureFileName) {
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes')
+        
+        
+        
+        // Display everything in a JOption dialog
+        JOptionPane.showMessageDialog(null, text, title,
+                JOptionPane.PLAIN_MESSAGE);
     }
     
     
