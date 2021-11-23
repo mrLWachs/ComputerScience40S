@@ -997,8 +997,10 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Use JOptionPane dialogs but with graphics:
 
         // Have two graphic files (picture files) ready
-        String picture1 = "C:\\Users\\lawrence.wachs\\Desktop\\matrix.gif";
-        String picture2 = "C:\\Users\\lawrence.wachs\\Desktop\\tictactoe.gif";
+        final String PATH = "C:\\Users\\lawrence.wachs\\Desktop\\"
+                          + "2021-2022\\Projects\\Java\\ComputerScience30S\\";
+        String picture1 = PATH + "matrix.gif";
+        String picture2 = PATH + "tictactoe.gif";
                 
         // Call a method to display a "fancy" dialog
         message(text1,"The Matrix",picture1);
