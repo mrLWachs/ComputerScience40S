@@ -21,8 +21,8 @@ public class Apple extends Food
      * Default constructor, set class properties
      */
     public Apple() {
-        super(4);
-        super.flavour = "Sweet";
+        super(4);                   // Call super-constructor, passing the group
+        super.flavour = "Sweet";    // Modifying our protected property
     }
     
     /**
@@ -40,7 +40,7 @@ public class Apple extends Food
      */
     @Override
     public boolean hasSpoiled() {
-        return super.eatable;
+        return super.eatable;       // Access public property
     }
 
     /**
