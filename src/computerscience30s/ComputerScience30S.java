@@ -1160,8 +1160,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 title,
                 JOptionPane.PLAIN_MESSAGE,
                 image);
-    }
-    
+    }    
     
 }
 
