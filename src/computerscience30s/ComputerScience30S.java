@@ -804,8 +804,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // a
         //
         
-        // Later on (in code) you can re-create (re-declare, re-dimension, or
-        // resize) using the same array but now giving it some size (still empty)
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
         a = new double[3];
 
         // In memory....
@@ -989,6 +990,19 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Optional graphical code...
         
         // Use JOptionPane dialogs but with graphics:
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
