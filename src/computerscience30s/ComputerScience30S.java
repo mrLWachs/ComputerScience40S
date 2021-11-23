@@ -1116,16 +1116,13 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // Using capital letters and importing (using the lightbulb) and a line
         // similar to the way we declare arrays, and using round brackets 
-        // (implies a method? - we will study in the next unit 'classes')
-        
+        // (implies a method? - we will study in the next unit 'classes')        
         Color background = new Color(0,0,0);
         // The three numbers in "Color" are for red, green and blue values 
-        // from 0 (no amount) up to 255 (the maximum amount of that color)
-        
+        // from 0 (no amount) up to 255 (the maximum amount of that color)        
         Color foreground = new Color(0,255,0);  // Bright green
         
-        // Fonts are done the same way (import, declare them)
-        
+        // Fonts are done the same way (import, declare them)        
         Font font = new Font("Consolas", Font.PLAIN, 18);
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
@@ -1140,19 +1137,16 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // Create a "icon" for the image (icon is like a picturebox) and also 
         // use "ImageIcon" - connected to the image name (which is the actual 
-        // image on our computer) 
-        
+        // image on our computer)         
         Icon image = new ImageIcon(pictureFileName);
         
         // Now need something that can display the fonts and colors - called a 
         // "text area" (can use intellisense, with CTRL + SPACE, which 
-        // automatically imports it) 
-        
+        // automatically imports it)         
         JTextArea area = new JTextArea();
         
         // Now we add things into the area, using methods built into the text 
-        // area object
-        
+        // area object        
         area.setText(text);
         area.setBackground(background);
         area.setForeground(foreground);
