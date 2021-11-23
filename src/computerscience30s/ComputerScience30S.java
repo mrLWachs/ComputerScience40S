@@ -1106,10 +1106,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * 
      * @param text what text to show in the dialog
      * @param title the title at the top of the dialog
-     * @param pictureFileName the full (first, middle, last) name of the image
+     * @param imageName the full (first, middle, last) name of the image
      */
-    private static void message(String text, String title, 
-            String pictureFileName) {
+    private static void message(String text, String title, String imageName) {
         // We set up some 'graphical' "things" to make the dialog more 
         // interesting by 'importing' the code that does this (we are not 
         // writing that specific code, we are 'using' others code)
@@ -1138,7 +1137,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Create a "icon" for the image (icon is like a picturebox) and also 
         // use "ImageIcon" - connected to the image name (which is the actual 
         // image on our computer)         
-        Icon image = new ImageIcon(pictureFileName);
+        Icon image = new ImageIcon(imageName);
         
         // Now need something that can display the fonts and colors - called a 
         // "text area" (can use intellisense, with CTRL + SPACE, which 
