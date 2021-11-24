@@ -3,6 +3,7 @@
 package testing;
 
 /** Required imports */
+import testing.advancedclasses.Apple;
 import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
 import testing.advancedclasses.Doctor;
@@ -12,6 +13,7 @@ import testing.advancedclasses.Meeting;
 import testing.advancedclasses.MrWachs;
 import testing.advancedclasses.Person;
 import testing.advancedclasses.Piper;
+import testing.advancedclasses.Steak;
 import testing.advancedclasses.Student;
 import testing.advancedclasses.Teacher;
 
@@ -249,17 +251,20 @@ public class AdvancedClassesTest
         // Abstract classes can NOT ever be instantiated, for example:
         // Food food = new Food();
         
+        // Instantiate an object from a child class of an abstract class
+        // using the abstract methods (that were made 'concrete') in that class        
+        Apple apple = new Apple();        
+        apple.smell(5);
         
+        Steak steak = new Steak();
+        steak.smell(3);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Call the polymorphic method which accepts the abstract object (Food)
+        // as an argument. since the abstract class cannot be instantiated,
+        // only children objects from the abstract class can be arguments
+        // (in other words, apple and steak instances)
+        husky.consume(apple);
+        mrWachs.consume(steak);
         
         
         

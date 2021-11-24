@@ -209,4 +209,14 @@ public class Person
         System.out.println("Booom!!!!");
     }
     
+    /**
+     * Consumes the passed food object (it will be a child of the Food class 
+     * object) by outputting it to the screen
+     * 
+     * @param food the abstract food object to consume
+     */
+    public void consume(Food food) {
+        System.out.println(name + " eating " + food.eat());
+    }
+    
 }
