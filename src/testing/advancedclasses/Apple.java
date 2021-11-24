@@ -63,5 +63,5 @@ public class Apple extends Food
     public String eat() {
         return "Apple from " + super.eat();
     }
-    
+
 }
