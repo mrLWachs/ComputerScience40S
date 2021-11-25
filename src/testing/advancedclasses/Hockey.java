@@ -10,7 +10,21 @@ package testing.advancedclasses;
  * @author Mr. Wachs 
  * @since 24-Nov-2021 
 */
-public interface Hockey
+public interface Hockey extends Sports
 {
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
+    void score(String name);
+    
+    /**
+     * The passed period of hockey is over
+	 *
+     * @param period the period number
+     */
+    void endOfPeriod(int period);
+    
 }
