@@ -40,11 +40,22 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
         super.name = name;
         this.setAge(age);
         opponentName = "";
-        haveForm = false;
-        homeScore = opponentScore = 0;
-        suss = WE_LOST;
+        haveForm     = false;
+        homeScore    = opponentScore = 0;
+        suss         = WE_LOST;
     }
      
+    /**
+     * Default Constructor sets class properties
+     */
+    public Athlete() {
+        super();
+        opponentName = "";
+        haveForm     = false;
+        homeScore    = opponentScore = 0;
+        suss         = WE_LOST;
+    }
+    
     /**
      * String representation of this object
      *
@@ -119,6 +130,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean didIWin() {
+        return false;
     }
 
     /**
@@ -129,6 +141,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean callMeeting(String name) {
+        return false;
     }
 
     /**
@@ -138,6 +151,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public String askQuestion() {
+        return "";
     }
 
     /**
@@ -148,6 +162,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public String findBody(String who) {
+        return "";
     }
 
     /**
@@ -164,6 +179,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean haveYouGotItSigned() {
+        return false;
     }
     
 }
