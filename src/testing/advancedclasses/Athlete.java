@@ -121,7 +121,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void setName(String name) {
-        
+        super.name = name;
     }
 
     /**
@@ -131,7 +131,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void setOpponent(String name) {
-        
+        opponentName = name;
     }
 
     /**
@@ -141,7 +141,14 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean didIWin() {
-        return false;
+        if (homeScore >= opponentScore) {
+            System.out.println(super.name + " wins!");
+            return true;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return false;
+        }
     }
 
     /**
@@ -181,7 +188,8 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void sign() {
-        
+        System.out.println(super.name + " has got it signed!");
+        haveForm = PermissionForm.SIGNED;
     }
 
     /**
@@ -191,7 +199,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean haveYouGotItSigned() {
-        return false;
+        return haveForm;
     }
     
 }
