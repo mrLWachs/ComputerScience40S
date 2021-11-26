@@ -112,6 +112,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void setName(String name) {
+        
     }
 
     /**
@@ -121,6 +122,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void setOpponent(String name) {
+        
     }
 
     /**
@@ -170,6 +172,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void sign() {
+        
     }
 
     /**
