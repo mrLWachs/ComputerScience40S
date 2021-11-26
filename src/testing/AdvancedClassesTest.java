@@ -289,11 +289,11 @@ public class AdvancedClassesTest
                 jock.score("Kyle");
                 jock.score("Pipers");
                 // Now play among us
-                jock.askQuestion();
                 jock.findBody("Kyle");
+                jock.askQuestion();                
                 // See the results...
                 jock.endOfPeriod(round);
-                jock.didIWin();
+                jock.callMeeting("Pipers");
             }
             else {
                 jock.sign();        // Sign so they can play

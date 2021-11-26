@@ -159,7 +159,7 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean callMeeting(String name) {
-        System.out.println(name + " has won!");
+        System.out.println(name + " has won Among Us! - Elec!");
         if (suss == WE_WON) return true;
         else                return false;
     }
