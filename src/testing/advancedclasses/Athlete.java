@@ -159,7 +159,9 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public boolean callMeeting(String name) {
-        return false;
+        System.out.println(name + " has won!");
+        if (suss == WE_WON) return true;
+        else                return false;
     }
 
     /**
@@ -169,18 +171,21 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public String askQuestion() {
-        return "";
+        suss = WE_LOST;
+        return super.name + " has asked a question...";
     }
 
     /**
      * Find a body in the game 
      * 
-     * @param who the person looking
+     * @param whoFoundTheBody the person looking
      * @return the name of the body
      */
     @Override
-    public String findBody(String who) {
-        return "";
+    public String findBody(String whoFoundTheBody) {
+        suss = WE_WON;
+        System.out.println(whoFoundTheBody + " has found a body");        
+        return whoFoundTheBody + " has found a body";
     }
 
     /**
