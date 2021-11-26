@@ -302,7 +302,9 @@ public class AdvancedClassesTest
         // Check if we won
         if (jock.didIWin()) jock.consume(steak);
         
-        
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
         
         
         
