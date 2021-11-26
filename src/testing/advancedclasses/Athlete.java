@@ -94,6 +94,9 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void score(String name) {
+        System.out.println(name + " has scored a goal");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.equals(super.name))   homeScore++;
     }
 
     /**
@@ -103,6 +106,12 @@ public class Athlete extends Husky implements Hockey, AmongUs, PermissionForm
      */
     @Override
     public void endOfPeriod(int period) {
+        String output = "End of period " + period;
+        output += " and the score is "   + homeScore;
+        output += " for the "            + super.name;
+        output += " and "                + opponentScore;
+        output += " for the "            + opponentName;
+        System.out.println(output);
     }
 
     /**
