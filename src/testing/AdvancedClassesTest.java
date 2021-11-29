@@ -3,6 +3,7 @@
 package testing;
 
 /** Required imports */
+import javax.swing.JOptionPane;
 import testing.advancedclasses.Apple;
 import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
@@ -336,10 +337,12 @@ public class AdvancedClassesTest
         output(string1);
         output(jock);
         
+        // Test the generic method on another object
+        JOptionPane joptionpane = new JOptionPane();
+        output(joptionpane);
         
-        
-        
-        
+        // This line uses 'annonymous object'
+        output(new Object());
         
         
         
@@ -369,7 +372,10 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is " + item.toString();
+        System.out.println(text);
     }
     
 }
