@@ -306,6 +306,40 @@ public class AdvancedClassesTest
         // to a class or group of things that is not specific. In 
         // Java, we can use generic methods and generic classes
         
+        // Let us start by creating simple ('primitive') data types
+        boolean b = true;
+        int     i = 0;
+        double  d = 3.14;
+        char    c = 'a';
+        
+        // Now use the primatives with a more complex data type (class)
+        // called a 'wrapper' class from the primatives and use the 
+        // constructor methods of those wrapper classes passing the 
+        // primatives through the constructor methods
+        
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
+        
+        // Also String (which was always 'complex' using the captial 'S'
+        // to declare it) and its constructor method (usually not needed)..
+        
+        String string1 = new String("text");
+        
+        // Now call a generic method on the variety of 'generic' items
+        
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        output(string1);
+        output(jock);
+        
+        
+        
+        
+        
         
         
         
@@ -318,6 +352,12 @@ public class AdvancedClassesTest
         
         
         System.out.println("\nAdvanced Classes completed!\n");
+    }
+
+    
+    
+    private void output(? item) {
+        
     }
     
 }
