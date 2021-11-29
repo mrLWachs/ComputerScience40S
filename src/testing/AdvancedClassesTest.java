@@ -355,8 +355,20 @@ public class AdvancedClassesTest
     }
 
     
-    
-    private void output(? item) {
+    /**
+     * Outputs a generic item with information about the data type.
+     * Generic methods use 'generic' references rather than specific
+     * references. You do not define the data type (the parameter) 
+     * when the method is created. Instead of defining the data
+     * type, a set of angle brackets "< >" is used with a single
+     * letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in
+     * the argument when the method is later called
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
         
     }
     
