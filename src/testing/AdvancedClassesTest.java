@@ -7,8 +7,11 @@ import javax.swing.JOptionPane;
 import testing.advancedclasses.Apple;
 import testing.advancedclasses.Athlete;
 import testing.advancedclasses.Baker;
+import testing.advancedclasses.Box;
 import testing.advancedclasses.Doctor;
+import testing.advancedclasses.Food;
 import testing.advancedclasses.HighSchool;
+import testing.advancedclasses.House;
 import testing.advancedclasses.Husky;
 import testing.advancedclasses.Meeting;
 import testing.advancedclasses.MrWachs;
@@ -344,15 +347,62 @@ public class AdvancedClassesTest
         // This line uses 'annonymous object'
         output(new Object());
         
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.   
         
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string1);
+        Box<Athlete>   box6 = new Box<>(jock);
         
+        // Peek in all the boxes..        
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
         
+        // Open all the boxes...
+        Boolean   newBoolean   = box1.open();
+        Integer   newInteger   = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Athlete   newAthlete   = box6.open();
         
+        // Output all the newly returned data type objects...
+        output(newBoolean);
+        output(newInteger);
+        output(newDouble);
+        output(newCharacter);
+        output(newString);
+        output(newAthlete);
         
+        // A generic class with multiple generic types, a generic method, the
+        // enhanced for loop, restricted generics     
         
+        House<Teacher,Meeting> house = new House<>();
         
+        // Associate the objects that match with the generics
+        house.homeOwner = mrWachs;
+        house.contents  = meeting;
         
+        // Create as array of Food objects
+        Food[] fridge = { apple, steak };
         
+        // Test our generic method
+        house.party(fridge);
         
         System.out.println("\nAdvanced Classes completed!\n");
     }
