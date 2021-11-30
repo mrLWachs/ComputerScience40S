@@ -277,8 +277,7 @@ public class AdvancedClassesTest
         // Sports sports = new Sports(); like abstract classes). Like an
         // abstract class, interfaces are used by 'child' like classes that
         // 'implement' the interface (these classes "follow the rules" of
-        // the interface ("the set of rules").
-        
+        // the interface ("the set of rules").        
         Athlete jock = new Athlete("Kyle",24);
         // Set our opponent        
         jock.setOpponent("Pipers");
@@ -319,8 +318,7 @@ public class AdvancedClassesTest
         // Now use the primatives with a more complex data type (class)
         // called a 'wrapper' class from the primatives and use the 
         // constructor methods of those wrapper classes passing the 
-        // primatives through the constructor methods
-        
+        // primatives through the constructor methods        
         Boolean   bool      = new Boolean(b);
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
@@ -328,11 +326,9 @@ public class AdvancedClassesTest
         
         // Also String (which was always 'complex' using the captial 'S'
         // to declare it) and its constructor method (usually not needed)..
-        
         String string1 = new String("text");
         
         // Now call a generic method on the variety of 'generic' items
-        
         output(bool);
         output(integer);
         output(doub);
@@ -356,8 +352,7 @@ public class AdvancedClassesTest
         // This is repeated on the right hand side of the equals 
         // sign as well (but you can leave these angle brackets 
         // empty - which is called the "diamond") before the round 
-        // brackets of the constructor method.   
-        
+        // brackets of the constructor method.
         Box<Boolean>   box1 = new Box<>(bool);
         Box<Integer>   box2 = new Box<>(integer);
         Box<Double>    box3 = new Box<>(doub);
@@ -390,8 +385,7 @@ public class AdvancedClassesTest
         output(newAthlete);
         
         // A generic class with multiple generic types, a generic method, the
-        // enhanced for loop, restricted generics     
-        
+        // enhanced for loop, restricted generics 
         House<Teacher,Meeting> house = new House<>();
         
         // Associate the objects that match with the generics

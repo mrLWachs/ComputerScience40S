@@ -5,12 +5,15 @@ package testing.advancedclasses;
 /**
  * House.java - represents a house, and has a homeowner property who 
  * generically restricted to be a person object or any children of the person
- * class. Also it contains contents (a property) which can be generically
- * anything. To add another generic, use a comma "," in the class signature
+ * class.Also it contains contents (a property) which can be generically
+ * anything.To add another generic, use a comma "," in the class signature
  * inside the angle brackets "< >" and another letter (a different letter) to 
  * act as another placeholder.
  *
  * @author Mr. Wachs
+ * @param <T> the generic type of home owner (restricted to type Person and all
+ * its children)
+ * @param <U> the generic type for the contents of this house (unrestricted)
  * @since 30-Nov-2021, 11:34:25 AM
  */
 public class House <T extends Person, U>
