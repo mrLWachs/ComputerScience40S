@@ -33,9 +33,10 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-        learnIntroToJava();
-        learnMethods();       
-        learnArrays();
+//        learnIntroToJava();
+//        learnMethods();       
+//        learnArrays();
+        learnClasses();
     }
 
     /**
@@ -1162,6 +1163,26 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 JOptionPane.PLAIN_MESSAGE,
                 image);
     }    
+
+    /**
+     * Goes over the content of this unit
+     */
+    private static void learnClasses() {
+        System.out.println("Start Learning classes...");
+        
+        // Create a "person" (add a class called "Person" to this Java project)
+        // To do this, click on File - New File (or icon on toolbar)
+        // A dialog will appear and you select "Java" and "Java Class"
+        // Then next...
+        // Then give it a name (starts with a capital letter and camel casing)
+        // Then click finish!
+        
+        
+        
+        
+        
+        System.out.println("Completed learning classes!");
+    }
     
 }
 
