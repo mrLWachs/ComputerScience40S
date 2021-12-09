@@ -1177,6 +1177,25 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Then give it a name (starts with a capital letter and camel casing)
         // Then click finish!
         
+        // use a line of code like this:
+        // Random random = new Random();
+        
+        Person person = new Person();
+        // Class object = new Class() <--- implies a method?
+        // that is the call to the constructor method
+        
+        // call (invoke) a method within the object
+        person.talk();
+        
+        // Use (call,invoke) other methods and change properties
+        person.birthday();
+        person.talk();
+        person.name = "Dave Smith";
+        person.talk();
+        person.gender = "Male";
+        person.talk();
+        person.die();
+        person.talk();
         
         
         
