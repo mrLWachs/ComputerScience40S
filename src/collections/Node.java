@@ -6,11 +6,25 @@ package collections;
  * Node.java - description
  *
  * @author Mr. Wachs
+ * @param <T> The generic data type used in the class
  * @since 8-Dec-2021, 11:58:50 AM
  */
-public class Node 
+public class Node <T>
 {
 
+    /** The generic data type stored */
+    public T data;
+    
+    /** 
+     * Self reference (pointer,link) to the next node that 'will' be
+     * in a 'chain' (linked list)
+     */
+    public Node next;
+    
+    /** Link / pointer / reference to the previous (back) node */
+    public Node previous;
+    
+    
     /**
      * Default constructor, set class properties
      */
