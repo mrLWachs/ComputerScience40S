@@ -82,19 +82,7 @@ public class Node <T>
         // keyword "this"
         this(null,null,null);
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     
+        
     /**
      * String representation of this object
      *
@@ -102,7 +90,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        return "Node: " + super.toString();
+        if (data == null) return "null";    // invalid data
+        return data.toString();             // generic has toString
     }
    
     /**
@@ -123,7 +112,8 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        return new Node(this.data, this.next, this.previous);
+        // Annoynmous object
     }
     
 }
