@@ -37,6 +37,29 @@ public class Person {
         gender = "female";
     }
     
+    
+    Person(String newName) {
+        isAlive = true;
+        age     = 0;
+        name    = newName;
+        gender  = "female";
+    }
+    
+    Person(String name, int age, String gender) {
+        isAlive = true;
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (whcih will be created at a later time)
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
+    }
+    
+    
+    
+    
+    
+    
     void die() {
         isAlive = false;
     }
@@ -54,6 +77,12 @@ public class Person {
     
     void birthday() {
         age++;
+    }
+    
+    void birthday(int times) {
+        for (int i = 0; i < times; i++) {
+            birthday();
+        }
     }
     
 }
