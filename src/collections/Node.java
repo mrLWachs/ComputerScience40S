@@ -35,11 +35,65 @@ public class Node <T>
     
     
     /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
+     */
+    public Node(T data, Node next, Node previous) {
+        this.data     = data;
+        this.next     = next;
+        this.previous = previous;
+        // We assign the parameters of this method to the properties of this 
+        // class (the global variables of the class)        
+    }
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     */
+    public Node(T data, Node next) {
+        this.data     = data;
+        this.next     = next;
+        this.previous = null;       
+    }
+    
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     */
+    public Node(T data) {
+        this.data     = data;
+        this.next     = null;
+        this.previous = null;       
+    }
+        
+    /**
      * Default constructor, set class properties
      */
     public Node() {
-        
+        // As an option, you can have one constructor call another constructor
+        // (methods can other methods) - but constructors, in Java we use the
+        // keyword "this"
+        this(null,null,null);
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      
     /**
      * String representation of this object
