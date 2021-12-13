@@ -1188,7 +1188,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         person.talk();
         
         // Use (call,invoke) other methods and change properties
-        person.birthday();
+        person.birthday(1);
         person.talk();
         person.name = "Dave Smith";
         person.talk();
@@ -1201,7 +1201,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // constructor        
         Person other = new Person("Another name");
         other.talk();
-        other.birthday();
+        other.birthday(10);
         other.talk();
         
         // Another instance using the 3rd constructor option
@@ -1210,7 +1210,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         third.talk();
         third.die();
         third.talk();
-        
+        // third.age = 50; // cannot be done, private property
         
         
         

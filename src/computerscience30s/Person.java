@@ -15,13 +15,19 @@ public class Person {
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
-    String name;
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global varaible) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
     
-    int age;
+    public String name;
     
-    boolean isAlive;
+    private int age;        // Encapsulated this property
     
-    String gender;
+    private boolean isAlive; // Can be changed through methods
+    
+    public String gender;
+    
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
    
@@ -31,22 +37,36 @@ public class Person {
      * (not even the word "void"). These methods are called when the class is
      * used to build (construct, instantiate) an object.
      */
-    Person() {
+    public Person() {
         isAlive = true;
         age = 0;
         name = "John Doe";
         gender = "female";
     }
     
-    
-    Person(String newName) {
+    /**
+     * Constructor method, sets the class properties. Constructor methods 
+     * should be public
+     * 
+     * @param newName the new name for this person
+     */
+    public Person(String newName) {
         isAlive = true;
         age     = 0;
         name    = newName;
         gender  = "female";
     }
     
-    Person(String name, int age, String gender) {
+    /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties. Constructor methods with
+     * NO parameters are called default constructors
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    public Person(String name, int age, String gender) {
         isAlive = true;
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
@@ -56,16 +76,18 @@ public class Person {
         this.gender = gender;
     }
     
-    
-    
-    
-    
-    
-    void die() {
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (isAlive) through this method
+     */
+    public void die() {
         isAlive = false;
     }
     
-    void talk() {
+    /**
+     * Outputs information about the person to the screen
+     */
+    public void talk() {
         if (isAlive) {
             System.out.println(name + " is "
                     + age + " identifies as "
@@ -76,11 +98,24 @@ public class Person {
         }
     }
     
-    void birthday() {
+    /**
+     * Overload method, ut a private method means it can be called (invoked)
+     * inside the class by other methods of the class. Private methods are
+     * rare and sometimes called "helper" or "utility" methods as they just 
+     * help other methods.
+     */
+    private void birthday() {
         age++;
     }
     
-    void birthday(int times) {
+    /**
+     * Gives the person a birthday, changes the encapsulated property (age).
+     * This is a overloaded method meaning multiple methods with the same 
+     * name but different parameters.
+     * 
+     * @param times home many birthdays to give the person
+     */
+    public void birthday(int times) {
         for (int i = 0; i < times; i++) {
             birthday();
         }
