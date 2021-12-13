@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package collections;
 
@@ -90,8 +91,8 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        if (data == null) return "null";    // invalid data
-        return data.toString();             // generic has toString
+        if (data == null) return "null";    // Invalid data
+        return data.toString();             // Generic has toString
     }
    
     /**
@@ -113,7 +114,7 @@ public class Node <T>
     @Override
     public Node clone() {
         return new Node(this.data, this.next, this.previous);
-        // Annoynmous object
+        // Annoynmous clone object created and returned
     }
     
 }
