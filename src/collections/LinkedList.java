@@ -11,6 +11,22 @@ package collections;
  */
 public class LinkedList 
 {
+    
+    /** Reference (link) to the first (front) node in the list (entry point) */
+    private Node head;
+    
+    /** Reference (link) to the last (back) node in the list (entry point) */
+    private Node tail;
+    
+    /** 
+     * The number of nodes in the list, cannot be changed outside the class,
+     * so it is an immutable encapsulated property
+     */
+    private int length;
+    
+    
+    
+    
 
     /**
      * Default constructor, set class properties
