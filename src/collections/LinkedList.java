@@ -4,7 +4,17 @@ package collections;
 
  
 /**
- * LinkedList.java - description
+ * LinkedList.java - an implementation of a linked list abstract (advanced)
+ * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
+ * 
+ *             +------+       +------+       +------+       +------+      
+ *  null <---- |      | <---- |      | <---- |      | <---- |      |  
+ *             | NODE |       | NODE |       | NODE |       | NODE |       
+ *             |      |---->  |      |---->  |      |---->  |      |----> null  
+ *             +------+       +------+       +------+       +------+      
+ *                 ^                                           ^
+ *                 |                                           |
+ *                head                                        tail
  *
  * @author Mr. Wachs
  * @since 8-Dec-2021, 11:58:01 AM
@@ -25,9 +35,6 @@ public class LinkedList
     private int length;
     
     
-    
-    
-
     /**
      * Default constructor, set class properties
      */
