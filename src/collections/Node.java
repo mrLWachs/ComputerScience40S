@@ -98,29 +98,17 @@ public class Node <T>
         else              text += data.toString();      // Generic has toString
         
         // Display the connection to the next node 
-        if (this.next == null) {
-            text += "\t next -> null";
-        }
+        if (this.next == null) text += "\t next -> null";
         else {
-            if (this.next.data == null) {
-                text += "\t next -> node";
-            }
-            else {
-                text += "\t next -> " + this.next.data.toString();
-            }
+            if (this.next.data == null) text += "\t next -> node";
+            else text += "\t next -> " + this.next.data.toString();
         }
         
         // Display the connection to the previous node 
-        if (this.previous == null || this.previous.data == null) {
-            text += "\t previous -> null";
-        }
+        if (this.previous == null) text += "\t previous -> null";
         else {
-            if (this.previous.data == null) {
-                text += "\t previous -> node";
-            }
-            else {
-                text += "\t previous -> " + this.previous.data.toString();
-            }
+            if (this.previous.data == null) text += "\t previous -> node";
+            else text += "\t previous -> " + this.previous.data.toString();
         }
         
         // Add the memory address of this node
