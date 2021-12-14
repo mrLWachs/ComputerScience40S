@@ -1212,11 +1212,19 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         third.talk();
         // third.age = 50; // cannot be done, private property
         
-        
-        
-        
-        
-        
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)        
+        Student student = new Student();
+        student.talk();
+        student.name = "Student Person";
+        student.gender = "student";
+        student.birthday(17);
+        student.talk();
+        // Call (invoke) methods specifically for the student class
+        student.slackOff();
+        student.study();
+        student.slackOff();
+        student.cram();
         
         
         
