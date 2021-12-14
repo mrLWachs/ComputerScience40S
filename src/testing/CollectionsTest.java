@@ -35,6 +35,7 @@ public class CollectionsTest
         // Check if Nodes are equal...
         System.out.println("Does a == b? -> " + a.equals(b));
         System.out.println("Does b == c? -> " + b.equals(c));
+        System.out.println("Does a == a? -> " + a.equals(a));
         
         // Clone a node...
         Node<String> e = a.clone();
