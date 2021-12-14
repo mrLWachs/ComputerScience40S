@@ -91,8 +91,10 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        if (data == null) return "null";    // Invalid data
-        return data.toString();             // Generic has toString
+        if (data == null) return "null memory address: \t" + super.toString();    
+        // Invalid data
+        return data.toString() + " memory address: \t" + super.toString();             
+        // Generic has toString
     }
    
     /**

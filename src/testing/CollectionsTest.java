@@ -44,6 +44,26 @@ public class CollectionsTest
         System.out.println("Does e == a? -> " + e.equals(a));
         System.out.println("Does f == d? -> " + f.equals(d));
         
+        // finalize some nodes (wipe em out, "destroy" them, free up memory)
+        System.out.println("a = " + a.toString());
+        System.out.println("b = " + b.toString());
+        System.out.println("c = " + c.toString());
+        System.out.println("d = " + d.toString());
+        System.out.println("e = " + e.toString());
+        System.out.println("f = " + f.toString());        
+        a.finalize();
+        b.finalize();
+        c.finalize();
+        d.finalize();
+        e.finalize();
+        f.finalize();        
+        System.out.println("a = " + a.toString());
+        System.out.println("b = " + b.toString());
+        System.out.println("c = " + c.toString());
+        System.out.println("d = " + d.toString());
+        System.out.println("e = " + e.toString());
+        System.out.println("f = " + f.toString());
+        
         
         
         
