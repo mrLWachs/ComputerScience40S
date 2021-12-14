@@ -96,23 +96,21 @@ public class Node <T>
         // Display the data stored in the node (or null)
         if (data == null) text += "null";               // Invalid data 
         else              text += data.toString();      // Generic has toString
-        
-        // Display the connection to the next node 
-        if (this.next == null) text += "\t next -> null";
-        else {
-            if (this.next.data == null) text += "\t next -> node";
-            else text += "\t next -> " + this.next.data.toString();
-        }
+                
+        // Display the connection to the next node
+        text += "\t";
+        if      (next      == null) text += "n -> null";
+        else if (next.data == null) text += "n -> node";
+        else                        text += "n -> " + next.data.toString();
         
         // Display the connection to the previous node 
-        if (this.previous == null) text += "\t previous -> null";
-        else {
-            if (this.previous.data == null) text += "\t previous -> node";
-            else text += "\t previous -> " + this.previous.data.toString();
-        }
-        
+        text += "\t";
+        if      (previous      == null) text += "p -> null";
+        else if (previous.data == null) text += "p -> node";
+        else                            text += "p -> " + previous.data.toString();
+                
         // Add the memory address of this node
-        text += "\t memory address: " + super.toString();
+        text += "\t" + super.toString();
         
         // Return all the data compiled
         return text;
