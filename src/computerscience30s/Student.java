@@ -26,9 +26,21 @@ public class Student extends Person
     
     private double average;
     
-    
-    public Student() {
-        
+    /**
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
+     * 
+     * @param name the name for this student person
+     * @param age the age for this student person
+     * @param gender the gender for this student person
+     * @param studentNumber the student number for this student
+     */
+    public Student(String name, int age, String gender, int studentNumber) {
+        super.name = name;
+        super.gender = gender;
+        super.birthday(age);
+        this.studentNumber = studentNumber;
+        average = 0;
     }    
     
     /**
