@@ -66,4 +66,17 @@ public class Student extends Person
         }
     }
     
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
+    @Override
+    public void talk() {
+        // Even with a class that inherits from another class, we 
+        // can call the methods of the parent class
+        super.talk();
+        System.out.println("\t Number:  " + studentNumber);
+        System.out.println("\t Average: " + average);        
+    }
+        
 }

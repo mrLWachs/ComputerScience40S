@@ -1221,7 +1221,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         student.study();
         student.slackOff();
         student.cram();
-        
+        student.talk();
         
         
         
