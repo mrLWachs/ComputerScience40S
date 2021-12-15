@@ -17,9 +17,10 @@ package collections;
  *                head                                        tail
  *
  * @author Mr. Wachs
+ * @param <T> The generic data type used in the class
  * @since 8-Dec-2021, 11:58:01 AM
  */
-public class LinkedList 
+public class LinkedList <T>
 {
     
     /** Reference (link) to the first (front) node in the list (entry point) */
@@ -39,8 +40,51 @@ public class LinkedList
      * Default constructor, set class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
+    
+    /**
+     * Frees up all memory used by this object
+     */
+    @Override
+    public void finalize() {
+        length = 0;
+        head = tail = null;
+        System.gc();
+    }
+        
+    /**
+     * Determines if the list is empty (no nodes) or not
+     * 
+     * @return it is empty (true) or it does contain some data (false)
+     */
+    public boolean isEmpty() {
+        return length == 0;
+    }
+    
+    /**
+     * Accessor method for the number of nodes in the list (the length is a 
+     * immutable encapsulated property of the class) - no mutator method will
+     * be written (so 'length' remains a read-only property from outside the 
+     * class)
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      
     /**
      * String representation of this object
