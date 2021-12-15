@@ -48,9 +48,9 @@ public class LinkedList <T>
      */
     @Override
     public void finalize() {
-        length = 0;
-        head = tail = null;
-        System.gc();
+        length = 0;                 // length set to zero
+        head = tail = null;         // References set to nulls
+        System.gc();                // Runs the garbage collector in Java
     }
         
     /**
