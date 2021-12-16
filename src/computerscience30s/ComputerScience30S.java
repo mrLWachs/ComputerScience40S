@@ -1235,17 +1235,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         teacher.students[0] = student;
         teacher.students[1] = husky;
         
+        // Called talk again to see the students we added
         teacher.talk();
         
+        // Build (declare, initiaize, instantiate) a Meeting object
+        Meeting meeting = new Meeting();
         
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
         
-        
-        
-        
-        
-        
-        
-        
+        meeting.hold();
+                
         System.out.println("Completed learning classes!");
     }
     
