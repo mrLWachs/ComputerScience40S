@@ -1223,7 +1223,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         student.cram();
         student.talk();
         
-        
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 14, "male", 2665);
+        husky.talk();
         
         
         
