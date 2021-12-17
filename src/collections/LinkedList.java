@@ -83,8 +83,8 @@ public class LinkedList <T>
     public String toString() {
         if (isEmpty()) return "Empty LinkedList";   // No nodes to display
         String text = "LinkedList [";               // String to build up
-        Node current = head;                        
         // Start a reference (link) at the first (head) node (entry point)
+        Node current = head;                    // Start at head node
         while (current != null) {               // Traverse (travel) the list
             text += current.toString() + ",";   // Appending data to the string
             current = current.next;             // Move to the next node
@@ -100,26 +100,28 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean addBack(T data) {
-        if (data == null) return false;
-        Node<T> node = new Node<>(data);
-        // Scenarios to consider:
-        //  (1) Typical case (what you should do)
-        //  (2) Edge case(s) (pushing the edge/limits)
-        //  (3) Beyond the edge
+        if (data == null) return false;     // null data cannot be added            
+        Node<T> node = new Node<>(data);    // new (memory) Node object created
         
-        // Scenarios for this method:
+        // General programmer scenarios to consider:
+        //  (1) Typical case - what does a 'normal' user do?
+        //  (2) Edge case(s) - what if we pushing the edge/limits?
+        //  (3) Beyond the edge - what if we try to intentially crash this?
+        
+        // Scenarios for this method to consider:
         //  (1) Empty list
         //  (2) List of 1 or more nodes
-        if (isEmpty()) {    // Adding the first node
-            head = tail = node;
+        
+        if (isEmpty()) {                    // Ddding first node
+            head = tail = node;             // Set LinkedList references
         }
-        else {              // Adding a subsequent node
-            node.previous = tail;
-            tail.next = node;
-            tail = node;
+        else {                              // Subsequent nodes added
+            node.previous = tail;           // Link node to rest of list
+            tail.next = node;               // Connect rest of list to node
+            tail = node;                    // Reassign tail reference
         }
-        length++;
-        return true;
+        length++;                           // Increase length environmental
+        return true;                        // Operation successful
     }
     
     
