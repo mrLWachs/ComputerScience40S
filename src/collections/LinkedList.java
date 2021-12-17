@@ -86,7 +86,8 @@ public class LinkedList <T>
         // Start a reference (link) at the first (head) node (entry point)
         Node current = head;                    // Start at head node
         while (current != null) {               // Traverse (travel) the list
-            text += current.toString() + ",";   // Appending data to the string
+            // Appending the node data to the string and a seperator comma
+            text += current.data.toString() + ",";   
             current = current.next;             // Move to the next node
         }
         return text + "]";                      // Sending back the string
