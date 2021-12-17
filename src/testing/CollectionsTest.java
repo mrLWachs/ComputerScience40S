@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+import collections.LinkedList;
 import collections.Node;
 
  
@@ -89,9 +90,33 @@ public class CollectionsTest
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
         
+        // Create a LinkedList to test the constructor
+        System.out.println("\nTesting default LinkedList constructor.......\n");
         
+        LinkedList<Integer> list1 = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
         
+        // Test isEmpty method (before I add anything to the list)
+        System.out.println("\nTesting isEmpty method......................\n");        
+        System.out.println("L1 empty? -> " + list1.isEmpty());
         
+        // Test size method (before I add anything to the list)
+        System.out.println("\nTesting size method.........................\n");        
+        System.out.println("L1 size? -> " + list1.size());
+        
+        // Test toString method (before I add anything to the list)
+        System.out.println("\nTesting toString method.....................\n");        
+        System.out.println(list1.toString());
+        
+        System.out.println("\nTest addBack method.........................\n");
+        
+        list1.addBack(5);
+        list1.addBack(50);
+        list1.addBack(500);
+        list1.addBack(-5);
+        list1.addBack(-50);
+        
+        System.out.println(list1.toString());
         
         
         

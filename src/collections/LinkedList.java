@@ -73,19 +73,7 @@ public class LinkedList <T>
     public int size() {
         return length;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     
+         
     /**
      * String representation of this object
      *
@@ -93,9 +81,61 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList: " + super.toString();
+        if (isEmpty()) return "Empty LinkedList";   // No nodes to display
+        String text = "LinkedList [";               // String to build up
+        Node current = head;                        
+        // Start a reference (link) at the first (head) node (entry point)
+        while (current != null) {               // Traverse (travel) the list
+            text += current.toString() + ",";   // Appending data to the string
+            current = current.next;             // Move to the next node
+        }
+        return text + "]";                      // Sending back the string
     }
    
+    /**
+     * Inserts (adds) data (generic type) into the back (tail, end, etc) of
+     * this list
+     * 
+     * @param data the generic type to add in
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBack(T data) {
+        if (data == null) return false;
+        Node<T> node = new Node<>(data);
+        // Scenarios to consider:
+        //  (1) Typical case (what you should do)
+        //  (2) Edge case(s) (pushing the edge/limits)
+        //  (3) Beyond the edge
+        
+        // Scenarios for this method:
+        //  (1) Empty list
+        //  (2) List of 1 or more nodes
+        if (isEmpty()) {    // Adding the first node
+            head = tail = node;
+        }
+        else {              // Adding a subsequent node
+            node.previous = tail;
+            tail.next = node;
+            tail = node;
+        }
+        length++;
+        return true;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
