@@ -85,12 +85,13 @@ public class LinkedList <T>
         String text = "LinkedList [";               // String to build up
         // Start a reference (link) at the first (head) node (entry point)
         Node current = head;                    // Start at head node
-        while (current != null) {               // Traverse (travel) the list
+        while (current.next != null) {          // Traverse (travel) the list
             // Appending the node data to the string and a seperator comma
             text += current.data.toString() + ",";   
             current = current.next;             // Move to the next node
         }
-        return text + "]";                      // Sending back the string
+        return text + current.data.toString() + "]";  
+        // Sending back the string
     }
    
     /**
@@ -113,7 +114,7 @@ public class LinkedList <T>
         //  (1) Empty list
         //  (2) List of 1 or more nodes
         
-        if (isEmpty()) {                    // Ddding first node
+        if (isEmpty()) {                    // Adding first node
             head = tail = node;             // Set LinkedList references
         }
         else {                              // Subsequent nodes added
@@ -125,6 +126,28 @@ public class LinkedList <T>
         return true;                        // Operation successful
     }
     
+    
+    /**
+     * Inserts (adds) data (generic type) into the front (head, start, etc) of
+     * this list
+     * 
+     * @param data the generic type to add in
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addFront(T data) {
+        if (data == null) return false;     // null data cannot be added            
+        Node<T> node = new Node<>(data);    // new (memory) Node object created
+        if (isEmpty()) {                    // Adding first node
+            head = tail = node;             // Set LinkedList references
+        }
+        else {                              // Subsequent nodes added
+            node.next = head;               // Link node to rest of list
+            head.previous = node;           // Connect rest of list to node
+            head = node;                    // Reassign head reference
+        }
+        length++;                           // Increase length environmental
+        return true;                        // Operation successful
+    }
     
     
     

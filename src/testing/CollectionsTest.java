@@ -108,16 +108,21 @@ public class CollectionsTest
         System.out.println("\nTesting toString method.....................\n");        
         System.out.println(list1.toString());
         
-        System.out.println("\nTest addBack method.........................\n");
-        
+        System.out.println("\nTest addBack method.........................\n");        
         list1.addBack(5);
         list1.addBack(50);
         list1.addBack(500);
         list1.addBack(-5);
-        list1.addBack(-50);
-        
+        list1.addBack(-50);        
         System.out.println(list1.toString());
         
+        System.out.println("\nTest addFront method.........................\n");        
+        list1.addFront(-60); 
+        list1.addFront(-6);
+        list1.addFront(600);
+        list1.addFront(60);
+        list1.addFront(6);
+        System.out.println(list1.toString());
         
         
         
