@@ -184,6 +184,38 @@ public class LinkedList <T>
     }
     
     /**
+     * Accessor method to the encapsulated (private) property of the first
+     * (head) node of the list
+     * 
+     * @return reference to the first node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+    
+    /**
+     * Accessor method to the encapsulated (private) property of the last
+     * (tail) node of the list
+     * 
+     * @return reference to the last node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * Accessor method to retrieve a node reference (link, pointer to) for this
+     * index location
+     * 
+     * @param index the subscript, location, index value
+     * @return a reference to the node at this location or null 
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index)) return null;             // not valid index
+        
+    }
+    
+    /**
      * Error checks to see if the index is in the range of the list
      * 
      * @param index the location (element number) to check
