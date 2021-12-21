@@ -211,8 +211,14 @@ public class LinkedList <T>
      * @return a reference to the node at this location or null 
      */
     protected Node getNode(int index) {
-        if (!inRange(index)) return null;             // not valid index
-        
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned     
+        if (index == length-1) return getLastNode();    // last node returned
+        Node current = head;                            // start at first node
+        for (int i = 0; i < index; i++) {               // move to index
+            current = current.next;                     // advance reference
+        }
+        return current;                                 // return reference
     }
     
     /**
