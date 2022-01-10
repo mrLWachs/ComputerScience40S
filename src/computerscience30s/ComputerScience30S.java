@@ -33,10 +33,31 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {        
-        learnIntroToJava();
-        learnMethods();       
-        learnArrays();
-        learnClasses();
+        System.out.println("\nComputer Science 30S Example started...\n");
+        // Present the user with options
+        final String[] OPTIONS = {
+            "See the example of learning basic Java code (unit 1)",
+            "See the example of methods (unit 2)",
+            "See the example of arrays (unit 3)",
+            "See the example of classes (unit 4)",
+            "See the example of graphics and user interfaces (bonus unit)"            
+        };
+        // Get the user's choice
+        String choice = JOptionPane.showInputDialog(
+                null,
+                "Select the unit to view examples of...",
+                "Computer Science with Mr. Wachs",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                OPTIONS,
+                OPTIONS[0]).toString();
+        // Choose which to see
+        if      (choice.equals(OPTIONS[0])) learnIntroToJava();
+        else if (choice.equals(OPTIONS[1])) learnMethods();
+        else if (choice.equals(OPTIONS[2])) learnArrays();
+        else if (choice.equals(OPTIONS[3])) learnClasses();
+        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
+        System.out.println("\nComputer Science 30S Example complete!\n");
     }
 
     /**
