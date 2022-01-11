@@ -11,10 +11,15 @@ package computerscience30s;
 public class Graphics2 extends javax.swing.JFrame {
 
     /**
-     * Creates new form Graphics2
+     * Creates new form Graphics2 (this is the constructor method)
      */
     public Graphics2() {
         initComponents();
+                
+        // Add code after the call to the method above (which do not
+        // erase that method call) - now add a line to make the 
+        // form (frame, container, window, etc.) appear
+        this.setVisible(true);
     }
 
     /**
@@ -27,6 +32,7 @@ public class Graphics2 extends javax.swing.JFrame {
     private void initComponents() {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics 2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

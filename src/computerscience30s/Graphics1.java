@@ -22,13 +22,32 @@ public class Graphics1 extends JFrame
      * called when a "Graphics1" object is created (instantiated)
      */
     public Graphics1() {
+        // To have NetBeans automate a method use ALT + SHIFT + M
+        setContainer();
+        setControls();
+        
+        // Reveal design to user (this should be done last in constructor)
+        this.setVisible(true);          // make the frame (container) visible
+    }
+
+    /**
+     * Setup the frame's (form) properties:
+     */
+    private void setContainer() {
         // Use a reference to the object that will be created in the future
         // and use all the properties and call (invoke) all the methods
         // we inherited from the super-class (JFrame)
         this.setSize(680, 830);         // Sets the width and height
         this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
+        this.setResizable(false);       // Makes it so the user cannot resize
+        this.setLocationRelativeTo(null);   // Centers the form on screen
+    }
+
+    /**
+     * Setup all the controls to go in the container
+     */
+    private void setControls() {
         
-        this.setVisible(true);          // make the frame (container) visible
     }
     
 }
