@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package computerscience30s;
 
+/** Required imports */
 import javax.swing.JFrame;
 
  
@@ -19,15 +20,18 @@ public class Graphics1 extends JFrame
     
     /**
      * Default class constructor, sets class properties - this method will be
-     * called when a "Graphics1" object is created (instantiated)
+     * called when a "Graphics1" object is created (instantiated) - which is 
+     * done in the "LearnGraphics" class constructor method
      */
     public Graphics1() {
-        // To have NetBeans automate a method use ALT + SHIFT + M
+        // To have NetBeans automate writing a method for you, select the code
+        // you want in the method with your mouse first, then press:
+        // ALT + SHIFT + M and name the method
         setContainer();
         setControls();
         
         // Reveal design to user (this should be done last in constructor)
-        this.setVisible(true);          // make the frame (container) visible
+        this.setVisible(true);          // Make the frame (container) visible
     }
 
     /**
