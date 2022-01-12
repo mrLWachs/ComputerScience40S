@@ -2,7 +2,12 @@
 package computerscience30s;
 
 /** Required imports */
+import java.awt.Container;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
 
  
 /**
@@ -17,6 +22,15 @@ import javax.swing.JFrame;
  */
 public class Graphics1 extends JFrame
 {
+    // Create some "global variables" or properties of this class ("things
+    // about that class", descriptors, adjectives) which are the controls
+    // (components, widgets, tools) for that container
+    
+    private JLabel     text;        // Label can be for text, images, or both
+    private JButton    button;      // "Command button" in C#
+    private JTextField textbox;     // A text box area
+    private JLabel     picture;     // There are other ways to show images
+    
     
     /**
      * Default class constructor, sets class properties - this method will be
@@ -45,13 +59,44 @@ public class Graphics1 extends JFrame
         this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
         this.setResizable(false);       // Makes it so the user cannot resize
         this.setLocationRelativeTo(null);   // Centers the form on screen
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        // Means when the close this form (frame, window, app, program, 
+        // container) the entire program (all forms) also close
     }
 
     /**
      * Setup all the controls to go in the container
      */
     private void setControls() {
+        // Create (instantiate) the objects (controls)
+        text    = new JLabel();        // Calls the JLabel constructor method
+        button  = new JButton();
+        textbox = new JTextField();
+        picture = new JLabel();
         
+        // Change any properties of the controls
+        text.setText("Hello World");
+        // With image, little more code, why not "take" (copy/paste) the
+        // code from the designer and adapt it as you like
+        final String FILE = "/computerscience30s/programmer-programming.gif";
+        picture.setIcon(new ImageIcon(getClass().getResource(FILE))); 
+
+        // Set the container's layout manager to posiition all the controls
+        Container container = this.getContentPane();
+        container.setLayout(null);  // null means you will position yourself
+        
+        // Add the controls to the container
+        container.add(text);
+        container.add(picture);
+        container.add(textbox);
+        container.add(button);
+        
+        // Position all controls using: x, y, width, height
+        text.setBounds(10, 10, 650, 20);
+        picture.setBounds(10, 50, 650, 650);
+        textbox.setBounds(10, 710, 650, 20);
+        button.setBounds(10, 740, 650, 40);
+                
     }
     
 }
