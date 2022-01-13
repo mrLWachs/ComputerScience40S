@@ -95,8 +95,7 @@ public class Graphics1 extends JFrame
         text.setBounds(10, 10, 650, 20);
         picture.setBounds(10, 50, 650, 650);
         textbox.setBounds(10, 710, 650, 20);
-        button.setBounds(10, 740, 650, 40);
-                
+        button.setBounds(10, 740, 650, 40);                
     }
     
 }
