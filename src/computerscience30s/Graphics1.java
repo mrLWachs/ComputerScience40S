@@ -86,7 +86,7 @@ public class Graphics1 extends JFrame
         text.setText("Hello World");
         // With image, little more code, why not "take" (copy/paste) the
         // code from the designer and adapt it as you like
-        final String FILE = "/computerscience30s/programmer-programming.gif";
+        final String FILE = "/computerscience30s/image.gif";
         picture.setIcon(new ImageIcon(getClass().getResource(FILE))); 
 
         // Set the container's layout manager to posiition all the controls
