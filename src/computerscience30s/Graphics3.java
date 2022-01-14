@@ -1,6 +1,12 @@
 /** Required package class namespace */
 package computerscience30s;
 
+/** Required imports */
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.Timer;
+
 /**
  * Graphics3.java - using the NetBeans visual designer in combination
  * with our custom code (a 'hybrid' approach) to make a "mini final project" 
@@ -11,16 +17,53 @@ package computerscience30s;
  */
 public class Graphics3 extends javax.swing.JFrame {
 
+    // Global variables (properties of the class) below........................
+    
+    // Constants:
+    private final int MIN    = 2;           // for the brushes
+    private final int MAX    = 200;         
+    private final int CHANGE = 5;           
+    private final String[] BRUSHES = {
+        "Filled oval",
+        "Open oval",
+        "Filled rectangle",
+        "Open rectangle",
+        "3D rectangle",
+        "Arc"
+    };
+    
+    // Variables (primitive)
+    private String brush;
+    private int    size;
+    private int    currentX;
+    private int    currentY;
+    
+    // Class object variables (non-primitive)
+    private Color              foreground;
+    private Color              background;
+    private Graphics           graphics;
+    private SpinnerNumberModel model;
+    private Timer              timer;
+    
+    
     /**
      * Creates new form Graphics3
      */
     public Graphics3() {
         initComponents();
+        
+        // The "hybrid" approach means is you use the designer combined
+        // with your own code to make the user interface what you want
+        this.setSize(853,430);
+        this.setTitle("Graphics 3");    // Sets the title at top of form (frame)
+        this.setResizable(false);       // Makes it so the user cannot resize
+        this.setLocationRelativeTo(null);   // Centers the form on screen
+        this.setVisible(true);
     }
 
     // NOTE: the NetBeans visual designer adds the code below which can NOT be
     // edited, it also adds other code like the constructor above which you can 
-    // eidt, add to, delete etc. The "Generated code" below can be seen by 
+    // edit, add to, delete etc. The "Generated code" below can be seen by 
     // clicking the "plus sign +" to expand the code
     
     /**
@@ -32,18 +75,85 @@ public class Graphics3 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        foregroundColor = new javax.swing.JButton();
+        backgroundColor = new javax.swing.JButton();
+        clear = new javax.swing.JButton();
+        starBurst = new javax.swing.JButton();
+        information = new javax.swing.JLabel();
+        brushSize = new javax.swing.JSpinner();
+        filledOval = new javax.swing.JRadioButton();
+        openOval = new javax.swing.JRadioButton();
+        filledRectangle = new javax.swing.JRadioButton();
+        openRectangle = new javax.swing.JRadioButton();
+        threeDRectangle = new javax.swing.JRadioButton();
+        arc = new javax.swing.JRadioButton();
+        drawArea = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 475, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        foregroundColor.setText("Foreground Color");
+        getContentPane().add(foregroundColor);
+        foregroundColor.setBounds(10, 230, 200, 30);
+
+        backgroundColor.setText("Background Color");
+        backgroundColor.setActionCommand("Background Color");
+        getContentPane().add(backgroundColor);
+        backgroundColor.setBounds(10, 270, 200, 30);
+
+        clear.setText("Clear");
+        getContentPane().add(clear);
+        clear.setBounds(10, 310, 200, 30);
+
+        starBurst.setText("Star Burst");
+        getContentPane().add(starBurst);
+        starBurst.setBounds(10, 350, 200, 30);
+
+        information.setText("Brush size:");
+        getContentPane().add(information);
+        information.setBounds(10, 190, 80, 20);
+        getContentPane().add(brushSize);
+        brushSize.setBounds(90, 190, 40, 20);
+
+        filledOval.setText("Filled Oval");
+        getContentPane().add(filledOval);
+        filledOval.setBounds(10, 10, 140, 23);
+
+        openOval.setText("Open Oval");
+        getContentPane().add(openOval);
+        openOval.setBounds(10, 40, 140, 23);
+
+        filledRectangle.setText("Filled Rectangle");
+        getContentPane().add(filledRectangle);
+        filledRectangle.setBounds(10, 70, 140, 23);
+
+        openRectangle.setText("Open Rectangle");
+        getContentPane().add(openRectangle);
+        openRectangle.setBounds(10, 100, 140, 23);
+
+        threeDRectangle.setText("3D Rectangle");
+        getContentPane().add(threeDRectangle);
+        threeDRectangle.setBounds(10, 130, 140, 23);
+
+        arc.setText("Arc");
+        getContentPane().add(arc);
+        arc.setBounds(10, 160, 140, 23);
+
+        drawArea.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout drawAreaLayout = new javax.swing.GroupLayout(drawArea);
+        drawArea.setLayout(drawAreaLayout);
+        drawAreaLayout.setHorizontalGroup(
+            drawAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 596, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
+        drawAreaLayout.setVerticalGroup(
+            drawAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 366, Short.MAX_VALUE)
         );
+
+        getContentPane().add(drawArea);
+        drawArea.setBounds(220, 10, 600, 370);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -58,5 +168,18 @@ public class Graphics3 extends javax.swing.JFrame {
     // cannot be edited
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton arc;
+    private javax.swing.JButton backgroundColor;
+    private javax.swing.JSpinner brushSize;
+    private javax.swing.JButton clear;
+    private javax.swing.JPanel drawArea;
+    private javax.swing.JRadioButton filledOval;
+    private javax.swing.JRadioButton filledRectangle;
+    private javax.swing.JButton foregroundColor;
+    private javax.swing.JLabel information;
+    private javax.swing.JRadioButton openOval;
+    private javax.swing.JRadioButton openRectangle;
+    private javax.swing.JButton starBurst;
+    private javax.swing.JRadioButton threeDRectangle;
     // End of variables declaration//GEN-END:variables
 }
