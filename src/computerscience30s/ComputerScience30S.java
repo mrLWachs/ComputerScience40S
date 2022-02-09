@@ -5,7 +5,7 @@ package computerscience30s;
  * ComputerScience30S.java - 
  *
  * @author Mr. Wachs 
- * @since 9-Feb-2022 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public class ComputerScience30S {
 
