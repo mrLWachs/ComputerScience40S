@@ -8,7 +8,7 @@ package computerscience40s;
  * with any requests for code examples that might come up over the course.
  *
  * @author Mr. Wachs 
- * @since 9-Feb-2022 
+ * @since Feb. 9, 2022, 8:01:03 a.m.
 */
 public class ComputerScience40S 
 {
