@@ -20,7 +20,45 @@ public class ComputerScience30S {
         
         // Comments are not code, so you can write what you want
         
-        System.out.print("Hello World");
+        
+        /* 
+        
+            This is for multiple line comments, as it covers as 
+            many lines as you want starting with "slash star" until
+            it see the closing "star slash"        
+        
+        */
+        
+        System.out.print("Hello World"); // Comments can also be on code lines
+        
+        // Use the same line as above with the letters "ln" ("LN" in lower)
+        // this will add a "line break" at the end
+        
+        System.out.println("I'm in the world");
+        
+        // If you type "sout" and hit "TAB" (no spaces) it will 
+        // automatically type the next line...
+        System.out.println("Good-bye world!");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
@@ -31,4 +69,6 @@ public class ComputerScience30S {
 // (1)  To zoom in and out on the code, hold ALT and roll the mouse
 // (2)  Double click the top of a tab to hide side windows or show them
 // (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
-
+// (4)  Click the green triangle on the top toolbar to run code
+// (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
