@@ -1,6 +1,8 @@
 
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 /** 
  * ComputerScience30S.java - 
  *
@@ -40,14 +42,20 @@ public class ComputerScience30S {
         // automatically type the next line...
         System.out.println("Good-bye world!");
         
+        // Additional output tips...
+        // (these are "special" characters")
         
+        System.out.println("Make a quotation mark \" ");
+        System.out.println("Make a slash  \\ ");
+        System.out.println("Make a \t tab");
+        System.out.println("Make a \n new line");
         
+        // These special ("escape sequences") start with "\"
+        // May not be needed....
         
+        // Make a "fancier" output with a dialog box...
         
-        
-        
-        
-        
+        JOptionPane.showMessageDialog(null, "Hello");
         
         
         
