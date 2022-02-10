@@ -29,19 +29,25 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     public static void main(String[] args) {
         // TODO code application logic here
         
+        ///////////////////////////////////////////////////////////////////////
+        // (1) COMMENTS:
+        ///////////////////////////////////////////////////////////////////////
+                
         // This is a commment, all typing after "//" forward slashes until the  
         // line ends is a comment
         
         // Comments are not code, so you can write what you want
         
         
-        /* 
-        
+        /*         
             This is for multiple line comments, as it covers as many lines as
             you want starting with "slash star" until it see the closing 
-            "star slash"        
-        
+            "star slash"  
         */
+        
+        ///////////////////////////////////////////////////////////////////////
+        // (2) BASIC OUTPUTS:
+        ///////////////////////////////////////////////////////////////////////
         
         System.out.print("Hello World"); // Comments can also be on code lines
         
@@ -65,10 +71,24 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // These special ("escape sequences") start with "\" and then things
         // like "n" for a new line, etc. These may not be needed in this course
         
+        ///////////////////////////////////////////////////////////////////////
+        // (3) DIALOG OUTPUTS AND INPUTS:
+        ///////////////////////////////////////////////////////////////////////
+                
         // Make a "fancier" output with a dialog box...
+        
+        // Use the keyboard shortcut "CTRL + SPACE" to bring up autocomplete
+        // at any point to help type all the code (including the correct upper 
+        // and lower case letters) as well as doing an "import" line of code
+        // at the top of the project automatically to "bring in" a library 
+        // of code for you to make the dialog box in this next line...
         
         JOptionPane.showMessageDialog(null, "Hello");
         
+        // The above line of code is the ONLY one needed for assignments, final 
+        // projects, etc. to make outputs - however, these next lines are  
+        // OPTIONS (not needed, but cool) for other types of dialog output 
+        // message boxes as seen below...
         
         
         
