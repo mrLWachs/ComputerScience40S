@@ -38,7 +38,6 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // Comments are not code, so you can write what you want
         
-        
         /*         
             This is for multiple line comments, as it covers as many lines as
             you want starting with "slash star" until it see the closing 
