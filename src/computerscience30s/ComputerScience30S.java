@@ -29,41 +29,41 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // This is a commment, all typing after "//" forward slashes 
-        // until the line ends is a comment
+        // This is a commment, all typing after "//" forward slashes until the  
+        // line ends is a comment
         
         // Comments are not code, so you can write what you want
         
         
         /* 
         
-            This is for multiple line comments, as it covers as 
-            many lines as you want starting with "slash star" until
-            it see the closing "star slash"        
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it see the closing 
+            "star slash"        
         
         */
         
         System.out.print("Hello World"); // Comments can also be on code lines
         
-        // Use the same line as above with the letters "ln" ("LN" in lower)
+        // Use the same line as above with the letters "ln" ("LN" in lower) as
         // this will add a "line break" at the end
         
         System.out.println("I'm in the world");
         
-        // If you type "sout" and hit "TAB" (no spaces) it will 
-        // automatically type the next line...
+        // If you type "sout" and hit "TAB" (no spaces) it will automatically
+        // type the next line...
+        
         System.out.println("Good-bye world!");
         
-        // Additional output tips...
-        // (these are "special" characters")
+        // Additional output tips... (these are "special" characters")   
         
         System.out.println("Make a quotation mark \" ");
         System.out.println("Make a slash  \\ ");
         System.out.println("Make a \t tab");
         System.out.println("Make a \n new line");
         
-        // These special ("escape sequences") start with "\"
-        // May not be needed....
+        // These special ("escape sequences") start with "\" and then things
+        // like "n" for a new line, etc. These may not be needed in this course
         
         // Make a "fancier" output with a dialog box...
         
