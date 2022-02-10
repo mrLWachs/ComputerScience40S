@@ -15,6 +15,11 @@ public class ComputerScience30S {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        // This is a commment, all typing after "//" forward slashes 
+        // until the line ends is a comment
+        
+        // Comments are not code, so you can write what you want
+        
         System.out.print("Hello World");
         
     }
