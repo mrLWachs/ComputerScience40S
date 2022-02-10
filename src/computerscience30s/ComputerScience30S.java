@@ -1,17 +1,29 @@
 
+/**
+ * Required package class namespace - the line below is put in automatically,
+ * and connects this file to the project
+ */
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code
+ */
 import javax.swing.JOptionPane;
 
 /** 
- * ComputerScience30S.java - 
+ * ComputerScience30S.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code example that might come up over the course.
  *
  * @author Mr. Wachs 
  * @since Feb. 9, 2022, 8:01:03 a.m.
 */
-public class ComputerScience30S {
+public class ComputerScience30S {        // Curly brackets DO NOT remove
 
     /**
+     * Don't worry about this for now - we will examine what this means in
+     * unit 2 (methods)
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -60,14 +72,6 @@ public class ComputerScience30S {
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
     }
 
 }
@@ -80,3 +84,5 @@ public class ComputerScience30S {
 // (4)  Click the green triangle on the top toolbar to run code
 // (5)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
