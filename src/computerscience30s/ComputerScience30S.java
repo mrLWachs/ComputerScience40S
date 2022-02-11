@@ -27,139 +27,139 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        // TODO code application logic here
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // (1) COMMENTS:
-//        ///////////////////////////////////////////////////////////////////////
-//                
-//        // This is a commment, all typing after "//" forward slashes until the  
-//        // line ends is a comment
-//        
-//        // Comments are not code, so you can write what you want
-//        
-//        /*         
-//            This is for multiple line comments, as it covers as many lines as
-//            you want starting with "slash star" until it see the closing 
-//            "star slash"  
-//        */
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // (2) BASIC OUTPUTS:
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        System.out.print("Hello World"); // Comments can also be on code lines
-//        
-//        // Use the same line as above with the letters "ln" ("LN" in lower) as
-//        // this will add a "line break" at the end
-//        
-//        System.out.println("I'm in the world");
-//        
-//        // If you type "sout" and hit "TAB" (no spaces) it will automatically
-//        // type the next line...
-//        
-//        System.out.println("Good-bye world!");
-//        
-//        // Additional output tips... (these are "special" characters")   
-//        
-//        System.out.println("Make a quotation mark \" ");
-//        System.out.println("Make a slash  \\ ");
-//        System.out.println("Make a \t tab");
-//        System.out.println("Make a \n new line");
-//        
-//        // These special ("escape sequences") start with "\" and then things
-//        // like "n" for a new line, etc. These may not be needed in this course
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // (3) DIALOG OUTPUTS AND INPUTS:
-//        ///////////////////////////////////////////////////////////////////////
-//                
-//        // Make a "fancier" output with a dialog box...
-//        
-//        // Use the keyboard shortcut "CTRL + SPACE" to bring up autocomplete
-//        // at any point to help type all the code (including the correct upper 
-//        // and lower case letters) as well as doing an "import" line of code
-//        // at the top of the project automatically to "bring in" a library 
-//        // of code for you to make the dialog box in this next line...
-//        
-//        JOptionPane.showMessageDialog(null, "Hello");
-//        
-//        // The above line of code is the ONLY one needed for assignments, final 
-//        // projects, etc. to make outputs - however, these next lines are  
-//        // OPTIONS (not needed, but cool) for other types of dialog output 
-//        // message boxes as seen below...
-//        
-//        // Make more dialog outut boxes, with some variations (these are NOT
-//        // required for assignments in this course) - you ARE able to use them
-//        // (note: code can span multiple lines until it reaches 
-//        //  the semi colon ";")
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Information icon is i", 
-//                "Information Title", 
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Question icon is ?", 
-//                "Question Title", 
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Warning icon is !", 
-//                "Warning Title", 
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showMessageDialog(
-//                null, 
-//                "Plain no icon", 
-//                "Plain Title", 
-//                JOptionPane.PLAIN_MESSAGE
-//        );
-//        
-//        // Dialogs for inputs...
-//
-//        // The simpliest verison is the one you need to know
-//        
-//        JOptionPane.showInputDialog("Enter something");
-//        
-//        // There is a little more to using this that we cover 
-//        // after learning variables...
-//        
-//        // Some optional input dialogs below:
-//                                
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Input Information icon is i", 
-//                "Input Information Title", 
-//                JOptionPane.INFORMATION_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Input Question icon is i", 
-//                "Input Question Title", 
-//                JOptionPane.QUESTION_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Input Warning icon is i", 
-//                "Input Warning Title", 
-//                JOptionPane.WARNING_MESSAGE
-//        );
-//        
-//        JOptionPane.showInputDialog(
-//                null, 
-//                "Input Plain icon is i", 
-//                "Input Plain Title", 
-//                JOptionPane.PLAIN_MESSAGE
-//        );
+        // TODO code application logic here
+        
+        ///////////////////////////////////////////////////////////////////////
+        // (1) COMMENTS:
+        ///////////////////////////////////////////////////////////////////////
+                
+        // This is a commment, all typing after "//" forward slashes until the  
+        // line ends is a comment
+        
+        // Comments are not code, so you can write what you want
+        
+        /*         
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it see the closing 
+            "star slash"  
+        */
+        
+        ///////////////////////////////////////////////////////////////////////
+        // (2) BASIC OUTPUTS:
+        ///////////////////////////////////////////////////////////////////////
+        
+        System.out.print("Hello World"); // Comments can also be on code lines
+        
+        // Use the same line as above with the letters "ln" ("LN" in lower) as
+        // this will add a "line break" at the end
+        
+        System.out.println("I'm in the world");
+        
+        // If you type "sout" and hit "TAB" (no spaces) it will automatically
+        // type the next line...
+        
+        System.out.println("Good-bye world!");
+        
+        // Additional output tips... (these are "special" characters")   
+        
+        System.out.println("Make a quotation mark \" ");
+        System.out.println("Make a slash  \\ ");
+        System.out.println("Make a \t tab");
+        System.out.println("Make a \n new line");
+        
+        // These special ("escape sequences") start with "\" and then things
+        // like "n" for a new line, etc. These may not be needed in this course
+        
+        ///////////////////////////////////////////////////////////////////////
+        // (3) DIALOG OUTPUTS AND INPUTS:
+        ///////////////////////////////////////////////////////////////////////
+                
+        // Make a "fancier" output with a dialog box...
+        
+        // Use the keyboard shortcut "CTRL + SPACE" to bring up autocomplete
+        // at any point to help type all the code (including the correct upper 
+        // and lower case letters) as well as doing an "import" line of code
+        // at the top of the project automatically to "bring in" a library 
+        // of code for you to make the dialog box in this next line...
+        
+        JOptionPane.showMessageDialog(null, "Hello");
+        
+        // The above line of code is the ONLY one needed for assignments, final 
+        // projects, etc. to make outputs - however, these next lines are  
+        // OPTIONS (not needed, but cool) for other types of dialog output 
+        // message boxes as seen below...
+        
+        // Make more dialog outut boxes, with some variations (these are NOT
+        // required for assignments in this course) - you ARE able to use them
+        // (note: code can span multiple lines until it reaches 
+        //  the semi colon ";")
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        // Dialogs for inputs...
+
+        // The simpliest verison is the one you need to know
+        
+        JOptionPane.showInputDialog("Enter something");
+        
+        // There is a little more to using this that we cover 
+        // after learning variables...
+        
+        // Some optional input dialogs below:
+                                
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Information icon is i", 
+                "Input Information Title", 
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Question icon is i", 
+                "Input Question Title", 
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Warning icon is i", 
+                "Input Warning Title", 
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Plain icon is i", 
+                "Input Plain Title", 
+                JOptionPane.PLAIN_MESSAGE
+        );
         
         // More different (and optional) dialogs...
         
