@@ -121,47 +121,81 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //                "Plain Title", 
 //                JOptionPane.PLAIN_MESSAGE
 //        );
+//        
+//        // Dialogs for inputs...
+//
+//        // The simpliest verison is the one you need to know
+//        
+//        JOptionPane.showInputDialog("Enter something");
+//        
+//        // There is a little more to using this that we cover 
+//        // after learning variables...
+//        
+//        // Some optional input dialogs below:
+//                                
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Input Information icon is i", 
+//                "Input Information Title", 
+//                JOptionPane.INFORMATION_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Input Question icon is i", 
+//                "Input Question Title", 
+//                JOptionPane.QUESTION_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Input Warning icon is i", 
+//                "Input Warning Title", 
+//                JOptionPane.WARNING_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Input Plain icon is i", 
+//                "Input Plain Title", 
+//                JOptionPane.PLAIN_MESSAGE
+//        );
         
-        // Dialogs for inputs...
+        // More different (and optional) dialogs...
+        
+        JOptionPane.showConfirmDialog(null,"Confirm");
 
-        // The simpliest verison is the one you need to know
-        
-        JOptionPane.showInputDialog("Enter something");
-        
-        // There is a little more to using this that we cover 
-        // after learning variables...
-        
-        // Some optional input dialogs below:
-                                
-        JOptionPane.showInputDialog(
-                null, 
-                "Input Information icon is i", 
-                "Input Information Title", 
+        JOptionPane.showConfirmDialog(
+                null,
+                "Confirm Example 2",
+                "Information",
+                JOptionPane.YES_NO_OPTION,
                 JOptionPane.INFORMATION_MESSAGE
         );
-        
-        JOptionPane.showInputDialog(
-                null, 
-                "Input Question icon is i", 
-                "Input Question Title", 
+
+        JOptionPane.showConfirmDialog(
+                null,
+                "Confirm Example 3",
+                "Question",
+                JOptionPane.DEFAULT_OPTION,
                 JOptionPane.QUESTION_MESSAGE
         );
-        
-        JOptionPane.showInputDialog(
-                null, 
-                "Input Warning icon is i", 
-                "Input Warning Title", 
+
+        JOptionPane.showConfirmDialog(
+                null,
+                "Confirm Example 4",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
                 JOptionPane.WARNING_MESSAGE
         );
-        
-        JOptionPane.showInputDialog(
-                null, 
-                "Input Plain icon is i", 
-                "Input Plain Title", 
+
+        JOptionPane.showConfirmDialog(
+                null,
+                "Confirm Example 5",
+                "Plain",
+                JOptionPane.YES_NO_CANCEL_OPTION,
                 JOptionPane.PLAIN_MESSAGE
         );
-        
-        
         
         
     }
