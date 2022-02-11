@@ -89,6 +89,45 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // OPTIONS (not needed, but cool) for other types of dialog output 
         // message boxes as seen below...
         
+        // Make more dialog outut boxes, with some variations (these are NOT
+        // required for assignments in this course) - you ARE able to use them
+        // (note: code can span multiple lines until it reaches 
+        //  the semi colon ";")
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i", 
+                "Information Title", 
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?", 
+                "Question Title", 
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is !", 
+                "Warning Title", 
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain no icon", 
+                "Plain Title", 
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        
+        
+        
+        
+        
+        
         
         
     }
