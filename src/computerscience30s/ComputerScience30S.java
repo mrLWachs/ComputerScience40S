@@ -128,8 +128,38 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         JOptionPane.showInputDialog("Enter something");
         
+        // There is a little more to using this that we cover 
+        // after learning variables...
         
+        // Some optional input dialogs below:
+                                
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Information icon is i", 
+                "Input Information Title", 
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Question icon is i", 
+                "Input Question Title", 
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Warning icon is i", 
+                "Input Warning Title", 
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Input Plain icon is i", 
+                "Input Plain Title", 
+                JOptionPane.PLAIN_MESSAGE
+        );
         
         
         
