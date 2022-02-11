@@ -197,6 +197,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 JOptionPane.PLAIN_MESSAGE
         );
         
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
