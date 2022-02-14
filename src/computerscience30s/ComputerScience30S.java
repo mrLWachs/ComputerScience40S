@@ -196,52 +196,109 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //                JOptionPane.YES_NO_CANCEL_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // A variable is a piece of code that tells the computer to
+//        // store (or "remember") information (or "data")
+//        
+//        // This is an example of the simpliest variable type
+//        
+//        boolean a = true;
+//        
+//        // type name = value ;
+//        
+//        // When you write a line of code to create (declare) a variable
+//        
+//        int b = 0;
+//        
+//        double c = 0.0;
+//        
+//        // "Variables" can change ("vary")
+//        
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // Most of the time, we create variables for:
+//        // (1) Get user input (then stored)
+//        // (2) Formulas
+//        
+//        // Variables always go on the left hand side (LHS) of the equals
+//        // sign (=) and the value going into the variable always goes on
+//        // the right hand side (RHS)
+//        
+//        // Output the variables...
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        char d = 'A';
+//        
+//        // The "char" is short for "character" holds (remembers) ONE
+//        // character
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean, integer (int), double, character (char) are all
+//        // simple (primitive) data types, now a complex data type...
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
+//        
+//        // Variable data types we can use:
+//        // (1) boolean - just true and false
+//        // (2) int     - the integer, a whole number
+//        // (3) double  - can have decimals
+//        // (4) char    - character hold one character
+//        // (5) String  - holds a bunch of characters
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+        // Manipulate (use) our variables...
         
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data")
+        int x = 10;
         
-        // This is an example of the simpliest variable type
+        System.out.println("x = " + x);
+                
+        x = 20;
         
-        boolean a = true;
+        System.out.println("x = " + x);
         
-        // type name = value ;
+        int y = x + 10;
         
-        // When you write a line of code to create (declare) a variable
+        System.out.println("y = " + y);
         
-        int b = 0;
+        // Code (like in math) likes to use shorthand (optional)
         
-        double c = 0.0;
+        y++;    // Means the same as y = y + 1
+        y--;    // Means the same as y = y - 1
         
-        // "Variables" can change ("vary")
+        // Even more shorthand (less recomended)...
         
-        a = false;
-        b = 1;
-        c = 1.2;
+        y += 10;    // Means y = y + 10;
+        y -= 10;    // Means y = y - 10;
+        y *= 10;    // Means y = y * 10;
+        y /= 10;    // Means y = y / 10;
         
-        // Most of the time, we create variables for:
-        // (1) Get user input (then stored)
-        // (2) Formulas
+        System.out.println("y = " + y);
         
-        // Variables always go on the left hand side (LHS) of the equals
-        // sign (=) and the value going into the variable always goes on
-        // the right hand side (RHS)
+        // More complicated types of calculations might be
+        // needed for formulas, like for example....
         
+        // Modulus (mod) gives you the remainder of a division, in java
+        // it uses the percentage "%" symbol for this
         
+        x = 28;
+        y = x / 5;
         
+        int z = x % 5;
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
         
         
         
