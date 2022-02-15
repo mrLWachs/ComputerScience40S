@@ -297,10 +297,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
+        // Constants are variables that don't change, and constants are
+        // written in ALL_CAPITAL_LETTERS with an underscore to seperate words
         
+        // They also start with the keyword "final" (in C# it was "const")
         
+        final double  PI           = 3.141592658389;
+        final int     PROBLEMS     = 99;
+        final char    YES          = 'Y';
+        final boolean FOUND        = true;
+        final String  TEACHER_NAME = "Wachs";
         
-        
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " +
+                           YES      + ", " +
+                           FOUND    + ", " +
+                           TEACHER_NAME);
         
         
         
@@ -325,3 +337,5 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //      you often do not need (right now)
 // (8)  To "comment out" chunks of code, select the code with your mouse or 
 //      keyboard, then click on the two buttons under the code tab (on right)
+// (9)  To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
