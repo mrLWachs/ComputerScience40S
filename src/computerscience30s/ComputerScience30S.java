@@ -198,7 +198,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         );
         
         ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
+        // (4) VARIABLES:
         ///////////////////////////////////////////////////////////////////////
         
         // A variable is a piece of code that tells the computer to store (or 
