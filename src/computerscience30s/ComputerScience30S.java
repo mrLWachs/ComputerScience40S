@@ -201,8 +201,8 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // VARIABLES:
         ///////////////////////////////////////////////////////////////////////
         
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data")
+        // A variable is a piece of code that tells the computer to store (or 
+        // "remember") information (or "data")
         
         // This is an example of the simpliest variable type
         
@@ -223,7 +223,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         c = 1.2;
         
         // Most of the time, we create variables for:
-        // (1) Get user input (then stored)
+        // (1) Getting user input (then store it in that variable)
         // (2) Formulas
         
         // Variables always go on the left hand side (LHS) of the equals
@@ -238,24 +238,23 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         char d = 'A';
         
-        // The "char" is short for "character" holds (remembers) ONE
-        // character
+        // The "char" is short for "character" holds (remembers) ONE character
         
         System.out.println("d = " + d);
         
-        // The boolean, integer (int), double, character (char) are all
-        // simple (primitive) data types, now a complex data type...
+        // The boolean, integer (int), double, character (char) are all simple
+        // (primitive) data types, now a complex data type...
         
         String e = "apple";
         
         System.out.println("e = " + e);
         
         // Variable data types we can use:
-        // (1) boolean - just true and false
+        // (1) boolean - just true and false (different from "bool" in C#)
         // (2) int     - the integer, a whole number
         // (3) double  - can have decimals
         // (4) char    - character hold one character
-        // (5) String  - holds a bunch of characters
+        // (5) String  - holds a bunch of characters (uses capital "S")
         
         // Manipulate (use) our variables...
         
