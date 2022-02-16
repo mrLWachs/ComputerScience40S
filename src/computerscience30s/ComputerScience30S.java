@@ -385,25 +385,42 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //        String t = JOptionPane.showInputDialog("Enter double");
 //        double u = Double.parseDouble(t);
 //        JOptionPane.showMessageDialog(null, u);
-        
-        // Example with a char (character)
-        
-        String v = JOptionPane.showInputDialog("Enter char");
-        char   w = v.charAt(0);
-        JOptionPane.showMessageDialog(null, w);
+//        
+//        // Example with a char (character)
+//        
+//        String v = JOptionPane.showInputDialog("Enter char");
+//        char   w = v.charAt(0);
+//        JOptionPane.showMessageDialog(null, w);
         
         // Strings have built-in actions like "charAt" to pull out a character
         // "at" location "0" which means the very first character (because 
         // numbering in Computer Science usually starts at 0)
         
         // Strings have MANY built-in "actions" (function, methods)
+        
+        String word = "hippopotomonsprosesquippedaiophobia";
+        
+        int length = word.length();
+        
+        System.out.println("Word " + word + " is length " + length);
                 
+        // The "String" data type (uses a capital "S") is more 'powerful'
+        // (means built-in functions) than the int, double, boolean or char
+        
+        String upper = word.toUpperCase();
+        
+        System.out.println("Word " + word + " in upper case is " + upper);
                 
+        // Many more string functions to be explored
                 
-                
-                
-                
-                
+        // Most words in code (in Java) that start with a capital letter, all
+        // have built-in 'powers' (methods) that you can explore using NetBeans
+        // autocomplete and reading what pops up
+        
+        // "Math" library of code comes with built-in functions (actions,
+        // powers, methods)
+        
+        
                 
                 
                 
