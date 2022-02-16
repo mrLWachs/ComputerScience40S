@@ -354,29 +354,59 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //        System.out.println("n = " + n);
 //        System.out.println("o = " + o);
 //        System.out.println("p = " + p);
+//        
+//        // Use dialog boxes with variables
+//        
+//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+//        // at the front of the line that makes the input dialog (code above is
+//        // wrong, always make a string variable then the input dialog)
+//        
+//        String q = JOptionPane.showInputDialog("Enter string (text)");
+//        
+//        // The variable stores what they typed in the input dialog box
+//        // we test this by diplaying it right away
+//        
+//        JOptionPane.showMessageDialog(null, q);
+//        
+//        // With numbers (integers or doubles), you HAVE to start off with a 
+//        // string, and then convert it to a number. This is like:
+//        // Convert.ToInt32(text).... this was in C#
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We use code to "parse" the string (means "reading")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        JOptionPane.showMessageDialog(null, s);
+//        
+//        // Same example with a double
+//        
+//        String t = JOptionPane.showInputDialog("Enter double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        // Use dialog boxes with variables
+        // Example with a char (character)
         
-        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-        // at the front of the line that makes the input dialog (code above is
-        // wrong, always make a string variable then the input dialog)
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, w);
         
-        String q = JOptionPane.showInputDialog("Enter string (text)");
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
-        // The variable stores what they typed in the input dialog box
-        // we test this by diplaying it right away
-        
-        JOptionPane.showMessageDialog(null, q);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Strings have MANY built-in "actions" (function, methods)
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
         
         
         
