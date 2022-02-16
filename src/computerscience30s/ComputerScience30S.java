@@ -391,47 +391,86 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //        String v = JOptionPane.showInputDialog("Enter char");
 //        char   w = v.charAt(0);
 //        JOptionPane.showMessageDialog(null, w);
+//        
+//        // Strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
+//        
+//        // Strings have MANY built-in "actions" (function, methods)
+//        
+//        String word = "hippopotomonsprosesquippedaiophobia";
+//        
+//        int length = word.length();
+//        
+//        System.out.println("Word " + word + " is length " + length);
+//                
+//        // The "String" data type (uses a capital "S") is more 'powerful'
+//        // (means built-in functions) than the int, double, boolean or char
+//        
+//        String upper = word.toUpperCase();
+//        
+//        System.out.println("Word " + word + " in upper case is " + upper);
+//                
+//        // Many more string functions to be explored
+//                
+//        // Most words in code (in Java) that start with a capital letter, all
+//        // have built-in 'powers' (methods) that you can explore using NetBeans
+//        // autocomplete and reading what pops up
+//        
+//        // "Math" library of code comes with built-in functions (actions,
+//        // powers, methods)
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.cos(0.5);
+//        double answer3 = Math.abs(-1);
+//        double answer4 = Math.pow(5,3);
+//        double answer5 = Math.sqrt(9);
+//        double answer6 = Math.log(0.5);
+//                        
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
         
-        // Strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
+        // Math library also does random numbers, like:
+        // Random random = new Random();
         
-        // Strings have MANY built-in "actions" (function, methods)
+        double seed = Math.random();
         
-        String word = "hippopotomonsprosesquippedaiophobia";
+        System.out.println("seed = " + seed);
         
-        int length = word.length();
+        // You can use a formula for generatiing random numbers in a range
+        // between a low and a high number
         
-        System.out.println("Word " + word + " is length " + length);
-                
-        // The "String" data type (uses a capital "S") is more 'powerful'
-        // (means built-in functions) than the int, double, boolean or char
+        // e.g. between 1 and 10 and make it an integer
         
-        String upper = word.toUpperCase();
+        // Start with some constants defining the low and high
         
-        System.out.println("Word " + word + " in upper case is " + upper);
-                
-        // Many more string functions to be explored
-                
-        // Most words in code (in Java) that start with a capital letter, all
-        // have built-in 'powers' (methods) that you can explore using NetBeans
-        // autocomplete and reading what pops up
+        final double LOW  = 1.0;
+        final double HIGH = 10.0;
         
-        // "Math" library of code comes with built-in functions (actions,
-        // powers, methods)
+        // Now the formula to generate a random number in the range
         
+        double number = (HIGH - LOW + 1) * seed + LOW;
         
-                
-                
-                
+        // Now cast it into an int
         
+        int value = (int)number;
         
+        // and diplay it
         
+        System.out.println("value = " + value);
         
+        // Do it again, but simplify the formula (between 2-53)
         
+        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
+        System.out.println("card = " + card);
         
-        
-        
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
         
         
