@@ -441,7 +441,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         System.out.println("seed = " + seed);
         
-        // You can use a formula for generatiing random numbers in a range
+        // You can use a formula for generating random numbers in a range
         // between a low and a high number
         
         // e.g. between 1 and 10 and make it an integer
