@@ -504,31 +504,57 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // And.. (even further shorthand) the line can be moved up to the
         // same line as the if statement
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        char value5 = 'A', value6 = 'a';
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
+                
         // Use "else if" for multiple cases of more than 2 things (same as the
         // "switch" statement - which I don't use) use strings for this
         // example which are more complex (because they use many character,
         // and upper and lower case)
         
+        String word1 = "edgy";
+        String word2 = "eDgy";
         
+        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
         
+        if (word1.equals(word2)) {
+            System.out.println("W1==W2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("W1 kind of == W2");
+        }
+        else {
+            System.out.println("W1!=W2");
+        }
         
+        // Combining logic using "and" "or" "not"
+        // "And" - means BOTH have to be true
+        // "Or" - means EITHER can be true
+        // "Not" - reverses logic
+        // In Java it uses symbols for these:
+        // "AND" - "&&" (ampersand Shift 7)
+        // "OR"  - "||" (pipe shift key above enter)
+        // "NOT" - "!" (like not equal)
         
+        int age = 17;
+        double iq = 1.0;
         
+        if (age >= 21 && iq > 90) {
+            // with "and" BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq > 0) {
+            // with "or" EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
         
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
         
         
