@@ -469,7 +469,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         System.out.println("card = " + card);
         
         ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
+        // (5) CONDITIONAL STATEMENTS
         ///////////////////////////////////////////////////////////////////////
         
         
@@ -553,7 +553,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         }
         
         ///////////////////////////////////////////////////////////////////////
-        // LOOPING
+        // (6) LOOPING
         ///////////////////////////////////////////////////////////////////////
         
         // Simple loop...
@@ -608,7 +608,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         }
         
         ///////////////////////////////////////////////////////////////////////
-        // EXAMPLE ASSIGNMENT:
+        // (7) EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
         // Create welcome screen for the user (message dialog box)
