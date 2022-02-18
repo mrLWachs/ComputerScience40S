@@ -565,37 +565,51 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //            counter++;  // counter = counter + 1;
 //        }
 //        
-        // while loop with a string
+//        // while loop with a string
+//        
+//        String password = JOptionPane.showInputDialog("Create a password");
+//        
+//        while (password.equals("1234")) {
+//            JOptionPane.showMessageDialog(null, "Try again!");
+//            password = JOptionPane.showInputDialog("Create another password");
+//        }
+//        
+//        // The next type of loop is rarely used (you may never need it)
+//        // it tests for true/false at the bottom of the loop, you use it
+//        // when you want the body (block) of the loop to run at least
+//        // once!
+//        
+//        String choice = "";
+//        
+//        do {            
+//            choice = JOptionPane.showInputDialog("Enter password");
+//        } while (choice.equalsIgnoreCase(password) == false);
+//        
+//        JOptionPane.showMessageDialog(null, "You got it!");
         
-        String password = JOptionPane.showInputDialog("Create a password");
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
         
-        while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Try again!");
-            password = JOptionPane.showInputDialog("Create another password");
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
         }
         
-        // The next type of loop is rarely used (you may never need it)
-        // it tests for true/false at the bottom of the loop, you use it
-        // when you want the body (block) of the loop to run at least
-        // once!
+        // Variations on the for loop:
+            // START - at 100
+            // END (stops) - at zero (including zero)
+            // CHANGE - count down (not up)
+            //          count by 10s
         
-        String choice = "";
+        for (int i = 100; i >= 0; i = i - 10) {
+            System.out.println("i = " + i);
+        }
         
-        do {            
-            choice = JOptionPane.showInputDialog("Enter password");
-        } while (choice.equalsIgnoreCase(password) == false);
-        
-        JOptionPane.showMessageDialog(null, "You got it!");
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
