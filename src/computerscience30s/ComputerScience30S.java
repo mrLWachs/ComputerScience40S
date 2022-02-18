@@ -551,20 +551,20 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //        else {
 //            System.out.println("Get out");
 //        }
-        
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
-        
-        // Simple loop...
-        
-        int counter = 0;
-        
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++;  // counter = counter + 1;
-        }
-        
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // LOOPING
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // Simple loop...
+//        
+//        int counter = 0;
+//        
+//        while (counter < 10) {
+//            System.out.println("counter = " + counter);
+//            counter++;  // counter = counter + 1;
+//        }
+//        
         // while loop with a string
         
         String password = JOptionPane.showInputDialog("Create a password");
@@ -579,10 +579,13 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // when you want the body (block) of the loop to run at least
         // once!
         
+        String choice = "";
         
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
         
-        
-        
+        JOptionPane.showMessageDialog(null, "You got it!");
         
         
         
