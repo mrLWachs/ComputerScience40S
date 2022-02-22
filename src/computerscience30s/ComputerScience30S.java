@@ -626,14 +626,14 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Get user input (temperature in celcius) - dialog
         String userInput = JOptionPane.showInputDialog("Enter temperature "
                 + "in Celcius");
-        // convert this to a number I can do math with
+        // Convert this to a number I can do math with
         double celcius = Double.parseDouble(userInput);
-        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        // Apply a formula  (F = (C ∗ 1.8) + 32 )
         double fahrenheit = (celcius * 1.8) + 32;
         // Show the user the results (fahrenheit) in a dialog
         JOptionPane.showMessageDialog(null, "Your temperature in "
                 + "Fahrenheit is " + fahrenheit);
-        // show ending message
+        // Show ending message
         JOptionPane.showMessageDialog(null, "Thank you!");
                 
         // This line terminates any running java program at any point
