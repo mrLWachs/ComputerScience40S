@@ -12,12 +12,6 @@ package tools;
 public class Calculator 
 {
     
-    /**
-     * Calculates the factorial of a number
-     * 
-     * @param number the value to calculate
-     * @return the factorial of that number
-     */
     public static int factorial(int number) {        
         if (number == 1) {
             return 1;
