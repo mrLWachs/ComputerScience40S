@@ -22,12 +22,47 @@ public class Calculator
      * @param number the number to calculate the factorial of
      * @return the factorial of the parameter
      */
-    public static int factorial(int number) {  
+    public static long factorial(int number) {  
         // Base case(s) - needed to stop the recursion
-        if (number == 1) return 1;
+        if (number <= 1) return 1;
         // Recursive case(s) - like a loop, method calls itself
         else             return number * factorial(number - 1);
     }
-    
+
+    /**
+     * Calculates the power of a base to it's exponent
+     * 
+     * @param base the base of the power
+     * @param exponent the exponent of the power
+     * @return the base^exponent
+     */
+    public static long power(int base, int exponent) {
+        // Base case(s) - needed to stop the recursion
+        if (exponent == 0) return 1;
+        if (exponent == 1) return base;
+        // Recursive case(s) - like a loop, method calls itself
+        return base * power(base, exponent - 1);        
+    }    
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

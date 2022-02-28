@@ -30,9 +30,38 @@ public class RecursionTest
      * Constructor method
      */
     public RecursionTest() {        
-        int number = 5;        
-        int answer = Calculator.factorial(number);        
-        System.out.println("Number " + number + " factorial = " + answer);                
+        System.out.println("\nRecursion test started...\n");
+        
+        // When testing, think of three scenarios:
+            // (1) Typical case(s) - typical user
+            // (2) Edge case(s) - "push the edge"
+            // (3) Beyond the edges - "bad" users
+        
+        System.out.println("Recursive factorial.............................");
+        // Constants to set the "edges"
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;
+        
+        // Travel ("traverse") through all the edges
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            int  number = i;
+            long answer = Calculator.factorial(number);
+            System.out.println("Number " + number + " is factorial " + answer);
+        }
+        
+        System.out.println("Recursive powers................................"); 
+        final int MIN_POWER = 0;
+        final int MAX_POWER = 15;
+        for (int base = MIN_POWER; base <= MAX_POWER; base++) {
+            for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+                long answer = Calculator.power(base, exponent);
+                System.out.println("Base "             + base + 
+                                   " to the exponent " + exponent +
+                                   " = "               + answer);
+            }
+        }
+                
+        System.out.println("\nRecursion test complete!\n");
     }    
     
 }
