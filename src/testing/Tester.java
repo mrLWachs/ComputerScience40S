@@ -13,7 +13,14 @@ public class Tester
 {
     
     /**
-     * Default class constructor, runs on instantiation
+     * Class constructor method - constructor methods run when the class is 
+     * "created" and turned into an "object" or "instance". This is also 
+     * described as when the class is "instantiated". Constructor methods are 
+     * special methods that have NO return type (not even "void") and have the
+     * same name as the class (including a capital letter). Constructors that 
+     * have no parameters are called "default constructors", and you can have
+     * multiple constructor methods in one class (the constructor can be 
+     * overloaded).
      */
     public Tester() {
         System.out.println("Mr. Wachs Computer Science 40S testing started...");

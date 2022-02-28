@@ -23,7 +23,7 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {     
-        Tester tester = new Tester();  
+        Tester tester = new Tester();               // Create a tester object
     }
     
 }
