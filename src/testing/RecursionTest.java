@@ -26,6 +26,9 @@ import tools.Calculator;
 public class RecursionTest 
 {
 
+    /**
+     * Constructor method
+     */
     public RecursionTest() {        
         int number = 5;        
         int answer = Calculator.factorial(number);        
