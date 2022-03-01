@@ -36,11 +36,20 @@ public class Calculator
      * @param exponent the exponent of the power
      * @return the base^exponent
      */
-    public static long power(int base, int exponent) {
+    public static double power(int base, int exponent) {
         // Base case(s) - needed to stop the recursion
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
         // Recursive case(s) - like a loop, method calls itself
+        if (exponent < 0) {                 // Negative exponents...
+            if (base == 0) {                // Cannot divided by zero...
+                return Double.MIN_VALUE;    // Send back a flag value
+            }
+            else {                         
+                return 1 / power(base, Math.abs(exponent));
+            }            
+        }
+        // Positive exponents...
         return base * power(base, exponent - 1);        
     }    
     
