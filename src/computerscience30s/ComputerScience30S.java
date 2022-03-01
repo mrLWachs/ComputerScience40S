@@ -691,3 +691,30 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
+// (16) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (17) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (22) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
