@@ -24,7 +24,8 @@ public class Tester
      */
     public Tester() {
         System.out.println("Mr. Wachs Computer Science 40S testing started...");
-        RecursionTest recursionTest = new RecursionTest();
+//        RecursionTest recursionTest = new RecursionTest();
+        AdvancedClassesTest unit2 = new AdvancedClassesTest();
         System.out.println("Mr. Wachs Computer Science 40S testing complete!");
     }
     
