@@ -27,14 +27,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        learnIntroToJava();
+//        learnIntroToJava();
         // The line above is a "call" to the method named "learnIntroToJava"
         // meaning the code stops at that line and "jumps" (or branches) to the
         // method written below. Then runs all the code inside that method
         // (the code in the 'block' of the method between two { } ) then comes
         // back to the next line after the "call" (execute, run, etc.)
         
-        
+        // In NetBeans, you can write the call to a method before you write the
+        // method - then NetBeans will suggest (with a 'lightbulb') that it 
+        // writes the method for you
+        learnMethods();
     }
 
     private static void learnIntroToJava() {
@@ -653,6 +656,18 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets
         
+    }
+
+    private static void learnMethods() {
+        System.out.println("Start Learning Methods...");
+        
+        writeStar();
+        
+        System.out.println("Learning Methods complete!");
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
     }
 
 }
