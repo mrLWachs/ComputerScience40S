@@ -28,6 +28,13 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {
         learnIntroToJava();
+        // The line above is a "call" to the method named "learnIntroToJava"
+        // meaning the code stops at that line and "jumps" (or branches) to the
+        // method written below. Then runs all the code inside that method
+        // (the code in the 'block' of the method between two { } ) then comes
+        // back to the next line after the "call" (execute, run, etc.)
+        
+        
     }
 
     private static void learnIntroToJava() {
