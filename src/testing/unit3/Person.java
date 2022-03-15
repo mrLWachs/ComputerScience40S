@@ -15,6 +15,29 @@ package testing.unit3;
 public class Person 
 {
     
+    // PROPERTIES (below)...................................................
     
+    int age;    
+    String name;    
+    String gender;    
+    boolean alive;
+    
+    // METHODS (below)......................................................
+    
+    void born() {
+        
+    }
+    
+    void die() {
+        
+    }
+    
+    void talk() {
+        
+    }
+    
+    void birthday() {
+        
+    }
     
 }
