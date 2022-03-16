@@ -24,20 +24,35 @@ public class Person
     
     // METHODS (below)......................................................
     
-    void born() {
-        
+    /**
+     * Default constructor, set class properties
+     */
+    public Person() {
+        name   = "Jane Do'h";
+        age    = 0;
+        alive  = true;
+        gender = "female";
     }
     
-    void die() {
-        
+    /**
+     * Simulates this 'person' dying
+     */
+    public void die() {
+        alive = false;
     }
     
-    void talk() {
-        
+    /**
+     * Outputs data on this person to the screen
+     */
+    public void talk() {
+        System.out.println(name + " is " + age + " identifies as " + gender);
     }
     
-    void birthday() {
-        
+    /**
+     * Increase the person's age by one
+     */
+    public void birthday() {
+        age++;
     }
     
 }
