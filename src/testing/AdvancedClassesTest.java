@@ -15,7 +15,7 @@ public class AdvancedClassesTest
 {
 
     public AdvancedClassesTest() {
-        System.out.println("Learning advanced classes...");
+        System.out.println("\nAdvanced classes test started...\n");
         
         // Review of classes concepts (properties, methods, object, inheritance)
         
@@ -26,7 +26,7 @@ public class AdvancedClassesTest
         
         
         
-        System.out.println("Advanced classes complete!");
+        System.out.println("\nAdvanced classes test complete!\n");
     }
     
 }
