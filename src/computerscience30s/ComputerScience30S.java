@@ -692,6 +692,18 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         writeLotsOf("Dalmations",101);
         
+        writeLotsOf("Problems", 99);
+        
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        int number = giveMeNumber();
+        
+        write("Number is " + number);
+        
+        
+        
         
         System.out.println("Learning Methods complete!");
     }
@@ -715,6 +727,12 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         for (int i = 0; i < times; i++) {
             write(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
+        return 42;
     }
 
 }
