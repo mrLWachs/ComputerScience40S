@@ -682,6 +682,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         write("Frog");
         
+        write("Dragon");
+        write("Panda");
+        write("Tapeworm");
+        write("Liger");
+        
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are separated with commas ","
+        
+        writeLotsOf("Dalmations",101);
+        
+        
         System.out.println("Learning Methods complete!");
     }
 
@@ -694,6 +705,16 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // if you use the lightbulb to write this method, you should (do this 
         // first) rewrite the name of that parameter
         System.out.println(thing);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        // If you use NetBeans and the lightbulb to write the method for you,
+        // you should rename the parameters to what they more accurately 
+        // represent - methods can have no parameters (empty brackets),
+        // one parameter, or lots of parameters (separated with commas)
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
     }
 
 }
