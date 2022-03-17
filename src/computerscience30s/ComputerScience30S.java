@@ -702,8 +702,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         write("Number is " + number);
         
-        
-        
+                
         
         System.out.println("Learning Methods complete!");
     }
@@ -716,9 +715,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     }
     
     /**
-     * Draws something on the screen
+     * Writes something on the screen
      * 
-     * @param thing the thing to draw
+     * @param thing the something to write
      */
     private static void write(String thing) {
         // Information (data) "passed" to this method is called the parameter,
@@ -728,10 +727,10 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     }
 
     /**
-     * Draws something on the screen multiple times
+     * Writes something on the screen multiple times
      * 
-     * @param thing the thing to draw
-     * @param times how many times to draw the thing
+     * @param thing the something to write
+     * @param times how many times to write ut
      */
     private static void writeLotsOf(String thing, int times) {
         // If you use NetBeans and the lightbulb to write the method for you,
@@ -744,9 +743,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     }
 
     /**
-     * Gives you a number
+     * Gives you a random number
      * 
-     * @return a random number between 1 and 10
+     * @return random number between 1 and 10
      */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
