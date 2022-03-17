@@ -708,10 +708,18 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         System.out.println("Learning Methods complete!");
     }
 
+    /**
+     * Draws a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
     
+    /**
+     * Draws something on the screen
+     * 
+     * @param thing the thing to draw
+     */
     private static void write(String thing) {
         // Information (data) "passed" to this method is called the parameter,
         // if you use the lightbulb to write this method, you should (do this 
@@ -719,6 +727,12 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         System.out.println(thing);
     }
 
+    /**
+     * Draws something on the screen multiple times
+     * 
+     * @param thing the thing to draw
+     * @param times how many times to draw the thing
+     */
     private static void writeLotsOf(String thing, int times) {
         // If you use NetBeans and the lightbulb to write the method for you,
         // you should rename the parameters to what they more accurately 
@@ -729,12 +743,33 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         }
     }
 
+    /**
+     * Gives you a number
+     * 
+     * @return a random number between 1 and 10
+     */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
         // which means the method will "return" that data type in the method
-        return 42;
+        return random(1,10);
     }
 
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high
+     */
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;
+    }
+        
 }
 
 // NETBEANS TIPS:
