@@ -22,8 +22,14 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S {        // Curly brackets DO NOT remove
 
     /**
-     * Don't worry about this for now - we will examine what this means in
-     * unit 2 (methods)
+     * 
+     * @param args the command line arguments
+     */
+    
+    /**
+     * Main method for the project - Don't worry about this for now - we will 
+     * examine what this means in unit 2 (methods)
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -40,6 +46,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         learnMethods();
     }
 
+    /**
+     * Learn the content of the introduction unit
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
         
@@ -658,6 +667,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
     }
 
+    /**
+     * Learn the content of the methods unit
+     */
     private static void learnMethods() {
         System.out.println("Start Learning Methods...");
         
