@@ -19,7 +19,7 @@ public class Person
     
     int age;    
     String name;    
-    String gender;    
+    public String gender;    
     boolean alive;
     
     // METHODS (below)......................................................
@@ -35,6 +35,22 @@ public class Person
     }
     
     /**
+     * Second, overloaded constructor method, sets class properties using the 
+     * keyword "this" which refers to the the class itself so I don't have to 
+     * make different names for the parameters
+     * 
+     * @param name the name for this person
+     * @param age the age for this person
+     * @param gender the gender for this person 
+     */
+    public Person(String name, int age, String gender) {
+        alive = true;
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
+    }
+    
+    /**
      * Simulates this 'person' dying
      */
     public void die() {
@@ -45,7 +61,13 @@ public class Person
      * Outputs data on this person to the screen
      */
     public void talk() {
-        System.out.println(name + " is " + age + " identifies as " + gender);
+        if (alive) {
+            System.out.println(name + " is " + age + " identifies as " + 
+                    gender);
+        }
+        else {
+            System.out.println("Booooooo!");
+        }
     }
     
     /**

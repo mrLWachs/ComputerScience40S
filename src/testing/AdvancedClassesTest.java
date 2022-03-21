@@ -14,6 +14,11 @@ import testing.unit3.Person;
 public class AdvancedClassesTest 
 {
 
+    /**
+     * Default constructor method, called when the class is turned into an
+     * object, or "constructed", or "instantiated" (means built into an 
+     * "instance") 
+     */
     public AdvancedClassesTest() {
         System.out.println("\nAdvanced classes test started...\n");
         
@@ -23,6 +28,20 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)
         Person person = new Person();                   // person object
         person.talk();                                  // calls class method 
+        
+        // Construct another person object (instance) using our second
+        // overloaded constructor method
+        
+        Person ap = new Person("Aaech Ippouh Potimus",75,"he/him");                
+        ap.talk();
+        ap.birthday();
+        ap.talk();
+        ap.gender = "they";
+        ap.talk();
+        ap.die();
+        ap.talk();
+        
+        
         
         
         
