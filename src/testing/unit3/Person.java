@@ -17,10 +17,12 @@ public class Person
     
     // PROPERTIES (below)...................................................
     
-    int age;    
-    String name;    
+    private int age;            // Encapsulated properties (meaning they can 
+    private boolean alive;      // only be 'accessed' inside the class)
+    
+    public String name;         // Can be changed outside the class
     public String gender;    
-    boolean alive;
+    
     
     // METHODS (below)......................................................
     
