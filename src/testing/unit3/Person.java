@@ -28,8 +28,8 @@ public class Person
      * this property so that it can only be accessed inside the class (like 
      * a "private room") - this is the concept of encapsulation
      */
-    private int age;            // Encapsulated properties (meaning they can 
-    private boolean alive;      // only be 'accessed' inside the class)
+    private int age;            
+    private boolean alive;      
     
     /**
      * Properties that use the "modifier" word "public" can be accessed and
