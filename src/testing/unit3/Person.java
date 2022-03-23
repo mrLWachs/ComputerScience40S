@@ -64,8 +64,7 @@ public class Person
      * Second, overloaded (methods with the same name, different parameters) 
      * constructor method, sets class properties using the keyword "this" which
      * refers to the the class itself so I don't have to make different names 
-     * for the parameters. Constructor methods with NO parameters are called 
-     * "default" constructors
+     * for the parameters. 
      * 
      * @param name the name for this person
      * @param age the age for this person
@@ -84,7 +83,7 @@ public class Person
     
     /**
      * The person dies (changing/modifying) the private, encapsulated 
-     * property (isAlive) through this method
+     * property (alive) through this method
      */
     public void die() {
         alive = false;
