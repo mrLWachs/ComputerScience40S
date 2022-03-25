@@ -34,6 +34,46 @@ public class Student extends Person
      */
     public Book book;
     
+    // "number" is the name, "int" is the data type, "private" is a modifier
+    // to make this property encapsulated - so this property or this 
+    // global variable
+    private int number;
+    
+    private double gpa;
     
     
+    /**
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
+     */
+    public Student() {
+        
+    }
+    
+    public void study() {
+        
+    }
+    
+    /**
+     * Slacking off lowers the student's average
+     */
+    public void slackOff() {
+        
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
+    public void talk() {
+        System.out.println("I am the new Talk");
+    }
+        
 }
