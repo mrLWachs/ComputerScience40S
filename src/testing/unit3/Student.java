@@ -54,19 +54,22 @@ public class Student extends Person
         book   = null;
     }
     
+    /**
+     * Method just for this class, raises the average 
+     */
     public void study() {
         gpa *= 1.10;                            // Increase average by 10%
     }
     
     /**
-     * Slacking off lowers the student's average
+     * Method just for this class, lowers the student's average
      */
     public void slackOff() {
         gpa = gpa - 0.05;                       // Decrease average by 5%
     }
     
     /**
-     * Cramming is intense studying
+     * Method just for this class, is intense repetitive studying
      */
     public void cram() {
         
