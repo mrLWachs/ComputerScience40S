@@ -43,22 +43,26 @@ public class Student extends Person
     
     
     /**
-     * Constructor for the class, sets the class properties (including the
-     * properties it inherited form the super or parent class)
+     * Default constructor method for the class, sets the class properties 
+     * (including the properties it inherited form the super or parent class)
      */
     public Student() {
-        
+        super();        // invoking (calling) the "super-constructor"
+        // Set the class properties (of this child/sub class)
+        number = 0;
+        gpa    = 0.0;
+        book   = null;
     }
     
     public void study() {
-        
+        gpa *= 1.10;                            // Increase average by 10%
     }
     
     /**
      * Slacking off lowers the student's average
      */
     public void slackOff() {
-        
+        gpa = gpa - 0.05;                       // Decrease average by 5%
     }
     
     /**
@@ -70,10 +74,16 @@ public class Student extends Person
     
     /**
      * Talking overrides the same talk method of the parent class and outputs
-     * additional information to the screen
+     * additional information to the screen - it also calls the same over-ridden
+     * method (talk) from the super class using the "super" keyword. With 
+     * override methods, the light bulb appears for the comments as you can 
+     * (optional) add "annotation" (like comments) @override
      */
+    @Override
     public void talk() {
-        System.out.println("I am the new Talk");
+        super.talk();                      // Invoking super class method
+        System.out.println("\t student number  = " + number);
+        System.out.println("\t student average = " + gpa);  
     }
         
 }
