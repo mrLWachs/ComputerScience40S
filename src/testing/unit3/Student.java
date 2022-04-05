@@ -73,11 +73,13 @@ public class Student extends Person
     }
     
     /**
-     * Talking overrides the same talk method of the parent class and outputs
-     * additional information to the screen - it also calls the same over-ridden
-     * method (talk) from the super class using the "super" keyword. With 
-     * override methods, the light bulb appears for the comments as you can 
-     * (optional) add "annotation" (like comments) @override
+     * This talk method overrides the same talk method of the parent class and 
+     * outputs additional information to the screen - it also calls the same 
+     * over-ridden method (talk) from the super class using the "super" keyword.  
+     * With override methods, the light bulb appears for the comments as you  
+     * can (but is optional) add the "annotation" (which are like comments) 
+     * called the "@override" annotation which also adds a "circle" like target
+     * in NetBeans to the super class method
      */
     @Override
     public void talk() {
