@@ -73,6 +73,23 @@ public class AdvancedClassesTest
         student.die();
         student.talk();
         
+        // Call (invoke) any methods just for this class, or change any  
+        // properties from the Student class and create (instantiate) another
+        // student object (instance)
+        Student slappy = new Student("Jaden Smith",17,"male");
+        slappy.study();
+        slappy.talk();          // This is a call to an over-ride method
+        slappy.slackOff();
+        slappy.cram();
+        slappy.talk();
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

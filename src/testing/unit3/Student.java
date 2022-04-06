@@ -53,6 +53,21 @@ public class Student extends Person
         gpa    = 0.0;
         book   = null;
     }
+
+    /**
+     * Overloaded constructor method (means two or more methods with the same 
+     * method name, but different parameters)
+     * 
+     * @param name for this student
+     * @param age for this student
+     * @param gender for this student 
+     */
+    public Student(String name, int age, String gender) {
+        super(name, age, gender); // call the second super-constructor
+        number = 1;
+        gpa    = 0.0;
+        book   = null;
+    }
     
     /**
      * Method just for this class, raises the average 
@@ -72,7 +87,9 @@ public class Student extends Person
      * Method just for this class, is intense repetitive studying
      */
     public void cram() {
-        
+        for (int i = 0; i < 5; i++) {               // Study 5 times as hard
+            study();
+        }
     }
     
     /**
