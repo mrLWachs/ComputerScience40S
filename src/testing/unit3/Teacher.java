@@ -34,7 +34,7 @@ public class Teacher extends Person
      */
     public Teacher(String name) {
         // Set (or construct) the properties of the parent class
-        
+        super(name, 52, "teacher");
         // Set the properties fo this class (not the parent class)
         count = 0;          // Set the "variable" (global) property
         MAX   = 200;        // Set the constant to a locked value
@@ -48,10 +48,25 @@ public class Teacher extends Person
         students = new Student[MAX];        
     }
     
+    /**
+     * Adds a new student to this teacher
+     * 
+     * @param student the student object to add
+     */
     public void add(Student student) {
-        
+        // Add the passed student (parameter) into the array at the first 
+        // available "slot" (or spot, index, element, location) - this is
+        // done by using the square brackets "[ ]" and placing the index 
+        // number in the brackets. Remember, arrays start the indexing at 
+        // zero and the last index is always one less than the size 
+        students[count] = student;
+        count++;                // Move to the next index (for next time)        
     }
     
+    /**
+     * Teaches all the students this teacher has an association with by making
+     * them study (and makes all the students "smarter")
+     */
     public void teach() {
         
     }    

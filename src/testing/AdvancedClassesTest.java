@@ -5,6 +5,7 @@ package testing;
 /** Required imports */
 import testing.unit3.Person;
 import testing.unit3.Student;
+import testing.unit3.Teacher;
 
 
 /**
@@ -83,8 +84,9 @@ public class AdvancedClassesTest
         slappy.cram();
         slappy.talk();
         
-        
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Mr. Chan Miyagi");
+        teacher.talk();
         
         
         
