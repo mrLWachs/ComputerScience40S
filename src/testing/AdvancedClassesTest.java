@@ -86,10 +86,10 @@ public class AdvancedClassesTest
         
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Mr. Chan Miyagi");
-        teacher.talk();
-        
-        
-        
+        teacher.add(student);           // Associate object through method
+        teacher.add(slappy);            // Associate object through method
+        teacher.teach();                // Effect associated objects
+        teacher.talk();                 // Inherited method invoked
         
         
         
