@@ -91,6 +91,41 @@ public class AdvancedClassesTest
         teacher.teach();                // Effect associated objects
         teacher.talk();                 // Inherited method invoked
         
+        // The "Object" class....
+        // Is built into Java (notice all classes start with a capital)
+        // The parent (or "super class") of ALL classes (includes classes 
+        // already created like "String" or "JOptionPane" and classes we
+        // create like "Person" or "Book") - means we will be inheriting 
+        // the properties and methods of the Object class
+        
+        Object object1 = new Object();      // 1st instance of the object clas
+                        
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: toString() and equals() methods
+        
+        String s1 = object1.toString();
+        
+        System.out.println("object1 as a string is " + s1);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
