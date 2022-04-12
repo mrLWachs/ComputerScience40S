@@ -98,22 +98,37 @@ public class AdvancedClassesTest
         // create like "Person" or "Book") - means we will be inheriting 
         // the properties and methods of the Object class
         
-        Object object1 = new Object();      // 1st instance of the object clas
+        Object object1 = new Object();      // 1st instance of the object class
+        Object object2 = new Object();      // 2nd instance of the object class
+        Object object3 = object2;
                         
         // Built into the object class are a number of methods that all other
         // classes inherit. These include some that are not relevant in this 
         // unit, and others like the: toString() and equals() methods
         
-        String s1 = object1.toString();
+        System.out.println("object1 as a string is " + object1.toString());
+        System.out.println("object2 as a string is " + object2.toString());
+        System.out.println("object3 as a string is " + object3.toString());
         
-        System.out.println("object1 as a string is " + s1);
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
         
+        // This method is inherited by all sub classes (children), for example:   
+        System.out.println("Person  = " + person.toString());
+        System.out.println("Student = " + student.toString());
+        System.out.println("Teacher = " + teacher.toString());
         
+        // Seeing the object class as the parent class of classes we don't write
+        String string = new String("puppy");
+        System.out.println("String = " + string.toString());
         
+        // Primitive data types (like "int") also have a "class" version (or 
+        // a "big daddy" version) - also know as the "wrapper" class        
+        Integer integer = new Integer(7);
+        System.out.println("Integer = " + integer.toString());
         
-        
-        
-        
+        // The other classes over-ride the toString() method 
         
         
         
