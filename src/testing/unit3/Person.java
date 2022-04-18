@@ -117,6 +117,8 @@ public class Person
      */
     @Override
     public String toString() {
+        // Even though we are over-riding this method, we can still call on the
+        // super class version of this method
         return super.toString();
     }
     
@@ -128,9 +130,11 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
-        
+        // The parameter called "object" of this method is of type "Object" and
+        // not of type "Person" at first. This is so the method is "generic" 
+        // and properly over-rides the inherited method of the Object class.
+        // However, we will be "casting" this object into a "Person" object        
         return true;
     }
-    
-    
+        
 }
