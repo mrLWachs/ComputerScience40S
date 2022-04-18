@@ -136,8 +136,28 @@ public class AdvancedClassesTest
         if (object1.equals(object3)) System.out.println("O1==O3");
         if (object2.equals(object3)) System.out.println("O2==O3");
         
+        // Now since these two methods are inherited by ALL class objects, we
+        // can use this methods with Person class objects:
         
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three  
+        Person person1 = new Person();  // Creates a "new" memory address
+        Person person2 = person1;       // Same memory address as person1
+        Person person3 = person2;       // Same memory address as person1 and 2
         
+        System.out.println("P1 = " + person1.toString());
+        System.out.println("P2 = " + person2.toString());
+        System.out.println("P3 = " + person3.toString());
+        
+        if (person1.equals(person2)) System.out.println("P1==P2");
+        if (person1.equals(person3)) System.out.println("P1==P3");
+        if (person2.equals(person3)) System.out.println("P2==P3");
+        
+        // Then we will over-ride the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this). 
         
         
         
