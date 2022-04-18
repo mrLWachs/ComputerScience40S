@@ -110,4 +110,27 @@ public class Person
         age++;
     }
     
+    /**
+     * String representation of this object
+     * 
+     * @return the object represented as a String
+     */
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+    
+    /**
+     * Comparison to determine if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        
+        return true;
+    }
+    
+    
 }
