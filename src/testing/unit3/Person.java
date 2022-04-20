@@ -133,8 +133,19 @@ public class Person
         // The parameter called "object" of this method is of type "Object" and
         // not of type "Person" at first. This is so the method is "generic" 
         // and properly over-rides the inherited method of the Object class.
-        // However, we will be "casting" this object into a "Person" object        
+        // However, we will be "casting" this object into a "Person" object  
+        Person that = (Person)object;
+        
+        // We can do a "deeper" comparison of the two Person objects
+        
+        if (this.age != that.age) return false;
+        
+        
+        // Once we pass all tests in the code above...
         return true;
+        
+        // If this method was a "shallow" comparison we could use code like:
+        // return true;
     }
         
 }
