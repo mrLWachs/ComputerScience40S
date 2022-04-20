@@ -102,5 +102,7 @@ public class ComputerScience40S
 //      and then press TAB AGAIN it jump to the ending value (which should be 
 //      the ".length" of the array (so if the array size changes, the loop 
 //      adapts to it) - the loop variable "i" also represents the array "index"
+// (25) To view the same code editing window with two different views, go to
+//      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
 
 // </editor-fold>
