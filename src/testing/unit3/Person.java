@@ -138,14 +138,26 @@ public class Person
         
         // We can do a "deeper" comparison of the two Person objects
         
-        if (this.age != that.age) return false;
-        
-        
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;
+        if (this.age != that.age)             return false;
+        if (this.alive != that.alive)         return false;
+                
         // Once we pass all tests in the code above...
         return true;
         
         // If this method was a "shallow" comparison we could use code like:
         // return true;
+    }
+    
+    /**
+     * Deep clone, creates a duplicate (all properties?) object using new memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    public Person clone() {
+        // shallow clone would be code like:
+        return this;
     }
         
 }
