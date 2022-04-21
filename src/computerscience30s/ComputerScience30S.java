@@ -826,6 +826,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         int array[] = new int[5]; 
         
         // type name [square brackets] = new type [size of the array];
+        
         // array names are usually "plural" words
         // E.g. in memory an array could "look" like...
         //
@@ -848,7 +849,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        // Now we assign values to all individual spots (indices):
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = -25;
+        array[4] = 0;
         
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[-1] = 25;
+        // They would be "out of bounds" errors (or "range" error)
+        
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
         
         
         
