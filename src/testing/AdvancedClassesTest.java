@@ -159,8 +159,10 @@ public class AdvancedClassesTest
         // template so those methods are always over-ridden in every new class 
         // created (see the comment in "ComputerScience40S.java" to do this). 
         
+        Person personClone = person.clone();
         
-        
+        System.out.println("Person " + person.toString());
+        System.out.println("Clone  " + personClone.toString());
         
         
         

@@ -156,8 +156,21 @@ public class Person
      * @return a "clone" of the object using new memory
      */
     public Person clone() {
-        // shallow clone would be code like:
-        return this;
+        // Shallow clone would be code like:
+        // return this;
+        
+        // Make a deep clone by generating (declaring) "new" memory
+        Person that = new Person();
+        
+        // Duplicate (copy over) all the properties to make it "deep"
+        that.name   = this.name;
+        that.gender = this.gender;
+        
+        // Other properties that are "private" (encpsulated) or "protected"
+        
+        
+        
+        return that;
     }
         
 }
