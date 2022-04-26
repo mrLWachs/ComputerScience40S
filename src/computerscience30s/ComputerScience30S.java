@@ -21,11 +21,7 @@ import javax.swing.JOptionPane;
 */
 public class ComputerScience30S {        // Curly brackets DO NOT remove
 
-    /**
-     * 
-     * @param args the command line arguments
-     */
-    
+
     /**
      * Main method for the project - Don't worry about this for now - we will 
      * examine what this means in unit 2 (methods)
@@ -866,7 +862,45 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        // Declare an array (a little differently) of NO size...
         
+        double[] a;
+        
+        // In memory...
+        //
+        // a
+        //
+        
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
+        a = new double[3];
+        
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          | (now has size of 3, but empty)
+        //   +----------+----------+----------+
+        //        0          1          2
+        
+        // Now fill it with content...
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+        
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
+        //   +----------+----------+----------+
+        //        0          1          2
+        
+        // You can re-dimension (resize) an array multiple times, BUT
+        // every time it wipes out any content stored in the array
+        a = new double[5];
+        
+        //   +----------+----------+----------+----------+----------+
+        // a |          |          |          |          |          | (size 5)
+        //   +----------+----------+----------+----------+----------+
+        //        0          1          2          3          4
         
         
         
