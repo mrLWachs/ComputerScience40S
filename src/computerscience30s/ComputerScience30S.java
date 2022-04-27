@@ -805,6 +805,9 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 JOptionPane.PLAIN_MESSAGE);
     }
 
+    /**
+     * Learn the content of the arrays unit 3
+     */
     private static void learnArrrays() {
         System.out.println("Start learning arrays...");
         
@@ -924,6 +927,45 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
             "Quit Game"        
         };
         
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
+        int[] numbers = new int[100];
+                
+        // Change (assign) a index (spot) some value
+        numbers[99] = 333;
+        
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        // Output that spot...
+        System.out.println(numbers[99]);
+        
+        // Perform equations with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
+        
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
+        
+        // Specifically, the "FOR" loop! (the for loop was literally built
+        // for arrays)
+        
+        for (int i = 0; i < 100; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
+        
+        
+        
+        
+        
         
         
         
@@ -1003,3 +1045,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (23) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jumps to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
