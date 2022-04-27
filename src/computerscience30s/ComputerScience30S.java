@@ -962,12 +962,24 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // and TAB) starts at 0, goes up by 1, is "less than" then ending 
         // number (which can be the length)
         
+        // When using the for loop with arrays, it is even BETTER to use a 
+        // feature built-in to all arrays! All arrays have a ".length" feature
+        // for example...
         
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
         
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
         
-        
-        
-        
+        // Array can easily work with methods, the arrays can be sent into a 
+        // method (as one of multiple parameters, or the only parameter), and 
+        // arrays can be outputted (returned) from a method - in other words:
+        // Arrays can be INPUT(s) or OUTPUT from a method
+                
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
         
         
         
@@ -977,6 +989,22 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         
         System.out.println("Completed Learning arrays!");
+    }
+
+    /**
+     * Outputs as array of integers in a dialog
+     * 
+     * @param array the array of integers
+     */
+    private static void output(int[] array) {
+        // Arrays can be a parameter (or one of the parameters)
+        String text = "[";
+        // Loop (traverse) through the array and add the contents to the string        
+        for (int i = 0; i < array.length; i++) {
+            text = text + array[i] + ",";
+        }
+        text = text + "]";        
+        output(text);           // Outputs it by calling an overloaded method
     }
         
 }
