@@ -28,8 +28,16 @@ public class Person
      * this property so that it can only be accessed inside the class (like 
      * a "private room") - this is the concept of encapsulation
      */
-    private int age;            
-    private boolean alive;      
+    private int age;     
+    
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean alive;      
+    
     
     /**
      * Properties that use the "modifier" word "public" can be accessed and
@@ -166,11 +174,20 @@ public class Person
         that.name   = this.name;
         that.gender = this.gender;
         
-        // Other properties that are "private" (encpsulated) or "protected"
+        // Other properties that are "private" (encapsulated) or "protected"
         
         
         
         return that;
+    }
+    
+    /**
+     * The protected modifier can be applied to both properties (also know as
+     * "global variables") AND methods. Meaning the method can be called inside
+     * the class and by the classes related to this (through inheritance)
+     */
+    protected void secret() {
+        System.out.println("Protected can also apply to methods");
     }
         
 }

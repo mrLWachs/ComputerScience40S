@@ -164,7 +164,9 @@ public class AdvancedClassesTest
         System.out.println("Person " + person.toString());
         System.out.println("Clone  " + personClone.toString());
         
-        
+        // Protected methods cannot be called outside the class by classes
+        // not related - like this one
+        // person.secret();
         
         
         

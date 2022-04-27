@@ -81,6 +81,10 @@ public class Student extends Person
      */
     public void slackOff() {
         gpa = gpa - 0.05;                       // Decrease average by 5%
+        
+        // Protected methods CAN be called by this class as this class IS 
+        // related to the class with the proected method
+        super.secret();
     }
     
     /**
