@@ -187,7 +187,7 @@ public class Person
      * the class and by the classes related to this (through inheritance)
      */
     protected void secret() {
-        System.out.println("Protected can also apply to methods");
+        System.out.println("Shhhh, you shouldn't know about me!");
     }
         
 }
