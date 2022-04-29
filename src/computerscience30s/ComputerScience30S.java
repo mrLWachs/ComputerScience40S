@@ -1021,11 +1021,35 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // A matrix "row" can also be "visualized" as the matrix "height"
         // A matrix "column" can also be "visualized" as the matrix "width"
         
+        // Fill the matrix with random characters (using a method)
         
+        final char LOW  = '!';
+        final char HIGH = '~';
         
+        // Test our method first...
+        char character = random(LOW, HIGH);
+        System.out.println("Random character was " + character);
         
+        // Fill our matrix (meaning put content in every location/index/spot
+        // in the matrix) by traversing (travelling, 'visit' every spot) the
+        // matrix and adding random characters (our method) - when traversing
+        // matricies (plural of matrix) we use multiple nested for loops
         
+        // We might rename looping variables to better understand what the 
+        // nested for loops are refering to (e.g. like row, column, x, y)
+        // With Netbeans, when you rename a loop variable it renames all 3
         
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[row][column] = random(LOW, HIGH);
+            }
+        }
+        
+        // Output the matrix, by turning it into a single string (using 
+        // a new method) 
+        
+        String text1 = toString(matrix);
+        System.out.println(text1);
         
         
         
