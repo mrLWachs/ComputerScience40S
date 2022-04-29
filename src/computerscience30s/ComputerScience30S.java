@@ -985,6 +985,25 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         int[] randoms = random(1, 10, 50);    // Overload "random" method
         output(randoms);
         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1050,26 +1069,8 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         }
         return numbers;                     // Return completed array
     }
-    
-        
+            
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // NETBEANS TIPS:
