@@ -148,9 +148,12 @@ public class Person
         
         if (!this.name.equals(that.name))     return false;
         if (!this.gender.equals(that.gender)) return false;
-        if (this.age != that.age)             return false;
         if (this.alive != that.alive)         return false;
-                
+        
+        // We use the accessor methods to "access" the private (encapsulated)
+        // property called age
+        if (this.getAge() != that.getAge())   return false;
+             
         // Once we pass all tests in the code above...
         return true;
         
@@ -175,8 +178,9 @@ public class Person
         that.gender = this.gender;
         
         // Other properties that are "private" (encapsulated) or "protected"
-        
-        
+        that.alive = this.alive;
+        // We use our accessor ("getter") AND our mutator ("setter") methods
+        that.setAge(this.getAge());
         
         return that;
     }
@@ -211,7 +215,7 @@ public class Person
      * @param age the new age to set (mutate) the property into
      */
     public void setAge(int age) {
-        // A programmer "could" potentially write error checkking code here...
+        // A programmer "could" potentially write error checking code here...
         this.age = age;
     }    
     
