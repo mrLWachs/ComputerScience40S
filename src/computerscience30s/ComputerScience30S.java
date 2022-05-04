@@ -1078,7 +1078,8 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // Have two graphics files (image or pictrue files) ready
         
-        final String PATH = "C:\\Users\\lawrence.wachs\\Desktop\\";
+        final String PATH = "C:\\Users\\lawrence.wachs\\Documents\\"
+                + "NetBeansProjects\\ComputerScience30S\\";
         
         String picture1 = PATH + "matrix.gif";
         String picture2 = PATH + "ticTacToe.png";
@@ -1086,7 +1087,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // Call a method to display a "fancy" dialog
         message(text1,"The Matrix",picture1);
         message(text2,"Tic-Tac-Toe",picture2);
-                
+          
         System.out.println("Completed Learning arrays!");
     }
 
