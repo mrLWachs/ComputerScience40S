@@ -3,18 +3,18 @@ package testing.unit3;
 
  
 /**
- * Husky.java - description
+ * DiskJockey.java - description
  *
  * @author Mr. Wachs
- * @since 6-May-2022, 3:11:36 PM
+ * @since 6-May-2022, 3:15:13 PM
  */
-public class Husky 
+public class DiskJockey 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Husky() {
+    public DiskJockey() {
         
     }
      
@@ -25,7 +25,7 @@ public class Husky
      */
     @Override
     public String toString() {
-        return "Husky: " + super.toString();
+        return "DiskJockey: " + super.toString();
     }
    
     /**
@@ -45,7 +45,7 @@ public class Husky
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Husky clone() {
+    public DiskJockey clone() {
         return this;
     }
     
