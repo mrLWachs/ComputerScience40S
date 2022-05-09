@@ -8,7 +8,7 @@ package testing.unit3;
  * @author Mr. Wachs
  * @since 6-May-2022, 3:15:13 PM
  */
-public class DiskJockey 
+public class DiskJockey extends Person
 {
 
     /**

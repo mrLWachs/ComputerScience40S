@@ -8,7 +8,7 @@ package testing.unit3;
  * @author Mr. Wachs
  * @since 6-May-2022, 3:13:03 PM
  */
-public class Plumber 
+public class Plumber extends Person
 {
 
     /**

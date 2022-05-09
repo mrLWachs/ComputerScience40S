@@ -3,7 +3,13 @@
 package testing;
 
 /** Required imports */
+import testing.unit3.Athlete;
+import testing.unit3.DiskJockey;
+import testing.unit3.Husky;
+import testing.unit3.Leopard;
+import testing.unit3.MrWachs;
 import testing.unit3.Person;
+import testing.unit3.Plumber;
 import testing.unit3.Student;
 import testing.unit3.Teacher;
 
@@ -168,10 +174,15 @@ public class AdvancedClassesTest
         // not related - like this one
         // person.secret();
         
+        // Instantiate the other classes (make instances/objects) of those 
+        // classes...
         
-        
-        
-        
+        Plumber    plumber    = new Plumber();
+        DiskJockey diskJockey = new DiskJockey();
+        Husky      husky      = new Husky();
+        MrWachs    mrWachs    = new MrWachs();
+        Leopard    leopard    = new Leopard();
+        Athlete    athlete    = new Athlete();
         
         
         

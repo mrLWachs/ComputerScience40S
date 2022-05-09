@@ -8,7 +8,7 @@ package testing.unit3;
  * @author Mr. Wachs
  * @since 6-May-2022, 3:11:36 PM
  */
-public class Husky 
+public class Husky extends HighSchool
 {
 
     /**

@@ -3,18 +3,18 @@ package testing.unit3;
 
  
 /**
- * HighSchool.java - description
+ * Leopard.java - description
  *
  * @author Mr. Wachs
- * @since 6-May-2022, 3:11:12 PM
+ * @since 9-May-2022, 3:19:49 PM
  */
-public class HighSchool extends Student
+public class Leopard extends HighSchool
 {
 
     /**
      * Default constructor, set class properties
      */
-    public HighSchool() {
+    public Leopard() {
         
     }
      
@@ -25,7 +25,7 @@ public class HighSchool extends Student
      */
     @Override
     public String toString() {
-        return "HighSchool: " + super.toString();
+        return "Leopard: " + super.toString();
     }
    
     /**
@@ -45,7 +45,7 @@ public class HighSchool extends Student
      * @return a "clone" of the object using new memory
      */
     @Override
-    public HighSchool clone() {
+    public Leopard clone() {
         return this;
     }
     
