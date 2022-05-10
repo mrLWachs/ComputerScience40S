@@ -40,6 +40,31 @@ public class Meeting
         // values (spots in the array) are filled with "nulls" (no Person 
         // objects/instances are yet in the array)
     }
-     
+    
+    /**
+     * Have a person attend the meeting
+     * 
+     * @param person the person object to attend
+     */
+    public void attend(Person person) {
+        // Assign (put, place) the person object (instance of the Person class)
+        // passed into this method's paramter into the first empty (unassigned)
+        // index (spot, element, location, subscript)
+        members[count] = person;
+        // Now advance the count
+        count++;
+        // Potential out of bounds ("range") error with count, we fix with
+        if (count >= MAX) count = 0;
+        // Potentially we could make the array bigger (resize, re-dimension) 
+        // however, whenever you do this it wipes out (recreates, re-dimensions)
+        // all array content. So let's just reassign the count
+    }
+    
+    /**
+     * Hold the meeting for all members 
+     */
+    public void hold() {
+        
+    }     
     
 }
