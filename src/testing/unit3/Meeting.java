@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * Meeting.java - description
+ * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs
  * @since 10-May-2022, 3:12:29 PM
@@ -51,10 +51,13 @@ public class Meeting
         // passed into this method's paramter into the first empty (unassigned)
         // index (spot, element, location, subscript)
         members[count] = person;
+        
         // Now advance the count
         count++;
+        
         // Potential out of bounds ("range") error with count, we fix with
         if (count >= MAX) count = 0;
+        
         // Potentially we could make the array bigger (resize, re-dimension) 
         // however, whenever you do this it wipes out (recreates, re-dimensions)
         // all array content. So let's just reassign the count
