@@ -7,6 +7,7 @@ import testing.unit3.Athlete;
 import testing.unit3.DiskJockey;
 import testing.unit3.Husky;
 import testing.unit3.Leopard;
+import testing.unit3.Meeting;
 import testing.unit3.MrWachs;
 import testing.unit3.Person;
 import testing.unit3.Plumber;
@@ -184,10 +185,44 @@ public class AdvancedClassesTest
         Leopard    leopard    = new Leopard();
         Athlete    athlete    = new Athlete();
         
+        // And output those objects:
+        // NOTE: when you send an object to the method System.out.println() as 
+        // an argument, it expects a string, with objects it will automatically
+        // call your toString() method 
         
+        System.out.println(plumber);
+        System.out.println(diskJockey);
+        System.out.println(husky);
+        System.out.println(mrWachs);
+        System.out.println(leopard);
+        System.out.println(athlete);        
         
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
         
+        // With NetBeans, you can use CTRL+SPACEBAR autocomplete with the 
+        // arguments of methods to see what arguements qualify
+        meeting.attend(person);
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
+        meeting.attend(hippo);
+        meeting.attend(student);
+        meeting.attend(slappy);
+        meeting.attend(teacher);
+        meeting.attend(personClone);
+        meeting.attend(plumber);
+        meeting.attend(diskJockey);
+        meeting.attend(husky);
+        meeting.attend(mrWachs);
+        meeting.attend(leopard);
+        meeting.attend(athlete);
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism 
         
+        // Now we hold the meeting...
+        meeting.hold();
         
         
         

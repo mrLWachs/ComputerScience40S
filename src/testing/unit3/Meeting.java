@@ -67,7 +67,13 @@ public class Meeting
      * Hold the meeting for all members 
      */
     public void hold() {
+        // Make a variable to hold a bunch of potential output data
+        String message = "Meeting is about to begin..";
         
+        
+        
+        // finally output the message
+        System.out.println(message);
     }     
     
 }
