@@ -68,14 +68,14 @@ public class Meeting
      */
     public void hold() {
         // Make a variable to hold a bunch of potential output data
-        String message = "Meeting is about to begin..";
-        
+        String message = "Meeting is about to begin..";        
         message += "\nWatch your language, there is ";
         
         // A static variable, since it is "shared" amoungst all 
         // instances of the Student class (all student object) it can
         // also be accessed form the class itself...
         message += Student.total;
+        
         message += " students in the room.";
         
         // Now we loop through the entire array ("traverse" means to travel to 
@@ -87,6 +87,10 @@ public class Meeting
         for (Person member : members) {
             // The enhanced for loop should be read as:
             // "for every member in members"
+            // The "member" object of type "Person" automatically goes through
+            // (traverses) from the start to the end of the array automatically
+            // changing "person" each time through the loop to the next element
+            // in order...
             
             member.talk();
             
