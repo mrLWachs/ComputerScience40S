@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * Husky.java - description
+ * Husky.java - represents a husky high school student person
  *
  * @author Mr. Wachs
  * @since 6-May-2022, 3:11:36 PM

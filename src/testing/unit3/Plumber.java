@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * Plumber.java - description
+ * Plumber.java - represents a plumber person
  *
  * @author Mr. Wachs
  * @since 6-May-2022, 3:13:03 PM

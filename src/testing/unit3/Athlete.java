@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * Athlete.java - description
+ * Athlete.java - represents a husky high school student person
  *
  * @author Mr. Wachs
  * @since 9-May-2022, 3:24:21 PM

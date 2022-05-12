@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * DiskJockey.java - description
+ * DiskJockey.java - represents a disk jockey person
  *
  * @author Mr. Wachs
  * @since 6-May-2022, 3:15:13 PM

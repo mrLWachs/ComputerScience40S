@@ -3,7 +3,7 @@ package testing.unit3;
 
  
 /**
- * Leopard.java - description
+ * Leopard.java - represents a leopard high school student person
  *
  * @author Mr. Wachs
  * @since 9-May-2022, 3:19:49 PM

@@ -3,11 +3,7 @@ package testing.unit3;
 
  
 /**
- * MrWachs.java - represents a MrWachs Teacher Person. Before creating
- * this class we altered the NetBeans template (Tools - Templates) for a 
- * Java class so that the toString(), clone(), and equals() methods are now 
- * always part of any new class we create (whether or not we choose to over-ride
- * those methods).
+ * MrWachs.java - represents a Mr. Wachs teacher person
  *
  * @author Mr. Wachs
  * @since 3-May-2022, 2:28:39 PM
