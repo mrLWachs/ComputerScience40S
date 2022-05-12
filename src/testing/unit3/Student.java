@@ -41,6 +41,13 @@ public class Student extends Person
     
     private double gpa;
     
+    /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
+    
     
     /**
      * Default constructor method for the class, sets the class properties 
@@ -52,6 +59,8 @@ public class Student extends Person
         number = 0;
         gpa    = 0.0;
         book   = null;
+        // Mutate (change) the static (shared) property (global variable)
+        total++;
     }
 
     /**
@@ -67,6 +76,8 @@ public class Student extends Person
         number = 1;
         gpa    = 0.0;
         book   = null;
+        // Mutate (change) the static (shared) property (global variable)
+        total++;
     }
     
     /**

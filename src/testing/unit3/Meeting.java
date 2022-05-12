@@ -70,6 +70,38 @@ public class Meeting
         // Make a variable to hold a bunch of potential output data
         String message = "Meeting is about to begin..";
         
+        message += "\nWatch your language, there is ";
+        
+        // A static variable, since it is "shared" amoungst all 
+        // instances of the Student class (all student object) it can
+        // also be accessed form the class itself...
+        message += Student.total;
+        message += " students in the room.";
+        
+        // Now we loop through the entire array ("traverse" means to travel to 
+        // or visit every spot) from start (index zero) to the finish (index of 
+        // the length minus one) - using a NEW type of loop (a new "for" loop)
+        // called the "enhanced for loop". To create the enhanced for loop 
+        // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
+        // option that appears from the top, or type "fore" and TAB 
+        for (Person member : members) {
+            // The enhanced for loop should be read as:
+            // "for every member in members"
+            
+            member.talk();
+            
+        }
+        
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //     members[i].talk();
+        // }
+        
+        
+        
+        
+        
+        
         
         
         // finally output the message
