@@ -3,8 +3,6 @@
 package testing;
 
 /** Required imports */
-import javax.swing.JOptionPane;
-import jdk.nashorn.internal.scripts.JO;
 import testing.unit3.Athlete;
 import testing.unit3.DiskJockey;
 import testing.unit3.Husky;

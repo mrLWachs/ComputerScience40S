@@ -92,7 +92,24 @@ public class Meeting
             // changing "person" each time through the loop to the next element
             // in order...
             
-            member.talk();
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
+                message += "\nAttended by a";            // Line break 
+                
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is true if the object 'comes from' that
+                // class (is a instance of that class type) 
+                if (member instanceof Person)     message += " Person";
+                if (member instanceof Student)    message += " Student";
+                if (member instanceof Teacher)    message += " Teacher";
+                if (member instanceof Plumber)    message += " Plumber";
+                if (member instanceof DiskJockey) message += " DiskJockey";
+                if (member instanceof Husky)      message += " Husky";
+                if (member instanceof Leopard)    message += " Leopard";
+                if (member instanceof Athlete)    message += " Athlete";                
+            }
             
         }
         
