@@ -267,8 +267,6 @@ public class AdvancedClassesTest
         
         
         
-        
-        
         System.out.println("\nAdvanced classes test complete!\n");
     }
     

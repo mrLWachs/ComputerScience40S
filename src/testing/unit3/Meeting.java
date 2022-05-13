@@ -69,7 +69,7 @@ public class Meeting
     public void hold() {
         // Make a variable to hold a bunch of potential output data
         String message = "Meeting is about to begin..";        
-        message += "\nWatch your language, there is ";
+        message += "\nWatch your language, there are ";
         
         // A static variable, since it is "shared" amoungst all 
         // instances of the Student class (all student object) it can
@@ -100,13 +100,6 @@ public class Meeting
         // for (int i = 0; i < members.length; i++) {
         //     members[i].talk();
         // }
-        
-        
-        
-        
-        
-        
-        
         
         // finally output the message
         System.out.println(message);
