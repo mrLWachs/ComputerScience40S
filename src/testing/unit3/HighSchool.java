@@ -8,11 +8,15 @@ package testing.unit3;
  * Java class so that the toString(), clone(), and equals() methods are now 
  * always part of any new class we create (whether or not we choose to over-ride
  * those methods).
+ * 
+ * This class uses the modifier word "abstract" in the class signature line to
+ * make this class an abstract class - meaning this class cannot be made into
+ * an object (cannot be instantiated)
  *
  * @author Mr. Wachs
  * @since 6-May-2022, 3:11:12 PM
  */
-public class HighSchool extends Student
+public abstract class HighSchool extends Student
 {
 
     /**
