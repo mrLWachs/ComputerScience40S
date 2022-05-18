@@ -8,7 +8,7 @@ package testing.unit3;
  * @author Mr. Wachs
  * @since 17-May-2022, 2:31:41 PM
  */
-public class Steak 
+public class Steak extends Food
 {
 
     /**

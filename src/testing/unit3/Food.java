@@ -18,10 +18,59 @@ public abstract class Food
 {
 
     /**
-     * Default constructor, set class properties
+     * Whether or not this 'food' item should be eaten
      */
-    public Food() {
-        
+    public boolean eatable;
+    
+    /**
+     * Encapsulated property, which food group the 'food' item is part of
+     */
+    private int group;
+    
+    /**
+     * Available to this class and all children of this class, the flavour
+     * quality of the food
+     */
+    protected String flavour;
+    
+    /**
+     * Agreed upon food groups: (0) Meat, (1) Dairy, (2) Vegetables,
+     * (3) Fruit, (4) Grains, (5) Other - "shared" constant array
+     */
+    public static final String[] GROUPS = {
+        "Meat",
+        "Dairy",
+        "Vegetables",
+        "Fruit",
+        "Grains",
+        "Other"        
+    };
+    
+    
+    /**
+     * Constructor, set class properties
+     * 
+     * @param group which food group this food item belong to
+     */
+    public Food(int group) {
+        this.group = group;     // Assign parameter to private property
+    }
+    
+    public abstract void prepare();
+    
+    public abstract boolean hasSpoiled();
+    
+    public abstract void smell(int seconds);
+    
+    
+    public String eat() {
+        if (hasSpoiled()) {
+            return "Do not eat!";
+        }
+        else {
+            prepare();
+            return GROUPS[group] + ", it was " + flavour;
+        }
     }
      
 }
