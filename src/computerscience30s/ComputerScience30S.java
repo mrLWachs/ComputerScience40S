@@ -45,7 +45,8 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // method - then NetBeans will suggest (with a 'lightbulb') that it 
         // writes the method for you
 //        learnMethods();
-        learnArrrays();
+//        learnArrrays();
+        learnClasses();
     }
 
     /**
@@ -1258,6 +1259,17 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 image
         );
         
+    }
+
+    /**
+     * Goes over the content of this unit
+     */
+    private static void learnClasses() {
+        System.out.println("Start Learning classes...");
+        
+        
+        
+        System.out.println("Learning classes complete!");
     }
     
 }
