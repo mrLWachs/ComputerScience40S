@@ -1267,6 +1267,38 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     private static void learnClasses() {
         System.out.println("Start Learning classes...");
         
+        // Create a "person" (add a class called "Person" to this Java project)
+        // To do this, click on File - New File (or icon on toolbar)
+        // A dialog will appear and you select "Java" and "Java Class"
+        // Then next...
+        // Then give it a name (starts with a capital letter and camel casing)
+        // Then click finish!
+        
+        // use a line of code like this:
+        // Random random = new Random();
+        
+        Person person = new Person();       
+        
+        // Class object = new Class() <--- implies a method?
+        // that is the call to the constructor method
+        
+        // call (invoke) a method within the object (using a dot ".")
+        
+        person.born();
+        
+        // Use (call,invoke) other methods and change properties
+        person.talk();        
+        person.birthday();        
+        person.talk();        
+        person.die();        
+        person.talk();
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Learning classes complete!");
