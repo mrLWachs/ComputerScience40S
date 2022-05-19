@@ -21,6 +21,36 @@ public class Apple extends Food
      */
     public Apple() {
         super(3);                   // Call super-constructor, passing the group
+        super.flavour = "Sweet";    // Modifying our protected property
+    }
+
+    /**
+     * Prepares food to be eaten
+     */
+    @Override
+    public void prepare() {
+        System.out.println("Wash it first");
+    }
+
+    /**
+     * Determines if this 'apple' item has spoiled
+     * 
+     * @return the food has spoiled (true) or not (false)
+     */
+    @Override
+    public boolean hasSpoiled() {
+        return super.eatable;       // Access public property
+    }
+
+    /**
+     * Smell the 'apple' item
+     * 
+     * @param seconds how many seconds to smell it
+     */
+    @Override
+    public void smell(int seconds) {
+        if (seconds > 3) super.eatable = false;
+        else             super.eatable = true;
     }
        
 }

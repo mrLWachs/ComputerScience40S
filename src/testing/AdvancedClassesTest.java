@@ -3,6 +3,7 @@
 package testing;
 
 /** Required imports */
+import testing.unit3.Apple;
 import testing.unit3.Athlete;
 import testing.unit3.DiskJockey;
 import testing.unit3.Husky;
@@ -11,6 +12,7 @@ import testing.unit3.Meeting;
 import testing.unit3.MrWachs;
 import testing.unit3.Person;
 import testing.unit3.Plumber;
+import testing.unit3.Steak;
 import testing.unit3.Student;
 import testing.unit3.Teacher;
 
@@ -256,7 +258,21 @@ public class AdvancedClassesTest
         // When we call static methods from the instances, the 
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
+                
+        // Instantiate an object from a child class of an abstract class
+        // using the abstract methods (that were made 'concrete') in that class
+        Apple apple = new Apple();
+        Steak steak = new Steak();
         
+        apple.smell(5);
+        steak.smell(5);
+        
+        // Call the polymorphic method which accepts the abstract object (Food)
+        // as an argument. since the abstract class cannot be instantiated,
+        // only children objects from the abstract class can be arguments
+        // (in other words, apple and steak instances)
+        husky.consume(apple);
+        mrWachs.consume(steak);
         
         
         
