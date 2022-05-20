@@ -3,8 +3,11 @@
 package testing;
 
 /** Required imports */
+import javax.swing.JOptionPane;
 import testing.unit3.Apple;
 import testing.unit3.Athlete;
+import testing.unit3.Book;
+import testing.unit3.Box;
 import testing.unit3.DiskJockey;
 import testing.unit3.Husky;
 import testing.unit3.Leopard;
@@ -274,14 +277,79 @@ public class AdvancedClassesTest
         husky.consume(apple);
         mrWachs.consume(steak);
         
+        // An Interface can be thought of "as a set of rules" - like a class
+        // but only contains method signatures (like abstract methods - but
+        // you don't have to use the word 'abstract' inside interfaces).
+        // Interfaces cannot be instantiated (made into objects like
+        // Sports sports = new Sports(); like abstract classes). Like an
+        // abstract class, interfaces are used by 'child' like classes that
+        // 'implement' the interface (these classes "follow the rules" of
+        // the interface ("the set of rules"). 
         
+        Athlete jock = new Athlete("Shaq", 50);
+        jock.sign();
+        jock.setOpponent("Troy");
+        if (jock.didYouGetItSigned()) {
+            jock.score("Shaq");
+            jock.score("Troy",6);
+            jock.endOfPeriod(1);
+            jock.score("Shaq",7);
+            jock.score("Troy");
+        }
+        jock.endOfQuarter(2);
         
+        if (jock.didIWin()) {
+            jock.consume(steak);
+        }
         
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
         
+        // Now call a generic method on the variety of different data types
+        output("Hello World");
+        output(jock);
+        output(new Book());
+        output(new Boolean(true));
+        output(new JOptionPane());
         
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.
         
-        
+        Box<MrWachs> box = new Box<>(mrWachs);
+        box.peek();
+        MrWachs substitute = box.open();
+        output(substitute);
+                
         System.out.println("\nAdvanced classes test complete!\n");
+    }
+    
+    /**
+     * Outputs a generic item with information about the data type.
+     * Generic methods use 'generic' references rather than specific
+     * references. You do not define the data type (the parameter) 
+     * when the method is created. Instead of defining the data
+     * type, a set of angle brackets "< >" is used with a single
+     * letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in
+     * the argument when the method is later called
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " as a string is " + item.toString();
+        System.out.println(text);
     }
     
 }
