@@ -1284,15 +1284,32 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         // call (invoke) a method within the object (using a dot ".")
         
-        person.born();
+        // person.born(); // Was re-written into a "constructor" method
         
         // Use (call,invoke) other methods and change properties
         person.talk();        
-        person.birthday();        
+        person.birthday(); 
+        // We can also change the properties of this object
+        person.name = "Bob Loblaw";
+        person.gender = "he/him";
         person.talk();        
         person.die();        
         person.talk();
         
+        // Create (instatiate) another object with a different method
+        // of creating an object calling a constructor method...
+        
+        Person other = new Person("Gwen Stacy");
+        other.gender = "she/her";
+        other.age = 17;
+        // other.alive = true; // This line is already done by the constructor
+        other.talk();
+        
+        // Another instance using our 3rd constuctor option
+        Person third = new Person("Tony Stark",45,"he/him");
+        third.talk();
+        third.die();
+        third.talk();
         
         
         
