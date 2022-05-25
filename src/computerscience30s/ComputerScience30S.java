@@ -1311,7 +1311,11 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         third.die();
         third.talk();
         
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)  
+        Student student = new Student();
         
+        student.talk();
         
         
         
