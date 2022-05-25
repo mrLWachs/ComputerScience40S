@@ -20,10 +20,17 @@ public class Person
     // variables" for this class - they can be simple variables, or even 
     // arrays (or even other classes)
     
-    String name;
-    int age;
-    boolean alive;
-    String gender;
+    public String name;
+    public String gender;
+    
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private int age;
+    private boolean alive;
+    
     
     
     // Methods: (things it can do, verbs, actions)........................ 
@@ -46,7 +53,7 @@ public class Person
      * (construct, instantiate) an object. Constructor methods should always
      * be public
      */
-    Person() {
+    public Person() {
         name   = "person";
         age    = 0;
         alive  = true;
@@ -59,7 +66,7 @@ public class Person
      * 
      * @param newName the new name for this person
      */
-    Person(String newName) {
+    public Person(String newName) {
         name   = newName;   // Assigning the argument to the property (global)
         age    = 0;
         alive  = true;
@@ -76,7 +83,7 @@ public class Person
      * @param age the age for this person
      * @param gender the gender for this person 
      */
-    Person(String name, int age, String gender) {
+    public Person(String name, int age, String gender) {
         this.alive  = true;     // The line could still be alive = true;
         
         // Assign the parameter to the property (global variable of this class)
@@ -90,7 +97,7 @@ public class Person
     /**
      * The person dies 
      */
-    void die() {
+    public void die() {
         alive = false;
     }
     
@@ -98,11 +105,12 @@ public class Person
      * Method to simulate this person "talking" out information about the object
      * it outputs data on this person to the screen
      */
-    void talk() {
+    public void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifies " + gender);
         }
         else {
+            secret();
             System.out.println("Boooooooo!");
         }
     }
@@ -110,8 +118,16 @@ public class Person
     /**
      * A person has a birthday (the age goes up by one)
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }    
 
+    /**
+     * "Private" or encapsulated methods are rare, but can only be called within
+     * the class. Often called "helper" or "utility" methods
+     */
+    private void secret() {
+        System.out.println("Shhhhh, it's a secret!");
+    }
+    
 }

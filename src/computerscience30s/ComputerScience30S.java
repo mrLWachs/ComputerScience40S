@@ -1301,7 +1301,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         
         Person other = new Person("Gwen Stacy");
         other.gender = "she/her";
-        other.age = 17;
+        // other.age = 17;      // This is a private, encapsulated property
         // other.alive = true; // This line is already done by the constructor
         other.talk();
         
@@ -1310,8 +1310,6 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         third.talk();
         third.die();
         third.talk();
-        
-        
         
         
         
