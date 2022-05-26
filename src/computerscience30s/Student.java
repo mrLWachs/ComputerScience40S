@@ -40,6 +40,22 @@ public class Student extends Person
     public int number;    
     private double gpa;
     
+    /**
+     * If a constructor has NO parameters it is called the "default" 
+     * constructor 
+     * 
+     * Default constructor method for the class, sets the class properties 
+     * (including the properties it inherited form the super or parent class)
+     */
+    public Student() {
+        super();            // invoking (calling) the "super-constructor"
+        
+        // Set the class properties (of this child/sub class of the Person 
+        // class which is the super/parent class)
+        number = 0;
+        gpa    = 0.0;
+        book   = null;
+    }
     
     
     
