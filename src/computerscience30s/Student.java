@@ -21,7 +21,26 @@ package computerscience30s;
  */
 public class Student extends Person
 {
+    
+    // The keyword "extends" is how Java initiates inheritance (or "is a")
+    // and the Student class inherits all "public" properties and methods
+    // from the "Person" class ("private" properties and methods are inherited,
+    // but they are still private or encapsulated)
 
+    /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" (or "composition") with the student class
+     */
+    private Book book;
+    
+    // "number" is the name, "int" is the data type, "private" is a modifier
+    // to make this "property" encapsulated - so this property or this 
+    // "global variable"
+    
+    public int number;    
+    private double gpa;
+    
+    
     
     
 }
