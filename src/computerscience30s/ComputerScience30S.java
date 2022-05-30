@@ -1277,50 +1277,87 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
         // use a line of code like this:
         // Random random = new Random();
         
-        Person person = new Person();       
-        
+        Person person = new Person();
         // Class object = new Class() <--- implies a method?
         // that is the call to the constructor method
         
-        // call (invoke) a method within the object (using a dot ".")
+	// call (invoke) a method within the object (using a dot ".")
         
         // person.born(); // Was re-written into a "constructor" method
         
         // Use (call,invoke) other methods and change properties
+
         person.talk();        
         person.birthday(); 
+
         // We can also change the properties of this object
+
         person.name = "Bob Loblaw";
         person.gender = "he/him";
         person.talk();        
         person.die();        
         person.talk();
-        
-        // Create (instatiate) another object with a different method
-        // of creating an object calling a constructor method...
-        
-        Person other = new Person("Gwen Stacy");
+	        
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor        
+	
+	Person other = new Person("Gwen Stacy");
         other.gender = "she/her";
         // other.age = 17;      // This is a private, encapsulated property
-        // other.alive = true; // This line is already done by the constructor
+        // other.alive = true;  // This line is already done by the constructor
         other.talk();
         
-        // Another instance using our 3rd constuctor option
+        // Another instance using the 3rd constructor option
+
         Person third = new Person("Tony Stark",45,"he/him");
         third.talk();
         third.die();
         third.talk();
         
         // Create a Student object and call it's methods (including the 
-        // ones it inherited from the Person class)  
-        Student student = new Student();
-        
+        // ones it inherited from the Person class)      
+  
+        Student student = new Student("Student Person",17,"student",123456);
+
+        student.talk();
+
+        // Call (invoke) methods specifically for the student class
+
+        student.slackOff();
+        student.study();
+        student.slackOff();
+        student.cram();
         student.talk();
         
+        // Instantiate a Husky object......................................
+        Husky husky = new Husky("Havoc", 14, "male", 2665);
+        husky.talk();
         
+        // Make a Teacher instance.........................................
+        Teacher teacher = new Teacher("Mr. Wachs");
+        teacher.talk();
         
+        // Assigned student objects to the public array.....................
+        teacher.students[0] = student;
+        teacher.students[1] = husky;
         
-        System.out.println("Learning classes complete!");
+        // Called talk again to see the students we added.................
+        teacher.talk();
+        
+        // Build (declare, initiaize, instantiate) a Meeting object......
+        Meeting meeting = new Meeting();
+        
+        // Calling our polymorphic method.................................
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
+        
+        meeting.hold();
+                
+        System.out.println("Completed learning classes!");
     }
     
 }
