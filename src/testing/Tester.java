@@ -26,6 +26,7 @@ public class Tester
         System.out.println("Mr. Wachs Computer Science 40S testing started...");
         RecursionTest       unit1 = new RecursionTest();
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        CollectionsTest     unit3 = new CollectionsTest();    
         System.out.println("Mr. Wachs Computer Science 40S testing complete!");
     }
     
