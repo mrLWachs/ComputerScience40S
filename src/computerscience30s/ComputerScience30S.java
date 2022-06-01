@@ -34,19 +34,52 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        learnIntroToJava();
-        // The line above is a "call" to the method named "learnIntroToJava"
-        // meaning the code stops at that line and "jumps" (or branches) to the
-        // method written below. Then runs all the code inside that method
-        // (the code in the 'block' of the method between two { } ) then comes
-        // back to the next line after the "call" (execute, run, etc.)
-        
-        // In NetBeans, you can write the call to a method before you write the
-        // method - then NetBeans will suggest (with a 'lightbulb') that it 
-        // writes the method for you
-//        learnMethods();
-//        learnArrrays();
-        learnClasses();
+        // Added a small choice option to allow the user to run different units
+        // for this example....
+        final String[] OPTIONS = {
+            "Unit 1: Learn Introduction To Java",
+            "Unit 2: Learn Methods",
+            "Unit 3: Learn Arrrays",
+            "Unit 4: Learn Classes",
+            "Unit 5: Learn Graphics (optional unit)"
+        };
+        Object choice = JOptionPane.showInputDialog(
+                null, 
+                "Select which unit to run the example for (or click cancel)", 
+                "Computer Science 30S Examples",
+                JOptionPane.PLAIN_MESSAGE,
+                null, 
+                OPTIONS, 
+                OPTIONS[4]
+        );
+        if (choice == null) {
+            System.exit(0);
+        }
+        else if (choice.toString().equals(OPTIONS[0])) {
+            learnIntroToJava();
+            // The line above is a "call" to the method named 
+            // "learnIntroToJava" meaning the code stops at that line and 
+            // "jumps" (or branches) to themethod written below. Then runs 
+            // all the code inside that method (the code in the 'block' of 
+            // the method between two { } ) then comes back to the next line 
+            // after the "call" (execute, run, etc.)
+
+            // In NetBeans, you can write the call to a method before you 
+            // write the method - then NetBeans will suggest (with a 
+            // 'lightbulb') that it writes the method for you
+        }
+        else if (choice.toString().equals(OPTIONS[1])) {
+            learnMethods();
+        }
+        else if (choice.toString().equals(OPTIONS[2])) {
+            learnArrays();
+        }
+        else if (choice.toString().equals(OPTIONS[3])) {
+            learnClasses();
+        }
+        else if (choice.toString().equals(OPTIONS[4])) {
+            LearnGraphics learnGraphics = new LearnGraphics();
+        }
     }
 
     /**
@@ -814,7 +847,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     /**
      * Learn the content of the arrays unit 3
      */
-    private static void learnArrrays() {
+    private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
         // Create (declare) a variable for comparison
