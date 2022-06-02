@@ -56,8 +56,8 @@ public class Graphics2 extends JFrame
         // Use a reference to the object that will be created in the future
         // and use all the properties and call (invoke) all the methods
         // we inherited from the super-class (JFrame)
-        this.setSize(680, 830);         // Sets the width and height
-        this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
+        this.setSize(370, 420);         // Sets the width and height
+        this.setTitle("Graphics Two");  // Sets the title at top of form (frame)
         this.setResizable(false);       // Makes it so the user cannot resize
         this.setLocationRelativeTo(null);   // Centers the form on screen
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -94,10 +94,10 @@ public class Graphics2 extends JFrame
         container.add(picture);        
                 
         // Position all controls using: x, y, width, height
-        text.setBounds(10, 10, 650, 20);
-        button.setBounds(10, 50, 650, 40);
-        textbox.setBounds(10, 100, 650, 20);
-        picture.setBounds(10, 110, 650, 650);        
+        text.setBounds(10, 10, 335, 20);
+        button.setBounds(10, 50, 335, 40);
+        textbox.setBounds(10, 100, 335, 20);
+        picture.setBounds(10, 120, 335, 200);        
     }
    
 }
