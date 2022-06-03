@@ -50,7 +50,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 JOptionPane.PLAIN_MESSAGE,
                 null, 
                 OPTIONS, 
-                OPTIONS[4]
+                OPTIONS[0]
         );
         if (choice == null) {
             System.exit(0);

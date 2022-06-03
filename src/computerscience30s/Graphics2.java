@@ -3,6 +3,12 @@ package computerscience30s;
 
 /** Required imports */
 import java.awt.Container;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -43,7 +49,7 @@ public class Graphics2 extends JFrame
         // ALT + SHIFT + M and name the method
         setContainer();
         setControls();
-        //setActions();
+        setActions();
         
         // Reveal design to user (this should be done last in constructor)
         this.setVisible(true);          // Make the frame (container) visible
@@ -98,6 +104,64 @@ public class Graphics2 extends JFrame
         button.setBounds(10, 50, 335, 40);
         textbox.setBounds(10, 100, 335, 20);
         picture.setBounds(10, 120, 335, 200);        
+    }
+
+    /**
+     * Adds the actions to the various controls using an action listener. 
+     * Action "listener" means it "listens" for specific actions to occur
+     */
+    private void setActions() {
+        // Action events connected to controls (components, e.g. button) on 
+        // our container (user interface, or frame, or form) have 3 parts:
+        //  (1) Set up (in code) an "action listener" (like a mouse trap)
+        //  (2) Connect that listener to an object (like putting the trap down)
+        //  (3) Write an event connected to the listener (what do we do?)
+        
+        // (1) Create an action listener for the click of our button
+        // use NetBeans autocomplete (CTRL + SPACE) to help write this code...
+        ActionListener buttonListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // (3) The code for the action
+                System.exit(0);
+            }
+        };
+        
+        // (2) then connect ("add") that listener to the control (button)
+        button.addActionListener(buttonListener);
+        
+        // Do this all over again, but combine some steps (for shorter code)
+        // we will create and add (connect) the action listener in one step
+        // to the textbox - and we will listen for a different event keyboard
+        // action event (again use autocomplete to help write the code)
+        textbox.addKeyListener( new KeyListener() {
+            public void keyTyped(KeyEvent e) {   }
+            public void keyPressed(KeyEvent e) {
+                text.setText("Key pressed was " + e.getKeyCode());
+            }
+            public void keyReleased(KeyEvent e) {  }
+        });
+        
+        // Last time, now listening for "mouse events", add mouse action 
+        // listener specifically for mouse actions, and call an "outside" 
+        // method for the action (we will write)
+        picture.addMouseMotionListener( new MouseMotionListener() {
+            public void mouseDragged(MouseEvent e) {            }
+            public void mouseMoved(MouseEvent e) {
+                mouseMoving(e);
+            }
+        });
+        
+    }
+    
+    /**
+     * When the mouse moves over the picture, it updates the label with 
+     * information about where (coordinates) the mouse is
+     * 
+     * @param event the mouse event information from the mouse
+     */
+    private void mouseMoving(MouseEvent event) {
+        text.setText("Mouse " + event.getX() + "," + event.getY());
     }
    
 }
