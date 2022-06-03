@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import computerscience30s.ComputerScience30S;
+
  
 /**
  * Tester.java - the unit testing class that drives the various unit tests
@@ -24,6 +26,7 @@ public class Tester
      */
     public Tester() {
         System.out.println("Mr. Wachs Computer Science 40S testing started...");
+        ComputerScience30S  unit0 = new ComputerScience30S();
         RecursionTest       unit1 = new RecursionTest();
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
         CollectionsTest     unit3 = new CollectionsTest();    
