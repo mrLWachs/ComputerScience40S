@@ -13,7 +13,7 @@ package computerscience30s;
  * @author Mr. Wachs
  * @since 12-Sep-2022
 */
-public class ComputerScience30S {
+public class ComputerScience30S {       // Curly brackets DO NOT remove
 
     /**
      * @param args the command line arguments
@@ -33,7 +33,7 @@ public class ComputerScience30S {
             "star slash"
         */
         
-        System.out.println("Hello World");
+        System.out.println("Hello World");  // comment at the end of the line
         
         
     }
