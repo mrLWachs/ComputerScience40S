@@ -36,13 +36,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             "star slash"
         */
         
-        System.out.println("Hello World");  // comment at the end of the line
+        System.out.println("Hello World");  // Comments can be on code lines
         
-        // Use print without the "ln", does not add
-        // a line break at the end
+        // Use print without the "ln", does not add a line break at the end
         
-        System.out.print("I'm in");        
+        System.out.print("I'm in");
         System.out.println(" the world");
+        
+        System.out.println("Good-bye world!");
         
         // Additional output tips...
         // (these are "special" characters)
@@ -62,19 +63,24 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // However, these OPTIONS (not needed, but cool) for other
         // dialog output message boxes below...
         
-        JOptionPane.showMessageDialog(
-                null,
-                "Information Icon is i",
-                "Information Title",
-                JOptionPane.INFORMATION_MESSAGE
-                );
+        // Code could span multiple lines until it reaches a semi colon ";"
+        // The light red line on the far right -------------------------------->
+        // can be thought of as a "barrier" and you should try not to code too
+        // much past this line
         
         JOptionPane.showMessageDialog(
-                null,
-                "Question Icon is ?",
-                "Question Title",
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+                
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is ?",
+                "Question title",
                 JOptionPane.QUESTION_MESSAGE
-                );
+        );
         
         
         
