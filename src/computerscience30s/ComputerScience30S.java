@@ -62,8 +62,19 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // However, these OPTIONS (not needed, but cool) for other
         // dialog output message boxes below...
         
+        JOptionPane.showMessageDialog(
+                null,
+                "Information Icon is i",
+                "Information Title",
+                JOptionPane.INFORMATION_MESSAGE
+                );
         
-        
+        JOptionPane.showMessageDialog(
+                null,
+                "Question Icon is ?",
+                "Question Title",
+                JOptionPane.QUESTION_MESSAGE
+                );
         
         
         
@@ -83,6 +94,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 // (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (5)  Click the green triangle on the top toolbar to run code
 // (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
 
 
 
