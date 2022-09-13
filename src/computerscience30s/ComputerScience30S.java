@@ -5,6 +5,7 @@
  */
 package computerscience30s;
 
+
 /*
  * ComputerScience30S - the large in class example we continue to work on
  * in each unit adding example code on the new concepts of each unit along with
@@ -34,6 +35,30 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         */
         
         System.out.println("Hello World");  // comment at the end of the line
+        
+        // Use print without the "ln", does not add
+        // a line break at the end
+        
+        System.out.print("I'm in");        
+        System.out.println(" the world");
+        
+        // Additional output tips...
+        // (these are "special" characters)
+        
+        System.out.println("Make a quote \" ");
+        System.out.println("Make a slash \\ ");
+        System.out.println("Make a \t tab ");
+        System.out.println("Make a new line \n break ");
+        
+        // Make a "fancier" output with a dialog box
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
