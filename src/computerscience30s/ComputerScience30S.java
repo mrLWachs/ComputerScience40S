@@ -5,6 +5,8 @@
  */
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 
 /*
  * ComputerScience30S - the large in class example we continue to work on
@@ -52,7 +54,13 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Make a "fancier" output with a dialog box
         
+        JOptionPane.showMessageDialog(null, "Good-bye World");
         
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
+        
+        // However, these OPTIONS (not needed, but cool) for other
+        // dialog output message boxes below...
         
         
         
