@@ -104,12 +104,87 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //                "Plain title",
 //                JOptionPane.PLAIN_MESSAGE
 //        );
+//        
+//        // Dialogs for inputs...
+//        
+//        // The simpliest version is the one you will need to know:
+//        
+//        JOptionPane.showInputDialog("Enter Something");
+//        
+//        // There is a little more to using this input dialog that we will 
+//        // cover after learning variables
+//        
+//        // Some other optional input dialogs...
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Information icon is i",
+//                "Information title",
+//                JOptionPane.INFORMATION_MESSAGE
+//        );
+//                
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Question icon is ?",
+//                "Question title",
+//                JOptionPane.QUESTION_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Warning icon is !",
+//                "Warning title",
+//                JOptionPane.WARNING_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
+//                "Plain no icon",
+//                "Plain title",
+//                JOptionPane.PLAIN_MESSAGE
+//        );
         
-        // Dialogs for inputs...
+        // More different (and optional) dialogs...
         
-        // The simpliest version is the one you will need to know:
+        JOptionPane.showConfirmDialog(null, "Confirm");
         
-        JOptionPane.showInputDialog("Enter Something");
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 2",
+                "Information",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 3",
+                "Question",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 4",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 5",
+                "Plain",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        
+        
+        
+        
+        
         
         
         
