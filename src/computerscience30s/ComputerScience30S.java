@@ -59,8 +59,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         System.out.println("Make a quote \" ");             // \" makes quote
         System.out.println("Make a slash \\ ");             // \\ makes slash
-        System.out.println("Make a \t tab ");               // \t make tab
-        System.out.println("Make a new line \n break ");    // \n make new line
+        System.out.println("Make a \t tab ");               // \t makes tab
+        System.out.println("Make a new line \n break ");    // \n makes new line
         
         // Make a "fancier" output with a dialog box
         
