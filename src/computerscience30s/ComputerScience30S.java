@@ -5,6 +5,10 @@
  */
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code 
+ */
 import javax.swing.JOptionPane;
 
 
@@ -19,10 +23,16 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S {       // Curly brackets DO NOT remove
 
     /**
+     * Main method for the project
+     * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
         
         // This is a comment all typing after "//" until the line ends        
         // Commments are not code, so you can write what you want        
@@ -35,23 +45,22 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             you want starting with "slash star" until it sees the closing 
             "star slash"
         */
-        
+                        
+        // A basic output
         System.out.println("Hello World");  // Comments can be on code lines
         
-        // Use print without the "ln", does not add a line break at the end
-        
+        // Use print without the "ln", does not add a line break at the end        
         System.out.print("I'm in");
         System.out.println(" the world");
         
         System.out.println("Good-bye world!");
         
-        // Additional output tips...
-        // (these are "special" characters)
+        // Additional output tips... (these are "special" characters)
         
-        System.out.println("Make a quote \" ");
-        System.out.println("Make a slash \\ ");
-        System.out.println("Make a \t tab ");
-        System.out.println("Make a new line \n break ");
+        System.out.println("Make a quote \" ");             // \" makes quote
+        System.out.println("Make a slash \\ ");             // \\ makes slash
+        System.out.println("Make a \t tab ");               // \t make tab
+        System.out.println("Make a new line \n break ");    // \n make new line
         
         // Make a "fancier" output with a dialog box
         
