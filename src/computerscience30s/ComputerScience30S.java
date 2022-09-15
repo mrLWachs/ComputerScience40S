@@ -231,6 +231,52 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         System.out.println("e = " + e);
         
+        // Manipulate ("use") our variables:
+        
+        int x = 10;
+        
+        System.out.println("x = " + x);
+        
+        x = 20;
+        
+        System.out.println("x = " + x);
+        
+        int y = x + 10;             // x is currently 20
+        
+        System.out.println("y = " + y);
+        
+        // Optional shorthand... ("you don't have to use this")
+        
+        y++;    // Means y = y + 1;
+        y--;    // Means y = y - 1;
+        
+        // Even more optional (less recommended) shorthand:
+        
+        y += 10;    // Means y = y + 10;
+        y -= 10;    // Means y = y - 10;
+        y *= 10;    // Means y = y * 10;
+        y /= 10;    // Means y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
+        
+        x = 28;
+        y = x / 5;
+        
+        int z = x % 5;
+        
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        
+        
+        
+        
+        
+        
         
         
         
