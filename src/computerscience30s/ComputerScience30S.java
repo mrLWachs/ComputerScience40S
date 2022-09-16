@@ -338,9 +338,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // at the front of the line that makes the input dialog (code above is
         // wrong, always make a string variable then the input dialog)
         
+        String q = JOptionPane.showInputDialog("Enter");
         
+        // The variable (always has to start as a string) stores what the 
+        // user types in the input dialog box
         
-        
+        JOptionPane.showMessageDialog(null, q);
         
         
         
