@@ -331,19 +331,56 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        System.out.println("n = " + n);
 //        System.out.println("o = " + o);
 //        System.out.println("p = " + p);
+//        
+//        // Use dialog boxes (specifically the input) with variables...
+//        
+//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+//        // at the front of the line that makes the input dialog (code above is
+//        // wrong, always make a string variable then the input dialog)
+//        
+//        String q = JOptionPane.showInputDialog("Enter");
+//        
+//        // The variable (always has to start as a string) stores what the 
+//        // user types in the input dialog box
+//        
+//        JOptionPane.showMessageDialog(null, q);
+//        
+//        // With numbers, you HAVE to start off with a string, and then convert
+//        // it to a number. This is like Convert.ToInt32(text); in C#
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We use code to "parse" (means "reading")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        // Always use a capital "I" and whole word "Integer" for this parsing
+//        // the string into a number
+//        
+//        JOptionPane.showMessageDialog(null, s);
         
-        // Use dialog boxes (specifically the input) with variables...
+        // Same example with a double
         
-        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-        // at the front of the line that makes the input dialog (code above is
-        // wrong, always make a string variable then the input dialog)
+        String t = JOptionPane.showInputDialog("Enter Double");
+        double u = Double.parseDouble(t);
+        JOptionPane.showMessageDialog(null, u);
         
-        String q = JOptionPane.showInputDialog("Enter");
         
-        // The variable (always has to start as a string) stores what the 
-        // user types in the input dialog box
         
-        JOptionPane.showMessageDialog(null, q);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
