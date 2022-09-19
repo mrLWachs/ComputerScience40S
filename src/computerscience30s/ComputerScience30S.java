@@ -374,16 +374,19 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // Strings have built-in actions like "charAt" to pull out a character
         // "at" location "0" which means the very first character (because 
         // numbering in Computer Science usually starts at 0)
-        
-        
+                
         // String have MANY built-in "actions" ("powers", functions, methods)
         
         String word = "hippopotomonsprosesquippedaiophobia";
+        int length = word.length();
         
+        System.out.println("Word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
         
+        System.out.println("Word " + word + " in upper case is " + upper);
         
-        
+        // Many more string functions to explore (could use CTRL+SPACE)
         
         
         
