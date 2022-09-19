@@ -358,14 +358,22 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        // the string into a number
 //        
 //        JOptionPane.showMessageDialog(null, s);
+//        
+//        // Same example with a double
+//        
+//        String t = JOptionPane.showInputDialog("Enter Double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        // Same example with a double
+        // Another example with a char
         
-        String t = JOptionPane.showInputDialog("Enter Double");
-        double u = Double.parseDouble(t);
-        JOptionPane.showMessageDialog(null, u);
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, w);
         
-        
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
         
         
