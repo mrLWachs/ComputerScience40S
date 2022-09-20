@@ -476,7 +476,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // You can have as many lines of code as you want in a "block"
         
-        
+        // Use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement
         
         
         
