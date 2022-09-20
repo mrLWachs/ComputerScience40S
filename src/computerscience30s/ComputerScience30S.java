@@ -456,12 +456,25 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // brackets tests TRUE. It also indents the code inside the block
         
         
+        int value1 = 10, value2 = 10;
         
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
         
+        // if with "else" (an option) for both true and false, check 2 things
         
+        double value3 = 1.45, value4 = 1.5;
         
+        if (value3 < value4) {
+            System.out.println("The example is ");
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
         
-        
+        // You can have as many lines of code as you want in a "block"
         
         
         
