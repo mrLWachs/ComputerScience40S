@@ -442,50 +442,49 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        
 //        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
 //        System.out.println("card is " + card);
-        
-        ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
-        ///////////////////////////////////////////////////////////////////////
-        
-        // The simple if statement, you use this when comparing if something is
-        // true, as it checks that one thing ("asks a true/false question")
-        
-        // If statements use both ( ) round and { } curly brackets and the 
-        // code inside of the curly brackets is said to be in a "block" of
-        // code and that block only runs when the test inside of the round
-        // brackets tests TRUE. It also indents the code inside the block
-        
-        
-        int value1 = 10, value2 = 10;
-        
-        if (value1 == value2) {
-            System.out.println("equal");
-        }
-        
-        // if with "else" (an option) for both true and false, check 2 things
-        
-        double value3 = 1.45, value4 = 1.5;
-        
-        if (value3 < value4) {
-            System.out.println("The example is ");
-            System.out.println("Less than");
-        }
-        else {
-            System.out.println("Greater than");
-        }
-        
-        // You can have as many lines of code as you want in a "block"
-        
-        // Use chars and some shorthand, not usually recommended (except in 
-        // certain situations) used when the code in a block - between { } is
-        // only one line of code! Then, you don't need the { } 
-        // And.. (even further shorthand) the line can be moved up to the
-        // same line as the if statement
-        
-        char value5 = 'A', value6 = 'a';
-        
-        if (value5 != value6)   System.out.println("!=");
-        else                    System.out.println("==");
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // CONDITIONAL STATEMENTS
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // The simple if statement, you use this when comparing if something is
+//        // true, as it checks that one thing ("asks a true/false question")
+//        
+//        // If statements use both ( ) round and { } curly brackets and the 
+//        // code inside of the curly brackets is said to be in a "block" of
+//        // code and that block only runs when the test inside of the round
+//        // brackets tests TRUE. It also indents the code inside the block
+//
+//        int value1 = 10, value2 = 10;
+//        
+//        if (value1 == value2) {
+//            System.out.println("equal");
+//        }
+//        
+//        // if with "else" (an option) for both true and false, check 2 things
+//        
+//        double value3 = 1.45, value4 = 1.5;
+//        
+//        if (value3 < value4) {
+//            System.out.println("The example is ");
+//            System.out.println("Less than");
+//        }
+//        else {
+//            System.out.println("Greater than");
+//        }
+//        
+//        // You can have as many lines of code as you want in a "block"
+//        
+//        // Use chars and some shorthand, not usually recommended (except in 
+//        // certain situations) used when the code in a block - between { } is
+//        // only one line of code! Then, you don't need the { } 
+//        // And.. (even further shorthand) the line can be moved up to the
+//        // same line as the if statement
+//        
+//        char value5 = 'A', value6 = 'a';
+//        
+//        if (value5 != value6)   System.out.println("!=");
+//        else                    System.out.println("==");
         
         // Use "else if" for multiple cases of more than 2 things (same as the
         // "switch" statement - which I don't use) use strings for this
@@ -506,6 +505,19 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         else {
             System.out.println("W1!=W2");
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
