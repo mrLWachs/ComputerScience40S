@@ -590,7 +590,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             System.out.println("i = " + i);
         }
         
-        
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
