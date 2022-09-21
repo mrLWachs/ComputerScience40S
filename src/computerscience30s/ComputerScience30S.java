@@ -525,37 +525,54 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        else {
 //            System.out.println("Get out");
 //        }
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // LOOPING
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // Loops ARE just like conditional statements (like "if") BUT the code
+//        // keeps repeating while something is TRUE...
+//        
+//        // Simple loop
+//        
+//        int counter = 0;
+//        
+//        while (counter < 10) {
+//            System.out.println("counter = " + counter);
+//            counter++;  // counter = counter + 1;
+//        }
+//        
+//        // Loop with a string
+//        
+//        String password = JOptionPane.showInputDialog("Create a password");
+//        
+//        while (password.equals("1234")) {
+//            JOptionPane.showMessageDialog(null, "Try again");
+//            password = JOptionPane.showInputDialog("Create another password");
+//        }
+//        
+//        // The next type of loop is rarely used (you may never need it)
+//        // it tests for true/false at the bottom of the loop, you use it
+//        // when you want the body (block) of the loop to run at least
+//        // once!
+//        
+//        String choice = "";
+//        
+//        do {            
+//            choice = JOptionPane.showInputDialog("Enter password");
+//        } while (choice.equalsIgnoreCase(password) == false);
+//        
+//        JOptionPane.showMessageDialog(null, "You got it");
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
         
-        // Loops ARE just like conditional statements (like "if") BUT the code
-        // keeps repeating while something is TRUE...
-        
-        // Simple loop
-        
-        int counter = 0;
-        
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++;  // counter = counter + 1;
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
         }
-        
-        // Loop with a string
-        
-        String password = JOptionPane.showInputDialog("Create a password");
-        
-        while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Try again");
-            password = JOptionPane.showInputDialog("Create another password");
-        }
-        
-        // The next type of loop is rarely used (you may never need it)
-        // it tests for true/false at the bottom of the loop, you use it
-        // when you want the body (block) of the loop to run at least
-        // once!
-        
         
         
         
