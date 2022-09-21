@@ -485,36 +485,55 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //        
 //        if (value5 != value6)   System.out.println("!=");
 //        else                    System.out.println("==");
+//        
+//        // Use "else if" for multiple cases of more than 2 things (same as the
+//        // "switch" statement - which I don't use) use strings for this
+//        // example which are more complex (because they use many character,
+//        // and upper and lower case)
+//        
+//        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
+//        
+//        String word1 = "edgy";
+//        String word2 = "edGy";
+//        
+//        if (word1.equals(word2)) {
+//            System.out.println("W1==W2");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("W1 kind of == W2");
+//        }
+//        else {
+//            System.out.println("W1!=W2");
+//        }
+//        
+//        // As an optional way to combine logic using: "and" "or" "not"
+//        // "and" means BOTH   must be true - uses the symbol "&&"
+//        // "or"  means EITHER can  be true - uses the symbol "||"
+//        // "not" reverse logic (so false)  - uses the symbol "!"            
+//        
+//        int age = 17;
+//        double iq = 1.0;
+//        
+//        if (age >= 21 && iq > 90) {
+//            // with "and" BOTH have to be true
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 18 || iq > 0) {
+//            // with "or" EITHER can be true
+//            System.out.println("Keep trying");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
         
-        // Use "else if" for multiple cases of more than 2 things (same as the
-        // "switch" statement - which I don't use) use strings for this
-        // example which are more complex (because they use many character,
-        // and upper and lower case)
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
-        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
+        // Loops ARE just like conditional statements (like "if") BUT the code
+        // keeps repeating while something is TRUE...
         
-        String word1 = "edgy";
-        String word2 = "edGy";
-        
-        if (word1.equals(word2)) {
-            System.out.println("W1==W2");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("W1 kind of == W2");
-        }
-        else {
-            System.out.println("W1!=W2");
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Simple loop
         
         
         
