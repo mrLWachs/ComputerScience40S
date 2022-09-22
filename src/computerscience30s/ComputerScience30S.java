@@ -594,11 +594,36 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // EXAMPLE ASSIGNMENT:
         ///////////////////////////////////////////////////////////////////////
         
+        // Create welcome screen for the user (message dialog box)
+        String message = "You are an intern at radio station, C-RAP, The \n"
+                       + "disk jockeys announce the current temperature \n"
+                       + "in both Fahrenheit and Celsius every half-hour.\n"
+                       + "They would like an easy way to display both the \n"
+                       + "Fahrenheit and Celsius temperatures quickly and \n"
+                       + "at the same time. The local airport phones in \n"
+                       + "the temperature (but only in Celsius). They \n"
+                       + "have requested that you develop an application \n"
+                       + "that will display both temperatures after the \n"
+                       + "Celsius temperature is inputted. Note: Use \n"
+                       + "this conversion formula F = (C ∗ 1.8) + 32";        
+        // Get user input (temperature in celcius) - dialog
+        String userInput = JOptionPane.showInputDialog("Enter temperature "
+                + "in Celcius");
+        // convert this to a number I can do math with
+        double celcius = Double.parseDouble(userInput);
+        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        double fahrenheit = (celcius * 1.8) + 32;
+        // Show the user the results (fahrenheit) in a dialog
+        JOptionPane.showMessageDialog(null, "Your temperature in "
+                + "Fahrenheit is " + fahrenheit);
+        // show ending message
+        JOptionPane.showMessageDialog(null, "Thank you!");
+                
+        // This line terminates any running java program at any point
+        // System.exit(0);
         
-        
-        
-        
-        
+        // Curly brackets (braces, parenthesis) { and } are important - all 
+        // code goes between these two brackets
         
     }
 
