@@ -678,7 +678,21 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //    }
 //
 //}
-
+//
+// (13) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (14) When printing code for hand in (this only needs to be done once), click
+//      on "Print Options" and uncheck everything previously checked off, and
+//      then check off "Print as in Editor", then either print it to a PDF 
+//      (which means select "Microsoft Print to PDF" on the next screen), or
+//      cancel and resize the code to fit better (see tip #1) and then print 
+//      again
+// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
 
 
 
