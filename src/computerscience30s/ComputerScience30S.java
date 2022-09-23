@@ -595,7 +595,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         ///////////////////////////////////////////////////////////////////////
         
         // Create welcome screen for the user (message dialog box)
-        String message = "You are an intern at radio station, C-RAP, The \n"
+        JOptionPane.showMessageDialog(null, 
+                         "You are an intern at radio station, C-RAP, The \n"
                        + "disk jockeys announce the current temperature \n"
                        + "in both Fahrenheit and Celsius every half-hour.\n"
                        + "They would like an easy way to display both the \n"
@@ -605,20 +606,32 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
                        + "have requested that you develop an application \n"
                        + "that will display both temperatures after the \n"
                        + "Celsius temperature is inputted. Note: Use \n"
-                       + "this conversion formula F = (C ∗ 1.8) + 32";        
+                       + "this conversion formula F = (C ∗ 1.8) + 32"); 
+        
         // Get user input (temperature in celcius) - dialog
         String userInput = JOptionPane.showInputDialog("Enter temperature "
                 + "in Celcius");
-        // convert this to a number I can do math with
+
+        // Convert this to a number I can do math with
         double celcius = Double.parseDouble(userInput);
-        // apply a formula  (F = (C ∗ 1.8) + 32 )
+        
+        // Apply a formula  (F = (C ∗ 1.8) + 32 )
         double fahrenheit = (celcius * 1.8) + 32;
+        
         // Show the user the results (fahrenheit) in a dialog
         JOptionPane.showMessageDialog(null, "Your temperature in "
                 + "Fahrenheit is " + fahrenheit);
-        // show ending message
+        
+        // Show ending message
         JOptionPane.showMessageDialog(null, "Thank you!");
                 
+        // When preparing this for hand in, you should first:
+            // Make sure all comments are done
+            // Clean up your code (see tip 13 below)
+            // Watch out for long code lines (beyond the border)
+            // Set NetBeans for printing a PDF (see tip 14 below)
+            // Create as many screen captures as needed to prove it works
+        
         // This line terminates any running java program at any point
         // System.exit(0);
         
