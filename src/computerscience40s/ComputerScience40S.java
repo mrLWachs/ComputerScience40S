@@ -11,7 +11,7 @@ import testing.Tester;
  * with any requests for code examples that might come up over the course.
  *
  * @author Mr. Wachs 
- * @since Feb. 9, 2022, 8:01:03 a.m.
+ * @since September, 2022
 */
 public class ComputerScience40S 
 {
@@ -104,63 +104,5 @@ public class ComputerScience40S
 //      adapts to it) - the loop variable "i" also represents the array "index"
 // (25) To view the same code editing window with two different views, go to
 //      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
-// (26) To modify the template of all new classes, Tools -> Templates, scroll 
-//      down and click on the "+" beside "Java", select "Java Class" and use 
-//      ALL the code (uncommented) below:
-//
-///** Required package class namespace */
-//<#if package?? && package != "">
-//package ${package};
-//
-//</#if>
-// 
-///**
-// * ${name}.java - description
-// *
-// * @author Mr. Wachs
-// * @since ${date}, ${time}
-// */
-//public class ${name} 
-//{
-//
-//    /**
-//     * Default constructor, set class properties
-//     */
-//    public ${name}() {
-//        
-//    }
-//     
-//    /**
-//     * String representation of this object
-//     *
-//     * @return The object represented as a String
-//     */
-//    @Override
-//    public String toString() {
-//        return "${name}: " + super.toString();
-//    }
-//   
-//    /**
-//     * Deep comparison, determines if two objects are "equal" in this context
-//     *
-//     * @param object the object to compare to
-//     * @return the objects are "equal" (true) or not (false)
-//     */
-//    @Override
-//    public boolean equals(Object object) {
-//        return super.equals(object);
-//    }
-//       
-//    /**
-//     * a Deep clone, creates a duplicate object using new memory
-//     *
-//     * @return a "clone" of the object using new memory
-//     */
-//    @Override
-//    public ${name} clone() {
-//        return this;
-//    }
-//    
-//}
 
 // </editor-fold>
