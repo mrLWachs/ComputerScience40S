@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
  
 /** 
  * RecursionTest.java - tests the concepts learned in this unit. Recursion is 
@@ -27,11 +29,29 @@ public class RecursionTest
      * Constructor method
      */
     public RecursionTest() {        
-        System.out.println("\nRecursion test started...\n");
+        System.out.println("Recursion test begins...");
+        
+        // When testing, think of three scenarios:
+            // 1) Typical case ("user"): do what they are told to do
+            // 2) Edge cases ("user"): they push the "edges"
+            // 3) Beyond the edges: "bad" users, trying to break things
+            
+        int answer = Calculator.factorial(5);
+        System.out.println("5 factorial = " + answer);
         
         
-                
-        System.out.println("\nRecursion test complete!\n");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        System.out.println("Recursion test complete!");
     }    
     
 }
