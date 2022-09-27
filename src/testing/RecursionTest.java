@@ -29,7 +29,7 @@ public class RecursionTest
      * Constructor method
      */
     public RecursionTest() {        
-        System.out.println("Recursion test begins...");
+        System.out.println("\nRecursion test starting...\n");
         
         // When testing, think of three scenarios:
             // 1) Typical case ("user"): do what they are told to do
@@ -42,16 +42,7 @@ public class RecursionTest
         
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        System.out.println("Recursion test complete!");
+        System.out.println("\nRecursion test complete!\n");
     }    
     
 }
