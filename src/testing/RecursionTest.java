@@ -36,11 +36,29 @@ public class RecursionTest
             // 2) Edge cases ("user"): they push the "edges"
             // 3) Beyond the edges: "bad" users, trying to break things
             
-        int answer = Calculator.factorial(5);
-        System.out.println("5 factorial = " + answer);
+        System.out.println("Recursive factorials............................");
+            
+        final int MIN = -1;
+        final int MAX = 50;
         
+        // Loop through a series of tests (going through all the "edge" cases)
+        for (int number = MIN; number <= MAX; number++) {
+            long answer = Calculator.factorial(number);
+            System.out.println(number + " factorial = " + answer);
+        }
+            
+        System.out.println("Recursive powers................................");
         
+        final int MIN_POWER = 0;
+        final int MAX_POWER = 10;
         
+        for (int base = MIN_POWER; base <= MAX_POWER; base++) {
+            for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+                long answer = Calculator.power(base,exponent);
+                System.out.println(base + " to the exponent " + exponent +
+                                   " = " + answer);
+            }
+        }
         
         System.out.println("\nRecursion test complete!\n");
     }    
