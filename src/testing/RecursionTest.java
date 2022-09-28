@@ -38,25 +38,28 @@ public class RecursionTest
             
         System.out.println("Recursive factorials............................");
             
-        final int MIN = -1;
-        final int MAX = 50;
-        
-        // Loop through a series of tests (going through all the "edge" cases)
-        for (int number = MIN; number <= MAX; number++) {
-            long answer = Calculator.factorial(number);
-            System.out.println(number + " factorial = " + answer);
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;
+                
+        // Loop through a series of tests (going through the "edge cases")
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            long answer = Calculator.factorial(i);
+            System.out.println(i + "\t factorial = \t" + answer);
         }
             
         System.out.println("Recursive powers................................");
         
         final int MIN_POWER = 0;
-        final int MAX_POWER = 10;
+        final int MAX_POWER =  10;
         
-        for (int base = MIN_POWER; base <= MAX_POWER; base++) {
-            for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
-                long answer = Calculator.power(base,exponent);
-                System.out.println(base + " to the exponent " + exponent +
-                                   " = " + answer);
+        // Testing all the exponents (edges)
+        for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+            // Nested loop increasing the bases (to the edges)
+            for (int base = MIN_POWER; base <= MAX_POWER; base++) {
+                // Calculate (test this case) and display the test results
+                double answer = Calculator.power(base, exponent);
+                System.out.println(base     + " to the exponent " +
+                                   exponent + " = "               + answer);                
             }
         }
         
