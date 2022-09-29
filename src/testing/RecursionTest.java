@@ -49,7 +49,7 @@ public class RecursionTest
             
         System.out.println("Recursive powers................................");
         
-        final int MIN_POWER = 0;
+        final int MIN_POWER = -10;
         final int MAX_POWER =  10;
         
         // Testing all the exponents (edges)
