@@ -15,14 +15,14 @@ package testing.classes;
 public class Person 
 {
     
-    // Properties: (things about it, adjectives, descriptors).............
+    // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
     String name;
     int age;
     String gender;            
     boolean alive;
     
-    // Methods: (things it can do, verbs, actions)........................
+    // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
     void born() {
         
