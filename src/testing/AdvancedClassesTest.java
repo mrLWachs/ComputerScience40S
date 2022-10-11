@@ -29,6 +29,10 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)   
         Person person = new Person();
         
+        // The "Object" (in this case called "person" - lowercase "p") can also 
+        // be called a: instance, or even a "variable"
+        
+        
         
         
         System.out.println("\nAdvanced Classes testing complete!\n");
