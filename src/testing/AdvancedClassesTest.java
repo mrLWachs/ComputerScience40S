@@ -32,6 +32,34 @@ public class AdvancedClassesTest
         // The "Object" (in this case called "person" - lowercase "p") can also 
         // be called a: instance, or even a "variable"
         
+        // Call (invoke) one of our methods in this object ("instance") 
+        person.talk();
+        
+        // Try to change (modify) some of our properties
+        person.name = "Demitrius Demarkus the 3rd";
+        person.gender = "non-binary";
+        // person.age = 7; // Cannot do this, property is "locked" (private)
+        // person.alive = false; // Cannot do (access) this! (encapsulated)
+        
+        // Recall our method... (to see any changes)
+        person.talk();
+        
+        // Try to call (invoke) some of our other methods:
+        person.birthday();
+        person.die();
+        person.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

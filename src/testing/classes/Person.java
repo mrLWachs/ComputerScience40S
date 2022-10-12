@@ -17,10 +17,23 @@ public class Person
     
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
-    String  name;
-    int     age;
-    String  gender;            
-    boolean alive;
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global varaible) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
+    
+    public String name;
+    
+    private int age;        // Encapsulated property
+        
+    public String gender;            
+    
+    private boolean alive;  
+    
+    // This property ("alive") cannot be modified outside the class (it is
+    // encapsulated or "private"), except possibly through a method (like 
+    // the constructor method or the die method)
+    
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
@@ -49,7 +62,7 @@ public class Person
         gender    = "unidentified";
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
-        // for the name of the object (whcih will be created at a later time)
+        // for the name of the object (which will be created at a later time)
         this.name = name;
     }
     
@@ -70,14 +83,18 @@ public class Person
         this.gender = gender;
     }
     
-    void die() {
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (isAlive) through this method
+     */
+    public void die() {
         alive = false;
     }
     
     /**
      * Outputs information about the person to the screen
      */
-    void talk() {
+    public void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifes as " + gender);
         }
@@ -86,7 +103,13 @@ public class Person
         }
     }
     
-    void birthday() {
+    /**
+     * Overload method, ut a private method means it can be called (invoked)
+     * inside the class by other methods of the class. Private methods are
+     * rare and sometimes called "helper" or "utility" methods as they just 
+     * help other methods.
+     */
+    public void birthday() {
         age++;
     }
     
