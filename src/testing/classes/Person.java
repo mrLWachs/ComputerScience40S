@@ -41,7 +41,8 @@ public class Person
      * Constructor method is a method that has (1) the same name as the class,
      * (2) the name starts with a capital letter, (3) it has NO return type 
      * (not even the word "void"). These methods are called when the class is
-     * used to build (construct, instantiate) an object.
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
      */
     public Person() {
         alive  = true;
@@ -52,7 +53,8 @@ public class Person
     
     /**
      * Constructor method, sets the class properties. Constructor methods 
-     * should be public
+     * should be public. This is an overloaded constructor method. Overloaded 
+     * methods are methods with the same name, but different parameters.
      * 
      * @param name the new name for this person
      */
@@ -68,8 +70,9 @@ public class Person
     
     /**
      * Overloaded (methods with the same name, different parameters) 
-     * constructor method, sets the class properties. Constructor methods with
-     * NO parameters are called default constructors
+     * constructor method, sets the class properties by assigning the passed
+     * parameter value into the object's (class) property (global variable) of
+     * the same name using the keyword "this"
      * 
      * @param name the name of this person
      * @param age the age of this person

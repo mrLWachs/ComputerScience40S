@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.classes;
 
@@ -71,10 +72,19 @@ public class Student
         
     }
     
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
     public void talk() {
         
     }
     
+    /**
+     * This "secret" method is a private, encapsulated method. These types of 
+     * methods are sometimes called "helper" or "utility" methods as they can
+     * only be called by other methods inside this class
+     */
     private void secret() {
         
     }
