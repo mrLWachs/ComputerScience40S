@@ -29,7 +29,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
      */
     public static void main(String[] args) {
         
+        // We "call" a method on the line below:
         learnIntroToJava();
+        
+        // This means the code stops right on the line above, and "jumps" to 
+        // another part of our code (lower down) which is the "method"
+        // named "learnIntroToJava" and run all the code and then return back
+        
+        learnMethods();
         
     }
 
@@ -645,6 +652,19 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // code goes between these two brackets
     }
 
+    private static void learnMethods() {
+        System.out.println("Start Learning Methods...");
+        
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+        System.out.println("Completed Leanring Methods!");        
+    }
+
 }
 
 // NETBEANS TIPS:
@@ -711,6 +731,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
-
+// (16) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
 
 
