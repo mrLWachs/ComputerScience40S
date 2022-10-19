@@ -21,6 +21,16 @@ package testing.classes;
 */
 public class Student
 {
+    
+    private int number;    
+    private double gpa; // class properties (and inherited other properties)
+    
+    /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
+     */
+    public Book book;
+    
 
     /**
      * Default constructor, set class properties
@@ -28,5 +38,45 @@ public class Student
     public Student() {
         
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param gender the gender for this student
+     */
+    public Student(String name, int age, String gender) {
+        
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        
+    }
 
+    /**
+     * Slacking off lowers this student's average
+     */
+    public void slackOff() {
+        
+    }
+    
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        
+    }
+    
+    public void talk() {
+        
+    }
+    
+    private void secret() {
+        
+    }
+    
 }

@@ -12,11 +12,6 @@ package testing.classes;
 public class Book
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public Book() {
-        // This class can remain empty for this example...
-    }
+    // This class can remain empty for this example...
 
 }
