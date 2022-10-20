@@ -20,7 +20,7 @@ package testing.classes;
  * @author Mr. Wachs 
  * @since 13-Oct-2022
 */
-public class Student
+public class Student extends Person
 {
     
     private int number;    
@@ -37,7 +37,9 @@ public class Student
      * Default constructor, set class properties
      */
     public Student() {
-        
+        super();
+        gpa = 0;
+        book = new Book();
     }
     
     /**
@@ -48,36 +50,51 @@ public class Student
      * @param gender the gender for this student
      */
     public Student(String name, int age, String gender) {
-        
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the propoerties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name, age, gender);
+        // Now set the properties of this class...
+        gpa = 0.0;
+        book = new Book();
+        // Lets leave out student number...
+        // We will come back!
     }
     
     /**
      * Cramming is intense studying
      */
     public void cram() {
-        
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+        secret();
     }
 
     /**
      * Slacking off lowers this student's average
      */
     public void slackOff() {
-        
+        gpa -= 0.3;
     }
     
     /**
      * Studying raises this student's average
      */
     public void study() {
-        
+        gpa += 0.1;
     }
     
     /**
      * Talking overrides the same talk method of the parent class and outputs
      * additional information to the screen
      */
+    @Override
     public void talk() {
-        
+        System.out.println("I am a student");
+        System.out.println("\tNumber: \t" + number);
+        System.out.println("\tGPA: \t"    + gpa);        
     }
     
     /**
@@ -86,7 +103,7 @@ public class Student
      * only be called by other methods inside this class
      */
     private void secret() {
-        
+        gpa *= 1.0001;
     }
     
 }

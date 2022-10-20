@@ -3,6 +3,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
 /** 
  * AdvancedClassesTest.java - tests the concepts learned in this unit.
@@ -49,9 +50,16 @@ public class AdvancedClassesTest
         person.die();
         person.talk();
         
+        // Instantiate (create) an object of type Student...
+        Student student = new Student();
+        student.birthday();             // Inherited method from parent class
+        student.study();                // This method is only in student
+        student.cram();                 // This method modifies the private
+        student.slackOff();             // encapsulated property (gpa)
+        student.talk();                 // The over-ride method
         
-        
-        
+        // Instantiate a second student object
+        // Student 
         
         
         
