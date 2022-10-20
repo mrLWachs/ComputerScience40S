@@ -662,9 +662,20 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
-        System.out.println("Completed Leanring Methods!");        
+        // Code to "jump" to a method, is "calling" the method (method call)
+        drawStar();
+        
+        
+        
+        
+        
+        System.out.println("Completed Learning Methods!");        
     }
 
+    private static void drawStar() {
+        System.out.println("*");
+    }
+    
 }
 
 // NETBEANS TIPS:
