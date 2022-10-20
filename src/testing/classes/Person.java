@@ -22,13 +22,22 @@ public class Person
     // or not. Meaning is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
     
+    /**
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by anther class "using" this class
+     */
     public String name;
     
-    private int age;        // Encapsulated property
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private int age;
         
     public String gender;            
     
-    private boolean alive;  
+    private boolean alive;          // Encapsulated property
     
     // This property ("alive") cannot be modified outside the class (it is
     // encapsulated or "private"), except possibly through a method (like 
@@ -107,10 +116,7 @@ public class Person
     }
     
     /**
-     * Overload method, ut a private method means it can be called (invoked)
-     * inside the class by other methods of the class. Private methods are
-     * rare and sometimes called "helper" or "utility" methods as they just 
-     * help other methods.
+     * A person has a birthday (the age goes up by one)
      */
     public void birthday() {
         age++;
