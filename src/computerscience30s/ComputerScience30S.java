@@ -735,5 +735,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
-
-
+// (17) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+// (18) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
