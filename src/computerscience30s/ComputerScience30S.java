@@ -663,7 +663,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // repeating code
         
         // Code to "jump" to a method, is "calling" the method (method call)
-        drawStar();
+        writeStar();
         
         
         
@@ -672,7 +672,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("Completed Learning Methods!");        
     }
 
-    private static void drawStar() {
+    private static void writeStar() {
         System.out.println("*");
     }
     
@@ -752,3 +752,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      mouse to jump to the method (even ones we don't write)
 // (19) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+// (21) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+
