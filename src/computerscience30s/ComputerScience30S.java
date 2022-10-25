@@ -667,15 +667,13 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         
         
-        
-        
         System.out.println("Completed Learning Methods!");        
     }
 
     private static void writeStar() {
         System.out.println("*");
     }
-    
+
 }
 
 // NETBEANS TIPS:
