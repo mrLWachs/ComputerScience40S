@@ -665,6 +665,20 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // Code to "jump" to a method, is "calling" the method (method call)
         writeStar();
         
+        // Call it again
+        writeStar();
+        
+        // When we call a method, we place "data" (information) inside the
+        // round brackets and that data is "passed" (sending) over to the 
+        // method. The data being passed is tecehnically called the "argument"
+        // and the data being recieved is called the "parameter(s)". You can
+        // always change the arguement.
+        
+        write("Hippopotamus");
+        
+        write("Humogonous");
+        write("creative");
+        write("Spider-man");
         
         
         System.out.println("Completed Learning Methods!");        
@@ -674,7 +688,23 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("*");
     }
 
+    private static void write(String thing) {
+        // Information (data) "passed" to this method is called the parameter,
+        // if you use the lightbulb to write this method, you should (do this 
+        // first) rewrite the name of that parameter
+        System.out.println(thing);
+    }
+
 }
+
+
+
+
+
+
+
+
+
 
 // NETBEANS TIPS:
 // ==============
