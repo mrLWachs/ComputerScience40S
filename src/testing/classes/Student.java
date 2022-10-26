@@ -92,6 +92,7 @@ public class Student extends Person
      */
     @Override
     public void talk() {
+        super.talk();                           // Invoking super class method
         System.out.println("I am a student");
         System.out.println("\tNumber: \t" + number);
         System.out.println("\tGPA: \t"    + gpa);        

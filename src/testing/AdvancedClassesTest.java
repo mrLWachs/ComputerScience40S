@@ -59,8 +59,8 @@ public class AdvancedClassesTest
         student.talk();                 // The over-ride method
         
         // Instantiate a second student object
-        // Student 
-        
+        Student keyAndPeele = new Student("Hingle McCringleberry",17,"male");
+        keyAndPeele.talk();
         
         
         
