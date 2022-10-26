@@ -688,7 +688,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         writeLotsOf("Problems", 99);
         
         
-        
         System.out.println("Completed Learning Methods!");        
     }
 
