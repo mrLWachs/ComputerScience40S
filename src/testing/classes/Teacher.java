@@ -37,7 +37,15 @@ public class Teacher extends Person
      * @param name the name for this Teacher
      */
     public Teacher(String name) {
-        
+        super(name, 40, "teacher");         // Call to the super-constructor
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
+        MAX   = 100;                        // Set the constant to be locked
+        count = 0;                          // Set a variable to start
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size
+        students = new Student[MAX];
     }
 
 }
