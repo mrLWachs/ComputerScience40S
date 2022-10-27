@@ -47,5 +47,21 @@ public class Teacher extends Person
         // it is declared as arrays are locked into that maximum size
         students = new Student[MAX];
     }
+    
+    /**
+     * Adds a new student to this teacher
+     * 
+     * @param student the student object to add
+     */
+    public void add(Student student) {
+        
+    }
 
+    /**
+     * Teaches all the students this teacher has an association with by making
+     * them study (and makes all the students "smarter")
+     */
+    public void teach() {
+        
+    }
 }
