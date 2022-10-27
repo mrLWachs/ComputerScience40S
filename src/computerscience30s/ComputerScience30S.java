@@ -691,14 +691,40 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // previous methods needed information (inputs) as parameters or 
         // empty brackets () if they did not need information passed
         
+        int number = giveMeNumber();
+        
+        write("Number is " + number);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("Completed Learning Methods!");        
     }
 
+    
+    
+    
+    
+    /**
+     * Write a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
-
+    
+    /**
+     * Writes something on the screen
+     * 
+     * @param thing the something to write
+     */
     private static void write(String thing) {
         // Information (data) "passed" to this method is called the parameter,
         // if you use the lightbulb to write this method, you should (do this 
@@ -706,6 +732,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println(thing);
     }
 
+    /**
+     * Writes something on the screen multiple times
+     * 
+     * @param thing the something to write
+     * @param times how many times to write it
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // if it has more than one parameter, they are separated by commas
@@ -713,6 +745,23 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             write(thing);
         }
     }
+
+    private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or they can have
+        // ONE output which means the method will "return" (the keyword to use)
+        // that data type defined in the method signature line
+        return random(1, 10);
+    }
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;
+        return (int)number;
+    }
+    
+    
 
 }
 
