@@ -66,9 +66,11 @@ public class AdvancedClassesTest
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Professor Snape");
         teacher.add(student);           // Associate object through method
+        teacher.add(keyAndPeele);       // Add another student object
         teacher.teach();                // Effect associated objects
         teacher.talk();                 // Inherited method invoked        
         student.talk();                 // Test the teach method
+        keyAndPeele.talk();              
         
         
         
