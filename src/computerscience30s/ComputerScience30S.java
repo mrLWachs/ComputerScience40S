@@ -695,17 +695,13 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         write("Number is " + number);
         
+        // Overloaded methods are methods with the smae name, BUT different
+        // parameters / arguments
         
+        output("Hello");
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        output("Good-bye","Learning Methods");
+                
         System.out.println("Completed Learning Methods!");        
     }
 
@@ -773,9 +769,30 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         double number = (H - L + 1) * seed + L;
         return (int)number;
     }
-    
-    
 
+    /**
+     * Display text in a dialog
+     * 
+     * @param text the text to display
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+
+    /**
+     * Display text in a dialog with a title at the top of that dialog
+     * 
+     * @param text the text to display
+     * @param title what to show at the top of the dialog
+     */
+    private static void output(String text, String title) {
+        // Overloaded methods are methods with the same name, BUT diferent 
+        // parameter(s) / arguement(s) so we know which version of the 
+        // method to call
+        JOptionPane.showMessageDialog(null, text, title, 
+                JOptionPane.PLAIN_MESSAGE);
+    }
+    
 }
 
 
