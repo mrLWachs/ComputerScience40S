@@ -4,6 +4,7 @@ package testing;
 
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 /** 
  * AdvancedClassesTest.java - tests the concepts learned in this unit.
@@ -62,8 +63,12 @@ public class AdvancedClassesTest
         Student keyAndPeele = new Student("Hingle McCringleberry",17,"male");
         keyAndPeele.talk();
         
-        
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Professor Snape");
+        teacher.add(student);           // Associate object through method
+        teacher.teach();                // Effect associated objects
+        teacher.talk();                 // Inherited method invoked        
+        student.talk();                 // Test the teach method
         
         
         
