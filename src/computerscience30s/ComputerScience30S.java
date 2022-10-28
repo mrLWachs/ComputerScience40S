@@ -746,6 +746,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 10
+     */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or they can have
         // ONE output which means the method will "return" (the keyword to use)
@@ -753,6 +758,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         return random(1, 10);
     }
     
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to the the low and greater
+     * than or equal to the high
+     */
     private static int random(int low, int high) {
         double seed   = Math.random();
         double L      = (double)low;
