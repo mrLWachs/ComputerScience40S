@@ -72,6 +72,39 @@ public class AdvancedClassesTest
         student.talk();                 // Test the teach method
         keyAndPeele.talk();              
         
+        // The Object class (parent class of all classes)
+        
+        // All classes (including ones we create) inherit from the object class
+        // which is the parent (super) class of all classes    
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = object2;
+        
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
+        
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
+        
+        // This method is inherited by all sub classes (children), for example: 
+        System.out.println("Person  = " + person.toString());
+        System.out.println("Student = " + student.toString());
+        System.out.println("Teacher = " + teacher.toString());
+        
+        
+        
+        
+        
+        
+        
         
         
         
