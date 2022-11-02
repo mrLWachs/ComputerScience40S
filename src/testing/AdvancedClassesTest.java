@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+import javax.swing.JOptionPane;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -98,6 +99,34 @@ public class AdvancedClassesTest
         System.out.println("Person  = " + person.toString());
         System.out.println("Student = " + student.toString());
         System.out.println("Teacher = " + teacher.toString());
+        
+        // Seeing the object class as the parent class of classes we don't write
+        String string = new String("squirrel");
+        System.out.println("String = " + string.toString());
+        // The string class over-rides the toString() method here
+        
+        // Another "built-in" object...
+        JOptionPane joptionpane = new JOptionPane();
+        System.out.println("JOptionPane = " + joptionpane.toString());
+        
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)         
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
