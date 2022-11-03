@@ -122,4 +122,28 @@ public class Person
         age++;
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return name + " is " + age + " identifes as " + gender;
+    }
+   
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // Shallow comparison (might look like this...)
+        // return true;
+        // We want a "deeper" comparison...
+        
+    }
+         
 }
