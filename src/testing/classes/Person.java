@@ -144,6 +144,38 @@ public class Person
         // return true;
         // We want a "deeper" comparison...
         
+        // First need to "cast" the object parameter into a "Person" object
+        Person that = (Person)object;
+        // Compare the things (properties) we want to compare
+        if (this.alive != that.alive)         return false;
+        if (this.age   != that.age)           return false;
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;        
+        // We made it through all the above if checks
+        return true;
     }
          
+    
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // Shallow clone would be code like:
+        // return this;
+        
+        // Deep clone could look like:
+        // First create new memory for the clone
+        Person that = new Person();
+        // Now duplicate (clone) the properties
+        that.name   = this.name;
+        that.age    = this.age;
+        that.gender = this.gender;
+        that.alive  = this.alive;        
+        // Finally return the copied (cloned) new object
+        return that;
+    }
+    
 }

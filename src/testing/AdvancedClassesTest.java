@@ -137,6 +137,15 @@ public class AdvancedClassesTest
         // template so those methods are always over-ridden in every new class 
         // created (see the comment in "ComputerScience40S.java" to do this). 
         
+        // Testing the clone() method:
+        Person clonePerson = person.clone();
+        System.out.println("Person is " + person.toString());
+        System.out.println("Clone  is " + clonePerson.toString());
+        if (person.equals(clonePerson)) System.out.println("Clone is ==");
+        
+        // Change one of the properties of our second object
+        clonePerson.birthday();
+        if (person.equals(clonePerson)) System.out.println("Clone is still ==");
         
         
         
