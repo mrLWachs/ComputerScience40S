@@ -32,6 +32,13 @@ public class Student extends Person
      */
     public Book book;
     
+    /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
+    
 
     /**
      * Default constructor, set class properties
@@ -40,6 +47,9 @@ public class Student extends Person
         super();
         gpa = 0;
         book = new Book();
+        number = 1;
+        // Change ("mutate") the static ("shared") property ("global variable")
+        total++;
     }
     
     /**
@@ -58,8 +68,8 @@ public class Student extends Person
         // Now set the properties of this class...
         gpa = 0.0;
         book = new Book();
-        // Lets leave out student number...
-        // We will come back!
+        number = 1;
+        total++;
     }
     
     /**
@@ -105,6 +115,37 @@ public class Student extends Person
      */
     private void secret() {
         gpa *= 1.0001;
+    }
+    
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Student: " + super.toString() + " average is " + gpa;
+    }
+   
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        return super.equals(object);
+    }
+       
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        return (Student)super.clone();
     }
     
 }

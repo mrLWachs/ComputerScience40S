@@ -147,6 +147,44 @@ public class AdvancedClassesTest
         clonePerson.birthday();
         if (person.equals(clonePerson)) System.out.println("Clone is still ==");
         
+        // Now we will do the same thing to the student class and over-ride the
+        // toString(), equals(), and clone() methods we inherited from the 
+        // object class:
+        Student student1 = new Student("Name1",10,"Student1");
+        Student student2 = new Student("Name2",20,"Student2");
+        Student student3 = new Student("Name3",30,"Student3");
+        
+        // Use methods to alter (change, modify, mutate) the encapsulated
+        // (inside the class) property through a method        
+        student1.slackOff();
+        student2.study();
+        student3.cram();
+        
+        // When doing an output (like System.out... you "can" call "toString()"
+        // but it often calls it automatically for you        
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
+        
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
+        
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable
+        
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
