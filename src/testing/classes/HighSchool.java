@@ -9,7 +9,7 @@ package testing.classes;
  * @author Mr. Wachs
  * @since 2-Nov-2022, 11:40:39 AM
  */
-public class HighSchool 
+public class HighSchool extends Student
 {
 
     /**

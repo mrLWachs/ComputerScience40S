@@ -3,6 +3,7 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.HighSchool;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -40,7 +41,8 @@ public class AdvancedClassesTest
         
         // Try to change (modify) some of our properties
         person.name = "Demitrius Demarkus the 3rd";
-        person.gender = "non-binary";
+        // person.gender = "non-binary";
+        person.setGender("non-binary");
         // person.age = 7; // Cannot do this, property is "locked" (private)
         // person.alive = false; // Cannot do (access) this! (encapsulated)
         
@@ -178,13 +180,30 @@ public class AdvancedClassesTest
         System.out.println("S2 total = " + student2.total);
         System.out.println("S3 total = " + student3.total);
         
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        person1.endTheWorld();
+        teacher.endTheWorld();
+        student.endTheWorld();
         
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
+        HighSchool.endTheWorld();
         
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
         
-        
-        
-        
-        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
         
         
         

@@ -35,9 +35,15 @@ public class Person
      */
     private int age;
         
-    public String gender;            
+    private String gender;            
     
-    private boolean alive;          // Encapsulated property
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean alive;          // Encapsulated property
     
     // This property ("alive") cannot be modified outside the class (it is
     // encapsulated or "private"), except possibly through a method (like 
@@ -178,4 +184,47 @@ public class Person
         return that;
     }
     
+    /**
+     * Accessor method (or "getters") that gives you (or 'reads') the age of 
+     * this person (which is a private property of this class which cannot 
+     * be read outside the class)
+     * 
+     * @return the person's current age value to "see" (access)
+     */
+    public int getAge() {
+        return age;
+    }
+    
+    /**
+     * Accessor method (or "getters") that 'gives' you (or 'reads') the gender 
+     * of this person (which is a private property of this class which cannot 
+     * be read outside the class)
+     * 
+     * @return the person's current gender to "see" (access)
+     */
+    public String getGender() {
+        return gender;
+    }
+    
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
+     * 
+     * @param gender the new gender to set (mutate) the property into
+     */
+    public void setGender(String gender) {
+        // A programmer could potentially write error checking code here..
+        this.gender = gender;
+    }
+    
+    /**
+     * A "static" method means the method is "shared" by all objects of the 
+     * class - it can also be called from the class itself, you can use the 
+     * class name then a dot to call static methods
+     */
+    public static void endTheWorld() {
+        System.out.println("Boom!!!!");
+    }
+        
 }
