@@ -4,7 +4,11 @@ package testing.classes;
 
  
 /**
- * HighSchool.java - description
+ * HighSchool.java - represents a high school student person. Before creating
+ * this class we altered the NetBeans template (Tools - Templates) for a 
+ * Java class so that the toString(), clone(), and equals() methods are now 
+ * always part of any new class we create (whether or not we choose to over-ride
+ * those methods).
  *
  * @author Mr. Wachs
  * @since 2-Nov-2022, 11:40:39 AM

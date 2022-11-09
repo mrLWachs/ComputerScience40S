@@ -180,6 +180,15 @@ public class AdvancedClassesTest
         System.out.println("S2 total = " + student2.total);
         System.out.println("S3 total = " + student3.total);
         
+        // Mutate the static variable of one instance
+        student1.total = 3;
+        
+        // Output all three again - showing that it changed (mutated) all
+        // three instances since the variable is static (shared)
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
+        
         // Now we will call a static (shared) method from the objects 
         // (instances) of the Person class and the other classes that extend
         // ("is a") from Person and inherited this method
