@@ -235,31 +235,31 @@ public class AdvancedClassesTest
         System.out.println(mrWachs);
         System.out.println(piper);
         System.out.println(husky);
-        System.out.println(athlete.toString());
+        System.out.println(athlete);
         
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
         
         // Have person objects (instances of the Person class) and all 
         // children objects (classes that inherit from Person) will attend
-        // the meeting - through the concept of polymorphism   
-        meeting.attend(athlete);
-        meeting.attend(clonePerson);
-        meeting.attend(diskJocky);
-        meeting.attend(doctor);
-        meeting.attend(husky);
-        meeting.attend(keyAndPeele);
-        meeting.attend(mrWachs);
+        // the meeting - through the concept of polymorphism 
         meeting.attend(person);
-        meeting.attend(teacher);        
+        meeting.attend(student);
+        meeting.attend(keyAndPeele);
+        meeting.attend(teacher); 
         meeting.attend(person1);
         meeting.attend(person2);
         meeting.attend(person3);
-        meeting.attend(piper);
-        meeting.attend(student);
+        meeting.attend(clonePerson);
         meeting.attend(student1);
         meeting.attend(student2);
         meeting.attend(student3);
+        meeting.attend(doctor);
+        meeting.attend(diskJocky);
+        meeting.attend(mrWachs);
+        meeting.attend(piper);
+        meeting.attend(husky);
+        meeting.attend(athlete);
         
         // Need to "hold a meeting" of all members
         meeting.hold();
