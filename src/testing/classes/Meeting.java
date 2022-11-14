@@ -12,42 +12,45 @@ package testing.classes;
 public class Meeting 
 {
 
+    // The modifier words "private" encapsulates, "int" defines the data type
+    // of this name (or "variable", "property", "field")
+    private int count;
+    
+    // The modifier "final" turns the field into a constant
+    private final int MAX;
+    
+    // Array (because of the square brackets) of class level objects, the
+    // Meeting "has a" (associated with) Person (an array of them)
+    private Person[] members;
+    
+    
     /**
      * Default constructor, set class properties
      */
     public Meeting() {
-        
+        MAX   = 500;
+        count = 0;
+        // Need to "build" (construct, instantiate) our array
+        members = new Person[MAX];
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array)
     }
      
     /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
+     * Have a person attend the meeting
+     * 
+     * @param person the person object to attend
      */
-    @Override
-    public String toString() {
-        return "Meeting: " + super.toString();
+    public void attend(Person person) {
+        
     }
-   
+    
     /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
+     * Hold the meeting for all members 
      */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public Meeting clone() {
-        return this;
+    public void hold() {
+        
     }
     
 }

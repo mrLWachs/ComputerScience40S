@@ -79,4 +79,14 @@ public class Teacher extends Person
         }        
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Teacher: " + super.toString();
+    }
+    
 }

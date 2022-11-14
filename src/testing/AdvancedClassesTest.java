@@ -3,8 +3,15 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.Athlete;
+import testing.classes.DiskJocky;
+import testing.classes.Doctor;
 import testing.classes.HighSchool;
+import testing.classes.Husky;
+import testing.classes.Meeting;
+import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -213,6 +220,57 @@ public class AdvancedClassesTest
         // When we call static methods from the instances, the 
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
+        
+        // Instantiate some other classes: 
+        Doctor    doctor    = new Doctor();
+        DiskJocky diskJocky = new DiskJocky();
+        MrWachs   mrWachs   = new MrWachs();
+        Piper     piper     = new Piper();
+        Husky     husky     = new Husky();
+        Athlete   athlete   = new Athlete();
+        
+        // And output those objects:
+        System.out.println(doctor);
+        System.out.println(diskJocky);
+        System.out.println(mrWachs);
+        System.out.println(piper);
+        System.out.println(husky);
+        System.out.println(athlete.toString());
+        
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
+        
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism   
+        meeting.attend(athlete);
+        meeting.attend(clonePerson);
+        meeting.attend(diskJocky);
+        meeting.attend(doctor);
+        meeting.attend(husky);
+        meeting.attend(keyAndPeele);
+        meeting.attend(mrWachs);
+        meeting.attend(person);
+        meeting.attend(teacher);        
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
+        meeting.attend(piper);
+        meeting.attend(student);
+        meeting.attend(student1);
+        meeting.attend(student2);
+        meeting.attend(student3);
+        
+        // Need to "hold a meeting" of all members
+        meeting.hold();
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
