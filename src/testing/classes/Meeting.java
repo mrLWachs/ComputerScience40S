@@ -84,8 +84,22 @@ public class Meeting
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
             if (member != null) {
-                
-                message += "\n" + member.toString();
+                message += "\n";            // Line break  
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is true if the object 'comes from' that
+                // class (is a instance of that class type)  
+                if (member instanceof Person)     message += "\t Person";
+                if (member instanceof Student)    message += "\t Student";
+                if (member instanceof Teacher)    message += "\t Teacher";
+                if (member instanceof Doctor)     message += "\t Doctor";
+                if (member instanceof DiskJocky)  message += "\t DiskJocky";
+                if (member instanceof MrWachs)    message += "\t MrWachs";
+                if (member instanceof HighSchool) message += "\t HighSchool";
+                if (member instanceof Husky)      message += "\t Husky";
+                if (member instanceof Piper)      message += "\t Piper";
+                if (member instanceof Athlete)    message += "\t Athlete";                
+                message += "\t" + member.toString();
             }
         }
         
@@ -93,6 +107,9 @@ public class Meeting
         // for (int i = 0; i < members.length; i++) {
         //    Person member = members[i];
         // }
+        
+        // Get data from our static (shared) property of Student (variable)
+        message += "\nWith " + Student.total + " students present!";        
         
         // Finally output that message
         System.out.println(message);
