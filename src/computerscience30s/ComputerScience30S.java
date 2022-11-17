@@ -36,8 +36,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // another part of our code (lower down) which is the "method"
         // named "learnIntroToJava" and run all the code and then return back
         
-        learnMethods();
-        
+//        learnMethods();
+        learnArrays();
     }
 
     private static void learnIntroToJava() {
@@ -705,10 +705,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         System.out.println("Completed Learning Methods!");        
     }
 
-    
-    
-    
-    
     /**
      * Write a star on the screen
      */
@@ -791,6 +787,17 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning Arrays...");
+        
+        
+        
+        System.out.println("Completed Learning arrays!");
     }
     
 }
