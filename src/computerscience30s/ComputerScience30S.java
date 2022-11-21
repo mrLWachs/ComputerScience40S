@@ -830,6 +830,24 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         //       +-------+-------+-------+-------+-------+
         //           0       1       2       3       4
         
+        // Now we fill (assign) values to all individual spots (indices)
+        array[0] = 25;
+        array[1] = 250;
+        array[2] = 2;
+        array[3] = -25;
+        array[4] = 0;
+        
+        //       +-------+-------+-------+-------+-------+
+        // array |   25  |  250  |   2   |  -25  |   0   | (now filled)
+        //       +-------+-------+-------+-------+-------+
+        //           0       1       2       3       4
+        
+        // These next lines would be errors when the code runs:
+        // array[5] = 25;
+        // array[-1] = 25;
+        // They would be "out of bounds" errors (or "range" error)
+        
+        
         
         
         
