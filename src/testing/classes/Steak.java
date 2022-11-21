@@ -9,7 +9,7 @@ package testing.classes;
  * @author Mr. Wachs
  * @since 17-Nov-2022, 11:35:45 AM
  */
-public class Steak 
+public class Steak extends Food
 {
 
     /**
@@ -18,36 +18,18 @@ public class Steak
     public Steak() {
         
     }
+
+    @Override
+    public void prepare() {
+    }
+
+    @Override
+    public boolean hasSpoiled() {
+    }
+
+    @Override
+    public void smell(int seconds) {
+    }
      
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "Steak: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public Steak clone() {
-        return this;
-    }
     
 }

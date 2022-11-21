@@ -4,50 +4,54 @@ package testing.classes;
 
  
 /**
- * Apple.java - description
+ * Apple.java - represents an apple. This class inherits from the abstract 
+ * class all its properties and methods. However, the abstract methods are 
+ * FORCED to be over-ridden in this class (now we move from the 'abstract' to
+ * the 'concrete') and the methods MUST now be given a method body (now you
+ * define HOW for this particular food object). Regular methods can still be
+ * over-ridden as well.
  *
  * @author Mr. Wachs
  * @since 17-Nov-2022, 11:35:39 AM
  */
-public class Apple 
+public class Apple extends Food
 {
-
+    
     /**
      * Default constructor, set class properties
      */
     public Apple() {
-        
+        super(4);                   // Call super-constructor, passing the group
+        super.flavour = "Sweet";    // Modifying our protected property
     }
-     
+
     /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
+     * Prepares food to be eaten
      */
     @Override
-    public String toString() {
-        return "Apple: " + super.toString();
+    public void prepare() {
+        System.out.println("Wash it first");
     }
-   
+
     /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
+     * Determines if this 'apple' item has spoiled
+     * 
+     * @return the food has spoiled (true) or not (false)
      */
     @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
+    public boolean hasSpoiled() {
+        return super.eatable;       // Access public property
     }
-       
+
     /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
+     * Smell the 'apple' item
+     * 
+     * @param seconds how many seconds to smell it
      */
     @Override
-    public Apple clone() {
-        return this;
+    public void smell(int seconds) {
+        if (seconds > 3) super.eatable = false;
+        else             super.eatable = true;
     }
-    
+
 }
