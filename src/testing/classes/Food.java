@@ -50,41 +50,50 @@ public abstract class Food
     
 
     /**
-     * Default constructor, set class properties
+     * Constructor, set class properties
+     * 
+     * @param group which food group this food item belongs to
      */
-    public Food() {
-        
+    public Food(int group) {
+        this.group = group;     // Assign parameter to private property
     }
      
     /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
+     * Prepares food to be eaten. By adding the modifier "abstract" to a method,
+     * it makes an abstract method - means the method has no code for the 
+     * body (no curly brackets) and ends in a semi-colon (it can have
+     * parameters and it can return a value)
      */
-    @Override
-    public String toString() {
-        return "Food: " + super.toString();
-    }
-   
+    public abstract void prepare();
+
     /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
+     * Determines if this 'food' item has spoiled
+     * 
+     * @return the food has spoiled (true) or not (false)
      */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
+    public abstract boolean hasSpoiled();
+    
     /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
+     * Smells the 'food' item
+     * 
+     * @param seconds how many seconds to smell it
      */
-    @Override
-    public Food clone() {
-        return this;
+    public abstract void smell(int seconds);
+    
+    /**
+     * How to eat this food object - note: abstract classes can ALSO have
+     * "regular" methods and regular properties (not just abstract methods)
+     * 
+     * @return The output of how eating this "food" item went
+     */
+    public String eat() {
+        if (hasSpoiled()) {
+            return "Do not eat!";
+        }
+        else {
+            prepare();
+            return GROUPS[group] + ", it was " + flavour;
+        }
     }
     
 }
