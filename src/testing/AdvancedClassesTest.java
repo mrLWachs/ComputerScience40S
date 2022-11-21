@@ -264,11 +264,12 @@ public class AdvancedClassesTest
         // Need to "hold a meeting" of all members
         meeting.hold();
         
-        // Abstract classes can NOT ever be instatntiated, for example:
+        // Abstract classes can NOT ever be instantiated, for example:
         // HighSchool highSchool = new HighSchool();
+        // Food food = new Food();
         
-        
-        
+        // Instantiate an object from a child class of an abstract class
+        // using the abstract methods (that were made 'concrete') in that class 
         
         
         
