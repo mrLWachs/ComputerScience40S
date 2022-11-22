@@ -226,5 +226,15 @@ public class Person
     public static void endTheWorld() {
         System.out.println("Boom!!!!");
     }
+    
+    /**
+     * Consumes the passed food object (it will be a child of the Food class 
+     * object) by outputting it to the screen
+     * 
+     * @param food the abstract food object to consume
+     */
+    public void consume(Food food) {
+        System.out.println(name + " is eating " + food.eat());
+    }
         
 }

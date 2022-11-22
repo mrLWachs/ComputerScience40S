@@ -3,6 +3,7 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.DiskJocky;
 import testing.classes.Doctor;
@@ -12,6 +13,7 @@ import testing.classes.Meeting;
 import testing.classes.MrWachs;
 import testing.classes.Person;
 import testing.classes.Piper;
+import testing.classes.Steak;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -271,11 +273,19 @@ public class AdvancedClassesTest
         // Instantiate an object from a child class of an abstract class
         // using the abstract methods (that were made 'concrete') in that class 
         
+        Apple apple = new Apple();
+        apple.smell(5);
         
+        Steak steak = new Steak();
+        steak.smell(3);
         
+        // Call the polymorphic method which accepts the abstract object (Food)
+        // as an argument. Since the abstract class cannot be instantiated,
+        // only children objects from the abstract class can be arguments
+        // (in other words, apple and steak instances)
         
-        
-        
+        husky.consume(apple);
+        mrWachs.consume(steak);
         
         
         
