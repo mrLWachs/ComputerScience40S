@@ -53,5 +53,15 @@ public class Apple extends Food
         if (seconds > 3) super.eatable = false;
         else             super.eatable = true;
     }
+    
+    /**
+     * How to eat this apple object 
+     * 
+     * @return The output of how eating this 'apple' item went
+     */
+    @Override
+    public String eat() {
+        return "Apple from " + super.eat();
+    }
 
 }
