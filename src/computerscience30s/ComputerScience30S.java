@@ -908,6 +908,37 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             "Quit"
         };
         
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
+        int[] numbers = new int[100];
+        
+        // Change (asign) a index (spot)
+        numbers[99] = 333;
+        
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        // Output that spot
+        System.out.println(numbers[99]);
+        
+        // Like regular variables, we can use individual subscripts (spots)
+        // to preform equations (for example)
+        
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
+        
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
+        
+        // Specifically, the FOR loop!
+        
+        // for loops were literally built for arrays
+        
+        
         
         
         
