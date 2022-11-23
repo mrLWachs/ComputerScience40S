@@ -41,9 +41,10 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      
     /**
      * Default constructor, set class properties
-     *  
      */
     public Athlete() {
+        // To have one class constructor call another class constructor, use
+        // the keyword "this" with round brackets 
         this("Jock",15);
     }
             
