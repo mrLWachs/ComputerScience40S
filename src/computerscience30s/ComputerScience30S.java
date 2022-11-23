@@ -961,7 +961,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) and/or OUTPUT from a method
         
-        output(array);
+        output(array);      // Send a array to a method as a parameter
         
         
         
