@@ -938,6 +938,31 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // for loops were literally built for arrays
         
+        for (int i = 0; i < 100; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
+        
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example     
+        
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
+        
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
