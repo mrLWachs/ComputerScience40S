@@ -9,14 +9,34 @@ package testing.classes;
  * @author Mr. Wachs
  * @since 9-Nov-2022, 11:28:38 AM
  */
-public class Athlete extends Husky
+public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxing
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public Athlete() {
+    private boolean haveForm;           // Encapsulated properties (variables)
+    private String  opponentName;
+    private int     homeScore;
+    private int     opponentScore;
+    private boolean champion;
+    
+    private final boolean WE_WON  = true;   // Encapsulated constants
+    private final boolean WE_LOST = false;
         
+    
+    /**
+     * Constructor, set class properties
+     * 
+     * @param name
+     * @param age
+     */
+    public Athlete(String name, int age) {
+        super();
+        super.name = name;
+        super.setAge(age);
+        opponentName  = "";
+        homeScore     = 0;
+        opponentScore = 0;
+        haveForm      = false;
+        champion      = WE_LOST;
     }
      
     /**
@@ -48,6 +68,46 @@ public class Athlete extends Husky
     @Override
     public Athlete clone() {
         return this;
+    }
+
+    @Override
+    public void sign() {
+    }
+
+    @Override
+    public boolean haveYouGotItSigned() {
+    }
+
+    @Override
+    public void score(String name) {
+    }
+
+    @Override
+    public void endOfPeriod(int period) {
+    }
+
+    @Override
+    public void setName(String name) {
+    }
+
+    @Override
+    public void setOpponent(String name) {
+    }
+
+    @Override
+    public boolean didIWin() {
+    }
+
+    @Override
+    public void takePiece() {
+    }
+
+    @Override
+    public void punch() {
+    }
+
+    @Override
+    public void endOfRound(int round) {
     }
     
 }

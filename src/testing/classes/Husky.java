@@ -46,5 +46,5 @@ public class Husky extends HighSchool
     public Husky clone() {
         return this;
     }
-    
+
 }

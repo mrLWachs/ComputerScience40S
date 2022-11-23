@@ -237,4 +237,8 @@ public class Person
         System.out.println(name + " is eating " + food.eat());
     }
         
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
 }
