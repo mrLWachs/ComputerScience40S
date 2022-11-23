@@ -25,20 +25,28 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
     /**
      * Constructor, set class properties
      * 
-     * @param name
-     * @param age
+     * @param name the name for this Athlete   
+     * @param age the age for this Athlete  
      */
     public Athlete(String name, int age) {
-        super();
-        super.name = name;
-        super.setAge(age);
-        opponentName  = "";
+        super();                    // Call super-constructor
+        setName(name);              // Internal (encapsulated) mutator method
+        super.setAge(age);          // Super-class mutator method
+        opponentName  = "";         // Set encapsulated properties to defaults
         homeScore     = 0;
         opponentScore = 0;
         haveForm      = false;
         champion      = WE_LOST;
     }
      
+    /**
+     * Default constructor, set class properties
+     *  
+     */
+    public Athlete() {
+        this("Jock",15);
+    }
+            
     /**
      * String representation of this object
      *
@@ -70,44 +78,102 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
         return this;
     }
 
+    /**
+     * Signing the permission form
+     */
     @Override
     public void sign() {
+        
     }
 
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
     @Override
     public boolean haveYouGotItSigned() {
+        return true;
     }
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(String name) {
+        
     }
 
+    /**
+     * The passed period of hockey is over
+	 *
+     * @param period the period number
+     */
     @Override
     public void endOfPeriod(int period) {
+        
     }
-
+    
+    /**
+     * Mutator method, setting the name of the player
+     * 
+     * @param name 
+     */
     @Override
     public void setName(String name) {
+        
     }
 
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
     @Override
     public void setOpponent(String name) {
+        
     }
 
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
     @Override
     public boolean didIWin() {
+        return true;
     }
 
+    /**
+     * A team scoring a piece
+     * 
+     * @param name the name of the team who took a piece
+     */
     @Override
-    public void takePiece() {
+    public void takePiece(String name) {
+        
     }
 
+    /**
+     * A team scoring a punch
+     * 
+     * @param name the name of the team who punched
+     */
     @Override
-    public void punch() {
+    public void punch(String name) {
+        
     }
 
+    /**
+     * The passed round of Chess Boxing is over
+	 *
+     * @param round the round number
+     */
     @Override
     public void endOfRound(int round) {
+        
     }
     
 }

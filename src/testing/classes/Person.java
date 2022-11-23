@@ -237,6 +237,13 @@ public class Person
         System.out.println(name + " is eating " + food.eat());
     }
         
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
+     * 
+     * @param age the new age to set (mutate) the property into
+     */
     public void setAge(int age) {
         this.age = age;
     }
