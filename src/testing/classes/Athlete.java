@@ -84,7 +84,8 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void sign() {
-        
+        System.out.println(super.name + " has got it signed!");
+        haveForm = PermissionForm.SIGNED;
     }
 
     /**
@@ -94,7 +95,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public boolean haveYouGotItSigned() {
-        return true;
+        return haveForm;
     }
 
     /**
@@ -104,7 +105,9 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void score(String name) {
-        
+        System.out.println(name + " has scored a goal");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.equals(super.name))   homeScore++;        
     }
 
     /**
@@ -114,7 +117,12 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void endOfPeriod(int period) {
-        
+        String output = "End of period " + period;
+        output += " and the score is " + homeScore;
+        output += " for the "          + super.name;
+        output += " and "              + opponentScore;
+        output += " for the "          + opponentName;
+        System.out.println(output);
     }
     
     /**
@@ -124,7 +132,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void setName(String name) {
-        
+        super.name = name;
     }
 
     /**
@@ -134,7 +142,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void setOpponent(String name) {
-        
+        opponentName = name;
     }
 
     /**
@@ -144,7 +152,14 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public boolean didIWin() {
-        return true;
+        if (homeScore >= opponentScore) {
+            System.out.println(super.name + " wins!");
+            return WE_WON;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return WE_LOST;
+        }
     }
 
     /**
@@ -154,7 +169,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void takePiece(String name) {
-        
+        System.out.println(name + " has taken a piece");
     }
 
     /**
@@ -164,7 +179,9 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void punch(String name) {
-        
+        System.out.println(name + " has punched");
+        if (name.equals(opponentName)) opponentScore+=10;
+        if (name.equals(super.name))   homeScore+=10; 
     }
 
     /**
@@ -174,7 +191,12 @@ public class Athlete extends Husky implements PermissionForm, Hockey, ChessBoxin
      */
     @Override
     public void endOfRound(int round) {
-        
+        String output = "End of round " + round;
+        output += " and the score is " + homeScore;
+        output += " for the "          + super.name;
+        output += " and "              + opponentScore;
+        output += " for the "          + opponentName;
+        System.out.println(output);
     }
     
 }
