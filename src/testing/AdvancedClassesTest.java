@@ -305,14 +305,13 @@ public class AdvancedClassesTest
             if (jock.haveYouGotItSigned()) {            // Check if can play?
                 jock.score("Mickey");                   // Play hockey
                 jock.score("Mickey");
-                jock.score("Mickey");
                 jock.score("Warriors");
                 jock.takePiece("Mickey");               // Play chess
                 jock.takePiece("Warriors");
                 jock.takePiece("Warriors");
                 jock.punch("Mickey");                   // Box
                 jock.punch("Warriors");
-                jock.punch("Warriors");
+                jock.punch("Mickey");
                 jock.endOfPeriod(round);                // See the results...
                 jock.endOfRound(round);
             }
