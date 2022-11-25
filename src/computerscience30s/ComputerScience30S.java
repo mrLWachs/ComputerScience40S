@@ -964,6 +964,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         output(array);      // Send a array to a method as a parameter
         output(numbers);    // Call the method with a different argument
         output(coins);      // Overload the "output" method again
+        output(a);
         
         int[] randoms = random(1, 10, 50);
         output(randoms);
@@ -1142,4 +1143,12 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
 
