@@ -13,6 +13,7 @@ package testing.classes;
  * class is instantiated.
  *
  * @author Mr. Wachs
+ * @param <T> the generic type for the box's contents
  * @since 28-Nov-2022, 11:35:55 AM
  */
 public class Box <T>

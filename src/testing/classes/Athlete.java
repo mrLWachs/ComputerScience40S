@@ -4,7 +4,14 @@ package testing.classes;
 
  
 /**
- * Athlete.java - represents a Athlete Husky HighSchool Student Person
+ * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
+ * the keyword 'implements' in the class signature line, means this class 
+ * "follows the rules" of that interface. This will force the programmer to
+ * 'implement' (write) the abstract methods the were 'suggested' in that
+ * interface. This can be done in NetBeans with the light bulb. You can 
+ * implement ("follow the rules of") MULTIPLE interfaces (this cannot be done
+ * with classes - one class can only inherit/extends from one other class). To
+ * do multiple implementation, use a comma between interfaces.
  *
  * @author Mr. Wachs
  * @since 9-Nov-2022, 11:28:38 AM

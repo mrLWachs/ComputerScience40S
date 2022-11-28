@@ -219,6 +219,17 @@ public class Person
     }
     
     /**
+     * Mutator method (or "setters") that 'changes' the encapsulated property
+     * of this person (which is a private property of this class which cannot 
+     * be changed outside the class)
+     * 
+     * @param age the new age to set (mutate) the property into
+     */
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
+    /**
      * A "static" method means the method is "shared" by all objects of the 
      * class - it can also be called from the class itself, you can use the 
      * class name then a dot to call static methods
@@ -235,17 +246,6 @@ public class Person
      */
     public void consume(Food food) {
         System.out.println(name + " is eating " + food.eat());
-    }
-        
-    /**
-     * Mutator method (or "setters") that 'changes' the encapsulated property
-     * of this person (which is a private property of this class which cannot 
-     * be changed outside the class)
-     * 
-     * @param age the new age to set (mutate) the property into
-     */
-    public void setAge(int age) {
-        this.age = age;
     }
     
 }

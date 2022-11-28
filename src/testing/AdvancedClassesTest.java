@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required imports */
 import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
@@ -357,11 +358,11 @@ public class AdvancedClassesTest
         output(string1);
         output(athlete);
         
-        // Test the generic method on another object
+        // Test the generic method on another object...
         JOptionPane joptionPane = new JOptionPane();
         output(joptionPane);
         
-        // This line uses 'annonymous object'
+        // This line uses 'annonymous object'...
         output(new Object());
         
         // When using a class with a generic inside of it, and that
