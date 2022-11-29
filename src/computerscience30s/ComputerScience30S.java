@@ -40,6 +40,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         learnArrays();
     }
 
+    /**
+     * Learn the content of the introduction to Java unit (unit 1)
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
         
@@ -652,6 +655,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // code goes between these two brackets
     }
 
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start Learning Methods...");
         
