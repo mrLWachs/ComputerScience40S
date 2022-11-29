@@ -9,7 +9,12 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code 
  */
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /*
@@ -1055,11 +1060,39 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Use JOptionPane dialogs but with graphics:
         
+        // We start by having a "graphics" file (or "picture", "image" file) 
+        // ready by downloading it from the internet (for example). However, 
+        // when working with pictures and how they are named is crucial for
+        // working with graphics in code. You will need to be more deliberate
+        // with the name of the image and break it down like this:
         
+        // The "First" name of a file is also known as a path, directory, 
+        // folder, address, etc... (make sure to add two "\\" at the end)
+        String imageFirstName  = "C:\\Users\\lawrence.wachs\\"
+                               + "OneDrive - St. James-Assiniboia "
+                               + "School Division\\Desktop\\";
         
+        // The "Middle" name of a file that the user usually gives to the file
+        String imageMiddleName = "matrix";
         
+        // The "Last" name of a file is the type of file, or extension which
+        // usually a program does that for you
+        String imageLastName   = ".gif";
         
+        // All three names (first, middle, last) are combined to create a 
+        // file name - on any computer, no two files can have the exact same
+        // first middle and last names
+        String imageName = imageFirstName + imageMiddleName + imageLastName;
         
+        // Call a method to display a "fancy" dialog box...        
+        message(text1, "The Matrix", imageName);
+        
+        // Change the name variable to a "new" middle name but the same first 
+        // and last names
+        imageName = imageFirstName + "TicTacToe" + imageLastName;
+        
+        // Call the method with new arguments
+        message(text2, "Tic-Tac-Toe", imageName);
         
         System.out.println("Completed Learning arrays!");
     }
@@ -1153,6 +1186,69 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             text = text + "\n";     // Add a line break after each row
         }     
         return text;            // Return the filled up string
+    }
+
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param title the title at the top of the dialog
+     * @param imageName the full (first, middle, last) name of the image
+     */
+    private static void message(String text, String title, String imageName) {
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes')        
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)        
+        Color foreground = new Color(0,255,0);  // Bright green
+        
+        // Fonts are done the same way (import, declare them)        
+        Font font = new Font("Consolas", Font.PLAIN, 18);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
+        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer)         
+        Icon image = new ImageIcon(imageName);
+        
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)         
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object        
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title,
+                JOptionPane.PLAIN_MESSAGE,
+                image);
     }
     
 }
