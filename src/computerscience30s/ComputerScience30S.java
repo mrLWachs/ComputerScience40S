@@ -1212,7 +1212,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         Color foreground = new Color(0,255,0);  // Bright green
         
         // Fonts are done the same way (import, declare them)        
-        Font font = new Font("Consolas", Font.PLAIN, 18);
+        Font font = new Font("Courier New", Font.PLAIN, 18);
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
