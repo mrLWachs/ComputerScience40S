@@ -964,8 +964,8 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
             System.out.println(numbers[i]);
         }
         
-        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
-        // So if the array size changes, the loop adapts to it
+        // Tip: if you type "for" TAB, and then press TAB AGAIN it jumps to the 
+        // ending value, so if the array size changes, the loop adapts to it
         
         // Array can easily work with methods, the arrays can be sent into a 
         // method (as one of multiple parameters, or the only parameter), and 
@@ -1069,8 +1069,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // The "First" name of a file is also known as a path, directory, 
         // folder, address, etc... (make sure to add two "\\" at the end)
         String imageFirstName  = "C:\\Users\\lawrence.wachs\\"
-                               + "OneDrive - St. James-Assiniboia "
-                               + "School Division\\Desktop\\";
+                               + "OneDrive - St. James-Assiniboia School "
+                               + "Division\\Documents\\2022-2023\\Projects\\"
+                               + "Java\\ComputerScience30S\\";
         
         // The "Middle" name of a file that the user usually gives to the file
         String imageMiddleName = "matrix";
@@ -1087,11 +1088,11 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // Call a method to display a "fancy" dialog box...        
         message(text1, "The Matrix", imageName);
         
-        // Change the name variable to a "new" middle name but the same first 
+        // Change the name variable to a "new" middle name but the same first
         // and last names
         imageName = imageFirstName + "TicTacToe" + imageLastName;
         
-        // Call the method with new arguments
+        // Call the method with new agruments
         message(text2, "Tic-Tac-Toe", imageName);
         
         System.out.println("Completed Learning arrays!");
@@ -1205,17 +1206,30 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Using capital letters and importing (using the lightbulb) and a line
         // similar to the way we declare arrays, and using round brackets 
-        // (implies a method? - we will study in the next unit 'classes')        
+        // (implies a method? - we will study in the next unit 'classes') 
+        // Similar to "Random random = new Random();" in CS20S...
         Color background = new Color(0,0,0);
         // The three numbers in "Color" are for red, green and blue values 
-        // from 0 (no amount) up to 255 (the maximum amount of that color)        
+        // from 0 (no amount) up to 255 (the maximum amount of that color) 
         Color foreground = new Color(0,255,0);  // Bright green
         
-        // Fonts are done the same way (import, declare them)        
+        // Fonts are done the same way (import, declare and use options)
         Font font = new Font("Courier New", Font.PLAIN, 18);
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
+        
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)         
+        JTextArea area = new JTextArea();
+        
+        // Now we add the grahics "things" into that area, using methods built
+        // into the text area object...        
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
         
         // For image, we need an image file downloaded onto the computer and we  
         // need the NAME of that image (name includes the ending part or 
@@ -1226,31 +1240,20 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Create a "icon" for the image (icon is like a picturebox) and also 
         // use "ImageIcon" - connected to the image name (which is the actual 
-        // image on our computer)         
+        // image on our computer) - you will do 2 imports on this line!
         Icon image = new ImageIcon(imageName);
-        
-        // Now need something that can display the fonts and colors - called a 
-        // "text area" (can use intellisense, with CTRL + SPACE, which 
-        // automatically imports it)         
-        JTextArea area = new JTextArea();
-        
-        // Now we add things into the area, using methods built into the text 
-        // area object        
-        area.setText(text);
-        area.setBackground(background);
-        area.setForeground(foreground);
-        area.setFont(font);
         
         // Now we finally display the dialog box, BUT we USE the text area and 
         // the image in the dialog as parameters
         JOptionPane.showMessageDialog(
                 null, 
                 area, 
-                title,
+                title, 
                 JOptionPane.PLAIN_MESSAGE,
-                image);
+                image
+        );
     }
-    
+
 }
 
 
