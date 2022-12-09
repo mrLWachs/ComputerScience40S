@@ -25,13 +25,62 @@ public class Node <T>
     /** The generic data type the node stores */
     public T data;
     
+    /** 
+     * Self reference (pointer, link) to the next node that 'will' be
+     * in a 'chain' (linked list)
+     */
+    public Node next;
     
-
+    /** Link / pointer / reference to the previous (back) node */
+    public Node previous;
+    
+    
+    /**
+     * Class constructor, sets the class properties. Another option when 
+     * creating multiple constructors (overloading) write the constructor with
+     * ALL the possible arguments first. You can use other constructors to 
+     * call this one.
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
+     */
+    public Node(T data, Node next, Node previous) {
+        this.data = data;
+        this.next = next;
+        this.previous = previous;       
+    }
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     */
+    public Node(T data) {
+        this(data,null,null);
+    }
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     */
+    public Node(T data, Node next) {
+        this(data,next,null);
+    }
+    
     /**
      * Default constructor, set class properties
      */
     public Node() {
+        // To have one costructor call another, use the keyword "this"
+       this(null, null, null);
         
+       // Alternativly, you could have written...
+       // this.data = data;
+       // this.next = next;
+       // this.previous = previous; 
     }
      
     /**
