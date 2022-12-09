@@ -1255,6 +1255,9 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         );
     }
 
+    /**
+     * Learn the content of the classes unit (unit 4)
+     */
     private static void learnClasses() {
         System.out.println("Start Learing Classes...");
         
