@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
 
-/*
+/**
  * ComputerScience30S - the large in class example we continue to work on
  * in each unit adding example code on the new concepts of each unit along with
  * any in class requests for code example that might come up over the course.
@@ -1269,13 +1269,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 }
 
 
-
-
-
-
-
-
-
+// <editor-fold>  
 
 // NETBEANS TIPS:
 // ==============
@@ -1366,4 +1360,6 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
 //      and then press TAB AGAIN it jump to the ending value (which should be 
 //      the ".length" of the array (so if the array size changes, the loop 
 //      adapts to it) - the loop variable "i" also represents the array "index"
+
+// </editor-fold>
 
