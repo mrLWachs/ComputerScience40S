@@ -52,6 +52,9 @@ public class CollectionsTest
         System.out.println("Node c == d? -> " + c.equals(d));
         System.out.println("Node d == d? -> " + d.equals(d));
         System.out.println("Node e == a? -> " + e.equals(a));
+        System.out.println("Node f == b? -> " + f.equals(b));
+        System.out.println("Node g == c? -> " + g.equals(c));
+        System.out.println("Node h == d? -> " + h.equals(d));
         
         
         
