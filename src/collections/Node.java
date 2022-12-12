@@ -74,7 +74,7 @@ public class Node <T>
      * Default constructor, set class properties
      */
     public Node() {
-        // To have one costructor call another, use the keyword "this"
+       // To have one costructor call another, use the keyword "this"
        this(null, null, null);
         
        // Alternativly, you could have written...
@@ -90,7 +90,31 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        return "Node: " + super.toString();
+        String text = "data: ";
+        
+        // Display the data stored in the node (or null)
+        if (data == null)   text += "null";
+        else                text += data.toString();
+        
+        // Display the connection ("link") to the next node
+        text += "\t next: ";
+        if (next == null)   text += "null";
+        else                text += next.data.toString();
+        
+        // Display the connection ("link") to the previous node
+        text += "\t previous: ";
+        if (previous == null)   text += "null";
+        else                    text += previous.data.toString();
+        
+        // Add the memory address (from the Object super-class)        
+        String value = super.toString();            // Get memory address
+        int    begin = value.indexOf("@") + 1;      // Find where it begins
+        int    end   = value.length();              // Length of string
+        value = value.subSequence(begin, end).toString();   // Get sub-string
+        text += "\t Address: " + value;             // Add to text
+        
+        // Return all the text compiled
+        return text;
     }
    
     /**

@@ -23,7 +23,7 @@ public class CollectionsTest
         // Create some node objects...
         System.out.println("\nTesting constructors.........................\n");
         Node<String> a = new Node<>();
-        Node<String> b = new Node<>("Sassaffras");
+        Node<String> b = new Node<>("Sass");
         Node<String> c = new Node<>("Pros", b);
         Node<String> d = new Node<>("Joes", c, b);
         
@@ -33,6 +33,26 @@ public class CollectionsTest
         System.out.println("Node b = " + b.toString());
         System.out.println("Node c = " + c.toString());
         System.out.println("Node d = " + d.toString());
+        
+        // Clone a node...
+        System.out.println("\nTesting clone()..............................\n");
+        Node<String> e = a.clone();
+        Node<String> f = b.clone();
+        Node<String> g = c.clone();
+        Node<String> h = d.clone();
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        // Check if nodes are equal...
+        System.out.println("\nTesting equal()..............................\n");
+        System.out.println("Node a == b? -> " + a.equals(b));
+        System.out.println("Node b == c? -> " + b.equals(c));
+        System.out.println("Node c == d? -> " + c.equals(d));
+        System.out.println("Node d == d? -> " + d.equals(d));
+        System.out.println("Node e == a? -> " + e.equals(a));
+        
         
         
         
