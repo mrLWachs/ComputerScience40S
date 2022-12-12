@@ -27,17 +27,10 @@ public class Person
         
     }
     
-    /**
-     * The person dies (changing/modifying) the private, encapsulated 
-     * property (isAlive) through this method
-     */
     void die() {
         
     }
     
-    /**
-     * Outputs information about the person to the screen
-     */
     void talk() {
         
     }
