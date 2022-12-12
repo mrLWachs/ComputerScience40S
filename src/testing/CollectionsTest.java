@@ -27,7 +27,6 @@ public class CollectionsTest
         Node<String> c = new Node<>("Pros", b);
         Node<String> d = new Node<>("Joes", c, b);
         
-        
         // Output our nodes...
         System.out.println("\nTesting toString()...........................\n");
         System.out.println("Node a = " + a.toString());
