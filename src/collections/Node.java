@@ -125,7 +125,23 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        // Error check first for nulls appearing whcih could cause crashes
+        if (this.data == null) return false;    // Data inside this object
+        if (object    == null) return false;    // Parameter sent to this method
+        // Convert (cast) the object parameter into a "Node" object
+        Node that = (Node)object;
+        if (that.data == null) return false;    // Data inside the parameter
+        // Now compare both data properties
+        return this.data.equals(that.data);
+        // Same kind of code as...
+//        T dataFromThisClass = (T)this.data;
+//        T dataFromParameter = (T)that.data;        
+//        if (dataFromThisClass.equals(dataFromParameter)) {
+//            return true;
+//        }
+//        else {
+//            return false;
+//        }
     }
        
     /**
@@ -135,7 +151,8 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        // Annoynmous clone object created and returned
+        return new Node(this.data, this.next, this.previous);
     }
     
 }
