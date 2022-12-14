@@ -26,7 +26,7 @@ public class Person
     void born() {
         alive  = true;
         age    = 0;
-        name   = "name";
+        name   = "undefined";
         gender = "undefined";
     }
     
@@ -39,14 +39,16 @@ public class Person
      */
     void talk() {
         if (alive) {
-            System.out.println(name + " is " + age + 
-                               " identifies as " + gender);
+            System.out.println(name + " is " + age + " identifies as " + gender);
         }
         else {
             System.out.println("Booooooo!");
         }
     }
     
+    /**
+     * A person has a birthday (the age goes up by one)
+     */
     void birthday() {
         age++;
     }
