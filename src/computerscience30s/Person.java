@@ -45,6 +45,23 @@ public class Person
     //        gender = "undefined";
     //    }
     
+    /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties from the parameters that 
+     * we passed to the method (the arguments). Constructor methods with
+     * NO parameters are called "default" constructors
+     * 
+     * @param newName the name of this person
+     * @param newAge the age of this person
+     * @param newGender the identified gender of this person
+     */
+    Person(String newName, int newAge, String newGender) {
+        alive  = true;
+        name   = newName;
+        age    = newAge;
+        gender = newGender;
+    }
+        
     void die() {
         alive = false;
     }
