@@ -23,12 +23,27 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
-    void born() {
+    /**
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object.
+     */
+    Person() {
         alive  = true;
         age    = 0;
         name   = "undefined";
         gender = "undefined";
     }
+    
+    // Previously, we had a method call "born" (seen below) that we changed 
+    // into the constructor method (above)...
+    //    void born() {
+    //        alive  = true;
+    //        age    = 0;
+    //        name   = "undefined";
+    //        gender = "undefined";
+    //    }
     
     void die() {
         alive = false;
