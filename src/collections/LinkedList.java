@@ -4,21 +4,59 @@ package collections;
 
  
 /**
- * LinkedList.java - description
+ * LinkedList.java - an implementation of a linked list abstract (advanced)
+ * data (dynamic) type (ADT) and useful methods, and could be "visualized" as:
+ * 
+ *             +------+       +------+       +------+       +------+      
+ *  null <---- |      | <---- |      | <---- |      | <---- |      |  
+ *             | NODE |       | NODE |       | NODE |       | NODE |       
+ *             |      |---->  |      |---->  |      |---->  |      |----> null  
+ *             +------+       +------+       +------+       +------+      
+ *                 ^                                           ^
+ *                 |                                           |
+ *                head                                        tail
+ *
  *
  * @author Mr. Wachs
+ * @param <T> The generic data type used in the class
  * @since 8-Dec-2022, 11:53:00 AM
  */
-public class LinkedList 
+public class LinkedList <T>
 {
 
+    /** Reference (link) to the first (front) node in the list (entry point) */
+    private Node head;
+    
+    /** Reference (link) to the last (back) node in the list (entry point) */
+    private Node tail;
+    
+    /** 
+     * The number of nodes in the list, cannot be changed outside the class,
+     * so it is an immutable encapsulated property
+     */
+    private int length;
+    
+    
+    
     /**
      * Default constructor, set class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
-     
+    
+    /**
+     * Frees up all memory used by this object (Note: when you add the "final"
+     * modifier keyword to the method signature, it make it so that this method
+     * can NOT ever be overloaded)
+     */
+    @Override
+    public final void finalize() {
+        length = 0;                 // length set to zero
+        head = tail = null;         // References set to nulls
+        System.gc();                // Runs the garbage collector in Java
+    }
+
     /**
      * String representation of this object
      *
