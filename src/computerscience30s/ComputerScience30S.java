@@ -1282,7 +1282,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         // Use (call, invoke) other methods and change (modify) properties
         person.name   = "SpongeBob SquarePants";
         person.gender = "sponge";
-        person.age    = 22;
+        //person.age    = 22;
         
         // Recall our method... (to see the changes)
         person.talk();
