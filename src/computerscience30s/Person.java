@@ -61,6 +61,16 @@ public class Person
         age    = newAge;
         gender = newGender;
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
         
     void die() {
         alive = false;
