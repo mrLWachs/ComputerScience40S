@@ -57,6 +57,19 @@ public class LinkedList <T>
         System.gc();                // Runs the garbage collector in Java
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * String representation of this object
      *
