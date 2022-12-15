@@ -57,19 +57,27 @@ public class LinkedList <T>
         System.gc();                // Runs the garbage collector in Java
     }
 
+    /**
+     * Determines if the list is empty (no nodes) or not
+     * 
+     * @return it is empty (true) or it does contain some data (false)
+     */
+    public boolean isEmpty() {
+        return length == 0;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Accessor method for the number of nodes in the list (the length is a 
+     * immutable encapsulated property of the class) - no mutator method will
+     * be written (so 'length' remains a read-only property from outside the 
+     * class)
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
+        
     /**
      * String representation of this object
      *
@@ -77,7 +85,14 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList: " + super.toString();
+        if (isEmpty()) return "Empty LinkedList";   // No nodes to display
+        String text = "LinkedList [";
+        Node current = head;
+        while (current != null) {   
+            text += current.data.toString() + ",";
+            current = current.next;
+        }
+        return text + "]";
     }
    
     /**
@@ -99,6 +114,10 @@ public class LinkedList <T>
     @Override
     public LinkedList clone() {
         return this;
+    }
+
+    public void addBack(int i) {
+        System.out.println("to do");
     }
     
 }
