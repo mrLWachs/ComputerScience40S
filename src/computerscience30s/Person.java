@@ -52,17 +52,32 @@ public class Person
      * NO parameters are called "default" constructors
      * 
      * @param newName the name of this person
-     * @param newAge the age of this person
-     * @param newGender the identified gender of this person
      */
-    Person(String newName, int newAge, String newGender) {
+    Person(String newName) {
         alive  = true;
         name   = newName;
-        age    = newAge;
-        gender = newGender;
+        age    = 0;
+        gender = "undefined";
     }
     
-    
+    /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties. Constructor methods with
+     * NO parameters are called default constructors
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    Person(String name, int age, String gender) {
+        alive       = true;
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (whcih will be created at a later time)
+    }
     
     
     

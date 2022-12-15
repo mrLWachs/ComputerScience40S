@@ -1295,7 +1295,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Create another Person object (an instance of the Person class) using
         // our second constructor method        
-        Person patrick = new Person("Patrick Star", 38, "star fish");
+        Person patrick = new Person("Patrick Star");
         patrick.talk();
         
         
