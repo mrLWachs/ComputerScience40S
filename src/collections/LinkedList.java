@@ -85,14 +85,16 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        if (isEmpty()) return "Empty LinkedList";   // No nodes to display
-        String text = "LinkedList [";
-        Node current = head;
-        while (current != null) {   
-            text += current.data.toString() + ",";
-            current = current.next;
+        if (isEmpty()) return "Empty LinkedList";       // No nodes to display
+        String text = "LinkedList [";                   // String to build up
+        // Start a reference (link) at the first (head) node (entry point)
+        Node current = head;                            // Start at head node
+        while (current.next != null) {          // Traverse (travel) the list
+            // Appending the node data to the string and a seperator comma
+            text += current.data.toString() + ",";   
+            current = current.next;                     // Move to next node
         }
-        return text + "]";
+        return text + current.data.toString() + "]";    // Send back the string                                                    
     }
    
     /**
