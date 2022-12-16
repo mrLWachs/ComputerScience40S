@@ -1298,9 +1298,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         Person patrick = new Person("Patrick Star");
         patrick.talk();
         
+        // Another instance using the 3rd constructor option
+        Person mrCrabs = new Person("Mr. Crabs", 80, "Crab");
+        mrCrabs.talk();
         
-        
-        
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class) 
+        Student student = new Student();
+        student.talk();
         
         
         
