@@ -81,7 +81,7 @@ public class Person
         this.gender = gender;
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
-        // for the name of the object (whcih will be created at a later time)
+        // for the name of the object (which will be created at a later time)
     }
     
     /**
