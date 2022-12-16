@@ -103,20 +103,22 @@ public class CollectionsTest
         System.out.println("L2 size -> " + list2.size());
         
         // More testing, explained inthe outputs...............................
-        System.out.println("\nTest adding (first to the back) of the list..\n");
+        System.out.println("\nTest add (first to the back) of the list.......");
         
-        list1.addBack(5);
-        System.out.println("After addBack -> " + list1);
-        list1.addBack(50);
-        System.out.println("After addBack -> " + list1);
-        list1.addBack(500);
-        System.out.println("After addBack -> " + list1);
-        list1.addBack(-5);
-        System.out.println("After addBack -> " + list1);
-        list1.addBack(55);
-        System.out.println("After addBack -> " + list1);
+        System.out.println("addBack->" + list1.addBack(5)    + ":" + list1);
+        System.out.println("addBack->" + list1.addBack(50)   + ":" + list1);
+        System.out.println("addBack->" + list1.addBack(-5)   + ":" + list1);
+        System.out.println("addBack->" + list1.addBack(55)   + ":" + list1);
+        System.out.println("addBack->" + list1.addBack(null) + ":" + list1);
+                
+        // More testing, explained inthe outputs...............................
+        System.out.println("\nTest add (second to the front) of the list.....");
         
-        
+        System.out.println("addFront->" + list1.addFront(8)    + ":" + list1);
+        System.out.println("addFront->" + list1.addFront(80)   + ":" + list1);
+        System.out.println("addFront->" + list1.addFront(-8)   + ":" + list1);
+        System.out.println("addFront->" + list1.addFront(88)   + ":" + list1);
+        System.out.println("addFront->" + list1.addFront(null) + ":" + list1);
         
         
         
