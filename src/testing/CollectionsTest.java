@@ -85,12 +85,12 @@ public class CollectionsTest
         System.out.println("Node h = " + h.toString());
         
         // Create a LinkedList object to test the constructor
-        System.out.println("\nTesting default LinkedList constructor.........");
-        
+        System.out.println("\nTesting default LinkedList constructor.........");        
         LinkedList<Integer> list1 = new LinkedList<>();
         LinkedList<Integer> list2 = new LinkedList<>();
         
         // Test toString() method (before I add anything into the list)........
+        System.out.println("\nTesting toString, empty, size methods..........");        
         System.out.println("L1 -> " + list1.toString());
         System.out.println("L2 -> " + list2.toString());
         
@@ -102,7 +102,7 @@ public class CollectionsTest
         System.out.println("L1 size -> " + list1.size());
         System.out.println("L2 size -> " + list2.size());
         
-        // More testing, explained inthe outputs...............................
+        // More testing, explained in the outputs..............................
         System.out.println("\nTest add (first to the back) of the list.......");
         
         System.out.println("addBack->" + list1.addBack(5)    + ":" + list1);
@@ -111,16 +111,18 @@ public class CollectionsTest
         System.out.println("addBack->" + list1.addBack(55)   + ":" + list1);
         System.out.println("addBack->" + list1.addBack(null) + ":" + list1);
                 
-        // More testing, explained inthe outputs...............................
-        System.out.println("\nTest add (second to the front) of the list.....");
-        
+        System.out.println("\nTest add (second to the front) of the list.....");        
         System.out.println("addFront->" + list1.addFront(8)    + ":" + list1);
         System.out.println("addFront->" + list1.addFront(80)   + ":" + list1);
         System.out.println("addFront->" + list1.addFront(-8)   + ":" + list1);
         System.out.println("addFront->" + list1.addFront(88)   + ":" + list1);
         System.out.println("addFront->" + list1.addFront(null) + ":" + list1);
         
-        
+        System.out.println("\nRe-testing empty, size methods.................");  
+        System.out.println("L1 empty? -> " + list1.isEmpty());
+        System.out.println("L2 empty? -> " + list2.isEmpty());
+        System.out.println("L1 size -> " + list1.size());
+        System.out.println("L2 size -> " + list2.size());
         
         
         
