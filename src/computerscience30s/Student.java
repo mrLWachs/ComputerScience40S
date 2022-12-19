@@ -50,5 +50,27 @@ public class Student extends Person
         average = 0;
     }
     
+    /**
+     * Studying raises the student's average
+     */
+    public void study() {
+        average += 1.25;
+    }
+    
+    /**
+     * Slacking off lowers the student's average
+     */
+    public void slackOff() {
+        average -= 0.33;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+    }
     
 }

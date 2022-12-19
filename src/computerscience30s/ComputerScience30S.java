@@ -1304,9 +1304,14 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         // Create a Student object and call it's methods (including the 
         // ones it inherited from the Person class) 
-        Student student = new Student();
+        Student student = new Student("Student Person","student",123456);
         student.talk();
-        
+        // Call (invoke) methods specifically for the student class
+        student.slackOff();
+        student.study();
+        student.slackOff();
+        student.cram();
+        student.talk();
         
         
         
