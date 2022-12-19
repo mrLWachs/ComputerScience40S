@@ -171,5 +171,82 @@ public class LinkedList <T>
         length++;                           // Increase length environmental
         return true;                        // Operation successful
     }
-
+    
+    /**
+     * Accessor for the data at the specified index
+     * 
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {
+        return (T)getNode(index).data;
+    }
+    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        getNode(index).data = data;
+        return true;
+    }
+    
+    /**
+     * Accessor method to the encapsulated (private) property of the first
+     * (head) node of the list
+     * 
+     * @return reference to the first node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
+    
+    /**
+     * Accessor method to the encapsulated (private) property of the last
+     * (tail) node of the list
+     * 
+     * @return reference to the last node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
+    
+    /**
+     * A protected (can be called inside the class and by any children of this
+     * class) accessor method to retrieve a node reference (link, pointer, 
+     * address, etc.) to the passed index location (using an array style of
+     * indexing)
+     * 
+     * @param index the subscript, location, spot, index value
+     * @return a reference (not the data) to the node at this location or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // not valid index
+        if (index == 0)        return getFirstNode();   // first node returned
+        if (index == length-1) return getLastNode();    // last node returned
+        Node current = head;                            // start at first node
+        for (int i = 0; i < index; i++) {               // move to index
+            current = current.next;                     // advance reference
+        }
+        return current;                                 // return reference
+    }
+    
+    
+    /**
+     * A private (encapsulated or "help") method to error check to see if the
+     * index is in range (or "in bounds") of the list
+     * 
+     * @param index the location (element, subscript) to check
+     * @return it is in range (true) or not (false)
+     */
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // Empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index valid
+    }
+    
 }
