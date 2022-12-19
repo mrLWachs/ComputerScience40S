@@ -73,4 +73,23 @@ public class Student extends Person
         }
     }
     
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen. Instead of calling the inherited 
+     * method, when you call this method from the sub (child) class, this 
+     * sub classes method code "over-rides" that method and it's code runs 
+     * instead. It is similar to the concept of over-loading a method (two or 
+     * methods with the same name but different parameters) - but not quite 
+     * the same. The method is named the same name (with the same parameter 
+     * list) as a method that was already inherited from the super (parent) 
+     * class.
+     */
+    public void talk() {
+        // Even with a class that inherits from another class, we 
+        // can call the methods of the parent class
+        super.talk();        
+        System.out.println("\tNumber:  \t" + number);
+        System.out.println("\tAverage: \t" + average);
+    }
+    
 }
