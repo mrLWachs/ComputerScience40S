@@ -24,5 +24,31 @@ public class Student extends Person
     // association (or "usage", composition)
     private Book book;
     
+    // private (encapsulated) property (global variable) identified (named)
+    // "number" that is of type "integer"
+    private int number;
+    
+    private double average;
+    
+    /**
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
+     * 
+     * @param name the name for this student person
+     * @param gender the gender for this student person
+     * @param number the student number for this student
+     */
+    public Student(String name, String gender, int number) {
+        this.number = number;
+        // Assigning the parameter (called "number") to the property (called
+        // "number") using the keyword "this"
+        super.name = name;
+        // The keyword "super" refers to the super-class (or the "parent"
+        // class) in this case "Person"
+        super.gender = gender;
+        // super.age = age; (age is encapsulated, we will ignore)
+        average = 0;
+    }
+    
     
 }
