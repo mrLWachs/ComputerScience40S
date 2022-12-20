@@ -179,7 +179,8 @@ public class LinkedList <T>
      * @return the data (or null) at the index
      */
     public T get(int index) {
-        return (T)getNode(index).data;
+        if (!inRange(index)) return null;   // Invalid index, return flag        
+        return (T)getNode(index).data;      // Get reference and retrieve data  
     }
     
     /**
@@ -190,8 +191,11 @@ public class LinkedList <T>
      * @return the operation was successful (true) or not (false)
      */
     public boolean set(int index, T data) {
-        getNode(index).data = data;
-        return true;
+        if (!inRange(index)) return false;          // Invalid index
+        if (data == null)    return false;          // Invalid data
+        Node current = getNode(index);              // Get to node at index
+        current.data = data;                        // Change node data
+        return true;                                // Operation successful
     }
     
     /**

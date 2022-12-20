@@ -124,8 +124,22 @@ public class CollectionsTest
         System.out.println("L1 size -> " + list1.size());
         System.out.println("L2 size -> " + list2.size());
         
+        System.out.println("\nTest get method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = list1.get(i);
+            System.out.println("Getting list " + i + " = " + value);
+        }
         
-        
+        System.out.println("\nTest set method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = new Integer(i+10);
+            System.out.println("Setting list " + i + " to " + (i+10) +
+                    " result = " + list1.set(i, value));
+            System.out.println(list1);
+        }
+        System.out.println("Setting list 0 to null result = " + 
+                list1.set(0, null));
+        System.out.println(list1);
         
         
         
