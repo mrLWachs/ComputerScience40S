@@ -2,7 +2,7 @@
 /** Required package class namespace */
 package computerscience30s;
 
-/*
+/**
  * Book - represents a book object which is "associated" (the "has a" 
  * relationship) with the student class
  *

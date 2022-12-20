@@ -1313,25 +1313,33 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         student.cram();
         student.talk();
         
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc", 15, "dog", 2665);
+        husky.talk();
         
+        // Make a Teacher instance
+        Teacher teacher = new Teacher("Mr. Wachs");
+        teacher.talk();
         
+        // Assigned student objects to the public array
+        teacher.students[0] = student;
+        teacher.students[1] = husky;
         
+        // Called talk again to see the students we added
+        teacher.talk();
         
+        // Build (declare, initiaize, instantiate) a Meeting object
+        Meeting meeting = new Meeting();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(mrCrabs);
+        meeting.attend(patrick);
+        meeting.attend(student);
+        meeting.attend(teacher);
+        meeting.attend(husky);
+                
+        meeting.hold();
         
         System.out.println("Learning Classes Complete!");
     }
