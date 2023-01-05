@@ -44,6 +44,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         learnMethods();
         learnArrays();
         learnClasses();
+        LearnGraphics learnGraphics = new LearnGraphics();
     }
 
     /**
