@@ -103,14 +103,16 @@ public class CollectionsTest
         System.out.println("L2 size -> " + list2.size());
         
         // More testing, explained in the outputs..............................
-        System.out.println("\nTest add (first to the back) of the list.......");
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest add (first to the back) of the list.......");        
         System.out.println("addBack->" + list1.addBack(5)    + ":" + list1);
         System.out.println("addBack->" + list1.addBack(50)   + ":" + list1);
         System.out.println("addBack->" + list1.addBack(-5)   + ":" + list1);
         System.out.println("addBack->" + list1.addBack(55)   + ":" + list1);
         System.out.println("addBack->" + list1.addBack(null) + ":" + list1);
-                
+        
+        ////////////////////////////////////////////////////////////////////////        
         System.out.println("\nTest add (second to the front) of the list.....");        
         System.out.println("addFront->" + list1.addFront(8)    + ":" + list1);
         System.out.println("addFront->" + list1.addFront(80)   + ":" + list1);
@@ -118,18 +120,21 @@ public class CollectionsTest
         System.out.println("addFront->" + list1.addFront(88)   + ":" + list1);
         System.out.println("addFront->" + list1.addFront(null) + ":" + list1);
         
+        ////////////////////////////////////////////////////////////////////////
         System.out.println("\nRe-testing empty, size methods.................");  
         System.out.println("L1 empty? -> " + list1.isEmpty());
         System.out.println("L2 empty? -> " + list2.isEmpty());
         System.out.println("L1 size -> " + list1.size());
         System.out.println("L2 size -> " + list2.size());
         
+        ////////////////////////////////////////////////////////////////////////
         System.out.println("\nTest get method..............................\n");
         for (int i = 0-1; i < list1.size()+1; i++) {
             Integer value = list1.get(i);
             System.out.println("Getting list " + i + " = " + value);
         }
         
+        ////////////////////////////////////////////////////////////////////////
         System.out.println("\nTest set method..............................\n");
         for (int i = 0-1; i < list1.size()+1; i++) {
             Integer value = new Integer(i+10);
@@ -141,11 +146,13 @@ public class CollectionsTest
                 list1.set(0, null));
         System.out.println(list1);
         
+        ////////////////////////////////////////////////////////////////////////
         System.out.println("\nTest equals method...........................\n");
         System.out.println("List 1 = " + list1.toString());
         System.out.println("List 2 = " + list2.toString());
         System.out.println("List1 == List2 is " + list1.equals(list2));
         
+        ////////////////////////////////////////////////////////////////////////
         System.out.println("\nTest clone method............................\n");
         list2 = list1.clone();
         System.out.println("List 1 = " + list1.toString());
