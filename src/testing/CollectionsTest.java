@@ -141,7 +141,17 @@ public class CollectionsTest
                 list1.set(0, null));
         System.out.println(list1);
         
+        System.out.println("\nTest equals method...........................\n");
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("List1 == List2 is " + list1.equals(list2));
         
+        System.out.println("\nTest clone method............................\n");
+        list2 = list1.clone();
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("Re-testing equals...");
+        System.out.println("List1 == List2 is " + list1.equals(list2));
         
         
         

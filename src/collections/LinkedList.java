@@ -126,7 +126,14 @@ public class LinkedList <T>
      */
     @Override
     public LinkedList clone() {
-        return this;
+        LinkedList<T> that = new LinkedList<>();    // Create new list memory
+        for (int i = 0; i < this.length; i++) {     // Traverse list
+            that.addBack((T)this.get(i));
+            // This one line is the same as...
+            // T data = (T)this.get(i);
+            // that.addBack(data);
+        }        
+        return that;                                // New list returned
     }
 
     /**
