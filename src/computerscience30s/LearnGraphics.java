@@ -13,6 +13,16 @@ package computerscience30s;
 public class LearnGraphics 
 {
 
-    
+    /**
+     * Constructor method for when an object of this class is instantiated
+     */
+    public LearnGraphics() {
+        System.out.println("Start learning Graphics and User Interfaces (UI)");
+        // Create (instatitate) class object for the different graphics examples
+        Graphics1 graphics1 = new Graphics1();
+        //Graphics2 graphics2 = new Graphics2();
+        //Graphics3 graphics3 = new Graphics3();        
+        System.out.println("Completed learning Graphics and UI!");
+    }
     
 }
