@@ -21,7 +21,17 @@ public class LearnGraphics
         // Create (instatitate) class object for the different graphics examples
         Graphics1 graphics1 = new Graphics1();
         //Graphics2 graphics2 = new Graphics2();
-        //Graphics3 graphics3 = new Graphics3();        
+        //Graphics3 graphics3 = new Graphics3();    
+        
+        // To add a class that uses the NetBeans visual editor (WYSIWYG) to 
+        // create a User Interface (UI). You can add a "JFrame Form" to the 
+        // project. The easiest way is to right click on the "package" in the
+        // NetBeans Projects window, go to "New" and select "JFrame Form" and 
+        // then name it. When using the WYSIWYG NetBeans UI editor to switch
+        // over to code, there are small tabs under the tab for this class. 
+        // One tab for "Source" (the code) and one for "Design" (visual
+        // editor)       
+        
         System.out.println("Completed learning Graphics and UI!");
     }
     
