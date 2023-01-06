@@ -137,6 +137,58 @@ public class LinkedList <T>
     }
 
     /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        // First error check the data and index values
+        if (data == null)    return false;              // Invalid data to add
+        if (!inRange(index)) return false;              // Index out of range
+        if (index == length-1) return addBack(data);    // Add to the end 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        // Next, set all proper references
+        node.next = current.next;                       
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;
+        // Finish up, add to class property and return successfull
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // Wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /**
      * Inserts (adds) data (generic type) into the back (tail, end, etc) of
      * this list
      * 
