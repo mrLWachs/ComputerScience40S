@@ -185,8 +185,60 @@ public class LinkedList <T>
         return addAfter(data, index);                   // wrapper method call
     }
     
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        if (index == 0) return addFront(data);          // Add to the head 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        // Copy and paste the addAfter method and then applied "dual" opperation
+        // logic on all the references below ("next" becomes "previous", etc.)
+        node.previous = current.previous;                       
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // first node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // Last node
+    }
     
     
+    /**
+     * Removes (deletes) the first (head) node of the list (mutator method)
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // No front to remove
+        T data = front();                       // Store head data
+        
+        
+        return data;                            // Return stored data
+    }
     
     
     

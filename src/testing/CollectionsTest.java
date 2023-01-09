@@ -176,6 +176,24 @@ public class CollectionsTest
                            "\t result \t"      + list1.addAfter(10,size) + 
                            "\t"                + list1.toString());
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest addBefore method.........................\n");
+        size = list1.size();
+        for (int i = 0-1; i < size; i++) {
+            int number = i + 100;
+            Integer value = new Integer(number);
+            System.out.println("Adding value \t"   + value                   + 
+                               "\t before index \t" + i                       + 
+                               "\t result \t"      + list1.addBefore(value,i) + 
+                               "\t"                + list1.toString());            
+        }
+        System.out.println("Test other edge case");
+        size = list1.size()+1; 
+        System.out.println("Adding value \t"   + 10                      + 
+                           "\t before index \t" + size                    + 
+                           "\t result \t"      + list1.addBefore(10,size) + 
+                           "\t"                + list1.toString());
+        
         
         
         
