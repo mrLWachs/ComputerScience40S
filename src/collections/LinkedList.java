@@ -98,153 +98,6 @@ public class LinkedList <T>
     }
    
     /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        LinkedList<T> that = (LinkedList<T>)object;     // Cast object parameter        
-        if (this.size() != that.size()) return false;   // Not the same sizes
-        Node current1 = this.getFirstNode();            // Get reference to
-        Node current2 = that.getFirstNode();            // Nodes in each list  
-        while (current1 != null) {                      // Traverse lists
-            if (!current1.equals(current2)) {           // Not equal data 
-                return false;                           // Not equal lists
-            } 
-            current1 = current1.next;                   // Move each reference
-            current2 = current2.next;                   // to next node
-        }
-        return true;                                    // Lists are equal
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public LinkedList clone() {
-        LinkedList<T> that = new LinkedList<>();    // Create new list memory
-        for (int i = 0; i < this.length; i++) {     // Traverse list
-            that.addBack((T)this.get(i));
-            // This one line is the same as...
-            // T data = (T)this.get(i);
-            // that.addBack(data);
-        }        
-        return that;                                // New list returned
-    }
-
-    /**
-     * Inserts data as a new node after the passed index
-     * 
-     * @param data the data type to insert
-     * @param index the index location to insert after
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean addAfter(T data, int index) {
-        // First error check the data and index values
-        if (data == null)      return false;            // Invalid data to add
-        if (!inRange(index))   return false;            // Index out of range
-        
-        // The simple index number calls a method we already have
-        if (index == length-1) return addBack(data);    // Add to the end 
-        Node<T> node = new Node<>(data);                // Create node object
-        Node current = getNode(index);                  // Get to index spot
-        
-        // Next, set all 4 proper references to insert the new node
-        node.next = current.next;                       
-        current.next.previous = node;
-        current.next = node;
-        node.previous = current;
-        
-        // Finishing up, add to lenght class property and return successfull
-        length++;                                       // Increase length
-        return true;                                    // Opperation successful
-    }
-    
-    /**
-     * Adds the data to the back of the list (wrapper method)
-     * 
-     * @param data the data to add
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean add(T data) {
-        return addBack(data);                           // Wrapper method call
-    }
-    
-    /**
-     * Adds the data before the passed index (wrapper method)
-     * 
-     * @param data the data to add
-     * @param index the index location to add before
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean add(T data, int index) {
-        return addAfter(data, index);                   // wrapper method call
-    }
-    
-    /**
-     * Inserts data as a new node before the passed index
-     * 
-     * @param data the data type to insert
-     * @param index the index location to insert before
-     * @return the operation was successful (true) or not (false)
-     */
-    public boolean addBefore(T data, int index) {
-        if (data == null)      return false;            // Invalid data to add
-        if (!inRange(index))   return false;            // Index out of range
-        if (index == 0) return addFront(data);          // Add to the head 
-        Node<T> node = new Node<>(data);                // Create node object
-        Node current = getNode(index);                  // Get to index spot
-        // Copy and paste the addAfter method and then applied "dual" opperation
-        // logic on all the references below ("next" becomes "previous", etc.)
-        node.previous = current.previous;                       
-        current.previous.next = node;
-        current.previous = node;
-        node.next = current;
-        length++;                                       // Increase length
-        return true;                                    // Opperation successful
-    }
-    
-    /**
-     * Accesses the first, head, front data in the list
-     * 
-     * @return the head data
-     */
-    public T front() {
-        return get(0);                              // first node
-    }
-    
-    /**
-     * Accesses the last, tail, back data in the list
-     * 
-     * @return the tail data
-     */
-    public T back() {
-        return get(length-1);                       // Last node
-    }
-    
-    
-    /**
-     * Removes (deletes) the first (head) node of the list (mutator method)
-     * 
-     * @return the data in the first node (or null)
-     */
-    public T removeFront() {
-        if (isEmpty()) return null;             // No front to remove
-        T data = front();                       // Store head data
-        
-        
-        return data;                            // Return stored data
-    }
-    
-    
-    
-    
-    
-    /**
      * Inserts (adds) data (generic type) into the back (tail, end, etc) of
      * this list
      * 
@@ -323,6 +176,150 @@ public class LinkedList <T>
         current.data = data;                        // Change node data
         return true;                                // Operation successful
     }
+    
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        // First error check the data and index values
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        
+        // The simple index number calls a method we already have
+        if (index == length-1) return addBack(data);    // Add to the end 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        
+        // Next, set all 4 proper references to insert the new node
+        node.next = current.next;                       
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;
+        
+        // Finishing up, add to lenght class property and return successfull
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // Wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // wrapper method call
+    }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        LinkedList<T> that = (LinkedList<T>)object;     // Cast object parameter        
+        if (this.size() != that.size()) return false;   // Not the same sizes
+        Node current1 = this.getFirstNode();            // Get reference to
+        Node current2 = that.getFirstNode();            // Nodes in each list  
+        while (current1 != null) {                      // Traverse lists
+            if (!current1.equals(current2)) {           // Not equal data 
+                return false;                           // Not equal lists
+            } 
+            current1 = current1.next;                   // Move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // Lists are equal
+    }
+       
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // Create new list memory
+        for (int i = 0; i < this.length; i++) {     // Traverse list
+            that.addBack((T)this.get(i));
+            // This one line is the same as...
+            // T data = (T)this.get(i);
+            // that.addBack(data);
+        }        
+        return that;                                // New list returned
+    }
+    
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        if (index == 0) return addFront(data);          // Add to the head 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        // Copy and paste the addAfter method and then applied "dual" opperation
+        // logic on all the references below ("next" becomes "previous", etc.)
+        node.previous = current.previous;                       
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // first node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // Last node
+    }
+    
+    
+    /**
+     * Removes (deletes) the first (head) node of the list (mutator method)
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // No front to remove
+        T data = front();                       // Store head data
+        
+        
+        return data;                            // Return stored data
+    }
+    
     
     /**
      * Accessor method to the encapsulated (private) property of the first
