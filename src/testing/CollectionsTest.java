@@ -158,7 +158,23 @@ public class CollectionsTest
         System.out.println("Re-testing equals...");
         System.out.println("List1 == List2 -> " + list1.equals(list2));
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest addAfter method.........................\n");
+        int size = list1.size();
+        for (int i = 0-1; i < size; i++) {
+            int number = i + 100;
+            Integer value = new Integer(number);
+            System.out.println("Adding value \t"   + value                   + 
+                               "\t after index \t" + i                       + 
+                               "\t result \t"      + list1.addAfter(value,i) + 
+                               "\t"                + list1.toString());            
+        }
+        System.out.println("Test other edge case");
+        size = list1.size()+1; 
+        System.out.println("Adding value \t"   + 10                      + 
+                           "\t after index \t" + size                    + 
+                           "\t result \t"      + list1.addAfter(10,size) + 
+                           "\t"                + list1.toString());
         
         
         
