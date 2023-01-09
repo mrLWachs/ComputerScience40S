@@ -48,7 +48,7 @@ public class Graphics1 extends javax.swing.JFrame {
 
         jLabel1.setText("Hello World");
 
-        jButton1.setText("ENTER");
+        jButton1.setText("EXIT");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -68,7 +68,7 @@ public class Graphics1 extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2)
                     .addComponent(jLabel1))
-                .addContainerGap(167, Short.MAX_VALUE))
+                .addContainerGap(112, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -81,7 +81,7 @@ public class Graphics1 extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(37, 37, 37)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(71, Short.MAX_VALUE))
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         pack();
@@ -90,10 +90,11 @@ public class Graphics1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        // If you double click (or right click) a button (or other types of 
-        // objects) - the NetBeans editor will take you to the event code 
-        // connected to that event
-        System.out.println("Clicked");
+        // Double clicking a button (or other types of objects) in the design 
+        // mode, immediately jumps to the event code written for you connected 
+        // to that button - to add in your code to execute (just like in 
+        // Visual Studio)
+        System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     
