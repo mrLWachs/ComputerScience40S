@@ -20,8 +20,8 @@ public class LearnGraphics
         System.out.println("Start learning Graphics and User Interfaces (UI)");
         // Create (instatitate) class object for the different graphics examples
         Graphics1 graphics1 = new Graphics1();
-        //Graphics2 graphics2 = new Graphics2();
-        //Graphics3 graphics3 = new Graphics3();    
+        Graphics2 graphics2 = new Graphics2();
+        Graphics3 graphics3 = new Graphics3();    
         
         // To add a class that uses the NetBeans visual editor (WYSIWYG) to 
         // create a User Interface (UI). You can add a "JFrame Form" to the 

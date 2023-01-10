@@ -45,6 +45,7 @@ public class Graphics1 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics 1");
 
         jLabel1.setText("Hello World");
 
