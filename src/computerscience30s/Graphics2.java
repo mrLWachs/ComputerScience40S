@@ -64,8 +64,8 @@ public class Graphics2 extends JFrame
         // Use a reference to the object that will be created in the future
         // and use all the properties and call (invoke) all the methods
         // we inherited from the super-class (JFrame)
-        this.setSize(680, 830);         // Sets the width and height
-        this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
+        this.setSize(411, 465);         // Sets the width and height
+        this.setTitle("Graphics 2");    // Sets the title at top of form (frame)
         this.setResizable(false);       // Makes it so the user cannot resize
         this.setLocationRelativeTo(null);   // Centers the form on screen
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -85,11 +85,12 @@ public class Graphics2 extends JFrame
         
         // Change any properties of the controls
         text.setText("Hello World");
+        button.setText("EXIT");
         // With image, little more code, why not "take" (copy/paste) the
         // code from the designer and adapt it as you like
         final String FILE = "/computerscience30s/image.gif";
         picture.setIcon(new ImageIcon(getClass().getResource(FILE))); 
-
+        
         // Set the container's layout manager to posiition all the controls
         Container container = this.getContentPane();
         container.setLayout(null);  // null means you will position yourself
@@ -101,10 +102,10 @@ public class Graphics2 extends JFrame
         container.add(button);
         
         // Position all controls using: x, y, width, height
-        text.setBounds(10, 10, 650, 20);
-        picture.setBounds(10, 50, 650, 650);
-        textbox.setBounds(10, 710, 650, 20);
-        button.setBounds(10, 740, 650, 40);                
+        text.setBounds(20, 20, 356, 42);
+        picture.setBounds(20, 146, 356, 200);
+        textbox.setBounds(20, 364, 356, 32);
+        button.setBounds(20, 80, 356, 38);                
     }
 
     /**
