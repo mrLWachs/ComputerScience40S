@@ -729,7 +729,7 @@ public class ComputerScience30S {       // Curly brackets DO NOT remove
         
         write("Number is " + number);
         
-        // Overloaded methods are methods with the smae name, BUT different
+        // Overloaded methods are methods with the same name, BUT different
         // parameters / arguments
         
         output("Hello");
