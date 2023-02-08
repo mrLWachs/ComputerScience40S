@@ -1,8 +1,4 @@
 
-/** 
- * Required package class namespace - the line below is put in automatically,
- * and connects file to the project 
- */
 package computerscience30s;
 
 
