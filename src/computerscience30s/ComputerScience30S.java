@@ -1,5 +1,8 @@
 
-
+/** 
+ * Required package class namespace - the line below is put in automatically,
+ * and connects file to the project 
+ */
 package computerscience30s;
 
 
@@ -13,3 +16,9 @@ public class ComputerScience30S
     }
 
 }
+
+
+// NETBEANS TIPS:
+// ==============
+// (1)  To zoom in and out on the code, hold ALT and roll the mouse
+// (2)  Double click the top of a tab to hide side windows or show them
