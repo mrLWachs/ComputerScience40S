@@ -65,6 +65,12 @@ public class ComputerScience30S
                 JOptionPane.INFORMATION_MESSAGE
         );
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
         
         
         
