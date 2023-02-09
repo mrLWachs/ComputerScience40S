@@ -63,9 +63,26 @@ public class ComputerScience30S
                 JOptionPane.INFORMATION_MESSAGE
         );
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Question icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Warning icon is i",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE
+        );
         
-        
+        JOptionPane.showMessageDialog(
+                null, 
+                "Plain icon is i",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE
+        );
         
         
     }
