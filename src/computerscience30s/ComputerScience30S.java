@@ -1,6 +1,8 @@
 
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 
 public class ComputerScience30S
 {
@@ -39,7 +41,7 @@ public class ComputerScience30S
         // In all these, the key is to use the "\" backslash
         // which is called an "escape character"
         
-        
+        // Make a "fancier" output with a dialog box
         
         
         
@@ -64,4 +66,11 @@ public class ComputerScience30S
 // ==============
 // (1)  To zoom in and out on the code, hold ALT and roll the mouse
 // (2)  Double click the top of a tab to hide side windows or show them
+// (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
+
 
