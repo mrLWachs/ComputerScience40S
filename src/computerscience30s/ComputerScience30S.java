@@ -58,6 +58,13 @@ public class ComputerScience30S
         // can be thought of as a "barrier" and you should try not to code too
         // much past this line
         
+        JOptionPane.showMessageDialog(
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
         
         
         
