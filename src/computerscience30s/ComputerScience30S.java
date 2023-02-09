@@ -20,8 +20,14 @@ public class ComputerScience30S
             "star slash"
         */
         
+        // A basic output
+        System.out.println("Hello World");  // Comments can be on code lines
         
+        // Use print without the "ln", does not add a line break at the end        
+        System.out.print("I'm in");
+        System.out.println(" the world");
         
+        System.out.println("Good-bye world!");
         
         
         
