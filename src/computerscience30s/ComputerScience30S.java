@@ -43,14 +43,18 @@ public class ComputerScience30S
         
         // Make a "fancier" output with a dialog box
         
+        JOptionPane.showMessageDialog(null, "Hi");
         
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
+                
+        // However, these OPTIONS (not needed, but cool) for other
+        // dialog output message boxes below...
         
-        
-        
-        
-        
-        
-        
+        // Code could span multiple lines until it reaches a semi colon ";"
+        // The light red line on the far right -------------------------------->
+        // can be thought of as a "barrier" and you should try not to code too
+        // much past this line
         
         
         
