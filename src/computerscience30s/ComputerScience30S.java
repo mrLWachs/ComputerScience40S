@@ -33,6 +33,30 @@ public class ComputerScience30S
         
         // Additional output tips... (these are "special" characters)
         
+        System.out.println("Make a quote \" ");             // \" makes quote
+        System.out.println("Make a slash \\ ");             // \\ makes slash
+        System.out.println("Make a \t tab ");               // \t makes tab
+        System.out.println("Make a new line \n break ");    // \n makes new line
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     }
