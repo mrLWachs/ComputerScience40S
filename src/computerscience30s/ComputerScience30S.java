@@ -104,6 +104,10 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE
         );
         
+        // Dialogs for inputs...
+        
+        // The simpliest version is the one you will need to know:
+        
         
         
         
