@@ -240,6 +240,8 @@ public class ComputerScience30S
 // (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
 // (7)  The word "null" means "nothing" and can act as a placeholder for code
 //      you often do not need (right now)
-
+// (8) To "comment out" chuncks of code, select the code with your mouse or 
+//     your keyboard, then click on one of the two buttons under the code tab
+//     (on the right)
 
 
