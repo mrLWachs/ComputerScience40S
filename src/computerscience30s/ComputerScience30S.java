@@ -179,7 +179,20 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE
         );
         
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
         
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data")
+        
+        // This is an example of the simpliest variable type:
+        
+        boolean a = true;
+        
+        // type name = value ; 
+        
+        // When you write a line of code to create (declare) a variable
         
         
         
