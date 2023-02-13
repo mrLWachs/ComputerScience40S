@@ -229,73 +229,107 @@ public class ComputerScience30S
 //        String e = "apple";
 //        
 //        System.out.println("e = " + e);
-        
-        // Manipulate ("use") our variables:
-        
-        int x = 10;
-        
-        System.out.println("x = " + x);
-        
-        x = 20;
-        
-        System.out.println("x = " + x);
-        
-        int y = x + 10;
-        
-        System.out.println("y = " + y);
-        
-        // Optional ("you don't have to use this code") shorthand...
-        
-        y++;    // Means the same as y = y + 1;
-        y--;    // Means the same as y = y - 1;
-        
-        // Even more optional shorthand (less recommended)
-        
-        y += 10;    // Means the same as y = y + 10;
-        y -= 10;    // Means the same as y = y - 10;
-        y *= 10;    // Means the same as y = y * 10;
-        y /= 10;    // Means the same as y = y / 10;
-        
-        System.out.println("y = " + y);
-        
-        // Modulus (mod) division gives you the remainder of a division
-        // (not the normal answer) - in Java it uses the percentage "%"
-        // symbol for this
-        
-        x = 28;
-        y = x / 5;
-        
-        int z = x % 5;        
-        
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
-        
-        // Constants are variables that don't change (they stay "constant"),
-        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-        // to seperate words
-        
-        // They also start with the keyword "final" (in C# it was "const")
-        
-        final double  PI       = 3.141592658389;
-        final int     PROBLEMS = 99;
-        final char    YES      = 'Y';
-        final boolean FOUND    = true;
-        final String  TEACHER  = "Wachs";
-        
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " +
-                           FOUND    + ", " +
-                           TEACHER);
-        
-        // Constants are used for things like: easier code to maintain,
-        // easier to read/understand (especially for other programmers)
+//        
+//        // Manipulate ("use") our variables:
+//        
+//        int x = 10;
+//        
+//        System.out.println("x = " + x);
+//        
+//        x = 20;
+//        
+//        System.out.println("x = " + x);
+//        
+//        int y = x + 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Optional ("you don't have to use this code") shorthand...
+//        
+//        y++;    // Means the same as y = y + 1;
+//        y--;    // Means the same as y = y - 1;
+//        
+//        // Even more optional shorthand (less recommended)
+//        
+//        y += 10;    // Means the same as y = y + 10;
+//        y -= 10;    // Means the same as y = y - 10;
+//        y *= 10;    // Means the same as y = y * 10;
+//        y /= 10;    // Means the same as y = y / 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Modulus (mod) division gives you the remainder of a division
+//        // (not the normal answer) - in Java it uses the percentage "%"
+//        // symbol for this
+//        
+//        x = 28;
+//        y = x / 5;
+//        
+//        int z = x % 5;        
+//        
+//        System.out.println("x = " + x);
+//        System.out.println("y = " + y);
+//        System.out.println("z = " + z);
+//        
+//        // Constants are variables that don't change (they stay "constant"),
+//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+//        // to seperate words
+//        
+//        // They also start with the keyword "final" (in C# it was "const")
+//        
+//        final double  PI       = 3.141592658389;
+//        final int     PROBLEMS = 99;
+//        final char    YES      = 'Y';
+//        final boolean FOUND    = true;
+//        final String  TEACHER  = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " +
+//                           FOUND    + ", " +
+//                           TEACHER);
+//        
+//        // Constants are used for things like: easier code to maintain,
+//        // easier to read/understand (especially for other programmers)
         
         // Converting between variable data types...
         
+        int f = 25;
         
+        System.out.println("f = " + f);
         
+        double g = f;
+        
+        System.out.println("g = " + g);
+        
+        g = 25.999999999999;
+        
+        System.out.println("g = " + g);
+        
+        int h = (int) g;
+        
+        System.out.println("h = " + h);
+        
+        // When we use round brackets ( )  with a data type inside, this is
+        // called "casting" which means it converts (temporarily) to another
+        // data type - which meant it ignored the decimal part
+        
+        double k = 2.99999999;
+        int    l = (int)k;
+        double m = (double)l;
+        
+        // Casting can happen with other data types...
+        
+        char n = 'A';
+        int  o = (int)n;
+        char p = (char)70;
+        
+        System.out.println("k = " + k);
+        System.out.println("l = " + l);
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+        System.out.println("o = " + o);
+        System.out.println("p = " + p);
         
         
         
