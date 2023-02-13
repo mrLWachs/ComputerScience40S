@@ -277,7 +277,22 @@ public class ComputerScience30S
         
         // They also start with the keyword "final" (in C# it was "const")
         
+        final double  PI       = 3.141592658389;
+        final int     PROBLEMS = 99;
+        final char    YES      = 'Y';
+        final boolean FOUND    = true;
+        final String  TEACHER  = "Wachs";
         
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " +
+                           FOUND    + ", " +
+                           TEACHER);
+        
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
         
         
         
