@@ -262,6 +262,29 @@ public class ComputerScience30S
         // (not the normal answer) - in Java it uses the percentage "%"
         // symbol for this
         
+        x = 28;
+        y = x / 5;
+        
+        int z = x % 5;        
+        
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        
+        // Constants are variables that don't change (they stay "constant"),
+        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+        // to seperate words
+        
+        // They also start with the keyword "final" (in C# it was "const")
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
