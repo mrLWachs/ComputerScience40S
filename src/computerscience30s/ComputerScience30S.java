@@ -289,6 +289,11 @@ public class ComputerScience30S
                            FOUND    + ", " +
                            TEACHER);
         
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
+        
         
         
         
