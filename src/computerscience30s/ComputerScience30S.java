@@ -214,21 +214,57 @@ public class ComputerScience30S
 //        System.out.println("a = " + a);
 //        System.out.println("b = " + b);
 //        System.out.println("c = " + c);
+//        
+//        char d = 'A';
+//        
+//        // The "char" is short for "character" it holds (remembers) ONE
+//        // character
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean ("bool" in C#), integer (int), double, and character
+//        // (char) are all simple (primitive) data types, now a "complex" data
+//        // type....
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
         
-        char d = 'A';
+        // Manipulate ("use") our variables:
+                
+        int x = 10;
         
-        // The "char" is short for "character" it holds (remembers) ONE
-        // character
+        System.out.println("x = " + x);
         
-        System.out.println("d = " + d);
+        x = 20;
         
-        // The boolean ("bool" in C#), integer (int), double, and character
-        // (char) are all simple (primitive) data types, now a "complex" data
-        // type....
+        System.out.println("x = " + x);
         
-        String e = "apple";
+        int y = x + 10;
         
-        System.out.println("e = " + e);
+        System.out.println("y = " + y);
+        
+        // Optional shorthand... ("you don't have to use this")
+        
+        y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
+        
+        // Even more optional (less recommended) shorthand:
+        
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
