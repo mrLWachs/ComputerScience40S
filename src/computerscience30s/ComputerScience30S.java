@@ -343,20 +343,45 @@ public class ComputerScience30S
 //        // user types in the input dialog box
 //        
 //        JOptionPane.showMessageDialog(null, q);
+//        
+//        // With numbers, you HAVE to start off with a string, and then convert
+//        // it to a number. This is like Convert.ToInt32(text); in C#
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We use code to "parse" (means "reading")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        // Always use a capital "I" and whole word "Integer" for this parsing
+//        // the string into a number
+//        
+//        JOptionPane.showMessageDialog(null, s);
+//        
+//        // Same example again, but with a double
+//        
+//        String t = JOptionPane.showInputDialog("Enter double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        // With numbers, you HAVE to start off with a string, and then convert
-        // it to a number. This is like Convert.ToInt32(text); in C#
+        // Another example with a char (character)
         
-        String r = JOptionPane.showInputDialog("Enter int");
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, w);
         
-        // We use code to "parse" (means "reading")
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
-        int s = Integer.parseInt(r);
+        // String have MANY built-in "actions" ("powers", functions, methods)
         
-        // Always use a capital "I" and whole word "Integer" for this parsing
-        // the string into a number
         
-        JOptionPane.showMessageDialog(null, s);
+        
+        
+        
+        
+        
         
         
         
