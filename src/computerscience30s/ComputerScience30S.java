@@ -363,23 +363,32 @@ public class ComputerScience30S
 //        String t = JOptionPane.showInputDialog("Enter double");
 //        double u = Double.parseDouble(t);
 //        JOptionPane.showMessageDialog(null, u);
-        
-        // Another example with a char (character)
-        
-        String v = JOptionPane.showInputDialog("Enter char");
-        char   w = v.charAt(0);
-        JOptionPane.showMessageDialog(null, w);
-        
-        // Strings have built-in actions like "charAt" to pull out a character
-        // "at" location "0" which means the very first character (because 
-        // numbering in Computer Science usually starts at 0)
+//        
+//        // Another example with a char (character)
+//        
+//        String v = JOptionPane.showInputDialog("Enter char");
+//        char   w = v.charAt(0);
+//        JOptionPane.showMessageDialog(null, w);
+//        
+//        // Strings have built-in actions like "charAt" to pull out a character
+//        // "at" location "0" which means the very first character (because 
+//        // numbering in Computer Science usually starts at 0)
         
         // String have MANY built-in "actions" ("powers", functions, methods)
         
+        String word = "hippopotomonsprosesquippedaiophobia";
+        int length = word.length();
         
+        System.out.println("Word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
+        System.out.println("Word " + word + " in upper case is " + upper);
         
+        // Many more string functions to explore (could use CTRL+SPACE)
         
+        // Another useful "library" of code is the "Math" library which is
+        // also "built-in" (you can easily use it) to Java. It comes with 
+        // its own functions (actions, methods)
         
         
         
