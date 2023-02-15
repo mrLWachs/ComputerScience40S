@@ -559,9 +559,13 @@ public class ComputerScience30S
         // when you want the body (block) of the loop to run at least
         // once!
         
+        String choice = "";
         
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
         
-        
+        JOptionPane.showMessageDialog(null, "You got it");
         
         
         
@@ -591,5 +595,10 @@ public class ComputerScience30S
 // (8) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
-
+// (9)  To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
+// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
 
