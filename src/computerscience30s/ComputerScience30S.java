@@ -472,20 +472,20 @@ public class ComputerScience30S
 //        else {
 //            System.out.println("Greater than");
 //        }
-        
-        // You can have as many lines of code as you want in a "block"
-        
-        // Use chars and some shorthand, not usually recommended (except in 
-        // certain situations) used when the code in a block - between { } is
-        // only one line of code! Then, you don't need the { } 
-        // And.. (even further shorthand) the line can be moved up to the
-        // same line as the if statement
-        
-        char value5 = 'A';
-        char value6 = 'a';
-        
-        if (value5 != value6) System.out.println("!=");
-        else                  System.out.println("==");
+//        
+//        // You can have as many lines of code as you want in a "block"
+//        
+//        // Use chars and some shorthand, not usually recommended (except in 
+//        // certain situations) used when the code in a block - between { } is
+//        // only one line of code! Then, you don't need the { } 
+//        // And.. (even further shorthand) the line can be moved up to the
+//        // same line as the if statement
+//        
+//        char value5 = 'A';
+//        char value6 = 'a';
+//        
+//        if (value5 != value6) System.out.println("!=");
+//        else                  System.out.println("==");
         
         // Use "else if" for multiple cases of more than 2 things (same as the
         // "switch" statement - which I don't use) use strings for this
@@ -494,12 +494,23 @@ public class ComputerScience30S
         
         // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
         
+        String word1 = "edgy";
+        String word2 = "edGy";
         
+        if (word1.equals(word2)) {
+            System.out.println("W1==W2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("W1 kind of == W2");
+        }
+        else {
+            System.out.println("W1!=W2");
+        }
         
-        
-        
-        
-        
+        // As an optional way to combine logic using: "and" "or" "not"
+        // "and" means BOTH   must be true - uses the symbol "&&"
+        // "or"  means EITHER can  be true - uses the symbol "||"
+        // "not" reverse logic (so false)  - uses the symbol "!" 
         
         
         
