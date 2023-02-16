@@ -506,35 +506,61 @@ public class ComputerScience30S
 //        else {
 //            System.out.println("W1!=W2");
 //        }
+//        
+//        // As an optional way to combine logic using: "and" "or" "not"
+//        // "and" means BOTH   must be true - uses the symbol "&&"
+//        // "or"  means EITHER can  be true - uses the symbol "||"
+//        // "not" reverse logic (so false)  - uses the symbol "!" 
+//        
+//        int age = 17;
+//        double iq = 1.0;
+//        
+//        if (age >= 18 && iq > 90) {
+//            // with "and" ("&&") BOTH have to be true
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 18 || iq > 0) {
+//            // with "or" ("||") EITHER can be true
+//            System.out.println("Keep trying");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // LOOPING
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // Loops ARE just like conditional statements (like "if") BUT the code
+//        // keeps repeating while something is TRUE...
+//        
+//        // Simple loop
+//                
+//        int counter = 0;
+//        
+//        while (counter < 10) {
+//            System.out.println("counter = " + counter);
+//            counter++;  // Shorthand for "counter = counter + 1"
+//        }
         
-        // As an optional way to combine logic using: "and" "or" "not"
-        // "and" means BOTH   must be true - uses the symbol "&&"
-        // "or"  means EITHER can  be true - uses the symbol "||"
-        // "not" reverse logic (so false)  - uses the symbol "!" 
+        // Loop with a string...
         
-        int age = 17;
-        double iq = 1.0;
+        String password = JOptionPane.showInputDialog("Create a password");
         
-        if (age >= 18 && iq > 90) {
-            // with "and" ("&&") BOTH have to be true
-            System.out.println("Get in");
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again!");
+            password = JOptionPane.showInputDialog("Create another password");
         }
-        else if (age >= 18 || iq > 0) {
-            // with "or" ("||") EITHER can be true
-            System.out.println("Keep trying");
-        }
-        else {
-            System.out.println("Get out");
-        }
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
+        JOptionPane.showMessageDialog(null, "Ok, continue...");
         
-        // Loops ARE just like conditional statements (like "if") BUT the code
-        // keeps repeating while something is TRUE...
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
         
-        // Simple loop
+        
+        
         
         
         
@@ -577,4 +603,9 @@ public class ComputerScience30S
 // (8) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
-
+// (9)  To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
+// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
