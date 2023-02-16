@@ -670,11 +670,21 @@ public class ComputerScience30S
 //      error and a potential fix (if you click the lightbulb)
 // (11) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-// (12) To have NetBeans automate code comments for assignments, select the 
-//      code below and uncomment it (see tip 8) and copy it. Then go to:
-//      Tools -> Templates, scroll down and click on the "+" beside "Java", 
-//      select "Java Main Class", and "Open in Editor" and the enter (paste)
-//      this into the template (instead of the text that is already there):
+// (12) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (13) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 14) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
+// (14) To have NetBeans automate code comments for assignments, select the 
+//      code below this tip, and uncomment it (see tip 8) and then copy the 
+//      same (uncommented) code. Then go to the menu: Tools -> Templates, and
+//      scroll down and click on the "+" beside "Java", and select 
+//      "Java Main Class", and "Open in Editor" and the enter (paste) this into
+//      the template (instead of the text that is already there). Then close 
+//      and save the Template so it now applies to every new project you make...
 //
 ///** Required package class namespace */
 //package ${package};
@@ -701,11 +711,7 @@ public class ComputerScience30S
 //
 //}
 //
-// (13) To autoformat code (fixes indents, extra spaces, etc.) you select the
-//      code with mouse or keyboard (if you select nothing it will autoformat
-//      all the code) and pres ALT + SHIFT + F (you should do this before you 
-//      hand in your code)
-// (14) When preparing code for hand in: I would suggest the first option, but
+// (15) When preparing code for hand in: I would suggest the first option, but
 //      you can also do the second: (A) Go to the menu File -> Print to HTML...
 //      click Browse to select a location and name the file (end the name with
 //      ".html") to save a HTML file with all your code (it will already be
@@ -716,7 +722,4 @@ public class ComputerScience30S
 //      it to a PDF (which means select "Microsoft Print to PDF" on the next 
 //      screen), or cancel and resize the code to fit better (see tip #1) and 
 //      then print again
-// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
-//      number 13) by going to Tools -> Options, then click on the "Editor"
-//      tab at the top, then the "Formatting" below that. Then change the 
-//      settings to what you prefer
+
