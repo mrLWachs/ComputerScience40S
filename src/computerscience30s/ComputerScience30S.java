@@ -463,188 +463,50 @@ public class ComputerScience30S
         
         // if with "else" (an option) for both true and false, check 2 things
         
-        double value3 = 1.45, value4 = 1.5;
         
-        if (value3 < value4) {
-            System.out.print("The example is ");
-            System.out.println("less than");
-        }
-        else {
-            System.out.println("Greater than");
-        }
         
-        // You can have as many lines of code as you want in a "block"
         
-        // Use chars and some shorthand, not usually recommended (except in 
-        // certain situations) used when the code in a block - between { } is
-        // only one line of code! Then, you don't need the { } 
-        // And.. (even further shorthand) the line can be moved up to the
-        // same line as the if statement
         
-        char value5 = 'A';
-        char value6 = 'a';
         
-        if (value5 != value6) System.out.println("!=");
-        else                  System.out.println("==");
         
-        // Use "else if" for multiple cases of more than 2 things (same as the
-        // "switch" statement - which I don't use) use strings for this
-        // example which are more complex (because they use many character,
-        // and upper and lower case)
         
-        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
         
-        String word1 = "edgy";
-        String word2 = "edGy";
         
-        if (word1.equals(word2)) {
-            System.out.println("W1==W2");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("W1 kind of == W2");
-        }
-        else {
-            System.out.println("W1!=W2");
-        }
         
-        // As an optional way to combine logic using: "and" "or" "not"
-        // "and" means BOTH   must be true - uses the symbol "&&"
-        // "or"  means EITHER can  be true - uses the symbol "||"
-        // "not" reverse logic (so false)  - uses the symbol "!" 
         
-        int age = 17;
-        double iq = 1.0;
         
-        if (age >= 21 && iq > 90) {
-            // with "and" BOTH have to be true
-            System.out.println("Get in");
-        }
-        else if (age >= 18 || iq > 0) {
-            // with "or" EITHER can be true
-            System.out.println("Keep trying");
-        }
-        else {
-            System.out.println("Get out");
-        }
         
-        ///////////////////////////////////////////////////////////////////////
-        // LOOPING
-        ///////////////////////////////////////////////////////////////////////
         
-        // Loops ARE just like conditional statements (like "if") BUT the code
-        // keeps repeating while something is TRUE...
         
-        // Simple loop
         
-        int counter = 0;
         
-        while (counter < 10) {
-            System.out.println("counter = " + counter);
-            counter++;      // means "counter = counter + 1"
-        }
         
-        // Loop with a string
         
-        String password = JOptionPane.showInputDialog("Create a password");
         
-        while (password.equals("1234")) {
-            JOptionPane.showMessageDialog(null, "Try again!");
-            password = JOptionPane.showInputDialog("Create another password");
-        }
         
-        JOptionPane.showMessageDialog(null, "Ok, continue...");
         
-        // The next type of loop is rarely used (you may never need it)
-        // it tests for true/false at the bottom of the loop, you use it
-        // when you want the body (block) of the loop to run at least
-        // once!
         
-        String choice = "";
         
-        do {            
-            choice = JOptionPane.showInputDialog("Enter password");
-        } while (choice.equalsIgnoreCase(password) == false);
         
-        JOptionPane.showMessageDialog(null, "You got it");
-
-        // The "for" loop is used for counting (and for the upcoming unit 
-        // called "arrays"). It is a much more technical ("codey") looking loop
-        // The inside of the round brackets means: ( start ; end ; change)        
-        // The for loop creates its own variable (by default NetBeans calls
-        // it "i") - short for "iteration"
-
-        for (int i = 0; i < 10; i++) {
-            System.out.println("i = " + i);
-        }
         
-        // Variations on the for loop:
-            // start at 100
-            // end (stop) at zero (including zero)
-            // count down (not up)
-            // count by 10s (not 1s)
-
-        for (int counting = 100; counting >= 0; counting -= 10) {
-            System.out.println("counting = " + counting);
-        }
         
-        // After you autocomplete a for loop (by typing "for" then tab),
-        // you can immediately rename the varaible "i" (which is highlighted)
-        // to whatever you want, if you press tab a second time, it will 
-        // highlight the ending value of the loop
-
-        // One more for "fun"
-
-        for (double i = 99.789; i > 15.6; i/=5.25) {
-            System.out.println("i = " + i);
-        }
-
-        ///////////////////////////////////////////////////////////////////////
-        // EXAMPLE ASSIGNMENT:
-        ///////////////////////////////////////////////////////////////////////
         
-        // Create welcome screen for the user (message dialog box)
-        JOptionPane.showMessageDialog(null, 
-                         "You are an intern at radio station, C-RAP, The \n"
-                       + "disk jockeys announce the current temperature \n"
-                       + "in both Fahrenheit and Celsius every half-hour.\n"
-                       + "They would like an easy way to display both the \n"
-                       + "Fahrenheit and Celsius temperatures quickly and \n"
-                       + "at the same time. The local airport phones in \n"
-                       + "the temperature (but only in Celsius). They \n"
-                       + "have requested that you develop an application \n"
-                       + "that will display both temperatures after the \n"
-                       + "Celsius temperature is inputted. Note: Use \n"
-                       + "this conversion formula F = (C ∗ 1.8) + 32"); 
         
-        // Get user input (temperature in celcius) - dialog
-        String userInput = JOptionPane.showInputDialog("Enter temperature "
-                + "in Celcius");
-
-        // Convert this to a number I can do math with
-        double celcius = Double.parseDouble(userInput);
         
-        // Apply a formula  (F = (C ∗ 1.8) + 32 )
-        double fahrenheit = (celcius * 1.8) + 32;
         
-        // Show the user the results (fahrenheit) in a dialog
-        JOptionPane.showMessageDialog(null, "Your temperature in "
-                + "Fahrenheit is " + fahrenheit);
         
-        // Show ending message
-        JOptionPane.showMessageDialog(null, "Thank you!");
-                
-        // When preparing this for hand in, you should first:
-            // Make sure all comments are done
-            // Clean up your code (see tip 13 below)
-            // Watch out for long code lines (beyond the border)
-            // Set NetBeans for printing a PDF (see tip 14 below)
-            // Create as many screen captures as needed to prove it works
         
-        // This line terminates any running java program at any point
-        // System.exit(0);
         
-        // Curly brackets (braces, parenthesis) { and } are important - all 
-        // code goes between these two brackets
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
     }
 
@@ -664,62 +526,4 @@ public class ComputerScience30S
 // (8) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
-// (9)  To stop a running program, click the red stop button on the left in the
-//      output window, or the X in the bottom right of NetBeans
-// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
-//      error and a potential fix (if you click the lightbulb)
-// (11) You can get more NetBeans tips and autocompletes by selecting:
-//      Help -> Keyboard Shortcuts Card
-// (12) To autoformat code (fixes indents, extra spaces, etc.) you select the
-//      code with mouse or keyboard (if you select nothing it will autoformat
-//      all the code) and pres ALT + SHIFT + F (you should do this before you 
-//      hand in your code)
-// (13) You can "teach" NetBeans to change the style it uses to autoformat (see
-//      number 14) by going to Tools -> Options, then click on the "Editor"
-//      tab at the top, then the "Formatting" below that. Then change the 
-//      settings to what you prefer
-// (14) To have NetBeans automate code comments for assignments, select the 
-//      code below this tip, and uncomment it (see tip 8) and then copy the 
-//      same (uncommented) code. Then go to the menu: Tools -> Templates, and
-//      scroll down and click on the "+" beside "Java", and select 
-//      "Java Main Class", and "Open in Editor" and the enter (paste) this into
-//      the template (instead of the text that is already there). Then close 
-//      and save the Template so it now applies to every new project you make...
-//
-///** Required package class namespace */
-//package ${package};
-//
-//
-///*
-// * ${name} - description
-// * 
-// * @author Your Name
-// * @since ${date}
-//*/
-//public class ${name}
-//{
-//
-//    /**
-//     * Main method for the project
-//     * 
-//     * @param args the command line arguments
-//     */
-//    public static void main(String[] args) {
-//        // TODO code application logic here
-//        
-//    }
-//
-//}
-//
-// (15) When preparing code for hand in: I would suggest the first option, but
-//      you can also do the second: (A) Go to the menu File -> Print to HTML...
-//      click Browse to select a location and name the file (end the name with
-//      ".html") to save a HTML file with all your code (it will already be
-//      properly formatted. (B) Alternatively, you can "print" your code to a
-//      PDF file but first you need to set NetBeans (this only needs to be done
-//      once), by clicking on "Print Options" and uncheck everything previously
-//      checked off, and then check off "Print as in Editor", then either print
-//      it to a PDF (which means select "Microsoft Print to PDF" on the next 
-//      screen), or cancel and resize the code to fit better (see tip #1) and 
-//      then print again
 
