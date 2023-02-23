@@ -12,7 +12,13 @@ package testing;
 public class RecursionTest 
 {
 
-    
+    public RecursionTest() {
+        System.out.println("Recursion test started...");
+        
+        // code...
+        
+        System.out.println("Recursion complete!");
+    }
 
 }
 

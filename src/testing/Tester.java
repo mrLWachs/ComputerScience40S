@@ -20,11 +20,18 @@ package testing;
 public class Tester 
 {
 
+    /**
+     * Constructor method sets class properties (if we had any) - these special
+     * methods use the exact same name as the class (including a capital 
+     * letter to start) and NO return type (not even "void")
+     */
+    public Tester() {
+        System.out.println("Testing started...");
+        
+        RecursionTest unit1 = new RecursionTest();
+        // Later we will add code here for unit 2 and 3...
+        
+        System.out.println("Testing complete!");
+    }
     
-
 }
-
-
-
-
-
