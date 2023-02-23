@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+
 /** 
  * RecursionTest.java - tests the concepts learned in unit 1. 
  * 
@@ -11,13 +12,6 @@ package testing;
 public class RecursionTest 
 {
 
-    public RecursionTest() {
-        System.out.println("Recursion testing started...");
-        
-        
-        
-        
-        System.out.println("Recursion complete!");
-    }    
+    
 
 }

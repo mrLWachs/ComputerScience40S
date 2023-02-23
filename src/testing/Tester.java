@@ -20,11 +20,6 @@ package testing;
 public class Tester 
 {
 
-    public Tester() {
-        System.out.println("\nTesting starting...\n"); 
-        RecursionTest unit1 = new RecursionTest();
-        // More code to add when we start units 2 and 3..
-        System.out.println("\nTesting complete!\n");
-    }
+    
 
 }
