@@ -32,12 +32,16 @@ public class RecursionTest
         System.out.println("\nRecursion test starting...\n");
         
         // When testing, think of three scenarios:
-            // 1) Typical case ("user"): do what they are told to do
-            // 2) Edge cases ("user"): they push the "edges"
-            // 3) Beyond the edges: "bad" users, trying to break things
+            // (1) Typical case ("user"): do what they are told to do
+            // (2) Edge cases (more than one): they "push" the edge
+            // (3) Beyond the edges: "bad" users, trying to break things
             
         System.out.println("Recursive factorials............................");
             
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
+     
         final int MIN_FACTORIAL = -1;
         final int MAX_FACTORIAL = 20;
                 
