@@ -6,7 +6,18 @@ import tools.Calculator;
 
 
 /** 
- * RecursionTest.java - tests the concepts learned in unit 1. 
+ * RecursionTest.java - tests the concepts learned in this unit. Recursion is 
+ * the process of something recurring, and is defined as a method that calls 
+ * itself. Recursive methods may have 1 or more than 1 base cases, and 1 or 
+ * more than 1 recursive cases, but the method must have a minimum of 1 base 
+ * case and 1 recursive case. Recursion is a programming tool that can often 
+ * be used as an alternative to looping, or as a simpler way to solve 
+ * specific problems. Recursion is not always the most efficient solution as 
+ * it often consumes more memory than an iterative solution. Often recursion 
+ * is ‘hidden’ by using a public method call that then calls a private 
+ * recursive method to implement the recursion that eventually returns to the 
+ * original method that then returns the result (this is known as a “wrapper” 
+ * method).
  * 
  * @author Mr. Wachs 
  * @since February 2023
@@ -28,22 +39,34 @@ public class RecursionTest
         
         System.out.println("Recursive factorials............................");
         
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
         
-        int answer = Calculator.factorial(5);
-        System.out.println("5 factorial = " + answer);
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;   // Beyond this, the variable "overloads"
         
+        // Loop through a series of tests (going through the edge cases)
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            long answer = Calculator.factorial(i);
+            System.out.println(i + "\t factorial = \t" + answer);
+        }
         
+        System.out.println("Recursive powers................................");
         
+        final int MIN_POWER = 0;
+        final int MAX_POWER = 10;
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Testing all the exponents (edges)
+        for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+            // Nested loop increasing the bases (to the edges)
+            for (int base = MIN_POWER; base <= MAX_POWER; base++) {
+                // Calculate (test this case) and display the test results
+                long answer = Calculator.power(base,exponent);
+                System.out.println(base + " to the exponent of " + exponent +
+                               " = " + answer);
+            }
+        }
         
         System.out.println("\nRecursion complete!\n");
     }
