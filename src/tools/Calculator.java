@@ -23,14 +23,10 @@ public class Calculator
      * @return the factorial of the parameter (number)
      */
     public static long factorial(int number) {
-        // BASE CASE - stops the recursion (like stopping a loop)
-        if (number <= 1) {
-            return 1;
-        }
-        // RECURSIVE CASE - like a loop, method calls itself
-        else {
-            return number * factorial(number-1);
-        }
+        // BASE CASE - stops the recursion (stops the looping effect)
+        if (number <= 1) return 1;
+        // RECURSIVE CASE - the method calls itself (like a loop)
+        return number * factorial(number-1);        
     }
 
     /**
@@ -40,19 +36,15 @@ public class Calculator
      * @param exponent the exponent of the power
      * @return the base^exponent
      */
-    public static long power(int base, int exponent) {
+    public static double power(int base, int exponent) {
         // Base case(s):
         // =============
-        
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
         
         // Recursive case(s):
         // ==================
-        
         return base * power(base, exponent-1);
     }
-
-    
     
 }

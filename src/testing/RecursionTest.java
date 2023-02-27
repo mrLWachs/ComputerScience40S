@@ -44,12 +44,12 @@ public class RecursionTest
         // will call itself)
         
         final int MIN_FACTORIAL = -1;
-        final int MAX_FACTORIAL = 20;   // Beyond this, the variable "overloads"
-        
-        // Loop through a series of tests (going through the edge cases)
+        final int MAX_FACTORIAL = 20; // Beyond this we get an "overflow" error
+                
+        // Loop through a series of tests (going through the "edge cases")
         for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
             long answer = Calculator.factorial(i);
-            System.out.println(i + "\t factorial = \t" + answer);
+            System.out.println(i + " factorial = " + answer);
         }
         
         System.out.println("Recursive powers................................");
@@ -62,9 +62,9 @@ public class RecursionTest
             // Nested loop increasing the bases (to the edges)
             for (int base = MIN_POWER; base <= MAX_POWER; base++) {
                 // Calculate (test this case) and display the test results
-                long answer = Calculator.power(base,exponent);
-                System.out.println(base + " to the exponent of " + exponent +
-                               " = " + answer);
+                double answer = Calculator.power(base, exponent);
+                System.out.println(base + " to the exponent " + exponent +
+                                   " = " + answer);
             }
         }
         
