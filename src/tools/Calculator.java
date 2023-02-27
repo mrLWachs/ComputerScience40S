@@ -39,11 +39,22 @@ public class Calculator
     public static double power(int base, int exponent) {
         // Base case(s):
         // =============
+        
+        // Special base case for negative exponents and a base of zero (we can
+        // never divide by zero) - if a base of zero occurs, we need to return
+        // "something" we could use "flag" value (a rarely used value) 
+        if (exponent < 0 && base == 0) return Double.MIN_VALUE;
+        
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
         
         // Recursive case(s):
         // ==================
+        
+        // Special recursive case for negative exponents
+        if (exponent < 0) return 1 / (base * power(base, exponent*-1));
+        
+        // Default recursive case (for positive exponents)
         return base * power(base, exponent-1);
     }
     
