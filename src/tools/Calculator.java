@@ -52,7 +52,7 @@ public class Calculator
         // ==================
         
         // Special recursive case for negative exponents
-        if (exponent < 0) return 1 / (base * power(base, exponent*-1));
+        if (exponent < 0) return 1 / power(base, Math.abs(exponent));
         
         // Default recursive case (for positive exponents)
         return base * power(base, exponent-1);
