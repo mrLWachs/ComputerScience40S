@@ -30,7 +30,7 @@ public class Calculator
     }
 
     /**
-     * Calculates the power of a base to it's exponent
+     * Calculates the power of a base to it's exponent (recursively)
      * 
      * @param base the base of the power
      * @param exponent the exponent of the power

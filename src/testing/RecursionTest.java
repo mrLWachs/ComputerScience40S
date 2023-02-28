@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import tools.Calculator;
 
 
@@ -54,6 +55,7 @@ public class RecursionTest
         
         System.out.println("Recursive powers................................");
         
+        // Set the text "edges"
         final int MIN_POWER = -5;
         final int MAX_POWER = 10;
         
