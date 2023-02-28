@@ -55,7 +55,7 @@ public class RecursionTest
         
         System.out.println("Recursive powers................................");
         
-        // Set the text "edges"
+        // Set the testing "edges"
         final int MIN_POWER = -5;
         final int MAX_POWER = 10;
         
