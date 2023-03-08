@@ -24,6 +24,10 @@ public class ComputerScience30S
 {
 
     public static void main(String[] args) {
+        learnIntroductionToJava();
+    }
+
+    private static void learnIntroductionToJava() {
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////////////////////
