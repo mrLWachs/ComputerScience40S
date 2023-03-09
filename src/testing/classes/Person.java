@@ -4,10 +4,11 @@ package testing.classes;
 
 
 /** 
- * Person.java - represents ("models") a person. This is a class with  (things
- * properties about the class, adjective, descriptors) and methods (things it 
- * can do, verbs, actions). Classes can be created (instantiated) into objects
- * (which are instances of that class).
+ * Person.java - represents ("models") a person. This is a class with (some 
+ * "things" or "properties" about the class - also known as adjectives, or 
+ * descriptors) and methods (things it can "do" or "verbs" or "actions"). 
+ * Classes can be created (instantiated) into objects (which are instances of 
+ * that class).
  *
  * @author Mr. Wachs 
  * @since March 2023
@@ -16,10 +17,10 @@ public class Person
 {
     
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
-        
-    // We add a keyword to the front of the properties (modifier word) to
-    // determine if the property (variable, global varaible) is encapsulated
-    // or not. Meaning is the variable accessable (can be read and changed)
+    
+    // We can add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global variable) is encapsulated
+    // or not. Meaning: is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
     
     /**
@@ -35,10 +36,11 @@ public class Person
      */
     private int age;
     private String gender;
-        
+    
     boolean alive;
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
+    
     
     public void born() {
         
@@ -49,7 +51,7 @@ public class Person
     }
     
     public void talk() {
-        
+         
     }
     
     public void birthday() {
