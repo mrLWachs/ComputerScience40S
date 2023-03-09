@@ -51,7 +51,7 @@ public class Person
     }
     
     public void talk() {
-         
+        
     }
     
     public void birthday() {
