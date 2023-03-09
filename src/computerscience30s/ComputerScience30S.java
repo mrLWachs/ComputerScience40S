@@ -661,6 +661,7 @@ public class ComputerScience30S
     }
 
     private static void learnMethods() {
+        System.out.println("Starting to Learn methods...");
         
     }
 
