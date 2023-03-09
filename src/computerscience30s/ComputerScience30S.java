@@ -726,3 +726,11 @@ public class ComputerScience30S
 //      it to a PDF (which means select "Microsoft Print to PDF" on the next 
 //      screen), or cancel and resize the code to fit better (see tip #1) and 
 //      then print again
+// (16) The + and - signs and gray lines along the left side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (17) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+// (18) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
