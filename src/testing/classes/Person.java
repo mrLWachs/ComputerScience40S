@@ -34,17 +34,26 @@ public class Person
      * a "private room") - this is the concept of encapsulation
      */
     private int age;
-    
-    
     private String gender;
-    
-    
-    
+        
     boolean alive;
     
+    // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
+    public void born() {
+        
+    }
     
+    public void die() {
+        
+    }
     
+    public void talk() {
+        
+    }
     
-
+    public void birthday() {
+        
+    }
+    
 }
