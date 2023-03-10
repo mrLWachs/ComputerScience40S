@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import testing.classes.Person;
+
 /** 
  * AdvancedClassesTest.java - tests the concepts learned in this unit.
  *
@@ -22,6 +24,46 @@ public class AdvancedClassesTest
      */
     public AdvancedClassesTest() {
         System.out.println("\nAdvanced Classes Test started...\n");
+        
+        // Using the class to create an object with the default constructor:
+        // class object = call constructor method (default)   
+        Person person = new Person();
+        
+        // The "Object" (in this case called "person" - lowercase "p") can also 
+        // be called a: instance, or even a "variable"
+        
+        // Call (invoke) one of our methods in this object ("instance") 
+        person.talk();
+        
+        // Try to change (modify) some of our properties
+        person.name = "Peter Parker";
+        
+        // person.gender = "spider";
+        // person.age = 17;
+        // person.alive = false;
+        
+        // Recall our method... (to see any changes)
+        person.talk();
+        
+        // Try to call (invoke) some of our other methods:
+        person.birthday();
+        person.die();
+        person.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
