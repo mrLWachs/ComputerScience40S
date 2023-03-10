@@ -28,7 +28,7 @@ public class ComputerScience30S
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
-        learnIntroductionToJava();
+        // learnIntroductionToJava();
         learnMethods();     // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
@@ -663,10 +663,50 @@ public class ComputerScience30S
     private static void learnMethods() {
         System.out.println("Starting to Learn methods...");
         
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
+        
+        // Call it again
+        writeStar();
+        
+        // When we call a method, we place "data" (information) inside the
+        // round brackets and that data is "passed" (sending) over to the 
+        // method. The data being passed is technically called the "argument"
+        // and the data being received is called the "parameter(s)". You can
+        // always change the arguement.
+        
+        write("Phenakistoscope");
+        
+        write("Spider-man");
+        write("Batman");
+        
+        
     }
 
+    private static void writeStar() {
+        System.out.println("*");
+    }
+
+    private static void write(String thing) {
+        // Information (data) "passed" to this method is called the parameter,
+        // if you use the lightbulb to write this method, you should (do this 
+        // first) rewrite the name of that parameter
+        System.out.println(thing);
+    }
+
+
+    
 }
 
+
+// <editor-fold>
 
 // NETBEANS TIPS:
 // ==============
@@ -747,3 +787,6 @@ public class ComputerScience30S
 //      itself, the lightbulb (see tip 10) will help you write it
 // (18) If you hold down the CTRL key, method calls become links with the
 //      mouse to jump to the method (even ones we don't write)
+
+
+// </editor-fold> 
