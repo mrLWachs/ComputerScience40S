@@ -700,7 +700,9 @@ public class ComputerScience30S
         // previous methods needed information (inputs) as parameters or 
         // empty brackets () if they did not need information passed
         
+        int number = giveMeNumber();
         
+        write("Number is " + number);
         
         
         
@@ -726,6 +728,13 @@ public class ComputerScience30S
         for (int i = 0; i < times; i++) {
             write(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or they can have
+        // ONE output which means the method will "return" (the keyword to use)
+        // that data type defined in the method signature line
+        return 7;
     }
     
 
