@@ -734,8 +734,18 @@ public class ComputerScience30S
         // Methods can have no outputs (the word "void") or they can have
         // ONE output which means the method will "return" (the keyword to use)
         // that data type defined in the method signature line
-        return 7;
+        return random(1, 10);
     }
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();                  // Seed value (random)
+        double L      = (double)low;                    // Casting in to double
+        double H      = (double)high;                   
+        double number = (H - L + 1) * seed + L;         // Formula
+        return (int)number;                             // Cast back to int
+    }
+    
+    
     
 
 }
