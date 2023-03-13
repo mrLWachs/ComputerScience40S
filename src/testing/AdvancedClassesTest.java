@@ -4,6 +4,7 @@ package testing;
 
 import testing.classes.Person;
 
+
 /** 
  * AdvancedClassesTest.java - tests the concepts learned in this unit.
  *
@@ -35,9 +36,10 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
-        // Try to change (modify) some of our properties
+        person.name = "Sir Fitgerald The 4th";
         person.name = "Peter Parker";
         
+        // person.gender = "non-binary";
         // person.gender = "spider";
         // person.age = 17;
         // person.alive = false;
@@ -49,14 +51,6 @@ public class AdvancedClassesTest
         person.birthday();
         person.die();
         person.talk();
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         

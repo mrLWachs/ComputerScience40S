@@ -41,6 +41,7 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
+    
     /**
      * Constructor method is a method that has (1) the same name as the class,
      * (2) the name starts with a capital letter, (3) it has NO return type 
@@ -48,11 +49,31 @@ public class Person
      * used to build (construct, instantiate) an object. Constructor methods 
      * with NO parameters are called default constructors
      */
-    public Person() {
+    public Person() {     
         alive  = true;
         age    = 0;
         gender = "unidentified";
-        name   = "unidentified";        
+        name   = "unidentified";
+    }
+    
+    /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties by assigning the passed
+     * parameter value into the object's (class) property (global variable) of
+     * the same name using the keyword "this"
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    public Person(String name, int age, String gender) {
+        alive = true;
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (which will be created at a later time)
+        this.name = name;
+        this.age  = age;
+        this.gender = gender;
     }
     
     /**
@@ -71,7 +92,7 @@ public class Person
             System.out.println(name + " is " + age + " identifies as " + gender);
         }
         else {
-            System.out.println("Boooooo!");
+            System.out.println("Booooo!");
         }
     }
     
