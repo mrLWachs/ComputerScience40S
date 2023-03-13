@@ -37,7 +37,7 @@ public class AdvancedClassesTest
         person.talk();
         
         person.name = "Sir Fitgerald The 4th";
-        person.name = "Peter Parker";
+        // person.name = "Peter Parker";
         
         // person.gender = "non-binary";
         // person.gender = "spider";
@@ -49,6 +49,7 @@ public class AdvancedClassesTest
         
         // Try to call (invoke) some of our other methods:
         person.birthday();
+        person.talk();
         person.die();
         person.talk();
         
