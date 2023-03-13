@@ -675,8 +675,7 @@ public class ComputerScience30S
         
         // Call it again...
         writeStar();
-        
-        
+                
         // When we call a method, we place "data" (information) inside the
         // round brackets and that data is "passed" (sending) over to the 
         // method. The data being passed is technically called the "argument"
@@ -692,7 +691,7 @@ public class ComputerScience30S
         // You can have more than one, multiple parameters/arguments in a
         // method which are seperated with commas ","
         
-        writeLotsOf("Dalmations",101);
+        writeLotsOf("Dalmations", 101);
         
         writeLotsOf("Problems", 99);
         
@@ -703,10 +702,6 @@ public class ComputerScience30S
         int number = giveMeNumber();
         
         write("Number is " + number);
-        
-        
-        
-        
         
         
     }
@@ -744,8 +739,6 @@ public class ComputerScience30S
         double number = (H - L + 1) * seed + L;         // Formula
         return (int)number;                             // Cast back to int
     }
-    
-    
     
 
 }
