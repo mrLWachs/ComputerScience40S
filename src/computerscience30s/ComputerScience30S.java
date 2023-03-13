@@ -673,8 +673,9 @@ public class ComputerScience30S
         // Code to "jump" to a method, is "calling" the method (method call)
         writeStar();
         
-        // Call it again
+        // Call it again...
         writeStar();
+        
         
         // When we call a method, we place "data" (information) inside the
         // round brackets and that data is "passed" (sending) over to the 
@@ -683,13 +684,31 @@ public class ComputerScience30S
         // always change the arguement.
         
         write("Phenakistoscope");
-        
+        write("Volleywood");
+        write("pancakes");
         write("Spider-man");
         write("Batman");
         
+        // You can have more than one, multiple parameters/arguments in a
+        // method which are seperated with commas ","
+        
+        writeLotsOf("Dalmations",101);
+        
+        writeLotsOf("Problems", 99);
+        
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        
+        
+        
+        
+        
+        
         
     }
-
+    
     private static void writeStar() {
         System.out.println("*");
     }
@@ -701,10 +720,20 @@ public class ComputerScience30S
         System.out.println(thing);
     }
 
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
+    }
+    
+
 }
 
 
 // <editor-fold>
+
 
 // NETBEANS TIPS:
 // ==============
@@ -787,4 +816,5 @@ public class ComputerScience30S
 //      mouse to jump to the method (even ones we don't write)
 
 
-// </editor-fold> 
+// </editor-fold>
+
