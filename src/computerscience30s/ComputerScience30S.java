@@ -708,7 +708,7 @@ public class ComputerScience30S
         
         output("Hello");
         
-        output("Good-bye","Learning Methods");
+        output("Good-bye", "Learning Methods");
         
         System.out.println("Completed Learning Methods!"); 
     }
@@ -749,7 +749,7 @@ public class ComputerScience30S
     /**
      * Gives you a random number
      * 
-     * @return random number between 1 and 10
+     * @return a random number between 1 and 10
      */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or they can have
@@ -759,13 +759,13 @@ public class ComputerScience30S
     }
     
     /**
-     * Generates a random number in a range between two numbers
+     * Generates a random number in range between two numbers
      * 
      * @param low the lowest number in the range
      * @param high the highest number in the range
      * @return random number less than or equal to the low and greater than
      * or equal to the high
-     */    
+     */
     private static int random(int low, int high) {
         double seed   = Math.random();                  // Seed value (random)
         double L      = (double)low;                    // Casting in to double
@@ -784,18 +784,18 @@ public class ComputerScience30S
     }
 
     /**
-     * Display text in a dialog with a title at the top of that dialog
+     * Displays text in a dialog with a title at the top of that dialog
      * 
      * @param text the text to display
-     * @param title what to show at the top (title) of the dialog 
+     * @param title what to show at the top (title) of the dialog
      */
     private static void output(String text, String title) {
         // Overloaded methods are methods with the same name, BUT diferent 
         // parameter(s) / arguement(s) so we know which version of the 
         // method to call
         JOptionPane.showMessageDialog(null, text, title, 
-                JOptionPane.PLAIN_MESSAGE);        
-    }    
+                JOptionPane.PLAIN_MESSAGE);
+    }
 
 }
 
