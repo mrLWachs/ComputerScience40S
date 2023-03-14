@@ -703,13 +703,28 @@ public class ComputerScience30S
         
         write("Number is " + number);
         
+        // Overloaded methods are methods with the same name, BUT different
+        // parameters / arguments
         
+        output("Hello");
+        
+        output("Good-bye","Learning Methods");
+        
+        System.out.println("Completed Learning Methods!"); 
     }
     
+    /**
+     * Writes a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
 
+    /**
+     * Writes something on the screen
+     * 
+     * @param thing the something to write
+     */
     private static void write(String thing) {
         // Information (data) "passed" to this method is called the parameter,
         // if you use the lightbulb to write this method, you should (do this 
@@ -717,6 +732,12 @@ public class ComputerScience30S
         System.out.println(thing);
     }
 
+    /**
+     * Writes something on the screen multiple times
+     * 
+     * @param thing the something to write
+     * @param times how many times to write it
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // if it has more than one parameter, they are separated by commas
@@ -725,6 +746,11 @@ public class ComputerScience30S
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 10
+     */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or they can have
         // ONE output which means the method will "return" (the keyword to use)
@@ -732,6 +758,14 @@ public class ComputerScience30S
         return random(1, 10);
     }
     
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to the low and greater than
+     * or equal to the high
+     */    
     private static int random(int low, int high) {
         double seed   = Math.random();                  // Seed value (random)
         double L      = (double)low;                    // Casting in to double
@@ -739,7 +773,29 @@ public class ComputerScience30S
         double number = (H - L + 1) * seed + L;         // Formula
         return (int)number;                             // Cast back to int
     }
-    
+
+    /**
+     * Display text in a dialog
+     * 
+     * @param text the text to display
+     */
+    private static void output(String text) {
+        JOptionPane.showMessageDialog(null, text);
+    }
+
+    /**
+     * Display text in a dialog with a title at the top of that dialog
+     * 
+     * @param text the text to display
+     * @param title what to show at the top (title) of the dialog 
+     */
+    private static void output(String text, String title) {
+        // Overloaded methods are methods with the same name, BUT diferent 
+        // parameter(s) / arguement(s) so we know which version of the 
+        // method to call
+        JOptionPane.showMessageDialog(null, text, title, 
+                JOptionPane.PLAIN_MESSAGE);        
+    }    
 
 }
 
