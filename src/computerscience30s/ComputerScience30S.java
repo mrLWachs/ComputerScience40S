@@ -835,6 +835,9 @@ public class ComputerScience30S
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (22) NetBeans can auto comment methods if you type "/**" above the method
+//      signature line, it will add the comment and define what needs to be
+//      commented for the method (using the "JavaDoc" commenting style)
 
 // </editor-fold>
 
