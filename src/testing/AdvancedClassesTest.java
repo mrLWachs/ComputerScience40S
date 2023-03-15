@@ -3,6 +3,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /** 
@@ -52,6 +53,22 @@ public class AdvancedClassesTest
         person.talk();
         person.die();
         person.talk();
+        
+        // Instantiate (means create an "instance of") a student object
+        Student student = new Student();
+        student.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
