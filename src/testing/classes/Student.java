@@ -34,12 +34,12 @@ public class Student extends Person
      */
     public Student() {
         super();
-        // The keyword "super" referes to the "super-class" or "parent" class
+        // The keyword "super" refers to the "super-class" or "parent" class
         // in this case that is the Person class - by adding the round brackets
         // we make a call to the super constructor
         gpa    = 0;
         number = 1;
-        book   = new Book();
+        book   = new Book();    // This is an object (not a primitive type)
     }
     
     /**
