@@ -17,8 +17,8 @@ package testing.classes;
 public class Student extends Person
 {
     
-    private int number;    
-    private double gpa; // class properties (and inherited other properties)
+    private int number;     // Class properties (and inherited other properties)  
+    private double gpa;     // Encapsulated property
     
     /**
      * Represents a book object (this object "has a" relationship (association)
@@ -27,9 +27,10 @@ public class Student extends Person
     public Book book;
     
     
-    
     /**
-     * Default constructor, set class properties
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well
      */
     public Student() {
         super();
@@ -50,13 +51,49 @@ public class Student extends Person
      */
     @Override
     public void talk() {
+        super.talk();                           // Invoking super class method
         System.out.println("I am a student");
+        System.out.println("\tNumber: \t" + number);
+        System.out.println("\tGPA:    \t" + gpa);        
     }
     
+    /**
+     * This "secret" method is a private, encapsulated method. These types of 
+     * methods are sometimes called "helper" or "utility" methods as they can
+     * only be called by other methods inside this class
+     */
+    private void secret() {
+        gpa *= 1.0001;
+    }
     
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        gpa += 0.3;
+    }
     
+    /**
+     * Slacking off lowers this student's average
+     */
+    public void slackOff() {
+        gpa -= 0.3;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+        secret();   // We call a private, encapsulated, helper, utility method
+    }
     
      
+    
+    
+    
     /**
      * String representation of this object
      *
