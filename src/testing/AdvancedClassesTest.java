@@ -54,14 +54,29 @@ public class AdvancedClassesTest
         person.die();
         person.talk();
         
-        // Instantiate (means create an "instance of") a student object
+        // Instantiate (means create an "instance of") a student object        
         Student student = new Student();
         student.talk();
+        // Because the "name" property (inherited from Person) is public (not
+        // encapsulated) we can change ("modify", "mutate") that property
+        // we cannot chang eage or gender those ARE encapsulated (private)
+        student.name = "Student Studenty";
+        // We can also change some of the porperties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.talk();
+        student.study();
+        student.talk();
+        student.slackOff();
+        student.talk();
+        student.cram();
+        student.talk();
+        student.die();
+        student.talk();
         
-        
-        
-        
-        
+        // Instantiate a second student object
+        Student spiderHyphenMan = new Student("Peter Parker", 16, "male");
+        spiderHyphenMan.talk();
         
         
         

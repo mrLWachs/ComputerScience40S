@@ -25,22 +25,42 @@ public class Student extends Person
      * or "usage" with the student class
      */
     public Book book;
-    
+        
     
     /**
      * Default constructor, set class properties (including a call to the 
      * "super-constructor" from the parent class to set all of its properties 
-     * as well
+     * as well)
      */
     public Student() {
         super();
         // The keyword "super" refers to the "super-class" or "parent" class
         // in this case that is the Person class - by adding the round brackets
-        // we make a call to the super constructor
-        gpa    = 0;
+        // we make a call to the super constructor        
+        gpa    = 0.0;
         number = 1;
-        book   = new Book();    // This is an object (not a primitive type)
+        book   = new Book();
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param gender the gender for this student
+     */
+    public Student(String name, int age, String gender) {
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the propoerties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name, age, gender);      
+        // Now set the properties of "this" (the Student) class...
+        gpa    = 0.0;
+        number = 1;
+        book   = new Book();
+    }
+    
     
     /**
      * Talk is an "over-ride" (not overload) method means it when called will 
@@ -53,8 +73,8 @@ public class Student extends Person
     public void talk() {
         super.talk();                           // Invoking super class method
         System.out.println("I am a student");
-        System.out.println("\tNumber: \t" + number);
-        System.out.println("\tGPA:    \t" + gpa);        
+        System.out.println("\t Number: \t" + number);
+        System.out.println("\t GPA:    \t" + gpa);        
     }
     
     /**
@@ -90,7 +110,14 @@ public class Student extends Person
         secret();   // We call a private, encapsulated, helper, utility method
     }
     
-     
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
