@@ -75,8 +75,8 @@ public class AdvancedClassesTest
         student.talk();
         
         // Instantiate a second student object
-        Student spiderHyphenMan = new Student("Peter Parker", 16, "male");
-        spiderHyphenMan.talk();
+        Student amber = new Student("Amber Aligawesa", 15, "female");
+        amber.talk();
         
         
         
