@@ -4,6 +4,7 @@ package testing;
 
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /** 
@@ -77,7 +78,6 @@ public class AdvancedClassesTest
         // Instantiate a second student object
         Student amber = new Student("Amber Aligawesa", 15, "female");
         amber.talk();
-        
         
         
         
