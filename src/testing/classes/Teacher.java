@@ -11,7 +11,7 @@ package testing.classes;
  * @author Mr. Wachs
  * @since March 2023
  */
-public class Teacher 
+public class Teacher extends Person
 {
 
     private int count;                     // How many students this teacher has
@@ -36,7 +36,16 @@ public class Teacher
      * @param name the name for this Teacher
      */
     public Teacher(String name) {
-        
+        // First, construct a "Person" (the parent class)
+        super(name, 45, "teacher");         // Call to the super-constructor
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
+        MAX   = 100;                        // Set the constant to be locked
+        count = 0;                          // Set a variable to start
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size
+        students = new Student[MAX];
     }
          
     /**
