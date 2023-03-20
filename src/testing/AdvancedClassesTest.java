@@ -38,11 +38,10 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
-        person.name = "Sir Fitgerald The 4th";
-        // person.name = "Peter Parker";
+        person.name = "Per Soney";
         
+        // The code below would generate errors because of encapsulation......        
         // person.gender = "non-binary";
-        // person.gender = "spider";
         // person.age = 17;
         // person.alive = false;
         
@@ -61,7 +60,7 @@ public class AdvancedClassesTest
         // Because the "name" property (inherited from Person) is public (not
         // encapsulated) we can change ("modify", "mutate") that property
         // we cannot chang eage or gender those ARE encapsulated (private)
-        student.name = "Student Studenty";
+        student.name = "Stu Denty";
         // We can also change some of the porperties just for student (even
         // though they are encapsulated) by going through the methods that 
         // change them
@@ -76,19 +75,23 @@ public class AdvancedClassesTest
         student.talk();
         
         // Instantiate a second student object
-        Student amber = new Student("Amber Aligawesa", 15, "female");
+        Student amber = new Student("Other Studenty", 15, "female");
         amber.talk();
         
         // Instantiate a teacher object and associate it with a student object
-        Teacher teacher = new Teacher("Mr. Wegert");
-        teacher.talk();                 // Inherited method
+        Teacher teacher = new Teacher("Mr. Teachery");
+        teacher.talk();                 // Invoke (call) the inherited method
         teacher.add(student);           // Associate object through method
         teacher.add(amber);             // or "Teacher has a Student"
-        teacher.talk();
-        teacher.teach();                // Effecting associated objects
-        teacher.talk();                 // See the results
-        student.talk();
+        teacher.talk();                 // Call again (to see any changes)
+        teacher.teach();                // Effect the associated objects
+        teacher.talk();                 // See the results from the teacher
+        student.talk();                 // and the 2 students
         amber.talk();
+        
+        
+        
+        
         
         
         

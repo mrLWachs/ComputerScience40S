@@ -46,6 +46,10 @@ public class Teacher extends Person
         // the square brackets "[ ]" and the size of the array is stated when
         // it is declared as arrays are locked into that maximum size
         students = new Student[MAX];
+        // Note: an array of primitive data types (e.g. int, double, char, 
+        // boolean) will be initialized to simple values (like 0, false, etc.)
+        // but arrays of class level data (like this array of "Student" objects)
+        // are initialized to "null" values 
     }
          
     /**
@@ -59,7 +63,7 @@ public class Teacher extends Person
         // done by using the square brackets "[ ]" and placing the index 
         // number in the brackets. Remember, arrays start the indexing at 
         // zero and the last index is always one less than the size 
-        students[count] = student;
+        students[count] = student;  // Parameter is assigned to property
         count++;                    // Move to the next index (for next time)
         // We have to watch for "out of bounds" error (exception)
         if (count >= MAX) count = 0;
@@ -75,20 +79,12 @@ public class Teacher extends Person
         for (int i = 0; i < students.length; i++) {     // Traverse array
             // With arrays of "objects" (meaning not primitive data types, but
             // "class" level data types) all indices (plural of "index") in
-            // the array are set to "null"
+            // the array are initially set to "null"
             if (students[i] != null) {                  // Array spot not a null
                 students[i].study();                    // Make this spot study
             }
         }        
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
     /**
      * String representation of this object
