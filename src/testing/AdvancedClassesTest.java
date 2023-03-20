@@ -79,7 +79,16 @@ public class AdvancedClassesTest
         Student amber = new Student("Amber Aligawesa", 15, "female");
         amber.talk();
         
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Mr. Wegert");
+        teacher.talk();                 // Inherited method
+        teacher.add(student);           // Associate object through method
+        teacher.add(amber);             // or "Teacher has a Student"
+        teacher.talk();
+        teacher.teach();                // Effecting associated objects
+        teacher.talk();                 // See the results
+        student.talk();
+        amber.talk();
         
         
         
