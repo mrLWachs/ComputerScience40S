@@ -89,6 +89,19 @@ public class AdvancedClassesTest
         student.talk();                 // and the 2 students
         amber.talk();
         
+        // The Object class (parent class of all classes)
+        
+        // All classes (including ones we create) inherit from the object class
+        // which is the parent (super) class of all classes  
+        Object object1 = new Object();
+        Object object2 = new Object();
+        
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
         
         
         
