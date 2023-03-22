@@ -52,7 +52,7 @@ public class Student extends Person
     public Student(String name, int age, String gender) {
         // Use the super constructor in the parent class (Person) to modify
         // (change) the encapsulated (private) properties on that super class
-        // this sets all the propoerties of the parent (Person) object that 
+        // this sets all the properties of the parent (Person) object that 
         // the child (Student) cannot set
         super(name, age, gender);      
         // Now set the properties of "this" (the Student) class...

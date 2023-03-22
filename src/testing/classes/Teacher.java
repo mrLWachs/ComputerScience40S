@@ -15,7 +15,7 @@ public class Teacher extends Person
 {
 
     private int count;                     // How many students this teacher has
-    private final int MAX;                  // Constant for the maximum students
+    private final int MAX;                 // Constant for the maximum students
     
     /**
      * An array of student objects, so the teacher has a association with these

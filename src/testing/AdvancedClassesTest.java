@@ -71,23 +71,23 @@ public class AdvancedClassesTest
         student.talk();
         student.cram();
         student.talk();
-        student.die();
+        student.die();      // Inherited method from Person (parent/super) class
         student.talk();
         
-        // Instantiate a second student object
-        Student amber = new Student("Other Studenty", 15, "female");
-        amber.talk();
+        // Instantiate (means "create") a second Student object (instance)
+        Student stewie = new Student("Stewie Griffin", 2, "cat");
+        stewie.talk();
         
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Mr. Teachery");
         teacher.talk();                 // Invoke (call) the inherited method
         teacher.add(student);           // Associate object through method
-        teacher.add(amber);             // or "Teacher has a Student"
+        teacher.add(stewie);            // or "Teacher has a Student"
         teacher.talk();                 // Call again (to see any changes)
         teacher.teach();                // Effect the associated objects
         teacher.talk();                 // See the results from the teacher
         student.talk();                 // and the 2 students
-        amber.talk();
+        stewie.talk();
         
         // The Object class (parent class of all classes)
         
