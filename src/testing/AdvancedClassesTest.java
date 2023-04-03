@@ -95,6 +95,7 @@ public class AdvancedClassesTest
         // which is the parent (super) class of all classes  
         Object object1 = new Object();
         Object object2 = new Object();
+        Object object3 = object2;
         
         // Built into the object class are a number of methods that all other
         // classes inherit. These include some that are not relevant in this 
