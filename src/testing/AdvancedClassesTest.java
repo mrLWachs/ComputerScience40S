@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+import javax.swing.JOptionPane;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -104,9 +105,26 @@ public class AdvancedClassesTest
         //      equals()
         //      clone()
         
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
         
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
         
+        // This method (toString) is inherited by ALL sub classes (children)
+        System.out.println("Person  = " + person.toString());
+        System.out.println("Student = " + student.toString());        
+        System.out.println("Teacher = " + teacher.toString());
         
+        // Seeing the object class as the parent of classes wwe don't write
+        String string = new String("squirrel");
+        System.out.println("string = " + string.toString());
+        
+        // Another "built-in" object...
+        JOptionPane joptionpane = new JOptionPane();
+        System.out.println("JOptionPane = " + joptionpane.toString());
         
         
         
