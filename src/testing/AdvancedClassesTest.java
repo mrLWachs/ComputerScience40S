@@ -114,17 +114,19 @@ public class AdvancedClassesTest
         
         // The method (toString) is inherited by ALL sub classes (children)
         // of the Object class - remember the Object class is the parent or
-        // super class of ALL classes - so they all inherit toString        
+        // super class of ALL classes - so they all inherit toString, including
+        // classes we write...
         System.out.println("Person  as string = " + person.toString());
         System.out.println("Student as string = " + student.toString());
         System.out.println("Teacher as string = " + teacher.toString());
         
         // Since the object class is also the super class of classes we DON'T
-        // write but are already part of java...        
+        // write but are already part of java, they also inherit toString...        
         String string = new String("squirrel");
         System.out.println("String  as string = " + string.toString());
         
-        // Another "built-in" class level object...        
+        // Another example of "built-into" Java class level object that inherits
+        // all the methods (including toString) from the Object class...        
         JOptionPane joptionpane = new JOptionPane();
         System.out.println("JOptionPane as string = " + joptionpane.toString());
         
