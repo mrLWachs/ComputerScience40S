@@ -110,7 +110,10 @@ public class Person
      */
     @Override
     public String toString() {
-        return "Person: " + super.toString();
+        // This method over-rides the toSting method inherited from the object 
+        // class. As well, all children of this class will inherit this method
+        // unless they also over-ride the method themselves
+        return "Person";
     }
     
 }
