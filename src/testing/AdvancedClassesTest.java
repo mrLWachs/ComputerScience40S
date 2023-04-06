@@ -144,6 +144,7 @@ public class AdvancedClassesTest
         Person person2 = person1;       // Same memory address as person1
         Person person3 = person2;       // Same memory address as person1 and 2
         
+        // Now we will test the "over-loaded" equals method in the Person class
         if (person1.equals(person2)) System.out.println("P1==P2");
         if (person2.equals(person3)) System.out.println("P2==P3");
         if (person1.equals(person3)) System.out.println("P1==P3");
