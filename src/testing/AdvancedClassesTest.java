@@ -149,8 +149,26 @@ public class AdvancedClassesTest
         if (person2.equals(person3)) System.out.println("P2==P3");
         if (person1.equals(person3)) System.out.println("P1==P3");
         
+        // Now reinstantiate (recreate) the 3 person object with new properties
+        person1 = new Person("1", 0, "1");
+        person2 = new Person("1", 0, "2");
+        person3 = new Person("1", 0, "2");
+        if (person1.equals(person2)) System.out.println("P1==P2");
+        if (person2.equals(person3)) System.out.println("P2==P3");
+        if (person1.equals(person3)) System.out.println("P1==P3");
         
+        // Have over-ridden the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this). 
+        // Now we also over-rode the clone method
         
+        // Testing the clone() method:
+        Person clone = person.clone();
+        System.out.println("Person is " + person.toString());
+        System.out.println("Clone  is " + clone.toString());
+        if (person.equals(clone)) System.out.println("Clone is ==");
         
         
         
