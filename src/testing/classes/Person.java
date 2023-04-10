@@ -163,6 +163,44 @@ public class Person
         // Finally return the copied (cloned) new object
         return that;        
     }
+    
+    /**
+     * Accessor method (or "getter" method) that give you (or "reads") the age
+     * of this person object (which is a private property of this class which
+     * normally cannot be read outside the class). Sometimes you write a 
+     * accessor method so user outside the class can "read only" that property
+     * without the ability to change that property
+     * 
+     * @return the person's current age value to "see" (access)
+     */
+    public int getAge() {
+        return age;
+    }
+    
+    /**
+     * Another accessor method. Sometimes, we also write a "mutator" method to
+     * go with the accessor method. Sometimes we write a mutator without a  
+     * accessor.
+     * 
+     * @return the person's gender
+     */
+    public String getGender() {
+        return gender;
+    }
         
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated (private)
+     * property of this person (which is a private property of this class which  
+     * cannot be changed outside the class). Often programmers write error 
+     * checking code into mutator methods so the property cannot just be "set"
+     * to anything - but is error checked first
+     * 
+     * @param gender the new gender to set (mutate) the property into
+     */
+    public void setGender(String gender) {
+        // A programmer could potentially write error checking code here..
+        this.gender = gender;
+    }
+    
 }
 
