@@ -804,6 +804,39 @@ public class ComputerScience30S
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
+        // Create (declare) a variable for comparison
+        int variable = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        // Now declare (create) an array:
+        
+        int array[] = new int[5];
+        
+        // type name [square brackets] = new type [size of the array];
+        // array names are usually "plural" words
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed learning arrays!");
