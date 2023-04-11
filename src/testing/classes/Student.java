@@ -25,6 +25,13 @@ public class Student extends Person
      * or "usage" with the student class
      */
     public Book book;
+    
+    /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
         
     
     /**
