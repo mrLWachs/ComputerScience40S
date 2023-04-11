@@ -159,7 +159,7 @@ public class AdvancedClassesTest
         
         // Have over-ridden the toString() and equals() methods in the
         // person class so that we can check how that method is called over the 
-        // object version of those methods. It is useful to alter a NetBeans
+        // objec1t version of those methods. It is useful to alter a NetBeans
         // template so those methods are always over-ridden in every new class 
         // created (see the comment in "ComputerScience40S.java" to do this). 
         // Now we also over-rode the clone method

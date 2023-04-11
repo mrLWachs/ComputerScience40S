@@ -37,7 +37,14 @@ public class Person
     private int age;
     private String gender;
     
-    boolean alive;
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean alive;          // Encapsulated property
+    
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
