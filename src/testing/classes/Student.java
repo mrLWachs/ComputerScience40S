@@ -47,6 +47,8 @@ public class Student extends Person
         gpa    = 0.0;
         number = 1;
         book   = new Book();
+        // Change ("mutate") the static ("shared") property ("global variable")
+        total++;
     }
     
     /**
@@ -66,6 +68,7 @@ public class Student extends Person
         gpa    = 0.0;
         number = 1;
         book   = new Book();
+        total++;
     }
     
     
