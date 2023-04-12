@@ -180,14 +180,15 @@ public class AdvancedClassesTest
         
         // Now output the static variable of each object and you will notice
         // how we get the same output for each student instance as they all
-        // "share" the same access to the same static variable
-        
+        // "share" the same access to the same static variable        
         System.out.println("S1 total = " + student.total);
         System.out.println("S2 total = " + stewie.total);
         
+        // We create (instantiate) 2 more Student objects...
         Student student3 = new Student();
         Student student4 = new Student("4", 4, "4");
         
+        // And output the shared/static property of those new instances
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
         
@@ -196,8 +197,7 @@ public class AdvancedClassesTest
         
         // Output the static variable again - showing that it changed (mutated) 
         // ALL the instances (all the student obejcts) since that varaible is
-        // modified to be static
-        
+        // modified to be static        
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
         
