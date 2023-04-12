@@ -204,9 +204,25 @@ public class AdvancedClassesTest
         // Now we will call a static (shared) method from the objects 
         // (instances) of the Person class and the other classes that extend
         // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
         
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
         
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
         
         
         
