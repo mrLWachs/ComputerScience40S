@@ -824,6 +824,7 @@ public class ComputerScience30S
         // array |       |       |       |       |       | (a length of 5)
         //       +-------+-------+-------+-------+-------+
         //
+        //
         // The square brackets "[  ]" in code indicate we are using an array, 
         // the word "new" is used because arrays (they are technically 
         // "advanced" data types) are more complicated than variables (which 
@@ -857,9 +858,35 @@ public class ComputerScience30S
         // array[-1] = 25;
         // They would be "out of bounds" errors (or "range" error)
         
+        // Declare an array (a little different) of NO size...  
+        double[] a;
         
+        // In memory...
+        //
+        // a
+        //
         
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
+        a = new double[3];
         
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          | (now has size of 3, but empty)
+        //   +----------+----------+----------+
+        //        0          1          2
+        
+        // Now fill the content
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
+        //   +----------+----------+----------+
+        //        0          1          2
         
         
         
