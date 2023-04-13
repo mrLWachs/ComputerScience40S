@@ -888,8 +888,14 @@ public class ComputerScience30S
         //   +----------+----------+----------+
         //        0          1          2
         
+        // You can re-dimension (resize) an array multiple times, BUT
+        // every time it wipes out any content stored in the array
+        a = new double[5];
         
-        
+        //   +----------+----------+----------+----------+----------+
+        // a |          |          |          |          |          | (size 5)
+        //   +----------+----------+----------+----------+----------+
+        //        0          1          2          3          4
         
         
         
