@@ -251,8 +251,12 @@ public class AdvancedClassesTest
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
         
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism 
         meeting.attend(person);
         
+        // Need to "hold a meeting" of all members
         meeting.hold();
         
         
