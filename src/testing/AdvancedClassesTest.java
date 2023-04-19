@@ -3,7 +3,14 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.Athlete;
+import testing.classes.DiskJockey;
+import testing.classes.Doctor;
+import testing.classes.Husky;
+import testing.classes.Meeting;
+import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -224,6 +231,29 @@ public class AdvancedClassesTest
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
         
+        // Instantiate some other classes:
+        Doctor     doctor     = new Doctor();
+        DiskJockey diskJockey = new DiskJockey();
+        MrWachs    mrWachs    = new MrWachs();
+        Piper      piper      = new Piper();
+        Husky      husky      = new Husky();
+        Athlete    athlete    = new Athlete();
+        
+        // And output those objects (remember the "toString() method is called
+        // automaitcally by the println() method)
+        System.out.println(doctor);
+        System.out.println(diskJockey);
+        System.out.println(mrWachs);
+        System.out.println(piper);
+        System.out.println(husky);
+        System.out.println(athlete);
+        
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
+        
+        meeting.attend(person);
+        
+        meeting.hold();
         
         
         
