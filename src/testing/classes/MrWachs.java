@@ -15,7 +15,7 @@ public class MrWachs extends Teacher
      * Default constructor, set class properties
      */
     public MrWachs() {
-        super("Mr. Lawrence Wachs");
+       super("Mr. Lawrence Wachs"); 
     }
      
     /**

@@ -255,6 +255,21 @@ public class AdvancedClassesTest
         // children objects (classes that inherit from Person) will attend
         // the meeting - through the concept of polymorphism 
         meeting.attend(person);
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
+        meeting.attend(clone);
+        meeting.attend(student);
+        meeting.attend(stewie);
+        meeting.attend(student3);
+        meeting.attend(student4);
+        meeting.attend(teacher);
+        meeting.attend(doctor);
+        meeting.attend(diskJockey);
+        meeting.attend(mrWachs);
+        meeting.attend(piper);
+        meeting.attend(husky);
+        meeting.attend(athlete);
         
         // Need to "hold a meeting" of all members
         meeting.hold();

@@ -29,12 +29,48 @@ public class Meeting
     public Meeting() {
         MAX   = 500;
         count = 0;
-        
+        // Need to "build" (construct, instantiate) our array
+        members = new Person[MAX]; 
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array)
     }
 
+    /**
+     * Have a person attend the meeting
+     * 
+     * @param person a Person object to attend the meeting
+     */
     public void attend(Person person) {
+        // Assign (put, place) the person object (instance of the Person class)
+        // passed into this method's paramter into the first empty (unassigned)
+        // index (spot, element, location, subscript) of the array property
+        // of the Meeting class (global variable)
         
+        members[count] = person;
+        // Now advance the count
+        count++;
+        // Potential out of bounds ("range") error with count, we fix with
+        if (count >= MAX) {
+            // Potentially we could make the array bigger (resize, 
+            // re-dimension) - however, whenever you do this it wipes out
+            // (recreates, re-dimensions) all array content. So let's just
+            // reassign the count
+            count = 0;
+        }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     public void hold() {
         
