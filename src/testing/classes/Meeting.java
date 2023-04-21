@@ -45,8 +45,7 @@ public class Meeting
         // Assign (put, place) the person object (instance of the Person class)
         // passed into this method's paramter into the first empty (unassigned)
         // index (spot, element, location, subscript) of the array property
-        // of the Meeting class (global variable)
-        
+        // of the Meeting class (global variable)        
         members[count] = person;
         // Now advance the count
         count++;
@@ -61,17 +60,6 @@ public class Meeting
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     public void hold() {
         
     }
