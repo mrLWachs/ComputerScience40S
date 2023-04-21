@@ -971,7 +971,7 @@ public class ComputerScience30S
         output(numbers);    // Call the method with a different argument
         output(coins);      // Overload the "output" method again
         
-        int[] randoms = random(1, 10, 50);
+        int[] randoms = random(1, 10, 50);    // Overload "random" method
         output(randoms);
         
         
