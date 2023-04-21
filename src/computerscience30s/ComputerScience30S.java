@@ -974,13 +974,44 @@ public class ComputerScience30S
         int[] randoms = random(1, 10, 50);    // Overload "random" method
         output(randoms);
         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
         
+        // not necessary but...
         
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
         
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
         
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
         
+        char[][] matrix = new char[ROWS][COLUMNS];
         
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
         
+        // Fill the matrix with random characters...
+        // (using a method for random characters)
         
         
         
@@ -1022,7 +1053,7 @@ public class ComputerScience30S
         int[] a = convert(array);   // Create int array of converted doubles        
         output(a);                  // Now output the converted array
     }
-
+    
     /**
      * Converts an array of doubles into an array of integers
      * 
@@ -1037,7 +1068,7 @@ public class ComputerScience30S
         }        
         return a;
     }
-
+    
     /**
      * Generates an array of a set size filled with random integers in the 
      * range between low and high
