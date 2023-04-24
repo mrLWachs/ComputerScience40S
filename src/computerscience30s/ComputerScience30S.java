@@ -1069,8 +1069,9 @@ public class ComputerScience30S
         String text      = "Hello World";
         String title     = "Testing";
         String imageName = "C:\\Users\\lawrence.wachs\\"
-                + "OneDrive - St. James-Assiniboia School Division"
-                + "\\Desktop\\cat.gif";
+                  + "OneDrive - St. James-Assiniboia School Division\\"
+                  + "Documents\\2022-2023\\Projects\\Java\\"
+                  + "ComputerScience30S\\cat.gif";
         
         // Images (pictures) have a longer name than most think they do...
         // for example the file named "cat" is really "cat.gif" and the
@@ -1085,9 +1086,10 @@ public class ComputerScience30S
         message(text, title, imageName);
         
         // Now use the method again with our matrix...
-        imageName = "C:\\Users\\lawrence.wachs"
-                + "\\OneDrive - St. James-Assiniboia School Division"
-                + "\\Desktop\\matrix.gif";
+        imageName = "C:\\Users\\lawrence.wachs\\"
+                  + "OneDrive - St. James-Assiniboia School Division\\"
+                  + "Documents\\2022-2023\\Projects\\Java\\"
+                  + "ComputerScience30S\\matrix.gif";
         
         message(text1,"The Matrix",imageName);
         
@@ -1100,9 +1102,11 @@ public class ComputerScience30S
         };        
         String text2 = toString(TIC_TAC_TOE);
         System.out.println(text2);
-        final String FIRST_NAME  = "C:\\Users\\lawrence.wachs\\"
-                                 + "OneDrive - St. James-Assiniboia "
-                                 + "School Division\\Desktop\\";
+        final String FIRST_NAME  = 
+                            "C:\\Users\\lawrence.wachs\\"
+                          + "OneDrive - St. James-Assiniboia School Division\\"
+                          + "Documents\\2022-2023\\Projects\\Java\\"
+                          + "ComputerScience30S\\";
         final String MIDDLE_NAME = "TicTacToe";
         final String LAST_NAME   = ".gif";
         final String IMAGE_NAME  = FIRST_NAME + MIDDLE_NAME + LAST_NAME;
