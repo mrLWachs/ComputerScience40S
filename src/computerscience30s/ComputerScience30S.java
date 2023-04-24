@@ -28,19 +28,27 @@ import javax.swing.JTextArea;
 public class ComputerScience30S
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         // The line below "calls" a method (by its name) like making a 
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
-//        learnIntroductionToJava();
-//        learnMethods();     // Calling another method (that may not yet exist)
+        learnIntroductionToJava();
+        learnMethods();     // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
         // left side of NetBeans...
         learnArrays();
     }
 
+    /**
+    * Learn the content of the introduction unit (unit 1)
+    */
     private static void learnIntroductionToJava() {
         // TODO code application logic here
         
@@ -666,6 +674,9 @@ public class ComputerScience30S
         
     }
 
+    /**
+    * Learn the content of the methods unit (unit 2)
+    */
     private static void learnMethods() {
         System.out.println("Starting to Learn methods...");
         
@@ -972,12 +983,12 @@ public class ComputerScience30S
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) or OUTPUT from a method
         
-//        output(array);      // Send a array to a method as a parameter
-//        output(numbers);    // Call the method with a different argument
-//        output(coins);      // Overload the "output" method again
-//        
-//        int[] randoms = random(1, 10, 50);    // Overload "random" method
-//        output(randoms);
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
+        
+        int[] randoms = random(1, 10, 50);    // Overload "random" method
+        output(randoms);
         
         // Multi-dimensional array (also known as a "array of arrays", or a 
         // array filled with other arrays, 2D, etc.) - and also known as a 
@@ -1080,21 +1091,22 @@ public class ComputerScience30S
         
         message(text1,"The Matrix",imageName);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // One more optional way to create (declare) matrices is to make them
+        // with pre-set values (like regular arrays)        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };        
+        String text2 = toString(TIC_TAC_TOE);
+        System.out.println(text2);
+        final String FIRST_NAME  = "C:\\Users\\lawrence.wachs\\"
+                                 + "OneDrive - St. James-Assiniboia "
+                                 + "School Division\\Desktop\\";
+        final String MIDDLE_NAME = "TicTacToe";
+        final String LAST_NAME   = ".gif";
+        final String IMAGE_NAME  = FIRST_NAME + MIDDLE_NAME + LAST_NAME;
+        message(text2,"Tic-tac-Toe",IMAGE_NAME);
         
         System.out.println("Completed learning arrays!");
     }
@@ -1215,7 +1227,7 @@ public class ComputerScience30S
         Color foreground = new Color(0,255,0);
         
         // Fonts are done the same way (import, declare them) 
-        Font font = new Font("Consolas", Font.BOLD, 18);
+        Font font = new Font("Consolas", Font.PLAIN, 14);
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
