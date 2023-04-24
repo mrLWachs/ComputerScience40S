@@ -238,7 +238,7 @@ public class AdvancedClassesTest
         Piper      piper      = new Piper();
         Husky      husky      = new Husky();
         Athlete    athlete    = new Athlete();
-        
+                
         // And output those objects (remember the "toString() method is called
         // automaitcally by the println() method)
         System.out.println(doctor);
@@ -247,7 +247,7 @@ public class AdvancedClassesTest
         System.out.println(piper);
         System.out.println(husky);
         System.out.println(athlete);
-        
+                
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
         
