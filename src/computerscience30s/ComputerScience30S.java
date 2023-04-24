@@ -990,7 +990,7 @@ public class ComputerScience30S
         // We declare (create) a matrix , by adding multiple sets of square
         // brackets (a set of brackets for each dimension)
         
-        char[][] matrix = new char[ROWS][COLUMNS];
+        char[][] matrix = new char[COLUMNS][ROWS];
         
         // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
         // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
@@ -1016,7 +1016,7 @@ public class ComputerScience30S
         final char LOW  = '!';
         final char HIGH = '~';
         
-        // Test out method first...
+        // Test our method first...
         char character = random(LOW, HIGH);
         System.out.println("Random character was " + character);
         
@@ -1031,7 +1031,7 @@ public class ComputerScience30S
         
         for (int row = 0; row < ROWS; row++) {
             for (int column = 0; column < COLUMNS; column++) {
-                matrix[row][column] = random(LOW, HIGH);
+                matrix[column][row] = random(LOW, HIGH);
             }
         }
         
@@ -1040,12 +1040,10 @@ public class ComputerScience30S
         String text1 = toString(matrix);
         System.out.println(text1);
         
-        
-        
-        
-        
-        
-        
+        // Optional graphical code...
+        // (for adding images, changing fonts, font sizes, font colors, and 
+        // background colors - it is not needed for most assignments or 
+        // final projects)
         
         
         
@@ -1127,7 +1125,7 @@ public class ComputerScience30S
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);     // cast to int and back  
     }
-    
+        
     /**
      * Change the matrix into a single string (for outputting)
      * 
