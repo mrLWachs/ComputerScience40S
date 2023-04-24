@@ -59,9 +59,25 @@ public class Meeting
         }
     }
     
-    
+    /**
+     * Hold the meeting for all members 
+     */
     public void hold() {
+        // Make a variable to hold a bunch of potential output data
+        String message = "Meeting is about to begin...";
         
+        // Now we loop through the entire array ("traverse" means to travel to 
+        // or visit every spot) from start (index zero) to the finish (index of 
+        // the length minus one) - using a NEW type of loop (a new "for" loop)
+        // called the "enhanced for loop". To create the enhanced for loop 
+        // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
+        // option that appears from the top, or type "fore" and TAB 
+        
+        
+        
+        
+        // Finally output that message
+        System.out.println(message);
     }
       
 }
