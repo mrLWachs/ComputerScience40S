@@ -22,7 +22,7 @@ package testing.classes;
  * @author Mr. Wachs
  * @since 13-Apr-2023, 2:04:01 PM
  */
-public class HighSchool extends Student
+public abstract class HighSchool extends Student
 {
 
     /**
