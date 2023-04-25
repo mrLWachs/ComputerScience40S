@@ -73,8 +73,43 @@ public class Meeting
         // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
         // option that appears from the top, or type "fore" and TAB 
         
+        for (Person member : members) {
+            // The enhanced for loop should be read as:
+            // "for every member in members"
+            // The "member" object of type "Person" automatically goes through
+            // (traverses) from the start to the end of the array automatically
+            // changing "person" each time through the loop to the next element
+            // in order...
+            
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
+                message += "\n";
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is true if the object 'comes from' that
+                // class (is a instance of that class type)  
+                if (member instanceof Person)     message += "\t Person";
+                if (member instanceof Student)    message += "\t Student";
+                if (member instanceof Teacher)    message += "\t Teacher";
+                if (member instanceof Doctor)     message += "\t Doctor";
+                if (member instanceof DiskJockey) message += "\t DiskJockey";
+                if (member instanceof MrWachs)    message += "\t MrWachs";
+                if (member instanceof HighSchool) message += "\t HighSchool";
+                if (member instanceof Husky)      message += "\t Husky";
+                if (member instanceof Piper)      message += "\t Piper";
+                if (member instanceof Athlete)    message += "\t Athlete";
+                message += "\t" + member.toString();
+            }            
+        }
+               
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //    Person member = members[i];
+        // }
         
-        
+        // Get data from our static (shared) property of Student (variable)
+        message += "\nWith " + Student.total + " students present!";
         
         // Finally output that message
         System.out.println(message);
