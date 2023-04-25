@@ -1064,34 +1064,34 @@ public class ComputerScience30S
         // Put this optional graphical code in a method, testing it first
         // with a simple string of text
         
-        
-        // arguments: text, title, name of a image file
-        String text      = "Hello World";
-        String title     = "Testing";
-        String imageName = "C:\\Users\\lawrence.wachs\\"
-                  + "OneDrive - St. James-Assiniboia School Division\\"
-                  + "Documents\\2022-2023\\Projects\\Java\\"
-                  + "ComputerScience30S\\cat.gif";
+        // Using arguments for the method: text, title, name of a image file
         
         // Images (pictures) have a longer name than most think they do...
-        // for example the file named "cat" is really "cat.gif" and the
+        
+        // For example the file named "cat" is really "cat.gif" and the
         // ".gif" is considered the "last" name (or extention) of the file.
         // "cat" is considered the "middle" name (the part the user types in)
         // The first name is the "path" (or location, folder, etc.)
         
         // TIP: save an image, then right click and go to "Properties" to 
-        // get all the file name inaformation you need         
-                
-        // Now call the method...
+        // get all the file name information you need 
+        
+        String text      = "Hello World";
+        String title     = "Testing";
+        String first     = "C:\\Users\\lawrence.wachs\\"
+                         + "OneDrive - St. James-Assiniboia School Division\\"
+                         + "Documents\\2022-2023\\Projects\\Java\\"
+                         + "ComputerScience30S\\";
+        String middle    = "cat";
+        String last      = ".gif";
+        String imageName = first + middle + last;
+        
+        // Now call the method to test it...
         message(text, title, imageName);
         
         // Now use the method again with our matrix...
-        imageName = "C:\\Users\\lawrence.wachs\\"
-                  + "OneDrive - St. James-Assiniboia School Division\\"
-                  + "Documents\\2022-2023\\Projects\\Java\\"
-                  + "ComputerScience30S\\matrix.gif";
-        
-        message(text1,"The Matrix",imageName);
+        imageName = first + "matrix" + last;
+        message(text1, "The Matrix", imageName);
         
         // One more optional way to create (declare) matrices is to make them
         // with pre-set values (like regular arrays)        
@@ -1102,15 +1102,8 @@ public class ComputerScience30S
         };        
         String text2 = toString(TIC_TAC_TOE);
         System.out.println(text2);
-        final String FIRST_NAME  = 
-                            "C:\\Users\\lawrence.wachs\\"
-                          + "OneDrive - St. James-Assiniboia School Division\\"
-                          + "Documents\\2022-2023\\Projects\\Java\\"
-                          + "ComputerScience30S\\";
-        final String MIDDLE_NAME = "TicTacToe";
-        final String LAST_NAME   = ".gif";
-        final String IMAGE_NAME  = FIRST_NAME + MIDDLE_NAME + LAST_NAME;
-        message(text2,"Tic-tac-Toe",IMAGE_NAME);
+        imageName = first + "TicTacToe" + last;
+        message(text2,"Tic-tac-Toe",imageName);
         
         System.out.println("Completed learning arrays!");
     }
@@ -1227,11 +1220,11 @@ public class ComputerScience30S
         
         Color background = new Color(0,0,0);
         // The three numbers in "Color" are for red, green and blue values 
-        // from 0 (no amount) up to 255 (the maximum amount of that color)   
+        // from 0 (no amount) up to 255 (the maximum amount of that color)         
         Color foreground = new Color(0,255,0);
         
         // Fonts are done the same way (import, declare them) 
-        Font font = new Font("Consolas", Font.PLAIN, 14);
+        Font font = new Font("Consolas", Font.PLAIN, 14);        
         // Inside the bracket we put the font name (must be installed on this 
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
@@ -1245,7 +1238,8 @@ public class ComputerScience30S
         
         // Create a "icon" for the image (icon is like a picturebox) and also 
         // use "ImageIcon" - connected to the image name (which is the actual 
-        // image on our computer)           
+        // image on our computer) 
+        
         Icon image = new ImageIcon(imageName);
         
         // Now need something that can display the fonts and colors - called a 
@@ -1268,9 +1262,9 @@ public class ComputerScience30S
                 title,
                 JOptionPane.PLAIN_MESSAGE,
                 image
-        );        
+        ); 
     }
-    
+
 }
 
 
