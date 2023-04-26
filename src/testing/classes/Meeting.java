@@ -14,7 +14,7 @@ public class Meeting
     // The modifier words "private" encapsulates, "int" defines the data type
     // of this name (or "variable", "property", "field")
     private int count;      // How many people are attending
-    
+        
     // The modifier "final" turns the field into a constant
     private final int MAX;  // The maximum the meeting can hold
     
@@ -35,7 +35,7 @@ public class Meeting
         // values (spots in the array) are filled with "nulls" (no Person 
         // objects/instances are yet in the array)
     }
-
+    
     /**
      * Have a person attend the meeting
      * 

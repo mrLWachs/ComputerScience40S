@@ -251,7 +251,7 @@ public class AdvancedClassesTest
                 
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
-        
+           
         // Have person objects (instances of the Person class) and all 
         // children objects (classes that inherit from Person) will attend
         // the meeting - through the concept of polymorphism 
@@ -275,6 +275,10 @@ public class AdvancedClassesTest
         // Need to "hold a meeting" of all members
         meeting.hold();
         
+        // Abstract classes can NOT ever be instantiated, for example:
+        // HighSchool highSchool = new HighSchool();
+        // Food food = new Food();
+        
         
         
         
@@ -293,6 +297,6 @@ public class AdvancedClassesTest
         
         
         System.out.println("\nAdvanced Classes Test complete!\n");
-    }    
-
+    }   
+    
 }
