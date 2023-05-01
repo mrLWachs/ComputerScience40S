@@ -82,7 +82,7 @@ public class Meeting
             // (traverses) from the start to the end of the array automatically
             // changing "person" each time through the loop to the next element
             // in order...
-                        
+            
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
             if (member != null) {            
