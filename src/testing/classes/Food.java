@@ -12,22 +12,22 @@ package testing.classes;
  * class must be an abstract class).
  *
  * @author Mr. Wachs
- * @since 25-Apr-2023, 2:12:12 PM
+ * @since 4-May-2023, 10:17:52 AM
  */
 public abstract class Food 
 {
     
     /**
-     * Agreed upon food groups: (0) Grains, (1) Meats, (2) Dairy, 
-     * (3) Vegetables, (4) Fruits, (5) Other
+     * Agreed upon food groups: (0) Dairy, (1) Protein, (2) Grains,
+     * (3) Vegetables, (4) Fruits, (5) Other - "shared" constant array
      */
     public static final String[] GROUPS = {
-        "Grains",
-        "Meats",
         "Dairy",
+        "Protein",
+        "Grains",
         "Vegetables",
         "Fruits",
-        "Other"        
+        "Other"
     };
     
     /**
@@ -35,15 +35,13 @@ public abstract class Food
      */
     public boolean eatable;
     
-    /**
-     * Encapsulated property, which food group the 'food' item is part of
-     */
+    // Encapsulated property, which food group the 'food' item is part of
     private int group;
     
     /**
      * Available to this class and all children of this class, the flavour
      * quality of the food
-     */  
+     */   
     protected String flavour;
     
     
@@ -55,6 +53,22 @@ public abstract class Food
     public Food(int group) {
         this.group = group;     // Assign parameter to private property
     }
+        
+    /**
+     * How to eat this food object - note: abstract classes can ALSO have
+     * "regular" methods and regular properties (not just abstract methods)
+     * 
+     * @return The output of how eating this "food" item went
+     */
+    public String eat() {
+        if (hasSpoiled()) {
+            return "Do not eat!";
+        }
+        else {
+            prepare();
+            return GROUPS[group] + ", it was " + flavour;
+        }        
+    }  
     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
@@ -77,21 +91,5 @@ public abstract class Food
      * @param seconds how many seconds to smell it
      */
     public abstract void smell(int seconds);
-    
-    /**
-     * How to eat this food object - note: abstract classes can ALSO have
-     * "regular" methods and regular properties (not just abstract methods)
-     * 
-     * @return The output of how eating this "food" item went
-     */
-    public String eat() {
-        if (hasSpoiled()) {
-            return "Do not eat!";
-        }
-        else {
-            prepare();
-            return GROUPS[group] + " it was " + flavour;
-        }
-    }
     
 }

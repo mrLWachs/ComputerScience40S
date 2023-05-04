@@ -85,7 +85,7 @@ public class Meeting
             
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
-            if (member != null) {            
+            if (member != null) {  
                 message += "\n";
                 // The "instanceof" operator takes an object (instance) on the
                 // left hand side (LHS) and the class type on the right hand

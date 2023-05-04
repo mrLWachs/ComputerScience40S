@@ -7,6 +7,7 @@ import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
+import testing.classes.Food;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
@@ -282,7 +283,7 @@ public class AdvancedClassesTest
         
         // Instantiate an object from a child class of an abstract class
         // using the abstract methods (that were made 'concrete') in that class 
-        
+                
         Apple apple = new Apple();
         apple.smell(5);
         
