@@ -7,7 +7,6 @@ import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
-import testing.classes.Food;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
