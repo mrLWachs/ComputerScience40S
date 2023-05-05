@@ -283,7 +283,7 @@ public class AdvancedClassesTest
         
         // Instantiate an object from a child class of an abstract class
         // using the abstract methods (that were made 'concrete') in that class 
-                
+        
         Apple apple = new Apple();
         apple.smell(5);
         
@@ -294,9 +294,9 @@ public class AdvancedClassesTest
         // as an argument. Since the abstract class cannot be instantiated,
         // only children objects from the abstract class can be arguments
         // (in other words, apple and steak instances)
-        
-        husky.consume(apple);
+                
         mrWachs.consume(steak);
+        husky.consume(apple);
         
         // An Interface can be thought of "as a set of rules" - like a class
         // but only contains method signatures (like abstract methods - but
@@ -305,10 +305,7 @@ public class AdvancedClassesTest
         // Sports sports = new Sports(); like abstract classes). Like an
         // abstract class, interfaces are used by 'child' like classes that
         // 'implement' the interface (these classes "follow the rules" of
-        // the interface ("the set of rules").  
-        
-        
-        
+        // the interface ("the set of rules").
         
         
         

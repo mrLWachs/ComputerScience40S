@@ -66,8 +66,8 @@ public abstract class Food
         }
         else {
             prepare();
-            return GROUPS[group] + ", it was " + flavour;
-        }        
+            return GROUPS[group] + " it was " + flavour;
+        }
     }  
     
     /**

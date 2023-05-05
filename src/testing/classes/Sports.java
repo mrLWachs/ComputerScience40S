@@ -15,11 +15,11 @@ package testing.classes;
  * means the other class "follows the rules" of that interface.
  *
  * @author Mr. Wachs
- * @since 28-Apr-2023, 2:01:53 PM
+ * @since 5-May-2023, 10:42:21 AM
  */
 public interface Sports 
 {
-        
+    
     /**
      * Mutator method, setting the name of the player. Interface method 
      * signatures do not need a public/private/protected modifier (if you don't
@@ -44,6 +44,6 @@ public interface Sports
      * 
      * @return there was a winner (true) or not (false)
      */
-    boolean didIWin();        
-    
+    boolean didIWin();    
+
 }

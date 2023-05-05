@@ -4,14 +4,14 @@ package testing.classes;
  
 /**
  * Apple.java - represents an apple. This class inherits from the abstract 
- * class all its properties and methods. However, the abstract methods are 
- * FORCED to be over-ridden in this class (now we move from the 'abstract' to
- * the 'concrete') and the methods MUST now be given a method body (now you
+ * class (Food) all its properties and methods. However, the abstract methods  
+ * are FORCED to be over-ridden in this class (now we move from the 'abstract' 
+ * to the 'concrete') and the methods MUST now be given a method body (now you
  * define HOW for this particular food object). Regular methods can still be
- * over-ridden as well
+ * over-ridden as well.
  *
  * @author Mr. Wachs
- * @since 26-Apr-2023, 2:06:28 PM
+ * @since 5-May-2023, 10:14:12 AM
  */
 public class Apple extends Food
 {
@@ -20,8 +20,8 @@ public class Apple extends Food
      * Default constructor, set class properties
      */
     public Apple() {
-        super(4);                           // Call super-constructor
-        super.flavour = "Sweecrunchy";      // Modify protected property
+        super(4);                   // Call super-constructor, passing the group
+        super.flavour = "Sweet";    // Modifying our protected property
     }
 
     /**
@@ -39,7 +39,7 @@ public class Apple extends Food
      */
     @Override
     public boolean hasSpoiled() {
-        return super.eatable;
+        return super.eatable;       // Access public property
     }
 
     /**
@@ -50,8 +50,8 @@ public class Apple extends Food
     @Override
     public void smell(int seconds) {
         if (seconds > 3) super.eatable = false;
-        else            super.eatable = true;
-    }
+        else             super.eatable = true;
+    }    
     
     /**
      * You still can over-ride methods from an abstract class that are not 
@@ -64,5 +64,5 @@ public class Apple extends Food
     public String eat() {
         return "Apple from " + super.eat();
     }
-    
+   
 }

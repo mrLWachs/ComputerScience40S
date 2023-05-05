@@ -6,7 +6,7 @@ package testing.classes;
  * Steak.java - represents a steak
  *
  * @author Mr. Wachs
- * @since 26-Apr-2023, 2:06:33 PM
+ * @since 5-May-2023, 10:14:22 AM
  */
 public class Steak extends Food
 {
@@ -24,7 +24,7 @@ public class Steak extends Food
      */
     @Override
     public void prepare() {
-        System.out.println("Grill it on the BBQ");
+        System.out.println("Grill on the BBQ");
     }
 
     /**
@@ -37,15 +37,10 @@ public class Steak extends Food
         return super.eatable;       // Access public property
     }
 
-    /**
-     * Smell the 'Steak' item
-     * 
-     * @param seconds how many seconds to smell it
-     */
     @Override
     public void smell(int seconds) {
         if (seconds > 5) super.eatable = false;
-        else            super.eatable = true;
+        else             super.eatable = true;
     }
-    
+         
 }
