@@ -9,7 +9,7 @@ package testing.classes;
  * is like classes inheriting from other classes.
  *
  * @author Mr. Wachs
- * @since 1-May-2023, 2:10:26 PM
+ * @since 8-May-2023, 10:02:25 AM
  */
 public interface Hockey extends Sports
 {
@@ -23,7 +23,7 @@ public interface Hockey extends Sports
     
     /**
      * The passed period of hockey is over
-     *
+	 *
      * @param period the period number
      */
     void endOfPeriod(int period);
