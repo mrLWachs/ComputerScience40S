@@ -15,40 +15,14 @@ package testing.classes;
  * @author Mr. Wachs
  * @since 13-Apr-2023, 2:05:34 PM
  */
-public class Athlete extends Husky implements PermissionForm, Hockey, SlapFighting
+public class Athlete extends Husky
 {
 
-    private boolean haveForm;       // Encapsulated properties (variables)
-    private String  opponentName;
-    private int     homeScore;
-    private int     opponentScore;
-    private boolean champion;
-    
-    private final boolean WE_WON  = true;    // Encapsulated constants
-    private final boolean WE_LOST = false;
-    
-    
-    /**
-     * Constructor, set class properties
-     */
-    public Athlete(String name, int age) {
-        super();                    // Call super-constructor
-        setName(name);              // Mutator method
-        super.age     = age;        // Internal (encapsulated), protected
-        opponentName  = "";
-        homeScore     = 0;
-        opponentScore = 0;
-        haveForm      = PermissionForm.NOT_SIGNED;  // Use the shared constant
-        champion      = WE_LOST;
-    }
-    
     /**
      * Default constructor, set class properties
      */
     public Athlete() {
-        // To have one class constructor call another class constructor, use
-        // the keyword "this" with round brackets 
-        this("Jock",15);
+        
     }
      
     /**
@@ -82,40 +56,4 @@ public class Athlete extends Husky implements PermissionForm, Hockey, SlapFighti
         return this;
     }
 
-    @Override
-    public void sign() {
-    }
-
-    @Override
-    public boolean haveYouGotItSigned() {
-    }
-
-    @Override
-    public void score(String name) {
-    }
-
-    @Override
-    public void endOfPeriod(int period) {
-    }
-
-    @Override
-    public void setName(String name) {
-    }
-
-    @Override
-    public void setOpponent(String name) {
-    }
-
-    @Override
-    public boolean didIWin() {
-    }
-
-    @Override
-    public void slap(String slapper, String slapie) {
-    }
-
-    @Override
-    public boolean isKnockedOut() {
-    }
-    
 }
