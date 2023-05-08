@@ -33,8 +33,7 @@ public class Person
      * Properties that use the "modifier" word "private" will "encapsulate"
      * this property so that it can only be accessed inside the class (like 
      * a "private room") - this is the concept of encapsulation
-     */
-    private int age;
+     */    
     private String gender;
     
     /** 
@@ -44,6 +43,7 @@ public class Person
      * are "related" to this class through inheritance (subclasses)
      */
     protected boolean alive;          // Encapsulated property
+    protected int age;
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
