@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
@@ -306,7 +307,7 @@ public class AdvancedClassesTest
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
         
-        
+        Athlete jock = new Athlete();
         
         
         

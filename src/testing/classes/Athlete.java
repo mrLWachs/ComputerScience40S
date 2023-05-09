@@ -16,7 +16,7 @@ package testing.classes;
  * @since 13-Apr-2023, 2:05:34 PM
  */
 public class Athlete extends Husky implements PermissionForm, Hockey, 
-        SlapFighting, ExtremeIroning
+        ExtremeIroning, SlapFighting
 {
 
     private boolean haveForm;       // Encapsulated properties (variables)
@@ -31,15 +31,20 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     
     /**
      * Constructor, set class properties
+     * 
+     * @param name the name for this athlete
+     * @param age the age for this athlete
+     * @param gender the gender for this athlete
      */
-    public Athlete(String name, int age) {
+    public Athlete(String name, int age, String gender) {
         super();                    // Call super-constructor
-        setName(name);              // Mutator method
-        super.age     = age;        // Internal (encapsulated), protected
+        super.name = name;          // Modifying (mutating or changing) property
+        super.age  = age;           // Even protected properties
+        super.setGender(gender);    // Use a modifier method
         opponentName  = "";
         homeScore     = 0;
         opponentScore = 0;
-        haveForm      = PermissionForm.NOT_SIGNED;  // Use the shared constant
+        haveForm      = PermissionForm.NOT_SIGNED;  // Using interface property
         champion      = WE_LOST;
     }
     
@@ -47,11 +52,11 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      * Default constructor, set class properties
      */
     public Athlete() {
-        // To have one class constructor call another class constructor, use
-        // the keyword "this" with round brackets 
-        this("Jock",15);
-    }
-     
+        // To have one constructor method call another class constructor method,
+        // you use the keyword "this" with round brackets
+        this("Jock",15,"Sporty");
+    }    
+         
     /**
      * String representation of this object
      *
@@ -83,48 +88,126 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         return this;
     }
 
+    /**
+     * Signing the permission form
+     */
     @Override
     public void sign() {
+        System.out.println(super.name + " has signed the form!");
+        haveForm = PermissionForm.SIGNED;
     }
 
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
     @Override
     public boolean haveYouGotItSigned() {
+        return haveForm;
     }
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(String name) {
+        System.out.println(name + " has scored");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.equals(super.name))   homeScore++;
     }
 
+    /**
+     * The passed period of hockey is over
+	 *
+     * @param period the period number
+     */
     @Override
     public void endOfPeriod(int period) {
+        String output = "End of period " + period;
+        output += " and the score is "   + homeScore;
+        output += " for the "            + super.name;
+        output += " and "                + opponentScore;
+        output += " for the "            + opponentName;
+        System.out.println(output);
     }
 
+    
+    /**
+     * Mutator method, setting the name of the player
+     * 
+     * @param name setting the name of the player
+     */
     @Override
     public void setName(String name) {
+        super.name = name;
     }
 
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
     @Override
     public void setOpponent(String name) {
+        opponentName = name;
     }
 
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
     @Override
     public boolean didIWin() {
+        if (champion) {
+            System.out.println(super.name + " is champion!");
+            return WE_WON;
+        }
+        else if (homeScore >= opponentScore) {
+            System.out.println(super.name + " wins!");
+            return WE_WON;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return WE_LOST;
+        }
+    }
+    
+    /**
+     * Determines if the participant meets the requirements to participate
+     * 
+     * @param boardLength the length of the ironing board must be 1 meter
+     * @param boardWidth the width of the ironing board must be 30 centimeters
+     * @return true/yes (they can participate) or no/false
+     */
+    @Override
+    public boolean metRequirements(int boardLength, int boardWidth) {
+        if (boardLength < 1)  return false;
+        if (boardWidth  < 30) return false;
+        return true;
+    }
+
+    /**
+     * Judge the participant on how well they did and how extreme they were
+     * 
+     * @return a judgment of the style of extreme ironing
+     */
+    @Override
+    public String judge() {
+        return " they were hard core";
     }
 
     @Override
     public void slap(String slapper, String slapie) {
+        // ?
     }
 
     @Override
     public boolean isKnockedOut() {
+        return false;
     }
 
-    @Override
-    public boolean metRequirements(int boardLength, int boardWidth) {
-    }
-
-    @Override
-    public String judge() {
-    }
-    
 }
