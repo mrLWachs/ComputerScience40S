@@ -197,7 +197,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      */
     @Override
     public String judge() {
-        return " they were hard core";
+        return "Hard core ironing of clothes!";
     }
 
     @Override

@@ -285,10 +285,10 @@ public class AdvancedClassesTest
         // using the abstract methods (that were made 'concrete') in that class 
         
         Apple apple = new Apple();
-        apple.smell(5);
+        apple.smell(2);
         
         Steak steak = new Steak();
-        steak.smell(3);
+        steak.smell(6);
         
         // Call the polymorphic method which accepts the abstract object (Food)
         // as an argument. Since the abstract class cannot be instantiated,
@@ -308,7 +308,26 @@ public class AdvancedClassesTest
         // the interface ("the set of rules").
         
         Athlete jock = new Athlete();
-        
+        // Set our opponent 
+        jock.setOpponent("St. Pauls");
+        // Have our athlete compete in four rounds of athletics
+        for (int round = 1; round <= 4; round++) {
+            System.out.println("Round " + round + "...");
+            if (jock.haveYouGotItSigned()) {            // Check if can play?
+                jock.score("Jock");                     // Play hockey
+                jock.score("Jock");
+                jock.score("St. Pauls");
+                jock.endOfPeriod(round);                // See the scores...
+                if (jock.metRequirements(4, 40) && round == 4) {      
+                    System.out.println(jock.judge());   // Extreme ironing
+                }      
+            }
+            else {
+                jock.sign();        // Sign so they can play
+            }
+        }
+        // Check if we won
+        if (jock.didIWin()) jock.consume(steak);
         
         
         
