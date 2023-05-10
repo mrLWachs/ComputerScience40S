@@ -352,13 +352,21 @@ public class AdvancedClassesTest
         // to declare it) and its constructor method (usually not needed)..
         String string1 = new String("test");
         
+        // Now call a generic method on the variety of 'generic' items
+        output(bool);
+        output(integer);
+        output(doub);
+        output(character);
+        output(string1);
+        output(athlete);        // Even objects of classes we created
         
+        // Test the generic method on another "complex" object (that we don't
+        // create)...
+        JOptionPane jOptionPane = new JOptionPane();
+        output(jOptionPane);
         
-        
-        
-        
-        
-        
+        // This line uses "annonymous" object..
+        output(new Object());
         
         
         
@@ -368,5 +376,27 @@ public class AdvancedClassesTest
         
         System.out.println("\nAdvanced Classes Test complete!\n");
     }   
-    
+
+    /**
+     * Outputs a generic item with information about the data type.
+     * Generic methods use 'generic' references rather than specific
+     * references. You do not define the data type (the parameter) 
+     * when the method is created. Instead of defining the data
+     * type, a set of angle brackets "< >" is used with a single
+     * letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in
+     * the argument when the method is later called
+     * 
+     * @param <T> the generic type used
+     * @param item the item to output
+     */
+    private static <T> void output(T item) {
+        String text = "Class ";
+        text += item.getClass().getSimpleName();
+        text += " code = " + item.hashCode();
+        text += " primitive data type = " + item.getClass().isPrimitive();
+        text += " as a string is " + item.toString();
+        System.out.println(text);
+    }
+
 }
