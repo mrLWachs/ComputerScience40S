@@ -329,10 +329,28 @@ public class AdvancedClassesTest
         // Check if we won
         if (jock.didIWin()) jock.consume(steak);
         
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
         
+        // Let us start by creating simple ("primitive") data types        
+        boolean b = true;
+        char    c = 'a';
+        int     i = 0;
+        double  d = 3.14;
         
+        // Now use the primatives with a more complex data type (class)
+        // called a 'wrapper' class from the primatives and use the 
+        // constructor methods of those wrapper classes passing the 
+        // primatives through the constructor methods  
+        Boolean   bool      = new Boolean(b);
+        Integer   integer   = new Integer(i);
+        Double    doub      = new Double(d);
+        Character character = new Character(c);
         
-        
+        // Also String (which was always 'complex' using the captial 'S'
+        // to declare it) and its constructor method (usually not needed)..
+        String string1 = new String("test");
         
         
         

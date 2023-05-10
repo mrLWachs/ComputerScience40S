@@ -40,7 +40,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         super();                    // Call super-constructor
         super.name = name;          // Modifying (mutating or changing) property
         super.age  = age;           // Even protected properties
-        super.setGender(gender);    // Use a modifier method
+        super.setGender(gender);    // Use a modifier/mutator method
         opponentName  = "";
         homeScore     = 0;
         opponentScore = 0;
