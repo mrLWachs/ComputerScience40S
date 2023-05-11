@@ -391,11 +391,10 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        String text = "Class ";
+        String text = "Class: ";
         text += item.getClass().getSimpleName();
-        text += " code = " + item.hashCode();
-        text += " primitive data type = " + item.getClass().isPrimitive();
-        text += " as a string is " + item.toString();
+        text += "\t Code: "   + item.hashCode();
+        text += "\t String: " + item.toString();
         System.out.println(text);
     }
 
