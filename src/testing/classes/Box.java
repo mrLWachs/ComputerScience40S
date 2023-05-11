@@ -47,7 +47,7 @@ public class Box <T>
      * Does a "peek" in the box and outputs the contents
      */
     public void peek() {
-        System.out.println(present.toString());
+        System.out.println("Peeking at " + present.toString());
     }
     
 }
