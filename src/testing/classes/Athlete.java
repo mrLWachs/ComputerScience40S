@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package testing.classes;
 
+import java.util.Random;
+
  
 /**
  * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
@@ -98,7 +100,8 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
     }
 
     /**
-     * Determines if the form has been signed or not
+     * Determines if the form has been signed or not (technically this is a  
+     * accessor method)
      * 
      * @return has been signed (true), or not (false)
      */
@@ -200,14 +203,25 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         return "Hard core ironing of clothes!";
     }
 
+    /**
+     * A player slaps another player
+     * 
+     * @param slapper the person doing the slapping
+     * @param slapie the person who got slapped
+     */
     @Override
     public void slap(String slapper, String slapie) {
-        // ?
+        System.out.println(slapper + " SLAPS " + slapie);
     }
 
+    /**
+     * Checks if the game is over
+     * 
+     * @return they are knocked out (true) or not (false)
+     */
     @Override
-    public boolean isKnockedOut() {
-        return false;
+    public boolean isKnockedOut() {  
+        return new Random().nextBoolean();
     }
 
 }
