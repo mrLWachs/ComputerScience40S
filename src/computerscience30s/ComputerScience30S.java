@@ -38,12 +38,12 @@ public class ComputerScience30S
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
-//        learnIntroductionToJava();
-//        learnMethods();     // Calling another method (that may not yet exist)
+        learnIntroductionToJava();
+        learnMethods();     // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
         // left side of NetBeans...
-//        learnArrays();
+        learnArrays();
         learnClasses();
     }
 
