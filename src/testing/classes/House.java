@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.classes;
 
@@ -13,11 +14,12 @@ package testing.classes;
  * @author Mr. Wachs
  * @param <T> the generic type of home owner (restricted to type Person and all
  * its children)
- * @since 11-May-2023, 1:47:53 PM
+ * @param <U> the generic type for the contents of this house (unrestricted)
+ * @since 28-Nov-2022, 11:54:54 AM
  */
 public class House <T extends Person, U>
 {
-
+    
     /**
      * The generic owner of this house (must be a Person object or any children
      * of that class)
@@ -30,6 +32,7 @@ public class House <T extends Person, U>
      */
     public U contents;
     
+    
     /**
      * Generic method that has the home owner consume all the generic 
      * restricted Food (all all Food children) items that are passed in an 
@@ -40,14 +43,14 @@ public class House <T extends Person, U>
      * objects or children of the Food class
      */
     public <V extends Food> void party(V[] items) {
-        System.out.println("Home owner:");
+        System.out.println("Home Owner:");
         System.out.println(homeOwner.name);
-        System.out.println("\nand the contents...");
+        System.out.println("And the contents...");
         System.out.println(contents.toString());
-        // Enhanced for loop ("for every item in items")
+        // Enhanced for loop ("For every item in items")
         for (V item : items) {
             homeOwner.consume(item);
         }
-    }    
+    }
     
 }

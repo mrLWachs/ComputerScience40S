@@ -402,7 +402,7 @@ public class AdvancedClassesTest
         box5.peek();
         box6.peek();
         
-        // Open all the boxes..
+        // Open all the boxes...        
         Boolean   newBoolean   = box1.open();
         Integer   newInteger   = box2.open();
         Double    newDouble    = box3.open();
@@ -420,13 +420,13 @@ public class AdvancedClassesTest
         
         // A generic class with multiple generic types, a generic method, the
         // enhanced for loop, restricted generics 
-        House<Teacher,Meeting> house = new House<>();
+        House<MrWachs,Meeting> house = new House<>();
         
         // Associate the objects that match with the generics
         house.homeOwner = mrWachs;
         house.contents  = meeting;
         
-        // Create as array of Food objects
+        // Create an array of Food object
         Food[] fridge = { apple, steak };
         
         // Test our generic method
@@ -449,10 +449,10 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        String text = "Class: ";
+        String text = "Class name: ";
         text += item.getClass().getSimpleName();
-        text += "\t Code: "   + item.hashCode();
-        text += "\t String: " + item.toString();
+        text += ", Hash Code: " + item.hashCode();
+        text += ", To String: " + item.toString();
         System.out.println(text);
     }
 

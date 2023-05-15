@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.classes;
 
@@ -13,11 +14,11 @@ package testing.classes;
  *
  * @author Mr. Wachs
  * @param <T> the generic type for the box's contents
- * @since 11-May-2023, 1:18:36 PM
+ * @since 28-Nov-2022, 11:35:55 AM
  */
 public class Box <T>
 {
-
+    
     /**
      * The generic property of this class which uses a data type
      * that will be defined when this class is instantiated
@@ -26,7 +27,7 @@ public class Box <T>
     
     
     /**
-     * Constructor, set class properties
+     * Constructor for the class, sets class properties
      * 
      * @param present the generic thing to put in the box 
      */
@@ -35,19 +36,20 @@ public class Box <T>
     }
     
     /**
-     * Opens the box and returns the contents
+     * Accessor method (giving access to a private/ encapsulated property) opens
+     * the box and returns the contents
      * 
-     * @return the generic thing in the box
+     * @return  the generic "thing" in the box
      */
     public T open() {
         return present;
     }
-     
+    
     /**
      * Does a "peek" in the box and outputs the contents
      */
     public void peek() {
-        System.out.println("Peeking at " + present.toString());
-    }
-    
+        System.out.println(present.toString());
+    }    
+        
 }
