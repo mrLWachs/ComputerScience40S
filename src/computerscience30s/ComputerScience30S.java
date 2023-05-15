@@ -38,12 +38,13 @@ public class ComputerScience30S
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
-        learnIntroductionToJava();
-        learnMethods();     // Calling another method (that may not yet exist)
+//        learnIntroductionToJava();
+//        learnMethods();     // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
         // left side of NetBeans...
-        learnArrays();
+//        learnArrays();
+        learnClasses();
     }
 
     /**
@@ -815,7 +816,7 @@ public class ComputerScience30S
     }
 
     /**
-    * Learn the content of the arrays unit (unit 3)
+     * Learn the content of the arrays unit (unit 3)
     */
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
@@ -961,10 +962,10 @@ public class ComputerScience30S
         
         // Specifically, the FOR loop!
         
-        // for loops were literally built for arrays
+        // for loops were literally built for arrays        
         for (int i = 0; i < 100; i++) {
             System.out.println(numbers[i]);
-        }
+        }        
         // The for loop is perfect because it automatically (when I type "for"
         // and TAB) starts at 0, goes up by 1, is "less than" then ending 
         // number (which can be the length)
@@ -1263,6 +1264,17 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE,
                 image
         ); 
+    }
+
+    /**
+     * Learn the content of the classes unit (unit 4)
+     */
+    private static void learnClasses() {
+        System.out.println("Start Learning classes...");
+        
+        
+        
+        System.out.println("Complete Learning classes");
     }
 
 }
