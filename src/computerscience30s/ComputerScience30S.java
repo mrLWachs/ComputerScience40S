@@ -1279,6 +1279,24 @@ public class ComputerScience30S
         // Then give it a name (starts with a capital letter and camel casing)
         // Then click finish!
         
+        // use a line of code like this:
+        // Random random = new Random();
+        
+        Person person = new Person();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         System.out.println("Complete Learning classes");
     }
