@@ -1284,8 +1284,22 @@ public class ComputerScience30S
         
         Person person = new Person();
         
+        // Class object = new Class() <--- implies a method?
+        // that is the call to the constructor method
         
+        // "Call" (invoke) a method within the object
+        person.talk();
         
+        // Use (call,invoke) other methods and change properties
+        person.born();
+        person.talk();
+        person.name  = "Dave Smith";
+        person.gender = "male";
+        person.talk();
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
         
         
         
