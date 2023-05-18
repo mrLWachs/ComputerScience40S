@@ -40,8 +40,10 @@ public class Person
     }
     
     /**
-     * Constructor method, sets the class properties
-     * Overloaded (methods with the same name, different parameters) 
+     * A second Constructor method, that sets the class properties, This   
+     * constructor method is an overloaded constructor method (remember: that   
+     * overloaded methods are methods with the same name, but different 
+     * parameters) 
      * 
      * @param newName the new name for this person
      */
@@ -53,13 +55,13 @@ public class Person
     }
     
     /**
-     * Constructor method, sets the class properties. The keyword "this" is 
-     * used as a "placeholder" to refer to the object that will (eventually) 
-     * be created. Often used in constructor methods or other methods to 
-     * refer to the class properties. Often used to avoid confusion with any 
-     * method parameters that have the "same name" as the properties. It can 
-     * also be used to implicitly call (invoke) methods within a class as 
-     * the word "this" makes that implicit reference to the object itself
+     * A third Constructor method, that sets the class properties. The keyword  
+     * "this" is used as a "placeholder" to refer to the object that will  
+     * (eventually) be created. Often used in constructor methods or other 
+     * methods to refer to the class properties. Often used to avoid confusion 
+     * with any method parameters that have the "same name" as the properties. 
+     * It can also be used to implicitly call (invoke) methods within a class 
+     * as the word "this" makes that implicit reference to the object itself
      * 
      * @param name the name of this person
      * @param age the age of this person
@@ -77,7 +79,7 @@ public class Person
         
 //    /**
 //     * "Creates" a person - we deleted (by commenting out) this method as 
-//     * The constructor method does what this method does!
+//     * The constructor method does what this method previous did!
 //     */
 //    void born() {
 //        alive = true;
