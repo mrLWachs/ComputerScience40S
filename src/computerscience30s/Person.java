@@ -22,7 +22,7 @@ public class Person
     boolean alive;
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
-    
+       
     /**
      * Constructor method is a method that has:
      * (1) The same name as the class,
@@ -68,10 +68,11 @@ public class Person
      * @param gender the identified gender of this person
      */
     Person(String name, int age, String gender) {
-        alive       = true;
-        // Assign the parameter to the property (global variable of this class)
-        // To do this, we use the keyword "this" which acts as a placeholder
-        // for the name of the object (which will be created at a later time)
+        alive  = true;
+        // Assign the parameter ("age") to the property "age" (global variable 
+        // of this class) To do this, we use the keyword "this" which acts as 
+        // a placeholder for the name of the object (which will be created at 
+        // a later time)
         this.age    = age;
         this.name   = name;
         this.gender = gender;
@@ -82,9 +83,9 @@ public class Person
 //     * The constructor method does what this method previous did!
 //     */
 //    void born() {
-//        alive = true;
-//        age = 0;
-//        name = "unidentified";
+//        alive  = true;
+//        age    = 0;
+//        name   = "unidentified";
 //        gender = "unidentified";
 //    }
     
