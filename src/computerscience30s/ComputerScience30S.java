@@ -1292,7 +1292,7 @@ public class ComputerScience30S
         person.talk();
         
         // Use (call,invoke) other methods and change properties        
-        person.born();
+        // person.born(); --> we removed this method
         person.talk();
         person.name   = "John Smith";
         person.gender = "male";
