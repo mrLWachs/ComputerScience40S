@@ -1293,7 +1293,6 @@ public class ComputerScience30S
         
         // Use (call,invoke) other methods and change properties        
         // person.born(); --> we removed this method
-        person.talk();
         person.name   = "John Smith";
         person.gender = "male";
         person.talk();
@@ -1301,6 +1300,22 @@ public class ComputerScience30S
         person.talk();
         person.die();
         person.talk();
+        
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor 
+        Person other = new Person("Another name");
+        other.talk();
+        other.birthday();
+        other.talk();
+        
+        // Another instance using the 3rd constructor option
+        Person third = new Person("Cranky Kong",75,"Gorilla");
+        third.birthday();
+        third.talk();
+        
+        
+        
+        
         
         
         
