@@ -9,7 +9,7 @@ package computerscience30s;
  * base class). This is sometimes simplified to a "is a" relationship
  *
  * @author Mr. Wachs
- * @since 13-Dec-2021, 11:28:54 AM
+ * @since May 19, 2023
  */
 public class Student 
 {

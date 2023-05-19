@@ -9,7 +9,7 @@ package computerscience30s;
  * objects (which are instances of that class).
  * 
  * @author Mr. Wachs
- * @since May 2023
+ * @since May 15, 2023
  */
 public class Person 
 {
