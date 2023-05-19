@@ -1311,6 +1311,9 @@ public class ComputerScience30S
         Person third = new Person("Ghostface",53,"monster");
         third.birthday();
         third.talk();
+        // Try to change a property that we have marked (modified) to
+        // be private (meaning it is "encapsulated")
+        // third.age = 10;
         
         
         
@@ -1323,8 +1326,7 @@ public class ComputerScience30S
         
         
         
-        
-        System.out.println("\n\n\n\n\nComplete Learning classes");
+        System.out.println("Complete Learning classes");
     }
 
 }
