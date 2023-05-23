@@ -1316,8 +1316,10 @@ public class ComputerScience30S
         // third.age = 10;
         
         // Create a student object and change properties, and call methods...
-        Student student = new Student();
-        student.name = "Student Person";
+        Student student = new Student("Student Person",15,"Student",100);
+        // The next line is no longer needed..
+        // student.name = "Student Person";
+        
         student.talk();
         
         

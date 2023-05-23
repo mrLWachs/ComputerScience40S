@@ -24,7 +24,43 @@ public class Student extends Person
      */
     public Book book;
     
+    // private (encapsulated) property (global variable) identified (named)
+    // "number" that is of type "integer"
+    private int number;
     
+    private double gpa;
+    
+    
+    /**
+     * Constructor for the class, sets the class properties (including the
+     * properties it inherited form the super or parent class)
+     * 
+     * @param name the name for this student person
+     * @param age the age for this student person
+     * @param gender the gender for this student person
+     * @param number the student number for this student
+     */
+    public Student(String name, int age, String gender, int number) {
+        // You can call the contructor methods of the super class (the parent 
+        // class) from this class (the child or subclass) by agaiin using the
+        // keyword super and round brackets
+        super(name, age, gender);
+        
+        // These lines of code are no longer needed...
+        /*
+        // The keyword "super" in java means "the super class" or the name
+        // of the class that this class inherts from (in this case "Person")
+        super.name = name;
+        super.gender = gender;
+        // super.age = age;
+        // Still cannot access private/encapsulated properties (or methods)
+        */
+                
+        this.number = number;
+        gpa  = 0.0;
+        book = new Book();
+        // The "Book" object must still be instantiated (so it is not "null")
+    }
     
     
 }
