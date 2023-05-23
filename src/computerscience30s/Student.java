@@ -10,9 +10,21 @@ package computerscience30s;
  * @author Mr. Wachs
  * @since May 19, 2023
  */
-public class Student 
+public class Student extends Person
 {
 
+    // The keyword "extends" is how Java initiates inheritance (or "is a")
+    // and the Student class inherits all "public" properties and methods
+    // from the "Person" class ("private" properties and methods are inherited,
+    // but they are still private or encapsulated)
+    
+    /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
+     */
+    public Book book;
+    
+    
     
     
 }
