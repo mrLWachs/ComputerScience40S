@@ -24,7 +24,7 @@ public class Student extends Person
      */
     public Book book;
     
-    // private (encapsulated) property (global variable) identified (named)
+    // A private (encapsulated) property (global variable) identified (named)
     // "number" that is of type "integer"
     private int number;
     
