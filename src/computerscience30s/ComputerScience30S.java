@@ -1320,8 +1320,15 @@ public class ComputerScience30S
         // The next line is no longer needed..
         // student.name = "Student Person";
         
+        student.talk();     // A method inherited from Person (the super class)
+        student.study();    // A method created just inside Student
         student.talk();
-        
+        student.slackOff();
+        student.talk();
+        student.birthday();
+        student.talk();
+        student.die();
+        student.talk();
         
         
         
