@@ -33,8 +33,8 @@ public class Teacher extends Person
     }
     
     /**
-     * Will (1) force every student to study, and (2) make every student talk, 
-     * and (3) have the teacher talk 
+     * This method will (1) force every student to study, and (2) make every  
+     * student talk, and (3) have the teacher talk 
      */
     public void teach() {
         

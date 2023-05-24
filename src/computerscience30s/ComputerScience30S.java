@@ -1302,12 +1302,12 @@ public class ComputerScience30S
         person.talk();
         
         // Create (instantiate) another object with a different (overloaded) 
-        // constructor 
+        // constructor...
         Person other = new Person("Another name");
         other.birthday();
         other.talk();
         
-        // Another instance using the 3rd constructor option
+        // Another instance using the 3rd constructor option...
         Person third = new Person("Ghostface",53,"monster");
         third.birthday();
         third.talk();
@@ -1317,7 +1317,7 @@ public class ComputerScience30S
         
         // Create a student object and change properties, and call methods...
         Student student = new Student("Student Person",15,"Student",100);
-        // The next line is no longer needed..
+        // The next line is no longer needed...
         // student.name = "Student Person";
         
         student.talk();     // A method inherited from Person (the super class)
@@ -1330,7 +1330,7 @@ public class ComputerScience30S
         student.die();
         student.talk();
         
-        // create a teacher object and call it's methods
+        // Create a Teacher object and call it's methods...
         
         
         
