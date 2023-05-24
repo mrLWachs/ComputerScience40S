@@ -1330,7 +1330,7 @@ public class ComputerScience30S
         student.die();
         student.talk();
         
-        
+        // create a teacher object and call it's methods
         
         
         
