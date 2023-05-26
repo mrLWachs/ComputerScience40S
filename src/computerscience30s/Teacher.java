@@ -37,7 +37,15 @@ public class Teacher extends Person
      * student talk, and (3) have the teacher talk 
      */
     public void teach() {
-        
+        // Loop (traverse) through the array and call the method for each 
+        // object in the array (that is not a null)
+        for (int i = 0; i < students.length; i++) {
+            if (students[i] != null) {  // Check to make sure a actual student
+                students[i].study();    // Make that student (object) study        
+                students[i].talk();     // Make that student talk
+            }
+        }
+        super.talk();                   // Call the supr class method
     }
     
 }
