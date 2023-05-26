@@ -1339,8 +1339,13 @@ public class ComputerScience30S
         teacher.students[3] = new Student("Ned Leeds", 16, "male", 103);
         teacher.teach();
                 
-        
-        
+        // create husky object
+        Husky husky = new Husky("Havoc",18,"Dog",2665);
+        husky.talk();           // Inherited but doubly over-ridden method
+        husky.study();          // Method inherited from Student
+        husky.talk();
+        husky.birthday();       // Method inherited from Person
+        husky.talk();
         
         
         
