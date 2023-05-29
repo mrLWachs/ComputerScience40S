@@ -44,7 +44,8 @@ public class ComputerScience30S
         // you create it (write it) by clicking on the lightbulb icon on the 
         // left side of NetBeans...
 //        learnArrays();
-        learnClasses();
+//        learnClasses();
+        LearnGraphics learnGraphics = new LearnGraphics();
     }
 
     /**
