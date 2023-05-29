@@ -9,13 +9,13 @@ package testing;
  * @author Mr. Wachs
  * @since May 29, 2023
  */
-public class CollectionTest 
+public class CollectionsTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public CollectionTest() {
+    public CollectionsTest() {
         
     }
      
