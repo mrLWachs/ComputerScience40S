@@ -1,12 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
+/** Required package class namespace */
 package computerscience30s;
 
+
 /**
+ * Graphics3.java - using the NetBeans visual designer in combination
+ * with our custom code (a 'hybrid' approach) to make a "mini final project" 
+ * type of application (a mini 'PhotoShop')
  *
- * @author lawrence.wachs
+ * @author Mr. Wachs
+ * @since 10-Jan-2022, 11:40:10 AM
  */
 public class Graphics3 extends javax.swing.JFrame {
 
