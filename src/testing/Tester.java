@@ -27,9 +27,10 @@ public class Tester
      */
     public Tester() {
         System.out.println("\nTesting started...\n");        
-        //RecursionTest       unit1 = new RecursionTest(); 
-        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        RecursionTest       unit1 = new RecursionTest(); 
         // Later we will add code here for unit 2 and 3...
+        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        CollectionsTest     unit3 = new CollectionsTest();
         System.out.println("\nTesting complete!\n");
     }
     
