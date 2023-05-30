@@ -20,9 +20,9 @@ public class LearnGraphics
     public LearnGraphics() {
         System.out.println("Start Learning Graphics and User Interfaces (UI)");
         // Create class objects for different examples
-        Graphics1 graphics1 = new Graphics1();
-        Graphics2 graphics2 = new Graphics2();
-        Graphics3 graphics3 = new Graphics3();        
+        Graphics1 graphics1 = new Graphics1();  // Using the WYSIWYG editor
+        Graphics2 graphics2 = new Graphics2();  // Using just code (copy #1)
+        Graphics3 graphics3 = new Graphics3();  // Use a mix (hybrid)
         System.out.println("Completed Learning Graphics and UI!");
     }
 
