@@ -86,7 +86,6 @@ public class CollectionsTest
         System.out.println("Node h = " + h.toString());
         
         // Create a LinkedList object to test the constructor
-        // Create a LinkedList object to test the constructor
         System.out.println("\nTesting default LinkedList constructor.......\n");        
         LinkedList<Integer> list1 = new LinkedList<>();
         LinkedList<Integer> list2 = new LinkedList<>();
@@ -97,12 +96,12 @@ public class CollectionsTest
         System.out.println("L2 toString -> " + list2.toString());
         
         // Test isEmpty() method...............................................
-        System.out.println("L1 empty? -> " + list1.isEmpty() + "\t" + list1);
-        System.out.println("L2 empty? -> " + list2.isEmpty() + "\t" + list2);
+        System.out.println("L1 empty? -> " + list1.isEmpty());
+        System.out.println("L2 empty? -> " + list2.isEmpty());
         
         // Test size() method..................................................
-        System.out.println("L1 size -> " + list1.size() + "\t" + list1);
-        System.out.println("L2 size -> " + list2.size() + "\t" + list2);
+        System.out.println("L1 size -> " + list1.size());
+        System.out.println("L2 size -> " + list2.size());
         
         // More testing, explained in the outputs..............................
         
