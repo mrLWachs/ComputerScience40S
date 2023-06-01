@@ -6,10 +6,14 @@ package computerscience30s;
 /**
  * Graphics3.java - using the NetBeans visual designer in combination
  * with our custom code (a 'hybrid' approach) to make a "mini final project" 
- * type of application (a mini 'PhotoShop')
+ * type of application (a mini 'PhotoShop') - I have removed the "main" method
+ * that is added with JFrames added with the designer (like I did in Graphics1)
+ * and I also took time to name all the objects when designing by right 
+ * clicking each object with the designer and selecting "Change Variable
+ * Name..." and then typing in a new name (with no specific naming style used)
  *
  * @author Mr. Wachs
- * @since 10-Jan-2022, 11:40:10 AM
+ * @since May 30, 2023
  */
 public class Graphics3 extends javax.swing.JFrame {
 
@@ -44,41 +48,6 @@ public class Graphics3 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Graphics3().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

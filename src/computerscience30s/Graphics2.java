@@ -46,37 +46,26 @@ public class Graphics2 extends JFrame {
         // To have NetBeans automate writing a method for you, select the code
         // you want in the method with your mouse first, then press:
         // ALT + SHIFT + M and name the method
-        setContainer();
         setControls();
         setActions();        
         
         // Add code (like the "initComponents() method that the designder writes)
         // to "set up" (or "initializes") the frame (form/container)
-        this.setSize(500, 700);
+        this.setSize(458, 710);
         this.setTitle("Graphics 2");
         this.setResizable(false);
         this.setLocationRelativeTo(null);    // Centers the form on the screen
         // NOTE: this line above can not be done with the designer
+        this.setDefaultCloseOperation(HIDE_ON_CLOSE);
+        // The constant "EXIT_ON_CLOSE" would means when the close this 
+        // form (frame, window, app, program, container) the entire program 
+        // (all forms) also close - this is the default the deisgner uses, but
+        // the constant used here "HIDE_ON_CLOSE" means only this frame closes
+        // but the rest of the application (i.e. other forms) still run
 
         this.setVisible(true);          // Make the frame (container) visible
     }
     
-    /**
-     * Setup the frame's (form) properties:
-     */
-    private void setContainer() {
-        // Use a reference to the object that will be created in the future
-        // and use all the properties and call (invoke) all the methods
-        // we inherited from the super-class (JFrame)
-        this.setSize(680, 830);         // Sets the width and height
-        this.setTitle("Graphics 1");    // Sets the title at top of form (frame)
-        this.setResizable(false);       // Makes it so the user cannot resize
-        this.setLocationRelativeTo(null);   // Centers the form on screen
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        // Means when the close this form (frame, window, app, program, 
-        // container) the entire program (all forms) also close
-    }
-
     /**
      * Setup all the controls to go in the container
      */
@@ -89,9 +78,10 @@ public class Graphics2 extends JFrame {
         
         // Change any properties of the controls
         text.setText("Hello World");
+        button.setText("ENTER");
         // With image, little more code, why not "take" (copy/paste) the
         // code from the designer and adapt it as you like
-        final String FILE = "/computerscience30s/image.gif";
+        final String FILE = "/computerscience30s/fox.gif";
         picture.setIcon(new ImageIcon(getClass().getResource(FILE))); 
 
         // Set the container's layout manager to posiition all the controls
@@ -105,10 +95,10 @@ public class Graphics2 extends JFrame {
         container.add(button);
         
         // Position all controls using: x, y, width, height
-        text.setBounds(10, 10, 650, 20);
-        picture.setBounds(10, 50, 650, 650);
-        textbox.setBounds(10, 710, 650, 20);
-        button.setBounds(10, 740, 650, 40);                
+        text.setBounds(6, 19, 413, 16);
+        picture.setBounds(6, 144, 413, 509);
+        textbox.setBounds(6, 104, 413, 22);
+        button.setBounds(6, 53, 413, 34);                
     }
 
     /**
