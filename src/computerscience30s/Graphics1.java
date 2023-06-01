@@ -58,8 +58,24 @@ public class Graphics1 extends javax.swing.JFrame {
         jLabel1.setText("Hello World");
 
         jButton1.setText("ENTER");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/fox.gif"))); // NOI18N
+        jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel2MouseMoved(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,21 +83,21 @@ public class Graphics1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1)
-                    .addComponent(jButton1)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jTextField1)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addGap(29, 29, 29)
-                .addComponent(jButton1)
                 .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
@@ -90,6 +106,30 @@ public class Graphics1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        
+        // Double clicking a button in the design mode, immediately jumps to 
+        // code written for you connected to that button - to add in your 
+        // code to execute (just like in Visual Studio)
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // TODO add your handling code here:
+        
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add
+        jLabel1.setText("Key pressed was " + evt.getKeyCode());
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
+        jLabel2.setVisible(false);
+//        jLabel1.setText("Mouse is at (" + evt.getX() + "," + evt.getY() + ")");
+    }//GEN-LAST:event_jLabel2MouseMoved
 
     ////////////////////////////////////////////////////////////////////////////
     // NOTE: the NetBeans visual designer when a JFrame form is added to a 
