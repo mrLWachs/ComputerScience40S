@@ -1,0 +1,799 @@
+1:	Mr. Wachs Computer Science testing started......................................................
+2:	Computer Science 30S starting......................................................
+3:	~~~ SIMULATED {Input} DIALOG: Select the unit to view examples of... ~~~ 
+4:	Hello World
+5:	I'm in
+6:	 the world
+7:	Good-bye world!
+8:	Make a quote " 
+9:	Make a slash \ 
+10:	Make a 	 tab 
+11:	Make a new line 
+ break 
+12:	~~~ SIMULATED {Message} DIALOG: Hi ~~~ 
+13:	~~~ SIMULATED {Message} DIALOG: Information icon is i ~~~ { title: Information title },
+14:	~~~ SIMULATED {Message} DIALOG: Question icon is i ~~~ { title: Question title },
+15:	~~~ SIMULATED {Message} DIALOG: Warning icon is i ~~~ { title: Warning title },
+16:	~~~ SIMULATED {Message} DIALOG: Plain icon is i ~~~ { title: Plain title },
+17:	~~~ SIMULATED {Input} DIALOG: Enter Something ~~~ 
+18:	~~~ SIMULATED {Input} DIALOG: Information icon is i ~~~ 
+19:	~~~ SIMULATED {Input} DIALOG: Question icon is i ~~~ 
+20:	~~~ SIMULATED {Input} DIALOG: Warning icon is i ~~~ 
+21:	~~~ SIMULATED {Input} DIALOG: Plain icon is i ~~~ 
+22:	~~~ SIMULATED {Confirm} DIALOG: Confirm ~~~ 
+23:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 2 ~~~ { title: Information },{ messageType: 1 },
+24:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 3 ~~~ { title: Question },{ optionType: -1 },{ messageType: 3 },
+25:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 4 ~~~ { title: Warning },{ optionType: 2 },{ messageType: 2 },
+26:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 5 ~~~ { title: Plain },{ optionType: 1 },{ messageType: -1 },
+27:	a = false
+28:	b = 1
+29:	c = 1.2
+30:	d = A
+31:	e = apple
+32:	x = 10
+33:	x = 20
+34:	y = 30
+35:	y = 30
+36:	x = 28
+37:	y = 5
+38:	z = 3
+39:	3.141592658389, 99, Y, true, Wachs
+40:	f = 25
+41:	g = 25.0
+42:	g = 25.999999999999
+43:	h = 25
+44:	k = 2.99999999
+45:	l = 2
+46:	m = 2.0
+47:	n = A
+48:	o = 65
+49:	p = F
+50:	~~~ SIMULATED {Input} DIALOG: Enter ~~~ 
+51:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+52:	~~~ SIMULATED {Input} DIALOG: Enter int ~~~ 
+53:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
+54:	~~~ SIMULATED {Input} DIALOG: Enter double ~~~ 
+55:	~~~ SIMULATED {Message} DIALOG: -1.0 ~~~ 
+56:	~~~ SIMULATED {Input} DIALOG: Enter char ~~~ 
+57:	~~~ SIMULATED {Message} DIALOG: - ~~~ 
+58:	Word hippopotomonsprosesquippedaiophobia is length 35
+59:	Word hippopotomonsprosesquippedaiophobia in upper case is HIPPOPOTOMONSPROSESQUIPPEDAIOPHOBIA
+60:	answer1 = 3.141592653589793
+61:	answer2 = 0.8775825618903728
+62:	answer3 = 1.0
+63:	answer4 = 125.0
+64:	answer5 = 3.0
+65:	answer6 = -0.6931471805599453
+66:	seed = 0.4342345269689758
+67:	low    = 1.0
+68:	high   = 10.0
+69:	number = 5.342345269689758
+70:	value = 5
+71:	card is 23
+72:	equal
+73:	The example is 
+74:	less than
+75:	!=
+76:	W1 kind of == W2
+77:	Keep trying
+78:	counter = 0
+79:	counter = 1
+80:	counter = 2
+81:	counter = 3
+82:	counter = 4
+83:	counter = 5
+84:	counter = 6
+85:	counter = 7
+86:	counter = 8
+87:	counter = 9
+88:	~~~ SIMULATED {Input} DIALOG: Create a password ~~~ 
+89:	~~~ SIMULATED {Message} DIALOG: Ok, continue... ~~~ 
+90:	~~~ SIMULATED {Input} DIALOG: Enter password ~~~ 
+91:	~~~ SIMULATED {Message} DIALOG: You got it ~~~ 
+92:	i = 0
+93:	i = 1
+94:	i = 2
+95:	i = 3
+96:	i = 4
+97:	i = 5
+98:	i = 6
+99:	i = 7
+100:	i = 8
+101:	i = 9
+102:	counting = 100
+103:	counting = 90
+104:	counting = 80
+105:	counting = 70
+106:	counting = 60
+107:	counting = 50
+108:	counting = 40
+109:	counting = 30
+110:	counting = 20
+111:	counting = 10
+112:	counting = 0
+113:	i = 99.789
+114:	i = 19.007428571428573
+115:	~~~ SIMULATED {Message} DIALOG: You are an intern at radio station, C-RAP, The 
+disk jockeys announce the current temperature 
+in both Fahrenheit and Celsius every half-hour.
+They would like an easy w ... (line shortened) ...
+116:	~~~ SIMULATED {Input} DIALOG: Enter temperature in Celcius ~~~ 
+117:	~~~ SIMULATED {Message} DIALOG: Your temperature in Fahrenheit is 30.2 ~~~ 
+118:	~~~ SIMULATED {Message} DIALOG: Thank you! ~~~ 
+119:	Starting to Learn methods...
+120:	*
+121:	*
+122:	Phenakistoscope
+123:	Volleywood
+124:	pancakes
+125:	Spider-man
+126:	Batman
+127:	Dalmations
+128:	Dalmations
+129:	Dalmations
+130:	Dalmations
+131:	Dalmations
+132:	Dalmations
+133:	Dalmations
+134:	Dalmations
+135:	Dalmations
+136:	Dalmations
+137:	Dalmations
+138:	Dalmations
+139:	Dalmations
+140:	Dalmations
+141:	Dalmations
+142:	Dalmations
+143:	Dalmations
+144:	Dalmations
+145:	Dalmations
+146:	Dalmations
+147:	Dalmations
+148:	Dalmations
+149:	Dalmations
+150:	Dalmations
+151:	Dalmations
+152:	Dalmations
+153:	Dalmations
+154:	Dalmations
+155:	Dalmations
+156:	Dalmations
+157:	Dalmations
+158:	Dalmations
+159:	Dalmations
+160:	Dalmations
+161:	Dalmations
+162:	Dalmations
+163:	Dalmations
+164:	Dalmations
+165:	Dalmations
+166:	Dalmations
+167:	Dalmations
+168:	Dalmations
+169:	Dalmations
+170:	Dalmations
+171:	Dalmations
+172:	Dalmations
+173:	Dalmations
+174:	Dalmations
+175:	Dalmations
+176:	Dalmations
+177:	Dalmations
+178:	Dalmations
+179:	Dalmations
+180:	Dalmations
+181:	Dalmations
+182:	Dalmations
+183:	Dalmations
+184:	Dalmations
+185:	Dalmations
+186:	Dalmations
+187:	Dalmations
+188:	Dalmations
+189:	Dalmations
+190:	Dalmations
+191:	Dalmations
+192:	Dalmations
+193:	Dalmations
+194:	Dalmations
+195:	Dalmations
+196:	Dalmations
+197:	Dalmations
+198:	Dalmations
+199:	Dalmations
+200:	Dalmations
+201:	Dalmations
+202:	Dalmations
+203:	Dalmations
+204:	Dalmations
+205:	Dalmations
+206:	Dalmations
+207:	Dalmations
+208:	Dalmations
+209:	Dalmations
+210:	Dalmations
+211:	Dalmations
+212:	Dalmations
+213:	Dalmations
+214:	Dalmations
+215:	Dalmations
+216:	Dalmations
+217:	Dalmations
+218:	Dalmations
+219:	Dalmations
+220:	Dalmations
+221:	Dalmations
+222:	Dalmations
+223:	Dalmations
+224:	Dalmations
+225:	Dalmations
+226:	Dalmations
+227:	Dalmations
+228:	Problems
+229:	Problems
+230:	Problems
+231:	Problems
+232:	Problems
+233:	Problems
+234:	Problems
+235:	Problems
+236:	Problems
+237:	Problems
+238:	Problems
+239:	Problems
+240:	Problems
+241:	Problems
+242:	Problems
+243:	Problems
+244:	Problems
+245:	Problems
+246:	Problems
+247:	Problems
+248:	Problems
+249:	Problems
+250:	Problems
+251:	Problems
+252:	Problems
+253:	Problems
+254:	Problems
+255:	Problems
+256:	Problems
+257:	Problems
+258:	Problems
+259:	Problems
+260:	Problems
+261:	Problems
+262:	Problems
+263:	Problems
+264:	Problems
+265:	Problems
+266:	Problems
+267:	Problems
+268:	Problems
+269:	Problems
+270:	Problems
+271:	Problems
+272:	Problems
+273:	Problems
+274:	Problems
+275:	Problems
+276:	Problems
+277:	Problems
+278:	Problems
+279:	Problems
+280:	Problems
+281:	Problems
+282:	Problems
+283:	Problems
+284:	Problems
+285:	Problems
+286:	Problems
+287:	Problems
+288:	Problems
+289:	Problems
+290:	Problems
+291:	Problems
+292:	Problems
+293:	Problems
+294:	Problems
+295:	Problems
+296:	Problems
+297:	Problems
+298:	Problems
+299:	Problems
+300:	Problems
+301:	Problems
+302:	Problems
+303:	Problems
+304:	Problems
+305:	Problems
+306:	Problems
+307:	Problems
+308:	Problems
+309:	Problems
+310:	Problems
+311:	Problems
+312:	Problems
+313:	Problems
+314:	Problems
+315:	Problems
+316:	Problems
+317:	Problems
+318:	Problems
+319:	Problems
+320:	Problems
+321:	Problems
+322:	Problems
+323:	Problems
+324:	Problems
+325:	Problems
+326:	Problems
+327:	Number is 4
+328:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
+329:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
+330:	Completed Learning Methods!
+331:	Start learning arrays...
+332:	333
+333:	666
+334:	666
+335:	0
+336:	0
+337:	0
+338:	0
+339:	0
+340:	0
+341:	0
+342:	0
+343:	0
+344:	0
+345:	0
+346:	0
+347:	0
+348:	0
+349:	0
+350:	0
+351:	0
+352:	0
+353:	0
+354:	0
+355:	0
+356:	0
+357:	0
+358:	0
+359:	0
+360:	0
+361:	0
+362:	0
+363:	0
+364:	0
+365:	0
+366:	0
+367:	0
+368:	0
+369:	0
+370:	0
+371:	0
+372:	0
+373:	0
+374:	0
+375:	0
+376:	0
+377:	0
+378:	0
+379:	0
+380:	0
+381:	0
+382:	0
+383:	0
+384:	0
+385:	0
+386:	0
+387:	0
+388:	0
+389:	0
+390:	0
+391:	0
+392:	0
+393:	0
+394:	0
+395:	0
+396:	0
+397:	0
+398:	0
+399:	0
+400:	0
+401:	0
+402:	0
+403:	0
+404:	0
+405:	0
+406:	0
+407:	0
+408:	0
+409:	0
+410:	0
+411:	0
+412:	0
+413:	0
+414:	0
+415:	0
+416:	0
+417:	0
+418:	0
+419:	0
+420:	0
+421:	0
+422:	0
+423:	0
+424:	0
+425:	0
+426:	0
+427:	0
+428:	0
+429:	0
+430:	0
+431:	0
+432:	0
+433:	333
+434:	0 = 666
+435:	1 = 0
+436:	2 = 0
+437:	3 = 0
+438:	4 = 0
+439:	5 = 0
+440:	6 = 0
+441:	7 = 0
+442:	8 = 0
+443:	9 = 0
+444:	10 = 0
+445:	11 = 0
+446:	12 = 0
+447:	13 = 0
+448:	14 = 0
+449:	15 = 0
+450:	16 = 0
+451:	17 = 0
+452:	18 = 0
+453:	19 = 0
+454:	20 = 0
+455:	21 = 0
+456:	22 = 0
+457:	23 = 0
+458:	24 = 0
+459:	25 = 0
+460:	26 = 0
+461:	27 = 0
+462:	28 = 0
+463:	29 = 0
+464:	30 = 0
+465:	31 = 0
+466:	32 = 0
+467:	33 = 0
+468:	34 = 0
+469:	35 = 0
+470:	36 = 0
+471:	37 = 0
+472:	38 = 0
+473:	39 = 0
+474:	40 = 0
+475:	41 = 0
+476:	42 = 0
+477:	43 = 0
+478:	44 = 0
+479:	45 = 0
+480:	46 = 0
+481:	47 = 0
+482:	48 = 0
+483:	49 = 0
+484:	50 = 0
+485:	51 = 0
+486:	52 = 0
+487:	53 = 0
+488:	54 = 0
+489:	55 = 0
+490:	56 = 0
+491:	57 = 0
+492:	58 = 0
+493:	59 = 0
+494:	60 = 0
+495:	61 = 0
+496:	62 = 0
+497:	63 = 0
+498:	64 = 0
+499:	65 = 0
+500:	66 = 0
+501:	67 = 0
+502:	68 = 0
+503:	69 = 0
+504:	70 = 0
+505:	71 = 0
+506:	72 = 0
+507:	73 = 0
+508:	74 = 0
+509:	75 = 0
+510:	76 = 0
+511:	77 = 0
+512:	78 = 0
+513:	79 = 0
+514:	80 = 0
+515:	81 = 0
+516:	82 = 0
+517:	83 = 0
+518:	84 = 0
+519:	85 = 0
+520:	86 = 0
+521:	87 = 0
+522:	88 = 0
+523:	89 = 0
+524:	90 = 0
+525:	91 = 0
+526:	92 = 0
+527:	93 = 0
+528:	94 = 0
+529:	95 = 0
+530:	96 = 0
+531:	97 = 0
+532:	98 = 0
+533:	99 = 333
+534:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
+535:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
+536:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
+537:	~~~ SIMULATED {Message} DIALOG: [2,7,8,2,1,3,4,3,9,2,2,4,10,9,1,6,9,2,4,3,10,8,1,7,9,8,8,8,6,6,1,10,8,7,2,9,6,2,10,3,6,5,8,2,8,6,3,3,9,3,] ~~~ 
+538:	Random character was d
+539:	h R Y S Y # S < x ; ~ + > P e i y d G " o W ! F < B C P ^ ; 
+' ( h H . l s L u { N u , ^ q o C i Z f - 5 { n 7 E ; Y S r 
+9 ~ / & = s M i K ! b < = t i \ ! S - L ^ > 7 4 | 9 = D 7 S 
+W ' a { m i ; < C ... (line shortened) ...
+540:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
+541:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
+542:	X O X 
+O X O 
+X O X 
+
+543:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
+544:	Completed learning arrays!
+545:	Start Learning classes...
+546:	Complete Learning classes
+547:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics1 ~~~ 
+548:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics2 ~~~ 
+549:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
+550:	Computer Science 30S complete!...................................................
+551:	Computer Science 40S starting......................................................
+552:	Computer Science 40S complete!...................................................
+553:	Computer Science 42SAP starting......................................................
+554:	Computer Science 42SAP curriculum content starting......................................................
+555:	Computer Science 42SAP curriculum content complete!...................................................
+556:	Computer Science 42SAP bonus content starting......................................................
+557:	Permanent Storage Test started......................................................
+558:	// Learn about 'error traps'
+559:	Divide by zero -> java.lang.ArithmeticException: / by zero
+560:	// Create sample data to use
+561:	// Save ONE piece of data to that permanent file
+562:	// Now involve the user to get a file name
+563:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+564:	File already exists!
+565:	// Open file with one line (no user involvment)
+566:	line read was Defenestration
+567:	// Open file with multiple lines (user picks file)
+568:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+569:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
+570:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
+571:	This line read was q ~ pq ~ �
+572:	// Class to save/open one line (no user)
+573:	Before: Defenestration
+574:	After : Defenestration
+575:	// Class to save/open multiple lines (with user)
+576:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+577:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+578:	// Now save/open on a complex data type
+579:	Before: Athlete: Husky: HighSchool: Student: Person
+580:	After:  Athlete: Husky: HighSchool: Student: Person
+581:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+582:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+583:	Permanent Storage Test completed!...................................................
+584:	Stacks and Queues Test started......................................................
+585:	// Create objects for testing...
+586:	// Create and Test a stack object...
+587:	// Test toString, size, isEmpty, and push methods...
+588:	Empty = true	Size = 0	Empty Stack
+589:	// Loop through adding random values
+590:	Empty = false	Size = 1	Stack top -> [Dilan] <- bottom
+591:	Empty = false	Size = 2	Stack top -> [molds,Dilan] <- bottom
+592:	Empty = false	Size = 3	Stack top -> [pinko,molds,Dilan] <- bottom
+593:	Empty = false	Size = 4	Stack top -> [longs,pinko,molds,Dilan] <- bottom
+594:	Empty = false	Size = 5	Stack top -> [sweep,longs,pinko,molds,Dilan] <- bottom
+595:	Empty = false	Size = 6	Stack top -> [plink,sweep,longs,pinko,molds,Dilan] <- bottom
+596:	Empty = false	Size = 7	Stack top -> [Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+597:	Empty = false	Size = 8	Stack top -> [Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+598:	Empty = false	Size = 9	Stack top -> [ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+599:	Empty = false	Size = 10	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+600:	// Test clone method...
+601:	Clone stack: Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+602:	// Test equals method...
+603:	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+==
+Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+604:	// Now change the copy
+605:	// Now check again
+606:	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+!=
+Stack top -> [Venus] <- bottom
+607:	// Re-clone the stack, and output
+608:	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+609:	// Text the pop method...
+610:	Clone stack:	Empty = false	Size = 10	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+611:	// Loop through removing values
+612:	Popped -> Lance	Empty = false	Size = 9	Stack top -> [ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+613:	Popped -> ethos	Empty = false	Size = 8	Stack top -> [Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+614:	Popped -> Odell	Empty = false	Size = 7	Stack top -> [Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+615:	Popped -> Hesse	Empty = false	Size = 6	Stack top -> [plink,sweep,longs,pinko,molds,Dilan] <- bottom
+616:	Popped -> plink	Empty = false	Size = 5	Stack top -> [sweep,longs,pinko,molds,Dilan] <- bottom
+617:	Popped -> sweep	Empty = false	Size = 4	Stack top -> [longs,pinko,molds,Dilan] <- bottom
+618:	Popped -> longs	Empty = false	Size = 3	Stack top -> [pinko,molds,Dilan] <- bottom
+619:	Popped -> pinko	Empty = false	Size = 2	Stack top -> [molds,Dilan] <- bottom
+620:	Popped -> molds	Empty = false	Size = 1	Stack top -> [Dilan] <- bottom
+621:	Popped -> Dilan	Empty = true	Size = 0	Empty Stack
+622:	Popped -> null	Empty = true	Size = 0	Empty Stack
+623:	// Test peek (top is wrapper no testing needed)...
+624:	Clone Top = null
+625:	Stack Top = Lance
+626:	// Test to array and to linked list...
+627:	Linked List 	[Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan]
+628:	Array   	[Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan]
+629:	// Test our constructors...
+630:	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+631:	Stack top -> [Lance,ethos,Odell,Hesse,plink,sweep,longs,pinko,molds,Dilan] <- bottom
+632:	// Test the Queue object...
+633:	// Test toString,size,isEmpty, and enqueue methods...
+634:	Empty = true	Size = 0	Empty Queue
+635:	// Loop through adding random values
+636:	Empty = false	Size = 1	Queue back -> [bonus] <- front
+637:	Empty = false	Size = 2	Queue back -> [razer,bonus] <- front
+638:	Empty = false	Size = 3	Queue back -> [Zomba,razer,bonus] <- front
+639:	Empty = false	Size = 4	Queue back -> [whelk,Zomba,razer,bonus] <- front
+640:	Empty = false	Size = 5	Queue back -> [Ulric,whelk,Zomba,razer,bonus] <- front
+641:	Empty = false	Size = 6	Queue back -> [Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+642:	Empty = false	Size = 7	Queue back -> [Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+643:	Empty = false	Size = 8	Queue back -> [ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+644:	Empty = false	Size = 9	Queue back -> [hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+645:	Empty = false	Size = 10	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+646:	// Test clone method...
+647:	Clone Queue 			Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+648:	// Test equals method...
+649:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+==
+Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+650:	// Now change the duplicate
+651:	// Now check again
+652:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+==
+Queue back -> [shays] <- front
+653:	// Re-clone the queue, and output
+654:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+655:	// Test the dequeue method...
+656:	Clone queue:	Empty = false	Size = 10	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+657:	// Loop through removing values
+658:	Dequeued -> bonus	Empty = false	Size = 9	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer] <- front
+659:	Dequeued -> razer	Empty = false	Size = 8	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba] <- front
+660:	Dequeued -> Zomba	Empty = false	Size = 7	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk] <- front
+661:	Dequeued -> whelk	Empty = false	Size = 6	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric] <- front
+662:	Dequeued -> Ulric	Empty = false	Size = 5	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai] <- front
+663:	Dequeued -> Sinai	Empty = false	Size = 4	Queue back -> [Lorne,hallo,ethyl,Silas] <- front
+664:	Dequeued -> Silas	Empty = false	Size = 3	Queue back -> [Lorne,hallo,ethyl] <- front
+665:	Dequeued -> ethyl	Empty = false	Size = 2	Queue back -> [Lorne,hallo] <- front
+666:	Dequeued -> hallo	Empty = false	Size = 1	Queue back -> [Lorne] <- front
+667:	Dequeued -> Lorne	Empty = true	Size = 0	Empty Queue
+668:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+669:	// Test front and back...
+670:	Clone Front = null
+671:	Queue Front = bonus
+672:	Clone Back  = null
+673:	Queue Back  = Lorne
+674:	// Test to array and to linked list...
+675:	Linked List 	[Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus]
+676:	Array   	[Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus]
+677:	// Test our constructors...
+678:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+679:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+680:	// Constructors from stack to queue (and back)...
+681:	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front	 into 	Stack top -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- bottom
+682:	Stack top -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- bottom	 into 	Queue back -> [Lorne,hallo,ethyl,Silas,Sinai,Ulric,whelk,Zomba,razer,bonus] <- front
+683:	Stacks and Queues Test completed!...................................................
+684:	Searching and Sorting Test started......................................................
+685:	// For the I.B. Exam, you only need to know:
+686:	// Search: linear search and binary search
+687:	// Sort: bubble sort and the selection sort
+688:	// Create some constants (edges) for the data
+689:	// Create some random data to search through and sort
+690:	// Including edge cases to test
+691:	// Create data to store the results...
+692:	// The simpliest of searches
+693:	// Now the linear search on all test data
+694:	// Simple sort...
+695:	// We will re-scramble array for further testing
+696:	// Now bubble sort (from bubbles rising from water)
+697:	// Now selection sort (from selecting the smallest)
+698:	// Now binary search (named after two or dividing)
+699:	// NOTE: binary search can only happen on sorted list
+700:	// Redo some of the test data...
+701:	// Use class for searching and sorting
+702:	// Create random linked list data
+703:	// Place all test cases into another linked list
+704:	// Execute the linear search on all test data...
+705:	// Execute all the sorts on all test data...
+706:	// Bubble sort LinkedList data...
+707:	// Selection sort LinkedList data...
+708:	// Shell sort LinkedList data...
+709:	// Insertion sort LinkedList data...
+710:	// Quick sort LinkedList data...
+711:	// Merge sort LinkedList data...
+712:	// Execute the binary search on all test data...
+713:	Searching and Sorting Test completed!...................................................
+714:	Binary Trees Test started......................................................
+715:	// Constants/variables for creating random values...
+716:	// Creating some TreeNode objects...
+717:	// Linking the TreeNodes...
+718:	// Testing TreeNode equals...
+719:	// Testing TreeNode toString...
+720:	13
+721:	92
+722:	67
+723:	// Creating a Tree object...
+724:	// Test the insert method...
+725:	// Insert one more...
+726:	// Test the search of the tree...
+727:	Should be found     = true
+728:	Should NOT be found = false
+729:	// Test toString() and pre, post, in order traversals
+730:	Binary Tree:
+Order: Linked List 	[62,74,51,96,57,10]
+Pre:   Linked List 	[62,51,10,57,74,96]
+Post:  Linked List 	[10,57,51,96,74,62]
+In:    Linked List 	[10,51,57,62,74,96]
+731:	// Building second tree (test clone) and test equals
+732:	1st tree -> Linked List 	[10,51,57,62,74,96]
+733:	2nd tree -> Linked List 	[28,52,52,67,97,99]
+734:	1st!=2nd
+735:	// Building a third tree (test clone) and test equals
+736:	1st tree -> Linked List 	[10,51,57,62,74,96]
+737:	3rd tree -> Linked List 	[10,51,57,62,74,96]
+738:	1st==3rd
+739:	// Build all our data structures from each other...
+740:	// Create variable objects...
+741:	// Create array from variables...
+742:	// Create LinkedList from array...
+743:	// Create Stack from LinkedList...
+744:	// Create Queue from Stack...
+745:	// Create Tree from Queue...
+746:	// Output variables,array,list,stack,queue,tree...
+747:	worms
+748:	shana
+749:	halve
+750:	paved
+751:	payne
+752:	[worms,shana,halve,paved,payne]
+753:	Linked List 	[worms,shana,halve,paved,payne]
+754:	Stack top -> [worms,shana,halve,paved,payne] <- bottom
+755:	Queue back -> [worms,shana,halve,paved,payne] <- front
+756:	Binary Tree:
+Order: Linked List 	[worms,shana,halve,paved,payne]
+Pre:   Linked List 	[worms,shana,halve,paved,payne]
+Post:  Linked List 	[payne,paved,halve,shana,worms]
+In:    Linked List 	[halve,pave ... (line shortened) ...
+757:	// Now re-building queue from tree
+758:	// Now re-building stack from queue
+759:	// Now re-building LinkedList from stack...
+760:	// Now re-building array from LinkedList...
+761:	// Output array,list,stack,queue,tree again...
+762:	[halve,paved,payne,shana,worms]
+763:	Linked List 	[halve,paved,payne,shana,worms]
+764:	Stack top -> [halve,paved,payne,shana,worms] <- bottom
+765:	Queue back -> [halve,paved,payne,shana,worms] <- front
+766:	Binary Tree:
+Order: Linked List 	[worms,shana,halve,paved,payne]
+Pre:   Linked List 	[worms,shana,halve,paved,payne]
+Post:  Linked List 	[payne,paved,halve,shana,worms]
+In:    Linked List 	[halve,pave ... (line shortened) ...
+767:	Binary Trees Test completed!...................................................
+768:	Computer Science 42SAP bonus content complete!...................................................
+769:	Computer Science 42SAP complete!...................................................
