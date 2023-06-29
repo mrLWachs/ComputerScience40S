@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing.cs40s.advancedclasses;
 
+/** Required API imports */
+import io.System;
  
 /**
  * Apple.java - represents an apple. This class inherits from the abstract 
