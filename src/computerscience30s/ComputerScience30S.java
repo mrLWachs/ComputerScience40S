@@ -45,7 +45,7 @@ public class ComputerScience30S
             "Unit 3: Arrays",
             "Unit 4: Classes",
             "Bonus Unit: Graphics and User Interfaces"            
-        };
+        }; 
         // Get the user's choice
         String choice = JOptionPane.showInputDialog(
                 null,
