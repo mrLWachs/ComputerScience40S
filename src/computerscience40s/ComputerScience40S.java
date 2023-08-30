@@ -2,9 +2,6 @@
 /** Required package class namespace */
 package computerscience40s;
 
-/** Required API imports */
-import testing.Tester;
-
 
 /** 
  * ComputerScience40S.java - the large in class example we continue to work 
@@ -12,7 +9,7 @@ import testing.Tester;
  * with any requests for code examples that might come up over the course.
  *
  * @author Mr. Wachs 
- * @since February 2023
+ * @since September 2023
 */
 public class ComputerScience40S 
 {
@@ -23,8 +20,8 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) { 
-        System.out.println("\nComputer Science 40S starting...\n");         
-        Tester tester = new Tester();                 
+        System.out.println("\nComputer Science 40S starting...\n");
+        
         System.out.println("\nComputer Science 40S complete!\n");
     }
     
@@ -104,25 +101,26 @@ public class ComputerScience40S
 //      it to a PDF (which means select "Microsoft Print to PDF" on the next 
 //      screen), or cancel and resize the code to fit better (see tip #1) and 
 //      then print again
-// (16) The + and - signs and gray lines along the side in NetBeans
+// (16) The + and - signs and gray lines along the left side in NetBeans
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
-// (17) If you hold down the CTRL key, method calls become links with the
-//      mouse to jump to the method (even ones we don't write)
-// (18) If you write the "call" to a method, before writing the method 
+// (17) If you write the "call" to a method, before writing the method 
 //      itself, the lightbulb (see tip 10) will help you write it
+// (18) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
 // (19) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
 // (20) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
-// (21) If you type /** before the method signature line it will automate
-//      which JavaDoc comments you should make
-// (22) If you want to remove the auto-generated reminder when you use the
+// (21) If you want to remove the auto-generated reminder when you use the
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (22) NetBeans can auto comment methods if you type "/**" above the method
+//      signature line, it will add the comment and define what needs to be
+//      commented for the method (using the "JavaDoc" commenting style)
 // (23) All arrays have a ".length" feature built in that you can have NetBeans
 //      autocomplete for you by typing the name of your array, then dot length
 //      (".length") which automatically gives you how many elements are in
@@ -131,8 +129,8 @@ public class ComputerScience40S
 //      and then press TAB AGAIN it jump to the ending value (which should be 
 //      the ".length" of the array (so if the array size changes, the loop 
 //      adapts to it) - the loop variable "i" also represents the array "index"
-// (25) To view the same code editing window with two different views, go to
-//      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
+// (25) To look at code in two places at once, go to the menu: View -> Split
+//      to split the screen and View -> clear to reset it
 // (26) To modify the template of all new classes, Tools -> Templates, scroll 
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
