@@ -7,7 +7,18 @@ import io.Simulator;
 
  
 /**
- * APUnit05WritingClasses.java - description
+ * APUnit05WritingClasses.java - This unit will pull together information from 
+ * all previous units to create new, user-defined reference data types in the 
+ * form of classes. The ability to accurately model real-world entities in a 
+ * computer program is a large part of what makes computer science so 
+ * powerful. This unit focuses on identifying appropriate behaviors and 
+ * attributes of real-world entities and organizing these into classes. 
+ * Students will build on what they learn in this unit to represent 
+ * relationships between classes through hierarchies, which appear in Unit 9. 
+ * The creation of computer programs can have extensive impacts on societies, 
+ * economies, and cultures. The legal and ethical concerns that come with 
+ * programs and the  responsibilities of programmers are also addressed in 
+ * this unit.
  *
  * @author Mr. Wachs
  * @since 29-Jun-2023, 2:14:04 PM
@@ -107,6 +118,154 @@ public class APUnit05WritingClasses
             //           state of an object
             // (5.3.1.5) Programmers write method code to satisfy the 
             //           postconditions when preconditions are met          
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.4 Accessor Methods");  
+        // (5.4.1) Define behaviors of an object through non-void methods 
+        //         without parameters written in a class
+            // (5.4.1.1) An accessor method allows other objects to obtain the
+            //           value of instance variables or static variables
+            // (5.4.1.2) A non-void method returns a single value. Its header 
+            //           includes the return type in place of the keyword void
+            // (5.4.1.3) In non-void methods, a return expression compatible 
+            //           with the return type is evaluated, and a copy of that
+            //           value is returned. This is referred to as "return by
+            //           value." 
+            // (5.4.1.4) When the return expression is a reference to an 
+            //           object, a copy of that reference is returned, not a 
+            //           copy of the object
+            // (5.4.1.5) The return keyword is used to return the flow of 
+            //           control to the point immediately following where the
+            //           method or constructor was called
+            // (5.4.1.6) The toString method is an overridden method that is 
+            //           included in classes to provide a description of a 
+            //           specific object. It generally includes what values 
+            //           are stored in the instance data of the object
+            // (5.4.1.7) If System.out.print or System.out. println is passed
+            //           an object, that object’s toString method is called, 
+            //           and the returned string is printed
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.5 Mutator Methods");  
+        // (5.5.1) Define behaviors of an object through void methods with or 
+        //         without parameters written in a class
+            // (5.5.1.1) A void method does not return a value. Its header 
+            //           contains the keyword void before the method name
+            // (5.5.1.2) A mutator (modifier) method is often a void method 
+            //           that changes the values of instance variables or 
+            //           static variables
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.6 Writing Methods");  
+        // (5.6.1) Define behaviors of an object through non-void methods 
+        //         with parameters written in a class
+            // (5.6.1.1) Methods can only access the private data and methods 
+            //           of a parameter that is a reference to an object when
+            //           the parameter is the same type as the method’s 
+            //           enclosing class
+            // (5.6.1.2) Non-void methods with parameters receive values 
+            //           through parameters, use those values, and return a 
+            //           computed value of the specified type
+            // (5.6.1.3) It is good programming practice to not modify mutable
+            //           objects that are passed as parameters unless required
+            //           in the specification
+            // (5.6.1.4) When an actual parameter is a primitive value, the 
+            //           formal parameter is initialized with a copy of that 
+            //           value. Changes to the formal parameter have no effect
+            //           on the corresponding actual parameter
+            // (5.6.1.5) When an actual parameter is a reference to an object,
+            //           the formal parameter is initialized with a copy of 
+            //           that reference, not a copy of the object. If the 
+            //           reference is to a mutable object, the method or 
+            //           constructor can use this reference to alter the state
+            //           of the object
+            // (5.6.1.6) Passing a reference parameter results in the formal 
+            //           parameter and the actual parameter being aliases. 
+            //           They both refer to the same object
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.7 Static Variables and Methods");  
+        // (5.7.1) Define behaviors of a class through static methods
+            // (5.7.1.1) Static methods are associated with the class, not 
+            //           objects of the class
+            // (5.7.1.2) Static methods include the keyword static in the 
+            //           header before the method name
+            // (5.7.1.3) Static methods cannot access or change the values of 
+            //           instance variables
+            // (5.7.1.4) Static methods can access or change the values of 
+            //           static variables
+            // (5.7.1.5) Static methods do not have a this reference and are 
+            //           unable to use the class’s instance variables or call
+            //           non-static methods
+        // (5.7.2) Define the static variables that belong to the class
+            // (5.7.2.1) Static variables belong to the class, with all objects
+            //           of a class sharing a single static variable
+            // (5.7.2.2) Static variables can be designated as either public
+            //           or private and are designated with the static keyword
+            //           before the variable type
+            // (5.7.2.3) Static variables are used with the class name and the
+            //           dot operator, since they are associated with a class,
+            //           not objects of a class
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.8 Scope and Access");  
+        // (5.8.1) Explain where variables can be used in the program code
+            // (5.8.1.1) Local variables can be declared in the body of 
+            //           constructors and methods. These variables may only be
+            //           used within the constructor or method and cannot be 
+            //           declared to be public or private
+            // (5.8.1.2) When there is a local variable with the same name as
+            //           an instance variable, the variable name will refer to
+            //           the local variable instead of the instance variable
+            // (5.8.1.3) Formal parameters and variables declared in a method
+            //           or constructor can only be used within that method or 
+            //           constructor
+            // (5.8.1.4) Through method decomposition, a programmer breaks 
+            //           down a large problem into smaller subproblems by 
+            //           creating methods to solve each individual subproblem
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.9 this Keyword");  
+        // (5.9.1) Evaluate object reference expressions that use the keyword
+        //         this
+            // (5.9.1.1) Within a non-static method or a constructor, the 
+            //           keyword this is a reference to the current object 
+            //           the object whose method or constructor is being called
+            // (5.9.1.2) The keyword this can be used to pass the current 
+            //           object as an actual parameter in a method call
+        ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        ////////////////////////////////////////////////////////////////////////
+        Simulator.comment("5.10 Ethical and Social Implications of Computing Systems");  
+        // (5.10.1) Explain the ethical and social implications of computing 
+        //          systems
+            // (5.10.1.1) System reliability is limited. Programmers should 
+            //            make an effort to maximize system reliability
+            // (5.10.1.2) Legal issues and intellectual property concerns 
+            //            arise when creating programs
+            // (5.10.1.3) The creation of programs has impacts on society, 
+            //            economies, and culture. These impacts can be 
+            //            beneficial and/or harmful
         ////////////////////////////////////////////////////////////////////////
         
         
