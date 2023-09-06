@@ -64,12 +64,12 @@
 63:	answer4 = 125.0
 64:	answer5 = 3.0
 65:	answer6 = -0.6931471805599453
-66:	seed = 0.851999702409893
+66:	seed = 0.04535532746821691
 67:	low    = 1.0
 68:	high   = 10.0
-69:	number = 9.51999702409893
-70:	value = 9
-71:	card is 22
+69:	number = 1.453553274682169
+70:	value = 1
+71:	card is 4
 72:	equal
 73:	The example is 
 74:	less than
@@ -538,12 +538,12 @@ They would like an easy w ... (line shortened) ...
 534:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
 535:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
 536:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-537:	~~~ SIMULATED {Message} DIALOG: [10,8,10,7,7,9,10,6,1,3,7,9,3,8,4,1,4,5,5,10,8,4,10,2,1,5,3,7,8,5,9,10,10,6,2,4,5,7,7,9,1,2,1,6,10,5,2,3,6,10,] ~~~ 
-538:	Random character was S
-539:	c h 6 $ y \ - Y * , t V 7 y ; G E 2 o Q [ " $ % K V m w D + 
-_ q K | I / f b { S m ? / $ w g C ( 7 d A X | / \ @ l W | Q 
-4 0 \ O Q B W V l & ; A x ) L & ' 6 R J { ~ | n P i # : P 2 
-c } o L y f s = J ... (line shortened) ...
+537:	~~~ SIMULATED {Message} DIALOG: [1,6,5,8,2,1,6,5,10,9,3,6,5,2,3,3,3,5,5,7,5,7,6,3,2,7,4,5,3,7,4,8,9,2,7,8,2,7,10,4,8,6,10,3,3,5,3,3,5,3,] ~~~ 
+538:	Random character was a
+539:	& ~ f Z K w , ? g g p H ) " _ m n B 7 # P / D " < H O 0 Q ! 
+x W ~ $ | s w ; o c T $ s K i I g : 9 u G 1 X E J E c l Q y 
+d n l b U R r f 6 - B ~ O > - P G 3 n L e 6 / + C = b % 6 ' 
+X Z s { | + s : $ ... (line shortened) ...
 540:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 541:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 542:	X O X 
@@ -891,14 +891,14 @@ Advanced Classes Test started...
 875:	I am a student
 876:		 Number: 	1
 877:		 GPA:    	0.3
-878:	O1 = java.lang.Object@31cefde0
-879:	O2 = java.lang.Object@439f5b3d
-880:	O3 = java.lang.Object@439f5b3d
+878:	O1 = java.lang.Object@eec5a4a
+879:	O2 = java.lang.Object@2b2948e2
+880:	O3 = java.lang.Object@2b2948e2
 881:	Person  as string = Person
 882:	Student as string = Student: Person
 883:	Teacher as string = Teacher: Person
 884:	String  as string = squirrel
-885:	JOptionPane as string = io.JOptionPane@1d56ce6a
+885:	JOptionPane as string = io.JOptionPane@6ddf90b0
 886:	O2==O3
 887:	P1==P2
 888:	P2==P3
@@ -944,895 +944,915 @@ Advanced Classes Test started...
 921:	St. Pauls has scored
 922:	End of period 2 and the score is 2 for the Jock and 1 for the St. Pauls
 923:	Jock SLAPS St. Pauls
-924:	Round 3...
-925:	Jock has scored
+924:	KO
+925:	Round 3...
 926:	Jock has scored
-927:	St. Pauls has scored
-928:	End of period 3 and the score is 4 for the Jock and 2 for the St. Pauls
-929:	Round 4...
-930:	Jock has scored
+927:	Jock has scored
+928:	St. Pauls has scored
+929:	End of period 3 and the score is 4 for the Jock and 2 for the St. Pauls
+930:	Round 4...
 931:	Jock has scored
-932:	St. Pauls has scored
-933:	End of period 4 and the score is 6 for the Jock and 3 for the St. Pauls
-934:	Hard core ironing of clothes!
-935:	Jock wins!
-936:	Grill on the BBQ
-937:	Jock is eating Protein it was Savory
-938:	Class name: Boolean, Hash Code: 1231, To String: true
-939:	Class name: Integer, Hash Code: 0, To String: 0
-940:	Class name: Double, Hash Code: 300063655, To String: 3.14
-941:	Class name: Character, Hash Code: 97, To String: a
-942:	Class name: String, Hash Code: 3556498, To String: test
-943:	Class name: Athlete, Hash Code: 1368884364, To String: Athlete: Husky: HighSchool: Student: Person
-944:	Class name: JOptionPane, Hash Code: 401625763, To String: io.JOptionPane@17f052a3
-945:	Class name: Object, Hash Code: 772777427, To String: java.lang.Object@2e0fa5d3
-946:	true
-947:	0
-948:	3.14
-949:	a
-950:	test
-951:	Athlete: Husky: HighSchool: Student: Person
-952:	Class name: Boolean, Hash Code: 1231, To String: true
-953:	Class name: Integer, Hash Code: 0, To String: 0
-954:	Class name: Double, Hash Code: 300063655, To String: 3.14
-955:	Class name: Character, Hash Code: 97, To String: a
-956:	Class name: String, Hash Code: 3556498, To String: test
-957:	Class name: Athlete, Hash Code: 1368884364, To String: Athlete: Husky: HighSchool: Student: Person
-958:	Home Owner:
-959:	Mr. Lawrence Wachs
-960:	And the contents...
-961:	testing.cs40s.advancedclasses.Meeting@5010be6
-962:	Mr. Lawrence Wachs is eating Apple from Do not eat!
-963:	Grill on the BBQ
-964:	Mr. Lawrence Wachs is eating Protein it was Savory
-965:	
+932:	Jock has scored
+933:	St. Pauls has scored
+934:	End of period 4 and the score is 6 for the Jock and 3 for the St. Pauls
+935:	Hard core ironing of clothes!
+936:	Jock wins!
+937:	Grill on the BBQ
+938:	Jock is eating Protein it was Savory
+939:	Class name: Boolean, Hash Code: 1231, To String: true
+940:	Class name: Integer, Hash Code: 0, To String: 0
+941:	Class name: Double, Hash Code: 300063655, To String: 3.14
+942:	Class name: Character, Hash Code: 97, To String: a
+943:	Class name: String, Hash Code: 3556498, To String: test
+944:	Class name: Athlete, Hash Code: 1643691748, To String: Athlete: Husky: HighSchool: Student: Person
+945:	Class name: JOptionPane, Hash Code: 2068434592, To String: io.JOptionPane@7b49cea0
+946:	Class name: Object, Hash Code: 143110009, To String: java.lang.Object@887af79
+947:	true
+948:	0
+949:	3.14
+950:	a
+951:	test
+952:	Athlete: Husky: HighSchool: Student: Person
+953:	Class name: Boolean, Hash Code: 1231, To String: true
+954:	Class name: Integer, Hash Code: 0, To String: 0
+955:	Class name: Double, Hash Code: 300063655, To String: 3.14
+956:	Class name: Character, Hash Code: 97, To String: a
+957:	Class name: String, Hash Code: 3556498, To String: test
+958:	Class name: Athlete, Hash Code: 1643691748, To String: Athlete: Husky: HighSchool: Student: Person
+959:	Home Owner:
+960:	Mr. Lawrence Wachs
+961:	And the contents...
+962:	testing.cs40s.advancedclasses.Meeting@6e0e048a
+963:	Mr. Lawrence Wachs is eating Apple from Do not eat!
+964:	Grill on the BBQ
+965:	Mr. Lawrence Wachs is eating Protein it was Savory
+966:	
 Advanced Classes Test complete!
 
-966:	
+967:	
 Collections testing begins...
 
-967:	
+968:	
 Testing Node constructors....................
 
-968:	
+969:	
 Testing Node toString()......................
 
-969:	Node a = null
-970:	Node b = Sass
-971:	Node c = Pros
-972:	Node d = Joes
-973:	
+970:	Node a = null
+971:	Node b = Sass
+972:	Node c = Pros
+973:	Node d = Joes
+974:	
 Testing Node clone().........................
 
-974:	Node e = null
-975:	Node f = Sass
-976:	Node g = Pros
-977:	Node h = Joes
-978:	
+975:	Node e = null
+976:	Node f = Sass
+977:	Node g = Pros
+978:	Node h = Joes
+979:	
 Testing Node equal().........................
 
-979:	Node a == b? -> false
-980:	Node b == c? -> false
-981:	Node c == d? -> false
-982:	Node d == d? -> true
-983:	Node e == a? -> false
-984:	Node f == b? -> true
-985:	Node g == c? -> true
-986:	Node h == d? -> true
-987:	
+980:	Node a == b? -> false
+981:	Node b == c? -> false
+982:	Node c == d? -> false
+983:	Node d == d? -> true
+984:	Node e == a? -> false
+985:	Node f == b? -> true
+986:	Node g == c? -> true
+987:	Node h == d? -> true
+988:	
 Testing Node finalize()......................
 
-988:	Node a = null
-989:	Node b = Sass
-990:	Node c = Pros
-991:	Node d = Joes
-992:	Node e = null
-993:	Node f = Sass
-994:	Node g = Pros
-995:	Node h = Joes
-996:	Node a = null
-997:	Node b = null
-998:	Node c = null
-999:	Node d = null
-1000:	Node e = null
-1001:	Node f = null
-1002:	Node g = null
-1003:	Node h = null
-1004:	
+989:	Node a = null
+990:	Node b = Sass
+991:	Node c = Pros
+992:	Node d = Joes
+993:	Node e = null
+994:	Node f = Sass
+995:	Node g = Pros
+996:	Node h = Joes
+997:	Node a = null
+998:	Node b = null
+999:	Node c = null
+1000:	Node d = null
+1001:	Node e = null
+1002:	Node f = null
+1003:	Node g = null
+1004:	Node h = null
+1005:	
 Testing default LinkedList constructor.......
 
-1005:	
+1006:	
 Testing toString, empty, size methods........
 
-1006:	L1 toString -> Empty LinkedList
-1007:	L2 toString -> Empty LinkedList
-1008:	L1 empty? -> true
-1009:	L2 empty? -> true
-1010:	L1 size -> 0
-1011:	L2 size -> 0
-1012:	
+1007:	L1 toString -> Empty LinkedList
+1008:	L2 toString -> Empty LinkedList
+1009:	L1 empty? -> true
+1010:	L2 empty? -> true
+1011:	L1 size -> 0
+1012:	L2 size -> 0
+1013:	
 Test add (first to the back) of the list.....
 
-1013:	addBack -> true	Linked List 	[51]
-1014:	addBack -> true	Linked List 	[51,50]
-1015:	addBack -> true	Linked List 	[51,50,-50]
-1016:	addBack -> true	Linked List 	[51,50,-50,55]
-1017:	addBack -> false	Linked List 	[51,50,-50,55]
-1018:	
+1014:	addBack -> true	Linked List 	[51]
+1015:	addBack -> true	Linked List 	[51,50]
+1016:	addBack -> true	Linked List 	[51,50,-50]
+1017:	addBack -> true	Linked List 	[51,50,-50,55]
+1018:	addBack -> false	Linked List 	[51,50,-50,55]
+1019:	
 Test add (second to the front) of the list...
 
-1019:	addFront -> true	Linked List 	[80,51,50,-50,55]
-1020:	addFront -> true	Linked List 	[81,80,51,50,-50,55]
-1021:	addFront -> true	Linked List 	[-80,81,80,51,50,-50,55]
-1022:	addFront -> true	Linked List 	[88,-80,81,80,51,50,-50,55]
-1023:	addFront -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1024:	
+1020:	addFront -> true	Linked List 	[80,51,50,-50,55]
+1021:	addFront -> true	Linked List 	[81,80,51,50,-50,55]
+1022:	addFront -> true	Linked List 	[-80,81,80,51,50,-50,55]
+1023:	addFront -> true	Linked List 	[88,-80,81,80,51,50,-50,55]
+1024:	addFront -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
+1025:	
 Re-testing empty, size methods...............
 
-1025:	L1 empty? -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1026:	L2 empty? -> true	Empty LinkedList
-1027:	L1 size -> 8	Linked List 	[88,-80,81,80,51,50,-50,55]
-1028:	L2 size -> 0	Empty LinkedList
-1029:	
+1026:	L1 empty? -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
+1027:	L2 empty? -> true	Empty LinkedList
+1028:	L1 size -> 8	Linked List 	[88,-80,81,80,51,50,-50,55]
+1029:	L2 size -> 0	Empty LinkedList
+1030:	
 Test get method..............................
 
-1030:	Getting -1 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-1031:	Getting 0 = 88	Linked List 	[88,-80,81,80,51,50,-50,55]
-1032:	Getting 1 = -80	Linked List 	[88,-80,81,80,51,50,-50,55]
-1033:	Getting 2 = 81	Linked List 	[88,-80,81,80,51,50,-50,55]
-1034:	Getting 3 = 80	Linked List 	[88,-80,81,80,51,50,-50,55]
-1035:	Getting 4 = 51	Linked List 	[88,-80,81,80,51,50,-50,55]
-1036:	Getting 5 = 50	Linked List 	[88,-80,81,80,51,50,-50,55]
-1037:	Getting 6 = -50	Linked List 	[88,-80,81,80,51,50,-50,55]
-1038:	Getting 7 = 55	Linked List 	[88,-80,81,80,51,50,-50,55]
-1039:	Getting 8 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-1040:	
+1031:	Getting -1 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
+1032:	Getting 0 = 88	Linked List 	[88,-80,81,80,51,50,-50,55]
+1033:	Getting 1 = -80	Linked List 	[88,-80,81,80,51,50,-50,55]
+1034:	Getting 2 = 81	Linked List 	[88,-80,81,80,51,50,-50,55]
+1035:	Getting 3 = 80	Linked List 	[88,-80,81,80,51,50,-50,55]
+1036:	Getting 4 = 51	Linked List 	[88,-80,81,80,51,50,-50,55]
+1037:	Getting 5 = 50	Linked List 	[88,-80,81,80,51,50,-50,55]
+1038:	Getting 6 = -50	Linked List 	[88,-80,81,80,51,50,-50,55]
+1039:	Getting 7 = 55	Linked List 	[88,-80,81,80,51,50,-50,55]
+1040:	Getting 8 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
+1041:	
 Test set method..............................
 
-1041:	Setting -1 to 9 -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1042:	Setting 0 to 10 -> true	Linked List 	[10,-80,81,80,51,50,-50,55]
-1043:	Setting 1 to 11 -> true	Linked List 	[10,11,81,80,51,50,-50,55]
-1044:	Setting 2 to 12 -> true	Linked List 	[10,11,12,80,51,50,-50,55]
-1045:	Setting 3 to 13 -> true	Linked List 	[10,11,12,13,51,50,-50,55]
-1046:	Setting 4 to 14 -> true	Linked List 	[10,11,12,13,14,50,-50,55]
-1047:	Setting 5 to 15 -> true	Linked List 	[10,11,12,13,14,15,-50,55]
-1048:	Setting 6 to 16 -> true	Linked List 	[10,11,12,13,14,15,16,55]
-1049:	Setting 7 to 17 -> true	Linked List 	[10,11,12,13,14,15,16,17]
-1050:	Setting 8 to 18 -> false	Linked List 	[10,11,12,13,14,15,16,17]
-1051:	Setting 0 to null -> false	Linked List 	[10,11,12,13,14,15,16,17]
-1052:	
+1042:	Setting -1 to 9 -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
+1043:	Setting 0 to 10 -> true	Linked List 	[10,-80,81,80,51,50,-50,55]
+1044:	Setting 1 to 11 -> true	Linked List 	[10,11,81,80,51,50,-50,55]
+1045:	Setting 2 to 12 -> true	Linked List 	[10,11,12,80,51,50,-50,55]
+1046:	Setting 3 to 13 -> true	Linked List 	[10,11,12,13,51,50,-50,55]
+1047:	Setting 4 to 14 -> true	Linked List 	[10,11,12,13,14,50,-50,55]
+1048:	Setting 5 to 15 -> true	Linked List 	[10,11,12,13,14,15,-50,55]
+1049:	Setting 6 to 16 -> true	Linked List 	[10,11,12,13,14,15,16,55]
+1050:	Setting 7 to 17 -> true	Linked List 	[10,11,12,13,14,15,16,17]
+1051:	Setting 8 to 18 -> false	Linked List 	[10,11,12,13,14,15,16,17]
+1052:	Setting 0 to null -> false	Linked List 	[10,11,12,13,14,15,16,17]
+1053:	
 Test equals method...........................
 
-1053:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-1054:	List 2 = Empty LinkedList
-1055:	List1 == List2 -> false
-1056:	
+1054:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
+1055:	List 2 = Empty LinkedList
+1056:	List1 == List2 -> false
+1057:	
 Test clone method............................
 
-1057:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-1058:	List 2 = Linked List 	[10,11,12,13,14,15,16,17]
-1059:	Re-testing equals...
-1060:	List1 == List2 -> true
-1061:	
+1058:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
+1059:	List 2 = Linked List 	[10,11,12,13,14,15,16,17]
+1060:	Re-testing equals...
+1061:	List1 == List2 -> true
+1062:	
 Test addAfter method.........................
 
-1062:	Adding value 	99	 after index 	-1	 result 	false	Linked List 	[10,11,12,13,14,15,16,17]
-1063:	Adding value 	100	 after index 	0	 result 	true	Linked List 	[10,100,11,12,13,14,15,16,17]
-1064:	Adding value 	101	 after index 	1	 result 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17]
-1065:	Adding value 	102	 after index 	2	 result 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17]
-1066:	Adding value 	103	 after index 	3	 result 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16,17]
-1067:	Adding value 	104	 after index 	4	 result 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,15,16,17]
-1068:	Adding value 	105	 after index 	5	 result 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13,14,15,16,17]
-1069:	Adding value 	106	 after index 	6	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12,13,14,15,16,17]
-1070:	Adding value 	107	 after index 	7	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1071:	Test other edge case
-1072:	Adding value 	10	 after index 	17	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1073:	
+1063:	Adding value 	99	 after index 	-1	 result 	false	Linked List 	[10,11,12,13,14,15,16,17]
+1064:	Adding value 	100	 after index 	0	 result 	true	Linked List 	[10,100,11,12,13,14,15,16,17]
+1065:	Adding value 	101	 after index 	1	 result 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17]
+1066:	Adding value 	102	 after index 	2	 result 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17]
+1067:	Adding value 	103	 after index 	3	 result 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16,17]
+1068:	Adding value 	104	 after index 	4	 result 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,15,16,17]
+1069:	Adding value 	105	 after index 	5	 result 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13,14,15,16,17]
+1070:	Adding value 	106	 after index 	6	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12,13,14,15,16,17]
+1071:	Adding value 	107	 after index 	7	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1072:	Test other edge case
+1073:	Adding value 	10	 after index 	17	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1074:	
 Test addBefore method.........................
 
-1074:	Adding value 	99	 before index 	-1	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1075:	Adding value 	100	 before index 	0	 result 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1076:	Adding value 	101	 before index 	1	 result 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1077:	Adding value 	102	 before index 	2	 result 	true	Linked List 	[100,101,102,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1078:	Adding value 	103	 before index 	3	 result 	true	Linked List 	[100,101,102,103,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1079:	Adding value 	104	 before index 	4	 result 	true	Linked List 	[100,101,102,103,104,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1080:	Adding value 	105	 before index 	5	 result 	true	Linked List 	[100,101,102,103,104,105,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1081:	Adding value 	106	 before index 	6	 result 	true	Linked List 	[100,101,102,103,104,105,106,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1082:	Adding value 	107	 before index 	7	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1083:	Adding value 	108	 before index 	8	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1084:	Adding value 	109	 before index 	9	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1085:	Adding value 	110	 before index 	10	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1086:	Adding value 	111	 before index 	11	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1087:	Adding value 	112	 before index 	12	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1088:	Adding value 	113	 before index 	13	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1089:	Adding value 	114	 before index 	14	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1090:	Adding value 	115	 before index 	15	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1091:	Test other edge case
-1092:	Adding value 	10	 before index 	33	 result 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1093:	
+1075:	Adding value 	99	 before index 	-1	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1076:	Adding value 	100	 before index 	0	 result 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1077:	Adding value 	101	 before index 	1	 result 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1078:	Adding value 	102	 before index 	2	 result 	true	Linked List 	[100,101,102,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1079:	Adding value 	103	 before index 	3	 result 	true	Linked List 	[100,101,102,103,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1080:	Adding value 	104	 before index 	4	 result 	true	Linked List 	[100,101,102,103,104,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1081:	Adding value 	105	 before index 	5	 result 	true	Linked List 	[100,101,102,103,104,105,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1082:	Adding value 	106	 before index 	6	 result 	true	Linked List 	[100,101,102,103,104,105,106,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1083:	Adding value 	107	 before index 	7	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1084:	Adding value 	108	 before index 	8	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1085:	Adding value 	109	 before index 	9	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1086:	Adding value 	110	 before index 	10	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1087:	Adding value 	111	 before index 	11	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1088:	Adding value 	112	 before index 	12	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1089:	Adding value 	113	 before index 	13	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1090:	Adding value 	114	 before index 	14	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1091:	Adding value 	115	 before index 	15	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1092:	Test other edge case
+1093:	Adding value 	10	 before index 	33	 result 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1094:	
 Test front and back methods..................
 
-1094:	Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1095:	Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17]
-1096:	Back of list 1 = 17	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1097:	Back of list 2 = 17	Linked List 	[10,11,12,13,14,15,16,17]
-1098:	Clear out list 2
-1099:	Front of list 2 = null	Empty LinkedList
-1100:	Back of list 2 = null	Empty LinkedList
-1101:	
-Cloning list 2 from list 1
+1095:	Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1096:	Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17]
+1097:	Back of list 1 = 17	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1098:	Back of list 2 = 17	Linked List 	[10,11,12,13,14,15,16,17]
+1099:	Clear out list 2
+1100:	Front of list 2 = null	Empty LinkedList
+1101:	Back of list 2 = null	Empty LinkedList
 1102:	
+Cloning list 2 from list 1
+1103:	
 Test removeFront method......................
 
-1103:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1104:	Removing list 1 front = 	100
-1105:	Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1106:	Removing list 1 front = 	101
-1107:	Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1108:	Removing list 1 front = 	102
-1109:	Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1110:	Removing list 1 front = 	103
-1111:	Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1112:	Removing list 1 front = 	104
-1113:	Linked List 	[105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1114:	Removing list 1 front = 	105
-1115:	Linked List 	[106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1116:	Removing list 1 front = 	106
-1117:	Linked List 	[107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1118:	Removing list 1 front = 	107
-1119:	Linked List 	[108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1120:	Removing list 1 front = 	108
-1121:	Linked List 	[109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1122:	Removing list 1 front = 	109
-1123:	Linked List 	[110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1124:	Removing list 1 front = 	110
-1125:	Linked List 	[111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1126:	Removing list 1 front = 	111
-1127:	Linked List 	[112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1128:	Removing list 1 front = 	112
-1129:	Linked List 	[113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1130:	Removing list 1 front = 	113
-1131:	Linked List 	[114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1132:	Removing list 1 front = 	114
-1133:	Linked List 	[115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1134:	Removing list 1 front = 	115
-1135:	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1136:	Removing list 1 front = 	10
-1137:	Linked List 	[100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1138:	Removing list 1 front = 	100
-1139:	Linked List 	[101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1140:	Removing list 1 front = 	101
-1141:	Linked List 	[102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1142:	Removing list 1 front = 	102
-1143:	Linked List 	[103,104,105,106,107,11,12,13,14,15,16,17]	
-1144:	Removing list 1 front = 	103
-1145:	Linked List 	[104,105,106,107,11,12,13,14,15,16,17]	
-1146:	Removing list 1 front = 	104
-1147:	Linked List 	[105,106,107,11,12,13,14,15,16,17]	
-1148:	Removing list 1 front = 	105
-1149:	Linked List 	[106,107,11,12,13,14,15,16,17]	
-1150:	Removing list 1 front = 	106
-1151:	Linked List 	[107,11,12,13,14,15,16,17]	
-1152:	Removing list 1 front = 	107
-1153:	Linked List 	[11,12,13,14,15,16,17]	
-1154:	Removing list 1 front = 	11
-1155:	Linked List 	[12,13,14,15,16,17]	
-1156:	Removing list 1 front = 	12
-1157:	Linked List 	[13,14,15,16,17]	
-1158:	Removing list 1 front = 	13
-1159:	Linked List 	[14,15,16,17]	
-1160:	Removing list 1 front = 	14
-1161:	Linked List 	[15,16,17]	
-1162:	Removing list 1 front = 	15
-1163:	Linked List 	[16,17]	
-1164:	Removing list 1 front = 	16
-1165:	Linked List 	[17]	
-1166:	Removing list 1 front = 	17
-1167:	Empty LinkedList	
-1168:	Removing list 1 front = 	null
-1169:	
-Cloning list 1 from list 2
+1104:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1105:	Removing list 1 front = 	100
+1106:	Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1107:	Removing list 1 front = 	101
+1108:	Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1109:	Removing list 1 front = 	102
+1110:	Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1111:	Removing list 1 front = 	103
+1112:	Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1113:	Removing list 1 front = 	104
+1114:	Linked List 	[105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1115:	Removing list 1 front = 	105
+1116:	Linked List 	[106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1117:	Removing list 1 front = 	106
+1118:	Linked List 	[107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1119:	Removing list 1 front = 	107
+1120:	Linked List 	[108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1121:	Removing list 1 front = 	108
+1122:	Linked List 	[109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1123:	Removing list 1 front = 	109
+1124:	Linked List 	[110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1125:	Removing list 1 front = 	110
+1126:	Linked List 	[111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1127:	Removing list 1 front = 	111
+1128:	Linked List 	[112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1129:	Removing list 1 front = 	112
+1130:	Linked List 	[113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1131:	Removing list 1 front = 	113
+1132:	Linked List 	[114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1133:	Removing list 1 front = 	114
+1134:	Linked List 	[115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1135:	Removing list 1 front = 	115
+1136:	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1137:	Removing list 1 front = 	10
+1138:	Linked List 	[100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1139:	Removing list 1 front = 	100
+1140:	Linked List 	[101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1141:	Removing list 1 front = 	101
+1142:	Linked List 	[102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1143:	Removing list 1 front = 	102
+1144:	Linked List 	[103,104,105,106,107,11,12,13,14,15,16,17]	
+1145:	Removing list 1 front = 	103
+1146:	Linked List 	[104,105,106,107,11,12,13,14,15,16,17]	
+1147:	Removing list 1 front = 	104
+1148:	Linked List 	[105,106,107,11,12,13,14,15,16,17]	
+1149:	Removing list 1 front = 	105
+1150:	Linked List 	[106,107,11,12,13,14,15,16,17]	
+1151:	Removing list 1 front = 	106
+1152:	Linked List 	[107,11,12,13,14,15,16,17]	
+1153:	Removing list 1 front = 	107
+1154:	Linked List 	[11,12,13,14,15,16,17]	
+1155:	Removing list 1 front = 	11
+1156:	Linked List 	[12,13,14,15,16,17]	
+1157:	Removing list 1 front = 	12
+1158:	Linked List 	[13,14,15,16,17]	
+1159:	Removing list 1 front = 	13
+1160:	Linked List 	[14,15,16,17]	
+1161:	Removing list 1 front = 	14
+1162:	Linked List 	[15,16,17]	
+1163:	Removing list 1 front = 	15
+1164:	Linked List 	[16,17]	
+1165:	Removing list 1 front = 	16
+1166:	Linked List 	[17]	
+1167:	Removing list 1 front = 	17
+1168:	Empty LinkedList	
+1169:	Removing list 1 front = 	null
 1170:	
+Cloning list 1 from list 2
+1171:	
 Test removeBack method.......................
 
-1171:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1172:	Removing list 2 back = 	17
-1173:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	
-1174:	Removing list 2 back = 	16
-1175:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	
-1176:	Removing list 2 back = 	15
-1177:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	
-1178:	Removing list 2 back = 	14
-1179:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	
-1180:	Removing list 2 back = 	13
-1181:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	
-1182:	Removing list 2 back = 	12
-1183:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	
-1184:	Removing list 2 back = 	11
-1185:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	
-1186:	Removing list 2 back = 	107
-1187:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	
-1188:	Removing list 2 back = 	106
-1189:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	
-1190:	Removing list 2 back = 	105
-1191:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	
-1192:	Removing list 2 back = 	104
-1193:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	
-1194:	Removing list 2 back = 	103
-1195:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	
-1196:	Removing list 2 back = 	102
-1197:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	
-1198:	Removing list 2 back = 	101
-1199:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	
-1200:	Removing list 2 back = 	100
-1201:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	
-1202:	Removing list 2 back = 	10
-1203:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	
-1204:	Removing list 2 back = 	115
-1205:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	
-1206:	Removing list 2 back = 	114
-1207:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	
-1208:	Removing list 2 back = 	113
-1209:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	
-1210:	Removing list 2 back = 	112
-1211:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	
-1212:	Removing list 2 back = 	111
-1213:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	
-1214:	Removing list 2 back = 	110
-1215:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	
-1216:	Removing list 2 back = 	109
-1217:	Linked List 	[100,101,102,103,104,105,106,107,108]	
-1218:	Removing list 2 back = 	108
-1219:	Linked List 	[100,101,102,103,104,105,106,107]	
-1220:	Removing list 2 back = 	107
-1221:	Linked List 	[100,101,102,103,104,105,106]	
-1222:	Removing list 2 back = 	106
-1223:	Linked List 	[100,101,102,103,104,105]	
-1224:	Removing list 2 back = 	105
-1225:	Linked List 	[100,101,102,103,104]	
-1226:	Removing list 2 back = 	104
-1227:	Linked List 	[100,101,102,103]	
-1228:	Removing list 2 back = 	103
-1229:	Linked List 	[100,101,102]	
-1230:	Removing list 2 back = 	102
-1231:	Linked List 	[100,101]	
-1232:	Removing list 2 back = 	101
-1233:	Linked List 	[100]	
-1234:	Removing list 2 back = 	100
-1235:	Empty LinkedList	
-1236:	Removing list 2 back = 	null
-1237:	
-Cloning list 2 from list 1
+1172:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1173:	Removing list 2 back = 	17
+1174:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	
+1175:	Removing list 2 back = 	16
+1176:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	
+1177:	Removing list 2 back = 	15
+1178:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	
+1179:	Removing list 2 back = 	14
+1180:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	
+1181:	Removing list 2 back = 	13
+1182:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	
+1183:	Removing list 2 back = 	12
+1184:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	
+1185:	Removing list 2 back = 	11
+1186:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	
+1187:	Removing list 2 back = 	107
+1188:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	
+1189:	Removing list 2 back = 	106
+1190:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	
+1191:	Removing list 2 back = 	105
+1192:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	
+1193:	Removing list 2 back = 	104
+1194:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	
+1195:	Removing list 2 back = 	103
+1196:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	
+1197:	Removing list 2 back = 	102
+1198:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	
+1199:	Removing list 2 back = 	101
+1200:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	
+1201:	Removing list 2 back = 	100
+1202:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	
+1203:	Removing list 2 back = 	10
+1204:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	
+1205:	Removing list 2 back = 	115
+1206:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	
+1207:	Removing list 2 back = 	114
+1208:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	
+1209:	Removing list 2 back = 	113
+1210:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	
+1211:	Removing list 2 back = 	112
+1212:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	
+1213:	Removing list 2 back = 	111
+1214:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	
+1215:	Removing list 2 back = 	110
+1216:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	
+1217:	Removing list 2 back = 	109
+1218:	Linked List 	[100,101,102,103,104,105,106,107,108]	
+1219:	Removing list 2 back = 	108
+1220:	Linked List 	[100,101,102,103,104,105,106,107]	
+1221:	Removing list 2 back = 	107
+1222:	Linked List 	[100,101,102,103,104,105,106]	
+1223:	Removing list 2 back = 	106
+1224:	Linked List 	[100,101,102,103,104,105]	
+1225:	Removing list 2 back = 	105
+1226:	Linked List 	[100,101,102,103,104]	
+1227:	Removing list 2 back = 	104
+1228:	Linked List 	[100,101,102,103]	
+1229:	Removing list 2 back = 	103
+1230:	Linked List 	[100,101,102]	
+1231:	Removing list 2 back = 	102
+1232:	Linked List 	[100,101]	
+1233:	Removing list 2 back = 	101
+1234:	Linked List 	[100]	
+1235:	Removing list 2 back = 	100
+1236:	Empty LinkedList	
+1237:	Removing list 2 back = 	null
 1238:	
+Cloning list 2 from list 1
+1239:	
 Test remove method...........................
 
-1239:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1240:	Removing from list 1 from index: 	33	 removed: 	null
-1241:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1242:	Removing from list 1 from index: 	32	 removed: 	null
-1243:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
-1244:	Removing from list 1 from index: 	31	 removed: 	17
-1245:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	
-1246:	Removing from list 1 from index: 	30	 removed: 	16
-1247:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	
-1248:	Removing from list 1 from index: 	29	 removed: 	15
-1249:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	
-1250:	Removing from list 1 from index: 	28	 removed: 	14
-1251:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	
-1252:	Removing from list 1 from index: 	27	 removed: 	13
-1253:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	
-1254:	Removing from list 1 from index: 	26	 removed: 	12
-1255:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	
-1256:	Removing from list 1 from index: 	25	 removed: 	11
-1257:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	
-1258:	Removing from list 1 from index: 	24	 removed: 	107
-1259:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	
-1260:	Removing from list 1 from index: 	23	 removed: 	106
-1261:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	
-1262:	Removing from list 1 from index: 	22	 removed: 	105
-1263:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	
-1264:	Removing from list 1 from index: 	21	 removed: 	104
-1265:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	
-1266:	Removing from list 1 from index: 	20	 removed: 	103
-1267:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	
-1268:	Removing from list 1 from index: 	19	 removed: 	102
-1269:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	
-1270:	Removing from list 1 from index: 	18	 removed: 	101
-1271:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	
-1272:	Removing from list 1 from index: 	17	 removed: 	100
-1273:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	
-1274:	Removing from list 1 from index: 	16	 removed: 	10
-1275:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	
-1276:	Removing from list 1 from index: 	15	 removed: 	115
-1277:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	
-1278:	Removing from list 1 from index: 	14	 removed: 	114
-1279:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	
-1280:	Removing from list 1 from index: 	13	 removed: 	113
-1281:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	
-1282:	Removing from list 1 from index: 	12	 removed: 	112
-1283:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	
-1284:	Removing from list 1 from index: 	11	 removed: 	111
-1285:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	
-1286:	Removing from list 1 from index: 	10	 removed: 	110
-1287:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	
-1288:	Removing from list 1 from index: 	9	 removed: 	109
-1289:	Linked List 	[100,101,102,103,104,105,106,107,108]	
-1290:	Removing from list 1 from index: 	8	 removed: 	108
-1291:	Linked List 	[100,101,102,103,104,105,106,107]	
-1292:	Removing from list 1 from index: 	7	 removed: 	107
-1293:	Linked List 	[100,101,102,103,104,105,106]	
-1294:	Removing from list 1 from index: 	6	 removed: 	106
-1295:	Linked List 	[100,101,102,103,104,105]	
-1296:	Removing from list 1 from index: 	5	 removed: 	105
-1297:	Linked List 	[100,101,102,103,104]	
-1298:	Removing from list 1 from index: 	4	 removed: 	104
-1299:	Linked List 	[100,101,102,103]	
-1300:	Removing from list 1 from index: 	3	 removed: 	103
-1301:	Linked List 	[100,101,102]	
-1302:	Removing from list 1 from index: 	2	 removed: 	102
-1303:	Linked List 	[100,101]	
-1304:	Removing from list 1 from index: 	1	 removed: 	101
-1305:	Linked List 	[100]	
-1306:	Removing from list 1 from index: 	0	 removed: 	100
-1307:	Empty LinkedList	
-1308:	Removing from list 1 from index: 	-1	 removed: 	null
-1309:	
+1240:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1241:	Removing from list 1 from index: 	33	 removed: 	null
+1242:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1243:	Removing from list 1 from index: 	32	 removed: 	null
+1244:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
+1245:	Removing from list 1 from index: 	31	 removed: 	17
+1246:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	
+1247:	Removing from list 1 from index: 	30	 removed: 	16
+1248:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	
+1249:	Removing from list 1 from index: 	29	 removed: 	15
+1250:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	
+1251:	Removing from list 1 from index: 	28	 removed: 	14
+1252:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	
+1253:	Removing from list 1 from index: 	27	 removed: 	13
+1254:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	
+1255:	Removing from list 1 from index: 	26	 removed: 	12
+1256:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	
+1257:	Removing from list 1 from index: 	25	 removed: 	11
+1258:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	
+1259:	Removing from list 1 from index: 	24	 removed: 	107
+1260:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	
+1261:	Removing from list 1 from index: 	23	 removed: 	106
+1262:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	
+1263:	Removing from list 1 from index: 	22	 removed: 	105
+1264:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	
+1265:	Removing from list 1 from index: 	21	 removed: 	104
+1266:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	
+1267:	Removing from list 1 from index: 	20	 removed: 	103
+1268:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	
+1269:	Removing from list 1 from index: 	19	 removed: 	102
+1270:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	
+1271:	Removing from list 1 from index: 	18	 removed: 	101
+1272:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	
+1273:	Removing from list 1 from index: 	17	 removed: 	100
+1274:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	
+1275:	Removing from list 1 from index: 	16	 removed: 	10
+1276:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	
+1277:	Removing from list 1 from index: 	15	 removed: 	115
+1278:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	
+1279:	Removing from list 1 from index: 	14	 removed: 	114
+1280:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	
+1281:	Removing from list 1 from index: 	13	 removed: 	113
+1282:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	
+1283:	Removing from list 1 from index: 	12	 removed: 	112
+1284:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	
+1285:	Removing from list 1 from index: 	11	 removed: 	111
+1286:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	
+1287:	Removing from list 1 from index: 	10	 removed: 	110
+1288:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	
+1289:	Removing from list 1 from index: 	9	 removed: 	109
+1290:	Linked List 	[100,101,102,103,104,105,106,107,108]	
+1291:	Removing from list 1 from index: 	8	 removed: 	108
+1292:	Linked List 	[100,101,102,103,104,105,106,107]	
+1293:	Removing from list 1 from index: 	7	 removed: 	107
+1294:	Linked List 	[100,101,102,103,104,105,106]	
+1295:	Removing from list 1 from index: 	6	 removed: 	106
+1296:	Linked List 	[100,101,102,103,104,105]	
+1297:	Removing from list 1 from index: 	5	 removed: 	105
+1298:	Linked List 	[100,101,102,103,104]	
+1299:	Removing from list 1 from index: 	4	 removed: 	104
+1300:	Linked List 	[100,101,102,103]	
+1301:	Removing from list 1 from index: 	3	 removed: 	103
+1302:	Linked List 	[100,101,102]	
+1303:	Removing from list 1 from index: 	2	 removed: 	102
+1304:	Linked List 	[100,101]	
+1305:	Removing from list 1 from index: 	1	 removed: 	101
+1306:	Linked List 	[100]	
+1307:	Removing from list 1 from index: 	0	 removed: 	100
+1308:	Empty LinkedList	
+1309:	Removing from list 1 from index: 	-1	 removed: 	null
+1310:	
 Test contains method.........................
 
-1310:	List 1 (empty) contains 10 = false	Empty LinkedList
-1311:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1312:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1313:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1314:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1315:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1316:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1317:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1318:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1319:	List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1320:	List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1321:	List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1322:	List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1323:	List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1324:	List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1325:	List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1326:	List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1327:	List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1328:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1329:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1330:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1331:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1332:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1333:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1334:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1335:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1336:	List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1337:	List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1338:	List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1339:	List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1340:	List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1341:	List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1342:	List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1343:	List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1344:	
-Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1311:	List 1 (empty) contains 10 = false	Empty LinkedList
+1312:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1313:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1314:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1315:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1316:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1317:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1318:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1319:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1320:	List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1321:	List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1322:	List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1323:	List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1324:	List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1325:	List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1326:	List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1327:	List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1328:	List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1329:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1330:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1331:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1332:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1333:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1334:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1335:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1336:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1337:	List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1338:	List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1339:	List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1340:	List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1341:	List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1342:	List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1343:	List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
+1344:	List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1345:	
+Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1346:	
 Test firstIndexOf and lastIndexOf methods....
 
-1346:	First index of 5: 	0
-1347:	Last  index of 5: 	7
-1348:	First index of 7: 	2
-1349:	Last  index of 7: 	9
-1350:	First index of 8: 	3
-1351:	Last  index of 8: 	3
-1352:	First index of 9: 	-1
-1353:	Last  index of 9: 	-1
-1354:	
+1347:	First index of 5: 	0
+1348:	Last  index of 5: 	7
+1349:	First index of 7: 	2
+1350:	Last  index of 7: 	9
+1351:	First index of 8: 	3
+1352:	Last  index of 8: 	3
+1353:	First index of 9: 	-1
+1354:	Last  index of 9: 	-1
+1355:	
 Test numberOf method.........................
 
-1355:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1356:	Number of 5: 	3
-1357:	Number of 8: 	1
-1358:	Number of 9: 	0
-1359:	
+1356:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1357:	Number of 5: 	3
+1358:	Number of 8: 	1
+1359:	Number of 9: 	0
+1360:	
 Test allIndices method.......................
 
-1360:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1361:	Array -> indices 5: 	[0, 4, 7]
-1362:	Array -> indices 8: 	[3]
-1363:	Array -> indices 9: 	null
-1364:	
-Cloning list 2 from list 1
+1361:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1362:	Array -> indices 5: 	[0, 4, 7]
+1363:	Array -> indices 8: 	[3]
+1364:	Array -> indices 9: 	null
 1365:	
+Cloning list 2 from list 1
+1366:	
 Test remove method...........................
 
-1366:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1367:	Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
-1368:	Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
-1369:	Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
-1370:	
+1367:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1368:	Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
+1369:	Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
+1370:	Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
+1371:	
 Test removeLast method.......................
 
-1371:	Linked List 	[6,7,5,6,7,5,6,7]
-1372:	Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
-1373:	Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
-1374:	Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
-1375:	
+1372:	Linked List 	[6,7,5,6,7,5,6,7]
+1373:	Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
+1374:	Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
+1375:	Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
+1376:	
 Test removeAll method........................
 
-1376:	Linked List 	[6,7,5,6,7,6,7]
-1377:	Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
-1378:	Removing all 6: 	true	Linked List 	[7,7,7]
-1379:	Removing all 9: 	false	Linked List 	[7,7,7]
-1380:	
-Cloning list 1 from list 2
+1377:	Linked List 	[6,7,5,6,7,6,7]
+1378:	Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
+1379:	Removing all 6: 	true	Linked List 	[7,7,7]
+1380:	Removing all 9: 	false	Linked List 	[7,7,7]
 1381:	
+Cloning list 1 from list 2
+1382:	
 Test removeAll array method..................
 
-1382:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1383:	Array: 	[5, 6, 9]
-1384:	Removing all from array: Linked List 	[7,8,7,7]
-1385:	
+1383:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1384:	Array: 	[5, 6, 9]
+1385:	Removing all from array: Linked List 	[7,8,7,7]
+1386:	
 Test removeAll list method..................
 
-1386:	List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1387:	List 2 	Linked List 	[7,8,7,7]
-1388:	Removing all list 2 from list 1...
-1389:	List 1 	Linked List 	[5,6,5,6,5,6]
-1390:	List 2 	Linked List 	[7,8,7,7]
-1391:	
-Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1387:	List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1388:	List 2 	Linked List 	[7,8,7,7]
+1389:	Removing all list 2 from list 1...
+1390:	List 1 	Linked List 	[5,6,5,6,5,6]
+1391:	List 2 	Linked List 	[7,8,7,7]
 1392:	
+Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1393:	
 Test containsAll array method................
 
-1393:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
-1394:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
-1395:	
+1394:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
+1395:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
+1396:	
 Test containsAll list method.................
 
-1396:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
-1397:	Alter list 2...
-1398:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
-1399:	
+1397:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
+1398:	Alter list 2...
+1399:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
+1400:	
 Test addAll array method.....................
 
-1400:	Linked List 	[6,7,8,6,7,5,6,45]
-1401:	Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-1402:	
+1401:	Linked List 	[6,7,8,6,7,5,6,45]
+1402:	Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+1403:	
 Test addAll list method......................
 
-1403:	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-1404:	Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
-1405:	
+1404:	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
+1405:	Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
+1406:	
 Test subList method..........................
 
-1406:	List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1407:	Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
-1408:	Pulling out sub-list from 1 to 1: 	Linked List 	[6]
-1409:	Pulling out sub-list from 2 to 10: 	null
-1410:	Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1411:	
+1407:	List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1408:	Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
+1409:	Pulling out sub-list from 1 to 1: 	Linked List 	[6]
+1410:	Pulling out sub-list from 2 to 10: 	null
+1411:	Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1412:	
 Test fromArray method........................
 
-1412:	Array is 	[5, 6, 7, 8]
-1413:	List is 	Linked List 	[5,6,7,8]
-1414:	
+1413:	Array is 	[5, 6, 7, 8]
+1414:	List is 	Linked List 	[5,6,7,8]
+1415:	
 Test fromLinkedList method...................
 
-1415:	1st List is 	Linked List 	[5,6,7,8]
-1416:	2nd List is 	Linked List 	[5,6,7,8]
-1417:	
+1416:	1st List is 	Linked List 	[5,6,7,8]
+1417:	2nd List is 	Linked List 	[5,6,7,8]
+1418:	
 Test toArray method..........................
 
-1418:	List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
-1419:	
+1419:	List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
+1420:	
 Testing the imported util LinkedList.........
 
-1420:	Imported constructor...
-1421:	Imported add:	[0.0]
-1422:	Imported add:	[0.0, 1.23]
-1423:	Imported addFirst:	[4.56, 0.0, 1.23]
-1424:	Imported addLast:	[4.56, 0.0, 1.23, 7.89]
-1425:	Imported size:	4
-1426:	Imported isEmpty:	false
-1427:	Imported get:	0.0
-1428:	Imported set:	4.56
-1429:	Imported clone:	[0.01, 0.0, 1.23, 7.89]
-1430:	Imported equals:	true
-1431:	Imported getFirst:	0.01
-1432:	Imported getLast:	7.89
-1433:	Imported contains:	true
-1434:	Imported removeFirst:	0.01
-1435:	Imported removeLast:	7.89
-1436:	Imported remove:	1.23
-1437:	Imported remove:	false
-1438:	
+1421:	Imported constructor...
+1422:	Imported add:	[0.0]
+1423:	Imported add:	[0.0, 1.23]
+1424:	Imported addFirst:	[4.56, 0.0, 1.23]
+1425:	Imported addLast:	[4.56, 0.0, 1.23, 7.89]
+1426:	Imported size:	4
+1427:	Imported isEmpty:	false
+1428:	Imported get:	0.0
+1429:	Imported set:	4.56
+1430:	Imported clone:	[0.01, 0.0, 1.23, 7.89]
+1431:	Imported equals:	true
+1432:	Imported getFirst:	0.01
+1433:	Imported getLast:	7.89
+1434:	Imported contains:	true
+1435:	Imported removeFirst:	0.01
+1436:	Imported removeLast:	7.89
+1437:	Imported remove:	1.23
+1438:	Imported remove:	false
+1439:	
 Testing the imported util ArrayList.........
 
-1439:	Imported ArrayList:	[a, b, c, d, e]
-1440:	Using the enhanced for loop with this object...
-1441:	a 
-1442:	b 
-1443:	c 
-1444:	d 
-1445:	e 
-1446:	Using an iterator object...
-1447:	a 
-1448:	b 
-1449:	c 
-1450:	d 
-1451:	e 
-1452:	
+1440:	Imported ArrayList:	[a, b, c, d, e]
+1441:	Using the enhanced for loop with this object...
+1442:	a 
+1443:	b 
+1444:	c 
+1445:	d 
+1446:	e 
+1447:	Using an iterator object...
+1448:	a 
+1449:	b 
+1450:	c 
+1451:	d 
+1452:	e 
+1453:	
 Collections testing complete!
 
-1453:	Computer Science 40S complete!...................................................
-1454:	Computer Science 42SAP starting......................................................
-1455:	Computer Science 42SAP curriculum content starting......................................................
-1456:	AP curriculum - Part 1 Test started......................................................
-1457:	AP: Unit 1 (Primitive Types) started......................................................
-1458:	// 1.1 Why Programming? Why Java?
-1459:	// 1.2 Variables and Data Types
-1460:	// 1.3 Expressions and Assignment Statements
-1461:	// 1.4 Compound Assignment Operators
-1462:	// 1.5 Casting and Ranges of Variables
-1463:	AP: Unit 1 (Primitive Types) completed!...................................................
-1464:	AP: Unit 3 (Boolean Expressions And If Statements) started......................................................
-1465:	AP: Unit 3 (Boolean Expressions And If Statements) completed!...................................................
-1466:	AP: Unit 4 (Iteration) started......................................................
-1467:	AP: Unit 4 (Iteration) completed!...................................................
-1468:	AP curriculum - Part 1 Test completed!...................................................
-1469:	AP curriculum - Part 2 Test started......................................................
-1470:	AP: Unit 2 (Using Objects) started......................................................
-1471:	AP: Unit 2 (Using Objects) completed!...................................................
-1472:	AP: Unit 5 (Writing Classes) started......................................................
-1473:	AP: Unit 5 (Writing Classes) completed!...................................................
-1474:	AP: Unit 9 (Inheritance) started......................................................
-1475:	AP: Unit 9 (Inheritance) completed!...................................................
-1476:	AP curriculum - Part 2 Test completed!...................................................
-1477:	AP curriculum - Part 3 Test started......................................................
-1478:	AP: Unit 6 (Arrays) started......................................................
-1479:	AP: Unit 6 (Arrays) completed!...................................................
-1480:	AP: Unit 8 (2D Arrays) started......................................................
-1481:	AP: Unit 8 (2D Arrays) completed!...................................................
-1482:	AP curriculum - Part 3 Test completed!...................................................
-1483:	AP curriculum - Part 4 Test started......................................................
-1484:	AP: Unit 7 (Array List) started......................................................
-1485:	AP: Unit 7 (Array List) completed!...................................................
-1486:	AP: Unit 10 (Recursion ) started......................................................
-1487:	AP: Unit 10 (Recursion ) completed!...................................................
-1488:	AP curriculum - Part 4 Test completed!...................................................
-1489:	Computer Science 42SAP curriculum content complete!...................................................
-1490:	Computer Science 42SAP bonus content starting......................................................
-1491:	Permanent Storage Test started......................................................
-1492:	// Learn about 'error traps'
-1493:	Divide by zero -> java.lang.ArithmeticException: / by zero
-1494:	// Create sample data to use
-1495:	// Save ONE piece of data to that permanent file
-1496:	// Now involve the user to get a file name
-1497:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-1498:	File already exists!
-1499:	// Open file with one line (no user involvment)
-1500:	line read was Defenestration
-1501:	// Open file with multiple lines (user picks file)
-1502:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-1503:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
-1504:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
-1505:	This line read was q ~ pq ~ �
-1506:	// Class to save/open one line (no user)
-1507:	Before: Defenestration
-1508:	After : Defenestration
-1509:	// Class to save/open multiple lines (with user)
-1510:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1511:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1512:	// Now save/open on a complex data type
-1513:	Before: Athlete: Husky: HighSchool: Student: Person
-1514:	After:  Athlete: Husky: HighSchool: Student: Person
-1515:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-1516:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-1517:	Permanent Storage Test completed!...................................................
-1518:	Stacks and Queues Test started......................................................
-1519:	// Create objects for testing...
-1520:	// Create and Test a stack object...
-1521:	// Test toString, size, isEmpty, and push methods...
-1522:	Empty = true	Size = 0	Empty Stack
-1523:	// Loop through adding random values
-1524:	Empty = false	Size = 1	Stack top -> [Julee] <- bottom
-1525:	Empty = false	Size = 2	Stack top -> [empty,Julee] <- bottom
-1526:	Empty = false	Size = 3	Stack top -> [toyer,empty,Julee] <- bottom
-1527:	Empty = false	Size = 4	Stack top -> [house,toyer,empty,Julee] <- bottom
-1528:	Empty = false	Size = 5	Stack top -> [truer,house,toyer,empty,Julee] <- bottom
-1529:	Empty = false	Size = 6	Stack top -> [mater,truer,house,toyer,empty,Julee] <- bottom
-1530:	Empty = false	Size = 7	Stack top -> [ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1531:	Empty = false	Size = 8	Stack top -> [laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1532:	Empty = false	Size = 9	Stack top -> [Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1533:	Empty = false	Size = 10	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1534:	// Test clone method...
-1535:	Clone stack: Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1536:	// Test equals method...
-1537:	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
+1454:	Computer Science 40S complete!...................................................
+1455:	Computer Science 42SAP starting......................................................
+1456:	Computer Science 42SAP curriculum content starting......................................................
+1457:	AP curriculum - Part 1 Test started......................................................
+1458:	AP: Unit 1 (Primitive Types) started......................................................
+1459:	// 1.1 Why Programming? Why Java?
+1460:	// 1.2 Variables and Data Types
+1461:	// 1.3 Expressions and Assignment Statements
+1462:	// 1.4 Compound Assignment Operators
+1463:	// 1.5 Casting and Ranges of Variables
+1464:	AP: Unit 1 (Primitive Types) completed!...................................................
+1465:	AP: Unit 3 (Boolean Expressions And If Statements) started......................................................
+1466:	// 3.1 Boolean Expressions
+1467:	// 3.2 if Statements and Control Flow
+1468:	// 3.3 if-else Statements
+1469:	// 3.4 else if Statements
+1470:	// 3.5 Compound Boolean Expressions
+1471:	// 3.6 Equivalent Boolean Expressions
+1472:	// 3.7 Comparing Objects
+1473:	AP: Unit 3 (Boolean Expressions And If Statements) completed!...................................................
+1474:	AP: Unit 4 (Iteration) started......................................................
+1475:	// 4.1 while Loops
+1476:	// 4.2 for Loops
+1477:	// 4.3 Developing Algorithms Using Strings
+1478:	// 4.4 Nested Iteration
+1479:	// 4.5 Informal Code Analysis
+1480:	AP: Unit 4 (Iteration) completed!...................................................
+1481:	AP curriculum - Part 1 Test completed!...................................................
+1482:	AP curriculum - Part 2 Test started......................................................
+1483:	AP: Unit 2 (Using Objects) started......................................................
+1484:	// 2.1 Objects: Instances of Classes
+1485:	// 2.2 Creating and Storing Objects (Instantiation)
+1486:	// 2.3 Calling a Void Method
+1487:	// 2.4 Calling a Void Method with Parameters
+1488:	// 2.5 Calling a Non-void Method
+1489:	// 2.6 String Objects: Concatenation, Literals, and More
+1490:	// 2.7 String Methods
+1491:	// 2.8 Wrapper Classes: Integer and Double
+1492:	// 2.9 Using the Math Class
+1493:	AP: Unit 2 (Using Objects) completed!...................................................
+1494:	AP: Unit 5 (Writing Classes) started......................................................
+1495:	AP: Unit 5 (Writing Classes) completed!...................................................
+1496:	AP: Unit 9 (Inheritance) started......................................................
+1497:	AP: Unit 9 (Inheritance) completed!...................................................
+1498:	AP curriculum - Part 2 Test completed!...................................................
+1499:	AP curriculum - Part 3 Test started......................................................
+1500:	AP: Unit 6 (Arrays) started......................................................
+1501:	AP: Unit 6 (Arrays) completed!...................................................
+1502:	AP: Unit 8 (2D Arrays) started......................................................
+1503:	AP: Unit 8 (2D Arrays) completed!...................................................
+1504:	AP curriculum - Part 3 Test completed!...................................................
+1505:	AP curriculum - Part 4 Test started......................................................
+1506:	AP: Unit 7 (Array List) started......................................................
+1507:	AP: Unit 7 (Array List) completed!...................................................
+1508:	AP: Unit 10 (Recursion ) started......................................................
+1509:	AP: Unit 10 (Recursion ) completed!...................................................
+1510:	AP curriculum - Part 4 Test completed!...................................................
+1511:	Computer Science 42SAP curriculum content complete!...................................................
+1512:	Computer Science 42SAP bonus content starting......................................................
+1513:	Permanent Storage Test started......................................................
+1514:	// Learn about 'error traps'
+1515:	Divide by zero -> java.lang.ArithmeticException: / by zero
+1516:	// Create sample data to use
+1517:	// Save ONE piece of data to that permanent file
+1518:	File write error
+1519:	// Now involve the user to get a file name
+1520:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1521:	File already exists!
+1522:	// Open file with one line (no user involvment)
+1523:	// Open file with multiple lines (user picks file)
+1524:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1525:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
+1526:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
+1527:	This line read was q ~ pq ~ �
+1528:	// Class to save/open one line (no user)
+1529:	Before: Defenestration
+1530:	After : null
+1531:	// Class to save/open multiple lines (with user)
+1532:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1533:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1534:	// Now save/open on a complex data type
+1535:	Before: Athlete: Husky: HighSchool: Student: Person
+1536:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+1537:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+1538:	Permanent Storage Test completed!...................................................
+1539:	Stacks and Queues Test started......................................................
+1540:	// Create objects for testing...
+1541:	// Create and Test a stack object...
+1542:	// Test toString, size, isEmpty, and push methods...
+1543:	Empty = true	Size = 0	Empty Stack
+1544:	// Loop through adding random values
+1545:	Empty = false	Size = 1	Stack top -> [Gupta] <- bottom
+1546:	Empty = false	Size = 2	Stack top -> [Mundt,Gupta] <- bottom
+1547:	Empty = false	Size = 3	Stack top -> [lumps,Mundt,Gupta] <- bottom
+1548:	Empty = false	Size = 4	Stack top -> [Capri,lumps,Mundt,Gupta] <- bottom
+1549:	Empty = false	Size = 5	Stack top -> [canny,Capri,lumps,Mundt,Gupta] <- bottom
+1550:	Empty = false	Size = 6	Stack top -> [China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1551:	Empty = false	Size = 7	Stack top -> [sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1552:	Empty = false	Size = 8	Stack top -> [pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1553:	Empty = false	Size = 9	Stack top -> [Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1554:	Empty = false	Size = 10	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1555:	// Test clone method...
+1556:	Clone stack: Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1557:	// Test equals method...
+1558:	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
 ==
-Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1538:	// Now change the copy
-1539:	// Now check again
-1540:	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
+Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1559:	// Now change the copy
+1560:	// Now check again
+1561:	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
 !=
-Stack top -> [Egypt] <- bottom
-1541:	// Re-clone the stack, and output
-1542:	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1543:	// Text the pop method...
-1544:	Clone stack:	Empty = false	Size = 10	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1545:	// Loop through removing values
-1546:	Popped -> Kimmi	Empty = false	Size = 9	Stack top -> [Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1547:	Popped -> Corey	Empty = false	Size = 8	Stack top -> [laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1548:	Popped -> laity	Empty = false	Size = 7	Stack top -> [ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1549:	Popped -> ports	Empty = false	Size = 6	Stack top -> [mater,truer,house,toyer,empty,Julee] <- bottom
-1550:	Popped -> mater	Empty = false	Size = 5	Stack top -> [truer,house,toyer,empty,Julee] <- bottom
-1551:	Popped -> truer	Empty = false	Size = 4	Stack top -> [house,toyer,empty,Julee] <- bottom
-1552:	Popped -> house	Empty = false	Size = 3	Stack top -> [toyer,empty,Julee] <- bottom
-1553:	Popped -> toyer	Empty = false	Size = 2	Stack top -> [empty,Julee] <- bottom
-1554:	Popped -> empty	Empty = false	Size = 1	Stack top -> [Julee] <- bottom
-1555:	Popped -> Julee	Empty = true	Size = 0	Empty Stack
-1556:	Popped -> null	Empty = true	Size = 0	Empty Stack
-1557:	// Test peek (top is wrapper no testing needed)...
-1558:	Clone Top = null
-1559:	Stack Top = Kimmi
-1560:	// Test to array and to linked list...
-1561:	Linked List 	[Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee]
-1562:	Array   	[Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee]
-1563:	// Test our constructors...
-1564:	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1565:	Stack top -> [Kimmi,Corey,laity,ports,mater,truer,house,toyer,empty,Julee] <- bottom
-1566:	// Test the Queue object...
-1567:	// Test toString,size,isEmpty, and enqueue methods...
-1568:	Empty = true	Size = 0	Empty Queue
-1569:	// Loop through adding random values
-1570:	Empty = false	Size = 1	Queue back -> [campy] <- front
-1571:	Empty = false	Size = 2	Queue back -> [Ouija,campy] <- front
-1572:	Empty = false	Size = 3	Queue back -> [slyly,Ouija,campy] <- front
-1573:	Empty = false	Size = 4	Queue back -> [coled,slyly,Ouija,campy] <- front
-1574:	Empty = false	Size = 5	Queue back -> [solid,coled,slyly,Ouija,campy] <- front
-1575:	Empty = false	Size = 6	Queue back -> [natch,solid,coled,slyly,Ouija,campy] <- front
-1576:	Empty = false	Size = 7	Queue back -> [Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1577:	Empty = false	Size = 8	Queue back -> [Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1578:	Empty = false	Size = 9	Queue back -> [oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1579:	Empty = false	Size = 10	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1580:	// Test clone method...
-1581:	Clone Queue 			Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1582:	// Test equals method...
-1583:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
+Stack top -> [nerdy] <- bottom
+1562:	// Re-clone the stack, and output
+1563:	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1564:	// Text the pop method...
+1565:	Clone stack:	Empty = false	Size = 10	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1566:	// Loop through removing values
+1567:	Popped -> snaps	Empty = false	Size = 9	Stack top -> [Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1568:	Popped -> Zared	Empty = false	Size = 8	Stack top -> [pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1569:	Popped -> pleas	Empty = false	Size = 7	Stack top -> [sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1570:	Popped -> sured	Empty = false	Size = 6	Stack top -> [China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1571:	Popped -> China	Empty = false	Size = 5	Stack top -> [canny,Capri,lumps,Mundt,Gupta] <- bottom
+1572:	Popped -> canny	Empty = false	Size = 4	Stack top -> [Capri,lumps,Mundt,Gupta] <- bottom
+1573:	Popped -> Capri	Empty = false	Size = 3	Stack top -> [lumps,Mundt,Gupta] <- bottom
+1574:	Popped -> lumps	Empty = false	Size = 2	Stack top -> [Mundt,Gupta] <- bottom
+1575:	Popped -> Mundt	Empty = false	Size = 1	Stack top -> [Gupta] <- bottom
+1576:	Popped -> Gupta	Empty = true	Size = 0	Empty Stack
+1577:	Popped -> null	Empty = true	Size = 0	Empty Stack
+1578:	// Test peek (top is wrapper no testing needed)...
+1579:	Clone Top = null
+1580:	Stack Top = snaps
+1581:	// Test to array and to linked list...
+1582:	Linked List 	[snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta]
+1583:	Array   	[snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta]
+1584:	// Test our constructors...
+1585:	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1586:	Stack top -> [snaps,Zared,pleas,sured,China,canny,Capri,lumps,Mundt,Gupta] <- bottom
+1587:	// Test the Queue object...
+1588:	// Test toString,size,isEmpty, and enqueue methods...
+1589:	Empty = true	Size = 0	Empty Queue
+1590:	// Loop through adding random values
+1591:	Empty = false	Size = 1	Queue back -> [cored] <- front
+1592:	Empty = false	Size = 2	Queue back -> [comma,cored] <- front
+1593:	Empty = false	Size = 3	Queue back -> [hazel,comma,cored] <- front
+1594:	Empty = false	Size = 4	Queue back -> [sayer,hazel,comma,cored] <- front
+1595:	Empty = false	Size = 5	Queue back -> [Banky,sayer,hazel,comma,cored] <- front
+1596:	Empty = false	Size = 6	Queue back -> [owing,Banky,sayer,hazel,comma,cored] <- front
+1597:	Empty = false	Size = 7	Queue back -> [edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1598:	Empty = false	Size = 8	Queue back -> [condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1599:	Empty = false	Size = 9	Queue back -> [Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1600:	Empty = false	Size = 10	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1601:	// Test clone method...
+1602:	Clone Queue 			Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1603:	// Test equals method...
+1604:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
 ==
-Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1584:	// Now change the duplicate
-1585:	// Now check again
-1586:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
+Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1605:	// Now change the duplicate
+1606:	// Now check again
+1607:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
 ==
-Queue back -> [Emili] <- front
-1587:	// Re-clone the queue, and output
-1588:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1589:	// Test the dequeue method...
-1590:	Clone queue:	Empty = false	Size = 10	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1591:	// Loop through removing values
-1592:	Dequeued -> campy	Empty = false	Size = 9	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija] <- front
-1593:	Dequeued -> Ouija	Empty = false	Size = 8	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly] <- front
-1594:	Dequeued -> slyly	Empty = false	Size = 7	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled] <- front
-1595:	Dequeued -> coled	Empty = false	Size = 6	Queue back -> [anded,oozed,Janos,Twyla,natch,solid] <- front
-1596:	Dequeued -> solid	Empty = false	Size = 5	Queue back -> [anded,oozed,Janos,Twyla,natch] <- front
-1597:	Dequeued -> natch	Empty = false	Size = 4	Queue back -> [anded,oozed,Janos,Twyla] <- front
-1598:	Dequeued -> Twyla	Empty = false	Size = 3	Queue back -> [anded,oozed,Janos] <- front
-1599:	Dequeued -> Janos	Empty = false	Size = 2	Queue back -> [anded,oozed] <- front
-1600:	Dequeued -> oozed	Empty = false	Size = 1	Queue back -> [anded] <- front
-1601:	Dequeued -> anded	Empty = true	Size = 0	Empty Queue
-1602:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-1603:	// Test front and back...
-1604:	Clone Front = null
-1605:	Queue Front = campy
-1606:	Clone Back  = null
-1607:	Queue Back  = anded
-1608:	// Test to array and to linked list...
-1609:	Linked List 	[anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy]
-1610:	Array   	[anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy]
-1611:	// Test our constructors...
-1612:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1613:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1614:	// Constructors from stack to queue (and back)...
-1615:	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front	 into 	Stack top -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- bottom
-1616:	Stack top -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- bottom	 into 	Queue back -> [anded,oozed,Janos,Twyla,natch,solid,coled,slyly,Ouija,campy] <- front
-1617:	Stacks and Queues Test completed!...................................................
-1618:	Searching and Sorting Test started......................................................
-1619:	// For the I.B. Exam, you only need to know:
-1620:	// Search: linear search and binary search
-1621:	// Sort: bubble sort and the selection sort
-1622:	// Create some constants (edges) for the data
-1623:	// Create some random data to search through and sort
-1624:	// Including edge cases to test
-1625:	// Create data to store the results...
-1626:	// The simpliest of searches
-1627:	// Now the linear search on all test data
-1628:	// Simple sort...
-1629:	// We will re-scramble array for further testing
-1630:	// Now bubble sort (from bubbles rising from water)
-1631:	// Now selection sort (from selecting the smallest)
-1632:	// Now binary search (named after two or dividing)
-1633:	// NOTE: binary search can only happen on sorted list
-1634:	// Redo some of the test data...
-1635:	// Use class for searching and sorting
-1636:	// Create random linked list data
-1637:	// Place all test cases into another linked list
-1638:	// Execute the linear search on all test data...
-1639:	// Execute all the sorts on all test data...
-1640:	// Bubble sort LinkedList data...
-1641:	// Selection sort LinkedList data...
-1642:	// Shell sort LinkedList data...
-1643:	// Insertion sort LinkedList data...
-1644:	// Quick sort LinkedList data...
-1645:	// Merge sort LinkedList data...
-1646:	// Execute the binary search on all test data...
-1647:	Searching and Sorting Test completed!...................................................
-1648:	Binary Trees Test started......................................................
-1649:	// Constants/variables for creating random values...
-1650:	// Creating some TreeNode objects...
-1651:	// Linking the TreeNodes...
-1652:	// Testing TreeNode equals...
-1653:	TreeNode1=TreeNode2
-1654:	// Testing TreeNode toString...
-1655:	79
-1656:	79
-1657:	63
-1658:	// Creating a Tree object...
-1659:	// Test the insert method...
-1660:	// Insert one more...
-1661:	// Test the search of the tree...
-1662:	Should be found     = true
-1663:	Should NOT be found = false
-1664:	// Test toString() and pre, post, in order traversals
-1665:	Binary Tree:
-Order: Linked List 	[98,79,98,36,37,69]
-Pre:   Linked List 	[98,79,36,37,69,98]
-Post:  Linked List 	[69,37,36,79,98,98]
-In:    Linked List 	[36,37,69,79,98,98]
-1666:	// Building second tree (test clone) and test equals
-1667:	1st tree -> Linked List 	[36,37,69,79,98,98]
-1668:	2nd tree -> Linked List 	[15,22,25,68,70,96]
-1669:	1st!=2nd
-1670:	// Building a third tree (test clone) and test equals
-1671:	1st tree -> Linked List 	[36,37,69,79,98,98]
-1672:	3rd tree -> Linked List 	[36,37,69,79,98,98]
-1673:	1st==3rd
-1674:	// Build all our data structures from each other...
-1675:	// Create variable objects...
-1676:	// Create array from variables...
-1677:	// Create LinkedList from array...
-1678:	// Create Stack from LinkedList...
-1679:	// Create Queue from Stack...
-1680:	// Create Tree from Queue...
-1681:	// Output variables,array,list,stack,queue,tree...
-1682:	riped
-1683:	lemke
-1684:	alter
-1685:	lists
-1686:	fleck
-1687:	[riped,lemke,alter,lists,fleck]
-1688:	Linked List 	[riped,lemke,alter,lists,fleck]
-1689:	Stack top -> [riped,lemke,alter,lists,fleck] <- bottom
-1690:	Queue back -> [riped,lemke,alter,lists,fleck] <- front
-1691:	Binary Tree:
-Order: Linked List 	[riped,lemke,alter,lists,fleck]
-Pre:   Linked List 	[riped,lemke,alter,fleck,lists]
-Post:  Linked List 	[fleck,alter,lists,lemke,riped]
-In:    Linked List 	[alter,flec ... (line shortened) ...
-1692:	// Now re-building queue from tree
-1693:	// Now re-building stack from queue
-1694:	// Now re-building LinkedList from stack...
-1695:	// Now re-building array from LinkedList...
-1696:	// Output array,list,stack,queue,tree again...
-1697:	[alter,fleck,lemke,lists,riped]
-1698:	Linked List 	[alter,fleck,lemke,lists,riped]
-1699:	Stack top -> [alter,fleck,lemke,lists,riped] <- bottom
-1700:	Queue back -> [alter,fleck,lemke,lists,riped] <- front
-1701:	Binary Tree:
-Order: Linked List 	[riped,lemke,alter,lists,fleck]
-Pre:   Linked List 	[riped,lemke,alter,fleck,lists]
-Post:  Linked List 	[fleck,alter,lists,lemke,riped]
-In:    Linked List 	[alter,flec ... (line shortened) ...
-1702:	Binary Trees Test completed!...................................................
-1703:	Computer Science 42SAP bonus content complete!...................................................
-1704:	Computer Science 42SAP complete!...................................................
+Queue back -> [Ilene] <- front
+1608:	// Re-clone the queue, and output
+1609:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1610:	// Test the dequeue method...
+1611:	Clone queue:	Empty = false	Size = 10	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1612:	// Loop through removing values
+1613:	Dequeued -> cored	Empty = false	Size = 9	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma] <- front
+1614:	Dequeued -> comma	Empty = false	Size = 8	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel] <- front
+1615:	Dequeued -> hazel	Empty = false	Size = 7	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer] <- front
+1616:	Dequeued -> sayer	Empty = false	Size = 6	Queue back -> [allow,Tokyo,condo,edify,owing,Banky] <- front
+1617:	Dequeued -> Banky	Empty = false	Size = 5	Queue back -> [allow,Tokyo,condo,edify,owing] <- front
+1618:	Dequeued -> owing	Empty = false	Size = 4	Queue back -> [allow,Tokyo,condo,edify] <- front
+1619:	Dequeued -> edify	Empty = false	Size = 3	Queue back -> [allow,Tokyo,condo] <- front
+1620:	Dequeued -> condo	Empty = false	Size = 2	Queue back -> [allow,Tokyo] <- front
+1621:	Dequeued -> Tokyo	Empty = false	Size = 1	Queue back -> [allow] <- front
+1622:	Dequeued -> allow	Empty = true	Size = 0	Empty Queue
+1623:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+1624:	// Test front and back...
+1625:	Clone Front = null
+1626:	Queue Front = cored
+1627:	Clone Back  = null
+1628:	Queue Back  = allow
+1629:	// Test to array and to linked list...
+1630:	Linked List 	[allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored]
+1631:	Array   	[allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored]
+1632:	// Test our constructors...
+1633:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1634:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1635:	// Constructors from stack to queue (and back)...
+1636:	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front	 into 	Stack top -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- bottom
+1637:	Stack top -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- bottom	 into 	Queue back -> [allow,Tokyo,condo,edify,owing,Banky,sayer,hazel,comma,cored] <- front
+1638:	Stacks and Queues Test completed!...................................................
+1639:	Searching and Sorting Test started......................................................
+1640:	// For the I.B. Exam, you only need to know:
+1641:	// Search: linear search and binary search
+1642:	// Sort: bubble sort and the selection sort
+1643:	// Create some constants (edges) for the data
+1644:	// Create some random data to search through and sort
+1645:	// Including edge cases to test
+1646:	// Create data to store the results...
+1647:	// The simpliest of searches
+1648:	// Now the linear search on all test data
+1649:	// Simple sort...
+1650:	// We will re-scramble array for further testing
+1651:	// Now bubble sort (from bubbles rising from water)
+1652:	// Now selection sort (from selecting the smallest)
+1653:	// Now binary search (named after two or dividing)
+1654:	// NOTE: binary search can only happen on sorted list
+1655:	// Redo some of the test data...
+1656:	// Use class for searching and sorting
+1657:	// Create random linked list data
+1658:	// Place all test cases into another linked list
+1659:	// Execute the linear search on all test data...
+1660:	// Execute all the sorts on all test data...
+1661:	// Bubble sort LinkedList data...
+1662:	// Selection sort LinkedList data...
+1663:	// Shell sort LinkedList data...
+1664:	// Insertion sort LinkedList data...
+1665:	// Quick sort LinkedList data...
+1666:	// Merge sort LinkedList data...
+1667:	// Execute the binary search on all test data...
+1668:	Searching and Sorting Test completed!...................................................
+1669:	Binary Trees Test started......................................................
+1670:	// Constants/variables for creating random values...
+1671:	// Creating some TreeNode objects...
+1672:	// Linking the TreeNodes...
+1673:	// Testing TreeNode equals...
+1674:	// Testing TreeNode toString...
+1675:	92
+1676:	21
+1677:	38
+1678:	// Creating a Tree object...
+1679:	// Test the insert method...
+1680:	// Insert one more...
+1681:	// Test the search of the tree...
+1682:	Should be found     = true
+1683:	Should NOT be found = false
+1684:	// Test toString() and pre, post, in order traversals
+1685:	Binary Tree:
+Order: Linked List 	[11,13,35,89,29,78]
+Pre:   Linked List 	[11,13,35,29,89,78]
+Post:  Linked List 	[29,78,89,35,13,11]
+In:    Linked List 	[11,13,29,35,78,89]
+1686:	// Building second tree (test clone) and test equals
+1687:	1st tree -> Linked List 	[11,13,29,35,78,89]
+1688:	2nd tree -> Linked List 	[11,20,77,80,84,86]
+1689:	1st!=2nd
+1690:	// Building a third tree (test clone) and test equals
+1691:	1st tree -> Linked List 	[11,13,29,35,78,89]
+1692:	3rd tree -> Linked List 	[11,13,29,35,78,89]
+1693:	1st==3rd
+1694:	// Build all our data structures from each other...
+1695:	// Create variable objects...
+1696:	// Create array from variables...
+1697:	// Create LinkedList from array...
+1698:	// Create Stack from LinkedList...
+1699:	// Create Queue from Stack...
+1700:	// Create Tree from Queue...
+1701:	// Output variables,array,list,stack,queue,tree...
+1702:	crypt
+1703:	scour
+1704:	talus
+1705:	dumbs
+1706:	rahed
+1707:	[crypt,scour,talus,dumbs,rahed]
+1708:	Linked List 	[crypt,scour,talus,dumbs,rahed]
+1709:	Stack top -> [crypt,scour,talus,dumbs,rahed] <- bottom
+1710:	Queue back -> [crypt,scour,talus,dumbs,rahed] <- front
+1711:	Binary Tree:
+Order: Linked List 	[crypt,scour,talus,dumbs,rahed]
+Pre:   Linked List 	[crypt,scour,dumbs,rahed,talus]
+Post:  Linked List 	[rahed,dumbs,talus,scour,crypt]
+In:    Linked List 	[crypt,dumb ... (line shortened) ...
+1712:	// Now re-building queue from tree
+1713:	// Now re-building stack from queue
+1714:	// Now re-building LinkedList from stack...
+1715:	// Now re-building array from LinkedList...
+1716:	// Output array,list,stack,queue,tree again...
+1717:	[crypt,dumbs,rahed,scour,talus]
+1718:	Linked List 	[crypt,dumbs,rahed,scour,talus]
+1719:	Stack top -> [crypt,dumbs,rahed,scour,talus] <- bottom
+1720:	Queue back -> [crypt,dumbs,rahed,scour,talus] <- front
+1721:	Binary Tree:
+Order: Linked List 	[crypt,scour,talus,dumbs,rahed]
+Pre:   Linked List 	[crypt,scour,dumbs,rahed,talus]
+Post:  Linked List 	[rahed,dumbs,talus,scour,crypt]
+In:    Linked List 	[crypt,dumb ... (line shortened) ...
+1722:	Binary Trees Test completed!...................................................
+1723:	Computer Science 42SAP bonus content complete!...................................................
+1724:	Computer Science 42SAP complete!...................................................

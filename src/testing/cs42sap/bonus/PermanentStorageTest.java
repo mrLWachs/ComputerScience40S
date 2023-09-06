@@ -238,8 +238,10 @@ public class PermanentStorageTest
         // Save this class object data to a file, open it, and compare......... 
         fileHandler.saveObject(athlete, name);
         Athlete newAthlete = (Athlete)fileHandler.openObject(name);
-        System.out.println("Before: " + athlete.toString());
-        System.out.println("After:  " + newAthlete.toString());
+        System.out.println("Before: " + athlete.toString());        
+        if (newAthlete != null) {
+            System.out.println("After:  " + newAthlete.toString());
+        }
         
         // Now take it up to an entire collection of class level objects all 
         // put into a linked list collection and then dave the entire list to

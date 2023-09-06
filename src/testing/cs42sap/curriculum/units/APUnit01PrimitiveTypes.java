@@ -33,6 +33,9 @@ public class APUnit01PrimitiveTypes
      */
     public APUnit01PrimitiveTypes() {
         Simulator.header("AP: Unit 1 (Primitive Types) started...");
+        
+        
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.1 Why Programming? Why Java?");        
         // (1.1.1) Call System class methods to generate output to the console

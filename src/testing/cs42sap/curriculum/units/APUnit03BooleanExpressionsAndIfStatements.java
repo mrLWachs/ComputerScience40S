@@ -30,6 +30,9 @@ public class APUnit03BooleanExpressionsAndIfStatements
      */
     public APUnit03BooleanExpressionsAndIfStatements() {
         Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) started...");
+        
+        
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.1 Boolean Expressions");  
         // (3.1.1) Evaluate Boolean expressions that use relational operators 

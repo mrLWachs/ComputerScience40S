@@ -32,6 +32,9 @@ public class APUnit02UsingObjects
      */
     public APUnit02UsingObjects() {
         Simulator.header("AP: Unit 2 (Using Objects) started...");
+        
+        
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("2.1 Objects: Instances of Classes");  
         // (2.1.1) Explain the relationship between a class and an object
@@ -40,7 +43,7 @@ public class APUnit02UsingObjects
             // (2.1.1.2) A class is the formal implementation, or blueprint, 
             //           of the attributes and behaviors of an object
         ////////////////////////////////////////////////////////////////////////
-        
+                
         
         
         ////////////////////////////////////////////////////////////////////////
