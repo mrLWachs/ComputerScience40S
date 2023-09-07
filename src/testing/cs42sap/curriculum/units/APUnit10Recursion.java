@@ -35,24 +35,41 @@ public class APUnit10Recursion
         Simulator.comment("10.1 Recursion");  
         // (10.1.1) Determine the result of executing recursive methods
             // (10.1.1.1) A recursive method is a method that calls itself
-            // (10.1.1.2) Recursive methods contain at least one base case, which halts the recursion, and at least one recursive call
-            // (10.1.1.3) Each recursive call has its own set of local variables, including the formal parameters
-            // (10.1.1.4) Parameter values capture the progress of a recursive process, much like loop control variable values capture the progress of a loop
-            // (10.1.1.5) Any recursive solution can be replicated through the use of an iterative approach
-            // (10.1.1.6) Recursion can be used to traverse String, array, and ArrayList objects
+            // (10.1.1.2) Recursive methods contain at least one base case, 
+            //            which halts the recursion, and at least one recursive
+            //            call
+            // (10.1.1.3) Each recursive call has its own set of local 
+            //            variables, including the formal parameters
+            // (10.1.1.4) Parameter values capture the progress of a recursive
+            //            process, much like loop control variable values 
+            //            capture the progress of a loop
+            // (10.1.1.5) Any recursive solution can be replicated through the
+            //            use of an iterative approach
+            // (10.1.1.6) Recursion can be used to traverse String, array, and
+            //            ArrayList objects
         ////////////////////////////////////////////////////////////////////////
         
         
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("10.2 Recursive Searching and Sorting");  
-        // (10.2.1) Apply recursive search algorithms to information in String, 1D array, or ArrayList objects
-            // (10.2.1.1) Data must be in sorted order to use the binary search algorithm
-            // (10.2.1.2) The binary search algorithm starts at the middle of a sorted array or ArrayList and eliminates half of the array or ArrayList in each iteration until the desired value is found or all elements have been eliminated
-            // (10.2.1.3) Binary search can be more efficient than sequential/linear search
-            // (10.2.1.4) The binary search algorithm can be written either iteratively or recursively
-        // (10.2.2) Apply recursive algorithms to sort elements of array or ArrayList objects
-            // (10.2.2.1) Merge sort is a recursive sorting algorithm that can be used to sort elements in an array or ArrayList 
+        // (10.2.1) Apply recursive search algorithms to information in String,
+        //          1D array, or ArrayList objects
+            // (10.2.1.1) Data must be in sorted order to use the binary 
+            //            search algorithm
+            // (10.2.1.2) The binary search algorithm starts at the middle of
+            //            a sorted array or ArrayList and eliminates half of 
+            //            the array or ArrayList in each iteration until the 
+            //            desired value is found or all elements have been 
+            //            eliminated
+            // (10.2.1.3) Binary search can be more efficient than 
+            //            sequential/linear search
+            // (10.2.1.4) The binary search algorithm can be written either
+            //            iteratively or recursively
+        // (10.2.2) Apply recursive algorithms to sort elements of array or
+        //                ArrayList objects
+            // (10.2.2.1) Merge sort is a recursive sorting algorithm that 
+            //            can be used to sort elements in an array or ArrayList 
         ////////////////////////////////////////////////////////////////////////
         
         

@@ -60,11 +60,11 @@ public class FileHandler <T>
             return true;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return false;
         }
         catch (IOException error) {
-            dialog.output("File save: " + error.toString());
+            System.out.println("File save: " + error.toString());
             return false;
         }
     }
@@ -81,7 +81,7 @@ public class FileHandler <T>
             return save(text,file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
     }
@@ -105,15 +105,15 @@ public class FileHandler <T>
         }
         catch (ArrayIndexOutOfBoundsException |
                ArrayStoreException error) {
-            dialog.output("Array type: " + error.toString());
+            System.out.println("Array type: " + error.toString());
             return false;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return false;
         }
         catch (IOException error) {
-            dialog.output("File save: " + error.toString());
+            System.out.println("File save: " + error.toString());
             return false;
         }
     }
@@ -130,7 +130,7 @@ public class FileHandler <T>
             return save(array,file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
     }
@@ -153,11 +153,11 @@ public class FileHandler <T>
             return true;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return false;
         }
         catch (IOException error) {
-            dialog.output("File save: " + error.toString());
+            System.out.println("File save: " + error.toString());
             return false;
         }
     }
@@ -174,7 +174,7 @@ public class FileHandler <T>
             return save(list,file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
     }
@@ -195,11 +195,11 @@ public class FileHandler <T>
             return true;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return false;
         }
         catch (IOException error) {
-            dialog.output("File save: " + error.toString());
+            System.out.println("File save: " + error.toString());
             return false;
         }
     }
@@ -216,7 +216,7 @@ public class FileHandler <T>
             return append(line,file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
     }
@@ -236,11 +236,11 @@ public class FileHandler <T>
             return line;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return null;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return null;
         }
     }
@@ -256,7 +256,7 @@ public class FileHandler <T>
             return open(file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
     }
@@ -284,15 +284,15 @@ public class FileHandler <T>
         }
         catch (ArrayIndexOutOfBoundsException  |
                ArrayStoreException error) {
-            dialog.output("Array: " + error.toString());
+            System.out.println("Array: " + error.toString());
             return null;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return null;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return null;
         }
     }
@@ -308,7 +308,7 @@ public class FileHandler <T>
             return openArray(file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
     }
@@ -333,11 +333,11 @@ public class FileHandler <T>
             return list;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return null;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return null;
         }
     }
@@ -353,7 +353,7 @@ public class FileHandler <T>
             return openList(file.getAbsolutePath());
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
     }
@@ -379,11 +379,11 @@ public class FileHandler <T>
             return tokens;
         }
         catch (NullPointerException error) {
-            dialog.output("Null: " + error.toString());
+            System.out.println("Null: " + error.toString());
             return null;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return null;
         }
     }
@@ -400,7 +400,7 @@ public class FileHandler <T>
             return openASCIICollection(new File(fileName));
         }
         catch (NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
     }
@@ -440,11 +440,11 @@ public class FileHandler <T>
             return true;
         }
         catch(NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return false;
         }
     }
@@ -461,7 +461,7 @@ public class FileHandler <T>
             return saveObject(data, file.getAbsolutePath());
         }
         catch(NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return false;
         }
     }
@@ -482,23 +482,23 @@ public class FileHandler <T>
             return object;            
         }
         catch (ClassCastException e) {
-            dialog.output("Class casting: " + e.toString());
+            System.out.println("Class casting: " + e.toString());
             return null;
         }
         catch (ClassNotFoundException e) {
-            dialog.output("Class not found: " + e.toString());
+            System.out.println("Class not found: " + e.toString());
             return null;
         }
         catch(NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
         catch (StackOverflowError error) {
-            dialog.output("Stack Over flow: " + error.toString());
+            System.out.println("Stack Over flow: " + error.toString());
             return null;
         }
         catch (IOException error) {
-            dialog.output("File open: " + error.toString());
+            System.out.println("File open: " + error.toString());
             return null;
         }
     }
@@ -514,7 +514,7 @@ public class FileHandler <T>
             return openObject(file.getAbsolutePath());
         }
         catch(NullPointerException e) {
-            dialog.output("Null: " + e.toString());
+            System.out.println("Null: " + e.toString());
             return null;
         }
     }    
