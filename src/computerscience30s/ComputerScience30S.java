@@ -25,6 +25,8 @@ public class ComputerScience30S {
         
         // A basic output
         
+        System.out.println("Hello World");
+        
         
         
         
