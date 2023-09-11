@@ -7,7 +7,21 @@ public class ComputerScience30S {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // This is a comment
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+        
+        // This is a comment all typing after "//" until the line ends        
+        // Commments are not code, so you can write what you want        
+        // Curly brackets (braces, parenthesis) { and } are important        
+        // All code right now goes between these two brackets. Comments are 
+        // not code, so you can write what you want
+        
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
         
         
     }
