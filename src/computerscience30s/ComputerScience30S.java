@@ -27,8 +27,13 @@ public class ComputerScience30S
         // A basic output        
         System.out.println("Hello World");
         
+        // Use print without the "ln", does not add a line break at the end 
+        System.out.print("I'm in ");
+        System.out.println("The world");
         
+        System.out.println("Good-bye World");
         
+        // Additional output tips... (these are "special" characters)
         
         
         
