@@ -49,6 +49,17 @@ public class ComputerScience30S
         // However, these OPTIONS (not needed, but cool) for other
         // dialog output message boxes below...
         
+        // Code could span multiple lines until it reaches a semi colon ";"
+        // The light red line on the far right -------------------------------->
+        // can be thought of as a "barrier" and you should try not to code too
+        // much past this line
+        
+        JOptionPane.showMessageDialog(
+                null,
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
         
         
