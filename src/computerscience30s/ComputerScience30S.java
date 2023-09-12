@@ -11,7 +11,11 @@ public class ComputerScience30S
 
     public static void main(String[] args) {
         // TODO code application logic here
-                
+        
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
+        
         // This is a comment all typing after "//" until the line ends        
         // Commments are not code, so you can write what you want        
         // Curly brackets (braces, parenthesis) { and } are important        
@@ -24,16 +28,26 @@ public class ComputerScience30S
             "star slash"
         */
         
-        // A basic output        
-        System.out.println("Hello World");
+        // A basic output
+        System.out.println("Hello World");  // Comments can be on code lines
         
-        // Use print without the "ln", does not add a line break at the end 
-        System.out.print("I'm in ");
-        System.out.println("The world");
+        // Use print without the "ln", does not add a line break at the end        
+        System.out.print("I'm in");
+        System.out.println(" the world");
         
-        System.out.println("Good-bye World");
+        System.out.println("Good-bye world!");
         
         // Additional output tips... (these are "special" characters)
+        
+        System.out.println("Make a quote \" ");             // \" makes quote
+        System.out.println("Make a slash \\ ");             // \\ makes slash
+        System.out.println("Make a \t tab ");               // \t makes tab
+        System.out.println("Make a new line \n break ");    // \n makes new line
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        // Make a "fancier" output with a dialog box
         
         
         
