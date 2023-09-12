@@ -46,3 +46,6 @@ public class ComputerScience30S
 // (1)  To zoom in and out on the code, hold ALT and roll the mouse
 // (2)  Double click the top of a tab to hide side windows or show them
 // (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
+// (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
+// (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
