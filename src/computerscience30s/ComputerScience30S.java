@@ -23,9 +23,20 @@ public class ComputerScience30S
             "star slash"
         */
         
-        // A basic output
-        
+        // A basic output        
         System.out.println("Hello World");
+        
+        // Additional output tips... (these are "special" characters)
+        System.out.println("Make a quote \" ");             // \" makes quote
+        System.out.println("Make a slash \\ ");             // \\ makes slash
+        System.out.println("Make a \t tab ");               // \t makes tab
+        System.out.println("Make a new line \n break ");    // \n makes new line
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        // Make a "fancier" output with a dialog box
+        
         
         System.out.println("Good-bye world!");
         
