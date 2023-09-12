@@ -32,13 +32,15 @@ public class ComputerScience30S
         System.out.println("Make a \t tab ");               // \t makes tab
         System.out.println("Make a new line \n break ");    // \n makes new line
         
+        System.out.println("Good-bye world!");
+        
         // In all these, the key is to use the "\" backslash
         // which is called an "escape character"
         
         // Make a "fancier" output with a dialog box
         
         
-        System.out.println("Good-bye world!");
+        
         
         
     }
