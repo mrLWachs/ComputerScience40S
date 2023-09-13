@@ -219,7 +219,31 @@ public class ComputerScience30S
         b = 1;
         c = 1.2;
         
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
         
+        // Output our variables when outputted it always outputs the 
+        // value stored in the variable not the name of it
+        
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
+        
+        char d = 'A';
+        
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character
+        
+        System.out.println("d = " + d);
+        
+        // The boolean ("bool" in C#), integer (int), double, and character
+        // (char) are all simple (primitive) data types, now a "complex" data
+        // type....
+        
+        String e = "apple";
+        
+        System.out.println("e = " + e);
         
         
         
