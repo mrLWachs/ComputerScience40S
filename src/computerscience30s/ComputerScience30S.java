@@ -89,6 +89,14 @@ public class ComputerScience30S
 //                JOptionPane.WARNING_MESSAGE
 //        );
 //        
+//
+//        JOptionPane.showMessageDialog(
+//                null, 
+//                "Error icon is x",
+//                "Error title",
+//                JOptionPane.ERROR_MESSAGE
+//        );
+//        
 //        JOptionPane.showMessageDialog(
 //                null, 
 //                "Plain icon is i",
@@ -130,10 +138,17 @@ public class ComputerScience30S
 //        
 //        JOptionPane.showInputDialog(
 //                null, 
+//                "Error icon is x",
+//                "Error title",
+//                JOptionPane.ERROR_MESSAGE
+//        );
+//        
+//        JOptionPane.showInputDialog(
+//                null, 
 //                "Plain icon is i",
 //                "Plain title",
 //                JOptionPane.PLAIN_MESSAGE
-//        );
+//        );                
 //        
 //        // More different (and optional) dialogs...
 //        
@@ -143,7 +158,7 @@ public class ComputerScience30S
 //                null, 
 //                "Confirm Example 2",
 //                "Information",
-//                JOptionPane.YES_NO_OPTION,
+//                JOptionPane.YES_NO_CANCEL_OPTION,
 //                JOptionPane.INFORMATION_MESSAGE
 //        );
 //        
@@ -151,7 +166,7 @@ public class ComputerScience30S
 //                null, 
 //                "Confirm Example 3",
 //                "Question",
-//                JOptionPane.DEFAULT_OPTION,
+//                JOptionPane.YES_NO_OPTION,
 //                JOptionPane.QUESTION_MESSAGE
 //        );
 //        
@@ -166,8 +181,16 @@ public class ComputerScience30S
 //        JOptionPane.showConfirmDialog(
 //                null, 
 //                "Confirm Example 5",
+//                "Error",
+//                JOptionPane.DEFAULT_OPTION,
+//                JOptionPane.ERROR_MESSAGE
+//        );
+//                
+//        JOptionPane.showConfirmDialog(
+//                null, 
+//                "Confirm Example 6",
 //                "Plain",
-//                JOptionPane.YES_NO_CANCEL_OPTION,
+//                JOptionPane.DEFAULT_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
         
