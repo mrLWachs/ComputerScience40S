@@ -214,9 +214,19 @@ public class ComputerScience30S
         // sign (=) and the value going into the variable always goes on
         // the right hand side (RHS)
         
+        // Output our variables when outputted it always outputs the 
+        // value stored in the variable not the name of it
         
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
         
+        char d = 'A';
         
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character
+        
+        System.out.println("d = " + d);
         
         
         
