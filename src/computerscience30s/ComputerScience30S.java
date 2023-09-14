@@ -193,59 +193,88 @@ public class ComputerScience30S
 //                JOptionPane.DEFAULT_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
-        
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
-        
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data")
-        
-        // This is an example of the simpliest variable type:
-        
-        boolean a = true;
-        
-        // type name = value ;
-        
-        // When you write a line of code to create (declare) a variable
-        
-        int b = 0;
-        
-        double c = 0.0;
-        
-        // Variables can change ("vary")
-        
-        a = false;
-        b = 1;
-        c = 1.2;
-        
-        // Variables always go on the left hand side (LHS) of the equals
-        // sign (=) and the value going into the variable always goes on
-        // the right hand side (RHS)
-        
-        // Output our variables when outputted it always outputs the 
-        // value stored in the variable not the name of it
-        
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        
-        // The "char" is short for "character" it holds (remembers) ONE
-        // character
-        
-        char d = 'A';
-        
-        System.out.println("d = " + d);
-        
-        // The boolean ("bool" in C#), integer (int), double, and character
-        // (char) are all simple (primitive) data types, now a "complex" data
-        // type....
-
-        String e = "apple";
-
-        System.out.println("e = " + e);
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // A variable is a piece of code that tells the computer to
+//        // store (or "remember") information (or "data")
+//        
+//        // This is an example of the simpliest variable type:
+//        
+//        boolean a = true;
+//        
+//        // type name = value ;
+//        
+//        // When you write a line of code to create (declare) a variable
+//        
+//        int b = 0;
+//        
+//        double c = 0.0;
+//        
+//        // Variables can change ("vary")
+//        
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // Variables always go on the left hand side (LHS) of the equals
+//        // sign (=) and the value going into the variable always goes on
+//        // the right hand side (RHS)
+//        
+//        // Output our variables when outputted it always outputs the 
+//        // value stored in the variable not the name of it
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        // The "char" is short for "character" it holds (remembers) ONE
+//        // character
+//        
+//        char d = 'A';
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean ("bool" in C#), integer (int), double, and character
+//        // (char) are all simple (primitive) data types, now a "complex" data
+//        // type....
+//
+//        String e = "apple";
+//
+//        System.out.println("e = " + e);
         
         // Manipulate ("use") our variables:
+        
+        int x = 10;
+        
+        System.out.println("x = " + x);
+        
+        x = 20;
+        
+        System.out.println("x = " + x);
+        
+        int y = x + 10;
+        
+        System.out.println("y = " + y);
+        
+        // Optional ("you don't have to use this code") shorthand...
+        
+        y++;    // Means the same as y = y + 1;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
