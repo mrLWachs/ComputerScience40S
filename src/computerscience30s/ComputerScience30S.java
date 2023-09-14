@@ -286,9 +286,28 @@ public class ComputerScience30S
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
+        // Constants are variables that don't change (they stay "constant"),
+        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+        // to seperate words
         
+        // They also start with the keyword "final" (in C# it was "const")
         
+        final double  PI       = 3.141592358389;
+        final int     PROBLEMS = 99;
+        final char    YES      = 'Y';
+        final boolean FOUND    = true;
+        final String  TEACHER  = "Wachs";
         
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " + 
+                           FOUND    + ", " + 
+                           TEACHER );
+        
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
         
         
         
