@@ -277,6 +277,25 @@ public class ComputerScience30S
         // (not the normal answer) - in Java it uses the percentage "%"
         // symbol for this
         
+        x = 28;
+        y = x / 5;
+        
+        int z = x % 5;
+        
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
