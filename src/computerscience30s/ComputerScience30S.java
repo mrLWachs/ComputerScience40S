@@ -193,159 +193,57 @@ public class ComputerScience30S
 //                JOptionPane.DEFAULT_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // VARIABLES:
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // A variable is a piece of code that tells the computer to
-//        // store (or "remember") information (or "data")
-//        
-//        // This is an example of the simpliest variable type:
-//        
-//        boolean a = true;
-//        
-//        // type name = value ;
-//        
-//        // When you write a line of code to create (declare) a variable
-//        
-//        int b = 0;
-//        
-//        double c = 0.0;
-//        
-//        // Variables can change ("vary")
-//        
-//        a = false;
-//        b = 1;
-//        c = 1.2;
-//        
-//        // Variables always go on the left hand side (LHS) of the equals
-//        // sign (=) and the value going into the variable always goes on
-//        // the right hand side (RHS)
-//        
-//        // Output our variables when outputted it always outputs the 
-//        // value stored in the variable not the name of it
-//        
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        
-//        char d = 'A';
-//        
-//        // The "char" is short for "character" it holds (remembers) ONE
-//        // character
-//        
-//        System.out.println("d = " + d);
-//        
-//        // The boolean ("bool" in C#), integer (int), double, and character
-//        // (char) are all simple (primitive) data types, now a "complex" data
-//        // type....
-//        
-//        String e = "apple";
-//        
-//        System.out.println("e = " + e);
-//        
-//        // Manipulate ("use") our variables:
-//        
-//        int x = 10;
-//        
-//        System.out.println("x = " + x);
-//        
-//        x = 20;
-//        
-//        System.out.println("x = " + x);
-//        
-//        int y = x + 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Optional ("you don't have to use this code") shorthand...
-//        
-//        y++;    // Means the same as y = y + 1;
-//        y--;    // Means the same as y = y - 1;
-//        
-//        // Even more optional shorthand (less recommended)
-//        
-//        y += 10;    // Means the same as y = y + 10;
-//        y -= 10;    // Means the same as y = y - 10;
-//        y *= 10;    // Means the same as y = y * 10;
-//        y /= 10;    // Means the same as y = y / 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Modulus (mod) division gives you the remainder of a division
-//        // (not the normal answer) - in Java it uses the percentage "%"
-//        // symbol for this
-//        
-//        x = 28;
-//        y = x / 5;
-//        
-//        int z = x % 5;
-//        
-//        System.out.println("x = " + x);
-//        System.out.println("y = " + y);
-//        System.out.println("z = " + z);
-//        
-//        // Constants are variables that don't change (they stay "constant"),
-//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-//        // to seperate words
-//        
-//        // They also start with the keyword "final" (in C# it was "const")
-//        
-//        final double  PI       = 3.141592358389;
-//        final int     PROBLEMS = 99;
-//        final char    YES      = 'Y';
-//        final boolean FOUND    = true;
-//        final String  TEACHER  = "Wachs";
-//        
-//        System.out.println(PI       + ", " + 
-//                           PROBLEMS + ", " + 
-//                           YES      + ", " + 
-//                           FOUND    + ", " + 
-//                           TEACHER );
-//        
-//        // Constants are used for things like: easier code to maintain,
-//        // easier to read/understand (especially for other programmers)
-//        
-        // Converting between variable data types...
         
-        int f = 25;
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
         
-        System.out.println("f = " + f);
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data")
         
-        double g = f;
+        // This is an example of the simpliest variable type:
         
-        System.out.println("g = " + g);
+        boolean a = true;
         
-        g = 25.99999999999;
+        // type name = value ;
         
-        System.out.println("g = " + g);
+        // When you write a line of code to create (declare) a variable
         
-        int h = (int)g;
+        int b = 0;
         
-        System.out.println("h = " + h);
+        double c = 0.0;
         
-        // When we use round brackets ( )  with a data type inside, this is
-        // called "casting" which means it converts (temporarily) to another
-        // data type - which meant it ignored the decimal part
+        // Variables can change ("vary")
         
-        double k = 2.99999999;
-        int    l = (int)k;
-        double m = (double)l;
+        a = false;
+        b = 1;
+        c = 1.2;
         
-        // Casting can happen with other data types...
+        // Variables always go on the left hand side (LHS) of the equals
+        // sign (=) and the value going into the variable always goes on
+        // the right hand side (RHS)
         
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
+        // Output our variables when outputted it always outputs the 
+        // value stored in the variable not the name of it
         
-        System.out.println("k = " + k);
-        System.out.println("l = " + l);
-        System.out.println("m = " + m);
-        System.out.println("n = " + n);
-        System.out.println("o = " + o);
-        System.out.println("p = " + p);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
         
+        char d = 'A';
+        
+        // The "char" is short for "character" it holds (remembers) ONE
+        // character
+        
+        System.out.println("d = " + d);
+        
+        // The boolean ("bool" in C#), integer (int), double, and character
+        // (char) are all simple (primitive) data types, now a "complex" data
+        // type....
+
+
+
+
         
         
         
