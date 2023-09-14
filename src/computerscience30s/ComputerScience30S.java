@@ -233,12 +233,19 @@ public class ComputerScience30S
         // The "char" is short for "character" it holds (remembers) ONE
         // character
         
+        char d = 'A';
         
-
-
-
-
+        System.out.println("d = " + d);
         
+        // The boolean ("bool" in C#), integer (int), double, and character
+        // (char) are all simple (primitive) data types, now a "complex" data
+        // type....
+
+        String e = "apple";
+
+        System.out.println("e = " + e);
+        
+        // Manipulate ("use") our variables:
         
         
         
