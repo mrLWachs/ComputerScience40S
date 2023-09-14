@@ -262,8 +262,20 @@ public class ComputerScience30S
         // Optional ("you don't have to use this code") shorthand...
         
         y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
         
+        // Even more optional shorthand (less recommended)
         
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
+        
+        System.out.println("y = " + y);
+        
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
         
         
         
