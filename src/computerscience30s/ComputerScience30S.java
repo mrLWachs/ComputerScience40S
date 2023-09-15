@@ -345,41 +345,49 @@ public class ComputerScience30S
 //        System.out.println("n = " + n);
 //        System.out.println("o = " + o);
 //        System.out.println("p = " + p);
+//        
+//        // Use dialog boxes (specifically the input) with variables...
+//        
+//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+//        // at the front of the line that makes the input dialog (code above is
+//        // wrong, always make a string variable then the input dialog)
+//        
+//        String q = JOptionPane.showInputDialog("Enter");
+//        
+//        // The variable (always has to start as a string) stores what the 
+//        // user types in the input dialog box
+//        
+//        JOptionPane.showMessageDialog(null, q);
+//        
+//        // With numbers, you HAVE to start off with a string, and then convert
+//        // it to a number. This is like Convert.ToInt32(text); in C#
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We convert using code to "parse" (means "to read")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        // Always use a capital "I" and whole word "Integer" for this parsing
+//        // the string into a number
+//        
+//        JOptionPane.showMessageDialog(null, s);
+//        
+//        // Same example but with a double...
+//        
+//        String t = JOptionPane.showInputDialog("Enter double");
+//        double u = Double.parseDouble(t);
+//        JOptionPane.showMessageDialog(null, u);
         
-        // Use dialog boxes (specifically the input) with variables...
+        // Example with a char (single character)...
         
-        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-        // at the front of the line that makes the input dialog (code above is
-        // wrong, always make a string variable then the input dialog)
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, w);
         
-        String q = JOptionPane.showInputDialog("Enter");
-        
-        // The variable (always has to start as a string) stores what the 
-        // user types in the input dialog box
-        
-        JOptionPane.showMessageDialog(null, q);
-        
-        // With numbers, you HAVE to start off with a string, and then convert
-        // it to a number. This is like Convert.ToInt32(text); in C#
-        
-        String r = JOptionPane.showInputDialog("Enter int");
-        
-        // We convert using code to "parse" (means "to read")
-        
-        int s = Integer.parseInt(r);
-        
-        // Always use a capital "I" and whole word "Integer" for this parsing
-        // the string into a number
-        
-        JOptionPane.showMessageDialog(null, s);
-        
-        // Same example but with a double...
-        
-        String t = JOptionPane.showInputDialog("Enter double");
-        double u = Double.parseDouble(t);
-        JOptionPane.showMessageDialog(null, u);
-        
-        
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
         
         
