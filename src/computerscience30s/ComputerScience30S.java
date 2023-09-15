@@ -245,46 +245,46 @@ public class ComputerScience30S
 //
 //        System.out.println("e = " + e);
 //        
-        // Manipulate ("use") our variables:
-        
-        int x = 10;
-        
-        System.out.println("x = " + x);
-        
-        x = 20;
-        
-        System.out.println("x = " + x);
-        
-        int y = x + 10;
-        
-        System.out.println("y = " + y);
-        
-        // Optional ("you don't have to use this code") shorthand...
-        
-        y++;    // Means the same as y = y + 1;
-        y--;    // Means the same as y = y - 1;
-        
-        // Even more optional shorthand (less recommended)
-        
-        y += 10;    // Means the same as y = y + 10;
-        y -= 10;    // Means the same as y = y - 10;
-        y *= 10;    // Means the same as y = y * 10;
-        y /= 10;    // Means the same as y = y / 10;
-        
-        System.out.println("y = " + y);
-        
-        // Modulus (mod) division gives you the remainder of a division
-        // (not the normal answer) - in Java it uses the percentage "%"
-        // symbol for this
-        
-        x = 28;
-        y = x / 5;
-        
-        int z = x % 5;
-        
-        System.out.println("x = "+ x);
-        System.out.println("y = "+ y);
-        System.out.println("z = "+ z);
+//        // Manipulate ("use") our variables:
+//        
+//        int x = 10;
+//        
+//        System.out.println("x = " + x);
+//        
+//        x = 20;
+//        
+//        System.out.println("x = " + x);
+//        
+//        int y = x + 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Optional ("you don't have to use this code") shorthand...
+//        
+//        y++;    // Means the same as y = y + 1;
+//        y--;    // Means the same as y = y - 1;
+//        
+//        // Even more optional shorthand (less recommended)
+//        
+//        y += 10;    // Means the same as y = y + 10;
+//        y -= 10;    // Means the same as y = y - 10;
+//        y *= 10;    // Means the same as y = y * 10;
+//        y /= 10;    // Means the same as y = y / 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Modulus (mod) division gives you the remainder of a division
+//        // (not the normal answer) - in Java it uses the percentage "%"
+//        // symbol for this
+//        
+//        x = 28;
+//        y = x / 5;
+//        
+//        int z = x % 5;
+//        
+//        System.out.println("x = "+ x);
+//        System.out.println("y = "+ y);
+//        System.out.println("z = "+ z);
 
         // Constants are variables that don't change (they stay "constant"),
         // and constants are written in ALL_CAPITAL_LETTERS with underscores
@@ -292,8 +292,20 @@ public class ComputerScience30S
         
         // They also start with the keyword "final" (in C# it was "const")
         
+        final double  PI       = 3.141562658389;
+        final int     PROBLEMS = 99;
+        final char    YES      = 'Y';
+        final boolean FOUND    = true;
+        final String  TEACHER  = "Wachs";
         
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " +
+                           FOUND    + ", " +
+                           TEACHER);
         
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
         
         
         
