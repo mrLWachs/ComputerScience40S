@@ -393,9 +393,15 @@ public class ComputerScience30S
         
         String word = "hippopotomonsprosesquippedaiophobia";
         
+        int length = word.length();
         
+        System.out.println("Word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
         
+        System.out.println("Word " + word + " in upper case is " + upper);
+        
+        // Many more string functions to explore (could use CTRL+SPACE)
         
         
         
