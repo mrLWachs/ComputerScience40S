@@ -245,223 +245,52 @@ public class ComputerScience30S
 //
 //        System.out.println("e = " + e);
 //        
-//        // Manipulate ("use") our variables:
-//        
-//        int x = 10;
-//        
-//        System.out.println("x = " + x);
-//        
-//        x = 20;
-//        
-//        System.out.println("x = " + x);
-//        
-//        int y = x + 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Optional ("you don't have to use this code") shorthand...
-//        
-//        y++;    // Means the same as y = y + 1;
-//        y--;    // Means the same as y = y - 1;
-//        
-//        // Even more optional shorthand (less recommended)
-//        
-//        y += 10;    // Means the same as y = y + 10;
-//        y -= 10;    // Means the same as y = y - 10;
-//        y *= 10;    // Means the same as y = y * 10;
-//        y /= 10;    // Means the same as y = y / 10;
-//        
-//        System.out.println("y = " + y);
-//        
-//        // Modulus (mod) division gives you the remainder of a division
-//        // (not the normal answer) - in Java it uses the percentage "%"
-//        // symbol for this
-//        
-//        x = 28;
-//        y = x / 5;
-//        
-//        int z = x % 5;
-//        
-//        System.out.println("x = "+ x);
-//        System.out.println("y = "+ y);
-//        System.out.println("z = "+ z);
-//        
-//        // Constants are variables that don't change (they stay "constant"),
-//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-//        // to seperate words
-//        
-//        // They also start with the keyword "final" (in C# it was "const")
-//        
-//        final double  PI       = 3.141592658389;
-//        final int     PROBLEMS = 99;
-//        final char    YES      = 'Y';
-//        final boolean FOUND    = true;
-//        final String  TEACHER  = "Wachs";
-//        
-//        System.out.println(PI       + ", " + 
-//                           PROBLEMS + ", " + 
-//                           YES      + ", " +
-//                           FOUND    + ", " +
-//                           TEACHER);
-//        
-//        // Constants are used for things like: easier code to maintain,
-//        // easier to read/understand (especially for other programmers)
-//        
-//        // Converting between variable data types...
-//        
-//        int f = 25;
-//        
-//        System.out.println("f = " + f);
-//        
-//        double g = f;
-//        
-//        System.out.println("g = " + g);
-//        
-//        g = 25.999999999999;
-//        
-//        System.out.println("g = " + g);
-//        
-//        int h = (int) g;
-//        
-//        System.out.println("h = " + h);
-//        
-//        // When we use round brackets ( )  with a data type inside, this is
-//        // called "casting" which means it converts (temporarily) to another
-//        // data type - which meant it ignored the decimal part
-//        
-//        double k = 2.99999999;
-//        int    l = (int)k;
-//        double m = (double)l;
-//        
-//        // Casting can happen with other data types...
-//        
-//        char n = 'A';
-//        int  o = (int)n;
-//        char p = (char)70;
-//        
-//        System.out.println("k = " + k);
-//        System.out.println("l = " + l);
-//        System.out.println("m = " + m);
-//        System.out.println("n = " + n);
-//        System.out.println("o = " + o);
-//        System.out.println("p = " + p);
-//        
-//        // Use dialog boxes (specifically the input) with variables...
-//        
-//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-//        // at the front of the line that makes the input dialog (code above is
-//        // wrong, always make a string variable then the input dialog)
-//        
-//        String q = JOptionPane.showInputDialog("Enter");
-//        
-//        // The variable (always has to start as a string) stores what the 
-//        // user types in the input dialog box
-//        
-//        JOptionPane.showMessageDialog(null, q);
-//        
-//        // With numbers, you HAVE to start off with a string, and then convert
-//        // it to a number. This is like Convert.ToInt32(text); in C#
-//        
-//        String r = JOptionPane.showInputDialog("Enter int");
-//        
-//        // We convert using code to "parse" (means "to read")
-//        
-//        int s = Integer.parseInt(r);
-//        
-//        // Always use a capital "I" and whole word "Integer" for this parsing
-//        // the string into a number
-//        
-//        JOptionPane.showMessageDialog(null, s);
-//        
-//        // Same example but with a double...
-//        
-//        String t = JOptionPane.showInputDialog("Enter double");
-//        double u = Double.parseDouble(t);
-//        JOptionPane.showMessageDialog(null, u);
-//        
-//        // Example with a char (single character)...
-//        
-//        String v = JOptionPane.showInputDialog("Enter char");
-//        char   w = v.charAt(0);
-//        JOptionPane.showMessageDialog(null, w);
-//        
-//        // Strings have built-in actions like "charAt" to pull out a character
-//        // "at" location "0" which means the very first character (because 
-//        // numbering in Computer Science usually starts at 0)
-//        
-//        // String have MANY built-in "actions" ("powers", functions, methods)
-//        
-//        String word = "hippopotomonsprosesquippedaiophobia";
-//        
-//        int length = word.length();
-//        
-//        System.out.println("Word " + word + " is length " + length);
-//        
-//        String upper = word.toUpperCase();
-//        
-//        System.out.println("Word " + word + " in upper case is " + upper);
-//        
-//        // Many more string functions to explore (could use CTRL+SPACE)
-//        
-//        // Another useful "library" of code is the "Math" library which is
-//        // also "built-in" (you can easily use it) to Java. It comes with 
-//        // its own functions (actions, methods)
-//        
-//        double answer1 = Math.PI;
-//        double answer2 = Math.cos(0.5);
-//        double answer3 = Math.abs(-1);
-//        double answer4 = Math.pow(5,3);
-//        double answer5 = Math.sqrt(9);
-//        double answer6 = Math.log(0.5);
-//        
-//        System.out.println("answer1 = " + answer1);
-//        System.out.println("answer2 = " + answer2);
-//        System.out.println("answer3 = " + answer3);
-//        System.out.println("answer4 = " + answer4);
-//        System.out.println("answer5 = " + answer5);
-//        System.out.println("answer6 = " + answer6);
+        // Manipulate ("use") our variables:
         
-        // Math library also includes the ability to make random numbers, like:
-        // Random random = new Random();
+        int x = 10;
         
-        double seed = Math.random();
+        System.out.println("x = " + x);
         
-        System.out.println("seed = " + seed);
+        x = 20;
         
-        // The "seed" is the starting point - generates a random number between
-        // zero and one (never gets to zero or one)
+        System.out.println("x = " + x);
         
-        // You can now use a formula for generating random numbers in a range
-        // between a low and high value (e.g between 1 and 10 and an integer)
+        int y = x + 10;
         
-        // Start off with some constants to define the LOW and HIGH
+        System.out.println("y = " + y);
         
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
+        // Optional ("you don't have to use this code") shorthand...
         
-        // Now the formula...
+        y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
         
-        double number = (HIGH - LOW + 1) * seed + LOW;
+        // Even more optional shorthand (less recommended)
         
-        System.out.println("low    = " + LOW);
-        System.out.println("high   = " + HIGH);        
-        System.out.println("number = " + number);
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
         
-        // Now convert to int
+        System.out.println("y = " + y);
         
-        int value = (int)number;
+        // Modulus (mod) division gives you the remainder of a division
+        // (not the normal answer) - in Java it uses the percentage "%"
+        // symbol for this
         
-        System.out.println("value = " + value);
+        x = 28;
+        y = x / 5;
         
-        // Do it again, but simplify the formula (between 2-53)
+        int z = x % 5;
         
-        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
-        System.out.println("card is " + card);
+        System.out.println("x = "+ x);
+        System.out.println("y = "+ y);
+        System.out.println("z = "+ z);
+
+        // Constants are variables that don't change (they stay "constant"),
+        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+        // to seperate words
         
-        ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
-        ///////////////////////////////////////////////////////////////////////
-        
+        // They also start with the keyword "final" (in C# it was "const")
         
         
         
