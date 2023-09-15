@@ -393,11 +393,19 @@ public class ComputerScience30S
         
         String word = "hippopotomonsprosesquippedaiophobia";
         
+        int length = word.length();
         
+        System.out.println("Word " + word + " is length " + length);
         
+        String upper = word.toUpperCase();
         
+        System.out.println("Word " + word + " in upper case is " + upper);
         
+        // Many more string functions to explore (could use CTRL+SPACE)
         
+        // Another useful "library" of code is the "Math" library which is
+        // also "built-in" (you can easily use it) to Java. It comes with 
+        // its own functions (actions, methods)
         
         
         
