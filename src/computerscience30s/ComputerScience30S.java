@@ -356,8 +356,8 @@ public class ComputerScience30S
 //        
 //        // The variable (always has to start as a string) stores what the 
 //        // user types in the input dialog box
-        
-        JOptionPane.showMessageDialog(null, q);
+//        
+//        JOptionPane.showMessageDialog(null, q);
         
         // With numbers, you HAVE to start off with a string, and then convert
         // it to a number. This is like Convert.ToInt32(text); in C#
