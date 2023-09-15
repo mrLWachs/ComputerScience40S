@@ -352,7 +352,15 @@ public class ComputerScience30S
         // at the front of the line that makes the input dialog (code above is
         // wrong, always make a string variable then the input dialog)
         
+        String q = JOptionPane.showInputDialog("Enter");
         
+        // The variable (always has to start as a string) stores what the 
+        // user types in the input dialog box
+        
+        JOptionPane.showMessageDialog(null, q);
+        
+        // With numbers, you HAVE to start off with a string, and then convert
+        // it to a number. This is like Convert.ToInt32(text); in C#
         
         
         
