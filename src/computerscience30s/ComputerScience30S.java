@@ -388,75 +388,75 @@ public class ComputerScience30S
 //        // Strings have built-in actions like "charAt" to pull out a character
 //        // "at" location "0" which means the very first character (because 
 //        // numbering in Computer Science usually starts at 0)
-                
-        // String have MANY built-in "actions" ("powers", functions, methods)
-        
-        String word = "hippopotomonsprosesquippedaiophobia";
-        
-        int length = word.length();
-        
-        System.out.println("Word " + word + " is length " + length);
-        
-        String upper = word.toUpperCase();
-        
-        System.out.println("Word " + word + " in upper case is " + upper);
-        
-        // Many more string functions to explore (could use CTRL+SPACE)
-        
-        // Another useful "library" of code is the "Math" library which is
-        // also "built-in" (you can easily use it) to Java. It comes with 
-        // its own functions (actions, methods)
-        
-        double answer1 = Math.PI;
-        double answer2 = Math.cos(0.5);
-        double answer3 = Math.abs(-1);
-        double answer4 = Math.pow(5,3);
-        double answer5 = Math.sqrt(9);
-        double answer6 = Math.log(0.5);
-                
-        System.out.println("answer1 = " + answer1);
-        System.out.println("answer2 = " + answer2);
-        System.out.println("answer3 = " + answer3);
-        System.out.println("answer4 = " + answer4);
-        System.out.println("answer5 = " + answer5);
-        System.out.println("answer6 = " + answer6);
-        
-        // Math library also includes the ability to make random numbers, like:
-        // Random random = new Random();
-        
-        double seed = Math.random();
-        
-        System.out.println("seed = " + seed);
-        
-        // The "seed" is the starting point - generates a random number between
-        // zero and one (never gets to zero or one)
-        
-        // You can now use a formula for generating random numbers in a range
-        // between a low and high value (e.g between 1 and 10 and an integer)
-        
-        // Start off with some constants to define the LOW and HIGH
-        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        
-        // Now the formula...
-        
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        
-        System.out.println("low    = " + LOW);
-        System.out.println("high   = " + HIGH);        
-        System.out.println("number = " + number);
-        
-        // Now convert to int
-        
-        int value = (int)number;
-        
-        System.out.println("value = " + value);
-        
-        // Do it again, but simplify the formula (between 2-53)
-        
-        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
-        System.out.println("card is " + card);
+//                
+//        // String have MANY built-in "actions" ("powers", functions, methods)
+//        
+//        String word = "hippopotomonsprosesquippedaiophobia";
+//        
+//        int length = word.length();
+//        
+//        System.out.println("Word " + word + " is length " + length);
+//        
+//        String upper = word.toUpperCase();
+//        
+//        System.out.println("Word " + word + " in upper case is " + upper);
+//        
+//        // Many more string functions to explore (could use CTRL+SPACE)
+//        
+//        // Another useful "library" of code is the "Math" library which is
+//        // also "built-in" (you can easily use it) to Java. It comes with 
+//        // its own functions (actions, methods)
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.cos(0.5);
+//        double answer3 = Math.abs(-1);
+//        double answer4 = Math.pow(5,3);
+//        double answer5 = Math.sqrt(9);
+//        double answer6 = Math.log(0.5);
+//                
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
+//        
+//        // Math library also includes the ability to make random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        
+//        System.out.println("seed = " + seed);
+//        
+//        // The "seed" is the starting point - generates a random number between
+//        // zero and one (never gets to zero or one)
+//        
+//        // You can now use a formula for generating random numbers in a range
+//        // between a low and high value (e.g between 1 and 10 and an integer)
+//        
+//        // Start off with some constants to define the LOW and HIGH
+//        
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        
+//        // Now the formula...
+//        
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        
+//        System.out.println("low    = " + LOW);
+//        System.out.println("high   = " + HIGH);        
+//        System.out.println("number = " + number);
+//        
+//        // Now convert to int
+//        
+//        int value = (int)number;
+//        
+//        System.out.println("value = " + value);
+//        
+//        // Do it again, but simplify the formula (between 2-53)
+//        
+//        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
+//        System.out.println("card is " + card);
         
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
