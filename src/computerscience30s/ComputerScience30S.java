@@ -419,43 +419,43 @@ public class ComputerScience30S
 //        System.out.println("answer4 = " + answer4);
 //        System.out.println("answer5 = " + answer5);
 //        System.out.println("answer6 = " + answer6);
-        
-        // Math library also includes the ability to make random numbers, like:
-        // Random random = new Random();
-        
-        double seed = Math.random();
-        
-        System.out.println("seed = " + seed);
-        
-        // The "seed" is the starting point - generates a random number between
-        // zero and one (never gets to zero or one)
-        
-        // You can now use a formula for generating random numbers in a range
-        // between a low and high value (e.g between 1 and 10 and an integer)
-        
-        // Start off with some constants to define the LOW and HIGH
-        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        
-        // Now the formula...
-        
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        
-        System.out.println("low    = " + LOW);
-        System.out.println("high   = " + HIGH);        
-        System.out.println("number = " + number);
-        
-        // Now convert to int
-        
-        int value = (int)number;
-        
-        System.out.println("value = " + value);
-        
-        // Do it again, but simplify the formula (between 2-53)
-        
-        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
-        System.out.println("card is " + card);
+//        
+//        // Math library also includes the ability to make random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        
+//        System.out.println("seed = " + seed);
+//        
+//        // The "seed" is the starting point - generates a random number between
+//        // zero and one (never gets to zero or one)
+//        
+//        // You can now use a formula for generating random numbers in a range
+//        // between a low and high value (e.g between 1 and 10 and an integer)
+//        
+//        // Start off with some constants to define the LOW and HIGH
+//        
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        
+//        // Now the formula...
+//        
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        
+//        System.out.println("low    = " + LOW);
+//        System.out.println("high   = " + HIGH);        
+//        System.out.println("number = " + number);
+//        
+//        // Now convert to int
+//        
+//        int value = (int)number;
+//        
+//        System.out.println("value = " + value);
+//        
+//        // Do it again, but simplify the formula (between 2-53)
+//        
+//        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
+//        System.out.println("card is " + card);
         
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
@@ -469,13 +469,24 @@ public class ComputerScience30S
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code inside the block
         
+        int value1 = 10;
+        int value2 = 10;
         
+        if (value1 == value2) {
+            System.out.println("equal");            
+        }
         
+        // if with "else" (an option) for both true and false, check 2 things
         
+        double value3 = 1.45, value4 = 1.5;
         
-        
-        
-        
+        if (value3 < value4) {
+            System.out.print("The example is ");
+            System.out.println("less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
         
         
         
