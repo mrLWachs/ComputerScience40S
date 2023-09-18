@@ -473,7 +473,7 @@ public class ComputerScience30S
         int value2 = 10;
         
         if (value1 == value2) {
-            System.out.println("equal");            
+            System.out.println("equal");
         }
         
         // if with "else" (an option) for both true and false, check 2 things
@@ -487,6 +487,84 @@ public class ComputerScience30S
         else {
             System.out.println("Greater than");
         }
+        
+        // You can have as many lines of code as you want in a "block"
+        
+        // Use chars and some shorthand, not usually recommended (except in 
+        // certain situations) used when the code in a block - between { } is
+        // only one line of code! Then, you don't need the { } 
+        // And.. (even further shorthand) the line can be moved up to the
+        // same line as the if statement
+        
+        char value5 = 'A';
+        char value6 = 'a';
+        
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
+        
+        // Use "else if" for multiple cases of more than 2 things (same as the
+        // "switch" statement - which I don't use) use strings for this
+        // example which are more complex (because they use many character,
+        // and upper and lower case)
+        
+        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
+        
+        String word1 = "edgy";
+        String word2 = "edGy";
+        
+        if (word1.equals(word2)) {
+            System.out.println("W1==W2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("W1 kind of == W2");
+        }
+        else {
+            System.out.println("W1!=W2");
+        }
+        
+        // As an optional way to combine logic using: "and" "or" "not"
+        // "and" means BOTH   must be true - uses the symbol "&&"
+        // "or"  means EITHER can  be true - uses the symbol "||"
+        // "not" reverse logic (so false)  - uses the symbol "!" 
+        
+        int age = 17;
+        double iq = 1.0;
+        
+        if (age >= 18 && iq > 90) {
+            // with "and" ("&&") BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq > 0) {
+            // with "or" ("||") EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
+        
+        // Loops ARE just like conditional statements (like "if") BUT the code
+        // keeps repeating while something is TRUE...
+        
+        // Simple loop
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -507,3 +585,61 @@ public class ComputerScience30S
 // (8) To "comment out" chunks of code, select the code with your mouse or 
 //     your keyboard, then click on one of the two buttons under the code tab
 //     (on the right)
+// (9)  To stop a running program, click the red stop button on the left in the
+//      output window, or the X in the bottom right of NetBeans
+// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
+// (12) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (13) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
+// (14) To have NetBeans automate code comments for assignments, select the 
+//      code below this tip, and uncomment it (see tip 8) and then copy the 
+//      same (uncommented) code. Then go to the menu: Tools -> Templates, and
+//      scroll down and click on the "+" beside "Java", and select 
+//      "Java Main Class", and "Open in Editor" and the enter (paste) this into
+//      the template (instead of the text that is already there). Then close 
+//      and save the Template so it now applies to every new project you make...
+//
+///** Required package class namespace */
+//package ${package};
+//
+//
+///*
+// * ${name} - description
+// * 
+// * @author Your Name
+// * @since ${date}
+//*/
+//public class ${name}
+//{
+//
+//    /**
+//     * Main method for the project
+//     * 
+//     * @param args the command line arguments
+//     */
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        
+//    }
+//
+//}
+//
+// (15) When preparing code for hand in: I would suggest the first option, but
+//      you can also do the second: (A) Go to the menu File -> Print to HTML...
+//      click Browse to select a location and name the file (end the name with
+//      ".html") to save a HTML file with all your code (it will already be
+//      properly formatted. (B) Alternatively, you can "print" your code to a
+//      PDF file but first you need to set NetBeans (this only needs to be done
+//      once), by clicking on "Print Options" and uncheck everything previously
+//      checked off, and then check off "Print as in Editor", then either print
+//      it to a PDF (which means select "Microsoft Print to PDF" on the next 
+//      screen), or cancel and resize the code to fit better (see tip #1) and 
+//      then print again
