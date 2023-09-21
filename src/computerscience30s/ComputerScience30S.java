@@ -509,46 +509,46 @@ public class ComputerScience30S
 //        
 //        if (value5 != value6) System.out.println("!=");
 //        else                  System.out.println("==");
-        
-        // Use "else if" for multiple cases of more than 2 things (same as the
-        // "switch" statement - which I don't use) use strings for this
-        // example which are more complex (because they use many character,
-        // and upper and lower case)
-        
-        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
-        
-        String word1 = "edgy";
-        String word2 = "edGy";
-        
-        if (word1.equals(word2)) {
-            System.out.println("W1=W2");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("W1 kind of == W2");
-        }
-        else {
-            System.out.println("W1!=W2");
-        }
-        
-        // As an optional way to combine logic using: "and" "or" "not"
-        // "and" means BOTH   must be true - uses the symbol "&&"
-        // "or"  means EITHER can  be true - uses the symbol "||"
-        // "not" reverse logic (so false)  - uses the symbol "!" 
-        
-        int age = 17;
-        double iq = 1.0;
-        
-        if (age >= 18 && iq > 90) {
-            // with "and" ("&&") BOTH have to be true
-            System.out.println("Get in");
-        }
-        else if (age >= 18 || iq > 0) {
-            // with "or" ("||") EITHER can be true
-            System.out.println("Keep trying");
-        }
-        else {
-            System.out.println("Get out");
-        }
+//        
+//        // Use "else if" for multiple cases of more than 2 things (same as the
+//        // "switch" statement - which I don't use) use strings for this
+//        // example which are more complex (because they use many character,
+//        // and upper and lower case)
+//        
+//        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
+//        
+//        String word1 = "edgy";
+//        String word2 = "edGy";
+//        
+//        if (word1.equals(word2)) {
+//            System.out.println("W1=W2");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("W1 kind of == W2");
+//        }
+//        else {
+//            System.out.println("W1!=W2");
+//        }
+//        
+//        // As an optional way to combine logic using: "and" "or" "not"
+//        // "and" means BOTH   must be true - uses the symbol "&&"
+//        // "or"  means EITHER can  be true - uses the symbol "||"
+//        // "not" reverse logic (so false)  - uses the symbol "!" 
+//        
+//        int age = 17;
+//        double iq = 1.0;
+//        
+//        if (age >= 18 && iq > 90) {
+//            // with "and" ("&&") BOTH have to be true
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 18 || iq > 0) {
+//            // with "or" ("||") EITHER can be true
+//            System.out.println("Keep trying");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
         
         ///////////////////////////////////////////////////////////////////////
         // LOOPING
@@ -558,6 +558,14 @@ public class ComputerScience30S
         // keeps repeating while something is TRUE...
         
         // Simple loop
+        
+        int counter = 0;
+        
+        while (counter < 10) {
+            System.out.println("counter = " + counter);
+        }
+        
+        // Loop with a string...
         
         
         
