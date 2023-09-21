@@ -535,8 +535,29 @@ public class ComputerScience30S
         // "or"  means EITHER can  be true - uses the symbol "||"
         // "not" reverse logic (so false)  - uses the symbol "!" 
         
+        int age = 17;
+        double iq = 1.0;
         
+        if (age >= 18 && iq > 90) {
+            // with "and" ("&&") BOTH have to be true
+            System.out.println("Get in");
+        }
+        else if (age >= 18 || iq > 0) {
+            // with "or" ("||") EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else {
+            System.out.println("Get out");
+        }
         
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
+        
+        // Loops ARE just like conditional statements (like "if") BUT the code
+        // keeps repeating while something is TRUE...
+        
+        // Simple loop
         
         
         
