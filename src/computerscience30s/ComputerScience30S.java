@@ -465,139 +465,18 @@ public class ComputerScience30S
 //        int card = (int)( (53 - 2 + 1) * Math.random() + 2);
 //        System.out.println("card is " + card);
 //        
-//        ///////////////////////////////////////////////////////////////////////
-//        // CONDITIONAL STATEMENTS
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // The simple if statement, you use this when comparing if something is
-//        // true, as it checks that one thing ("asks a true/false question")
-//        
-//        // If statements use both ( ) round and { } curly brackets and the 
-//        // code inside of the curly brackets is said to be in a "block" of
-//        // code and that block only runs when the test inside of the round
-//        // brackets tests TRUE. It also indents the code inside the block
-//        
-//        int value1 = 10;
-//        int value2 = 10;
-//        
-//        if (value1 == value2) {
-//            System.out.println("equal");
-//        }
-//        
-//        // if with "else" (an option) for both true and false, check 2 things
-//        
-//        double value3 = 1.45, value4 = 1.5;
-//        
-//        if (value3 < value4) {
-//            System.out.print("The example is ");
-//            System.out.println("less than");
-//        }
-//        else {
-//            System.out.println("Greater than");
-//        }
-//        
-//        // You can have as many lines of code as you want in a "block"
-//        
-//        // Use chars and some shorthand, not usually recommended (except in 
-//        // certain situations) used when the code in a block - between { } is
-//        // only one line of code! Then, you don't need the { } 
-//        // And.. (even further shorthand) the line can be moved up to the
-//        // same line as the if statement
-//        
-//        char value5 = 'A';
-//        char value6 = 'a';
-//        
-//        if (value5 != value6) System.out.println("!=");
-//        else                  System.out.println("==");
-//        
-//        // Use "else if" for multiple cases of more than 2 things (same as the
-//        // "switch" statement - which I don't use) use strings for this
-//        // example which are more complex (because they use many character,
-//        // and upper and lower case)
-//        
-//        // NOTE: with strings NEVER use "==" ALWAYS use ".equals()"
-//        
-//        String word1 = "edgy";
-//        String word2 = "edGy";
-//        
-//        if (word1.equals(word2)) {
-//            System.out.println("W1==W2");
-//        }
-//        else if (word1.equalsIgnoreCase(word2)) {
-//            System.out.println("W1 kind of == W2");
-//        }
-//        else {
-//            System.out.println("W1!=W2");
-//        }
-//        
-//        // As an optional way to combine logic using: "and" "or" "not"
-//        // "and" means BOTH   must be true - uses the symbol "&&"
-//        // "or"  means EITHER can  be true - uses the symbol "||"
-//        // "not" reverse logic (so false)  - uses the symbol "!" 
-//        
-//        int age = 17;
-//        double iq = 1.0;
-//        
-//        if (age >= 18 && iq > 90) {
-//            // with "and" ("&&") BOTH have to be true
-//            System.out.println("Get in");
-//        }
-//        else if (age >= 18 || iq > 0) {
-//            // with "or" ("||") EITHER can be true
-//            System.out.println("Keep trying");
-//        }
-//        else {
-//            System.out.println("Get out");
-//        }
-//        
-//        ///////////////////////////////////////////////////////////////////////
-//        // LOOPING
-//        ///////////////////////////////////////////////////////////////////////
-//        
-//        // Loops ARE just like conditional statements (like "if") BUT the code
-//        // keeps repeating while something is TRUE...
-//        
-//        // Simple loop
-//        
-//        int counter = 0;
-//        
-//        while (counter < 10) {
-//            System.out.println("counter = " + counter);
-//            counter++;  // Shorthand for "counter = counter + 1;"
-//        }
-//        
-//        // Loop with a string...
-//        
-//        String password = JOptionPane.showInputDialog("Create a password");
-//        
-//        while (password.equals("1234")) {
-//            JOptionPane.showMessageDialog(null, "Try again");
-//            password = JOptionPane.showInputDialog("Create another password");            
-//        }
-//        
-//        JOptionPane.showMessageDialog(null, "Ok, continue...");
-//        
-//        // The next type of loop is rarely used (you may never need it)
-//        // it tests for true/false at the bottom of the loop, you use it
-//        // when you want the body (block) of the loop to run at least
-//        // once!
-//        
-//        String choice = "";
-//        
-//        do {            
-//            choice = JOptionPane.showInputDialog("Enter password");
-//        } while (choice.equalsIgnoreCase(password) == false);
-//        
-//        JOptionPane.showMessageDialog(null, "You got it!");
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
-        // The "for" loop is used for counting (and for the upcoming unit 
-        // called "arrays"). It is a much more technical ("codey") looking loop
-        // The inside of the round brackets means: ( start ; end ; change)        
-        // The for loop creates its own variable (by default NetBeans calls
-        // it "i") - short for "iteration"
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
         
-        
-        
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code inside the block
+
         
         
         
