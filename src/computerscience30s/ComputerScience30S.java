@@ -563,9 +563,24 @@ public class ComputerScience30S
         
         while (counter < 10) {
             System.out.println("counter = " + counter);
+            counter++;  // Shorthand for "counter = counter + 1"
         }
         
         // Loop with a string...
+        
+        String password = JOptionPane.showInputDialog("Create a password");
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
