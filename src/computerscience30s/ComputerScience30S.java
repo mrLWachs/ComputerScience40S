@@ -570,11 +570,17 @@ public class ComputerScience30S
         
         String password = JOptionPane.showInputDialog("Create a password");
         
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again");
+            password = JOptionPane.showInputDialog("Create another password");
+        }
         
+        JOptionPane.showMessageDialog(null, "Ok, continue...");
         
-        
-        
-        
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
         
         
         
