@@ -567,7 +567,43 @@ public class ComputerScience30S
         
         // Loop with a string...
         
+        String password = JOptionPane.showInputDialog("Create a password");
         
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again!");
+            password = JOptionPane.showInputDialog("Create another password");
+        }
+        
+        JOptionPane.showMessageDialog(null, "Ok, continue...");
+        
+        // The next type of loop is rarely used (you may never need it)
+        // it tests for true/false at the bottom of the loop, you use it
+        // when you want the body (block) of the loop to run at least
+        // once!
+        
+        String choice = "";        
+        
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
+        
+        JOptionPane.showMessageDialog(null, "You got it");
+        
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println("i = " + i);
+        }
+        
+        // Variations on the for loop:
+            // start at 100
+            // end (stop) at zero (including zero)
+            // count down (not up)
+            // count by 10s (not 1s)
         
         
         
