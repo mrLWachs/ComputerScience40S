@@ -606,9 +606,24 @@ public class ComputerScience30S
             // count down (not up)
             // count by 10s (not 1s)
         
+        for (int counting = 100; counting >= 0; counting -= 10) {
+            System.out.println("counting = " + counting);
+        }
         
-        
-        
+        // After you autocomplete a for loop (by typing "for" then tab),
+        // you can immediately rename the varaible "i" (which is highlighted)
+        // to whatever you want, if you press tab a second time, it will 
+        // highlight the ending value of the loop
+
+        // One more for "fun"
+
+        for (double i = 99.789; i > 15.6; i/=5.25) {
+            System.out.println("i = " + i);
+        }
+
+        ///////////////////////////////////////////////////////////////////////
+        // EXAMPLE ASSIGNMENT:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
