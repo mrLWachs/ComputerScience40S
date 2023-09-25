@@ -658,9 +658,9 @@ public class ComputerScience30S
                 
         // When preparing this for hand in, you should first:
             // Make sure all comments are done
-            // Clean up your code (see tip 13 below)
+            // Clean up your code (see tip 12 below)
             // Watch out for long code lines (beyond the border)
-            // Set NetBeans for printing a PDF (see tip 14 below)
+            // Set NetBeans for printing a HTML document (see tip 15 below)
             // Create as many screen captures as needed to prove it works
         
         // This line terminates any running java program at any point
