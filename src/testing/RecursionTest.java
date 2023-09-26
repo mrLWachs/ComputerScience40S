@@ -16,7 +16,9 @@ public class RecursionTest
      * Default constructor, set class properties
      */
     public RecursionTest() {
+        System.out.println("Recursion test started...");
         
+        System.out.println("Recursion test complete!");
     }
    
 }

@@ -26,11 +26,11 @@ public class Tester
      * letter to start) and NO return type (not even "void")
      */
     public Tester() {
-        System.out.println("\nTesting started...\n");        
+        System.out.println("Testing started...");        
         RecursionTest unit1 = new RecursionTest(); 
         // Later we will add code here for unit 2 and 3...
         
-        System.out.println("\nTesting complete!\n");
+        System.out.println("Testing complete!");
     }
      
 }
