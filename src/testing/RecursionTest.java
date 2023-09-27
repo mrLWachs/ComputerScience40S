@@ -12,8 +12,14 @@ package testing;
 public class RecursionTest 
 {
     
+    /**
+     * Constructor method - constructor methods with no parameters (like this 
+     * one) - empty round brackets it is called the "default" constructor
+     */
     public RecursionTest() {
+        System.out.println("Recursion Test started...");
         
+        System.out.println("Recursion Test complete!");
     }
    
 }
