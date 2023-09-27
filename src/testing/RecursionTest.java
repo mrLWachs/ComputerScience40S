@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
  
 /**
  * RecursionTest.java - description
@@ -13,10 +15,18 @@ public class RecursionTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Constructor method - constructor methods with no parameters (like this 
+     * one) - empty round brackets it is called the "default" constructor
      */
     public RecursionTest() {
+        System.out.println("Recursion Text Started...");
         
+        
+        int answer = Calculator.factorial(5);
+        System.out.println("5 factorial = " + answer);
+        
+        
+        System.out.println("Recursion Text Complete!");
     }
    
 }
