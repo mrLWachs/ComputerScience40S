@@ -4,7 +4,7 @@ package tools;
 
  
 /**
- * Calculator.java - description
+ * Calculator.java - useful collection of methods for doing calculations.
  *
  * @author Mr. Wachs
  * @since Sep 26, 2023, 11:49:30 a.m.
