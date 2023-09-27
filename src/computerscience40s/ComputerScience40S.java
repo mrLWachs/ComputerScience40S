@@ -2,9 +2,6 @@
 /** Required package class namespace */
 package computerscience40s;
 
-/** Required API imports */
-import testing.Tester;
-
 
 /** 
  * ComputerScience40S.java - the large in class example we continue to work 
