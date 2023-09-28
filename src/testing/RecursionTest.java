@@ -63,7 +63,7 @@ public class RecursionTest
             
             int base = 5;
             
-            double answer = Calculator.pow(base, exponent);
+            double answer = Calculator.power(base, exponent);
             System.out.println(base + " to the exponent " + 
                                exponent + " = " + answer);
         }

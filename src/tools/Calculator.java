@@ -28,5 +28,26 @@ public class Calculator
         // RECURSIVE CASE - the method calls itself (like a loop)
         return number * factorial(number-1);   
     }
+
+    /**
+     * Calculates the power of a base to it's exponent (recursively)
+     * 
+     * @param base the base of the power
+     * @param exponent the exponent of the power
+     * @return the base^exponent
+     */
+    public static double power(int base, int exponent) {
+        // Base case(s):
+        // =============
+        
+        if (exponent == 0) return 1;
+        if (exponent == 1) return base;
+        
+        // Recursive case(s):
+        // ==================
+        
+        return base * power(base, exponent - 1);
+        
+    }
     
 }
