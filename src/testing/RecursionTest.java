@@ -55,11 +55,18 @@ public class RecursionTest
         
         System.out.println("Recursive powers................................");
         
+        final int MIN = 2;
+        final int MAX = 5;
         
-        
-        
-        
-        
+        for (int exponent = MIN; exponent <= MAX; exponent++) {
+            
+            int base = 5;
+            
+            double answer = Calculator.power(base, exponent);
+            System.out.println(base + " to the exponent " + exponent + 
+                               " = " + answer);
+            
+        }
         
         System.out.println("\nRecursion complete!\n");
     }
