@@ -22,7 +22,7 @@ public class Calculator
      * @param number the number to calculate the factorial of
      * @return the factorial of the parameter (number)
      */
-    public static int factorial(int number) {        
+    public static long factorial(int number) {        
         // BASE CASE - stops the recursion (stops the looping effect)
         if (number <= 1) return 1;
         // RECURSIVE CASE - the method calls itself (like a loop)
