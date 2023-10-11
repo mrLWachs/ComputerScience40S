@@ -24,6 +24,16 @@ public class ComputerScience30S
 {
 
     public static void main(String[] args) {
+        // The line below "calls" a method (by its name) like making a 
+        // "phone call" it uses two round brackets "( )" like functions in
+        // math - when you see two round brackets, it is a clue that a 
+        // method is being called (or it is the method itself)
+        learnIntroToJava();
+        
+    }
+
+    private static void learnIntroToJava() {
+        
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////////////////////
@@ -668,6 +678,7 @@ public class ComputerScience30S
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets
+        
         
     }
     
