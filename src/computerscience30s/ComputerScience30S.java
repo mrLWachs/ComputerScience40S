@@ -34,8 +34,7 @@ public class ComputerScience30S
         learnMethods(); // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans...
-        
+        // left side of NetBeans...        
     }
 
     private static void learnIntroToJava() {
@@ -697,6 +696,17 @@ public class ComputerScience30S
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
+        
+        // Call it again (now that we have the method, autocomplete recognizes
+        // it and you can find it when you press CTRL + SPACE)
+        writeStar();
+        
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
     }
 
 }
