@@ -16,38 +16,11 @@ public class AdvancedClassesTest
      * Default constructor, set class properties
      */
     public AdvancedClassesTest() {
+        System.out.println("Advanced Classes Test started...");
         
+        
+        
+        System.out.println("Advanced Classes Test complete!");
     }
      
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "AdvancedClassesTest: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public AdvancedClassesTest clone() {
-        return this;
-    }
-    
 }
