@@ -698,6 +698,18 @@ public class ComputerScience30S
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
+        
+        // Call it again (now that we have the method, autocomplete recognizes
+        // it and you can find it when you press CTRL + SPACE
+        writeStar();
+        
+        
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
     }
     
 }
@@ -779,3 +791,8 @@ public class ComputerScience30S
 //      CTRL and SHIFT and "+" expands all code folds
 // (17) If you write the "call" to a method, before writing the method 
 //      itself, the lightbulb (see tip 10) will help you write it
+// (18) To remove the line that gets added to methods when you use the lightbulb
+//      "throws new excepton..." you go to Tools -> Templates, and scroll down
+//      and click on the "+" beside "Java", and select "Code Snippets" and 
+//      "Generated Method Body" and then Open in Editor - then delete the 
+//      last line and then save and close the template
