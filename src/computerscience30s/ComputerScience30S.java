@@ -29,12 +29,7 @@ public class ComputerScience30S
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
         
-        // learnIntroToJava();
-        
-        learnMethods();     // Calling another method (that may not yet exist)
-        // If you call upon a method that does not yet exist, NetBeans can help
-        // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans...
+        learnIntroToJava();
         
     }
 
@@ -684,34 +679,9 @@ public class ComputerScience30S
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets
-        
-        
+          
     }
 
-    private static void learnMethods() {
-        System.out.println("Start Learning Methods...");
-        
-        // Methods (functions, procedures, actions) are named in a style like 
-        // variables are named (lowercase then camel casing), but use verb
-        // type words starting with lowercase then using camel casing the
-        // presense of round brackets ( ) indicate a method. We make methods
-        // for: (1) to break up a problem (2) reusability (3) to avoid 
-        // repeating code
-        
-        // Code to "jump" to a method, is "calling" the method (method call)
-        writeStar();
-        
-        // Call it again (now that we have the method, autocomplete recognizes
-        // it and you can find it when you press CTRL + SPACE
-        writeStar();
-        
-        
-    }
-
-    private static void writeStar() {
-        System.out.println("*");
-    }
-    
 }
 
 // NETBEANS TIPS:
