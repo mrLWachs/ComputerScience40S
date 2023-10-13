@@ -703,24 +703,6 @@ public class ComputerScience30S
         // it and you can find it when you press CTRL + SPACE)
         writeStar();
         
-        // When we call a method, we place "data" (information) inside the
-        // round brackets and that data is "passed" (sending) over to the 
-        // method. The data being passed is technically called the "argument"
-        // and the data being received is called the "parameter(s)". You can
-        // always change the arguement.
-        
-        write("Defenestration");
-        write("Vollywood");
-        write("pancakes");
-        write("Spider-man");
-        write("Batman");
-        
-        // You can have more than one, multiple parameters/arguments in a
-        // method which are seperated with commas ","
-        
-        writeLotsOf("Dalmations", 101);
-        writeLotsOf("Problems", 99);
-        
         
     }
 
@@ -728,24 +710,8 @@ public class ComputerScience30S
         System.out.println("*");
     }
 
-    private static void write(String thing) {
-        // Information (data) "passed" to this method is called the parameter,
-        // if you use the lightbulb to write this method, you should (do this 
-        // first) rewrite the name of that parameter
-        System.out.println(thing);
-    }
-
-    private static void writeLotsOf(String thing, int times) {
-        // Methods can have no parameters, one parameter, or lots of parameters,
-        // if it has more than one parameter, they are separated by commas
-        for (int i = 0; i < times; i++) {
-            write(thing);
-        }        
-    }
-
 }
 
-// <editor-fold>
 
 // NETBEANS TIPS:
 // ==============
@@ -829,13 +795,3 @@ public class ComputerScience30S
 //      and click on the "+" beside "Java", and select "Code Snippets" and 
 //      "Generated Method Body" and then Open in Editor - then delete the 
 //      last line and then save and close the template
-// (19) On the left side window, the Navigator window helps find and jump to
-//      methods if you double click them
-// (20) If you have to rename a variable or a method, select the word (the name
-//      of the variable or method) and then press CTRL + R, then type in a
-//      new name
-// (21) If you hold down the "CTRL" key and then click on a call to a method the
-//      call becomes a "link" and jumps to the method itself
-
-
-// </editor-fold>
