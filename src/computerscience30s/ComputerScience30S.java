@@ -795,3 +795,10 @@ public class ComputerScience30S
 //      and click on the "+" beside "Java", and select "Code Snippets" and 
 //      "Generated Method Body" and then Open in Editor - then delete the 
 //      last line and then save and close the template
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
+// (21) If you hold down the "CTRL" key and then click on a call to a method the
+//      call becomes a "link" and jumps to the method itself
