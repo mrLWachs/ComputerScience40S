@@ -712,6 +712,7 @@ public class ComputerScience30S
 
 }
 
+// <editor-fold>
 
 // NETBEANS TIPS:
 // ==============
@@ -802,3 +803,6 @@ public class ComputerScience30S
 //      new name
 // (21) If you hold down the "CTRL" key and then click on a call to a method the
 //      call becomes a "link" and jumps to the method itself
+
+
+// </editor-fold>
