@@ -710,6 +710,16 @@ public class ComputerScience30S
         // always change the arguement.
         
         write("Defenestration");
+        write("Vollywood");
+        write("pancakes");
+        write("Spider-man");
+        write("Batman");
+        
+        // You can have more than one, multiple parameters/arguments in a
+        // method which are seperated with commas ","
+        
+        writeLotsOf("Dalmations", 101);
+        writeLotsOf("Problems", 99);
         
         
     }
@@ -723,6 +733,14 @@ public class ComputerScience30S
         // if you use the lightbulb to write this method, you should (do this 
         // first) rewrite the name of that parameter
         System.out.println(thing);
+    }
+
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }        
     }
 
 }
@@ -816,6 +834,8 @@ public class ComputerScience30S
 // (20) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
+// (21) If you hold down the "CTRL" key and then click on a call to a method the
+//      call becomes a "link" and jumps to the method itself
 
 
 // </editor-fold>
