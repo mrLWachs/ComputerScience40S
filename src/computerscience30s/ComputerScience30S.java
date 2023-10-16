@@ -721,6 +721,14 @@ public class ComputerScience30S
         writeLotsOf("Dalmations",101);
         writeLotsOf("Problems",99);
         
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        int number = giveMeNumber();
+        
+        write("Number is " + number);
+        
     }
 
     private static void writeStar() {
@@ -742,8 +750,22 @@ public class ComputerScience30S
         } 
     }
 
+    private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or they can have
+        // ONE output which means the method will "return" (the keyword to use)
+        // that data type defined in the method signature line
+        return random(0, 100);
+    }
 
-
+    
+    private static int random(int low, int high) {
+        double seed   = Math.random();              // Seed value (random)
+        double L      = (double)low;                // Casting into a double
+        double H      = (double)high;
+        double number = (H - L + 1) * seed + L;     // Formula
+        return (int)number;                         // Cast back into a int
+    }
+    
 }
 
 // <editor-fold>
