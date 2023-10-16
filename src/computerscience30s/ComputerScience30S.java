@@ -756,16 +756,15 @@ public class ComputerScience30S
         // that data type defined in the method signature line
         return random(0, 100);
     }
-
     
     private static int random(int low, int high) {
-        double seed   = Math.random();              // Seed value (random)
-        double L      = (double)low;                // Casting into a double
-        double H      = (double)high;
-        double number = (H - L + 1) * seed + L;     // Formula
-        return (int)number;                         // Cast back into a int
+        double seed   = Math.random();                  // Seed value (random)
+        double L      = (double)low;                    // Casting in to double
+        double H      = (double)high;                   
+        double number = (H - L + 1) * seed + L;         // Formula
+        return (int)number;                             // Cast back to int
     }
-    
+
 }
 
 // <editor-fold>
