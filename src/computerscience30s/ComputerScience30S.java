@@ -759,10 +759,10 @@ public class ComputerScience30S
     
     private static int random(int low, int high) {
         double seed   = Math.random();                  // Seed value (random)
-        double L      = (double)low;                    // Casting in to double
+        double L      = (double)low;                    // Casting into a double
         double H      = (double)high;                   
-        double number = (H - L + 1) * seed + L;         // Formula
-        return (int)number;                             // Cast back to int
+        double number = (H - L + 1) * seed + L;         // Random number Formula
+        return (int)number;                             // Cast back into a int
     }
 
 }
