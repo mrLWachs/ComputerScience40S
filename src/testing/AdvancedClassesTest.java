@@ -21,7 +21,7 @@ public class AdvancedClassesTest
         System.out.println("Start Advanced Classes testing...");
         
         // Using the class to create an object with the default constructor:
-        // class object = call constructor method (default) 
+        // class object = call constructor method (default)   
         Person person = new Person();
         
         // The "Object" (in this case called "person" - lowercase "p") can also 
@@ -29,8 +29,6 @@ public class AdvancedClassesTest
         
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
-        
-        
         
         
         System.out.println("Completed Advanced Classes test!");

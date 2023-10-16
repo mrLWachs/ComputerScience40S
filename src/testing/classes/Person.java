@@ -47,6 +47,13 @@ public class Person
     }
     
     /**
+     * A person has a birthday (the age goes up by one)
+     */
+    public void birthday() {
+        age++;
+    }
+    
+    /**
      * Outputs information about the person to the screen
      */
     public void talk() {
@@ -54,15 +61,8 @@ public class Person
             System.out.println(name + " is " + age + " identifies " + gender);
         }
         else {
-            System.out.println("Boooo!");
+            System.out.println("Booooo!");
         }
-    }
-    
-    /**
-     * A person has a birthday (the age goes up by one)
-     */
-    public void birthday() {
-        age++;
     }
     
 }
