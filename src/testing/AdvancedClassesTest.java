@@ -30,6 +30,18 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
+        person.name = "Christopher Yesland";
+        person.gender = "male";
+        
+        // The code below would generate errors because of encapsulation......    
+        // person.age = 30;
+        
+        // Recall our method... (to see any changes)
+        person.talk();
+        
+        
+        
+        
         
         
         
