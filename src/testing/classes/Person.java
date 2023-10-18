@@ -76,7 +76,6 @@ public class Person
         this.gender = gender;
     }
     
-    
     public void die() {
         alive = false;
     }

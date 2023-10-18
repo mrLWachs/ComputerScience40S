@@ -32,10 +32,27 @@ public class AdvancedClassesTest
         
         person.name = "Sir Timothy Tabernichel the 3rd";
         person.gender = "male";
+        // Recall our method... (to see any changes)
         person.talk();
         
         // The code below would generate errors because of encapsulation......    
         // person.age = 30;
+        
+        Person ironMan = new Person("Tony Stark",58,"Iron man");
+        // Try to call (invoke) some of our other methods:
+        ironMan.birthday();
+        ironMan.talk();
+        ironMan.die();
+        ironMan.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed Advanced Classes test!");
