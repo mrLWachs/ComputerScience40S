@@ -77,10 +77,6 @@ public class Person
     }
     
     
-    
-    
-    
-    
     public void die() {
         alive = false;
     }

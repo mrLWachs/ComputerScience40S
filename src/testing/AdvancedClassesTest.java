@@ -38,6 +38,13 @@ public class AdvancedClassesTest
         
         // Recall our method... (to see any changes)
         person.talk();
+                
+        Person ironMan = new Person("Tony Stark",58,"Iron man");
+        // Try to call (invoke) some of our other methods:
+        ironMan.birthday();
+        ironMan.talk();
+        ironMan.die();
+        ironMan.talk();
         
         
         
