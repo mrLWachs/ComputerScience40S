@@ -23,23 +23,7 @@ public class Student extends Person
      * or "usage" with the student class
      */
     public Book book;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     
     /**
      * Default constructor, set class properties
