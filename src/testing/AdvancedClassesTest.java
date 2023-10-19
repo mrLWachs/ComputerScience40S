@@ -3,6 +3,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
  
 /**
@@ -46,8 +47,14 @@ public class AdvancedClassesTest
         ironMan.die();
         ironMan.talk();
         
-        
-        
+        // Instantiate (means create an "instance of") a student object 
+        Student student = new Student();
+        student.talk();
+        // Because the "name" property (inherited from Person) is public (not
+        // encapsulated) we can change ("modify", "mutate") that property
+        // we cannot chang eage or gender those ARE encapsulated (private)
+        student.name = "Stu Denty";
+        student.talk();
         
         
         

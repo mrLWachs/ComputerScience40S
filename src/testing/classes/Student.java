@@ -10,7 +10,7 @@ package testing.classes;
  * "signature" line for this class. If we add the "modifier" word "extends" 
  * it causes inheritance and then the class it inherits from is typed next. 
  * This is a "is a" relationship, so a "Student is a Person", and this class  
- * inherits all properties and methods from the "parent" (super) class. 
+ * inherits all properties and methods from the "parent" (super) class. `
  *
  * @author Mr. Wachs
  * @since Oct 19, 2023, 10:20:23 a.m.
@@ -18,6 +18,15 @@ package testing.classes;
 public class Student extends Person
 {
 
+     /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
+     */
+    public Book book;
+    
+    
+    
+    
     /**
      * Default constructor, set class properties
      */
