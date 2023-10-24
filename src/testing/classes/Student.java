@@ -24,6 +24,9 @@ public class Student extends Person
      */
     public Book book;
     
+    private int number;     // Class properties (and inherited other properties)  
+    private double gpa;     // Encapsulated property
+    
     
     /**
      * Default constructor, set class properties
@@ -31,6 +34,31 @@ public class Student extends Person
     public Student() {
         
     }
+    
+    public Student(String name, int age, String gender) {
+        
+    }
+    
+    public void cram() {
+        
+    }
+    
+    public void slackOff() {
+        
+    }
+    
+    public void study() {
+        
+    }
+    
+    public void talk() {
+        
+    }
+    
+    private void secret() {
+        
+    }
+    
     
     /**
      * String representation of this object
