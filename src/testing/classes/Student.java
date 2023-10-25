@@ -29,14 +29,37 @@ public class Student extends Person
     
     
     /**
-     * Default constructor, set class properties
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well)
      */
     public Student() {
-        
+        super();
+        // The keyword "super" refers to the "super-class" or "parent" class
+        // in this case that is the Person class - by adding the round brackets
+        // we make a call to the super constructor  
+        gpa    = 0.0;
+        number = 1;
+        book   = new Book();
     }
     
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param gender the gender for this student
+     */
     public Student(String name, int age, String gender) {
-        
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the properties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name, age, gender);      
+        // Now set the properties of "this" (the Student) class...
+        gpa    = 0.0;
+        number = 1;
+        book   = new Book();
     }
     
     public void cram() {
