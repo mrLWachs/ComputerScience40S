@@ -734,7 +734,7 @@ public class ComputerScience30S
         
         output("Hello");
         
-        output("Good-bye","Learning Methods");
+        output("Good-Bye","Learning Methods");
         
         System.out.println("Completed Learning Methods!"); 
     }
@@ -761,7 +761,7 @@ public class ComputerScience30S
     /**
      * Writes something on the screen multiple times
      * 
-     * @param thing the something to write
+     * @param thing the something to write 
      * @param times how many times to write it
      */
     private static void writeLotsOf(String thing, int times) {
@@ -803,7 +803,7 @@ public class ComputerScience30S
     /**
      * Display text in a dialog
      * 
-     * @param text the text to display
+     * @param text the test to display
      */
     private static void output(String text) {
         JOptionPane.showMessageDialog(null, text);
@@ -821,7 +821,7 @@ public class ComputerScience30S
         // method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
-    }
+    }    
     
 }
 
