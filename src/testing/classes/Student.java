@@ -37,7 +37,7 @@ public class Student extends Person
         super();
         // The keyword "super" refers to the "super-class" or "parent" class
         // in this case that is the Person class - by adding the round brackets
-        // we make a call to the super constructor  
+        // we make a call to the super constructor        
         gpa    = 0.0;
         number = 1;
         book   = new Book();
@@ -61,7 +61,7 @@ public class Student extends Person
         number = 1;
         book   = new Book();
     }
-    
+        
     public void cram() {
         
     }
@@ -81,8 +81,7 @@ public class Student extends Person
     private void secret() {
         
     }
-    
-    
+        
     /**
      * String representation of this object
      *
