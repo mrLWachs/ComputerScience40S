@@ -60,15 +60,13 @@ public class AdvancedClassesTest
         // Instantiate (means "create") a second Student object (instance)
         Student stewie = new Student("Stewie Griffin", 2, "cat");
         stewie.talk();
-        // Call some student class methods...
+        // Call specific methods from the Student class
         stewie.study();
         stewie.talk();
         stewie.slackOff();
         stewie.talk();
         stewie.cram();
         stewie.talk();
-               
-        
         
         
         
