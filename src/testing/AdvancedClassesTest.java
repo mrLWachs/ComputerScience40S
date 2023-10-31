@@ -4,6 +4,7 @@ package testing;
 
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
  
 /**
@@ -67,6 +68,13 @@ public class AdvancedClassesTest
         stewie.talk();
         stewie.cram();
         stewie.talk();
+        
+        // Instantiate a Teacher object and associate it with a Student object
+        Teacher teacher = new Teacher("Mr. Teachery");
+        teacher.talk();                 // Invoke (call) the inherited method
+        
+        
+        
         
         
         

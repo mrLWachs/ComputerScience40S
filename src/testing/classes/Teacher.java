@@ -25,22 +25,44 @@ public class Teacher extends Person
      */
     public Student[] students;
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
-     * Default constructor, set class properties
+     * Constructor, set class properties to the parameters
+     * 
+     * NOTE: if you write a class and do not write any constructor methods,
+     * then the code will "write one for you" (like our Book class) - BUT if 
+     * you write a constructor WITH parameter(s) then the code will NOT write 
+     * you a default constructor (but you could still write one)
+     * 
+     * @param name the name for this Teacher
      */
-    public Teacher() {
+    public Teacher(String name) {
+        // First, construct a "Person" (from the parent class)
+        super(name, 45, "teacher");
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
+        MAX   = 100;                        // Set the constant to be locked
+        count = 0;                          // Set a variable to start
+        
+        
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      
     /**
      * String representation of this object
