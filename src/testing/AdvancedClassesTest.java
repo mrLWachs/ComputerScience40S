@@ -70,11 +70,8 @@ public class AdvancedClassesTest
         stewie.talk();
         
         // Instantiate a Teacher object and associate it with a Student object
-        Teacher teacher = new Teacher("Mr. Teachery");
-        teacher.talk();                 // Invoke (call) the inherited method
-        
-        
-        
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.talk();
         
         
         
