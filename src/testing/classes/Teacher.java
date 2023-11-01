@@ -43,21 +43,37 @@ public class Teacher extends Person
         // the specific properties ("global variables")
         MAX   = 100;                        // Set the constant to be locked
         count = 0;                          // Set a variable to start
-        
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size
+        students = new Student[MAX];
+        // Note: an array of primitive data types (e.g. int, double, char, 
+        // boolean) will be initialized to simple values (like 0, false, etc.)
+        // but arrays of class level data (like this array of "Student" objects)
+        // are initialized to "null" values 
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    /**
+     * Adds a new student to this teacher
+     * 
+     * @param student the student object to add
+     */
+    public void add(Student student) {
+        // Add the passed student (parameter) into the array at the first 
+        // available "slot" (or spot, index, element, location) - this is
+        // done by using the square brackets "[ ]" and placing the index 
+        // number in the brackets. Remember, arrays start the indexing at 
+        // zero and the last index is always one less than the size 
+        
+    }
+
+    /**
+     * Teaches all the students this teacher has an association with by making
+     * them study (and makes all the students "smarter")
+     */
+    public void teach() {
+        
+    }
     
     
     
@@ -92,5 +108,5 @@ public class Teacher extends Person
     public Teacher clone() {
         return this;
     }
-    
+
 }

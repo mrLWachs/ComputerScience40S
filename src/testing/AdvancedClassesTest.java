@@ -73,9 +73,9 @@ public class AdvancedClassesTest
         Teacher teacher = new Teacher("Ms. Teachery");
         teacher.talk();
         
+        teacher.add(student);
         
-        
-        
+        teacher.teach();
         
         
         
