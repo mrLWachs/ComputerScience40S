@@ -63,8 +63,11 @@ public class Teacher extends Person
         // available "slot" (or spot, index, element, location) - this is
         // done by using the square brackets "[ ]" and placing the index 
         // number in the brackets. Remember, arrays start the indexing at 
-        // zero and the last index is always one less than the size 
-        
+        // zero and the last index is always one less than the size         
+        students[count] = student;        
+        count++;                    // Move to the next index (for next time)
+        // We have to watch for "out of bounds" error (exception)
+        if (count >= MAX) count = 0;
     }
 
     /**
