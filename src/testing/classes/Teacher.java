@@ -83,11 +83,10 @@ public class Teacher extends Person
             // the array are initially set to "null"
             if (students[i] != null) {                  // Array spot not a null
                 students[i].study();                    // Make this spot study
+                students[i].talk();                     // and talk
             }
         }
     }
-    
-    
     
      
     /**
