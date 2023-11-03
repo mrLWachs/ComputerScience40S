@@ -65,9 +65,9 @@ public class Teacher extends Person
         // number in the brackets. Remember, arrays start the indexing at 
         // zero and the last index is always one less than the size         
         students[count] = student;        
-        count++;                    // Move to the next index (for next time)
-        // We have to watch for "out of bounds" error (exception)
-        if (count >= MAX) count = 0;
+        count++;                    // Move to the next index (for next time)        
+        // We have to watch for "out of bounds" error (exception)        
+        if (count >= MAX) count = 0;        
     }
 
     /**
@@ -76,18 +76,17 @@ public class Teacher extends Person
      */
     public void teach() {
         // To access an entire array we use a "for" loop, and the ".length"
-        // feature of arrays
+        // feature of arrays        
         for (int i = 0; i < students.length; i++) {
             // With arrays of "objects" (meaning not primitive data types, but
             // "class" level data types) all indices (plural of "index") in
             // the array are initially set to "null"
             if (students[i] != null) {                  // Array spot not a null
                 students[i].study();                    // Make this spot study
-                students[i].talk();                     // and talk
+                students[i].talk();
             }
-        }
-    }
-    
+        }    
+    }    
      
     /**
      * String representation of this object
