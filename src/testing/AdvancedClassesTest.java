@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -75,6 +76,36 @@ public class AdvancedClassesTest
         teacher.add(student);           // Associate object through method
         teacher.add(stewie);            // or "Teacher has a Student"
         teacher.teach();                // Effect the associated objects
+        
+        // The Object class (parent class of all classes)
+        
+        // All classes (including ones we create) inherit from the object class
+        // which is the parent (super) class of all classes  
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = object2;
+        
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
+        
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
