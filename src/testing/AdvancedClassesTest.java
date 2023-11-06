@@ -3,6 +3,7 @@
 package testing;
 
 
+import javax.swing.JOptionPane;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -109,6 +110,18 @@ public class AdvancedClassesTest
         
         // Since the object class is also the super class of classes we DON'T
         // write but are already part of java, they also inherit toString...    
+        String string = new String("squirrel");
+        System.out.println("String as a string = " + string.toString());
+        
+        // Another example of "built-into" Java class level object that inherits
+        // all the methods (including toString) from the Object class...     
+        JOptionPane joptionpane = new JOptionPane();
+        System.out.println("JOptionPane as string = " + joptionpane.toString());
+        
+        
+        
+        
+        
         
         
         
