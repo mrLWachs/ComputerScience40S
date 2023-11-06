@@ -111,7 +111,7 @@ public class AdvancedClassesTest
         // Since the object class is also the super class of classes we DON'T
         // write but are already part of java, they also inherit toString...        
         String string = new String("squirrel");
-        System.out.println("String  as string = " + string.toString());
+        System.out.println("String as string = " + string.toString());
         
         // Another example of "built-into" Java class level object that inherits
         // all the methods (including toString) from the Object class...        
