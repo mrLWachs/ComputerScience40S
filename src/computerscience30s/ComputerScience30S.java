@@ -31,10 +31,11 @@ public class ComputerScience30S
         
         // learnIntroToJava();
         
-        learnMethods(); // Calling another method (that may not yet exist)
+        // learnMethods(); // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans...        
+        // left side of NetBeans...       
+        learnArrays();
     }
 
     private static void learnIntroToJava() {
@@ -816,12 +817,20 @@ public class ComputerScience30S
      * @param title what to show at the top (title) of the dialog
      */
     private static void output(String text, String title) {
-        // Overloaded methods are methods with the same name, BUT diferent 
+        // Overloaded methods are methods with the same name, BUT different 
         // parameter(s) / arguement(s) so we know which version of the 
         // method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
     }    
+
+    private static void learnArrays() {
+        System.out.println("Start learning arrays...");
+        
+        
+        
+        System.out.println("Completed learning arrays!");
+    }
     
 }
 
