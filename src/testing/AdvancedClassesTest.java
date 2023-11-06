@@ -86,7 +86,19 @@ public class AdvancedClassesTest
         Object object2 = new Object();
         Object object3 = object2;
 
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
         
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
+        System.out.println("Object 1 = " + object1.toString());
+        System.out.println("Object 2 = " + object2.toString());
+        System.out.println("Object 3 = " + object3.toString());
         
         
         
