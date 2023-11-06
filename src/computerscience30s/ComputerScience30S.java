@@ -835,6 +835,12 @@ public class ComputerScience30S
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
+        // An array is a collection of similar data elements (values or 
+        // variables) of same memory size each stored at contiguous memory 
+        // (right next to each other in sequence) locations. It is a data
+        // structure where each data element can be accessed directly by 
+        // using its index number (or "spot", "element", "key", "subscript")
+        
         
         
         System.out.println("Completed learning arrays!");
