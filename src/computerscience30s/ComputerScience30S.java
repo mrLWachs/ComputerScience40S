@@ -23,6 +23,11 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S 
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         // The line below "calls" a method (by its name) like making a 
         // "phone call" it uses two round brackets "( )" like functions in
@@ -34,7 +39,7 @@ public class ComputerScience30S
         // learnMethods(); // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans...       
+        // left side of NetBeans... 
         learnArrays();
     }
 
@@ -824,6 +829,9 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE);
     }    
 
+    /**
+     * Learn the content of the arrays unit (unit 3)
+    */
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
