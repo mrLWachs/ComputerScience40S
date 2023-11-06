@@ -81,7 +81,12 @@ public class AdvancedClassesTest
         // The Object class (parent class of all classes)
 
         // All classes (including ones we create) inherit from the object class
-        // which is the parent (super) class of all classes  
+        // which is the parent (super) class of all classes . For more 
+        // references, you can visit: 
+        //  --> https://bit.ly/464M6l4
+        //  --> https://bit.ly/45WF560
+        //  --> https://bit.ly/49rZjHU
+        
         Object object1 = new Object();
         Object object2 = new Object();
         Object object3 = object2;
