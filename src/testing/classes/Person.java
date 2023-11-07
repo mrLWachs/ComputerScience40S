@@ -123,5 +123,27 @@ public class Person
         return "Person";
     }
     
+     /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // SHALLOW equals method could be a simple comparison like this:
+        // return true;
+        
+        // DEEP equals method could be a "deeper" comparison like this:
+        
+        // First need to "cast" the object parameter into a "Person" object
+        Person that = (Person)object;
+        
+        // Compare the things (properties) we want to compare
+        if (this.alive != that.alive) return false;
+        
+        return true;
+    }
+    
     
 }
