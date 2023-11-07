@@ -839,7 +839,29 @@ public class ComputerScience30S
         // variables) of same memory size each stored at contiguous memory 
         // (right next to each other in sequence) locations. It is a data
         // structure where each data element can be accessed directly by 
-        // using its index number (or "spot", "element", "key", "subscript")
+        // using its "index" number (or "spot", "element", "key", "subscript")
+        
+        // Create (declare) a variable for comparison
+        int variable = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        // Now declare (create) an array:
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
