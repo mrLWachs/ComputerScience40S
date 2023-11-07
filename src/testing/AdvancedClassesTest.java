@@ -109,7 +109,7 @@ public class AdvancedClassesTest
         // of the Object class - remember the Object class is the parent or
         // super class of ALL classes - so they all inherit toString, including
         // classes we write...
-        System.out.println("Person as string = " + person.toString());
+        System.out.println("Person as string = "  + person.toString());
         System.out.println("Student as string = " + student.toString());
         System.out.println("Teacher as string = " + teacher.toString());
         

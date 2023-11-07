@@ -83,7 +83,10 @@ public class Person
         this.gender = gender;
     }
     
-    
+    /**
+     * The person dies (changing/modifying) the protected property (alive) 
+     * through this method
+     */
     public void die() {
         alive = false;
     }
@@ -106,5 +109,19 @@ public class Person
             System.out.println("Booooo!");
         }
     }
+    
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        // This method over-rides the toString method inherited from the object 
+        // class. As well, all children of this class will inherit this method
+        // unless they also over-ride the method themselves
+        return "Person";
+    }
+    
     
 }

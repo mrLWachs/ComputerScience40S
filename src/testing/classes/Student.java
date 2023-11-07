@@ -109,9 +109,7 @@ public class Student extends Person
         System.out.println("\t Number: \t" + number);
         System.out.println("\t GPA:    \t" + gpa);  
     }
-    
-    
-        
+            
     /**
      * String representation of this object
      *
