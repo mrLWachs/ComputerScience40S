@@ -122,8 +122,8 @@ public class Person
         // unless they also over-ride the method themselves
         return "Person";
     }
-    
-     /**
+        
+    /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
      * @param object the object to compare to
@@ -144,6 +144,5 @@ public class Person
         
         return true;
     }
-    
     
 }
