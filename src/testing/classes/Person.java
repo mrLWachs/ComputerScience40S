@@ -134,11 +134,12 @@ public class Person
         // Shallow clone method could be something like:
         // return true;
         
-        // Deep clone method could be something like:
-        // First create new memory (do not use the same memory)
-        Person that = (Person)object;
-        // To go even deeper, we need to duplicate (clone) the properties
+        // DEEP equals method could be a "deeper" comparison like this:
         
+        // First need to "cast" the object parameter into a "Person" object
+        Person that = (Person)object;
+        
+        // Compare the things (properties) we want to compare
         
         
     }
