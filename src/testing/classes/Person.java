@@ -131,18 +131,18 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
-        // SHALLOW equals method could be a simple comparison like this:
+        // Shallow clone method could be something like:
         // return true;
         
-        // DEEP equals method could be a "deeper" comparison like this:
-        
-        // First need to "cast" the object parameter into a "Person" object
+        // Deep clone method could be something like:
+        // First create new memory (do not use the same memory)
         Person that = (Person)object;
+        // To go even deeper, we need to duplicate (clone) the properties
         
-        // Compare the things (properties) we want to compare
-        if (this.alive != that.alive) return false;
         
-        return true;
+        
     }
+    
+    
     
 }
