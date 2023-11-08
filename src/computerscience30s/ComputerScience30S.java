@@ -911,7 +911,24 @@ public class ComputerScience30S
         // or resize) using the same array but now giving it some size (but 
         // still empty)
         
+        a = new double[3];
         
+        // In memory....
+        //
+        //   +----------+----------+----------+
+        // a |          |          |          | (now has size of 3, but empty)
+        //   +----------+----------+----------+
+        //  
+        
+        // Now fill the content
+        a[0] = 1.1;
+        a[1] = 2.2;
+        a[2] = 3.3;
+
+        //   +----------+----------+----------+
+        // a |   1.1    |   2.2    |   3.3    | (now it is filled with content)
+        //   +----------+----------+----------+
+        //        0          1          2
         
         
         
