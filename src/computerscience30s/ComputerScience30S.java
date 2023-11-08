@@ -930,9 +930,20 @@ public class ComputerScience30S
         //   +----------+----------+----------+
         //        0          1          2
         
+        // You can re-dimension (resize) an array multiple times, BUT
+        // every time it wipes out any content stored in the array
         
+        a = new double[5];
         
+        //   +----------+----------+----------+----------+----------+
+        // a |          |          |          |          |          | (size 5)
+        //   +----------+----------+----------+----------+----------+
+        //        0          1          2          3          4
         
+        // Another way to declare arrays, but this way creates the array of
+        // a set size, BUT with pre-filled values inside (make and fill at the
+        // same time - on the same ONE line of code) - you can as an option,
+        // put the "[]" beside the data type OR the array name
         
         
         
