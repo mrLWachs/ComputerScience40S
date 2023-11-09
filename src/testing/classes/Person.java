@@ -141,12 +141,37 @@ public class Person
         
         // Compare the things (properties) we want to compare
         if (this.alive != that.alive)         return false;
-        
-        
+        if (this.age   != that.age)           return false;
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;
+                
         // We made it through all the above "if" checks, so they are equal
         return true;
     }
     
-    
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // Shallow clone method could be something like:
+        // return this;
+        
+        // A slightly less shallow (slightly more deep) could be...
+        // return new Person();
+        
+        // Deep clone could look like this...
+        // First create new memory (do not use the same memory)
+        Person that = new Person();
+        // To go deeper, we need to duplicate (clone) ALL the properties
+        that.age    = this.age;
+        that.alive  = this.alive;
+        that.name   = this.name;
+        that.gender = this.gender;
+        // Finally return the copied (cloned) new object
+        return that;
+    }
     
 }
