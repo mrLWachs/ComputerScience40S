@@ -975,11 +975,15 @@ public class ComputerScience30S
         //            0    ...   99
         // Remember, the last index is always ONE LESS than the length
         
+        // Output that spot
+        System.out.println(numbers[99]);
         
+        // Perform operations (equations) with array indices like variables
+        numbers[0] = numbers[99] + numbers[99];
+        System.out.println(numbers[0]);
         
-        
-        
-        
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
         
         
         
