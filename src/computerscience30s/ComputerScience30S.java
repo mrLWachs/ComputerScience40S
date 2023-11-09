@@ -896,9 +896,21 @@ public class ComputerScience30S
         // They would be "out of bounds" errors (or "range" error)
         
         
+        // When declaring an array, the two square brackets "[ ]" can be 
+        // put to the right of the data type OR (in Java) to the right
+        // of the name of the array
         
+        // Declare an array (a little different) of NO size...
+        double a[];
         
+        // In memory...
+        //
+        // a
+        //
         
+        // Later on (in the code) you can re-create (re-declare, re-dimension, 
+        // or resize) using the same array but now giving it some size (but 
+        // still empty)
         
         
         
