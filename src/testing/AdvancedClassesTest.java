@@ -157,10 +157,11 @@ public class AdvancedClassesTest
         // created (see the comment in "ComputerScience40S.java" to do this). 
         // Now we also over-rode the clone method
         
-        
-        
-        
-        
+        // Testing the clone() method:
+        Person clone = person.clone();
+        System.out.println("Person is " + person.toString());
+        System.out.println("Clone  is " + clone.toString());
+        if (person.equals(clone)) System.out.println("Person=Clone");
         
         
         

@@ -151,4 +151,25 @@ public class Person
     
     
     
+    public Person clone() {
+        // Shallow clone method could be something like:
+        // return this;
+        
+        //  A little "deeper" (or a little less "shallow") could be...
+        // return new Person();
+        
+        // Go Deeper, the clone method could be...
+        // First create new memory (do not use the same memory)
+        Person that = new Person();
+        // To go even deeper, we need to duplicate (clone) ALL the properties
+        that.age    = this.age;
+        that.alive  = this.alive;
+        that.name   = this.name;
+        that.gender = this.gender;
+        // Finally return the copied (cloned) new object
+        return that;
+    }
+    
+    
+    
 }
