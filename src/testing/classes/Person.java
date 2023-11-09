@@ -141,9 +141,7 @@ public class Person
         
         // Compare the things (properties) we want to compare
         if (this.alive != that.alive)         return false;
-        if (this.age   != that.age)           return false;
-        if (!this.name.equals(that.name))     return false;
-        if (!this.gender.equals(that.gender)) return false;
+        
         
         // We made it through all the above "if" checks, so they are equal
         return true;
