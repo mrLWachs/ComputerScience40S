@@ -163,11 +163,11 @@ public class AdvancedClassesTest
         System.out.println("Clone  is " + clone.toString());
         if (person.equals(clone)) System.out.println("Person=Clone");
         
+        // Change one of the properties of our second object
+        clone.birthday();
+        if (person.equals(clone)) System.out.println("Person=Clone");
         
-        
-        
-        
-        
+       
         
         
         
