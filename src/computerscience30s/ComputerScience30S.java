@@ -995,8 +995,19 @@ public class ComputerScience30S
         // and TAB) starts at 0, goes up by 1, is "less than" then ending 
         // number (which can be the length)
         
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
         
-        
+        // Array can easily work with methods, the arrays can be sent into a 
+        // method (as one of multiple parameters, or the only parameter), and 
+        // arrays can be outputted (returned) from a method - in other words:
+        // Arrays can be INPUT(s) or OUTPUT from a method
         
         
         
