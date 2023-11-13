@@ -1011,8 +1011,8 @@ public class ComputerScience30S
         // Arrays can be INPUT(s) or OUTPUT from a method
         
         output(numbers);
-        
-        
+        output(array);
+        output(coins);
         
         
         
@@ -1043,6 +1043,21 @@ public class ComputerScience30S
         }
         text = text + "]";
         output(text);           // Outputs it by calling an overloaded method
+    }
+
+    /**
+     * Convert all the doubles into integers and then output the array in a 
+     * dialog
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(double[] array) {
+        int[] a = convert(array);   // Create int array of converted doubles        
+        output(a);                  // Now output the converted array
+    }
+
+    private static int[] convert(double[] array) {
+        
     }
 
     
