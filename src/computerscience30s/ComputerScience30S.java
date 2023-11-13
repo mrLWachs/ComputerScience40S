@@ -1056,24 +1056,21 @@ public class ComputerScience30S
         output(a);                  // Now output the converted array
     }
 
+    /**
+     * Converts an array of doubles into an array of integers
+     * 
+     * @param array the array of doubles
+     * @return an array of integers
+     */
     private static int[] convert(double[] array) {
-        
+        // Methods can return (output) entire arrays
+        int[] a = new int[array.length];      // Create empty array (same size)
+        for (int i = 0; i < a.length; i++) {  // Traverse the array
+            a[i] = (int)array[i];             // Cast the double into a int
+        }
+        return a;
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   
 }
 
 // <editor-fold>
@@ -1170,6 +1167,15 @@ public class ComputerScience30S
 // (22) NetBeans can auto comment methods if you type "/**" above the method
 //      signature line, it will add the comment and define what needs to be
 //      commented for the method (using the "JavaDoc" commenting style)
-
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
+// (25) To look at code in two places at once, go to the menu: View -> Split
+//      to split the screen and View -> clear to reset it
 
 // </editor-fold>
