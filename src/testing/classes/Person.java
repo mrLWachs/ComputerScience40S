@@ -212,6 +212,4 @@ public class Person
         this.alive = alive;
     }
     
-    
-    
 }
