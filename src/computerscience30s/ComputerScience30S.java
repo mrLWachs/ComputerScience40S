@@ -1010,7 +1010,7 @@ public class ComputerScience30S
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) or OUTPUT from a method
         
-        
+        output(numbers);
         
         
         
@@ -1029,6 +1029,34 @@ public class ComputerScience30S
         System.out.println("Completed learning arrays!");
     }
 
+    /**
+     * Outputs an array of integers in a dialog
+     * 
+     * @param array the array of integers to output
+     */
+    private static void output(int[] array) {
+        // Array can be a parameter (or one of the parameters) of a method
+        String text = "[";
+        // Loop (traverse) through the array and add the contents to the string
+        for (int i = 0; i < array.length; i++) {
+            text = text + array[i] + ",";
+        }
+        text = text + "]";
+        output(text);           // Outputs it by calling an overloaded method
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 }
