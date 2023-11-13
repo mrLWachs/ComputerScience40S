@@ -995,26 +995,7 @@ public class ComputerScience30S
         // and TAB) starts at 0, goes up by 1, is "less than" then ending 
         // number (which can be the length)
         
-        // When using the for loop with arrays, it is even BETTER to use a
-        // built-in feature of all arrays! All arrays have a ".length" feature
-        // for example
-        for (int i = 0; i < numbers.length; i++) {
-            System.out.println(i + " = " + numbers[i]);
-        }
-        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
-        // So if the array size changes, the loop adapts to it
-        
-        // Array can easily work with methods, the arrays can be sent into a 
-        // method (as one of multiple parameters, or the only parameter), and 
-        // arrays can be outputted (returned) from a method - in other words:
-        // Arrays can be INPUT(s) or OUTPUT from a method
-        
-        output(numbers);
-        output(array);
-        output(coins);
-        
-        
-        
+       
         
         
         
@@ -1032,47 +1013,7 @@ public class ComputerScience30S
         System.out.println("Completed learning arrays!");
     }
 
-    /**
-     * Outputs as array of integers in a dialog
-     * 
-     * @param array the array of integers to output
-     */
-    private static void output(int[] array) {
-        // Array can be a parameter (or one of the parameters) of a method
-        String text = "[";
-        // Loop (traverse) through the array and add the contents to the string
-        for (int i = 0; i < array.length; i++) {
-            text = text + array[i] + ",";
-        }
-        text = text + "]";
-        output(text);           // Outputs it by calling an overloaded method
-    }
-
-    /**
-     * Convert all the doubles into integers and then output the array in a 
-     * dialog
-     * 
-     * @param array the array of doubles
-     */
-    private static void output(double[] array) {
-        int[] a = convert(array);   // Create int array of converted doubles        
-        output(a);                  // Now output the converted array
-    }
-
-    /**
-     * Converts as array of doubles into an array of integers
-     * 
-     * @param array the array of doubles
-     * @return an array of integers
-     */
-    private static int[] convert(double[] array) {
-        // Methods can return (output) entire arrays
-        int[] a = new int[array.length];      // Create empty array (same size)
-        for (int i = 0; i < a.length; i++) {  // Traverse the array
-            a[i] = (int)array[i];             // Cast the double into a int
-        }        
-        return a;
-    }
+    
     
 }
 
@@ -1170,15 +1111,6 @@ public class ComputerScience30S
 // (22) NetBeans can auto comment methods if you type "/**" above the method
 //      signature line, it will add the comment and define what needs to be
 //      commented for the method (using the "JavaDoc" commenting style)
-// (23) All arrays have a ".length" feature built in that you can have NetBeans
-//      autocomplete for you by typing the name of your array, then dot length
-//      (".length") which automatically gives you how many elements are in
-//      the array
-// (24) When writing for loops with array, if you type "for" then press TAB, 
-//      and then press TAB AGAIN it jump to the ending value (which should be 
-//      the ".length" of the array (so if the array size changes, the loop 
-//      adapts to it) - the loop variable "i" also represents the array "index"
-// (25) To look at code in two places at once, go to the menu: View -> Split
-//      to split the screen and View -> clear to reset it
+
 
 // </editor-fold>
