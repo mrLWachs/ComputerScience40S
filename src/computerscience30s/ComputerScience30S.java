@@ -1026,6 +1026,12 @@ public class ComputerScience30S
         
         
         
+        
+        
+        
+        
+        
+        
         System.out.println("Completed learning arrays!");
     }
 
@@ -1072,7 +1078,7 @@ public class ComputerScience30S
     }
 
     /**
-     * Generate an array of a set size filled with random integers in the
+     * Generates an array of a set size filled with random integers in the 
      * range between low and high
      * 
      * @param low the lowest number in the range
@@ -1082,12 +1088,12 @@ public class ComputerScience30S
      */
     private static int[] random(int low, int high, int size) {
         int[] numbers = new int[size];      // Create empty array of passed size
-        for (int i = 0; i < size; i++) {    // Traverse array 
+        for (int i = 0; i < size; i++) {    // Traverse array
             numbers[i] = random(low, high); // Assign random value to each index
         }
         return numbers;                     // Return completed array
     }
-   
+
 }
 
 // <editor-fold>
