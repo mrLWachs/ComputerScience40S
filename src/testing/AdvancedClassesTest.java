@@ -191,10 +191,18 @@ public class AdvancedClassesTest
         stewie.total = 9;
         
         // Output the static variable again - showing that it changed (mutated) 
-        // ALL the instances (all the student obejcts) since that varaible is
+        // ALL the instances (all the student objects) since that varaible is
         // modified to be static        
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
