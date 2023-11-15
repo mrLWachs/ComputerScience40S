@@ -1073,6 +1073,11 @@ public class ComputerScience30S
         // nested for loops are refering to (e.g. like row, column, x, y)
         // With Netbeans, when you rename a loop variable it renames all 3
         
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[column][row] = random(LOW, HIGH);
+            }
+        }
         
         
         
@@ -1158,6 +1163,28 @@ public class ComputerScience30S
     private static char random(char low, char high) {
         return (char)random((int)low, (int)high);     // cast to int and back  
     }
+    
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
+    }
+    
     
 }
 
