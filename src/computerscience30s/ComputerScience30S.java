@@ -1079,6 +1079,14 @@ public class ComputerScience30S
             }
         }
         
+        // Ouptut the matrix, by turning the matrix into a single string (using
+        // a new method) we can then output that string
+        String text1 = toString(matrix);
+        System.out.println(text1);
+        JOptionPane.showMessageDialog(null, text1);
+        
+        
+        
         
         
         
