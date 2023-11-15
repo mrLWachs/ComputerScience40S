@@ -196,9 +196,18 @@ public class AdvancedClassesTest
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
         
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
         
-        
-        
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
         
         
