@@ -167,6 +167,61 @@ public class AdvancedClassesTest
         clone.birthday();
         if (person.equals(clone)) System.out.println("Person=Clone");
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
+        
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable 
+        
+        System.out.println("student total = " + student.total);
+        System.out.println("stewie  total = " + stewie.total);
+        
+        // We create (instantiate) 2 more Student objects...
+        Student student3 = new Student();
+        Student student4 = new Student("4", 4, "4");
+        
+        // and now output the static/shared property of those new instances
+        System.out.println("S3 total = " + student3.total);
+        System.out.println("S4 total = " + student4.total);
+        
+        // Mutate (change) that static variable directly (and it effects
+        // all the instaces of that object)
+        stewie.total = 9;
+        
+        // Output the static variable again - showing that it changed (mutated) 
+        // ALL the instances (all the student objects) since that varaible is
+        // modified to be static        
+        System.out.println("S3 total = " + student3.total);
+        System.out.println("S4 total = " + student4.total);
+        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
+        
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
+        
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
+        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        
+        
+        
         
         
         
