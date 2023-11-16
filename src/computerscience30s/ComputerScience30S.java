@@ -9,6 +9,7 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 
@@ -1085,8 +1086,27 @@ public class ComputerScience30S
         System.out.println(text1);
         JOptionPane.showMessageDialog(null, text1);
         
+        // Optional graphical code...
+        // (for adding images, changing fonts, font sizes, font colors, and 
+        // background colors - it is not needed for most assignments or 
+        // final projects)
+        
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes') 
+        
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)  
         
         
+        
+        // Put this optional graphical code in a method, testing it first
+        // with a simple string of text
         
         
         
