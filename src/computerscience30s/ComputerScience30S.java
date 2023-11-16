@@ -1078,6 +1078,17 @@ public class ComputerScience30S
         // nested for loops are refering to (e.g. like row, column, x, y)
         // With Netbeans, when you rename a loop variable it renames all 3
         
+        for (int row = 0; row < ROWS; row++) {
+            for (int column = 0; column < COLUMNS; column++) {
+                matrix[column][row] = random(LOW, HIGH);
+            }
+        }
+        
+        // Ouptut the matrix, by turning the matrix into a single string (using
+        // a new method) we can then output that string
+        String text1 = toString(matrix);
+        System.out.println(text1);
+        JOptionPane.showMessageDialog(null, text1);
         
         
         
