@@ -1111,6 +1111,26 @@ public class ComputerScience30S
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
         
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image...
+        
+        // Images (pictures) have a longer name than most think they do...
+        
+        // For example the file named "matrix" is really "matrix.gif" and the
+        // ".gif" is considered the "last" name (or extention) of the file.
+        // "matrix" is considered the "middle" name (the part the user types in)
+        // The first name is the "path" (or location, folder, etc.)
+        
+        // TIP: save an image, then right click and go to "Properties" to 
+        // get all the file name information you need. You can then copy/paste
+        // that infromation into your code - HOWEVER: It will change the "\" to
+        // two "\\" and also type two of those at the end. Also, add two "\\" 
+        // to the end of the first name (path)
+        
+        String first = "C:\\Users\\lawrence.wachs\\"
+                     + "OneDrive - St. James-Assiniboia School Division\\"
+                     + "Desktop\\";
+        
         
         
         
