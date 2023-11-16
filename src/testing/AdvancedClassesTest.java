@@ -209,7 +209,15 @@ public class AdvancedClassesTest
         student.endTheWorld();
         teacher.endTheWorld();
         
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
         
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
         
         
         
