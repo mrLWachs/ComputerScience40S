@@ -1152,6 +1152,28 @@ public class ComputerScience30S
         // the matrix...
         output(text1,title,font,background,foreground,image);
         
+        // One more optional way to create (declare) matrices is to make them
+        // with pre-set values (like regular arrays)        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };        
+        String text2      = toString(TIC_TAC_TOE);
+        String title2     = "Tic-Tac-Toe";
+        String imageName2 = first + "TicTacToe" + last;
+        
+        // We can "re-create" the image with a different file name
+        image = new ImageIcon(imageName2);
+        // We can also "re-create" the font and colors...
+        font       = new Font("Courier New", Font.BOLD, 80);
+        background = new Color(0,0,255);
+        foreground = new Color(255,255,0);
+        
+        // Recall our method with different arguments
+        output(text2,title2,font,background,foreground,image);
+        System.out.println(text2);
+        
         System.out.println("Completed learning arrays!");
     }
 
