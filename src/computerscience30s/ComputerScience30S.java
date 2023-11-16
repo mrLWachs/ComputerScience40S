@@ -1090,14 +1090,67 @@ public class ComputerScience30S
         System.out.println(text1);
         JOptionPane.showMessageDialog(null, text1);
         
+        // Optional graphical code...
+        // (for adding images, changing fonts, font sizes, font colors, and 
+        // background colors - it is not needed for most assignments or 
+        // final projects)
         
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
         
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes') 
         
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color)  
+        Color foreground = new Color(0,255,0);
         
+        // Fonts are done a similar way (import, declare them) 
+        Font font = new Font("Consolas", Font.PLAIN, 14);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
         
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image...
         
+        // Images (pictures) have a longer name than most think they do...
         
+        // For example the file named "matrix" is really "matrix.gif" and the
+        // ".gif" is considered the "last" name (or extention) of the file.
+        // "matrix" is considered the "middle" name (the part the user types in)
+        // The first name is the "path" (or location, folder, etc.)
         
+        // TIP: save an image, then right click and go to "Properties" to 
+        // get all the file name information you need. You can then copy/paste
+        // that infromation into your code - HOWEVER: It will change the "\" to
+        // two "\\" and also type two of those at the end. Also, add two "\\" 
+        // to the end of the first name (path)
+        
+        String first  = "G:\\My Drive\\Programming Resources\\Icons\\Images\\";
+        String middle = "matrix";
+        String last   = ".gif";
+        
+        // Combining the three parts of the name
+        String imageName = first + middle + last;
+        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer)
+        
+        Icon image = new ImageIcon(imageName);
+        
+        // Put this optional graphical code in a method, testing it first
+        // with a simple string of text
+        
+        String title = "The Matrix...";
+        
+        // Now use a method with all the graphical objects and our text from
+        // the matrix...
+        output(text1,title,font,background,foreground,image);
         
         System.out.println("Completed learning arrays!");
     }
@@ -1192,6 +1245,48 @@ public class ComputerScience30S
         }     
         return text;            // Return the filled up string
     }
+    
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param title the title at the top of the dialog
+     * @param font the custom font to use for the text in the dialog
+     * @param background the custom color to use behind the text in the dialog
+     * @param foreground the custom color to use for the text in the dialog
+     * @param image the picture to display in the dialog
+     */
+    private static void output(String text, 
+                               String title, 
+                               Font font, 
+                               Color background, 
+                               Color foreground, 
+                               Icon image) {
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)    
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters        
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                image
+        );        
+    }    
     
 }
 
