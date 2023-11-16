@@ -10,6 +10,7 @@ package computerscience30s;
  * needs to connect to another library (API) of code
  */
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
 
 
@@ -1102,6 +1103,18 @@ public class ComputerScience30S
         Color background = new Color(0,0,0);
         // The three numbers in "Color" are for red, green and blue values 
         // from 0 (no amount) up to 255 (the maximum amount of that color)  
+        Color foreground = new Color(0,255,0);
+        
+        // Fonts are done a similar way (import, declare them) 
+        Font font = new Font("Consolas", Font.PLAIN, 14);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        
+        
+        
+        
         
         
         
