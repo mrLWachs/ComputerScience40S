@@ -11,7 +11,10 @@ package computerscience30s;
  */
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1127,21 +1130,29 @@ public class ComputerScience30S
         // two "\\" and also type two of those at the end. Also, add two "\\" 
         // to the end of the first name (path)
         
-        String first = "C:\\Users\\lawrence.wachs\\"
-                     + "OneDrive - St. James-Assiniboia School Division\\"
-                     + "Desktop\\";
+        String first  = "C:\\Users\\lawrence.wachs\\"
+                      + "OneDrive - St. James-Assiniboia School Division\\"
+                      + "Desktop\\";
+        String middle = "matrix";
+        String last   = ".gif";
         
+        // Combining the three parts of the name
+        String imageName = first + middle + last;
         
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer)
         
-        
-        
-        
-        
+        Icon image = new ImageIcon(imageName);
         
         // Put this optional graphical code in a method, testing it first
         // with a simple string of text
         
+        String title = "The Matrix...";
         
+        // Now use a method with all the graphical objects and our text from
+        // the matrix...
+        output(text1,title,font,background,foreground,image);
         
         
         
@@ -1245,7 +1256,48 @@ public class ComputerScience30S
         }     
         return text;            // Return the filled up string
     }
-    
+
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param title the title at the top of the dialog
+     * @param font the custom font to use for the text in the dialog
+     * @param background the custom color to use behind the text in the dialog
+     * @param foreground the custom color to use for the text in the dialog
+     * @param image the picture to display in the dialog
+     */
+    private static void output(String text, 
+                               String title, 
+                               Font font, 
+                               Color background, 
+                               Color foreground, 
+                               Icon image) {
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)    
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters        
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                image
+        );        
+    }    
     
 }
 
