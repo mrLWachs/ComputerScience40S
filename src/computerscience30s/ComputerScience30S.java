@@ -48,6 +48,9 @@ public class ComputerScience30S
         learnArrays();
     }
 
+    /**
+    * Learn the content of the introduction unit (unit 1)
+    */
     private static void learnIntroToJava() {
         
         // TODO code application logic here
@@ -697,6 +700,9 @@ public class ComputerScience30S
           
     }
 
+    /**
+    * Learn the content of the methods unit (unit 2)
+    */
     private static void learnMethods() {
         System.out.println("Start Learning Methods...");
         
@@ -1176,7 +1182,7 @@ public class ComputerScience30S
         
         System.out.println("Completed learning arrays!");
     }
-
+    
     /**
      * Outputs an array of integers in a dialog
      * 
