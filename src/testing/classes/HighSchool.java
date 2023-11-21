@@ -11,7 +11,7 @@ package testing.classes;
  * those methods).
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:28:56 a.m.
+ * @since Nov 21, 2023, 11:57:41 a.m.
  */
 public class HighSchool extends Student
 {

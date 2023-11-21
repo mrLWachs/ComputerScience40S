@@ -7,7 +7,7 @@ package testing.classes;
  * Doctor.java - represents a Doctor Person
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:29:46 a.m.
+ * @since Nov 21, 2023, 11:57:09 a.m.
  */
 public class Doctor extends Person
 {

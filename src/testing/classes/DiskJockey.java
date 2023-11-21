@@ -7,7 +7,7 @@ package testing.classes;
  * DiskJockey.java - represents a DiskJocky Person
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:29:26 a.m.
+ * @since Nov 21, 2023, 11:58:01 a.m.
  */
 public class DiskJockey extends Person
 {

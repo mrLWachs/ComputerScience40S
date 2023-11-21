@@ -218,7 +218,7 @@ public class Person
      * class name then a dot to call static methods
      */
     public static void endTheWorld() {
-        System.out.println("Boom!!");
+        System.out.println("Boom!!!!!");
     }
     
 }

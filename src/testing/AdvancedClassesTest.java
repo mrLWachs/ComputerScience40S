@@ -2,7 +2,7 @@
 /** Required package class namespace */
 package testing;
 
-
+/** Required API imports */
 import javax.swing.JOptionPane;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
@@ -181,33 +181,27 @@ public class AdvancedClassesTest
         // Now output the static variable of each object and you will notice
         // how we get the same output for each student instance as they all
         // "share" the same access to the same static variable 
-        
-        System.out.println("student total = " + student.total);
-        System.out.println("stewie  total = " + stewie.total);
+        System.out.println("S1 total = " + student.total);
+        System.out.println("S2 total = " + stewie.total);
         
         // We create (instantiate) 2 more Student objects...
         Student student3 = new Student();
         Student student4 = new Student("4", 4, "4");
         
-        // and now output the static/shared property of those new instances
+        // And output the shared/static property of those new instances
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
         
-        // Mutate (change) that static variable directly (and it effects
-        // all the instaces of that object)
+        // Mutate (change) that static variable directly (in one instance)
         stewie.total = 9;
         
         // Output the static variable again - showing that it changed (mutated) 
-        // ALL the instances (all the student objects) since that varaible is
-        // modified to be static        
+        // ALL the instances (all the student obejcts) since that varaible is
+        // modified to be static  
+        System.out.println("S1 total = " + student.total);
+        System.out.println("S2 total = " + stewie.total);
         System.out.println("S3 total = " + student3.total);
         System.out.println("S4 total = " + student4.total);
-        
-        // You can invoke (call) static methods from the name of the class 
-        // itself, not just the instances (objects) of the class, for example
-        Person.endTheWorld();
-        Student.endTheWorld();
-        Teacher.endTheWorld();
         
         // Now we will call a static (shared) method from the objects 
         // (instances) of the Person class and the other classes that extend
@@ -215,6 +209,12 @@ public class AdvancedClassesTest
         person.endTheWorld();
         student.endTheWorld();
         teacher.endTheWorld();
+        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
         
         // You have seen calling method like this before, for example in
         // JOptionPane.showMessageDialog(null, "");
@@ -233,7 +233,7 @@ public class AdvancedClassesTest
         Piper      piper      = new Piper();
         Husky      husky      = new Husky();
         Athlete    athlete    = new Athlete();
-        
+                
         // And output those objects (remember the "toString() method is called
         // automaitcally by the println() method)
         System.out.println(doctor);
@@ -242,10 +242,10 @@ public class AdvancedClassesTest
         System.out.println(piper);
         System.out.println(husky);
         System.out.println(athlete);
-        
+                
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
-        
+           
         // Have person objects (instances of the Person class) and all 
         // children objects (classes that inherit from Person) will attend
         // the meeting - through the concept of polymorphism 
@@ -268,8 +268,6 @@ public class AdvancedClassesTest
         
         // Need to "hold a meeting" of all members
         meeting.hold();
-        
-        
         
         
         

@@ -7,7 +7,7 @@ package testing.classes;
  * MrWachs.java - represents a MrWachs Teacher Person
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:26:36 a.m.
+ * @since Nov 21, 2023, 11:55:49 a.m.
  */
 public class MrWachs extends Teacher
 {
@@ -16,7 +16,7 @@ public class MrWachs extends Teacher
      * Default constructor, set class properties
      */
     public MrWachs() {
-        super("Mr. Lawrence Wachs");
+        super("Mr. Lawrence Wachs"); 
     }
      
     /**

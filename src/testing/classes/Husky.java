@@ -7,7 +7,7 @@ package testing.classes;
  * Husky.java - represents a Husky HighSchool Student Person
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:28:33 a.m.
+ * @since Nov 21, 2023, 11:57:27 a.m.
  */
 public class Husky extends HighSchool
 {

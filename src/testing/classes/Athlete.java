@@ -7,7 +7,7 @@ package testing.classes;
  * Athlete.java - represents a Athlete Husky HighSchool Student Person.
  *
  * @author Mr. Wachs
- * @since Nov 20, 2023, 10:28:42 a.m.
+ * @since Nov 21, 2023, 11:57:49 a.m.
  */
 public class Athlete extends Husky
 {
