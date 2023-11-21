@@ -46,6 +46,22 @@ public class Meeting
         
     }
     
+    /**
+     * Hold the meeting for all members 
+     */
+    public void hold() {
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
