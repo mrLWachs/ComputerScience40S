@@ -66,7 +66,39 @@ public class Meeting
      * Hold the meeting for all members 
      */
     public void hold() {
+        // Make a variable to hold a bunch of potential output data
+        String message = "Meeting is about to begin...";
         
+        // Now we loop through the entire array ("traverse" means to travel to 
+        // or visit every spot) from start (index zero) to the finish (index of 
+        // the length minus one) - using a NEW type of loop (a new "for" loop)
+        // called the "enhanced for loop". To create the enhanced for loop 
+        // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
+        // option that appears from the top, or type "fore" and TAB 
+        
+        for (Person member : members) {
+            // The enhanced for loop should be read as:
+            // "for every member in members"
+            // The "member" object of type "Person" automatically goes through
+            // (traverses) from the start to the end of the array automatically
+            // changing "person" each time through the loop to the next element
+            // in order...
+            
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
+                message += "\n";
+                message += "\t" + member.toString();
+            }
+        }
+        
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //    Person member = members[i];
+        // }
+        
+        // Finally output that message
+        System.out.println(message);
     }
     
 }
