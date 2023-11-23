@@ -7,6 +7,7 @@ import javax.swing.JOptionPane;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
+import testing.classes.Food;
 import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
@@ -272,7 +273,7 @@ public class AdvancedClassesTest
         
         // Abstract classes can NOT ever be instantiated, for example:
         // HighSchool highSchool = new HighSchool();
-        
+        // Food food = new Food(1);
         
         
         
