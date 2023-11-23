@@ -237,21 +237,22 @@ public class AdvancedClassesTest
         Athlete    athlete    = new Athlete();
         
         // And output those objects (remember the "toString() method is called
-        // automaitcally by the println() method)
+        // automatically by the println() method)
         System.out.println(doctor);
         System.out.println(diskJockey);
         System.out.println(mrWachs);
         System.out.println(piper);
         System.out.println(husky);
-        System.out.println(athlete.toString());
+        System.out.println(athlete);
         
         // Instantiate ("make an instance of") a meeting object (of that class)
         Meeting meeting = new Meeting();
-           
+        
         // Have person objects (instances of the Person class) and all 
         // children objects (classes that inherit from Person) will attend
         // the meeting - through the concept of polymorphism 
         meeting.attend(person);
+        meeting.attend(ironMan);
         meeting.attend(person1);
         meeting.attend(person2);
         meeting.attend(person3);
@@ -274,11 +275,6 @@ public class AdvancedClassesTest
         // Abstract classes can NOT ever be instantiated, for example:
         // HighSchool highSchool = new HighSchool();
         // Food food = new Food(1);
-        
-        
-        
-        
-        
         
         
         

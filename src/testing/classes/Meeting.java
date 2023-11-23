@@ -22,7 +22,7 @@ public class Meeting
     // Array (because of the square brackets) of class level objects, the
     // Meeting "has a" (associated with) Person (an array of them)
     private Person[] members;   // All the people at the meeting
-
+    
     
     /**
      * Default constructor, set class properties
@@ -46,12 +46,12 @@ public class Meeting
         // Assign (put, place) the person object (instance of the Person class)
         // passed into this method's parameter into the first empty (unassigned)
         // index (spot, element, location, subscript) of the array property
-        // of the Meeting class (global variable)   
-        members[count] = person;    
+        // of the Meeting class (global variable)        
+        members[count] = person;
         
         // Now advance the count
-        count++;    
-        
+        count++;
+                
         // Potential out of bounds ("range") error with count, we fix with
         if (count >= MAX) {
             // Potentially we could make the array bigger (resize, 
@@ -68,7 +68,7 @@ public class Meeting
     public void hold() {
         // Make a variable to hold a bunch of potential output data
         String message = "Meeting is about to begin...";
-        
+                
         // Now we loop through the entire array ("traverse" means to travel to 
         // or visit every spot) from start (index zero) to the finish (index of 
         // the length minus one) - using a NEW type of loop (a new "for" loop)
@@ -86,7 +86,7 @@ public class Meeting
             
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
-            if (member != null) {
+            if (member != null) {  
                 message += "\n";
                 // The "instanceof" operator takes an object (instance) on the
                 // left hand side (LHS) and the class type on the right hand
@@ -103,19 +103,19 @@ public class Meeting
                 if (member instanceof Piper)      message += "\t Piper ->";
                 if (member instanceof Athlete)    message += "\t Athlete ->";
                 message += "\t" + member.toString();
-            }
+            }            
         }
-        
+               
         // For comparison, a regular for loop would be code like this:
         // for (int i = 0; i < members.length; i++) {
         //    Person member = members[i];
         // }
         
         // Get data from our static (shared) property of Student (variable)
-        message += "\nwith " + Student.total + " students present!";
+        message += "\nWith " + Student.total + " students present!";
         
         // Finally output that message
         System.out.println(message);
     }
-    
+       
 }
