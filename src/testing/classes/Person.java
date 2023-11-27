@@ -221,4 +221,15 @@ public class Person
         System.out.println("Boom!!!!!");
     }
     
+    /**
+     * Consumes the passed food object (it will be a child of the Food class 
+     * object) by outputting it to the screen (this is a polymorphic method, 
+     * meaning it uses the concept of polymorphism)
+     * 
+     * @param food the abstract food object to consume
+     */
+    public void consume(Food food) {
+        System.out.println(name + " is eating " + food.eat());
+    }
+    
 }
