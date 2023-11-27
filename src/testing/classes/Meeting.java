@@ -85,7 +85,10 @@ public class Meeting
             // in order...
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
-            if (member != null) {  
+        
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
                 message += "\n";
                 // The "instanceof" operator takes an object (instance) on the
                 // left hand side (LHS) and the class type on the right hand
@@ -104,7 +107,7 @@ public class Meeting
                 message += "\t" + member.toString();
             }            
         }
-               
+        
         // For comparison, a regular for loop would be code like this:
         // for (int i = 0; i < members.length; i++) {
         //    Person member = members[i];
