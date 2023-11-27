@@ -67,8 +67,8 @@ public class Meeting
      */
     public void hold() {
         // Make a variable to hold a bunch of potential output data
-        String message = "Meeting is about to begin...";
-                
+        String message = "The Meeting is about to begin...";
+        
         // Now we loop through the entire array ("traverse" means to travel to 
         // or visit every spot) from start (index zero) to the finish (index of 
         // the length minus one) - using a NEW type of loop (a new "for" loop)
@@ -83,7 +83,6 @@ public class Meeting
             // (traverses) from the start to the end of the array automatically
             // changing "person" each time through the loop to the next element
             // in order...
-            
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
             if (member != null) {  

@@ -63,7 +63,13 @@ public abstract class Food
      * @return The output of how eating this "food" item went
      */
     public String eat() {
-        return "nom nom";
+        if (hasSpoiled()) {
+            return "Do not eat!";
+        }
+        else {
+            prepare();
+            return GROUPS[group] + " it was " + flavour;
+        }        
     }
     
     /**
