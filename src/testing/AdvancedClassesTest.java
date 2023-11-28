@@ -8,8 +8,6 @@ import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
-import testing.classes.Food;
-import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
@@ -303,7 +301,6 @@ public class AdvancedClassesTest
         // abstract class, interfaces are used by 'child' like classes that
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
-        
         
         
         
