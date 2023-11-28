@@ -17,7 +17,7 @@ package testing.classes;
  */
 public abstract class Food 
 {
-
+    
     /**
      * Agreed upon food groups: (0) Dairy, (1) Protein, (2) Grains,
      * (3) Vegetables, (4) Fruits, (5) Other - "shared" constant array
@@ -25,9 +25,9 @@ public abstract class Food
     public static final String[] GROUPS = {
         "Dairy",
         "Protein",
-        "Grain",
-        "Vegetables",
+        "Grains",
         "Fruits",
+        "Vegetables",
         "Other"
     };
     
@@ -36,26 +36,25 @@ public abstract class Food
      */
     public boolean eatable;
     
+    // Encapsulated property, which food group the 'food' item is part of
+    private int group;
+    
     /**
      * Available to this class and all children of this class, the flavour
      * quality of the food
      */ 
     protected String flavour;
     
-    // Encapsulated property, which food group the 'food' item is part of
-    private int group;
-    
     
     /**
-     * Constructor, set class properties (this "theoretically" could be called
-     * by the children classes that inherit from Food)
-     *
+     * Constructor, set class properties
+     * 
      * @param group which food group this food item belongs to
      */
     public Food(int group) {
         this.group = group;     // Assign parameter to private property
     }
-    
+        
     /**
      * How to eat this food object - note: abstract classes can ALSO have
      * "regular" methods and regular properties (not just abstract methods)
@@ -69,8 +68,8 @@ public abstract class Food
         else {
             prepare();
             return GROUPS[group] + " it was " + flavour;
-        }        
-    }
+        }
+    }  
     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
