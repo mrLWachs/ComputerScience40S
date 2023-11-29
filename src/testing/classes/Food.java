@@ -54,7 +54,7 @@ public abstract class Food
     public Food(int group) {
         this.group = group;     // Assign parameter to private property
     }
-        
+    
     /**
      * How to eat this food object - note: abstract classes can ALSO have
      * "regular" methods and regular properties (not just abstract methods)
@@ -69,7 +69,7 @@ public abstract class Food
             prepare();
             return GROUPS[group] + " it was " + flavour;
         }
-    }  
+    }
     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
@@ -91,6 +91,6 @@ public abstract class Food
      * 
      * @param seconds how many seconds to smell it
      */
-    public abstract void smell(int seconds);
+    public abstract void smell(int seconds);    
     
 }

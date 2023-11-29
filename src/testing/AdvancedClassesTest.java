@@ -278,7 +278,7 @@ public class AdvancedClassesTest
         // HighSchool highSchool = new HighSchool();
         // Food food = new Food(1);
         
-         // Instantiate an object from a child class of an abstract class
+        // Instantiate an object from a child class of an abstract class
         // using the abstract methods (that were made 'concrete') in that class 
         
         Apple apple = new Apple();
@@ -303,9 +303,6 @@ public class AdvancedClassesTest
         // abstract class, interfaces are used by 'child' like classes that
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
-        
-        
-        
         
         
         

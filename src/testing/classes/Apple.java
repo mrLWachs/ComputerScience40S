@@ -52,18 +52,18 @@ public class Apple extends Food
     public void smell(int seconds) {
         if (seconds > 3) super.eatable = false;
         else             super.eatable = true;
-    }   
+    }    
     
     /**
      * You still can over-ride methods from an abstract class that are not 
      * abstract methods (concrete methods) as an option. This method defines
      * how to eat an apple specifically
      * 
-     * @return what happens when you eat an apple
+     * @return 
      */
     @Override
     public String eat() {
         return "Apple from " + super.eat();
     }
-    
+
 }
