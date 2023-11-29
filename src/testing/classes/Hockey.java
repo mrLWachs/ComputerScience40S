@@ -13,6 +13,18 @@ package testing.classes;
 public interface Hockey extends Sports
 {
     
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
+    void score(String name);
     
+    /**
+     * The passed period of hockey is over
+     *
+     * @param period the period number
+     */
+    void endOfPeriod(int period);
     
 }
