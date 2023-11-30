@@ -22,7 +22,7 @@ public interface Hockey extends Sports
     
     /**
      * The passed period of hockey is over
-     *
+	 *
      * @param period the period number
      */
     void endOfPeriod(int period);

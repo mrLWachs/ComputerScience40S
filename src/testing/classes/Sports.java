@@ -43,6 +43,6 @@ public interface Sports
      * 
      * @return there was a winner (true) or not (false)
      */
-    boolean didIWin();      
+    boolean didIWin(); 
     
 }

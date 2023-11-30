@@ -17,7 +17,7 @@ public class Steak extends Food
      */
     public Steak() {
         super(1);                   // Call super-constructor, passing the group
-        super.flavour = "Savory";   // Modifying our protected property
+        super.flavour = "Savoury";    // Modifying our protected property
     }
 
     /**
@@ -29,7 +29,7 @@ public class Steak extends Food
     }
 
     /**
-     * Determines if this 'steak' item has spoiled
+     * Determines if this 'food' item has spoiled
      * 
      * @return the food has spoiled (true) or not (false)
      */
@@ -39,7 +39,7 @@ public class Steak extends Food
     }
 
     /**
-     * Smell the 'steak' item
+     * Smells the 'food' item
      * 
      * @param seconds how many seconds to smell it
      */
@@ -48,5 +48,5 @@ public class Steak extends Food
         if (seconds > 5) super.eatable = false;
         else             super.eatable = true;
     }
-    
+
 }
