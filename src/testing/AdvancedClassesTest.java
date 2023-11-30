@@ -13,6 +13,7 @@ import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
+import testing.classes.PermissionForm;
 import testing.classes.Person;
 import testing.classes.Piper;
 import testing.classes.Steak;
@@ -304,8 +305,32 @@ public class AdvancedClassesTest
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
         
-        
-        
+        athlete = new Athlete();
+        // Set our opponent
+        athlete.setOpponent("Royals");
+        // Have our athletes compete in Three rounds of competition
+        for (int round = 1; round <= 3; round++) {
+            System.out.println("Round " + round);
+            if (athlete.haveYouGotItSigned() == PermissionForm.NOT_SIGNED) {
+                System.out.println("Opps, will do!");
+                athlete.sign();
+            }
+            else {
+                // Simulating a round (period) of hockey
+                athlete.score("Havoc");
+                athlete.score("Royals");
+                athlete.score("Havoc");
+                athlete.score("Havoc");
+                athlete.endOfPeriod(round);
+                // Simulate Ostrich racing
+                athlete.lengthOfTrack(10);
+                athlete.didRiderStayMounted();
+            }            
+        }
+        // Check if we are a champion
+        if (athlete.didIWin()) {
+            athlete.consume(steak);
+        }
         
         
         
