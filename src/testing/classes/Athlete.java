@@ -95,40 +95,117 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         return this;
     }
 
+    /**
+     * Signing the permission form
+     */
     @Override
     public void sign() {
+        System.out.println(super.name + " has signed the form!");
+        haveForm = PermissionForm.SIGNED;
     }
 
+    /**
+     * Determines if the form has been signed or not
+     * 
+     * @return has been signed (true), or not (false)
+     */
     @Override
     public boolean haveYouGotItSigned() {
+        return haveForm;
     }
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(String name) {
+        System.out.println(name + " has scored");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.equals(super.name))   homeScore++;
     }
 
+    /**
+     * The passed period of hockey is over
+	 *
+     * @param period the period number
+     */
     @Override
     public void endOfPeriod(int period) {
+        String output = "End of period " + period;
+        output += " and the score is "   + homeScore;
+        output += " for the "            + super.name;
+        output += " and "                + opponentScore;
+        output += " for the "            + opponentName;
+        System.out.println(output);
     }
 
+    /**
+     * Mutator method, setting the name of the player
+     * 
+     * @param name setting the name of the player
+     */
     @Override
     public void setName(String name) {
+        super.name = name;
     }
 
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
     @Override
     public void setOpponent(String name) {
+        opponentName = name;
     }
 
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
     @Override
     public boolean didIWin() {
+        if (champion) {
+            System.out.println(super.name + " is champion!");
+            return WE_WON;
+        }
+        else if (homeScore > opponentScore) {
+            System.out.println(super.name + " we win!");
+            return WE_WON;
+        }
+        else if (didRiderStayMounted()) {
+            System.out.println("We stayed on!");
+            return WE_WON;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return WE_LOST;
+        }
     }
 
+    /**
+     * Determines if the rider stayed on the ostrich or not
+     * 
+     * @return they stayed on (true) or fell off (false)
+     */
     @Override
     public boolean didRiderStayMounted() {
-    }
+        int chanceOfFalling = (int)((100 - 1 + 1) * Math.random() + 1);
+        if (chanceOfFalling <= 10) return false;
+        else                       return true;
+    } 
 
+    /**
+     * Sets the length for the race
+     * 
+     * @param meters the length of the racing track in meters
+     */
     @Override
     public void lengthOfTrack(int meters) {
+        System.out.println("The track is " + meters + " meters!");
     }
     
 }
