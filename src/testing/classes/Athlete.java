@@ -34,8 +34,35 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      * Default constructor, set class properties
      */
     public Athlete() {
-        
+        // To have one constructor method call another class constructor method,
+        // you use the keyword "this" with round brackets
+        this("Havoc",15,"Sporty");
     }
+    
+    /**
+     * Constructor, set class properties
+     * 
+     * @param name the name for this athlete
+     * @param age the age for this athlete
+     * @param gender the gender for this athlete
+     */
+    public Athlete(String name, int age, String gender) {
+        super();                    // Call super-constructor
+        super.name = name;          // Modifying (mutating or changing) property
+        super.gender = gender;      
+        // Because age is encapsulated we could:
+        // (1) Make the age property "public"
+        // (2) Make the age property "protected"
+        // (3) Write a mutator method like: super.setAge(age);
+        // (4) Update and change all the constructors through the "chain" of
+        //     inheritance
+        opponentName  = "";
+        homeScore     = 0;
+        opponentScore = 0;
+        haveForm      = PermissionForm.NOT_SIGNED;  // Using interface property
+        champion      = WE_LOST;
+    }
+    
      
     /**
      * String representation of this object
