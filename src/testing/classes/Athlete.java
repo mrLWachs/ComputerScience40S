@@ -4,14 +4,32 @@ package testing.classes;
 
  
 /**
- * Athlete.java - represents a Athlete Husky HighSchool Student Person.
+ * Athlete.java - represents a Athlete Husky HighSchool Student Person. Using 
+ * the keyword 'implements' in the class signature line, means this class 
+ * "follows the rules" of that interface. This will force the programmer to
+ * 'implement' (write) the abstract methods the were 'suggested' in that
+ * interface. This can be done in NetBeans with the light bulb. You can 
+ * implement ("follow the rules of") MULTIPLE interfaces (this cannot be done
+ * with classes - one class can only inherit/extends from one other class). To
+ * do multiple implementation, use a comma between interfaces.
  *
  * @author Mr. Wachs
  * @since Nov 21, 2023, 11:57:49 a.m.
  */
-public class Athlete extends Husky
+public class Athlete extends Husky implements PermissionForm, Hockey, 
+        OstrichRacing
 {
 
+    private boolean haveForm;       // Encapsulated properties (variables)
+    private String  opponentName;
+    private int     homeScore;
+    private int     opponentScore;
+    private boolean champion;
+    
+    private final boolean WE_WON  = true;    // Encapsulated constants
+    private final boolean WE_LOST = false;
+    
+    
     /**
      * Default constructor, set class properties
      */
@@ -48,6 +66,42 @@ public class Athlete extends Husky
     @Override
     public Athlete clone() {
         return this;
+    }
+
+    @Override
+    public void sign() {
+    }
+
+    @Override
+    public boolean haveYouGotItSigned() {
+    }
+
+    @Override
+    public void score(String name) {
+    }
+
+    @Override
+    public void endOfPeriod(int period) {
+    }
+
+    @Override
+    public void setName(String name) {
+    }
+
+    @Override
+    public void setOpponent(String name) {
+    }
+
+    @Override
+    public boolean didIWin() {
+    }
+
+    @Override
+    public boolean didRiderStayMounted() {
+    }
+
+    @Override
+    public void lengthOfTrack(int meters) {
     }
     
 }
