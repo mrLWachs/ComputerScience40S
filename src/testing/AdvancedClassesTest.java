@@ -362,8 +362,8 @@ public class AdvancedClassesTest
         output(doub);
         output(character);
         output(string1);
-        
-        
+        output(athlete);
+        output(joptionpane);
         
         
         
@@ -410,7 +410,12 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        
+        String text = "Class simple name: ";
+        text += item.getClass().getSimpleName();
+        text += ", hash code: " + item.hashCode();
+        text += ", To String: " + item.toString();   
+        text += ", package name: " + item.getClass().getPackageName();           
+        System.out.println(text);
     }
 
 }
