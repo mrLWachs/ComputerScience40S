@@ -6,6 +6,7 @@ package testing;
 import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
+import testing.classes.Box;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
 import testing.classes.Food;
@@ -363,18 +364,55 @@ public class AdvancedClassesTest
         output(character);
         output(string1);
         output(athlete);
+        
+        // Test the generic method on another "complex" object (that we don't
+        // create)...
         output(joptionpane);
         
+        // This line uses "annoymous" object...
+        output(new Object());
         
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.
         
+        Box<Boolean> box1 = new Box<Boolean>(bool);        
+        Box<Integer> box2 = new Box<>(integer);        
+        Box          box3 = new Box(doub);
+        Box          box4 = new Box(character);
+        Box          box5 = new Box(string1);
+        Box          box6 = new Box(athlete);
         
+        // Peek in all the boxes..  
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
         
+        // Open all the boxes...        
+        Boolean   newBoolean   = box1.open();
+        Integer   newInteger   = box2.open();
+        Double    newDouble    = (Double) box3.open();
+        Character newCharacter = (Character) box4.open();
+        String    newString    = (String) box5.open();
+        Athlete   newAthlete   = (Athlete) box6.open();
         
-        
-        
-        
-        
-        
+        // Output all the newly returned data type objects...
+        output(newBoolean);
+        output(newInteger);
+        output(newDouble);
+        output(newCharacter);
+        output(newString);
+        output(newAthlete);
         
         
         
