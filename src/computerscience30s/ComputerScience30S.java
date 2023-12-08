@@ -45,7 +45,8 @@ public class ComputerScience30S
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
         // left side of NetBeans... 
-        learnArrays();
+        // learnArrays();
+        learnClasses();
     }
 
     /**
@@ -1315,6 +1316,28 @@ public class ComputerScience30S
                 image
         );        
     }    
+
+    /**
+     * Learn the content of the classes unit (unit 4)
+     */
+    private static void learnClasses() {
+        System.out.println("Start Learning classes...");
+        
+        // Create a "person" (add a class called "Person" to this Java project)
+        // To do this:
+        // (1) Click on the menu: File -> New File (or the icon on the toolbar)
+        // (2) A dialog box will appear and you select "Java" and "Java Class"
+        // (3) Then Next...
+        // (4) Then name it (starts with a capital letter and camel casing)
+        // (5) Then click Finish!
+        
+        // We use a line of code like this:
+        // Random random = new Random();
+        
+        
+        
+        System.out.println("Completed Learning classes!");
+    }
     
 }
 
