@@ -1334,6 +1334,10 @@ public class ComputerScience30S
         // We use a line of code like this:
         // Random random = new Random();
         
+        Person person = new Person();
+        
+        // Class object = new Class() <--- implies a method?
+        
         
         
         System.out.println("Completed Learning classes!");
