@@ -1338,6 +1338,18 @@ public class ComputerScience30S
         
         // Class object = new Class() <--- implies a method?
         
+        // We "call" (invoke) a method within the object and change properties
+        // ("global variables") in that object (named "person") from class 
+        // name "Person"
+        
+        // person.born(); --> we removed this method
+        person.talk();
+        person.name = "John Smith";
+        person.gender = "male";
+        person.talk();
+        person.die();
+        person.talk();
+        
         
         
         System.out.println("Completed Learning classes!");
