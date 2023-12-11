@@ -1337,6 +1337,7 @@ public class ComputerScience30S
         Person person = new Person();
         
         // Class object = new Class() <--- implies a method?
+        // (that is the call to the constructor method)
         
         // We "call" (invoke) a method within the object and change properties
         // ("global variables") in that object (named "person") from class 
