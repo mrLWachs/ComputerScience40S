@@ -11,7 +11,8 @@ package computerscience30s;
  * @author Mr. Wachs
  * @since December 8, 2023
  */
-public class Person {
+public class Person 
+{
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
