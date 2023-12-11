@@ -23,20 +23,40 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
+    /**
+     * "Creates" a person 
+     */
     void born() {
-        
+        alive  = true;
+        age    = 0;
+        gender = "undefined";
+        name   = "undefined";
     }
     
+    /**
+     * The person dies 
+     */
     void die() {
-        
+        alive = false;
     }
     
+    /**
+     * Gives the person a birthday
+     */
     void birthday() {
-        
+        age++;
     }  
     
+    /**
+     * Outputs information about the person to the screen
+     */
     void talk() {
-        
+        if (alive) {
+            System.out.println(name + " is " + age + " identifies " + gender);
+        }
+        else {
+            System.out.println("Booooo!");
+        }
     }
     
 }
