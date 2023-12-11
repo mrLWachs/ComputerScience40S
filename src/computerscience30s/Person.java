@@ -31,11 +31,11 @@ public class Person
         
     }
     
-    void talk() {
-        
-    }
-    
     void birthday() {
+        
+    }  
+    
+    void talk() {
         
     }
     

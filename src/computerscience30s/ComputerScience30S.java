@@ -1334,7 +1334,7 @@ public class ComputerScience30S
         // We use a line of code like this:
         // Random random = new Random();
         
-        //Person person = new Person();
+        Person person = new Person();
         
         // Class object = new Class() <--- implies a method?
         
