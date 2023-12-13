@@ -1360,7 +1360,9 @@ public class ComputerScience30S
         // Another instance using the 3rd constructor option...
         Person third = new Person("Taylor Swift", 34, "female");
         third.talk();
-        
+        // Try to change a property that we have marked (modified) to
+        // be private (meaning it is "encapsulated")
+        // third.age = 10;
         
         
         

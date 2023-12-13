@@ -16,10 +16,18 @@ public class Person
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
-    String name;
-    int age;
-    String gender;
-    boolean alive;
+    // We add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global varaible) is encapsulated
+    // or not. Meaning is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
+    
+    public String name;
+    
+    private int age;        // Encapsulated this property
+   
+    public String gender;
+    
+    private boolean alive;  // Can be change through a method
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
     
@@ -32,7 +40,7 @@ public class Person
      * instantiate) an object. Constructor methods with NO parameters are 
      * called "default" constructor methods
      */
-    Person() {
+    public Person() {
         alive  = true;
         age    = 0;
         name   = "unidentified";
@@ -47,7 +55,7 @@ public class Person
      * 
      * @param newName the new name for this person
      */
-    Person(String newName) {
+    public Person(String newName) {
         alive  = true;
         age    = 0;
         name   = newName;
@@ -92,21 +100,21 @@ public class Person
     /**
      * The person dies 
      */
-    void die() {
+    public void die() {
         alive = false;
     }
     
     /**
      * Gives the person a birthday
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }  
     
     /**
      * Outputs information about the person to the screen
      */
-    void talk() {
+    public void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifies " + gender);
         }
