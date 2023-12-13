@@ -2,12 +2,10 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import collections.Node;
 
 
-
-
- 
 /**
  * CollectionsTest.java - tests the concepts learned in this unit.
  *
