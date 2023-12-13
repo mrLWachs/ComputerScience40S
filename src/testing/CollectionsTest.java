@@ -37,7 +37,27 @@ public class CollectionsTest
         System.out.println("Node c = " + c.toString());
         System.out.println("Node d = " + d.toString());
         
+        // Clone a node...
+        System.out.println("\nTesting Node clone().........................\n");
+        Node<String> e = a.clone();
+        Node<String> f = b.clone();
+        Node<String> g = c.clone();
+        Node<String> h = d.clone();
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
         
+        // Check if nodes are equal...
+        System.out.println("\nTesting Node equal().........................\n");
+        System.out.println("Node a == b? -> " + a.equals(b));
+        System.out.println("Node b == c? -> " + b.equals(c));
+        System.out.println("Node c == d? -> " + c.equals(d));
+        System.out.println("Node d == d? -> " + d.equals(d));
+        System.out.println("Node e == a? -> " + e.equals(a));
+        System.out.println("Node f == b? -> " + f.equals(b));
+        System.out.println("Node g == c? -> " + g.equals(c));
+        System.out.println("Node h == d? -> " + h.equals(d));
         
         
         
