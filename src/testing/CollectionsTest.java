@@ -60,7 +60,6 @@ public class CollectionsTest
         System.out.println("Node h == d? -> " + h.equals(d));
         
         
-        
         System.out.println("\nCollections testing complete!\n");
     }
         
