@@ -59,6 +59,36 @@ public class CollectionsTest
         System.out.println("Node g == c? -> " + g.equals(c));
         System.out.println("Node h == d? -> " + h.equals(d));
         
+        // finalize some nodes (wipe em out, "destroy" them, free up memory)
+        System.out.println("\nTesting Node finalize()......................\n");
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());   
+        System.out.println("Node g = " + g.toString());   
+        System.out.println("Node h = " + h.toString());   
+        a.finalize();
+        b.finalize();
+        c.finalize();
+        d.finalize();
+        e.finalize();
+        f.finalize();  
+        g.finalize();  
+        h.finalize();  
+        System.out.println("Node a = " + a.toString());
+        System.out.println("Node b = " + b.toString());
+        System.out.println("Node c = " + c.toString());
+        System.out.println("Node d = " + d.toString());
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
+        
+        
+        
+        
         
         System.out.println("\nCollections testing complete!\n");
     }
