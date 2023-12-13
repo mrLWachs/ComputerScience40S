@@ -1351,6 +1351,26 @@ public class ComputerScience30S
         person.die();
         person.talk();
         
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor...
+        Person other = new Person("Another name");
+        other.birthday();
+        other.talk();
+        
+        // Another instance using the 3rd constructor option...
+        Person third = new Person("Taylor Swift", 34, "female");
+        third.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed Learning classes!");
