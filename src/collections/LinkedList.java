@@ -45,27 +45,43 @@ public class LinkedList <T>
     /** Flag to indicate a search was not found */
     public final int NOT_FOUND = -1;
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
     /**
      * Default constructor, set class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
-     
+    
+    /**
+     * Frees up all memory used by this object (Note: when you add the "final"
+     * modifier keyword to the method signature, it make it so that this method
+     * can NOT ever be overloaded)
+     */
+    @Override
+    public final void finalize() {
+        length = 0;                 // The length is set to zero
+        head = tail = null;         // References set to nulls
+        System.gc();                // Runs the garbage collector in Java
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * String representation of this object
      *
