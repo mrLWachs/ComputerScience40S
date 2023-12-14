@@ -1364,7 +1364,12 @@ public class ComputerScience30S
         // be private (meaning it is "encapsulated")
         // third.age = 10;
         
-        
+        // Create a student object and change properties, and call methods...
+        Student student = new Student();
+        student.name = "Studenty Studentson";
+        student.birthday();
+        student.talk();
+        student.die();
         
         
         
