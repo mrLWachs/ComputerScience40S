@@ -3,6 +3,7 @@
 package testing;
 
 /** Required API imports */
+import collections.LinkedList;
 import collections.Node;
 
 
@@ -83,6 +84,28 @@ public class CollectionsTest
         System.out.println("Node f = " + f.toString());
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
+        
+        // Create a LinkedList object to test the constructor
+        System.out.println("\nTesting default LinkedList constructor.......\n"); 
+        
+        LinkedList<Integer> list1 = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
