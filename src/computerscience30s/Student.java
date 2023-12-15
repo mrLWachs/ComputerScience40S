@@ -41,6 +41,30 @@ public class Student extends Person
      * @param number the student number for this student
      */
     public Student(String name, int age, String gender, int number) {
+        // You can call the contructor methods of the super class (the parent 
+        // class) from this class (the child or subclass) by using the keyword
+        // super and round brackets
+        super(name, age, gender);
+        
+        // We started the code for this constructor with the code you can see 
+        // below first. But, we encountered a few issues (like the age being 
+        // encapsulated / private, etc.) so instead, we ended up making a 
+        // call to the "super-constructor" method of the Person class (see the
+        // line above). I have left this code (but commented it out) as a  
+        // learning reference...
+        
+        // super.name = name;
+        // super.gender = gender;
+        // The keyword "super" in java means "the super class" or the name
+        // of the class that this class inherts from (in this case "Person")
+        
+        // super.age = age;
+        // super.alive = true;
+        // You cannot access private/encapsulated properties (or methods)
+        
+        
+        
+        
         
     }
     
