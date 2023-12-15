@@ -71,4 +71,15 @@ public class Student extends Person
         // The "Book" object must still be instantiated (so it is not "null")        
     }
     
+    public void study() {
+        
+    }
+    
+    public void slackOff() {
+        
+    }
+    
+    public void cram() {
+        
+    }
 }

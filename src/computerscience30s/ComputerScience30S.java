@@ -1365,8 +1365,9 @@ public class ComputerScience30S
         // third.age = 10;
         
         // Create a student object and change properties, and call methods...
-        Student student = new Student();
-        student.name = "Studenty Studentson";   // Inherited property
+        Student student = new Student("Emma Smith",17,"female",100);
+        // The next line is no longer needed...
+        // student.name = "Studenty Studentson";   // Inherited property
         student.birthday();
         student.talk();     // Methods inherited from Person (the super class)
         student.die();
