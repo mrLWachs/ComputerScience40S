@@ -64,8 +64,26 @@ public class LinkedList <T>
         System.gc();                // Runs the garbage collector in Java
     }
     
+    /**
+     * Accessor method for the number of nodes in the list (the length is a 
+     * immutable encapsulated property of the class) - no mutator method will
+     * be written (so 'length' remains a read-only property from outside the 
+     * class)
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
     
-    
+    /**
+     * Determines if the list is empty (no nodes) or not
+     * 
+     * @return it is empty (true) or it does contain some data (false)
+     */
+    public boolean isEmpty() {        
+        return length == 0;        
+    }
     
     
     
