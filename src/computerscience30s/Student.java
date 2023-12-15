@@ -68,7 +68,7 @@ public class Student extends Person
         // The keyword "this" can still be used to avoid a name conflict
         gpa = 0.0;
         book = new Book();
-        // The "Book" object must still be instantiated (so it is not "null")        
+        // The "Book" object must still be instantiated (so it is not "null")   
     }
     
     /**
@@ -111,6 +111,6 @@ public class Student extends Person
         System.out.println("\t Number: " + number);
         System.out.println("\t GPA:    " + gpa);   
         cram();     // Calling the private, helper, utility method
-    }
+    }    
     
 }
