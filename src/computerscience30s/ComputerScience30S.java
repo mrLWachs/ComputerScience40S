@@ -1368,9 +1368,12 @@ public class ComputerScience30S
         Student student = new Student("Emma Smith",17,"female",100);
         // The next line is no longer needed...
         // student.name = "Studenty Studentson";   // Inherited property
-        student.birthday();
-        student.talk();     // Methods inherited from Person (the super class)
-        student.die();
+        student.birthday();  // Methods inherited from Person (the super class)
+        student.talk();    
+        student.study();     // A method created just inside Student
+        student.talk();
+        student.slackOff();
+        student.talk();
         
         
         
