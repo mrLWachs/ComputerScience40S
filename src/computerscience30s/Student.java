@@ -62,10 +62,13 @@ public class Student extends Person
         // super.alive = true;
         // You cannot access private/encapsulated properties (or methods)
         
-        
-        
-        
-        
+        // Other class properties for the Student class specifically still need
+        // to be set to starting values...
+        this.number = number;
+        // The keyword "this" can still be used to avoid a name conflict
+        gpa = 0.0;
+        book = new Book();
+        // The "Book" object must still be instantiated (so it is not "null")        
     }
     
 }
