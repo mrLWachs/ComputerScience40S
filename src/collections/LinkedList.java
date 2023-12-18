@@ -212,7 +212,27 @@ public class LinkedList <T>
         return true;                        // Operation successful
     }
     
-    
+    /**
+     * Inserts (adds) data (generic type) into the front (head, start, etc) of
+     * this list
+     *
+     * @param data the generic type to add in
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addFront(T data) {
+        if (data == null) return false;     // null data cannot be added   
+        Node<T> node = new Node<>(data);    // new (memory) Node object created
+        if (isEmpty()) {                    // Adding first node
+            head = tail = node;             // Set LinkedList references
+        }
+        else {                              // Subsequent nodes added
+            node.next = head;               // Link node to rest of list
+            head.previous = node;           // Connect rest of list to node
+            head = node;                    // Reassign tail reference
+        }
+        length++;                           // Increase length environmental
+        return true;                        // Operation successful
+    }
     
     
 }
