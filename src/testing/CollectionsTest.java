@@ -106,7 +106,13 @@ public class CollectionsTest
         
         // More testing, explained in the outputs..............................
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest add (first to the back) of the list.....\n");        
+        System.out.println("addBack -> " + list1.addBack(51)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(50)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(-50)  + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(55)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(null) + "\t" + list1);
         
         
         
