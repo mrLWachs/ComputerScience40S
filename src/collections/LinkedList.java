@@ -85,9 +85,59 @@ public class LinkedList <T>
         return length == 0;        
     }
     
+    /**
+     * Accessor method to the encapsulated (private) property of the first
+     * (head) node of the list
+     * 
+     * @return reference to the first node
+     */
+    protected Node getFirstNode() {
+        return head;
+    }
     
+    /**
+     * Accessor method to the encapsulated (private) property of the last
+     * (tail) node of the list
+     * 
+     * @return reference to the last node
+     */
+    protected Node getLastNode() {
+        return tail;
+    }
     
+    /**
+     * A protected (can be called inside the class and by any children of this
+     * class) accessor method to retrieve a node reference (link, pointer, 
+     * address, etc.) to the passed index location (using an array style of
+     * indexing)
+     * 
+     * @param index the subscript, location, spot, index value
+     * @return a reference (not the data) to the node at this location or null
+     */
+    protected Node getNode(int index) {
+        if (!inRange(index))   return null;             // Not valid index
+        if (index == 0)        return getFirstNode();   // First node returned
+        if (index == length-1) return getLastNode();    // Last node returned
+        Node current = head;                            // Start at first node
+        for (int i = 0; i < index; i++) {               // Move to index
+            current = current.next;                     // Advance reference
+        }
+        return current;                                 // Return reference
+    }
     
+    /**
+     * A private (encapsulated or "help") method to error check to see if the
+     * index is in range (or "in bounds") of the list
+     * 
+     * @param index the location (element, subscript) to check
+     * @return it is in range (true) or not (false)
+     */
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // Empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index valid
+    }
     
     
     
