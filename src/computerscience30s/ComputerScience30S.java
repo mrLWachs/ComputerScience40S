@@ -1375,7 +1375,14 @@ public class ComputerScience30S
         student.slackOff();
         student.talk();    
         
-        
+        // Create a Teacher object and call it's methods...
+        Teacher teacher = new Teacher("Ms. McTeacherson");
+        teacher.students[0] = student;
+        // Creating "annonymous" student objects to add to the teacher
+        teacher.students[1] = new Student("Flash Thompson", 16, "male", 101);
+        teacher.students[2] = new Student("MJ Watson", 16, "female", 102);
+        teacher.students[3] = new Student("Ned Leeds", 16, "male", 103);
+        teacher.teach();
         
         
         
