@@ -1392,20 +1392,15 @@ public class ComputerScience30S
         husky.birthday();       // Method inherited from Person
         husky.talk();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // Create meeting object
+        Meeting meeting = new Meeting();
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(teacher);
+        meeting.attend(husky);
+        meeting.hold();
         
         System.out.println("Completed Learning classes!");
     }
