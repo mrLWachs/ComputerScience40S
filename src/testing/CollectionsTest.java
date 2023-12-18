@@ -91,7 +91,20 @@ public class CollectionsTest
         LinkedList<Integer> list1 = new LinkedList<>();
         LinkedList<Integer> list2 = new LinkedList<>();
         
+        // Test toString() method (before I add anything into the list)........
+        System.out.println("\nTesting toString, empty, size methods........\n");        
+        System.out.println("L1 toString -> " + list1.toString());
+        System.out.println("L2 toString -> " + list2.toString());
         
+        // Test isEmpty() method...............................................
+        System.out.println("L1 empty? -> " + list1.isEmpty());
+        System.out.println("L2 empty? -> " + list2.isEmpty());
+        
+        // Test size() method..................................................
+        System.out.println("L1 size -> " + list1.size());
+        System.out.println("L2 size -> " + list2.size());
+        
+        // More testing, explained in the outputs..............................
         
         
         
