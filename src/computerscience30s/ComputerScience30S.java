@@ -34,6 +34,8 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        System.out.println("\nComputer Science 30S Example started...\n");
+        
         // The line below "calls" a method (by its name) like making a 
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
@@ -48,6 +50,8 @@ public class ComputerScience30S
         // learnArrays();
         // learnClasses();
         LearnGraphics learnGraphics = new LearnGraphics();
+        
+        System.out.println("\nComputer Science 30S Example complete!\n");
     }
 
     /**
