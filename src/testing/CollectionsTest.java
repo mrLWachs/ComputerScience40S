@@ -129,7 +129,28 @@ public class CollectionsTest
         System.out.println("L1 size -> "   + list1.size()    + "\t" + list1);
         System.out.println("L2 size -> "   + list2.size()    + "\t" + list2);
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest get method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = list1.get(i);
+            System.out.println("Getting " + i + " = " + value + "\t" + list1);
+        }
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest set method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = new Integer(i+10);
+            System.out.println("Setting " + i + " to " + value + " -> " + 
+                               list1.set(i, value) + "\t" + list1);
+        }
+        System.out.println("Setting 0 to null -> " + list1.set(0, null) + 
+                           "\t" + list1);
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest equals method...........................\n");
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("List1 == List2 -> " + list1.equals(list2));
         
         
         
