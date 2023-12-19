@@ -260,5 +260,4 @@ public class LinkedList <T>
         return true;                                // Operation successful
     }
     
-    
 }
