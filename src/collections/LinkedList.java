@@ -260,4 +260,72 @@ public class LinkedList <T>
         return true;                                // Operation successful
     }
     
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // Create new list memory
+        for (int i = 0; i < this.length; i++) {     // Traverse list
+            that.addBack((T)this.get(i));
+            // This one line is the same as...
+            // T data = (T)this.get(i);
+            // that.addBack(data);
+        }        
+        return that;                                // New list returned
+    }
+    
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        // First error check the data and index values
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        
+        // The simple index number calls a method we already have
+        if (index == length-1) return addBack(data);    // Add to the end 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        
+        // Next, set all 4 proper references to insert the new node
+        node.next = current.next;                       
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;
+        
+        // Finishing up, add to lenght class property and return successfull
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        if (index == 0) return addFront(data);          // Add to the head 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        // Copy and paste the addAfter method and then applied "dual" opperation
+        // logic on all the references below ("next" becomes "previous", etc.)
+        node.previous = current.previous;                       
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+    
 }
