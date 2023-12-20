@@ -199,10 +199,6 @@ public class CollectionsTest
         
         
         
-        
-        
-        
-        
         System.out.println("\nCollections testing complete!\n");
     }
         
