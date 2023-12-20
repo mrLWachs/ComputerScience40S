@@ -4,7 +4,7 @@ package computerscience30s;
 
 import javax.swing.JFrame;
 
- 
+
 /**
  * Graphics1.java - using only code and imported "libraries" of code (or APIs),
  * it is the beginning of making a container (the frame) and various
