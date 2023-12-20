@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package computerscience30s;
 
+import javax.swing.JFrame;
+
  
 /**
  * Graphics1.java - using only code and imported "libraries" of code (or APIs),
@@ -14,8 +16,11 @@ package computerscience30s;
  * @author Mr. Wachs
  * @since Dec 19, 2023, 11:36:34 a.m.
  */
-public class Graphics1 
+public class Graphics1 extends JFrame
 {
 
+    public Graphics1() {
+        this.setVisible(true);
+    }
     
 }

@@ -49,6 +49,7 @@ public class ComputerScience30S
         // left side of NetBeans... 
         // learnArrays();
         // learnClasses();
+        
         LearnGraphics learnGraphics = new LearnGraphics();
         
         System.out.println("\nComputer Science 30S Example complete!\n");
