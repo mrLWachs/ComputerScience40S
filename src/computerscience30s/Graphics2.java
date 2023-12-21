@@ -47,49 +47,90 @@ public class Graphics2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        labelWithAnImage = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setText("jLabel2");
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
 
-        jButton1.setText("jButton1");
+        jButton1.setText("EXIT");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
-        jTextField1.setText("jTextField1");
+        labelWithAnImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/santa.gif"))); // NOI18N
+        labelWithAnImage.setText("Merry XMAS");
+        labelWithAnImage.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                labelWithAnImageMouseMoved(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(216, Short.MAX_VALUE))
+                    .addComponent(labelWithAnImage)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 491, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(96, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
-                .addComponent(jLabel2)
-                .addGap(68, 68, 68)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addGap(10, 10, 10)
+                .addComponent(labelWithAnImage)
+                .addGap(20, 20, 20)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(26, 26, 26)
                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        // Double clicking a button in the design mode, immediately jumps to 
+        // code written for you connected to that button - to add in your 
+        // code to execute (just like in Visual Studio). Parts of this code
+        // is also not editable (that is why is appears in grey) but you can 
+        // add the code for the "action" for this event
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // TODO add your handling code here:
+        
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add
+        labelWithAnImage.setText("Key pressed was " + evt.getKeyCode());
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void labelWithAnImageMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_labelWithAnImageMouseMoved
+        // TODO add your handling code here:
+        
+        // You can (but are not required to) rename objects in the designer
+        // (however, you are also not required to add three letter prefixes)
+        // But, this is still a good idea if you want). If you want to rename 
+        // an object right click on the object in the designer (or in the 
+        // navigator window) and select "Change Variable Name..."        
+        labelWithAnImage.setText("Mouse is at (" + evt.getX() + "," + evt.getY() + ")");
+    }//GEN-LAST:event_labelWithAnImageMouseMoved
 
     ////////////////////////////////////////////////////////////////////////////
     // NOTE: the NetBeans visual designer when a JFrame form is added to a 
@@ -144,7 +185,7 @@ public class Graphics2 extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel labelWithAnImage;
     // End of variables declaration//GEN-END:variables
 }
