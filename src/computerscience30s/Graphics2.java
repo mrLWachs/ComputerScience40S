@@ -129,7 +129,7 @@ public class Graphics2 extends javax.swing.JFrame {
         // But, this is still a good idea if you want). If you want to rename 
         // an object right click on the object in the designer (or in the 
         // navigator window) and select "Change Variable Name..."        
-        labelWithAnImage.setText("Mouse is at (" + evt.getX() + "," + evt.getY() + ")");
+        labelWithAnImage.setText("Mouse (" + evt.getX() + "," + evt.getY() + ")");
     }//GEN-LAST:event_labelWithAnImageMouseMoved
 
     ////////////////////////////////////////////////////////////////////////////
