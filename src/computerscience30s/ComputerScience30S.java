@@ -34,31 +34,57 @@ public class ComputerScience30S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        ////////////////////////////////////////////////////////////////////////
+        // Other code added later in the course to provide a menu of choices
+        // to the user to see which unit of examples...
         System.out.println("\nComputer Science 30S Example started...\n");
+        // Present the user with options
+        final String[] OPTIONS = {
+            "Unit 1: Introduction to Java Programming",
+            "Unit 2: Methods",
+            "Unit 3: Arrays",
+            "Unit 4: Classes",
+            "Bonus Unit: Graphics and User Interfaces"            
+        }; 
+        // Get the user's choice
+        String choice = JOptionPane.showInputDialog(
+                null,
+                "Select the unit to view examples of...",
+                "Computer Science with Mr. Wachs",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                OPTIONS,
+                OPTIONS[0]).toString();
+        // Choose which to see
+        if      (choice.equals(OPTIONS[0])) learnIntroductionToJava();
+        else if (choice.equals(OPTIONS[1])) learnMethods();
+        else if (choice.equals(OPTIONS[2])) learnArrays();
+        else if (choice.equals(OPTIONS[3])) learnClasses();
+        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
+        System.out.println("\nComputer Science 30S Example complete!\n");
+        
+        ////////////////////////////////////////////////////////////////////////
+        // Below is the original code (before the graphics unit) that we wrote 
+        // as we learned each unit before it was replaced with the code above
         
         // The line below "calls" a method (by its name) like making a 
         // "phone call" it uses two round brackets "( )" like functions in
         // math - when you see two round brackets, it is a clue that a 
         // method is being called (or it is the method itself)
-        
-        // learnIntroToJava();
-        
-        // learnMethods(); // Calling another method (that may not yet exist)
+//        learnIntroductionToJava();
+//        learnMethods();     // Calling another method (that may not yet exist)
         // If you call upon a method that does not yet exist, NetBeans can help
         // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans... 
-        // learnArrays();
-        // learnClasses();
-        
-        LearnGraphics learnGraphics = new LearnGraphics();
-        
-        System.out.println("\nComputer Science 30S Example complete!\n");
+        // left side of NetBeans...
+//        learnArrays();
+//        learnClasses();
+//        LearnGraphics learnGraphics = new LearnGraphics();
     }
 
     /**
     * Learn the content of the introduction unit (unit 1)
     */
-    private static void learnIntroToJava() {
+    private static void learnIntroductionToJava() {
         
         // TODO code application logic here
         
