@@ -52,6 +52,7 @@ public class Graphics2 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics 2");
 
         labelWithAnImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/santa.gif"))); // NOI18N
         labelWithAnImage.setText("Hello World");
