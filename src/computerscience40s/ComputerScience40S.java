@@ -3,7 +3,6 @@
 package computerscience40s;
 
 /** Required imports (APIs) */
-import computerscience40s.computerscience30s.ComputerScience30S;
 import testing.Tester;
 
 
@@ -27,10 +26,6 @@ public class ComputerScience40S
         System.out.println("\nComputer Science 40S starting...\n");
         Tester tester = new Tester();        
         System.out.println("\nComputer Science 40S complete!\n");
-        
-        // NOTE: If you would like to also see and test the code and concepts
-        // learned in computer Science 30S. Then uncomment the line below...
-        // ComputerScience30S lastYear = new ComputerScience30S();
     }
     
 }
