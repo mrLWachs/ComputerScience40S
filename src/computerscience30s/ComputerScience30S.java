@@ -37,31 +37,31 @@ public class ComputerScience30S
         ////////////////////////////////////////////////////////////////////////
         // Other code added later in the course to provide a menu of choices
         // to the user to see which unit of examples...
-        System.out.println("\nComputer Science 30S Example started...\n");
-        // Present the user with options
-        final String[] OPTIONS = {
-            "Unit 1: Introduction to Java Programming",
-            "Unit 2: Methods",
-            "Unit 3: Arrays",
-            "Unit 4: Classes",
-            "Bonus Unit: Graphics and User Interfaces"            
-        }; 
-        // Get the user's choice
-        String choice = JOptionPane.showInputDialog(
-                null,
-                "Select the unit to view examples of...",
-                "Computer Science with Mr. Wachs",
-                JOptionPane.PLAIN_MESSAGE,
-                null,
-                OPTIONS,
-                OPTIONS[0]).toString();
-        // Choose which to see
-        if      (choice.equals(OPTIONS[0])) learnIntroductionToJava();
-        else if (choice.equals(OPTIONS[1])) learnMethods();
-        else if (choice.equals(OPTIONS[2])) learnArrays();
-        else if (choice.equals(OPTIONS[3])) learnClasses();
-        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
-        System.out.println("\nComputer Science 30S Example complete!\n");
+//        System.out.println("\nComputer Science 30S Example started...\n");
+//        // Present the user with options
+//        final String[] OPTIONS = {
+//            "Unit 1: Introduction to Java Programming",
+//            "Unit 2: Methods",
+//            "Unit 3: Arrays",
+//            "Unit 4: Classes",
+//            "Bonus Unit: Graphics and User Interfaces"            
+//        }; 
+//        // Get the user's choice
+//        String choice = JOptionPane.showInputDialog(
+//                null,
+//                "Select the unit to view examples of...",
+//                "Computer Science with Mr. Wachs",
+//                JOptionPane.PLAIN_MESSAGE,
+//                null,
+//                OPTIONS,
+//                OPTIONS[0]).toString();
+//        // Choose which to see
+//        if      (choice.equals(OPTIONS[0])) learnIntroductionToJava();
+//        else if (choice.equals(OPTIONS[1])) learnMethods();
+//        else if (choice.equals(OPTIONS[2])) learnArrays();
+//        else if (choice.equals(OPTIONS[3])) learnClasses();
+//        else if (choice.equals(OPTIONS[4])) new LearnGraphics();        
+//        System.out.println("\nComputer Science 30S Example complete!\n");
         
         ////////////////////////////////////////////////////////////////////////
         // Below is the original code (before the graphics unit) that we wrote 
@@ -78,7 +78,7 @@ public class ComputerScience30S
         // left side of NetBeans...
 //        learnArrays();
 //        learnClasses();
-//        LearnGraphics learnGraphics = new LearnGraphics();
+        LearnGraphics learnGraphics = new LearnGraphics();
     }
 
     /**

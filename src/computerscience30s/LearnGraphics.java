@@ -22,7 +22,6 @@ public class LearnGraphics
         // Create class objects for different examples
         Graphics1 graphics1 = new Graphics1();  // Using just code 
         Graphics2 graphics2 = new Graphics2();  // Using the WYSIWYG editor
-        Graphics3 graphics3 = new Graphics3();  // Use a mix (hybrid)
         System.out.println("Completed Learning Graphics and UI!");
     }
     
