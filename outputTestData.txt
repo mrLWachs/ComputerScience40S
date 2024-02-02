@@ -64,12 +64,12 @@
 63:	answer4 = 125.0
 64:	answer5 = 3.0
 65:	answer6 = -0.6931471805599453
-66:	seed = 0.1438852266811116
+66:	seed = 0.8163247722009632
 67:	low    = 1.0
 68:	high   = 10.0
-69:	number = 2.438852266811116
-70:	value = 2
-71:	card is 15
+69:	number = 9.163247722009633
+70:	value = 9
+71:	card is 36
 72:	equal
 73:	The example is 
 74:	less than
@@ -328,7 +328,7 @@ They would like an easy w ... (line shortened) ...
 324:	Problems
 325:	Problems
 326:	Problems
-327:	Number is 6
+327:	Number is 10
 328:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
 329:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
 330:	Completed Learning Methods!
@@ -538,12 +538,12 @@ They would like an easy w ... (line shortened) ...
 534:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
 535:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
 536:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-537:	~~~ SIMULATED {Message} DIALOG: [4,7,5,8,10,6,3,6,6,2,4,1,10,6,6,3,8,10,3,10,6,2,8,3,1,7,7,8,7,7,9,9,4,4,1,8,3,7,3,7,1,4,8,10,6,5,4,2,2,7,] ~~~ 
-538:	Random character was X
-539:	b q H < 4 F ! R S I $ 8 ) n # l J 6 ? l 9 ] 5 i N ' 0 } i Y 
-F N d z ~ H ` ? 4 v ] ] Q 3 P E @ \ E I _ A G v ! 3 c 6 L ~ 
-& C x / , p < \ @ 3 G 3 _ o - b 9 X Y e / t y y * 8 > Z f x 
-z j % T G r * | ) ... (line shortened) ...
+537:	~~~ SIMULATED {Message} DIALOG: [5,1,8,2,4,8,9,10,8,4,3,8,10,10,8,8,1,8,2,1,10,7,1,4,3,2,9,7,4,3,2,3,5,9,7,4,1,3,5,1,7,10,10,5,1,8,10,8,3,8,] ~~~ 
+538:	Random character was =
+539:	s & . K b l e ` 7 > % s Q \ ; P a I 9 - q e v a 5 c | w > w 
+Z - # ? h e 2 { ? b u A v V " e @ . 4 G 5 A 6 3 h ? : 2 n q 
+* k U 9 K A - E r * @ m [ > 1 v $ 3 6 v ? U , 2 ` h 6 n [ k 
+u k K 4 b T 1 * e ... (line shortened) ...
 540:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 541:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 542:	X O X 
@@ -559,9 +559,7 @@ X O X
 549:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
 550:	Computer Science 30S complete!...................................................
 551:	Computer Science 40S starting......................................................
-552:	
-Recursion test started...
-
+552:	Recursion test started...
 553:	Recursive factorials............................
 554:	-1 factorial = 1
 555:	0 factorial = 1
@@ -842,12 +840,8 @@ Recursion test started...
 830:	8 to the exponent 10 = 1.073741824E9
 831:	9 to the exponent 10 = 3.486784401E9
 832:	10 to the exponent 10 = 1.0E10
-833:	
-Recursion complete!
-
-834:	
-Advanced Classes Test started...
-
+833:	Recursion complete!
+834:	Advanced Classes Test started...
 835:	unidentified is 0 identifies as unidentified
 836:	Per Soney is 0 identifies as unidentified
 837:	Per Soney is 1 identifies as unidentified
@@ -986,32 +980,20 @@ Advanced Classes Test started...
 963:	Mr. Lawrence Wachs is eating Apple from Do not eat!
 964:	Grill on the BBQ
 965:	Mr. Lawrence Wachs is eating Protein it was Savory
-966:	
-Advanced Classes Test complete!
-
-967:	
-Collections testing begins...
-
-968:	
-Testing Node constructors....................
-
-969:	
-Testing Node toString()......................
-
+966:	Advanced Classes Test complete!
+967:	Collections testing begins...
+968:	Testing Node constructors....................
+969:	Testing Node toString()......................
 970:	Node a = null
 971:	Node b = Sass
 972:	Node c = Pros
 973:	Node d = Joes
-974:	
-Testing Node clone().........................
-
+974:	Testing Node clone().........................
 975:	Node e = null
 976:	Node f = Sass
 977:	Node g = Pros
 978:	Node h = Joes
-979:	
-Testing Node equal().........................
-
+979:	Testing Node equal().........................
 980:	Node a == b? -> false
 981:	Node b == c? -> false
 982:	Node c == d? -> false
@@ -1020,9 +1002,7 @@ Testing Node equal().........................
 985:	Node f == b? -> true
 986:	Node g == c? -> true
 987:	Node h == d? -> true
-988:	
-Testing Node finalize()......................
-
+988:	Testing Node finalize()......................
 989:	Node a = null
 990:	Node b = Sass
 991:	Node c = Pros
@@ -1039,44 +1019,32 @@ Testing Node finalize()......................
 1002:	Node f = null
 1003:	Node g = null
 1004:	Node h = null
-1005:	
-Testing default LinkedList constructor.......
-
-1006:	
-Testing toString, empty, size methods........
-
+1005:	Testing default LinkedList constructor.......
+1006:	Testing toString, empty, size methods........
 1007:	L1 toString -> Empty LinkedList
 1008:	L2 toString -> Empty LinkedList
 1009:	L1 empty? -> true
 1010:	L2 empty? -> true
 1011:	L1 size -> 0
 1012:	L2 size -> 0
-1013:	
-Test add (first to the back) of the list.....
-
+1013:	Test add (first to the back) of the list.....
 1014:	addBack -> true	Linked List 	[51]
 1015:	addBack -> true	Linked List 	[51,50]
 1016:	addBack -> true	Linked List 	[51,50,-50]
 1017:	addBack -> true	Linked List 	[51,50,-50,55]
 1018:	addBack -> false	Linked List 	[51,50,-50,55]
-1019:	
-Test add (second to the front) of the list...
-
+1019:	Test add (second to the front) of the list...
 1020:	addFront -> true	Linked List 	[80,51,50,-50,55]
 1021:	addFront -> true	Linked List 	[81,80,51,50,-50,55]
 1022:	addFront -> true	Linked List 	[-80,81,80,51,50,-50,55]
 1023:	addFront -> true	Linked List 	[88,-80,81,80,51,50,-50,55]
 1024:	addFront -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1025:	
-Re-testing empty, size methods...............
-
+1025:	Re-testing empty, size methods...............
 1026:	L1 empty? -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
 1027:	L2 empty? -> true	Empty LinkedList
 1028:	L1 size -> 8	Linked List 	[88,-80,81,80,51,50,-50,55]
 1029:	L2 size -> 0	Empty LinkedList
-1030:	
-Test get method..............................
-
+1030:	Test get method..............................
 1031:	Getting -1 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
 1032:	Getting 0 = 88	Linked List 	[88,-80,81,80,51,50,-50,55]
 1033:	Getting 1 = -80	Linked List 	[88,-80,81,80,51,50,-50,55]
@@ -1087,9 +1055,7 @@ Test get method..............................
 1038:	Getting 6 = -50	Linked List 	[88,-80,81,80,51,50,-50,55]
 1039:	Getting 7 = 55	Linked List 	[88,-80,81,80,51,50,-50,55]
 1040:	Getting 8 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-1041:	
-Test set method..............................
-
+1041:	Test set method..............................
 1042:	Setting -1 to 9 -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
 1043:	Setting 0 to 10 -> true	Linked List 	[10,-80,81,80,51,50,-50,55]
 1044:	Setting 1 to 11 -> true	Linked List 	[10,11,81,80,51,50,-50,55]
@@ -1101,22 +1067,16 @@ Test set method..............................
 1050:	Setting 7 to 17 -> true	Linked List 	[10,11,12,13,14,15,16,17]
 1051:	Setting 8 to 18 -> false	Linked List 	[10,11,12,13,14,15,16,17]
 1052:	Setting 0 to null -> false	Linked List 	[10,11,12,13,14,15,16,17]
-1053:	
-Test equals method...........................
-
+1053:	Test equals method...........................
 1054:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
 1055:	List 2 = Empty LinkedList
 1056:	List1 == List2 -> false
-1057:	
-Test clone method............................
-
+1057:	Test clone method............................
 1058:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
 1059:	List 2 = Linked List 	[10,11,12,13,14,15,16,17]
 1060:	Re-testing equals...
 1061:	List1 == List2 -> true
-1062:	
-Test addAfter method.........................
-
+1062:	Test addAfter method.........................
 1063:	Adding value 	99	 after index 	-1	 result 	false	Linked List 	[10,11,12,13,14,15,16,17]
 1064:	Adding value 	100	 after index 	0	 result 	true	Linked List 	[10,100,11,12,13,14,15,16,17]
 1065:	Adding value 	101	 after index 	1	 result 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17]
@@ -1128,9 +1088,7 @@ Test addAfter method.........................
 1071:	Adding value 	107	 after index 	7	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1072:	Test other edge case
 1073:	Adding value 	10	 after index 	17	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1074:	
-Test addBefore method.........................
-
+1074:	Test addBefore method.........................
 1075:	Adding value 	99	 before index 	-1	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1076:	Adding value 	100	 before index 	0	 result 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1077:	Adding value 	101	 before index 	1	 result 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
@@ -1150,9 +1108,7 @@ Test addBefore method.........................
 1091:	Adding value 	115	 before index 	15	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1092:	Test other edge case
 1093:	Adding value 	10	 before index 	33	 result 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1094:	
-Test front and back methods..................
-
+1094:	Test front and back methods..................
 1095:	Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1096:	Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17]
 1097:	Back of list 1 = 17	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
@@ -1160,11 +1116,8 @@ Test front and back methods..................
 1099:	Clear out list 2
 1100:	Front of list 2 = null	Empty LinkedList
 1101:	Back of list 2 = null	Empty LinkedList
-1102:	
-Cloning list 2 from list 1
-1103:	
-Test removeFront method......................
-
+1102:	Cloning list 2 from list 1
+1103:	Test removeFront method......................
 1104:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
 1105:	Removing list 1 front = 	100
 1106:	Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
@@ -1231,11 +1184,8 @@ Test removeFront method......................
 1167:	Removing list 1 front = 	17
 1168:	Empty LinkedList	
 1169:	Removing list 1 front = 	null
-1170:	
-Cloning list 1 from list 2
-1171:	
-Test removeBack method.......................
-
+1170:	Cloning list 1 from list 2
+1171:	Test removeBack method.......................
 1172:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
 1173:	Removing list 2 back = 	17
 1174:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	
@@ -1302,11 +1252,8 @@ Test removeBack method.......................
 1235:	Removing list 2 back = 	100
 1236:	Empty LinkedList	
 1237:	Removing list 2 back = 	null
-1238:	
-Cloning list 2 from list 1
-1239:	
-Test remove method...........................
-
+1238:	Cloning list 2 from list 1
+1239:	Test remove method...........................
 1240:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
 1241:	Removing from list 1 from index: 	33	 removed: 	null
 1242:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	
@@ -1377,9 +1324,7 @@ Test remove method...........................
 1307:	Removing from list 1 from index: 	0	 removed: 	100
 1308:	Empty LinkedList	
 1309:	Removing from list 1 from index: 	-1	 removed: 	null
-1310:	
-Test contains method.........................
-
+1310:	Test contains method.........................
 1311:	List 1 (empty) contains 10 = false	Empty LinkedList
 1312:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1313:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
@@ -1414,11 +1359,8 @@ Test contains method.........................
 1342:	List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1343:	List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
 1344:	List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1345:	
-Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1346:	
-Test firstIndexOf and lastIndexOf methods....
-
+1345:	Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1346:	Test firstIndexOf and lastIndexOf methods....
 1347:	First index of 5: 	0
 1348:	Last  index of 5: 	7
 1349:	First index of 7: 	2
@@ -1427,107 +1369,72 @@ Test firstIndexOf and lastIndexOf methods....
 1352:	Last  index of 8: 	3
 1353:	First index of 9: 	-1
 1354:	Last  index of 9: 	-1
-1355:	
-Test numberOf method.........................
-
+1355:	Test numberOf method.........................
 1356:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1357:	Number of 5: 	3
 1358:	Number of 8: 	1
 1359:	Number of 9: 	0
-1360:	
-Test allIndices method.......................
-
+1360:	Test allIndices method.......................
 1361:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1362:	Array -> indices 5: 	[0, 4, 7]
 1363:	Array -> indices 8: 	[3]
 1364:	Array -> indices 9: 	null
-1365:	
-Cloning list 2 from list 1
-1366:	
-Test remove method...........................
-
+1365:	Cloning list 2 from list 1
+1366:	Test remove method...........................
 1367:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1368:	Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
 1369:	Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
 1370:	Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
-1371:	
-Test removeLast method.......................
-
+1371:	Test removeLast method.......................
 1372:	Linked List 	[6,7,5,6,7,5,6,7]
 1373:	Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
 1374:	Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
 1375:	Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
-1376:	
-Test removeAll method........................
-
+1376:	Test removeAll method........................
 1377:	Linked List 	[6,7,5,6,7,6,7]
 1378:	Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
 1379:	Removing all 6: 	true	Linked List 	[7,7,7]
 1380:	Removing all 9: 	false	Linked List 	[7,7,7]
-1381:	
-Cloning list 1 from list 2
-1382:	
-Test removeAll array method..................
-
+1381:	Cloning list 1 from list 2
+1382:	Test removeAll array method..................
 1383:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1384:	Array: 	[5, 6, 9]
 1385:	Removing all from array: Linked List 	[7,8,7,7]
-1386:	
-Test removeAll list method..................
-
+1386:	Test removeAll list method..................
 1387:	List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1388:	List 2 	Linked List 	[7,8,7,7]
 1389:	Removing all list 2 from list 1...
 1390:	List 1 	Linked List 	[5,6,5,6,5,6]
 1391:	List 2 	Linked List 	[7,8,7,7]
-1392:	
-Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1393:	
-Test containsAll array method................
-
+1392:	Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
+1393:	Test containsAll array method................
 1394:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
 1395:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
-1396:	
-Test containsAll list method.................
-
+1396:	Test containsAll list method.................
 1397:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
 1398:	Alter list 2...
 1399:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
-1400:	
-Test addAll array method.....................
-
+1400:	Test addAll array method.....................
 1401:	Linked List 	[6,7,8,6,7,5,6,45]
 1402:	Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-1403:	
-Test addAll list method......................
-
+1403:	Test addAll list method......................
 1404:	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
 1405:	Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
-1406:	
-Test subList method..........................
-
+1406:	Test subList method..........................
 1407:	List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
 1408:	Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
 1409:	Pulling out sub-list from 1 to 1: 	Linked List 	[6]
 1410:	Pulling out sub-list from 2 to 10: 	null
 1411:	Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1412:	
-Test fromArray method........................
-
+1412:	Test fromArray method........................
 1413:	Array is 	[5, 6, 7, 8]
 1414:	List is 	Linked List 	[5,6,7,8]
-1415:	
-Test fromLinkedList method...................
-
+1415:	Test fromLinkedList method...................
 1416:	1st List is 	Linked List 	[5,6,7,8]
 1417:	2nd List is 	Linked List 	[5,6,7,8]
-1418:	
-Test toArray method..........................
-
+1418:	Test toArray method..........................
 1419:	List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
-1420:	
-Testing the imported util LinkedList.........
-
+1420:	Testing the imported util LinkedList.........
 1421:	Imported constructor...
 1422:	Imported add:	[0.0]
 1423:	Imported add:	[0.0, 1.23]
@@ -1546,9 +1453,7 @@ Testing the imported util LinkedList.........
 1436:	Imported removeLast:	7.89
 1437:	Imported remove:	1.23
 1438:	Imported remove:	false
-1439:	
-Testing the imported util ArrayList.........
-
+1439:	Testing the imported util ArrayList.........
 1440:	Imported ArrayList:	[a, b, c, d, e]
 1441:	Using the enhanced for loop with this object...
 1442:	a 
@@ -1562,9 +1467,7 @@ Testing the imported util ArrayList.........
 1450:	c 
 1451:	d 
 1452:	e 
-1453:	
-Collections testing complete!
-
+1453:	Collections testing complete!
 1454:	Computer Science 40S complete!...................................................
 1455:	Computer Science 42SAP starting......................................................
 1456:	Computer Science 42SAP curriculum content starting......................................................
@@ -1635,259 +1538,260 @@ Collections testing complete!
 1521:	// 6.4 Developing Algorithms Using Arrays
 1522:	AP: Unit 6 (Arrays) completed!...................................................
 1523:	AP: Unit 8 (2D Arrays) started......................................................
-1524:	// 9.1 Creating
-1525:	AP: Unit 8 (2D Arrays) completed!...................................................
-1526:	AP curriculum - Part 3 Test completed!...................................................
-1527:	AP curriculum - Part 4 Test started......................................................
-1528:	AP: Unit 7 (Array List) started......................................................
-1529:	// 7.1 Introduction to ArrayList
-1530:	// 7.2 ArrayList Methods
-1531:	// 7.3 Traversing ArrayLists
-1532:	// 7.4 Developing Algorithms Using ArrayLists
-1533:	// 7.5 Searching
-1534:	// 7.6 Sorting
-1535:	// 7.7 Ethical Issues Around Data Collection
-1536:	AP: Unit 7 (Array List) completed!...................................................
-1537:	AP: Unit 10 (Recursion ) started......................................................
-1538:	// 10.1 Recursion
-1539:	// 10.2 Recursive Searching and Sorting
-1540:	AP: Unit 10 (Recursion ) completed!...................................................
-1541:	AP curriculum - Part 4 Test completed!...................................................
-1542:	Computer Science 42SAP curriculum content complete!...................................................
-1543:	Computer Science 42SAP bonus content starting......................................................
-1544:	Permanent Storage Test started......................................................
-1545:	// Learn about 'error traps'
-1546:	Divide by zero -> java.lang.ArithmeticException: / by zero
-1547:	// Create sample data to use
-1548:	// Save ONE piece of data to that permanent file
-1549:	File write error
-1550:	// Now involve the user to get a file name
-1551:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-1552:	File already exists!
-1553:	// Open file with one line (no user involvment)
-1554:	// Open file with multiple lines (user picks file)
-1555:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-1556:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
-1557:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
-1558:	This line read was q ~ pq ~ �
-1559:	// Class to save/open one line (no user)
-1560:	File save: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-1561:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-1562:	Before: Defenestration
-1563:	After : null
-1564:	// Class to save/open multiple lines (with user)
-1565:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1566:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-1567:	// Now save/open on a complex data type
-1568:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-1569:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-1570:	Before: Athlete: Husky: HighSchool: Student: Person
-1571:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-1572:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-1573:	Permanent Storage Test completed!...................................................
-1574:	Stacks and Queues Test started......................................................
-1575:	// Create objects for testing...
-1576:	// Create and Test a stack object...
-1577:	// Test toString, size, isEmpty, and push methods...
-1578:	Empty = true	Size = 0	Empty Stack
-1579:	// Loop through adding random values
-1580:	Empty = false	Size = 1	Stack top -> [March] <- bottom
-1581:	Empty = false	Size = 2	Stack top -> [viral,March] <- bottom
-1582:	Empty = false	Size = 3	Stack top -> [clews,viral,March] <- bottom
-1583:	Empty = false	Size = 4	Stack top -> [axles,clews,viral,March] <- bottom
-1584:	Empty = false	Size = 5	Stack top -> [Jolla,axles,clews,viral,March] <- bottom
-1585:	Empty = false	Size = 6	Stack top -> [frump,Jolla,axles,clews,viral,March] <- bottom
-1586:	Empty = false	Size = 7	Stack top -> [trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1587:	Empty = false	Size = 8	Stack top -> [Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1588:	Empty = false	Size = 9	Stack top -> [baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1589:	Empty = false	Size = 10	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1590:	// Test clone method...
-1591:	Clone stack: Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1592:	// Test equals method...
-1593:	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
+1524:	// 8.1 2D Arrays
+1525:	// 8.2 Traversing 2D Arrays
+1526:	AP: Unit 8 (2D Arrays) completed!...................................................
+1527:	AP curriculum - Part 3 Test completed!...................................................
+1528:	AP curriculum - Part 4 Test started......................................................
+1529:	AP: Unit 7 (Array List) started......................................................
+1530:	// 7.1 Introduction to ArrayList
+1531:	// 7.2 ArrayList Methods
+1532:	// 7.3 Traversing ArrayLists
+1533:	// 7.4 Developing Algorithms Using ArrayLists
+1534:	// 7.5 Searching
+1535:	// 7.6 Sorting
+1536:	// 7.7 Ethical Issues Around Data Collection
+1537:	AP: Unit 7 (Array List) completed!...................................................
+1538:	AP: Unit 10 (Recursion ) started......................................................
+1539:	// 10.1 Recursion
+1540:	// 10.2 Recursive Searching and Sorting
+1541:	AP: Unit 10 (Recursion ) completed!...................................................
+1542:	AP curriculum - Part 4 Test completed!...................................................
+1543:	Computer Science 42SAP curriculum content complete!...................................................
+1544:	Computer Science 42SAP complete!...................................................
+1545:	Computer Science 42SAP bonus content starting......................................................
+1546:	Permanent Storage Test started......................................................
+1547:	// Learn about 'error traps'
+1548:	Divide by zero -> java.lang.ArithmeticException: / by zero
+1549:	// Create sample data to use
+1550:	// Save ONE piece of data to that permanent file
+1551:	File write error
+1552:	// Now involve the user to get a file name
+1553:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1554:	File already exists!
+1555:	// Open file with one line (no user involvment)
+1556:	// Open file with multiple lines (user picks file)
+1557:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+1558:	This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
+1559:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
+1560:	This line read was q ~ pq ~ �
+1561:	// Class to save/open one line (no user)
+1562:	File save: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+1563:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+1564:	Before: Defenestration
+1565:	After : null
+1566:	// Class to save/open multiple lines (with user)
+1567:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1568:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+1569:	// Now save/open on a complex data type
+1570:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+1571:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
+1572:	Before: Athlete: Husky: HighSchool: Student: Person
+1573:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+1574:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+1575:	Permanent Storage Test completed!...................................................
+1576:	Stacks and Queues Test started......................................................
+1577:	// Create objects for testing...
+1578:	// Create and Test a stack object...
+1579:	// Test toString, size, isEmpty, and push methods...
+1580:	Empty = true	Size = 0	Empty Stack
+1581:	// Loop through adding random values
+1582:	Empty = false	Size = 1	Stack top -> [Maced] <- bottom
+1583:	Empty = false	Size = 2	Stack top -> [backs,Maced] <- bottom
+1584:	Empty = false	Size = 3	Stack top -> [Fermi,backs,Maced] <- bottom
+1585:	Empty = false	Size = 4	Stack top -> [Hopis,Fermi,backs,Maced] <- bottom
+1586:	Empty = false	Size = 5	Stack top -> [Beret,Hopis,Fermi,backs,Maced] <- bottom
+1587:	Empty = false	Size = 6	Stack top -> [leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1588:	Empty = false	Size = 7	Stack top -> [miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1589:	Empty = false	Size = 8	Stack top -> [Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1590:	Empty = false	Size = 9	Stack top -> [Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1591:	Empty = false	Size = 10	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1592:	// Test clone method...
+1593:	Clone stack: Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1594:	// Test equals method...
+1595:	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
 ==
-Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1594:	// Now change the copy
-1595:	// Now check again
-1596:	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
+Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1596:	// Now change the copy
+1597:	// Now check again
+1598:	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
 !=
-Stack top -> [Daisy] <- bottom
-1597:	// Re-clone the stack, and output
-1598:	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1599:	// Text the pop method...
-1600:	Clone stack:	Empty = false	Size = 10	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1601:	// Loop through removing values
-1602:	Popped -> semen	Empty = false	Size = 9	Stack top -> [baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1603:	Popped -> baaed	Empty = false	Size = 8	Stack top -> [Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1604:	Popped -> Bucky	Empty = false	Size = 7	Stack top -> [trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1605:	Popped -> trace	Empty = false	Size = 6	Stack top -> [frump,Jolla,axles,clews,viral,March] <- bottom
-1606:	Popped -> frump	Empty = false	Size = 5	Stack top -> [Jolla,axles,clews,viral,March] <- bottom
-1607:	Popped -> Jolla	Empty = false	Size = 4	Stack top -> [axles,clews,viral,March] <- bottom
-1608:	Popped -> axles	Empty = false	Size = 3	Stack top -> [clews,viral,March] <- bottom
-1609:	Popped -> clews	Empty = false	Size = 2	Stack top -> [viral,March] <- bottom
-1610:	Popped -> viral	Empty = false	Size = 1	Stack top -> [March] <- bottom
-1611:	Popped -> March	Empty = true	Size = 0	Empty Stack
-1612:	Popped -> null	Empty = true	Size = 0	Empty Stack
-1613:	// Test peek (top is wrapper no testing needed)...
-1614:	Clone Top = null
-1615:	Stack Top = semen
-1616:	// Test to array and to linked list...
-1617:	Linked List 	[semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March]
-1618:	Array   	[semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March]
-1619:	// Test our constructors...
-1620:	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1621:	Stack top -> [semen,baaed,Bucky,trace,frump,Jolla,axles,clews,viral,March] <- bottom
-1622:	// Test the Queue object...
-1623:	// Test toString,size,isEmpty, and enqueue methods...
-1624:	Empty = true	Size = 0	Empty Queue
-1625:	// Loop through adding random values
-1626:	Empty = false	Size = 1	Queue back -> [Combs] <- front
-1627:	Empty = false	Size = 2	Queue back -> [space,Combs] <- front
-1628:	Empty = false	Size = 3	Queue back -> [Felix,space,Combs] <- front
-1629:	Empty = false	Size = 4	Queue back -> [Lords,Felix,space,Combs] <- front
-1630:	Empty = false	Size = 5	Queue back -> [Cappy,Lords,Felix,space,Combs] <- front
-1631:	Empty = false	Size = 6	Queue back -> [Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1632:	Empty = false	Size = 7	Queue back -> [Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1633:	Empty = false	Size = 8	Queue back -> [bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1634:	Empty = false	Size = 9	Queue back -> [Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1635:	Empty = false	Size = 10	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1636:	// Test clone method...
-1637:	Clone Queue 			Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1638:	// Test equals method...
-1639:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
+Stack top -> [Cokes] <- bottom
+1599:	// Re-clone the stack, and output
+1600:	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1601:	// Text the pop method...
+1602:	Clone stack:	Empty = false	Size = 10	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1603:	// Loop through removing values
+1604:	Popped -> imbue	Empty = false	Size = 9	Stack top -> [Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1605:	Popped -> Mason	Empty = false	Size = 8	Stack top -> [Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1606:	Popped -> Loise	Empty = false	Size = 7	Stack top -> [miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1607:	Popped -> miked	Empty = false	Size = 6	Stack top -> [leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1608:	Popped -> leads	Empty = false	Size = 5	Stack top -> [Beret,Hopis,Fermi,backs,Maced] <- bottom
+1609:	Popped -> Beret	Empty = false	Size = 4	Stack top -> [Hopis,Fermi,backs,Maced] <- bottom
+1610:	Popped -> Hopis	Empty = false	Size = 3	Stack top -> [Fermi,backs,Maced] <- bottom
+1611:	Popped -> Fermi	Empty = false	Size = 2	Stack top -> [backs,Maced] <- bottom
+1612:	Popped -> backs	Empty = false	Size = 1	Stack top -> [Maced] <- bottom
+1613:	Popped -> Maced	Empty = true	Size = 0	Empty Stack
+1614:	Popped -> null	Empty = true	Size = 0	Empty Stack
+1615:	// Test peek (top is wrapper no testing needed)...
+1616:	Clone Top = null
+1617:	Stack Top = imbue
+1618:	// Test to array and to linked list...
+1619:	Linked List 	[imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced]
+1620:	Array   	[imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced]
+1621:	// Test our constructors...
+1622:	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1623:	Stack top -> [imbue,Mason,Loise,miked,leads,Beret,Hopis,Fermi,backs,Maced] <- bottom
+1624:	// Test the Queue object...
+1625:	// Test toString,size,isEmpty, and enqueue methods...
+1626:	Empty = true	Size = 0	Empty Queue
+1627:	// Loop through adding random values
+1628:	Empty = false	Size = 1	Queue back -> [Tweed] <- front
+1629:	Empty = false	Size = 2	Queue back -> [quids,Tweed] <- front
+1630:	Empty = false	Size = 3	Queue back -> [infer,quids,Tweed] <- front
+1631:	Empty = false	Size = 4	Queue back -> [Faust,infer,quids,Tweed] <- front
+1632:	Empty = false	Size = 5	Queue back -> [Boony,Faust,infer,quids,Tweed] <- front
+1633:	Empty = false	Size = 6	Queue back -> [rited,Boony,Faust,infer,quids,Tweed] <- front
+1634:	Empty = false	Size = 7	Queue back -> [oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1635:	Empty = false	Size = 8	Queue back -> [Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1636:	Empty = false	Size = 9	Queue back -> [cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1637:	Empty = false	Size = 10	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1638:	// Test clone method...
+1639:	Clone Queue 			Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1640:	// Test equals method...
+1641:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
 ==
-Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1640:	// Now change the duplicate
-1641:	// Now check again
-1642:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
+Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1642:	// Now change the duplicate
+1643:	// Now check again
+1644:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
 ==
-Queue back -> [wasts] <- front
-1643:	// Re-clone the queue, and output
-1644:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1645:	// Test the dequeue method...
-1646:	Clone queue:	Empty = false	Size = 10	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1647:	// Loop through removing values
-1648:	Dequeued -> Combs	Empty = false	Size = 9	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space] <- front
-1649:	Dequeued -> space	Empty = false	Size = 8	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix] <- front
-1650:	Dequeued -> Felix	Empty = false	Size = 7	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords] <- front
-1651:	Dequeued -> Lords	Empty = false	Size = 6	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy] <- front
-1652:	Dequeued -> Cappy	Empty = false	Size = 5	Queue back -> [roost,Malia,bothy,Macao,Sophi] <- front
-1653:	Dequeued -> Sophi	Empty = false	Size = 4	Queue back -> [roost,Malia,bothy,Macao] <- front
-1654:	Dequeued -> Macao	Empty = false	Size = 3	Queue back -> [roost,Malia,bothy] <- front
-1655:	Dequeued -> bothy	Empty = false	Size = 2	Queue back -> [roost,Malia] <- front
-1656:	Dequeued -> Malia	Empty = false	Size = 1	Queue back -> [roost] <- front
-1657:	Dequeued -> roost	Empty = true	Size = 0	Empty Queue
-1658:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-1659:	// Test front and back...
-1660:	Clone Front = null
-1661:	Queue Front = Combs
-1662:	Clone Back  = null
-1663:	Queue Back  = roost
-1664:	// Test to array and to linked list...
-1665:	Linked List 	[roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs]
-1666:	Array   	[roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs]
-1667:	// Test our constructors...
-1668:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1669:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1670:	// Constructors from stack to queue (and back)...
-1671:	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front	 into 	Stack top -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- bottom
-1672:	Stack top -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- bottom	 into 	Queue back -> [roost,Malia,bothy,Macao,Sophi,Cappy,Lords,Felix,space,Combs] <- front
-1673:	Stacks and Queues Test completed!...................................................
-1674:	Searching and Sorting Test started......................................................
-1675:	// For the I.B. Exam, you only need to know:
-1676:	// Search: linear search and binary search
-1677:	// Sort: bubble sort and the selection sort
-1678:	// Create some constants (edges) for the data
-1679:	// Create some random data to search through and sort
-1680:	// Including edge cases to test
-1681:	// Create data to store the results...
-1682:	// The simpliest of searches
-1683:	// Now the linear search on all test data
-1684:	// Simple sort...
-1685:	// We will re-scramble array for further testing
-1686:	// Now bubble sort (from bubbles rising from water)
-1687:	// Now selection sort (from selecting the smallest)
-1688:	// Now binary search (named after two or dividing)
-1689:	// NOTE: binary search can only happen on sorted list
-1690:	// Redo some of the test data...
-1691:	// Use class for searching and sorting
-1692:	// Create random linked list data
-1693:	// Place all test cases into another linked list
-1694:	// Execute the linear search on all test data...
-1695:	// Execute all the sorts on all test data...
-1696:	// Bubble sort LinkedList data...
-1697:	// Selection sort LinkedList data...
-1698:	// Shell sort LinkedList data...
-1699:	// Insertion sort LinkedList data...
-1700:	// Quick sort LinkedList data...
-1701:	// Merge sort LinkedList data...
-1702:	// Execute the binary search on all test data...
-1703:	Searching and Sorting Test completed!...................................................
-1704:	Binary Trees Test started......................................................
-1705:	// Constants/variables for creating random values...
-1706:	// Creating some TreeNode objects...
-1707:	// Linking the TreeNodes...
-1708:	// Testing TreeNode equals...
-1709:	// Testing TreeNode toString...
-1710:	72
-1711:	18
-1712:	35
-1713:	// Creating a Tree object...
-1714:	// Test the insert method...
-1715:	// Insert one more...
-1716:	// Test the search of the tree...
-1717:	Should be found     = true
-1718:	Should NOT be found = false
-1719:	// Test toString() and pre, post, in order traversals
-1720:	Binary Tree:
-Order: Linked List 	[73,31,71,62,43,20]
-Pre:   Linked List 	[73,31,20,71,62,43]
-Post:  Linked List 	[20,43,62,71,31,73]
-In:    Linked List 	[20,31,43,62,71,73]
-1721:	// Building second tree (test clone) and test equals
-1722:	1st tree -> Linked List 	[20,31,43,62,71,73]
-1723:	2nd tree -> Linked List 	[19,68,68,74,77,99]
-1724:	1st!=2nd
-1725:	// Building a third tree (test clone) and test equals
-1726:	1st tree -> Linked List 	[20,31,43,62,71,73]
-1727:	3rd tree -> Linked List 	[20,31,43,62,71,73]
-1728:	1st==3rd
-1729:	// Build all our data structures from each other...
-1730:	// Create variable objects...
-1731:	// Create array from variables...
-1732:	// Create LinkedList from array...
-1733:	// Create Stack from LinkedList...
-1734:	// Create Queue from Stack...
-1735:	// Create Tree from Queue...
-1736:	// Output variables,array,list,stack,queue,tree...
-1737:	sealy
-1738:	whack
-1739:	vials
-1740:	sorry
-1741:	loses
-1742:	[sealy,whack,vials,sorry,loses]
-1743:	Linked List 	[sealy,whack,vials,sorry,loses]
-1744:	Stack top -> [sealy,whack,vials,sorry,loses] <- bottom
-1745:	Queue back -> [sealy,whack,vials,sorry,loses] <- front
-1746:	Binary Tree:
-Order: Linked List 	[sealy,whack,vials,sorry,loses]
-Pre:   Linked List 	[sealy,loses,whack,vials,sorry]
-Post:  Linked List 	[loses,sorry,vials,whack,sealy]
-In:    Linked List 	[loses,seal ... (line shortened) ...
-1747:	// Now re-building queue from tree
-1748:	// Now re-building stack from queue
-1749:	// Now re-building LinkedList from stack...
-1750:	// Now re-building array from LinkedList...
-1751:	// Output array,list,stack,queue,tree again...
-1752:	[loses,sealy,sorry,vials,whack]
-1753:	Linked List 	[loses,sealy,sorry,vials,whack]
-1754:	Stack top -> [loses,sealy,sorry,vials,whack] <- bottom
-1755:	Queue back -> [loses,sealy,sorry,vials,whack] <- front
-1756:	Binary Tree:
-Order: Linked List 	[sealy,whack,vials,sorry,loses]
-Pre:   Linked List 	[sealy,loses,whack,vials,sorry]
-Post:  Linked List 	[loses,sorry,vials,whack,sealy]
-In:    Linked List 	[loses,seal ... (line shortened) ...
-1757:	Binary Trees Test completed!...................................................
-1758:	Computer Science 42SAP bonus content complete!...................................................
-1759:	Computer Science 42SAP complete!...................................................
+Queue back -> [Minot] <- front
+1645:	// Re-clone the queue, and output
+1646:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1647:	// Test the dequeue method...
+1648:	Clone queue:	Empty = false	Size = 10	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1649:	// Loop through removing values
+1650:	Dequeued -> Tweed	Empty = false	Size = 9	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids] <- front
+1651:	Dequeued -> quids	Empty = false	Size = 8	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer] <- front
+1652:	Dequeued -> infer	Empty = false	Size = 7	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust] <- front
+1653:	Dequeued -> Faust	Empty = false	Size = 6	Queue back -> [dozen,cress,Merry,oozes,rited,Boony] <- front
+1654:	Dequeued -> Boony	Empty = false	Size = 5	Queue back -> [dozen,cress,Merry,oozes,rited] <- front
+1655:	Dequeued -> rited	Empty = false	Size = 4	Queue back -> [dozen,cress,Merry,oozes] <- front
+1656:	Dequeued -> oozes	Empty = false	Size = 3	Queue back -> [dozen,cress,Merry] <- front
+1657:	Dequeued -> Merry	Empty = false	Size = 2	Queue back -> [dozen,cress] <- front
+1658:	Dequeued -> cress	Empty = false	Size = 1	Queue back -> [dozen] <- front
+1659:	Dequeued -> dozen	Empty = true	Size = 0	Empty Queue
+1660:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+1661:	// Test front and back...
+1662:	Clone Front = null
+1663:	Queue Front = Tweed
+1664:	Clone Back  = null
+1665:	Queue Back  = dozen
+1666:	// Test to array and to linked list...
+1667:	Linked List 	[dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed]
+1668:	Array   	[dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed]
+1669:	// Test our constructors...
+1670:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1671:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1672:	// Constructors from stack to queue (and back)...
+1673:	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front	 into 	Stack top -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- bottom
+1674:	Stack top -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- bottom	 into 	Queue back -> [dozen,cress,Merry,oozes,rited,Boony,Faust,infer,quids,Tweed] <- front
+1675:	Stacks and Queues Test completed!...................................................
+1676:	Searching and Sorting Test started......................................................
+1677:	// For the I.B. Exam, you only need to know:
+1678:	// Search: linear search and binary search
+1679:	// Sort: bubble sort and the selection sort
+1680:	// Create some constants (edges) for the data
+1681:	// Create some random data to search through and sort
+1682:	// Including edge cases to test
+1683:	// Create data to store the results...
+1684:	// The simpliest of searches
+1685:	// Now the linear search on all test data
+1686:	// Simple sort...
+1687:	// We will re-scramble array for further testing
+1688:	// Now bubble sort (from bubbles rising from water)
+1689:	// Now selection sort (from selecting the smallest)
+1690:	// Now binary search (named after two or dividing)
+1691:	// NOTE: binary search can only happen on sorted list
+1692:	// Redo some of the test data...
+1693:	// Use class for searching and sorting
+1694:	// Create random linked list data
+1695:	// Place all test cases into another linked list
+1696:	// Execute the linear search on all test data...
+1697:	// Execute all the sorts on all test data...
+1698:	// Bubble sort LinkedList data...
+1699:	// Selection sort LinkedList data...
+1700:	// Shell sort LinkedList data...
+1701:	// Insertion sort LinkedList data...
+1702:	// Quick sort LinkedList data...
+1703:	// Merge sort LinkedList data...
+1704:	// Execute the binary search on all test data...
+1705:	Searching and Sorting Test completed!...................................................
+1706:	Binary Trees Test started......................................................
+1707:	// Constants/variables for creating random values...
+1708:	// Creating some TreeNode objects...
+1709:	// Linking the TreeNodes...
+1710:	// Testing TreeNode equals...
+1711:	// Testing TreeNode toString...
+1712:	45
+1713:	67
+1714:	24
+1715:	// Creating a Tree object...
+1716:	// Test the insert method...
+1717:	// Insert one more...
+1718:	// Test the search of the tree...
+1719:	Should be found     = true
+1720:	Should NOT be found = false
+1721:	// Test toString() and pre, post, in order traversals
+1722:	Binary Tree:
+Order: Linked List 	[52,50,51,81,89,72]
+Pre:   Linked List 	[52,50,51,81,72,89]
+Post:  Linked List 	[51,50,72,89,81,52]
+In:    Linked List 	[50,51,52,72,81,89]
+1723:	// Building second tree (test clone) and test equals
+1724:	1st tree -> Linked List 	[50,51,52,72,81,89]
+1725:	2nd tree -> Linked List 	[18,44,74,79,82,82]
+1726:	1st!=2nd
+1727:	// Building a third tree (test clone) and test equals
+1728:	1st tree -> Linked List 	[50,51,52,72,81,89]
+1729:	3rd tree -> Linked List 	[50,51,52,72,81,89]
+1730:	1st==3rd
+1731:	// Build all our data structures from each other...
+1732:	// Create variable objects...
+1733:	// Create array from variables...
+1734:	// Create LinkedList from array...
+1735:	// Create Stack from LinkedList...
+1736:	// Create Queue from Stack...
+1737:	// Create Tree from Queue...
+1738:	// Output variables,array,list,stack,queue,tree...
+1739:	chews
+1740:	mimes
+1741:	muted
+1742:	allys
+1743:	lease
+1744:	[chews,mimes,muted,allys,lease]
+1745:	Linked List 	[chews,mimes,muted,allys,lease]
+1746:	Stack top -> [chews,mimes,muted,allys,lease] <- bottom
+1747:	Queue back -> [chews,mimes,muted,allys,lease] <- front
+1748:	Binary Tree:
+Order: Linked List 	[chews,mimes,muted,allys,lease]
+Pre:   Linked List 	[chews,allys,mimes,lease,muted]
+Post:  Linked List 	[allys,lease,muted,mimes,chews]
+In:    Linked List 	[allys,chew ... (line shortened) ...
+1749:	// Now re-building queue from tree
+1750:	// Now re-building stack from queue
+1751:	// Now re-building LinkedList from stack...
+1752:	// Now re-building array from LinkedList...
+1753:	// Output array,list,stack,queue,tree again...
+1754:	[allys,chews,lease,mimes,muted]
+1755:	Linked List 	[allys,chews,lease,mimes,muted]
+1756:	Stack top -> [allys,chews,lease,mimes,muted] <- bottom
+1757:	Queue back -> [allys,chews,lease,mimes,muted] <- front
+1758:	Binary Tree:
+Order: Linked List 	[chews,mimes,muted,allys,lease]
+Pre:   Linked List 	[chews,allys,mimes,lease,muted]
+Post:  Linked List 	[allys,lease,muted,mimes,chews]
+In:    Linked List 	[allys,chew ... (line shortened) ...
+1759:	Binary Trees Test completed!...................................................
+1760:	Computer Science 42SAP bonus content complete!...................................................

@@ -32,7 +32,7 @@ public class RecursionTest
      * one) - empty round brackets it is called the "default" constructor
      */
     public RecursionTest() {
-        System.out.println("\nRecursion test started...\n");
+        System.out.println("Recursion test started...");
         
         // When testing, think of three scenarios:
             // (1) Typical case ("user"): do what they are told to do
@@ -71,7 +71,7 @@ public class RecursionTest
             }
         }
         
-        System.out.println("\nRecursion complete!\n");
+        System.out.println("Recursion complete!");
     }
 
 }

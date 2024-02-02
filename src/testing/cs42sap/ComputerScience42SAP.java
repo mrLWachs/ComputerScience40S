@@ -4,7 +4,6 @@ package testing.cs42sap;
 
 /** Required API imports */
 import io.Simulator;
-import testing.cs42sap.bonus.BonusContentCS42SAP;
 import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 
 
@@ -26,7 +25,6 @@ public class ComputerScience42SAP
     public ComputerScience42SAP() {
         Simulator.header("Computer Science 42SAP starting...");         
         new CurriculumContentCS42SAP();
-        new BonusContentCS42SAP();
         Simulator.header("Computer Science 42SAP complete!");
     }
     

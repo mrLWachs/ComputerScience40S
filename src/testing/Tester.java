@@ -7,6 +7,7 @@ import io.Simulator;
 import testing.cs30s.ComputerScience30S;
 import testing.cs40s.ComputerScience40S;
 import testing.cs42sap.ComputerScience42SAP;
+import testing.cs42sap.bonus.BonusContentCS42SAP;
 
 
 /**
@@ -24,8 +25,9 @@ public class Tester
     public Tester() {
         Simulator.header("Mr. Wachs Computer Science testing started...");
         new ComputerScience30S();
-        new ComputerScience40S();
-        new ComputerScience42SAP();
+        new ComputerScience40S();        
+        new ComputerScience42SAP();        
+        new BonusContentCS42SAP();
         Simulator.saveOutput();
         Simulator.header("Mr. Wachs Computer Science testing complete!");
     }

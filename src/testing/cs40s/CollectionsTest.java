@@ -24,24 +24,24 @@ public class CollectionsTest
      * Default constructor, set class properties
      */
     public CollectionsTest() {
-        System.out.println("\nCollections testing begins...\n");
+        System.out.println("Collections testing begins...");
         
         // Create some node objects...
-        System.out.println("\nTesting Node constructors....................\n");
+        System.out.println("Testing Node constructors....................");
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("Sass");
         Node<String> c = new Node<>("Pros", b);
         Node<String> d = new Node<>("Joes", c, b);
         
         // Output our nodes...
-        System.out.println("\nTesting Node toString()......................\n");
+        System.out.println("Testing Node toString()......................");
         System.out.println("Node a = " + a.toString());
         System.out.println("Node b = " + b.toString());
         System.out.println("Node c = " + c.toString());
         System.out.println("Node d = " + d.toString());
         
         // Clone a node...
-        System.out.println("\nTesting Node clone().........................\n");
+        System.out.println("Testing Node clone().........................");
         Node<String> e = a.clone();
         Node<String> f = b.clone();
         Node<String> g = c.clone();
@@ -52,7 +52,7 @@ public class CollectionsTest
         System.out.println("Node h = " + h.toString());
         
         // Check if nodes are equal...
-        System.out.println("\nTesting Node equal().........................\n");
+        System.out.println("Testing Node equal().........................");
         System.out.println("Node a == b? -> " + a.equals(b));
         System.out.println("Node b == c? -> " + b.equals(c));
         System.out.println("Node c == d? -> " + c.equals(d));
@@ -63,7 +63,7 @@ public class CollectionsTest
         System.out.println("Node h == d? -> " + h.equals(d));
         
         // finalize some nodes (wipe em out, "destroy" them, free up memory)
-        System.out.println("\nTesting Node finalize()......................\n");
+        System.out.println("Testing Node finalize()......................");
         System.out.println("Node a = " + a.toString());
         System.out.println("Node b = " + b.toString());
         System.out.println("Node c = " + c.toString());
@@ -90,12 +90,12 @@ public class CollectionsTest
         System.out.println("Node h = " + h.toString());
         
         // Create a LinkedList object to test the constructor
-        System.out.println("\nTesting default LinkedList constructor.......\n");        
+        System.out.println("Testing default LinkedList constructor.......");        
         LinkedList<Integer> list1 = new LinkedList<>();
         LinkedList<Integer> list2 = new LinkedList<>();
         
         // Test toString() method (before I add anything into the list)........
-        System.out.println("\nTesting toString, empty, size methods........\n");        
+        System.out.println("Testing toString, empty, size methods........");        
         System.out.println("L1 toString -> " + list1.toString());
         System.out.println("L2 toString -> " + list2.toString());
         
@@ -110,7 +110,7 @@ public class CollectionsTest
         // More testing, explained in the outputs..............................
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest add (first to the back) of the list.....\n");        
+        System.out.println("Test add (first to the back) of the list.....");        
         System.out.println("addBack -> " + list1.addBack(51)   + "\t" + list1);
         System.out.println("addBack -> " + list1.addBack(50)   + "\t" + list1);
         System.out.println("addBack -> " + list1.addBack(-50)  + "\t" + list1);
@@ -118,7 +118,7 @@ public class CollectionsTest
         System.out.println("addBack -> " + list1.addBack(null) + "\t" + list1);
         
         ////////////////////////////////////////////////////////////////////////        
-        System.out.println("\nTest add (second to the front) of the list...\n");        
+        System.out.println("Test add (second to the front) of the list...");        
         System.out.println("addFront -> " + list1.addFront(80)   + "\t" + list1);
         System.out.println("addFront -> " + list1.addFront(81)   + "\t" + list1);
         System.out.println("addFront -> " + list1.addFront(-80)  + "\t" + list1);
@@ -126,21 +126,21 @@ public class CollectionsTest
         System.out.println("addFront -> " + list1.addFront(null) + "\t" + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nRe-testing empty, size methods...............\n");  
+        System.out.println("Re-testing empty, size methods...............");  
         System.out.println("L1 empty? -> " + list1.isEmpty() + "\t" + list1);
         System.out.println("L2 empty? -> " + list2.isEmpty() + "\t" + list2);
         System.out.println("L1 size -> "   + list1.size()    + "\t" + list1);
         System.out.println("L2 size -> "   + list2.size()    + "\t" + list2);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest get method..............................\n");
+        System.out.println("Test get method..............................");
         for (int i = 0-1; i < list1.size()+1; i++) {
             Integer value = list1.get(i);
             System.out.println("Getting " + i + " = " + value + "\t" + list1);
         }
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest set method..............................\n");
+        System.out.println("Test set method..............................");
         for (int i = 0-1; i < list1.size()+1; i++) {
             Integer value = new Integer(i+10);
             System.out.println("Setting " + i + " to " + value + " -> " + 
@@ -150,13 +150,13 @@ public class CollectionsTest
                            "\t" + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest equals method...........................\n");
+        System.out.println("Test equals method...........................");
         System.out.println("List 1 = " + list1.toString());
         System.out.println("List 2 = " + list2.toString());
         System.out.println("List1 == List2 -> " + list1.equals(list2));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest clone method............................\n");
+        System.out.println("Test clone method............................");
         list2 = list1.clone();
         System.out.println("List 1 = " + list1.toString());
         System.out.println("List 2 = " + list2.toString());
@@ -164,7 +164,7 @@ public class CollectionsTest
         System.out.println("List1 == List2 -> " + list1.equals(list2));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest addAfter method.........................\n");
+        System.out.println("Test addAfter method.........................");
         int size = list1.size();
         for (int i = 0-1; i < size; i++) {
             int number = i + 100;
@@ -182,7 +182,7 @@ public class CollectionsTest
                            "\t"                + list1.toString());
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest addBefore method.........................\n");
+        System.out.println("Test addBefore method.........................");
         size = list1.size();
         for (int i = 0-1; i < size; i++) {
             int number = i + 100;
@@ -200,7 +200,7 @@ public class CollectionsTest
                            "\t"                + list1.toString());
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest front and back methods..................\n");
+        System.out.println("Test front and back methods..................");
         System.out.println("Front of list 1 = " + list1.front() + "\t" + list1);
         System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
         System.out.println("Back of list 1 = " + list1.back() + "\t" + list1);
@@ -211,11 +211,11 @@ public class CollectionsTest
         System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nCloning list 2 from list 1");
+        System.out.println("Cloning list 2 from list 1");
         list2 = list1.clone();
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeFront method......................\n");
+        System.out.println("Test removeFront method......................");
         size = list1.size()+1;
         for (int i = 0; i < size; i++) {
             System.out.print(list1.toString() + "\t");
@@ -224,11 +224,11 @@ public class CollectionsTest
         }
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nCloning list 1 from list 2");
+        System.out.println("Cloning list 1 from list 2");
         list1 = list2.clone();
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeBack method.......................\n");
+        System.out.println("Test removeBack method.......................");
         size = list2.size()+1;
         for (int i = 0; i < size; i++) {
             System.out.print(list2.toString() + "\t");
@@ -237,11 +237,11 @@ public class CollectionsTest
         }
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nCloning list 2 from list 1");
+        System.out.println("Cloning list 2 from list 1");
         list2 = list1.clone();
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest remove method...........................\n");
+        System.out.println("Test remove method...........................");
         size = list2.size()+1;
         for (int i = size; i >= -1; i--) {
             System.out.print(list1.toString() + "\t");
@@ -251,7 +251,7 @@ public class CollectionsTest
         }
         
         ////////////////////////////////////////////////////////////////////////        
-        System.out.println("\nTest contains method.........................\n");
+        System.out.println("Test contains method.........................");
         System.out.println("List 1 (empty) contains 10 = " + 
                             list1.contains(10) + "\t" + list1);
         for (int i = 0; i < list2.size(); i++) {
@@ -266,10 +266,10 @@ public class CollectionsTest
         list1.clear(); 
         list1.add(5); list1.add(6); list1.add(7); list1.add(8); list1.add(5); 
         list1.add(6); list1.add(7); list1.add(5); list1.add(6); list1.add(7);
-        System.out.println("\nResetting list 1 to: " + list1);
+        System.out.println("Resetting list 1 to: " + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest firstIndexOf and lastIndexOf methods....\n");
+        System.out.println("Test firstIndexOf and lastIndexOf methods....");
         System.out.println("First index of 5: \t" + list1.firstIndexOf(5));
         System.out.println("Last  index of 5: \t" + list1.lastIndexOf(5));
         System.out.println("First index of 7: \t" + list1.firstIndexOf(7));
@@ -280,14 +280,14 @@ public class CollectionsTest
         System.out.println("Last  index of 9: \t" + list1.lastIndexOf(9));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest numberOf method.........................\n");
+        System.out.println("Test numberOf method.........................");
         System.out.println(list1);
         System.out.println("Number of 5: \t" + list1.numberOf(5));
         System.out.println("Number of 8: \t" + list1.numberOf(8));
         System.out.println("Number of 9: \t" + list1.numberOf(9));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest allIndices method.......................\n");
+        System.out.println("Test allIndices method.......................");
         System.out.println(list1);
         int[] array1 = list1.allIndices(5);
         int[] array2 = list1.allIndices(8);
@@ -297,11 +297,11 @@ public class CollectionsTest
         System.out.println("Array -> indices 9: \t" + Arrays.toString(array3));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nCloning list 2 from list 1");
+        System.out.println("Cloning list 2 from list 1");
         list2 = list1.clone();
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest remove method...........................\n");
+        System.out.println("Test remove method...........................");
         System.out.println(list1);
         Integer data1 = new Integer(5);
         Integer data2 = new Integer(8);
@@ -314,7 +314,7 @@ public class CollectionsTest
                 list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeLast method.......................\n");
+        System.out.println("Test removeLast method.......................");
         System.out.println(list1);
         data1 = new Integer(5);
         data2 = new Integer(8);
@@ -327,7 +327,7 @@ public class CollectionsTest
                 list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeAll method........................\n");
+        System.out.println("Test removeAll method........................");
         System.out.println(list1);
         data1 = new Integer(5);
         data2 = new Integer(6);
@@ -340,11 +340,11 @@ public class CollectionsTest
                 "\t" + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nCloning list 1 from list 2");
+        System.out.println("Cloning list 1 from list 2");
         list1 = list2.clone();
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeAll array method..................\n");
+        System.out.println("Test removeAll array method..................");
         System.out.println(list2);
         int[] array4 = {5,6,9};
         Integer[] array5 = {5,6,9};
@@ -353,7 +353,7 @@ public class CollectionsTest
         System.out.println("Removing all from array: " + list2);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest removeAll list method..................\n");
+        System.out.println("Test removeAll list method..................");
         System.out.println("List 1 \t" + list1);
         System.out.println("List 2 \t" + list2);
         list1.removeAll(list2);
@@ -368,10 +368,10 @@ public class CollectionsTest
         list1.add(5); list1.add(6); list1.add(7); list1.add(8); list1.add(5); 
         list1.add(6); list1.add(7); list1.add(5); list1.add(6); list1.add(7);
         list2 = list1.clone();
-        System.out.println("\nResetting list 1 and 2 to: " + list1);
+        System.out.println("Resetting list 1 and 2 to: " + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest containsAll array method................\n");
+        System.out.println("Test containsAll array method................");
         System.out.println("List: \t" + list1 + 
                            " contains array: \t" + Arrays.toString(array4) + 
                            "\t is " + list1.containsAll(array5));
@@ -382,7 +382,7 @@ public class CollectionsTest
                            "\t is " + list1.containsAll(array8));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest containsAll list method.................\n");
+        System.out.println("Test containsAll list method.................");
         System.out.println("List: \t" + list1 + 
                            " contains list: \t" + list2 + 
                            "\t is " + list1.containsAll(list2));
@@ -396,21 +396,21 @@ public class CollectionsTest
                            "\t is " + list1.containsAll(list2));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest addAll array method.....................\n");
+        System.out.println("Test addAll array method.....................");
         System.out.println(list2);
         list2.addAll(array8);
         System.out.println("Adding array: \t" + Arrays.toString(array7) + 
                            "\t now list \t" + list2);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest addAll list method......................\n");
+        System.out.println("Test addAll list method......................");
         System.out.println(list2);
         list2.addAll(list1);
         System.out.println("Adding list: \t" + list1 + 
                            "\t now list \t" + list2);
               
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest subList method..........................\n");
+        System.out.println("Test subList method..........................");
         System.out.println("List 1 = \t" + list1);
         list2 = list1.subList(3, 6);
         System.out.println("Pulling out sub-list from 3 to 6: \t" + list2);
@@ -422,26 +422,26 @@ public class CollectionsTest
         System.out.println("Pulling out sub-list from 0 to 9: \t" + list2);
               
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest fromArray method........................\n");
+        System.out.println("Test fromArray method........................");
         System.out.println("Array is \t" + Arrays.toString(array7));
         list1.fromArray(array8);
         System.out.println("List is \t" + list1);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest fromLinkedList method...................\n");
+        System.out.println("Test fromLinkedList method...................");
         System.out.println("1st List is \t" + list1);
         list2.fromLinkedList(list1);
         System.out.println("2nd List is \t" + list2);
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTest toArray method..........................\n");
+        System.out.println("Test toArray method..........................");
         Integer[] array9 = new Integer[1];
         array9 = list1.toArray(array9);
         System.out.println("List \t" + list1 + "\t into array \t" + 
                 Arrays.toString(array9));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTesting the imported util LinkedList.........\n");
+        System.out.println("Testing the imported util LinkedList.........");
         
         // Normally, professional programmers do not create a Linked List class, 
         // because a Linked List ADT is already available to programmers to 
@@ -489,7 +489,7 @@ public class CollectionsTest
         System.out.println("Imported remove:\t" + importList.remove(d1));
         
         ////////////////////////////////////////////////////////////////////////
-        System.out.println("\nTesting the imported util ArrayList.........\n");
+        System.out.println("Testing the imported util ArrayList.........");
         
         // In addition, the Collections framework allows you to work with an
         // Iterator object, which is yet another way to travel, traverse, 
@@ -518,7 +518,7 @@ public class CollectionsTest
         System.out.println("");
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("\nCollections testing complete!\n");
+        System.out.println("Collections testing complete!");
     }
      
 }

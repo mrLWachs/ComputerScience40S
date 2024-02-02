@@ -42,7 +42,7 @@ public class AdvancedClassesTest
      * instantiates the class (creates an "instance")
      */
     public AdvancedClassesTest() {
-        System.out.println("\nAdvanced Classes Test started...\n");
+        System.out.println("Advanced Classes Test started...");
         
         // Using the class to create an object with the default constructor:
         // class object = call constructor method (default)   
@@ -434,7 +434,7 @@ public class AdvancedClassesTest
         // Test our generic method
         house.party(fridge);
         
-        System.out.println("\nAdvanced Classes Test complete!\n");
+        System.out.println("Advanced Classes Test complete!");
     }   
 
     /**

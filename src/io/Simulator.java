@@ -190,11 +190,23 @@ public class Simulator
     public static void header(Object object) {
         if (object == null)  return; 
         String text = object.toString() + line();
+        colorOutput(text, BLUE, RESET);
+    }
+
+    /**
+     * Simulates the 'Printing' of an object but uses a header style of
+     * formatting
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void headerSpaced(Object object) {
+        if (object == null)  return; 
+        String text = object.toString() + line();
         simpleOutput(NEW_LINE,"");
         colorOutput(text, BLUE, RESET);
         simpleOutput(NEW_LINE,"");
     }
-
+    
     /**
      * Simulates the 'Printing' of an object but uses a comment style of
      * formatting
