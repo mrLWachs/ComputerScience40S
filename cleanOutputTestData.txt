@@ -53,7 +53,24 @@ final char    CODE   = 'X';
 Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
 written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
 context, the word "literal" can also mean a number (like "5"). This usually involves 
-variable types int and double (the number types) // 1.4 Compound Assignment Operators
+variable types int and double (the number types) used in a math expression or equation. This 
+can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
+evaluated in a formula, they always evaluate to an int answer (solution) and double values 
+will evaluate to a double. Complex (or "compound" expressions can be formed in which 
+the order of operations (or precedence order). This means multiplication and division are 
+evaluated before addition and subtraction. If operations are at the same precedence level, 
+then they are evaluated from left to right.When you try and divide by zero, an error 
+(the "ArithmeticException" error) will occur and the program will stop running. Examples:
+...
+// Arithmetic evaluations using variables
+int value1 = 5;
+int value2 = 3;
+int value3 = (value1 + 5 * value2 / (1 + 2)) % 2;
+double value4 = 5.2;
+double value5 = 3.3;
+double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;
+...
+// 1.4 Compound Assignment Operators
 // 1.5 Casting and Ranges of Variables
 AP: Unit 1 (Primitive Types) completed!...................................................
 AP: Unit 3 (Boolean Expressions And If Statements) started......................................................

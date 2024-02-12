@@ -206,7 +206,40 @@ public class APUnit01PrimitiveTypes
         System.out.print("context, the word \"literal\" can also mean a ");
         System.out.println("number (like \"5\"). This usually involves ");
         System.out.print("variable types int and double (the number types) ");
-        System.out.println("");
+        System.out.println("used in a math expression or equation. This ");
+        System.out.print("can involve math operations like +, -, *, / and ");
+        System.out.println("% (modulus). When multiple int values are ");
+        System.out.print("evaluated in a formula, they always evaluate ");
+        System.out.println("to an int answer (solution) and double values ");
+        System.out.print("will evaluate to a double. Complex (or ");
+        System.out.println("\"compound\" expressions can be formed in which ");
+        System.out.print("the order of operations (or precedence order). ");
+        System.out.println("This means multiplication and division are ");
+        System.out.print("evaluated before addition and subtraction. If ");
+        System.out.println("operations are at the same precedence level, ");
+        System.out.print("then they are evaluated from left to right.");
+        System.out.println("When you try and divide by zero, an error ");
+        System.out.print("(the \"ArithmeticException\" error) will occur ");
+        System.out.println("and the program will stop running. Examples:");        
+        System.out.println("...");
+        
+        // Arithmetic evaluations using variables
+        int    value1 = 5;
+        int    value2 = 3;
+        int    value3 = (value1 + 5 * value2 / (1 + 2)) % 2;
+        double value4 = 5.2;
+        double value5 = 3.3;
+        double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;
+        
+        Simulator.comment("Arithmetic evaluations using variables");
+        Simulator.code("int value1 = 5;");
+        Simulator.code("int value2 = 3;");
+        Simulator.code("int value3 = (value1 + 5 * value2 / (1 + 2)) % 2;");   
+        Simulator.code("double value4 = 5.2;");  
+        Simulator.code("double value5 = 3.3;");  
+        Simulator.code("double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;"); 
+        System.out.println("...");
+        
         
         
         ////////////////////////////////////////////////////////////////////////
