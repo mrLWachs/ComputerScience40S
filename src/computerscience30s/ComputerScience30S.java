@@ -1,6 +1,8 @@
 
 package computerscience30s;
 
+import javax.swing.JOptionPane;
+
 public class ComputerScience30S 
 {
 
@@ -41,11 +43,15 @@ public class ComputerScience30S
         // In all these, the key is to use the "\" backslash
         // which is called an "escape character"
         
+        // Make a "fancier" output with a dialog box ("Message box")
         
+        JOptionPane.showMessageDialog(null, "Hi");
         
+        // Above line of code is the ONLY one needed for assignment, final 
+        // project, etc.
         
-        
-        
+        // However, these OPTIONS (not needed, but cool) for other
+        // dialog output message boxes below...
         
         
         
