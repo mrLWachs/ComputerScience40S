@@ -4,6 +4,7 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
+import io.System;
 
  
 /**
@@ -50,6 +51,26 @@ public class APUnit01PrimitiveTypes
         
         
         
+        System.out.println("...");
+        System.out.print("System.out.print outputs text to the screen and ");
+        System.out.println("System.out.println outputs with a line break");
+        System.out.println("...");
+        
+        System.out.print("More specifically, the code word \"System\" ");
+        System.out.println("refers to the \"computer system\" and the ");
+        System.out.print("word \"out\" refers to outputting, and finally ");
+        System.out.println("the word \"print\" or \"println\" are calls to ");
+        System.out.print("methods (or \"actions\") that take the string ");
+        System.out.println("literal (which is the word or words in between ");
+        System.out.print("the quotation marks) and outputs it. So the ");
+        System.out.println("command \"System.out.println(\"literal\");\" ");
+        System.out.print("will take the string literal and output it to ");
+        System.out.println("the default output device - that being the ");
+        System.out.println("computer screen.");
+        System.out.println("...");
+        
+        
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
         // (1.2.1) Identify the most appropriate data type category for a 
@@ -71,6 +92,50 @@ public class APUnit01PrimitiveTypes
             // (1.2.1.4) When a variable is declared final, its value cannot 
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
+        
+        
+        
+        System.out.println("...");
+        System.out.print("Data/information refers to the \"kind\" of data ");
+        System.out.println("being stored (or \"remembered\") by the program ");
+        System.out.print("in a \"variable\". A variable is a piece of the ");
+        System.out.println("computer's memory (storage) that has a \"name\" ");
+        System.out.print("(or \"address\") so that the programmer can refer ");
+        System.out.println("to it by that name. The \"type\" refers to the ");
+        System.out.print("\"kind\" of data that you are storing (e.g. text, ");
+        System.out.println("numbers, true/false, etc.). The type must be ");
+        System.out.print("specified at the time you write a line of code to ");
+        System.out.println("\"create\" (or \"declare\") the variable. A ");
+        System.out.print("variable can only be one type and only store that ");
+        System.out.println("specified type of data. However, the data ");
+        System.out.print("itself can change (or \"vary\") after the initial ");
+        System.out.println("declaration. Examples of this are below...");
+        
+        
+        // Variables declared and assigned initial ("starting") values:
+        boolean a = true;
+        int     b = 0;
+        double  c = 1.0;
+        char    d = 'A';
+        
+        // Variables content changes ("reassigned"):
+        a = false;
+        b = 1;
+        c = 1.1;
+        d = 'B';
+        
+        System.out.println("...");
+        Simulator.comment("Variables declared and assigned initial (\"starting\") values:");
+        Simulator.code("boolean a = true;");
+        Simulator.code("int     b = 0;");
+        Simulator.code("double  c = 1.0;");
+        Simulator.code("char    d = 'A';");
+        Simulator.comment("Variables content changes (\"reassigned\"):");
+        Simulator.code("a = false;");
+        Simulator.code("b = 1;");
+        Simulator.code("c = 1.1;");
+        Simulator.code("d = 'B';");  
+        System.out.println("...");
         
         
         

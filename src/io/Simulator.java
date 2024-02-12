@@ -37,9 +37,13 @@ public class Simulator
     private static final String FLAG_FILENAME            = "simulatedFile.txt";
     private static final String FLAG_INPUT               = "simulated input line";
     private static final String DATA_FILENAME            = "outputTestData.txt";
+    private static final String CLEAN_DATA_FILENAME      = "cleanOutputTestData.txt";
+    
     
     private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
     private static final File   DATA_FILE                = new File(DATA_FILENAME); 
+    private static final File   CLEAN_DATA_FILE          = new File(CLEAN_DATA_FILENAME); 
+    
     
     private static final String NEW_LINE                 = "\n";
     private static final String COMMENT                  = "// ";
@@ -120,6 +124,8 @@ public class Simulator
     };
     
     private static LinkedList<String> allOutput;
+    private static LinkedList<String> cleanOutput;
+        
     
     private static int lineCount = 0;
     
@@ -131,7 +137,8 @@ public class Simulator
     private static void simpleOutput(String message, String original) {
         java.lang.System.out.print(message);
         // Save all the output messages to a running list 
-        if (allOutput == null) allOutput = new LinkedList();
+        if (allOutput   == null) allOutput   = new LinkedList();
+        if (cleanOutput == null) cleanOutput = new LinkedList();        
         if (original != null && !original.equals("")) {
             lineCount++;
             if (original.length() > MAX_LINE_LENGTH) {
@@ -139,6 +146,7 @@ public class Simulator
                            " ... (line shortened) ...";
             }            
             allOutput.add(lineCount + ":\t" + original);
+            cleanOutput.add(original);
         }        
     }
         
@@ -217,6 +225,18 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = COMMENT + object.toString();
         colorOutput(text, YELLOW, RESET);
+    }
+    
+    /**
+     * Simulates the 'Printing' of an object but uses an output style 
+     * that tries to look like "code"
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void code(Object object) {
+        if (object == null)  object = new String(NULL); 
+        String text = object.toString();
+        colorOutput(text, PURPLE_BOLD, RESET);
     }
 
     /**
@@ -461,7 +481,10 @@ public class Simulator
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(allOutput, DATA_FILE);
+        handler.save(cleanOutput, CLEAN_DATA_FILE);        
     }
+
+    
     
 }
 
