@@ -63,14 +63,30 @@ then they are evaluated from left to right.When you try and divide by zero, an e
 (the "ArithmeticException" error) will occur and the program will stop running. Examples:
 ...
 // Arithmetic evaluations using variables
-int value1 = 5;
-int value2 = 3;
-int value3 = (value1 + 5 * value2 / (1 + 2)) % 2;
-double value4 = 5.2;
-double value5 = 3.3;
-double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;
+int    v1 = 5;
+int    v2 = 3;
+int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
+double v4 = 5.2;
+double v5 = 3.3;
+double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
 ...
 // 1.4 Compound Assignment Operators
+...
+Compound statements in this context refers to using shortcuts to quickly add or subtract one 
+(increment or decrement) to a variable. You can also use more complex shorthand compound 
+statements to quickly multiply, divide, even modulus a varaible with itself or other 
+variables. For example:
+...
+// Shorthand Compound Arithmetic expressions
+int value = 5;
+value++;    // is the same as "value = value + 1;"
+value--;    // is the same as "value = value + 1;"
+value += 5; // is the same as "value = value + 5;"
+value -= 5; // is the same as "value = value - 5;"
+value *= 5; // is the same as "value = value * 5;"
+value /= 5; // is the same as "value = value / 5;"
+value %= 5; // is the same as "value = value % 5;"
+...
 // 1.5 Casting and Ranges of Variables
 AP: Unit 1 (Primitive Types) completed!...................................................
 AP: Unit 3 (Boolean Expressions And If Statements) started......................................................

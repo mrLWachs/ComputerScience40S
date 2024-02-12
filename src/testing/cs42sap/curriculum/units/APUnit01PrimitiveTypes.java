@@ -224,20 +224,20 @@ public class APUnit01PrimitiveTypes
         System.out.println("...");
         
         // Arithmetic evaluations using variables
-        int    value1 = 5;
-        int    value2 = 3;
-        int    value3 = (value1 + 5 * value2 / (1 + 2)) % 2;
-        double value4 = 5.2;
-        double value5 = 3.3;
-        double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;
+        int    v1 = 5;
+        int    v2 = 3;
+        int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
+        double v4 = 5.2;
+        double v5 = 3.3;
+        double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
         
         Simulator.comment("Arithmetic evaluations using variables");
-        Simulator.code("int value1 = 5;");
-        Simulator.code("int value2 = 3;");
-        Simulator.code("int value3 = (value1 + 5 * value2 / (1 + 2)) % 2;");   
-        Simulator.code("double value4 = 5.2;");  
-        Simulator.code("double value5 = 3.3;");  
-        Simulator.code("double value6 = (value4 + 5.1 * value5 / (1.2 + 2.3)) % 2.2;"); 
+        Simulator.code("int    v1 = 5;");
+        Simulator.code("int    v2 = 3;");
+        Simulator.code("int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;");   
+        Simulator.code("double v4 = 5.2;");  
+        Simulator.code("double v5 = 3.3;");  
+        Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;"); 
         System.out.println("...");
         
         
@@ -253,6 +253,37 @@ public class APUnit01PrimitiveTypes
             //           value of a variable or an array element. The new 
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
+        
+        System.out.println("...");
+        System.out.print("Compound statements in this context refers to ");
+        System.out.println("using shortcuts to quickly add or subtract one ");
+        System.out.print("(increment or decrement) to a variable. You ");
+        System.out.println("can also use more complex shorthand compound ");
+        System.out.print("statements to quickly multiply, divide, even ");
+        System.out.println("modulus a varaible with itself or other ");
+        System.out.println("variables. For example:");
+        System.out.println("...");
+        
+        // Shorthand Compound Arithmetic expressions
+        int value = 5;
+        value++;    // is the same as "value = value + 1;"
+        value--;    // is the same as "value = value + 1;"
+        value += 5; // is the same as "value = value + 5;"
+        value -= 5; // is the same as "value = value - 5;"
+        value *= 5; // is the same as "value = value * 5;"
+        value /= 5; // is the same as "value = value / 5;"
+        value %= 5; // is the same as "value = value % 5;"
+                        
+        Simulator.comment("Shorthand Compound Arithmetic expressions");
+        Simulator.code("int value = 5;");
+        Simulator.code("value++;    // is the same as \"value = value + 1;\"");
+        Simulator.code("value--;    // is the same as \"value = value + 1;\"");
+        Simulator.code("value += 5; // is the same as \"value = value + 5;\"");
+        Simulator.code("value -= 5; // is the same as \"value = value - 5;\"");
+        Simulator.code("value *= 5; // is the same as \"value = value * 5;\"");
+        Simulator.code("value /= 5; // is the same as \"value = value / 5;\"");
+        Simulator.code("value %= 5; // is the same as \"value = value % 5;\"");
+        System.out.println("...");
         
         
         
@@ -279,6 +310,14 @@ public class APUnit01PrimitiveTypes
             //           occurs. This could result in an incorrect value 
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
+        
+        
+        
+        System.out.println("...");
+        
+        
+        
+        System.out.println("...");
         
         
         
