@@ -31,6 +31,28 @@ public class ComputerScience30S
         // There are "shortcuts" to coding (see the tips below)        
         System.out.println("Good-bye World");
         
+        // Additional output tips... (these are "special" characters)
+        
+        System.out.println("Make a quote \" ");         //  \" Makes quote
+        System.out.println("Make a slash \\ ");         //  \\ Makes slash
+        System.out.println("Make a \t tab ");           //  \t Make "tab" 
+        System.out.println("Make a \n new line break"); // \n Makes break
+        
+        // In all these, the key is to use the "\" backslash
+        // which is called an "escape character"
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
