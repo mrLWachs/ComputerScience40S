@@ -77,3 +77,7 @@ public class ComputerScience30S
 // (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (5)  Click the green triangle on the top toolbar to run code
 // (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
+
+
