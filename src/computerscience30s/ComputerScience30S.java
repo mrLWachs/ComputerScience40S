@@ -14,6 +14,17 @@ public class ComputerScience30S
         // All code right now goes between these two brackets. Comments are 
         // not code, so you can write what you want
         
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        // A basic output
+        System.out.print("Hello World"); // Comments can be on code lines
+        
+        
+        
     }
     
 }
