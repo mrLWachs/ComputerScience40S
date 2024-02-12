@@ -314,7 +314,8 @@ public class APUnit01PrimitiveTypes
         
         
         System.out.println("...");
-        
+        System.out.print("Casting is the process of \"converting\" one ");
+        System.out.println("data type into another data type. ");
         
         
         System.out.println("...");
