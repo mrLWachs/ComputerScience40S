@@ -23,6 +23,18 @@ public class ComputerScience30S
         // A basic output
         System.out.print("Hello World"); // Comments can be on code lines
         
+        System.out.print(" I'm in ");
+        // Spaces, you have to add them inside the quotes
+        
+        System.out.println("The world!");
+        
+        // There are "shortcuts" to coding (see the tips below)        
+        System.out.println("Good-bye World");
+        
+        
+        
+        
+        
         
         
     }
@@ -36,3 +48,4 @@ public class ComputerScience30S
 // (3)  The curly brackets (braces, parenthesis) are important "{" and "}"
 // (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (5)  Click the green triangle on the top toolbar to run code
+// (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
