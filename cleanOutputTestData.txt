@@ -5,37 +5,24 @@ AP curriculum - Part 1 Test started.............................................
 AP: Unit 1 (Primitive Types) started......................................................
 // 1.1 Why Programming? Why Java?
 ...
-System.out.print outputs text to the screen and 
-System.out.println outputs with a line break
+System.out.print outputs text to the screen and System.out.println outputs with a line break
 ...
-More specifically, the code word "System" 
-refers to the "computer system" and the 
-word "out" refers to outputting, and finally 
-the word "print" or "println" are calls to 
-methods (or "actions") that take the string 
-literal (which is the word or words in between 
-the quotation marks) and outputs it. So the 
-command "System.out.println("literal");" 
-will take the string literal and output it to 
-the default output device - that being the 
+More specifically, the code word "System" refers to the "computer system" and the 
+word "out" refers to outputting, and finally the word "print" or "println" are calls to 
+methods (or "actions") that take the string literal (which is the word or words in between 
+the quotation marks) and outputs it. So the command "System.out.println("literal");" 
+will take the string literal and output it to the default output device - that being the 
 computer screen.
 ...
 // 1.2 Variables and Data Types
 ...
-Data/information refers to the "kind" of data 
-being stored (or "remembered") by the program 
-in a "variable". A variable is a piece of the 
-computer's memory (storage) that has a "name" 
-(or "address") so that the programmer can refer 
-to it by that name. The "type" refers to the 
-"kind" of data that you are storing (e.g. text, 
-numbers, true/false, etc.). The type must be 
-specified at the time you write a line of code to 
-"create" (or "declare") the variable. A 
-variable can only be one type and only store that 
-specified type of data. However, the data 
-itself can change (or "vary") after the initial 
-declaration. Examples of this are below...
+Data/information refers to the "kind" of data being stored (or "remembered") by the program 
+in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
+(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
+"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
+specified at the time you write a line of code to "create" (or "declare") the variable. A 
+variable can only be one type and only store that specified type of data. However, the data 
+itself can change (or "vary") after the initial declaration. Examples of this are below...
 ...
 // Variables declared and assigned initial ("starting") values:
 boolean a = true;
@@ -48,8 +35,25 @@ b = 1;
 c = 1.1;
 d = 'B';
 ...
+A "final" (or a "constant") is a variable in which the stored value does NOT change 
+(it stays "constant") and it locked at that value. Final (or constant) variables are 
+given the initial value when declared (or initialized) and that value stays locked. These 
+types of values are written in ALL_CAPS with the underscore value used to seperate words in 
+the name. Final variables are more efficient for a number of reasons including ease of code 
+understanding, speed (faster code), easier to update code, and others. Examples of finals 
+are below...
+// Constants (finals) declared (initialized)
+final boolean FOUND  = true;
+final int     VALUE  = 1;
+final double  AMOUNT = 2.5;
+final char    CODE   = 'X';
+...
 // 1.3 Expressions and Assignment Statements
-// 1.4 Compound Assignment Operators
+...
+Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
+written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
+context, the word "literal" can also mean a number (like "5"). This usually involves 
+variable types int and double (the number types) // 1.4 Compound Assignment Operators
 // 1.5 Casting and Ranges of Variables
 AP: Unit 1 (Primitive Types) completed!...................................................
 AP: Unit 3 (Boolean Expressions And If Statements) started......................................................

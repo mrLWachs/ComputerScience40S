@@ -136,7 +136,33 @@ public class APUnit01PrimitiveTypes
         Simulator.code("c = 1.1;");
         Simulator.code("d = 'B';");  
         System.out.println("...");
+        System.out.print("A \"final\" (or a \"constant\") is a variable ");
+        System.out.println("in which the stored value does NOT change ");
+        System.out.print("(it stays \"constant\") and it locked at that ");
+        System.out.println("value. Final (or constant) variables are ");
+        System.out.print("given the initial value when declared (or ");
+        System.out.println("initialized) and that value stays locked. These ");
+        System.out.print("types of values are written in ALL_CAPS with the ");
+        System.out.println("underscore value used to seperate words in ");
+        System.out.print("the name. Final variables are more efficient for ");
+        System.out.println("a number of reasons including ease of code ");
+        System.out.print("understanding, speed (faster code), easier to ");
+        System.out.println("update code, and others. Examples of finals ");
+        System.out.print("are below");
+        System.out.println("...");
         
+        // Constants (finals) declared (initialized)
+        final boolean FOUND  = true;
+        final int     VALUE  = 1;
+        final double  AMOUNT = 2.5;
+        final char    CODE   = 'X';
+        
+        Simulator.comment("Constants (finals) declared (initialized)");
+        Simulator.code("final boolean FOUND  = true;");
+        Simulator.code("final int     VALUE  = 1;");
+        Simulator.code("final double  AMOUNT = 2.5;");
+        Simulator.code("final char    CODE   = 'X';");
+        System.out.println("...");
         
         
         //////////////////////////////////////////////////////////////////////// 
@@ -170,6 +196,17 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
+        
+        
+        System.out.println("...");
+        System.out.print("Arithmetic (or \"math\") statements in code ");
+        System.out.println("are lines of code (or \"statements\") that are ");
+        System.out.print("written to evaluate (or \"solve\") an equation ");
+        System.out.println("of logic the program needs to solve. In this ");
+        System.out.print("context, the word \"literal\" can also mean a ");
+        System.out.println("number (like \"5\"). This usually involves ");
+        System.out.print("variable types int and double (the number types) ");
+        System.out.println("");
         
         
         ////////////////////////////////////////////////////////////////////////

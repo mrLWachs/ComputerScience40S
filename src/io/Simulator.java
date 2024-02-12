@@ -126,27 +126,45 @@ public class Simulator
     private static LinkedList<String> allOutput;
     private static LinkedList<String> cleanOutput;
         
+    private static String holdText = "";
     
     private static int lineCount = 0;
     
     /**
      * Does a simple output with the passed message
-     *
+     * 
      * @param message the message to output
+     * @param original the original string value
      */
     private static void simpleOutput(String message, String original) {
-        java.lang.System.out.print(message);
+        simpleOutput(message, original, false);
+    }
+    
+    /**
+     * Does a simple output with the passed message
+     *
+     * @param message the message to output
+     * @param original the original string value
+     * @param newLine flag to determine if a line break or not
+     */
+    private static void simpleOutput(String message, String original, boolean newLine) {
+        if (newLine) java.lang.System.out.println(message);
+        else         java.lang.System.out.print(message);
         // Save all the output messages to a running list 
         if (allOutput   == null) allOutput   = new LinkedList();
-        if (cleanOutput == null) cleanOutput = new LinkedList();        
+        if (cleanOutput == null) cleanOutput = new LinkedList(); 
         if (original != null && !original.equals("")) {
-            lineCount++;
-            if (original.length() > MAX_LINE_LENGTH) {
-                original = original.substring(0, MAX_LINE_LENGTH) + 
-                           " ... (line shortened) ...";
-            }            
-            allOutput.add(lineCount + ":\t" + original);
-            cleanOutput.add(original);
+            holdText += original;
+            if (newLine == true) {
+                lineCount++;
+                if (holdText.length() > MAX_LINE_LENGTH) {
+                    holdText = holdText.substring(0, MAX_LINE_LENGTH) + 
+                               " ... (line shortened) ...";
+                }            
+                allOutput.add(lineCount + ":\t" + holdText);
+                cleanOutput.add(holdText);
+                holdText = "";
+            }
         }        
     }
         
@@ -160,9 +178,8 @@ public class Simulator
      */
     private static void colorOutput(String message, String colorCode,
                                     String resetCode) {
-        simpleOutput("","");
-        simpleOutput(colorCode + message + resetCode,message);
-        simpleOutput(NEW_LINE,"");
+        String formattedMessage = colorCode + message + resetCode;
+        simpleOutput(formattedMessage, message, true);
     }
     
     /**
@@ -249,8 +266,7 @@ public class Simulator
     public static void output(Object object, boolean newLine) {
         if (object == null) object = new String(NULL);
         String text = object.toString();
-        if (newLine) simpleOutput(text + NEW_LINE,text);
-        else         simpleOutput(text,text); 
+        simpleOutput(text,text,newLine); 
     }
 
     /**
