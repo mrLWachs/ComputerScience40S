@@ -209,9 +209,14 @@ public class ComputerScience30S
         // VARIABLES:
         ///////////////////////////////////////////////////////////////////////
         
+        // A variable is a piece of code that tells the computer to
+        // store (or "remember") information (or "data")
         
+        // This is an example of the simpliest variable type:
         
+        boolean a = true;
         
+        // type name = value ;
         
         
         
