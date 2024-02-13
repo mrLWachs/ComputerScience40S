@@ -35,8 +35,6 @@ public class APUnit01PrimitiveTypes
     public APUnit01PrimitiveTypes() {
         Simulator.header("AP: Unit 1 (Primitive Types) started...");
         
-        
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.1 Why Programming? Why Java?");        
         // (1.1.1) Call System class methods to generate output to the console
@@ -48,8 +46,6 @@ public class APUnit01PrimitiveTypes
         // (1.1.2) Create string literals
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
-        
-        
         
         System.out.println("...");
         System.out.print("System.out.print outputs text to the screen and ");
@@ -68,8 +64,6 @@ public class APUnit01PrimitiveTypes
         System.out.println("the default output device - that being the ");
         System.out.println("computer screen.");
         System.out.println("...");
-        
-        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -93,8 +87,6 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        
-        
         System.out.println("...");
         System.out.print("Data/information refers to the \"kind\" of data ");
         System.out.println("being stored (or \"remembered\") by the program ");
@@ -110,7 +102,6 @@ public class APUnit01PrimitiveTypes
         System.out.println("specified type of data. However, the data ");
         System.out.print("itself can change (or \"vary\") after the initial ");
         System.out.println("declaration. Examples of this are below...");
-        
         
         // Variables declared and assigned initial ("starting") values:
         boolean a = true;
@@ -164,7 +155,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("final char    CODE   = 'X';");
         System.out.println("...");
         
-        
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
         // (1.3.1) Evaluate arithmetic expressions in a program code
@@ -195,8 +185,6 @@ public class APUnit01PrimitiveTypes
             // (1.3.2.3) The value of an expression has a type based on the 
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
-        
-        
         
         System.out.println("...");
         System.out.print("Arithmetic (or \"math\") statements in code ");
@@ -239,8 +227,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("double v5 = 3.3;");  
         Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;"); 
         System.out.println("...");
-        
-        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
@@ -285,8 +271,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("value %= 5; // is the same as \"value = value % 5;\"");
         System.out.println("...");
         
-        
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.5 Casting and Ranges of Variables");
         // (1.5.1) Evaluate arithmetic expressions that use casting
@@ -311,16 +295,41 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        
-        
         System.out.println("...");
         System.out.print("Casting is the process of \"converting\" one ");
-        System.out.println("data type into another data type. ");
-        
-        
+        System.out.println("data type into another data type. When casting ");
+        System.out.print("an double to a int, the decimal portion of the ");
+        System.out.println("double is truncated (cut off) and not rounded ");
+        System.out.print("off. When a int is cast to a double, the int ");
+        System.out.println("is \"widened\" to now accomodate any decimals. ");
+        System.out.print("A char when cast will turn into it's ASCII ");
+        System.out.println("value. The process of casting involves putting ");
+        System.out.print("variable to be cast with the type being cast ");
+        System.out.println("into in round brackets to the left of that ");
+        System.out.print("variable. Integer values hold a finite amount ");
+        System.out.println("of number space (4 bytes) and the built-in ");
+        System.out.print("constants Integer.MAX_VALUE and MIN_VALUE are ");
+        System.out.println("the limits of the int. If an expression ");
+        System.out.print("evaluates ab int outside that range, an error ");
+        System.out.println("will occur (overflow error). For example:");
         System.out.println("...");
         
-        
+        // Casting data types
+        int integer = Integer.MAX_VALUE;
+        double doub = Double.MIN_VALUE;
+        doub        = (int)integer;
+        integer     = (int)doub;
+        char letter = 'A';
+        integer     = (int)letter;
+                                
+        Simulator.comment("Casting data types");
+        Simulator.code("int integer = Integer.MAX_VALUE;");
+        Simulator.code("double doub = Double.MIN_VALUE;");
+        Simulator.code("doub        = (int)integer;");
+        Simulator.code("integer     = (int)doub;");
+        Simulator.code("char letter = 'A';");
+        Simulator.code("integer     = (int)letter;");        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 1 (Primitive Types) completed!");
