@@ -1,14 +1,35 @@
 
+/**
+ * Required package class namespace - the line below is put in automatically,
+ * and connects this file to the project
+ */
 package computerscience30s;
 
+/**
+ * Required imports for the project - the lines below are added when your code
+ * needs to connect to another library (API) of code
+ */
 import javax.swing.JOptionPane;
 
+
+/**
+ * ComputerScience30s.java - the large in class example we continue to work on
+ * in each unit adding example code on the new concepts of each unit along with
+ * any in class requests for code example that might come up over the course.
+ * 
+ * @author Mr. Wachs
+ * @since February 2024
+ */
 public class ComputerScience30S 
 {
 
     public static void main(String[] args) {
+        
         // TODO code application logic here
-        // This is a comment 
+        
+        ///////////////////////////////////////////////////////////////////////
+        // JAVA BASIC INPUT AND OUTPUTS
+        ///////////////////////////////////////////////////////////////////////
         
         // This is a comment all typing after "//" until the line ends        
         // Commments are not code, so you can write what you want        
