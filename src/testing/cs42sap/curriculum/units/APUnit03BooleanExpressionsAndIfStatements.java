@@ -31,8 +31,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
     public APUnit03BooleanExpressionsAndIfStatements() {
         Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) started...");
         
-        
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.1 Boolean Expressions");  
         // (3.1.1) Evaluate Boolean expressions that use relational operators 
@@ -45,7 +43,19 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           to a Boolean value
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
+        System.out.print("A Boolean (true/false) expression is a code ");
+        System.out.println("statement most likely in a control structure ");
+        System.out.print("like a conditional statement or loop control ");
+        System.out.println("structure that evaluates to true or false to ");
+        System.out.print("make decisions and control the flow of the ");
+        System.out.println("program. The Boolean expression will require ");
+        System.out.print("the use of relational operators like: < , > , ");
+        System.out.println("<= , >= , == , and != those being: \"less ");
+        System.out.print("than\", \"greater than\", \"less than or equal ");
+        System.out.println("to\", \"greater than or equal to\", \"equal ");
+        System.out.println("to\", and \"not equal to\".");
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.2 if Statements and Control Flow");  
@@ -62,7 +72,19 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           only when the Boolean condition is true
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
+        System.out.print("A \"Conditional Statement\" is also known under ");
+        System.out.println("other names like \"branching statement\", \"if ");
+        System.out.print("statement\", \"one-way selection statement\", ");
+        System.out.println("and \"control structure\". It uses the reserved ");
+        System.out.print("keyword \"if\" along with round brackets which ");
+        System.out.println("contain the Boolean expression, and curly ");
+        System.out.print("brackets to contain the control block of all ");
+        System.out.println("code you wish to be controlled by the ");
+        System.out.print("conditional statement. Brackets are optional if ");
+        System.out.println("the block is only one line, and you may also ");
+        System.out.print("move thos lines up to the same line as the ");
+        System.out.println("conditional statement. For example:");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.3 if-else Statements");  
