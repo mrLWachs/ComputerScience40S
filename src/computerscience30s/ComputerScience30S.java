@@ -115,6 +115,73 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE
         );
         
+        // Dialogs for inputs....
+        
+        // The simpliest version (is the one you will need to know):
+        
+        JOptionPane.showInputDialog("Enter Something");
+        
+        // There is a little more to using this input dialog that we will 
+        // cover after learning variables
+        
+        // Some other optional input dialogs...
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Information icon is i",
+                "Information title",
+                JOptionPane.INFORMATION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Question icon is i",
+                "Question title",
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Warning icon is i",
+                "Warning title",
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Error icon is x",
+                "Error title",
+                JOptionPane.ERROR_MESSAGE
+        );
+        
+        JOptionPane.showInputDialog(
+                null, 
+                "Plain icon is i",
+                "Plain title",
+                JOptionPane.PLAIN_MESSAGE
+        );                
+        
+        // More different (and optional) dialogs...
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
