@@ -163,8 +163,51 @@ public class ComputerScience30S
         
         // More different (and optional) dialogs...
         
+        JOptionPane.showConfirmDialog(null, "confirm");
         
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 2",
+                "Information",
+                JOptionPane.YES_NO_CANCEL_OPTION,
+                JOptionPane.INFORMATION_MESSAGE
+        );
         
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 3",
+                "Question",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 4",
+                "Warning",
+                JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.WARNING_MESSAGE
+        );
+        
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 5",
+                "Error",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.ERROR_MESSAGE
+        );
+                
+        JOptionPane.showConfirmDialog(
+                null, 
+                "Confirm Example 6",
+                "Plain",
+                JOptionPane.DEFAULT_OPTION,
+                JOptionPane.PLAIN_MESSAGE
+        );
+        
+        ///////////////////////////////////////////////////////////////////////
+        // VARIABLES:
+        ///////////////////////////////////////////////////////////////////////
         
         
         
