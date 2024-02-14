@@ -126,7 +126,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("For example:");
         System.out.println("...");
         
-        // if with "else" (an option) for both true and false, check 2 things        
+        // if with "else"       
         double c = 1.45, d = 1.5;        
         if (c < d) {
             // "Less than"
@@ -140,7 +140,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         if (e != f) e = '!';
         else        e = '=';
         
-        Simulator.comment("if with \"else\" (an option) for both true and false, check 2 things");
+        Simulator.comment("if with \"else\" ");
         Simulator.code("double c = 1.45, d = 1.5; ");
         Simulator.code("if (c < d) {");
         Simulator.code("    // \"Less than\"");
@@ -229,16 +229,60 @@ public class APUnit03BooleanExpressionsAndIfStatements
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
-        System.out.println("");
-        
+        System.out.print("The process of \"nesting\" means to place one ");
+        System.out.println("conditional statement inside the \"block\" of ");
+        System.out.print("another conditional statement. The logical ");
+        System.out.println("operators: \"and\", \"or\", and \"not\" are ");
+        System.out.print("represented with the symbols: \"&&\" (and), ");
+        System.out.println("\"||\" (or), and \"!\" (not). The operator AND ");
+        System.out.print("is used to combine logical boolean expressions ");
+        System.out.println("such that ALL expressions need to be true for ");
+        System.out.print("the entire statement to be true. The operator ");
+        System.out.println("OR is used to combine logical boolean ");
+        System.out.print("expressions such that ANY expression can be ");
+        System.out.println("true for the entire statement to be true. The ");
+        System.out.print("operator NOT reverses the logic so that true ");
+        System.out.println("statements are evaluated as false (and visa ");
+        System.out.print("versa). If the statement contains multiple ");
+        System.out.println("Boolean expressions and the result of the ");
+        System.out.print("evaluation of one expression has already ");
+        System.out.println("determined the expressions result, then the ");
+        System.out.print("rest of the expressions do not need to be ");
+        System.out.println("evaluated - this is known as a \"short-circuited ");
+        System.out.println("evaluation\". For example:");        
         System.out.println("...");
         
-        // comment
-        int z2 = 0;
+        // Logical operators and "nesting"
+        int    age = 17;
+        double iq  = 1.0;
+        if (age >= 18 && iq > 90) {
+            // with "and" ("&&") BOTH have to be true
+        }
+        else if (age >= 18 || iq > 0) {
+            // with "or" ("||") EITHER can be true
+        }
+        else {
+            // Case if neither evaluates
+            if (age > 0) {
+                // A "nested if statement"
+            }
+        }
         
-        Simulator.comment("");
-        Simulator.code("");
-                
+        Simulator.comment("Logical operators and \"nesting\"");
+        Simulator.code("int    age = 17;");
+        Simulator.code("double iq  = 1.0;");
+        Simulator.code("if (age >= 18 && iq > 90) {");
+        Simulator.code("    // with \"and\" (\"&&\") BOTH have to be true");
+        Simulator.code("}");
+        Simulator.code("else if (age >= 18 || iq > 0) {");
+        Simulator.code("    // with \"or\" (\"||\") EITHER can be true");
+        Simulator.code("}");
+        Simulator.code("else {");
+        Simulator.code("    // Case if neither evaluates");
+        Simulator.code("    if (age > 0) {");
+        Simulator.code("        // A \"nested if statement\"");
+        Simulator.code("    }");
+        Simulator.code("}");
         System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////

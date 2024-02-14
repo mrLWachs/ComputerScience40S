@@ -140,7 +140,7 @@ that the conditional now evaluates to both true and false. This can be called a 
 way selection" (for true/false). An "else" must always follow an "if" statement first. 
 For example:
 ...
-// if with "else" (an option) for both true and false, check 2 things
+// if with "else" 
 double c = 1.45, d = 1.5; 
 if (c < d) {
     // "Less than"
@@ -179,8 +179,33 @@ else {
 ...
 // 3.5 Compound Boolean Expressions
 ...
+The process of "nesting" means to place one conditional statement inside the "block" of 
+another conditional statement. The logical operators: "and", "or", and "not" are 
+represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
+is used to combine logical boolean expressions such that ALL expressions need to be true for 
+the entire statement to be true. The operator OR is used to combine logical boolean 
+expressions such that ANY expression can be true for the entire statement to be true. The 
+operator NOT reverses the logic so that true statements are evaluated as false (and visa 
+versa). If the statement contains multiple Boolean expressions and the result of the 
+evaluation of one expression has already determined the expressions result, then the 
+rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
+evaluation". For example:
 ...
-// 
+// Logical operators and "nesting"
+int    age = 17;
+double iq  = 1.0;
+if (age >= 18 && iq > 90) {
+    // with "and" ("&&") BOTH have to be true
+}
+else if (age >= 18 || iq > 0) {
+    // with "or" ("||") EITHER can be true
+}
+else {
+    // Case if neither evaluates
+    if (age > 0) {
+        // A "nested if statement"
+    }
+}
 ...
 // 3.6 Equivalent Boolean Expressions
 ...
