@@ -295,18 +295,22 @@ public class APUnit03BooleanExpressionsAndIfStatements
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
-        System.out.println("");
-        
+        System.out.print("Boolean (true/false) expressions turned into ");
+        System.out.println("logical statements used by control structures ");
+        System.out.print("like conditional statements are subject to the ");
+        System.out.println("laws of mathemtical logic such as \"De Morgan's ");
+        System.out.print("Law\" (Google search this if you are curious, ");
+        System.out.println("but it applies to mathematical proofs and is ");
+        System.out.print("not necessarily applicable to this exam). This ");
+        System.out.println("just means that complex statements need to be ");
+        System.out.print("evaluated by using mathematical rules (like ");
+        System.out.println("\"order of operations\") and logical operators ");
+        System.out.print("(like \"and, or, not\") to determine the final ");
+        System.out.println("Boolean result. This could determine if a ");
+        System.out.print("control structure (like an \"if\" statement) ");
+        System.out.println("runs a block of code or not.");
         System.out.println("...");
-        
-        // comment
-        int z3 = 0;
-        
-        Simulator.comment("");
-        Simulator.code("");
                 
-        System.out.println("...");
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.7 Comparing Objects");  
         // (3.7.1) Compare object references using Boolean expressions in 
@@ -324,16 +328,35 @@ public class APUnit03BooleanExpressionsAndIfStatements
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
-        System.out.println("");
-        
+        System.out.print("The use of an advanced data type like an ");
+        System.out.println("\"Object\" in code means that comparison ");
+        System.out.print("operators (like <, >, ==, !=) that are used ");
+        System.out.println("with primitive data type (like \"int, ");
+        System.out.print("double, char, etc.\") are not used. Instead, ");
+        System.out.println("use the \"built-in\" method \"equals()\" to ");
+        System.out.print("determine the equality of two objects. For ");        
+        System.out.println("example:");
         System.out.println("...");
         
-        // comment
-        int z4 = 0;
+        // Use of the built-in equals method with Objects
+        String word1 = "edgy";
+        String word2 = "edGy";        
+        if (word1.equals(word2)) {
+            // "W1=W2"
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            // "W1 kind of == W2"
+        }
         
-        Simulator.comment("");
-        Simulator.code("");
-                
+        Simulator.comment("Use of the built-in equals method with Objects");
+        Simulator.code("String word1 = \"edgy\";");
+        Simulator.code("String word2 = \"edGy\";");
+        Simulator.code("if (word1.equals(word2)) {");
+        Simulator.code("    // \"W1=W2\"");
+        Simulator.code("}");
+        Simulator.code("else if (word1.equalsIgnoreCase(word2)) {");
+        Simulator.code("    // \"W1 kind of == W2\"");
+        Simulator.code("}");
         System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////

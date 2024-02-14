@@ -74,7 +74,7 @@ double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
 ...
 Compound statements in this context refers to using shortcuts to quickly add or subtract one 
 (increment or decrement) to a variable. You can also use more complex shorthand compound 
-statements to quickly multiply, divide, even modulus a varaible with itself or other 
+statements to quickly multiply, divide, even modulus a variable with itself or other 
 variables. For example:
 ...
 // Shorthand Compound Arithmetic expressions
@@ -96,7 +96,7 @@ A char when cast will turn into it's ASCII value. The process of casting involve
 variable to be cast with the type being cast into in round brackets to the left of that 
 variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
 constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
-evaluates ab int outside that range, an error will occur (overflow error). For example:
+evaluates an int outside that range, an error will occur (overflow error). For example:
 ...
 // Casting data types
 int integer = Integer.MAX_VALUE;
@@ -209,13 +209,30 @@ else {
 ...
 // 3.6 Equivalent Boolean Expressions
 ...
-...
-// 
+Boolean (true/false) expressions turned into logical statements used by control structures 
+like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
+Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
+not necessarily applicable to this exam). This just means that complex statements need to be 
+evaluated by using mathematical rules (like "order of operations") and logical operators 
+(like "and, or, not") to determine the final Boolean result. This could determine if a 
+control structure (like an "if" statement) runs a block of code or not.
 ...
 // 3.7 Comparing Objects
 ...
+The use of an advanced data type like an "Object" in code means that comparison 
+operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
+double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
+determine the equality of two objects. For example:
 ...
-// 
+// Use of the built-in equals method with Objects
+String word1 = "edgy";
+String word2 = "edGy";
+if (word1.equals(word2)) {
+    // "W1=W2"
+}
+else if (word1.equalsIgnoreCase(word2)) {
+    // "W1 kind of == W2"
+}
 ...
 AP: Unit 3 (Boolean Expressions And If Statements) completed!..............................
 AP: Unit 4 (Iteration) started.............................................................
