@@ -204,57 +204,88 @@ public class ComputerScience30S
 //                JOptionPane.DEFAULT_OPTION,
 //                JOptionPane.PLAIN_MESSAGE
 //        );
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // VARIABLES:
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // A variable is a piece of code that tells the computer to
+//        // store (or "remember") information (or "data")
+//        
+//        // This is an example of the simpliest variable type:
+//        
+//        boolean a = true;
+//        
+//        // type name = value ;
+//        
+//        // When you write a line of code to create (declare) a variable
+//        
+//        int b = 0;
+//        
+//        double c = 0.0;
+//        
+//        // Variables can change ("vary")
+//        
+//        a = false;
+//        b = 1;
+//        c = 1.2;
+//        
+//        // Variables always go on the left hand side (LHS) of the equals
+//        // sign (=) and the value going into the variable always goes on
+//        // the right hand side (RHS)
+//        
+//        // Output our variables when outputted it always outputs the 
+//        // value stored in the variable not the name of it
+//        
+//        System.out.println("a = " + a);
+//        System.out.println("b = " + b);
+//        System.out.println("c = " + c);
+//        
+//        // The "char" is short for "character" it holds (remembers) ONE
+//        // character
+//        
+//        char d = 'A';
+//        
+//        System.out.println("d = " + d);
+//        
+//        // The boolean ("bool" in C#), integer (int), double, and character
+//        // (char) are all simple (primitive) data types, now a "complex" data
+//        // type....
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
         
-        ///////////////////////////////////////////////////////////////////////
-        // VARIABLES:
-        ///////////////////////////////////////////////////////////////////////
+        // Manipulate ("use") our variables:
         
-        // A variable is a piece of code that tells the computer to
-        // store (or "remember") information (or "data")
+        int x = 10;
         
-        // This is an example of the simpliest variable type:
+        System.out.println("x = " + x);
         
-        boolean a = true;
+        x = 20;
         
-        // type name = value ;
+        System.out.println("x = " + x);
         
-        // When you write a line of code to create (declare) a variable
+        int y = x + 10;
         
-        int b = 0;
+        System.out.println("y = " + y);
         
-        double c = 0.0;
+        // Optional ("you don't have to use this code") shorthand...
         
-        // Variables can change ("vary")
+        y++;    // Means the same as y = y + 1;
+        y--;    // Means the same as y = y - 1;
         
-        a = false;
-        b = 1;
-        c = 1.2;
+        // Even more shorthand (less recommended)
         
-        // Variables always go on the left hand side (LHS) of the equals
-        // sign (=) and the value going into the variable always goes on
-        // the right hand side (RHS)
+        y += 10;    // Means the same as y = y + 10;
+        y -= 10;    // Means the same as y = y - 10;
+        y *= 10;    // Means the same as y = y * 10;
+        y /= 10;    // Means the same as y = y / 10;
         
-        // Output our variables when outputted it always outputs the 
-        // value stored in the variable not the name of it
+        System.out.println("y = " + y);
         
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
         
-        // The "char" is short for "character" it holds (remembers) ONE
-        // character
         
-        char d = 'A';
-        
-        System.out.println("d = " + d);
-        
-        // The boolean ("bool" in C#), integer (int), double, and character
-        // (char) are all simple (primitive) data types, now a "complex" data
-        // type....
-        
-        String e = "apple";
-        
-        System.out.println("e = " + e);
         
         
         
