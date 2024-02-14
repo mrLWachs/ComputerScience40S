@@ -246,7 +246,7 @@ public class APUnit01PrimitiveTypes
         System.out.print("(increment or decrement) to a variable. You ");
         System.out.println("can also use more complex shorthand compound ");
         System.out.print("statements to quickly multiply, divide, even ");
-        System.out.println("modulus a varaible with itself or other ");
+        System.out.println("modulus a variable with itself or other ");
         System.out.println("variables. For example:");
         System.out.println("...");
         
@@ -310,7 +310,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("of number space (4 bytes) and the built-in ");
         System.out.print("constants Integer.MAX_VALUE and MIN_VALUE are ");
         System.out.println("the limits of the int. If an expression ");
-        System.out.print("evaluates ab int outside that range, an error ");
+        System.out.print("evaluates an int outside that range, an error ");
         System.out.println("will occur (overflow error). For example:");
         System.out.println("...");
         
