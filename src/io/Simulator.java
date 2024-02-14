@@ -169,6 +169,13 @@ public class Simulator
     }
         
     /**
+     * 
+     */
+    private static void lineBreak() {
+        java.lang.System.out.println();
+    }
+    
+    /**
      * Does a simple output with the passed message combined with other textual
      * data
      *
@@ -198,6 +205,21 @@ public class Simulator
     }
     
     /**
+     * Creates a line of 50 '.' dots to add to an output
+     *
+     * @return a text line of 50 dots
+     */
+    private static String line(int length) {
+        final String LINE        = ".";
+        final int    LINE_LENGTH = 90 - length;
+        String text = LINE;
+        for (int i = 0; i < LINE_LENGTH; i++) {
+            text += LINE;
+        }
+        return text;
+    }
+    
+    /**
      * Exits the application
      * 
      * @param status the exit status
@@ -214,8 +236,11 @@ public class Simulator
      */
     public static void header(Object object) {
         if (object == null)  return; 
-        String text = object.toString() + line();
+        String text = object.toString();        
+        int length = text.length();
+        text += line(length);        
         colorOutput(text, BLUE, RESET);
+        lineBreak();
     }
 
     /**
@@ -499,8 +524,6 @@ public class Simulator
         handler.save(allOutput, DATA_FILE);
         handler.save(cleanOutput, CLEAN_DATA_FILE);        
     }
-
-    
     
 }
 
