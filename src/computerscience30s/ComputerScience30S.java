@@ -319,6 +319,11 @@ public class ComputerScience30S
         // to break to a new line, because the computer will still consider
         // it ONE line of code until we reach the semicolon.
         
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
+        
         
         
         
