@@ -370,29 +370,39 @@ public class ComputerScience30S
 //        String q = JOptionPane.showInputDialog("Enter");
 //        
 //        JOptionPane.showMessageDialog(null, q);
+//        
+//        // The variable (always has to start as a string) stores what the 
+//        // user types in the input dialog box
+//        
+//        // With numbers, you HAVE to start off with a string, and then convert
+//        // it to a number. This is like Convert.ToInt32(text); in C#
+//        
+//        String r = JOptionPane.showInputDialog("Enter int");
+//        
+//        // We convert using code to "parse" (means "to read")
+//        
+//        int s = Integer.parseInt(r);
+//        
+//        // Always use a capital "I" and whole word "Integer" for this parsing
+//        // the string into a number
+//        
+//        JOptionPane.showMessageDialog(null, "int is " + s);
         
-        // The variable (always has to start as a string) stores what the 
-        // user types in the input dialog box
+        // Same example but with a double...
         
-        // With numbers, you HAVE to start off with a string, and then convert
-        // it to a number. This is like Convert.ToInt32(text); in C#
+        String t = JOptionPane.showInputDialog("Enter double");
+        double u = Double.parseDouble(t);
+        JOptionPane.showMessageDialog(null, "double is " + u);
         
-        String r = JOptionPane.showInputDialog("Enter int");
+        // Example with a char (single character)...
         
-        // We convert using code to "parse" (means "to read")
+        String v = JOptionPane.showInputDialog("Enter char");
+        char   w = v.charAt(0);
+        JOptionPane.showMessageDialog(null, "char is " + w);
         
-        int s = Integer.parseInt(r);
-        
-        // Always use a capital "I" and whole word "Integer" for this parsing
-        // the string into a number
-        
-        JOptionPane.showMessageDialog(null, "int is " + s);
-        
-        
-        
-        
-        
-        
+        // Strings have built-in actions like "charAt" to pull out a character
+        // "at" location "0" which means the very first character (because 
+        // numbering in Computer Science usually starts at 0)
         
         
         
