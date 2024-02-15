@@ -296,70 +296,70 @@ public class ComputerScience30S
 //        System.out.println("x = "+ x);
 //        System.out.println("y = "+ y);
 //        System.out.println("z = "+ z);
-        
-        // Constants are variables that don't change (they stay "constant"),
-        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-        // to seperate words
-        
-        final double  PI       = 3.1415962658389;
-        final int     PROBLEMS = 99;
-        final char    YES      = 'Y';
-        final boolean FOUND    = true;
-        final String  TEACHER  = "Wachs";
-        
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           TEACHER);
-        
-        // In a line of code, one space or multiple spaces doesn't matter
-        // as seen above when declaring constants (it only matter when
-        // between quotation marks). You can hit enter in a line of code
-        // to break to a new line, because the computer will still consider
-        // it ONE line of code until we reach the semicolon.
-        
-        // Constants are used for things like: easier code to maintain,
-        // easier to read/understand (especially for other programmers)
-        
-        // Converting between variable data types...
-        
-        int f = 25;
-        
-        System.out.println("f = " + f);
-        
-        double g = f;
-        
-        System.out.println("g = " + g);
-        
-        g = 25.9999999999;
-        
-        System.out.println("g = " + g);
-        
-        int h = (int) g;
-        
-        System.out.println("h = " + h);
-        
-        // When we use round brackets ( )  with a data type inside, this is
-        // called "casting" which means it converts (temporarily) to another
-        // data type - which meant it ignored the decimal part
-        
-        double k = 2.9999999;
-        int    l = (int)k;
-        double m = (double)l;
-        
-        // Casting can happen with other data types...
-        
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
-        
-        System.out.println("k = " + k);
-        System.out.println("l = " + l);
-        System.out.println("m = " + m);
-        System.out.println("n = " + n);
-        System.out.println("o = " + o);
-        System.out.println("p = " + p);
+//        
+//        // Constants are variables that don't change (they stay "constant"),
+//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+//        // to seperate words
+//        
+//        final double  PI       = 3.1415962658389;
+//        final int     PROBLEMS = 99;
+//        final char    YES      = 'Y';
+//        final boolean FOUND    = true;
+//        final String  TEACHER  = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " + 
+//                           FOUND    + ", " + 
+//                           TEACHER);
+//        
+//        // In a line of code, one space or multiple spaces doesn't matter
+//        // as seen above when declaring constants (it only matter when
+//        // between quotation marks). You can hit enter in a line of code
+//        // to break to a new line, because the computer will still consider
+//        // it ONE line of code until we reach the semicolon.
+//        
+//        // Constants are used for things like: easier code to maintain,
+//        // easier to read/understand (especially for other programmers)
+//        
+//        // Converting between variable data types...
+//        
+//        int f = 25;
+//        
+//        System.out.println("f = " + f);
+//        
+//        double g = f;
+//        
+//        System.out.println("g = " + g);
+//        
+//        g = 25.9999999999;
+//        
+//        System.out.println("g = " + g);
+//        
+//        int h = (int) g;
+//        
+//        System.out.println("h = " + h);
+//        
+//        // When we use round brackets ( )  with a data type inside, this is
+//        // called "casting" which means it converts (temporarily) to another
+//        // data type - which meant it ignored the decimal part
+//        
+//        double k = 2.9999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // Casting can happen with other data types...
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l);
+//        System.out.println("m = " + m);
+//        System.out.println("n = " + n);
+//        System.out.println("o = " + o);
+//        System.out.println("p = " + p);
         
         // Use dialog boxes (specifically the input) with variables...
         
@@ -367,7 +367,15 @@ public class ComputerScience30S
         // at the front of the line that makes the input dialog (code above is
         // wrong, always make a string variable then the input dialog)
         
+        String q = JOptionPane.showInputDialog("Enter");
         
+        JOptionPane.showMessageDialog(null, q);
+        
+        // The variable (always has to start as a string) stores what the 
+        // user types in the input dialog box
+        
+        // With numbers, you HAVE to start off with a string, and then convert
+        // it to a number. This is like Convert.ToInt32(text); in C#
         
         
         
