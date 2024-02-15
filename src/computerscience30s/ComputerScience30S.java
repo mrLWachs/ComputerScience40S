@@ -324,15 +324,25 @@ public class ComputerScience30S
         
         // Converting between variable data types...
         
+        int f = 25;
         
+        System.out.println("f = " + f);
         
+        double g = f;
         
+        System.out.println("g = " + g);
         
+        g = 25.9999999999;
         
+        System.out.println("g = " + g);
         
+        int h = (int) g;
         
+        System.out.println("h = " + h);
         
-        
+        // When we use round brackets ( )  with a data type inside, this is
+        // called "casting" which means it converts (temporarily) to another
+        // data type - which meant it ignored the decimal part
         
         
         
