@@ -492,9 +492,16 @@ public class ComputerScience30S
         
         // if with "else" (an option) for both true and false, check 2 things
         
+        double value3 = 1.45, value4 = 1.5;
         
+        // Using a comma is a option (I do not recomend)
         
-        
+        if (value3 < value4) {
+            System.out.println("Less than");
+        }
+        else {
+            System.out.println("Greater than");
+        }
         
         
         
