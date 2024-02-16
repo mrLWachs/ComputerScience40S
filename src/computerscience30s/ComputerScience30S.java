@@ -416,60 +416,60 @@ public class ComputerScience30S
 //        System.out.println("word " + word + " in upper case is " + upper);
 //        
 //        // Many more string functions can be explored
-        
-        // "Math" library of code is also "built-in" to java
-        // which comes with it's own functions (actions, methods)
-        
-        double answer1 = Math.PI;
-        double answer2 = Math.cos(0.5);
-        double answer3 = Math.abs(-1);
-        double answer4 = Math.pow(5,3);
-        double answer5 = Math.sqrt(9);
-        double answer6 = Math.log(0.5);
-        
-        System.out.println("answer1 = " + answer1);
-        System.out.println("answer2 = " + answer2);
-        System.out.println("answer3 = " + answer3);
-        System.out.println("answer4 = " + answer4);
-        System.out.println("answer5 = " + answer5);
-        System.out.println("answer6 = " + answer6);
-        
-        // Math library also does random numbers, like:
-        // Random random = new Random();
-        
-        double seed = Math.random();
-        
-        // The "seed" generates a number (decimal) between
-        // 0 and 1 (but it never reaches 0 or 1)
-        
-        System.out.println("seed = " + seed);
-        
-        // You can use a formula for generatiing random numbers in a range
-        // between a low and a high number
-        
-        // e.g. between 1 and 10 and make it an integer
-        
-        // Start with some constants defining the low and high
-        
-        final double LOW  = 1.0;
-        final double HIGH = 10.0;
-        
-        // Now the formula to generate in that range
-        
-        double number = (HIGH - LOW + 1) * seed + LOW;
-        
-        // Now cast it into an int
-        
-        int value = (int)number;
-        
-        // and display it
-        
-        System.out.println("value = " + value);
-        
-        // Do it again, but simplify the formula (between 2-53)
-        
-        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
-        System.out.println("card = " + card);
+//        
+//        // "Math" library of code is also "built-in" to java
+//        // which comes with it's own functions (actions, methods)
+//        
+//        double answer1 = Math.PI;
+//        double answer2 = Math.cos(0.5);
+//        double answer3 = Math.abs(-1);
+//        double answer4 = Math.pow(5,3);
+//        double answer5 = Math.sqrt(9);
+//        double answer6 = Math.log(0.5);
+//        
+//        System.out.println("answer1 = " + answer1);
+//        System.out.println("answer2 = " + answer2);
+//        System.out.println("answer3 = " + answer3);
+//        System.out.println("answer4 = " + answer4);
+//        System.out.println("answer5 = " + answer5);
+//        System.out.println("answer6 = " + answer6);
+//        
+//        // Math library also does random numbers, like:
+//        // Random random = new Random();
+//        
+//        double seed = Math.random();
+//        
+//        // The "seed" generates a number (decimal) between
+//        // 0 and 1 (but it never reaches 0 or 1)
+//        
+//        System.out.println("seed = " + seed);
+//        
+//        // You can use a formula for generatiing random numbers in a range
+//        // between a low and a high number
+//        
+//        // e.g. between 1 and 10 and make it an integer
+//        
+//        // Start with some constants defining the low and high
+//        
+//        final double LOW  = 1.0;
+//        final double HIGH = 10.0;
+//        
+//        // Now the formula to generate in that range
+//        
+//        double number = (HIGH - LOW + 1) * seed + LOW;
+//        
+//        // Now cast it into an int
+//        
+//        int value = (int)number;
+//        
+//        // and display it
+//        
+//        System.out.println("value = " + value);
+//        
+//        // Do it again, but simplify the formula (between 2-53)
+//        
+//        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
+//        System.out.println("card = " + card);
         
         ///////////////////////////////////////////////////////////////////////
         // CONDITIONAL STATEMENTS
@@ -482,6 +482,19 @@ public class ComputerScience30S
         // code inside of the curly brackets is said to be in a "block" of
         // code and that block only runs when the test inside of the round
         // brackets tests TRUE. It also indents the code inside the block
+        
+        int value1 = 10;
+        int value2 = 10;
+        
+        if (value1 == value2) {
+            System.out.println("equal");
+        }
+        
+        // if with "else" (an option) for both true and false, check 2 things
+        
+        
+        
+        
         
         
         
