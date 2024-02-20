@@ -237,10 +237,82 @@ else if (word1.equalsIgnoreCase(word2)) {
 AP: Unit 3 (Boolean Expressions And If Statements) completed!..............................
 AP: Unit 4 (Iteration) started.............................................................
 // 4.1 while Loops
+...
+The word "Iteration" is another word for "Loop" or "Looping" which is a control 
+struture to have code statements "repeat". Like conditional ("if") statements, iteration 
+statements control the flow of a program's logic. Also like if statements, iteration 
+statements are controlled by a Boolean expression (true or false). The result of the Boolean 
+expression will result in the code executing zero or mulitple times (until the expression 
+evaluates to false). The expression is evaluated each time through an iteration of the loop. 
+A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
+(thus the loop never stops looping - or never stops running). It is possible a loop will 
+never run if it evaluates to false before the body (block) of the loop. If you use the 
+keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
+potentially exit any method the loop is written inside. The "while" loop is a event loop or 
+non-deterministic loop, which means it is not usually used for counting but when you do 
+not know how many times the loop needs to run (a certain event can cause the loop to 
+end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
+(traversing) arrays and lists, and searching and sorting values. For example:
+...
+// Example of a simple while loop
+int counter = 0;
+while (counter < 10) {
+    counter++;
+}
+...
 // 4.2 for Loops
+...
+The "for" loop is another looping form. The for loop is a count controlled loop that 
+generally is used when a loop needs to run a specific number of times. There are three 
+parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
+the starting, ending, and change of the loop. In a for loop a counting variable is 
+generally declared right inside the loop to a starting value, then the Boolean condition 
+to end the loop, then the change value increasing (increment) or decreasing (decrement) 
+that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
+by one" error occurs when a loop runs one too many or one too few times. For Example:
+...
+// Example of a for loop
+for (int i = 0; i < 10; i++) {
+    // potential code body...
+}
+...
 // 4.3 Developing Algorithms Using Strings
+...
+The String class allows for several "built-in" methods of the String class to manipulate 
+the string and the value it stores. Several of these methods could apply to the A.P. exam 
+including travelling (traversing) string characters, pulling out substrings (parts 
+of the string), reversing a string, etc. For example:
+...
+// Example of string methods with a loop
+String word   = "completion";
+String parts1 = word.substring(3);
+String parts2 = word.substring(1,7);
+for (int i = 0; i < word.length(); i++) {
+    char character = word.charAt(i);
+}
+...
 // 4.4 Nested Iteration
+...
+Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
+This means you can place a iteration statement inside the block of another iteration 
+statement. The inner loop must complete all of its iterations before the outer loop 
+can continue. For example:
+...
+// Example of nested loops
+for (int i = 0; i < 10; i++) {
+    for (int j = 0; j < 10; j++) {
+        int k = 10;
+        while (k < 10) {
+            // potential code body...
+        }
+    }
+}
+...
 // 4.5 Informal Code Analysis
+...
+Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
+loops are typical A.P. exam questions. You should practice these types of questions.
+...
 AP: Unit 4 (Iteration) completed!..........................................................
 AP curriculum - Part 1 Test completed!.....................................................
 AP curriculum - Part 2 Test started........................................................
