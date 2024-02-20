@@ -470,97 +470,129 @@ public class ComputerScience30S
 //        
 //        int card = (int) ( ( 53 - 2 + 1 ) * Math.random() + 2 );
 //        System.out.println("card = " + card);
-        
-        ///////////////////////////////////////////////////////////////////////
-        // CONDITIONAL STATEMENTS
-        ///////////////////////////////////////////////////////////////////////
-        
-        // The simple if statement, you use this when comparing if something is
-        // true, as it checks that one thing ("asks a true/false question")
-        
-        // If statements use both ( ) round and { } curly brackets and the 
-        // code inside of the curly brackets is said to be in a "block" of
-        // code and that block only runs when the test inside of the round
-        // brackets tests TRUE. It also indents the code inside the block
-        
-        int value1 = 10;
-        int value2 = 10;
-        
-        if (value1 == value2) {
-            System.out.println("equal");
-        }
-        
-        // if with "else" (an option) for both true and false, check 2 things
-        
-        double value3 = 1.45, value4 = 1.5;
-        
-        // Using a comma is a option (I do not recomend)
-        
-        if (value3 < value4) {
-            System.out.println("Less than");
-        }
-        else {
-            System.out.println("Greater than");
-        }
-        
-        // Use chars and some shorthand, not usually recommended (except in 
-        // certain situations) used when the code in a block - between { } is
-        // only one line of code! Then, you don't need the { } 
-        // And.. (even further shorthand) the line can be moved up to the
-        // same line as the if statement
-        
-        char value5 = 'A';
-        char value6 = 'a';        
-        if (value5 != value6) System.out.println("!=");
-        else                  System.out.println("==");
-        
-        // Use "else if" for multiple cases of more than 2 things (same as the
-        // "switch" statement - which I don't use) use strings for this
-        // example which are more complex (because they use many character,
-        // and upper and lower case)
-        
-        // NOTE: with string NEVER use == ALWAYS use .equals()...
-        
-        String word1 = "edgy";
-        String word2 = "edGy";
-        
-        if (word1.equals(word2)) {
-            System.out.println("W1==W2");
-        }
-        else if (word1.equalsIgnoreCase(word2)) {
-            System.out.println("W1 kind of == W2");
-        }
-        else {
-            System.out.println("W1!=W2");
-        }
-        
-        // Combine logic using "and" "or" "not" which use the symbols:
-        // "&&" for "and"
-        // "||" for "or"
-        // "!"  for "not"
-        
-        int age = 17;
-        double iq = 100.0;
-        
-        if (age >= 21 && iq > 130) {
-            // with "AND" (&&) BOTH have to be true
-            System.out.println("Get in");
-        }
-        else if (age >= 18 || iq >= 100) {
-            // with "OR" (||) EITHER can be true
-            System.out.println("Keep trying");
-        }
-        else if (!(age < 200 && iq <= 200)) {
-            // the "NOT" ! REVERSES the logic
-            System.out.println("?");
-        }
-        else {
-            System.out.println("Get out");
-        }
+//        
+//        ///////////////////////////////////////////////////////////////////////
+//        // CONDITIONAL STATEMENTS
+//        ///////////////////////////////////////////////////////////////////////
+//        
+//        // The simple if statement, you use this when comparing if something is
+//        // true, as it checks that one thing ("asks a true/false question")
+//        
+//        // If statements use both ( ) round and { } curly brackets and the 
+//        // code inside of the curly brackets is said to be in a "block" of
+//        // code and that block only runs when the test inside of the round
+//        // brackets tests TRUE. It also indents the code inside the block
+//        
+//        int value1 = 10;
+//        int value2 = 10;
+//        
+//        if (value1 == value2) {
+//            System.out.println("equal");
+//        }
+//        
+//        // if with "else" (an option) for both true and false, check 2 things
+//        
+//        double value3 = 1.45, value4 = 1.5;
+//        
+//        // Using a comma is a option (I do not recomend)
+//        
+//        if (value3 < value4) {
+//            System.out.println("Less than");
+//        }
+//        else {
+//            System.out.println("Greater than");
+//        }
+//        
+//        // Use chars and some shorthand, not usually recommended (except in 
+//        // certain situations) used when the code in a block - between { } is
+//        // only one line of code! Then, you don't need the { } 
+//        // And.. (even further shorthand) the line can be moved up to the
+//        // same line as the if statement
+//        
+//        char value5 = 'A';
+//        char value6 = 'a';        
+//        if (value5 != value6) System.out.println("!=");
+//        else                  System.out.println("==");
+//        
+//        // Use "else if" for multiple cases of more than 2 things (same as the
+//        // "switch" statement - which I don't use) use strings for this
+//        // example which are more complex (because they use many character,
+//        // and upper and lower case)
+//        
+//        // NOTE: with string NEVER use == ALWAYS use .equals()...
+//        
+//        String word1 = "edgy";
+//        String word2 = "edGy";
+//        
+//        if (word1.equals(word2)) {
+//            System.out.println("W1==W2");
+//        }
+//        else if (word1.equalsIgnoreCase(word2)) {
+//            System.out.println("W1 kind of == W2");
+//        }
+//        else {
+//            System.out.println("W1!=W2");
+//        }
+//        
+//        // Combine logic using "and" "or" "not" which use the symbols:
+//        // "&&" for "and"
+//        // "||" for "or"
+//        // "!"  for "not"
+//        
+//        int age = 17;
+//        double iq = 100.0;
+//        
+//        if (age >= 21 && iq > 130) {
+//            // with "AND" (&&) BOTH have to be true
+//            System.out.println("Get in");
+//        }
+//        else if (age >= 18 || iq >= 100) {
+//            // with "OR" (||) EITHER can be true
+//            System.out.println("Keep trying");
+//        }
+//        else if (!(age < 200 && iq <= 200)) {
+//            // the "NOT" ! REVERSES the logic
+//            System.out.println("?");
+//        }
+//        else {
+//            System.out.println("Get out");
+//        }
         
         ///////////////////////////////////////////////////////////////////////
         // LOOPING
         ///////////////////////////////////////////////////////////////////////
+        
+        
+        // Simple loop...
+        
+        int counter = 0;
+        
+        while (counter < 10) {
+            System.out.println("counter = " + counter);
+            counter++;  // counter = counter + 1;
+        }
+        
+        // while loop with a string
+        
+        String password = JOptionPane.showInputDialog("Enter password");
+        
+        while (password.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Try again");
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
