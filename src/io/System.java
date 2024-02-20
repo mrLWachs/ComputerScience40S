@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package io;
 
+import tools.WebPageGenerator;
+
 
 /**
  * System.java - this class simulates the java.lang class that does the 
@@ -27,6 +29,10 @@ public class System
          */
         public static void println(Object object) {
             Simulator.output(object,true);
+            
+            if (object == null) object = new String("null");
+            String text = object.toString();
+            WebPageGenerator.addNewLine(text);
         }
        
         /**
@@ -81,6 +87,10 @@ public class System
          */
         public static void print(Object object) {
             Simulator.output(object,false);
+
+            if (object == null) object = new String("null");
+            String text = object.toString();
+            WebPageGenerator.addLine(text);
         }
         
         /**

@@ -9,6 +9,7 @@ import java.awt.Window;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.JFrame;
+import tools.WebPageGenerator;
 
 
 /**
@@ -38,6 +39,8 @@ public class Simulator
     private static final String FLAG_INPUT               = "simulated input line";
     private static final String DATA_FILENAME            = "outputTestData.txt";
     private static final String CLEAN_DATA_FILENAME      = "cleanOutputTestData.txt";
+    private static final String WEB_PAGE_FILENAME        = "output.html";
+    
     
     
     private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
@@ -46,7 +49,7 @@ public class Simulator
     
     
     private static final String NEW_LINE                 = "\n";
-    private static final String COMMENT                  = "// ";
+    private static final String COMMENT                  = ""; // "// ";
     private static final String NULL                     = "null";
     
     private static final String RESET                    = "\033[0m";  
@@ -241,6 +244,7 @@ public class Simulator
         text += line(length);        
         colorOutput(text, BLUE, RESET);
         lineBreak();
+        WebPageGenerator.addH1(text);
     }
 
     /**
@@ -267,6 +271,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = COMMENT + object.toString();
         colorOutput(text, YELLOW, RESET);
+        WebPageGenerator.addH2(text);
     }
     
     /**
@@ -279,6 +284,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, PURPLE_BOLD, RESET);
+        WebPageGenerator.addPreformatted(text);
     }
 
     /**
@@ -522,7 +528,12 @@ public class Simulator
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(allOutput, DATA_FILE);
-        handler.save(cleanOutput, CLEAN_DATA_FILE);        
+        handler.save(cleanOutput, CLEAN_DATA_FILE); 
+        WebPageGenerator.generate();        
+    }
+
+    public static void initialize() {
+        WebPageGenerator.initialize(WEB_PAGE_FILENAME);
     }
     
 }
