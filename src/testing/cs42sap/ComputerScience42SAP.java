@@ -23,7 +23,7 @@ public class ComputerScience42SAP
      * Default constructor for the class, sets class properties
      */
     public ComputerScience42SAP() {
-        Simulator.header("Computer Science 42SAP starting...");         
+        Simulator.title("Computer Science 42SAP starting...");         
         new CurriculumContentCS42SAP();
     }
     

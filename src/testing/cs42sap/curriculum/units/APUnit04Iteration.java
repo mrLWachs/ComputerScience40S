@@ -29,7 +29,7 @@ public class APUnit04Iteration
      * Default constructor, set class properties
      */
     public APUnit04Iteration() {
-        Simulator.header("AP: Unit 4 (Iteration)");
+        Simulator.title("AP: Unit 4 (Iteration)");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("4.1 while Loops");  
@@ -107,7 +107,7 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.2 for Loops");  
+        Simulator.header("4.2 for Loops");  
         // (4.2.1) Represent iterative processes using a for loop
             // (4.2.1.1) There are three parts in a for loop header: the 
             //           initialization, the Boolean expression, and the 
@@ -155,7 +155,7 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.3 Developing Algorithms Using Strings");  
+        Simulator.header("4.3 Developing Algorithms Using Strings");  
         // (4.3.1) For algorithms in the context of a particular specification
         //         that involves String objects: (A) Identify standard 
         //         algorithms, (B) Modify standard algorithms, (C) Develop an 
@@ -167,7 +167,6 @@ public class APUnit04Iteration
             //           new string with the characters reversed
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("The String class allows for several \"built-in\" ");
         System.out.println("methods of the String class to manipulate ");
         System.out.print("the string and the value it stores. Several of ");
@@ -194,7 +193,7 @@ public class APUnit04Iteration
         Simulator.code("}");       
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.4 Nested Iteration");  
+        Simulator.header("4.4 Nested Iteration");  
         // (4.4.1) Represent nested iterative processes
             // (4.4.1.1) Nested iteration statements are iteration statements 
             //           that appear in the body of another iteration statement
@@ -232,7 +231,7 @@ public class APUnit04Iteration
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.5 Informal Code Analysis");  
+        Simulator.header("4.5 Informal Code Analysis");  
         // (4.5.1) Compute statement execution counts and informal run-time 
         //         comparison of iterative statements
             // (4.5.1.1) A statement execution count indicates the number of 

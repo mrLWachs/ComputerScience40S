@@ -2,7 +2,7 @@
 /** Required package class namespace */
 package io;
 
-import tools.WebPageGenerator;
+import tools.WebPage;
 
 
 /**
@@ -32,7 +32,7 @@ public class System
             
             if (object == null) object = new String("null");
             String text = object.toString();
-            WebPageGenerator.addNewLine(text);
+            WebPage.addNewLine(text);
         }
        
         /**
@@ -90,7 +90,7 @@ public class System
 
             if (object == null) object = new String("null");
             String text = object.toString();
-            WebPageGenerator.addLine(text);
+            WebPage.addLine(text);
         }
         
         /**
@@ -149,6 +149,17 @@ public class System
         Simulator.exit(status);
     }
     
+    /**
+     * Simulates the method from System to copy an array from the specified 
+     * source array, beginning at the specified position, to the specified 
+     * position of the destination array.
+     * 
+     * @param src the source array
+     * @param srcPos starting position in the source array
+     * @param dest the destination array
+     * @param destPos starting position in the destination data
+     * @param length the number of array elements to be copied
+     */
     public static void arraycopy(
             Object src,
             int srcPos,    

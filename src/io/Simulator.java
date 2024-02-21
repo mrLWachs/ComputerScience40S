@@ -9,7 +9,7 @@ import java.awt.Window;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.JFrame;
-import tools.WebPageGenerator;
+import tools.WebPage;
 
 
 /**
@@ -41,15 +41,12 @@ public class Simulator
     private static final String CLEAN_DATA_FILENAME      = "cleanOutputTestData.txt";
     private static final String WEB_PAGE_FILENAME        = "output.html";
     
-    
-    
     private static final File   FLAG_FILE                = new File(FLAG_FILENAME); 
     private static final File   DATA_FILE                = new File(DATA_FILENAME); 
     private static final File   CLEAN_DATA_FILE          = new File(CLEAN_DATA_FILENAME); 
-    
-    
+        
     private static final String NEW_LINE                 = "\n";
-    private static final String COMMENT                  = ""; // "// ";
+    private static final String COMMENT                  = "// ";
     private static final String NULL                     = "null";
     
     private static final String RESET                    = "\033[0m";  
@@ -127,11 +124,11 @@ public class Simulator
     };
     
     private static LinkedList<String> allOutput;
-    private static LinkedList<String> cleanOutput;
         
     private static String holdText = "";
     
     private static int lineCount = 0;
+    
     
     /**
      * Does a simple output with the passed message
@@ -150,12 +147,12 @@ public class Simulator
      * @param original the original string value
      * @param newLine flag to determine if a line break or not
      */
-    private static void simpleOutput(String message, String original, boolean newLine) {
+    private static void simpleOutput(String message, String original, 
+                                     boolean newLine) {
         if (newLine) java.lang.System.out.println(message);
         else         java.lang.System.out.print(message);
         // Save all the output messages to a running list 
         if (allOutput   == null) allOutput   = new LinkedList();
-        if (cleanOutput == null) cleanOutput = new LinkedList(); 
         if (original != null && !original.equals("")) {
             holdText += original;
             if (newLine == true) {
@@ -165,14 +162,13 @@ public class Simulator
                                " ... (line shortened) ...";
                 }            
                 allOutput.add(lineCount + ":\t" + holdText);
-                cleanOutput.add(holdText);
                 holdText = "";
             }
         }        
     }
         
     /**
-     * 
+     * Generates a line break in the standard output
      */
     private static void lineBreak() {
         java.lang.System.out.println();
@@ -232,6 +228,22 @@ public class Simulator
     }
     
     /**
+     * Simulates the 'Printing' of an object but uses a title style of
+     * formatting
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void title(Object object) {
+        if (object == null)  return; 
+        String text = object.toString();        
+        int length = text.length();
+        text += line(length);        
+        colorOutput(text, RED_BOLD, RESET);
+        lineBreak();
+        WebPage.addH1(text);
+    }
+
+    /**
      * Simulates the 'Printing' of an object but uses a header style of
      * formatting
      *
@@ -244,9 +256,9 @@ public class Simulator
         text += line(length);        
         colorOutput(text, BLUE, RESET);
         lineBreak();
-        WebPageGenerator.addH1(text);
+        WebPage.addH2(text);
     }
-
+    
     /**
      * Simulates the 'Printing' of an object but uses a header style of
      * formatting
@@ -263,7 +275,7 @@ public class Simulator
     
     /**
      * Simulates the 'Printing' of an object but uses a comment style of
-     * formatting
+     * formatting that tries to look like a code "comment"
      *
      * @param object The Object type to be 'printed'
      */
@@ -271,7 +283,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = COMMENT + object.toString();
         colorOutput(text, YELLOW, RESET);
-        WebPageGenerator.addH2(text);
+        WebPage.addPreComment(text);
     }
     
     /**
@@ -284,7 +296,7 @@ public class Simulator
         if (object == null)  object = new String(NULL); 
         String text = object.toString();
         colorOutput(text, PURPLE_BOLD, RESET);
-        WebPageGenerator.addPreformatted(text);
+        WebPage.addPre(text);
     }
 
     /**
@@ -510,30 +522,39 @@ public class Simulator
     }
     
     /**
+     * Simulates the Scanner class input
      * 
-     * @return 
+     * @return the default input value
      */
     public static String scannerInput() {
         return FLAG_INPUT;
     }
 
     /**
+     * Simulates the Java File class object
      * 
-     * @return 
+     * @return a default File object
      */
     public static File getFile() {
         return FLAG_FILE;
     }
 
+    /**
+     * Saves the generated output to both a simple text document (mimicking the
+     * same output from the standard System.out output) and a web page with 
+     * CSS formatting
+     */
     public static void saveOutput() {
         FileHandler<LinkedList> handler = new FileHandler<>();
         handler.save(allOutput, DATA_FILE);
-        handler.save(cleanOutput, CLEAN_DATA_FILE); 
-        WebPageGenerator.generate();        
+        WebPage.generate();        
     }
 
+    /**
+     * Initializes the simulator and the web page generator
+     */
     public static void initialize() {
-        WebPageGenerator.initialize(WEB_PAGE_FILENAME);
+        WebPage.initialize(WEB_PAGE_FILENAME);
     }
     
 }

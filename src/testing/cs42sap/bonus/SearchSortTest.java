@@ -25,7 +25,7 @@ public class SearchSortTest
      * Default constructor, set class properties
      */
     public SearchSortTest() {
-        Simulator.header("Searching and Sorting");
+        Simulator.title("Searching and Sorting");
                 
         // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");

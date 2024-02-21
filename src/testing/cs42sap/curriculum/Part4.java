@@ -24,7 +24,7 @@ public class Part4
      * Default constructor, set class properties
      */
     public Part4() {
-        Simulator.header("AP curriculum - Part 4");
+        Simulator.title("AP curriculum - Part 4");
         new APUnit07ArrayList();
         new APUnit10Recursion();        
     }

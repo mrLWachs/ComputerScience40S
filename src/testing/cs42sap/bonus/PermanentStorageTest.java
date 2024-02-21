@@ -54,7 +54,7 @@ public class PermanentStorageTest
      * Default constructor, set class properties
      */
     public PermanentStorageTest() {
-        Simulator.header("Permanent Storage Test");
+        Simulator.title("Permanent Storage Test");
 
         // Learn about "error traps"...........................................   
         Simulator.comment("Learn about 'error traps'");

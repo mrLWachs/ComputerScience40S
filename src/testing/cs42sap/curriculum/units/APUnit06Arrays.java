@@ -4,7 +4,8 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
-
+import io.System;
+ 
  
 /**
  * APUnit06Arrays.java - This unit focuses on data structures, which are used
@@ -29,12 +30,10 @@ public class APUnit06Arrays
      * Default constructor, set class properties
      */
     public APUnit06Arrays() {
-        Simulator.header("AP: Unit 6 (Arrays) started...");
-        
-        
+        Simulator.title("AP: Unit 6 (Arrays)");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("6.1 Array Creation and Access");  
+        Simulator.header("6.1 Array Creation and Access");  
         // (6.1.1) Represent collections of related primitive or object 
         //         reference data using onedimensional (1D) array objects
             // (6.1.1.1) The use of array objects allows multiple related 
@@ -62,10 +61,10 @@ public class APUnit06Arrays
             //           being thrown
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("6.2 Traversing Arrays");  
+        Simulator.header("6.2 Traversing Arrays");  
         // (6.2.1) Traverse the elements in a 1D array
             // (6.2.1.1) Iteration statements can be used to access all the
             //           elements in an array. This is called traversing the 
@@ -79,10 +78,10 @@ public class APUnit06Arrays
             //           an ArrayIndexOutOfBoundsException being thrown
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("6.3 Enhanced for Loop for Arrays");  
+        Simulator.header("6.3 Enhanced for Loop for Arrays");  
         // (6.3.1) Traverse the elements in a 1D array object using an enhanced
         //         for loop
             // (6.3.1.1) An enhanced for loop header includes a variable, 
@@ -97,10 +96,10 @@ public class APUnit06Arrays
             //           rewritten using an indexed for loop or a while loop
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("6.4 Developing Algorithms Using Arrays");  
+        Simulator.header("6.4 Developing Algorithms Using Arrays");  
         // (6.4.1) For algorithms in the context of a particular specification 
         //         that requires the use of array traversals: (a) Identify 
         //         standard algorithms, (b) Modify standard algorithms, 
@@ -119,9 +118,9 @@ public class APUnit06Arrays
             //           right, (b) Reverse the order of the elements
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("...");
         
-        
-        Simulator.header("AP: Unit 6 (Arrays) completed!");
+        ////////////////////////////////////////////////////////////////////////
     }   
     
 }

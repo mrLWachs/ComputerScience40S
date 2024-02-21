@@ -26,7 +26,7 @@ public class Part1
      * Default constructor, set class properties
      */
     public Part1() {
-        Simulator.header("AP curriculum - Part 1");
+        Simulator.title("AP curriculum - Part 1");
         new APUnit01PrimitiveTypes();
         new APUnit03BooleanExpressionsAndIfStatements();
         new APUnit04Iteration();

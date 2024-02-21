@@ -25,7 +25,7 @@ public class StacksQueuesTest
      * Default constructor, set class properties
      */
     public StacksQueuesTest() {
-        Simulator.header("Stacks and Queues");
+        Simulator.title("Stacks and Queues");
         
         // Create some objects for testing.....................................
         Simulator.comment("Create objects for testing...");

@@ -1,10 +1,52 @@
-<html><head><style>  body {background  : white;font-family : Consolas;font-size   : 16pt;font-style  : DEFAULT_FONT_STYLE;font-weight : normal;color       : black;}  h1 {font-family : Lucida Sans Typewriter;font-size   : 18pt;font-style  : DEFAULT_FONT_STYLE;font-weight : bold;color       : green;}  h2 {font-family : Courier New;font-size   : 17pt;font-style  : italic;font-weight : 600;color       : gray;}  pre {font-family : Courier New;font-size   : 16pt;font-style  : DEFAULT_FONT_STYLE;font-weight : lighter;color       : blue;}</style></head><body>
+<html>
+<head>
+<style>
+body {
+   background  : white;
+   font-family : Consolas;
+   font-size   : 16pt;
+   font-style  : DEFAULT_FONT_STYLE;
+   font-weight : normal;
+   color       : black;
+}
+h1 {
+   font-family : Lucida Sans Typewriter;
+   font-size   : 18pt;
+   font-style  : DEFAULT_FONT_STYLE;
+   font-weight : bold;
+   color       : green;
+}
+h2 {
+   font-family : Courier New;
+   font-size   : 17pt;
+   font-style  : italic;
+   font-weight : 600;
+   color       : blue;
+}
+pre {
+   font-family : Courier New;
+   font-size   : 16pt;
+   font-style  : DEFAULT_FONT_STYLE;
+   font-weight : lighter;
+   color       : blue;
+}
+pre.comment {
+   font-family : Courier New;
+   font-size   : 16pt;
+   font-style  : DEFAULT_FONT_STYLE;
+   font-weight : lighter;
+   color       : gray;
+}
+</style>
+</head>
+<body>
+
 <h1>Mr. Wachs Computer Science.................................................................</h1>
 <h1>Computer Science 42SAP starting............................................................</h1>
 <h1>Computer Science 42SAP curriculum content..................................................</h1>
 <h1>AP curriculum - Part 1.....................................................................</h1>
 <h1>AP: Unit 1 (Primitive Types)...............................................................</h1>
-<h2>1.1 Why Programming? Why Java?</h2>
+<h2>1.1 Why Programming? Why Java?.............................................................</h2>
 System.out.print outputs text to the screen and System.out.println outputs with a line break
 </br />
 More specifically, the code word "System" refers to the "computer system" and the 
@@ -19,7 +61,7 @@ will take the string literal and output it to the default output device - that b
 </br />
 computer screen.
 </br />
-<h2>1.2 Variables and Data Types</h2>
+<h2>1.2 Variables and Data Types...............................................................</h2>
 Data/information refers to the "kind" of data being stored (or "remembered") by the program 
 </br />
 in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
@@ -34,12 +76,12 @@ variable can only be one type and only store that specified type of data. Howeve
 </br />
 itself can change (or "vary") after the initial declaration. Examples of this are below...
 </br />
-<h2>Variables declared and assigned initial ("starting") values:</h2>
+<pre class="comment">// Variables declared and assigned initial ("starting") values:</pre>
 <pre>boolean a = true;</pre>
 <pre>int     b = 0;</pre>
 <pre>double  c = 1.0;</pre>
 <pre>char    d = 'A';</pre>
-<h2>Variables content changes ("reassigned"):</h2>
+<pre class="comment">// Variables content changes ("reassigned"):</pre>
 <pre>a = false;</pre>
 <pre>b = 1;</pre>
 <pre>c = 1.1;</pre>
@@ -58,12 +100,12 @@ understanding, speed (faster code), easier to update code, and others. Examples 
 </br />
 are below
 </br />
-<h2>Constants (finals) declared (initialized)</h2>
+<pre class="comment">// Constants (finals) declared (initialized)</pre>
 <pre>final boolean FOUND  = true;</pre>
 <pre>final int     VALUE  = 1;</pre>
 <pre>final double  AMOUNT = 2.5;</pre>
 <pre>final char    CODE   = 'X';</pre>
-<h2>1.3 Expressions and Assignment Statements</h2>
+<h2>1.3 Expressions and Assignment Statements..................................................</h2>
 Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
 </br />
 written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
@@ -86,14 +128,14 @@ then they are evaluated from left to right.When you try and divide by zero, an e
 </br />
 (the "ArithmeticException" error) will occur and the program will stop running. Examples:
 </br />
-<h2>Arithmetic evaluations using variables</h2>
+<pre class="comment">// Arithmetic evaluations using variables</pre>
 <pre>int    v1 = 5;</pre>
 <pre>int    v2 = 3;</pre>
 <pre>int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;</pre>
 <pre>double v4 = 5.2;</pre>
 <pre>double v5 = 3.3;</pre>
 <pre>double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;</pre>
-<h2>1.4 Compound Assignment Operators</h2>
+<h2>1.4 Compound Assignment Operators..........................................................</h2>
 Compound statements in this context refers to using shortcuts to quickly add or subtract one 
 </br />
 (increment or decrement) to a variable. You can also use more complex shorthand compound 
@@ -102,7 +144,7 @@ statements to quickly multiply, divide, even modulus a variable with itself or o
 </br />
 variables. For example:
 </br />
-<h2>Shorthand Compound Arithmetic expressions</h2>
+<pre class="comment">// Shorthand Compound Arithmetic expressions</pre>
 <pre>int value = 5;</pre>
 <pre>value++;    // is the same as "value = value + 1;"</pre>
 <pre>value--;    // is the same as "value = value + 1;"</pre>
@@ -111,7 +153,7 @@ variables. For example:
 <pre>value *= 5; // is the same as "value = value * 5;"</pre>
 <pre>value /= 5; // is the same as "value = value / 5;"</pre>
 <pre>value %= 5; // is the same as "value = value % 5;"</pre>
-<h2>1.5 Casting and Ranges of Variables</h2>
+<h2>1.5 Casting and Ranges of Variables........................................................</h2>
 Casting is the process of "converting" one data type into another data type. When casting 
 </br />
 an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
@@ -128,7 +170,7 @@ constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expre
 </br />
 evaluates an int outside that range, an error will occur (overflow error). For example:
 </br />
-<h2>Casting data types</h2>
+<pre class="comment">// Casting data types</pre>
 <pre>int integer = Integer.MAX_VALUE;</pre>
 <pre>double doub = Double.MIN_VALUE;</pre>
 <pre>doub        = (int)integer;</pre>
@@ -136,7 +178,7 @@ evaluates an int outside that range, an error will occur (overflow error). For e
 <pre>char letter = 'A';</pre>
 <pre>integer     = (int)letter;</pre>
 <h1>AP: Unit 3 (Boolean Expressions And If Statements).........................................</h1>
-<h2>3.1 Boolean Expressions</h2>
+<h2>3.1 Boolean Expressions....................................................................</h2>
 A Boolean (true/false) expression is a code statement most likely in a control structure 
 </br />
 like a conditional statement or loop control structure that evaluates to true or false to 
@@ -149,7 +191,7 @@ than", "greater than", "less than or equal to", "greater than or equal to", "equ
 </br />
 to", and "not equal to".
 </br />
-<h2>3.2 if Statements and Control Flow</h2>
+<pre class="comment">// 3.2 if Statements and Control Flow</pre>
 A "Conditional Statement" is also known under other names like "branching statement", "if 
 </br />
 statement", "one-way selection statement", and "control structure". It uses the reserved 
@@ -162,13 +204,13 @@ conditional statement. Brackets are optional if the block is only one line, and 
 </br />
 move thos lines up to the same line as the conditional statement. For example:
 </br />
-<h2>Example of if statements</h2>
+<pre class="comment">// Example of if statements</pre>
 <pre>int a = 10;</pre>
 <pre>int b = 10;</pre>
 <pre>if (a == a) {</pre>
 <pre>    // "equal"</pre>
 <pre>}</pre>
-<h2>3.3 if-else Statements</h2>
+<h2>3.3 if-else Statements.....................................................................</h2>
 The "else" statement is paired with an "if" statement to control the flow of the logic so 
 </br />
 that the conditional now evaluates to both true and false. This can be called a "two 
@@ -177,7 +219,7 @@ way selection" (for true/false). An "else" must always follow an "if" statement 
 </br />
 For example:
 </br />
-<h2>if with "else" </h2>
+<pre class="comment">// if with "else" </pre>
 <pre>double c = 1.45, d = 1.5; </pre>
 <pre>if (c < d) {</pre>
 <pre>    // "Less than"</pre>
@@ -185,12 +227,12 @@ For example:
 <pre>else {</pre>
 <pre>    // "Greater than"</pre>
 <pre>}</pre>
-<h2>Shortened lines version</h2>
+<pre class="comment">// Shortened lines version</pre>
 <pre>char e = 'A';</pre>
 <pre>char f = 'a';</pre>
 <pre>if (e != f) e = '!';</pre>
 <pre>else        e = '=';</pre>
-<h2>3.4 else if Statements</h2>
+<h2>3.4 else if Statements.....................................................................</h2>
 When making multiple decisions (more than 2), the "else if" statement is added to an 
 </br />
 existing "if" statement to have multiple branches of logic for the code to follow. This 
@@ -201,7 +243,7 @@ selection" (or "if-else-if"). An "else" statement is also still the final option
 </br />
 this is not required). For example:
 </br />
-<h2>Showing a "chain" of else if statements</h2>
+<pre class="comment">// Showing a "chain" of else if statements</pre>
 <pre>int g = 0;</pre>
 <pre>if (g == 1) {</pre>
 <pre>    // The first if is true</pre>
@@ -215,7 +257,7 @@ this is not required). For example:
 <pre>else {</pre>
 <pre>    // Nothing above is true, so go to this else</pre>
 <pre>}</pre>
-<h2>3.5 Compound Boolean Expressions</h2>
+<h2>3.5 Compound Boolean Expressions...........................................................</h2>
 The process of "nesting" means to place one conditional statement inside the "block" of 
 </br />
 another conditional statement. The logical operators: "and", "or", and "not" are 
@@ -238,7 +280,7 @@ rest of the expressions do not need to be evaluated - this is known as a "short-
 </br />
 evaluation". For example:
 </br />
-<h2>Logical operators and "nesting"</h2>
+<pre class="comment">// Logical operators and "nesting"</pre>
 <pre>int    age = 17;</pre>
 <pre>double iq  = 1.0;</pre>
 <pre>if (age >= 18 && iq > 90) {</pre>
@@ -253,7 +295,7 @@ evaluation". For example:
 <pre>        // A "nested if statement"</pre>
 <pre>    }</pre>
 <pre>}</pre>
-<h2>3.6 Equivalent Boolean Expressions</h2>
+<h2>3.6 Equivalent Boolean Expressions.........................................................</h2>
 Boolean (true/false) expressions turned into logical statements used by control structures 
 </br />
 like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
@@ -268,7 +310,7 @@ evaluated by using mathematical rules (like "order of operations") and logical o
 </br />
 control structure (like an "if" statement) runs a block of code or not.
 </br />
-<h2>3.7 Comparing Objects</h2>
+<h2>3.7 Comparing Objects......................................................................</h2>
 The use of an advanced data type like an "Object" in code means that comparison 
 </br />
 operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
@@ -277,7 +319,7 @@ double, char, etc.") are not used. Instead, use the "built-in" method "equals()"
 </br />
 determine the equality of two objects. For example:
 </br />
-<h2>Use of the built-in equals method with Objects</h2>
+<pre class="comment">// Use of the built-in equals method with Objects</pre>
 <pre>String word1 = "edgy";</pre>
 <pre>String word2 = "edGy";</pre>
 <pre>if (word1.equals(word2)) {</pre>
@@ -287,7 +329,7 @@ determine the equality of two objects. For example:
 <pre>    // "W1 kind of == W2"</pre>
 <pre>}</pre>
 <h1>AP: Unit 4 (Iteration).....................................................................</h1>
-<h2>4.1 while Loops</h2>
+<pre class="comment">// 4.1 while Loops</pre>
 The word "Iteration" is another word for "Loop" or "Looping" which is a control 
 </br />
 struture to have code statements "repeat". Like conditional ("if") statements, iteration 
@@ -318,12 +360,12 @@ end). Loops are used for a variety of reasons such as: repeating instructions, t
 </br />
 (traversing) arrays and lists, and searching and sorting values. For example:
 </br />
-<h2>Example of a simple while loop</h2>
+<pre class="comment">// Example of a simple while loop</pre>
 <pre>int counter = 0;</pre>
 <pre>while (counter < 10) {</pre>
 <pre>    counter++;</pre>
 <pre>}</pre>
-<h2>4.2 for Loops</h2>
+<h2>4.2 for Loops..............................................................................</h2>
 The "for" loop is another looping form. The for loop is a count controlled loop that 
 </br />
 generally is used when a loop needs to run a specific number of times. There are three 
@@ -340,13 +382,11 @@ that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "o
 </br />
 by one" error occurs when a loop runs one too many or one too few times. For Example:
 </br />
-<h2>Example of a for loop</h2>
+<pre class="comment">// Example of a for loop</pre>
 <pre>for (int i = 0; i < 10; i++) {</pre>
 <pre>    // potential code body...</pre>
 <pre>}</pre>
-<h2>4.3 Developing Algorithms Using Strings</h2>
-...
-</br />
+<h2>4.3 Developing Algorithms Using Strings....................................................</h2>
 The String class allows for several "built-in" methods of the String class to manipulate 
 </br />
 the string and the value it stores. Several of these methods could apply to the A.P. exam 
@@ -355,14 +395,14 @@ including travelling (traversing) string characters, pulling out substrings (par
 </br />
 of the string), reversing a string, etc. For example:
 </br />
-<h2>Example of string methods with a loop</h2>
+<pre class="comment">// Example of string methods with a loop</pre>
 <pre>String word   = "completion";</pre>
 <pre>String parts1 = word.substring(3);</pre>
 <pre>String parts2 = word.substring(1,7);</pre>
 <pre>for (int i = 0; i < word.length(); i++) {</pre>
 <pre>    char character = word.charAt(i);</pre>
 <pre>}</pre>
-<h2>4.4 Nested Iteration</h2>
+<h2>4.4 Nested Iteration.......................................................................</h2>
 Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
 </br />
 This means you can place a iteration statement inside the block of another iteration 
@@ -371,7 +411,7 @@ statement. The inner loop must complete all of its iterations before the outer l
 </br />
 can continue. For example:
 </br />
-<h2>Example of nested loops</h2>
+<pre class="comment">// Example of nested loops</pre>
 <pre>for (int i = 0; i < 10; i++) {</pre>
 <pre>    for (int j = 0; j < 10; j++) {</pre>
 <pre>        int k = 10;</pre>
@@ -380,68 +420,143 @@ can continue. For example:
 <pre>        }</pre>
 <pre>    }</pre>
 <pre>}</pre>
-<h2>4.5 Informal Code Analysis</h2>
+<h2>4.5 Informal Code Analysis.................................................................</h2>
 Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
 </br />
 loops are typical A.P. exam questions. You should practice these types of questions.
 </br />
 <h1>AP curriculum - Part 2.....................................................................</h1>
 <h1>AP: Unit 2 (Using Objects) started.........................................................</h1>
-<h2>2.1 Objects: Instances of Classes</h2>
-<h2>2.2 Creating and Storing Objects (Instantiation)</h2>
-<h2>2.3 Calling a Void Method</h2>
-<h2>2.4 Calling a Void Method with Parameters</h2>
-<h2>2.5 Calling a Non-void Method</h2>
-<h2>2.6 String Objects: Concatenation, Literals, and More</h2>
-<h2>2.7 String Methods</h2>
-<h2>2.8 Wrapper Classes: Integer and Double</h2>
-<h2>2.9 Using the Math Class</h2>
-<h1>AP: Unit 2 (Using Objects) completed!......................................................</h1>
-<h1>AP: Unit 5 (Writing Classes) started.......................................................</h1>
-<h2>5.1 Anatomy of a Class</h2>
-<h2>5.2 Constructors</h2>
-<h2>5.2 Documentation with Comments</h2>
-<h2>5.4 Accessor Methods</h2>
-<h2>5.5 Mutator Methods</h2>
-<h2>5.6 Writing Methods</h2>
-<h2>5.7 Static Variables and Methods</h2>
-<h2>5.8 Scope and Access</h2>
-<h2>5.9 this Keyword</h2>
-<h2>5.10 Ethical and Social Implications of Computing Systems</h2>
-<h1>AP: Unit 5 (Writing Classes) completed!....................................................</h1>
-<h1>AP: Unit 9 (Inheritance) started...........................................................</h1>
-<h2>9.1 Creating Superclasses and Subclasses</h2>
-<h2>9.2 Writing Constructors for Subclasses</h2>
-<h2>9.3 Overriding Methods</h2>
-<h2>9.4 super Keyword</h2>
-<h2>9.5 Creating References Using Inheritance Hierarchies</h2>
-<h2>9.6 Polymorphism</h2>
-<h2>9.7 Object Superclass</h2>
-<h1>AP: Unit 9 (Inheritance) completed!........................................................</h1>
+<h2>2.1 Objects: Instances of Classes..........................................................</h2>
+...
+</br />
+<h2>2.2 Creating and Storing Objects (Instantiation)...........................................</h2>
+...
+</br />
+<h2>2.3 Calling a Void Method..................................................................</h2>
+...
+</br />
+<h2>2.4 Calling a Void Method with Parameters..................................................</h2>
+...
+</br />
+<h2>2.5 Calling a Non-void Method..............................................................</h2>
+...
+</br />
+<h2>2.6 String Objects: Concatenation, Literals, and More......................................</h2>
+...
+</br />
+<h2>2.7 String Methods.........................................................................</h2>
+...
+</br />
+<h2>2.8 Wrapper Classes: Integer and Double....................................................</h2>
+...
+</br />
+<h2>2.9 Using the Math Class...................................................................</h2>
+...
+</br />
+<h1>AP: Unit 5 (Writing Classes)...............................................................</h1>
+<h2>5.1 Anatomy of a Class.....................................................................</h2>
+...
+</br />
+<h2>5.2 Constructors...........................................................................</h2>
+...
+</br />
+<h2>5.2 Documentation with Comments............................................................</h2>
+...
+</br />
+<h2>5.4 Accessor Methods.......................................................................</h2>
+...
+</br />
+<h2>5.5 Mutator Methods........................................................................</h2>
+...
+</br />
+<h2>5.6 Writing Methods........................................................................</h2>
+...
+</br />
+<h2>5.7 Static Variables and Methods...........................................................</h2>
+...
+</br />
+<h2>5.8 Scope and Access.......................................................................</h2>
+...
+</br />
+<h2>5.9 this Keyword...........................................................................</h2>
+...
+</br />
+<h2>5.10 Ethical and Social Implications of Computing Systems..................................</h2>
+...
+</br />
+<h1>AP: Unit 9 (Inheritance)...................................................................</h1>
+<h2>9.1 Creating Superclasses and Subclasses...................................................</h2>
+...
+</br />
+<h2>9.2 Writing Constructors for Subclasses....................................................</h2>
+...
+</br />
+<h2>9.3 Overriding Methods.....................................................................</h2>
+...
+</br />
+<h2>9.4 super Keyword..........................................................................</h2>
+...
+</br />
+<h2>9.5 Creating References Using Inheritance Hierarchies......................................</h2>
+...
+</br />
+<h2>9.6 Polymorphism...........................................................................</h2>
+...
+</br />
+<h2>9.7 Object Superclass......................................................................</h2>
+...
+</br />
 <h1>AP curriculum - Part 3.....................................................................</h1>
-<h1>AP: Unit 6 (Arrays) started................................................................</h1>
-<h2>6.1 Array Creation and Access</h2>
-<h2>6.2 Traversing Arrays</h2>
-<h2>6.3 Enhanced for Loop for Arrays</h2>
-<h2>6.4 Developing Algorithms Using Arrays</h2>
-<h1>AP: Unit 6 (Arrays) completed!.............................................................</h1>
-<h1>AP: Unit 8 (2D Arrays) started.............................................................</h1>
-<h2>8.1 2D Arrays</h2>
-<h2>8.2 Traversing 2D Arrays</h2>
-<h1>AP: Unit 8 (2D Arrays) completed!..........................................................</h1>
+<h1>AP: Unit 6 (Arrays)........................................................................</h1>
+<h2>6.1 Array Creation and Access..............................................................</h2>
+...
+</br />
+<h2>6.2 Traversing Arrays......................................................................</h2>
+...
+</br />
+<h2>6.3 Enhanced for Loop for Arrays...........................................................</h2>
+...
+</br />
+<h2>6.4 Developing Algorithms Using Arrays.....................................................</h2>
+...
+</br />
+<h1>AP: Unit 8 (2D Arrays).....................................................................</h1>
+<h2>8.1 2D Arrays..............................................................................</h2>
+...
+</br />
+<h2>8.2 Traversing 2D Arrays...................................................................</h2>
+...
+</br />
 <h1>AP curriculum - Part 4.....................................................................</h1>
-<h1>AP: Unit 7 (Array List) started............................................................</h1>
-<h2>7.1 Introduction to ArrayList</h2>
-<h2>7.2 ArrayList Methods</h2>
-<h2>7.3 Traversing ArrayLists</h2>
-<h2>7.4 Developing Algorithms Using ArrayLists</h2>
-<h2>7.5 Searching</h2>
-<h2>7.6 Sorting</h2>
-<h2>7.7 Ethical Issues Around Data Collection</h2>
-<h1>AP: Unit 7 (Array List) completed!.........................................................</h1>
-<h1>AP: Unit 10 (Recursion ) started...........................................................</h1>
-<h2>10.1 Recursion</h2>
-<h2>10.2 Recursive Searching and Sorting</h2>
-<h1>AP: Unit 10 (Recursion ) completed!........................................................</h1>
+<h1>AP: Unit 7 (Array List)....................................................................</h1>
+<h2>7.1 Introduction to ArrayList..............................................................</h2>
+...
+</br />
+<h2>7.2 ArrayList Methods......................................................................</h2>
+...
+</br />
+<h2>7.3 Traversing ArrayLists..................................................................</h2>
+...
+</br />
+<h2>7.4 Developing Algorithms Using ArrayLists.................................................</h2>
+...
+</br />
+<h2>7.5 Searching..............................................................................</h2>
+...
+</br />
+<h2>7.6 Sorting................................................................................</h2>
+...
+</br />
+<h2>7.7 Ethical Issues Around Data Collection..................................................</h2>
+...
+</br />
+<h1>AP: Unit 10 (Recursion )...................................................................</h1>
+<h2>10.1 Recursion.............................................................................</h2>
+...
+</br />
+<h2>10.2 Recursive Searching and Sorting.......................................................</h2>
+...
+</br />
 
 </body>

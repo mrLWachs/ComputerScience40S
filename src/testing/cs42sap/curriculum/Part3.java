@@ -24,7 +24,7 @@ public class Part3
      * Default constructor, set class properties
      */
     public Part3() {
-        Simulator.header("AP curriculum - Part 3");
+        Simulator.title("AP curriculum - Part 3");
         new APUnit06Arrays();
         new APUnit082DArrays();        
     }

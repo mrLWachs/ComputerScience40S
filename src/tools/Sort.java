@@ -395,7 +395,8 @@ public class Sort <T extends Comparable<T>>
      * ascending order. 
      * 
      * @param array the array of generic items to sort
-     */    
+     * @return a sorted array
+     */
     public T[] heap(T[] array) {
         if (array == null) return null;                         // Error check
         int length = array.length;
@@ -415,9 +416,9 @@ public class Sort <T extends Comparable<T>>
      * To 'heapify' a sub-tree rooted with node index which is an index in 
      * array[] with length being the size of heap
      * 
-     * @param array
-     * @param length
-     * @param index 
+     * @param array the array to heapify
+     * @param length the length to heapify
+     * @param index the index of the largest
      */
     private void heapify(T[] array, int length, int index) {
         int largest = index; // Initialize largest as root
@@ -442,19 +443,69 @@ public class Sort <T extends Comparable<T>>
      * ascending order. 
      * 
      * @param list the LinkedList to sort
-     */    
-    public void heap(LinkedList<T> list) {
-        if (list == null) return;                       // error check
+     * @return a sorted list
+     */
+    public LinkedList<T> heap(LinkedList<T> list) {
+        if (list == null) return null;                       // error check
+        int length = list.size();
+        for (int i = length / 2 - 1; i >= 0; i--) {
+            heapify(list, length, i);      // Build heap (rearrange list)
+        }
+        for (int i = length - 1; i > 0; i--) {  // Extract element from heap            
+            T temp = list.get(0);               // Move current root to end
+            list.set(0, list.get(i));
+            list.set(i, temp);
+            heapify(list, i, 0);       // Call max heapify on the reduced heap
+        }
+        return list;
     } 
  
     /**
+     * To 'heapify' a sub-tree rooted with node index which is an index in 
+     * array[] with length being the size of heap
+     * 
+     * @param list the LinkedList to heapify
+     * @param length the length to heapify
+     * @param index the index of the largest
+     */
+    private void heapify(LinkedList<T> list, int length, int index) {
+        int largest = index; // Initialize largest as root
+        int left    = 2 * index + 1; 
+        int right   = 2 * index + 2;         
+        if (left < length && list.get(left).compareTo(list.get(largest)) > 0) {
+            largest = left;     // If left child is larger than root
+        }        
+        if (right < length && list.get(right).compareTo(list.get(largest)) > 0) {
+            largest = right;    // If right child is larger than largest so far
+        }
+        if (largest != index) {             // If largest is not root
+            T swap = list.get(index);
+            list.set(index, list.get(largest));
+            list.set(largest, swap);
+            heapify(list, length, largest);    // Recursively heapify sub-tree
+        }
+    }
+    
+    /**
      * An implementation of a radix sort algorithm it will sort the array into 
+     * ascending order. 
+     * 
+     * @param array the array of generic items to sort
+     */    
+    public void radix(T[] array) {
+        if (array == null) return;                          // error check
+        // Not implemented!
+    }
+    
+    /**
+     * An implementation of a radix sort algorithm it will sort the list into 
      * ascending order. 
      * 
      * @param list the LinkedList to sort
      */    
     public void radix(LinkedList<T> list) {
         if (list == null) return;                          // error check
+        // Not implemented!
     }
     
 }

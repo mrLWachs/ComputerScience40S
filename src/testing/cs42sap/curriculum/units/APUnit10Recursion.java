@@ -4,8 +4,9 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
-
+import io.System;
  
+
 /**
  * APUnit10Recursion.java - Sometimes a problem can be solved by solving 
  * smaller or simpler versions of the same problem rather than attempting an 
@@ -27,12 +28,10 @@ public class APUnit10Recursion
      * Default constructor, set class properties
      */
     public APUnit10Recursion() {
-        Simulator.header("AP: Unit 10 (Recursion ) started...");
-        
-        
+        Simulator.title("AP: Unit 10 (Recursion )");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("10.1 Recursion");  
+        Simulator.header("10.1 Recursion");  
         // (10.1.1) Determine the result of executing recursive methods
             // (10.1.1.1) A recursive method is a method that calls itself
             // (10.1.1.2) Recursive methods contain at least one base case, 
@@ -49,10 +48,10 @@ public class APUnit10Recursion
             //            ArrayList objects
         ////////////////////////////////////////////////////////////////////////
         
-        
+        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("10.2 Recursive Searching and Sorting");  
+        Simulator.header("10.2 Recursive Searching and Sorting");  
         // (10.2.1) Apply recursive search algorithms to information in String,
         //          1D array, or ArrayList objects
             // (10.2.1.1) Data must be in sorted order to use the binary 
@@ -72,9 +71,9 @@ public class APUnit10Recursion
             //            can be used to sort elements in an array or ArrayList 
         ////////////////////////////////////////////////////////////////////////
         
+        System.out.println("...");
         
-        
-        Simulator.header("AP: Unit 10 (Recursion ) completed!");
+        ////////////////////////////////////////////////////////////////////////
     }
      
 }

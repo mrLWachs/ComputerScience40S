@@ -24,13 +24,17 @@ public class PostCourseContent
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public PostCourseContent() {
-        Simulator.header("Computer Science 42SAP bonus content");         
-        new PermanentStorageTest();
-        new StacksQueuesTest();
-        new SearchSortTest();   
-        new TreesTest();        
+    public PostCourseContent(boolean shouldRun) {
+        if (shouldRun) {
+            Simulator.title("Computer Science 42SAP bonus content");         
+            new PermanentStorageTest();
+            new StacksQueuesTest();
+            new SearchSortTest();   
+            new TreesTest();  
+        }
     }
      
 }

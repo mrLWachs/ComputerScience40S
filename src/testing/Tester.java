@@ -23,10 +23,10 @@ public class Tester
      */
     public Tester() {
         Simulator.initialize();
-        Simulator.header("Mr. Wachs Computer Science");
-//        new PreCourseContent();        
+        Simulator.title("Mr. Wachs Computer Science");
+        new PreCourseContent(false);        
         new ComputerScience42SAP();        
-//        new PostCourseContent();
+        new PostCourseContent(false);
         Simulator.saveOutput();
     }
     
