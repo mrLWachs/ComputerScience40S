@@ -54,7 +54,7 @@ public class PermanentStorageTest
      * Default constructor, set class properties
      */
     public PermanentStorageTest() {
-        Simulator.header("Permanent Storage Test started...");
+        Simulator.header("Permanent Storage Test");
 
         // Learn about "error traps"...........................................   
         Simulator.comment("Learn about 'error traps'");
@@ -269,8 +269,7 @@ public class PermanentStorageTest
         System.out.println("Before: " + athletes.toString());
         System.out.println("After:  " + newAthletes.toString());
         
-        // End of file handling................................................        
-        Simulator.header("Permanent Storage Test completed!");
+        // End of file handling................................................
     }   
 
 }

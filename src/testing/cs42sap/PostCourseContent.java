@@ -26,12 +26,11 @@ public class PostCourseContent
      * Default constructor, set class properties
      */
     public PostCourseContent() {
-        Simulator.header("Computer Science 42SAP bonus content starting...");         
+        Simulator.header("Computer Science 42SAP bonus content");         
         new PermanentStorageTest();
         new StacksQueuesTest();
         new SearchSortTest();   
         new TreesTest();        
-        Simulator.header("Computer Science 42SAP bonus content complete!");
     }
      
 }

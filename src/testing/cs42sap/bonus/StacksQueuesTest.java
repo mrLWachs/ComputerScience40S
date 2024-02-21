@@ -25,7 +25,7 @@ public class StacksQueuesTest
      * Default constructor, set class properties
      */
     public StacksQueuesTest() {
-        Simulator.header("Stacks and Queues Test started...");
+        Simulator.header("Stacks and Queues");
         
         // Create some objects for testing.....................................
         Simulator.comment("Create objects for testing...");
@@ -229,8 +229,6 @@ public class StacksQueuesTest
         
         System.out.println(queue          + "\t into \t" + fromQueueStack);
         System.out.println(fromQueueStack + "\t into \t" + fromStackQueue);
-                
-        Simulator.header("Stacks and Queues Test completed!");
     }   
 
 }

@@ -42,7 +42,7 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * Default class constructor, runs on instantiation
      */
     public ComputerScience30S() {
-        Simulator.header("Computer Science 30S starting...");
+        Simulator.header("Computer Science 30S");
 //        System.out.println("\nComputer Science 30S Example started...\n");
         ////////////////////////////////////////////////////////////////////////
         // Other code added later in the course to provide a menu of choices
@@ -96,7 +96,6 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
 //        LearnGraphics learnGraphics = new LearnGraphics();
 
 //        System.out.println("\nComputer Science 30S Example complete!\n");
-        Simulator.header("Computer Science 30S complete!");
     }
 
     /**

@@ -27,7 +27,7 @@ public class TreesTest
      * Default constructor, set class properties
      */
     public TreesTest() {
-        Simulator.header("Binary Trees Test started...");
+        Simulator.header("Binary Trees");
                 
         // Constants/variables for creating random values......................
         Simulator.comment("Constants/variables for creating random values..."); 
@@ -195,8 +195,6 @@ public class TreesTest
         System.out.println(stack);
         System.out.println(queue);
         System.out.println(binaryTree);
-        
-        Simulator.header("Binary Trees Test completed!");
     }   
 
 }

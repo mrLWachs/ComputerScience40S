@@ -26,11 +26,10 @@ public class Part2
      * Default constructor, set class properties
      */
     public Part2() {
-        Simulator.header("AP curriculum - Part 2 Test started...");
+        Simulator.header("AP curriculum - Part 2");
         new APUnit02UsingObjects();
         new APUnit05WritingClasses();
         new APUnit09Inheritance();        
-        Simulator.header("AP curriculum - Part 2 Test completed!");
     }
         
 }

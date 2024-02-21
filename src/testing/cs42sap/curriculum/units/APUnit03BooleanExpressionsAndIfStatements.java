@@ -30,7 +30,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
      * Default constructor, set class properties
      */
     public APUnit03BooleanExpressionsAndIfStatements() {
-        Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) started...");
+        Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements)");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.1 Boolean Expressions");  
@@ -341,7 +341,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) completed!");
     }
      
 }

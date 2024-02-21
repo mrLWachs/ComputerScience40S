@@ -25,7 +25,7 @@ public class SearchSortTest
      * Default constructor, set class properties
      */
     public SearchSortTest() {
-        Simulator.header("Searching and Sorting Test started...");
+        Simulator.header("Searching and Sorting");
                 
         // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");
@@ -212,8 +212,6 @@ public class SearchSortTest
             index = search.binary(word, sortedWords);
             Results.show(unsortedWords, word, index);
         }
-                   
-        Simulator.header("Searching and Sorting Test completed!");
     }   
 
     /**

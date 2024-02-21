@@ -25,7 +25,6 @@ public class ComputerScience42SAP
     public ComputerScience42SAP() {
         Simulator.header("Computer Science 42SAP starting...");         
         new CurriculumContentCS42SAP();
-        Simulator.header("Computer Science 42SAP complete!");
     }
     
 }

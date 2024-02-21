@@ -33,7 +33,7 @@ public class APUnit01PrimitiveTypes
      * Default constructor, set class properties
      */
     public APUnit01PrimitiveTypes() {
-        Simulator.header("AP: Unit 1 (Primitive Types) started...");
+        Simulator.header("AP: Unit 1 (Primitive Types)");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.1 Why Programming? Why Java?");        
@@ -315,7 +315,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("integer     = (int)letter;"); 
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.header("AP: Unit 1 (Primitive Types) completed!");
     }
      
 }

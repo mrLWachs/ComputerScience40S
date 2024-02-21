@@ -30,11 +30,10 @@ public class ComputerScience40S
      * Default constructor for the class, sets class properties
      */
     public ComputerScience40S() {
-        Simulator.header("Computer Science 40S starting..."); 
+        Simulator.header("Computer Science 40S"); 
         RecursionTest       unit1 = new RecursionTest(); 
         AdvancedClassesTest unit2 = new AdvancedClassesTest(); 
-        CollectionsTest     unit3 = new CollectionsTest();       
-        Simulator.header("Computer Science 40S complete!");
+        CollectionsTest     unit3 = new CollectionsTest();   
     }
     
 }
