@@ -298,7 +298,7 @@ public class Sort <T extends Comparable<T>>
             back--;
         }
         list.set(front,pivot);
-        return front;
+        return front; 
     } 
         
     /**
