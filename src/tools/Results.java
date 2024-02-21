@@ -85,7 +85,23 @@ public class Results
         text += "\t index: \t" + index;
         System.out.println(text);
     }
-        
+    
+    /**
+     * Displays the results of a search
+     * 
+     * @param array the array of items
+     * @param word the string to search for
+     * @param index the index it was found at (or -1 if not found)
+     */
+    public static void show(String[] array, String word, int index) {
+        String text = "";
+        Text textTool = new Text();
+        text += textTool.toString(array);
+        text += "\t word: \t" + word;
+        text += "\t index: \t" + index;
+        System.out.println(text);
+    }
+    
     /**
      * Displays the results of a sort
      * 
@@ -97,6 +113,21 @@ public class Results
         String text = "";
         text += "Before: \t" + before.toString() + "\n";
         text += "After:  \t" + after.toString();       
+        System.out.println(text);
+    }
+
+    /**
+     * Displays the results of a sort
+     * 
+     * @param before the array of items before sorting
+     * @param after the array of items after sorting
+     */
+    public static void show(String[] before, 
+                            String[] after) {
+        Text textTool = new Text();
+        String text = "";
+        text += "Before: \t" + textTool.toString(before) + "\n";
+        text += "After:  \t" + textTool.toString(after);       
         System.out.println(text);
     }
     

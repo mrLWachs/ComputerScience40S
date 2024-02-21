@@ -142,6 +142,14 @@ public class SearchSortTest
         LinkedList<String> unsortedWords = text.randomList(MAX, WORD_SIZE);
         LinkedList<String> sortedWords   = new LinkedList<>();
         
+        Simulator.comment("Create random array data");
+        
+        String[] unsortedWordsArray = new String[MAX]; 
+        String[] sortedWordsArray   = new String[MAX];
+        for (int i = 0; i < unsortedWordsArray.length; i++) {
+            unsortedWordsArray[i] = unsortedWords.get(i);
+        }
+        
         // Place all test cases into another linked list........................
         Simulator.comment("Place all test cases into another linked list");
         LinkedList<String> testCases = new LinkedList<>();
@@ -159,13 +167,21 @@ public class SearchSortTest
         testCases.add(notWord);
         
         // Execute the linear search on all test data...........................
-        Simulator.comment("Execute the linear search on all test data...");        
+        Simulator.comment("Execute the linear search on all list test data...");        
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.linear(word, unsortedWords);
             Results.show(unsortedWords, word, index);
         }
         
+        // Execute the linear search on all test data...........................
+        Simulator.comment("Execute the linear search on all array test data...");        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.linear(word, unsortedWordsArray);
+            Results.show(unsortedWordsArray, word, index);
+        }
+                
         // Execute all the sorts on all test data...............................
         Simulator.comment("Execute all the sorts on all test data...");
         
@@ -174,44 +190,93 @@ public class SearchSortTest
         sortedWords = unsortedWords.clone();
         sort.bubble(sortedWords);
         Results.show(unsortedWords, sortedWords);
+        
+        Simulator.comment("Bubble sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.bubble(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
                                         
         // Selection sort LinkedList data.......................................
         Simulator.comment("Selection sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.selection(sortedWords);
         Results.show(unsortedWords, sortedWords);
+        
+        Simulator.comment("Selection sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.selection(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
                 
         // Shell sort LinkedList data...........................................
         Simulator.comment("Shell sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.shell(sortedWords);
         Results.show(unsortedWords, sortedWords);
-                
+             
+        Simulator.comment("Shell sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.shell(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
+        
         // Insertion sort LinkedList data.......................................
         Simulator.comment("Insertion sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.insertion(sortedWords);
         Results.show(unsortedWords, sortedWords);
         
+        Simulator.comment("Insertion sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.insertion(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
+        
         // Quick sort LinkedList data...........................................
         Simulator.comment("Quick sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.quick(sortedWords);
         Results.show(unsortedWords, sortedWords);
-                
+        
+        Simulator.comment("Quick sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.quick(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
+        
         // Merge sort LinkedList data...........................................
         Simulator.comment("Merge sort LinkedList data...");        
         sortedWords = unsortedWords.clone();
         sort.merge(sortedWords);
         Results.show(unsortedWords, sortedWords);
         
+        Simulator.comment("Merge sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);        
+        sort.merge(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
+        
+        // Heap sort LinkedList data...........................................
+        Simulator.comment("Heap sort LinkedList data...");        
+        sortedWords = unsortedWords.clone();
+        sort.heap(sortedWords);
+        Results.show(unsortedWords, sortedWords);
+        
+        Simulator.comment("Heap sort array data...");  
+        sortedWordsArray = clone(unsortedWordsArray);
+        sort.heap(sortedWordsArray);
+        Results.show(unsortedWordsArray, sortedWordsArray);
+        
         // Execute the binary search on all test data...........................
-        Simulator.comment("Execute the binary search on all test data...");        
+        Simulator.comment("Execute the binary search on all List test data...");        
         for (int i = 0; i < testCases.size(); i++) {
             String word = testCases.get(i);
             index = search.binary(word, sortedWords);
             Results.show(unsortedWords, word, index);
         }
+
+        Simulator.comment("Execute the binary search on all Array test data...");        
+        for (int i = 0; i < testCases.size(); i++) {
+            String word = testCases.get(i);
+            index = search.binary(word, sortedWordsArray);
+            Results.show(unsortedWordsArray, word, index);
+        }
+        
     }   
 
     /**
@@ -367,6 +432,20 @@ public class SearchSortTest
             else if (array[mid] < item) low  = mid + 1;
         }
         return -1;  // Not found!
+    }
+
+    /**
+     * Clones a duplicate copy of the passed array
+     * 
+     * @param array the array to clone
+     * @return a clone of the passed array
+     */
+    private String[] clone(String[] array) {
+        String[] cloneArray = new String[array.length];
+        for (int i = 0; i < array.length; i++) {
+            cloneArray[i] = array[i];
+        }
+        return cloneArray;
     }
         
 }

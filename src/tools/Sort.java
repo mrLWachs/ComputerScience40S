@@ -4,6 +4,7 @@ package tools;
 
 /** Required API imports */
 import collections.LinkedList;
+import java.lang.reflect.Array;
 
 
 /**
@@ -382,13 +383,85 @@ public class Sort <T extends Comparable<T>>
      * 
      * @param array the array of generic items to sort
      */    
-    public T[] merge(T[] array) {
-        if (array == null) return null;                          // error check
-        LinkedList list = new LinkedList(array);
-        merge(list);
-        array = (T[]) list.toArray(array);
-        return array;
+    public void merge(T[] array) {
+        if (array == null) return;                          // error check
+        recursiveMerge(array, array.length);
     } 
+    
+    /**
+     * The recursive wrapper method for merge sort. This algorithm takes the 
+     * list parameter and its length and uses a recursive wrapper method (with 
+     * a base and the recursive conditions). The base condition checks if the 
+     * length is 1 and it will just return. For the rest of the cases, the 
+     * recursive call will be executed. For the recursive case, we get the 
+     * middle index and create two temporary lists. Then both two lists are 
+     * recursively sorted. 
+     * 
+     * @param array the array to sort
+     * @param length the length of the list
+     */
+    private void recursiveMerge(T[] array, int length) {
+        if (length < 2) return;
+        int mid = length / 2;
+        int newLength = mid;
+        T[] leftArray  = (T[])(
+            Array.newInstance(array.getClass().getComponentType(), 
+                              newLength)
+        ); 
+        newLength = length - mid;
+        T[] rightArray  = (T[])(
+            Array.newInstance(array.getClass().getComponentType(), 
+                              newLength)
+        );         
+        for (int i = 0; i < mid; i++) {
+            leftArray[i] = array[i];
+        }
+        int index = 0;
+        for (int i = mid; i < length; i++) {
+            rightArray[index] = array[i];
+            index++;
+        }
+        for (int i = mid; i < length; i++) {
+            rightArray[i-mid] = array[i];
+        }
+        recursiveMerge(leftArray, mid);
+        recursiveMerge(rightArray, length - mid);
+        mergeAssist(array, leftArray, rightArray, mid, length - mid);
+    }
+    
+    /**
+     * An assist method for the merge sort. We then call the merge method 
+     * which takes in the input and both the sub-lists and the starting and 
+     * end indices of both the lists. It compares the elements of both 
+     * sub-lists one by one and places the smaller element into the input 
+     * list. When we reach the end of one of the sub-lists, the rest of the 
+     * elements from the other list are copied into the input list thereby 
+     * giving us the final sorted list.
+     * 
+     * @param array the array to sort
+     * @param leftList the left sub-list
+     * @param rightList the right sub-list
+     * @param left the left starting index
+     * @param right the right starting index 
+     */
+    private void mergeAssist(T[] array, T[] leftArray,
+            T[] rightArray, int left, int right) {        
+        int i = 0, j = 0, k = 0;
+        while (i < left && j < right) {
+            if (leftArray[i].compareTo(rightArray[j]) <= 0) {
+                array[k++] = leftArray[i++];
+            }
+            else {
+                array[k++] = rightArray[j++];
+            }
+        }
+        while (i < left) {
+            array[k++] = leftArray[i++];
+        }
+        while (j < right) {
+            array[k++] = rightArray[j++];
+        }        
+    }
     
     /**
      * An implementation of a heap sort algorithm it will sort the array into 

@@ -29,11 +29,11 @@ public class PostCourseContent
      */
     public PostCourseContent(boolean shouldRun) {
         if (shouldRun) {
-            Simulator.title("Computer Science 42SAP bonus content");         
-            new PermanentStorageTest();
-            new StacksQueuesTest();
+//            Simulator.title("Computer Science 42SAP bonus content");         
+//            new PermanentStorageTest();
+//            new StacksQueuesTest();
             new SearchSortTest();   
-            new TreesTest();  
+//            new TreesTest();  
         }
     }
      
