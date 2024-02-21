@@ -44,7 +44,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           to a Boolean value
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("A Boolean (true/false) expression is a code ");
         System.out.println("statement most likely in a control structure ");
         System.out.print("like a conditional statement or loop control ");
@@ -56,7 +55,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.print("than\", \"greater than\", \"less than or equal ");
         System.out.println("to\", \"greater than or equal to\", \"equal ");
         System.out.println("to\", and \"not equal to\".");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.2 if Statements and Control Flow");  
@@ -73,7 +71,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           only when the Boolean condition is true
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("A \"Conditional Statement\" is also known under ");
         System.out.println("other names like \"branching statement\", \"if ");
         System.out.print("statement\", \"one-way selection statement\", ");
@@ -86,7 +83,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("the block is only one line, and you may also ");
         System.out.print("move thos lines up to the same line as the ");
         System.out.println("conditional statement. For example:");
-        System.out.println("...");
         
         // Example of if statements
         int a = 10;
@@ -101,7 +97,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("if (a == a) {");
         Simulator.code("    // \"equal\"");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.3 if-else Statements");  
@@ -116,7 +111,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           executed when the Boolean condition is false
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("The \"else\" statement is paired with an \"if\" ");
         System.out.println("statement to control the flow of the logic so ");
         System.out.print("that the conditional now evaluates to both ");
@@ -124,7 +118,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.print("way selection\" (for true/false). An \"else\" ");
         System.out.println("must always follow an \"if\" statement first. ");
         System.out.println("For example:");
-        System.out.println("...");
         
         // if with "else"       
         double c = 1.45, d = 1.5;        
@@ -153,7 +146,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("char f = 'a';"); 
         Simulator.code("if (e != f) e = '!';"); 
         Simulator.code("else        e = '=';"); 
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.4 else if Statements");  
@@ -167,7 +159,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           condition that evaluates to true
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("When making multiple decisions (more than 2), ");
         System.out.println("the \"else if\" statement is added to an ");
         System.out.print("existing \"if\" statement to have multiple ");
@@ -176,8 +167,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("statements. This can also be called \"multi-way ");
         System.out.print("selection\" (or \"if-else-if\"). An \"else\" ");
         System.out.println("statement is also still the final option (but ");
-        System.out.println("this is not required). For example:");        
-        System.out.println("...");
+        System.out.println("this is not required). For example:");       
         
         // Showing a "chain" of else if statements
         int g = 0;
@@ -208,7 +198,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("else {");
         Simulator.code("    // Nothing above is true, so go to this else");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.5 Compound Boolean Expressions");  
@@ -228,7 +217,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           known as short-circuited evaluation
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("The process of \"nesting\" means to place one ");
         System.out.println("conditional statement inside the \"block\" of ");
         System.out.print("another conditional statement. The logical ");
@@ -249,8 +237,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("determined the expressions result, then the ");
         System.out.print("rest of the expressions do not need to be ");
         System.out.println("evaluated - this is known as a \"short-circuited ");
-        System.out.println("evaluation\". For example:");        
-        System.out.println("...");
+        System.out.println("evaluation\". For example:");   
         
         // Logical operators and "nesting"
         int    age = 17;
@@ -283,7 +270,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("        // A \"nested if statement\"");
         Simulator.code("    }");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.6 Equivalent Boolean Expressions");  
@@ -294,7 +280,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           same value in all cases
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("Boolean (true/false) expressions turned into ");
         System.out.println("logical statements used by control structures ");
         System.out.print("like conditional statements are subject to the ");
@@ -309,7 +294,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("Boolean result. This could determine if a ");
         System.out.print("control structure (like an \"if\" statement) ");
         System.out.println("runs a block of code or not.");
-        System.out.println("...");
                 
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("3.7 Comparing Objects");  
@@ -327,7 +311,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
             //           are equivalent
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("The use of an advanced data type like an ");
         System.out.println("\"Object\" in code means that comparison ");
         System.out.print("operators (like <, >, ==, !=) that are used ");
@@ -336,7 +319,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("use the \"built-in\" method \"equals()\" to ");
         System.out.print("determine the equality of two objects. For ");        
         System.out.println("example:");
-        System.out.println("...");
         
         // Use of the built-in equals method with Objects
         String word1 = "edgy";
@@ -357,7 +339,6 @@ public class APUnit03BooleanExpressionsAndIfStatements
         Simulator.code("else if (word1.equalsIgnoreCase(word2)) {");
         Simulator.code("    // \"W1 kind of == W2\"");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 3 (Boolean Expressions And If Statements) completed!");

@@ -1,1377 +1,17 @@
 Mr. Wachs Computer Science testing started.................................................
-Computer Science 30S starting..............................................................
-~~~ SIMULATED {Input} DIALOG: Select the unit to view examples of... ~~~ 
-Hello World
-I'm in the world
-Good-bye world!
-Make a quote " 
-Make a slash \ 
-Make a 	 tab 
-Make a new line 
- break 
-~~~ SIMULATED {Message} DIALOG: Hi ~~~ 
-~~~ SIMULATED {Message} DIALOG: Information icon is i ~~~ { title: Information title },
-~~~ SIMULATED {Message} DIALOG: Question icon is i ~~~ { title: Question title },
-~~~ SIMULATED {Message} DIALOG: Warning icon is i ~~~ { title: Warning title },
-~~~ SIMULATED {Message} DIALOG: Plain icon is i ~~~ { title: Plain title },
-~~~ SIMULATED {Input} DIALOG: Enter Something ~~~ 
-~~~ SIMULATED {Input} DIALOG: Information icon is i ~~~ 
-~~~ SIMULATED {Input} DIALOG: Question icon is i ~~~ 
-~~~ SIMULATED {Input} DIALOG: Warning icon is i ~~~ 
-~~~ SIMULATED {Input} DIALOG: Plain icon is i ~~~ 
-~~~ SIMULATED {Confirm} DIALOG: Confirm ~~~ 
-~~~ SIMULATED {Confirm} DIALOG: Confirm Example 2 ~~~ { title: Information },{ messageType: 1 },
-~~~ SIMULATED {Confirm} DIALOG: Confirm Example 3 ~~~ { title: Question },{ optionType: -1 },{ messageType: 3 },
-~~~ SIMULATED {Confirm} DIALOG: Confirm Example 4 ~~~ { title: Warning },{ optionType: 2 },{ messageType: 2 },
-~~~ SIMULATED {Confirm} DIALOG: Confirm Example 5 ~~~ { title: Plain },{ optionType: 1 },{ messageType: -1 },
-a = false
-b = 1
-c = 1.2
-d = A
-e = apple
-x = 10
-x = 20
-y = 30
-y = 30
-x = 28
-y = 5
-z = 3
-3.141592658389, 99, Y, true, Wachs
-f = 25
-g = 25.0
-g = 25.999999999999
-h = 25
-k = 2.99999999
-l = 2
-m = 2.0
-n = A
-o = 65
-p = F
-~~~ SIMULATED {Input} DIALOG: Enter ~~~ 
-~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
-~~~ SIMULATED {Input} DIALOG: Enter int ~~~ 
-~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
-~~~ SIMULATED {Input} DIALOG: Enter double ~~~ 
-~~~ SIMULATED {Message} DIALOG: -1.0 ~~~ 
-~~~ SIMULATED {Input} DIALOG: Enter char ~~~ 
-~~~ SIMULATED {Message} DIALOG: - ~~~ 
-Word hippopotomonsprosesquippedaiophobia is length 35
-Word hippopotomonsprosesquippedaiophobia in upper case is HIPPOPOTOMONSPROSESQUIPPEDAIOPHOBIA
-answer1 = 3.141592653589793
-answer2 = 0.8775825618903728
-answer3 = 1.0
-answer4 = 125.0
-answer5 = 3.0
-answer6 = -0.6931471805599453
-seed = 0.9442668358511808
-low    = 1.0
-high   = 10.0
-number = 10.442668358511808
-value = 10
-card is 34
-equal
-The example is less than
-!=
-W1 kind of == W2
-Keep trying
-counter = 0
-counter = 1
-counter = 2
-counter = 3
-counter = 4
-counter = 5
-counter = 6
-counter = 7
-counter = 8
-counter = 9
-~~~ SIMULATED {Input} DIALOG: Create a password ~~~ 
-~~~ SIMULATED {Message} DIALOG: Ok, continue... ~~~ 
-~~~ SIMULATED {Input} DIALOG: Enter password ~~~ 
-~~~ SIMULATED {Message} DIALOG: You got it ~~~ 
-i = 0
-i = 1
-i = 2
-i = 3
-i = 4
-i = 5
-i = 6
-i = 7
-i = 8
-i = 9
-counting = 100
-counting = 90
-counting = 80
-counting = 70
-counting = 60
-counting = 50
-counting = 40
-counting = 30
-counting = 20
-counting = 10
-counting = 0
-i = 99.789
-i = 19.007428571428573
-~~~ SIMULATED {Message} DIALOG: You are an intern at radio station, C-RAP, The 
-disk jockeys announce the current temperature 
-in both Fahrenheit and Celsius every half-hour.
-They would like an easy w ... (line shortened) ...
-~~~ SIMULATED {Input} DIALOG: Enter temperature in Celcius ~~~ 
-~~~ SIMULATED {Message} DIALOG: Your temperature in Fahrenheit is 30.2 ~~~ 
-~~~ SIMULATED {Message} DIALOG: Thank you! ~~~ 
-Starting to Learn methods...
-*
-*
-Phenakistoscope
-Volleywood
-pancakes
-Spider-man
-Batman
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Dalmations
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Problems
-Number is 2
-~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
-~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
-Completed Learning Methods!
-Start learning arrays...
-333
-666
-666
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-0
-333
-0 = 666
-1 = 0
-2 = 0
-3 = 0
-4 = 0
-5 = 0
-6 = 0
-7 = 0
-8 = 0
-9 = 0
-10 = 0
-11 = 0
-12 = 0
-13 = 0
-14 = 0
-15 = 0
-16 = 0
-17 = 0
-18 = 0
-19 = 0
-20 = 0
-21 = 0
-22 = 0
-23 = 0
-24 = 0
-25 = 0
-26 = 0
-27 = 0
-28 = 0
-29 = 0
-30 = 0
-31 = 0
-32 = 0
-33 = 0
-34 = 0
-35 = 0
-36 = 0
-37 = 0
-38 = 0
-39 = 0
-40 = 0
-41 = 0
-42 = 0
-43 = 0
-44 = 0
-45 = 0
-46 = 0
-47 = 0
-48 = 0
-49 = 0
-50 = 0
-51 = 0
-52 = 0
-53 = 0
-54 = 0
-55 = 0
-56 = 0
-57 = 0
-58 = 0
-59 = 0
-60 = 0
-61 = 0
-62 = 0
-63 = 0
-64 = 0
-65 = 0
-66 = 0
-67 = 0
-68 = 0
-69 = 0
-70 = 0
-71 = 0
-72 = 0
-73 = 0
-74 = 0
-75 = 0
-76 = 0
-77 = 0
-78 = 0
-79 = 0
-80 = 0
-81 = 0
-82 = 0
-83 = 0
-84 = 0
-85 = 0
-86 = 0
-87 = 0
-88 = 0
-89 = 0
-90 = 0
-91 = 0
-92 = 0
-93 = 0
-94 = 0
-95 = 0
-96 = 0
-97 = 0
-98 = 0
-99 = 333
-~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
-~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
-~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-~~~ SIMULATED {Message} DIALOG: [1,4,6,10,4,3,4,3,10,6,2,3,3,9,8,5,4,5,6,8,5,2,7,5,10,8,5,9,3,5,7,7,9,9,5,4,7,1,7,3,10,10,5,7,5,1,3,6,4,1,] ~~~ 
-Random character was I
-\ i X 0 J ^ p e n X | f 7 a ! v ` l U # = f V : A ` C h 9 u 
-4 ( , b X v 5 { < z o 9 . \ z : ) N q M a Y f l e O S W : % 
-k K [ 8 v W 8 * I = g ' F a c n Q ! C & j | G l : $ p u 9 - 
-w j - b b S 0 k - ... (line shortened) ...
-~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-X O X 
-O X O 
-X O X 
-
-~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-Completed learning arrays!
-Start Learning classes...
-Complete Learning classes
-~~~ SIMULATED {GUI Frame} DIALOG: Graphics1 ~~~ 
-~~~ SIMULATED {GUI Frame} DIALOG: Graphics2 ~~~ 
-~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
-Computer Science 30S complete!.............................................................
-Computer Science 40S starting..............................................................
-Recursion test started...
-Recursive factorials............................
--1 factorial = 1
-0 factorial = 1
-1 factorial = 1
-2 factorial = 2
-3 factorial = 6
-4 factorial = 24
-5 factorial = 120
-6 factorial = 720
-7 factorial = 5040
-8 factorial = 40320
-9 factorial = 362880
-10 factorial = 3628800
-11 factorial = 39916800
-12 factorial = 479001600
-13 factorial = 6227020800
-14 factorial = 87178291200
-15 factorial = 1307674368000
-16 factorial = 20922789888000
-17 factorial = 355687428096000
-18 factorial = 6402373705728000
-19 factorial = 121645100408832000
-20 factorial = 2432902008176640000
-Recursive powers................................
--5 to the exponent -5 = -3.2E-4
--4 to the exponent -5 = -9.765625E-4
--3 to the exponent -5 = -0.00411522633744856
--2 to the exponent -5 = -0.03125
--1 to the exponent -5 = -1.0
-0 to the exponent -5 = 4.9E-324
-1 to the exponent -5 = 1.0
-2 to the exponent -5 = 0.03125
-3 to the exponent -5 = 0.00411522633744856
-4 to the exponent -5 = 9.765625E-4
-5 to the exponent -5 = 3.2E-4
-6 to the exponent -5 = 1.286008230452675E-4
-7 to the exponent -5 = 5.9499018266198606E-5
-8 to the exponent -5 = 3.0517578125E-5
-9 to the exponent -5 = 1.6935087808430286E-5
-10 to the exponent -5 = 1.0E-5
--5 to the exponent -4 = 0.0016
--4 to the exponent -4 = 0.00390625
--3 to the exponent -4 = 0.012345679012345678
--2 to the exponent -4 = 0.0625
--1 to the exponent -4 = 1.0
-0 to the exponent -4 = 4.9E-324
-1 to the exponent -4 = 1.0
-2 to the exponent -4 = 0.0625
-3 to the exponent -4 = 0.012345679012345678
-4 to the exponent -4 = 0.00390625
-5 to the exponent -4 = 0.0016
-6 to the exponent -4 = 7.716049382716049E-4
-7 to the exponent -4 = 4.1649312786339027E-4
-8 to the exponent -4 = 2.44140625E-4
-9 to the exponent -4 = 1.5241579027587258E-4
-10 to the exponent -4 = 1.0E-4
--5 to the exponent -3 = -0.008
--4 to the exponent -3 = -0.015625
--3 to the exponent -3 = -0.037037037037037035
--2 to the exponent -3 = -0.125
--1 to the exponent -3 = -1.0
-0 to the exponent -3 = 4.9E-324
-1 to the exponent -3 = 1.0
-2 to the exponent -3 = 0.125
-3 to the exponent -3 = 0.037037037037037035
-4 to the exponent -3 = 0.015625
-5 to the exponent -3 = 0.008
-6 to the exponent -3 = 0.004629629629629629
-7 to the exponent -3 = 0.0029154518950437317
-8 to the exponent -3 = 0.001953125
-9 to the exponent -3 = 0.0013717421124828531
-10 to the exponent -3 = 0.001
--5 to the exponent -2 = 0.04
--4 to the exponent -2 = 0.0625
--3 to the exponent -2 = 0.1111111111111111
--2 to the exponent -2 = 0.25
--1 to the exponent -2 = 1.0
-0 to the exponent -2 = 4.9E-324
-1 to the exponent -2 = 1.0
-2 to the exponent -2 = 0.25
-3 to the exponent -2 = 0.1111111111111111
-4 to the exponent -2 = 0.0625
-5 to the exponent -2 = 0.04
-6 to the exponent -2 = 0.027777777777777776
-7 to the exponent -2 = 0.02040816326530612
-8 to the exponent -2 = 0.015625
-9 to the exponent -2 = 0.012345679012345678
-10 to the exponent -2 = 0.01
--5 to the exponent -1 = -0.2
--4 to the exponent -1 = -0.25
--3 to the exponent -1 = -0.3333333333333333
--2 to the exponent -1 = -0.5
--1 to the exponent -1 = -1.0
-0 to the exponent -1 = 4.9E-324
-1 to the exponent -1 = 1.0
-2 to the exponent -1 = 0.5
-3 to the exponent -1 = 0.3333333333333333
-4 to the exponent -1 = 0.25
-5 to the exponent -1 = 0.2
-6 to the exponent -1 = 0.16666666666666666
-7 to the exponent -1 = 0.14285714285714285
-8 to the exponent -1 = 0.125
-9 to the exponent -1 = 0.1111111111111111
-10 to the exponent -1 = 0.1
--5 to the exponent 0 = 1.0
--4 to the exponent 0 = 1.0
--3 to the exponent 0 = 1.0
--2 to the exponent 0 = 1.0
--1 to the exponent 0 = 1.0
-0 to the exponent 0 = 1.0
-1 to the exponent 0 = 1.0
-2 to the exponent 0 = 1.0
-3 to the exponent 0 = 1.0
-4 to the exponent 0 = 1.0
-5 to the exponent 0 = 1.0
-6 to the exponent 0 = 1.0
-7 to the exponent 0 = 1.0
-8 to the exponent 0 = 1.0
-9 to the exponent 0 = 1.0
-10 to the exponent 0 = 1.0
--5 to the exponent 1 = -5.0
--4 to the exponent 1 = -4.0
--3 to the exponent 1 = -3.0
--2 to the exponent 1 = -2.0
--1 to the exponent 1 = -1.0
-0 to the exponent 1 = 0.0
-1 to the exponent 1 = 1.0
-2 to the exponent 1 = 2.0
-3 to the exponent 1 = 3.0
-4 to the exponent 1 = 4.0
-5 to the exponent 1 = 5.0
-6 to the exponent 1 = 6.0
-7 to the exponent 1 = 7.0
-8 to the exponent 1 = 8.0
-9 to the exponent 1 = 9.0
-10 to the exponent 1 = 10.0
--5 to the exponent 2 = 25.0
--4 to the exponent 2 = 16.0
--3 to the exponent 2 = 9.0
--2 to the exponent 2 = 4.0
--1 to the exponent 2 = 1.0
-0 to the exponent 2 = 0.0
-1 to the exponent 2 = 1.0
-2 to the exponent 2 = 4.0
-3 to the exponent 2 = 9.0
-4 to the exponent 2 = 16.0
-5 to the exponent 2 = 25.0
-6 to the exponent 2 = 36.0
-7 to the exponent 2 = 49.0
-8 to the exponent 2 = 64.0
-9 to the exponent 2 = 81.0
-10 to the exponent 2 = 100.0
--5 to the exponent 3 = -125.0
--4 to the exponent 3 = -64.0
--3 to the exponent 3 = -27.0
--2 to the exponent 3 = -8.0
--1 to the exponent 3 = -1.0
-0 to the exponent 3 = 0.0
-1 to the exponent 3 = 1.0
-2 to the exponent 3 = 8.0
-3 to the exponent 3 = 27.0
-4 to the exponent 3 = 64.0
-5 to the exponent 3 = 125.0
-6 to the exponent 3 = 216.0
-7 to the exponent 3 = 343.0
-8 to the exponent 3 = 512.0
-9 to the exponent 3 = 729.0
-10 to the exponent 3 = 1000.0
--5 to the exponent 4 = 625.0
--4 to the exponent 4 = 256.0
--3 to the exponent 4 = 81.0
--2 to the exponent 4 = 16.0
--1 to the exponent 4 = 1.0
-0 to the exponent 4 = 0.0
-1 to the exponent 4 = 1.0
-2 to the exponent 4 = 16.0
-3 to the exponent 4 = 81.0
-4 to the exponent 4 = 256.0
-5 to the exponent 4 = 625.0
-6 to the exponent 4 = 1296.0
-7 to the exponent 4 = 2401.0
-8 to the exponent 4 = 4096.0
-9 to the exponent 4 = 6561.0
-10 to the exponent 4 = 10000.0
--5 to the exponent 5 = -3125.0
--4 to the exponent 5 = -1024.0
--3 to the exponent 5 = -243.0
--2 to the exponent 5 = -32.0
--1 to the exponent 5 = -1.0
-0 to the exponent 5 = 0.0
-1 to the exponent 5 = 1.0
-2 to the exponent 5 = 32.0
-3 to the exponent 5 = 243.0
-4 to the exponent 5 = 1024.0
-5 to the exponent 5 = 3125.0
-6 to the exponent 5 = 7776.0
-7 to the exponent 5 = 16807.0
-8 to the exponent 5 = 32768.0
-9 to the exponent 5 = 59049.0
-10 to the exponent 5 = 100000.0
--5 to the exponent 6 = 15625.0
--4 to the exponent 6 = 4096.0
--3 to the exponent 6 = 729.0
--2 to the exponent 6 = 64.0
--1 to the exponent 6 = 1.0
-0 to the exponent 6 = 0.0
-1 to the exponent 6 = 1.0
-2 to the exponent 6 = 64.0
-3 to the exponent 6 = 729.0
-4 to the exponent 6 = 4096.0
-5 to the exponent 6 = 15625.0
-6 to the exponent 6 = 46656.0
-7 to the exponent 6 = 117649.0
-8 to the exponent 6 = 262144.0
-9 to the exponent 6 = 531441.0
-10 to the exponent 6 = 1000000.0
--5 to the exponent 7 = -78125.0
--4 to the exponent 7 = -16384.0
--3 to the exponent 7 = -2187.0
--2 to the exponent 7 = -128.0
--1 to the exponent 7 = -1.0
-0 to the exponent 7 = 0.0
-1 to the exponent 7 = 1.0
-2 to the exponent 7 = 128.0
-3 to the exponent 7 = 2187.0
-4 to the exponent 7 = 16384.0
-5 to the exponent 7 = 78125.0
-6 to the exponent 7 = 279936.0
-7 to the exponent 7 = 823543.0
-8 to the exponent 7 = 2097152.0
-9 to the exponent 7 = 4782969.0
-10 to the exponent 7 = 1.0E7
--5 to the exponent 8 = 390625.0
--4 to the exponent 8 = 65536.0
--3 to the exponent 8 = 6561.0
--2 to the exponent 8 = 256.0
--1 to the exponent 8 = 1.0
-0 to the exponent 8 = 0.0
-1 to the exponent 8 = 1.0
-2 to the exponent 8 = 256.0
-3 to the exponent 8 = 6561.0
-4 to the exponent 8 = 65536.0
-5 to the exponent 8 = 390625.0
-6 to the exponent 8 = 1679616.0
-7 to the exponent 8 = 5764801.0
-8 to the exponent 8 = 1.6777216E7
-9 to the exponent 8 = 4.3046721E7
-10 to the exponent 8 = 1.0E8
--5 to the exponent 9 = -1953125.0
--4 to the exponent 9 = -262144.0
--3 to the exponent 9 = -19683.0
--2 to the exponent 9 = -512.0
--1 to the exponent 9 = -1.0
-0 to the exponent 9 = 0.0
-1 to the exponent 9 = 1.0
-2 to the exponent 9 = 512.0
-3 to the exponent 9 = 19683.0
-4 to the exponent 9 = 262144.0
-5 to the exponent 9 = 1953125.0
-6 to the exponent 9 = 1.0077696E7
-7 to the exponent 9 = 4.0353607E7
-8 to the exponent 9 = 1.34217728E8
-9 to the exponent 9 = 3.87420489E8
-10 to the exponent 9 = 1.0E9
--5 to the exponent 10 = 9765625.0
--4 to the exponent 10 = 1048576.0
--3 to the exponent 10 = 59049.0
--2 to the exponent 10 = 1024.0
--1 to the exponent 10 = 1.0
-0 to the exponent 10 = 0.0
-1 to the exponent 10 = 1.0
-2 to the exponent 10 = 1024.0
-3 to the exponent 10 = 59049.0
-4 to the exponent 10 = 1048576.0
-5 to the exponent 10 = 9765625.0
-6 to the exponent 10 = 6.0466176E7
-7 to the exponent 10 = 2.82475249E8
-8 to the exponent 10 = 1.073741824E9
-9 to the exponent 10 = 3.486784401E9
-10 to the exponent 10 = 1.0E10
-Recursion complete!
-Advanced Classes Test started...
-unidentified is 0 identifies as unidentified
-Per Soney is 0 identifies as unidentified
-Per Soney is 1 identifies as unidentified
-Booooo!
-unidentified is 0 identifies as unidentified
-I am a student
-	 Number: 	1
-	 GPA:    	0.0
-Stu Denty is 0 identifies as unidentified
-I am a student
-	 Number: 	1
-	 GPA:    	0.0
-Stu Denty is 0 identifies as unidentified
-I am a student
-	 Number: 	1
-	 GPA:    	0.3
-Stu Denty is 0 identifies as unidentified
-I am a student
-	 Number: 	1
-	 GPA:    	0.0
-Stu Denty is 0 identifies as unidentified
-I am a student
-	 Number: 	1
-	 GPA:    	3.0002999999999993
-Booooo!
-I am a student
-	 Number: 	1
-	 GPA:    	3.0002999999999993
-Stewie Griffin is 2 identifies as cat
-I am a student
-	 Number: 	1
-	 GPA:    	0.0
-Mr. Teachery is 45 identifies as teacher
-Mr. Teachery is 45 identifies as teacher
-Mr. Teachery is 45 identifies as teacher
-Booooo!
-I am a student
-	 Number: 	1
-	 GPA:    	3.300299999999999
-Stewie Griffin is 2 identifies as cat
-I am a student
-	 Number: 	1
-	 GPA:    	0.3
-O1 = java.lang.Object@6ddf90b0
-O2 = java.lang.Object@57536d79
-O3 = java.lang.Object@57536d79
-Person  as string = Person
-Student as string = Student: Person
-Teacher as string = Teacher: Person
-String  as string = squirrel
-JOptionPane as string = io.JOptionPane@3b0143d3
-O2==O3
-P1==P2
-P2==P3
-P1==P3
-P2==P3
-Person is Person
-Clone  is Person
-Clone is ==
-S1 total = 2
-S2 total = 2
-S3 total = 4
-S4 total = 4
-S3 total = 9
-S4 total = 9
-Boom!!!
-Boom!!!
-Boom!!!
-Boom!!!
-Boom!!!
-Boom!!!
-Doctor: Person
-DiskJockey: Person
-MrWachs: Teacher: Person
-Piper: HighSchool: Student: Person
-Husky: HighSchool: Student: Person
-Athlete: Husky: HighSchool: Student: Person
-Meeting is about to begin...
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	 Student ->	Student: Person
-	 Person ->	 Student ->	Student: Per ... (line shortened) ...
-Grill on the BBQ
-Mr. Lawrence Wachs is eating Protein it was Savory
-unidentified is eating Apple from Do not eat!
-Round 1...
-Jock has signed the form!
-Round 2...
-Jock has scored
-Jock has scored
-St. Pauls has scored
-End of period 2 and the score is 2 for the Jock and 1 for the St. Pauls
-Jock SLAPS St. Pauls
-Round 3...
-Jock has scored
-Jock has scored
-St. Pauls has scored
-End of period 3 and the score is 4 for the Jock and 2 for the St. Pauls
-Round 4...
-Jock has scored
-Jock has scored
-St. Pauls has scored
-End of period 4 and the score is 6 for the Jock and 3 for the St. Pauls
-Hard core ironing of clothes!
-Jock wins!
-Grill on the BBQ
-Jock is eating Protein it was Savory
-Class name: Boolean, Hash Code: 1231, To String: true
-Class name: Integer, Hash Code: 0, To String: 0
-Class name: Double, Hash Code: 300063655, To String: 3.14
-Class name: Character, Hash Code: 97, To String: a
-Class name: String, Hash Code: 3556498, To String: test
-Class name: Athlete, Hash Code: 143110009, To String: Athlete: Husky: HighSchool: Student: Person
-Class name: JOptionPane, Hash Code: 2142003995, To String: io.JOptionPane@7fac631b
-Class name: Object, Hash Code: 1535634836, To String: java.lang.Object@5b87ed94
-true
-0
-3.14
-a
-test
-Athlete: Husky: HighSchool: Student: Person
-Class name: Boolean, Hash Code: 1231, To String: true
-Class name: Integer, Hash Code: 0, To String: 0
-Class name: Double, Hash Code: 300063655, To String: 3.14
-Class name: Character, Hash Code: 97, To String: a
-Class name: String, Hash Code: 3556498, To String: test
-Class name: Athlete, Hash Code: 143110009, To String: Athlete: Husky: HighSchool: Student: Person
-Home Owner:
-Mr. Lawrence Wachs
-And the contents...
-testing.cs40s.advancedclasses.Meeting@47ef968d
-Mr. Lawrence Wachs is eating Apple from Do not eat!
-Grill on the BBQ
-Mr. Lawrence Wachs is eating Protein it was Savory
-Advanced Classes Test complete!
-Collections testing begins...
-Testing Node constructors....................
-Testing Node toString()......................
-Node a = null
-Node b = Sass
-Node c = Pros
-Node d = Joes
-Testing Node clone().........................
-Node e = null
-Node f = Sass
-Node g = Pros
-Node h = Joes
-Testing Node equal().........................
-Node a == b? -> false
-Node b == c? -> false
-Node c == d? -> false
-Node d == d? -> true
-Node e == a? -> false
-Node f == b? -> true
-Node g == c? -> true
-Node h == d? -> true
-Testing Node finalize()......................
-Node a = null
-Node b = Sass
-Node c = Pros
-Node d = Joes
-Node e = null
-Node f = Sass
-Node g = Pros
-Node h = Joes
-Node a = null
-Node b = null
-Node c = null
-Node d = null
-Node e = null
-Node f = null
-Node g = null
-Node h = null
-Testing default LinkedList constructor.......
-Testing toString, empty, size methods........
-L1 toString -> Empty LinkedList
-L2 toString -> Empty LinkedList
-L1 empty? -> true
-L2 empty? -> true
-L1 size -> 0
-L2 size -> 0
-Test add (first to the back) of the list.....
-addBack -> true	Linked List 	[51]
-addBack -> true	Linked List 	[51,50]
-addBack -> true	Linked List 	[51,50,-50]
-addBack -> true	Linked List 	[51,50,-50,55]
-addBack -> false	Linked List 	[51,50,-50,55]
-Test add (second to the front) of the list...
-addFront -> true	Linked List 	[80,51,50,-50,55]
-addFront -> true	Linked List 	[81,80,51,50,-50,55]
-addFront -> true	Linked List 	[-80,81,80,51,50,-50,55]
-addFront -> true	Linked List 	[88,-80,81,80,51,50,-50,55]
-addFront -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-Re-testing empty, size methods...............
-L1 empty? -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-L2 empty? -> true	Empty LinkedList
-L1 size -> 8	Linked List 	[88,-80,81,80,51,50,-50,55]
-L2 size -> 0	Empty LinkedList
-Test get method..............................
-Getting -1 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 0 = 88	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 1 = -80	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 2 = 81	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 3 = 80	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 4 = 51	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 5 = 50	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 6 = -50	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 7 = 55	Linked List 	[88,-80,81,80,51,50,-50,55]
-Getting 8 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-Test set method..............................
-Setting -1 to 9 -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-Setting 0 to 10 -> true	Linked List 	[10,-80,81,80,51,50,-50,55]
-Setting 1 to 11 -> true	Linked List 	[10,11,81,80,51,50,-50,55]
-Setting 2 to 12 -> true	Linked List 	[10,11,12,80,51,50,-50,55]
-Setting 3 to 13 -> true	Linked List 	[10,11,12,13,51,50,-50,55]
-Setting 4 to 14 -> true	Linked List 	[10,11,12,13,14,50,-50,55]
-Setting 5 to 15 -> true	Linked List 	[10,11,12,13,14,15,-50,55]
-Setting 6 to 16 -> true	Linked List 	[10,11,12,13,14,15,16,55]
-Setting 7 to 17 -> true	Linked List 	[10,11,12,13,14,15,16,17]
-Setting 8 to 18 -> false	Linked List 	[10,11,12,13,14,15,16,17]
-Setting 0 to null -> false	Linked List 	[10,11,12,13,14,15,16,17]
-Test equals method...........................
-List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-List 2 = Empty LinkedList
-List1 == List2 -> false
-Test clone method............................
-List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-List 2 = Linked List 	[10,11,12,13,14,15,16,17]
-Re-testing equals...
-List1 == List2 -> true
-Test addAfter method.........................
-Adding value 	99	 after index 	-1	 result 	false	Linked List 	[10,11,12,13,14,15,16,17]
-Adding value 	100	 after index 	0	 result 	true	Linked List 	[10,100,11,12,13,14,15,16,17]
-Adding value 	101	 after index 	1	 result 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17]
-Adding value 	102	 after index 	2	 result 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17]
-Adding value 	103	 after index 	3	 result 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16,17]
-Adding value 	104	 after index 	4	 result 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,15,16,17]
-Adding value 	105	 after index 	5	 result 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13,14,15,16,17]
-Adding value 	106	 after index 	6	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12,13,14,15,16,17]
-Adding value 	107	 after index 	7	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Test other edge case
-Adding value 	10	 after index 	17	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Test addBefore method.........................
-Adding value 	99	 before index 	-1	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	100	 before index 	0	 result 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	101	 before index 	1	 result 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	102	 before index 	2	 result 	true	Linked List 	[100,101,102,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	103	 before index 	3	 result 	true	Linked List 	[100,101,102,103,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	104	 before index 	4	 result 	true	Linked List 	[100,101,102,103,104,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	105	 before index 	5	 result 	true	Linked List 	[100,101,102,103,104,105,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	106	 before index 	6	 result 	true	Linked List 	[100,101,102,103,104,105,106,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	107	 before index 	7	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	108	 before index 	8	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	109	 before index 	9	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	110	 before index 	10	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	111	 before index 	11	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	112	 before index 	12	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	113	 before index 	13	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	114	 before index 	14	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Adding value 	115	 before index 	15	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Test other edge case
-Adding value 	10	 before index 	33	 result 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Test front and back methods..................
-Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17]
-Back of list 1 = 17	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Back of list 2 = 17	Linked List 	[10,11,12,13,14,15,16,17]
-Clear out list 2
-Front of list 2 = null	Empty LinkedList
-Back of list 2 = null	Empty LinkedList
-Cloning list 2 from list 1
-Test removeFront method......................
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	100
-Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	101
-Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	102
-Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	103
-Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	104
-Linked List 	[105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	105
-Linked List 	[106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	106
-Linked List 	[107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	107
-Linked List 	[108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	108
-Linked List 	[109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	109
-Linked List 	[110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	110
-Linked List 	[111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	111
-Linked List 	[112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	112
-Linked List 	[113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	113
-Linked List 	[114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	114
-Linked List 	[115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	115
-Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	10
-Linked List 	[100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	100
-Linked List 	[101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	101
-Linked List 	[102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	102
-Linked List 	[103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	103
-Linked List 	[104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	104
-Linked List 	[105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	105
-Linked List 	[106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	106
-Linked List 	[107,11,12,13,14,15,16,17]	Removing list 1 front = 	107
-Linked List 	[11,12,13,14,15,16,17]	Removing list 1 front = 	11
-Linked List 	[12,13,14,15,16,17]	Removing list 1 front = 	12
-Linked List 	[13,14,15,16,17]	Removing list 1 front = 	13
-Linked List 	[14,15,16,17]	Removing list 1 front = 	14
-Linked List 	[15,16,17]	Removing list 1 front = 	15
-Linked List 	[16,17]	Removing list 1 front = 	16
-Linked List 	[17]	Removing list 1 front = 	17
-Empty LinkedList	Removing list 1 front = 	null
-Cloning list 1 from list 2
-Test removeBack method.......................
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 2 back = 	17
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	Removing list 2 back = 	16
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	Removing list 2 back = 	15
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	Removing list 2 back = 	14
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	Removing list 2 back = 	13
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	Removing list 2 back = 	12
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	Removing list 2 back = 	11
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	Removing list 2 back = 	107
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	Removing list 2 back = 	106
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	Removing list 2 back = 	105
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	Removing list 2 back = 	104
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	Removing list 2 back = 	103
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	Removing list 2 back = 	102
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	Removing list 2 back = 	101
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	Removing list 2 back = 	100
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	Removing list 2 back = 	10
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	Removing list 2 back = 	115
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	Removing list 2 back = 	114
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	Removing list 2 back = 	113
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	Removing list 2 back = 	112
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	Removing list 2 back = 	111
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	Removing list 2 back = 	110
-Linked List 	[100,101,102,103,104,105,106,107,108,109]	Removing list 2 back = 	109
-Linked List 	[100,101,102,103,104,105,106,107,108]	Removing list 2 back = 	108
-Linked List 	[100,101,102,103,104,105,106,107]	Removing list 2 back = 	107
-Linked List 	[100,101,102,103,104,105,106]	Removing list 2 back = 	106
-Linked List 	[100,101,102,103,104,105]	Removing list 2 back = 	105
-Linked List 	[100,101,102,103,104]	Removing list 2 back = 	104
-Linked List 	[100,101,102,103]	Removing list 2 back = 	103
-Linked List 	[100,101,102]	Removing list 2 back = 	102
-Linked List 	[100,101]	Removing list 2 back = 	101
-Linked List 	[100]	Removing list 2 back = 	100
-Empty LinkedList	Removing list 2 back = 	null
-Cloning list 2 from list 1
-Test remove method...........................
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	33	 removed: 	null
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	32	 removed: 	null
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	31	 removed: 	17
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	Removing from list 1 from index: 	30	 removed: 	16
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	Removing from list 1 from index: 	29	 removed: 	15
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	Removing from list 1 from index: 	28	 removed: 	14
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	Removing from list 1 from index: 	27	 removed: 	13
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	Removing from list 1 from index: 	26	 removed: 	12
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	Removing from list 1 from index: 	25	 removed: 	11
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	Removing from list 1 from index: 	24	 removed: 	107
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	Removing from list 1 from index: 	23	 removed: 	106
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	Removing from list 1 from index: 	22	 removed: 	105
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	Removing from list 1 from index: 	21	 removed: 	104
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	Removing from list 1 from index: 	20	 removed: 	103
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	Removing from list 1 from index: 	19	 removed: 	102
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	Removing from list 1 from index: 	18	 removed: 	101
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	Removing from list 1 from index: 	17	 removed: 	100
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	Removing from list 1 from index: 	16	 removed: 	10
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	Removing from list 1 from index: 	15	 removed: 	115
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	Removing from list 1 from index: 	14	 removed: 	114
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	Removing from list 1 from index: 	13	 removed: 	113
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	Removing from list 1 from index: 	12	 removed: 	112
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	Removing from list 1 from index: 	11	 removed: 	111
-Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	Removing from list 1 from index: 	10	 removed: 	110
-Linked List 	[100,101,102,103,104,105,106,107,108,109]	Removing from list 1 from index: 	9	 removed: 	109
-Linked List 	[100,101,102,103,104,105,106,107,108]	Removing from list 1 from index: 	8	 removed: 	108
-Linked List 	[100,101,102,103,104,105,106,107]	Removing from list 1 from index: 	7	 removed: 	107
-Linked List 	[100,101,102,103,104,105,106]	Removing from list 1 from index: 	6	 removed: 	106
-Linked List 	[100,101,102,103,104,105]	Removing from list 1 from index: 	5	 removed: 	105
-Linked List 	[100,101,102,103,104]	Removing from list 1 from index: 	4	 removed: 	104
-Linked List 	[100,101,102,103]	Removing from list 1 from index: 	3	 removed: 	103
-Linked List 	[100,101,102]	Removing from list 1 from index: 	2	 removed: 	102
-Linked List 	[100,101]	Removing from list 1 from index: 	1	 removed: 	101
-Linked List 	[100]	Removing from list 1 from index: 	0	 removed: 	100
-Empty LinkedList	Removing from list 1 from index: 	-1	 removed: 	null
-Test contains method.........................
-List 1 (empty) contains 10 = false	Empty LinkedList
-List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Test firstIndexOf and lastIndexOf methods....
-First index of 5: 	0
-Last  index of 5: 	7
-First index of 7: 	2
-Last  index of 7: 	9
-First index of 8: 	3
-Last  index of 8: 	3
-First index of 9: 	-1
-Last  index of 9: 	-1
-Test numberOf method.........................
-Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Number of 5: 	3
-Number of 8: 	1
-Number of 9: 	0
-Test allIndices method.......................
-Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Array -> indices 5: 	[0, 4, 7]
-Array -> indices 8: 	[3]
-Array -> indices 9: 	null
-Cloning list 2 from list 1
-Test remove method...........................
-Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
-Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
-Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
-Test removeLast method.......................
-Linked List 	[6,7,5,6,7,5,6,7]
-Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
-Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
-Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
-Test removeAll method........................
-Linked List 	[6,7,5,6,7,6,7]
-Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
-Removing all 6: 	true	Linked List 	[7,7,7]
-Removing all 9: 	false	Linked List 	[7,7,7]
-Cloning list 1 from list 2
-Test removeAll array method..................
-Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Array: 	[5, 6, 9]
-Removing all from array: Linked List 	[7,8,7,7]
-Test removeAll list method..................
-List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-List 2 	Linked List 	[7,8,7,7]
-Removing all list 2 from list 1...
-List 1 	Linked List 	[5,6,5,6,5,6]
-List 2 	Linked List 	[7,8,7,7]
-Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Test containsAll array method................
-List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
-List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
-Test containsAll list method.................
-List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
-Alter list 2...
-List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
-Test addAll array method.....................
-Linked List 	[6,7,8,6,7,5,6,45]
-Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-Test addAll list method......................
-Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
-Test subList method..........................
-List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
-Pulling out sub-list from 1 to 1: 	Linked List 	[6]
-Pulling out sub-list from 2 to 10: 	null
-Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-Test fromArray method........................
-Array is 	[5, 6, 7, 8]
-List is 	Linked List 	[5,6,7,8]
-Test fromLinkedList method...................
-1st List is 	Linked List 	[5,6,7,8]
-2nd List is 	Linked List 	[5,6,7,8]
-Test toArray method..........................
-List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
-Testing the imported util LinkedList.........
-Imported constructor...
-Imported add:	[0.0]
-Imported add:	[0.0, 1.23]
-Imported addFirst:	[4.56, 0.0, 1.23]
-Imported addLast:	[4.56, 0.0, 1.23, 7.89]
-Imported size:	4
-Imported isEmpty:	false
-Imported get:	0.0
-Imported set:	4.56
-Imported clone:	[0.01, 0.0, 1.23, 7.89]
-Imported equals:	true
-Imported getFirst:	0.01
-Imported getLast:	7.89
-Imported contains:	true
-Imported removeFirst:	0.01
-Imported removeLast:	7.89
-Imported remove:	1.23
-Imported remove:	false
-Testing the imported util ArrayList.........
-Imported ArrayList:	[a, b, c, d, e]
-Using the enhanced for loop with this object...
-a b c d e Using an iterator object...
-a b c d e Collections testing complete!
-Computer Science 40S complete!.............................................................
 Computer Science 42SAP starting............................................................
 Computer Science 42SAP curriculum content starting.........................................
 AP curriculum - Part 1 Test started........................................................
 AP: Unit 1 (Primitive Types) started.......................................................
 1.1 Why Programming? Why Java?
-...
 System.out.print outputs text to the screen and System.out.println outputs with a line break
-...
 More specifically, the code word "System" refers to the "computer system" and the 
 word "out" refers to outputting, and finally the word "print" or "println" are calls to 
 methods (or "actions") that take the string literal (which is the word or words in between 
 the quotation marks) and outputs it. So the command "System.out.println("literal");" 
 will take the string literal and output it to the default output device - that being the 
 computer screen.
-...
 1.2 Variables and Data Types
-...
 Data/information refers to the "kind" of data being stored (or "remembered") by the program 
 in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
 (or "address") so that the programmer can refer to it by that name. The "type" refers to the 
@@ -1379,7 +19,6 @@ in a "variable". A variable is a piece of the computer's memory (storage) that h
 specified at the time you write a line of code to "create" (or "declare") the variable. A 
 variable can only be one type and only store that specified type of data. However, the data 
 itself can change (or "vary") after the initial declaration. Examples of this are below...
-...
 Variables declared and assigned initial ("starting") values:
 boolean a = true;
 int     b = 0;
@@ -1390,22 +29,19 @@ a = false;
 b = 1;
 c = 1.1;
 d = 'B';
-...
 A "final" (or a "constant") is a variable in which the stored value does NOT change 
 (it stays "constant") and it locked at that value. Final (or constant) variables are 
 given the initial value when declared (or initialized) and that value stays locked. These 
 types of values are written in ALL_CAPS with the underscore value used to seperate words in 
 the name. Final variables are more efficient for a number of reasons including ease of code 
 understanding, speed (faster code), easier to update code, and others. Examples of finals 
-are below...
+are below
 Constants (finals) declared (initialized)
 final boolean FOUND  = true;
 final int     VALUE  = 1;
 final double  AMOUNT = 2.5;
 final char    CODE   = 'X';
-...
 1.3 Expressions and Assignment Statements
-...
 Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
 written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
 context, the word "literal" can also mean a number (like "5"). This usually involves 
@@ -1417,7 +53,6 @@ the order of operations (or precedence order). This means multiplication and div
 evaluated before addition and subtraction. If operations are at the same precedence level, 
 then they are evaluated from left to right.When you try and divide by zero, an error 
 (the "ArithmeticException" error) will occur and the program will stop running. Examples:
-...
 Arithmetic evaluations using variables
 int    v1 = 5;
 int    v2 = 3;
@@ -1425,14 +60,11 @@ int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
 double v4 = 5.2;
 double v5 = 3.3;
 double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
-...
 1.4 Compound Assignment Operators
-...
 Compound statements in this context refers to using shortcuts to quickly add or subtract one 
 (increment or decrement) to a variable. You can also use more complex shorthand compound 
 statements to quickly multiply, divide, even modulus a variable with itself or other 
 variables. For example:
-...
 Shorthand Compound Arithmetic expressions
 int value = 5;
 value++;    // is the same as "value = value + 1;"
@@ -1442,9 +74,7 @@ value -= 5; // is the same as "value = value - 5;"
 value *= 5; // is the same as "value = value * 5;"
 value /= 5; // is the same as "value = value / 5;"
 value %= 5; // is the same as "value = value % 5;"
-...
 1.5 Casting and Ranges of Variables
-...
 Casting is the process of "converting" one data type into another data type. When casting 
 an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
 off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
@@ -1453,7 +83,6 @@ variable to be cast with the type being cast into in round brackets to the left 
 variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
 constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
 evaluates an int outside that range, an error will occur (overflow error). For example:
-...
 Casting data types
 int integer = Integer.MAX_VALUE;
 double doub = Double.MIN_VALUE;
@@ -1461,41 +90,33 @@ doub        = (int)integer;
 integer     = (int)doub;
 char letter = 'A';
 integer     = (int)letter;
-...
 AP: Unit 1 (Primitive Types) completed!....................................................
 AP: Unit 3 (Boolean Expressions And If Statements) started.................................
 3.1 Boolean Expressions
-...
 A Boolean (true/false) expression is a code statement most likely in a control structure 
 like a conditional statement or loop control structure that evaluates to true or false to 
 make decisions and control the flow of the program. The Boolean expression will require 
 the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
 than", "greater than", "less than or equal to", "greater than or equal to", "equal 
 to", and "not equal to".
-...
 3.2 if Statements and Control Flow
-...
 A "Conditional Statement" is also known under other names like "branching statement", "if 
 statement", "one-way selection statement", and "control structure". It uses the reserved 
 keyword "if" along with round brackets which contain the Boolean expression, and curly 
 brackets to contain the control block of all code you wish to be controlled by the 
 conditional statement. Brackets are optional if the block is only one line, and you may also 
 move thos lines up to the same line as the conditional statement. For example:
-...
 Example of if statements
 int a = 10;
 int b = 10;
 if (a == a) {
     // "equal"
 }
-...
 3.3 if-else Statements
-...
 The "else" statement is paired with an "if" statement to control the flow of the logic so 
 that the conditional now evaluates to both true and false. This can be called a "two 
 way selection" (for true/false). An "else" must always follow an "if" statement first. 
 For example:
-...
 if with "else" 
 double c = 1.45, d = 1.5; 
 if (c < d) {
@@ -1509,15 +130,12 @@ char e = 'A';
 char f = 'a';
 if (e != f) e = '!';
 else        e = '=';
-...
 3.4 else if Statements
-...
 When making multiple decisions (more than 2), the "else if" statement is added to an 
 existing "if" statement to have multiple branches of logic for the code to follow. This 
 is much more efficient than seperate "if" statements. This can also be called "multi-way 
 selection" (or "if-else-if"). An "else" statement is also still the final option (but 
 this is not required). For example:
-...
 Showing a "chain" of else if statements
 int g = 0;
 if (g == 1) {
@@ -1532,9 +150,7 @@ else if (g == 3) {
 else {
     // Nothing above is true, so go to this else
 }
-...
 3.5 Compound Boolean Expressions
-...
 The process of "nesting" means to place one conditional statement inside the "block" of 
 another conditional statement. The logical operators: "and", "or", and "not" are 
 represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
@@ -1546,7 +162,6 @@ versa). If the statement contains multiple Boolean expressions and the result of
 evaluation of one expression has already determined the expressions result, then the 
 rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
 evaluation". For example:
-...
 Logical operators and "nesting"
 int    age = 17;
 double iq  = 1.0;
@@ -1562,9 +177,7 @@ else {
         // A "nested if statement"
     }
 }
-...
 3.6 Equivalent Boolean Expressions
-...
 Boolean (true/false) expressions turned into logical statements used by control structures 
 like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
 Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
@@ -1572,14 +185,11 @@ not necessarily applicable to this exam). This just means that complex statement
 evaluated by using mathematical rules (like "order of operations") and logical operators 
 (like "and, or, not") to determine the final Boolean result. This could determine if a 
 control structure (like an "if" statement) runs a block of code or not.
-...
 3.7 Comparing Objects
-...
 The use of an advanced data type like an "Object" in code means that comparison 
 operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
 double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
 determine the equality of two objects. For example:
-...
 Use of the built-in equals method with Objects
 String word1 = "edgy";
 String word2 = "edGy";
@@ -1589,11 +199,9 @@ if (word1.equals(word2)) {
 else if (word1.equalsIgnoreCase(word2)) {
     // "W1 kind of == W2"
 }
-...
 AP: Unit 3 (Boolean Expressions And If Statements) completed!..............................
 AP: Unit 4 (Iteration) started.............................................................
 4.1 while Loops
-...
 The word "Iteration" is another word for "Loop" or "Looping" which is a control 
 struture to have code statements "repeat". Like conditional ("if") statements, iteration 
 statements control the flow of a program's logic. Also like if statements, iteration 
@@ -1609,15 +217,12 @@ non-deterministic loop, which means it is not usually used for counting but when
 not know how many times the loop needs to run (a certain event can cause the loop to 
 end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
 (traversing) arrays and lists, and searching and sorting values. For example:
-...
 Example of a simple while loop
 int counter = 0;
 while (counter < 10) {
     counter++;
 }
-...
 4.2 for Loops
-...
 The "for" loop is another looping form. The for loop is a count controlled loop that 
 generally is used when a loop needs to run a specific number of times. There are three 
 parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
@@ -1626,19 +231,16 @@ generally declared right inside the loop to a starting value, then the Boolean c
 to end the loop, then the change value increasing (increment) or decreasing (decrement) 
 that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
 by one" error occurs when a loop runs one too many or one too few times. For Example:
-...
 Example of a for loop
 for (int i = 0; i < 10; i++) {
     // potential code body...
 }
-...
 4.3 Developing Algorithms Using Strings
 ...
 The String class allows for several "built-in" methods of the String class to manipulate 
 the string and the value it stores. Several of these methods could apply to the A.P. exam 
 including travelling (traversing) string characters, pulling out substrings (parts 
 of the string), reversing a string, etc. For example:
-...
 Example of string methods with a loop
 String word   = "completion";
 String parts1 = word.substring(3);
@@ -1646,14 +248,11 @@ String parts2 = word.substring(1,7);
 for (int i = 0; i < word.length(); i++) {
     char character = word.charAt(i);
 }
-...
 4.4 Nested Iteration
-...
 Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
 This means you can place a iteration statement inside the block of another iteration 
 statement. The inner loop must complete all of its iterations before the outer loop 
 can continue. For example:
-...
 Example of nested loops
 for (int i = 0; i < 10; i++) {
     for (int j = 0; j < 10; j++) {
@@ -1663,12 +262,9 @@ for (int i = 0; i < 10; i++) {
         }
     }
 }
-...
 4.5 Informal Code Analysis
-...
 Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
 loops are typical A.P. exam questions. You should practice these types of questions.
-...
 AP: Unit 4 (Iteration) completed!..........................................................
 AP curriculum - Part 1 Test completed!.....................................................
 AP curriculum - Part 2 Test started........................................................
@@ -1734,236 +330,3 @@ AP: Unit 10 (Recursion ) completed!.............................................
 AP curriculum - Part 4 Test completed!.....................................................
 Computer Science 42SAP curriculum content complete!........................................
 Computer Science 42SAP complete!...........................................................
-Computer Science 42SAP bonus content starting..............................................
-Permanent Storage Test started.............................................................
-Learn about 'error traps'
-Divide by zero -> java.lang.ArithmeticException: / by zero
-Create sample data to use
-Save ONE piece of data to that permanent file
-Now involve the user to get a file name
-~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-File already exists!
-Open file with one line (no user involvment)
-line read was Defenestration
-Open file with multiple lines (user picks file)
-~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-This line read was �� sr collections.LinkedList�c������ I 	NOT_FOUNDI lengthI longestWordL headt Lcollections/Node;L tailq ~ xp����   d   +sr collections.Node3�bdAA�Z L datat Ljava/lang ... (line shortened) ...
-This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
-This line read was q ~ pq ~ �
-Class to save/open one line (no user)
-Before: Defenestration
-After : Defenestration
-Class to save/open multiple lines (with user)
-Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-Now save/open on a complex data type
-Before: Athlete: Husky: HighSchool: Student: Person
-After:  Athlete: Husky: HighSchool: Student: Person
-Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-Permanent Storage Test completed!..........................................................
-Stacks and Queues Test started.............................................................
-Create objects for testing...
-Create and Test a stack object...
-Test toString, size, isEmpty, and push methods...
-Empty = true	Size = 0	Empty Stack
-Loop through adding random values
-Empty = false	Size = 1	Stack top -> [tasty] <- bottom
-Empty = false	Size = 2	Stack top -> [poxed,tasty] <- bottom
-Empty = false	Size = 3	Stack top -> [Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 4	Stack top -> [gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 5	Stack top -> [Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 6	Stack top -> [Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 7	Stack top -> [pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 8	Stack top -> [mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 9	Stack top -> [lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Empty = false	Size = 10	Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Test clone method...
-Clone stack: Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Test equals method...
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-==
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Now change the copy
-Now check again
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-!=
-Stack top -> [young] <- bottom
-Re-clone the stack, and output
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Text the pop method...
-Clone stack:	Empty = false	Size = 10	Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Loop through removing values
-Popped -> seize	Empty = false	Size = 9	Stack top -> [lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Popped -> lemme	Empty = false	Size = 8	Stack top -> [mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Popped -> mossy	Empty = false	Size = 7	Stack top -> [pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Popped -> pawns	Empty = false	Size = 6	Stack top -> [Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Popped -> Genoa	Empty = false	Size = 5	Stack top -> [Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Popped -> Yalta	Empty = false	Size = 4	Stack top -> [gnats,Ebony,poxed,tasty] <- bottom
-Popped -> gnats	Empty = false	Size = 3	Stack top -> [Ebony,poxed,tasty] <- bottom
-Popped -> Ebony	Empty = false	Size = 2	Stack top -> [poxed,tasty] <- bottom
-Popped -> poxed	Empty = false	Size = 1	Stack top -> [tasty] <- bottom
-Popped -> tasty	Empty = true	Size = 0	Empty Stack
-Popped -> null	Empty = true	Size = 0	Empty Stack
-Test peek (top is wrapper no testing needed)...
-Clone Top = null
-Stack Top = seize
-Test to array and to linked list...
-Linked List 	[seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty]
-Array   	[seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty]
-Test our constructors...
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Stack top -> [seize,lemme,mossy,pawns,Genoa,Yalta,gnats,Ebony,poxed,tasty] <- bottom
-Test the Queue object...
-Test toString,size,isEmpty, and enqueue methods...
-Empty = true	Size = 0	Empty Queue
-Loop through adding random values
-Empty = false	Size = 1	Queue back -> [drape] <- front
-Empty = false	Size = 2	Queue back -> [topaz,drape] <- front
-Empty = false	Size = 3	Queue back -> [Marva,topaz,drape] <- front
-Empty = false	Size = 4	Queue back -> [Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 5	Queue back -> [stove,Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 6	Queue back -> [Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 7	Queue back -> [Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 8	Queue back -> [troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 9	Queue back -> [abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Empty = false	Size = 10	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Test clone method...
-Clone Queue 			Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Test equals method...
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-==
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Now change the duplicate
-Now check again
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-==
-Queue back -> [Rakel] <- front
-Re-clone the queue, and output
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Test the dequeue method...
-Clone queue:	Empty = false	Size = 10	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Loop through removing values
-Dequeued -> drape	Empty = false	Size = 9	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz] <- front
-Dequeued -> topaz	Empty = false	Size = 8	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva] <- front
-Dequeued -> Marva	Empty = false	Size = 7	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona] <- front
-Dequeued -> Rhona	Empty = false	Size = 6	Queue back -> [peers,abase,troff,Camel,Egypt,stove] <- front
-Dequeued -> stove	Empty = false	Size = 5	Queue back -> [peers,abase,troff,Camel,Egypt] <- front
-Dequeued -> Egypt	Empty = false	Size = 4	Queue back -> [peers,abase,troff,Camel] <- front
-Dequeued -> Camel	Empty = false	Size = 3	Queue back -> [peers,abase,troff] <- front
-Dequeued -> troff	Empty = false	Size = 2	Queue back -> [peers,abase] <- front
-Dequeued -> abase	Empty = false	Size = 1	Queue back -> [peers] <- front
-Dequeued -> peers	Empty = true	Size = 0	Empty Queue
-Dequeued -> null	Empty = true	Size = 0	Empty Queue
-Test front and back...
-Clone Front = null
-Queue Front = drape
-Clone Back  = null
-Queue Back  = peers
-Test to array and to linked list...
-Linked List 	[peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape]
-Array   	[peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape]
-Test our constructors...
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Constructors from stack to queue (and back)...
-Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front	 into 	Stack top -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- bottom
-Stack top -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- bottom	 into 	Queue back -> [peers,abase,troff,Camel,Egypt,stove,Rhona,Marva,topaz,drape] <- front
-Stacks and Queues Test completed!..........................................................
-Searching and Sorting Test started.........................................................
-For the I.B. Exam, you only need to know:
-Search: linear search and binary search
-Sort: bubble sort and the selection sort
-Create some constants (edges) for the data
-Create some random data to search through and sort
-Including edge cases to test
-Create data to store the results...
-The simpliest of searches
-Now the linear search on all test data
-Simple sort...
-We will re-scramble array for further testing
-Now bubble sort (from bubbles rising from water)
-Now selection sort (from selecting the smallest)
-Now binary search (named after two or dividing)
-NOTE: binary search can only happen on sorted list
-Redo some of the test data...
-Use class for searching and sorting
-Create random linked list data
-Place all test cases into another linked list
-Execute the linear search on all test data...
-Execute all the sorts on all test data...
-Bubble sort LinkedList data...
-Selection sort LinkedList data...
-Shell sort LinkedList data...
-Insertion sort LinkedList data...
-Quick sort LinkedList data...
-Merge sort LinkedList data...
-Execute the binary search on all test data...
-Searching and Sorting Test completed!......................................................
-Binary Trees Test started..................................................................
-Constants/variables for creating random values...
-Creating some TreeNode objects...
-Linking the TreeNodes...
-Testing TreeNode equals...
-Testing TreeNode toString...
-16
-76
-83
-Creating a Tree object...
-Test the insert method...
-Insert one more...
-Test the search of the tree...
-Should be found     = true
-Should NOT be found = false
-Test toString() and pre, post, in order traversals
-Binary Tree:
-Order: Linked List 	[74,44,89,59,72,46]
-Pre:   Linked List 	[74,44,59,46,72,89]
-Post:  Linked List 	[46,72,59,44,89,74]
-In:    Linked List 	[44,46,59,72,74,89]
-Building second tree (test clone) and test equals
-1st tree -> Linked List 	[44,46,59,72,74,89]
-2nd tree -> Linked List 	[13,80,82,82,83,96]
-1st!=2nd
-Building a third tree (test clone) and test equals
-1st tree -> Linked List 	[44,46,59,72,74,89]
-3rd tree -> Linked List 	[44,46,59,72,74,89]
-1st==3rd
-Build all our data structures from each other...
-Create variable objects...
-Create array from variables...
-Create LinkedList from array...
-Create Stack from LinkedList...
-Create Queue from Stack...
-Create Tree from Queue...
-Output variables,array,list,stack,queue,tree...
-fudge
-condo
-styli
-cosmo
-tarim
-[fudge,condo,styli,cosmo,tarim]
-Linked List 	[fudge,condo,styli,cosmo,tarim]
-Stack top -> [fudge,condo,styli,cosmo,tarim] <- bottom
-Queue back -> [fudge,condo,styli,cosmo,tarim] <- front
-Binary Tree:
-Order: Linked List 	[fudge,condo,styli,cosmo,tarim]
-Pre:   Linked List 	[fudge,condo,cosmo,styli,tarim]
-Post:  Linked List 	[cosmo,condo,tarim,styli,fudge]
-In:    Linked List 	[condo,cosm ... (line shortened) ...
-Now re-building queue from tree
-Now re-building stack from queue
-Now re-building LinkedList from stack...
-Now re-building array from LinkedList...
-Output array,list,stack,queue,tree again...
-[condo,cosmo,fudge,styli,tarim]
-Linked List 	[condo,cosmo,fudge,styli,tarim]
-Stack top -> [condo,cosmo,fudge,styli,tarim] <- bottom
-Queue back -> [condo,cosmo,fudge,styli,tarim] <- front
-Binary Tree:
-Order: Linked List 	[fudge,condo,styli,cosmo,tarim]
-Pre:   Linked List 	[fudge,condo,cosmo,styli,tarim]
-Post:  Linked List 	[cosmo,condo,tarim,styli,fudge]
-In:    Linked List 	[condo,cosm ... (line shortened) ...
-Binary Trees Test completed!...............................................................
-Computer Science 42SAP bonus content complete!.............................................

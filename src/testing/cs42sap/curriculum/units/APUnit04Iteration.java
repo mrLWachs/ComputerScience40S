@@ -63,7 +63,6 @@ public class APUnit04Iteration
             //           or mode
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("The word \"Iteration\" is another word for ");
         System.out.println("\"Loop\" or \"Looping\" which is a control ");
         System.out.print("struture to have code statements \"repeat\". ");
@@ -94,7 +93,6 @@ public class APUnit04Iteration
         System.out.println("such as: repeating instructions, travelling ");
         System.out.print("(traversing) arrays and lists, and searching ");
         System.out.println("and sorting values. For example:");
-        System.out.println("...");
         
         // Example of a simple while loop
         int counter = 0;
@@ -107,7 +105,6 @@ public class APUnit04Iteration
         Simulator.code("while (counter < 10) {");
         Simulator.code("    counter++;");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("4.2 for Loops");  
@@ -129,8 +126,7 @@ public class APUnit04Iteration
             // (4.2.1.5) “Off by one” errors occur when the iteration statement
             //           loops one time too many or one time too few
         ////////////////////////////////////////////////////////////////////////
-        
-        System.out.println("...");        
+             
         System.out.print("The \"for\" loop is another looping form. The for ");
         System.out.println("loop is a count controlled loop that ");
         System.out.print("generally is used when a loop needs to run a ");
@@ -147,7 +143,6 @@ public class APUnit04Iteration
         System.out.println("as a \"while\" loop and vice versa. A \"off ");
         System.out.print("by one\" error occurs when a loop runs one too ");
         System.out.println("many or one too few times. For Example:");
-        System.out.println("...");
         
         // Example of a for loop
         for (int i = 0; i < 10; i++) {
@@ -158,7 +153,6 @@ public class APUnit04Iteration
         Simulator.code("for (int i = 0; i < 10; i++) {");
         Simulator.code("    // potential code body...");
         Simulator.code("}");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("4.3 Developing Algorithms Using Strings");  
@@ -182,7 +176,6 @@ public class APUnit04Iteration
         System.out.println("characters, pulling out substrings (parts ");
         System.out.print("of the string), reversing a string, etc. For ");
         System.out.println("example:");
-        System.out.println("...");
         
         // Example of string methods with a loop
         String word   = "completion";
@@ -198,8 +191,7 @@ public class APUnit04Iteration
         Simulator.code("String parts2 = word.substring(1,7);");
         Simulator.code("for (int i = 0; i < word.length(); i++) {");
         Simulator.code("    char character = word.charAt(i);");
-        Simulator.code("}");        
-        System.out.println("...");
+        Simulator.code("}");       
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("4.4 Nested Iteration");  
@@ -211,15 +203,13 @@ public class APUnit04Iteration
             //           loop can continue
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("Like conditional (\"if\") statements, looping ");
         System.out.println("(\"iteration\") statments can be \"nested\", ");
         System.out.print("This means you can place a iteration statement ");
         System.out.println("inside the block of another iteration ");
         System.out.print("statement. The inner loop must complete all ");
         System.out.println("of its iterations before the outer loop ");
-        System.out.println("can continue. For example:");        
-        System.out.println("...");
+        System.out.println("can continue. For example:"); 
         
         // Example of nested loops
         for (int i = 0; i < 10; i++) {
@@ -241,8 +231,6 @@ public class APUnit04Iteration
         Simulator.code("    }");
         Simulator.code("}");
         
-        System.out.println("...");
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("4.5 Informal Code Analysis");  
         // (4.5.1) Compute statement execution counts and informal run-time 
@@ -251,12 +239,10 @@ public class APUnit04Iteration
             //           times a statement is executed by the program
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("Expect to \"trace\" loop values in A.P. exam ");
         System.out.println("questions. Examining, computing, and tracing ");
         System.out.print("loops are typical A.P. exam questions. You ");
         System.out.println("should practice these types of questions.");
-        System.out.println("...");
                 
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 4 (Iteration) completed!");

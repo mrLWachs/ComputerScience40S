@@ -47,11 +47,8 @@ public class APUnit01PrimitiveTypes
             // (1.1.2.1) A string literal is enclosed in double quotes        
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("System.out.print outputs text to the screen and ");
         System.out.println("System.out.println outputs with a line break");
-        System.out.println("...");
-        
         System.out.print("More specifically, the code word \"System\" ");
         System.out.println("refers to the \"computer system\" and the ");
         System.out.print("word \"out\" refers to outputting, and finally ");
@@ -63,7 +60,6 @@ public class APUnit01PrimitiveTypes
         System.out.print("will take the string literal and output it to ");
         System.out.println("the default output device - that being the ");
         System.out.println("computer screen.");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.2 Variables and Data Types");        
@@ -87,7 +83,6 @@ public class APUnit01PrimitiveTypes
             //           be changed once it is initialized
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("Data/information refers to the \"kind\" of data ");
         System.out.println("being stored (or \"remembered\") by the program ");
         System.out.print("in a \"variable\". A variable is a piece of the ");
@@ -115,7 +110,6 @@ public class APUnit01PrimitiveTypes
         c = 1.1;
         d = 'B';
         
-        System.out.println("...");
         Simulator.comment("Variables declared and assigned initial (\"starting\") values:");
         Simulator.code("boolean a = true;");
         Simulator.code("int     b = 0;");
@@ -126,7 +120,7 @@ public class APUnit01PrimitiveTypes
         Simulator.code("b = 1;");
         Simulator.code("c = 1.1;");
         Simulator.code("d = 'B';");  
-        System.out.println("...");
+        
         System.out.print("A \"final\" (or a \"constant\") is a variable ");
         System.out.println("in which the stored value does NOT change ");
         System.out.print("(it stays \"constant\") and it locked at that ");
@@ -139,8 +133,7 @@ public class APUnit01PrimitiveTypes
         System.out.println("a number of reasons including ease of code ");
         System.out.print("understanding, speed (faster code), easier to ");
         System.out.println("update code, and others. Examples of finals ");
-        System.out.print("are below");
-        System.out.println("...");
+        System.out.println("are below");
         
         // Constants (finals) declared (initialized)
         final boolean FOUND  = true;
@@ -153,7 +146,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("final int     VALUE  = 1;");
         Simulator.code("final double  AMOUNT = 2.5;");
         Simulator.code("final char    CODE   = 'X';");
-        System.out.println("...");
         
         //////////////////////////////////////////////////////////////////////// 
         Simulator.comment("1.3 Expressions and Assignment Statements");        
@@ -186,7 +178,6 @@ public class APUnit01PrimitiveTypes
             //           evaluation of the expression
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
         System.out.print("Arithmetic (or \"math\") statements in code ");
         System.out.println("are lines of code (or \"statements\") that are ");
         System.out.print("written to evaluate (or \"solve\") an equation ");
@@ -208,8 +199,7 @@ public class APUnit01PrimitiveTypes
         System.out.print("then they are evaluated from left to right.");
         System.out.println("When you try and divide by zero, an error ");
         System.out.print("(the \"ArithmeticException\" error) will occur ");
-        System.out.println("and the program will stop running. Examples:");        
-        System.out.println("...");
+        System.out.println("and the program will stop running. Examples:"); 
         
         // Arithmetic evaluations using variables
         int    v1 = 5;
@@ -225,8 +215,7 @@ public class APUnit01PrimitiveTypes
         Simulator.code("int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;");   
         Simulator.code("double v4 = 5.2;");  
         Simulator.code("double v5 = 3.3;");  
-        Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;"); 
-        System.out.println("...");
+        Simulator.code("double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.4 Compound Assignment Operators");
@@ -240,7 +229,6 @@ public class APUnit01PrimitiveTypes
             //           value is assigned to the variable or array element
         ////////////////////////////////////////////////////////////////////////    
         
-        System.out.println("...");
         System.out.print("Compound statements in this context refers to ");
         System.out.println("using shortcuts to quickly add or subtract one ");
         System.out.print("(increment or decrement) to a variable. You ");
@@ -248,7 +236,6 @@ public class APUnit01PrimitiveTypes
         System.out.print("statements to quickly multiply, divide, even ");
         System.out.println("modulus a variable with itself or other ");
         System.out.println("variables. For example:");
-        System.out.println("...");
         
         // Shorthand Compound Arithmetic expressions
         int value = 5;
@@ -269,7 +256,6 @@ public class APUnit01PrimitiveTypes
         Simulator.code("value *= 5; // is the same as \"value = value * 5;\"");
         Simulator.code("value /= 5; // is the same as \"value = value / 5;\"");
         Simulator.code("value %= 5; // is the same as \"value = value % 5;\"");
-        System.out.println("...");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("1.5 Casting and Ranges of Variables");
@@ -295,7 +281,6 @@ public class APUnit01PrimitiveTypes
             //           within the allowed range
         ////////////////////////////////////////////////////////////////////////    
         
-        System.out.println("...");
         System.out.print("Casting is the process of \"converting\" one ");
         System.out.println("data type into another data type. When casting ");
         System.out.print("an double to a int, the decimal portion of the ");
@@ -312,7 +297,6 @@ public class APUnit01PrimitiveTypes
         System.out.println("the limits of the int. If an expression ");
         System.out.print("evaluates an int outside that range, an error ");
         System.out.println("will occur (overflow error). For example:");
-        System.out.println("...");
         
         // Casting data types
         int integer = Integer.MAX_VALUE;
@@ -328,8 +312,7 @@ public class APUnit01PrimitiveTypes
         Simulator.code("doub        = (int)integer;");
         Simulator.code("integer     = (int)doub;");
         Simulator.code("char letter = 'A';");
-        Simulator.code("integer     = (int)letter;");        
-        System.out.println("...");
+        Simulator.code("integer     = (int)letter;"); 
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("AP: Unit 1 (Primitive Types) completed!");

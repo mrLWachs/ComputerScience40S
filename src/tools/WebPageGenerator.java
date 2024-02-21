@@ -15,35 +15,83 @@ import io.FileHandler;
 public class WebPageGenerator 
 {
 
+    private static final String DEFAULT_BACKGROUND_COLOR = "white";
+    private static final String DEFAULT_FONT_FAMILY      = "Consolas";
+    private static final String DEFAULT_FONT_SIZE        = "16pt";
+    private static final String DEFAULT_FONT_STYLE       = "DEFAULT_FONT_STYLE";
+    private static final String DEFAULT_FONT_WEIGHT      = "normal";    
+    private static final String DEFAULT_FONT_COLOR       = "black";
+        
+    private static final String H1_FONT_COLOR  = "green";
+    private static final String H2_FONT_COLOR  = "gray";
+    private static final String PRE_FONT_COLOR = "blue";
+    
+    private static final String H1_FONT_SIZE  = "18pt"; //DEFAULT_FONT_SIZE;
+    private static final String H2_FONT_SIZE  = "17pt"; //DEFAULT_FONT_SIZE;
+    private static final String PRE_FONT_SIZE = DEFAULT_FONT_SIZE;
+    
+    private static final String H1_FONT_FAMILY  = "Lucida Sans Typewriter"; //DEFAULT_FONT_FAMILY;
+    private static final String H2_FONT_FAMILY  = "Courier New"; //DEFAULT_FONT_FAMILY;
+    private static final String PRE_FONT_FAMILY = "Courier New"; //DEFAULT_FONT_FAMILY;
+    
+    private static final String H1_FONT_STYLE  = DEFAULT_FONT_STYLE;
+    private static final String H2_FONT_STYLE  = "italic"; //DEFAULT_FONT_STYLE;
+    private static final String PRE_FONT_STYLE = DEFAULT_FONT_STYLE;
+    
+    private static final String H1_FONT_WEIGHT  = "bold"; //DEFAULT_FONT_WEIGHT;
+    private static final String H2_FONT_WEIGHT  = "600"; //DEFAULT_FONT_WEIGHT;
+    private static final String PRE_FONT_WEIGHT = "lighter"; //DEFAULT_FONT_WEIGHT;
+    
+    
+    
+    private static final String BODY_STYLE = 
+            "  body {"
+                + "background  : " + DEFAULT_BACKGROUND_COLOR + ";"
+                + "font-family : " + DEFAULT_FONT_FAMILY      + ";"
+                + "font-size   : " + DEFAULT_FONT_SIZE        + ";"
+                + "font-style  : " + DEFAULT_FONT_STYLE       + ";"
+                + "font-weight : " + DEFAULT_FONT_WEIGHT      + ";"
+                + "color       : " + DEFAULT_FONT_COLOR       + ";"
+            + "}";
+    
+    private static final String H1_STYLE = 
+            "  h1 {"
+                + "font-family : " + H1_FONT_FAMILY + ";"
+                + "font-size   : " + H1_FONT_SIZE   + ";"
+                + "font-style  : " + H1_FONT_STYLE  + ";"
+                + "font-weight : " + H1_FONT_WEIGHT + ";"
+                + "color       : " + H1_FONT_COLOR  + ";"
+            + "}";
+    
+    private static final String H2_STYLE = 
+            "  h2 {"
+                + "font-family : " + H2_FONT_FAMILY + ";"
+                + "font-size   : " + H2_FONT_SIZE   + ";"
+                + "font-style  : " + H2_FONT_STYLE  + ";"
+                + "font-weight : " + H2_FONT_WEIGHT + ";"
+                + "color       : " + H2_FONT_COLOR  + ";"
+            + "}";
+    
+    private static final String PRE_STYLE =
+            "  pre {"
+                + "font-family : " + PRE_FONT_FAMILY + ";"
+                + "font-size   : " + PRE_FONT_SIZE   + ";"
+                + "font-style  : " + PRE_FONT_STYLE  + ";"
+                + "font-weight : " + PRE_FONT_WEIGHT + ";"
+                + "color       : " + PRE_FONT_COLOR  + ";"
+            + "}";
+    
+            
     private static final String STYLE = 
-        "<style>" +
-            "  body "
-            + "{"
-                + "background  : DarkGray;"
-                + "font-family : Consolas;"
-                + "font-size   : 14pt;"
-            + "}" +
-            "  h1 "
-            + "{"
-                + "font-family : Consolas;"
-                + "font-size   : 14pt;"
-                + "color : blue;"
-            + "}" +
-            "  h2 "
-            + "{"
-                + "font-family : Consolas;"
-                + "font-size   : 14pt;"
-                + "color : green;"
-            + "}" +
-            "  pre "
-            + "{"
-                + "font-family : Courier New;"
-                + "font-size   : 14pt;"
-                + "color : yellow;"
-            + "}" +
-        "</style>";
+            "<style>"  + 
+            BODY_STYLE + 
+            H1_STYLE   + 
+            H2_STYLE   + 
+            PRE_STYLE  + 
+            "</style>";
 
-    private static final String OPEN      = "<html><head>" + STYLE + "</head><body>";
+    private static final String OPEN      = "<html><head>" + STYLE + 
+                                            "</head><body>";
     private static final String CLOSE     = "</body>";
     private static final String BREAK     = "</br />";
     private static final String H1_OPEN   = "<h1>";
