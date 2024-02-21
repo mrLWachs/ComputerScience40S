@@ -57,7 +57,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         System.out.println("to\", and \"not equal to\".");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("3.2 if Statements and Control Flow");  
+        Simulator.header("3.2 if Statements and Control Flow");  
         // (3.2.1) Represent branching logical processes by using conditional 
         //         statements
             // (3.2.1.1) Conditional statements interrupt the sequential 

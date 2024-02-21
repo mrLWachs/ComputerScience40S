@@ -32,7 +32,7 @@ public class APUnit04Iteration
         Simulator.title("AP: Unit 4 (Iteration)");
         
         ////////////////////////////////////////////////////////////////////////
-        Simulator.comment("4.1 while Loops");  
+        Simulator.header("4.1 while Loops");  
         // (4.1.1) Represent iterative processes using a while loop
             // (4.1.1.1) Iteration statements change the flow of control by 
             //           repeating a set of statements zero or more times until

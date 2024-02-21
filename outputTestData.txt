@@ -98,7 +98,7 @@
 98:	the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
 99:	than", "greater than", "less than or equal to", "greater than or equal to", "equal 
 100:	to", and "not equal to".
-101:	// 3.2 if Statements and Control Flow
+101:	3.2 if Statements and Control Flow.........................................................
 102:	A "Conditional Statement" is also known under other names like "branching statement", "if 
 103:	statement", "one-way selection statement", and "control structure". It uses the reserved 
 104:	keyword "if" along with round brackets which contain the Boolean expression, and curly 
@@ -199,7 +199,7 @@
 199:	    // "W1 kind of == W2"
 200:	}
 201:	AP: Unit 4 (Iteration).....................................................................
-202:	// 4.1 while Loops
+202:	4.1 while Loops............................................................................
 203:	The word "Iteration" is another word for "Loop" or "Looping" which is a control 
 204:	struture to have code statements "repeat". Like conditional ("if") statements, iteration 
 205:	statements control the flow of a program's logic. Also like if statements, iteration 
