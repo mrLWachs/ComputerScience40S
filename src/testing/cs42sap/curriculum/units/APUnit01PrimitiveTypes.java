@@ -31,8 +31,11 @@ public class APUnit01PrimitiveTypes
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit01PrimitiveTypes() {
+    public APUnit01PrimitiveTypes(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 1 (Primitive Types)");
         
         ////////////////////////////////////////////////////////////////////////

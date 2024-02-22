@@ -24,12 +24,15 @@ public class Part1
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Part1() {
+    public Part1(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP curriculum - Part 1");
-        new APUnit01PrimitiveTypes();
-        new APUnit03BooleanExpressionsAndIfStatements();
-        new APUnit04Iteration();
+        new APUnit01PrimitiveTypes(shouldRun);
+        new APUnit03BooleanExpressionsAndIfStatements(shouldRun);
+        new APUnit04Iteration(shouldRun);
     }
         
 }

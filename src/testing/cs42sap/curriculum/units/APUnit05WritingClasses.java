@@ -29,8 +29,11 @@ public class APUnit05WritingClasses
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit05WritingClasses() {
+    public APUnit05WritingClasses(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 5 (Writing Classes)");
         
         ////////////////////////////////////////////////////////////////////////

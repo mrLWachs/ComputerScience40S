@@ -24,12 +24,15 @@ public class Part2
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Part2() {
+    public Part2(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP curriculum - Part 2");
-        new APUnit02UsingObjects();
-        new APUnit05WritingClasses();
-        new APUnit09Inheritance();        
+        new APUnit02UsingObjects(shouldRun);
+        new APUnit05WritingClasses(!shouldRun);
+        new APUnit09Inheritance(!shouldRun);        
     }
         
 }

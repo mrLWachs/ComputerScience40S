@@ -18,13 +18,16 @@ public class CurriculumContentCS42SAP
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public CurriculumContentCS42SAP() {
+    public CurriculumContentCS42SAP(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Computer Science 42SAP curriculum content");         
-        new Part1();
-        new Part2();
-        new Part3();
-        new Part4();
+        new Part1(shouldRun);
+        new Part2(shouldRun);
+        new Part3(!shouldRun);
+        new Part4(!shouldRun);
     }
     
 }

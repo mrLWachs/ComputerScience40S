@@ -25,7 +25,7 @@ public class Tester
         Simulator.initialize();
         Simulator.title("Mr. Wachs Computer Science");
         new PreCourseContent(false);        
-        new ComputerScience42SAP();        
+        new ComputerScience42SAP(true);        
         new PostCourseContent(false);
         Simulator.saveOutput();
     }

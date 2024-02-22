@@ -26,8 +26,11 @@ public class APUnit10Recursion
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit10Recursion() {
+    public APUnit10Recursion(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 10 (Recursion )");
         
         ////////////////////////////////////////////////////////////////////////

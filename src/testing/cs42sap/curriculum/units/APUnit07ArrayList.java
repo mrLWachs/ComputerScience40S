@@ -28,8 +28,11 @@ public class APUnit07ArrayList
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit07ArrayList() {
+    public APUnit07ArrayList(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 7 (Array List)");
         
         ////////////////////////////////////////////////////////////////////////

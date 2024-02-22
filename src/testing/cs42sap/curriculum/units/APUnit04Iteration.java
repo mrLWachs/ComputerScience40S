@@ -27,8 +27,11 @@ public class APUnit04Iteration
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit04Iteration() {
+    public APUnit04Iteration(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 4 (Iteration)");
         
         ////////////////////////////////////////////////////////////////////////

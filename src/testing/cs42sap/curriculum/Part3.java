@@ -22,11 +22,14 @@ public class Part3
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Part3() {
+    public Part3(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP curriculum - Part 3");
-        new APUnit06Arrays();
-        new APUnit082DArrays();        
+        new APUnit06Arrays(shouldRun);
+        new APUnit082DArrays(shouldRun);        
     }
         
 }

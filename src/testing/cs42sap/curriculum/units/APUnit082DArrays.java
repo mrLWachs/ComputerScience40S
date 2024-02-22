@@ -25,8 +25,11 @@ public class APUnit082DArrays
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public APUnit082DArrays() {
+    public APUnit082DArrays(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("AP: Unit 8 (2D Arrays)");
         
         ////////////////////////////////////////////////////////////////////////
