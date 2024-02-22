@@ -673,10 +673,12 @@ public class ComputerScience30S
 //      error and a potential fix (if you click on the lightbulb)
 // (11) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
-//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
-//      this (uncomment then copy the lines below) into the temple (and replace
-//      what is there with this by pasting it):
+// (12) To make projects easier and automate some tasks, go to 
+//      Tools -> Templates, scroll down and click on the ">" beside "Java", 
+//      select "Java Main Class", and "Open in Editor" and the enter 
+//      the text below (by uncommenting it, then copying it, and pasting it 
+//      into the temple (first delete all the text in the template and then 
+//      replace what is there with this by pasting it):
 //
 ///** Required package class namespace */
 //package ${package};
@@ -707,10 +709,11 @@ public class ComputerScience30S
 //      code with mouse or keyboard (if you select nothing it will autoformat
 //      all the code) and pres ALT + SHIFT + F (you should do this before you 
 //      hand in your code)
-// (14) When printing code for hand in in NetBeans (after the code is cleaned up
-//      and ready) go to File -> Print to HTML... and then use the dialog
-//      box to select a location you can find the HTML file, give it a good
-//      name (with your name in the file name).
+// (14) When printing code for hand in, when in NetBeans (after the code is 
+//      cleaned up and ready - see tip 13) go to File -> Print to HTML... and 
+//      then use the dialog box that appears to select a location you can find 
+//      the HTML file, and give the file you are saving a good name (with your 
+//      name in the file name). Then use the hand in page to hand in the files
 // (15) You can "teach" NetBeans to change the style it uses to autoformat (see
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
