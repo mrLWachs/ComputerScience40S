@@ -13,7 +13,7 @@ import testing.cs40s.ComputerScience40S;
  * @author Mr. Wachs
  * @since Feb 12, 2024, 2:25:50 p.m.
  */
-public class PreCourseContent 
+public class PrerequisiteContent 
 {
 
     /**
@@ -21,12 +21,12 @@ public class PreCourseContent
      * 
      * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public PreCourseContent(boolean shouldRun) {
+    public PrerequisiteContent(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Computer Science 42SAP pre-course content not running");
+            Simulator.note("Computer Science 42SAP prerequisite content not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP pre-course content"); 
+        Simulator.title("Computer Science 42SAP prerequisite content:"); 
         new ComputerScience30S(shouldRun);
         new ComputerScience40S(shouldRun);
     }

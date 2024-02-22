@@ -19,7 +19,7 @@ import testing.cs42sap.bonus.TreesTest;
  * @author Mr. Wachs
  * @since June 2023
  */
-public class PostCourseContent 
+public class PostSecondaryContent 
 {
 
     /**
@@ -27,7 +27,7 @@ public class PostCourseContent
      * 
      * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public PostCourseContent(boolean shouldRun) {
+    public PostSecondaryContent(boolean shouldRun) {
         if (!shouldRun) {
             Simulator.note("Computer Science 42SAP bonus content not running");
             return;

@@ -5,8 +5,8 @@ package testing;
 /** Required API imports */
 import io.Simulator;
 import testing.cs42sap.ComputerScience42SAP;
-import testing.cs42sap.PostCourseContent;
-import testing.cs42sap.PreCourseContent;
+import testing.cs42sap.PostSecondaryContent;
+import testing.cs42sap.PrerequisiteContent;
 
 
 /**
@@ -24,9 +24,9 @@ public class Tester
     public Tester() {
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PreCourseContent(false);        
+        new PrerequisiteContent(false);        
         new ComputerScience42SAP(true);        
-        new PostCourseContent(false);
+        new PostSecondaryContent(false);
         Simulator.saveOutput();
     }
     
