@@ -31,6 +31,7 @@ public class APUnit10Recursion
      */
     public APUnit10Recursion(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 10 (Recursion )");
         
         ////////////////////////////////////////////////////////////////////////

@@ -33,6 +33,7 @@ public class APUnit07ArrayList
      */
     public APUnit07ArrayList(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 7 (Array List)");
         
         ////////////////////////////////////////////////////////////////////////

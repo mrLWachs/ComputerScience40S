@@ -36,6 +36,7 @@ public class APUnit01PrimitiveTypes
      */
     public APUnit01PrimitiveTypes(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 1 (Primitive Types)");
         
         ////////////////////////////////////////////////////////////////////////

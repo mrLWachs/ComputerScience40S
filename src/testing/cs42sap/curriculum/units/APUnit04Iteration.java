@@ -32,6 +32,7 @@ public class APUnit04Iteration
      */
     public APUnit04Iteration(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 4 (Iteration)");
         
         ////////////////////////////////////////////////////////////////////////

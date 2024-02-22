@@ -33,6 +33,7 @@ public class APUnit09Inheritance
      */
     public APUnit09Inheritance(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 9 (Inheritance)");
         
         ////////////////////////////////////////////////////////////////////////

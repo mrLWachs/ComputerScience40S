@@ -4,6 +4,7 @@ package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import io.Simulator;
+import io.System;
 
  
 /**
@@ -34,6 +35,7 @@ public class APUnit02UsingObjects
      */
     public APUnit02UsingObjects(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.header("AP: Unit 2 (Using Objects) started...");
         
         ////////////////////////////////////////////////////////////////////////
@@ -54,9 +56,9 @@ public class APUnit02UsingObjects
         System.out.print("terms used for this vary but all revolve around ");
         System.out.println("the same concepts. The term \"object\" can ");
         System.out.print("also be called a \"instance\" of the class. The ");
-        System.out.println("term \"properties\" can also be called \"things ");
-        System.out.print("about the class\", or \"descriptors\", or ");
-        System.out.println("\"adjectives\", or \"fields\". ");
+        System.out.println("term \"properties\" can also be called  ");
+        System.out.print("\"things about the class\", or \"descriptors\", ");
+        System.out.println("or \"adjectives\", or \"fields\". ");
 
         
         ////////////////////////////////////////////////////////////////////////

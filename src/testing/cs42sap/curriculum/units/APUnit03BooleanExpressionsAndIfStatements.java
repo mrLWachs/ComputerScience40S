@@ -33,6 +33,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
      */
     public APUnit03BooleanExpressionsAndIfStatements(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 3 (Boolean Expressions And If Statements)");
         
         ////////////////////////////////////////////////////////////////////////

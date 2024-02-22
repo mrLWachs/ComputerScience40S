@@ -34,6 +34,7 @@ public class APUnit05WritingClasses
      */
     public APUnit05WritingClasses(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 5 (Writing Classes)");
         
         ////////////////////////////////////////////////////////////////////////

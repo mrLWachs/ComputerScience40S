@@ -33,6 +33,7 @@ public class APUnit06Arrays
      */
     public APUnit06Arrays(boolean shouldRun) {
         if (!shouldRun) return;
+        
         Simulator.title("AP: Unit 6 (Arrays)");
         
         ////////////////////////////////////////////////////////////////////////
