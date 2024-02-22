@@ -675,7 +675,8 @@ public class ComputerScience30S
 //      Help -> Keyboard Shortcuts Card
 // (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
 //      "Java", select "Java Main Class", and "Open in Editor" and the enter 
-//      this into the temple (replace what is there with this):
+//      this (uncomment then copy the lines below) into the temple (and replace
+//      what is there with this by pasting it):
 //
 ///** Required package class namespace */
 //package ${package};
