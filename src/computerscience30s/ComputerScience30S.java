@@ -675,27 +675,41 @@ public class ComputerScience30S
 //      Help -> Keyboard Shortcuts Card
 // (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
 //      "Java", select "Java Main Class", and "Open in Editor" and the enter 
-//      this into the temple (but use the slash "/" instead of "|"):
+//      this into the temple (replace what is there with this):
 //
-//      /** 
-//       * ${name}.java - 
-//       *
-//       * @author Mr. Wachs 
-//       * @since ${date} 
-//       */
-//      public class ${name} 
-//       { .... etc .....     
+///** Required package class namespace */
+//package ${package};
+//
+//
+///*
+// * ${name} - description
+// * 
+// * @author YOUR NAME
+// * @since ${date}
+//*/
+//public class ${name}
+//{
+//
+//    /**
+//     * Main method for the project
+//     * 
+//     * @param args the command line arguments
+//     */
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        
+//    }
+//
+//}
 //
 // (13) To autoformat code (fixes indents, extra spaces, etc.) you select the
 //      code with mouse or keyboard (if you select nothing it will autoformat
 //      all the code) and pres ALT + SHIFT + F (you should do this before you 
 //      hand in your code)
-// (14) When printing code for hand in (this only needs to be done once), click
-//      on "Print Options" and uncheck everything previously checked off, and
-//      then check off "Print as in Editor", then either print it to a PDF 
-//      (which means select "Microsoft Print to PDF" on the next screen), or
-//      cancel and resize the code to fit better (see tip #1) and then print 
-//      again
+// (14) When printing code for hand in in NetBeans (after the code is cleaned up
+//      and ready) go to File -> Print to HTML... and then use the dialog
+//      box to select a location you can find the HTML file, give it a good
+//      name (with your name in the file name).
 // (15) You can "teach" NetBeans to change the style it uses to autoformat (see
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
