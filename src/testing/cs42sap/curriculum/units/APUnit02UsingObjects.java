@@ -36,8 +36,6 @@ public class APUnit02UsingObjects
         if (!shouldRun) return;
         Simulator.header("AP: Unit 2 (Using Objects) started...");
         
-        
-        
         ////////////////////////////////////////////////////////////////////////
         Simulator.comment("2.1 Objects: Instances of Classes");  
         // (2.1.1) Explain the relationship between a class and an object
