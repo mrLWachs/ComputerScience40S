@@ -17,8 +17,6 @@ import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JTextArea;
-//import javax.swing.JOptionPane;
-
 
  
 /**

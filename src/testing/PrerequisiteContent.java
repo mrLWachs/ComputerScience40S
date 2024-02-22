@@ -2,7 +2,9 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import utility.io.Simulator;
+import testing.prerequisite.cs20s.ComputerScience20S;
 import testing.prerequisite.cs30s.ComputerScience30S;
 import testing.prerequisite.cs40s.ComputerScience40S;
 
@@ -27,6 +29,7 @@ public class PrerequisiteContent
             return;
         }
         Simulator.title("Computer Science 42SAP Prerequisite Content:"); 
+        new ComputerScience20S(shouldRun);
         new ComputerScience30S(shouldRun);
         new ComputerScience40S(shouldRun);
     }
