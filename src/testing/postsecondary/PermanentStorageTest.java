@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.bonus;
+package testing.postsecondary;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -56,10 +56,10 @@ public class PermanentStorageTest
      */
     public PermanentStorageTest(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Permanent Storage Bonus Content not running");
+            Simulator.note("Permanent Storage Post Secondary Content not running");
             return;
         }
-        Simulator.title("Permanent Storage Bonus Content:");
+        Simulator.title("Permanent Storage Post Secondary Content:");
 
         // Learn about "error traps"...........................................   
         Simulator.comment("Learn about 'error traps'");

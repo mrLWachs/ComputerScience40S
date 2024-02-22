@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.bonus;
+package testing.postsecondary;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -28,10 +28,10 @@ public class StacksQueuesTest
      */
     public StacksQueuesTest(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Stacks and Queues Bonus Content not running");
+            Simulator.note("Stacks and Queues Post Secondary Content not running");
             return;
         }
-        Simulator.title("Stacks and Queues Bonus Content:");
+        Simulator.title("Stacks and Queues Post Secondary Content:");
         
         // Create some objects for testing.....................................
         Simulator.comment("Create objects for testing...");

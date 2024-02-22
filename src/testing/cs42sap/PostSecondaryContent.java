@@ -4,10 +4,10 @@ package testing.cs42sap;
 
 /** Required API imports */
 import io.Simulator;
-import testing.cs42sap.bonus.PermanentStorageTest;
-import testing.cs42sap.bonus.SearchSortTest;
-import testing.cs42sap.bonus.StacksQueuesTest;
-import testing.cs42sap.bonus.TreesTest;
+import testing.postsecondary.PermanentStorageTest;
+import testing.postsecondary.SearchSortTest;
+import testing.postsecondary.StacksQueuesTest;
+import testing.postsecondary.TreesTest;
 
  
 /**
@@ -29,10 +29,10 @@ public class PostSecondaryContent
      */
     public PostSecondaryContent(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Computer Science 42SAP bonus content not running");
+            Simulator.note("Computer Science 42SAP Post Secondary not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP bonus content");         
+        Simulator.title("Computer Science 42SAP Post Secondary content");         
         new PermanentStorageTest(shouldRun);
         new StacksQueuesTest(shouldRun);
         new SearchSortTest(shouldRun);   

@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.bonus;
+package testing.postsecondary;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -28,10 +28,10 @@ public class SearchSortTest
      */
     public SearchSortTest(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Searching and Sorting Bonus Content not running");
+            Simulator.note("Searching and Sorting Post Secondary Content not running");
             return;
         }
-        Simulator.title("Searching and Sorting Bonus Content:");
+        Simulator.title("Searching and Sorting Post Secondary Content:");
                 
         // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");

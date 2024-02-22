@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.bonus;
+package testing.postsecondary;
 
 /** Required API imports */
 import collections.BinaryTree;
@@ -30,10 +30,10 @@ public class TreesTest
      */
     public TreesTest(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Binary Trees Bonus Content not running");
+            Simulator.note("Binary Trees Post Secondary Content not running");
             return;
         }
-        Simulator.title("Binary Trees Bonus Content:");
+        Simulator.title("Binary Trees Post Secondary Content:");
                 
         // Constants/variables for creating random values......................
         Simulator.comment("Constants/variables for creating random values..."); 
