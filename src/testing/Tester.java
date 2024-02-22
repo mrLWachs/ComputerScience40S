@@ -3,10 +3,7 @@
 package testing;
 
 /** Required API imports */
-import io.Simulator;
-import testing.cs42sap.ComputerScience42SAP;
-import testing.cs42sap.PostSecondaryContent;
-import testing.cs42sap.PrerequisiteContent;
+import utility.io.Simulator;
 
 
 /**

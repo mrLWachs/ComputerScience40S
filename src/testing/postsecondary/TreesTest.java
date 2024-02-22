@@ -3,15 +3,15 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import collections.BinaryTree;
-import collections.LinkedList;
-import collections.Queue;
-import collections.Stack;
-import collections.TreeNode;
-import io.Simulator;
-import tools.Numbers;
-import tools.Text;
-import io.System;
+import utility.collections.BinaryTree;
+import utility.collections.LinkedList;
+import utility.collections.Queue;
+import utility.collections.Stack;
+import utility.collections.TreeNode;
+import utility.io.Simulator;
+import utility.tools.Numbers;
+import utility.tools.Text;
+import utility.io.System;
 
 
 /**

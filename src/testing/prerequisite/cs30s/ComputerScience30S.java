@@ -9,9 +9,9 @@ package testing.prerequisite.cs30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
-import io.JOptionPane;
-import io.Simulator;
-import io.System;
+import utility.io.JOptionPane;
+import utility.io.Simulator;
+import utility.io.System;
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.Icon;

@@ -3,8 +3,8 @@
 package testing.prerequisite.cs40s;
 
 /** Required API imports */
-import tools.Calculator;
-import io.System;
+import utility.tools.Calculator;
+import utility.io.System;
 
 
 /** 

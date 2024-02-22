@@ -3,13 +3,13 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import collections.LinkedList;
-import collections.Queue;
-import collections.Stack;
-import io.Simulator;
+import utility.collections.LinkedList;
+import utility.collections.Queue;
+import utility.collections.Stack;
+import utility.io.Simulator;
 import testing.prerequisite.cs40s.advancedclasses.Box;
-import tools.Text;
-import io.System;
+import utility.tools.Text;
+import utility.io.System;
 
 
 /**

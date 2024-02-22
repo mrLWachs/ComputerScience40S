@@ -4,8 +4,8 @@ package testing.prerequisite.cs40s;
 
 /** Required API imports */
 //import javax.swing.JOptionPane;
-import io.JOptionPane;
-import io.System;
+import utility.io.JOptionPane;
+import utility.io.System;
 import testing.prerequisite.cs40s.advancedclasses.Apple;
 import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import testing.prerequisite.cs40s.advancedclasses.Box;

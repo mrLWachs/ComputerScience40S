@@ -3,12 +3,12 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import collections.LinkedList;
-import io.Dialogs;
-import io.FileHandler;
-import io.JFileChooser;
-import io.Simulator;
-import io.System;
+import utility.collections.LinkedList;
+import utility.io.Dialogs;
+import utility.io.FileHandler;
+import utility.io.JFileChooser;
+import utility.io.Simulator;
+import utility.io.System;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -16,8 +16,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import testing.prerequisite.cs40s.advancedclasses.Athlete;
-import tools.Numbers;
-import tools.Text;
+import utility.tools.Numbers;
+import utility.tools.Text;
 
 
 /**

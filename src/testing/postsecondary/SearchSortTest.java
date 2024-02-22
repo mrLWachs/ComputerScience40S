@@ -3,14 +3,14 @@
 package testing.postsecondary;
 
 /** Required API imports */
-import collections.LinkedList;
-import io.Simulator;
-import tools.Numbers;
-import tools.Results;
-import tools.Search;
-import tools.Sort;
-import tools.Text;
-import io.System;
+import utility.collections.LinkedList;
+import utility.io.Simulator;
+import utility.tools.Numbers;
+import utility.tools.Results;
+import utility.tools.Search;
+import utility.tools.Sort;
+import utility.tools.Text;
+import utility.io.System;
 
 /**
  * SearchSortTest.java - tests the concepts learned in this unit

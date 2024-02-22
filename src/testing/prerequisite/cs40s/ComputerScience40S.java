@@ -3,7 +3,7 @@
 package testing.prerequisite.cs40s;
 
 /** Required API imports */
-import io.Simulator;
+import utility.io.Simulator;
 
 
 /**
