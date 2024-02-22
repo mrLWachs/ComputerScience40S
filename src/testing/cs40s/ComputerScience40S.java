@@ -28,8 +28,11 @@ public class ComputerScience40S
 
     /**
      * Default constructor for the class, sets class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public ComputerScience40S() {
+    public ComputerScience40S(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Computer Science 40S"); 
         RecursionTest       unit1 = new RecursionTest(); 
         AdvancedClassesTest unit2 = new AdvancedClassesTest(); 

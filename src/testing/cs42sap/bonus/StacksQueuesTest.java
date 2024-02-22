@@ -23,8 +23,11 @@ public class StacksQueuesTest
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public StacksQueuesTest() {
+    public StacksQueuesTest(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Stacks and Queues");
         
         // Create some objects for testing.....................................

@@ -23,8 +23,11 @@ public class SearchSortTest
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public SearchSortTest() {
+    public SearchSortTest(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Searching and Sorting");
                 
         // For the I.B. Exam, you only need to know.............................

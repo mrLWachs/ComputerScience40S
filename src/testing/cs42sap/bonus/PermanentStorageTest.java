@@ -52,8 +52,11 @@ public class PermanentStorageTest
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false
      */
-    public PermanentStorageTest() {
+    public PermanentStorageTest(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Permanent Storage Test");
 
         // Learn about "error traps"...........................................   

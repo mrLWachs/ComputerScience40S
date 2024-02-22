@@ -40,8 +40,11 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
                 
     /**
      * Default class constructor, runs on instantiation
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public ComputerScience30S() {
+    public ComputerScience30S(boolean shouldRun) {
+        if (!shouldRun) return;
         Simulator.title("Computer Science 30S");
 //        System.out.println("\nComputer Science 30S Example started...\n");
         ////////////////////////////////////////////////////////////////////////
