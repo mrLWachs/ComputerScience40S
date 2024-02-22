@@ -468,10 +468,9 @@ public class Sort <T extends Comparable<T>>
      * ascending order. 
      * 
      * @param array the array of generic items to sort
-     * @return a sorted array
      */
-    public T[] heap(T[] array) {
-        if (array == null) return null;                         // Error check
+    public void heap(T[] array) {
+        if (array == null) return;                         // Error check
         int length = array.length;
         for (int i = length / 2 - 1; i >= 0; i--) {
             heapify(array, length, i);      // Build heap (rearrange array)
@@ -482,7 +481,6 @@ public class Sort <T extends Comparable<T>>
             array[i] = temp;
             heapify(array, i, 0);       // Call max heapify on the reduced heap
         }
-        return array;
     } 
 
     /**
@@ -516,10 +514,9 @@ public class Sort <T extends Comparable<T>>
      * ascending order. 
      * 
      * @param list the LinkedList to sort
-     * @return a sorted list
      */
-    public LinkedList<T> heap(LinkedList<T> list) {
-        if (list == null) return null;                       // error check
+    public void heap(LinkedList<T> list) {
+        if (list == null) return;                       // error check
         int length = list.size();
         for (int i = length / 2 - 1; i >= 0; i--) {
             heapify(list, length, i);      // Build heap (rearrange list)
@@ -530,7 +527,6 @@ public class Sort <T extends Comparable<T>>
             list.set(i, temp);
             heapify(list, i, 0);       // Call max heapify on the reduced heap
         }
-        return list;
     } 
  
     /**
