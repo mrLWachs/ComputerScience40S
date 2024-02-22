@@ -456,8 +456,59 @@ called "things about the class", or "descriptors", or "adjectives", or
 <pre>    }</pre>
 <pre>}</pre>
 <h2>2.2 Creating and Storing Objects (Instantiation)...........................................</h2>
-...
+Methods are a way to break up code into logic modules and it also provides a way to avoid 
 </br />
+repeating code and be able to reuse sections of code logic. You can think of methods as 
+</br />
+analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
+</br />
+"functions" in math that may take a variable "input" and generate an "answer".  The term 
+</br />
+"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
+</br />
+method that is passed to the method. The value(s) passed are called "argument(s)". When you 
+</br />
+define the method in the method "signature" line, the round brackets can contain 
+</br />
+parameters separated by comma (if needed). A method may also give an "output" in the form 
+</br />
+of its "return" value (which also might not be needed, in which case it is a "void" method).
+</br />
+A method is "overloaded" if you have more than one method with the exact same name but 
+</br />
+different parameters. Classes have "constructor" methods that are called when 
+</br />
+a class is instantiated into an object. Constructor methods do not have a return type 
+</br />
+(not even the keyword "void"). They must have the exact same name as the class (including a 
+</br />
+capital letter). They are used to set the properties of the class to starting (or 
+</br />
+"default") values. If a class has multiple constructor methods, they are said to be 
+</br />
+overloaded constructors. When a line of code is used to instantiate a class into an instance 
+</br />
+of that class, the line includes the name of the class, the identifier name of the object, 
+</br />
+then an equals ("="), then the keyword "new" (which allots new memory for this 
+</br />
+advanced data type), then a call to a constructor method. If not constructor method 
+</br />
+is called, then the object references a "null" value until such time it is given a value to 
+</br />
+reference.
+</br />
+<pre class="comment">// Example of a class with constructors and instantiation</pre>
+<pre>class Person {</pre>
+<pre>    Person() {</pre>
+<pre>        // code logic</pre>
+<pre>    }</pre>
+<pre>    Person(int age) {</pre>
+<pre>        // code logic</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<pre>Person person1 = new Person();</pre>
+<pre>Person person2 = new Person(5);</pre>
 <h2>2.3 Calling a Void Method..................................................................</h2>
 ...
 </br />

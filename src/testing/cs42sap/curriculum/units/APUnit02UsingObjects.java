@@ -130,7 +130,72 @@ public class APUnit02UsingObjects
             //           the referenced object
         ////////////////////////////////////////////////////////////////////////
                 
-        System.out.println("...");
+        System.out.print("Methods are a way to break up code into logic ");
+        System.out.println("modules and it also provides a way to avoid ");
+        System.out.print("repeating code and be able to reuse sections of ");
+        System.out.println("code logic. You can think of methods as ");
+        System.out.print("analogous to \"machines\" that perform \"actions\" ");
+        System.out.println("and you can reuse. They are also analogous to ");
+        System.out.print("\"functions\" in math that may take a variable ");
+        System.out.println("\"input\" and generate an \"answer\".  The term ");
+        System.out.print("\"parameter\" (and you may have zero, one, or more ");
+        System.out.println("than one) is the \"input\" (if needed) to a ");
+        System.out.print("method that is passed to the method. The value(s) ");
+        System.out.println("passed are called \"argument(s)\". When you ");
+        System.out.print("define the method in the method \"signature\" ");
+        System.out.println("line, the round brackets can contain ");
+        System.out.print("parameters separated by comma (if needed). A ");
+        System.out.println("method may also give an \"output\" in the form ");
+        System.out.print("of its \"return\" value (which also might not ");
+        System.out.println("be needed, in which case it is a \"void\" method).");        
+        System.out.print("A method is \"overloaded\" if you have more ");
+        System.out.println("than one method with the exact same name but ");
+        System.out.print("different parameters. Classes have ");
+        System.out.println("\"constructor\" methods that are called when ");
+        System.out.print("a class is instantiated into an object. ");
+        System.out.println("Constructor methods do not have a return type ");
+        System.out.print("(not even the keyword \"void\"). They must have ");
+        System.out.println("the exact same name as the class (including a ");
+        System.out.print("capital letter). They are used to set the ");
+        System.out.println("properties of the class to starting (or ");
+        System.out.print("\"default\") values. If a class has multiple ");
+        System.out.println("constructor methods, they are said to be ");
+        System.out.print("overloaded constructors. When a line of code ");
+        System.out.println("is used to instantiate a class into an instance ");
+        System.out.print("of that class, the line includes the name of ");
+        System.out.println("the class, the identifier name of the object, ");
+        System.out.print("then an equals (\"=\"), then the keyword ");
+        System.out.println("\"new\" (which allots new memory for this ");
+        System.out.print("advanced data type), then a call to a ");
+        System.out.println("constructor method. If not constructor method ");
+        System.out.print("is called, then the object references a \"null\" ");
+        System.out.println("value until such time it is given a value to ");
+        System.out.println("reference.");
+        
+        // Example of a class with constructors and instantiation
+        // class Person {
+        //     Person() {
+        //         // code logic
+        //     }
+        //     Person(int age) {
+        //         // code logic
+        //     }
+        // }
+        // 
+        // Person person1 = new Person();
+        // Person person2 = new Person(5);
+        
+        Simulator.comment("Example of a class with constructors and instantiation");
+        Simulator.code("class Person {");
+        Simulator.code("    Person() {");
+        Simulator.code("        // code logic");
+        Simulator.code("    }");
+        Simulator.code("    Person(int age) {");
+        Simulator.code("        // code logic");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("Person person1 = new Person();");
+        Simulator.code("Person person2 = new Person(5);");        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.3 Calling a Void Method");  
