@@ -28,7 +28,10 @@ public class Part2
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public Part2(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP curriculum - Part 2 not running");
+            return;
+        };
         Simulator.title("AP curriculum - Part 2");
         new APUnit02UsingObjects(shouldRun);
         new APUnit05WritingClasses(!shouldRun);

@@ -35,7 +35,10 @@ public class APUnit01PrimitiveTypes
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit01PrimitiveTypes(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 1 (Primitive Types) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 1 (Primitive Types)");
         

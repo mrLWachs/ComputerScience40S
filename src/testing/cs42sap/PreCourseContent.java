@@ -22,7 +22,10 @@ public class PreCourseContent
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public PreCourseContent(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("Computer Science 42SAP pre-course content not running");
+            return;
+        }
         Simulator.title("Computer Science 42SAP pre-course content"); 
         new ComputerScience30S(shouldRun);
         new ComputerScience40S(shouldRun);

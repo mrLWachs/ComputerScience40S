@@ -32,7 +32,10 @@ public class APUnit07ArrayList
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit07ArrayList(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 7 (Array List) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 7 (Array List)");
         

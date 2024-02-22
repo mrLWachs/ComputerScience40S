@@ -55,8 +55,11 @@ public class PermanentStorageTest
      * @param shouldRun determines if this test should run (true) or not (false
      */
     public PermanentStorageTest(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Permanent Storage Test");
+        if (!shouldRun) {
+            Simulator.note("Permanent Storage Bonus Content not running");
+            return;
+        }
+        Simulator.title("Permanent Storage Bonus Content:");
 
         // Learn about "error traps"...........................................   
         Simulator.comment("Learn about 'error traps'");

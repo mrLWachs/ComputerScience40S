@@ -260,6 +260,22 @@ public class Simulator
     }
     
     /**
+     * Simulates the 'Printing' of an object but uses a note style of
+     * formatting
+     *
+     * @param object The Object type to be 'printed'
+     */
+    public static void note(Object object) {
+        if (object == null)  return; 
+        String text = object.toString();        
+        int length = text.length();
+        text += line(length);        
+        colorOutput(text, CYAN, RESET);
+        lineBreak();
+        WebPage.addH3(text);
+    }
+    
+    /**
      * Simulates the 'Printing' of an object but uses a header style of
      * formatting
      *
@@ -556,6 +572,6 @@ public class Simulator
     public static void initialize() {
         WebPage.initialize(WEB_PAGE_FILENAME);
     }
-    
+
 }
 

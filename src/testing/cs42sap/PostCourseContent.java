@@ -28,7 +28,10 @@ public class PostCourseContent
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public PostCourseContent(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("Computer Science 42SAP bonus content not running");
+            return;
+        }
         Simulator.title("Computer Science 42SAP bonus content");         
         new PermanentStorageTest(shouldRun);
         new StacksQueuesTest(shouldRun);

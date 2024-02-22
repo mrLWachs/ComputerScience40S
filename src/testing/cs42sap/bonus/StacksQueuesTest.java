@@ -27,8 +27,11 @@ public class StacksQueuesTest
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public StacksQueuesTest(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Stacks and Queues");
+        if (!shouldRun) {
+            Simulator.note("Stacks and Queues Bonus Content not running");
+            return;
+        }
+        Simulator.title("Stacks and Queues Bonus Content:");
         
         // Create some objects for testing.....................................
         Simulator.comment("Create objects for testing...");

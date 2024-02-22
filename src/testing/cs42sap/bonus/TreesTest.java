@@ -29,8 +29,11 @@ public class TreesTest
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public TreesTest(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Binary Trees");
+        if (!shouldRun) {
+            Simulator.note("Binary Trees Bonus Content not running");
+            return;
+        }
+        Simulator.title("Binary Trees Bonus Content:");
                 
         // Constants/variables for creating random values......................
         Simulator.comment("Constants/variables for creating random values..."); 

@@ -32,7 +32,10 @@ public class APUnit06Arrays
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit06Arrays(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 6 (Arrays) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 6 (Arrays)");
         

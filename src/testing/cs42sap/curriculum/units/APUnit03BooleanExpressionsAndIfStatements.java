@@ -32,7 +32,10 @@ public class APUnit03BooleanExpressionsAndIfStatements
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit03BooleanExpressionsAndIfStatements(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 3 (Boolean Expressions And If Statements) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 3 (Boolean Expressions And If Statements)");
         

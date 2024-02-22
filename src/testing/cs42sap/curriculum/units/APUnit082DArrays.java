@@ -29,7 +29,10 @@ public class APUnit082DArrays
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit082DArrays(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 8 (2D Arrays) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 8 (2D Arrays)");
         

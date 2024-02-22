@@ -25,8 +25,11 @@ public class ComputerScience42SAP
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public ComputerScience42SAP(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Computer Science 42SAP starting...");         
+        if (!shouldRun) {
+            Simulator.note("Computer Science 42SAP course content not running");
+            return;
+        }
+        Simulator.title("Computer Science 42SAP Course:");         
         new CurriculumContentCS42SAP(shouldRun);
     }
     

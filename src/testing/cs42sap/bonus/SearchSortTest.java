@@ -27,8 +27,11 @@ public class SearchSortTest
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public SearchSortTest(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Searching and Sorting");
+        if (!shouldRun) {
+            Simulator.note("Searching and Sorting Bonus Content not running");
+            return;
+        }
+        Simulator.title("Searching and Sorting Bonus Content:");
                 
         // For the I.B. Exam, you only need to know.............................
         Simulator.comment("For the I.B. Exam, you only need to know:");

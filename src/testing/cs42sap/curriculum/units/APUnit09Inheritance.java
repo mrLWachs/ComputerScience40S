@@ -32,7 +32,10 @@ public class APUnit09Inheritance
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit09Inheritance(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 9 (Inheritance) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 9 (Inheritance)");
         

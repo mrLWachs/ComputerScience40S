@@ -28,7 +28,10 @@ public class Part1
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public Part1(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP curriculum - Part 1 not running");
+            return;
+        };
         Simulator.title("AP curriculum - Part 1");
         new APUnit01PrimitiveTypes(shouldRun);
         new APUnit03BooleanExpressionsAndIfStatements(shouldRun);

@@ -31,7 +31,10 @@ public class APUnit04Iteration
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit04Iteration(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 4 (Iteration) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 4 (Iteration)");
         

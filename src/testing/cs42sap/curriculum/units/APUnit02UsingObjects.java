@@ -34,7 +34,10 @@ public class APUnit02UsingObjects
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit02UsingObjects(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 2 (Using Objects)");
+            return;
+        };
         
         Simulator.title("AP: Unit 2 (Using Objects)");
         

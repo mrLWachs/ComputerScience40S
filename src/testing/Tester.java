@@ -23,7 +23,7 @@ public class Tester
      */
     public Tester() {
         Simulator.initialize();
-        Simulator.title("Mr. Wachs Computer Science");
+        Simulator.title("Mr. Wachs' Computer Science Classes");
         new PreCourseContent(false);        
         new ComputerScience42SAP(true);        
         new PostCourseContent(false);

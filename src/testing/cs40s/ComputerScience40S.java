@@ -32,8 +32,12 @@ public class ComputerScience40S
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public ComputerScience40S(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Computer Science 40S"); 
+        if (!shouldRun) {
+            Simulator.note("Computer Science 40S course content not running");
+            return;
+        } 
+        
+        Simulator.title("Computer Science 40S Course:"); 
         RecursionTest       unit1 = new RecursionTest(); 
         AdvancedClassesTest unit2 = new AdvancedClassesTest(); 
         CollectionsTest     unit3 = new CollectionsTest();   

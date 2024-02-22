@@ -33,7 +33,10 @@ public class APUnit05WritingClasses
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit05WritingClasses(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 5 (Writing Classes) not running");
+            return;
+        };
         
         Simulator.title("AP: Unit 5 (Writing Classes)");
         

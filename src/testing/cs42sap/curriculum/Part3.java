@@ -26,7 +26,10 @@ public class Part3
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public Part3(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP curriculum - Part 3 not running");
+            return;
+        };
         Simulator.title("AP curriculum - Part 3");
         new APUnit06Arrays(shouldRun);
         new APUnit082DArrays(shouldRun);        

@@ -44,8 +44,12 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public ComputerScience30S(boolean shouldRun) {
-        if (!shouldRun) return;
-        Simulator.title("Computer Science 30S");
+        if (!shouldRun) {
+            Simulator.note("Computer Science 30S course content not running");
+            return;
+        }
+        
+        Simulator.title("Computer Science 30S Course:");
 //        System.out.println("\nComputer Science 30S Example started...\n");
         ////////////////////////////////////////////////////////////////////////
         // Other code added later in the course to provide a menu of choices

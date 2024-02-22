@@ -30,9 +30,12 @@ public class APUnit10Recursion
      * @param shouldRun determines if this test should run (true) or not (false)
      */
     public APUnit10Recursion(boolean shouldRun) {
-        if (!shouldRun) return;
+        if (!shouldRun) {
+            Simulator.note("AP: Unit 10 (Recursion) not running");
+            return;
+        };
         
-        Simulator.title("AP: Unit 10 (Recursion )");
+        Simulator.title("AP: Unit 10 (Recursion)");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("10.1 Recursion");  
