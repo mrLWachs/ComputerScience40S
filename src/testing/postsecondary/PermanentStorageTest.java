@@ -15,7 +15,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import testing.cs40s.advancedclasses.Athlete;
+import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import tools.Numbers;
 import tools.Text;
 

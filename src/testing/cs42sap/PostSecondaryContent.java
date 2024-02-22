@@ -29,10 +29,10 @@ public class PostSecondaryContent
      */
     public PostSecondaryContent(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Computer Science 42SAP Post Secondary not running");
+            Simulator.note("Computer Science 42SAP Post Secondary content not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP Post Secondary content");         
+        Simulator.title("Computer Science 42SAP Post Secondary Content:");         
         new PermanentStorageTest(shouldRun);
         new StacksQueuesTest(shouldRun);
         new SearchSortTest(shouldRun);   

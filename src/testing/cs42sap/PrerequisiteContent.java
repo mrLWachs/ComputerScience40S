@@ -3,8 +3,8 @@
 package testing.cs42sap;
 
 import io.Simulator;
-import testing.cs30s.ComputerScience30S;
-import testing.cs40s.ComputerScience40S;
+import testing.prerequisite.cs30s.ComputerScience30S;
+import testing.prerequisite.cs40s.ComputerScience40S;
 
  
 /**
@@ -23,10 +23,10 @@ public class PrerequisiteContent
      */
     public PrerequisiteContent(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("Computer Science 42SAP prerequisite content not running");
+            Simulator.note("Computer Science 42SAP Prerequisite content not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP prerequisite content:"); 
+        Simulator.title("Computer Science 42SAP Prerequisite Content:"); 
         new ComputerScience30S(shouldRun);
         new ComputerScience40S(shouldRun);
     }
