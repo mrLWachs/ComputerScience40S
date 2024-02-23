@@ -54,25 +54,43 @@ public class ComputerScience40S
 //      Help -> Keyboard Shortcuts Card
 // (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
 //      error and a potential fix (if you click on the lightbulb)
-// (12) Go to Tools -> Templates, scroll down and click on the "+" beside 
-//      "Java", select "Java Main Class", and "Open in Editor" and the enter 
-//      this into the temple (but use the slash "/" instead of "|"):
+// (12) To make projects easier and automate some tasks, go to 
+//      Tools -> Templates, scroll down and click on the ">" beside "Java", 
+//      select "Java Main Class", and "Open in Editor" and the enter 
+//      the text below (by uncommenting it, then copying it, and pasting it 
+//      into the temple (first delete all the text in the template and then 
+//      replace what is there with this by pasting it):
 //
-//      /** 
-//       * ${name}.java - 
-//       *
-//       * @author Mr. Wachs 
-//       * @since ${date} 
-//       */
-//      public class ${name} 
-//       { .... etc .....     
+///** Required package class namespace */
+//package ${package};
 //
-// (13) When printing code for hand in (this only needs to be done once), click
-//      on "Print Options" and uncheck everything previously checked off, and
-//      then check off "Print as in Editor", then either print it to a PDF 
-//      (which means select "Microsoft Print to PDF" on the next screen), or
-//      cancel and resize the code to fit better (see tip #1) and then print 
-//      again
+//
+///*
+// * ${name} - description
+// * 
+// * @author YOUR NAME
+// * @since ${date}
+//*/
+//public class ${name}
+//{
+//
+//    /**
+//     * Main method for the project
+//     * 
+//     * @param args the command line arguments
+//     */
+//    public static void main(String[] args) {
+//        // TODO code application logic here
+//        
+//    }
+//
+//}
+//
+// (13) When printing code for hand in, when in NetBeans (after the code is 
+//      cleaned up and ready - see tip 13) go to File -> Print to HTML... and 
+//      then use the dialog box that appears to select a location you can find 
+//      the HTML file, and give the file you are saving a good name (with your 
+//      name in the file name). Then use the hand in page to hand in the files
 // (14) To autoformat code (fixes indents, extra spaces, etc.) select code with
 //      mouse or keyboard (or it will format all if none is selected) and press
 //      ALT + SHIFT + F  (you should do this before hand in!)
@@ -103,10 +121,7 @@ public class ComputerScience40S
 //      ALL the code (uncommented) below:
 //
 ///** Required package class namespace */
-//<#if package?? && package != "">
 //package ${package};
-//
-//</#if>
 // 
 ///**
 // * ${name}.java - description
