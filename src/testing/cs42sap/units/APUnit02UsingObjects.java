@@ -229,7 +229,59 @@ public class APUnit02UsingObjects
             //           be thrown
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("A \"non-static\" method is a method (meaning a ");
+        System.out.println("\"action\", \"behaviour\", \"procedure\", ");
+        System.out.print("or \"verb\") that does not use the \"static\" ");
+        System.out.println("modifier word in the method signature line. ");
+        System.out.print("A method with no prameters (or \"inputs\") ");
+        System.out.println("means the method is defined with empty round ");
+        System.out.print("brackets \"( )\". The \"behavior\" or action ");
+        System.out.println("the method performs is defined in the body ");
+        System.out.print("block of the method (between the two curly ");
+        System.out.println("\"{ }\" brackets). The A.P. term \"procedural ");
+        System.out.print("abstraction\" refers to a programmer being able ");
+        System.out.println("to call a method without knowing how the ");
+        System.out.print("method was written (also known as \"black box\" ");
+        System.out.println("programming). When methods are \"called\" ");
+        System.out.print("the execution flow stops, jumps and runs all ");
+        System.out.println("the method body (or until a \"return\" ");
+        System.out.print("statement) and then returns to the next line ");
+        System.out.println("of execution after the method call line ");
+        System.out.print("(or part of a code expression line). Methods ");
+        System.out.println("can also be called from objects (or ");
+        System.out.print("\"instances\") of a class using the dot \".\" ");
+        System.out.println("operator. Void method do not return anthing ");
+        System.out.print("(no \"outputs\") and use the keyword modifier ");
+        System.out.println("\"void\" in the method signature in place of ");
+        System.out.println("the return type.");
+        
+        // Examples of methods, parameters, return, and calling
+        // public void show() {
+        //     System.out.println("*");
+        // }        
+        // public void show(char value) {
+        //     System.out.println(value);
+        // }        
+        // public int double(int number) {
+        //     return number * 2;
+        // }        
+        // show();
+        // show('A');
+        // int answer = double(5);
+                
+        Simulator.comment("Examples of methods, parameters, return, and calling");
+        Simulator.code("public void show() {");  
+        Simulator.code("    System.out.println(\"*\")");  
+        Simulator.code("}");  
+        Simulator.code("public void show(char value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");  
+        Simulator.code("public int double(int number) {");  
+        Simulator.code("    return number * 2;");  
+        Simulator.code("} ");  
+        Simulator.code("show();");  
+        Simulator.code("show('A');");  
+        Simulator.code("int answer = double(5);");  
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.4 Calling a Void Method with Parameters"); 

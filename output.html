@@ -518,8 +518,45 @@ reference.
 <pre>Person person1 = new Person();</pre>
 <pre>Person person2 = new Person(5);</pre>
 <h2>2.3 Calling a Void Method..................................................................</h2>
-...
+A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
 </br />
+or "verb") that does not use the "static" modifier word in the method signature line. 
+</br />
+A method with no prameters (or "inputs") means the method is defined with empty round 
+</br />
+brackets "( )". The "behavior" or action the method performs is defined in the body 
+</br />
+block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
+</br />
+abstraction" refers to a programmer being able to call a method without knowing how the 
+</br />
+method was written (also known as "black box" programming). When methods are "called" 
+</br />
+the execution flow stops, jumps and runs all the method body (or until a "return" 
+</br />
+statement) and then returns to the next line of execution after the method call line 
+</br />
+(or part of a code expression line). Methods can also be called from objects (or 
+</br />
+"instances") of a class using the dot "." operator. Void method do not return anthing 
+</br />
+(no "outputs") and use the keyword modifier "void" in the method signature in place of 
+</br />
+the return type.
+</br />
+<pre class="comment">// Examples of methods, parameters, return, and calling</pre>
+<pre>public void show() {</pre>
+<pre>    System.out.println("*")</pre>
+<pre>}</pre>
+<pre>public void show(char value) {</pre>
+<pre>    System.out.println(value);</pre>
+<pre>}</pre>
+<pre>public int double(int number) {</pre>
+<pre>    return number * 2;</pre>
+<pre>} </pre>
+<pre>show();</pre>
+<pre>show('A');</pre>
+<pre>int answer = double(5);</pre>
 <h2>2.4 Calling a Void Method with Parameters..................................................</h2>
 ...
 </br />
