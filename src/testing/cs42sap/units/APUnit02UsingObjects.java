@@ -297,7 +297,39 @@ public class APUnit02UsingObjects
             //           signature
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("A \"non-static void\" methods with parameters ");
+        System.out.println("is a method with no outputs, but has input(s). ");
+        System.out.print("This means the method signature has defined ");
+        System.out.println("parameter(s) within the round brackets \"( )\" ");
+        System.out.print("seperated by commas (if necessary). When this ");
+        System.out.println("type of method is called, the \"arguments\" ");
+        System.out.print("passed to this method must be in the same ");
+        System.out.println("order in terms of data type. A method is ");
+        System.out.print("\"overloaded\" when you have two or more ");
+        System.out.println("methods with the same name but different and ");
+        System.out.println("distinct parameter lists.");
+        
+        // Examples of method overloading
+        // public void show() {
+        //     System.out.println("*");
+        // }        
+        // public void show(char value) {
+        //     System.out.println(value);
+        // } 
+        // public void show(int value) {
+        //     System.out.println(value);
+        // } 
+        
+        Simulator.comment("Examples of method overloading");
+        Simulator.code("public void show() {");  
+        Simulator.code("    System.out.println(\"*\")");  
+        Simulator.code("}");  
+        Simulator.code("public void show(char value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");
+        Simulator.code("public void show(int value) {");  
+        Simulator.code("    System.out.println(value);");  
+        Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.5 Calling a Non-void Method");  
@@ -308,7 +340,12 @@ public class APUnit02UsingObjects
             //           stored in a variable or used as part of an expression
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("A method that does return a value, defines the ");
+        System.out.println("return \"type\" in the method signature and ");
+        System.out.print("the keyword \"return\" somewhere in the method ");
+        System.out.println("body (at least once). When calling a return ");
+        System.out.print("method, the value returned must be stored (in ");
+        System.out.println("a variable) or used as part of an expression.");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.6 String Objects: Concatenation, Literals, and More");  
@@ -328,8 +365,37 @@ public class APUnit02UsingObjects
             //           include \", \\, and \n
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("The \"String\" class allows you to create ");
+        System.out.println("String variables, concatenate them (join) ");
+        System.out.print("together and use \"built-in\" methods of the ");
+        System.out.println("String class. String literals (contained in ");
+        System.out.print("quotes \"\") can be assigned to String variables ");
+        System.out.println("or concatenated with Strings. String methods ");
+        System.out.print("do not change the String (\"immutable\") object. ");
+        System.out.println("The \"+\" or the \"+=\" operators can be used ");
+        System.out.print("to concatenate Strings (resulting in a new ");
+        System.out.println("String object). Primitives (like int, double, ");
+        System.out.print("etc.) can also be concatenated with String ");
+        System.out.println("objects. Those are now automatically converted ");
+        System.out.print("to Strings and then concatenated. Escape ");
+        System.out.println("sequences is the character \"\\\" followed ");
+        System.out.print("by another character to make certain outputs ");
+        System.out.println("or changes to a String object. These include: ");
+        System.out.print("\\\" for a quote, \\\\ for a slash, and \\n ");
+        System.out.println("for a new line.");
         
+        // Examples of Strings and escape sequences
+        String str1 = "cat";
+        String str2 = str1 + "ty";
+        str1 += str2;
+        str2 = "\n" + str1 + "\\" + "\" dog";
+        
+        Simulator.comment("Examples of Strings and escape sequences");
+        Simulator.code("String str1 = \"cat\";");    
+        Simulator.code("String str2 = str1 + \"ty\";");    
+        Simulator.code("str1 += str2;");    
+        Simulator.code("str2 = \"\\n\" + str1 + \"\\\\\" + \"\\\" dog\";");    
+                
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.7 String Methods");  
         // (2.7.1) For String class: a. Create String objects. b. Call String methods
@@ -370,7 +436,57 @@ public class APUnit02UsingObjects
             //           substring(index, index + 1)
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("The \"API\" or Application Program Interface is ");
+        System.out.println("a \"library\" of code that could be imported ");
+        System.out.print("into a Java project or it could automatically ");
+        System.out.println("be part of every Java project without needing ");
+        System.out.print("an import. Classes and libraries are organized ");
+        System.out.println("into \"packages\" in Java (also known as ");
+        System.out.print("\"namespaces\"). The String class is in the ");
+        System.out.println("\"java.lang\" package. Strings are collections ");
+        System.out.print("of \"char\" values index from 0 up to the ");
+        System.out.println("length of the String minus 1 (just like arrays ");
+        System.out.print("are indexed). String methods used are: the ");
+        System.out.println("String constructor \"String s = new String();\", ");
+        System.out.print("the \"length()\" method, the \"substring(int)\" ");
+        System.out.println("and \"substring(int,int)\" methods, the ");
+        System.out.print("\"indexOf(String)\" method, the ");
+        System.out.println("\"equals(String)\" method, and the ");
+        System.out.println("\"compareTo(String)\" method.");
+        
+        // Examples of String methods
+        String str3 = new String("chatty"); 
+        // Constructs object with same sequence of characters as str3
+        int length = str3.length();
+        // Returns the number of characters in a String object
+        String str4 = str3.substring(1);
+        // Returns substring(from) starting at index "from" to the end
+        String str5 = str3.substring(1,3);
+        // Returns substring(from, to) starting at index "from" to index "to"
+        int index = str3.indexOf("hat");
+        // Returns the index of the first occurrence (returns -1 if not found)
+        boolean result1 = str3.equals(str4);
+        // Returns true if this is equal to other (returns false otherwise)
+        int result2 = str3.compareTo(str5);
+        // Returns value < 0 if less than other, returns 0 if equal to other, 
+        // and returns value > 0 if greater than other 
+        
+        Simulator.comment("Examples of String methods");
+        Simulator.code("String str3 = new String(\"chatty\");");   
+        Simulator.comment("Constructs object with same sequence of characters as str3");
+        Simulator.code("int length = str3.length();");   
+        Simulator.comment("Returns the number of characters in a String object");
+        Simulator.code("String str4 = str3.substring(1);");   
+        Simulator.comment("Returns substring(from) starting at index \"from\" to the end");
+        Simulator.code("String str5 = str3.substring(1,3);");   
+        Simulator.comment("Returns substring(from, to) starting at index \"from\" to index \"to\"");
+        Simulator.code("int index = str3.indexOf(\"hat\");");   
+        Simulator.comment("Returns the index of the first occurrence (returns -1 if not found)");
+        Simulator.code("boolean result1 = str3.equals(str4);");   
+        Simulator.comment("Returns true if this is equal to other (returns false otherwise)");
+        Simulator.code("int result2 = str3.compareTo(str5);");   
+        Simulator.comment("Returns value < 0 if less than other, returns 0 if equal to other,");   
+        Simulator.comment("and returns value > 0 if greater than other");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.8 Wrapper Classes: Integer and Double");  

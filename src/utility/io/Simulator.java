@@ -493,6 +493,7 @@ public class Simulator
         if (initialValue    != null) text += "{ initialValue: " + 
                                      initialValue.toString()    + " }";
         colorOutput(text, GREEN, RESET);
+        WebPage.addH3(text);
         return FLAG_INTEGER;
     }
 

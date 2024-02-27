@@ -29,13 +29,20 @@ public class ComputerScience20S
             return;
         }
         Simulator.title("Computer Science 20S Course:");
-        Unit2Introduction  unit2Introduction  = new Unit2Introduction();
-        Unit3Variables1    unit3Variables1    = new Unit3Variables1();
-        Unit3Variables2    unit3Variables2    = new Unit3Variables2();
-        Unit4Conditionals1 unit4Conditionals1 = new Unit4Conditionals1();
-        Unit4Conditionals2 unit4Conditionals2 = new Unit4Conditionals2();
-        Unit5Looping1      unit5Looping1      = new Unit5Looping1();
-        Unit5Looping2      unit5Looping2      = new Unit5Looping2();        
+        Simulator.showFrame(null,"unit2Introduction");
+        Simulator.showFrame(null,"unit3Variables1");
+        Simulator.showFrame(null,"unit3Variables2");
+        Simulator.showFrame(null,"unit4Conditionals1");
+        Simulator.showFrame(null,"unit4Conditionals2");
+        Simulator.showFrame(null,"unit5Looping1");
+        Simulator.showFrame(null,"unit5Looping2");
+//        Unit2Introduction  unit2Introduction  = new Unit2Introduction();
+//        Unit3Variables1    unit3Variables1    = new Unit3Variables1();
+//        Unit3Variables2    unit3Variables2    = new Unit3Variables2();
+//        Unit4Conditionals1 unit4Conditionals1 = new Unit4Conditionals1();
+//        Unit4Conditionals2 unit4Conditionals2 = new Unit4Conditionals2();
+//        Unit5Looping1      unit5Looping1      = new Unit5Looping1();
+//        Unit5Looping2      unit5Looping2      = new Unit5Looping2();        
     }
      
 }
