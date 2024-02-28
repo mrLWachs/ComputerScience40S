@@ -35,7 +35,7 @@ public class APUnit03BooleanExpressionsAndIfStatements
         if (!shouldRun) {
             Simulator.note("AP: Unit 3 (Boolean Expressions And If Statements) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 3 (Boolean Expressions And If Statements)");
         

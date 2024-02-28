@@ -35,7 +35,7 @@ public class APUnit06Arrays
         if (!shouldRun) {
             Simulator.note("AP: Unit 6 (Arrays) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 6 (Arrays)");
         

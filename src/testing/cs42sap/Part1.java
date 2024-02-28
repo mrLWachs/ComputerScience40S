@@ -31,7 +31,7 @@ public class Part1
         if (!shouldRun) {
             Simulator.note("AP curriculum - Part 1 not running");
             return;
-        };
+        }
         Simulator.title("AP curriculum - Part 1");
         new APUnit01PrimitiveTypes(shouldRun);
         new APUnit03BooleanExpressionsAndIfStatements(shouldRun);

@@ -38,7 +38,7 @@ public class APUnit01PrimitiveTypes
         if (!shouldRun) {
             Simulator.note("AP: Unit 1 (Primitive Types) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 1 (Primitive Types)");
         

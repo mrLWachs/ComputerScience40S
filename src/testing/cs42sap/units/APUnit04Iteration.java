@@ -34,7 +34,7 @@ public class APUnit04Iteration
         if (!shouldRun) {
             Simulator.note("AP: Unit 4 (Iteration) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 4 (Iteration)");
         

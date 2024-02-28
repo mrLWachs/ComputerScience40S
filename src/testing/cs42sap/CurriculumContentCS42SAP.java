@@ -25,7 +25,7 @@ public class CurriculumContentCS42SAP
         if (!shouldRun) {
             Simulator.note("Computer Science 42SAP curriculum content not running");
             return;
-        };
+        }
         Simulator.title("Computer Science 42SAP curriculum content");         
         new Part1(shouldRun);
         new Part2(shouldRun);

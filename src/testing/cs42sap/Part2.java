@@ -31,7 +31,7 @@ public class Part2
         if (!shouldRun) {
             Simulator.note("AP curriculum - Part 2 not running");
             return;
-        };
+        }
         Simulator.title("AP curriculum - Part 2");
         new APUnit02UsingObjects(shouldRun);
         new APUnit05WritingClasses(!shouldRun);

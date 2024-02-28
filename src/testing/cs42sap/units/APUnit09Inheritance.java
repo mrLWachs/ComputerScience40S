@@ -35,7 +35,7 @@ public class APUnit09Inheritance
         if (!shouldRun) {
             Simulator.note("AP: Unit 9 (Inheritance) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 9 (Inheritance)");
         

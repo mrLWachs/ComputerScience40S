@@ -35,7 +35,7 @@ public class APUnit07ArrayList
         if (!shouldRun) {
             Simulator.note("AP: Unit 7 (Array List) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 7 (Array List)");
         

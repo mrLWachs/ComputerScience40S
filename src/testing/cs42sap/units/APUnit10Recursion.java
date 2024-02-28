@@ -33,7 +33,7 @@ public class APUnit10Recursion
         if (!shouldRun) {
             Simulator.note("AP: Unit 10 (Recursion) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 10 (Recursion)");
         

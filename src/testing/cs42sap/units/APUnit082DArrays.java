@@ -32,7 +32,7 @@ public class APUnit082DArrays
         if (!shouldRun) {
             Simulator.note("AP: Unit 8 (2D Arrays) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 8 (2D Arrays)");
         

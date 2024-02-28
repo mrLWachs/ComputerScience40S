@@ -29,7 +29,7 @@ public class Part4
         if (!shouldRun) {
             Simulator.note("AP curriculum - Part 4 not running");
             return;
-        };
+        }
         Simulator.title("AP curriculum - Part 4");
         new APUnit07ArrayList(shouldRun);
         new APUnit10Recursion(shouldRun);        

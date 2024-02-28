@@ -29,7 +29,7 @@ public class Part3
         if (!shouldRun) {
             Simulator.note("AP curriculum - Part 3 not running");
             return;
-        };
+        }
         Simulator.title("AP curriculum - Part 3");
         new APUnit06Arrays(shouldRun);
         new APUnit082DArrays(shouldRun);        

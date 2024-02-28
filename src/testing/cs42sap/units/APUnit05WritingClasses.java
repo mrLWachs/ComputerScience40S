@@ -36,7 +36,7 @@ public class APUnit05WritingClasses
         if (!shouldRun) {
             Simulator.note("AP: Unit 5 (Writing Classes) not running");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 5 (Writing Classes)");
         

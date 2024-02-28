@@ -37,7 +37,7 @@ public class APUnit02UsingObjects
         if (!shouldRun) {
             Simulator.note("AP: Unit 2 (Using Objects)");
             return;
-        };
+        }
         
         Simulator.title("AP: Unit 2 (Using Objects)");
         
