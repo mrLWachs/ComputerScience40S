@@ -5,6 +5,7 @@ package testing;
 /** Required API imports */
 import utility.io.Simulator;
 import testing.cs42sap.CurriculumContentCS42SAP;
+import testing.cs42sap.tests.PracticeTestsCS42SAP;
 
 
 /**
@@ -31,6 +32,7 @@ public class ComputerScience42SAP
         }
         Simulator.title("Computer Science 42SAP Course:");         
         new CurriculumContentCS42SAP(shouldRun);
+        new PracticeTestsCS42SAP(!shouldRun);
     }
     
 }
