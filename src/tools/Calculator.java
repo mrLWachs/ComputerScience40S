@@ -12,15 +12,13 @@ package tools;
 public class Calculator 
 {
 
-    public static int factorial(int number) {
-        
+    public static int factorial(int number) {        
         if (number == 1) {
             return 1;
         }
         else {
-            return 977;
-        }
-        
+            return number * factorial(number - 1);
+        }        
     }
 
  
