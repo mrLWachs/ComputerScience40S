@@ -26,7 +26,13 @@ public class RecursionTest
             // (2) Edge cases (more than one): they "push" the edge
             // (3) Beyond the edge: "bad" users, trying to break things
             
-        
+        for (int i = 1; i <= 5; i++) {
+            int answer = Calculator.factorial(i);
+            System.out.println(i + " factorial = " + answer);
+        }
+    
+            
+            
         
         
         
