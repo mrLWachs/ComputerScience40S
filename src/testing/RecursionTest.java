@@ -53,13 +53,19 @@ public class RecursionTest
             System.out.println(i + " factorial = " + answer);
         }
         
+        System.out.println("Recursive powers................................");
         
+        // Set the testing "edges"
+        final int MIN_POWER = 0;
+        final int MAX_POWER = 20;
         
-        
-        
-        
-        
-        
+        // Testing all the exponents (edges)
+        for (int exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+            long answer = Calculator.power(5,exponent);
+            System.out.println("5 to the exponent of " + exponent +
+                               " = " + answer);            
+        }
+                
         System.out.println("\nRecursion test complete!\n");
     }
     
