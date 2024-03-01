@@ -44,8 +44,12 @@ public class RecursionTest
         // class) the factorial of a number recursively (means the method
         // will call itself)
         
-        for (int i = 1; i <= 5; i++) {
-            int answer = Calculator.factorial(i);
+        final int MIN_FACTORIAL = -1;
+        final int MAX_FACTORIAL = 20;  // Beyond this we get an "overflow" error     
+        
+        // Loop through a series of tests (going through the "edge cases")
+        for (int i = MIN_FACTORIAL; i <= MAX_FACTORIAL; i++) {
+            long answer = Calculator.factorial(i);
             System.out.println(i + " factorial = " + answer);
         }
         
