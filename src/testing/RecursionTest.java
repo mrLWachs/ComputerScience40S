@@ -7,7 +7,18 @@ import tools.Calculator;
 
  
 /**
- * RecursionTest.java - tests the concepts learned in this unit
+ * RecursionTest.java - tests the concepts learned in this unit. Recursion is 
+ * the process of something recurring, and is defined as a method that calls 
+ * itself. Recursive methods may have 1 or more than 1 base cases, and 1 or 
+ * more than 1 recursive cases, but the method must have a minimum of 1 base 
+ * case and 1 recursive case. Recursion is a programming tool that can often 
+ * be used as an alternative to looping, or as a simpler way to solve 
+ * specific problems. Recursion is not always the most efficient solution as 
+ * it often consumes more memory than an iterative solution. Often recursion 
+ * is ‘hidden’ by using a public method call that then calls a private 
+ * recursive method to implement the recursion that eventually returns to the 
+ * original method that then returns the result (this is known as a “wrapper” 
+ * method).
  *
  * @author Mr. Wachs 
  * @since February 28, 2024
@@ -16,7 +27,8 @@ public class RecursionTest
 {
 
     /**
-     * Default constructor, sets class properties
+     * Constructor method - constructor methods with no parameters (like this 
+     * one) - empty round brackets it is called the "default" constructor
      */
     public RecursionTest() {
         System.out.println("\nRecursion test started...\n");
@@ -26,14 +38,16 @@ public class RecursionTest
             // (2) Edge cases (more than one): they "push" the edge
             // (3) Beyond the edge: "bad" users, trying to break things
             
+        System.out.println("Recursive factorials............................");
+        
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
+        
         for (int i = 1; i <= 5; i++) {
             int answer = Calculator.factorial(i);
             System.out.println(i + " factorial = " + answer);
         }
-    
-            
-            
-        
         
         
         
