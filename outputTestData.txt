@@ -1,419 +1,420 @@
-1:	Mr. Wachs' Computer Science Classes........................................................
-2:	Computer Science 42SAP Prerequisite content not running....................................
-3:	Computer Science 42SAP Course:.............................................................
-4:	Computer Science 42SAP curriculum content..................................................
-5:	AP curriculum - Part 1.....................................................................
-6:	AP: Unit 1 (Primitive Types)...............................................................
-7:	1.1 Why Programming? Why Java?.............................................................
-8:	System.out.print outputs text to the screen and System.out.println outputs with a line break
-9:	More specifically, the code word "System" refers to the "computer system" and the 
-10:	word "out" refers to outputting, and finally the word "print" or "println" are calls to 
-11:	methods (or "actions") that take the string literal (which is the word or words in between 
-12:	the quotation marks) and outputs it. So the command "System.out.println("literal");" 
-13:	will take the string literal and output it to the default output device - that being the 
-14:	computer screen.
-15:	1.2 Variables and Data Types...............................................................
-16:	Data/information refers to the "kind" of data being stored (or "remembered") by the program 
-17:	in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
-18:	(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
-19:	"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
-20:	specified at the time you write a line of code to "create" (or "declare") the variable. A 
-21:	variable can only be one type and only store that specified type of data. However, the data 
-22:	itself can change (or "vary") after the initial declaration. Examples of this are below...
-23:	// Variables declared and assigned initial ("starting") values:
-24:	boolean a = true;
-25:	int     b = 0;
-26:	double  c = 1.0;
-27:	char    d = 'A';
-28:	// Variables content changes ("reassigned"):
-29:	a = false;
-30:	b = 1;
-31:	c = 1.1;
-32:	d = 'B';
-33:	A "final" (or a "constant") is a variable in which the stored value does NOT change 
-34:	(it stays "constant") and it locked at that value. Final (or constant) variables are 
-35:	given the initial value when declared (or initialized) and that value stays locked. These 
-36:	types of values are written in ALL_CAPS with the underscore value used to seperate words in 
-37:	the name. Final variables are more efficient for a number of reasons including ease of code 
-38:	understanding, speed (faster code), easier to update code, and others. Examples of finals 
-39:	are below
-40:	// Constants (finals) declared (initialized)
-41:	final boolean FOUND  = true;
-42:	final int     VALUE  = 1;
-43:	final double  AMOUNT = 2.5;
-44:	final char    CODE   = 'X';
-45:	1.3 Expressions and Assignment Statements..................................................
-46:	Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
-47:	written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
-48:	context, the word "literal" can also mean a number (like "5"). This usually involves 
-49:	variable types int and double (the number types) used in a math expression or equation. This 
-50:	can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
-51:	evaluated in a formula, they always evaluate to an int answer (solution) and double values 
-52:	will evaluate to a double. Complex (or "compound" expressions can be formed in which 
-53:	the order of operations (or precedence order). This means multiplication and division are 
-54:	evaluated before addition and subtraction. If operations are at the same precedence level, 
-55:	then they are evaluated from left to right.When you try and divide by zero, an error 
-56:	(the "ArithmeticException" error) will occur and the program will stop running. Examples:
-57:	// Arithmetic evaluations using variables
-58:	int    v1 = 5;
-59:	int    v2 = 3;
-60:	int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
-61:	double v4 = 5.2;
-62:	double v5 = 3.3;
-63:	double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
-64:	1.4 Compound Assignment Operators..........................................................
-65:	Compound statements in this context refers to using shortcuts to quickly add or subtract one 
-66:	(increment or decrement) to a variable. You can also use more complex shorthand compound 
-67:	statements to quickly multiply, divide, even modulus a variable with itself or other 
-68:	variables. For example:
-69:	// Shorthand Compound Arithmetic expressions
-70:	int value = 5;
-71:	value++;    // is the same as "value = value + 1;"
-72:	value--;    // is the same as "value = value + 1;"
-73:	value += 5; // is the same as "value = value + 5;"
-74:	value -= 5; // is the same as "value = value - 5;"
-75:	value *= 5; // is the same as "value = value * 5;"
-76:	value /= 5; // is the same as "value = value / 5;"
-77:	value %= 5; // is the same as "value = value % 5;"
-78:	1.5 Casting and Ranges of Variables........................................................
-79:	Casting is the process of "converting" one data type into another data type. When casting 
-80:	an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
-81:	off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
-82:	A char when cast will turn into it's ASCII value. The process of casting involves putting 
-83:	variable to be cast with the type being cast into in round brackets to the left of that 
-84:	variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
-85:	constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
-86:	evaluates an int outside that range, an error will occur (overflow error). For example:
-87:	// Casting data types
-88:	int integer = Integer.MAX_VALUE;
-89:	double doub = Double.MIN_VALUE;
-90:	doub        = (int)integer;
-91:	integer     = (int)doub;
-92:	char letter = 'A';
-93:	integer     = (int)letter;
-94:	AP: Unit 3 (Boolean Expressions And If Statements).........................................
-95:	3.1 Boolean Expressions....................................................................
-96:	A Boolean (true/false) expression is a code statement most likely in a control structure 
-97:	like a conditional statement or loop control structure that evaluates to true or false to 
-98:	make decisions and control the flow of the program. The Boolean expression will require 
-99:	the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
-100:	than", "greater than", "less than or equal to", "greater than or equal to", "equal 
-101:	to", and "not equal to".
-102:	3.2 if Statements and Control Flow.........................................................
-103:	A "Conditional Statement" is also known under other names like "branching statement", "if 
-104:	statement", "one-way selection statement", and "control structure". It uses the reserved 
-105:	keyword "if" along with round brackets which contain the Boolean expression, and curly 
-106:	brackets to contain the control block of all code you wish to be controlled by the 
-107:	conditional statement. Brackets are optional if the block is only one line, and you may also 
-108:	move thos lines up to the same line as the conditional statement. For example:
-109:	// Example of if statements
-110:	int a = 10;
-111:	int b = 10;
-112:	if (a == a) {
-113:	    // "equal"
-114:	}
-115:	3.3 if-else Statements.....................................................................
-116:	The "else" statement is paired with an "if" statement to control the flow of the logic so 
-117:	that the conditional now evaluates to both true and false. This can be called a "two 
-118:	way selection" (for true/false). An "else" must always follow an "if" statement first. 
-119:	For example:
-120:	// if with "else" 
-121:	double c = 1.45, d = 1.5; 
-122:	if (c < d) {
-123:	    // "Less than"
-124:	}
-125:	else {
-126:	    // "Greater than"
-127:	}
-128:	// Shortened lines version
-129:	char e = 'A';
-130:	char f = 'a';
-131:	if (e != f) e = '!';
-132:	else        e = '=';
-133:	3.4 else if Statements.....................................................................
-134:	When making multiple decisions (more than 2), the "else if" statement is added to an 
-135:	existing "if" statement to have multiple branches of logic for the code to follow. This 
-136:	is much more efficient than seperate "if" statements. This can also be called "multi-way 
-137:	selection" (or "if-else-if"). An "else" statement is also still the final option (but 
-138:	this is not required). For example:
-139:	// Showing a "chain" of else if statements
-140:	int g = 0;
-141:	if (g == 1) {
-142:	    // The first if is true
-143:	}
-144:	else if (g == 2) {
-145:	    // The next if is true
-146:	}
-147:	else if (g == 3) {
-148:	    // The next if (in the "chain" of ifs) is true
-149:	}
-150:	else {
-151:	    // Nothing above is true, so go to this else
-152:	}
-153:	3.5 Compound Boolean Expressions...........................................................
-154:	The process of "nesting" means to place one conditional statement inside the "block" of 
-155:	another conditional statement. The logical operators: "and", "or", and "not" are 
-156:	represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
-157:	is used to combine logical boolean expressions such that ALL expressions need to be true for 
-158:	the entire statement to be true. The operator OR is used to combine logical boolean 
-159:	expressions such that ANY expression can be true for the entire statement to be true. The 
-160:	operator NOT reverses the logic so that true statements are evaluated as false (and visa 
-161:	versa). If the statement contains multiple Boolean expressions and the result of the 
-162:	evaluation of one expression has already determined the expressions result, then the 
-163:	rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
-164:	evaluation". For example:
-165:	// Logical operators and "nesting"
-166:	int    age = 17;
-167:	double iq  = 1.0;
-168:	if (age >= 18 && iq > 90) {
-169:	    // with "and" ("&&") BOTH have to be true
-170:	}
-171:	else if (age >= 18 || iq > 0) {
-172:	    // with "or" ("||") EITHER can be true
-173:	}
-174:	else {
-175:	    // Case if neither evaluates
-176:	    if (age > 0) {
-177:	        // A "nested if statement"
-178:	    }
-179:	}
-180:	3.6 Equivalent Boolean Expressions.........................................................
-181:	Boolean (true/false) expressions turned into logical statements used by control structures 
-182:	like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
-183:	Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
-184:	not necessarily applicable to this exam). This just means that complex statements need to be 
-185:	evaluated by using mathematical rules (like "order of operations") and logical operators 
-186:	(like "and, or, not") to determine the final Boolean result. This could determine if a 
-187:	control structure (like an "if" statement) runs a block of code or not.
-188:	3.7 Comparing Objects......................................................................
-189:	The use of an advanced data type like an "Object" in code means that comparison 
-190:	operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
-191:	double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
-192:	determine the equality of two objects. For example:
-193:	// Use of the built-in equals method with Objects
-194:	String word1 = "edgy";
-195:	String word2 = "edGy";
-196:	if (word1.equals(word2)) {
-197:	    // "W1=W2"
-198:	}
-199:	else if (word1.equalsIgnoreCase(word2)) {
-200:	    // "W1 kind of == W2"
-201:	}
-202:	AP: Unit 4 (Iteration).....................................................................
-203:	4.1 while Loops............................................................................
-204:	The word "Iteration" is another word for "Loop" or "Looping" which is a control 
-205:	struture to have code statements "repeat". Like conditional ("if") statements, iteration 
-206:	statements control the flow of a program's logic. Also like if statements, iteration 
-207:	statements are controlled by a Boolean expression (true or false). The result of the Boolean 
-208:	expression will result in the code executing zero or mulitple times (until the expression 
-209:	evaluates to false). The expression is evaluated each time through an iteration of the loop. 
-210:	A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
-211:	(thus the loop never stops looping - or never stops running). It is possible a loop will 
-212:	never run if it evaluates to false before the body (block) of the loop. If you use the 
-213:	keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
-214:	potentially exit any method the loop is written inside. The "while" loop is a event loop or 
-215:	non-deterministic loop, which means it is not usually used for counting but when you do 
-216:	not know how many times the loop needs to run (a certain event can cause the loop to 
-217:	end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
-218:	(traversing) arrays and lists, and searching and sorting values. For example:
-219:	// Example of a simple while loop
-220:	int counter = 0;
-221:	while (counter < 10) {
-222:	    counter++;
-223:	}
-224:	4.2 for Loops..............................................................................
-225:	The "for" loop is another looping form. The for loop is a count controlled loop that 
-226:	generally is used when a loop needs to run a specific number of times. There are three 
-227:	parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
-228:	the starting, ending, and change of the loop. In a for loop a counting variable is 
-229:	generally declared right inside the loop to a starting value, then the Boolean condition 
-230:	to end the loop, then the change value increasing (increment) or decreasing (decrement) 
-231:	that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
-232:	by one" error occurs when a loop runs one too many or one too few times. For Example:
-233:	// Example of a for loop
-234:	for (int i = 0; i < 10; i++) {
-235:	    // potential code body...
-236:	}
-237:	4.3 Developing Algorithms Using Strings....................................................
-238:	The String class allows for several "built-in" methods of the String class to manipulate 
-239:	the string and the value it stores. Several of these methods could apply to the A.P. exam 
-240:	including travelling (traversing) string characters, pulling out substrings (parts 
-241:	of the string), reversing a string, etc. For example:
-242:	// Example of string methods with a loop
-243:	String word   = "completion";
-244:	String parts1 = word.substring(3);
-245:	String parts2 = word.substring(1,7);
-246:	for (int i = 0; i < word.length(); i++) {
-247:	    char character = word.charAt(i);
-248:	}
-249:	4.4 Nested Iteration.......................................................................
-250:	Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
-251:	This means you can place a iteration statement inside the block of another iteration 
-252:	statement. The inner loop must complete all of its iterations before the outer loop 
-253:	can continue. For example:
-254:	// Example of nested loops
-255:	for (int i = 0; i < 10; i++) {
-256:	    for (int j = 0; j < 10; j++) {
-257:	        int k = 10;
-258:	        while (k < 10) {
-259:	            // potential code body...
-260:	        }
-261:	    }
-262:	}
-263:	4.5 Informal Code Analysis.................................................................
-264:	Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
-265:	loops are typical A.P. exam questions. You should practice these types of questions.
-266:	AP curriculum - Part 2.....................................................................
-267:	AP: Unit 2 (Using Objects).................................................................
-268:	2.1 Objects: Instances of Classes..........................................................
-269:	A "class" is the "blueprint" for creating an "object". In Java, the class is a way to 
-270:	use code to model "things" using properties and methods. The object is what the class 
-271:	"creates" when the class is made into a specific "object" of that class. The various 
-272:	terms used for this vary but all revolve around the same concepts. The term "object" 
-273:	can also be called a "instance" of the class. The term "properties" can also be 
-274:	called "things about the class", or "descriptors", or "adjectives", or 
-275:	"fields". The term "methods" could also be called "what the class can do", or 
-276:	"actions", or "verbs", or "functions". 
-277:	// Example of a simple class with properties and methods
-278:	class Person {
-279:	    String name;
-280:	    int age;
-281:	    void walk() {
-282:	        // code logic could go here
-283:	    }
-284:	    void talk() {
-285:	        // code logic could go here
-286:	    }
-287:	}
-288:	2.2 Creating and Storing Objects (Instantiation)...........................................
-289:	Methods are a way to break up code into logic modules and it also provides a way to avoid 
-290:	repeating code and be able to reuse sections of code logic. You can think of methods as 
-291:	analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
-292:	"functions" in math that may take a variable "input" and generate an "answer".  The term 
-293:	"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
-294:	method that is passed to the method. The value(s) passed are called "argument(s)". When you 
-295:	define the method in the method "signature" line, the round brackets can contain 
-296:	parameters separated by comma (if needed). A method may also give an "output" in the form 
-297:	of its "return" value (which also might not be needed, in which case it is a "void" method).
-298:	A method is "overloaded" if you have more than one method with the exact same name but 
-299:	different parameters. Classes have "constructor" methods that are called when 
-300:	a class is instantiated into an object. Constructor methods do not have a return type 
-301:	(not even the keyword "void"). They must have the exact same name as the class (including a 
-302:	capital letter). They are used to set the properties of the class to starting (or 
-303:	"default") values. If a class has multiple constructor methods, they are said to be 
-304:	overloaded constructors. When a line of code is used to instantiate a class into an instance 
-305:	of that class, the line includes the name of the class, the identifier name of the object, 
-306:	then an equals ("="), then the keyword "new" (which allots new memory for this 
-307:	advanced data type), then a call to a constructor method. If not constructor method 
-308:	is called, then the object references a "null" value until such time it is given a value to 
-309:	reference.
-310:	// Example of a class with constructors and instantiation
-311:	class Person {
-312:	    Person() {
-313:	        // code logic
-314:	    }
-315:	    Person(int age) {
-316:	        // code logic
-317:	    }
-318:	}
-319:	Person person1 = new Person();
-320:	Person person2 = new Person(5);
-321:	2.3 Calling a Void Method..................................................................
-322:	A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
-323:	or "verb") that does not use the "static" modifier word in the method signature line. 
-324:	A method with no prameters (or "inputs") means the method is defined with empty round 
-325:	brackets "( )". The "behavior" or action the method performs is defined in the body 
-326:	block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
-327:	abstraction" refers to a programmer being able to call a method without knowing how the 
-328:	method was written (also known as "black box" programming). When methods are "called" 
-329:	the execution flow stops, jumps and runs all the method body (or until a "return" 
-330:	statement) and then returns to the next line of execution after the method call line 
-331:	(or part of a code expression line). Methods can also be called from objects (or 
-332:	"instances") of a class using the dot "." operator. Void method do not return anthing 
-333:	(no "outputs") and use the keyword modifier "void" in the method signature in place of 
-334:	the return type.
-335:	// Examples of methods, parameters, return, and calling
-336:	public void show() {
-337:	    System.out.println("*")
-338:	}
-339:	public void show(char value) {
-340:	    System.out.println(value);
-341:	}
-342:	public int double(int number) {
-343:	    return number * 2;
-344:	} 
-345:	show();
-346:	show('A');
-347:	int answer = double(5);
-348:	2.4 Calling a Void Method with Parameters..................................................
-349:	A "non-static void" methods with parameters is a method with no outputs, but has input(s). 
-350:	This means the method signature has defined parameter(s) within the round brackets "( )" 
-351:	seperated by commas (if necessary). When this type of method is called, the "arguments" 
-352:	passed to this method must be in the same order in terms of data type. A method is 
-353:	"overloaded" when you have two or more methods with the same name but different and 
-354:	distinct parameter lists.
-355:	// Examples of method overloading
-356:	public void show() {
-357:	    System.out.println("*")
-358:	}
-359:	public void show(char value) {
-360:	    System.out.println(value);
-361:	}
-362:	public void show(int value) {
-363:	    System.out.println(value);
-364:	}
-365:	2.5 Calling a Non-void Method..............................................................
-366:	A method that does return a value, defines the return "type" in the method signature and 
-367:	the keyword "return" somewhere in the method body (at least once). When calling a return 
-368:	method, the value returned must be stored (in a variable) or used as part of an expression.
-369:	2.6 String Objects: Concatenation, Literals, and More......................................
-370:	The "String" class allows you to create String variables, concatenate them (join) 
-371:	together and use "built-in" methods of the String class. String literals (contained in 
-372:	quotes "") can be assigned to String variables or concatenated with Strings. String methods 
-373:	do not change the String ("immutable") object. The "+" or the "+=" operators can be used 
-374:	to concatenate Strings (resulting in a new String object). Primitives (like int, double, 
-375:	etc.) can also be concatenated with String objects. Those are now automatically converted 
-376:	to Strings and then concatenated. Escape sequences is the character "\" followed 
-377:	by another character to make certain outputs or changes to a String object. These include: 
-378:	\" for a quote, \\ for a slash, and \n for a new line.
-379:	// Examples of Strings and escape sequences
-380:	String str1 = "cat";
-381:	String str2 = str1 + "ty";
-382:	str1 += str2;
-383:	str2 = "\n" + str1 + "\\" + "\" dog";
-384:	2.7 String Methods.........................................................................
-385:	The "API" or Application Program Interface is a "library" of code that could be imported 
-386:	into a Java project or it could automatically be part of every Java project without needing 
-387:	an import. Classes and libraries are organized into "packages" in Java (also known as 
-388:	"namespaces"). The String class is in the "java.lang" package. Strings are collections 
-389:	of "char" values index from 0 up to the length of the String minus 1 (just like arrays 
-390:	are indexed). String methods used are: the String constructor "String s = new String();", 
-391:	the "length()" method, the "substring(int)" and "substring(int,int)" methods, the 
-392:	"indexOf(String)" method, the "equals(String)" method, and the 
-393:	"compareTo(String)" method.
-394:	// Examples of String methods
-395:	String str3 = new String("chatty");
-396:	// Constructs object with same sequence of characters as str3
-397:	int length = str3.length();
-398:	// Returns the number of characters in a String object
-399:	String str4 = str3.substring(1);
-400:	// Returns substring(from) starting at index "from" to the end
-401:	String str5 = str3.substring(1,3);
-402:	// Returns substring(from, to) starting at index "from" to index "to"
-403:	int index = str3.indexOf("hat");
-404:	// Returns the index of the first occurrence (returns -1 if not found)
-405:	boolean result1 = str3.equals(str4);
-406:	// Returns true if this is equal to other (returns false otherwise)
-407:	int result2 = str3.compareTo(str5);
-408:	// Returns value < 0 if less than other, returns 0 if equal to other,
-409:	// and returns value > 0 if greater than other
-410:	2.8 Wrapper Classes: Integer and Double....................................................
-411:	...
-412:	2.9 Using the Math Class...................................................................
-413:	...
-414:	AP: Unit 5 (Writing Classes) not running...................................................
-415:	AP: Unit 9 (Inheritance) not running.......................................................
-416:	AP curriculum - Part 3 not running.........................................................
-417:	AP curriculum - Part 4 not running.........................................................
-418:	Computer Science 42SAP practice tests not running..........................................
-419:	Computer Science 42SAP Post Secondary content not running..................................
+1:	Fun Friday's content not running...........................................................
+2:	Mr. Wachs' Computer Science Classes........................................................
+3:	Computer Science 42SAP Prerequisite content not running....................................
+4:	Computer Science 42SAP Course:.............................................................
+5:	Computer Science 42SAP curriculum content..................................................
+6:	AP curriculum - Part 1.....................................................................
+7:	AP: Unit 1 (Primitive Types)...............................................................
+8:	1.1 Why Programming? Why Java?.............................................................
+9:	System.out.print outputs text to the screen and System.out.println outputs with a line break
+10:	More specifically, the code word "System" refers to the "computer system" and the 
+11:	word "out" refers to outputting, and finally the word "print" or "println" are calls to 
+12:	methods (or "actions") that take the string literal (which is the word or words in between 
+13:	the quotation marks) and outputs it. So the command "System.out.println("literal");" 
+14:	will take the string literal and output it to the default output device - that being the 
+15:	computer screen.
+16:	1.2 Variables and Data Types...............................................................
+17:	Data/information refers to the "kind" of data being stored (or "remembered") by the program 
+18:	in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
+19:	(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
+20:	"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
+21:	specified at the time you write a line of code to "create" (or "declare") the variable. A 
+22:	variable can only be one type and only store that specified type of data. However, the data 
+23:	itself can change (or "vary") after the initial declaration. Examples of this are below...
+24:	// Variables declared and assigned initial ("starting") values:
+25:	boolean a = true;
+26:	int     b = 0;
+27:	double  c = 1.0;
+28:	char    d = 'A';
+29:	// Variables content changes ("reassigned"):
+30:	a = false;
+31:	b = 1;
+32:	c = 1.1;
+33:	d = 'B';
+34:	A "final" (or a "constant") is a variable in which the stored value does NOT change 
+35:	(it stays "constant") and it locked at that value. Final (or constant) variables are 
+36:	given the initial value when declared (or initialized) and that value stays locked. These 
+37:	types of values are written in ALL_CAPS with the underscore value used to seperate words in 
+38:	the name. Final variables are more efficient for a number of reasons including ease of code 
+39:	understanding, speed (faster code), easier to update code, and others. Examples of finals 
+40:	are below
+41:	// Constants (finals) declared (initialized)
+42:	final boolean FOUND  = true;
+43:	final int     VALUE  = 1;
+44:	final double  AMOUNT = 2.5;
+45:	final char    CODE   = 'X';
+46:	1.3 Expressions and Assignment Statements..................................................
+47:	Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
+48:	written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
+49:	context, the word "literal" can also mean a number (like "5"). This usually involves 
+50:	variable types int and double (the number types) used in a math expression or equation. This 
+51:	can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
+52:	evaluated in a formula, they always evaluate to an int answer (solution) and double values 
+53:	will evaluate to a double. Complex (or "compound" expressions can be formed in which 
+54:	the order of operations (or precedence order). This means multiplication and division are 
+55:	evaluated before addition and subtraction. If operations are at the same precedence level, 
+56:	then they are evaluated from left to right.When you try and divide by zero, an error 
+57:	(the "ArithmeticException" error) will occur and the program will stop running. Examples:
+58:	// Arithmetic evaluations using variables
+59:	int    v1 = 5;
+60:	int    v2 = 3;
+61:	int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
+62:	double v4 = 5.2;
+63:	double v5 = 3.3;
+64:	double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
+65:	1.4 Compound Assignment Operators..........................................................
+66:	Compound statements in this context refers to using shortcuts to quickly add or subtract one 
+67:	(increment or decrement) to a variable. You can also use more complex shorthand compound 
+68:	statements to quickly multiply, divide, even modulus a variable with itself or other 
+69:	variables. For example:
+70:	// Shorthand Compound Arithmetic expressions
+71:	int value = 5;
+72:	value++;    // is the same as "value = value + 1;"
+73:	value--;    // is the same as "value = value + 1;"
+74:	value += 5; // is the same as "value = value + 5;"
+75:	value -= 5; // is the same as "value = value - 5;"
+76:	value *= 5; // is the same as "value = value * 5;"
+77:	value /= 5; // is the same as "value = value / 5;"
+78:	value %= 5; // is the same as "value = value % 5;"
+79:	1.5 Casting and Ranges of Variables........................................................
+80:	Casting is the process of "converting" one data type into another data type. When casting 
+81:	an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
+82:	off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
+83:	A char when cast will turn into it's ASCII value. The process of casting involves putting 
+84:	variable to be cast with the type being cast into in round brackets to the left of that 
+85:	variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
+86:	constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
+87:	evaluates an int outside that range, an error will occur (overflow error). For example:
+88:	// Casting data types
+89:	int integer = Integer.MAX_VALUE;
+90:	double doub = Double.MIN_VALUE;
+91:	doub        = (int)integer;
+92:	integer     = (int)doub;
+93:	char letter = 'A';
+94:	integer     = (int)letter;
+95:	AP: Unit 3 (Boolean Expressions And If Statements).........................................
+96:	3.1 Boolean Expressions....................................................................
+97:	A Boolean (true/false) expression is a code statement most likely in a control structure 
+98:	like a conditional statement or loop control structure that evaluates to true or false to 
+99:	make decisions and control the flow of the program. The Boolean expression will require 
+100:	the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
+101:	than", "greater than", "less than or equal to", "greater than or equal to", "equal 
+102:	to", and "not equal to".
+103:	3.2 if Statements and Control Flow.........................................................
+104:	A "Conditional Statement" is also known under other names like "branching statement", "if 
+105:	statement", "one-way selection statement", and "control structure". It uses the reserved 
+106:	keyword "if" along with round brackets which contain the Boolean expression, and curly 
+107:	brackets to contain the control block of all code you wish to be controlled by the 
+108:	conditional statement. Brackets are optional if the block is only one line, and you may also 
+109:	move thos lines up to the same line as the conditional statement. For example:
+110:	// Example of if statements
+111:	int a = 10;
+112:	int b = 10;
+113:	if (a == a) {
+114:	    // "equal"
+115:	}
+116:	3.3 if-else Statements.....................................................................
+117:	The "else" statement is paired with an "if" statement to control the flow of the logic so 
+118:	that the conditional now evaluates to both true and false. This can be called a "two 
+119:	way selection" (for true/false). An "else" must always follow an "if" statement first. 
+120:	For example:
+121:	// if with "else" 
+122:	double c = 1.45, d = 1.5; 
+123:	if (c < d) {
+124:	    // "Less than"
+125:	}
+126:	else {
+127:	    // "Greater than"
+128:	}
+129:	// Shortened lines version
+130:	char e = 'A';
+131:	char f = 'a';
+132:	if (e != f) e = '!';
+133:	else        e = '=';
+134:	3.4 else if Statements.....................................................................
+135:	When making multiple decisions (more than 2), the "else if" statement is added to an 
+136:	existing "if" statement to have multiple branches of logic for the code to follow. This 
+137:	is much more efficient than seperate "if" statements. This can also be called "multi-way 
+138:	selection" (or "if-else-if"). An "else" statement is also still the final option (but 
+139:	this is not required). For example:
+140:	// Showing a "chain" of else if statements
+141:	int g = 0;
+142:	if (g == 1) {
+143:	    // The first if is true
+144:	}
+145:	else if (g == 2) {
+146:	    // The next if is true
+147:	}
+148:	else if (g == 3) {
+149:	    // The next if (in the "chain" of ifs) is true
+150:	}
+151:	else {
+152:	    // Nothing above is true, so go to this else
+153:	}
+154:	3.5 Compound Boolean Expressions...........................................................
+155:	The process of "nesting" means to place one conditional statement inside the "block" of 
+156:	another conditional statement. The logical operators: "and", "or", and "not" are 
+157:	represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
+158:	is used to combine logical boolean expressions such that ALL expressions need to be true for 
+159:	the entire statement to be true. The operator OR is used to combine logical boolean 
+160:	expressions such that ANY expression can be true for the entire statement to be true. The 
+161:	operator NOT reverses the logic so that true statements are evaluated as false (and visa 
+162:	versa). If the statement contains multiple Boolean expressions and the result of the 
+163:	evaluation of one expression has already determined the expressions result, then the 
+164:	rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
+165:	evaluation". For example:
+166:	// Logical operators and "nesting"
+167:	int    age = 17;
+168:	double iq  = 1.0;
+169:	if (age >= 18 && iq > 90) {
+170:	    // with "and" ("&&") BOTH have to be true
+171:	}
+172:	else if (age >= 18 || iq > 0) {
+173:	    // with "or" ("||") EITHER can be true
+174:	}
+175:	else {
+176:	    // Case if neither evaluates
+177:	    if (age > 0) {
+178:	        // A "nested if statement"
+179:	    }
+180:	}
+181:	3.6 Equivalent Boolean Expressions.........................................................
+182:	Boolean (true/false) expressions turned into logical statements used by control structures 
+183:	like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
+184:	Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
+185:	not necessarily applicable to this exam). This just means that complex statements need to be 
+186:	evaluated by using mathematical rules (like "order of operations") and logical operators 
+187:	(like "and, or, not") to determine the final Boolean result. This could determine if a 
+188:	control structure (like an "if" statement) runs a block of code or not.
+189:	3.7 Comparing Objects......................................................................
+190:	The use of an advanced data type like an "Object" in code means that comparison 
+191:	operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
+192:	double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
+193:	determine the equality of two objects. For example:
+194:	// Use of the built-in equals method with Objects
+195:	String word1 = "edgy";
+196:	String word2 = "edGy";
+197:	if (word1.equals(word2)) {
+198:	    // "W1=W2"
+199:	}
+200:	else if (word1.equalsIgnoreCase(word2)) {
+201:	    // "W1 kind of == W2"
+202:	}
+203:	AP: Unit 4 (Iteration).....................................................................
+204:	4.1 while Loops............................................................................
+205:	The word "Iteration" is another word for "Loop" or "Looping" which is a control 
+206:	struture to have code statements "repeat". Like conditional ("if") statements, iteration 
+207:	statements control the flow of a program's logic. Also like if statements, iteration 
+208:	statements are controlled by a Boolean expression (true or false). The result of the Boolean 
+209:	expression will result in the code executing zero or mulitple times (until the expression 
+210:	evaluates to false). The expression is evaluated each time through an iteration of the loop. 
+211:	A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
+212:	(thus the loop never stops looping - or never stops running). It is possible a loop will 
+213:	never run if it evaluates to false before the body (block) of the loop. If you use the 
+214:	keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
+215:	potentially exit any method the loop is written inside. The "while" loop is a event loop or 
+216:	non-deterministic loop, which means it is not usually used for counting but when you do 
+217:	not know how many times the loop needs to run (a certain event can cause the loop to 
+218:	end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
+219:	(traversing) arrays and lists, and searching and sorting values. For example:
+220:	// Example of a simple while loop
+221:	int counter = 0;
+222:	while (counter < 10) {
+223:	    counter++;
+224:	}
+225:	4.2 for Loops..............................................................................
+226:	The "for" loop is another looping form. The for loop is a count controlled loop that 
+227:	generally is used when a loop needs to run a specific number of times. There are three 
+228:	parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
+229:	the starting, ending, and change of the loop. In a for loop a counting variable is 
+230:	generally declared right inside the loop to a starting value, then the Boolean condition 
+231:	to end the loop, then the change value increasing (increment) or decreasing (decrement) 
+232:	that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
+233:	by one" error occurs when a loop runs one too many or one too few times. For Example:
+234:	// Example of a for loop
+235:	for (int i = 0; i < 10; i++) {
+236:	    // potential code body...
+237:	}
+238:	4.3 Developing Algorithms Using Strings....................................................
+239:	The String class allows for several "built-in" methods of the String class to manipulate 
+240:	the string and the value it stores. Several of these methods could apply to the A.P. exam 
+241:	including travelling (traversing) string characters, pulling out substrings (parts 
+242:	of the string), reversing a string, etc. For example:
+243:	// Example of string methods with a loop
+244:	String word   = "completion";
+245:	String parts1 = word.substring(3);
+246:	String parts2 = word.substring(1,7);
+247:	for (int i = 0; i < word.length(); i++) {
+248:	    char character = word.charAt(i);
+249:	}
+250:	4.4 Nested Iteration.......................................................................
+251:	Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
+252:	This means you can place a iteration statement inside the block of another iteration 
+253:	statement. The inner loop must complete all of its iterations before the outer loop 
+254:	can continue. For example:
+255:	// Example of nested loops
+256:	for (int i = 0; i < 10; i++) {
+257:	    for (int j = 0; j < 10; j++) {
+258:	        int k = 10;
+259:	        while (k < 10) {
+260:	            // potential code body...
+261:	        }
+262:	    }
+263:	}
+264:	4.5 Informal Code Analysis.................................................................
+265:	Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
+266:	loops are typical A.P. exam questions. You should practice these types of questions.
+267:	AP curriculum - Part 2.....................................................................
+268:	AP: Unit 2 (Using Objects).................................................................
+269:	2.1 Objects: Instances of Classes..........................................................
+270:	A "class" is the "blueprint" for creating an "object". In Java, the class is a way to 
+271:	use code to model "things" using properties and methods. The object is what the class 
+272:	"creates" when the class is made into a specific "object" of that class. The various 
+273:	terms used for this vary but all revolve around the same concepts. The term "object" 
+274:	can also be called a "instance" of the class. The term "properties" can also be 
+275:	called "things about the class", or "descriptors", or "adjectives", or 
+276:	"fields". The term "methods" could also be called "what the class can do", or 
+277:	"actions", or "verbs", or "functions". 
+278:	// Example of a simple class with properties and methods
+279:	class Person {
+280:	    String name;
+281:	    int age;
+282:	    void walk() {
+283:	        // code logic could go here
+284:	    }
+285:	    void talk() {
+286:	        // code logic could go here
+287:	    }
+288:	}
+289:	2.2 Creating and Storing Objects (Instantiation)...........................................
+290:	Methods are a way to break up code into logic modules and it also provides a way to avoid 
+291:	repeating code and be able to reuse sections of code logic. You can think of methods as 
+292:	analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
+293:	"functions" in math that may take a variable "input" and generate an "answer".  The term 
+294:	"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
+295:	method that is passed to the method. The value(s) passed are called "argument(s)". When you 
+296:	define the method in the method "signature" line, the round brackets can contain 
+297:	parameters separated by comma (if needed). A method may also give an "output" in the form 
+298:	of its "return" value (which also might not be needed, in which case it is a "void" method).
+299:	A method is "overloaded" if you have more than one method with the exact same name but 
+300:	different parameters. Classes have "constructor" methods that are called when 
+301:	a class is instantiated into an object. Constructor methods do not have a return type 
+302:	(not even the keyword "void"). They must have the exact same name as the class (including a 
+303:	capital letter). They are used to set the properties of the class to starting (or 
+304:	"default") values. If a class has multiple constructor methods, they are said to be 
+305:	overloaded constructors. When a line of code is used to instantiate a class into an instance 
+306:	of that class, the line includes the name of the class, the identifier name of the object, 
+307:	then an equals ("="), then the keyword "new" (which allots new memory for this 
+308:	advanced data type), then a call to a constructor method. If not constructor method 
+309:	is called, then the object references a "null" value until such time it is given a value to 
+310:	reference.
+311:	// Example of a class with constructors and instantiation
+312:	class Person {
+313:	    Person() {
+314:	        // code logic
+315:	    }
+316:	    Person(int age) {
+317:	        // code logic
+318:	    }
+319:	}
+320:	Person person1 = new Person();
+321:	Person person2 = new Person(5);
+322:	2.3 Calling a Void Method..................................................................
+323:	A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
+324:	or "verb") that does not use the "static" modifier word in the method signature line. 
+325:	A method with no prameters (or "inputs") means the method is defined with empty round 
+326:	brackets "( )". The "behavior" or action the method performs is defined in the body 
+327:	block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
+328:	abstraction" refers to a programmer being able to call a method without knowing how the 
+329:	method was written (also known as "black box" programming). When methods are "called" 
+330:	the execution flow stops, jumps and runs all the method body (or until a "return" 
+331:	statement) and then returns to the next line of execution after the method call line 
+332:	(or part of a code expression line). Methods can also be called from objects (or 
+333:	"instances") of a class using the dot "." operator. Void method do not return anthing 
+334:	(no "outputs") and use the keyword modifier "void" in the method signature in place of 
+335:	the return type.
+336:	// Examples of methods, parameters, return, and calling
+337:	public void show() {
+338:	    System.out.println("*")
+339:	}
+340:	public void show(char value) {
+341:	    System.out.println(value);
+342:	}
+343:	public int double(int number) {
+344:	    return number * 2;
+345:	} 
+346:	show();
+347:	show('A');
+348:	int answer = double(5);
+349:	2.4 Calling a Void Method with Parameters..................................................
+350:	A "non-static void" methods with parameters is a method with no outputs, but has input(s). 
+351:	This means the method signature has defined parameter(s) within the round brackets "( )" 
+352:	seperated by commas (if necessary). When this type of method is called, the "arguments" 
+353:	passed to this method must be in the same order in terms of data type. A method is 
+354:	"overloaded" when you have two or more methods with the same name but different and 
+355:	distinct parameter lists.
+356:	// Examples of method overloading
+357:	public void show() {
+358:	    System.out.println("*")
+359:	}
+360:	public void show(char value) {
+361:	    System.out.println(value);
+362:	}
+363:	public void show(int value) {
+364:	    System.out.println(value);
+365:	}
+366:	2.5 Calling a Non-void Method..............................................................
+367:	A method that does return a value, defines the return "type" in the method signature and 
+368:	the keyword "return" somewhere in the method body (at least once). When calling a return 
+369:	method, the value returned must be stored (in a variable) or used as part of an expression.
+370:	2.6 String Objects: Concatenation, Literals, and More......................................
+371:	The "String" class allows you to create String variables, concatenate them (join) 
+372:	together and use "built-in" methods of the String class. String literals (contained in 
+373:	quotes "") can be assigned to String variables or concatenated with Strings. String methods 
+374:	do not change the String ("immutable") object. The "+" or the "+=" operators can be used 
+375:	to concatenate Strings (resulting in a new String object). Primitives (like int, double, 
+376:	etc.) can also be concatenated with String objects. Those are now automatically converted 
+377:	to Strings and then concatenated. Escape sequences is the character "\" followed 
+378:	by another character to make certain outputs or changes to a String object. These include: 
+379:	\" for a quote, \\ for a slash, and \n for a new line.
+380:	// Examples of Strings and escape sequences
+381:	String str1 = "cat";
+382:	String str2 = str1 + "ty";
+383:	str1 += str2;
+384:	str2 = "\n" + str1 + "\\" + "\" dog";
+385:	2.7 String Methods.........................................................................
+386:	The "API" or Application Program Interface is a "library" of code that could be imported 
+387:	into a Java project or it could automatically be part of every Java project without needing 
+388:	an import. Classes and libraries are organized into "packages" in Java (also known as 
+389:	"namespaces"). The String class is in the "java.lang" package. Strings are collections 
+390:	of "char" values index from 0 up to the length of the String minus 1 (just like arrays 
+391:	are indexed). String methods used are: the String constructor "String s = new String();", 
+392:	the "length()" method, the "substring(int)" and "substring(int,int)" methods, the 
+393:	"indexOf(String)" method, the "equals(String)" method, and the 
+394:	"compareTo(String)" method.
+395:	// Examples of String methods
+396:	String str3 = new String("chatty");
+397:	// Constructs object with same sequence of characters as str3
+398:	int length = str3.length();
+399:	// Returns the number of characters in a String object
+400:	String str4 = str3.substring(1);
+401:	// Returns substring(from) starting at index "from" to the end
+402:	String str5 = str3.substring(1,3);
+403:	// Returns substring(from, to) starting at index "from" to index "to"
+404:	int index = str3.indexOf("hat");
+405:	// Returns the index of the first occurrence (returns -1 if not found)
+406:	boolean result1 = str3.equals(str4);
+407:	// Returns true if this is equal to other (returns false otherwise)
+408:	int result2 = str3.compareTo(str5);
+409:	// Returns value < 0 if less than other, returns 0 if equal to other,
+410:	// and returns value > 0 if greater than other
+411:	2.8 Wrapper Classes: Integer and Double....................................................
+412:	...
+413:	2.9 Using the Math Class...................................................................
+414:	...
+415:	AP: Unit 5 (Writing Classes) not running...................................................
+416:	AP: Unit 9 (Inheritance) not running.......................................................
+417:	AP curriculum - Part 3 not running.........................................................
+418:	AP curriculum - Part 4 not running.........................................................
+419:	Computer Science 42SAP practice tests not running..........................................
+420:	Computer Science 42SAP Post Secondary content not running..................................

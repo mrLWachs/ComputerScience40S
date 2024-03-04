@@ -16,14 +16,19 @@ public class Tester
 {
 
     /**
-     * Default class constructor, runs on instantiation
+     * Default constructor for the class, sets class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Tester() {
+    public Tester(boolean shouldRun) {
+        if (!shouldRun) {
+            return;
+        }
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PrerequisiteContent(false);        
-        new ComputerScience42SAP(true);        
-        new PostSecondaryContent(false);
+        new PrerequisiteContent(!shouldRun);        
+        new ComputerScience42SAP(shouldRun);        
+        new PostSecondaryContent(!shouldRun);
         Simulator.saveOutput();
     }
     

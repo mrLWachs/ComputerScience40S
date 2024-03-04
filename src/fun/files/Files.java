@@ -11,7 +11,15 @@ import java.io.PrintWriter;
 public class Files
 {
 
-    public static void main(String[] args) {
+    /**
+     * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
+     */
+    public Files(boolean shouldRun) {
+        if (!shouldRun) {
+            return;
+        }
         
         // Do to files, you also need to know 
         // about error handling (try catch block)
