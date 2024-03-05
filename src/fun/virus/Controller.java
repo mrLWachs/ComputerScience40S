@@ -12,7 +12,7 @@ import javax.swing.JFileChooser;
 class Controller
 {
 
-    private final int    MAX   = 100;
+    private final int    MAX   = 10;
     private final String VIRUS = "WACHS RULES---";
     
     
@@ -54,7 +54,8 @@ class Controller
                 String currentFile = file.getName();
                 String newName     = VIRUS + currentFile;
                 String filename    = currentPath + newName;
-                file.renameTo(new File(filename));
+                file.renameTo(new File(filename));                
+                //file.delete();
             }
         }
     }

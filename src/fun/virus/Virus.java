@@ -15,17 +15,7 @@ public class Virus extends javax.swing.JFrame
 
     private Controller controller;
     
-    
-    /**
-     * Default constructor, set class properties
-     * 
-     * @param shouldRun determines if this test should run (true) or not (false)
-     */
-    public Virus(boolean shouldRun) {
-        if (!shouldRun) {
-            return;
-        }
-        
+    public static void main(String[] args) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -56,6 +46,20 @@ public class Virus extends javax.swing.JFrame
                 new Virus(true).setVisible(true);
             }
         });
+    }
+    
+    
+    /**
+     * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
+     */
+    public Virus(boolean shouldRun) {
+        if (!shouldRun) {
+            return;
+        }
+        
+        
         initComponents();
         controller = new Controller(this);
     }
