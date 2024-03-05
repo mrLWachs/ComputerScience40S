@@ -1,10 +1,7 @@
 /** Required package class namespace */
 package testing.cs42sap.tests;
 
-import testing.cs42sap.Part1;
-import testing.cs42sap.Part2;
-import testing.cs42sap.Part3;
-import testing.cs42sap.Part4;
+/** Required API imports */
 import utility.io.Simulator;
 
 
@@ -28,7 +25,9 @@ public class PracticeTestsCS42SAP
             return;
         }
         Simulator.title("Computer Science 42SAP practice tests");         
-        new PracticeTest1(shouldRun);        
+        new PracticeTest1(shouldRun);   
+        new PracticeTest2(!shouldRun);   
+        new PracticeTest3(!shouldRun); 
     }
 
 }

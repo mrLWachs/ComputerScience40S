@@ -16,7 +16,7 @@ public class PracticeTest1
 
     public PracticeTest1(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("AP curriculum - Part 1 not running");
+            Simulator.note("AP Practice Test 1 not running");
             return;
         }
         Simulator.title("AP Practice Test 1");
@@ -56,7 +56,7 @@ public class PracticeTest1
     private void question2() {
         Simulator.comment("Question 2...");        
         System.out.println("Which of the following statements assigns a random");
-        System.out.println("integer bewteen 25 and 60, inclusive to rn?");
+        System.out.println("integer between 25 and 60, inclusive to rn?");
         Simulator.code("(A) int rnA = (int)(Math.random() * 25) + 36;");
         Simulator.code("(B) int rnB = (int)(Math.random() * 25) + 60;");
         Simulator.code("(C) int rnC = (int)(Math.random() * 26) + 60;");
@@ -235,57 +235,115 @@ public class PracticeTest1
     
     private void question7() {
         Simulator.comment("Question 7...");        
-        System.out.println("");
-        Simulator.code("");        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
+        System.out.println("Consider the following code segment");
+        Simulator.code("int i = a random number such that 1 <= i <= n;");
+        Simulator.code("for (int a = 2; a <= i; a++)");
+        Simulator.code("    for (int b = 1; b < i; b++)");
+        Simulator.code("        System.out.println(\"*\");");        
+        System.out.println("(A) 0");
+        System.out.println("(B) 1");
+        System.out.println("(C) 2");
+        System.out.println("(D) n - 1");
+        System.out.println("(E) n - 2");
              
         Simulator.comment("Answer 7...");  
-        
+        for (int n = 1; n <= 5; n++) {
+            double seed = Math.random();
+            double low = 1;
+            double high = (double)n;
+            int i = (int)((high - low + 1d) * seed + low);
+            int count = 0;
+            for (int a = 2; a <= i; a++) {
+                for (int b = 1; b < i; b++) {
+                    count++;
+                    System.out.println("*");
+                }
+            }
+            System.out.println("n = " + n + " random i = " + i + " star count = " + count);
+        }
     }
     
     private void question8() {
         Simulator.comment("Question 8...");        
-        System.out.println("");
-        Simulator.code("");        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
+        System.out.println("Consider the following code segment");
+        Simulator.code("int p = 5;");   
+        Simulator.code("int q = 2;");   
+        Simulator.code("int sum = 0;");   
+        Simulator.code("while (p <= 8) {");   
+        Simulator.code("    sum += p % q;");   
+        Simulator.code("    p++;");   
+        Simulator.code("    q++;");   
+        Simulator.code("}");            
+        System.out.println("(A) 1");
+        System.out.println("(B) 0");
+        System.out.println("(C) 13");
+        System.out.println("(D) 7");
+        System.out.println("(E) 4");
              
         Simulator.comment("Answer 8...");  
-        
+        int p = 5;
+        int q = 2;
+        int sum = 0;
+        while (p <= 8) {
+            sum += p % q;
+            p++;
+            q++;
+        }
+        System.out.println("sum = " + sum);
     }
     
     private void question9() {
         Simulator.comment("Question 9...");        
-        System.out.println("");
-        Simulator.code("");        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
+        System.out.println("Consider the following code segment");
+        Simulator.code("for (int i = 0; i <= 3; i++) {"); 
+        Simulator.code("    for (int j = 1; j <= 5; j+=2) {"); 
+        Simulator.code("        System.out.println(\"*\");"); 
+        Simulator.code("    }"); 
+        Simulator.code("}");          
+        System.out.println("(A) 3");
+        System.out.println("(B) 6");
+        System.out.println("(C) 9");
+        System.out.println("(D) 12");
+        System.out.println("(E) 15");
              
         Simulator.comment("Answer 9...");  
-        
+        int count = 0;
+        for (int i = 0; i <= 3; i++) {
+            for (int j = 1; j <= 5; j+=2) {
+                count++;
+                System.out.println("*");
+            }
+        }
+        System.out.println("count = " + count);        
     }
     
     private void question10() {
         Simulator.comment("Question 10...");        
-        System.out.println("");
-        Simulator.code("");        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
+        System.out.println("What are the values of a and b after the for loop");
+        System.out.println("finishes?");
+        Simulator.code("int a = 10;");        
+        Simulator.code("int b = 3;");        
+        Simulator.code("int t = 0;");        
+        Simulator.code("for (int i = 1; i < 4; i++) {");        
+        Simulator.code("    t = a;");        
+        Simulator.code("    a = i + b;");        
+        Simulator.code("    b = t - i;");        
+        Simulator.code("}");    
+        System.out.println("(A) a = 5 and b = -2");
+        System.out.println("(B) a = 6 and b = 7");
+        System.out.println("(C) a = 6 and b = 3");
+        System.out.println("(D) a = 12 and b = 1");
+        System.out.println("(E) a = 5 and b = 8");
              
         Simulator.comment("Answer 10...");  
-        
+        int a = 10;
+        int b = 3;
+        int t = 0;
+        for (int i = 1; i < 4; i++) {
+            t = a;
+            a = i + b;
+            b = t - i;
+        }
+        System.out.println("a = " + a + " and b = " + b);
     }
 }
