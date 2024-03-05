@@ -18,7 +18,7 @@ public class APExperiments
         }
         arrayListExample();
         exampleAPExamQuestion1();
-        exampleAPExamQuestion2();
+//        exampleAPExamQuestion2();
     }
 
     private static void arrayListExample() {

@@ -26,7 +26,7 @@ public class FunFridaysCode
         }
         new APExperiments(shouldRun);
         new Files(shouldRun);
-        new Virus(shouldRun);
+        new Virus(!shouldRun);
     }
 
 }
