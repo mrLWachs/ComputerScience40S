@@ -531,8 +531,60 @@ public class APUnit02UsingObjects
             //           primitive type
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("A \"wrapper class\" is a class type that is based ");
+        System.out.println("in a primitive data type. For example the ");
+        System.out.print("primitive data type \"int\" has the wrapper ");
+        System.out.println("class \"Integer\". Similarily, the \"Double\" ");
+        System.out.print("wrapper class, wraps around the \"double\" ");
+        System.out.println("primitive type. The wrapper classes (using a ");
+        System.out.print("capital letter) are part of java.lang and have ");
+        System.out.println("built-in methods like \"parseInt()\" and ");
+        System.out.print("\"parseDouble()\". Other methods include: ");
+        System.out.println("\"Integer(int)\" a constructor, ");
+        System.out.print("\"Double(double)\" a constructor, \"MIN_VALUE\" ");
+        System.out.println("a constant, \"MAX_VALUE\", \"intValue()\", and ");
+        System.out.print("\"doubleValue()\". Boxing and unboxing can be ");
+        System.out.println("done between the wrapper classes and the ");
+        System.out.print("primitive types (known as \"autoboxing\"). The ");
+        System.out.println("term \"boxing\" means the conversion between ");
+        System.out.print("primitive types and corresponding wrapper. ");
+        System.out.println("The term \"unboxing\" means the conversion ");
+        System.out.println("from the wrapper class to the primitive type.");
+                
+        // Example of wrapper classes and methods...
+        int     integerPrimitive1 = Integer.parseInt("10");
+        double  doublePrimitive1  = Double.parseDouble("1.2");
+        Integer integerObject1    = new Integer("10");
+        Double  doubleObject1     = new Double("1.2");
+        int     integerPrimitive2 = integerObject1.intValue();
+        double  doublePrimitive2  = doubleObject1.doubleValue();
+        int     minInteger        = Integer.MIN_VALUE;
+        int     maxInteger        = Integer.MAX_VALUE;
+        double  minDouble         = Double.MIN_VALUE;
+        double  maxDouble         = Double.MAX_VALUE;
+        // Boxing and unboxing...
+        int     integerPrimitive3 = integerObject1;
+        double  doublePrimitive3  = doubleObject1;
+        Integer integerObject2    = integerPrimitive3;
+        Double  doubleObject2     = doublePrimitive3;
         
+        Simulator.comment("Example of wrapper classes and methods...");
+        Simulator.code("int     integerPrimitive1 = Integer.parseInt(\"10\");");
+        Simulator.code("double  doublePrimitive1  = Double.parseDouble(\"1.2\");");
+        Simulator.code("Integer integerObject     = new Integer(\"10\");");
+        Simulator.code("Double  doubleObject      = new Double(\"1.2\");");
+        Simulator.code("int     integerPrimitive2 = integerObject.intValue();");
+        Simulator.code("double  doublePrimitive2  = doubleObject.doubleValue();");
+        Simulator.code("int     minInteger        = Integer.MIN_VALUE;");
+        Simulator.code("int     maxInteger        = Integer.MAX_VALUE;");
+        Simulator.code("double  minDouble         = Double.MIN_VALUE;");
+        Simulator.code("double  maxDouble         = Double.MAX_VALUE;"); 
+        Simulator.comment("Boxing and unboxing...");
+        Simulator.code("int     integerPrimitive3 = integerObject1;"); 
+        Simulator.code("double  doublePrimitive3  = doubleObject1;"); 
+        Simulator.code("Integer integerObject2    = integerPrimitive3;"); 
+        Simulator.code("Double  doubleObject2     = doublePrimitive3;"); 
+                
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("2.9 Using the Math Class");  
         // (2.9.1) Call static methods
@@ -559,7 +611,32 @@ public class APUnit02UsingObjects
             //           defined range
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("The \"Math\" class is part of the java.lang ");
+        System.out.println("package and has built-in static methods that can ");
+        System.out.print("be called. Useful methods include: abs, pow, ");
+        System.out.println("sqrt, and random. Including manipulating the ");
+        System.out.print("random method in a formula to define random ");
+        System.out.println("numbers in a range. Examples of this follow...");
+        
+        // Examples of the Math class methods and randoms...
+        int    value1 = Math.abs(-1);
+        double value2 = Math.abs(-1.2);
+        double value3 = Math.pow(2,3);
+        double value4 = Math.sqrt(9);
+        double value5 = Math.random();
+        final double HIGH = 10.9d;
+        final double LOW  = 5.5d;
+        double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;
+        
+        Simulator.comment("Examples of the Math class methods and randoms...");
+        Simulator.code("int    value1 = Math.abs(-1);");
+        Simulator.code("double value2 = Math.abs(-1.2);");
+        Simulator.code("double value3 = Math.pow(2,3);");
+        Simulator.code("double value4 = Math.sqrt(9);");
+        Simulator.code("double value5 = Math.random();");
+        Simulator.code("final double HIGH = 10.9d;");
+        Simulator.code("final double LOW  = 5.5d;");
+        Simulator.code("double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;");        
         
         ////////////////////////////////////////////////////////////////////////
     }

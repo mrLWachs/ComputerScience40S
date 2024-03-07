@@ -647,11 +647,58 @@ the "length()" method, the "substring(int)" and "substring(int,int)" methods, th
 <pre class="comment">// Returns value < 0 if less than other, returns 0 if equal to other,</pre>
 <pre class="comment">// and returns value > 0 if greater than other</pre>
 <h2>2.8 Wrapper Classes: Integer and Double....................................................</h2>
-...
+A "wrapper class" is a class type that is based in a primitive data type. For example the 
 </br />
+primitive data type "int" has the wrapper class "Integer". Similarily, the "Double" 
+</br />
+wrapper class, wraps around the "double" primitive type. The wrapper classes (using a 
+</br />
+capital letter) are part of java.lang and have built-in methods like "parseInt()" and 
+</br />
+"parseDouble()". Other methods include: "Integer(int)" a constructor, 
+</br />
+"Double(double)" a constructor, "MIN_VALUE" a constant, "MAX_VALUE", "intValue()", and 
+</br />
+"doubleValue()". Boxing and unboxing can be done between the wrapper classes and the 
+</br />
+primitive types (known as "autoboxing"). The term "boxing" means the conversion between 
+</br />
+primitive types and corresponding wrapper. The term "unboxing" means the conversion 
+</br />
+from the wrapper class to the primitive type.
+</br />
+<pre class="comment">// Example of wrapper classes and methods...</pre>
+<pre>int     integerPrimitive1 = Integer.parseInt("10");</pre>
+<pre>double  doublePrimitive1  = Double.parseDouble("1.2");</pre>
+<pre>Integer integerObject     = new Integer("10");</pre>
+<pre>Double  doubleObject      = new Double("1.2");</pre>
+<pre>int     integerPrimitive2 = integerObject.intValue();</pre>
+<pre>double  doublePrimitive2  = doubleObject.doubleValue();</pre>
+<pre>int     minInteger        = Integer.MIN_VALUE;</pre>
+<pre>int     maxInteger        = Integer.MAX_VALUE;</pre>
+<pre>double  minDouble         = Double.MIN_VALUE;</pre>
+<pre>double  maxDouble         = Double.MAX_VALUE;</pre>
+<pre class="comment">// Boxing and unboxing...</pre>
+<pre>int     integerPrimitive3 = integerObject1;</pre>
+<pre>double  doublePrimitive3  = doubleObject1;</pre>
+<pre>Integer integerObject2    = integerPrimitive3;</pre>
+<pre>Double  doubleObject2     = doublePrimitive3;</pre>
 <h2>2.9 Using the Math Class...................................................................</h2>
-...
+The "Math" class is part of the java.lang package and has built-in static methods that can 
 </br />
+be called. Useful methods include: abs, pow, sqrt, and random. Including manipulating the 
+</br />
+random method in a formula to define random numbers in a range. Examples of this follow...
+</br />
+<pre class="comment">// Examples of the Math class methods and randoms...</pre>
+<pre>int    value1 = Math.abs(-1);</pre>
+<pre>double value2 = Math.abs(-1.2);</pre>
+<pre>double value3 = Math.pow(2,3);</pre>
+<pre>double value4 = Math.sqrt(9);</pre>
+<pre>double value5 = Math.random();</pre>
+<pre>final double HIGH = 10.9d;</pre>
+<pre>final double LOW  = 5.5d;</pre>
+<pre>double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;</pre>
 <h3>AP: Unit 5 (Writing Classes) not running...................................................</h3>
 <h3>AP: Unit 9 (Inheritance) not running.......................................................</h3>
 <h3>AP curriculum - Part 3 not running.........................................................</h3>
