@@ -25,6 +25,12 @@ public class ComputerScience30S
 
     public static void main(String[] args) {
         
+        // "Call" a method (means you use the name of the method)
+        learnIntroToJava();
+        
+    }
+
+    private static void learnIntroToJava() {
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////////////////////
@@ -649,7 +655,7 @@ public class ComputerScience30S
         // System.exit(0);
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
-        // code goes between these two brackets        
+        // code goes between these two brackets  
     }
     
 }
