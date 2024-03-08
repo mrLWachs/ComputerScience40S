@@ -1,22 +1,22 @@
 /** Required package class namespace */
 package fun.searching;
 
+/** Required API imports */
 import java.util.ArrayList;
 
 
 /*
- * Searching - description
+ * Searching - useful methods for searching through arrays and lists of
+ * data for a specific item
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Feb 29, 2024
 */
 public class Searching
 {
 
     /**
-     * Main method for the project
-     * 
-     * @param args the command line arguments
+     * Default constructor, set class properties
      */
     public Searching() {
         // Array of item to search through
@@ -36,38 +36,44 @@ public class Searching
         };
         // An item to search for
         String item = "Wachs";
+        
+        // Now with a list structure (ADT)
+        ArrayList<String> list = new ArrayList<>();        
+        for (String array1 : array) {
+            list.add(array1);
+        }
+        System.out.println("List/Array is: " + list.toString());
+        
         // Get the simple result of a seach 
         boolean result = search(array,item);
 
         // Display the result
-        if (result) System.out.println("Found");
-        else        System.out.println("Not found");
+        if (result) System.out.println("Found " + item);
+        else        System.out.println("Not found " + item);
 
         // Get a more detailed result of a search
         int index = linearSearch(array,item);
-
         // Display the result
-        System.out.println("Linear Search: " + item + " was at " + index);
+        System.out.println("Linear Search array: " + item + " was at " + index);
 
-        // Now with a list structure (ADT)
-        ArrayList<String> list = new ArrayList<>();        
-        for (int i = 0; i < array.length; i++) {
-            list.add(array[i]);
-        }
-        
         index = linearSearch(list,item);
-        System.out.println("Linear Search: " + item + " was at " + index);
+        System.out.println("Linear Search list: " + item + " was at " + index);
         
         index = binarySearch(array,item);
-        System.out.println("Binary Search: " + item + " was at " + index);
+        System.out.println("Binary Search array: " + item + " was at " + index);
         
         index = binarySearch(list,item);
-        System.out.println("Binary Search: " + item + " was at " + index);
+        System.out.println("Binary Search list: " + item + " was at " + index);
         
     }
     
-    
-
+    /**
+     * A simple search, determines if the item is in the array or not
+     * 
+     * @param array an array to search through
+     * @param item the item to search for
+     * @return found (true) or not (false)
+     */
     private static boolean search(String[] array, String item) {
         // Traverse (travel through, "visit" every spot, loop) the array
         for (int i = 0; i < array.length; i++) {
@@ -79,6 +85,15 @@ public class Searching
         return false;
     }
 
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It
+     * will find the first occurrence of an item in the array and return
+     * the index where it found it, or a -1 if not found 
+     * 
+     * @param list the array to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found
+     */
     private static int linearSearch(String[] array, String item) {
         // Traverse (travel through, "visit" every spot, loop) the array
         for (int i = 0; i < array.length; i++) {
@@ -89,17 +104,26 @@ public class Searching
         // Go through the entire array, never found it
         return -1;
         
-        // Alternative loop structure
-//        int i = 0;
-//        while (i < array.length) {
-//            if (array[i].equals(item)) {
-//                return i;
-//            }
-//            i++;
-//        }
-//        return -1;
+        // An alternative loop structure
+        // int i = 0;
+        // while (i < array.length) {
+        //     if (array[i].equals(item)) {
+        //         return i;
+        //     }
+        //     i++;
+        // }
+        // return -1;
     }
 
+    /**
+     * An implementation of a linear search (sequential search) algorithm. It
+     * will find the first occurrence of an item in the LinkedList and return
+     * the index where it found it, or a -1 if not found 
+     * 
+     * @param list the ArrayList to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found
+     */
     private static int linearSearch(ArrayList<String> list, String item) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals(item)) return i;
@@ -107,10 +131,19 @@ public class Searching
         return -1;
     }
 
+    /**
+     * An implementation of a binary search algorithm. It will find the first 
+     * occurrence of an item in the array and return the index where it 
+     * found it, or a -1 if not found
+     * 
+     * @param list the array to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */
     private int binarySearch(String[] array, String item) {
         int low  = 0;                   // Marker for the low end
         int high = array.length - 1;    // Marker for the high end
-        while(low <= high) {           // Continue while markers not collapsed
+        while(low <= high) {            // Continue while markers not collapsed
             int middle = (high + low) / 2;  // Calculate middle between markers
             if (array[middle].equals(item)) return middle; // Found it
             else if (array[middle].compareTo(item)  > 0) high = middle - 1;
@@ -138,10 +171,31 @@ public class Searching
 //        return -1;  
 //    }
 
+    
+    /**
+     * Another implementation of a binary search algorithm. This implementation
+     * uses a wrapper method around a private utility recursive method. It will
+     * find the first occurrence of an item in the ArrayList and return the 
+     * index where it found it, or a -1 if not found
+     * 
+     * @param list the ArrayList to search through
+     * @param item the item to search for in the list
+     * @return the first index found at, or a -1 if not found 
+     */
     private int binarySearch(ArrayList<String> list, String item) {
         return recursiveBinarySearch(list,item,0,list.size());
     }
 
+    /**
+     * Recursive method used to find the item in the list and return the index 
+     * of it's location or a -1 if not found
+     * 
+     * @param list the ArrayList to search through
+     * @param item the item to search for in the list
+     * @param low the lowest index to start from
+     * @param high the highest index to go to
+     * @return the first index found at, or a -1 if not found 
+     */
     private int recursiveBinarySearch(ArrayList<String> list, String item, 
             int low, int high) {
         if (low <= high) {                      // while markers not collapsed
