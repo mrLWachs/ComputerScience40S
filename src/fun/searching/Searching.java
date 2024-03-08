@@ -47,7 +47,7 @@ public class Searching
         int index = linearSearch(array,item);
 
         // Display the result
-        System.out.println(item + " was at " + index);
+        System.out.println("Linear Search: " + item + " was at " + index);
 
         // Now with a list structure (ADT)
         ArrayList<String> list = new ArrayList<>();        
@@ -56,15 +56,13 @@ public class Searching
         }
         
         index = linearSearch(list,item);
-        System.out.println(item + " was at " + index);
-        
+        System.out.println("Linear Search: " + item + " was at " + index);
         
         index = binarySearch(array,item);
         System.out.println("Binary Search: " + item + " was at " + index);
         
         index = binarySearch(list,item);
         System.out.println("Binary Search: " + item + " was at " + index);
-        
         
     }
     
@@ -121,6 +119,7 @@ public class Searching
         return -1;  // Not found
     }
 
+/// HERE IS AN EXAMPLE OF THE SAME ALGORITHM USING INTEGERS.....
 //    private int binarySearch(int[] array, int item) {
 //        int low  = 0;                   
 //        int high = array.length - 1;    
