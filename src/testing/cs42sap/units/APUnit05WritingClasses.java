@@ -210,11 +210,31 @@ public class APUnit05WritingClasses
             //           postconditions when preconditions are met          
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("Comments are a documentation system that allows ");
+        System.out.println("programmers to leave notes for themselves or ");
+        System.out.print("other programmers. This can serve several ");
+        System.out.println("purposes including (but not limited to) ");
+        System.out.print("documenting names and dates, explaining code ");
+        System.out.println("logic, working through problem solving logic, ");
+        System.out.print("and others. In Java, the two forward slashes // ");
+        System.out.println("allows a comment at the end of a line of code or ");
+        System.out.print("on its own line. A slash and a star /* opens a ");
+        System.out.println("comment block which will continue until a star ");
+        System.out.print("and slash */ closes the comment block. The slash ");
+        System.out.println("and two stars /** open the JavaDoc style of ");
+        System.out.print("comment block which many IDEs (e.g. NetBeans) ");
+        System.out.println("recognize and help with commenting and to create ");
+        System.out.print("API documentation. Methods should be commented ");
+        System.out.println("with the method's purpose (a brief description), ");
+        System.out.print("any pre-conditions (the parameters if any), and ");
+        System.out.println("post-conditions (the return type if any) of the ");
+        System.out.println("method.");
         
-        Simulator.comment("");
-        Simulator.code("");
-        
+        Simulator.comment("Comments...");
+        Simulator.code("// a standard comment");
+        Simulator.code("/* opens a comment block */");
+        Simulator.code("/** JavaDoc comment block */");
+                
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.4 Accessor Methods");  
         // (5.4.1) Define behaviors of an object through non-void methods 

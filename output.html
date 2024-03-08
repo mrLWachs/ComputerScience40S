@@ -766,10 +766,30 @@ variables are set to default values.
 <pre>    }</pre>
 <pre>}</pre>
 <h2>5.2 Documentation with Comments............................................................</h2>
-...
+Comments are a documentation system that allows programmers to leave notes for themselves or 
 </br />
-<pre class="comment">// </pre>
-<pre></pre>
+other programmers. This can serve several purposes including (but not limited to) 
+</br />
+documenting names and dates, explaining code logic, working through problem solving logic, 
+</br />
+and others. In Java, the two forward slashes // allows a comment at the end of a line of code or 
+</br />
+on its own line. A slash and a star /* opens a comment block which will continue until a star 
+</br />
+and slash */ closes the comment block. The slash and two stars /** open the JavaDoc style of 
+</br />
+comment block which many IDEs (e.g. NetBeans) recognize and help with commenting and to create 
+</br />
+API documentation. Methods should be commented with the method's purpose (a brief description), 
+</br />
+any pre-conditions (the parameters if any), and post-conditions (the return type if any) of the 
+</br />
+method.
+</br />
+<pre class="comment">// Comments...</pre>
+<pre>// a standard comment</pre>
+<pre>/* opens a comment block */</pre>
+<pre>/** JavaDoc comment block */</pre>
 <h2>5.4 Accessor Methods.......................................................................</h2>
 ...
 </br />
