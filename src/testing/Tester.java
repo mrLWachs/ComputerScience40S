@@ -27,8 +27,8 @@ public class Tester
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
         new PrerequisiteContent(!shouldRun);        
-        new ComputerScience42SAP(!shouldRun);        
-        new PostSecondaryContent(shouldRun);
+        new ComputerScience42SAP(shouldRun);        
+        new PostSecondaryContent(!shouldRun);
         Simulator.saveOutput();
     }
     

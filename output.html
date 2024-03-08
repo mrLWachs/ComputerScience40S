@@ -50,11 +50,785 @@ pre.comment {
 
 <h1>Mr. Wachs' Computer Science Classes........................................................</h1>
 <h3>Computer Science 42SAP Prerequisite content not running....................................</h3>
-<h3>Computer Science 42SAP course content not running..........................................</h3>
-<h1>Computer Science 42SAP Post Secondary Content:.............................................</h1>
-<h3>Permanent Storage Post Secondary Content not running.......................................</h3>
-<h3>Stacks and Queues Post Secondary Content not running.......................................</h3>
-<h3>Searching and Sorting Post Secondary Content not running...................................</h3>
-<h3>Binary Trees Post Secondary Content not running............................................</h3>
+<h1>Computer Science 42SAP Course:.............................................................</h1>
+<h1>Computer Science 42SAP curriculum content..................................................</h1>
+<h1>AP curriculum - Part 1.....................................................................</h1>
+<h1>AP: Unit 1 (Primitive Types)...............................................................</h1>
+<h2>1.1 Why Programming? Why Java?.............................................................</h2>
+System.out.print outputs text to the screen and System.out.println outputs with a line break
+</br />
+More specifically, the code word "System" refers to the "computer system" and the 
+</br />
+word "out" refers to outputting, and finally the word "print" or "println" are calls to 
+</br />
+methods (or "actions") that take the string literal (which is the word or words in between 
+</br />
+the quotation marks) and outputs it. So the command "System.out.println("literal");" 
+</br />
+will take the string literal and output it to the default output device - that being the 
+</br />
+computer screen.
+</br />
+<h2>1.2 Variables and Data Types...............................................................</h2>
+Data/information refers to the "kind" of data being stored (or "remembered") by the program 
+</br />
+in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
+</br />
+(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
+</br />
+"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
+</br />
+specified at the time you write a line of code to "create" (or "declare") the variable. A 
+</br />
+variable can only be one type and only store that specified type of data. However, the data 
+</br />
+itself can change (or "vary") after the initial declaration. Examples of this are below...
+</br />
+<pre class="comment">// Variables declared and assigned initial ("starting") values:</pre>
+<pre>boolean a = true;</pre>
+<pre>int     b = 0;</pre>
+<pre>double  c = 1.0;</pre>
+<pre>char    d = 'A';</pre>
+<pre class="comment">// Variables content changes ("reassigned"):</pre>
+<pre>a = false;</pre>
+<pre>b = 1;</pre>
+<pre>c = 1.1;</pre>
+<pre>d = 'B';</pre>
+A "final" (or a "constant") is a variable in which the stored value does NOT change 
+</br />
+(it stays "constant") and it locked at that value. Final (or constant) variables are 
+</br />
+given the initial value when declared (or initialized) and that value stays locked. These 
+</br />
+types of values are written in ALL_CAPS with the underscore value used to seperate words in 
+</br />
+the name. Final variables are more efficient for a number of reasons including ease of code 
+</br />
+understanding, speed (faster code), easier to update code, and others. Examples of finals 
+</br />
+are below
+</br />
+<pre class="comment">// Constants (finals) declared (initialized)</pre>
+<pre>final boolean FOUND  = true;</pre>
+<pre>final int     VALUE  = 1;</pre>
+<pre>final double  AMOUNT = 2.5;</pre>
+<pre>final char    CODE   = 'X';</pre>
+<h2>1.3 Expressions and Assignment Statements..................................................</h2>
+Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
+</br />
+written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
+</br />
+context, the word "literal" can also mean a number (like "5"). This usually involves 
+</br />
+variable types int and double (the number types) used in a math expression or equation. This 
+</br />
+can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
+</br />
+evaluated in a formula, they always evaluate to an int answer (solution) and double values 
+</br />
+will evaluate to a double. Complex (or "compound" expressions can be formed in which 
+</br />
+the order of operations (or precedence order). This means multiplication and division are 
+</br />
+evaluated before addition and subtraction. If operations are at the same precedence level, 
+</br />
+then they are evaluated from left to right.When you try and divide by zero, an error 
+</br />
+(the "ArithmeticException" error) will occur and the program will stop running. Examples:
+</br />
+<pre class="comment">// Arithmetic evaluations using variables</pre>
+<pre>int    v1 = 5;</pre>
+<pre>int    v2 = 3;</pre>
+<pre>int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;</pre>
+<pre>double v4 = 5.2;</pre>
+<pre>double v5 = 3.3;</pre>
+<pre>double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;</pre>
+<h2>1.4 Compound Assignment Operators..........................................................</h2>
+Compound statements in this context refers to using shortcuts to quickly add or subtract one 
+</br />
+(increment or decrement) to a variable. You can also use more complex shorthand compound 
+</br />
+statements to quickly multiply, divide, even modulus a variable with itself or other 
+</br />
+variables. For example:
+</br />
+<pre class="comment">// Shorthand Compound Arithmetic expressions</pre>
+<pre>int value = 5;</pre>
+<pre>value++;    // is the same as "value = value + 1;"</pre>
+<pre>value--;    // is the same as "value = value + 1;"</pre>
+<pre>value += 5; // is the same as "value = value + 5;"</pre>
+<pre>value -= 5; // is the same as "value = value - 5;"</pre>
+<pre>value *= 5; // is the same as "value = value * 5;"</pre>
+<pre>value /= 5; // is the same as "value = value / 5;"</pre>
+<pre>value %= 5; // is the same as "value = value % 5;"</pre>
+<h2>1.5 Casting and Ranges of Variables........................................................</h2>
+Casting is the process of "converting" one data type into another data type. When casting 
+</br />
+an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
+</br />
+off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
+</br />
+A char when cast will turn into it's ASCII value. The process of casting involves putting 
+</br />
+variable to be cast with the type being cast into in round brackets to the left of that 
+</br />
+variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
+</br />
+constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
+</br />
+evaluates an int outside that range, an error will occur (overflow error). For example:
+</br />
+<pre class="comment">// Casting data types</pre>
+<pre>int integer = Integer.MAX_VALUE;</pre>
+<pre>double doub = Double.MIN_VALUE;</pre>
+<pre>doub        = (int)integer;</pre>
+<pre>integer     = (int)doub;</pre>
+<pre>char letter = 'A';</pre>
+<pre>integer     = (int)letter;</pre>
+<h1>AP: Unit 3 (Boolean Expressions And If Statements).........................................</h1>
+<h2>3.1 Boolean Expressions....................................................................</h2>
+A Boolean (true/false) expression is a code statement most likely in a control structure 
+</br />
+like a conditional statement or loop control structure that evaluates to true or false to 
+</br />
+make decisions and control the flow of the program. The Boolean expression will require 
+</br />
+the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
+</br />
+than", "greater than", "less than or equal to", "greater than or equal to", "equal 
+</br />
+to", and "not equal to".
+</br />
+<h2>3.2 if Statements and Control Flow.........................................................</h2>
+A "Conditional Statement" is also known under other names like "branching statement", "if 
+</br />
+statement", "one-way selection statement", and "control structure". It uses the reserved 
+</br />
+keyword "if" along with round brackets which contain the Boolean expression, and curly 
+</br />
+brackets to contain the control block of all code you wish to be controlled by the 
+</br />
+conditional statement. Brackets are optional if the block is only one line, and you may also 
+</br />
+move thos lines up to the same line as the conditional statement. For example:
+</br />
+<pre class="comment">// Example of if statements</pre>
+<pre>int a = 10;</pre>
+<pre>int b = 10;</pre>
+<pre>if (a == a) {</pre>
+<pre>    // "equal"</pre>
+<pre>}</pre>
+<h2>3.3 if-else Statements.....................................................................</h2>
+The "else" statement is paired with an "if" statement to control the flow of the logic so 
+</br />
+that the conditional now evaluates to both true and false. This can be called a "two 
+</br />
+way selection" (for true/false). An "else" must always follow an "if" statement first. 
+</br />
+For example:
+</br />
+<pre class="comment">// if with "else" </pre>
+<pre>double c = 1.45, d = 1.5; </pre>
+<pre>if (c < d) {</pre>
+<pre>    // "Less than"</pre>
+<pre>}</pre>
+<pre>else {</pre>
+<pre>    // "Greater than"</pre>
+<pre>}</pre>
+<pre class="comment">// Shortened lines version</pre>
+<pre>char e = 'A';</pre>
+<pre>char f = 'a';</pre>
+<pre>if (e != f) e = '!';</pre>
+<pre>else        e = '=';</pre>
+<h2>3.4 else if Statements.....................................................................</h2>
+When making multiple decisions (more than 2), the "else if" statement is added to an 
+</br />
+existing "if" statement to have multiple branches of logic for the code to follow. This 
+</br />
+is much more efficient than seperate "if" statements. This can also be called "multi-way 
+</br />
+selection" (or "if-else-if"). An "else" statement is also still the final option (but 
+</br />
+this is not required). For example:
+</br />
+<pre class="comment">// Showing a "chain" of else if statements</pre>
+<pre>int g = 0;</pre>
+<pre>if (g == 1) {</pre>
+<pre>    // The first if is true</pre>
+<pre>}</pre>
+<pre>else if (g == 2) {</pre>
+<pre>    // The next if is true</pre>
+<pre>}</pre>
+<pre>else if (g == 3) {</pre>
+<pre>    // The next if (in the "chain" of ifs) is true</pre>
+<pre>}</pre>
+<pre>else {</pre>
+<pre>    // Nothing above is true, so go to this else</pre>
+<pre>}</pre>
+<h2>3.5 Compound Boolean Expressions...........................................................</h2>
+The process of "nesting" means to place one conditional statement inside the "block" of 
+</br />
+another conditional statement. The logical operators: "and", "or", and "not" are 
+</br />
+represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
+</br />
+is used to combine logical boolean expressions such that ALL expressions need to be true for 
+</br />
+the entire statement to be true. The operator OR is used to combine logical boolean 
+</br />
+expressions such that ANY expression can be true for the entire statement to be true. The 
+</br />
+operator NOT reverses the logic so that true statements are evaluated as false (and visa 
+</br />
+versa). If the statement contains multiple Boolean expressions and the result of the 
+</br />
+evaluation of one expression has already determined the expressions result, then the 
+</br />
+rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
+</br />
+evaluation". For example:
+</br />
+<pre class="comment">// Logical operators and "nesting"</pre>
+<pre>int    age = 17;</pre>
+<pre>double iq  = 1.0;</pre>
+<pre>if (age >= 18 && iq > 90) {</pre>
+<pre>    // with "and" ("&&") BOTH have to be true</pre>
+<pre>}</pre>
+<pre>else if (age >= 18 || iq > 0) {</pre>
+<pre>    // with "or" ("||") EITHER can be true</pre>
+<pre>}</pre>
+<pre>else {</pre>
+<pre>    // Case if neither evaluates</pre>
+<pre>    if (age > 0) {</pre>
+<pre>        // A "nested if statement"</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>3.6 Equivalent Boolean Expressions.........................................................</h2>
+Boolean (true/false) expressions turned into logical statements used by control structures 
+</br />
+like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
+</br />
+Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
+</br />
+not necessarily applicable to this exam). This just means that complex statements need to be 
+</br />
+evaluated by using mathematical rules (like "order of operations") and logical operators 
+</br />
+(like "and, or, not") to determine the final Boolean result. This could determine if a 
+</br />
+control structure (like an "if" statement) runs a block of code or not.
+</br />
+<h2>3.7 Comparing Objects......................................................................</h2>
+The use of an advanced data type like an "Object" in code means that comparison 
+</br />
+operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
+</br />
+double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
+</br />
+determine the equality of two objects. For example:
+</br />
+<pre class="comment">// Use of the built-in equals method with Objects</pre>
+<pre>String word1 = "edgy";</pre>
+<pre>String word2 = "edGy";</pre>
+<pre>if (word1.equals(word2)) {</pre>
+<pre>    // "W1=W2"</pre>
+<pre>}</pre>
+<pre>else if (word1.equalsIgnoreCase(word2)) {</pre>
+<pre>    // "W1 kind of == W2"</pre>
+<pre>}</pre>
+<h1>AP: Unit 4 (Iteration).....................................................................</h1>
+<h2>4.1 while Loops............................................................................</h2>
+The word "Iteration" is another word for "Loop" or "Looping" which is a control 
+</br />
+struture to have code statements "repeat". Like conditional ("if") statements, iteration 
+</br />
+statements control the flow of a program's logic. Also like if statements, iteration 
+</br />
+statements are controlled by a Boolean expression (true or false). The result of the Boolean 
+</br />
+expression will result in the code executing zero or mulitple times (until the expression 
+</br />
+evaluates to false). The expression is evaluated each time through an iteration of the loop. 
+</br />
+A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
+</br />
+(thus the loop never stops looping - or never stops running). It is possible a loop will 
+</br />
+never run if it evaluates to false before the body (block) of the loop. If you use the 
+</br />
+keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
+</br />
+potentially exit any method the loop is written inside. The "while" loop is a event loop or 
+</br />
+non-deterministic loop, which means it is not usually used for counting but when you do 
+</br />
+not know how many times the loop needs to run (a certain event can cause the loop to 
+</br />
+end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
+</br />
+(traversing) arrays and lists, and searching and sorting values. For example:
+</br />
+<pre class="comment">// Example of a simple while loop</pre>
+<pre>int counter = 0;</pre>
+<pre>while (counter < 10) {</pre>
+<pre>    counter++;</pre>
+<pre>}</pre>
+<h2>4.2 for Loops..............................................................................</h2>
+The "for" loop is another looping form. The for loop is a count controlled loop that 
+</br />
+generally is used when a loop needs to run a specific number of times. There are three 
+</br />
+parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
+</br />
+the starting, ending, and change of the loop. In a for loop a counting variable is 
+</br />
+generally declared right inside the loop to a starting value, then the Boolean condition 
+</br />
+to end the loop, then the change value increasing (increment) or decreasing (decrement) 
+</br />
+that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
+</br />
+by one" error occurs when a loop runs one too many or one too few times. For Example:
+</br />
+<pre class="comment">// Example of a for loop</pre>
+<pre>for (int i = 0; i < 10; i++) {</pre>
+<pre>    // potential code body...</pre>
+<pre>}</pre>
+<h2>4.3 Developing Algorithms Using Strings....................................................</h2>
+The String class allows for several "built-in" methods of the String class to manipulate 
+</br />
+the string and the value it stores. Several of these methods could apply to the A.P. exam 
+</br />
+including travelling (traversing) string characters, pulling out substrings (parts 
+</br />
+of the string), reversing a string, etc. For example:
+</br />
+<pre class="comment">// Example of string methods with a loop</pre>
+<pre>String word   = "completion";</pre>
+<pre>String parts1 = word.substring(3);</pre>
+<pre>String parts2 = word.substring(1,7);</pre>
+<pre>for (int i = 0; i < word.length(); i++) {</pre>
+<pre>    char character = word.charAt(i);</pre>
+<pre>}</pre>
+<h2>4.4 Nested Iteration.......................................................................</h2>
+Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
+</br />
+This means you can place a iteration statement inside the block of another iteration 
+</br />
+statement. The inner loop must complete all of its iterations before the outer loop 
+</br />
+can continue. For example:
+</br />
+<pre class="comment">// Example of nested loops</pre>
+<pre>for (int i = 0; i < 10; i++) {</pre>
+<pre>    for (int j = 0; j < 10; j++) {</pre>
+<pre>        int k = 10;</pre>
+<pre>        while (k < 10) {</pre>
+<pre>            // potential code body...</pre>
+<pre>        }</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>4.5 Informal Code Analysis.................................................................</h2>
+Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
+</br />
+loops are typical A.P. exam questions. You should practice these types of questions.
+</br />
+<h1>AP curriculum - Part 2.....................................................................</h1>
+<h1>AP: Unit 2 (Using Objects).................................................................</h1>
+<h2>2.1 Objects: Instances of Classes..........................................................</h2>
+A "class" is the "blueprint" for creating an "object". In Java, the class is a way to 
+</br />
+use code to model "things" using properties and methods. The object is what the class 
+</br />
+"creates" when the class is made into a specific "object" of that class. The various 
+</br />
+terms used for this vary but all revolve around the same concepts. The term "object" 
+</br />
+can also be called a "instance" of the class. The term "properties" can also be 
+</br />
+called "things about the class", or "descriptors", or "adjectives", or 
+</br />
+"fields". The term "methods" could also be called "what the class can do", or 
+</br />
+"actions", or "verbs", or "functions". 
+</br />
+<pre class="comment">// Example of a simple class with properties and methods</pre>
+<pre>class Person {</pre>
+<pre>    String name;</pre>
+<pre>    int age;</pre>
+<pre>    void walk() {</pre>
+<pre>        // code logic could go here</pre>
+<pre>    }</pre>
+<pre>    void talk() {</pre>
+<pre>        // code logic could go here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>2.2 Creating and Storing Objects (Instantiation)...........................................</h2>
+Methods are a way to break up code into logic modules and it also provides a way to avoid 
+</br />
+repeating code and be able to reuse sections of code logic. You can think of methods as 
+</br />
+analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
+</br />
+"functions" in math that may take a variable "input" and generate an "answer".  The term 
+</br />
+"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
+</br />
+method that is passed to the method. The value(s) passed are called "argument(s)". When you 
+</br />
+define the method in the method "signature" line, the round brackets can contain 
+</br />
+parameters separated by comma (if needed). A method may also give an "output" in the form 
+</br />
+of its "return" value (which also might not be needed, in which case it is a "void" method).
+</br />
+A method is "overloaded" if you have more than one method with the exact same name but 
+</br />
+different parameters. Classes have "constructor" methods that are called when 
+</br />
+a class is instantiated into an object. Constructor methods do not have a return type 
+</br />
+(not even the keyword "void"). They must have the exact same name as the class (including a 
+</br />
+capital letter). They are used to set the properties of the class to starting (or 
+</br />
+"default") values. If a class has multiple constructor methods, they are said to be 
+</br />
+overloaded constructors. When a line of code is used to instantiate a class into an instance 
+</br />
+of that class, the line includes the name of the class, the identifier name of the object, 
+</br />
+then an equals ("="), then the keyword "new" (which allots new memory for this 
+</br />
+advanced data type), then a call to a constructor method. If not constructor method 
+</br />
+is called, then the object references a "null" value until such time it is given a value to 
+</br />
+reference.
+</br />
+<pre class="comment">// Example of a class with constructors and instantiation</pre>
+<pre>class Person {</pre>
+<pre>    Person() {</pre>
+<pre>        // code logic</pre>
+<pre>    }</pre>
+<pre>    Person(int age) {</pre>
+<pre>        // code logic</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<pre>Person person1 = new Person();</pre>
+<pre>Person person2 = new Person(5);</pre>
+<h2>2.3 Calling a Void Method..................................................................</h2>
+A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
+</br />
+or "verb") that does not use the "static" modifier word in the method signature line. 
+</br />
+A method with no prameters (or "inputs") means the method is defined with empty round 
+</br />
+brackets "( )". The "behavior" or action the method performs is defined in the body 
+</br />
+block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
+</br />
+abstraction" refers to a programmer being able to call a method without knowing how the 
+</br />
+method was written (also known as "black box" programming). When methods are "called" 
+</br />
+the execution flow stops, jumps and runs all the method body (or until a "return" 
+</br />
+statement) and then returns to the next line of execution after the method call line 
+</br />
+(or part of a code expression line). Methods can also be called from objects (or 
+</br />
+"instances") of a class using the dot "." operator. Void method do not return anthing 
+</br />
+(no "outputs") and use the keyword modifier "void" in the method signature in place of 
+</br />
+the return type.
+</br />
+<pre class="comment">// Examples of methods, parameters, return, and calling</pre>
+<pre>public void show() {</pre>
+<pre>    System.out.println("*")</pre>
+<pre>}</pre>
+<pre>public void show(char value) {</pre>
+<pre>    System.out.println(value);</pre>
+<pre>}</pre>
+<pre>public int double(int number) {</pre>
+<pre>    return number * 2;</pre>
+<pre>} </pre>
+<pre>show();</pre>
+<pre>show('A');</pre>
+<pre>int answer = double(5);</pre>
+<h2>2.4 Calling a Void Method with Parameters..................................................</h2>
+A "non-static void" methods with parameters is a method with no outputs, but has input(s). 
+</br />
+This means the method signature has defined parameter(s) within the round brackets "( )" 
+</br />
+seperated by commas (if necessary). When this type of method is called, the "arguments" 
+</br />
+passed to this method must be in the same order in terms of data type. A method is 
+</br />
+"overloaded" when you have two or more methods with the same name but different and 
+</br />
+distinct parameter lists.
+</br />
+<pre class="comment">// Examples of method overloading</pre>
+<pre>public void show() {</pre>
+<pre>    System.out.println("*")</pre>
+<pre>}</pre>
+<pre>public void show(char value) {</pre>
+<pre>    System.out.println(value);</pre>
+<pre>}</pre>
+<pre>public void show(int value) {</pre>
+<pre>    System.out.println(value);</pre>
+<pre>}</pre>
+<h2>2.5 Calling a Non-void Method..............................................................</h2>
+A method that does return a value, defines the return "type" in the method signature and 
+</br />
+the keyword "return" somewhere in the method body (at least once). When calling a return 
+</br />
+method, the value returned must be stored (in a variable) or used as part of an expression.
+</br />
+<h2>2.6 String Objects: Concatenation, Literals, and More......................................</h2>
+The "String" class allows you to create String variables, concatenate them (join) 
+</br />
+together and use "built-in" methods of the String class. String literals (contained in 
+</br />
+quotes "") can be assigned to String variables or concatenated with Strings. String methods 
+</br />
+do not change the String ("immutable") object. The "+" or the "+=" operators can be used 
+</br />
+to concatenate Strings (resulting in a new String object). Primitives (like int, double, 
+</br />
+etc.) can also be concatenated with String objects. Those are now automatically converted 
+</br />
+to Strings and then concatenated. Escape sequences is the character "\" followed 
+</br />
+by another character to make certain outputs or changes to a String object. These include: 
+</br />
+\" for a quote, \\ for a slash, and \n for a new line.
+</br />
+<pre class="comment">// Examples of Strings and escape sequences</pre>
+<pre>String str1 = "cat";</pre>
+<pre>String str2 = str1 + "ty";</pre>
+<pre>str1 += str2;</pre>
+<pre>str2 = "\n" + str1 + "\\" + "\" dog";</pre>
+<h2>2.7 String Methods.........................................................................</h2>
+The "API" or Application Program Interface is a "library" of code that could be imported 
+</br />
+into a Java project or it could automatically be part of every Java project without needing 
+</br />
+an import. Classes and libraries are organized into "packages" in Java (also known as 
+</br />
+"namespaces"). The String class is in the "java.lang" package. Strings are collections 
+</br />
+of "char" values index from 0 up to the length of the String minus 1 (just like arrays 
+</br />
+are indexed). String methods used are: the String constructor "String s = new String();", 
+</br />
+the "length()" method, the "substring(int)" and "substring(int,int)" methods, the 
+</br />
+"indexOf(String)" method, the "equals(String)" method, and the 
+</br />
+"compareTo(String)" method.
+</br />
+<pre class="comment">// Examples of String methods</pre>
+<pre>String str3 = new String("chatty");</pre>
+<pre class="comment">// Constructs object with same sequence of characters as str3</pre>
+<pre>int length = str3.length();</pre>
+<pre class="comment">// Returns the number of characters in a String object</pre>
+<pre>String str4 = str3.substring(1);</pre>
+<pre class="comment">// Returns substring(from) starting at index "from" to the end</pre>
+<pre>String str5 = str3.substring(1,3);</pre>
+<pre class="comment">// Returns substring(from, to) starting at index "from" to index "to"</pre>
+<pre>int index = str3.indexOf("hat");</pre>
+<pre class="comment">// Returns the index of the first occurrence (returns -1 if not found)</pre>
+<pre>boolean result1 = str3.equals(str4);</pre>
+<pre class="comment">// Returns true if this is equal to other (returns false otherwise)</pre>
+<pre>int result2 = str3.compareTo(str5);</pre>
+<pre class="comment">// Returns value < 0 if less than other, returns 0 if equal to other,</pre>
+<pre class="comment">// and returns value > 0 if greater than other</pre>
+<h2>2.8 Wrapper Classes: Integer and Double....................................................</h2>
+A "wrapper class" is a class type that is based in a primitive data type. For example the 
+</br />
+primitive data type "int" has the wrapper class "Integer". Similarily, the "Double" 
+</br />
+wrapper class, wraps around the "double" primitive type. The wrapper classes (using a 
+</br />
+capital letter) are part of java.lang and have built-in methods like "parseInt()" and 
+</br />
+"parseDouble()". Other methods include: "Integer(int)" a constructor, 
+</br />
+"Double(double)" a constructor, "MIN_VALUE" a constant, "MAX_VALUE", "intValue()", and 
+</br />
+"doubleValue()". Boxing and unboxing can be done between the wrapper classes and the 
+</br />
+primitive types (known as "autoboxing"). The term "boxing" means the conversion between 
+</br />
+primitive types and corresponding wrapper. The term "unboxing" means the conversion 
+</br />
+from the wrapper class to the primitive type.
+</br />
+<pre class="comment">// Example of wrapper classes and methods...</pre>
+<pre>int     integerPrimitive1 = Integer.parseInt("10");</pre>
+<pre>double  doublePrimitive1  = Double.parseDouble("1.2");</pre>
+<pre>Integer integerObject     = new Integer("10");</pre>
+<pre>Double  doubleObject      = new Double("1.2");</pre>
+<pre>int     integerPrimitive2 = integerObject.intValue();</pre>
+<pre>double  doublePrimitive2  = doubleObject.doubleValue();</pre>
+<pre>int     minInteger        = Integer.MIN_VALUE;</pre>
+<pre>int     maxInteger        = Integer.MAX_VALUE;</pre>
+<pre>double  minDouble         = Double.MIN_VALUE;</pre>
+<pre>double  maxDouble         = Double.MAX_VALUE;</pre>
+<pre class="comment">// Boxing and unboxing...</pre>
+<pre>int     integerPrimitive3 = integerObject1;</pre>
+<pre>double  doublePrimitive3  = doubleObject1;</pre>
+<pre>Integer integerObject2    = integerPrimitive3;</pre>
+<pre>Double  doubleObject2     = doublePrimitive3;</pre>
+<h2>2.9 Using the Math Class...................................................................</h2>
+The "Math" class is part of the java.lang package and has built-in static methods that can 
+</br />
+be called. Useful methods include: abs, pow, sqrt, and random. Including manipulating the 
+</br />
+random method in a formula to define random numbers in a range. Examples of this follow...
+</br />
+<pre class="comment">// Examples of the Math class methods and randoms...</pre>
+<pre>int    value1 = Math.abs(-1);</pre>
+<pre>double value2 = Math.abs(-1.2);</pre>
+<pre>double value3 = Math.pow(2,3);</pre>
+<pre>double value4 = Math.sqrt(9);</pre>
+<pre>double value5 = Math.random();</pre>
+<pre>final double HIGH = 10.9d;</pre>
+<pre>final double LOW  = 5.5d;</pre>
+<pre>double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;</pre>
+<h1>AP: Unit 5 (Writing Classes)...............................................................</h1>
+<h2>5.1 Anatomy of a Class.....................................................................</h2>
+The properties (attributes) and methods (actions) of a class can be defined in terms of 
+</br />
+visibility. This means that the keywords "public" and "private" can be used as a 
+</br />
+modifier in the front of a method signature or at the front of a property declaration line 
+</br />
+to define the encapsulation level. The public keyword means the property can be accessed (and 
+</br />
+modified) both inside the class and from other classes outside the class. In terms of methods 
+</br />
+it means the method can be called within the class (by other methods) and outside the class 
+</br />
+from other classes using the dot "." operator. Classes and constructor methods are 
+</br />
+designated public. The concept of "encapsulation" is used to make certain data and actions 
+</br />
+private and protect them from outside classes and perhaps only allow access through accessor 
+</br />
+and modifier ("getter" and "setter") methods.
+</br />
+<pre class="comment">// Class example private/public properties and methods</pre>
+<pre>class Apple { </pre>
+<pre>    public int number;</pre>
+<pre>    private double price;</pre>
+<pre>    public void eat() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>    private void spoil() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>5.2 Constructors...........................................................................</h2>
+A constructor method is a special method defined in a class that is called when a class is 
+</br />
+instantiated into an instance (or "object") of that class. The constructor method has to have 
+</br />
+the exact same name as the class (including letter case) and no return type (not even the 
+</br />
+word void). Constructors are usually used to set the initial (or "default") values for the 
+</br />
+class properties. This can be said to be setting the "state" of the object. If any of the 
+</br />
+properties (attributes) are another class level instance variable (not a primitive type), 
+</br />
+then this class is said to have a "has-a" relationship with that class. This can also be 
+</br />
+called "association" or "composition" between the classes. Constructors can have 
+</br />
+parameters passed to the class that can be used in setting the initial state. When no 
+</br />
+constructor is written, Java provides a no-argument constructor, and the instance 
+</br />
+variables are set to default values.
+</br />
+<pre class="comment">// Class example association and constructors</pre>
+<pre>class Basket {</pre>
+<pre>    public Apple apple;</pre>
+<pre>    public Basket() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>    public Basket(Apple apple) {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>5.2 Documentation with Comments............................................................</h2>
+Comments are a documentation system that allows programmers to leave notes for themselves or 
+</br />
+other programmers. This can serve several purposes including (but not limited to) 
+</br />
+documenting names and dates, explaining code logic, working through problem solving logic, 
+</br />
+and others. In Java, the two forward slashes // allows a comment at the end of a line of code or 
+</br />
+on its own line. A slash and a star /* opens a comment block which will continue until a star 
+</br />
+and slash */ closes the comment block. The slash and two stars /** open the JavaDoc style of 
+</br />
+comment block which many IDEs (e.g. NetBeans) recognize and help with commenting and to create 
+</br />
+API documentation. Methods should be commented with the method's purpose (a brief description), 
+</br />
+any pre-conditions (the parameters if any), and post-conditions (the return type if any) of the 
+</br />
+method.
+</br />
+<pre class="comment">// Comments...</pre>
+<pre>// a standard comment</pre>
+<pre>/* opens a comment block */</pre>
+<pre>/** JavaDoc comment block */</pre>
+<h2>5.4 Accessor Methods.......................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.5 Mutator Methods........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.6 Writing Methods........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.7 Static Variables and Methods...........................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.8 Scope and Access.......................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.9 this Keyword...........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.10 Ethical and Social Implications of Computing Systems..................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h3>AP: Unit 9 (Inheritance) not running.......................................................</h3>
+<h3>AP curriculum - Part 3 not running.........................................................</h3>
+<h3>AP curriculum - Part 4 not running.........................................................</h3>
+<h3>Computer Science 42SAP practice tests not running..........................................</h3>
+<h3>Computer Science 42SAP Post Secondary content not running..................................</h3>
 
 </body>

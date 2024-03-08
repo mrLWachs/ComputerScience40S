@@ -3,7 +3,6 @@
 package fun.virus;
 
 
-
 /**
  * Virus.java - description
  *
@@ -14,13 +13,22 @@ public class Virus extends javax.swing.JFrame
 {
 
     private Controller controller;
+
+    /**
+     * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
+     */
+    public Virus(boolean shouldRun) {
+        if (!shouldRun) {
+            return;
+        }
+        initComponents();
+        controller = new Controller(this);
+        run(this);
+    }
     
-    public static void main(String[] args) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+    private void run(Virus virus) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -37,31 +45,12 @@ public class Virus extends javax.swing.JFrame
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Virus.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Virus(true).setVisible(true);
+                virus.setVisible(true);
             }
         });
-    }
-    
-    
-    /**
-     * Default constructor, set class properties
-     * 
-     * @param shouldRun determines if this test should run (true) or not (false)
-     */
-    public Virus(boolean shouldRun) {
-        if (!shouldRun) {
-            return;
-        }
-        
-        
-        initComponents();
-        controller = new Controller(this);
     }
 
     /** This method is called from within the constructor to

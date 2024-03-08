@@ -25,10 +25,10 @@ public class FunFridaysCode
         if (!shouldRun) {
             return;
         }
-//        new APExperiments(shouldRun);
-//        new Files(shouldRun);
-//        new Virus(shouldRun).main(null);
-        new Searching();
+        new APExperiments(!shouldRun);
+        new Files(!shouldRun);
+        new Virus(!shouldRun);
+        new Searching(shouldRun);
     }
 
 }

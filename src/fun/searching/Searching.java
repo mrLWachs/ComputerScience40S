@@ -17,8 +17,13 @@ public class Searching
 
     /**
      * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Searching() {
+    public Searching(boolean shouldRun) {
+        if (!shouldRun) {
+            return;
+        }
         // Array of item to search through
         String[] array = {
             "Adam",
@@ -144,10 +149,10 @@ public class Searching
         int low  = 0;                   // Marker for the low end
         int high = array.length - 1;    // Marker for the high end
         while(low <= high) {            // Continue while markers not collapsed
-            int middle = (high + low) / 2;  // Calculate middle between markers
-            if (array[middle].equals(item)) return middle; // Found it
-            else if (array[middle].compareTo(item)  > 0) high = middle - 1;
-            else if (array[middle].compareTo(item)  < 0) low  = middle + 1;
+            int mid = (high + low) / 2; // Calculate middle between markers
+            if      (array[mid].equals(item))        return mid; // Found it
+            else if (array[mid].compareTo(item) > 0) high = mid - 1; // Too high 
+            else if (array[mid].compareTo(item) < 0) low  = mid + 1; // Too low
         }
         return -1;  // Not found
     }
@@ -183,7 +188,7 @@ public class Searching
      * @return the first index found at, or a -1 if not found 
      */
     private int binarySearch(ArrayList<String> list, String item) {
-        return recursiveBinarySearch(list,item,0,list.size());
+        return binaryRecursive(list,item,0,list.size());
     }
 
     /**
@@ -196,19 +201,16 @@ public class Searching
      * @param high the highest index to go to
      * @return the first index found at, or a -1 if not found 
      */
-    private int recursiveBinarySearch(ArrayList<String> list, String item, 
-            int low, int high) {
-        if (low <= high) {                      // while markers not collapsed
-            int mid = low + (high - low) / 2;   // calculate middle point 
-            if (list.get(mid) == null) return -1;
-            if (list.get(mid).compareTo(item) >  0)
-                return recursiveBinarySearch(list,item,low,mid-1);
-            else if (list.get(mid).compareTo(item) <  0)
-                return recursiveBinarySearch(list,item,mid+1,high);
-            else 
-                return mid;
+    private int binaryRecursive(ArrayList<String> list, String item, 
+                                      int low, int high) {
+        if (low <= high) {                      // While markers not collapsed
+            int mid = low + (high - low) / 2;   // Calculate middle point 
+            if      (list.get(mid) == null)             return -1;
+            else if (list.get(mid).compareTo(item) > 0) return binaryRecursive(list,item,low,mid-1);
+            else if (list.get(mid).compareTo(item) < 0) return binaryRecursive(list,item,mid+1,high);
+            else                                        return mid;
         }
-        return -1;                       // not found
+        return -1;                              // Not found
     }
     
 }
