@@ -3,6 +3,7 @@ package fun;
 
 import fun.experiments.APExperiments;
 import fun.files.Files;
+import fun.searching.Searching;
 import fun.virus.Virus;
 
 
@@ -24,9 +25,10 @@ public class FunFridaysCode
         if (!shouldRun) {
             return;
         }
-        new APExperiments(shouldRun);
-        new Files(shouldRun);
-        new Virus(shouldRun).main(null);
+//        new APExperiments(shouldRun);
+//        new Files(shouldRun);
+//        new Virus(shouldRun).main(null);
+        new Searching();
     }
 
 }
