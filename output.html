@@ -699,7 +699,112 @@ random method in a formula to define random numbers in a range. Examples of this
 <pre>final double HIGH = 10.9d;</pre>
 <pre>final double LOW  = 5.5d;</pre>
 <pre>double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;</pre>
-<h3>AP: Unit 5 (Writing Classes) not running...................................................</h3>
+<h1>AP: Unit 5 (Writing Classes)...............................................................</h1>
+<h2>5.1 Anatomy of a Class.....................................................................</h2>
+The properties (attributes) and methods (actions) of a class can be defined in terms of 
+</br />
+visibility. This means that the keywords "public" and "private" can be used as a 
+</br />
+modifier in the front of a method signature or at the front of a property declaration line 
+</br />
+to define the encapsulation level. The public keyword means the property can be accessed (and 
+</br />
+modified) both inside the class and from other classes outside the class. In terms of methods 
+</br />
+it means the method can be called within the class (by other methods) and outside the class 
+</br />
+from other classes using the dot "." operator. Classes and constructor methods are 
+</br />
+designated public. The concept of "encapsulation" is used to make certain data and actions 
+</br />
+private and protect them from outside classes and perhaps only allow access through accessor 
+</br />
+and modifier ("getter" and "setter") methods.
+</br />
+<pre class="comment">// Class example private/public properties and methods</pre>
+<pre>class Apple { </pre>
+<pre>    public int number;</pre>
+<pre>    private double price;</pre>
+<pre>    public void eat() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>    private void spoil() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>5.2 Constructors...........................................................................</h2>
+A constructor method is a special method defined in a class that is called when a class is 
+</br />
+instantiated into an instance (or "object") of that class. The constructor method has to have 
+</br />
+the exact same name as the class (including letter case) and no return type (not even the 
+</br />
+word void). Constructors are usually used to set the initial (or "default") values for the 
+</br />
+class properties. This can be said to be setting the "state" of the object. If any of the 
+</br />
+properties (attributes) are another class level instance variable (not a primitive type), 
+</br />
+then this class is said to have a "has-a" relationship with that class. This can also be 
+</br />
+called "association" or "composition" between the classes. Constructors can have 
+</br />
+parameters passed to the class that can be used in setting the initial state. When no 
+</br />
+constructor is written, Java provides a no-argument constructor, and the instance 
+</br />
+variables are set to default values.
+</br />
+<pre class="comment">// Class example association and constructors</pre>
+<pre>class Basket {</pre>
+<pre>    public Apple apple;</pre>
+<pre>    public Basket() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>    public Basket(Apple apple) {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<h2>5.2 Documentation with Comments............................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.4 Accessor Methods.......................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.5 Mutator Methods........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.6 Writing Methods........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.7 Static Variables and Methods...........................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.8 Scope and Access.......................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.9 this Keyword...........................................................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>5.10 Ethical and Social Implications of Computing Systems..................................</h2>
+...
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
 <h3>AP: Unit 9 (Inheritance) not running.......................................................</h3>
 <h3>AP curriculum - Part 3 not running.........................................................</h3>
 <h3>AP curriculum - Part 4 not running.........................................................</h3>

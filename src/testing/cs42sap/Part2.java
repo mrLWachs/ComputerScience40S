@@ -34,7 +34,7 @@ public class Part2
         }
         Simulator.title("AP curriculum - Part 2");
         new APUnit02UsingObjects(shouldRun);
-        new APUnit05WritingClasses(!shouldRun);
+        new APUnit05WritingClasses(shouldRun);
         new APUnit09Inheritance(!shouldRun);        
     }
         

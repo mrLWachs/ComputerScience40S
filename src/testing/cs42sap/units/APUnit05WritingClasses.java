@@ -72,7 +72,49 @@ public class APUnit05WritingClasses
             //           allow client code to use and modify data
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("The properties (attributes) and methods (actions) ");
+        System.out.println("of a class can be defined in terms of ");
+        System.out.print("visibility. This means that the keywords ");
+        System.out.println("\"public\" and \"private\" can be used as a ");
+        System.out.print("modifier in the front of a method signature or at ");
+        System.out.println("the front of a property declaration line ");
+        System.out.print("to define the encapsulation level. The public ");
+        System.out.println("keyword means the property can be accessed (and ");
+        System.out.print("modified) both inside the class and from other ");
+        System.out.println("classes outside the class. In terms of methods ");
+        System.out.print("it means the method can be called within the ");
+        System.out.println("class (by other methods) and outside the class ");
+        System.out.print("from other classes using the dot \".\" ");
+        System.out.println("operator. Classes and constructor methods are ");
+        System.out.print("designated public. The concept of \"encapsulation\" ");
+        System.out.println("is used to make certain data and actions ");
+        System.out.print("private and protect them from outside classes and ");
+        System.out.println("perhaps only allow access through accessor ");
+        System.out.println("and modifier (\"getter\" and \"setter\") methods.");
+        
+        // Class example private/public properties and methods
+        // class Apple {            
+        //     public int number;
+        //     private double price;            
+        //     public void eat() {
+        //         // logic here
+        //     }            
+        //     private void spoil() {
+        //         // logic here
+        //     }            
+        // }
+        
+        Simulator.comment("Class example private/public properties and methods");
+        Simulator.code("class Apple { ");
+        Simulator.code("    public int number;");
+        Simulator.code("    private double price;");
+        Simulator.code("    public void eat() {");
+        Simulator.code("        // logic here");
+        Simulator.code("    }");
+        Simulator.code("    private void spoil() {");
+        Simulator.code("        // logic here");
+        Simulator.code("    }");
+        Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.2 Constructors");  
@@ -100,7 +142,49 @@ public class APUnit05WritingClasses
             //           are set to default values
         ////////////////////////////////////////////////////////////////////////
                 
-        System.out.println("...");
+        System.out.print("A constructor method is a special method defined ");
+        System.out.println("in a class that is called when a class is ");
+        System.out.print("instantiated into an instance (or \"object\") of ");
+        System.out.println("that class. The constructor method has to have ");
+        System.out.print("the exact same name as the class (including ");
+        System.out.println("letter case) and no return type (not even the ");
+        System.out.print("word void). Constructors are usually used to set ");
+        System.out.println("the initial (or \"default\") values for the ");
+        System.out.print("class properties. This can be said to be setting ");
+        System.out.println("the \"state\" of the object. If any of the ");
+        System.out.print("properties (attributes) are another class level ");
+        System.out.println("instance variable (not a primitive type), ");
+        System.out.print("then this class is said to have a \"has-a\" ");
+        System.out.println("relationship with that class. This can also be ");
+        System.out.print("called \"association\" or \"composition\" ");
+        System.out.println("between the classes. Constructors can have ");
+        System.out.print("parameters passed to the class that can be used ");
+        System.out.println("in setting the initial state. When no ");
+        System.out.print("constructor is written, Java provides a ");
+        System.out.println("no-argument constructor, and the instance ");
+        System.out.println("variables are set to default values.");
+        
+        // Class example association and constructors
+        // class Basket {            
+        //     public Apple apple;            
+        //     public Basket() {
+        //         // logic here
+        //     }            
+        //     public Basket(Apple apple) {
+        //         // logic here
+        //     }            
+        // }
+        
+        Simulator.comment("Class example association and constructors");
+        Simulator.code("class Basket {");
+        Simulator.code("    public Apple apple;");
+        Simulator.code("    public Basket() {");
+        Simulator.code("        // logic here");
+        Simulator.code("    }");
+        Simulator.code("    public Basket(Apple apple) {");
+        Simulator.code("        // logic here");
+        Simulator.code("    }");
+        Simulator.code("}");        
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.2 Documentation with Comments");  
@@ -127,6 +211,9 @@ public class APUnit05WritingClasses
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
+        
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.4 Accessor Methods");  
@@ -157,6 +244,9 @@ public class APUnit05WritingClasses
         
         System.out.println("...");
         
+        Simulator.comment("");
+        Simulator.code("");
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.5 Mutator Methods");  
         // (5.5.1) Define behaviors of an object through void methods with or 
@@ -169,6 +259,9 @@ public class APUnit05WritingClasses
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
+        
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.6 Writing Methods");  
@@ -201,6 +294,9 @@ public class APUnit05WritingClasses
         
         System.out.println("...");
         
+        Simulator.comment("");
+        Simulator.code("");
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.7 Static Variables and Methods");  
         // (5.7.1) Define behaviors of a class through static methods
@@ -228,6 +324,9 @@ public class APUnit05WritingClasses
         
         System.out.println("...");
         
+        Simulator.comment("");
+        Simulator.code("");
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.8 Scope and Access");  
         // (5.8.1) Explain where variables can be used in the program code
@@ -248,6 +347,9 @@ public class APUnit05WritingClasses
         
         System.out.println("...");
         
+        Simulator.comment("");
+        Simulator.code("");
+        
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.9 this Keyword");  
         // (5.9.1) Evaluate object reference expressions that use the keyword
@@ -260,6 +362,9 @@ public class APUnit05WritingClasses
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
+        
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.10 Ethical and Social Implications of Computing Systems");  
@@ -275,6 +380,9 @@ public class APUnit05WritingClasses
         ////////////////////////////////////////////////////////////////////////
         
         System.out.println("...");
+        
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
     }
