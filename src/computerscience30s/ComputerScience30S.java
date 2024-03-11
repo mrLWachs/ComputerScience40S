@@ -26,7 +26,9 @@ public class ComputerScience30S
     public static void main(String[] args) {
         
         // "Call" a method (means you use the name of the method)
-        learnIntroToJava();
+//        learnIntroToJava();
+        
+        learnMethods();
         
     }
 
@@ -657,7 +659,15 @@ public class ComputerScience30S
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets  
     }
-    
+
+    private static void learnMethods() {
+        System.out.println("Start Learning Methods...");
+        
+        
+        System.out.println("Completed Learning Methods!");
+    }
+
+      
 }
 
 
@@ -726,3 +736,12 @@ public class ComputerScience30S
 //      number 13) by going to Tools -> Options, then click on the "Editor"
 //      tab at the top, then the "Formatting" below that. Then change the 
 //      settings to what you prefer
+// (16) The + and - signs and gray lines along the side in NetBeans
+//      help to "expand" and "collapse" the method body (block of code)
+//      press CTRL and SHIFT and "-" it collapses all methods, and
+//      CTRL and SHIFT and "+" expands all code folds
+// (17) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
+// (18) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip 10) will help you write it
+
