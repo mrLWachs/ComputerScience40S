@@ -676,11 +676,11 @@ public class ComputerScience30S
          // Call it again
          writeStar();
          
-         // When we call a method, we place "data" (information) inside the
-        // round brackets and that data is "passed" (sending) over to the 
-        // method. The data being passed is tecehnically called the "argument"
-        // and the data being recieved is called the "parameter(s)". You can
-        // always change the arguement.
+        // When we call a method, we sometimes place "data" (information) 
+        // inside the round brackets and that data is "passed" (sending) over 
+        // to the method. The data being passed is tecehnically called the
+        // "argument" and the data being recieved is called the "parameter(s)". 
+        // You can always change the arguement.
         
          write("Spider-man");
          
