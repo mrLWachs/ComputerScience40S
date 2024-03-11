@@ -670,11 +670,11 @@ public class ComputerScience30S
         // for: (1) to break up a problem (2) reusability (3) to avoid 
         // repeating code
         
-         // Code to "jump" to a method, is "calling" the method (method call)
-         writeStar();
-         
-         // Call it again
-         writeStar();
+        // Code to "jump" to a method, is "calling" the method (method call)
+        writeStar();
+
+        // Call it again
+        writeStar();
          
         // When we call a method, we sometimes place "data" (information) 
         // inside the round brackets and that data is "passed" (sending) over 
@@ -682,11 +682,15 @@ public class ComputerScience30S
         // "argument" and the data being recieved is called the "parameter(s)". 
         // You can always change the arguement.
         
-         write("Spider-man");
-         
-         write("Batman");
-         write("Wonder woman");
-         
+        write("Spider-man");
+
+        write("Batman");
+        write("Wonder woman");
+        write("Ant-man");
+        
+        
+        
+        
         
         System.out.println("Completed Learning Methods!");
     }
