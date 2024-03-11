@@ -262,9 +262,60 @@ public class APUnit05WritingClasses
             //           and the returned string is printed
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("Accessor methods are the names given to methods ");
+        System.out.println("in a class that \"access\" data. this usually ");
+        System.out.print("means properties of the class that are ");
+        System.out.println("encapsulated (private). Other names for ");
+        System.out.print("accessors are \"getters\" or \"get\" methods. ");
+        System.out.println("The method (behaviours, actions, functions, ");
+        System.out.print("procedures) of a class are accessed with the ");
+        System.out.println("dot operator (\".\") after the name of the ");
+        System.out.print("object (instance of the class). Non-void ");
+        System.out.println("methods that return a value can then be used as ");
+        System.out.print("part of a code line expression. The return ");
+        System.out.println("type of the method must be compatible with any ");
+        System.out.print("data types (e.g. variables) being used in the ");
+        System.out.println("expression. If the return type is a class level ");
+        System.out.print("type then the method returns a reference to ");
+        System.out.println("the actual object (\"return by reference\") not a ");
+        System.out.print("reference to a copy (\"return by value\") of ");
+        System.out.println("the actual object. If the \"System.out.print\" ");
+        System.out.print("or \"System.out.println\" methods are called ");
+        System.out.println("and an object is passed to those methods, the ");
+        System.out.println("object's \"toString()\" method is automatically ");
+        System.out.println("invoked (called) in the output.");
         
-        Simulator.comment("");
+        // Examples of calling accessor methods in a class
+        // class Fighter {
+        //     private int health;
+        //     private Weapon weapon;            
+        //     public int getHealth() {
+        //         return health;
+        //     }
+        //     public Weapon getWeapon() {
+        //         return weapon;
+        //     }
+        // }
+        // 
+        // Fighter fighter = new Fighter();
+        // int hp = fighter.health;
+        // Weapon club = fighter.getWeapon();
+            
+        Simulator.comment("Examples of calling methods in a class");
+        Simulator.code("class Fighter {");
+        Simulator.code("    private int health;");
+        Simulator.code("    private Weapon weapon;");
+        Simulator.code("    public int getHealth() {");
+        Simulator.code("        return health;");
+        Simulator.code("    }");
+        Simulator.code("    public Weapon getWeapon() {");
+        Simulator.code("        return weapon;");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("");
+        Simulator.code("Fighter fighter = new Fighter();");
+        Simulator.code("int hp = fighter.health;");
+        Simulator.code("Weapon club = fighter.getWeapon();");
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
@@ -278,9 +329,31 @@ public class APUnit05WritingClasses
             //           static variables
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("Mutator methods are the name given to methods ");
+        System.out.println("that \"change\" a property of a class (usually ");
+        System.out.print("an encapsulated property). These can be void ");
+        System.out.println("methods (but are sometimes boolean methods to ");
+        System.out.println("indicate success or not).");
         
-        Simulator.comment("");
+        // Examples of calling mutator methods in a class
+        // class Fighter {
+        //     private int health;            
+        //     public int setHealth(int health) {
+        //         this.health = health;
+        //     }
+        // }
+        // Fighter fighter = new Fighter();
+        // fighter.setHealth(10);
+        
+        Simulator.comment("Examples of calling mutator methods in a class");
+        Simulator.code("class Fighter {");
+        Simulator.code("    private int health;");
+        Simulator.code("    public int setHealth(int health) {");
+        Simulator.code("        this.health = health;");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("Fighter fighter = new Fighter();");
+        Simulator.code("fighter.setHealth(10);");
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
@@ -312,11 +385,25 @@ public class APUnit05WritingClasses
             //           They both refer to the same object
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
-        
-        Simulator.comment("");
-        Simulator.code("");
-        
+        System.out.print("Methods are written to model an \"action\". Also ");
+        System.out.println("known as functions or procedures, methods may ");
+        System.out.print("or may not have zero, one, or more than one ");
+        System.out.println("\"input(s)\" called \"parameters\" (or empty round ");
+        System.out.print("brackets if no inputs are required). Methods may ");
+        System.out.println("have zero (a \"void\" method) or one \"output\" ");
+        System.out.print("known as the return type. If the parameter is a ");
+        System.out.println("primitive data type, then a copy of the data ");
+        System.out.print("from the original primitive type is passed to ");
+        System.out.println("the method (\"pass by value\"). If the parameter ");
+        System.out.print("is an advanced data type (\"class\" level data) ");
+        System.out.println("then a reference to that object is passed. This ");
+        System.out.print("means that any changes the method makes to the ");
+        System.out.println("object will be reflected (unless the object ");
+        System.out.print("was an immutable object). Because the passed ");
+        System.out.println("reference object parameter and the original ");
+        System.out.print("argument object are \"linked\" they can be ");
+        System.out.println("referred to as \"aliases\".");
+
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.7 Static Variables and Methods");  
         // (5.7.1) Define behaviors of a class through static methods
@@ -342,9 +429,46 @@ public class APUnit05WritingClasses
             //           not objects of a class
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("Although they can be called from an object of a ");
+        System.out.println("class, \"static\" methods are generally called ");
+        System.out.print("from the class name itself. Static methods ");
+        System.out.println("\"belong\" to the class itself and therefore ");
+        System.out.print("do not require you to instantiate an object to ");
+        System.out.println("call a method from that class. The keyword ");
+        System.out.print("\"static\" is included as a modifier word in ");
+        System.out.println("the method signature line. Static methods ");
+        System.out.print("cannot access or change the values of instance ");
+        System.out.println("properties of a class but can change/access ");
+        System.out.print("static properties. Static properties ");
+        System.out.println("(variables) also \"belong\" to the class itself ");
+        System.out.print("and are \"shared\" by all objects of the class. ");
+        System.out.println("Static properties can be either public or ");
+        System.out.print("private and are also declared using the ");
+        System.out.println("\"static\" keyword as a modifier for the ");
+        System.out.print("property. Static properties are used with the ");
+        System.out.println("class name and then the dot operator and then ");
+        System.out.print("the name of the property (although they can ");
+        System.out.println("also be accessed from an object name). ");
         
-        Simulator.comment("");
+        // Static properties and methods
+        // class Fighter {
+        //     public static int number;
+        //     public static void attack() {
+        //         // logic here
+        //     }
+        // }
+        // Fighter.number = 10;
+        // Fighter.attack();
+                
+        Simulator.comment("Static properties and methods");
+        Simulator.code("class Fighter {");
+        Simulator.code("    public static int number;");
+        Simulator.code("    public static void attack() {");
+        Simulator.code("        // logic here");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("Fighter.number = 10;");
+        Simulator.code("Fighter.attack();");
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
@@ -365,9 +489,40 @@ public class APUnit05WritingClasses
             //           creating methods to solve each individual subproblem
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.print("Variables can be used throughout code in classes ");
+        System.out.println("and methods and have a \"scope\" defining where ");
+        System.out.print("the variable can be accessed and modified. A ");
+        System.out.println("\"local\" variable is one which is defined in a ");
+        System.out.print("code block like a control structure (a loop or ");
+        System.out.println("if statement) or a method. The scope of that ");
+        System.out.print("variable is that internal code block and no ");
+        System.out.println("other variables can have the same name within ");
+        System.out.print("that scope. A \"global\" variable is one ");
+        System.out.println("declared at the class level and its scope is ");
+        System.out.print("the entire code module (class). When there is ");
+        System.out.println("a local variable with the same name as a global ");
+        System.out.print("variable, the variable name will reference the ");
+        System.out.println("local variable over the global variable. This ");
+        System.out.print("could be a potential name conflict. The keyword ");
+        System.out.println("\"this\" with the dot operator can make an ");
+        System.out.print("explicit reference to the global variable over ");
+        System.out.println("the local variable. ");
         
-        Simulator.comment("");
+        // Local and global variable scopes
+        // class Fighter {
+        //     public int number;
+        //     public void attack(int number) {
+        //         this.number = number;
+        //     }
+        // }
+        
+        Simulator.comment("Local and global variable scopes");
+        Simulator.code("class Fighter {");
+        Simulator.code("    public int number;");
+        Simulator.code("    public void attack(int number) {");
+        Simulator.code("        this.number = number;");
+        Simulator.code("    }");
+        Simulator.code("}");
         Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
@@ -381,10 +536,15 @@ public class APUnit05WritingClasses
             //           object as an actual parameter in a method call
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
-        
-        Simulator.comment("");
-        Simulator.code("");
+        System.out.print("The keyword \"this\" is an explicit reference ");
+        System.out.println("to the (eventual) object within a class. It ");
+        System.out.print("refers to the name of an object that will later ");
+        System.out.println("be instantiated by the class the word this ");
+        System.out.print("is used within. The word \"this\" can be used to ");
+        System.out.println("give explicit control to a global variable ");
+        System.out.print("or call a class method. The keyword \"this\" ");
+        System.out.println("can also be used to pass the current object ");
+        System.out.println("as an actual parameter in a method call.");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("5.10 Ethical and Social Implications of Computing Systems");  
@@ -399,10 +559,14 @@ public class APUnit05WritingClasses
             //            beneficial and/or harmful
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
-        
-        Simulator.comment("");
-        Simulator.code("");
+        System.out.print("The social and ethical considerations of ");
+        System.out.println("computing and Computer Science are things as ");
+        System.out.print("an A.P. student you should be aware of. These ");
+        System.out.println("are not necessarily testable concepts on the ");
+        System.out.print("A.P. exam. The general ideas of legality, ");
+        System.out.println("impact, and reliability of computing systems ");
+        System.out.print("and software should always be considered by ");
+        System.out.println("programers and Computer Scientists.");
         
         ////////////////////////////////////////////////////////////////////////
     }

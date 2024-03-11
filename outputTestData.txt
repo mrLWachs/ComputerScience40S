@@ -508,28 +508,119 @@
 508:	/* opens a comment block */
 509:	/** JavaDoc comment block */
 510:	5.4 Accessor Methods.......................................................................
-511:	...
-512:	// 
-513:	5.5 Mutator Methods........................................................................
-514:	...
-515:	// 
-516:	5.6 Writing Methods........................................................................
-517:	...
-518:	// 
-519:	5.7 Static Variables and Methods...........................................................
-520:	...
-521:	// 
-522:	5.8 Scope and Access.......................................................................
-523:	...
-524:	// 
-525:	5.9 this Keyword...........................................................................
-526:	...
-527:	// 
-528:	5.10 Ethical and Social Implications of Computing Systems..................................
-529:	...
-530:	// 
-531:	AP: Unit 9 (Inheritance) not running.......................................................
-532:	AP curriculum - Part 3 not running.........................................................
-533:	AP curriculum - Part 4 not running.........................................................
-534:	Computer Science 42SAP practice tests not running..........................................
-535:	Computer Science 42SAP Post Secondary content not running..................................
+511:	Accessor methods are the names given to methods in a class that "access" data. this usually 
+512:	means properties of the class that are encapsulated (private). Other names for 
+513:	accessors are "getters" or "get" methods. The method (behaviours, actions, functions, 
+514:	procedures) of a class are accessed with the dot operator (".") after the name of the 
+515:	object (instance of the class). Non-void methods that return a value can then be used as 
+516:	part of a code line expression. The return type of the method must be compatible with any 
+517:	data types (e.g. variables) being used in the expression. If the return type is a class level 
+518:	type then the method returns a reference to the actual object ("return by reference") not a 
+519:	reference to a copy ("return by value") of the actual object. If the "System.out.print" 
+520:	or "System.out.println" methods are called and an object is passed to those methods, the 
+521:	object's "toString()" method is automatically 
+522:	invoked (called) in the output.
+523:	// Examples of calling methods in a class
+524:	class Fighter {
+525:	    private int health;
+526:	    private Weapon weapon;
+527:	    public int getHealth() {
+528:	        return health;
+529:	    }
+530:	    public Weapon getWeapon() {
+531:	        return weapon;
+532:	    }
+533:	}
+534:	Fighter fighter = new Fighter();
+535:	int hp = fighter.health;
+536:	Weapon club = fighter.getWeapon();
+537:	5.5 Mutator Methods........................................................................
+538:	Mutator methods are the name given to methods that "change" a property of a class (usually 
+539:	an encapsulated property). These can be void methods (but are sometimes boolean methods to 
+540:	indicate success or not).
+541:	// Examples of calling mutator methods in a class
+542:	class Fighter {
+543:	    private int health;
+544:	    public int setHealth(int health) {
+545:	        this.health = health;
+546:	    }
+547:	}
+548:	Fighter fighter = new Fighter();
+549:	fighter.setHealth(10);
+550:	5.6 Writing Methods........................................................................
+551:	Methods are written to model an "action". Also known as functions or procedures, methods may 
+552:	or may not have zero, one, or more than one "input(s)" called "parameters" (or empty round 
+553:	brackets if no inputs are required). Methods may have zero (a "void" method) or one "output" 
+554:	known as the return type. If the parameter is a primitive data type, then a copy of the data 
+555:	from the original primitive type is passed to the method ("pass by value"). If the parameter 
+556:	is an advanced data type ("class" level data) then a reference to that object is passed. This 
+557:	means that any changes the method makes to the object will be reflected (unless the object 
+558:	was an immutable object). Because the passed reference object parameter and the original 
+559:	argument object are "linked" they can be referred to as "aliases".
+560:	5.7 Static Variables and Methods...........................................................
+561:	Although they can be called from an object of a class, "static" methods are generally called 
+562:	from the class name itself. Static methods "belong" to the class itself and therefore 
+563:	do not require you to instantiate an object to call a method from that class. The keyword 
+564:	"static" is included as a modifier word in the method signature line. Static methods 
+565:	cannot access or change the values of instance properties of a class but can change/access 
+566:	static properties. Static properties (variables) also "belong" to the class itself 
+567:	and are "shared" by all objects of the class. Static properties can be either public or 
+568:	private and are also declared using the "static" keyword as a modifier for the 
+569:	property. Static properties are used with the class name and then the dot operator and then 
+570:	the name of the property (although they can also be accessed from an object name). 
+571:	// Static properties and methods
+572:	class Fighter {
+573:	    public static int number;
+574:	    public static void attack() {
+575:	        // logic here
+576:	    }
+577:	}
+578:	Fighter.number = 10;
+579:	Fighter.attack();
+580:	5.8 Scope and Access.......................................................................
+581:	Variables can be used throughout code in classes and methods and have a "scope" defining where 
+582:	the variable can be accessed and modified. A "local" variable is one which is defined in a 
+583:	code block like a control structure (a loop or if statement) or a method. The scope of that 
+584:	variable is that internal code block and no other variables can have the same name within 
+585:	that scope. A "global" variable is one declared at the class level and its scope is 
+586:	the entire code module (class). When there is a local variable with the same name as a global 
+587:	variable, the variable name will reference the local variable over the global variable. This 
+588:	could be a potential name conflict. The keyword "this" with the dot operator can make an 
+589:	explicit reference to the global variable over the local variable. 
+590:	// Local and global variable scopes
+591:	class Fighter {
+592:	    public int number;
+593:	    public void attack(int number) {
+594:	        this.number = number;
+595:	    }
+596:	}
+597:	5.9 this Keyword...........................................................................
+598:	The keyword "this" is an explicit reference to the (eventual) object within a class. It 
+599:	refers to the name of an object that will later be instantiated by the class the word this 
+600:	is used within. The word "this" can be used to give explicit control to a global variable 
+601:	or call a class method. The keyword "this" can also be used to pass the current object 
+602:	as an actual parameter in a method call.
+603:	5.10 Ethical and Social Implications of Computing Systems..................................
+604:	The social and ethical considerations of computing and Computer Science are things as 
+605:	an A.P. student you should be aware of. These are not necessarily testable concepts on the 
+606:	A.P. exam. The general ideas of legality, impact, and reliability of computing systems 
+607:	and software should always be considered by programers and Computer Scientists.
+608:	AP: Unit 9 (Inheritance)...................................................................
+609:	9.1 Creating Superclasses and Subclasses...................................................
+610:	// 
+611:	9.2 Writing Constructors for Subclasses....................................................
+612:	// 
+613:	9.3 Overriding Methods.....................................................................
+614:	// 
+615:	9.4 super Keyword..........................................................................
+616:	// 
+617:	9.5 Creating References Using Inheritance Hierarchies......................................
+618:	// 
+619:	9.6 Polymorphism...........................................................................
+620:	// 
+621:	9.7 Object Superclass......................................................................
+622:	// 
+623:	AP curriculum - Part 3 not running.........................................................
+624:	AP curriculum - Part 4 not running.........................................................
+625:	Computer Science 42SAP practice tests not running..........................................
+626:	Computer Science 42SAP Post Secondary content not running..................................

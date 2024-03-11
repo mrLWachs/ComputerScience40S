@@ -56,7 +56,9 @@ public class APUnit09Inheritance
             //           superclass. A class can extend only one superclass
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.2 Writing Constructors for Subclasses");  
@@ -82,7 +84,9 @@ public class APUnit09Inheritance
             //           beginning with the Object constructor
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.3 Overriding Methods");  
@@ -100,7 +104,9 @@ public class APUnit09Inheritance
             //           superclass; these methods remain public in the subclass
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.4 super Keyword");  
@@ -112,7 +118,9 @@ public class APUnit09Inheritance
             //           passing appropriate parameters
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.5 Creating References Using Inheritance Hierarchies");  
@@ -131,7 +139,9 @@ public class APUnit09Inheritance
             //           (b) arrays — T[] var ArrayList<T> var
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.6 Polymorphism");  
@@ -144,7 +154,9 @@ public class APUnit09Inheritance
             //           executed for a non-static method call
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.7 Object Superclass");  
@@ -160,7 +172,9 @@ public class APUnit09Inheritance
             //           toString methods with classspecific implementations
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("...");
+        System.out.println("");
+        Simulator.comment("");
+        Simulator.code("");
         
         ////////////////////////////////////////////////////////////////////////
     }

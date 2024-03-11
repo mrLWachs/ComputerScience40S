@@ -791,41 +791,196 @@ method.
 <pre>/* opens a comment block */</pre>
 <pre>/** JavaDoc comment block */</pre>
 <h2>5.4 Accessor Methods.......................................................................</h2>
-...
+Accessor methods are the names given to methods in a class that "access" data. this usually 
 </br />
-<pre class="comment">// </pre>
+means properties of the class that are encapsulated (private). Other names for 
+</br />
+accessors are "getters" or "get" methods. The method (behaviours, actions, functions, 
+</br />
+procedures) of a class are accessed with the dot operator (".") after the name of the 
+</br />
+object (instance of the class). Non-void methods that return a value can then be used as 
+</br />
+part of a code line expression. The return type of the method must be compatible with any 
+</br />
+data types (e.g. variables) being used in the expression. If the return type is a class level 
+</br />
+type then the method returns a reference to the actual object ("return by reference") not a 
+</br />
+reference to a copy ("return by value") of the actual object. If the "System.out.print" 
+</br />
+or "System.out.println" methods are called and an object is passed to those methods, the 
+</br />
+object's "toString()" method is automatically 
+</br />
+invoked (called) in the output.
+</br />
+<pre class="comment">// Examples of calling methods in a class</pre>
+<pre>class Fighter {</pre>
+<pre>    private int health;</pre>
+<pre>    private Weapon weapon;</pre>
+<pre>    public int getHealth() {</pre>
+<pre>        return health;</pre>
+<pre>    }</pre>
+<pre>    public Weapon getWeapon() {</pre>
+<pre>        return weapon;</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<pre></pre>
+<pre>Fighter fighter = new Fighter();</pre>
+<pre>int hp = fighter.health;</pre>
+<pre>Weapon club = fighter.getWeapon();</pre>
 <pre></pre>
 <h2>5.5 Mutator Methods........................................................................</h2>
-...
+Mutator methods are the name given to methods that "change" a property of a class (usually 
 </br />
-<pre class="comment">// </pre>
+an encapsulated property). These can be void methods (but are sometimes boolean methods to 
+</br />
+indicate success or not).
+</br />
+<pre class="comment">// Examples of calling mutator methods in a class</pre>
+<pre>class Fighter {</pre>
+<pre>    private int health;</pre>
+<pre>    public int setHealth(int health) {</pre>
+<pre>        this.health = health;</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<pre>Fighter fighter = new Fighter();</pre>
+<pre>fighter.setHealth(10);</pre>
 <pre></pre>
 <h2>5.6 Writing Methods........................................................................</h2>
-...
+Methods are written to model an "action". Also known as functions or procedures, methods may 
 </br />
-<pre class="comment">// </pre>
-<pre></pre>
+or may not have zero, one, or more than one "input(s)" called "parameters" (or empty round 
+</br />
+brackets if no inputs are required). Methods may have zero (a "void" method) or one "output" 
+</br />
+known as the return type. If the parameter is a primitive data type, then a copy of the data 
+</br />
+from the original primitive type is passed to the method ("pass by value"). If the parameter 
+</br />
+is an advanced data type ("class" level data) then a reference to that object is passed. This 
+</br />
+means that any changes the method makes to the object will be reflected (unless the object 
+</br />
+was an immutable object). Because the passed reference object parameter and the original 
+</br />
+argument object are "linked" they can be referred to as "aliases".
+</br />
 <h2>5.7 Static Variables and Methods...........................................................</h2>
-...
+Although they can be called from an object of a class, "static" methods are generally called 
 </br />
-<pre class="comment">// </pre>
+from the class name itself. Static methods "belong" to the class itself and therefore 
+</br />
+do not require you to instantiate an object to call a method from that class. The keyword 
+</br />
+"static" is included as a modifier word in the method signature line. Static methods 
+</br />
+cannot access or change the values of instance properties of a class but can change/access 
+</br />
+static properties. Static properties (variables) also "belong" to the class itself 
+</br />
+and are "shared" by all objects of the class. Static properties can be either public or 
+</br />
+private and are also declared using the "static" keyword as a modifier for the 
+</br />
+property. Static properties are used with the class name and then the dot operator and then 
+</br />
+the name of the property (although they can also be accessed from an object name). 
+</br />
+<pre class="comment">// Static properties and methods</pre>
+<pre>class Fighter {</pre>
+<pre>    public static int number;</pre>
+<pre>    public static void attack() {</pre>
+<pre>        // logic here</pre>
+<pre>    }</pre>
+<pre>}</pre>
+<pre>Fighter.number = 10;</pre>
+<pre>Fighter.attack();</pre>
 <pre></pre>
 <h2>5.8 Scope and Access.......................................................................</h2>
-...
+Variables can be used throughout code in classes and methods and have a "scope" defining where 
 </br />
-<pre class="comment">// </pre>
+the variable can be accessed and modified. A "local" variable is one which is defined in a 
+</br />
+code block like a control structure (a loop or if statement) or a method. The scope of that 
+</br />
+variable is that internal code block and no other variables can have the same name within 
+</br />
+that scope. A "global" variable is one declared at the class level and its scope is 
+</br />
+the entire code module (class). When there is a local variable with the same name as a global 
+</br />
+variable, the variable name will reference the local variable over the global variable. This 
+</br />
+could be a potential name conflict. The keyword "this" with the dot operator can make an 
+</br />
+explicit reference to the global variable over the local variable. 
+</br />
+<pre class="comment">// Local and global variable scopes</pre>
+<pre>class Fighter {</pre>
+<pre>    public int number;</pre>
+<pre>    public void attack(int number) {</pre>
+<pre>        this.number = number;</pre>
+<pre>    }</pre>
+<pre>}</pre>
 <pre></pre>
 <h2>5.9 this Keyword...........................................................................</h2>
-...
+The keyword "this" is an explicit reference to the (eventual) object within a class. It 
 </br />
-<pre class="comment">// </pre>
-<pre></pre>
+refers to the name of an object that will later be instantiated by the class the word this 
+</br />
+is used within. The word "this" can be used to give explicit control to a global variable 
+</br />
+or call a class method. The keyword "this" can also be used to pass the current object 
+</br />
+as an actual parameter in a method call.
+</br />
 <h2>5.10 Ethical and Social Implications of Computing Systems..................................</h2>
-...
+The social and ethical considerations of computing and Computer Science are things as 
+</br />
+an A.P. student you should be aware of. These are not necessarily testable concepts on the 
+</br />
+A.P. exam. The general ideas of legality, impact, and reliability of computing systems 
+</br />
+and software should always be considered by programers and Computer Scientists.
+</br />
+<h1>AP: Unit 9 (Inheritance)...................................................................</h1>
+<h2>9.1 Creating Superclasses and Subclasses...................................................</h2>
+
 </br />
 <pre class="comment">// </pre>
 <pre></pre>
-<h3>AP: Unit 9 (Inheritance) not running.......................................................</h3>
+<h2>9.2 Writing Constructors for Subclasses....................................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>9.3 Overriding Methods.....................................................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>9.4 super Keyword..........................................................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>9.5 Creating References Using Inheritance Hierarchies......................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>9.6 Polymorphism...........................................................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
+<h2>9.7 Object Superclass......................................................................</h2>
+
+</br />
+<pre class="comment">// </pre>
+<pre></pre>
 <h3>AP curriculum - Part 3 not running.........................................................</h3>
 <h3>AP curriculum - Part 4 not running.........................................................</h3>
 <h3>Computer Science 42SAP practice tests not running..........................................</h3>
