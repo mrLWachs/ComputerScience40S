@@ -663,8 +663,43 @@ public class ComputerScience30S
     private static void learnMethods() {
         System.out.println("Start Learning Methods...");
         
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+         // Code to "jump" to a method, is "calling" the method (method call)
+         writeStar();
+         
+         // Call it again
+         writeStar();
+         
+         // When we call a method, we place "data" (information) inside the
+        // round brackets and that data is "passed" (sending) over to the 
+        // method. The data being passed is tecehnically called the "argument"
+        // and the data being recieved is called the "parameter(s)". You can
+        // always change the arguement.
+        
+         write("Spider-man");
+         
+         write("Batman");
+         write("Wonder woman");
+         
         
         System.out.println("Completed Learning Methods!");
+    }
+
+    private static void writeStar() {
+        System.out.println("*");
+    }
+
+    private static void write(String thing) {
+        // Information (data) "passed" to this method is called the parameter,
+        // if you use the lightbulb to write this method, you should (do this 
+        // first) rewrite the name of that parameter
+        System.out.println(thing);
     }
 
       
