@@ -691,6 +691,19 @@ public class ComputerScience30S
         // You can have more than one, multiple parameters/arguments in a 
         // method which are seperated with commas ","
         
+        writeLotsOf("Dalmations", 101);
+        
+        writeLotsOf("Problems", 99);
+        
+        // You can make methods that "send back" (output) information, the 
+        // previous methods needed information (inputs) as parameters or 
+        // empty brackets () if they did not need information passed
+        
+        int number = giveMeNumber();
+        
+        write("Number is " + number);
+        
+        
         
         
         
@@ -714,6 +727,10 @@ public class ComputerScience30S
         for (int i = 0; i < times; i++) {
             write(thing);
         }
+    }
+
+    private static int giveMeNumber() {
+        return 7;
     }
     
 
