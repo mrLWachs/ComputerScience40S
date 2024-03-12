@@ -688,6 +688,8 @@ public class ComputerScience30S
         write("Wonder woman");
         write("Ant-man");
         
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
         
         
         
@@ -705,6 +707,15 @@ public class ComputerScience30S
         // first) rewrite the name of that parameter
         System.out.println(thing);
     }
+    
+    private static void writeLotsOf(String thing, int times) {
+        // Methods can have no parameters, one parameter, or lots of parameters,
+        // if it has more than one parameter, they are separated by commas
+        for (int i = 0; i < times; i++) {
+            write(thing);
+        }
+    }
+    
 
       
 }
