@@ -743,6 +743,11 @@ public class ComputerScience30S
         }
     }
 
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 10
+     */
     private static int giveMeNumber() {
         // Methods can have no outputs (the word "void") or can have ONE output
         // which means the method will "return" that data type in the method
