@@ -730,11 +730,21 @@ public class ComputerScience30S
     }
 
     private static int giveMeNumber() {
-        return 7;
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
+        return random(1, 100);
     }
     
-
-      
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (double)low;
+        double H      = (double)high;
+        double number = ( H - L + 1 ) * seed + L;
+        return (int)number;
+    }
+    
+    
+    
 }
 
 
