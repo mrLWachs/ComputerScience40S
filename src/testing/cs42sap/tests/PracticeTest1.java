@@ -47,10 +47,11 @@ public class PracticeTest1
         System.out.println("(E) 14.0");
              
         Simulator.comment("Answer 1...");  
-        int a = 5;
-        int b = 2;
-        double c = 3.0;
-        System.out.println(5 + a / b * c - 1);
+        System.out.println("C");
+        // int a = 5;
+        // int b = 2;
+        // double c = 3.0;
+        // System.out.println(5 + a / b * c - 1);
     }
 
     private void question2() {
@@ -92,7 +93,7 @@ public class PracticeTest1
     
     private void question3() {
         Simulator.comment("Question 3...");        
-        System.out.println("Which of the following best descrivbes the value");
+        System.out.println("Which of the following best describes the value");
         System.out.println("of the Boolean expression shown below?");
         Simulator.code("a && !(b || a)");
         System.out.println("(A) The value is always true");
@@ -150,16 +151,16 @@ public class PracticeTest1
         System.out.println("(E) 48 24 12 6 3");
                      
         Simulator.comment("Answer 4...");          
-        int val = 48;
-        int div = 6;
-        while((val % 2 == 0) && div > 0) {
-            if (val % div == 0) {
-                System.out.print(val + " ");
-            }
-            val /= 2;
-            div--;
-        }
-        System.out.println("");
+        // int val = 48;
+        // int div = 6;
+        // while((val % 2 == 0) && div > 0) {
+        //     if (val % div == 0) {
+        //         System.out.print(val + " ");
+        //     }
+        //     val /= 2;
+        //     div--;
+        // }
+        System.out.println("A");
     }
 
     private void question5() {
@@ -174,28 +175,29 @@ public class PracticeTest1
         System.out.println("(E) none of the above");
                      
         Simulator.comment("Answer 5...");          
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Test " + i + "\t");
-            int x = i;
-            if (x >= 1) x = x * 3;
-            if (x >  3) x = 0;
-            int xA = i;
-            int xB = i;
-            int xC = i;
-            int xD = i;
-            xA = 0;
-            if (xB >  1) xB = 0;
-            if (xC >  3) xC = 0;
-            if (xD >= 1) xD = 0;
-            if (x == xA) System.out.print(" A");
-            if (x == xB) System.out.print(" B");
-            if (x == xC) System.out.print(" C");
-            if (x == xD) System.out.print(" D");
-            if (x != xA && x != xB && x != xC && x != xD) {
-                System.out.print(" E");
-            }    
-            System.out.println("\t(x=" + x + ")");
-        }        
+        // for (int i = 0; i < 5; i++) {
+        //     System.out.print("Test " + i + "\t");
+        //     int x = i;
+        //     if (x >= 1) x = x * 3;
+        //     if (x >  3) x = 0;
+        //     int xA = i;
+        //     int xB = i;
+        //     int xC = i;
+        //     int xD = i;
+        //     xA = 0;
+        //     if (xB >  1) xB = 0;
+        //     if (xC >  3) xC = 0;
+        //     if (xD >= 1) xD = 0;
+        //     if (x == xA) System.out.print(" A");
+        //     if (x == xB) System.out.print(" B");
+        //     if (x == xC) System.out.print(" C");
+        //     if (x == xD) System.out.print(" D");
+        //     if (x != xA && x != xB && x != xC && x != xD) {
+        //         System.out.print(" E");
+        //     }    
+        //     System.out.println("\t(x=" + x + ")");
+        // }        
+        System.out.println("B");
     }
 
     private void question6() {
@@ -210,27 +212,27 @@ public class PracticeTest1
         System.out.println("(E) a > b");
              
         Simulator.comment("Answer 6..."); 
-        int min = -100;
-        int max = min * -1;
-        for (int i = min; i < max; i++) {
-            for (int j = min; j < max; j++) {       
-                int a = i;
-                int b = j;
-                if ( (a < b) && !(b > a) ) {
-                    System.out.println("a = " + a + " b = " + b + " is true");
-                }
-            }
-        }
-        for (int i = max; i > min; i--) {
-            for (int j = max; j > min; j--) {       
-                int a = i;
-                int b = j;
-                if ( (a < b) && !(b > a) ) {
-                    System.out.println("a = " + a + " b = " + b + " is true");
-                }
-            }
-        }
-        System.out.println("(B) Never true");
+        // int min = -100;
+        // int max = min * -1;
+        // for (int i = min; i < max; i++) {
+        //     for (int j = min; j < max; j++) {       
+        //         int a = i;
+        //         int b = j;
+        //         if ( (a < b) && !(b > a) ) {
+        //             System.out.println("a = " + a + " b = " + b + " is true");
+        //         }
+        //     }
+        // }
+        // for (int i = max; i > min; i--) {
+        //     for (int j = max; j > min; j--) {       
+        //         int a = i;
+        //         int b = j;
+        //         if ( (a < b) && !(b > a) ) {
+        //             System.out.println("a = " + a + " b = " + b + " is true");
+        //         }
+        //     }
+        // }
+        System.out.println("B");
     }
     
     private void question7() {
@@ -247,20 +249,21 @@ public class PracticeTest1
         System.out.println("(E) n - 2");
              
         Simulator.comment("Answer 7...");  
-        for (int n = 1; n <= 5; n++) {
-            double seed = Math.random();
-            double low = 1;
-            double high = (double)n;
-            int i = (int)((high - low + 1d) * seed + low);
-            int count = 0;
-            for (int a = 2; a <= i; a++) {
-                for (int b = 1; b < i; b++) {
-                    count++;
-                    System.out.println("*");
-                }
-            }
-            System.out.println("n = " + n + " random i = " + i + " star count = " + count);
-        }
+        // for (int n = 1; n <= 5; n++) {
+        //     double seed = Math.random();
+        //     double low = 1;
+        //     double high = (double)n;
+        //     int i = (int)((high - low + 1d) * seed + low);
+        //     int count = 0;
+        //     for (int a = 2; a <= i; a++) {
+        //         for (int b = 1; b < i; b++) {
+        //             count++;
+        //             System.out.println("*");
+        //         }
+        //     }
+        //     System.out.println("n = " + n + " random i = " + i + " star count = " + count);
+        // }
+        System.out.println("B");
     }
     
     private void question8() {
@@ -281,15 +284,16 @@ public class PracticeTest1
         System.out.println("(E) 4");
              
         Simulator.comment("Answer 8...");  
-        int p = 5;
-        int q = 2;
-        int sum = 0;
-        while (p <= 8) {
-            sum += p % q;
-            p++;
-            q++;
-        }
-        System.out.println("sum = " + sum);
+        // int p = 5;
+        // int q = 2;
+        // int sum = 0;
+        // while (p <= 8) {
+        //     sum += p % q;
+        //     p++;
+        //     q++;
+        // }
+        // System.out.println("sum = " + sum);
+        System.out.println("D");
     }
     
     private void question9() {
@@ -307,14 +311,15 @@ public class PracticeTest1
         System.out.println("(E) 15");
              
         Simulator.comment("Answer 9...");  
-        int count = 0;
-        for (int i = 0; i <= 3; i++) {
-            for (int j = 1; j <= 5; j+=2) {
-                count++;
-                System.out.println("*");
-            }
-        }
-        System.out.println("count = " + count);        
+        // int count = 0;
+        // for (int i = 0; i <= 3; i++) {
+        //     for (int j = 1; j <= 5; j+=2) {
+        //         count++;
+        //         System.out.println("*");
+        //     }
+        // }
+        // System.out.println("count = " + count);  
+        System.out.println("D");
     }
     
     private void question10() {
@@ -336,14 +341,15 @@ public class PracticeTest1
         System.out.println("(E) a = 5 and b = 8");
              
         Simulator.comment("Answer 10...");  
-        int a = 10;
-        int b = 3;
-        int t = 0;
-        for (int i = 1; i < 4; i++) {
-            t = a;
-            a = i + b;
-            b = t - i;
-        }
-        System.out.println("a = " + a + " and b = " + b);
+        // int a = 10;
+        // int b = 3;
+        // int t = 0;
+        // for (int i = 1; i < 4; i++) {
+        //     t = a;
+        //     a = i + b;
+        //     b = t - i;
+        // }
+        // System.out.println("a = " + a + " and b = " + b);
+        System.out.println("E");
     }
 }

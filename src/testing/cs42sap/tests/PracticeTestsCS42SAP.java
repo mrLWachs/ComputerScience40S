@@ -26,7 +26,7 @@ public class PracticeTestsCS42SAP
         }
         Simulator.title("Computer Science 42SAP practice tests");         
         new PracticeTest1(shouldRun);   
-        new PracticeTest2(!shouldRun);   
+        new PracticeTest2(shouldRun);   
         new PracticeTest3(!shouldRun); 
     }
 
