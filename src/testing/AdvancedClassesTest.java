@@ -3,9 +3,9 @@ package testing;
 
 
 /*
- * AdvancedClassesTest - description
+ * AdvancedClassesTest - tests the concepts learned in this unit.
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Mar 12, 2024
 */
 public class AdvancedClassesTest
