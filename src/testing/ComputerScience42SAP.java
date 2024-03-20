@@ -4,7 +4,7 @@ package testing;
 
 /** Required API imports */
 import utility.io.Simulator;
-import testing.cs42sap.CurriculumContentCS42SAP;
+import testing.cs42sap.curriculum.CurriculumContentCS42SAP;
 import testing.cs42sap.tests.PracticeTestsCS42SAP;
 
 

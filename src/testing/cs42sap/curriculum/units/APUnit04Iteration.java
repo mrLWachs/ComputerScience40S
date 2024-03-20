@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.cs42sap.units;
+package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
 import utility.io.Simulator;

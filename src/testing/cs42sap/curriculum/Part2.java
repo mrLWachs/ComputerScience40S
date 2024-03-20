@@ -1,12 +1,12 @@
 
 /** Required package class namespace */
-package testing.cs42sap;
+package testing.cs42sap.curriculum;
 
 /** Required API imports */
 import utility.io.Simulator;
-import testing.cs42sap.units.APUnit02UsingObjects;
-import testing.cs42sap.units.APUnit05WritingClasses;
-import testing.cs42sap.units.APUnit09Inheritance;
+import testing.cs42sap.curriculum.units.APUnit02UsingObjects;
+import testing.cs42sap.curriculum.units.APUnit05WritingClasses;
+import testing.cs42sap.curriculum.units.APUnit09Inheritance;
 
  
 /**

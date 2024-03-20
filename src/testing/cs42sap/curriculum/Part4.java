@@ -1,11 +1,11 @@
 
 /** Required package class namespace */
-package testing.cs42sap;
+package testing.cs42sap.curriculum;
 
 /** Required API imports */
 import utility.io.Simulator;
-import testing.cs42sap.units.APUnit10Recursion;
-import testing.cs42sap.units.APUnit07ArrayList;
+import testing.cs42sap.curriculum.units.APUnit10Recursion;
+import testing.cs42sap.curriculum.units.APUnit07ArrayList;
 
  
 /**

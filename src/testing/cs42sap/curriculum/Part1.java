@@ -1,12 +1,12 @@
 
 /** Required package class namespace */
-package testing.cs42sap;
+package testing.cs42sap.curriculum;
 
 /** Required API imports */
 import utility.io.Simulator;
-import testing.cs42sap.units.APUnit01PrimitiveTypes;
-import testing.cs42sap.units.APUnit03BooleanExpressionsAndIfStatements;
-import testing.cs42sap.units.APUnit04Iteration;
+import testing.cs42sap.curriculum.units.APUnit01PrimitiveTypes;
+import testing.cs42sap.curriculum.units.APUnit03BooleanExpressionsAndIfStatements;
+import testing.cs42sap.curriculum.units.APUnit04Iteration;
 
  
 /**
