@@ -6,15 +6,21 @@ import utility.io.Simulator;
 import utility.io.System;
 
 
-/*
- * PracticeTest2 - description
+/**
+ * PracticeTest2 - a set of practice test questions and solutions for the 
+ * A.P. Computer Science exam
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Mar 5, 2024
 */
 public class PracticeTest2
 {
 
+    /**
+     * Default constructor, set class properties
+     * 
+     * @param shouldRun determines if this test should run (true) or not (false)
+     */
     public PracticeTest2(boolean shouldRun) {
         if (!shouldRun) {
             Simulator.note("AP Practice Test 2 not running");
@@ -33,6 +39,9 @@ public class PracticeTest2
         question10();                
     }
     
+    /**
+     * A practice test question
+     */
     private void question1() {
         Simulator.comment("Question 1...");        
         System.out.println("Consider the following class definition");
@@ -54,6 +63,9 @@ public class PracticeTest2
         System.out.println("C");
     }
     
+    /**
+     * A practice test question
+     */
     private void question2() {
         Simulator.comment("Question 2..."); 
         System.out.println("Consider the following class definitions");
@@ -101,6 +113,9 @@ public class PracticeTest2
         // t.calc(2);
     }
     
+    /**
+     * A practice test question
+     */
     private void question3() {
         Simulator.comment("Question 3...");        
         System.out.println("Consider the following class definitions.");
@@ -153,7 +168,10 @@ public class PracticeTest2
         // Student s = new GradStudent();
         // System.out.println(s.getInfo());
     }
-        
+       
+    /**
+     * A practice test question
+     */ 
     private void question4() {
         Simulator.comment("Question 4...");        
         System.out.println("Given the following class declarations:");
@@ -207,6 +225,9 @@ public class PracticeTest2
         System.out.println("A");
     }
     
+    /**
+     * A practice test question
+     */
     private void question5() {
         Simulator.comment("Question 5...");        
         System.out.println("Given the following declarations.");
@@ -248,6 +269,9 @@ public class PracticeTest2
         System.out.println("E");
     }
     
+    /**
+     * A practice test question
+     */
     private void question6() {
         Simulator.comment("Question 6...");        
         System.out.println("Class C extends class B, which extends class A. ");
@@ -281,7 +305,10 @@ public class PracticeTest2
         // c.test();
         System.out.println("E");
     }
-        
+       
+    /**
+     * A practice test question
+     */ 
     private void question7() {
         Simulator.comment("Question 7...");        
         System.out.println("Given the following class declarations. Assume");
@@ -337,6 +364,9 @@ public class PracticeTest2
         System.out.println("A");
     }
     
+    /**
+     * A practice test question
+     */
     private void question8() {
         Simulator.comment("Question 8...");        
         System.out.println("Given the following class declarations.");
@@ -350,7 +380,7 @@ public class PracticeTest2
         Simulator.code("        System.out.println(\"BG\");");
         Simulator.code("    }");
         Simulator.code("}");
-        System.out.println("Assumen the following declaration is in a ");
+        System.out.println("Assume the following declaration is in a ");
         System.out.println("different class.");
         Simulator.code("Animal b = new Bear();");
         System.out.println("Which of the following will compile without error?");
@@ -381,33 +411,101 @@ public class PracticeTest2
         System.out.println("B");
     }
     
+    /**
+     * A practice test question
+     */
     private void question9() {
         Simulator.comment("Question 9...");        
-        System.out.println("Consider the ");
-        Simulator.code("");
-        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
-             
+        System.out.println("Consider the following partial class definitions.");
+        Simulator.code("public class C1 {");
+        Simulator.code("    private int num;");
+        Simulator.code("    private String name;");
+        Simulator.code("    public C1(int theNum) {");
+        Simulator.code("        num = theNum");
+        Simulator.code("    } ");
+        Simulator.code("    public C1(String theName) {");
+        Simulator.code("        name = theName;");
+        Simulator.code("    }");
+        Simulator.code("}");
+        Simulator.code("public class C2 extends C1 {");
+        Simulator.code("    // methods not shown");
+        Simulator.code("}");
+        System.out.println("Which of the following constructors are valid for");
+        System.out.println("C2?");
+        System.out.println("I. public C2() { }");
+        System.out.println("II. public C2(int quan) { super(quan); }");
+        System.out.println("III. public C2(String label) { super(label); }");        
+        System.out.println("(A) All three are valid");
+        System.out.println("(B) II only");
+        System.out.println("(C) III only");
+        System.out.println("(D) II and III");
+        System.out.println("(E) None are valid");             
         Simulator.comment("Answer 9...");  
-        
+        // public class C1 {    
+        //     private int num;
+        //     private String name;    
+        //     public C1(int theNum) {
+        //         num = theNum;
+        //     }    
+        //     public C1(String theName) {
+        //         name = theName;
+        //     }    
+        // }
+        // public class C2 extends C1 {    
+        //     public C2() {
+        // 
+        //     }    
+        //     public C2(int quan) {
+        //         super(quan);
+        //     }    
+        //     public C2(String label) {
+        //         super(label);
+        //     }    
+        // }
+        System.out.println("D");
     }
-    
+       
+    /**
+     * A practice test question
+     */ 
     private void question10() {
         Simulator.comment("Question 10...");        
-        System.out.println("");
-        Simulator.code("");        
-        System.out.println("(A) ");
-        System.out.println("(B) ");
-        System.out.println("(C) ");
-        System.out.println("(D) ");
-        System.out.println("(E) ");
-             
+        System.out.println("Given the following class definition. What are ");
+        System.out.println("the values of x, y, and z just before method2");
+        System.out.println("returns?");
+        Simulator.code("public class Class1 {");
+        Simulator.code("    public int method1(int a, int b) {");
+        Simulator.code("        int temp = a;");
+        Simulator.code("        a = b;");
+        Simulator.code("        b = temp;");
+        Simulator.code("        return b;");
+        Simulator.code("    }  ");
+        Simulator.code("    public void method2() {");
+        Simulator.code("        int x = 3;");
+        Simulator.code("        int y = 5;");
+        Simulator.code("        int z = method1(x, y);");
+        Simulator.code("    }");
+        Simulator.code("}");        
+        System.out.println("(A) x=3,y=3,z=3");
+        System.out.println("(B) x=3,y=5,z=3");
+        System.out.println("(C) x=5,y=3,z=5");
+        System.out.println("(D) x=5,y=3,z=3");
+        System.out.println("(E) x=3,y=5,z=5");
         Simulator.comment("Answer 10...");  
-        
+        // public class Class1 {
+        //     public int method1(int a, int b) {
+        //         int temp = a;
+        //         a = b;
+        //         b = temp;
+        //         return b;
+        //     }    
+        //     public void method2() {
+        //         int x = 3;
+        //         int y = 5;
+        //         int z = method1(x, y);
+        //     }
+        // }
+        System.out.println("B");
     }
     
 }

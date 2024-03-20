@@ -32,7 +32,7 @@ public class ComputerScience42SAP
         }
         Simulator.title("Computer Science 42SAP Course:");         
         new CurriculumContentCS42SAP(shouldRun);
-        new PracticeTestsCS42SAP(shouldRun);
+        new PracticeTestsCS42SAP(!shouldRun);
     }
     
 }

@@ -1,2670 +1,626 @@
 1:	Mr. Wachs' Computer Science Classes........................................................
-2:	Computer Science 42SAP Prerequisite Content:...............................................
-3:	Computer Science 20S Course:...............................................................
-4:	~~~ SIMULATED {GUI Frame} DIALOG: unit2Introduction ~~~ 
-5:	~~~ SIMULATED {GUI Frame} DIALOG: unit3Variables1 ~~~ 
-6:	~~~ SIMULATED {GUI Frame} DIALOG: unit3Variables2 ~~~ 
-7:	~~~ SIMULATED {GUI Frame} DIALOG: unit4Conditionals1 ~~~ 
-8:	~~~ SIMULATED {GUI Frame} DIALOG: unit4Conditionals2 ~~~ 
-9:	~~~ SIMULATED {GUI Frame} DIALOG: unit5Looping1 ~~~ 
-10:	~~~ SIMULATED {GUI Frame} DIALOG: unit5Looping2 ~~~ 
-11:	Computer Science 30S Course:...............................................................
-12:	~~~ SIMULATED {Input} DIALOG: Select the unit to view examples of... ~~~ 
-13:	Hello World
-14:	I'm in the world
-15:	Good-bye world!
-16:	Make a quote " 
-17:	Make a slash \ 
-18:	Make a 	 tab 
-19:	Make a new line 
- break 
-20:	~~~ SIMULATED {Message} DIALOG: Hi ~~~ 
-21:	~~~ SIMULATED {Message} DIALOG: Information icon is i ~~~ { title: Information title },
-22:	~~~ SIMULATED {Message} DIALOG: Question icon is i ~~~ { title: Question title },
-23:	~~~ SIMULATED {Message} DIALOG: Warning icon is i ~~~ { title: Warning title },
-24:	~~~ SIMULATED {Message} DIALOG: Plain icon is i ~~~ { title: Plain title },
-25:	~~~ SIMULATED {Input} DIALOG: Enter Something ~~~ 
-26:	~~~ SIMULATED {Input} DIALOG: Information icon is i ~~~ 
-27:	~~~ SIMULATED {Input} DIALOG: Question icon is i ~~~ 
-28:	~~~ SIMULATED {Input} DIALOG: Warning icon is i ~~~ 
-29:	~~~ SIMULATED {Input} DIALOG: Plain icon is i ~~~ 
-30:	~~~ SIMULATED {Confirm} DIALOG: Confirm ~~~ 
-31:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 2 ~~~ { title: Information },{ messageType: 1 },
-32:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 3 ~~~ { title: Question },{ optionType: -1 },{ messageType: 3 },
-33:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 4 ~~~ { title: Warning },{ optionType: 2 },{ messageType: 2 },
-34:	~~~ SIMULATED {Confirm} DIALOG: Confirm Example 5 ~~~ { title: Plain },{ optionType: 1 },{ messageType: -1 },
-35:	a = false
-36:	b = 1
-37:	c = 1.2
-38:	d = A
-39:	e = apple
-40:	x = 10
-41:	x = 20
-42:	y = 30
-43:	y = 30
-44:	x = 28
-45:	y = 5
-46:	z = 3
-47:	3.141592658389, 99, Y, true, Wachs
-48:	f = 25
-49:	g = 25.0
-50:	g = 25.999999999999
-51:	h = 25
-52:	k = 2.99999999
-53:	l = 2
-54:	m = 2.0
-55:	n = A
-56:	o = 65
-57:	p = F
-58:	~~~ SIMULATED {Input} DIALOG: Enter ~~~ 
-59:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
-60:	~~~ SIMULATED {Input} DIALOG: Enter int ~~~ 
-61:	~~~ SIMULATED {Message} DIALOG: -1 ~~~ 
-62:	~~~ SIMULATED {Input} DIALOG: Enter double ~~~ 
-63:	~~~ SIMULATED {Message} DIALOG: -1.0 ~~~ 
-64:	~~~ SIMULATED {Input} DIALOG: Enter char ~~~ 
-65:	~~~ SIMULATED {Message} DIALOG: - ~~~ 
-66:	Word hippopotomonsprosesquippedaiophobia is length 35
-67:	Word hippopotomonsprosesquippedaiophobia in upper case is HIPPOPOTOMONSPROSESQUIPPEDAIOPHOBIA
-68:	answer1 = 3.141592653589793
-69:	answer2 = 0.8775825618903728
-70:	answer3 = 1.0
-71:	answer4 = 125.0
-72:	answer5 = 3.0
-73:	answer6 = -0.6931471805599453
-74:	seed = 0.6138360466332258
-75:	low    = 1.0
-76:	high   = 10.0
-77:	number = 7.138360466332258
-78:	value = 7
-79:	card is 17
-80:	equal
-81:	The example is less than
-82:	!=
-83:	W1 kind of == W2
-84:	Keep trying
-85:	counter = 0
-86:	counter = 1
-87:	counter = 2
-88:	counter = 3
-89:	counter = 4
-90:	counter = 5
-91:	counter = 6
-92:	counter = 7
-93:	counter = 8
-94:	counter = 9
-95:	~~~ SIMULATED {Input} DIALOG: Create a password ~~~ 
-96:	~~~ SIMULATED {Message} DIALOG: Ok, continue... ~~~ 
-97:	~~~ SIMULATED {Input} DIALOG: Enter password ~~~ 
-98:	~~~ SIMULATED {Message} DIALOG: You got it ~~~ 
-99:	i = 0
-100:	i = 1
-101:	i = 2
-102:	i = 3
-103:	i = 4
-104:	i = 5
-105:	i = 6
-106:	i = 7
-107:	i = 8
-108:	i = 9
-109:	counting = 100
-110:	counting = 90
-111:	counting = 80
-112:	counting = 70
-113:	counting = 60
-114:	counting = 50
-115:	counting = 40
-116:	counting = 30
-117:	counting = 20
-118:	counting = 10
-119:	counting = 0
-120:	i = 99.789
-121:	i = 19.007428571428573
-122:	~~~ SIMULATED {Message} DIALOG: You are an intern at radio station, C-RAP, The 
-disk jockeys announce the current temperature 
-in both Fahrenheit and Celsius every half-hour.
-They would like an easy w ... (line shortened) ...
-123:	~~~ SIMULATED {Input} DIALOG: Enter temperature in Celcius ~~~ 
-124:	~~~ SIMULATED {Message} DIALOG: Your temperature in Fahrenheit is 30.2 ~~~ 
-125:	~~~ SIMULATED {Message} DIALOG: Thank you! ~~~ 
-126:	Starting to Learn methods...
-127:	*
-128:	*
-129:	Phenakistoscope
-130:	Volleywood
-131:	pancakes
-132:	Spider-man
-133:	Batman
-134:	Dalmations
-135:	Dalmations
-136:	Dalmations
-137:	Dalmations
-138:	Dalmations
-139:	Dalmations
-140:	Dalmations
-141:	Dalmations
-142:	Dalmations
-143:	Dalmations
-144:	Dalmations
-145:	Dalmations
-146:	Dalmations
-147:	Dalmations
-148:	Dalmations
-149:	Dalmations
-150:	Dalmations
-151:	Dalmations
-152:	Dalmations
-153:	Dalmations
-154:	Dalmations
-155:	Dalmations
-156:	Dalmations
-157:	Dalmations
-158:	Dalmations
-159:	Dalmations
-160:	Dalmations
-161:	Dalmations
-162:	Dalmations
-163:	Dalmations
-164:	Dalmations
-165:	Dalmations
-166:	Dalmations
-167:	Dalmations
-168:	Dalmations
-169:	Dalmations
-170:	Dalmations
-171:	Dalmations
-172:	Dalmations
-173:	Dalmations
-174:	Dalmations
-175:	Dalmations
-176:	Dalmations
-177:	Dalmations
-178:	Dalmations
-179:	Dalmations
-180:	Dalmations
-181:	Dalmations
-182:	Dalmations
-183:	Dalmations
-184:	Dalmations
-185:	Dalmations
-186:	Dalmations
-187:	Dalmations
-188:	Dalmations
-189:	Dalmations
-190:	Dalmations
-191:	Dalmations
-192:	Dalmations
-193:	Dalmations
-194:	Dalmations
-195:	Dalmations
-196:	Dalmations
-197:	Dalmations
-198:	Dalmations
-199:	Dalmations
-200:	Dalmations
-201:	Dalmations
-202:	Dalmations
-203:	Dalmations
-204:	Dalmations
-205:	Dalmations
-206:	Dalmations
-207:	Dalmations
-208:	Dalmations
-209:	Dalmations
-210:	Dalmations
-211:	Dalmations
-212:	Dalmations
-213:	Dalmations
-214:	Dalmations
-215:	Dalmations
-216:	Dalmations
-217:	Dalmations
-218:	Dalmations
-219:	Dalmations
-220:	Dalmations
-221:	Dalmations
-222:	Dalmations
-223:	Dalmations
-224:	Dalmations
-225:	Dalmations
-226:	Dalmations
-227:	Dalmations
-228:	Dalmations
-229:	Dalmations
-230:	Dalmations
-231:	Dalmations
-232:	Dalmations
-233:	Dalmations
-234:	Dalmations
-235:	Problems
-236:	Problems
-237:	Problems
-238:	Problems
-239:	Problems
-240:	Problems
-241:	Problems
-242:	Problems
-243:	Problems
-244:	Problems
-245:	Problems
-246:	Problems
-247:	Problems
-248:	Problems
-249:	Problems
-250:	Problems
-251:	Problems
-252:	Problems
-253:	Problems
-254:	Problems
-255:	Problems
-256:	Problems
-257:	Problems
-258:	Problems
-259:	Problems
-260:	Problems
-261:	Problems
-262:	Problems
-263:	Problems
-264:	Problems
-265:	Problems
-266:	Problems
-267:	Problems
-268:	Problems
-269:	Problems
-270:	Problems
-271:	Problems
-272:	Problems
-273:	Problems
-274:	Problems
-275:	Problems
-276:	Problems
-277:	Problems
-278:	Problems
-279:	Problems
-280:	Problems
-281:	Problems
-282:	Problems
-283:	Problems
-284:	Problems
-285:	Problems
-286:	Problems
-287:	Problems
-288:	Problems
-289:	Problems
-290:	Problems
-291:	Problems
-292:	Problems
-293:	Problems
-294:	Problems
-295:	Problems
-296:	Problems
-297:	Problems
-298:	Problems
-299:	Problems
-300:	Problems
-301:	Problems
-302:	Problems
-303:	Problems
-304:	Problems
-305:	Problems
-306:	Problems
-307:	Problems
-308:	Problems
-309:	Problems
-310:	Problems
-311:	Problems
-312:	Problems
-313:	Problems
-314:	Problems
-315:	Problems
-316:	Problems
-317:	Problems
-318:	Problems
-319:	Problems
-320:	Problems
-321:	Problems
-322:	Problems
-323:	Problems
-324:	Problems
-325:	Problems
-326:	Problems
-327:	Problems
-328:	Problems
-329:	Problems
-330:	Problems
-331:	Problems
-332:	Problems
-333:	Problems
-334:	Number is 2
-335:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
-336:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
-337:	Completed Learning Methods!
-338:	Start learning arrays...
-339:	333
-340:	666
-341:	666
-342:	0
-343:	0
-344:	0
-345:	0
-346:	0
-347:	0
-348:	0
-349:	0
-350:	0
-351:	0
-352:	0
-353:	0
-354:	0
-355:	0
-356:	0
-357:	0
-358:	0
-359:	0
-360:	0
-361:	0
-362:	0
-363:	0
-364:	0
-365:	0
-366:	0
-367:	0
-368:	0
-369:	0
-370:	0
-371:	0
-372:	0
-373:	0
-374:	0
-375:	0
-376:	0
-377:	0
-378:	0
-379:	0
-380:	0
-381:	0
-382:	0
-383:	0
-384:	0
-385:	0
-386:	0
-387:	0
-388:	0
-389:	0
-390:	0
-391:	0
-392:	0
-393:	0
-394:	0
-395:	0
-396:	0
-397:	0
-398:	0
-399:	0
-400:	0
-401:	0
-402:	0
-403:	0
-404:	0
-405:	0
-406:	0
-407:	0
-408:	0
-409:	0
-410:	0
-411:	0
-412:	0
-413:	0
-414:	0
-415:	0
-416:	0
-417:	0
-418:	0
-419:	0
-420:	0
-421:	0
-422:	0
-423:	0
-424:	0
-425:	0
-426:	0
-427:	0
-428:	0
-429:	0
-430:	0
-431:	0
-432:	0
-433:	0
-434:	0
-435:	0
-436:	0
-437:	0
-438:	0
-439:	0
-440:	333
-441:	0 = 666
-442:	1 = 0
-443:	2 = 0
-444:	3 = 0
-445:	4 = 0
-446:	5 = 0
-447:	6 = 0
-448:	7 = 0
-449:	8 = 0
-450:	9 = 0
-451:	10 = 0
-452:	11 = 0
-453:	12 = 0
-454:	13 = 0
-455:	14 = 0
-456:	15 = 0
-457:	16 = 0
-458:	17 = 0
-459:	18 = 0
-460:	19 = 0
-461:	20 = 0
-462:	21 = 0
-463:	22 = 0
-464:	23 = 0
-465:	24 = 0
-466:	25 = 0
-467:	26 = 0
-468:	27 = 0
-469:	28 = 0
-470:	29 = 0
-471:	30 = 0
-472:	31 = 0
-473:	32 = 0
-474:	33 = 0
-475:	34 = 0
-476:	35 = 0
-477:	36 = 0
-478:	37 = 0
-479:	38 = 0
-480:	39 = 0
-481:	40 = 0
-482:	41 = 0
-483:	42 = 0
-484:	43 = 0
-485:	44 = 0
-486:	45 = 0
-487:	46 = 0
-488:	47 = 0
-489:	48 = 0
-490:	49 = 0
-491:	50 = 0
-492:	51 = 0
-493:	52 = 0
-494:	53 = 0
-495:	54 = 0
-496:	55 = 0
-497:	56 = 0
-498:	57 = 0
-499:	58 = 0
-500:	59 = 0
-501:	60 = 0
-502:	61 = 0
-503:	62 = 0
-504:	63 = 0
-505:	64 = 0
-506:	65 = 0
-507:	66 = 0
-508:	67 = 0
-509:	68 = 0
-510:	69 = 0
-511:	70 = 0
-512:	71 = 0
-513:	72 = 0
-514:	73 = 0
-515:	74 = 0
-516:	75 = 0
-517:	76 = 0
-518:	77 = 0
-519:	78 = 0
-520:	79 = 0
-521:	80 = 0
-522:	81 = 0
-523:	82 = 0
-524:	83 = 0
-525:	84 = 0
-526:	85 = 0
-527:	86 = 0
-528:	87 = 0
-529:	88 = 0
-530:	89 = 0
-531:	90 = 0
-532:	91 = 0
-533:	92 = 0
-534:	93 = 0
-535:	94 = 0
-536:	95 = 0
-537:	96 = 0
-538:	97 = 0
-539:	98 = 0
-540:	99 = 333
-541:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
-542:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
-543:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-544:	~~~ SIMULATED {Message} DIALOG: [8,2,2,10,4,6,10,5,6,2,6,3,8,7,5,9,1,5,6,1,6,8,8,6,10,4,8,5,5,10,8,1,2,3,7,10,2,9,6,3,1,5,7,6,3,3,6,8,10,1,] ~~~ 
-545:	Random character was n
-546:	c r B / V ( = I j F k 9 D ] = t x ! w j ; C 7 + R r J I = _ 
-7 G 1 4 / f " & w b j ! # / V Q + ] V _ x = 0 8 U 2 3 1 l d 
-J ] q & Y F ` % n m & / 2 N Z 8 / % 9 P % 5 s M e " & S T = 
-) : u n F i K y / ... (line shortened) ...
-547:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-548:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-549:	X O X 
-O X O 
-X O X 
-
-550:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
-551:	Completed learning arrays!
-552:	Start Learning classes...
-553:	Complete Learning classes
-554:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics1 ~~~ 
-555:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics2 ~~~ 
-556:	~~~ SIMULATED {GUI Frame} DIALOG: Graphics3 ~~~ 
-557:	Computer Science 40S Course:...............................................................
-558:	Recursion test started...
-559:	Recursive factorials............................
-560:	-1 factorial = 1
-561:	0 factorial = 1
-562:	1 factorial = 1
-563:	2 factorial = 2
-564:	3 factorial = 6
-565:	4 factorial = 24
-566:	5 factorial = 120
-567:	6 factorial = 720
-568:	7 factorial = 5040
-569:	8 factorial = 40320
-570:	9 factorial = 362880
-571:	10 factorial = 3628800
-572:	11 factorial = 39916800
-573:	12 factorial = 479001600
-574:	13 factorial = 6227020800
-575:	14 factorial = 87178291200
-576:	15 factorial = 1307674368000
-577:	16 factorial = 20922789888000
-578:	17 factorial = 355687428096000
-579:	18 factorial = 6402373705728000
-580:	19 factorial = 121645100408832000
-581:	20 factorial = 2432902008176640000
-582:	Recursive powers................................
-583:	-5 to the exponent -5 = -3.2E-4
-584:	-4 to the exponent -5 = -9.765625E-4
-585:	-3 to the exponent -5 = -0.00411522633744856
-586:	-2 to the exponent -5 = -0.03125
-587:	-1 to the exponent -5 = -1.0
-588:	0 to the exponent -5 = 4.9E-324
-589:	1 to the exponent -5 = 1.0
-590:	2 to the exponent -5 = 0.03125
-591:	3 to the exponent -5 = 0.00411522633744856
-592:	4 to the exponent -5 = 9.765625E-4
-593:	5 to the exponent -5 = 3.2E-4
-594:	6 to the exponent -5 = 1.286008230452675E-4
-595:	7 to the exponent -5 = 5.9499018266198606E-5
-596:	8 to the exponent -5 = 3.0517578125E-5
-597:	9 to the exponent -5 = 1.6935087808430286E-5
-598:	10 to the exponent -5 = 1.0E-5
-599:	-5 to the exponent -4 = 0.0016
-600:	-4 to the exponent -4 = 0.00390625
-601:	-3 to the exponent -4 = 0.012345679012345678
-602:	-2 to the exponent -4 = 0.0625
-603:	-1 to the exponent -4 = 1.0
-604:	0 to the exponent -4 = 4.9E-324
-605:	1 to the exponent -4 = 1.0
-606:	2 to the exponent -4 = 0.0625
-607:	3 to the exponent -4 = 0.012345679012345678
-608:	4 to the exponent -4 = 0.00390625
-609:	5 to the exponent -4 = 0.0016
-610:	6 to the exponent -4 = 7.716049382716049E-4
-611:	7 to the exponent -4 = 4.1649312786339027E-4
-612:	8 to the exponent -4 = 2.44140625E-4
-613:	9 to the exponent -4 = 1.5241579027587258E-4
-614:	10 to the exponent -4 = 1.0E-4
-615:	-5 to the exponent -3 = -0.008
-616:	-4 to the exponent -3 = -0.015625
-617:	-3 to the exponent -3 = -0.037037037037037035
-618:	-2 to the exponent -3 = -0.125
-619:	-1 to the exponent -3 = -1.0
-620:	0 to the exponent -3 = 4.9E-324
-621:	1 to the exponent -3 = 1.0
-622:	2 to the exponent -3 = 0.125
-623:	3 to the exponent -3 = 0.037037037037037035
-624:	4 to the exponent -3 = 0.015625
-625:	5 to the exponent -3 = 0.008
-626:	6 to the exponent -3 = 0.004629629629629629
-627:	7 to the exponent -3 = 0.0029154518950437317
-628:	8 to the exponent -3 = 0.001953125
-629:	9 to the exponent -3 = 0.0013717421124828531
-630:	10 to the exponent -3 = 0.001
-631:	-5 to the exponent -2 = 0.04
-632:	-4 to the exponent -2 = 0.0625
-633:	-3 to the exponent -2 = 0.1111111111111111
-634:	-2 to the exponent -2 = 0.25
-635:	-1 to the exponent -2 = 1.0
-636:	0 to the exponent -2 = 4.9E-324
-637:	1 to the exponent -2 = 1.0
-638:	2 to the exponent -2 = 0.25
-639:	3 to the exponent -2 = 0.1111111111111111
-640:	4 to the exponent -2 = 0.0625
-641:	5 to the exponent -2 = 0.04
-642:	6 to the exponent -2 = 0.027777777777777776
-643:	7 to the exponent -2 = 0.02040816326530612
-644:	8 to the exponent -2 = 0.015625
-645:	9 to the exponent -2 = 0.012345679012345678
-646:	10 to the exponent -2 = 0.01
-647:	-5 to the exponent -1 = -0.2
-648:	-4 to the exponent -1 = -0.25
-649:	-3 to the exponent -1 = -0.3333333333333333
-650:	-2 to the exponent -1 = -0.5
-651:	-1 to the exponent -1 = -1.0
-652:	0 to the exponent -1 = 4.9E-324
-653:	1 to the exponent -1 = 1.0
-654:	2 to the exponent -1 = 0.5
-655:	3 to the exponent -1 = 0.3333333333333333
-656:	4 to the exponent -1 = 0.25
-657:	5 to the exponent -1 = 0.2
-658:	6 to the exponent -1 = 0.16666666666666666
-659:	7 to the exponent -1 = 0.14285714285714285
-660:	8 to the exponent -1 = 0.125
-661:	9 to the exponent -1 = 0.1111111111111111
-662:	10 to the exponent -1 = 0.1
-663:	-5 to the exponent 0 = 1.0
-664:	-4 to the exponent 0 = 1.0
-665:	-3 to the exponent 0 = 1.0
-666:	-2 to the exponent 0 = 1.0
-667:	-1 to the exponent 0 = 1.0
-668:	0 to the exponent 0 = 1.0
-669:	1 to the exponent 0 = 1.0
-670:	2 to the exponent 0 = 1.0
-671:	3 to the exponent 0 = 1.0
-672:	4 to the exponent 0 = 1.0
-673:	5 to the exponent 0 = 1.0
-674:	6 to the exponent 0 = 1.0
-675:	7 to the exponent 0 = 1.0
-676:	8 to the exponent 0 = 1.0
-677:	9 to the exponent 0 = 1.0
-678:	10 to the exponent 0 = 1.0
-679:	-5 to the exponent 1 = -5.0
-680:	-4 to the exponent 1 = -4.0
-681:	-3 to the exponent 1 = -3.0
-682:	-2 to the exponent 1 = -2.0
-683:	-1 to the exponent 1 = -1.0
-684:	0 to the exponent 1 = 0.0
-685:	1 to the exponent 1 = 1.0
-686:	2 to the exponent 1 = 2.0
-687:	3 to the exponent 1 = 3.0
-688:	4 to the exponent 1 = 4.0
-689:	5 to the exponent 1 = 5.0
-690:	6 to the exponent 1 = 6.0
-691:	7 to the exponent 1 = 7.0
-692:	8 to the exponent 1 = 8.0
-693:	9 to the exponent 1 = 9.0
-694:	10 to the exponent 1 = 10.0
-695:	-5 to the exponent 2 = 25.0
-696:	-4 to the exponent 2 = 16.0
-697:	-3 to the exponent 2 = 9.0
-698:	-2 to the exponent 2 = 4.0
-699:	-1 to the exponent 2 = 1.0
-700:	0 to the exponent 2 = 0.0
-701:	1 to the exponent 2 = 1.0
-702:	2 to the exponent 2 = 4.0
-703:	3 to the exponent 2 = 9.0
-704:	4 to the exponent 2 = 16.0
-705:	5 to the exponent 2 = 25.0
-706:	6 to the exponent 2 = 36.0
-707:	7 to the exponent 2 = 49.0
-708:	8 to the exponent 2 = 64.0
-709:	9 to the exponent 2 = 81.0
-710:	10 to the exponent 2 = 100.0
-711:	-5 to the exponent 3 = -125.0
-712:	-4 to the exponent 3 = -64.0
-713:	-3 to the exponent 3 = -27.0
-714:	-2 to the exponent 3 = -8.0
-715:	-1 to the exponent 3 = -1.0
-716:	0 to the exponent 3 = 0.0
-717:	1 to the exponent 3 = 1.0
-718:	2 to the exponent 3 = 8.0
-719:	3 to the exponent 3 = 27.0
-720:	4 to the exponent 3 = 64.0
-721:	5 to the exponent 3 = 125.0
-722:	6 to the exponent 3 = 216.0
-723:	7 to the exponent 3 = 343.0
-724:	8 to the exponent 3 = 512.0
-725:	9 to the exponent 3 = 729.0
-726:	10 to the exponent 3 = 1000.0
-727:	-5 to the exponent 4 = 625.0
-728:	-4 to the exponent 4 = 256.0
-729:	-3 to the exponent 4 = 81.0
-730:	-2 to the exponent 4 = 16.0
-731:	-1 to the exponent 4 = 1.0
-732:	0 to the exponent 4 = 0.0
-733:	1 to the exponent 4 = 1.0
-734:	2 to the exponent 4 = 16.0
-735:	3 to the exponent 4 = 81.0
-736:	4 to the exponent 4 = 256.0
-737:	5 to the exponent 4 = 625.0
-738:	6 to the exponent 4 = 1296.0
-739:	7 to the exponent 4 = 2401.0
-740:	8 to the exponent 4 = 4096.0
-741:	9 to the exponent 4 = 6561.0
-742:	10 to the exponent 4 = 10000.0
-743:	-5 to the exponent 5 = -3125.0
-744:	-4 to the exponent 5 = -1024.0
-745:	-3 to the exponent 5 = -243.0
-746:	-2 to the exponent 5 = -32.0
-747:	-1 to the exponent 5 = -1.0
-748:	0 to the exponent 5 = 0.0
-749:	1 to the exponent 5 = 1.0
-750:	2 to the exponent 5 = 32.0
-751:	3 to the exponent 5 = 243.0
-752:	4 to the exponent 5 = 1024.0
-753:	5 to the exponent 5 = 3125.0
-754:	6 to the exponent 5 = 7776.0
-755:	7 to the exponent 5 = 16807.0
-756:	8 to the exponent 5 = 32768.0
-757:	9 to the exponent 5 = 59049.0
-758:	10 to the exponent 5 = 100000.0
-759:	-5 to the exponent 6 = 15625.0
-760:	-4 to the exponent 6 = 4096.0
-761:	-3 to the exponent 6 = 729.0
-762:	-2 to the exponent 6 = 64.0
-763:	-1 to the exponent 6 = 1.0
-764:	0 to the exponent 6 = 0.0
-765:	1 to the exponent 6 = 1.0
-766:	2 to the exponent 6 = 64.0
-767:	3 to the exponent 6 = 729.0
-768:	4 to the exponent 6 = 4096.0
-769:	5 to the exponent 6 = 15625.0
-770:	6 to the exponent 6 = 46656.0
-771:	7 to the exponent 6 = 117649.0
-772:	8 to the exponent 6 = 262144.0
-773:	9 to the exponent 6 = 531441.0
-774:	10 to the exponent 6 = 1000000.0
-775:	-5 to the exponent 7 = -78125.0
-776:	-4 to the exponent 7 = -16384.0
-777:	-3 to the exponent 7 = -2187.0
-778:	-2 to the exponent 7 = -128.0
-779:	-1 to the exponent 7 = -1.0
-780:	0 to the exponent 7 = 0.0
-781:	1 to the exponent 7 = 1.0
-782:	2 to the exponent 7 = 128.0
-783:	3 to the exponent 7 = 2187.0
-784:	4 to the exponent 7 = 16384.0
-785:	5 to the exponent 7 = 78125.0
-786:	6 to the exponent 7 = 279936.0
-787:	7 to the exponent 7 = 823543.0
-788:	8 to the exponent 7 = 2097152.0
-789:	9 to the exponent 7 = 4782969.0
-790:	10 to the exponent 7 = 1.0E7
-791:	-5 to the exponent 8 = 390625.0
-792:	-4 to the exponent 8 = 65536.0
-793:	-3 to the exponent 8 = 6561.0
-794:	-2 to the exponent 8 = 256.0
-795:	-1 to the exponent 8 = 1.0
-796:	0 to the exponent 8 = 0.0
-797:	1 to the exponent 8 = 1.0
-798:	2 to the exponent 8 = 256.0
-799:	3 to the exponent 8 = 6561.0
-800:	4 to the exponent 8 = 65536.0
-801:	5 to the exponent 8 = 390625.0
-802:	6 to the exponent 8 = 1679616.0
-803:	7 to the exponent 8 = 5764801.0
-804:	8 to the exponent 8 = 1.6777216E7
-805:	9 to the exponent 8 = 4.3046721E7
-806:	10 to the exponent 8 = 1.0E8
-807:	-5 to the exponent 9 = -1953125.0
-808:	-4 to the exponent 9 = -262144.0
-809:	-3 to the exponent 9 = -19683.0
-810:	-2 to the exponent 9 = -512.0
-811:	-1 to the exponent 9 = -1.0
-812:	0 to the exponent 9 = 0.0
-813:	1 to the exponent 9 = 1.0
-814:	2 to the exponent 9 = 512.0
-815:	3 to the exponent 9 = 19683.0
-816:	4 to the exponent 9 = 262144.0
-817:	5 to the exponent 9 = 1953125.0
-818:	6 to the exponent 9 = 1.0077696E7
-819:	7 to the exponent 9 = 4.0353607E7
-820:	8 to the exponent 9 = 1.34217728E8
-821:	9 to the exponent 9 = 3.87420489E8
-822:	10 to the exponent 9 = 1.0E9
-823:	-5 to the exponent 10 = 9765625.0
-824:	-4 to the exponent 10 = 1048576.0
-825:	-3 to the exponent 10 = 59049.0
-826:	-2 to the exponent 10 = 1024.0
-827:	-1 to the exponent 10 = 1.0
-828:	0 to the exponent 10 = 0.0
-829:	1 to the exponent 10 = 1.0
-830:	2 to the exponent 10 = 1024.0
-831:	3 to the exponent 10 = 59049.0
-832:	4 to the exponent 10 = 1048576.0
-833:	5 to the exponent 10 = 9765625.0
-834:	6 to the exponent 10 = 6.0466176E7
-835:	7 to the exponent 10 = 2.82475249E8
-836:	8 to the exponent 10 = 1.073741824E9
-837:	9 to the exponent 10 = 3.486784401E9
-838:	10 to the exponent 10 = 1.0E10
-839:	Recursion complete!
-840:	Advanced Classes Test started...
-841:	unidentified is 0 identifies as unidentified
-842:	Per Soney is 0 identifies as unidentified
-843:	Per Soney is 1 identifies as unidentified
-844:	Booooo!
-845:	unidentified is 0 identifies as unidentified
-846:	I am a student
-847:		 Number: 	1
-848:		 GPA:    	0.0
-849:	Stu Denty is 0 identifies as unidentified
-850:	I am a student
-851:		 Number: 	1
-852:		 GPA:    	0.0
-853:	Stu Denty is 0 identifies as unidentified
-854:	I am a student
-855:		 Number: 	1
-856:		 GPA:    	0.3
-857:	Stu Denty is 0 identifies as unidentified
-858:	I am a student
-859:		 Number: 	1
-860:		 GPA:    	0.0
-861:	Stu Denty is 0 identifies as unidentified
-862:	I am a student
-863:		 Number: 	1
-864:		 GPA:    	3.0002999999999993
-865:	Booooo!
-866:	I am a student
-867:		 Number: 	1
-868:		 GPA:    	3.0002999999999993
-869:	Stewie Griffin is 2 identifies as cat
-870:	I am a student
-871:		 Number: 	1
-872:		 GPA:    	0.0
-873:	Mr. Teachery is 45 identifies as teacher
-874:	Mr. Teachery is 45 identifies as teacher
-875:	Mr. Teachery is 45 identifies as teacher
-876:	Booooo!
-877:	I am a student
-878:		 Number: 	1
-879:		 GPA:    	3.300299999999999
-880:	Stewie Griffin is 2 identifies as cat
-881:	I am a student
-882:		 Number: 	1
-883:		 GPA:    	0.3
-884:	O1 = java.lang.Object@6ddf90b0
-885:	O2 = java.lang.Object@57536d79
-886:	O3 = java.lang.Object@57536d79
-887:	Person  as string = Person
-888:	Student as string = Student: Person
-889:	Teacher as string = Teacher: Person
-890:	String  as string = squirrel
-891:	JOptionPane as string = utility.io.JOptionPane@3b0143d3
-892:	O2==O3
-893:	P1==P2
-894:	P2==P3
-895:	P1==P3
-896:	P2==P3
-897:	Person is Person
-898:	Clone  is Person
-899:	Clone is ==
-900:	S1 total = 2
-901:	S2 total = 2
-902:	S3 total = 4
-903:	S4 total = 4
-904:	S3 total = 9
-905:	S4 total = 9
-906:	Boom!!!
-907:	Boom!!!
-908:	Boom!!!
-909:	Boom!!!
-910:	Boom!!!
-911:	Boom!!!
-912:	Doctor: Person
-913:	DiskJockey: Person
-914:	MrWachs: Teacher: Person
-915:	Piper: HighSchool: Student: Person
-916:	Husky: HighSchool: Student: Person
-917:	Athlete: Husky: HighSchool: Student: Person
-918:	Meeting is about to begin...
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	Person
-	 Person ->	 Student ->	Student: Person
-	 Person ->	 Student ->	Student: Per ... (line shortened) ...
-919:	Grill on the BBQ
-920:	Mr. Lawrence Wachs is eating Protein it was Savory
-921:	unidentified is eating Apple from Do not eat!
-922:	Round 1...
-923:	Jock has signed the form!
-924:	Round 2...
-925:	Jock has scored
-926:	Jock has scored
-927:	St. Pauls has scored
-928:	End of period 2 and the score is 2 for the Jock and 1 for the St. Pauls
-929:	Jock SLAPS St. Pauls
-930:	KO
-931:	Round 3...
-932:	Jock has scored
-933:	Jock has scored
-934:	St. Pauls has scored
-935:	End of period 3 and the score is 4 for the Jock and 2 for the St. Pauls
-936:	Round 4...
-937:	Jock has scored
-938:	Jock has scored
-939:	St. Pauls has scored
-940:	End of period 4 and the score is 6 for the Jock and 3 for the St. Pauls
-941:	Hard core ironing of clothes!
-942:	Jock wins!
-943:	Grill on the BBQ
-944:	Jock is eating Protein it was Savory
-945:	Class name: Boolean, Hash Code: 1231, To String: true
-946:	Class name: Integer, Hash Code: 0, To String: 0
-947:	Class name: Double, Hash Code: 300063655, To String: 3.14
-948:	Class name: Character, Hash Code: 97, To String: a
-949:	Class name: String, Hash Code: 3556498, To String: test
-950:	Class name: Athlete, Hash Code: 143110009, To String: Athlete: Husky: HighSchool: Student: Person
-951:	Class name: JOptionPane, Hash Code: 2142003995, To String: utility.io.JOptionPane@7fac631b
-952:	Class name: Object, Hash Code: 1535634836, To String: java.lang.Object@5b87ed94
-953:	true
-954:	0
-955:	3.14
-956:	a
-957:	test
-958:	Athlete: Husky: HighSchool: Student: Person
-959:	Class name: Boolean, Hash Code: 1231, To String: true
-960:	Class name: Integer, Hash Code: 0, To String: 0
-961:	Class name: Double, Hash Code: 300063655, To String: 3.14
-962:	Class name: Character, Hash Code: 97, To String: a
-963:	Class name: String, Hash Code: 3556498, To String: test
-964:	Class name: Athlete, Hash Code: 143110009, To String: Athlete: Husky: HighSchool: Student: Person
-965:	Home Owner:
-966:	Mr. Lawrence Wachs
-967:	And the contents...
-968:	testing.prerequisite.cs40s.advancedclasses.Meeting@47ef968d
-969:	Mr. Lawrence Wachs is eating Apple from Do not eat!
-970:	Grill on the BBQ
-971:	Mr. Lawrence Wachs is eating Protein it was Savory
-972:	Advanced Classes Test complete!
-973:	Collections testing begins...
-974:	Testing Node constructors....................
-975:	Testing Node toString()......................
-976:	Node a = null
-977:	Node b = Sass
-978:	Node c = Pros
-979:	Node d = Joes
-980:	Testing Node clone().........................
-981:	Node e = null
-982:	Node f = Sass
-983:	Node g = Pros
-984:	Node h = Joes
-985:	Testing Node equal().........................
-986:	Node a == b? -> false
-987:	Node b == c? -> false
-988:	Node c == d? -> false
-989:	Node d == d? -> true
-990:	Node e == a? -> false
-991:	Node f == b? -> true
-992:	Node g == c? -> true
-993:	Node h == d? -> true
-994:	Testing Node finalize()......................
-995:	Node a = null
-996:	Node b = Sass
-997:	Node c = Pros
-998:	Node d = Joes
-999:	Node e = null
-1000:	Node f = Sass
-1001:	Node g = Pros
-1002:	Node h = Joes
-1003:	Node a = null
-1004:	Node b = null
-1005:	Node c = null
-1006:	Node d = null
-1007:	Node e = null
-1008:	Node f = null
-1009:	Node g = null
-1010:	Node h = null
-1011:	Testing default LinkedList constructor.......
-1012:	Testing toString, empty, size methods........
-1013:	L1 toString -> Empty LinkedList
-1014:	L2 toString -> Empty LinkedList
-1015:	L1 empty? -> true
-1016:	L2 empty? -> true
-1017:	L1 size -> 0
-1018:	L2 size -> 0
-1019:	Test add (first to the back) of the list.....
-1020:	addBack -> true	Linked List 	[51]
-1021:	addBack -> true	Linked List 	[51,50]
-1022:	addBack -> true	Linked List 	[51,50,-50]
-1023:	addBack -> true	Linked List 	[51,50,-50,55]
-1024:	addBack -> false	Linked List 	[51,50,-50,55]
-1025:	Test add (second to the front) of the list...
-1026:	addFront -> true	Linked List 	[80,51,50,-50,55]
-1027:	addFront -> true	Linked List 	[81,80,51,50,-50,55]
-1028:	addFront -> true	Linked List 	[-80,81,80,51,50,-50,55]
-1029:	addFront -> true	Linked List 	[88,-80,81,80,51,50,-50,55]
-1030:	addFront -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1031:	Re-testing empty, size methods...............
-1032:	L1 empty? -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1033:	L2 empty? -> true	Empty LinkedList
-1034:	L1 size -> 8	Linked List 	[88,-80,81,80,51,50,-50,55]
-1035:	L2 size -> 0	Empty LinkedList
-1036:	Test get method..............................
-1037:	Getting -1 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-1038:	Getting 0 = 88	Linked List 	[88,-80,81,80,51,50,-50,55]
-1039:	Getting 1 = -80	Linked List 	[88,-80,81,80,51,50,-50,55]
-1040:	Getting 2 = 81	Linked List 	[88,-80,81,80,51,50,-50,55]
-1041:	Getting 3 = 80	Linked List 	[88,-80,81,80,51,50,-50,55]
-1042:	Getting 4 = 51	Linked List 	[88,-80,81,80,51,50,-50,55]
-1043:	Getting 5 = 50	Linked List 	[88,-80,81,80,51,50,-50,55]
-1044:	Getting 6 = -50	Linked List 	[88,-80,81,80,51,50,-50,55]
-1045:	Getting 7 = 55	Linked List 	[88,-80,81,80,51,50,-50,55]
-1046:	Getting 8 = null	Linked List 	[88,-80,81,80,51,50,-50,55]
-1047:	Test set method..............................
-1048:	Setting -1 to 9 -> false	Linked List 	[88,-80,81,80,51,50,-50,55]
-1049:	Setting 0 to 10 -> true	Linked List 	[10,-80,81,80,51,50,-50,55]
-1050:	Setting 1 to 11 -> true	Linked List 	[10,11,81,80,51,50,-50,55]
-1051:	Setting 2 to 12 -> true	Linked List 	[10,11,12,80,51,50,-50,55]
-1052:	Setting 3 to 13 -> true	Linked List 	[10,11,12,13,51,50,-50,55]
-1053:	Setting 4 to 14 -> true	Linked List 	[10,11,12,13,14,50,-50,55]
-1054:	Setting 5 to 15 -> true	Linked List 	[10,11,12,13,14,15,-50,55]
-1055:	Setting 6 to 16 -> true	Linked List 	[10,11,12,13,14,15,16,55]
-1056:	Setting 7 to 17 -> true	Linked List 	[10,11,12,13,14,15,16,17]
-1057:	Setting 8 to 18 -> false	Linked List 	[10,11,12,13,14,15,16,17]
-1058:	Setting 0 to null -> false	Linked List 	[10,11,12,13,14,15,16,17]
-1059:	Test equals method...........................
-1060:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-1061:	List 2 = Empty LinkedList
-1062:	List1 == List2 -> false
-1063:	Test clone method............................
-1064:	List 1 = Linked List 	[10,11,12,13,14,15,16,17]
-1065:	List 2 = Linked List 	[10,11,12,13,14,15,16,17]
-1066:	Re-testing equals...
-1067:	List1 == List2 -> true
-1068:	Test addAfter method.........................
-1069:	Adding value 	99	 after index 	-1	 result 	false	Linked List 	[10,11,12,13,14,15,16,17]
-1070:	Adding value 	100	 after index 	0	 result 	true	Linked List 	[10,100,11,12,13,14,15,16,17]
-1071:	Adding value 	101	 after index 	1	 result 	true	Linked List 	[10,100,101,11,12,13,14,15,16,17]
-1072:	Adding value 	102	 after index 	2	 result 	true	Linked List 	[10,100,101,102,11,12,13,14,15,16,17]
-1073:	Adding value 	103	 after index 	3	 result 	true	Linked List 	[10,100,101,102,103,11,12,13,14,15,16,17]
-1074:	Adding value 	104	 after index 	4	 result 	true	Linked List 	[10,100,101,102,103,104,11,12,13,14,15,16,17]
-1075:	Adding value 	105	 after index 	5	 result 	true	Linked List 	[10,100,101,102,103,104,105,11,12,13,14,15,16,17]
-1076:	Adding value 	106	 after index 	6	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,11,12,13,14,15,16,17]
-1077:	Adding value 	107	 after index 	7	 result 	true	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1078:	Test other edge case
-1079:	Adding value 	10	 after index 	17	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1080:	Test addBefore method.........................
-1081:	Adding value 	99	 before index 	-1	 result 	false	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1082:	Adding value 	100	 before index 	0	 result 	true	Linked List 	[100,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1083:	Adding value 	101	 before index 	1	 result 	true	Linked List 	[100,101,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1084:	Adding value 	102	 before index 	2	 result 	true	Linked List 	[100,101,102,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1085:	Adding value 	103	 before index 	3	 result 	true	Linked List 	[100,101,102,103,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1086:	Adding value 	104	 before index 	4	 result 	true	Linked List 	[100,101,102,103,104,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1087:	Adding value 	105	 before index 	5	 result 	true	Linked List 	[100,101,102,103,104,105,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1088:	Adding value 	106	 before index 	6	 result 	true	Linked List 	[100,101,102,103,104,105,106,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1089:	Adding value 	107	 before index 	7	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1090:	Adding value 	108	 before index 	8	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1091:	Adding value 	109	 before index 	9	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1092:	Adding value 	110	 before index 	10	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1093:	Adding value 	111	 before index 	11	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1094:	Adding value 	112	 before index 	12	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1095:	Adding value 	113	 before index 	13	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1096:	Adding value 	114	 before index 	14	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1097:	Adding value 	115	 before index 	15	 result 	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1098:	Test other edge case
-1099:	Adding value 	10	 before index 	33	 result 	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1100:	Test front and back methods..................
-1101:	Front of list 1 = 100	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1102:	Front of list 2 = 10	Linked List 	[10,11,12,13,14,15,16,17]
-1103:	Back of list 1 = 17	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1104:	Back of list 2 = 17	Linked List 	[10,11,12,13,14,15,16,17]
-1105:	Clear out list 2
-1106:	Front of list 2 = null	Empty LinkedList
-1107:	Back of list 2 = null	Empty LinkedList
-1108:	Cloning list 2 from list 1
-1109:	Test removeFront method......................
-1110:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	100
-1111:	Linked List 	[101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	101
-1112:	Linked List 	[102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	102
-1113:	Linked List 	[103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	103
-1114:	Linked List 	[104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	104
-1115:	Linked List 	[105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	105
-1116:	Linked List 	[106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	106
-1117:	Linked List 	[107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	107
-1118:	Linked List 	[108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	108
-1119:	Linked List 	[109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	109
-1120:	Linked List 	[110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	110
-1121:	Linked List 	[111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	111
-1122:	Linked List 	[112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	112
-1123:	Linked List 	[113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	113
-1124:	Linked List 	[114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	114
-1125:	Linked List 	[115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	115
-1126:	Linked List 	[10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	10
-1127:	Linked List 	[100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	100
-1128:	Linked List 	[101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	101
-1129:	Linked List 	[102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	102
-1130:	Linked List 	[103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	103
-1131:	Linked List 	[104,105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	104
-1132:	Linked List 	[105,106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	105
-1133:	Linked List 	[106,107,11,12,13,14,15,16,17]	Removing list 1 front = 	106
-1134:	Linked List 	[107,11,12,13,14,15,16,17]	Removing list 1 front = 	107
-1135:	Linked List 	[11,12,13,14,15,16,17]	Removing list 1 front = 	11
-1136:	Linked List 	[12,13,14,15,16,17]	Removing list 1 front = 	12
-1137:	Linked List 	[13,14,15,16,17]	Removing list 1 front = 	13
-1138:	Linked List 	[14,15,16,17]	Removing list 1 front = 	14
-1139:	Linked List 	[15,16,17]	Removing list 1 front = 	15
-1140:	Linked List 	[16,17]	Removing list 1 front = 	16
-1141:	Linked List 	[17]	Removing list 1 front = 	17
-1142:	Empty LinkedList	Removing list 1 front = 	null
-1143:	Cloning list 1 from list 2
-1144:	Test removeBack method.......................
-1145:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing list 2 back = 	17
-1146:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	Removing list 2 back = 	16
-1147:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	Removing list 2 back = 	15
-1148:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	Removing list 2 back = 	14
-1149:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	Removing list 2 back = 	13
-1150:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	Removing list 2 back = 	12
-1151:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	Removing list 2 back = 	11
-1152:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	Removing list 2 back = 	107
-1153:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	Removing list 2 back = 	106
-1154:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	Removing list 2 back = 	105
-1155:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	Removing list 2 back = 	104
-1156:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	Removing list 2 back = 	103
-1157:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	Removing list 2 back = 	102
-1158:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	Removing list 2 back = 	101
-1159:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	Removing list 2 back = 	100
-1160:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	Removing list 2 back = 	10
-1161:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	Removing list 2 back = 	115
-1162:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	Removing list 2 back = 	114
-1163:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	Removing list 2 back = 	113
-1164:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	Removing list 2 back = 	112
-1165:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	Removing list 2 back = 	111
-1166:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	Removing list 2 back = 	110
-1167:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	Removing list 2 back = 	109
-1168:	Linked List 	[100,101,102,103,104,105,106,107,108]	Removing list 2 back = 	108
-1169:	Linked List 	[100,101,102,103,104,105,106,107]	Removing list 2 back = 	107
-1170:	Linked List 	[100,101,102,103,104,105,106]	Removing list 2 back = 	106
-1171:	Linked List 	[100,101,102,103,104,105]	Removing list 2 back = 	105
-1172:	Linked List 	[100,101,102,103,104]	Removing list 2 back = 	104
-1173:	Linked List 	[100,101,102,103]	Removing list 2 back = 	103
-1174:	Linked List 	[100,101,102]	Removing list 2 back = 	102
-1175:	Linked List 	[100,101]	Removing list 2 back = 	101
-1176:	Linked List 	[100]	Removing list 2 back = 	100
-1177:	Empty LinkedList	Removing list 2 back = 	null
-1178:	Cloning list 2 from list 1
-1179:	Test remove method...........................
-1180:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	33	 removed: 	null
-1181:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	32	 removed: 	null
-1182:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]	Removing from list 1 from index: 	31	 removed: 	17
-1183:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16]	Removing from list 1 from index: 	30	 removed: 	16
-1184:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15]	Removing from list 1 from index: 	29	 removed: 	15
-1185:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14]	Removing from list 1 from index: 	28	 removed: 	14
-1186:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13]	Removing from list 1 from index: 	27	 removed: 	13
-1187:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12]	Removing from list 1 from index: 	26	 removed: 	12
-1188:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11]	Removing from list 1 from index: 	25	 removed: 	11
-1189:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107]	Removing from list 1 from index: 	24	 removed: 	107
-1190:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106]	Removing from list 1 from index: 	23	 removed: 	106
-1191:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105]	Removing from list 1 from index: 	22	 removed: 	105
-1192:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104]	Removing from list 1 from index: 	21	 removed: 	104
-1193:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103]	Removing from list 1 from index: 	20	 removed: 	103
-1194:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102]	Removing from list 1 from index: 	19	 removed: 	102
-1195:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101]	Removing from list 1 from index: 	18	 removed: 	101
-1196:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100]	Removing from list 1 from index: 	17	 removed: 	100
-1197:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10]	Removing from list 1 from index: 	16	 removed: 	10
-1198:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115]	Removing from list 1 from index: 	15	 removed: 	115
-1199:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114]	Removing from list 1 from index: 	14	 removed: 	114
-1200:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113]	Removing from list 1 from index: 	13	 removed: 	113
-1201:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112]	Removing from list 1 from index: 	12	 removed: 	112
-1202:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111]	Removing from list 1 from index: 	11	 removed: 	111
-1203:	Linked List 	[100,101,102,103,104,105,106,107,108,109,110]	Removing from list 1 from index: 	10	 removed: 	110
-1204:	Linked List 	[100,101,102,103,104,105,106,107,108,109]	Removing from list 1 from index: 	9	 removed: 	109
-1205:	Linked List 	[100,101,102,103,104,105,106,107,108]	Removing from list 1 from index: 	8	 removed: 	108
-1206:	Linked List 	[100,101,102,103,104,105,106,107]	Removing from list 1 from index: 	7	 removed: 	107
-1207:	Linked List 	[100,101,102,103,104,105,106]	Removing from list 1 from index: 	6	 removed: 	106
-1208:	Linked List 	[100,101,102,103,104,105]	Removing from list 1 from index: 	5	 removed: 	105
-1209:	Linked List 	[100,101,102,103,104]	Removing from list 1 from index: 	4	 removed: 	104
-1210:	Linked List 	[100,101,102,103]	Removing from list 1 from index: 	3	 removed: 	103
-1211:	Linked List 	[100,101,102]	Removing from list 1 from index: 	2	 removed: 	102
-1212:	Linked List 	[100,101]	Removing from list 1 from index: 	1	 removed: 	101
-1213:	Linked List 	[100]	Removing from list 1 from index: 	0	 removed: 	100
-1214:	Empty LinkedList	Removing from list 1 from index: 	-1	 removed: 	null
-1215:	Test contains method.........................
-1216:	List 1 (empty) contains 10 = false	Empty LinkedList
-1217:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1218:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1219:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1220:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1221:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1222:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1223:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1224:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1225:	List 2 contains 	108	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1226:	List 2 contains 	109	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1227:	List 2 contains 	110	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1228:	List 2 contains 	111	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1229:	List 2 contains 	112	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1230:	List 2 contains 	113	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1231:	List 2 contains 	114	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1232:	List 2 contains 	115	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1233:	List 2 contains 	10	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1234:	List 2 contains 	100	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1235:	List 2 contains 	101	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1236:	List 2 contains 	102	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1237:	List 2 contains 	103	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1238:	List 2 contains 	104	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1239:	List 2 contains 	105	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1240:	List 2 contains 	106	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1241:	List 2 contains 	107	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1242:	List 2 contains 	11	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1243:	List 2 contains 	12	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1244:	List 2 contains 	13	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1245:	List 2 contains 	14	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1246:	List 2 contains 	15	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1247:	List 2 contains 	16	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1248:	List 2 contains 	17	true	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1249:	List 2 contains 	1000	false	Linked List 	[100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,10,100,101,102,103,104,105,106,107,11,12,13,14,15,16,17]
-1250:	Resetting list 1 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1251:	Test firstIndexOf and lastIndexOf methods....
-1252:	First index of 5: 	0
-1253:	Last  index of 5: 	7
-1254:	First index of 7: 	2
-1255:	Last  index of 7: 	9
-1256:	First index of 8: 	3
-1257:	Last  index of 8: 	3
-1258:	First index of 9: 	-1
-1259:	Last  index of 9: 	-1
-1260:	Test numberOf method.........................
-1261:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1262:	Number of 5: 	3
-1263:	Number of 8: 	1
-1264:	Number of 9: 	0
-1265:	Test allIndices method.......................
-1266:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1267:	Array -> indices 5: 	[0, 4, 7]
-1268:	Array -> indices 8: 	[3]
-1269:	Array -> indices 9: 	null
-1270:	Cloning list 2 from list 1
-1271:	Test remove method...........................
-1272:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1273:	Removing 5: 	true	Linked List 	[6,7,8,5,6,7,5,6,7]
-1274:	Removing 8: 	true	Linked List 	[6,7,5,6,7,5,6,7]
-1275:	Removing 9: 	false	Linked List 	[6,7,5,6,7,5,6,7]
-1276:	Test removeLast method.......................
-1277:	Linked List 	[6,7,5,6,7,5,6,7]
-1278:	Removing 5: 	true	Linked List 	[6,7,5,6,7,6,7]
-1279:	Removing 8: 	false	Linked List 	[6,7,5,6,7,6,7]
-1280:	Removing 9: 	false	Linked List 	[6,7,5,6,7,6,7]
-1281:	Test removeAll method........................
-1282:	Linked List 	[6,7,5,6,7,6,7]
-1283:	Removing all 5: 	true	Linked List 	[6,7,6,7,6,7]
-1284:	Removing all 6: 	true	Linked List 	[7,7,7]
-1285:	Removing all 9: 	false	Linked List 	[7,7,7]
-1286:	Cloning list 1 from list 2
-1287:	Test removeAll array method..................
-1288:	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1289:	Array: 	[5, 6, 9]
-1290:	Removing all from array: Linked List 	[7,8,7,7]
-1291:	Test removeAll list method..................
-1292:	List 1 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1293:	List 2 	Linked List 	[7,8,7,7]
-1294:	Removing all list 2 from list 1...
-1295:	List 1 	Linked List 	[5,6,5,6,5,6]
-1296:	List 2 	Linked List 	[7,8,7,7]
-1297:	Resetting list 1 and 2 to: Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1298:	Test containsAll array method................
-1299:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 9]	 is false
-1300:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains array: 	[5, 6, 7, 8]	 is true
-1301:	Test containsAll list method.................
-1302:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 is true
-1303:	Alter list 2...
-1304:	List: 	Linked List 	[5,6,7,8,5,6,7,5,6,7] contains list: 	Linked List 	[6,7,8,6,7,5,6,45]	 is false
-1305:	Test addAll array method.....................
-1306:	Linked List 	[6,7,8,6,7,5,6,45]
-1307:	Adding array: 	[5, 6, 7, 8]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-1308:	Test addAll list method......................
-1309:	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8]
-1310:	Adding list: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]	 now list 	Linked List 	[6,7,8,6,7,5,6,45,5,6,7,8,5,6,7,8,5,6,7,5,6,7]
-1311:	Test subList method..........................
-1312:	List 1 = 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1313:	Pulling out sub-list from 3 to 6: 	Linked List 	[8,5,6,7]
-1314:	Pulling out sub-list from 1 to 1: 	Linked List 	[6]
-1315:	Pulling out sub-list from 2 to 10: 	null
-1316:	Pulling out sub-list from 0 to 9: 	Linked List 	[5,6,7,8,5,6,7,5,6,7]
-1317:	Test fromArray method........................
-1318:	Array is 	[5, 6, 7, 8]
-1319:	List is 	Linked List 	[5,6,7,8]
-1320:	Test fromLinkedList method...................
-1321:	1st List is 	Linked List 	[5,6,7,8]
-1322:	2nd List is 	Linked List 	[5,6,7,8]
-1323:	Test toArray method..........................
-1324:	List 	Linked List 	[5,6,7,8]	 into array 	[5, 6, 7, 8]
-1325:	Testing the imported util LinkedList.........
-1326:	Imported constructor...
-1327:	Imported add:	[0.0]
-1328:	Imported add:	[0.0, 1.23]
-1329:	Imported addFirst:	[4.56, 0.0, 1.23]
-1330:	Imported addLast:	[4.56, 0.0, 1.23, 7.89]
-1331:	Imported size:	4
-1332:	Imported isEmpty:	false
-1333:	Imported get:	0.0
-1334:	Imported set:	4.56
-1335:	Imported clone:	[0.01, 0.0, 1.23, 7.89]
-1336:	Imported equals:	true
-1337:	Imported getFirst:	0.01
-1338:	Imported getLast:	7.89
-1339:	Imported contains:	true
-1340:	Imported removeFirst:	0.01
-1341:	Imported removeLast:	7.89
-1342:	Imported remove:	1.23
-1343:	Imported remove:	false
-1344:	Testing the imported util ArrayList.........
-1345:	Imported ArrayList:	[a, b, c, d, e]
-1346:	Using the enhanced for loop with this object...
-1347:	a b c d e Using an iterator object...
-1348:	a b c d e Collections testing complete!
-1349:	Computer Science 42SAP Course:.............................................................
-1350:	Computer Science 42SAP curriculum content..................................................
-1351:	AP curriculum - Part 1.....................................................................
-1352:	AP: Unit 1 (Primitive Types)...............................................................
-1353:	1.1 Why Programming? Why Java?.............................................................
-1354:	System.out.print outputs text to the screen and System.out.println outputs with a line break
-1355:	More specifically, the code word "System" refers to the "computer system" and the 
-1356:	word "out" refers to outputting, and finally the word "print" or "println" are calls to 
-1357:	methods (or "actions") that take the string literal (which is the word or words in between 
-1358:	the quotation marks) and outputs it. So the command "System.out.println("literal");" 
-1359:	will take the string literal and output it to the default output device - that being the 
-1360:	computer screen.
-1361:	1.2 Variables and Data Types...............................................................
-1362:	Data/information refers to the "kind" of data being stored (or "remembered") by the program 
-1363:	in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
-1364:	(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
-1365:	"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
-1366:	specified at the time you write a line of code to "create" (or "declare") the variable. A 
-1367:	variable can only be one type and only store that specified type of data. However, the data 
-1368:	itself can change (or "vary") after the initial declaration. Examples of this are below...
-1369:	// Variables declared and assigned initial ("starting") values:
-1370:	boolean a = true;
-1371:	int     b = 0;
-1372:	double  c = 1.0;
-1373:	char    d = 'A';
-1374:	// Variables content changes ("reassigned"):
-1375:	a = false;
-1376:	b = 1;
-1377:	c = 1.1;
-1378:	d = 'B';
-1379:	A "final" (or a "constant") is a variable in which the stored value does NOT change 
-1380:	(it stays "constant") and it locked at that value. Final (or constant) variables are 
-1381:	given the initial value when declared (or initialized) and that value stays locked. These 
-1382:	types of values are written in ALL_CAPS with the underscore value used to seperate words in 
-1383:	the name. Final variables are more efficient for a number of reasons including ease of code 
-1384:	understanding, speed (faster code), easier to update code, and others. Examples of finals 
-1385:	are below
-1386:	// Constants (finals) declared (initialized)
-1387:	final boolean FOUND  = true;
-1388:	final int     VALUE  = 1;
-1389:	final double  AMOUNT = 2.5;
-1390:	final char    CODE   = 'X';
-1391:	1.3 Expressions and Assignment Statements..................................................
-1392:	Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
-1393:	written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
-1394:	context, the word "literal" can also mean a number (like "5"). This usually involves 
-1395:	variable types int and double (the number types) used in a math expression or equation. This 
-1396:	can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
-1397:	evaluated in a formula, they always evaluate to an int answer (solution) and double values 
-1398:	will evaluate to a double. Complex (or "compound" expressions can be formed in which 
-1399:	the order of operations (or precedence order). This means multiplication and division are 
-1400:	evaluated before addition and subtraction. If operations are at the same precedence level, 
-1401:	then they are evaluated from left to right.When you try and divide by zero, an error 
-1402:	(the "ArithmeticException" error) will occur and the program will stop running. Examples:
-1403:	// Arithmetic evaluations using variables
-1404:	int    v1 = 5;
-1405:	int    v2 = 3;
-1406:	int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
-1407:	double v4 = 5.2;
-1408:	double v5 = 3.3;
-1409:	double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
-1410:	1.4 Compound Assignment Operators..........................................................
-1411:	Compound statements in this context refers to using shortcuts to quickly add or subtract one 
-1412:	(increment or decrement) to a variable. You can also use more complex shorthand compound 
-1413:	statements to quickly multiply, divide, even modulus a variable with itself or other 
-1414:	variables. For example:
-1415:	// Shorthand Compound Arithmetic expressions
-1416:	int value = 5;
-1417:	value++;    // is the same as "value = value + 1;"
-1418:	value--;    // is the same as "value = value + 1;"
-1419:	value += 5; // is the same as "value = value + 5;"
-1420:	value -= 5; // is the same as "value = value - 5;"
-1421:	value *= 5; // is the same as "value = value * 5;"
-1422:	value /= 5; // is the same as "value = value / 5;"
-1423:	value %= 5; // is the same as "value = value % 5;"
-1424:	1.5 Casting and Ranges of Variables........................................................
-1425:	Casting is the process of "converting" one data type into another data type. When casting 
-1426:	an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
-1427:	off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
-1428:	A char when cast will turn into it's ASCII value. The process of casting involves putting 
-1429:	variable to be cast with the type being cast into in round brackets to the left of that 
-1430:	variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
-1431:	constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
-1432:	evaluates an int outside that range, an error will occur (overflow error). For example:
-1433:	// Casting data types
-1434:	int integer = Integer.MAX_VALUE;
-1435:	double doub = Double.MIN_VALUE;
-1436:	doub        = (int)integer;
-1437:	integer     = (int)doub;
-1438:	char letter = 'A';
-1439:	integer     = (int)letter;
-1440:	AP: Unit 3 (Boolean Expressions And If Statements).........................................
-1441:	3.1 Boolean Expressions....................................................................
-1442:	A Boolean (true/false) expression is a code statement most likely in a control structure 
-1443:	like a conditional statement or loop control structure that evaluates to true or false to 
-1444:	make decisions and control the flow of the program. The Boolean expression will require 
-1445:	the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
-1446:	than", "greater than", "less than or equal to", "greater than or equal to", "equal 
-1447:	to", and "not equal to".
-1448:	3.2 if Statements and Control Flow.........................................................
-1449:	A "Conditional Statement" is also known under other names like "branching statement", "if 
-1450:	statement", "one-way selection statement", and "control structure". It uses the reserved 
-1451:	keyword "if" along with round brackets which contain the Boolean expression, and curly 
-1452:	brackets to contain the control block of all code you wish to be controlled by the 
-1453:	conditional statement. Brackets are optional if the block is only one line, and you may also 
-1454:	move thos lines up to the same line as the conditional statement. For example:
-1455:	// Example of if statements
-1456:	int a = 10;
-1457:	int b = 10;
-1458:	if (a == a) {
-1459:	    // "equal"
-1460:	}
-1461:	3.3 if-else Statements.....................................................................
-1462:	The "else" statement is paired with an "if" statement to control the flow of the logic so 
-1463:	that the conditional now evaluates to both true and false. This can be called a "two 
-1464:	way selection" (for true/false). An "else" must always follow an "if" statement first. 
-1465:	For example:
-1466:	// if with "else" 
-1467:	double c = 1.45, d = 1.5; 
-1468:	if (c < d) {
-1469:	    // "Less than"
-1470:	}
-1471:	else {
-1472:	    // "Greater than"
-1473:	}
-1474:	// Shortened lines version
-1475:	char e = 'A';
-1476:	char f = 'a';
-1477:	if (e != f) e = '!';
-1478:	else        e = '=';
-1479:	3.4 else if Statements.....................................................................
-1480:	When making multiple decisions (more than 2), the "else if" statement is added to an 
-1481:	existing "if" statement to have multiple branches of logic for the code to follow. This 
-1482:	is much more efficient than seperate "if" statements. This can also be called "multi-way 
-1483:	selection" (or "if-else-if"). An "else" statement is also still the final option (but 
-1484:	this is not required). For example:
-1485:	// Showing a "chain" of else if statements
-1486:	int g = 0;
-1487:	if (g == 1) {
-1488:	    // The first if is true
-1489:	}
-1490:	else if (g == 2) {
-1491:	    // The next if is true
-1492:	}
-1493:	else if (g == 3) {
-1494:	    // The next if (in the "chain" of ifs) is true
-1495:	}
-1496:	else {
-1497:	    // Nothing above is true, so go to this else
-1498:	}
-1499:	3.5 Compound Boolean Expressions...........................................................
-1500:	The process of "nesting" means to place one conditional statement inside the "block" of 
-1501:	another conditional statement. The logical operators: "and", "or", and "not" are 
-1502:	represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
-1503:	is used to combine logical boolean expressions such that ALL expressions need to be true for 
-1504:	the entire statement to be true. The operator OR is used to combine logical boolean 
-1505:	expressions such that ANY expression can be true for the entire statement to be true. The 
-1506:	operator NOT reverses the logic so that true statements are evaluated as false (and visa 
-1507:	versa). If the statement contains multiple Boolean expressions and the result of the 
-1508:	evaluation of one expression has already determined the expressions result, then the 
-1509:	rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
-1510:	evaluation". For example:
-1511:	// Logical operators and "nesting"
-1512:	int    age = 17;
-1513:	double iq  = 1.0;
-1514:	if (age >= 18 && iq > 90) {
-1515:	    // with "and" ("&&") BOTH have to be true
-1516:	}
-1517:	else if (age >= 18 || iq > 0) {
-1518:	    // with "or" ("||") EITHER can be true
-1519:	}
-1520:	else {
-1521:	    // Case if neither evaluates
-1522:	    if (age > 0) {
-1523:	        // A "nested if statement"
-1524:	    }
-1525:	}
-1526:	3.6 Equivalent Boolean Expressions.........................................................
-1527:	Boolean (true/false) expressions turned into logical statements used by control structures 
-1528:	like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
-1529:	Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
-1530:	not necessarily applicable to this exam). This just means that complex statements need to be 
-1531:	evaluated by using mathematical rules (like "order of operations") and logical operators 
-1532:	(like "and, or, not") to determine the final Boolean result. This could determine if a 
-1533:	control structure (like an "if" statement) runs a block of code or not.
-1534:	3.7 Comparing Objects......................................................................
-1535:	The use of an advanced data type like an "Object" in code means that comparison 
-1536:	operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
-1537:	double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
-1538:	determine the equality of two objects. For example:
-1539:	// Use of the built-in equals method with Objects
-1540:	String word1 = "edgy";
-1541:	String word2 = "edGy";
-1542:	if (word1.equals(word2)) {
-1543:	    // "W1=W2"
-1544:	}
-1545:	else if (word1.equalsIgnoreCase(word2)) {
-1546:	    // "W1 kind of == W2"
-1547:	}
-1548:	AP: Unit 4 (Iteration).....................................................................
-1549:	4.1 while Loops............................................................................
-1550:	The word "Iteration" is another word for "Loop" or "Looping" which is a control 
-1551:	struture to have code statements "repeat". Like conditional ("if") statements, iteration 
-1552:	statements control the flow of a program's logic. Also like if statements, iteration 
-1553:	statements are controlled by a Boolean expression (true or false). The result of the Boolean 
-1554:	expression will result in the code executing zero or mulitple times (until the expression 
-1555:	evaluates to false). The expression is evaluated each time through an iteration of the loop. 
-1556:	A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
-1557:	(thus the loop never stops looping - or never stops running). It is possible a loop will 
-1558:	never run if it evaluates to false before the body (block) of the loop. If you use the 
-1559:	keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
-1560:	potentially exit any method the loop is written inside. The "while" loop is a event loop or 
-1561:	non-deterministic loop, which means it is not usually used for counting but when you do 
-1562:	not know how many times the loop needs to run (a certain event can cause the loop to 
-1563:	end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
-1564:	(traversing) arrays and lists, and searching and sorting values. For example:
-1565:	// Example of a simple while loop
-1566:	int counter = 0;
-1567:	while (counter < 10) {
-1568:	    counter++;
-1569:	}
-1570:	4.2 for Loops..............................................................................
-1571:	The "for" loop is another looping form. The for loop is a count controlled loop that 
-1572:	generally is used when a loop needs to run a specific number of times. There are three 
-1573:	parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
-1574:	the starting, ending, and change of the loop. In a for loop a counting variable is 
-1575:	generally declared right inside the loop to a starting value, then the Boolean condition 
-1576:	to end the loop, then the change value increasing (increment) or decreasing (decrement) 
-1577:	that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
-1578:	by one" error occurs when a loop runs one too many or one too few times. For Example:
-1579:	// Example of a for loop
-1580:	for (int i = 0; i < 10; i++) {
-1581:	    // potential code body...
-1582:	}
-1583:	4.3 Developing Algorithms Using Strings....................................................
-1584:	The String class allows for several "built-in" methods of the String class to manipulate 
-1585:	the string and the value it stores. Several of these methods could apply to the A.P. exam 
-1586:	including travelling (traversing) string characters, pulling out substrings (parts 
-1587:	of the string), reversing a string, etc. For example:
-1588:	// Example of string methods with a loop
-1589:	String word   = "completion";
-1590:	String parts1 = word.substring(3);
-1591:	String parts2 = word.substring(1,7);
-1592:	for (int i = 0; i < word.length(); i++) {
-1593:	    char character = word.charAt(i);
-1594:	}
-1595:	4.4 Nested Iteration.......................................................................
-1596:	Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
-1597:	This means you can place a iteration statement inside the block of another iteration 
-1598:	statement. The inner loop must complete all of its iterations before the outer loop 
-1599:	can continue. For example:
-1600:	// Example of nested loops
-1601:	for (int i = 0; i < 10; i++) {
-1602:	    for (int j = 0; j < 10; j++) {
-1603:	        int k = 10;
-1604:	        while (k < 10) {
-1605:	            // potential code body...
-1606:	        }
-1607:	    }
-1608:	}
-1609:	4.5 Informal Code Analysis.................................................................
-1610:	Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
-1611:	loops are typical A.P. exam questions. You should practice these types of questions.
-1612:	AP curriculum - Part 2.....................................................................
-1613:	AP: Unit 2 (Using Objects).................................................................
-1614:	2.1 Objects: Instances of Classes..........................................................
-1615:	A "class" is the "blueprint" for creating an "object". In Java, the class is a way to 
-1616:	use code to model "things" using properties and methods. The object is what the class 
-1617:	"creates" when the class is made into a specific "object" of that class. The various 
-1618:	terms used for this vary but all revolve around the same concepts. The term "object" 
-1619:	can also be called a "instance" of the class. The term "properties" can also be 
-1620:	called "things about the class", or "descriptors", or "adjectives", or 
-1621:	"fields". The term "methods" could also be called "what the class can do", or 
-1622:	"actions", or "verbs", or "functions". 
-1623:	// Example of a simple class with properties and methods
-1624:	class Person {
-1625:	    String name;
-1626:	    int age;
-1627:	    void walk() {
-1628:	        // code logic could go here
-1629:	    }
-1630:	    void talk() {
-1631:	        // code logic could go here
-1632:	    }
-1633:	}
-1634:	2.2 Creating and Storing Objects (Instantiation)...........................................
-1635:	Methods are a way to break up code into logic modules and it also provides a way to avoid 
-1636:	repeating code and be able to reuse sections of code logic. You can think of methods as 
-1637:	analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
-1638:	"functions" in math that may take a variable "input" and generate an "answer".  The term 
-1639:	"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
-1640:	method that is passed to the method. The value(s) passed are called "argument(s)". When you 
-1641:	define the method in the method "signature" line, the round brackets can contain 
-1642:	parameters separated by comma (if needed). A method may also give an "output" in the form 
-1643:	of its "return" value (which also might not be needed, in which case it is a "void" method).
-1644:	A method is "overloaded" if you have more than one method with the exact same name but 
-1645:	different parameters. Classes have "constructor" methods that are called when 
-1646:	a class is instantiated into an object. Constructor methods do not have a return type 
-1647:	(not even the keyword "void"). They must have the exact same name as the class (including a 
-1648:	capital letter). They are used to set the properties of the class to starting (or 
-1649:	"default") values. If a class has multiple constructor methods, they are said to be 
-1650:	overloaded constructors. When a line of code is used to instantiate a class into an instance 
-1651:	of that class, the line includes the name of the class, the identifier name of the object, 
-1652:	then an equals ("="), then the keyword "new" (which allots new memory for this 
-1653:	advanced data type), then a call to a constructor method. If not constructor method 
-1654:	is called, then the object references a "null" value until such time it is given a value to 
-1655:	reference.
-1656:	// Example of a class with constructors and instantiation
-1657:	class Person {
-1658:	    Person() {
-1659:	        // code logic
-1660:	    }
-1661:	    Person(int age) {
-1662:	        // code logic
-1663:	    }
-1664:	}
-1665:	Person person1 = new Person();
-1666:	Person person2 = new Person(5);
-1667:	2.3 Calling a Void Method..................................................................
-1668:	A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
-1669:	or "verb") that does not use the "static" modifier word in the method signature line. 
-1670:	A method with no prameters (or "inputs") means the method is defined with empty round 
-1671:	brackets "( )". The "behavior" or action the method performs is defined in the body 
-1672:	block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
-1673:	abstraction" refers to a programmer being able to call a method without knowing how the 
-1674:	method was written (also known as "black box" programming). When methods are "called" 
-1675:	the execution flow stops, jumps and runs all the method body (or until a "return" 
-1676:	statement) and then returns to the next line of execution after the method call line 
-1677:	(or part of a code expression line). Methods can also be called from objects (or 
-1678:	"instances") of a class using the dot "." operator. Void method do not return anthing 
-1679:	(no "outputs") and use the keyword modifier "void" in the method signature in place of 
-1680:	the return type.
-1681:	// Examples of methods, parameters, return, and calling
-1682:	public void show() {
-1683:	    System.out.println("*")
-1684:	}
-1685:	public void show(char value) {
-1686:	    System.out.println(value);
-1687:	}
-1688:	public int double(int number) {
-1689:	    return number * 2;
-1690:	} 
-1691:	show();
-1692:	show('A');
-1693:	int answer = double(5);
-1694:	2.4 Calling a Void Method with Parameters..................................................
-1695:	A "non-static void" methods with parameters is a method with no outputs, but has input(s). 
-1696:	This means the method signature has defined parameter(s) within the round brackets "( )" 
-1697:	seperated by commas (if necessary). When this type of method is called, the "arguments" 
-1698:	passed to this method must be in the same order in terms of data type. A method is 
-1699:	"overloaded" when you have two or more methods with the same name but different and 
-1700:	distinct parameter lists.
-1701:	// Examples of method overloading
-1702:	public void show() {
-1703:	    System.out.println("*")
-1704:	}
-1705:	public void show(char value) {
-1706:	    System.out.println(value);
-1707:	}
-1708:	public void show(int value) {
-1709:	    System.out.println(value);
-1710:	}
-1711:	2.5 Calling a Non-void Method..............................................................
-1712:	A method that does return a value, defines the return "type" in the method signature and 
-1713:	the keyword "return" somewhere in the method body (at least once). When calling a return 
-1714:	method, the value returned must be stored (in a variable) or used as part of an expression.
-1715:	2.6 String Objects: Concatenation, Literals, and More......................................
-1716:	The "String" class allows you to create String variables, concatenate them (join) 
-1717:	together and use "built-in" methods of the String class. String literals (contained in 
-1718:	quotes "") can be assigned to String variables or concatenated with Strings. String methods 
-1719:	do not change the String ("immutable") object. The "+" or the "+=" operators can be used 
-1720:	to concatenate Strings (resulting in a new String object). Primitives (like int, double, 
-1721:	etc.) can also be concatenated with String objects. Those are now automatically converted 
-1722:	to Strings and then concatenated. Escape sequences is the character "\" followed 
-1723:	by another character to make certain outputs or changes to a String object. These include: 
-1724:	\" for a quote, \\ for a slash, and \n for a new line.
-1725:	// Examples of Strings and escape sequences
-1726:	String str1 = "cat";
-1727:	String str2 = str1 + "ty";
-1728:	str1 += str2;
-1729:	str2 = "\n" + str1 + "\\" + "\" dog";
-1730:	2.7 String Methods.........................................................................
-1731:	The "API" or Application Program Interface is a "library" of code that could be imported 
-1732:	into a Java project or it could automatically be part of every Java project without needing 
-1733:	an import. Classes and libraries are organized into "packages" in Java (also known as 
-1734:	"namespaces"). The String class is in the "java.lang" package. Strings are collections 
-1735:	of "char" values index from 0 up to the length of the String minus 1 (just like arrays 
-1736:	are indexed). String methods used are: the String constructor "String s = new String();", 
-1737:	the "length()" method, the "substring(int)" and "substring(int,int)" methods, the 
-1738:	"indexOf(String)" method, the "equals(String)" method, and the 
-1739:	"compareTo(String)" method.
-1740:	// Examples of String methods
-1741:	String str3 = new String("chatty");
-1742:	// Constructs object with same sequence of characters as str3
-1743:	int length = str3.length();
-1744:	// Returns the number of characters in a String object
-1745:	String str4 = str3.substring(1);
-1746:	// Returns substring(from) starting at index "from" to the end
-1747:	String str5 = str3.substring(1,3);
-1748:	// Returns substring(from, to) starting at index "from" to index "to"
-1749:	int index = str3.indexOf("hat");
-1750:	// Returns the index of the first occurrence (returns -1 if not found)
-1751:	boolean result1 = str3.equals(str4);
-1752:	// Returns true if this is equal to other (returns false otherwise)
-1753:	int result2 = str3.compareTo(str5);
-1754:	// Returns value < 0 if less than other, returns 0 if equal to other,
-1755:	// and returns value > 0 if greater than other
-1756:	2.8 Wrapper Classes: Integer and Double....................................................
-1757:	A "wrapper class" is a class type that is based in a primitive data type. For example the 
-1758:	primitive data type "int" has the wrapper class "Integer". Similarily, the "Double" 
-1759:	wrapper class, wraps around the "double" primitive type. The wrapper classes (using a 
-1760:	capital letter) are part of java.lang and have built-in methods like "parseInt()" and 
-1761:	"parseDouble()". Other methods include: "Integer(int)" a constructor, 
-1762:	"Double(double)" a constructor, "MIN_VALUE" a constant, "MAX_VALUE", "intValue()", and 
-1763:	"doubleValue()". Boxing and unboxing can be done between the wrapper classes and the 
-1764:	primitive types (known as "autoboxing"). The term "boxing" means the conversion between 
-1765:	primitive types and corresponding wrapper. The term "unboxing" means the conversion 
-1766:	from the wrapper class to the primitive type.
-1767:	// Example of wrapper classes and methods...
-1768:	int     integerPrimitive1 = Integer.parseInt("10");
-1769:	double  doublePrimitive1  = Double.parseDouble("1.2");
-1770:	Integer integerObject     = new Integer("10");
-1771:	Double  doubleObject      = new Double("1.2");
-1772:	int     integerPrimitive2 = integerObject.intValue();
-1773:	double  doublePrimitive2  = doubleObject.doubleValue();
-1774:	int     minInteger        = Integer.MIN_VALUE;
-1775:	int     maxInteger        = Integer.MAX_VALUE;
-1776:	double  minDouble         = Double.MIN_VALUE;
-1777:	double  maxDouble         = Double.MAX_VALUE;
-1778:	// Boxing and unboxing...
-1779:	int     integerPrimitive3 = integerObject1;
-1780:	double  doublePrimitive3  = doubleObject1;
-1781:	Integer integerObject2    = integerPrimitive3;
-1782:	Double  doubleObject2     = doublePrimitive3;
-1783:	2.9 Using the Math Class...................................................................
-1784:	The "Math" class is part of the java.lang package and has built-in static methods that can 
-1785:	be called. Useful methods include: abs, pow, sqrt, and random. Including manipulating the 
-1786:	random method in a formula to define random numbers in a range. Examples of this follow...
-1787:	// Examples of the Math class methods and randoms...
-1788:	int    value1 = Math.abs(-1);
-1789:	double value2 = Math.abs(-1.2);
-1790:	double value3 = Math.pow(2,3);
-1791:	double value4 = Math.sqrt(9);
-1792:	double value5 = Math.random();
-1793:	final double HIGH = 10.9d;
-1794:	final double LOW  = 5.5d;
-1795:	double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;
-1796:	AP: Unit 5 (Writing Classes)...............................................................
-1797:	5.1 Anatomy of a Class.....................................................................
-1798:	The properties (attributes) and methods (actions) of a class can be defined in terms of 
-1799:	visibility. This means that the keywords "public" and "private" can be used as a 
-1800:	modifier in the front of a method signature or at the front of a property declaration line 
-1801:	to define the encapsulation level. The public keyword means the property can be accessed (and 
-1802:	modified) both inside the class and from other classes outside the class. In terms of methods 
-1803:	it means the method can be called within the class (by other methods) and outside the class 
-1804:	from other classes using the dot "." operator. Classes and constructor methods are 
-1805:	designated public. The concept of "encapsulation" is used to make certain data and actions 
-1806:	private and protect them from outside classes and perhaps only allow access through accessor 
-1807:	and modifier ("getter" and "setter") methods.
-1808:	// Class example private/public properties and methods
-1809:	class Apple { 
-1810:	    public int number;
-1811:	    private double price;
-1812:	    public void eat() {
-1813:	        // logic here
-1814:	    }
-1815:	    private void spoil() {
-1816:	        // logic here
-1817:	    }
-1818:	}
-1819:	5.2 Constructors...........................................................................
-1820:	A constructor method is a special method defined in a class that is called when a class is 
-1821:	instantiated into an instance (or "object") of that class. The constructor method has to have 
-1822:	the exact same name as the class (including letter case) and no return type (not even the 
-1823:	word void). Constructors are usually used to set the initial (or "default") values for the 
-1824:	class properties. This can be said to be setting the "state" of the object. If any of the 
-1825:	properties (attributes) are another class level instance variable (not a primitive type), 
-1826:	then this class is said to have a "has-a" relationship with that class. This can also be 
-1827:	called "association" or "composition" between the classes. Constructors can have 
-1828:	parameters passed to the class that can be used in setting the initial state. When no 
-1829:	constructor is written, Java provides a no-argument constructor, and the instance 
-1830:	variables are set to default values.
-1831:	// Class example association and constructors
-1832:	class Basket {
-1833:	    public Apple apple;
-1834:	    public Basket() {
-1835:	        // logic here
-1836:	    }
-1837:	    public Basket(Apple apple) {
-1838:	        // logic here
-1839:	    }
-1840:	}
-1841:	5.2 Documentation with Comments............................................................
-1842:	Comments are a documentation system that allows programmers to leave notes for themselves or 
-1843:	other programmers. This can serve several purposes including (but not limited to) 
-1844:	documenting names and dates, explaining code logic, working through problem solving logic, 
-1845:	and others. In Java, the two forward slashes // allows a comment at the end of a line of code or 
-1846:	on its own line. A slash and a star /* opens a comment block which will continue until a star 
-1847:	and slash */ closes the comment block. The slash and two stars /** open the JavaDoc style of 
-1848:	comment block which many IDEs (e.g. NetBeans) recognize and help with commenting and to create 
-1849:	API documentation. Methods should be commented with the method's purpose (a brief description), 
-1850:	any pre-conditions (the parameters if any), and post-conditions (the return type if any) of the 
-1851:	method.
-1852:	// Comments...
-1853:	// a standard comment
-1854:	/* opens a comment block */
-1855:	/** JavaDoc comment block */
-1856:	5.4 Accessor Methods.......................................................................
-1857:	Accessor methods are the names given to methods in a class that "access" data. this usually 
-1858:	means properties of the class that are encapsulated (private). Other names for 
-1859:	accessors are "getters" or "get" methods. The method (behaviours, actions, functions, 
-1860:	procedures) of a class are accessed with the dot operator (".") after the name of the 
-1861:	object (instance of the class). Non-void methods that return a value can then be used as 
-1862:	part of a code line expression. The return type of the method must be compatible with any 
-1863:	data types (e.g. variables) being used in the expression. If the return type is a class level 
-1864:	type then the method returns a reference to the actual object ("return by reference") not a 
-1865:	reference to a copy ("return by value") of the actual object. If the "System.out.print" 
-1866:	or "System.out.println" methods are called and an object is passed to those methods, the 
-1867:	object's "toString()" method is automatically 
-1868:	invoked (called) in the output.
-1869:	// Examples of calling methods in a class
-1870:	class Fighter {
-1871:	    private int health;
-1872:	    private Weapon weapon;
-1873:	    public int getHealth() {
-1874:	        return health;
-1875:	    }
-1876:	    public Weapon getWeapon() {
-1877:	        return weapon;
-1878:	    }
-1879:	}
-1880:	Fighter fighter = new Fighter();
-1881:	int hp = fighter.health;
-1882:	Weapon club = fighter.getWeapon();
-1883:	5.5 Mutator Methods........................................................................
-1884:	Mutator methods are the name given to methods that "change" a property of a class (usually 
-1885:	an encapsulated property). These can be void methods (but are sometimes boolean methods to 
-1886:	indicate success or not).
-1887:	// Examples of calling mutator methods in a class
-1888:	class Fighter {
-1889:	    private int health;
-1890:	    public int setHealth(int health) {
-1891:	        this.health = health;
-1892:	    }
-1893:	}
-1894:	Fighter fighter = new Fighter();
-1895:	fighter.setHealth(10);
-1896:	5.6 Writing Methods........................................................................
-1897:	Methods are written to model an "action". Also known as functions or procedures, methods may 
-1898:	or may not have zero, one, or more than one "input(s)" called "parameters" (or empty round 
-1899:	brackets if no inputs are required). Methods may have zero (a "void" method) or one "output" 
-1900:	known as the return type. If the parameter is a primitive data type, then a copy of the data 
-1901:	from the original primitive type is passed to the method ("pass by value"). If the parameter 
-1902:	is an advanced data type ("class" level data) then a reference to that object is passed. This 
-1903:	means that any changes the method makes to the object will be reflected (unless the object 
-1904:	was an immutable object). Because the passed reference object parameter and the original 
-1905:	argument object are "linked" they can be referred to as "aliases".
-1906:	5.7 Static Variables and Methods...........................................................
-1907:	Although they can be called from an object of a class, "static" methods are generally called 
-1908:	from the class name itself. Static methods "belong" to the class itself and therefore 
-1909:	do not require you to instantiate an object to call a method from that class. The keyword 
-1910:	"static" is included as a modifier word in the method signature line. Static methods 
-1911:	cannot access or change the values of instance properties of a class but can change/access 
-1912:	static properties. Static properties (variables) also "belong" to the class itself 
-1913:	and are "shared" by all objects of the class. Static properties can be either public or 
-1914:	private and are also declared using the "static" keyword as a modifier for the 
-1915:	property. Static properties are used with the class name and then the dot operator and then 
-1916:	the name of the property (although they can also be accessed from an object name). 
-1917:	// Static properties and methods
-1918:	class Fighter {
-1919:	    public static int number;
-1920:	    public static void attack() {
-1921:	        // logic here
-1922:	    }
-1923:	}
-1924:	Fighter.number = 10;
-1925:	Fighter.attack();
-1926:	5.8 Scope and Access.......................................................................
-1927:	Variables can be used throughout code in classes and methods and have a "scope" defining where 
-1928:	the variable can be accessed and modified. A "local" variable is one which is defined in a 
-1929:	code block like a control structure (a loop or if statement) or a method. The scope of that 
-1930:	variable is that internal code block and no other variables can have the same name within 
-1931:	that scope. A "global" variable is one declared at the class level and its scope is 
-1932:	the entire code module (class). When there is a local variable with the same name as a global 
-1933:	variable, the variable name will reference the local variable over the global variable. This 
-1934:	could be a potential name conflict. The keyword "this" with the dot operator can make an 
-1935:	explicit reference to the global variable over the local variable. 
-1936:	// Local and global variable scopes
-1937:	class Fighter {
-1938:	    public int number;
-1939:	    public void attack(int number) {
-1940:	        this.number = number;
-1941:	    }
-1942:	}
-1943:	5.9 this Keyword...........................................................................
-1944:	The keyword "this" is an explicit reference to the (eventual) object within a class. It 
-1945:	refers to the name of an object that will later be instantiated by the class the word this 
-1946:	is used within. The word "this" can be used to give explicit control to a global variable 
-1947:	or call a class method. The keyword "this" can also be used to pass the current object 
-1948:	as an actual parameter in a method call.
-1949:	5.10 Ethical and Social Implications of Computing Systems..................................
-1950:	The social and ethical considerations of computing and Computer Science are things as 
-1951:	an A.P. student you should be aware of. These are not necessarily testable concepts on the 
-1952:	A.P. exam. The general ideas of legality, impact, and reliability of computing systems 
-1953:	and software should always be considered by programers and Computer Scientists.
-1954:	AP: Unit 9 (Inheritance)...................................................................
-1955:	9.1 Creating Superclasses and Subclasses...................................................
-1956:	// 
-1957:	9.2 Writing Constructors for Subclasses....................................................
-1958:	// 
-1959:	9.3 Overriding Methods.....................................................................
-1960:	// 
-1961:	9.4 super Keyword..........................................................................
-1962:	// 
-1963:	9.5 Creating References Using Inheritance Hierarchies......................................
-1964:	// 
-1965:	9.6 Polymorphism...........................................................................
-1966:	// 
-1967:	9.7 Object Superclass......................................................................
-1968:	// 
-1969:	AP curriculum - Part 3.....................................................................
-1970:	AP: Unit 6 (Arrays)........................................................................
-1971:	6.1 Array Creation and Access..............................................................
-1972:	...
-1973:	6.2 Traversing Arrays......................................................................
-1974:	...
-1975:	6.3 Enhanced for Loop for Arrays...........................................................
-1976:	...
-1977:	6.4 Developing Algorithms Using Arrays.....................................................
-1978:	...
-1979:	AP: Unit 8 (2D Arrays).....................................................................
-1980:	8.1 2D Arrays..............................................................................
-1981:	...
-1982:	8.2 Traversing 2D Arrays...................................................................
-1983:	...
-1984:	AP curriculum - Part 4.....................................................................
-1985:	AP: Unit 7 (Array List)....................................................................
-1986:	7.1 Introduction to ArrayList..............................................................
-1987:	...
-1988:	7.2 ArrayList Methods......................................................................
-1989:	...
-1990:	7.3 Traversing ArrayLists..................................................................
-1991:	...
-1992:	7.4 Developing Algorithms Using ArrayLists.................................................
-1993:	...
-1994:	7.5 Searching..............................................................................
-1995:	...
-1996:	7.6 Sorting................................................................................
-1997:	...
-1998:	7.7 Ethical Issues Around Data Collection..................................................
-1999:	...
-2000:	AP: Unit 10 (Recursion)....................................................................
-2001:	10.1 Recursion.............................................................................
-2002:	...
-2003:	10.2 Recursive Searching and Sorting.......................................................
-2004:	...
-2005:	Computer Science 42SAP practice tests......................................................
-2006:	AP Practice Test 1.........................................................................
-2007:	// Question 1...
-2008:	Consider the following code segment.
-2009:	int a = 5;
-2010:	int b = 2;
-2011:	double c = 3.0;
-2012:	System.out.println(5 + a / b * c - 1);
-2013:	What is printed when the code segment is executed?
-2014:	(A) 0.666666666666667
-2015:	(B) 9.0
-2016:	(C) 10.0
-2017:	(D) 11.5
-2018:	(E) 14.0
-2019:	// Answer 1...
-2020:	C
-2021:	// Question 2...
-2022:	Which of the following statements assigns a random
-2023:	integer between 25 and 60, inclusive to rn?
-2024:	(A) int rnA = (int)(Math.random() * 25) + 36;
-2025:	(B) int rnB = (int)(Math.random() * 25) + 60;
-2026:	(C) int rnC = (int)(Math.random() * 26) + 60;
-2027:	(D) int rnD = (int)(Math.random() * 36) + 25;
-2028:	(E) int rnE = (int)(Math.random() * 60) + 25;
-2029:	// Answer 2...
-2030:	A
-2031:	D
-2032:	// Question 3...
-2033:	Which of the following best describes the value
-2034:	of the Boolean expression shown below?
-2035:	a && !(b || a)
-2036:	(A) The value is always true
-2037:	(B) The value is always false
-2038:	(C) The value is true when a has the value 
-    false, and is false otherwise
-2039:	(D) The value is true when b has the value 
-    false, and is false otherwise
-2040:	(E) The value is true when either a or b has 
-    the value true, and is false otherwise
-2041:	// Answer 3...
-2042:	B
-2043:	// Question 4...
-2044:	Consider the following code segment
-2045:	int val = 48;
-2046:	int div = 6;
-2047:	while((val % 2 == 0) && div > 0) {
-2048:	    if (val % div == 0) {
-2049:	        System.out.print(val + " ");
-2050:	    }
-2051:	    val /= 2;
-2052:	    div--;
-2053:	}
-2054:	What is printed when the code segment is executed?
-2055:	(A) 48 12 6
-2056:	(B) 48 12 6 3
-2057:	(C) 48 12 6 3 1
-2058:	(D) 48 24 12 6
-2059:	(E) 48 24 12 6 3
-2060:	// Answer 4...
-2061:	A
-2062:	// Question 5...
-2063:	Which of the following code segments is equivalent to the code below
-2064:	if (x >= 1) x = x * 3;
-2065:	if (x > 3) x = 0;
-2066:	(A) x = 0
-2067:	(B) if (x > 1) x = 0;
-2068:	(C) if (x > 3) x = 0;
-2069:	(D) if (x >= 1) x = 0;
-2070:	(E) none of the above
-2071:	// Answer 5...
-2072:	B
-2073:	// Question 6...
-2074:	When is the following Boolean expression true
-2075:	(a and b are integers)?
-2076:	(a < b) && !(b > a)
-2077:	(A) Always true
-2078:	(B) Never true
-2079:	(C) a = b
-2080:	(D) a < b
-2081:	(E) a > b
-2082:	// Answer 6...
-2083:	B
-2084:	// Question 7...
-2085:	Consider the following code segment
-2086:	int i = a random number such that 1 <= i <= n;
-2087:	for (int a = 2; a <= i; a++)
-2088:	    for (int b = 1; b < i; b++)
-2089:	        System.out.println("*");
-2090:	(A) 0
-2091:	(B) 1
-2092:	(C) 2
-2093:	(D) n - 1
-2094:	(E) n - 2
-2095:	// Answer 7...
-2096:	B
-2097:	// Question 8...
-2098:	Consider the following code segment
-2099:	int p = 5;
-2100:	int q = 2;
-2101:	int sum = 0;
-2102:	while (p <= 8) {
-2103:	    sum += p % q;
-2104:	    p++;
-2105:	    q++;
-2106:	}
-2107:	(A) 1
-2108:	(B) 0
-2109:	(C) 13
-2110:	(D) 7
-2111:	(E) 4
-2112:	// Answer 8...
-2113:	D
-2114:	// Question 9...
-2115:	Consider the following code segment
-2116:	for (int i = 0; i <= 3; i++) {
-2117:	    for (int j = 1; j <= 5; j+=2) {
-2118:	        System.out.println("*");
-2119:	    }
-2120:	}
-2121:	(A) 3
-2122:	(B) 6
-2123:	(C) 9
-2124:	(D) 12
-2125:	(E) 15
-2126:	// Answer 9...
-2127:	D
-2128:	// Question 10...
-2129:	What are the values of a and b after the for loop
-2130:	finishes?
-2131:	int a = 10;
-2132:	int b = 3;
-2133:	int t = 0;
-2134:	for (int i = 1; i < 4; i++) {
-2135:	    t = a;
-2136:	    a = i + b;
-2137:	    b = t - i;
-2138:	}
-2139:	(A) a = 5 and b = -2
-2140:	(B) a = 6 and b = 7
-2141:	(C) a = 6 and b = 3
-2142:	(D) a = 12 and b = 1
-2143:	(E) a = 5 and b = 8
-2144:	// Answer 10...
-2145:	E
-2146:	AP Practice Test 2.........................................................................
-2147:	// Question 1...
-2148:	Consider the following class definition
-2149:	public class Example
-2150:	{
-2151:	     private int x;
-2152:	     // constructor not shown
-2153:	}
-2154:	Which of the following is a correct header for a
-2155:	method that would return the value of the private
-2156:	instance variable x so that it can be used in a
-2157:	class other than Example?
-2158:	(A) private int getX()
-2159:	(B) private void getX()
-2160:	(C) public int getX()
-2161:	(D) public void getX()
-2162:	(E) public void getX(int x)
-2163:	// Answer 1...
-2164:	C
-2165:	// Question 2...
-2166:	Consider the following class definitions
-2167:	public class Thing1 {
-2168:	     public void calc(int n) {
-2169:	          n *= 3;
-2170:	          System.out.print(n);
-2171:	     }
-2172:	}
-2173:	public class Thing2 extends Thing1 {
-2174:	     public void calc(int n) {
-2175:	          n += 2;
-2176:	          super.calc(n);
-2177:	          System.out.print(n);
-2178:	     }
-2179:	}
-2180:	The following code seqment appears in a class
-2181:	other than Thing1 or Thing2
-2182:	Thing1 t = new Thing2();
-2183:	t.calc(2);
-2184:	What is printed as a result of executing the
-2185:	code segment?
-2186:	(A) 4
-2187:	(B) 6
-2188:	(C) 68
-2189:	(D) 124
-2190:	(E) 1212
-2191:	// Answer 2...
-2192:	D
-2193:	// Question 3...
-2194:	Consider the following class definitions.
-2195:	public class Student {
-2196:	    public String getFood() {
-2197:	        return "Pizza";
-2198:	    }
-2199:	    public String getInfo() {
-2200:	        return "Studying";
-2201:	    }
-2202:	}
-2203:	public class GradStudent extends Student {
-2204:	    public String getFood() {
-2205:	        return "Taco";
-2206:	    }
-2207:	    public String getInfo() {
-2208:	        super.getInfo();
-2209:	        return "Eating";
-2210:	    }
-2211:	}
-2212:	What is printed when the following code is
-2213:	executed?
-2214:	Student s = new GradStudent();
-2215:	System.out.println(s.getInfo());
-2216:	(A) Pizza
-2217:	(B) Taco
-2218:	(C) Studying
-2219:	(D) Eating
-2220:	(E) Studying
-2221:	    Eating
-2222:	// Answer 3...
-2223:	D
-2224:	// Question 4...
-2225:	Given the following class declarations:
-2226:	public class Car {
-2227:	    private String make;
-2228:	    public Car(String theMake) {
-2229:	        make = theMake;
-2230:	    }
-2231:	    public String getMake() {
-2232:	        return make;
-2233:	    }
-2234:	}
-2235:	public class ElectricCar extends Car {
-2236:	    public ElectricCar() {
-2237:	        super("Ford");
-2238:	    }
-2239:	    public ElectricCar(String theMake) {
-2240:	        super(theMake);
-2241:	    } 
-2242:	}
-2243:	Which of the following will cause a compile
-2244:	time error?
-2245:	(A) Car myCar = new Car();
-2246:	(B) Car myCar1 = new ElectricCar();
-2247:	(C) ElectricCar myCar2 = new ElectricCar("Ford");
-2248:	(D) Car myCar3 = new Car("Ford");
-2249:	(E) Car myCar4 = new ElectricCar("Ford");
-2250:	// Answer 4...
-2251:	A
-2252:	// Question 5...
-2253:	Given the following declarations.
-2254:	public class Vehicle {
-2255:	    public void test(Car x, SportsCar y) { }
-2256:	}
-2257:	public class Car extends Vehicle {
-2258:	}
-2259:	public class SportsCar extends Car {
-2260:	}
-2261:	Also consider the following code that appears
-2262:	in a different class.
-2263:	Vehicle v = new Vehicle();
-2264:	Car c = new Car();
-2265:	SportsCar sporty = new SportsCar();
-2266:	Which of the following is a correct call to test ?
-2267:	(A) v.test(sporty, v);
-2268:	(B) sporty.test(c, c);
-2269:	(C) v.test(sporty, c);
-2270:	(D) sporty.test(sporty, v);
-2271:	(E) c.test(sporty, sporty);
-2272:	// Answer 5...
-2273:	E
-2274:	// Question 6...
-2275:	Class C extends class B, which extends class A. 
-2276:	Also, all of the three classes implement a public
-2277:	method test(). How can a method in an object of
-2278:	class C invoke the test() method defined in class
-2279:	A (without creating a new instance of class A)?
-2280:	(A) test();
-2281:	(B) super.super.test();
-2282:	(C) super.test();
-2283:	(D) this.test();
-2284:	(E) There is no way to call a method in a 
-2285:	    grandparent class from a grandchild class
-2286:	// Answer 6...
-2287:	E
-2288:	// Question 7...
-2289:	Given the following class declarations. Assume
-2290:	that Parent p = new Child(); appears in a client
-2291:	program. What is the result of the call p.m1();
-2292:	public class Parent {
-2293:	    public void m1() {
-2294:	        System.out.print("pm1");
-2295:	        m2();
-2296:	    }
-2297:	    public void m2() {
-2298:	        System.out.print("pm2");
-2299:	    }
-2300:	}
-2301:	public class Child extends Parent {
-2302:	    public void m1() {
-2303:	        super.m1();
-2304:	        System.out.print("cm1");
-2305:	    }
-2306:	    public void m2() {
-2307:	        super.m2();
-2308:	        System.out.print("cm2");
-2309:	    }
-2310:	}
-2311:	(A) pm1pm2cm2cm1
-2312:	(B) pm1pm2
-2313:	(C) pm1pm2cm1cm2
-2314:	(D) pm1cm1
-2315:	(E) pm1
-2316:	// Answer 7...
-2317:	A
-2318:	// Question 8...
-2319:	Given the following class declarations.
-2320:	public class Animal {
-2321:	    public void eat() {
-2322:	        System.out.println("AE");
-2323:	    }
-2324:	}
-2325:	public class Bear extends Animal {
-2326:	    public void growl() {
-2327:	        System.out.println("BG");
-2328:	    }
-2329:	}
-2330:	Assumen the following declaration is in a 
-2331:	different class.
-2332:	Animal b = new Bear();
-2333:	Which of the following will compile without error?
-2334:	I.   b.eat();
-2335:	II.  b.growl();
-2336:	III. ((Bear)b).growl();
-2337:	(A) I only
-2338:	(B) II only
-2339:	(C) III only
-2340:	(D) I and III only
-2341:	(E) I, II, and III
-2342:	// Answer 8...
-2343:	B
-2344:	// Question 9...
-2345:	Consider the 
-2346:	(A) 
-2347:	(B) 
-2348:	(C) 
-2349:	(D) 
-2350:	(E) 
-2351:	// Answer 9...
-2352:	// Question 10...
-2353:	(A) 
-2354:	(B) 
-2355:	(C) 
-2356:	(D) 
-2357:	(E) 
-2358:	// Answer 10...
-2359:	AP Practice Test 3 not running.............................................................
-2360:	Computer Science 42SAP Post Secondary Content:.............................................
-2361:	Permanent Storage Post Secondary Content:..................................................
-2362:	// Learn about 'error traps'
-2363:	Divide by zero -> java.lang.ArithmeticException: / by zero
-2364:	// Create sample data to use
-2365:	// Save ONE piece of data to that permanent file
-2366:	File write error
-2367:	// Now involve the user to get a file name
-2368:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-2369:	File already exists!
-2370:	// Open file with one line (no user involvment)
-2371:	// Open file with multiple lines (user picks file)
-2372:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-2373:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   +sr utility.collections.Node5�����2 ... (line shortened) ...
-2374:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
-2375:	This line read was q ~ pq ~ �
-2376:	// Class to save/open one line (no user)
-2377:	File save: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-2378:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-2379:	Before: Defenestration
-2380:	After : null
-2381:	// Class to save/open multiple lines (with user)
-2382:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-2383:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-2384:	// Now save/open on a complex data type
-2385:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-2386:	File open: java.io.FileNotFoundException: C:\temp\data.txt (The system cannot find the path specified)
-2387:	Before: Athlete: Husky: HighSchool: Student: Person
-2388:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-2389:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-2390:	Stacks and Queues Post Secondary Content:..................................................
-2391:	// Create objects for testing...
-2392:	// Create and Test a stack object...
-2393:	// Test toString, size, isEmpty, and push methods...
-2394:	Empty = true	Size = 0	Empty Stack
-2395:	// Loop through adding random values
-2396:	Empty = false	Size = 1	Stack top -> [furze] <- bottom
-2397:	Empty = false	Size = 2	Stack top -> [sawed,furze] <- bottom
-2398:	Empty = false	Size = 3	Stack top -> [Berte,sawed,furze] <- bottom
-2399:	Empty = false	Size = 4	Stack top -> [Estel,Berte,sawed,furze] <- bottom
-2400:	Empty = false	Size = 5	Stack top -> [gummy,Estel,Berte,sawed,furze] <- bottom
-2401:	Empty = false	Size = 6	Stack top -> [Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2402:	Empty = false	Size = 7	Stack top -> [iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2403:	Empty = false	Size = 8	Stack top -> [Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2404:	Empty = false	Size = 9	Stack top -> [awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2405:	Empty = false	Size = 10	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2406:	// Test clone method...
-2407:	Clone stack: Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2408:	// Test equals method...
-2409:	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-==
-Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2410:	// Now change the copy
-2411:	// Now check again
-2412:	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-!=
-Stack top -> [eking] <- bottom
-2413:	// Re-clone the stack, and output
-2414:	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2415:	// Text the pop method...
-2416:	Clone stack:	Empty = false	Size = 10	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2417:	// Loop through removing values
-2418:	Popped -> loved	Empty = false	Size = 9	Stack top -> [awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2419:	Popped -> awake	Empty = false	Size = 8	Stack top -> [Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2420:	Popped -> Emili	Empty = false	Size = 7	Stack top -> [iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2421:	Popped -> iring	Empty = false	Size = 6	Stack top -> [Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2422:	Popped -> Cordy	Empty = false	Size = 5	Stack top -> [gummy,Estel,Berte,sawed,furze] <- bottom
-2423:	Popped -> gummy	Empty = false	Size = 4	Stack top -> [Estel,Berte,sawed,furze] <- bottom
-2424:	Popped -> Estel	Empty = false	Size = 3	Stack top -> [Berte,sawed,furze] <- bottom
-2425:	Popped -> Berte	Empty = false	Size = 2	Stack top -> [sawed,furze] <- bottom
-2426:	Popped -> sawed	Empty = false	Size = 1	Stack top -> [furze] <- bottom
-2427:	Popped -> furze	Empty = true	Size = 0	Empty Stack
-2428:	Popped -> null	Empty = true	Size = 0	Empty Stack
-2429:	// Test peek (top is wrapper no testing needed)...
-2430:	Clone Top = null
-2431:	Stack Top = loved
-2432:	// Test to array and to linked list...
-2433:	Linked List 	[loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze]
-2434:	Array   	[loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze]
-2435:	// Test our constructors...
-2436:	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2437:	Stack top -> [loved,awake,Emili,iring,Cordy,gummy,Estel,Berte,sawed,furze] <- bottom
-2438:	// Test the Queue object...
-2439:	// Test toString,size,isEmpty, and enqueue methods...
-2440:	Empty = true	Size = 0	Empty Queue
-2441:	// Loop through adding random values
-2442:	Empty = false	Size = 1	Queue back -> [nines] <- front
-2443:	Empty = false	Size = 2	Queue back -> [cedes,nines] <- front
-2444:	Empty = false	Size = 3	Queue back -> [daily,cedes,nines] <- front
-2445:	Empty = false	Size = 4	Queue back -> [urged,daily,cedes,nines] <- front
-2446:	Empty = false	Size = 5	Queue back -> [fears,urged,daily,cedes,nines] <- front
-2447:	Empty = false	Size = 6	Queue back -> [abate,fears,urged,daily,cedes,nines] <- front
-2448:	Empty = false	Size = 7	Queue back -> [Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2449:	Empty = false	Size = 8	Queue back -> [pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2450:	Empty = false	Size = 9	Queue back -> [aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2451:	Empty = false	Size = 10	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2452:	// Test clone method...
-2453:	Clone Queue 			Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2454:	// Test equals method...
-2455:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-==
-Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2456:	// Now change the duplicate
-2457:	// Now check again
-2458:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-==
-Queue back -> [feted] <- front
-2459:	// Re-clone the queue, and output
-2460:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2461:	// Test the dequeue method...
-2462:	Clone queue:	Empty = false	Size = 10	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2463:	// Loop through removing values
-2464:	Dequeued -> nines	Empty = false	Size = 9	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes] <- front
-2465:	Dequeued -> cedes	Empty = false	Size = 8	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily] <- front
-2466:	Dequeued -> daily	Empty = false	Size = 7	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged] <- front
-2467:	Dequeued -> urged	Empty = false	Size = 6	Queue back -> [sally,aloof,pinch,Dougy,abate,fears] <- front
-2468:	Dequeued -> fears	Empty = false	Size = 5	Queue back -> [sally,aloof,pinch,Dougy,abate] <- front
-2469:	Dequeued -> abate	Empty = false	Size = 4	Queue back -> [sally,aloof,pinch,Dougy] <- front
-2470:	Dequeued -> Dougy	Empty = false	Size = 3	Queue back -> [sally,aloof,pinch] <- front
-2471:	Dequeued -> pinch	Empty = false	Size = 2	Queue back -> [sally,aloof] <- front
-2472:	Dequeued -> aloof	Empty = false	Size = 1	Queue back -> [sally] <- front
-2473:	Dequeued -> sally	Empty = true	Size = 0	Empty Queue
-2474:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-2475:	// Test front and back...
-2476:	Clone Front = null
-2477:	Queue Front = nines
-2478:	Clone Back  = null
-2479:	Queue Back  = sally
-2480:	// Test to array and to linked list...
-2481:	Linked List 	[sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines]
-2482:	Array   	[sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines]
-2483:	// Test our constructors...
-2484:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2485:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2486:	// Constructors from stack to queue (and back)...
-2487:	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front	 into 	Stack top -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- bottom
-2488:	Stack top -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- bottom	 into 	Queue back -> [sally,aloof,pinch,Dougy,abate,fears,urged,daily,cedes,nines] <- front
-2489:	Searching and Sorting Post Secondary Content:..............................................
-2490:	// For the I.B. Exam, you only need to know:
-2491:	// Search: linear search and binary search
-2492:	// Sort: bubble sort and the selection sort
-2493:	// Create some constants (edges) for the data
-2494:	// Create some random data to search through and sort
-2495:	// Including edge cases to test
-2496:	// Create data to store the results...
-2497:	// The simpliest of searches
-2498:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2499:	// Now the linear search on all test data
-2500:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2501:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2502:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2503:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2504:	Array [92,48,83,98,47,10,99,80,83,50,49,61,38,89,49,54,68,87,71,22,98,88,15,74,2,99,76,92,9,33,69,81,17,63,39,3,32,30,95,25,30,76,74,12,72,92,100,2,100,48,27,83,78,85,52,53,46,23,0,54,90,93,89,13,56,2 ... (line shortened) ...
-2505:	// Simple sort...
-2506:	Sorted Array: 	[0,2,2,3,3,7,9,9,10,12,13,15,16,17,19,19,22,22,23,25,25,27,28,30,30,31,31,32,33,34,35,35,37,38,39,42,44,45,46,47,48,48,48,49,49,49,50,51,52,53,54,54,54,55,56,59,61,63,65,67,68,68,69,71, ... (line shortened) ...
-2507:	// We will re-scramble array for further testing
-2508:	Sorted Array: 	[19,86,56,58,63,58,34,30,84,12,60,18,96,37,67,60,20,18,39,3,6,44,11,16,5,6,23,93,47,87,28,100,86,51,85,43,87,3,92,87,86,11,87,53,47,33,50,71,99,69,10,65,62,35,7,83,98,45,0,28,98,35,79,5 ... (line shortened) ...
-2509:	// Now bubble sort (from bubbles rising from water)
-2510:	Original Array 	[19,86,56,58,63,58,34,30,84,12,60,18,96,37,67,60,20,18,39,3,6,44,11,16,5,6,23,93,47,87,28,100,86,51,85,43,87,3,92,87,86,11,87,53,47,33,50,71,99,69,10,65,62,35,7,83,98,45,0,28,98,35,79, ... (line shortened) ...
-2511:	// Now selection sort (from selecting the smallest)
-2512:	Original Array 	[19,86,56,58,63,58,34,30,84,12,60,18,96,37,67,60,20,18,39,3,6,44,11,16,5,6,23,93,47,87,28,100,86,51,85,43,87,3,92,87,86,11,87,53,47,33,50,71,99,69,10,65,62,35,7,83,98,45,0,28,98,35,79, ... (line shortened) ...
-2513:	// Now binary search (named after two or dividing)
-2514:	// NOTE: binary search can only happen on sorted list
-2515:	// Redo some of the test data...
-2516:	Array [0,1,3,3,3,5,6,6,6,6,7,9,10,11,11,11,12,16,16,18,18,19,19,20,22,22,23,26,27,28,28,30,30,33,34,35,35,35,35,36,37,39,42,43,44,45,47,47,49,50,51,51,53,53,56,56,57,58,58,59,60,60,62,63,63,64,65,67,6 ... (line shortened) ...
-2517:	Array [0,1,3,3,3,5,6,6,6,6,7,9,10,11,11,11,12,16,16,18,18,19,19,20,22,22,23,26,27,28,28,30,30,33,34,35,35,35,35,36,37,39,42,43,44,45,47,47,49,50,51,51,53,53,56,56,57,58,58,59,60,60,62,63,63,64,65,67,6 ... (line shortened) ...
-2518:	Array [0,1,3,3,3,5,6,6,6,6,7,9,10,11,11,11,12,16,16,18,18,19,19,20,22,22,23,26,27,28,28,30,30,33,34,35,35,35,35,36,37,39,42,43,44,45,47,47,49,50,51,51,53,53,56,56,57,58,58,59,60,60,62,63,63,64,65,67,6 ... (line shortened) ...
-2519:	Array [0,1,3,3,3,5,6,6,6,6,7,9,10,11,11,11,12,16,16,18,18,19,19,20,22,22,23,26,27,28,28,30,30,33,34,35,35,35,35,36,37,39,42,43,44,45,47,47,49,50,51,51,53,53,56,56,57,58,58,59,60,60,62,63,63,64,65,67,6 ... (line shortened) ...
-2520:	Array [0,1,3,3,3,5,6,6,6,6,7,9,10,11,11,11,12,16,16,18,18,19,19,20,22,22,23,26,27,28,28,30,30,33,34,35,35,35,35,36,37,39,42,43,44,45,47,47,49,50,51,51,53,53,56,56,57,58,58,59,60,60,62,63,63,64,65,67,6 ... (line shortened) ...
-2521:	// Use class for searching and sorting
-2522:	// Create random linked list data
-2523:	// Create random array data
-2524:	// Place all test cases into another linked list
-2525:	// Execute the linear search on all list test data...
-2526:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2527:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2528:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2529:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2530:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2531:	// Execute the linear search on all array test data...
-2532:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2533:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2534:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2535:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2536:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2537:	// Execute all the sorts on all test data...
-2538:	// Bubble sort LinkedList data...
-2539:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2540:	// Bubble sort array data...
-2541:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2542:	// Selection sort LinkedList data...
-2543:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2544:	// Selection sort array data...
-2545:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2546:	// Shell sort LinkedList data...
-2547:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2548:	// Shell sort array data...
-2549:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2550:	// Insertion sort LinkedList data...
-2551:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2552:	// Insertion sort array data...
-2553:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2554:	// Quick sort LinkedList data...
-2555:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2556:	// Quick sort array data...
-2557:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2558:	// Merge sort LinkedList data...
-2559:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2560:	// Merge sort array data...
-2561:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2562:	// Heap sort LinkedList data...
-2563:	Before: 	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,do ... (line shortened) ...
-2564:	// Heap sort array data...
-2565:	Before: 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey, ... (line shortened) ...
-2566:	// Execute the binary search on all List test data...
-2567:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2568:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2569:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2570:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2571:	Linked List 	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,F ... (line shortened) ...
-2572:	// Execute the binary search on all Array test data...
-2573:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2574:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2575:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2576:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2577:	[Kary,knew,surd,figs,Budd,Kris,cent,maze,Suez,doze,burs,Lita,Chic,funs,Akim,ciao,nook,talc,Bear,Abba,Lara,weds,goth,Aile,Wier,Swed,Wang,mode,wrap,Viki,lama,seas,Rafi,snob,wool,doll,lake,Frey,Kirk,Jeff ... (line shortened) ...
-2578:	Binary Trees Post Secondary Content:.......................................................
-2579:	// Constants/variables for creating random values...
-2580:	// Creating some TreeNode objects...
-2581:	// Linking the TreeNodes...
-2582:	// Testing TreeNode equals...
-2583:	// Testing TreeNode toString...
-2584:	31
-2585:	42
-2586:	73
-2587:	// Creating a Tree object...
-2588:	// Test the insert method...
-2589:	// Insert one more...
-2590:	// Test the search of the tree...
-2591:	Should be found     = true
-2592:	Should NOT be found = false
-2593:	// Test toString() and pre, post, in order traversals
-2594:	Binary Tree:
-Order: Linked List 	[41,21,28,33,25,58]
-Pre:   Linked List 	[41,21,28,25,33,58]
-Post:  Linked List 	[25,33,28,21,58,41]
-In:    Linked List 	[21,25,28,33,41,58]
-2595:	// Building second tree (test clone) and test equals
-2596:	1st tree -> Linked List 	[21,25,28,33,41,58]
-2597:	2nd tree -> Linked List 	[20,62,64,66,75,94]
-2598:	1st!=2nd
-2599:	// Building a third tree (test clone) and test equals
-2600:	1st tree -> Linked List 	[21,25,28,33,41,58]
-2601:	3rd tree -> Linked List 	[21,25,28,33,41,58]
-2602:	1st==3rd
-2603:	// Build all our data structures from each other...
-2604:	// Create variable objects...
-2605:	// Create array from variables...
-2606:	// Create LinkedList from array...
-2607:	// Create Stack from LinkedList...
-2608:	// Create Queue from Stack...
-2609:	// Create Tree from Queue...
-2610:	// Output variables,array,list,stack,queue,tree...
-2611:	fryer
-2612:	lesly
-2613:	towny
-2614:	symon
-2615:	phone
-2616:	[fryer,lesly,towny,symon,phone]
-2617:	Linked List 	[fryer,lesly,towny,symon,phone]
-2618:	Stack top -> [fryer,lesly,towny,symon,phone] <- bottom
-2619:	Queue back -> [fryer,lesly,towny,symon,phone] <- front
-2620:	Binary Tree:
-Order: Linked List 	[fryer,lesly,towny,symon,phone]
-Pre:   Linked List 	[fryer,lesly,towny,symon,phone]
-Post:  Linked List 	[phone,symon,towny,lesly,fryer]
-In:    Linked List 	[fryer,lesl ... (line shortened) ...
-2621:	// Now re-building queue from tree
-2622:	// Now re-building stack from queue
-2623:	// Now re-building LinkedList from stack...
-2624:	// Now re-building array from LinkedList...
-2625:	// Output array,list,stack,queue,tree again...
-2626:	[fryer,lesly,phone,symon,towny]
-2627:	Linked List 	[fryer,lesly,phone,symon,towny]
-2628:	Stack top -> [fryer,lesly,phone,symon,towny] <- bottom
-2629:	Queue back -> [fryer,lesly,phone,symon,towny] <- front
-2630:	Binary Tree:
-Order: Linked List 	[fryer,lesly,towny,symon,phone]
-Pre:   Linked List 	[fryer,lesly,towny,symon,phone]
-Post:  Linked List 	[phone,symon,towny,lesly,fryer]
-In:    Linked List 	[fryer,lesl ... (line shortened) ...
+2:	Computer Science 42SAP Prerequisite content not running....................................
+3:	Computer Science 42SAP Course:.............................................................
+4:	Computer Science 42SAP curriculum content..................................................
+5:	AP curriculum - Part 1.....................................................................
+6:	AP: Unit 1 (Primitive Types)...............................................................
+7:	1.1 Why Programming? Why Java?.............................................................
+8:	System.out.print outputs text to the screen and System.out.println outputs with a line break
+9:	More specifically, the code word "System" refers to the "computer system" and the 
+10:	word "out" refers to outputting, and finally the word "print" or "println" are calls to 
+11:	methods (or "actions") that take the string literal (which is the word or words in between 
+12:	the quotation marks) and outputs it. So the command "System.out.println("literal");" 
+13:	will take the string literal and output it to the default output device - that being the 
+14:	computer screen.
+15:	1.2 Variables and Data Types...............................................................
+16:	Data/information refers to the "kind" of data being stored (or "remembered") by the program 
+17:	in a "variable". A variable is a piece of the computer's memory (storage) that has a "name" 
+18:	(or "address") so that the programmer can refer to it by that name. The "type" refers to the 
+19:	"kind" of data that you are storing (e.g. text, numbers, true/false, etc.). The type must be 
+20:	specified at the time you write a line of code to "create" (or "declare") the variable. A 
+21:	variable can only be one type and only store that specified type of data. However, the data 
+22:	itself can change (or "vary") after the initial declaration. Examples of this are below...
+23:	// Variables declared and assigned initial ("starting") values:
+24:	boolean a = true;
+25:	int     b = 0;
+26:	double  c = 1.0;
+27:	char    d = 'A';
+28:	// Variables content changes ("reassigned"):
+29:	a = false;
+30:	b = 1;
+31:	c = 1.1;
+32:	d = 'B';
+33:	A "final" (or a "constant") is a variable in which the stored value does NOT change 
+34:	(it stays "constant") and it locked at that value. Final (or constant) variables are 
+35:	given the initial value when declared (or initialized) and that value stays locked. These 
+36:	types of values are written in ALL_CAPS with the underscore value used to seperate words in 
+37:	the name. Final variables are more efficient for a number of reasons including ease of code 
+38:	understanding, speed (faster code), easier to update code, and others. Examples of finals 
+39:	are below
+40:	// Constants (finals) declared (initialized)
+41:	final boolean FOUND  = true;
+42:	final int     VALUE  = 1;
+43:	final double  AMOUNT = 2.5;
+44:	final char    CODE   = 'X';
+45:	1.3 Expressions and Assignment Statements..................................................
+46:	Arithmetic (or "math") statements in code are lines of code (or "statements") that are 
+47:	written to evaluate (or "solve") an equation of logic the program needs to solve. In this 
+48:	context, the word "literal" can also mean a number (like "5"). This usually involves 
+49:	variable types int and double (the number types) used in a math expression or equation. This 
+50:	can involve math operations like +, -, *, / and % (modulus). When multiple int values are 
+51:	evaluated in a formula, they always evaluate to an int answer (solution) and double values 
+52:	will evaluate to a double. Complex (or "compound" expressions can be formed in which 
+53:	the order of operations (or precedence order). This means multiplication and division are 
+54:	evaluated before addition and subtraction. If operations are at the same precedence level, 
+55:	then they are evaluated from left to right.When you try and divide by zero, an error 
+56:	(the "ArithmeticException" error) will occur and the program will stop running. Examples:
+57:	// Arithmetic evaluations using variables
+58:	int    v1 = 5;
+59:	int    v2 = 3;
+60:	int    v3 = (v1 + 5 * v2 / (1 + 2)) % 2;
+61:	double v4 = 5.2;
+62:	double v5 = 3.3;
+63:	double v6 = (v4 + 5.1 * v5 / (1.2 + 2.3)) % 2.2;
+64:	1.4 Compound Assignment Operators..........................................................
+65:	Compound statements in this context refers to using shortcuts to quickly add or subtract one 
+66:	(increment or decrement) to a variable. You can also use more complex shorthand compound 
+67:	statements to quickly multiply, divide, even modulus a variable with itself or other 
+68:	variables. For example:
+69:	// Shorthand Compound Arithmetic expressions
+70:	int value = 5;
+71:	value++;    // is the same as "value = value + 1;"
+72:	value--;    // is the same as "value = value + 1;"
+73:	value += 5; // is the same as "value = value + 5;"
+74:	value -= 5; // is the same as "value = value - 5;"
+75:	value *= 5; // is the same as "value = value * 5;"
+76:	value /= 5; // is the same as "value = value / 5;"
+77:	value %= 5; // is the same as "value = value % 5;"
+78:	1.5 Casting and Ranges of Variables........................................................
+79:	Casting is the process of "converting" one data type into another data type. When casting 
+80:	an double to a int, the decimal portion of the double is truncated (cut off) and not rounded 
+81:	off. When a int is cast to a double, the int is "widened" to now accomodate any decimals. 
+82:	A char when cast will turn into it's ASCII value. The process of casting involves putting 
+83:	variable to be cast with the type being cast into in round brackets to the left of that 
+84:	variable. Integer values hold a finite amount of number space (4 bytes) and the built-in 
+85:	constants Integer.MAX_VALUE and MIN_VALUE are the limits of the int. If an expression 
+86:	evaluates an int outside that range, an error will occur (overflow error). For example:
+87:	// Casting data types
+88:	int integer = Integer.MAX_VALUE;
+89:	double doub = Double.MIN_VALUE;
+90:	doub        = (int)integer;
+91:	integer     = (int)doub;
+92:	char letter = 'A';
+93:	integer     = (int)letter;
+94:	AP: Unit 3 (Boolean Expressions And If Statements).........................................
+95:	3.1 Boolean Expressions....................................................................
+96:	A Boolean (true/false) expression is a code statement most likely in a control structure 
+97:	like a conditional statement or loop control structure that evaluates to true or false to 
+98:	make decisions and control the flow of the program. The Boolean expression will require 
+99:	the use of relational operators like: < , > , <= , >= , == , and != those being: "less 
+100:	than", "greater than", "less than or equal to", "greater than or equal to", "equal 
+101:	to", and "not equal to".
+102:	3.2 if Statements and Control Flow.........................................................
+103:	A "Conditional Statement" is also known under other names like "branching statement", "if 
+104:	statement", "one-way selection statement", and "control structure". It uses the reserved 
+105:	keyword "if" along with round brackets which contain the Boolean expression, and curly 
+106:	brackets to contain the control block of all code you wish to be controlled by the 
+107:	conditional statement. Brackets are optional if the block is only one line, and you may also 
+108:	move thos lines up to the same line as the conditional statement. For example:
+109:	// Example of if statements
+110:	int a = 10;
+111:	int b = 10;
+112:	if (a == a) {
+113:	    // "equal"
+114:	}
+115:	3.3 if-else Statements.....................................................................
+116:	The "else" statement is paired with an "if" statement to control the flow of the logic so 
+117:	that the conditional now evaluates to both true and false. This can be called a "two 
+118:	way selection" (for true/false). An "else" must always follow an "if" statement first. 
+119:	For example:
+120:	// if with "else" 
+121:	double c = 1.45, d = 1.5; 
+122:	if (c < d) {
+123:	    // "Less than"
+124:	}
+125:	else {
+126:	    // "Greater than"
+127:	}
+128:	// Shortened lines version
+129:	char e = 'A';
+130:	char f = 'a';
+131:	if (e != f) e = '!';
+132:	else        e = '=';
+133:	3.4 else if Statements.....................................................................
+134:	When making multiple decisions (more than 2), the "else if" statement is added to an 
+135:	existing "if" statement to have multiple branches of logic for the code to follow. This 
+136:	is much more efficient than seperate "if" statements. This can also be called "multi-way 
+137:	selection" (or "if-else-if"). An "else" statement is also still the final option (but 
+138:	this is not required). For example:
+139:	// Showing a "chain" of else if statements
+140:	int g = 0;
+141:	if (g == 1) {
+142:	    // The first if is true
+143:	}
+144:	else if (g == 2) {
+145:	    // The next if is true
+146:	}
+147:	else if (g == 3) {
+148:	    // The next if (in the "chain" of ifs) is true
+149:	}
+150:	else {
+151:	    // Nothing above is true, so go to this else
+152:	}
+153:	3.5 Compound Boolean Expressions...........................................................
+154:	The process of "nesting" means to place one conditional statement inside the "block" of 
+155:	another conditional statement. The logical operators: "and", "or", and "not" are 
+156:	represented with the symbols: "&&" (and), "||" (or), and "!" (not). The operator AND 
+157:	is used to combine logical boolean expressions such that ALL expressions need to be true for 
+158:	the entire statement to be true. The operator OR is used to combine logical boolean 
+159:	expressions such that ANY expression can be true for the entire statement to be true. The 
+160:	operator NOT reverses the logic so that true statements are evaluated as false (and visa 
+161:	versa). If the statement contains multiple Boolean expressions and the result of the 
+162:	evaluation of one expression has already determined the expressions result, then the 
+163:	rest of the expressions do not need to be evaluated - this is known as a "short-circuited 
+164:	evaluation". For example:
+165:	// Logical operators and "nesting"
+166:	int    age = 17;
+167:	double iq  = 1.0;
+168:	if (age >= 18 && iq > 90) {
+169:	    // with "and" ("&&") BOTH have to be true
+170:	}
+171:	else if (age >= 18 || iq > 0) {
+172:	    // with "or" ("||") EITHER can be true
+173:	}
+174:	else {
+175:	    // Case if neither evaluates
+176:	    if (age > 0) {
+177:	        // A "nested if statement"
+178:	    }
+179:	}
+180:	3.6 Equivalent Boolean Expressions.........................................................
+181:	Boolean (true/false) expressions turned into logical statements used by control structures 
+182:	like conditional statements are subject to the laws of mathemtical logic such as "De Morgan's 
+183:	Law" (Google search this if you are curious, but it applies to mathematical proofs and is 
+184:	not necessarily applicable to this exam). This just means that complex statements need to be 
+185:	evaluated by using mathematical rules (like "order of operations") and logical operators 
+186:	(like "and, or, not") to determine the final Boolean result. This could determine if a 
+187:	control structure (like an "if" statement) runs a block of code or not.
+188:	3.7 Comparing Objects......................................................................
+189:	The use of an advanced data type like an "Object" in code means that comparison 
+190:	operators (like <, >, ==, !=) that are used with primitive data type (like "int, 
+191:	double, char, etc.") are not used. Instead, use the "built-in" method "equals()" to 
+192:	determine the equality of two objects. For example:
+193:	// Use of the built-in equals method with Objects
+194:	String word1 = "edgy";
+195:	String word2 = "edGy";
+196:	if (word1.equals(word2)) {
+197:	    // "W1=W2"
+198:	}
+199:	else if (word1.equalsIgnoreCase(word2)) {
+200:	    // "W1 kind of == W2"
+201:	}
+202:	AP: Unit 4 (Iteration).....................................................................
+203:	4.1 while Loops............................................................................
+204:	The word "Iteration" is another word for "Loop" or "Looping" which is a control 
+205:	struture to have code statements "repeat". Like conditional ("if") statements, iteration 
+206:	statements control the flow of a program's logic. Also like if statements, iteration 
+207:	statements are controlled by a Boolean expression (true or false). The result of the Boolean 
+208:	expression will result in the code executing zero or mulitple times (until the expression 
+209:	evaluates to false). The expression is evaluated each time through an iteration of the loop. 
+210:	A loop is called an "infinite" loop if the Boolean expression never evaluates to false 
+211:	(thus the loop never stops looping - or never stops running). It is possible a loop will 
+212:	never run if it evaluates to false before the body (block) of the loop. If you use the 
+213:	keyword "return" inside a loop body (block) then the loop will terminate (end) early and 
+214:	potentially exit any method the loop is written inside. The "while" loop is a event loop or 
+215:	non-deterministic loop, which means it is not usually used for counting but when you do 
+216:	not know how many times the loop needs to run (a certain event can cause the loop to 
+217:	end). Loops are used for a variety of reasons such as: repeating instructions, travelling 
+218:	(traversing) arrays and lists, and searching and sorting values. For example:
+219:	// Example of a simple while loop
+220:	int counter = 0;
+221:	while (counter < 10) {
+222:	    counter++;
+223:	}
+224:	4.2 for Loops..............................................................................
+225:	The "for" loop is another looping form. The for loop is a count controlled loop that 
+226:	generally is used when a loop needs to run a specific number of times. There are three 
+227:	parts to the for loop, that seperate the parts with two semi-colons. The 3 parts represent 
+228:	the starting, ending, and change of the loop. In a for loop a counting variable is 
+229:	generally declared right inside the loop to a starting value, then the Boolean condition 
+230:	to end the loop, then the change value increasing (increment) or decreasing (decrement) 
+231:	that value. A "for" loop can be rewritten as a "while" loop and vice versa. A "off 
+232:	by one" error occurs when a loop runs one too many or one too few times. For Example:
+233:	// Example of a for loop
+234:	for (int i = 0; i < 10; i++) {
+235:	    // potential code body...
+236:	}
+237:	4.3 Developing Algorithms Using Strings....................................................
+238:	The String class allows for several "built-in" methods of the String class to manipulate 
+239:	the string and the value it stores. Several of these methods could apply to the A.P. exam 
+240:	including travelling (traversing) string characters, pulling out substrings (parts 
+241:	of the string), reversing a string, etc. For example:
+242:	// Example of string methods with a loop
+243:	String word   = "completion";
+244:	String parts1 = word.substring(3);
+245:	String parts2 = word.substring(1,7);
+246:	for (int i = 0; i < word.length(); i++) {
+247:	    char character = word.charAt(i);
+248:	}
+249:	4.4 Nested Iteration.......................................................................
+250:	Like conditional ("if") statements, looping ("iteration") statments can be "nested", 
+251:	This means you can place a iteration statement inside the block of another iteration 
+252:	statement. The inner loop must complete all of its iterations before the outer loop 
+253:	can continue. For example:
+254:	// Example of nested loops
+255:	for (int i = 0; i < 10; i++) {
+256:	    for (int j = 0; j < 10; j++) {
+257:	        int k = 10;
+258:	        while (k < 10) {
+259:	            // potential code body...
+260:	        }
+261:	    }
+262:	}
+263:	4.5 Informal Code Analysis.................................................................
+264:	Expect to "trace" loop values in A.P. exam questions. Examining, computing, and tracing 
+265:	loops are typical A.P. exam questions. You should practice these types of questions.
+266:	AP curriculum - Part 2.....................................................................
+267:	AP: Unit 2 (Using Objects).................................................................
+268:	2.1 Objects: Instances of Classes..........................................................
+269:	A "class" is the "blueprint" for creating an "object". In Java, the class is a way to 
+270:	use code to model "things" using properties and methods. The object is what the class 
+271:	"creates" when the class is made into a specific "object" of that class. The various 
+272:	terms used for this vary but all revolve around the same concepts. The term "object" 
+273:	can also be called a "instance" of the class. The term "properties" can also be 
+274:	called "things about the class", or "descriptors", or "adjectives", or 
+275:	"fields". The term "methods" could also be called "what the class can do", or 
+276:	"actions", or "verbs", or "functions". 
+277:	// Example of a simple class with properties and methods
+278:	class Person {
+279:	    String name;
+280:	    int age;
+281:	    void walk() {
+282:	        // code logic could go here
+283:	    }
+284:	    void talk() {
+285:	        // code logic could go here
+286:	    }
+287:	}
+288:	2.2 Creating and Storing Objects (Instantiation)...........................................
+289:	Methods are a way to break up code into logic modules and it also provides a way to avoid 
+290:	repeating code and be able to reuse sections of code logic. You can think of methods as 
+291:	analogous to "machines" that perform "actions" and you can reuse. They are also analogous to 
+292:	"functions" in math that may take a variable "input" and generate an "answer".  The term 
+293:	"parameter" (and you may have zero, one, or more than one) is the "input" (if needed) to a 
+294:	method that is passed to the method. The value(s) passed are called "argument(s)". When you 
+295:	define the method in the method "signature" line, the round brackets can contain 
+296:	parameters separated by comma (if needed). A method may also give an "output" in the form 
+297:	of its "return" value (which also might not be needed, in which case it is a "void" method).
+298:	A method is "overloaded" if you have more than one method with the exact same name but 
+299:	different parameters. Classes have "constructor" methods that are called when 
+300:	a class is instantiated into an object. Constructor methods do not have a return type 
+301:	(not even the keyword "void"). They must have the exact same name as the class (including a 
+302:	capital letter). They are used to set the properties of the class to starting (or 
+303:	"default") values. If a class has multiple constructor methods, they are said to be 
+304:	overloaded constructors. When a line of code is used to instantiate a class into an instance 
+305:	of that class, the line includes the name of the class, the identifier name of the object, 
+306:	then an equals ("="), then the keyword "new" (which allots new memory for this 
+307:	advanced data type), then a call to a constructor method. If not constructor method 
+308:	is called, then the object references a "null" value until such time it is given a value to 
+309:	reference.
+310:	// Example of a class with constructors and instantiation
+311:	class Person {
+312:	    Person() {
+313:	        // code logic
+314:	    }
+315:	    Person(int age) {
+316:	        // code logic
+317:	    }
+318:	}
+319:	Person person1 = new Person();
+320:	Person person2 = new Person(5);
+321:	2.3 Calling a Void Method..................................................................
+322:	A "non-static" method is a method (meaning a "action", "behaviour", "procedure", 
+323:	or "verb") that does not use the "static" modifier word in the method signature line. 
+324:	A method with no prameters (or "inputs") means the method is defined with empty round 
+325:	brackets "( )". The "behavior" or action the method performs is defined in the body 
+326:	block of the method (between the two curly "{ }" brackets). The A.P. term "procedural 
+327:	abstraction" refers to a programmer being able to call a method without knowing how the 
+328:	method was written (also known as "black box" programming). When methods are "called" 
+329:	the execution flow stops, jumps and runs all the method body (or until a "return" 
+330:	statement) and then returns to the next line of execution after the method call line 
+331:	(or part of a code expression line). Methods can also be called from objects (or 
+332:	"instances") of a class using the dot "." operator. Void method do not return anthing 
+333:	(no "outputs") and use the keyword modifier "void" in the method signature in place of 
+334:	the return type.
+335:	// Examples of methods, parameters, return, and calling
+336:	public void show() {
+337:	    System.out.println("*")
+338:	}
+339:	public void show(char value) {
+340:	    System.out.println(value);
+341:	}
+342:	public int double(int number) {
+343:	    return number * 2;
+344:	} 
+345:	show();
+346:	show('A');
+347:	int answer = double(5);
+348:	2.4 Calling a Void Method with Parameters..................................................
+349:	A "non-static void" methods with parameters is a method with no outputs, but has input(s). 
+350:	This means the method signature has defined parameter(s) within the round brackets "( )" 
+351:	seperated by commas (if necessary). When this type of method is called, the "arguments" 
+352:	passed to this method must be in the same order in terms of data type. A method is 
+353:	"overloaded" when you have two or more methods with the same name but different and 
+354:	distinct parameter lists.
+355:	// Examples of method overloading
+356:	public void show() {
+357:	    System.out.println("*")
+358:	}
+359:	public void show(char value) {
+360:	    System.out.println(value);
+361:	}
+362:	public void show(int value) {
+363:	    System.out.println(value);
+364:	}
+365:	2.5 Calling a Non-void Method..............................................................
+366:	A method that does return a value, defines the return "type" in the method signature and 
+367:	the keyword "return" somewhere in the method body (at least once). When calling a return 
+368:	method, the value returned must be stored (in a variable) or used as part of an expression.
+369:	2.6 String Objects: Concatenation, Literals, and More......................................
+370:	The "String" class allows you to create String variables, concatenate them (join) 
+371:	together and use "built-in" methods of the String class. String literals (contained in 
+372:	quotes "") can be assigned to String variables or concatenated with Strings. String methods 
+373:	do not change the String ("immutable") object. The "+" or the "+=" operators can be used 
+374:	to concatenate Strings (resulting in a new String object). Primitives (like int, double, 
+375:	etc.) can also be concatenated with String objects. Those are now automatically converted 
+376:	to Strings and then concatenated. Escape sequences is the character "\" followed 
+377:	by another character to make certain outputs or changes to a String object. These include: 
+378:	\" for a quote, \\ for a slash, and \n for a new line.
+379:	// Examples of Strings and escape sequences
+380:	String str1 = "cat";
+381:	String str2 = str1 + "ty";
+382:	str1 += str2;
+383:	str2 = "\n" + str1 + "\\" + "\" dog";
+384:	2.7 String Methods.........................................................................
+385:	The "API" or Application Program Interface is a "library" of code that could be imported 
+386:	into a Java project or it could automatically be part of every Java project without needing 
+387:	an import. Classes and libraries are organized into "packages" in Java (also known as 
+388:	"namespaces"). The String class is in the "java.lang" package. Strings are collections 
+389:	of "char" values index from 0 up to the length of the String minus 1 (just like arrays 
+390:	are indexed). String methods used are: the String constructor "String s = new String();", 
+391:	the "length()" method, the "substring(int)" and "substring(int,int)" methods, the 
+392:	"indexOf(String)" method, the "equals(String)" method, and the 
+393:	"compareTo(String)" method.
+394:	// Examples of String methods
+395:	String str3 = new String("chatty");
+396:	// Constructs object with same sequence of characters as str3
+397:	int length = str3.length();
+398:	// Returns the number of characters in a String object
+399:	String str4 = str3.substring(1);
+400:	// Returns substring(from) starting at index "from" to the end
+401:	String str5 = str3.substring(1,3);
+402:	// Returns substring(from, to) starting at index "from" to index "to"
+403:	int index = str3.indexOf("hat");
+404:	// Returns the index of the first occurrence (returns -1 if not found)
+405:	boolean result1 = str3.equals(str4);
+406:	// Returns true if this is equal to other (returns false otherwise)
+407:	int result2 = str3.compareTo(str5);
+408:	// Returns value < 0 if less than other, returns 0 if equal to other,
+409:	// and returns value > 0 if greater than other
+410:	2.8 Wrapper Classes: Integer and Double....................................................
+411:	A "wrapper class" is a class type that is based in a primitive data type. For example the 
+412:	primitive data type "int" has the wrapper class "Integer". Similarily, the "Double" 
+413:	wrapper class, wraps around the "double" primitive type. The wrapper classes (using a 
+414:	capital letter) are part of java.lang and have built-in methods like "parseInt()" and 
+415:	"parseDouble()". Other methods include: "Integer(int)" a constructor, 
+416:	"Double(double)" a constructor, "MIN_VALUE" a constant, "MAX_VALUE", "intValue()", and 
+417:	"doubleValue()". Boxing and unboxing can be done between the wrapper classes and the 
+418:	primitive types (known as "autoboxing"). The term "boxing" means the conversion between 
+419:	primitive types and corresponding wrapper. The term "unboxing" means the conversion 
+420:	from the wrapper class to the primitive type.
+421:	// Example of wrapper classes and methods...
+422:	int     integerPrimitive1 = Integer.parseInt("10");
+423:	double  doublePrimitive1  = Double.parseDouble("1.2");
+424:	Integer integerObject     = new Integer("10");
+425:	Double  doubleObject      = new Double("1.2");
+426:	int     integerPrimitive2 = integerObject.intValue();
+427:	double  doublePrimitive2  = doubleObject.doubleValue();
+428:	int     minInteger        = Integer.MIN_VALUE;
+429:	int     maxInteger        = Integer.MAX_VALUE;
+430:	double  minDouble         = Double.MIN_VALUE;
+431:	double  maxDouble         = Double.MAX_VALUE;
+432:	// Boxing and unboxing...
+433:	int     integerPrimitive3 = integerObject1;
+434:	double  doublePrimitive3  = doubleObject1;
+435:	Integer integerObject2    = integerPrimitive3;
+436:	Double  doubleObject2     = doublePrimitive3;
+437:	2.9 Using the Math Class...................................................................
+438:	The "Math" class is part of the java.lang package and has built-in static methods that can 
+439:	be called. Useful methods include: abs, pow, sqrt, and random. Including manipulating the 
+440:	random method in a formula to define random numbers in a range. Examples of this follow...
+441:	// Examples of the Math class methods and randoms...
+442:	int    value1 = Math.abs(-1);
+443:	double value2 = Math.abs(-1.2);
+444:	double value3 = Math.pow(2,3);
+445:	double value4 = Math.sqrt(9);
+446:	double value5 = Math.random();
+447:	final double HIGH = 10.9d;
+448:	final double LOW  = 5.5d;
+449:	double value6 = (HIGH - LOW + 1.0d) * Math.random() + LOW;
+450:	AP: Unit 5 (Writing Classes)...............................................................
+451:	5.1 Anatomy of a Class.....................................................................
+452:	The properties (attributes) and methods (actions) of a class can be defined in terms of 
+453:	visibility. This means that the keywords "public" and "private" can be used as a 
+454:	modifier in the front of a method signature or at the front of a property declaration line 
+455:	to define the encapsulation level. The public keyword means the property can be accessed (and 
+456:	modified) both inside the class and from other classes outside the class. In terms of methods 
+457:	it means the method can be called within the class (by other methods) and outside the class 
+458:	from other classes using the dot "." operator. Classes and constructor methods are 
+459:	designated public. The concept of "encapsulation" is used to make certain data and actions 
+460:	private and protect them from outside classes and perhaps only allow access through accessor 
+461:	and modifier ("getter" and "setter") methods.
+462:	// Class example private/public properties and methods
+463:	class Apple { 
+464:	    public int number;
+465:	    private double price;
+466:	    public void eat() {
+467:	        // logic here
+468:	    }
+469:	    private void spoil() {
+470:	        // logic here
+471:	    }
+472:	}
+473:	5.2 Constructors...........................................................................
+474:	A constructor method is a special method defined in a class that is called when a class is 
+475:	instantiated into an instance (or "object") of that class. The constructor method has to have 
+476:	the exact same name as the class (including letter case) and no return type (not even the 
+477:	word void). Constructors are usually used to set the initial (or "default") values for the 
+478:	class properties. This can be said to be setting the "state" of the object. If any of the 
+479:	properties (attributes) are another class level instance variable (not a primitive type), 
+480:	then this class is said to have a "has-a" relationship with that class. This can also be 
+481:	called "association" or "composition" between the classes. Constructors can have 
+482:	parameters passed to the class that can be used in setting the initial state. When no 
+483:	constructor is written, Java provides a no-argument constructor, and the instance 
+484:	variables are set to default values.
+485:	// Class example association and constructors
+486:	class Basket {
+487:	    public Apple apple;
+488:	    public Basket() {
+489:	        // logic here
+490:	    }
+491:	    public Basket(Apple apple) {
+492:	        // logic here
+493:	    }
+494:	}
+495:	5.2 Documentation with Comments............................................................
+496:	Comments are a documentation system that allows programmers to leave notes for themselves or 
+497:	other programmers. This can serve several purposes including (but not limited to) 
+498:	documenting names and dates, explaining code logic, working through problem solving logic, 
+499:	and others. In Java, the two forward slashes // allows a comment at the end of a line of code or 
+500:	on its own line. A slash and a star /* opens a comment block which will continue until a star 
+501:	and slash */ closes the comment block. The slash and two stars /** open the JavaDoc style of 
+502:	comment block which many IDEs (e.g. NetBeans) recognize and help with commenting and to create 
+503:	API documentation. Methods should be commented with the method's purpose (a brief description), 
+504:	any pre-conditions (the parameters if any), and post-conditions (the return type if any) of the 
+505:	method.
+506:	// Comments...
+507:	// a standard comment
+508:	/* opens a comment block */
+509:	/** JavaDoc comment block */
+510:	5.4 Accessor Methods.......................................................................
+511:	Accessor methods are the names given to methods in a class that "access" data. this usually 
+512:	means properties of the class that are encapsulated (private). Other names for 
+513:	accessors are "getters" or "get" methods. The method (behaviours, actions, functions, 
+514:	procedures) of a class are accessed with the dot operator (".") after the name of the 
+515:	object (instance of the class). Non-void methods that return a value can then be used as 
+516:	part of a code line expression. The return type of the method must be compatible with any 
+517:	data types (e.g. variables) being used in the expression. If the return type is a class level 
+518:	type then the method returns a reference to the actual object ("return by reference") not a 
+519:	reference to a copy ("return by value") of the actual object. If the "System.out.print" 
+520:	or "System.out.println" methods are called and an object is passed to those methods, the 
+521:	object's "toString()" method is automatically 
+522:	invoked (called) in the output.
+523:	// Examples of calling methods in a class
+524:	class Fighter {
+525:	    private int health;
+526:	    private Weapon weapon;
+527:	    public int getHealth() {
+528:	        return health;
+529:	    }
+530:	    public Weapon getWeapon() {
+531:	        return weapon;
+532:	    }
+533:	}
+534:	Fighter fighter = new Fighter();
+535:	int hp = fighter.health;
+536:	Weapon club = fighter.getWeapon();
+537:	5.5 Mutator Methods........................................................................
+538:	Mutator methods are the name given to methods that "change" a property of a class (usually 
+539:	an encapsulated property). These can be void methods (but are sometimes boolean methods to 
+540:	indicate success or not).
+541:	// Examples of calling mutator methods in a class
+542:	class Fighter {
+543:	    private int health;
+544:	    public int setHealth(int health) {
+545:	        this.health = health;
+546:	    }
+547:	}
+548:	Fighter fighter = new Fighter();
+549:	fighter.setHealth(10);
+550:	5.6 Writing Methods........................................................................
+551:	Methods are written to model an "action". Also known as functions or procedures, methods may 
+552:	or may not have zero, one, or more than one "input(s)" called "parameters" (or empty round 
+553:	brackets if no inputs are required). Methods may have zero (a "void" method) or one "output" 
+554:	known as the return type. If the parameter is a primitive data type, then a copy of the data 
+555:	from the original primitive type is passed to the method ("pass by value"). If the parameter 
+556:	is an advanced data type ("class" level data) then a reference to that object is passed. This 
+557:	means that any changes the method makes to the object will be reflected (unless the object 
+558:	was an immutable object). Because the passed reference object parameter and the original 
+559:	argument object are "linked" they can be referred to as "aliases".
+560:	5.7 Static Variables and Methods...........................................................
+561:	Although they can be called from an object of a class, "static" methods are generally called 
+562:	from the class name itself. Static methods "belong" to the class itself and therefore 
+563:	do not require you to instantiate an object to call a method from that class. The keyword 
+564:	"static" is included as a modifier word in the method signature line. Static methods 
+565:	cannot access or change the values of instance properties of a class but can change/access 
+566:	static properties. Static properties (variables) also "belong" to the class itself 
+567:	and are "shared" by all objects of the class. Static properties can be either public or 
+568:	private and are also declared using the "static" keyword as a modifier for the 
+569:	property. Static properties are used with the class name and then the dot operator and then 
+570:	the name of the property (although they can also be accessed from an object name). 
+571:	// Static properties and methods
+572:	class Fighter {
+573:	    public static int number;
+574:	    public static void attack() {
+575:	        // logic here
+576:	    }
+577:	}
+578:	Fighter.number = 10;
+579:	Fighter.attack();
+580:	5.8 Scope and Access.......................................................................
+581:	Variables can be used throughout code in classes and methods and have a "scope" defining where 
+582:	the variable can be accessed and modified. A "local" variable is one which is defined in a 
+583:	code block like a control structure (a loop or if statement) or a method. The scope of that 
+584:	variable is that internal code block and no other variables can have the same name within 
+585:	that scope. A "global" variable is one declared at the class level and its scope is 
+586:	the entire code module (class). When there is a local variable with the same name as a global 
+587:	variable, the variable name will reference the local variable over the global variable. This 
+588:	could be a potential name conflict. The keyword "this" with the dot operator can make an 
+589:	explicit reference to the global variable over the local variable. 
+590:	// Local and global variable scopes
+591:	class Fighter {
+592:	    public int number;
+593:	    public void attack(int number) {
+594:	        this.number = number;
+595:	    }
+596:	}
+597:	5.9 this Keyword...........................................................................
+598:	The keyword "this" is an explicit reference to the (eventual) object within a class. It 
+599:	refers to the name of an object that will later be instantiated by the class the word this 
+600:	is used within. The word "this" can be used to give explicit control to a global variable 
+601:	or call a class method. The keyword "this" can also be used to pass the current object 
+602:	as an actual parameter in a method call.
+603:	5.10 Ethical and Social Implications of Computing Systems..................................
+604:	The social and ethical considerations of computing and Computer Science are things as 
+605:	an A.P. student you should be aware of. These are not necessarily testable concepts on the 
+606:	A.P. exam. The general ideas of legality, impact, and reliability of computing systems 
+607:	and software should always be considered by programers and Computer Scientists.
+608:	AP: Unit 9 (Inheritance)...................................................................
+609:	9.1 Creating Superclasses and Subclasses...................................................
+610:	// 
+611:	9.2 Writing Constructors for Subclasses....................................................
+612:	// 
+613:	9.3 Overriding Methods.....................................................................
+614:	// 
+615:	9.4 super Keyword..........................................................................
+616:	// 
+617:	9.5 Creating References Using Inheritance Hierarchies......................................
+618:	// 
+619:	9.6 Polymorphism...........................................................................
+620:	// 
+621:	9.7 Object Superclass......................................................................
+622:	// 
+623:	AP curriculum - Part 3 not running.........................................................
+624:	AP curriculum - Part 4 not running.........................................................
+625:	Computer Science 42SAP practice tests not running..........................................
+626:	Computer Science 42SAP Post Secondary content not running..................................

@@ -6,13 +6,13 @@ import utility.io.Simulator;
 import utility.io.System;
 
 /**
- * PracticeTest3 - a set of practice test questions and solutions for the 
+ * PracticeTest4 - a set of practice test questions and solutions for the 
  * A.P. Computer Science exam
  * 
  * @author Mr. Wachs
  * @since Mar 5, 2024
 */
-public class PracticeTest3
+public class PracticeTest4
 {
 
     /**
@@ -20,12 +20,12 @@ public class PracticeTest3
      * 
      * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public PracticeTest3(boolean shouldRun) {
+    public PracticeTest4(boolean shouldRun) {
         if (!shouldRun) {
-            Simulator.note("AP Practice Test 3 not running");
+            Simulator.note("AP Practice Test 4 not running");
             return;
         }
-        Simulator.title("AP Practice Test 3");
+        Simulator.title("AP Practice Test 4");
         question1();     
         question2();     
         question3();     

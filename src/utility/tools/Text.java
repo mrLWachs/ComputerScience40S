@@ -48,6 +48,7 @@ public class Text
         if (words == null) {
             try {
                 URL  url    = getClass().getResource(DICTIONARY_FILE);
+                if (url == null) return;
                 URI  uri    = url.toURI();
                 File file   = new File(uri);        
                 fileHandler = new FileHandler<>();
@@ -103,6 +104,7 @@ public class Text
      * @return a random word from a dictionary file
      */
     public String randomWord() {
+        if (words == null) return "word";
         int low   = 0;
         int high  = words.size()-1;
         int index = numbers.random(low, high);

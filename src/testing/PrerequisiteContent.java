@@ -10,7 +10,9 @@ import testing.prerequisite.cs40s.ComputerScience40S;
 
  
 /**
- * PreCourseContent.java - description
+ * PreCourseContent.java - this outlines the content of the Computer Science 
+ * courses offered by Mr. Wachs prior to taking the A.P. Computer Science 
+ * course.
  *
  * @author Mr. Wachs
  * @since Feb 12, 2024, 2:25:50 p.m.

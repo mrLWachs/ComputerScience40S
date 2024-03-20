@@ -5,10 +5,11 @@ package testing.cs42sap.tests;
 import utility.io.Simulator;
 
 
-/*
- * PracticeTestsCS42SAP - description
+/**
+ * PracticeTestsCS42SAP - these are practice test to practice the types 
+ * of multiple choice questions on the A.P. Computer Science exam
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Feb 28, 2024
 */
 public class PracticeTestsCS42SAP
@@ -28,6 +29,7 @@ public class PracticeTestsCS42SAP
         new PracticeTest1(shouldRun);   
         new PracticeTest2(shouldRun);   
         new PracticeTest3(!shouldRun); 
+        new PracticeTest4(!shouldRun);         
     }
 
 }

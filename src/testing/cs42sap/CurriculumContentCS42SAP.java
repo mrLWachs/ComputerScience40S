@@ -29,8 +29,8 @@ public class CurriculumContentCS42SAP
         Simulator.title("Computer Science 42SAP curriculum content");         
         new Part1(shouldRun);
         new Part2(shouldRun);
-        new Part3(shouldRun);
-        new Part4(shouldRun);
+        new Part3(!shouldRun);
+        new Part4(!shouldRun);
     }
     
 }
