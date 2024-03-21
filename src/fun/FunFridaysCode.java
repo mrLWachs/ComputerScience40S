@@ -4,11 +4,13 @@ package fun;
 import fun.experiments.APExperiments;
 import fun.files.Files;
 import fun.searching.Searching;
+import fun.sorting.SortPeople;
 import fun.virus.Virus;
 
 
-/*
- * FunFridaysCode - description
+/**
+ * FunFridaysCode - this is some of the "extra" learning we have done in our
+ * course for both "Fun Fridays" and "new content Thursdays"
  * 
  * @author YOUR NAME
  * @since Mar 4, 2024
@@ -28,7 +30,8 @@ public class FunFridaysCode
         new APExperiments(!shouldRun);
         new Files(!shouldRun);
         new Virus(!shouldRun);
-        new Searching(shouldRun);
+        new Searching(!shouldRun);
+        new SortPeople(shouldRun);
     }
 
 }

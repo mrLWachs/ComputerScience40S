@@ -359,10 +359,37 @@ public class PracticeTest2
         //         System.out.print("cm2");
         //     }
         // }
-        // Parent p = new Child();
-        // p.m1();
-        System.out.println("A");
+         Parent p = new Child();
+         p.m1();
+//        System.out.println("A");
     }
+    
+    
+    public class Parent {
+
+        public void m1() {
+            System.out.print("pm1");
+            m2();
+        }
+
+        public void m2() {
+            System.out.print("pm2");
+        }
+    }
+
+    public class Child extends Parent {
+
+        public void m1() {
+            super.m1();
+            System.out.print("cm1");
+        }
+
+        public void m2() {
+            super.m2();
+            System.out.print("cm2");
+        }
+    }
+    
     
     /**
      * A practice test question

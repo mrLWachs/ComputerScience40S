@@ -84,7 +84,8 @@ public class APUnit09Inheritance
             //           beginning with the Object constructor
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("");
+        System.out.println("Inheritance is the relationship between two or ");
+        System.out.println("more classes of code");
         Simulator.comment("");
         Simulator.code("");
         

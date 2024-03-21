@@ -35,10 +35,10 @@ public class PostSecondaryContent
         }
         Simulator.title("Computer Science 42SAP Post Secondary Content:");
         new FunFridaysCode(shouldRun);
-        new PermanentStorageTest(shouldRun);
-        new StacksQueuesTest(shouldRun);
-        new SearchSortTest(shouldRun);   
-        new TreesTest(shouldRun);  
+        new PermanentStorageTest(!shouldRun);
+        new StacksQueuesTest(!shouldRun);
+        new SearchSortTest(!shouldRun);   
+        new TreesTest(!shouldRun);  
     }
      
 }
