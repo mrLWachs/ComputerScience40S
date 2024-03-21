@@ -30,7 +30,7 @@ public class SortPeople
             return;
         }       
         
-        final int MAX = 2000;
+        final int MAX = 1000;
         ArrayList<Person> people = new ArrayList<>();
         for (int i = 0; i < MAX; i++) {
             people.add(new Person(getName(),getAge(),getIQ()));
@@ -78,21 +78,54 @@ public class SortPeople
     }
 
     private void sort(ArrayList<Person> list) {
-        if (list == null) return;                   // error check
-        boolean sorted = true;                      // flag to stop or not
-        for (int i = list.size()-1; i >= 0; i--) {  // traverse list
-            sorted = true;                          // assume sorted
-            for (int j = 0; j < i; j++) {           // traverse again
-                Person item1 = list.get(j);  
-                Person item2 = list.get(j+1);
-                if (item1.compareTo(item2) > 0) {   // out of order
-                    sorted = false;                 // flag no sorted
-                    list.set(j, item2);             // swap positions
-                    list.set(j+1, item1);
-                } 
-            }
-            if (sorted) return;                     // return early
+        if (list == null) return;                       // error check
+        recursiveQuick(list,0,list.size()-1);
+        
+//        if (list == null) return;                   // error check
+//        boolean sorted = true;                      // flag to stop or not
+//        for (int i = list.size()-1; i >= 0; i--) {  // traverse list
+//            sorted = true;                          // assume sorted
+//            for (int j = 0; j < i; j++) {           // traverse again
+//                Person item1 = list.get(j);  
+//                Person item2 = list.get(j+1);
+//                if (item1.compareTo(item2) > 0) {   // out of order
+//                    sorted = false;                 // flag no sorted
+//                    list.set(j, item2);             // swap positions
+//                    list.set(j+1, item1);
+//                } 
+//            }
+//            if (sorted) return;                     // return early
+//        }
+    }
+    
+    
+    
+    
+    private void recursiveQuick(ArrayList<Person> list, int front, int back) {
+        if (back <= front) return;
+        else {
+            int pivot = partition(list,front,back);
+            recursiveQuick(list,front,pivot-1);
+            recursiveQuick(list,pivot+1,back);
         }
+    }
+    
+    private int partition(ArrayList<Person> list, int front, int back) {
+        Person pivot = list.get(front);
+        while (back > front) {
+            while (back > front && list.get(back).compareTo(pivot) > 0)
+                back--;
+            if (back == front) break;
+            list.set(front,list.get(back));
+            front++;            
+            while (back > front && list.get(front).compareTo(pivot) < 0)
+                front++;
+            if (back == front) break;
+            list.set(back,list.get(front));
+            back--;
+        }
+        list.set(front,pivot);
+        return front; 
     }
     
     private double random(double low, double high) {

@@ -19,7 +19,7 @@ public class Person
     public Person(String name, int age, double iq) {
         this.name = name;
         this.age  = age;
-        this.iq  = iq;
+        this.iq   = iq;
     }
     
     public int compareTo(Person that) {
@@ -27,12 +27,12 @@ public class Person
             return this.name.compareTo(that.name);
         }
         else if (sortType == BY_AGE) {
-            if (this.age >  that.age) return 1;
-            if (this.age <  that.age) return -1;
+            if (this.age > that.age) return  1;
+            if (this.age < that.age) return -1;
         }
         else if (sortType == BY_IQ) {
-            if (this.iq >  that.iq) return 1;
-            if (this.iq <  that.iq) return -1;
+            if (this.iq > that.iq) return  1;
+            if (this.iq < that.iq) return -1;
         }
         return 0;
     }
