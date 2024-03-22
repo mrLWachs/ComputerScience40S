@@ -27,20 +27,45 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
-    void born() {
-        
+    /**
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
+     */
+    public Person() {
+        age    = 0;
+        alive  = true;
+        name   = "unidentified";
+        gender = "unidentified";
     }
     
-    void talk() {
-        
+    /**
+     * Outputs information about the person to the screen
+     */
+    public void talk() {
+        if (alive) {
+            System.out.println(name + " is " + age + " identifes as " + gender);
+        }
+        else {
+            System.out.println("Boooooo!!!");
+        }
     }
     
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (alive) through this method
+     */
     void die() {
-        
+        alive = false;
     }
     
+    /**
+     * A person has a birthday (the age goes up by one)
+     */
     void birthday() {
-        
+        age++;
     }
 
 }
