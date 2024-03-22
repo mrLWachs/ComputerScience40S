@@ -112,7 +112,7 @@ public class PracticeTest2
         // Thing1 t = new Thing2();
         // t.calc(2);
     }
-    
+        
     /**
      * A practice test question
      */
