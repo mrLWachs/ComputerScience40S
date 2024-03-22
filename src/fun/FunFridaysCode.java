@@ -1,10 +1,9 @@
 /** Required package class namespace */
 package fun;
 
-import fun.experiments.APExperiments;
 import fun.files.Files;
 import fun.searching.Searching;
-import fun.sorting.SortPeople;
+import fun.sorting.Sorting;
 import fun.virus.Virus;
 
 
@@ -27,11 +26,10 @@ public class FunFridaysCode
         if (!shouldRun) {
             return;
         }
-        new APExperiments(!shouldRun);
-        new Files(!shouldRun);
-        new Virus(!shouldRun);
-        new Searching(!shouldRun);
-        new SortPeople(shouldRun);
+        new Files(shouldRun);
+        new Virus(shouldRun);
+        new Searching(shouldRun);
+        new Sorting(shouldRun);
     }
 
 }

@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package fun.virus;
 
+import utility.io.Simulator;
+
 
 /**
  * Virus.java - description
@@ -23,9 +25,14 @@ public class Virus extends javax.swing.JFrame
         if (!shouldRun) {
             return;
         }
-        initComponents();
-        controller = new Controller(this);
-        run(this);
+        else {
+            Simulator.showFrame(null,"Virus");
+            return;
+        }
+        
+//        initComponents();
+//        controller = new Controller(this);
+//        run(this);
     }
     
     private void run(Virus virus) {

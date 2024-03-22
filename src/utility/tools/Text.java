@@ -29,7 +29,7 @@ public class Text
     private final String ARRAY_END       = "]";
     private final String MATRIX_DIVIDE   = "\t"; 
     private final String NEW_LINE        = "\n";     
-    private final String DICTIONARY_FILE = "/tools/dictionary.txt";
+    private final String DICTIONARY_FILE = "/utility/tools/dictionary.txt";
          
     private        FileHandler<String> fileHandler;
     private        Numbers             numbers;

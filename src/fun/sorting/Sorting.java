@@ -12,12 +12,12 @@ import java.net.URL;
 import java.util.ArrayList;
 
 /*
- * SortPeople - a specific example to start learnig sorting algorithms
+ * Sorting - a specific example to start learnig sorting algorithms
  * 
  * @author Mr. Wachs
  * @since March 22, 2024
 */
-public class SortPeople
+public class Sorting
 {
     
     // An ADT list of potential names to choose from
@@ -28,7 +28,7 @@ public class SortPeople
      * 
      * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public SortPeople(boolean shouldRun) {
+    public Sorting(boolean shouldRun) {
         if (!shouldRun) return;
         
         // Create a maximum number of people for our list object

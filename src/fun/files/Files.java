@@ -85,10 +85,6 @@ public class Files
         catch (IOException e) {
             System.out.println("File error");
         }
-        
-        
-        
-        
     }
 
 }
