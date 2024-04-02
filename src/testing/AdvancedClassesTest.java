@@ -46,6 +46,10 @@ public class AdvancedClassesTest
         person.die();
         person.talk();
         
+        // If I try to change ("modify") a property ("variable") of the
+        // Person class that is modified to be "private" I do NOT have
+        // access to that - for example:
+        // person.gender = "male";
         
         
         

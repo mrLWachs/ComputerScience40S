@@ -28,11 +28,18 @@ public class Person
      */
     public String name;
     
-    int age;
+    public int age;
     
-    String gender;
+    public boolean alive;
     
-    boolean alive;
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */ 
+    private String gender;
+    
+    
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
