@@ -35,6 +35,25 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
+        person.name = "Per Soney";
+        
+        // Recall our method... (to see any changes)
+        person.talk();
+        
+        // Try to call (invoke) some of our other methods:
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed Learning Advanced classes!");
