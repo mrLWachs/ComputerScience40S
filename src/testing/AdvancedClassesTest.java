@@ -51,7 +51,9 @@ public class AdvancedClassesTest
         // access to that - for example:
         // person.gender = "male";
         
-        
+        // Try our overloaded, second constructor option
+        Person john = new Person("John Doe",63,"male");
+        john.talk();
         
         
         
