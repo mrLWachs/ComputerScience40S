@@ -138,15 +138,12 @@ public class ComputerScience40S
 //      ALL the code (uncommented) below:
 //
 ///** Required package class namespace */
-//<#if package?? && package != "">
 //package ${package};
-//
-//</#if>
 // 
 ///**
 // * ${name}.java - description
 // *
-// * @author Mr. Wachs
+// * @author YOUR NAME
 // * @since ${date}, ${time}
 // */
 //public class ${name} 
