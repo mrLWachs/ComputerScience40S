@@ -32,9 +32,7 @@ public class ComputerScience40S
 }
 
 
-
-
-// <editor-fold>   
+// <editor-fold> 
 
 // NETBEANS TIPS:
 // ==============
@@ -44,22 +42,32 @@ public class ComputerScience40S
 // (4)  Type "sout" and then press tab it fills (autocompletes) "System.out..."
 // (5)  Click the green triangle on the top toolbar to run code
 // (6)  Autocomplete (Intellisense) can appear if you press "CTRL + SPACE"
-// (7)  The word "null" means nothing and can act as a placeholder for code
-//      you don't actually need (right now)
-// (8)  To "comment out" chunks of code, select the code with your mouse or
-//      keyboard, then click on the two buttons under the code tab
+// (7)  The word "null" means "nothing" and can act as a placeholder for code
+//      you often do not need (right now)
+// (8) To "comment out" chunks of code, select the code with your mouse or 
+//     your keyboard, then click on one of the two buttons under the code tab
+//     (on the right)
 // (9)  To stop a running program, click the red stop button on the left in the
 //      output window, or the X in the bottom right of NetBeans
-// (10) You can get more NetBeans tips and autocompletes by selecting 
+// (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
+//      error and a potential fix (if you click the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
 //      Help -> Keyboard Shortcuts Card
-// (11) A red squiggily line and/or a "lightbulb" in NetBeans means a potential 
-//      error and a potential fix (if you click on the lightbulb)
-// (12) To make projects easier and automate some tasks, go to 
-//      Tools -> Templates, scroll down and click on the ">" beside "Java", 
-//      select "Java Main Class", and "Open in Editor" and the enter 
-//      the text below (by uncommenting it, then copying it, and pasting it 
-//      into the temple (first delete all the text in the template and then 
-//      replace what is there with this by pasting it):
+// (12) To autoformat code (fixes indents, extra spaces, etc.) you select the
+//      code with mouse or keyboard (if you select nothing it will autoformat
+//      all the code) and pres ALT + SHIFT + F (you should do this before you 
+//      hand in your code)
+// (13) You can "teach" NetBeans to change the style it uses to autoformat (see
+//      number 13) by going to Tools -> Options, then click on the "Editor"
+//      tab at the top, then the "Formatting" below that. Then change the 
+//      settings to what you prefer
+// (14) To have NetBeans automate code comments for assignments, select the 
+//      code below this tip, and uncomment it (see tip 8) and then copy the 
+//      same (uncommented) code. Then go to the menu: Tools -> Templates, and
+//      scroll down and click on the "+" beside "Java", and select 
+//      "Java Main Class", and "Open in Editor" and the enter (paste) this into
+//      the template (instead of the text that is already there). Then close 
+//      and save the Template so it now applies to every new project you make...
 //
 ///** Required package class namespace */
 //package ${package};
@@ -68,7 +76,7 @@ public class ComputerScience40S
 ///*
 // * ${name} - description
 // * 
-// * @author YOUR NAME
+// * @author Your Name
 // * @since ${date}
 //*/
 //public class ${name}
@@ -86,37 +94,47 @@ public class ComputerScience40S
 //
 //}
 //
-// (13) When printing code for hand in, when in NetBeans (after the code is 
-//      cleaned up and ready - see tip 13) go to File -> Print to HTML... and 
-//      then use the dialog box that appears to select a location you can find 
-//      the HTML file, and give the file you are saving a good name (with your 
-//      name in the file name). Then use the hand in page to hand in the files
-// (14) To autoformat code (fixes indents, extra spaces, etc.) select code with
-//      mouse or keyboard (or it will format all if none is selected) and press
-//      ALT + SHIFT + F  (you should do this before hand in!)
-// (15) You can "teach" NetBeans to change the style it uses to autoformat (see
-//      number 14) by going to Tools -> Options, then click on the "Editor"
-//      tab at the top, then the "Formatting" below that. Then change the 
-//      settings to what you prefer
-// (16) If you have to rename a variable or a method, select the
-//      word and then press CTRL + R, then type in a new name
-// (17) The + and - signs and gray lines along the side in NetBeans
+// (15) When preparing code for hand in: I would suggest the first option, but
+//      you can also do the second: (A) Go to the menu File -> Print to HTML...
+//      click Browse to select a location and name the file (end the name with
+//      ".html") to save a HTML file with all your code (it will already be
+//      properly formatted. (B) Alternatively, you can "print" your code to a
+//      PDF file but first you need to set NetBeans (this only needs to be done
+//      once), by clicking on "Print Options" and uncheck everything previously
+//      checked off, and then check off "Print as in Editor", then either print
+//      it to a PDF (which means select "Microsoft Print to PDF" on the next 
+//      screen), or cancel and resize the code to fit better (see tip #1) and 
+//      then print again
+// (16) The + and - signs and gray lines along the side in NetBeans
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
+// (17) If you hold down the CTRL key, method calls become links with the
+//      mouse to jump to the method (even ones we don't write)
 // (18) If you write the "call" to a method, before writing the method 
-//      itself, the lightbulb (see tip 11) will help you write it
-// (19) If you hold down the CTRL key, methods calls become links with the 
-//      mouse to the method (even ones we don't write)
-// (20) On the left side window, the Navigator window helps find and jump to
+//      itself, the lightbulb (see tip 10) will help you write it
+// (19) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (20) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
 // (21) If you type /** before the method signature line it will automate
 //      which JavaDoc comments you should make
 // (22) If you want to remove the auto-generated reminder when you use the
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
-// (23) To modify the template of all new classes, Tools -> Templates, scroll 
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
+// (25) To view the same code editing window with two different views, go to
+//      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
+// (26) To modify the template of all new classes, Tools -> Templates, scroll 
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
 //
@@ -126,7 +144,7 @@ public class ComputerScience40S
 ///**
 // * ${name}.java - description
 // *
-// * @author Mr. Wachs
+// * @author YOUR NAME
 // * @since ${date}, ${time}
 // */
 //public class ${name} 
