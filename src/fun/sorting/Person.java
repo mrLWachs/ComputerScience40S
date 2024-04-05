@@ -1,7 +1,7 @@
 /** Required package class namespace */
 package fun.sorting;
 
-/*
+/**
  * Person - represents a person with a name, age, and IQ
  * 
  * @author Mr. Wachs

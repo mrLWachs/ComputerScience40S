@@ -11,12 +11,17 @@ import fun.virus.Virus;
  * FunFridaysCode - this is some of the "extra" learning we have done in our
  * course for both "Fun Fridays" and "new content Thursdays"
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Mar 4, 2024
 */
 public class FunFridaysCode
 {
 
+    public static final int NOT_RUN       = 0;
+    public static final int RUN_SIMULATED = 1;
+    public static final int RUN_NORMAL    = 2;
+    
+    
     /**
      * Default constructor, set class properties
      * 
@@ -27,7 +32,7 @@ public class FunFridaysCode
             return;
         }
         new Files(shouldRun);
-        new Virus(shouldRun);
+        new Virus(RUN_SIMULATED);
         new Searching(shouldRun);
         new Sorting(shouldRun);
     }

@@ -2,11 +2,14 @@
 /** Required package class namespace */
 package fun.virus;
 
+/** Required API imports */
+import fun.FunFridaysCode;
 import utility.io.Simulator;
 
 
 /**
- * Virus.java - description
+ * Virus.java - a fun experiment the class wanted to try out files and have fun
+ * making a "virus"
  *
  * @author Mr. Wachs
  * @since Mar 1, 2024, 11:31:34 a.m.
@@ -14,27 +17,35 @@ import utility.io.Simulator;
 public class Virus extends javax.swing.JFrame 
 {
 
+    // Associated class to control the logic for this UI
     private Controller controller;
 
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param shouldRun the method of running this code
      */
-    public Virus(boolean shouldRun) {
-        if (!shouldRun) {
+    public Virus(int shouldRun) {
+        if (shouldRun == FunFridaysCode.NOT_RUN) {
             return;
         }
-        else {
+        else if (shouldRun == FunFridaysCode.RUN_SIMULATED) {
             Simulator.showFrame(null,"Virus");
             return;
         }
-        
-//        initComponents();
-//        controller = new Controller(this);
-//        run(this);
+        else if (shouldRun == FunFridaysCode.RUN_NORMAL) {
+            initComponents();
+            controller = new Controller(this);
+            run(this);
+        }
     }
     
+    /**
+     * Runs the logic that the NetBeans designer used for the original "main"
+     * method for this UI (that code is commented out below)
+     * 
+     * @param virus the UI to run this logic on
+     */
     private void run(Virus virus) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {

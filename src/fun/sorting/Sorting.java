@@ -11,8 +11,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 
-/*
- * Sorting - a specific example to start learnig sorting algorithms
+/**
+ * Sorting - a specific example to start learning sorting algorithms
  * 
  * @author Mr. Wachs
  * @since March 22, 2024
