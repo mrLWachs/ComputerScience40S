@@ -72,6 +72,13 @@ public class AdvancedClassesTest
         student.birthday();
         student.talk();
         
+        // Instantiate (means "create and instance of") a second Student 
+        // object (instance)
+        Student stewie = new Student("Stewie Griffin", 1, "male", 100);
+        stewie.talk();
+        
+        
+        
         
         
         
