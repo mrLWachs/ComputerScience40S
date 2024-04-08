@@ -26,9 +26,10 @@ public class ComputerScience30S
     public static void main(String[] args) {
         
         // "Call" a method (means you use the name of the method)
-//        learnIntroToJava();
-        
-        learnMethods();
+//        learnIntroToJava();        
+//        learnMethods();
+
+        learnArrays();
         
     }
 
@@ -793,6 +794,48 @@ public class ComputerScience30S
         // parameters / arguments so we know which version of the method to call
         JOptionPane.showMessageDialog(null, text, title, 
                 JOptionPane.PLAIN_MESSAGE);
+    }
+
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
+    private static void learnArrays() {
+        System.out.println("Start Learning Arrays...");
+        
+        // Create (declare) a variable (for comparison)
+        int variable = 5;
+        
+        // E.g. in memory a variable could "look" like...
+        //
+        //          +-------+
+        // variable |   5   | (type integer)
+        //          +-------+
+        
+        // Now declare (create) an array:
+        
+        int array[] = new int[5];
+        
+        // (1)  (2)  (3) (4) (5)   (6)  (7)                  (7)
+        // type name [ ] =   "new" type [ size of the array]  ;
+        
+        // E.g. in memory an array could "look" like...
+        //
+        //       +-------+-------+-------+-------+-------+
+        // array |       |       |       |       |       | (a length of 5)
+        //       +-------+-------+-------+-------+-------+
+        
+        // array names are usually "plural" words
+        // The square brackets "[  ]" in code indicate we are using an array, 
+        // the word "new" is used because arrays (they are technically 
+        // "advanced" data types) are more complicated than variables (which 
+        // are "simple" or "primitive" data types) then you repeat the data 
+        // type ("int" in this case) and the square brackets are also repeated 
+        // with a number (or a variable) inside - this number represents the 
+        // SIZE of the array. When arrays are first created, they are EMPTY.
+        
+        
+        
+        System.out.println("Completed Learning Arrays!");
     }
     
 }
