@@ -62,6 +62,24 @@ public class Student extends Person
         book   = new Book();
     }
     
+    public void study() {
+        
+    }
     
+    public void slackoff() {
+        
+    }
     
+    public void cram() {
+        
+    }
+    
+    public void talk() {
+        
+    }
+    
+    private void secret() {
+        
+    }
+        
 }
