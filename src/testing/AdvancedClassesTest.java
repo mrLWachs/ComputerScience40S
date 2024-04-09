@@ -76,7 +76,15 @@ public class AdvancedClassesTest
         // object (instance)
         Student stewie = new Student("Stewie Griffin", 1, "male", 100);
         stewie.talk();
-        
+        stewie.study();
+        stewie.talk();
+        stewie.slackoff();
+        stewie.talk();
+        stewie.cram();
+        stewie.talk();
+        stewie.die();      // Inherited method from Person (parent/super) class
+        stewie.talk();
+        // stewie.secret(); // you cannot call encapsulated methods!
         
         
         
