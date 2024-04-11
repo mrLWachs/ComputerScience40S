@@ -2,6 +2,7 @@
 package testing.cs42sap.tests;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 
 
@@ -18,18 +19,18 @@ public class PracticeTestsCS42SAP
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public PracticeTestsCS42SAP(boolean shouldRun) {
-        if (!shouldRun) {
+    public PracticeTestsCS42SAP(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 42SAP practice tests not running");
             return;
         }
         Simulator.title("Computer Science 42SAP practice tests");         
-        new PracticeTest1(shouldRun);   
-        new PracticeTest2(shouldRun);   
-        new PracticeTest3(!shouldRun); 
-        new PracticeTest4(!shouldRun);         
+        new PracticeTest1(state);   
+        new PracticeTest2(state);   
+        new PracticeTest3(Tester.DO_NOT_RUN); 
+        new PracticeTest4(Tester.DO_NOT_RUN);         
     }
 
 }

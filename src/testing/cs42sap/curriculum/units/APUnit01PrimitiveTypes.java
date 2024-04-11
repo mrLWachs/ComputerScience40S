@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -32,10 +33,10 @@ public class APUnit01PrimitiveTypes
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public APUnit01PrimitiveTypes(boolean shouldRun) {
-        if (!shouldRun) {
+    public APUnit01PrimitiveTypes(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP: Unit 1 (Primitive Types) not running");
             return;
         }

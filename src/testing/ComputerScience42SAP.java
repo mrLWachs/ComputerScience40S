@@ -23,16 +23,16 @@ public class ComputerScience42SAP
     /**
      * Default constructor for the class, sets class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public ComputerScience42SAP(boolean shouldRun) {
-        if (!shouldRun) {
+    public ComputerScience42SAP(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 42SAP course content not running");
             return;
         }
         Simulator.title("Computer Science 42SAP Course:");         
-        new CurriculumContentCS42SAP(shouldRun);
-        new PracticeTestsCS42SAP(shouldRun);
+        new CurriculumContentCS42SAP(state);
+        new PracticeTestsCS42SAP(state);
     }
     
 }

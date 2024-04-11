@@ -23,17 +23,17 @@ public class PrerequisiteContent
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public PrerequisiteContent(boolean shouldRun) {
-        if (!shouldRun) {
+    public PrerequisiteContent(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 42SAP Prerequisite content not running");
             return;
         }
         Simulator.title("Computer Science 42SAP Prerequisite Content:"); 
-        new ComputerScience20S(shouldRun);
-        new ComputerScience30S(shouldRun);
-        new ComputerScience40S(shouldRun);
+        new ComputerScience20S(Tester.RUN_SIMULATED);
+        new ComputerScience30S(state);
+        new ComputerScience40S(state);
     }
      
 }

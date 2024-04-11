@@ -2,6 +2,7 @@
 package testing.cs42sap.tests;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -18,10 +19,10 @@ public class PracticeTest4
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public PracticeTest4(boolean shouldRun) {
-        if (!shouldRun) {
+    public PracticeTest4(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP Practice Test 4 not running");
             return;
         }

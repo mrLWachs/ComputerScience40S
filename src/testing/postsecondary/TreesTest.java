@@ -3,6 +3,7 @@
 package testing.postsecondary;
 
 /** Required API imports */
+import testing.Tester;
 import utility.collections.BinaryTree;
 import utility.collections.LinkedList;
 import utility.collections.Queue;
@@ -26,10 +27,10 @@ public class TreesTest
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public TreesTest(boolean shouldRun) {
-        if (!shouldRun) {
+    public TreesTest(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Binary Trees Post Secondary Content not running");
             return;
         }

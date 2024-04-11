@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
 
@@ -29,10 +30,10 @@ public class APUnit03BooleanExpressionsAndIfStatements
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public APUnit03BooleanExpressionsAndIfStatements(boolean shouldRun) {
-        if (!shouldRun) {
+    public APUnit03BooleanExpressionsAndIfStatements(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP: Unit 3 (Boolean Expressions And If Statements) not running");
             return;
         }

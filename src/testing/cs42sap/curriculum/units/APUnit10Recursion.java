@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
  
@@ -27,10 +28,10 @@ public class APUnit10Recursion
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public APUnit10Recursion(boolean shouldRun) {
-        if (!shouldRun) {
+    public APUnit10Recursion(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP: Unit 10 (Recursion) not running");
             return;
         }

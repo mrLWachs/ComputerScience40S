@@ -3,6 +3,7 @@
 package testing.postsecondary;
 
 /** Required API imports */
+import testing.Tester;
 import utility.collections.LinkedList;
 import utility.io.Simulator;
 import utility.tools.Numbers;
@@ -24,10 +25,10 @@ public class SearchSortTest
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public SearchSortTest(boolean shouldRun) {
-        if (!shouldRun) {
+    public SearchSortTest(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Searching and Sorting Post Secondary Content not running");
             return;
         }

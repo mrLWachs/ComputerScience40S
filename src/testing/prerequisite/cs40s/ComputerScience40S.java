@@ -3,6 +3,7 @@
 package testing.prerequisite.cs40s;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 
 
@@ -27,12 +28,12 @@ public class ComputerScience40S
 {
 
     /**
-     * Default constructor for the class, sets class properties
+     * Default class constructor, runs on instantiation
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state state the run state of this code module
      */
-    public ComputerScience40S(boolean shouldRun) {
-        if (!shouldRun) {
+    public ComputerScience40S(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 40S course content not running");
             return;
         } 

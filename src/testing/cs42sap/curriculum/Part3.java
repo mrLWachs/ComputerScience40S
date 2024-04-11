@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import testing.cs42sap.curriculum.units.APUnit06Arrays;
 import testing.cs42sap.curriculum.units.APUnit082DArrays;
@@ -23,16 +24,16 @@ public class Part3
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public Part3(boolean shouldRun) {
-        if (!shouldRun) {
+    public Part3(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP curriculum - Part 3 not running");
             return;
         }
         Simulator.title("AP curriculum - Part 3");
-        new APUnit06Arrays(shouldRun);
-        new APUnit082DArrays(shouldRun);        
+        new APUnit06Arrays(state);
+        new APUnit082DArrays(state);        
     }
         
 }

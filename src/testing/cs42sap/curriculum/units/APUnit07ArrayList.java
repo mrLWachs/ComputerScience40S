@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum.units;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import utility.io.System;
  
@@ -29,10 +30,10 @@ public class APUnit07ArrayList
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public APUnit07ArrayList(boolean shouldRun) {
-        if (!shouldRun) {
+    public APUnit07ArrayList(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP: Unit 7 (Array List) not running");
             return;
         }

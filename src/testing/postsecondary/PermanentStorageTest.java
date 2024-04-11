@@ -15,6 +15,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import testing.Tester;
 import testing.prerequisite.cs40s.advancedclasses.Athlete;
 import utility.tools.Numbers;
 import utility.tools.Text;
@@ -52,10 +53,10 @@ public class PermanentStorageTest
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false
+     * @param state the run state of this code module
      */
-    public PermanentStorageTest(boolean shouldRun) {
-        if (!shouldRun) {
+    public PermanentStorageTest(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Permanent Storage Post Secondary Content not running");
             return;
         }

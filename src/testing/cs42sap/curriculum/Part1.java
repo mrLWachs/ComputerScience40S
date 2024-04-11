@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 import testing.cs42sap.curriculum.units.APUnit01PrimitiveTypes;
 import testing.cs42sap.curriculum.units.APUnit03BooleanExpressionsAndIfStatements;
@@ -25,17 +26,17 @@ public class Part1
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public Part1(boolean shouldRun) {
-        if (!shouldRun) {
+    public Part1(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("AP curriculum - Part 1 not running");
             return;
         }
         Simulator.title("AP curriculum - Part 1");
-        new APUnit01PrimitiveTypes(shouldRun);
-        new APUnit03BooleanExpressionsAndIfStatements(shouldRun);
-        new APUnit04Iteration(shouldRun);
+        new APUnit01PrimitiveTypes(state);
+        new APUnit03BooleanExpressionsAndIfStatements(state);
+        new APUnit04Iteration(state);
     }
         
 }

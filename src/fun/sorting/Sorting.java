@@ -10,6 +10,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
+import testing.Tester;
 
 /**
  * Sorting - a specific example to start learning sorting algorithms
@@ -26,10 +27,12 @@ public class Sorting
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public Sorting(boolean shouldRun) {
-        if (!shouldRun) return;
+    public Sorting(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            return;
+        }
         
         // Create a maximum number of people for our list object
         // Let's try 38.25 million people (38,250,000) which 

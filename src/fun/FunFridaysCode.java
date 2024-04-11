@@ -1,10 +1,14 @@
 /** Required package class namespace */
 package fun;
 
+/** Required API imports */
+import fun.datastructures.AdvancedDataStructures;
 import fun.files.Files;
 import fun.searching.Searching;
 import fun.sorting.Sorting;
 import fun.virus.Virus;
+import testing.Tester;
+import utility.io.Simulator;
 
 
 /**
@@ -16,25 +20,23 @@ import fun.virus.Virus;
 */
 public class FunFridaysCode
 {
-
-    public static final int NOT_RUN       = 0;
-    public static final int RUN_SIMULATED = 1;
-    public static final int RUN_NORMAL    = 2;
-    
     
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public FunFridaysCode(boolean shouldRun) {
-        if (!shouldRun) {
+    public FunFridaysCode(int state) {
+        if (state == Tester.DO_NOT_RUN) {
+            Simulator.note("Fun Friday (and Thursday) content not running");
             return;
         }
-        new Files(shouldRun);
-        new Virus(RUN_SIMULATED);
-        new Searching(shouldRun);
-        new Sorting(shouldRun);
+        Simulator.title("Fun Friday (and Thursday) Content:"); 
+        new Files(state);
+        new Virus(Tester.RUN_SIMULATED);
+        new Searching(state);
+        new Sorting(state);
+        new AdvancedDataStructures(state);
     }
 
 }

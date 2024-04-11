@@ -3,6 +3,7 @@
 package testing.postsecondary;
 
 /** Required API imports */
+import testing.Tester;
 import utility.collections.LinkedList;
 import utility.collections.Queue;
 import utility.collections.Stack;
@@ -24,10 +25,10 @@ public class StacksQueuesTest
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public StacksQueuesTest(boolean shouldRun) {
-        if (!shouldRun) {
+    public StacksQueuesTest(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Stacks and Queues Post Secondary Content not running");
             return;
         }

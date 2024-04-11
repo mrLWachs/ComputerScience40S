@@ -3,6 +3,7 @@
 package testing;
 
 /** Required API imports */
+import fun.FunFridaysCode;
 import utility.io.Simulator;
 
 
@@ -15,20 +16,32 @@ import utility.io.Simulator;
 public class Tester 
 {
 
+    public static final int DO_NOT_RUN    = 0;
+    public static final int RUN_SIMULATED = 1;
+    public static final int RUN_NORMAL    = 2;
+    
     /**
      * Default constructor for the class, sets class properties
-     * 
-     * @param shouldRun determines if this test should run (true) or not (false)
      */
-    public Tester(boolean shouldRun) {
-        if (!shouldRun) {
+    public Tester() {
+        this(RUN_NORMAL);
+    }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param state the run state of this code module
+     */
+    public Tester(int state) {
+        if (state == DO_NOT_RUN) {
             return;
         }
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PrerequisiteContent(shouldRun);        
-        new ComputerScience42SAP(shouldRun);        
-        new PostSecondaryContent(shouldRun);
+        new PrerequisiteContent(state);        
+        new ComputerScience42SAP(state);  
+        new FunFridaysCode(state);
+        new PostSecondaryContent(state);
         Simulator.saveOutput();
     }
     

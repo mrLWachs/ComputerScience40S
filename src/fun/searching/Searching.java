@@ -3,6 +3,7 @@ package fun.searching;
 
 /** Required API imports */
 import java.util.ArrayList;
+import testing.Tester;
 
 
 /*
@@ -18,10 +19,10 @@ public class Searching
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public Searching(boolean shouldRun) {
-        if (!shouldRun) {
+    public Searching(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             return;
         }
         // Array of item to search through

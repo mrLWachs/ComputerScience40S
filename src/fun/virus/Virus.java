@@ -3,7 +3,7 @@
 package fun.virus;
 
 /** Required API imports */
-import fun.FunFridaysCode;
+import testing.Tester;
 import utility.io.Simulator;
 
 
@@ -23,17 +23,17 @@ public class Virus extends javax.swing.JFrame
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun the method of running this code
+     * @param state the run state of this code module
      */
-    public Virus(int shouldRun) {
-        if (shouldRun == FunFridaysCode.NOT_RUN) {
+    public Virus(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             return;
         }
-        else if (shouldRun == FunFridaysCode.RUN_SIMULATED) {
+        else if (state == Tester.RUN_SIMULATED) {
             Simulator.showFrame(null,"Virus");
             return;
         }
-        else if (shouldRun == FunFridaysCode.RUN_NORMAL) {
+        else if (state == Tester.RUN_NORMAL) {
             initComponents();
             controller = new Controller(this);
             run(this);

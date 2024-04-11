@@ -3,7 +3,6 @@
 package testing;
 
 /** Required API imports */
-import fun.FunFridaysCode;
 import utility.io.Simulator;
 import testing.postsecondary.PermanentStorageTest;
 import testing.postsecondary.SearchSortTest;
@@ -26,19 +25,18 @@ public class PostSecondaryContent
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public PostSecondaryContent(boolean shouldRun) {
-        if (!shouldRun) {
+    public PostSecondaryContent(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 42SAP Post Secondary content not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP Post Secondary Content:");
-        new FunFridaysCode(shouldRun);
-        new PermanentStorageTest(shouldRun);
-        new StacksQueuesTest(shouldRun);
-        new SearchSortTest(shouldRun);   
-        new TreesTest(shouldRun);  
+        Simulator.title("Computer Science 42SAP Post Secondary Content:");        
+        new PermanentStorageTest(state);
+        new StacksQueuesTest(state);
+        new SearchSortTest(state);   
+        new TreesTest(state);  
     }
      
 }

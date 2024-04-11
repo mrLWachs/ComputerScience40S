@@ -3,6 +3,7 @@
 package testing.cs42sap.curriculum;
 
 /** Required API imports */
+import testing.Tester;
 import utility.io.Simulator;
 
  
@@ -19,18 +20,18 @@ public class CurriculumContentCS42SAP
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public CurriculumContentCS42SAP(boolean shouldRun) {
-        if (!shouldRun) {
+    public CurriculumContentCS42SAP(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 42SAP curriculum content not running");
             return;
         }
         Simulator.title("Computer Science 42SAP curriculum content");         
-        new Part1(shouldRun);
-        new Part2(shouldRun);
-        new Part3(shouldRun);
-        new Part4(shouldRun);
+        new Part1(state);
+        new Part2(state);
+        new Part3(state);
+        new Part4(state);
     }
     
 }

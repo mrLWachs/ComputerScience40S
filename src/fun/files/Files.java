@@ -8,6 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import testing.Tester;
 
 /**
  * Files - experimenting with saving and opening file (permanent storage)
@@ -21,10 +22,10 @@ public class Files
     /**
      * Default constructor, set class properties
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state the run state of this code module
      */
-    public Files(boolean shouldRun) {
-        if (!shouldRun) {
+    public Files(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             return;
         }
         

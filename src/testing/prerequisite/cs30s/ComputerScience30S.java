@@ -17,6 +17,7 @@ import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JTextArea;
+import testing.Tester;
 
  
 /**
@@ -39,10 +40,10 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
     /**
      * Default class constructor, runs on instantiation
      * 
-     * @param shouldRun determines if this test should run (true) or not (false)
+     * @param state state the run state of this code module
      */
-    public ComputerScience30S(boolean shouldRun) {
-        if (!shouldRun) {
+    public ComputerScience30S(int state) {
+        if (state == Tester.DO_NOT_RUN) {
             Simulator.note("Computer Science 30S course content not running");
             return;
         }

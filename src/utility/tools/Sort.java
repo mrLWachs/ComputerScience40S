@@ -17,7 +17,7 @@ import java.lang.reflect.Array;
  */
 public class Sort <T extends Comparable<T>> 
 {
-       
+        
     /**
      * A simple implementation of a bubble sort algorithm it will sort the 
      * array into ascending order
