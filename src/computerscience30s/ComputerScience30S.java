@@ -981,7 +981,8 @@ public class ComputerScience30S
         output(numbers);    // Call the method with a different argument
         output(coins);      // Overload the "output" method again
         
-        
+        int[] randoms = random(1,10,50);    // Overload "random" method
+        output(randoms);
         
         
         
@@ -1046,6 +1047,23 @@ public class ComputerScience30S
             a[i] = (int)array[i];             // Cast the double into a int
         }        
         return a;                             // Return the converted new array        
+    }
+
+    /**
+     * Generates an array of a set size filled with random integers in the 
+     * range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param size the size to make the array
+     * @return an array of random integers
+     */
+    private static int[] random(int low, int high, int size) {
+        int[] numbers = new int[size];      // Create empty array of passed size
+        for (int i = 0; i < size; i++) {    // Traverse array 
+            numbers[i] = random(low, high); // Assign random value to each index
+        }
+        return numbers;                     // Return completed array
     }
     
 }
