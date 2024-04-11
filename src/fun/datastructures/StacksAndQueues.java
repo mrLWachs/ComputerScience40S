@@ -4,6 +4,9 @@ package fun.datastructures;
  
 /** Required API imports */
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
+
 
 /**
  * StacksAndQueues.java - description
@@ -23,7 +26,8 @@ public class StacksAndQueues
         if (state == Tester.DO_NOT_RUN) {
             return;
         }
-        
+        Simulator.comment("Learn about advanced stacks and queues");
+        System.out.println("A version of a list structure");
     }
     
 }

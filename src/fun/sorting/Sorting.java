@@ -11,6 +11,8 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ArrayList;
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
 
 /**
  * Sorting - a specific example to start learning sorting algorithms
@@ -33,6 +35,8 @@ public class Sorting
         if (state == Tester.DO_NOT_RUN) {
             return;
         }
+        
+        Simulator.comment("Learn about sorting");
         
         // Create a maximum number of people for our list object
         // Let's try 38.25 million people (38,250,000) which 

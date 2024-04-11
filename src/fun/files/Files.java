@@ -9,6 +9,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
+
 
 /**
  * Files - experimenting with saving and opening file (permanent storage)
@@ -31,6 +34,7 @@ public class Files
         
         // To eventually do files, you also need to know about error handling 
         // or the "try catch block"
+        Simulator.comment("Learn about 'error traps'");
         
         try {
             // "tries" to run whatever code is in this block
@@ -52,6 +56,7 @@ public class Files
         // Now files...
                 
         // HOW TO WRITE "data" TO A FILE..................
+        Simulator.comment("Learn about reading and writing to files");
         
         String word = "Defenestration";
         

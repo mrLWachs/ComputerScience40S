@@ -4,6 +4,8 @@ package fun.datastructures;
 
 /** Required API imports */ 
 import testing.Tester;
+import utility.io.Simulator;
+
 
 /**
  * AdvancedDataStructures.java - these are a look at more advanced data 
@@ -25,6 +27,7 @@ public class AdvancedDataStructures
         if (state == Tester.DO_NOT_RUN) {
             return;
         }        
+        Simulator.comment("Learn about advanced data structures");
         new StacksAndQueues(state);
         new BinaryTrees(state);
         new HashTablesDictionariesGraphsAndMore(state);

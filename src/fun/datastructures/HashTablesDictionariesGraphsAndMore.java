@@ -4,6 +4,9 @@ package fun.datastructures;
  
 /** Required API imports */
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
+
 
 /**
  * HashTablesDictionariesGraphsAndMore.java - description
@@ -23,7 +26,8 @@ public class HashTablesDictionariesGraphsAndMore
         if (state == Tester.DO_NOT_RUN) {
             return;
         }
-        
+        Simulator.comment("Learn about more advanced data structures");
+        System.out.println("Hash tables, Dictionaries, Graphs, etc.");
     }
     
 }

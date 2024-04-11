@@ -4,6 +4,8 @@ package fun.searching;
 /** Required API imports */
 import java.util.ArrayList;
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
 
 
 /*
@@ -25,6 +27,9 @@ public class Searching
         if (state == Tester.DO_NOT_RUN) {
             return;
         }
+        
+        Simulator.comment("Learn about searching");
+        
         // Array of item to search through
         String[] array = {
             "Adam",

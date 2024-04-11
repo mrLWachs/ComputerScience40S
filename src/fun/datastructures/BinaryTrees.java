@@ -4,6 +4,9 @@ package fun.datastructures;
  
 /** Required API imports */
 import testing.Tester;
+import utility.io.Simulator;
+import utility.io.System;
+
 
 /**
  * BinaryTrees.java - description
@@ -23,7 +26,8 @@ public class BinaryTrees
         if (state == Tester.DO_NOT_RUN) {
             return;
         }
-        
+        Simulator.comment("Learn about binary trees");
+        System.out.println("Non-linear data structure");
     }
         
 }
