@@ -977,9 +977,9 @@ public class ComputerScience30S
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) or OUTPUT from a method
         
-        output(array);
-        
-        
+        output(array);      // Send a array to a method as a parameter
+        output(numbers);    // Call the method with a different argument
+        output(coins);      // Overload the "output" method again
         
         
         
@@ -1020,6 +1020,32 @@ public class ComputerScience30S
         }        
         text += "]";    // "+=" means the same as "text = text + ..."        
         output(text);           // Outputs it by calling an overloaded method
+    }
+
+    /**
+     * Convert all the doubles into integers and then output the array in a 
+     * dialog
+     * 
+     * @param array the array of doubles
+     */
+    private static void output(double[] array) {
+        int[] a = convert(array);   // Create int array of converted doubles        
+        output(a);                  // Now output the converted array
+    }
+
+    /**
+     * Converts an array of doubles into an array of integers
+     * 
+     * @param array the array of doubles
+     * @return an array of integers
+     */
+    private static int[] convert(double[] array) {
+        // Methods can return (output) entire arrays
+        int[] a = new int[array.length];      // Create empty array (same size)
+        for (int i = 0; i < a.length; i++) {  // Traverse the array
+            a[i] = (int)array[i];             // Cast the double into a int
+        }        
+        return a;                             // Return the converted new array        
     }
     
 }
