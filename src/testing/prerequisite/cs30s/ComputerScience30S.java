@@ -47,61 +47,70 @@ public class ComputerScience30S {        // Curly brackets DO NOT remove
             Simulator.note("Computer Science 30S course content not running");
             return;
         }
-        
-        Simulator.title("Computer Science 30S Course:");
-//        System.out.println("\nComputer Science 30S Example started...\n");
-        ////////////////////////////////////////////////////////////////////////
-        // Other code added later in the course to provide a menu of choices
-        // to the user to see which unit of examples...
-        // Present the user with options
-        final String[] OPTIONS = {
-            "See the example of learning basic Java code (unit 1)",
-            "See the example of methods (unit 2)",
-            "See the example of arrays (unit 3)",
-            "See the example of classes (unit 4)",
-            "See the example of graphics and user interfaces (bonus unit)",
-            "See all the examples (all units and bonus)"                
-        };
-        // Get the user's choice
-        String choice = JOptionPane.showInputDialog(
-                null,
-                "Select the unit to view examples of...",
-                "Computer Science with Mr. Wachs",
-                JOptionPane.PLAIN_MESSAGE,
-                null,
-                OPTIONS,
-                OPTIONS[0]).toString();
-        // Choose which to see
-        if      (choice.equals(OPTIONS[0])) learnIntroToJava();
-        else if (choice.equals(OPTIONS[1])) learnMethods();
-        else if (choice.equals(OPTIONS[2])) learnArrays();
-        else if (choice.equals(OPTIONS[3])) learnClasses();
-        else if (choice.equals(OPTIONS[4])) new LearnGraphics();  
-        else {
+        else if (state == Tester.RUN_SIMULATED) {
+            Simulator.title("Computer Science 30S Course:");
             learnIntroToJava();
             learnMethods();
             learnArrays();
             learnClasses();
-            new LearnGraphics();
-        }          
-        ////////////////////////////////////////////////////////////////////////
-        // Below is the original code (before the graphics unit) that we wrote 
-        // as we learned each unit before it was replaced with the code above
-        
-        // The line below "calls" a method (by its name) like making a 
-        // "phone call" it uses two round brackets "( )" like functions in
-        // math - when you see two round brackets, it is a clue that a 
-        // method is being called (or it is the method itself)
-//        learnIntroductionToJava();
-//        learnMethods();     // Calling another method (that may not yet exist)
-        // If you call upon a method that does not yet exist, NetBeans can help
-        // you create it (write it) by clicking on the lightbulb icon on the 
-        // left side of NetBeans...
-//        learnArrays();
-//        learnClasses();
-//        LearnGraphics learnGraphics = new LearnGraphics();
+            new LearnGraphics(state);
+        }
+        else if (state == Tester.RUN_NORMAL) {
+            Simulator.title("Computer Science 30S Course:");
+    //        System.out.println("\nComputer Science 30S Example started...\n");
+            ////////////////////////////////////////////////////////////////////////
+            // Other code added later in the course to provide a menu of choices
+            // to the user to see which unit of examples...
+            // Present the user with options
+            final String[] OPTIONS = {
+                "See the example of learning basic Java code (unit 1)",
+                "See the example of methods (unit 2)",
+                "See the example of arrays (unit 3)",
+                "See the example of classes (unit 4)",
+                "See the example of graphics and user interfaces (bonus unit)",
+                "See all the examples (all units and bonus)"                
+            };
+            // Get the user's choice
+            String choice = JOptionPane.showInputDialog(
+                    null,
+                    "Select the unit to view examples of...",
+                    "Computer Science with Mr. Wachs",
+                    JOptionPane.PLAIN_MESSAGE,
+                    null,
+                    OPTIONS,
+                    OPTIONS[0]).toString();
+            // Choose which to see
+            if      (choice.equals(OPTIONS[0])) learnIntroToJava();
+            else if (choice.equals(OPTIONS[1])) learnMethods();
+            else if (choice.equals(OPTIONS[2])) learnArrays();
+            else if (choice.equals(OPTIONS[3])) learnClasses();
+            else if (choice.equals(OPTIONS[4])) new LearnGraphics(state);
+            else {
+                learnIntroToJava();
+                learnMethods();
+                learnArrays();
+                learnClasses();
+                new LearnGraphics(state);
+            }          
+            ////////////////////////////////////////////////////////////////////////
+            // Below is the original code (before the graphics unit) that we wrote 
+            // as we learned each unit before it was replaced with the code above
 
-//        System.out.println("\nComputer Science 30S Example complete!\n");
+            // The line below "calls" a method (by its name) like making a 
+            // "phone call" it uses two round brackets "( )" like functions in
+            // math - when you see two round brackets, it is a clue that a 
+            // method is being called (or it is the method itself)
+    //        learnIntroductionToJava();
+    //        learnMethods();     // Calling another method (that may not yet exist)
+            // If you call upon a method that does not yet exist, NetBeans can help
+            // you create it (write it) by clicking on the lightbulb icon on the 
+            // left side of NetBeans...
+    //        learnArrays();
+    //        learnClasses();
+    //        LearnGraphics learnGraphics = new LearnGraphics();
+
+    //        System.out.println("\nComputer Science 30S Example complete!\n");
+        }
     }
 
     /**

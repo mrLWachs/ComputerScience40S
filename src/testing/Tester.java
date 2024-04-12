@@ -3,7 +3,6 @@
 package testing;
 
 /** Required API imports */
-import fun.FunFridaysCode;
 import utility.io.Simulator;
 
 
@@ -33,15 +32,12 @@ public class Tester
      * @param state the run state of this code module
      */
     public Tester(int state) {
-        if (state == DO_NOT_RUN) {
-            return;
-        }
+        if (state == DO_NOT_RUN) return;
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PrerequisiteContent(state); // DO_NOT_RUN); //state); //       
-        new ComputerScience42SAP(state);  
-        new FunFridaysCode(state); // DO_NOT_RUN); //state); //
-        new PostSecondaryContent(state); // DO_NOT_RUN); //state); //
+        new PrerequisiteContent(state);      
+        new ComputerScience42SAP(state); 
+        new PostSecondaryContent(state); 
         Simulator.saveOutput();
     }
     

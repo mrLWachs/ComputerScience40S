@@ -32,7 +32,7 @@ public class PrerequisiteContent
         }
         Simulator.title("Computer Science 42SAP Prerequisite Content:"); 
         new ComputerScience20S(Tester.RUN_SIMULATED);
-        new ComputerScience30S(state);
+        new ComputerScience30S(Tester.RUN_SIMULATED);
         new ComputerScience40S(state);
     }
      

@@ -37,7 +37,6 @@ public class ComputerScience40S
             Simulator.note("Computer Science 40S course content not running");
             return;
         } 
-        
         Simulator.title("Computer Science 40S Course:"); 
         RecursionTest       unit1 = new RecursionTest(); 
         AdvancedClassesTest unit2 = new AdvancedClassesTest(); 

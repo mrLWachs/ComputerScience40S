@@ -3,11 +3,9 @@
 package testing;
 
 /** Required API imports */
+import fun.FunFridaysCode;
+import testing.postsecondary.MorePostSecondaryContent;
 import utility.io.Simulator;
-import testing.postsecondary.PermanentStorageTest;
-import testing.postsecondary.SearchSortTest;
-import testing.postsecondary.StacksQueuesTest;
-import testing.postsecondary.TreesTest;
 
  
 /**
@@ -32,11 +30,9 @@ public class PostSecondaryContent
             Simulator.note("Computer Science 42SAP Post Secondary content not running");
             return;
         }
-        Simulator.title("Computer Science 42SAP Post Secondary Content:");        
-        new PermanentStorageTest(state);
-        new StacksQueuesTest(state);
-        new SearchSortTest(state);   
-        new TreesTest(state);  
+        Simulator.title("Computer Science 42SAP Post Secondary Content:");   
+        new FunFridaysCode(state); 
+        new MorePostSecondaryContent(state);  
     }
      
 }
