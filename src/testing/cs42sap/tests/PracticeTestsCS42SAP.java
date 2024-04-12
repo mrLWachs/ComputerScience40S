@@ -27,9 +27,9 @@ public class PracticeTestsCS42SAP
             return;
         }
         Simulator.title("Computer Science 42SAP practice tests");         
-        new PracticeTest1(state);   
-        new PracticeTest2(state);   
-        new PracticeTest3(Tester.DO_NOT_RUN); 
+        new PracticeTest1(state); // Tester.DO_NOT_RUN); //state); //   
+        new PracticeTest2(state); // Tester.DO_NOT_RUN); //state); //   
+        new PracticeTest3(state); 
         new PracticeTest4(Tester.DO_NOT_RUN);         
     }
 

@@ -38,10 +38,10 @@ public class Tester
         }
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PrerequisiteContent(state);        
+        new PrerequisiteContent(state); // DO_NOT_RUN); //state); //       
         new ComputerScience42SAP(state);  
-        new FunFridaysCode(state);
-        new PostSecondaryContent(state);
+        new FunFridaysCode(state); // DO_NOT_RUN); //state); //
+        new PostSecondaryContent(state); // DO_NOT_RUN); //state); //
         Simulator.saveOutput();
     }
     

@@ -72,12 +72,12 @@
 71:	answer4 = 125.0
 72:	answer5 = 3.0
 73:	answer6 = -0.6931471805599453
-74:	seed = 0.4248360370608344
+74:	seed = 0.11232954668573125
 75:	low    = 1.0
 76:	high   = 10.0
-77:	number = 5.248360370608344
-78:	value = 5
-79:	card is 19
+77:	number = 2.1232954668573125
+78:	value = 2
+79:	card is 32
 80:	equal
 81:	The example is less than
 82:	!=
@@ -335,7 +335,7 @@ They would like an easy w ... (line shortened) ...
 331:	Problems
 332:	Problems
 333:	Problems
-334:	Number is 5
+334:	Number is 3
 335:	~~~ SIMULATED {Message} DIALOG: Hello ~~~ 
 336:	~~~ SIMULATED {Message} DIALOG: Good-bye ~~~ { title: Learning Methods },
 337:	Completed Learning Methods!
@@ -545,12 +545,12 @@ They would like an easy w ... (line shortened) ...
 541:	~~~ SIMULATED {Message} DIALOG: [25,250,2,-25,0,] ~~~ 
 542:	~~~ SIMULATED {Message} DIALOG: [666,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 ... (line shortened) ...
 543:	~~~ SIMULATED {Message} DIALOG: [0,0,0,1,2,] ~~~ 
-544:	~~~ SIMULATED {Message} DIALOG: [4,2,5,9,8,3,10,7,9,9,10,1,6,5,4,1,10,9,4,3,4,8,10,5,3,5,7,4,5,7,3,8,4,9,2,6,8,6,6,2,3,7,1,6,2,7,6,4,5,7,] ~~~ 
-545:	Random character was b
-546:	} M $ * o V j W / ` N d \ ; 9 c w $ ^ \ / i A e f z # l K 5 
-9 M u N } ? K % " { s g w < l b S " z + ] = q , j j q p G Z 
-D [ c = H + i D J M + A J O k 3 M 5 ^ _ d M K u [ d : H P ) 
-& & ? i s E 4 ~ , ... (line shortened) ...
+544:	~~~ SIMULATED {Message} DIALOG: [5,2,5,4,4,7,2,4,5,8,1,9,2,3,3,1,9,4,3,1,5,6,3,6,6,1,1,5,9,3,5,6,1,7,6,4,4,9,7,10,2,6,5,5,4,5,8,3,7,2,] ~~~ 
+545:	Random character was 4
+546:	k : - r 8 $ Y > ! v g % i g ` Q e J _ 3 U L D ; e f 3 ` z b 
+x u ! \ w % z m # f 4 = ( A D D H j z k ` E 7 k u * Z B q o 
+x < ? w < } H 8 0 i ^ q < u Q f A { * c s G 7 % W @ m G ` O 
+Q i Z | 4 V I 3 k ... (line shortened) ...
 547:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 548:	~~~ SIMULATED {Message} DIALOG: javax.swing.JTextArea[,0,0,0x0,invalid,layout=javax.swing.plaf.basic.BasicTextUI$UpdateHandler,alignmentX=0.0,alignmentY=0.0,border=javax.swing.plaf.basic.BasicBorders$ ... (line shortened) ...
 549:	X O X 
@@ -2413,353 +2413,606 @@ X O X
 2393:	(E) x=3,y=5,z=5
 2394:	// Answer 10...
 2395:	B
-2396:	AP Practice Test 3 not running.............................................................
-2397:	AP Practice Test 4 not running.............................................................
-2398:	Fun Friday (and Thursday) Content:.........................................................
-2399:	// Learn about 'error traps'
-2400:	Caught ArrayIndexOutOfBoundsException
-2401:	// Learn about reading and writing to files
-2402:	Defenestration
-2403:	~~~ SIMULATED {GUI Frame} DIALOG: Virus ~~~ 
-2404:	// Learn about searching
-2405:	List/Array is: [Adam, Chylsy, Colton, Foxx, James, Lanze, Manskrit, Miles, Samantha, Scott, Tyler, Wachs]
-2406:	Found Wachs
-2407:	Linear Search array: Wachs was at 11
-2408:	Linear Search list: Wachs was at 11
-2409:	Binary Search array: Wachs was at 11
-2410:	Binary Search list: Wachs was at 11
-2411:	// Learn about sorting
-2412:	Sort by Name...............................
-2413:	Here are the first 5 people in the list...
-2414:	0: 	Aaliyah Bayer	3	0.19608410348493033
-2415:	1: 	Aaliyah Bayer	54	1.4592173167572025
-2416:	2: 	Aaliyah Bayer	63	3.1103950261096114
-2417:	3: 	Aaliyah Bayer	45	1.1727008324784864
-2418:	4: 	Aaliyah Bayer	63	3.3924225690890983
-2419:	Here are the last 5 people in the list...
-2420:	38249995: 	Zoie Stanfield	109	2.8413572628316475
-2421:	38249996: 	Zoie Stanfield	101	1.2385618596937458
-2422:	38249997: 	Zoie Stanfield	17	1.8231083528490843
-2423:	38249998: 	Zoie Stanfield	107	2.1484156532988656
-2424:	38249999: 	Zoie Stanfield	77	4.619048283101355
-2425:	Sort by Age...............................
-2426:	Here are the first 5 people in the list...
-2427:	0: 	Josh Garber	1	4.302965987700355
-2428:	1: 	Josh Garber	1	0.3030983493992273
-2429:	2: 	Josh Garber	1	0.49443561140088577
-2430:	3: 	Josh Garber	1	0.37827228291042125
-2431:	4: 	Josh Garber	1	4.640717088728043
-2432:	Here are the last 5 people in the list...
-2433:	38249995: 	Isha Jorgensen	120	1.8070739598344883
-2434:	38249996: 	Larissa Carden	120	2.6015183217079594
-2435:	38249997: 	Isha Jorgensen	120	1.8358898443183813
-2436:	38249998: 	Daryl Galvez	120	4.384935133620243
-2437:	38249999: 	Greyson Royal	120	3.0093276302629546
-2438:	Sort by IQ...............................
-2439:	Here are the first 5 people in the list...
-2440:	0: 	Dayne Burger	19	5.520585710794279E-8
-2441:	1: 	Delilah Montez	93	1.0959832041912421E-7
-2442:	2: 	Gaige Groff	13	2.0101050768328577E-7
-2443:	3: 	Mohamed McLaughlin	45	3.9092593495659855E-7
-2444:	4: 	Alton Barnard	20	5.820128440303662E-7
-2445:	Here are the last 5 people in the list...
-2446:	38249995: 	Caley Mixon	49	4.999999348686927
-2447:	38249996: 	Erick Guillory	56	4.999999682642674
-2448:	38249997: 	Jayden Colbert	48	4.999999708396444
-2449:	38249998: 	Ryleigh Legg	51	4.999999750664564
-2450:	38249999: 	Rory Harp	57	4.999999828044292
-2451:	// Learn about advanced data structures
-2452:	// Learn about advanced stacks and queues
-2453:	A version of a list structure
-2454:	// Learn about binary trees
-2455:	Non-linear data structure
-2456:	// Learn about more advanced data structures
-2457:	Hash tables, Dictionaries, Graphs, etc.
-2458:	Computer Science 42SAP Post Secondary Content:.............................................
-2459:	Permanent Storage Post Secondary Content:..................................................
-2460:	// Learn about 'error traps'
-2461:	Divide by zero -> java.lang.ArithmeticException: / by zero
-2462:	// Create sample data to use
-2463:	// Save ONE piece of data to that permanent file
-2464:	// Now involve the user to get a file name
-2465:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-2466:	File already exists!
-2467:	// Open file with one line (no user involvment)
-2468:	line read was Defenestration
-2469:	// Open file with multiple lines (user picks file)
-2470:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
-2471:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   +sr utility.collections.Node5�����2 ... (line shortened) ...
-2472:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
-2473:	This line read was q ~ pq ~ �
-2474:	// Class to save/open one line (no user)
-2475:	Before: Defenestration
-2476:	After : Defenestration
-2477:	// Class to save/open multiple lines (with user)
-2478:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-2479:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
-2480:	// Now save/open on a complex data type
-2481:	Before: Athlete: Husky: HighSchool: Student: Person
-2482:	After:  Athlete: Husky: HighSchool: Student: Person
-2483:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-2484:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
-2485:	Stacks and Queues Post Secondary Content:..................................................
-2486:	// Create objects for testing...
-2487:	// Create and Test a stack object...
-2488:	// Test toString, size, isEmpty, and push methods...
-2489:	Empty = true	Size = 0	Empty Stack
-2490:	// Loop through adding random values
-2491:	Empty = false	Size = 1	Stack top -> [bates] <- bottom
-2492:	Empty = false	Size = 2	Stack top -> [cooks,bates] <- bottom
-2493:	Empty = false	Size = 3	Stack top -> [atilt,cooks,bates] <- bottom
-2494:	Empty = false	Size = 4	Stack top -> [mezzo,atilt,cooks,bates] <- bottom
-2495:	Empty = false	Size = 5	Stack top -> [sills,mezzo,atilt,cooks,bates] <- bottom
-2496:	Empty = false	Size = 6	Stack top -> [peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2497:	Empty = false	Size = 7	Stack top -> [thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2498:	Empty = false	Size = 8	Stack top -> [Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2499:	Empty = false	Size = 9	Stack top -> [aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2500:	Empty = false	Size = 10	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2501:	// Test clone method...
-2502:	Clone stack: Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2503:	// Test equals method...
-2504:	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
+2396:	AP Practice Test 3.........................................................................
+2397:	// Section 1...
+2398:	For the next two Free response questions, 
+2399:	refer to the description below...
+2400:	A travel agency maintains a list of information 
+2401:	about airline flights. Flight information 
+2402:	includes a departure time and an arrival time.
+2403:	You may assume that the two times occur on the 
+2404:	same day. These times are represented by 
+2405:	objects of the Time class. The declaration for
+2406:	the Time class is shown below. It includes a 
+2407:	method which returns the difference (in minutes)
+2408:	between the current Time object and another Time
+2409:	object. 
+2410:	public class Time {
+2411:	     /** 
+2412:	      * @return difference, in minutes, between this
+2413:	      * time and other; difference is negative
+2414:	      * if other is earlier than this time
+2415:	      */
+2416:	     public int minutesUntil(Time other) {
+2417:	          /* implementation not shown */
+2418:	     }
+2419:	     // There may be instance variables, constructors,
+2420:	     // and methods that are not shown.
+2421:	}
+2422:	For example, assume that t1 and t2 are Time 
+2423:	objects where t1 represents 1:00 p.m. and t2 
+2424:	represents 2:15 p.m. The call t1.minutesUntil(t2) 
+2425:	will return 75 and the call t2.minutesUntil(t1) 
+2426:	will return -75. The declaration for the Flight class 
+2427:	is shown below. It has methods to access the 
+2428:	departure time and the arrival time of a flight. 
+2429:	You may assume that the departure time of a 
+2430:	flight is earlier than its arrival time.
+2431:	public class Flight {
+2432:	      /** @return time at which the flight departs */
+2433:	      public Time getDepartureTime() {
+2434:	           /* implementation not shown */ 
+2435:	      }
+2436:	      /** @return time at which the flight arrives */
+2437:	      public Time getArrivalTime() {
+2438:	           /* implementation not shown */ 
+2439:	      }
+2440:	      // There may be instance variables, constructors, 
+2441:	      // and methods that are not shown.
+2442:	}
+2443:	A trip consists of a sequence of flights and is 
+2444:	represented by the Trip class. The Trip class 
+2445:	contains a List of Flight objects that are stored 
+2446:	in chronological order. You may assume that for 
+2447:	each flight after the first flight in the list, 
+2448:	the departure time of the flight is later than 
+2449:	the arrival time of the preceding flight in the 
+2450:	list. A partial declaration of the Trip class is 
+2451:	shown below. You will write two methods for the 
+2452:	Trip class.
+2453:	public class Trip {
+2454:	     /** 
+2455:	       * The list of flights (if any) that make up 
+2456:	       * this trip, stored in chronological order
+2457:	       */
+2458:	     private List<Flight> flights;
+2459:	     /** 
+2460:	       * @return the number of minutes from the 
+2461:	       * departure of the first flight to the arrival 
+2462:	       * of the last flight if there are one or more 
+2463:	       * flights in the trip; 0, if there are no 
+2464:	       * flights in the trip
+2465:	       */
+2466:	     public int getDuration() {
+2467:	          /* to be implemented in part (a) */ 
+2468:	     }
+2469:	     /** 
+2470:	       * Precondition: the departure time for each 
+2471:	       * flight is later than the arrival time of its 
+2472:	       * preceding flight
+2473:	       * @return the smallest number of minutes 
+2474:	       * between the arrival of a flight and the 
+2475:	       * departure of the flight immediately after it, 
+2476:	       * if there are two or more flights in the 
+2477:	       * trip; -1, if there are fewer than two flights 
+2478:	       * in the trip
+2479:	       */
+2480:	     public int getShortestLayover() {
+2481:	          /* to be implemented in part (b) */
+2482:	     }
+2483:	       // There may be instance variables, constructors,
+2484:	       // and methods that are not shown
+2485:	}
+2486:	// Question 1...
+2487:	Complete method getDuration below.  
+2488:	// An answer could be...
+2489:	public int getDuration() {
+2490:	    int totalDuration = 0;
+2491:	    for (Flight flight : flights) {
+2492:	        Time departure = flight.getDepartureTime();
+2493:	        Time arrival   = flight.getArrivalTime();
+2494:	        int  duration  = departure.minutesUntil(arrival);
+2495:	        totalDuration  = totalDuration + duration;
+2496:	    }
+2497:	    return totalDuration;
+2498:	}
+2499:	// Question 2...
+2500:	Write the Trip method getShortestLayover. A 
+2501:	layover is the number of minutes from the arrival 
+2502:	of one flight in a trip to the departure of the 
+2503:	flight immediately after it. If there are two or 
+2504:	more flights in the trip, the method should return 
+2505:	the shortest layover of the trip; otherwise, it 
+2506:	should return -1. For example, assume that the 
+2507:	instance variable flights of a Trip object vacation 
+2508:	contains the following flight information.
+2509:	          Departure   Arrival   Layover
+2510:	            Time      Time     (minutes)
+2511:	         +---------+----------+
+2512:	Flight 0 | 11:30am |  12:15pm |
+2513:	         +---------+----------+ }  60
+2514:	Flight 1 |  1:15pm |   3:45pm |
+2515:	         +---------+----------+ }  15
+2516:	Flight 2 |  4:00pm |   6:45pm |
+2517:	         +---------+----------+ }  210
+2518:	Flight 3 | 10:15pm |  11:00pm |
+2519:	         +---------+----------+
+2520:	The call vacation.getShortestLayover() should 
+2521:	return 15. Complete method getShortestLayover() 
+2522:	below.
+2523:	public int getShortestLayover()
+2524:	// An answer could be...
+2525:	public int getShortestLayover() {
+2526:	    if (flights.isEmpty()) return -1;
+2527:	    int shortestLayover = Integer.MAX_VALUE;
+2528:	    int i = 0;
+2529:	    while (i < flights.size()) {
+2530:	        Flight currentFlight = flights.get(i);
+2531:	        i++;
+2532:	        Flight nextFlight    = flights.get(i);
+2533:	        Time arrival         = currentFlight.getArrivalTime();
+2534:	        Time departure       = nextFlight.getDepartureTime();
+2535:	        int layover = Math.abs(arrival.minutesUntil(departure));
+2536:	        if (layover < shortestLayover) {
+2537:	            shortestLayover = layover;
+2538:	        }
+2539:	        i++;
+2540:	    }
+2541:	    return shortestLayover;
+2542:	}
+2543:	// Section 1...
+2544:	For the next three Free response questions, refer 
+2545:	to the description below...
+2546:	Consider the hierarchy of classes shown in the 
+2547:	following diagram
+2548:	         +----------+ 
+2549:	         |    Pet   |
+2550:	         +----------+
+2551:	            /    \
+2552:	 +----------+    +----------+
+2553:	 |    Cat   |    |    Dog   |
+2554:	 +----------+    +----------+
+2555:	                       \
+2556:	                       +----------+
+2557:	                       | Loud Dog |
+2558:	                       +----------+
+2559:	Note that a Cat 'is-a' Pet, a Dog 'is-a' Pet, and 
+2560:	a LoudDog 'is-a' Dog. The class Pet is specified 
+2561:	as an abstract class as shown in the following 
+2562:	declaration. Each Pet has a name that is 
+2563:	specified when it is constructed.
+2564:	public abstract class Pet {
+2565:	    private String name;
+2566:	    public Pet(String petName) {
+2567:	        name = petName;
+2568:	    }
+2569:	    public String getName() {
+2570:	        return name;
+2571:	    }
+2572:	    public abstract String speak();
+2573:	}
+2574:	The subclass Dog has the partial class 
+2575:	declaration shown below.
+2576:	public class Dog extends Pet {
+2577:	    public Dog(String petName) {
+2578:	        /* implementation not shown */
+2579:	    }
+2580:	    public String speak() {
+2581:	        /* implementation not shown */
+2582:	    }
+2583:	}
+2584:	// Question 3...
+2585:	Given the class hierarchy shown above, write a 
+2586:	complete class declaration for the class Cat, 
+2587:	including implementations of its constructor 
+2588:	and method(s). The Cat method speak returns 
+2589:	'meow' when it is invoked.
+2590:	// An answer could be...
+2591:	public class Cat extends Pet {
+2592:	    public Cat(String petName) {
+2593:	        super(petName);
+2594:	    }
+2595:	    public String speak() {
+2596:	        return "meow";
+2597:	    }
+2598:	}
+2599:	// Question 4...
+2600:	Assume that class Dog has been declared as shown 
+2601:	at the beginning of the question. If the String 
+2602:	dog-sound is returned by the Dog method speak, 
+2603:	then the LoudDog method method speak returns a 
+2604:	String containing dog-sound repeated two times. 
+2605:	Given the class hierarchy shown previously, 
+2606:	write a complete class declaration for the class 
+2607:	LoudDog including implementations of its 
+2608:	constructor and method(s).
+2609:	// An answer could be...
+2610:	public class LoudDog extends Dog {
+2611:	    public LoudDog(String petName) {
+2612:	        super(petName);
+2613:	    }
+2614:	    public String speak() {
+2615:	        return super.speak() + super.speak();
+2616:	    }
+2617:	}
+2618:	// Question 5...
+2619:	Consider the following partial declaration of 
+2620:	class Kennel
+2621:	public class Kennel {
+2622:	    private ArrayList<Pet> petList;
+2623:	     /**
+2624:	      * For every Pet in the kennel, prints the name 
+2625:	      * followed by the result of a call to its speak 
+2626:	      * method, one line per Pet
+2627:	      */
+2628:	     public void allSpeak() {
+2629:	        /* to be implemented */
+2630:	     }
+2631:	     // There may be instance variables, constructors, 
+2632:	     // and methods that are not shown
+2633:	}
+2634:	Write the Kennel method allSpeak For each Pet in 
+2635:	the kennel, allSpeak prints a line with the name 
+2636:	of the Pet followed by the result of a call to 
+2637:	its speak method. In writing allSpeak you may use 
+2638:	any of the methods defined for any of the classes 
+2639:	specified for this problem. Assume that these 
+2640:	methods work as specified, regardless of what 
+2641:	you wrote in previous questions. Complete method
+2642:	allSpeak below
+2643:	public void allSpeak()
+2644:	// An answer could be...
+2645:	public void allSpeak() {
+2646:	    for (Pet pet : petList) {
+2647:	        System.out.println(pet.getName() + pet.speak());
+2648:	    }
+2649:	}
+2650:	AP Practice Test 4 not running.............................................................
+2651:	Fun Friday (and Thursday) Content:.........................................................
+2652:	// Learn about 'error traps'
+2653:	Caught ArrayIndexOutOfBoundsException
+2654:	// Learn about reading and writing to files
+2655:	Defenestration
+2656:	~~~ SIMULATED {GUI Frame} DIALOG: Virus ~~~ 
+2657:	// Learn about searching
+2658:	List/Array is: [Adam, Chylsy, Colton, Foxx, James, Lanze, Manskrit, Miles, Samantha, Scott, Tyler, Wachs]
+2659:	Found Wachs
+2660:	Linear Search array: Wachs was at 11
+2661:	Linear Search list: Wachs was at 11
+2662:	Binary Search array: Wachs was at 11
+2663:	Binary Search list: Wachs was at 11
+2664:	// Learn about sorting
+2665:	Sort by Name...............................
+2666:	Here are the first 5 people in the list...
+2667:	0: 	Aaliyah Bayer	35	1.1891614772865662
+2668:	1: 	Aaliyah Bayer	47	1.658463119894804
+2669:	2: 	Aaliyah Bayer	13	2.924374402127656
+2670:	3: 	Aaliyah Bayer	51	1.4570183922409612
+2671:	4: 	Aaliyah Bayer	38	1.8498568135968623
+2672:	Here are the last 5 people in the list...
+2673:	38249995: 	Zoie Stanfield	34	1.206217238748795
+2674:	38249996: 	Zoie Stanfield	95	4.036476953213199
+2675:	38249997: 	Zoie Stanfield	17	2.926941324073555
+2676:	38249998: 	Zoie Stanfield	13	4.8244693772339025
+2677:	38249999: 	Zoie Stanfield	31	0.8526470538954878
+2678:	Sort by Age...............................
+2679:	Here are the first 5 people in the list...
+2680:	0: 	Abril Klein	1	2.4291298670952868
+2681:	1: 	Vaughn Hadley	1	3.5968673282925505
+2682:	2: 	Cielo Ceja	1	2.138754101278579
+2683:	3: 	Tea Swope	1	1.223432522598139
+2684:	4: 	Mikaila Cruse	1	4.913133922255
+2685:	Here are the last 5 people in the list...
+2686:	38249995: 	Leigh Wetzel	120	0.6789537509176452
+2687:	38249996: 	Xochitl Loya	120	0.8774764054593143
+2688:	38249997: 	Nelly Skinner	120	1.6416309770617499
+2689:	38249998: 	Harry Meehan	120	3.6094069669894893
+2690:	38249999: 	Bryce Hollis	120	4.425480500961875
+2691:	Sort by IQ...............................
+2692:	Here are the first 5 people in the list...
+2693:	0: 	Autumn Ricketts	107	5.945834491427604E-8
+2694:	1: 	Tariq Merchant	82	2.783267571970782E-7
+2695:	2: 	Carolina Delacruz	66	4.276270759717704E-7
+2696:	3: 	Anton Tabor	59	5.153677645752808E-7
+2697:	4: 	Adrianna Breeden	46	5.250651674559847E-7
+2698:	Here are the last 5 people in the list...
+2699:	38249995: 	Janice Atwell	23	4.999999523139669
+2700:	38249996: 	Davin Cope	43	4.9999995937401485
+2701:	38249997: 	Cale Gaytan	83	4.999999702559747
+2702:	38249998: 	Shamya Boles	22	4.9999997719969835
+2703:	38249999: 	Allen Dick	37	4.999999981058699
+2704:	// Learn about advanced data structures
+2705:	// Learn about advanced stacks and queues
+2706:	A version of a list structure
+2707:	// Learn about binary trees
+2708:	Non-linear data structure
+2709:	// Learn about more advanced data structures
+2710:	Hash tables, Dictionaries, Graphs, etc.
+2711:	Computer Science 42SAP Post Secondary Content:.............................................
+2712:	Permanent Storage Post Secondary Content:..................................................
+2713:	// Learn about 'error traps'
+2714:	Divide by zero -> java.lang.ArithmeticException: / by zero
+2715:	// Create sample data to use
+2716:	// Save ONE piece of data to that permanent file
+2717:	// Now involve the user to get a file name
+2718:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+2719:	File already exists!
+2720:	// Open file with one line (no user involvment)
+2721:	line read was Defenestration
+2722:	// Open file with multiple lines (user picks file)
+2723:	~~~ SIMULATED {File Chooser} DIALOG: null ~~~ 
+2724:	This line read was �� sr utility.collections.LinkedList�̉-�� I 	NOT_FOUNDI lengthI longestWordL headt Lutility/collections/Node;L tailq ~ xp����   d   +sr utility.collections.Node5�����2 ... (line shortened) ...
+2725:	This line read was opponentScoreL opponentNamet Ljava/lang/String;xp           t  sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~ 	sq ~ sq ~            q ~  ... (line shortened) ...
+2726:	This line read was q ~ pq ~ �
+2727:	// Class to save/open one line (no user)
+2728:	Before: Defenestration
+2729:	After : Defenestration
+2730:	// Class to save/open multiple lines (with user)
+2731:	Before: [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+2732:	After:  [I look at my watch for the hour,But I find it has run out of power,I yell out Oh No!,I have got to go!,For I fear that the milk has gone sour]
+2733:	// Now save/open on a complex data type
+2734:	Before: Athlete: Husky: HighSchool: Student: Person
+2735:	After:  Athlete: Husky: HighSchool: Student: Person
+2736:	Before: Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+2737:	After:  Linked List 	[Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,Athlete: Husky: HighSchool: Student: Person,At ... (line shortened) ...
+2738:	Stacks and Queues Post Secondary Content:..................................................
+2739:	// Create objects for testing...
+2740:	// Create and Test a stack object...
+2741:	// Test toString, size, isEmpty, and push methods...
+2742:	Empty = true	Size = 0	Empty Stack
+2743:	// Loop through adding random values
+2744:	Empty = false	Size = 1	Stack top -> [ninth] <- bottom
+2745:	Empty = false	Size = 2	Stack top -> [skoal,ninth] <- bottom
+2746:	Empty = false	Size = 3	Stack top -> [sport,skoal,ninth] <- bottom
+2747:	Empty = false	Size = 4	Stack top -> [occur,sport,skoal,ninth] <- bottom
+2748:	Empty = false	Size = 5	Stack top -> [hoops,occur,sport,skoal,ninth] <- bottom
+2749:	Empty = false	Size = 6	Stack top -> [Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2750:	Empty = false	Size = 7	Stack top -> [leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2751:	Empty = false	Size = 8	Stack top -> [ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2752:	Empty = false	Size = 9	Stack top -> [paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2753:	Empty = false	Size = 10	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2754:	// Test clone method...
+2755:	Clone stack: Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2756:	// Test equals method...
+2757:	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
 ==
-Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2505:	// Now change the copy
-2506:	// Now check again
-2507:	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
+Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2758:	// Now change the copy
+2759:	// Now check again
+2760:	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
 !=
-Stack top -> [loams] <- bottom
-2508:	// Re-clone the stack, and output
-2509:	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2510:	// Text the pop method...
-2511:	Clone stack:	Empty = false	Size = 10	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2512:	// Loop through removing values
-2513:	Popped -> flags	Empty = false	Size = 9	Stack top -> [aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2514:	Popped -> aptly	Empty = false	Size = 8	Stack top -> [Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2515:	Popped -> Kleon	Empty = false	Size = 7	Stack top -> [thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2516:	Popped -> thrum	Empty = false	Size = 6	Stack top -> [peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2517:	Popped -> peers	Empty = false	Size = 5	Stack top -> [sills,mezzo,atilt,cooks,bates] <- bottom
-2518:	Popped -> sills	Empty = false	Size = 4	Stack top -> [mezzo,atilt,cooks,bates] <- bottom
-2519:	Popped -> mezzo	Empty = false	Size = 3	Stack top -> [atilt,cooks,bates] <- bottom
-2520:	Popped -> atilt	Empty = false	Size = 2	Stack top -> [cooks,bates] <- bottom
-2521:	Popped -> cooks	Empty = false	Size = 1	Stack top -> [bates] <- bottom
-2522:	Popped -> bates	Empty = true	Size = 0	Empty Stack
-2523:	Popped -> null	Empty = true	Size = 0	Empty Stack
-2524:	// Test peek (top is wrapper no testing needed)...
-2525:	Clone Top = null
-2526:	Stack Top = flags
-2527:	// Test to array and to linked list...
-2528:	Linked List 	[flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates]
-2529:	Array   	[flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates]
-2530:	// Test our constructors...
-2531:	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2532:	Stack top -> [flags,aptly,Kleon,thrum,peers,sills,mezzo,atilt,cooks,bates] <- bottom
-2533:	// Test the Queue object...
-2534:	// Test toString,size,isEmpty, and enqueue methods...
-2535:	Empty = true	Size = 0	Empty Queue
-2536:	// Loop through adding random values
-2537:	Empty = false	Size = 1	Queue back -> [Lhasa] <- front
-2538:	Empty = false	Size = 2	Queue back -> [funks,Lhasa] <- front
-2539:	Empty = false	Size = 3	Queue back -> [sleek,funks,Lhasa] <- front
-2540:	Empty = false	Size = 4	Queue back -> [Boise,sleek,funks,Lhasa] <- front
-2541:	Empty = false	Size = 5	Queue back -> [Lille,Boise,sleek,funks,Lhasa] <- front
-2542:	Empty = false	Size = 6	Queue back -> [raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2543:	Empty = false	Size = 7	Queue back -> [Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2544:	Empty = false	Size = 8	Queue back -> [axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2545:	Empty = false	Size = 9	Queue back -> [debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2546:	Empty = false	Size = 10	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2547:	// Test clone method...
-2548:	Clone Queue 			Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2549:	// Test equals method...
-2550:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
+Stack top -> [Viola] <- bottom
+2761:	// Re-clone the stack, and output
+2762:	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2763:	// Text the pop method...
+2764:	Clone stack:	Empty = false	Size = 10	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2765:	// Loop through removing values
+2766:	Popped -> finer	Empty = false	Size = 9	Stack top -> [paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2767:	Popped -> paver	Empty = false	Size = 8	Stack top -> [ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2768:	Popped -> ended	Empty = false	Size = 7	Stack top -> [leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2769:	Popped -> leash	Empty = false	Size = 6	Stack top -> [Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2770:	Popped -> Keefe	Empty = false	Size = 5	Stack top -> [hoops,occur,sport,skoal,ninth] <- bottom
+2771:	Popped -> hoops	Empty = false	Size = 4	Stack top -> [occur,sport,skoal,ninth] <- bottom
+2772:	Popped -> occur	Empty = false	Size = 3	Stack top -> [sport,skoal,ninth] <- bottom
+2773:	Popped -> sport	Empty = false	Size = 2	Stack top -> [skoal,ninth] <- bottom
+2774:	Popped -> skoal	Empty = false	Size = 1	Stack top -> [ninth] <- bottom
+2775:	Popped -> ninth	Empty = true	Size = 0	Empty Stack
+2776:	Popped -> null	Empty = true	Size = 0	Empty Stack
+2777:	// Test peek (top is wrapper no testing needed)...
+2778:	Clone Top = null
+2779:	Stack Top = finer
+2780:	// Test to array and to linked list...
+2781:	Linked List 	[finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth]
+2782:	Array   	[finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth]
+2783:	// Test our constructors...
+2784:	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2785:	Stack top -> [finer,paver,ended,leash,Keefe,hoops,occur,sport,skoal,ninth] <- bottom
+2786:	// Test the Queue object...
+2787:	// Test toString,size,isEmpty, and enqueue methods...
+2788:	Empty = true	Size = 0	Empty Queue
+2789:	// Loop through adding random values
+2790:	Empty = false	Size = 1	Queue back -> [Kelci] <- front
+2791:	Empty = false	Size = 2	Queue back -> [gamer,Kelci] <- front
+2792:	Empty = false	Size = 3	Queue back -> [Payne,gamer,Kelci] <- front
+2793:	Empty = false	Size = 4	Queue back -> [tongs,Payne,gamer,Kelci] <- front
+2794:	Empty = false	Size = 5	Queue back -> [holey,tongs,Payne,gamer,Kelci] <- front
+2795:	Empty = false	Size = 6	Queue back -> [Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2796:	Empty = false	Size = 7	Queue back -> [manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2797:	Empty = false	Size = 8	Queue back -> [Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2798:	Empty = false	Size = 9	Queue back -> [cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2799:	Empty = false	Size = 10	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2800:	// Test clone method...
+2801:	Clone Queue 			Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2802:	// Test equals method...
+2803:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
 ==
-Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2551:	// Now change the duplicate
-2552:	// Now check again
-2553:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
+Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2804:	// Now change the duplicate
+2805:	// Now check again
+2806:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
 ==
-Queue back -> [beery] <- front
-2554:	// Re-clone the queue, and output
-2555:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2556:	// Test the dequeue method...
-2557:	Clone queue:	Empty = false	Size = 10	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2558:	// Loop through removing values
-2559:	Dequeued -> Lhasa	Empty = false	Size = 9	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks] <- front
-2560:	Dequeued -> funks	Empty = false	Size = 8	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek] <- front
-2561:	Dequeued -> sleek	Empty = false	Size = 7	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise] <- front
-2562:	Dequeued -> Boise	Empty = false	Size = 6	Queue back -> [Lesya,debts,axers,Croat,raven,Lille] <- front
-2563:	Dequeued -> Lille	Empty = false	Size = 5	Queue back -> [Lesya,debts,axers,Croat,raven] <- front
-2564:	Dequeued -> raven	Empty = false	Size = 4	Queue back -> [Lesya,debts,axers,Croat] <- front
-2565:	Dequeued -> Croat	Empty = false	Size = 3	Queue back -> [Lesya,debts,axers] <- front
-2566:	Dequeued -> axers	Empty = false	Size = 2	Queue back -> [Lesya,debts] <- front
-2567:	Dequeued -> debts	Empty = false	Size = 1	Queue back -> [Lesya] <- front
-2568:	Dequeued -> Lesya	Empty = true	Size = 0	Empty Queue
-2569:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
-2570:	// Test front and back...
-2571:	Clone Front = null
-2572:	Queue Front = Lhasa
-2573:	Clone Back  = null
-2574:	Queue Back  = Lesya
-2575:	// Test to array and to linked list...
-2576:	Linked List 	[Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa]
-2577:	Array   	[Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa]
-2578:	// Test our constructors...
-2579:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2580:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2581:	// Constructors from stack to queue (and back)...
-2582:	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front	 into 	Stack top -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- bottom
-2583:	Stack top -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- bottom	 into 	Queue back -> [Lesya,debts,axers,Croat,raven,Lille,Boise,sleek,funks,Lhasa] <- front
-2584:	Searching and Sorting Post Secondary Content:..............................................
-2585:	// For the I.B. Exam, you only need to know:
-2586:	// Search: linear search and binary search
-2587:	// Sort: bubble sort and the selection sort
-2588:	// Create some constants (edges) for the data
-2589:	// Create some random data to search through and sort
-2590:	// Including edge cases to test
-2591:	// Create data to store the results...
-2592:	// The simpliest of searches
-2593:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2594:	// Now the linear search on all test data
-2595:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2596:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2597:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2598:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2599:	Array [2,7,19,41,46,99,31,8,47,27,35,36,30,54,33,19,43,24,61,76,11,94,49,24,15,6,66,80,32,42,53,54,44,67,75,59,27,35,98,80,36,95,77,50,58,92,6,8,75,91,76,77,11,21,20,98,17,54,18,85,61,68,48,66,58,89,6 ... (line shortened) ...
-2600:	// Simple sort...
-2601:	Sorted Array: 	[2,4,6,6,7,8,8,10,11,11,13,14,15,15,17,17,17,18,19,19,20,21,24,24,27,27,27,29,30,31,32,33,34,35,35,36,36,41,41,42,43,44,46,47,47,48,49,50,53,53,54,54,54,55,56,57,58,58,58,59,60,61,61,62 ... (line shortened) ...
-2602:	// We will re-scramble array for further testing
-2603:	Sorted Array: 	[94,68,98,71,43,12,89,43,75,4,95,2,55,78,58,79,57,16,53,38,47,98,0,7,88,83,63,27,8,3,79,45,47,67,66,19,98,95,6,29,61,75,88,50,75,28,50,9,70,40,22,68,91,45,16,78,30,11,68,67,61,8,62,27,1 ... (line shortened) ...
-2604:	// Now bubble sort (from bubbles rising from water)
-2605:	Original Array 	[94,68,98,71,43,12,89,43,75,4,95,2,55,78,58,79,57,16,53,38,47,98,0,7,88,83,63,27,8,3,79,45,47,67,66,19,98,95,6,29,61,75,88,50,75,28,50,9,70,40,22,68,91,45,16,78,30,11,68,67,61,8,62,27, ... (line shortened) ...
-2606:	// Now selection sort (from selecting the smallest)
-2607:	Original Array 	[94,68,98,71,43,12,89,43,75,4,95,2,55,78,58,79,57,16,53,38,47,98,0,7,88,83,63,27,8,3,79,45,47,67,66,19,98,95,6,29,61,75,88,50,75,28,50,9,70,40,22,68,91,45,16,78,30,11,68,67,61,8,62,27, ... (line shortened) ...
-2608:	// Now binary search (named after two or dividing)
-2609:	// NOTE: binary search can only happen on sorted list
-2610:	// Redo some of the test data...
-2611:	Array [0,0,2,3,4,4,6,7,8,8,9,10,11,11,12,12,15,15,16,16,19,20,22,27,27,27,28,29,30,30,33,33,36,38,38,38,40,43,43,44,44,45,45,46,47,47,47,48,49,50,50,50,51,53,55,55,55,57,57,58,59,61,61,62,62,63,63,64, ... (line shortened) ...
-2612:	Array [0,0,2,3,4,4,6,7,8,8,9,10,11,11,12,12,15,15,16,16,19,20,22,27,27,27,28,29,30,30,33,33,36,38,38,38,40,43,43,44,44,45,45,46,47,47,47,48,49,50,50,50,51,53,55,55,55,57,57,58,59,61,61,62,62,63,63,64, ... (line shortened) ...
-2613:	Array [0,0,2,3,4,4,6,7,8,8,9,10,11,11,12,12,15,15,16,16,19,20,22,27,27,27,28,29,30,30,33,33,36,38,38,38,40,43,43,44,44,45,45,46,47,47,47,48,49,50,50,50,51,53,55,55,55,57,57,58,59,61,61,62,62,63,63,64, ... (line shortened) ...
-2614:	Array [0,0,2,3,4,4,6,7,8,8,9,10,11,11,12,12,15,15,16,16,19,20,22,27,27,27,28,29,30,30,33,33,36,38,38,38,40,43,43,44,44,45,45,46,47,47,47,48,49,50,50,50,51,53,55,55,55,57,57,58,59,61,61,62,62,63,63,64, ... (line shortened) ...
-2615:	Array [0,0,2,3,4,4,6,7,8,8,9,10,11,11,12,12,15,15,16,16,19,20,22,27,27,27,28,29,30,30,33,33,36,38,38,38,40,43,43,44,44,45,45,46,47,47,47,48,49,50,50,50,51,53,55,55,55,57,57,58,59,61,61,62,62,63,63,64, ... (line shortened) ...
-2616:	// Use class for searching and sorting
-2617:	// Create random linked list data
-2618:	// Create random array data
-2619:	// Place all test cases into another linked list
-2620:	// Execute the linear search on all list test data...
-2621:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2622:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2623:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2624:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2625:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2626:	// Execute the linear search on all array test data...
-2627:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2628:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2629:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2630:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2631:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2632:	// Execute all the sorts on all test data...
-2633:	// Bubble sort LinkedList data...
-2634:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2635:	// Bubble sort array data...
-2636:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2637:	// Selection sort LinkedList data...
-2638:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2639:	// Selection sort array data...
-2640:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2641:	// Shell sort LinkedList data...
-2642:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2643:	// Shell sort array data...
-2644:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2645:	// Insertion sort LinkedList data...
-2646:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2647:	// Insertion sort array data...
-2648:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2649:	// Quick sort LinkedList data...
-2650:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2651:	// Quick sort array data...
-2652:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2653:	// Merge sort LinkedList data...
-2654:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2655:	// Merge sort array data...
-2656:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2657:	// Heap sort LinkedList data...
-2658:	Before: 	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Ro ... (line shortened) ...
-2659:	// Heap sort array data...
-2660:	Before: 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour, ... (line shortened) ...
-2661:	// Execute the binary search on all List test data...
-2662:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2663:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2664:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2665:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2666:	Linked List 	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,t ... (line shortened) ...
-2667:	// Execute the binary search on all Array test data...
-2668:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2669:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2670:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2671:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2672:	[Tony,kept,buff,Nome,wins,Togo,iamb,scud,tick,cute,hubs,Ptah,tuns,Fawn,Cato,Haag,helm,rent,rats,Kari,Dyer,Brit,mesh,Walt,trow,cone,snip,Chad,emir,like,Niko,Gray,wife,rode,morn,Roxy,cuts,tour,Ibby,laze ... (line shortened) ...
-2673:	Binary Trees Post Secondary Content:.......................................................
-2674:	// Constants/variables for creating random values...
-2675:	// Creating some TreeNode objects...
-2676:	// Linking the TreeNodes...
-2677:	// Testing TreeNode equals...
-2678:	// Testing TreeNode toString...
-2679:	53
-2680:	74
-2681:	95
-2682:	// Creating a Tree object...
-2683:	// Test the insert method...
-2684:	// Insert one more...
-2685:	// Test the search of the tree...
-2686:	Should be found     = true
-2687:	Should NOT be found = false
-2688:	// Test toString() and pre, post, in order traversals
-2689:	Binary Tree:
-Order: Linked List 	[35,51,71,61,55,77]
-Pre:   Linked List 	[35,51,71,61,55,77]
-Post:  Linked List 	[55,61,77,71,51,35]
-In:    Linked List 	[35,51,55,61,71,77]
-2690:	// Building second tree (test clone) and test equals
-2691:	1st tree -> Linked List 	[35,51,55,61,71,77]
-2692:	2nd tree -> Linked List 	[24,26,45,51,81,95]
-2693:	1st!=2nd
-2694:	// Building a third tree (test clone) and test equals
-2695:	1st tree -> Linked List 	[35,51,55,61,71,77]
-2696:	3rd tree -> Linked List 	[35,51,55,61,71,77]
-2697:	1st==3rd
-2698:	// Build all our data structures from each other...
-2699:	// Create variable objects...
-2700:	// Create array from variables...
-2701:	// Create LinkedList from array...
-2702:	// Create Stack from LinkedList...
-2703:	// Create Queue from Stack...
-2704:	// Create Tree from Queue...
-2705:	// Output variables,array,list,stack,queue,tree...
-2706:	thane
-2707:	yeats
-2708:	jodee
-2709:	dryad
-2710:	timmy
-2711:	[thane,yeats,jodee,dryad,timmy]
-2712:	Linked List 	[thane,yeats,jodee,dryad,timmy]
-2713:	Stack top -> [thane,yeats,jodee,dryad,timmy] <- bottom
-2714:	Queue back -> [thane,yeats,jodee,dryad,timmy] <- front
-2715:	Binary Tree:
-Order: Linked List 	[thane,yeats,jodee,dryad,timmy]
-Pre:   Linked List 	[thane,jodee,dryad,yeats,timmy]
-Post:  Linked List 	[dryad,jodee,timmy,yeats,thane]
-In:    Linked List 	[dryad,jode ... (line shortened) ...
-2716:	// Now re-building queue from tree
-2717:	// Now re-building stack from queue
-2718:	// Now re-building LinkedList from stack...
-2719:	// Now re-building array from LinkedList...
-2720:	// Output array,list,stack,queue,tree again...
-2721:	[dryad,jodee,thane,timmy,yeats]
-2722:	Linked List 	[dryad,jodee,thane,timmy,yeats]
-2723:	Stack top -> [dryad,jodee,thane,timmy,yeats] <- bottom
-2724:	Queue back -> [dryad,jodee,thane,timmy,yeats] <- front
-2725:	Binary Tree:
-Order: Linked List 	[thane,yeats,jodee,dryad,timmy]
-Pre:   Linked List 	[thane,jodee,dryad,yeats,timmy]
-Post:  Linked List 	[dryad,jodee,timmy,yeats,thane]
-In:    Linked List 	[dryad,jode ... (line shortened) ...
+Queue back -> [Turin] <- front
+2807:	// Re-clone the queue, and output
+2808:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2809:	// Test the dequeue method...
+2810:	Clone queue:	Empty = false	Size = 10	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2811:	// Loop through removing values
+2812:	Dequeued -> Kelci	Empty = false	Size = 9	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer] <- front
+2813:	Dequeued -> gamer	Empty = false	Size = 8	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne] <- front
+2814:	Dequeued -> Payne	Empty = false	Size = 7	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs] <- front
+2815:	Dequeued -> tongs	Empty = false	Size = 6	Queue back -> [lupin,cases,Raven,manna,Keane,holey] <- front
+2816:	Dequeued -> holey	Empty = false	Size = 5	Queue back -> [lupin,cases,Raven,manna,Keane] <- front
+2817:	Dequeued -> Keane	Empty = false	Size = 4	Queue back -> [lupin,cases,Raven,manna] <- front
+2818:	Dequeued -> manna	Empty = false	Size = 3	Queue back -> [lupin,cases,Raven] <- front
+2819:	Dequeued -> Raven	Empty = false	Size = 2	Queue back -> [lupin,cases] <- front
+2820:	Dequeued -> cases	Empty = false	Size = 1	Queue back -> [lupin] <- front
+2821:	Dequeued -> lupin	Empty = true	Size = 0	Empty Queue
+2822:	Dequeued -> null	Empty = true	Size = 0	Empty Queue
+2823:	// Test front and back...
+2824:	Clone Front = null
+2825:	Queue Front = Kelci
+2826:	Clone Back  = null
+2827:	Queue Back  = lupin
+2828:	// Test to array and to linked list...
+2829:	Linked List 	[lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci]
+2830:	Array   	[lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci]
+2831:	// Test our constructors...
+2832:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2833:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2834:	// Constructors from stack to queue (and back)...
+2835:	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front	 into 	Stack top -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- bottom
+2836:	Stack top -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- bottom	 into 	Queue back -> [lupin,cases,Raven,manna,Keane,holey,tongs,Payne,gamer,Kelci] <- front
+2837:	Searching and Sorting Post Secondary Content:..............................................
+2838:	// For the I.B. Exam, you only need to know:
+2839:	// Search: linear search and binary search
+2840:	// Sort: bubble sort and the selection sort
+2841:	// Create some constants (edges) for the data
+2842:	// Create some random data to search through and sort
+2843:	// Including edge cases to test
+2844:	// Create data to store the results...
+2845:	// The simpliest of searches
+2846:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2847:	// Now the linear search on all test data
+2848:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2849:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2850:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2851:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2852:	Array [62,91,32,91,81,72,12,36,95,4,75,38,74,80,99,78,29,58,36,21,15,62,4,96,11,58,88,39,20,28,18,98,64,41,92,38,82,61,0,20,65,92,82,76,100,44,10,72,12,25,91,48,80,0,4,38,72,35,57,98,87,48,42,20,26,5, ... (line shortened) ...
+2853:	// Simple sort...
+2854:	Sorted Array: 	[0,0,4,4,4,4,5,5,10,11,12,12,15,15,15,18,20,20,20,21,22,22,25,26,26,26,27,27,28,29,29,29,32,35,36,36,38,38,38,39,41,42,44,46,47,48,48,49,54,54,56,57,58,58,60,61,61,62,62,64,64,65,70,72, ... (line shortened) ...
+2855:	// We will re-scramble array for further testing
+2856:	Sorted Array: 	[53,85,95,48,13,23,43,62,50,61,33,70,9,14,71,48,36,72,72,74,28,60,13,2,13,36,41,26,51,34,40,27,93,19,55,85,94,15,10,85,1,60,9,15,4,8,3,15,87,59,46,33,68,89,44,76,7,84,96,82,60,59,49,38, ... (line shortened) ...
+2857:	// Now bubble sort (from bubbles rising from water)
+2858:	Original Array 	[53,85,95,48,13,23,43,62,50,61,33,70,9,14,71,48,36,72,72,74,28,60,13,2,13,36,41,26,51,34,40,27,93,19,55,85,94,15,10,85,1,60,9,15,4,8,3,15,87,59,46,33,68,89,44,76,7,84,96,82,60,59,49,38 ... (line shortened) ...
+2859:	// Now selection sort (from selecting the smallest)
+2860:	Original Array 	[53,85,95,48,13,23,43,62,50,61,33,70,9,14,71,48,36,72,72,74,28,60,13,2,13,36,41,26,51,34,40,27,93,19,55,85,94,15,10,85,1,60,9,15,4,8,3,15,87,59,46,33,68,89,44,76,7,84,96,82,60,59,49,38 ... (line shortened) ...
+2861:	// Now binary search (named after two or dividing)
+2862:	// NOTE: binary search can only happen on sorted list
+2863:	// Redo some of the test data...
+2864:	Array [1,2,2,3,4,6,7,8,9,9,9,10,10,10,10,12,12,13,13,13,14,14,15,15,15,18,19,23,26,27,28,29,33,33,34,35,36,36,38,40,41,41,42,43,44,46,47,48,48,49,50,51,52,53,55,55,55,55,57,59,59,59,60,60,60,61,61,62, ... (line shortened) ...
+2865:	Array [1,2,2,3,4,6,7,8,9,9,9,10,10,10,10,12,12,13,13,13,14,14,15,15,15,18,19,23,26,27,28,29,33,33,34,35,36,36,38,40,41,41,42,43,44,46,47,48,48,49,50,51,52,53,55,55,55,55,57,59,59,59,60,60,60,61,61,62, ... (line shortened) ...
+2866:	Array [1,2,2,3,4,6,7,8,9,9,9,10,10,10,10,12,12,13,13,13,14,14,15,15,15,18,19,23,26,27,28,29,33,33,34,35,36,36,38,40,41,41,42,43,44,46,47,48,48,49,50,51,52,53,55,55,55,55,57,59,59,59,60,60,60,61,61,62, ... (line shortened) ...
+2867:	Array [1,2,2,3,4,6,7,8,9,9,9,10,10,10,10,12,12,13,13,13,14,14,15,15,15,18,19,23,26,27,28,29,33,33,34,35,36,36,38,40,41,41,42,43,44,46,47,48,48,49,50,51,52,53,55,55,55,55,57,59,59,59,60,60,60,61,61,62, ... (line shortened) ...
+2868:	Array [1,2,2,3,4,6,7,8,9,9,9,10,10,10,10,12,12,13,13,13,14,14,15,15,15,18,19,23,26,27,28,29,33,33,34,35,36,36,38,40,41,41,42,43,44,46,47,48,48,49,50,51,52,53,55,55,55,55,57,59,59,59,60,60,60,61,61,62, ... (line shortened) ...
+2869:	// Use class for searching and sorting
+2870:	// Create random linked list data
+2871:	// Create random array data
+2872:	// Place all test cases into another linked list
+2873:	// Execute the linear search on all list test data...
+2874:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2875:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2876:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2877:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2878:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2879:	// Execute the linear search on all array test data...
+2880:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2881:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2882:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2883:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2884:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2885:	// Execute all the sorts on all test data...
+2886:	// Bubble sort LinkedList data...
+2887:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2888:	// Bubble sort array data...
+2889:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2890:	// Selection sort LinkedList data...
+2891:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2892:	// Selection sort array data...
+2893:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2894:	// Shell sort LinkedList data...
+2895:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2896:	// Shell sort array data...
+2897:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2898:	// Insertion sort LinkedList data...
+2899:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2900:	// Insertion sort array data...
+2901:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2902:	// Quick sort LinkedList data...
+2903:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2904:	// Quick sort array data...
+2905:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2906:	// Merge sort LinkedList data...
+2907:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2908:	// Merge sort array data...
+2909:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2910:	// Heap sort LinkedList data...
+2911:	Before: 	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Ve ... (line shortened) ...
+2912:	// Heap sort array data...
+2913:	Before: 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list, ... (line shortened) ...
+2914:	// Execute the binary search on all List test data...
+2915:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2916:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2917:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2918:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2919:	Linked List 	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,l ... (line shortened) ...
+2920:	// Execute the binary search on all Array test data...
+2921:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2922:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2923:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2924:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2925:	[judo,épée,Edee,Bois,Ilsa,Keen,Keck,Host,curl,Roch,kens,rube,deft,dill,Opal,iota,Alli,bunk,dual,semi,Judy,bale,hula,hint,Erny,Luci,toys,kirk,Wini,ally,sons,shin,Maye,fies,iamb,Venn,rote,list,pray,wolf ... (line shortened) ...
+2926:	Binary Trees Post Secondary Content:.......................................................
+2927:	// Constants/variables for creating random values...
+2928:	// Creating some TreeNode objects...
+2929:	// Linking the TreeNodes...
+2930:	// Testing TreeNode equals...
+2931:	// Testing TreeNode toString...
+2932:	63
+2933:	90
+2934:	32
+2935:	// Creating a Tree object...
+2936:	// Test the insert method...
+2937:	// Insert one more...
+2938:	// Test the search of the tree...
+2939:	Should be found     = true
+2940:	Should NOT be found = false
+2941:	// Test toString() and pre, post, in order traversals
+2942:	Binary Tree:
+Order: Linked List 	[10,51,72,30,26,77]
+Pre:   Linked List 	[10,51,30,26,72,77]
+Post:  Linked List 	[26,30,77,72,51,10]
+In:    Linked List 	[10,26,30,51,72,77]
+2943:	// Building second tree (test clone) and test equals
+2944:	1st tree -> Linked List 	[10,26,30,51,72,77]
+2945:	2nd tree -> Linked List 	[23,24,60,66,84,95]
+2946:	1st!=2nd
+2947:	// Building a third tree (test clone) and test equals
+2948:	1st tree -> Linked List 	[10,26,30,51,72,77]
+2949:	3rd tree -> Linked List 	[10,26,30,51,72,77]
+2950:	1st==3rd
+2951:	// Build all our data structures from each other...
+2952:	// Create variable objects...
+2953:	// Create array from variables...
+2954:	// Create LinkedList from array...
+2955:	// Create Stack from LinkedList...
+2956:	// Create Queue from Stack...
+2957:	// Create Tree from Queue...
+2958:	// Output variables,array,list,stack,queue,tree...
+2959:	doris
+2960:	emery
+2961:	leola
+2962:	laxes
+2963:	laded
+2964:	[doris,emery,leola,laxes,laded]
+2965:	Linked List 	[doris,emery,leola,laxes,laded]
+2966:	Stack top -> [doris,emery,leola,laxes,laded] <- bottom
+2967:	Queue back -> [doris,emery,leola,laxes,laded] <- front
+2968:	Binary Tree:
+Order: Linked List 	[doris,emery,leola,laxes,laded]
+Pre:   Linked List 	[doris,emery,leola,laxes,laded]
+Post:  Linked List 	[laded,laxes,leola,emery,doris]
+In:    Linked List 	[doris,emer ... (line shortened) ...
+2969:	// Now re-building queue from tree
+2970:	// Now re-building stack from queue
+2971:	// Now re-building LinkedList from stack...
+2972:	// Now re-building array from LinkedList...
+2973:	// Output array,list,stack,queue,tree again...
+2974:	[doris,emery,laded,laxes,leola]
+2975:	Linked List 	[doris,emery,laded,laxes,leola]
+2976:	Stack top -> [doris,emery,laded,laxes,leola] <- bottom
+2977:	Queue back -> [doris,emery,laded,laxes,leola] <- front
+2978:	Binary Tree:
+Order: Linked List 	[doris,emery,leola,laxes,laded]
+Pre:   Linked List 	[doris,emery,leola,laxes,laded]
+Post:  Linked List 	[laded,laxes,leola,emery,doris]
+In:    Linked List 	[doris,emer ... (line shortened) ...
