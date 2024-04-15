@@ -822,8 +822,8 @@ public class ComputerScience30S
         
         // The order of words in declaring an array:
         // (1)    (2)    (3)   (4)   (5)     (6)    (7)                     (7)
-        // type   name   [ ]    =    "new"   type    [ size of the array]    ;
-        
+        // type   name   [ ]    =    "new"   type    [ size of the array ]   ;
+                
         // E.g. in memory an array could "look" like...
         //
         //       +-------+-------+-------+-------+-------+
@@ -984,7 +984,42 @@ public class ComputerScience30S
         int[] randoms = random(1,10,50);    // Overload "random" method
         output(randoms);
         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
         
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
+        
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
+        
+        char[][] matrix = new char[ROWS][COLUMNS];
+        
+        // If we "visualize this as a 3 by 4 matrix (3 rows by 4 columns), or 
+        // y = 3 and x = 4, or a "height" of 3 and a "width" of 4, then it
+        // could be "seen" as...
+        //
+        //               (columns, width, x axis is 4, meaning 0-3)
+        //
+        //                     0         1         2         3
+        //                +---------+---------+---------+---------+
+        // (rows,       0 |         |         |         |         |
+        //  height,       +---------+---------+---------+---------+
+        //  y axis      1 |         |         |         |         |
+        //  is 3,         +---------+---------+---------+---------+
+        //  meaning     2 |         |         |         |         |
+        //  0-2)          +---------+---------+---------+---------+
+        // 
+        // A matrix "row" can also be "visualized" as the matrix "height"
+        // A matrix "column" can also be "visualized" as the matrix "width"
+        
+        // Fill the matrix with random characters...
+        // (using a method for random characters)
         
         
         
@@ -1065,6 +1100,39 @@ public class ComputerScience30S
         }
         return numbers;                     // Return completed array
     }
+    
+    /**
+     * Generates a random character between tow low and high characters
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low, (int)high);     // cast to int and back  
+    }
+    
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
+    }
+    
     
 }
 
