@@ -1021,8 +1021,8 @@ public class ComputerScience30S
         // Fill the matrix with random characters...
         // (using a method for random characters)
         
-        final char LOW  = 'a';
-        final char HIGH = 'z';
+        final char LOW  = '!';
+        final char HIGH = '~';
         
         // Test our method first
         char character = random(LOW, HIGH);
@@ -1043,12 +1043,23 @@ public class ComputerScience30S
             }
         }
         
-        // Output the matrix, by turning it into a string (using our new method)
-        
+        // Output the matrix, by turning it into a string (using our new method)        
         String text1 = toString(matrix);
         System.out.println(text1);
         
+        // Another matrix, but they (matricies) can also be made with pre-set
+        // values (like 1D arrays)
         
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
+        
+        String text2 = toString(TIC_TAC_TOE);
+        JOptionPane.showMessageDialog(null, text2);
+        
+        // Optional Graphics code...
         
         
         
