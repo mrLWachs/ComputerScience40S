@@ -3,6 +3,7 @@ package fun;
 
 /** Required API imports */
 import fun.datastructures.AdvancedDataStructures;
+import fun.examreview.ExamReview;
 import fun.files.Files;
 import fun.searching.Searching;
 import fun.sorting.Sorting;
@@ -36,6 +37,7 @@ public class FunFridaysCode
         new Virus(Tester.RUN_SIMULATED);
         new Searching(state);
         new Sorting(state);
+        new ExamReview(state);
         new AdvancedDataStructures(state);
     }
 
