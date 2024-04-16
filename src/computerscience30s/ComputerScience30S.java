@@ -1061,12 +1061,20 @@ public class ComputerScience30S
         
         // Optional Graphics code...
         
+        // Download graphic file(s) to use, and we examine the "names" of these
+        // files:
         
+        String first  = "C:\\1temp\\";  // AKA: directory, path, folder
+        String middle = "matrix";       // What the user usually enters
+        String last   = ".gif";         // File "extension" or type
+        // Every file "name" has a first, middle and last name
+        String image1 = first + middle + last;
+        String image2 = "C:\\1temp\\ticTacToe.gif";
         
-        
-        
-        
-        
+        // Call a method to display a "fancy" dialog
+        // (have a picture, formatted text: font, size, color)
+        message(text1,image1,"The Matrix");
+        message(text2,image2,"Tic-Tac-Toe");
         
         System.out.println("Completed Learning Arrays!");
     }
