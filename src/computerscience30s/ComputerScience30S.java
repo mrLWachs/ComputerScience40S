@@ -14,6 +14,7 @@ import java.awt.Font;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 
 /**
@@ -1216,22 +1217,26 @@ public class ComputerScience30S
         // image on our computer)          
         Icon image = new ImageIcon(imageName);
         
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)  
+        JTextArea area = new JTextArea();
         
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        JOptionPane.showMessageDialog(null, text,title,JOptionPane.PLAIN_MESSAGE);
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                image
+        );
     }
     
     
