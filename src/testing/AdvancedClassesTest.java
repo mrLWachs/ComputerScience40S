@@ -5,6 +5,7 @@ package testing;
 /** Required API imports */
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -85,6 +86,12 @@ public class AdvancedClassesTest
         stewie.die();      // Inherited method from Person (parent/super) class
         stewie.talk();
         // stewie.secret(); // you cannot call encapsulated methods!
+        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.talk();
+        
+        teacher.die();
         
         
         
