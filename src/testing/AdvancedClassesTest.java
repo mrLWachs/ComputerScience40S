@@ -98,7 +98,10 @@ public class AdvancedClassesTest
         teacher.talk();                 // calling these methods...  
         teacher.die(); 
         teacher.talk();
-        
+        // See if the teacher object effeced its associated class objects
+        // those being the two student objects...
+        student.talk();
+        stewie.talk();
         
         
         
