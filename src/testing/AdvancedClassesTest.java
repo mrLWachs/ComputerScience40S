@@ -114,12 +114,35 @@ public class AdvancedClassesTest
         // All classes (including ones we create) inherit from the object class
         // which is the parent (super) class of all classes  
         
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
         
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory  
         
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
         
+        // The method (toString) is inherited by ALL sub classes (children)
+        // of the Object class - remember the Object class is the parent or
+        // super class of ALL classes - so they all inherit toString, including
+        // classes we write...
         
+        System.out.println("Person  as a string = " + person.toString());
+        System.out.println("Student as a string = " + student.toString());
+        System.out.println("Teacher as a string = " + teacher.toString());
         
+        // Since the object class is also the super class of classes we DON'T
+        // write but are already part of java, they also inherit toString...
         
+        String string = new String("squirrel");
+        System.out.println("String as a string = " + string.toString());
         
         
         
