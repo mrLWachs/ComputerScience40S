@@ -3,6 +3,7 @@
 package testing;
 
 /** Required API imports */
+import javax.swing.JOptionPane;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -143,6 +144,31 @@ public class AdvancedClassesTest
         
         String string = new String("squirrel");
         System.out.println("String as a string = " + string.toString());
+        
+        // Another example of "built-in" Java class (actually imported)
+        // level object that inherits all the methods (including toString)
+        // from the Object class...
+        JOptionPane joptionpane = new JOptionPane();
+        System.out.println("JOptionPane as a string = " + joptionpane.toString());
+        
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
