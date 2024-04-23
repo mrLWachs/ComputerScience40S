@@ -169,8 +169,17 @@ public class AdvancedClassesTest
         if (person2.equals(person3)) System.out.println("P2==P3");
         if (person1.equals(person3)) System.out.println("P1==P3");
         
+        // Using our previously created Person objects with equals
+        if (person.equals(john)) System.out.println("person==john");
         
-        
+        // Now test "equals" with Student objects, and we will be over-riding 
+        // the equals method in the student class....        
+        Student student1 = new Student("1", 0, "1", 1);
+        Student student2 = new Student("2", 0, "2", 2);
+        Student student3 = new Student("3", 0, "3", 3);
+        if (student1.equals(student2)) System.out.println("S1==S2");
+        if (student2.equals(student3)) System.out.println("S2==S3");
+        if (student1.equals(student3)) System.out.println("S1==S3");
         
         
         
