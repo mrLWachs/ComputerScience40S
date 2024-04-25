@@ -188,6 +188,13 @@ public class AdvancedClassesTest
         // created (see the comment in "ComputerScience40S.java" to do this). 
         // Now we also over-rode the clone method
         
+        // Testing our clone() method:
+        Student clone1 = student.clone();
+        Student clone2 = stewie.clone();
+        System.out.println("Student = " + student.toString());
+        System.out.println("Stewie  = " + stewie.toString());
+        System.out.println("Clone 1 = " + clone1.toString());
+        System.out.println("Clone 2 = " + clone2.toString());
         
         
         

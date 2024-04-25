@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package testing;
+package testing.classes;
  
 /**
  * Doctor.java - description
