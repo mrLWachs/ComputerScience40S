@@ -130,7 +130,31 @@ public class Student extends Person
         // We are in charge of the equals method
         return true;
     }
-
+    
+    /**
+     * Deep clone, create a duplicate object (has all the same properties) as 
+     * "this" object using "new" memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        // Created a new Student object using new memory
+        Student that = new Student();
+        // Start copying over all the properties
+        that.number = this.number;
+        that.book   = this.book;
+        that.gpa    = this.gpa;
+        // Also, clone properties from the "super" class (Person) that
+        // I want to (I am in charge of this method)
+        that.name  = this.name;
+        that.age   = this.age;
+        that.alive = this.alive;
+        // Private properties are still encapsulated
+        //that.gender = this.gender;
+        return that;
+    }
+    
 }
 
 
