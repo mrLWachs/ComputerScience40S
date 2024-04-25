@@ -28,32 +28,36 @@ public class BinaryTrees
         }
         Simulator.comment("Learn about binary trees");
         
-        System.out.println("Create a binary tree object...\n");
-        
-        Tree tree = new Tree();
-        
-        System.out.println("Insert some values [27,35,75,14,83,61] ");
-        System.out.println("into the tree\n");
-        
-        tree.insert(27);
-        tree.insert(35);
-        tree.insert(75);
-        tree.insert(14);
-        tree.insert(83);
-        tree.insert(61);        
-        
-        System.out.println("Search the tree for 14 and 44...\n");
-        
-        boolean result = tree.search(14);        
-        java.lang.System.out.println("Results for 14 = " + result);        
-        result = tree.search(44);
-        java.lang.System.out.println("Results for 44 = " + result);
-        
-        
+        final int TOTAL = 10;
+        final int HIGH  = 99;
+        final int LOW   = 10;        
+        int number = 0;
+        Tree tree = new Tree(); 
+        System.out.print("Tree Insert values: \t");
+        for (int i = 0; i < TOTAL; i++) {
+            number = (int)((HIGH-LOW+1)*Math.random()+LOW);
+            if (tree.search(number) == false) {
+                tree.insert(number);
+                java.lang.System.out.print(number + ",");
+            }
+        }      
+        System.out.println("\nSearch: " + number + "  = " + tree.search(number)); 
+        System.out.println("Search: 100 = " + tree.search(100)); 
+        System.out.print("Pre-order Traversal: \t");
+        tree.traverse("pre");
+        System.out.print("\nPost-order Traversal: \t");
+        tree.traverse("post");
+        System.out.print("\nIn-order Traversal: \t");
+        tree.traverse("in");    
+        System.out.println("");
+                
         System.out.println("Non-linear data structure");
     }
         
     
+    /**
+     * Internal class for the Node for the Binary Tree
+     */
     public class Node {
 
         public int data;
@@ -87,6 +91,10 @@ public class BinaryTrees
 
     }
     
+    
+    /**
+     * Internal class for the Binary Tree
+     */
     public class Tree {
 
         private Node root;
@@ -120,6 +128,36 @@ public class BinaryTrees
             }
             else {
                 return true;
+            }
+        }
+        
+        public void traverse(String type) {
+            if      (type.equals("pre"))  preOrder(root);
+            else if (type.equals("post")) postOrder(root);
+            else if (type.equals("in"))   inOrder(root);
+        }
+
+        private void preOrder(Node current) {
+            if (current != null) {
+                System.out.print(current.data + ",");
+                preOrder(current.left);
+                preOrder(current.right);
+            }
+        }
+
+        private void postOrder(Node current) {
+            if (current != null) {            
+                postOrder(current.left);
+                postOrder(current.right);
+                System.out.print(current.data + ",");
+            }
+        }
+
+        private void inOrder(Node current) {
+            if (current != null) {
+                inOrder(current.left);
+                System.out.print(current.data + ",");
+                inOrder(current.right);
             }
         }
 
