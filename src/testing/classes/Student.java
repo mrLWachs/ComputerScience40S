@@ -109,6 +109,27 @@ public class Student extends Person
         System.out.println("\t Number: \t" + number);
         System.out.println("\t GPA:    \t" + gpa);
     }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // The parameter "object" is not yet a "Student", so we will
+        // "cast" it into a Student with round brackets
+        Student that = (Student)object;
+        // Compare some of the properties of each student object
+        if (this.alive  != that.alive)  return false;
+        if (this.age    != that.age)    return false;
+        if (this.gpa    != that.gpa)    return false;
+        if (this.number != that.number) return false;
+        // We could compare more (go "deeper") in the comparison
+        // We are in charge of the equals method
+        return true;
+    }
 
 }
 
