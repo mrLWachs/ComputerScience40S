@@ -246,10 +246,15 @@ public class AdvancedClassesTest
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
         
+        // The "protected" modifier means this property of the Person class
+        // cannot be accessed from this class because this class is not 
+        // related to this class through inheritance (it is only related
+        // through association)
+        // person.alive = false;
         
-        
-        
-        
+        // Calling an accessor (or getter) method on this object of the Person
+        // class (which is a private, encapsulated property)
+        System.out.println("Gender = " + person.getGender());
         
         
         

@@ -30,7 +30,13 @@ public class Person
     
     public int age;
     
-    public boolean alive;
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean alive;
     
     /**
      * Properties that use the "modifier" word "private" will "encapsulate"
@@ -109,6 +115,19 @@ public class Person
      */
     public static void endTheWorld() {
         System.out.println("Boom!!!");
+    }
+    
+    /**
+     * Accessor method (or "getter" method) that give you (or "reads") the 
+     * gender of this person object (which is a private property of this class 
+     * which normally cannot be read outside the class). Sometimes you write a 
+     * accessor method so user outside the class can "read only" that property
+     * without the ability to change that property
+     * 
+     * @return the person's gender (to "see" or "access" it)
+     */
+    public String getGender() {
+        return gender;
     }
     
 }
