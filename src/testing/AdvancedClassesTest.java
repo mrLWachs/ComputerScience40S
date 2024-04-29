@@ -196,6 +196,38 @@ public class AdvancedClassesTest
         System.out.println("Clone 1 = " + clone1.toString());
         System.out.println("Clone 2 = " + clone2.toString());
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
+        
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable  
+        System.out.println("S1 total = " + student1.total);
+        System.out.println("S2 total = " + student2.total);
+        System.out.println("S3 total = " + student3.total);
+        
+        // We create (instantiate) 2 more Student objects...
+        Student student4 = new Student();
+        Student student5 = new Student("5", 5, "5", 5);
+        
+        // And output the shared/static property of those new instances
+        System.out.println("S4 total = " + student4.total);
+        System.out.println("S5 total = " + student5.total);
+        
+        // Mutate (change) that static variable directly (in one instance)
+        stewie.total = 10;
+        
+        // Output the static variable again - showing that it changed (mutated) 
+        // ALL the instances (all the student obejcts) since that varaible is
+        // modified to be static  
+        System.out.println("Stewie total = " + stewie.total);
+        
+        
+        
+        
+        
+        
         
         
         

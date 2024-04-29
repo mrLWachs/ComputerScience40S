@@ -70,6 +70,7 @@ public class Student extends Person
         gpa    = 0.0;
         this.number = number;
         book   = new Book();
+        total++;
     }
     
     /**
