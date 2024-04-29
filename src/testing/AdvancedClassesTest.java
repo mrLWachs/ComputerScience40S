@@ -4,7 +4,13 @@ package testing;
 
 /** Required API imports */
 import javax.swing.JOptionPane;
+import testing.classes.Athlete;
+import testing.classes.DiskJockey;
+import testing.classes.Doctor;
+import testing.classes.Husky;
+import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -260,6 +266,36 @@ public class AdvancedClassesTest
         // protected property
         person.setAlive(false);
         System.out.println("Person alive = " + person.getAlive());
+        
+        // Instatiate (make an "instance" aka "object of that class)...
+        Doctor     doctor     = new Doctor();
+        DiskJockey diskJockey = new DiskJockey();
+        MrWachs    mrWachs    = new MrWachs();
+        Husky      husky      = new Husky();
+        Piper      piper      = new Piper();
+        Athlete    athlete    = new Athlete();
+        // Intentially leaving out "HighSchool"
+        
+        // Output these new objects, the "toString()" method is automatically 
+        // called by System.out.println() so we can just pass the object itself
+        System.out.println(doctor);
+        System.out.println(diskJockey);
+        System.out.println(mrWachs);
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(athlete);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
