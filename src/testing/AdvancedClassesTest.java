@@ -256,7 +256,10 @@ public class AdvancedClassesTest
         // class (which is a private, encapsulated property)
         System.out.println("Gender = " + person.getGender());
         
-        
+        // Calling a mutator (or setter) method on this object which is a
+        // protected property
+        person.setAlive(false);
+        System.out.println("Person alive = " + person.getAlive());
         
         
         
