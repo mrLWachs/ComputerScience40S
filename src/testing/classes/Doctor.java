@@ -2,12 +2,12 @@
 package testing.classes;
  
 /**
- * Doctor.java - description
+ * Doctor.java - represents a Doctor Person
  *
  * @author YOUR NAME
  * @since Apr 22, 2024, 9:18:13 a.m.
  */
-public class Doctor 
+public class Doctor extends Person
 {
 
     /**

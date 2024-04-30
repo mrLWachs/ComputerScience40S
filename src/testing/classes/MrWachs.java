@@ -2,19 +2,19 @@
 package testing.classes;
  
 /**
- * MrWachs.java - description
+ * MrWachs.java - represents a MrWachs Teacher Person
  *
  * @author YOUR NAME
  * @since Apr 29, 2024, 9:23:40 a.m.
  */
-public class MrWachs 
+public class MrWachs extends Teacher
 {
 
     /**
      * Default constructor, set class properties
      */
     public MrWachs() {
-        
+        super("Mr. Lawrence Wachs");
     }
      
     /**

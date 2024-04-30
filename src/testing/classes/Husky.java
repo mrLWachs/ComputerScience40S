@@ -2,12 +2,12 @@
 package testing.classes;
  
 /**
- * Husky.java - description
+ * Husky.java - represents a Husky HighSchool Student Person
  *
  * @author YOUR NAME
  * @since Apr 29, 2024, 9:24:18 a.m.
  */
-public class Husky 
+public class Husky extends HighSchool
 {
 
     /**

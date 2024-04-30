@@ -2,12 +2,12 @@
 package testing.classes;
  
 /**
- * DiskJockey.java - description
+ * DiskJockey.java - represents a DiskJocky Person
  *
  * @author YOUR NAME
  * @since Apr 29, 2024, 9:25:22 a.m.
  */
-public class DiskJockey 
+public class DiskJockey extends Person
 {
 
     /**
