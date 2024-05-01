@@ -316,6 +316,10 @@ public class AdvancedClassesTest
         // Need to "hold a meeting" of all members
         meeting.hold();
         
+        // Abstract classes can NOT ever be instantiated, for example:
+        // HighSchool highSchool = new HighSchool();
+        // Food food = new Food();
+        
         
         
         
