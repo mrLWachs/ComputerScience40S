@@ -104,6 +104,13 @@ public class Meeting
             }
         }
         
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //    Person member = members[i];
+        // }
+        
+        message += "\nWith " + Student.total + " students present!";
+        
         // Finally output that message
         System.out.println(message);
     }    
