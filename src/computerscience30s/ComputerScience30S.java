@@ -33,16 +33,17 @@ public class ComputerScience30S
      * 
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) {        
         // "Call" a method (means you use the name of the method)
 //        learnIntroToJava();        
 //        learnMethods();
-
-        learnArrays();
-        
+//        learnArrays();
+        learnClasses();
     }
 
+    /**
+     * Learn the content of the introduction unit (unit 1)
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
         
@@ -671,6 +672,9 @@ public class ComputerScience30S
         // code goes between these two brackets  
     }
 
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start Learning Methods...");
         
@@ -1238,8 +1242,17 @@ public class ComputerScience30S
                 image
         );
     }
-    
-    
+
+    /**
+     * Learn the content of the classes unit (unit 4)
+     */
+    private static void learnClasses() {
+        System.out.println("Start Learning Classes...");
+        
+        
+        System.out.println("Completed Learning Classes!");
+    }
+        
 }
 
 
