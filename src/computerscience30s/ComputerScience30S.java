@@ -1249,6 +1249,14 @@ public class ComputerScience30S
     private static void learnClasses() {
         System.out.println("Start Learning Classes...");
         
+        Person person = new Person();
+        person.born();
+        person.talk();
+        person.name = "Personoy Personifcaus";
+        person.gender = "person";
+        person.birthday();
+        person.talk();
+                
         
         System.out.println("Completed Learning Classes!");
     }
