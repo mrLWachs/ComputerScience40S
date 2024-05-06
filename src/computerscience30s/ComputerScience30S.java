@@ -1249,8 +1249,23 @@ public class ComputerScience30S
     private static void learnClasses() {
         System.out.println("Start Learning Classes...");
         
+        // Create a "person" (add a class called "Person" to this Java project)
+        // To do this, click on File - New File (or icon on toolbar)
+        // A dialog will appear and you select "Java" and "Java Class"
+        // Then next...
+        // Then give it a name (starts with a capital letter and camel casing)
+        // Then click finish!
+        
+        // use a line of code like this:
+        // Random random = new Random();
         Person person = new Person();
+        // Class object = new Class() <--- implies a method?
+        // that is the call to the constructor method
+        
+        // We can call (invoke) a method within the object
         person.born();
+        
+        // Use (call,invoke) other methods and change properties
         person.talk();
         person.name = "Personoy Personifcaus";
         person.gender = "person";
