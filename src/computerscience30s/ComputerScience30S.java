@@ -1262,8 +1262,9 @@ public class ComputerScience30S
         // Class object = new Class() <--- implies a method?
         // that is the call to the constructor method
         
-        // We can call (invoke) a method within the object
-        person.born();
+        // We can call (invoke) methods within the object
+        // person.born();
+        // The original "born" method was changed into a constructor
         
         // Use (call,invoke) other methods and change properties
         person.talk();
