@@ -57,6 +57,27 @@ public class Person {
     }
         
     /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties. Constructor methods with
+     * NO parameters are called default constructors
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    Person(String name, int age, String gender) {
+        alive = true;
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (whcih will be created at a later time)
+        this.age    = age;
+        this.name   = name;
+        this.gender = gender;
+    }
+    
+    
+    
+    /**
      * The person dies (changing/modifying) the property (alive) through 
      * this method
      */

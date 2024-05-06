@@ -1279,11 +1279,9 @@ public class ComputerScience30S
         other.birthday(18);
         other.talk();
         
-        
-        
-        
-        
-        
+        // Another instance using the 3rd constructor option
+        Person third = new Person("Three Thurdy",33,"female");
+        third.talk();
         
         
         
