@@ -7,7 +7,7 @@ import fun.examreview.ExamReview;
 import fun.files.Files;
 import fun.searching.Searching;
 import fun.sorting.Sorting;
-import fun.virus.Virus;
+import fun.other.Virus;
 import testing.Tester;
 import utility.io.Simulator;
 

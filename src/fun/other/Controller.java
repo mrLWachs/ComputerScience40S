@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package fun.virus;
+package fun.other;
 
 /** Required API imports */
 import java.io.File;

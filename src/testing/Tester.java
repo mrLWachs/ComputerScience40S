@@ -35,9 +35,9 @@ public class Tester
         if (state == DO_NOT_RUN) return;
         Simulator.initialize();
         Simulator.title("Mr. Wachs' Computer Science Classes");
-        new PrerequisiteContent(state);      
+        new PrerequisiteContent(DO_NOT_RUN); //state);      
         new ComputerScience42SAP(state); 
-        new PostSecondaryContent(state); 
+        new PostSecondaryContent(DO_NOT_RUN); //state); 
         Simulator.saveOutput();
     }
     

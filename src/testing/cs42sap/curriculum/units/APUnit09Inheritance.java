@@ -57,9 +57,37 @@ public class APUnit09Inheritance
             //           superclass. A class can extend only one superclass
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("");
-        Simulator.comment("");
+        System.out.print("When working with the relationships between ");
+        System.out.println("classes, inheritance is the relationship whereas ");
+        System.out.print("one class inherits the properties and methods ");
+        System.out.println("from another class. This means one class acts ");
+        System.out.print("as the \"parent\" or \"super\" class and the ");
+        System.out.println("other class acts as the \"child\" or \"sub\" ");
+        System.out.print("class. In Java the keyword \"extends\" is ");
+        System.out.println("used to initiate inheritance by putting that ");
+        System.out.print("keyword in the class signature line. This is ");
+        System.out.println("also called a \"is-a\" relationship between ");
+        System.out.print("classes. In other words, a child (sub) class ");
+        System.out.println("\"is-a\" parent (super) class. A class can ");
+        System.out.print("extend only one superclass.");
+        
+        // Example of class inheritance...
+        // class Parent {
+        //     String name;
+        // }
+
+        // class Child extends Parent {        
+        //     int age;
+        // }
+        
+        Simulator.comment("Example of class inheritance");
+        Simulator.code("class Parent {");
+        Simulator.code("    String name;");
+        Simulator.code("}");
         Simulator.code("");
+        Simulator.code("class Child extends Parent {");
+        Simulator.code("    int age;");
+        Simulator.code("}");      
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.2 Writing Constructors for Subclasses");  
@@ -85,10 +113,50 @@ public class APUnit09Inheritance
             //           beginning with the Object constructor
         ////////////////////////////////////////////////////////////////////////
         
-        System.out.println("Inheritance is the relationship between two or ");
-        System.out.println("more classes of code");
-        Simulator.comment("");
+        System.out.print("Constructor methods are not inherited by ");
+        System.out.println("subclasses from the superclass. However, you ");
+        System.out.print("can call the constructor of a superclass using ");
+        System.out.println("the keyword \"super()\" and round brackets. ");
+        System.out.print("This is called a call to the super-constructor. ");
+        System.out.println("This call can also include any parameters the ");
+        System.out.print("constructor/super-constructor needs. This can ");
+        System.out.println("occur over multiple \"levels\" of inheritance ");
+        System.out.print("between classes. When a subclass’s constructor ");
+        System.out.println("does not explicitly call a superclass’s ");
+        System.out.print("constructor, Java will call the ");
+        System.out.println("super-constructor method.");
+                
+        // Example class constructors and super-constructors...
+        // class Parent {
+        //     String name;
+        //     public Parent() {
+        //          name = "";
+        //     }
+        // }
+
+        // class Child extends Parent {        
+        //     int age;
+        //     public Child() {
+        //          super();
+        //          age = 0;
+        //     }
+        // }
+                
+        Simulator.comment("Example class constructors and super-constructors");
+        Simulator.code("class Parent {");
+        Simulator.code("    String name;");
+        Simulator.code("    public Parent() {");
+        Simulator.code("         name = \"\";");
+        Simulator.code("    }");
+        Simulator.code("}");
         Simulator.code("");
+        Simulator.code("class Child extends Parent {");
+        Simulator.code("    int age;");
+        Simulator.code("    public Child() {");
+        Simulator.code("         super();");
+        Simulator.code("         age = 0;");
+        Simulator.code("    }");
+        Simulator.code("}");
         
         ////////////////////////////////////////////////////////////////////////
         Simulator.header("9.3 Overriding Methods");  
@@ -180,5 +248,5 @@ public class APUnit09Inheritance
         
         ////////////////////////////////////////////////////////////////////////
     }
-     
+         
 }
