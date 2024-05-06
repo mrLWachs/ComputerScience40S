@@ -1272,6 +1272,26 @@ public class ComputerScience30S
         person.gender = "person";
         person.birthday();
         person.talk();
+        
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor  
+        Person other = new Person("Another Name");
+        other.birthday(18);
+        other.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
                 
         
         System.out.println("Completed Learning Classes!");

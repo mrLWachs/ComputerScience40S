@@ -43,9 +43,19 @@ public class Person {
         gender = "undefined";
     }
     
-    // Methods: (things it can do, verbs, actions, return, parameter(s))
-   
-    
+    /**
+     * Constructor method, sets the class properties. Constructor methods 
+     * should be public
+     * 
+     * @param newName the new name for this person
+     */
+    Person(String newName) {
+        alive  = true;
+        age    = 0;
+        name   = newName;
+        gender = "undefined";
+    }
+        
     /**
      * The person dies (changing/modifying) the property (alive) through 
      * this method
@@ -72,5 +82,18 @@ public class Person {
     void birthday() {
         age++;
     }
-        
+     
+    /**
+     * Gives the person a birthday, changes the encapsulated property (age).
+     * This is a overloaded method meaning multiple methods with the same 
+     * name but different parameters.
+     * 
+     * @param times home many birthdays to give the person
+     */
+    void birthday(int times) {
+        for (int i = 0; i < times; i++) {
+            birthday();
+        }
+    }
+    
 }
