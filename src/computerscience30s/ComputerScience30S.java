@@ -1270,7 +1270,12 @@ public class ComputerScience30S
         person.talk();
         person.name = "Personoy Personifcaus";
         person.gender = "person";
-        person.birthday();
+        
+        // Note: this method was originally public but then it was
+        // "encapsulated" by making it a private (helper) method so it can 
+        // no longer be called (invoked) outside the class
+        
+        // person.birthday();
         person.talk();
         
         // Create (instantiate) another object with a different (overloaded) 
@@ -1282,7 +1287,6 @@ public class ComputerScience30S
         // Another instance using the 3rd constructor option
         Person third = new Person("Three Thurdy",33,"female");
         third.talk();
-        
         
         
         
