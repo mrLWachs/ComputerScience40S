@@ -4,11 +4,14 @@ package testing.classes;
 
  
 /**
- * Hockey.java - description
+ * Hockey.java - enforcing "the rules" of hockey (and sports). Interfaces can
+ * inherit from other interfaces ("can follow the rules of other rules"). This
+ * is like classes inheriting from other classes.
  *
- * @author Mr. Wachs
- * @since May 7, 2024, 9:48:56 a.m.
+ * @author YOUR NAME
+ * @since May 7, 2024
  */
-public interface Hockey {
+public interface Hockey 
+{
 
 }

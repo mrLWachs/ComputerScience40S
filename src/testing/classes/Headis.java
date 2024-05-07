@@ -4,11 +4,15 @@ package testing.classes;
 
  
 /**
- * Headis.java - description
+ * Headis.java - is a mix of table tennis and the heading of association 
+ * football. It is played at a regular table tennis table so it combines 
+ * tactical elements of table tennis and the legwork of tennis. This is 
+ * another interface enforcing "the rules" of headis (and sports)
  *
- * @author Mr. Wachs
- * @since May 7, 2024, 9:54:34 a.m.
+ * @author YOUR NAME
+ * @since May 7, 2024
  */
-public interface Headis {
+public interface Headis 
+{
 
 }

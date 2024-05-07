@@ -14,10 +14,11 @@ package testing.classes;
  * create an instance of some class that 'implements' the interface. This 
  * means the other class "follows the rules" of that interface.
  *
- * @author Mr. Wachs
- * @since May 7, 2024, 9:36:51 a.m.
+ * @author YOUR NAME
+ * @since May 7, 2024
  */
-public interface Sports {
+public interface Sports 
+{
 
     /**
      * Mutator method, setting the name of the player. Interface method 
