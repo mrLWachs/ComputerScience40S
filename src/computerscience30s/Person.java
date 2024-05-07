@@ -75,8 +75,6 @@ public class Person {
         this.gender = gender;
     }
     
-    
-    
     /**
      * The person dies (changing/modifying) the property (alive) through 
      * this method
