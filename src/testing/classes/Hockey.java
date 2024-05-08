@@ -11,7 +11,8 @@ package testing.classes;
  * @author YOUR NAME
  * @since May 7, 2024
  */
-public interface Hockey 
+public interface Hockey extends Sports
 {
-
+    void score(String name);
+    void endOfPeriod(int period);
 }
