@@ -1288,7 +1288,10 @@ public class ComputerScience30S
         Person third = new Person("Three Thurdy",33,"female");
         third.talk();
         
-        
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)  
+        Student student = new Student();
+        student.talk();
         
         
         
