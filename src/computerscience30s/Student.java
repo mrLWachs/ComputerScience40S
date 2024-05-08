@@ -21,7 +21,7 @@ public class Student extends Person
     // but they are still private or encapsulated)
     
     // private (encapsulated) property (global variable) identified (named)
-    // "studentNumber" that is of type "integer"
+    // "number" that is of type "integer"
     private int number;
     
     private double gpa;
@@ -32,5 +32,20 @@ public class Student extends Person
      */
     private Book book;
     
+    public Student() {
+        
+    }    
+    
+    public void study() {
+        
+    }
+    
+    public void slackOff() {
+        
+    }
+    
+    public void cram() {
+        
+    }
     
 }
