@@ -7,7 +7,7 @@ package testing.classes;
  * PermissionForm.java - enforcing "the rules" of a permission form. Note: this
  * interface has two "properties" (that have to be marked as final)
  *
- * @author Mr. Wachs
+ * @author YOUR NAME
  * @since May 8, 2024
  */
 public interface PermissionForm 

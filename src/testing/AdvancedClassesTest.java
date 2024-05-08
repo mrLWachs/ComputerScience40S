@@ -347,6 +347,7 @@ public class AdvancedClassesTest
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
         
+        Athlete jock = new Athlete();
         
         
         
