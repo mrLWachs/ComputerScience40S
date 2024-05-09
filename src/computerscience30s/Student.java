@@ -55,16 +55,40 @@ public class Student extends Person
         gpa = 0;
     }    
     
+    /**
+     * Studying raises the student's average
+     */
     public void study() {
-        
+        gpa += 1.25;
     }
     
+    /**
+     * Slacking off lowers the student's average
+     */
     public void slackOff() {
-        
+        gpa -= 0.33;
     }
     
+    /**
+     * Cramming is intense studying
+     */
     public void cram() {
-        
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+    }
+    
+    /**
+     * Talking overrides the same talk method of the parent class and outputs
+     * additional information to the screen
+     */
+    @Override
+    public void talk() {
+        // Even with a class that inherits from another class, we 
+        // can call the methods of the parent class
+        super.talk();
+        System.out.println("\tNumber: " + number);
+        System.out.println("\tGPA:    " + gpa);        
     }
     
 }
