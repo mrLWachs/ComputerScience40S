@@ -5,8 +5,8 @@ package computerscience30s;
  * Book.java - represents a book object which is "associated" (the "has a" 
  * relationship) with the student class
  *
- * @author YOUR NAME
- * @since May 8, 2024, 8:59:22 a.m.
+ * @author Mr. Wachs
+ * @since May 8, 2024
  */
 public class Book 
 {
