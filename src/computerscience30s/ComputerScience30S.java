@@ -38,7 +38,8 @@ public class ComputerScience30S
 //        learnIntroToJava();        
 //        learnMethods();
 //        learnArrays();
-        learnClasses();
+//        learnClasses();
+        LearnGraphics learnGraphics = new LearnGraphics();
     }
 
     /**
