@@ -24,6 +24,9 @@ public class LearnGraphics
         // "JFrame Form..." to add this to the project - NetBeans will switch
         // to a visual WYSIWYG editor...
         
+        // Create class objects for different examples
+        Graphics1 graphics1 = new Graphics1();
+        
         
         System.out.println("Completed learning Graphics!");
     }

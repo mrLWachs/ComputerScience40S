@@ -17,6 +17,12 @@ public class Graphics1 extends javax.swing.JFrame
      */
     public Graphics1() {
         initComponents();
+        
+        // Add code after the call to the method in the line above (which do 
+        // not erase that line which is a method call) - now add a line to make  
+        // the form (frame, container, window, etc.) appear to the user
+        this.setSize(500, 500);
+        this.setVisible(true);        
     }
 
     /** This method is called from within the constructor to
@@ -28,41 +34,30 @@ public class Graphics1 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        jButton1.setText("EXIT");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jLabel1.setText("Hello World");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(20, 20, 210, 40);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(245, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(62, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(194, 194, 194))
-        );
+        jButton1.setText("Exit");
+        getContentPane().add(jButton1);
+        jButton1.setBounds(20, 60, 200, 30);
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(20, 100, 200, 22);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/dog.gif"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(20, 130, 200, 200);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        System.out.println("Clicked");
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -101,6 +96,9 @@ public class Graphics1 extends javax.swing.JFrame
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 
 }
