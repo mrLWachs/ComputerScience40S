@@ -42,30 +42,85 @@ public class Graphics1 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        pictureLabel = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        jButton1.setText("Exit");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(20, 50, 200, 30);
+
         jLabel1.setText("Hello World");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(20, 20, 210, 40);
+        jLabel1.setBounds(20, 10, 210, 40);
 
-        jButton1.setText("Exit");
-        getContentPane().add(jButton1);
-        jButton1.setBounds(20, 60, 200, 30);
+        pictureLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/dog.gif"))); // NOI18N
+        pictureLabel.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseMoved(evt);
+            }
+        });
+        pictureLabel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pictureLabelMouseExited(evt);
+            }
+        });
+        getContentPane().add(pictureLabel);
+        pictureLabel.setBounds(20, 130, 200, 200);
+
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
         getContentPane().add(jTextField1);
         jTextField1.setBounds(20, 100, 200, 22);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/dog.gif"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(20, 130, 200, 200);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        
+        // Double clicking a button in the design mode, immediately jumps to 
+        // code written for you connected to that button - to add in your 
+        // code to execute (just like in Visual Studio)
+        System.exit(0);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add
+        
+        jLabel1.setText("Key pressed was " + evt.getKeyCode());
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void pictureLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseEntered
+        jTextField1.setVisible(false);
+    }//GEN-LAST:event_pictureLabelMouseEntered
+
+    private void pictureLabelMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseExited
+        jTextField1.setVisible(true);
+    }//GEN-LAST:event_pictureLabelMouseExited
+
+    private void pictureLabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseMoved
+        
+        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
+        
+    }//GEN-LAST:event_pictureLabelMouseMoved
 
     /**
      * @param args the command line arguments
@@ -105,8 +160,8 @@ public class Graphics1 extends javax.swing.JFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel pictureLabel;
     // End of variables declaration//GEN-END:variables
 
 }
