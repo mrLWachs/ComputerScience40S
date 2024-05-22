@@ -27,12 +27,20 @@ public class Graphics1 extends javax.swing.JFrame
         initComponents();
         
         // Add code after the call to the method in the line above (which do 
-        // not erase that line which is a method call) - now add a line to make  
-        // the form (frame, container, window, etc.) appear to the user
-        this.setSize(500, 500);
+        // not erase that line - which is a method call) - now add a line to   
+        // make the form (frame, container, window, etc.) appear to the user
+        this.setSize(255, 380);
         this.setVisible(true);        
     }
 
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans visual designer adds the code below which can NOT be
+    // edited, it also adds other code like the constructor above which you can 
+    // edit, add to, delete etc. The "Generated code" below can be seen by 
+    // clicking the "plus sign +" to expand the code
+    ////////////////////////////////////////////////////////////////////////////
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -48,6 +56,8 @@ public class Graphics1 extends javax.swing.JFrame
         jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Graphics 1");
+        setResizable(false);
         getContentPane().setLayout(null);
 
         jButton1.setText("Exit");
@@ -96,7 +106,10 @@ public class Graphics1 extends javax.swing.JFrame
         
         // Double clicking a button in the design mode, immediately jumps to 
         // code written for you connected to that button - to add in your 
-        // code to execute (just like in Visual Studio)
+        // code to execute (just like in Visual Studio). Parts of this code
+        // is also not editable (that is why is appears in grey) but you can 
+        // add the code for the "action" for this event
+        
         System.exit(0);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -109,6 +122,10 @@ public class Graphics1 extends javax.swing.JFrame
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void pictureLabelMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
         jTextField1.setVisible(false);
     }//GEN-LAST:event_pictureLabelMouseEntered
 
@@ -117,46 +134,72 @@ public class Graphics1 extends javax.swing.JFrame
     }//GEN-LAST:event_pictureLabelMouseExited
 
     private void pictureLabelMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pictureLabelMouseMoved
+        // Several different mouse vents are accessible like this event 
+        // of the mouse moving over the object (the label image) and you can
+        // use the "evt" parameter to access events from the mouse like the 
+        // (x, y) cooordinate of it as it relates to the label
         
         jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
         
     }//GEN-LAST:event_pictureLabelMouseMoved
+    
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans WYSIWYG visual designer also adds a version of the 
+    // "main" method to this class of code (each JFrame form when added also 
+    // adds a main method below for each JFrame form seen below - just like the 
+    // original class file when you build a project). You can certainly delete
+    // that original project class file, and then the project will use this 
+    // version of main when the project runs (when you click the green tirangle 
+    // above on the NetBeans toolbar) or you can delete the main method below 
+    // and have other code call this class's constructor to show this form. You 
+    // can also change the project properties so that it "picks" which version 
+    // of main to run (see Mr. Wachs for instructions on how to do this). I  
+    // have removed the main method for this class (by commenting it out below)
+    ////////////////////////////////////////////////////////////////////////////
+    
+//    /**
+//     * @param args the command line arguments
+//     */
+//    public static void main(String args[]) {
+//        /* Set the Nimbus look and feel */
+//        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+//        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+//         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+//         */
+//        try {
+//            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+//                if ("Nimbus".equals(info.getName())) {
+//                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+//                    break;
+//                }
+//            }
+//        } catch (ClassNotFoundException ex) {
+//            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (InstantiationException ex) {
+//            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (IllegalAccessException ex) {
+//            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+//            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+//        }
+//        //</editor-fold>
+//
+//        /* Create and display the form */
+//        java.awt.EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                new Graphics1().setVisible(true);
+//            }
+//        });
+//    }
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Graphics1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Graphics1().setVisible(true);
-            }
-        });
-    }
-
+    
+    ////////////////////////////////////////////////////////////////////////////
+    // NOTE: the NetBeans visual designer adds the code below for each 
+    // component (control, widget, property, global variable) which also 
+    // cannot be edited
+    ////////////////////////////////////////////////////////////////////////////
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
