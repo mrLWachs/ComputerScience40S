@@ -4,7 +4,15 @@ package computerscience30s;
 
 
 /**
- * Graphics1.java - description
+ * Graphics1.java - this is a form (or frame, or 'container', or user interface)
+ * built using the NetBeans WYSIWYG ("what you see is what you get") UI 
+ * designer. To make this type of JFrame, you go to "File -> New File" and  
+ * select "JFrame Form" and the UI editor will appear. To switch between code  
+ * and the designer, use the buttons under the "Graphics2.java" tab named 
+ * "Source" and "Design". We will be using the editor's "Pallette" and 
+ * "Properties" windows to build and change the design and then adding code as 
+ * needed. We will examine this frame and Graphics1 to compare doing the same 
+ * things using a designer vs. writing all the code ourselves.
  *
  * @author Mr. Wachs
  * @since May 17, 2024, 9:01:42 a.m.
@@ -13,7 +21,7 @@ public class Graphics1 extends javax.swing.JFrame
 {
 
     /** 
-     * Default constructor, creates new form Graphics1 
+     * Creates new form Graphics2 (this is the constructor method) 
      */
     public Graphics1() {
         initComponents();
