@@ -9,7 +9,7 @@ package computerscience30s;
  * designer. To make this type of JFrame, you go to "File -> New File" and  
  * select "JFrame Form" and the UI editor will appear. To switch between code  
  * and the designer, use the buttons under the "Graphics2.java" tab named 
- * "Source" and "Design". We will be using the editor's "Pallette" and 
+ * "Source" and "Design". We will be using the editor's "Palette" and 
  * "Properties" windows to build and change the design and then adding code as 
  * needed. We will examine this frame and Graphics1 to compare doing the same 
  * things using a designer vs. writing all the code ourselves.
