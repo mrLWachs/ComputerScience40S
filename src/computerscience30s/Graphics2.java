@@ -1,6 +1,8 @@
 
+/** Required package class namespace */
 package computerscience30s;
  
+/** Required API imports */
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
