@@ -3,6 +3,8 @@
 package computerscience40s;
 
 /** Required imports */
+import computerscience30s.ComputerScience30S;
+import javax.swing.JOptionPane;
 import testing.Tester;
 
 
@@ -27,6 +29,12 @@ public class ComputerScience40S
         System.out.println("\nComputer Science 40S starting...\n");        
         Tester tester = new Tester();        
         System.out.println("\nComputer Science 40S complete!\n");
+        if (JOptionPane.showConfirmDialog(null, 
+            "Do you also want to see the CS30S example?","Example",
+            JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,
+            null) == JOptionPane.YES_OPTION) {
+            new ComputerScience30S();
+        }        
     }
     
 }
