@@ -35,11 +35,27 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {        
         // "Call" a method (means you use the name of the method)
-//        learnIntroToJava();        
-//        learnMethods();
-//        learnArrays();
-//        learnClasses();
-        LearnGraphics learnGraphics = new LearnGraphics();
+        System.out.println("\nComputer Science 30S Example started...\n");
+        final String[] OPTIONS = {
+            "See examples of learning basic Java (unit 1)",
+            "See examples of learning methods in Java (unit 2)",
+            "See examples of learning arrays in Java (unit 3)",
+            "See examples of learning classes in Java (unit 4)",
+            "See optional examples of learning graphics in Java (optional unit)"
+        };
+        String choice = JOptionPane.showInputDialog(null, 
+                "Select the Mr. Wachs unit to view below:", 
+                "Computer Science 30S", JOptionPane.PLAIN_MESSAGE, null, 
+                OPTIONS, OPTIONS[0]).toString();
+        if      (choice.equals(OPTIONS[0])) learnIntroToJava();  
+        else if (choice.equals(OPTIONS[1])) learnMethods();  
+        else if (choice.equals(OPTIONS[2])) learnArrays();  
+        else if (choice.equals(OPTIONS[3])) learnClasses();  
+        else if (choice.equals(OPTIONS[4])) {
+            LearnGraphics learnGraphics = new LearnGraphics();
+        }
+        else                                System.exit(0);
+        System.out.println("\nComputer Science 30S Example completed!\n"); 
     }
 
     /**
