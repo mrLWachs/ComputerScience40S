@@ -2,20 +2,12 @@
 /** Required package class namespace */
 package computerscience40s;
 
-/** Required imports */
-import computerscience30s.ComputerScience30S;
-import javax.swing.JOptionPane;
-import testing.Tester;
-
 
 /**
- * ComputerScience40S.java - the large in class example we continue to work 
- * on in each unit adding example code on the new concepts of each unit 
- * along with any in class requests for code examples that might come up 
- * over the course
+ * ComputerScience40S.java - 
  *
  * @author Mr. Wachs 
- * @since February 28, 2024
+ * @since 
  */
 public class ComputerScience40S 
 {
@@ -26,15 +18,7 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("\nComputer Science 40S starting...\n");        
-        Tester tester = new Tester();        
-        System.out.println("\nComputer Science 40S complete!\n");
-        if (JOptionPane.showConfirmDialog(null, 
-            "Do you also want to see the CS30S example?","Example",
-            JOptionPane.YES_NO_OPTION,JOptionPane.QUESTION_MESSAGE,
-            null) == JOptionPane.YES_OPTION) {
-            new ComputerScience30S();
-        }        
+               
     }
     
 }
