@@ -17,7 +17,13 @@ public class ComputerScience30S
         // defined as inbetween two curly brackets { } 
         
         
-       System.out.print("Hello World");
+        /*  
+            This is for multiple line comments, as it covers as many lines as
+            you want starting with "slash star" until it sees the closing 
+            "star slash"
+        */
+        
+        System.out.print("Hello World");
         
     }
 
