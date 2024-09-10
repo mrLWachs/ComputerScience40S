@@ -6,16 +6,17 @@ public class ComputerScience30S
 
     public static void main(String[] args) {        
        
-        // This is a comment all typing after "//" until the line ends
+        // This is a comment 
+        
+        // All typing after "//" until the line ends is a comment        
         // Commments are not code, so you can write what you want        
         // Curly brackets (braces, parenthesis) { and } are important        
         // All code right now goes between these two brackets. Comments are 
         // not code, so you can write what you want
         
-        
-        // Code lines are written inside of a "block" which is
-        // defined as inbetween two curly brackets { } 
-        
+        // Clicking the green triange on the toolbar above will "run" or
+        // "compile" your code and show you the running program in an output
+        // window below...        
         
         /*  
             This is for multiple line comments, as it covers as many lines as
