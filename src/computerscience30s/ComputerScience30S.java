@@ -286,6 +286,39 @@ public class ComputerScience30S
         System.out.println("y = " + y);
         System.out.println("z = " + z);
         
+        // Constants are variables that don't change (they stay "constant"),
+        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+        // to seperate words
+        
+        final double  PI               = 3.1415962658389;
+        final int     PROBLEMS         = 99;
+        final char    YES              = 'Y';
+        final boolean FOUND            = true;
+        final String  COMPUTER_TEACHER = "Wachs";
+        
+        System.out.println(PI       + ", " + 
+                           PROBLEMS + ", " + 
+                           YES      + ", " + 
+                           FOUND    + ", " + 
+                           COMPUTER_TEACHER);
+        
+        // In a line of code, one space or multiple spaces doesn't matter
+        // as seen above when declaring constants (it only matter when
+        // between quotation marks). You can hit enter in a line of code
+        // to break to a new line, because the computer will still consider
+        // it ONE line of code until we reach the semicolon.
+        
+        // Constants are used for things like: easier code to maintain,
+        // easier to read/understand (especially for other programmers)
+        
+        // Converting between variable data types...
+        
+        
+        
+        
+        
+        
+        
         
         
         
