@@ -236,93 +236,102 @@ public class ComputerScience30S
 //        
 //        System.out.println("d = " + d);
 //        
-        // The boolean ("bool" in C#), integer (int), double, and character
-        // (char) are all simple (primitive) data types, now a "complex" data
-        // type....
-        
-        
-        String e = "apple";
-        
-        System.out.println("e = " + e);
-        
-        // Manipulate ("use") our variables...
-        
-        int x = 10;
-        
-        System.out.println("x = " + x);
-        
-        x = 20;
-        
-        System.out.println("x = " + x);
-        
-        int y = x + 10;
-        
-        System.out.println("y = " + y);
-        
-        // Optional ("you don't have to use this code") shorthand...
-        
-        y++;    // Means the same as y = y + 1;
-        y--;    // Means the same as y = y - 1;
-        
-        // Even more shorthand (less recommended)
-        
-        y += 10;    // Means the same as y = y + 10;
-        y -= 10;    // Means the same as y = y - 10;
-        y *= 10;    // Means the same as y = y * 10;
-        y /= 10;    // Means the same as y = y / 10;
-        
-        System.out.println("y = " + y);
-        
-        // Modulus (mod) division gives you the remainder of a division
-        // (not the normal answer) - in Java it uses the percentage "%"
-        // symbol for this
-        
-        x = 28;
-        y = x / 5;
-        
-        int z = x % 5;
-        
-        System.out.println("x = " + x);
-        System.out.println("y = " + y);
-        System.out.println("z = " + z);
-        
-        // Constants are variables that don't change (they stay "constant"),
-        // and constants are written in ALL_CAPITAL_LETTERS with underscores
-        // to seperate words
-        
-        final double  PI               = 3.1415962658389;
-        final int     PROBLEMS         = 99;
-        final char    YES              = 'Y';
-        final boolean FOUND            = true;
-        final String  COMPUTER_TEACHER = "Wachs";
-        
-        System.out.println(PI       + ", " + 
-                           PROBLEMS + ", " + 
-                           YES      + ", " + 
-                           FOUND    + ", " + 
-                           COMPUTER_TEACHER);
-        
-        // In a line of code, one space or multiple spaces doesn't matter
-        // as seen above when declaring constants (it only matter when
-        // between quotation marks). You can hit enter in a line of code
-        // to break to a new line, because the computer will still consider
-        // it ONE line of code until we reach the semicolon.
-        
-        // Constants are used for things like: easier code to maintain,
-        // easier to read/understand (especially for other programmers)
+//        // The boolean ("bool" in C#), integer (int), double, and character
+//        // (char) are all simple (primitive) data types, now a "complex" data
+//        // type....
+//        
+//        
+//        String e = "apple";
+//        
+//        System.out.println("e = " + e);
+//        
+//        // Manipulate ("use") our variables...
+//        
+//        int x = 10;
+//        
+//        System.out.println("x = " + x);
+//        
+//        x = 20;
+//        
+//        System.out.println("x = " + x);
+//        
+//        int y = x + 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Optional ("you don't have to use this code") shorthand...
+//        
+//        y++;    // Means the same as y = y + 1;
+//        y--;    // Means the same as y = y - 1;
+//        
+//        // Even more shorthand (less recommended)
+//        
+//        y += 10;    // Means the same as y = y + 10;
+//        y -= 10;    // Means the same as y = y - 10;
+//        y *= 10;    // Means the same as y = y * 10;
+//        y /= 10;    // Means the same as y = y / 10;
+//        
+//        System.out.println("y = " + y);
+//        
+//        // Modulus (mod) division gives you the remainder of a division
+//        // (not the normal answer) - in Java it uses the percentage "%"
+//        // symbol for this
+//        
+//        x = 28;
+//        y = x / 5;
+//        
+//        int z = x % 5;
+//        
+//        System.out.println("x = " + x);
+//        System.out.println("y = " + y);
+//        System.out.println("z = " + z);
+//        
+//        // Constants are variables that don't change (they stay "constant"),
+//        // and constants are written in ALL_CAPITAL_LETTERS with underscores
+//        // to seperate words
+//        
+//        final double  PI               = 3.1415962658389;
+//        final int     PROBLEMS         = 99;
+//        final char    YES              = 'Y';
+//        final boolean FOUND            = true;
+//        final String  COMPUTER_TEACHER = "Wachs";
+//        
+//        System.out.println(PI       + ", " + 
+//                           PROBLEMS + ", " + 
+//                           YES      + ", " + 
+//                           FOUND    + ", " + 
+//                           COMPUTER_TEACHER);
+//        
+//        // In a line of code, one space or multiple spaces doesn't matter
+//        // as seen above when declaring constants (it only matter when
+//        // between quotation marks). You can hit enter in a line of code
+//        // to break to a new line, because the computer will still consider
+//        // it ONE line of code until we reach the semicolon.
+//        
+//        // Constants are used for things like: easier code to maintain,
+//        // easier to read/understand (especially for other programmers)
         
         // Converting between variable data types...
         
+        int f = 25;
         
+        System.out.println("f = " + f);
         
+        double g = f;
         
+        System.out.println("g = " + g);
         
+        g = 25.9999999999999;
         
+        System.out.println("g = " + g);
         
+        int h = (int)g;
         
+        System.out.println("h = " + h);
         
-        
-        
+        // When we use round brackets ( )  with a data type inside, this is
+        // called "casting" which means it converts (temporarily) to another
+        // data type - which meant it ignored the decimal part
         
         
         
