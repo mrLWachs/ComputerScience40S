@@ -96,8 +96,7 @@ public class ComputerScience30S
                 "Question Title",
                 JOptionPane.QUESTION_MESSAGE
         );
-        
-        
+                
         JOptionPane.showMessageDialog(
                 null, 
                 "Warning icon is !",
@@ -255,8 +254,7 @@ public class ComputerScience30S
         // The boolean ("bool" in C#), integer (int), double, and character
         // (char) are all simple (primitive) data types, now a "complex" data
         // type....
-        
-        
+                
         String e = "apple";
         
         System.out.println("e = " + e);
@@ -479,8 +477,54 @@ public class ComputerScience30S
         int card = (int) ( ( 52 - 2 + 1 ) * Math.random() + 2 );
         System.out.println("card = " + card);
         
+        ///////////////////////////////////////////////////////////////////////
+        // CONDITIONAL STATEMENTS
+        ///////////////////////////////////////////////////////////////////////
         
+        // The simple if statement, you use this when comparing if something is
+        // true, as it checks that one thing ("asks a true/false question")
+        
+        // If statements use both ( ) round and { } curly brackets and the 
+        // code inside of the curly brackets is said to be in a "block" of
+        // code and that block only runs when the test inside of the round
+        // brackets tests TRUE. It also indents the code inside the block
 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
     }
