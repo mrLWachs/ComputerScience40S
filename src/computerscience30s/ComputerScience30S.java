@@ -421,6 +421,11 @@ public class ComputerScience30S
         
         System.out.println("Word " + word + "in upper case is " + upper);
         
+        // Many more string functions can be explored
+        
+        // "Math" library of code is also "built-in" to java
+        // which comes with it's own functions (actions, methods)
+        
         
         
         
