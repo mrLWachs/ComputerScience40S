@@ -349,33 +349,33 @@ public class ComputerScience30S
 //        // called "casting" which means it converts (temporarily) to another
 //        // data type - which meant it ignored the decimal part
 //        
-        double k = 2.999999999;
-        int    l = (int)k;
-        double m = (double)l;
-        
-        // Casting can happen with other data types...
-        
-        char n = 'A';
-        int  o = (int)n;
-        char p = (char)70;
-        
-        System.out.println("k = " + k);
-        System.out.println("l = " + l);
-        System.out.println("m = " + m);
-        System.out.println("n = " + n);
-        System.out.println("o = " + o);
-        System.out.println("p = " + p);
-        
-        // How to use dialog (JoptionPane) boxes (specifically the input)
-        // with variables...
-        
-        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
-        // at the front of the line that makes the input dialog (code above is
-        // wrong, always make a string variable then the input dialog)
-        
-        String q = JOptionPane.showInputDialog("Enter a string");
-        
-        JOptionPane.showMessageDialog(null, q);
+//        double k = 2.999999999;
+//        int    l = (int)k;
+//        double m = (double)l;
+//        
+//        // Casting can happen with other data types...
+//        
+//        char n = 'A';
+//        int  o = (int)n;
+//        char p = (char)70;
+//        
+//        System.out.println("k = " + k);
+//        System.out.println("l = " + l);
+//        System.out.println("m = " + m);
+//        System.out.println("n = " + n);
+//        System.out.println("o = " + o);
+//        System.out.println("p = " + p);
+//        
+//        // How to use dialog (JoptionPane) boxes (specifically the input)
+//        // with variables...
+//        
+//        // Whenever you are using INPUT dialogs, ALWAYS use a variable first
+//        // at the front of the line that makes the input dialog (code above is
+//        // wrong, always make a string variable then the input dialog)
+//        
+//        String q = JOptionPane.showInputDialog("Enter a string");
+//        
+//        JOptionPane.showMessageDialog(null, q);
         
         // The variable (always has to start as a string) stores what the 
         // user types in the input dialog box
@@ -383,9 +383,16 @@ public class ComputerScience30S
         // With numbers, you HAVE to start off with a string, and then convert
         // it to a number. This is like Convert.ToInt32(text); in C#
         
+        String r = JOptionPane.showInputDialog("Enter an int");
         
+        // We convert using code to "parse" (means to "read")
         
+        int s = Integer.parseInt(r);
         
+        // Always use a capital "I" and whole word "Integer" for this parsing
+        // the string into a number
+        
+        JOptionPane.showMessageDialog(null, "int is " + s);
         
         
         
