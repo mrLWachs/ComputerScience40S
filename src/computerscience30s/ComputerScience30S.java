@@ -554,6 +554,9 @@ public class ComputerScience30S
         // "||" for "or"
         // "!"  for "not"
         
+        int age = 17;
+        double iq = 100.0;
+        
         
         
         
