@@ -523,8 +523,16 @@ public class ComputerScience30S
         // And.. (even further shorthand) the line can be moved up to the
         // same line as the if statement
         
+        char value5 = 'A';
+        char value6 = 'a';
         
+        if (value5 != value6) System.out.println("!=");
+        else                  System.out.println("==");
         
+        // Use "else if" for multiple cases of more than 2 things (same as the
+        // "switch" statement - which I don't use) use strings for this
+        // example which are more complex (because they use many character,
+        // and upper and lower case)
         
         
         
