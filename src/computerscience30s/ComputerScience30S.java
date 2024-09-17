@@ -508,7 +508,7 @@ public class ComputerScience30S
         
         double value3 = 1.45, value4 = 1.5;
         
-        // Using a comma is a option (I do not recomend)
+        // Using a comma is a option (I do not recommend)
         
         if (value3 < value4) {
             System.out.println("Less than");
@@ -534,12 +534,25 @@ public class ComputerScience30S
         // example which are more complex (because they use many character,
         // and upper and lower case)
         
+        // NOTE: with string NEVER use == ALWAYS use .equals()...
         
+        String word1 = "edy";
+        String word2 = "eDgy";
         
+        if (word1.equals(word2)) {
+            System.out.println("W1==W2");
+        }
+        else if (word1.equalsIgnoreCase(word2)) {
+            System.out.println("W1 kind of == W2");
+        }
+        else {
+            System.out.println("W1!=W2");
+        }
         
-        
-        
-        
+        // Combine logic using "and" "or" "not" which use the symbols:
+        // "&&" for "and"
+        // "||" for "or"
+        // "!"  for "not"
         
         
         
