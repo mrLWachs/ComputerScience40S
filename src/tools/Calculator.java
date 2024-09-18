@@ -9,6 +9,9 @@ package tools;
  * @author Mr. Wachs 
  * @since September 18, 2024
  */
-public class Calculator {
+public class Calculator 
+{
+    
+    
     
 }
