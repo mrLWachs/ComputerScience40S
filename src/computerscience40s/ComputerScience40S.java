@@ -2,6 +2,9 @@
 /** Required package class namespace */
 package computerscience40s;
 
+/** Required imports */
+import testing.Tester;
+
 
 /**
  * ComputerScience40S.java - the large in class example we continue to work 
@@ -23,6 +26,7 @@ public class ComputerScience40S
     public static void main(String[] args) {
         System.out.println("Computer Science 40S starting...");
         
+        Tester tester = new Tester();
         
         System.out.println("Computer Science 40S complete!");
     }

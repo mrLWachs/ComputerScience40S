@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+/** Required package class namespace */
 package testing;
 
+ 
 /**
+ * Tester.java - tests the concepts learned in all the units.
  *
- * @author lawrence.wachs
+ * @author Mr. Wachs 
+ * @since September 18, 2024
  */
-public class Tester {
+public class Tester 
+{
+
+    /**
+     * Default constructor, sets class properties
+     */
+    public Tester() {
+        System.out.println("Testing has begun...");
+        RecursionTest unit1 = new RecursionTest();
+        // Later we will add code here for unit 2 and 3...
+        System.out.println("Testing complete!");
+    }
     
 }

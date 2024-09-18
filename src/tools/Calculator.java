@@ -1,12 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+/** Required package class namespace */
 package tools;
 
+ 
 /**
+ * Calculator.java - useful collection of methods for doing calculations.
  *
- * @author lawrence.wachs
+ * @author Mr. Wachs 
+ * @since September 18, 2024
  */
 public class Calculator {
     
