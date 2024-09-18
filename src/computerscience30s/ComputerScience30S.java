@@ -627,8 +627,8 @@ public class ComputerScience30S
             System.out.println("i = " + i);
         }
         
-        for (int number = 100; number <= 500; number*=2) {
-            System.out.println("number = " + number);
+        for (int counting = 100; counting <= 500; counting*=2) {
+            System.out.println("counting = " + counting);
         }
         
         
