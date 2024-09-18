@@ -557,11 +557,28 @@ public class ComputerScience30S
         int age = 17;
         double iq = 100.0;
         
+        if (age >= 21 && iq > 130) {
+            // with "AND" (&&) BOTH have to be true
+            System.out.println("Get in");
+        } 
+        else if (age >= 18 || iq >= 100) {
+            // with "OR" (||) EITHER can be true
+            System.out.println("Keep trying");
+        }
+        else if (!(age < 200 && iq <= 200)) {
+            // the "NOT" ! REVERSES the logic
+            System.out.println("?");
+        }
+        else {
+            System.out.println("Get out");
+        }
+        
+        ///////////////////////////////////////////////////////////////////////
+        // LOOPING
+        ///////////////////////////////////////////////////////////////////////
         
         
-        
-        
-        
+        // Simple loop...
         
         
         
@@ -596,3 +613,5 @@ public class ComputerScience30S
 //      output window, or the X in the bottom right of NetBeans
 // (10) A red squiggily line and/or a "lightbulb" in NetBeans means a potential
 //      error and a potential fix (if you click on the lightbulb)
+// (11) You can get more NetBeans tips and autocompletes by selecting:
+//      Help -> Keyboard Shortcuts Card
