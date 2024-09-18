@@ -4,10 +4,13 @@ package computerscience40s;
 
 
 /**
- * ComputerScience40S.java - 
+ * ComputerScience40S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
  *
  * @author Mr. Wachs 
- * @since 
+ * @since Sweanesday, September 18, 2024
  */
 public class ComputerScience40S 
 {
@@ -18,7 +21,10 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-               
+        System.out.println("Computer Science 40S starting...");
+        
+        
+        System.out.println("Computer Science 40S complete!");
     }
     
 }
