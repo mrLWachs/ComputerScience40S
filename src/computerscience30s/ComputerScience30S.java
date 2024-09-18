@@ -601,6 +601,26 @@ public class ComputerScience30S
         // when you want the body (block) of the loop to run at least
         // once!
         
+        String choice = "";
+        
+        do {            
+            choice = JOptionPane.showInputDialog("Enter password");
+        } while (choice.equalsIgnoreCase(password) == false);
+        
+        // The "for" loop is used for counting (and for the upcoming unit 
+        // called "arrays"). It is a much more technical ("codey") looking loop
+        // The inside of the round brackets means: ( start ; end ; change)        
+        // The for loop creates its own variable (by default NetBeans calls
+        // it "i") - short for "iteration"
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
