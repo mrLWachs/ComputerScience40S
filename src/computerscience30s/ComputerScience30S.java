@@ -646,7 +646,8 @@ public class ComputerScience30S
                        + "have requested that you develop an application \n"
                        + "that will display both temperatures after the \n"
                        + "Celsius temperature is inputted. Note: Use \n"
-                       + "this conversion formula F = (C ∗ 1.8) + 32";        
+                       + "this conversion formula F = (C ∗ 1.8) + 32";     
+        JOptionPane.showMessageDialog(null, message);
         // Get user input (temperature in celcius) - dialog
         String userInput = JOptionPane.showInputDialog("Enter temperature "
                 + "in Celcius");
