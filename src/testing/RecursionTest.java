@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
  
 /**
  * RecursionTest.java - tests the concepts learned in this unit. Recursion is 
@@ -30,6 +32,38 @@ public class RecursionTest
     public RecursionTest() {
         System.out.println("Recursion testing begining...");
         
+        // When testing, think of three scenarios:
+            // (1) Typical case ("user"): do what they are told to do
+            // (2) Edge cases (more than one): they "push" the edge
+            // (3) Beyond the edge: "bad" users, trying to break things
+        
+        System.out.println("Recursive factorials............................");
+        
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
+        
+        final int MIN_EDGE = -1;
+        final int MAX_EDGE = 20;  // Beyond this we get an "overflow" error   
+        
+        // Loop through a series of tests (going through the "edge cases")
+        for (int number = MIN_EDGE; number <= MAX_EDGE; number++) {
+            long answer = Calculator.factorial(number);
+            System.out.println(number + " factorial = " + answer);
+        }
+    
+        
+        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         
         System.out.println("Recursion testing complete!");
     }
