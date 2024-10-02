@@ -51,7 +51,7 @@ public class Calculator
         
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
-        
+                
         // Recursive case(s):
         // ==================
         
