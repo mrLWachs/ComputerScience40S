@@ -22,9 +22,21 @@ public class Person
     // or not. Meaning: is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
     
-    String name;
-    String gender;
-    int age;
+    /**
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by anther class "using" this class
+     */
+    public String name;
+    
+    public int age;
+    
+    /**
+     * Properties that use the "modifier" word "private" will "encapsulate"
+     * this property so that it can only be accessed inside the class (like 
+     * a "private room") - this is the concept of encapsulation
+     */
+    private String gender;
+    
     boolean alive;
     
     
@@ -37,7 +49,7 @@ public class Person
      * used to build (construct, instantiate) an object. Constructor methods 
      * with NO parameters are called default constructors
      */
-    Person() {
+    public Person() {
         alive = true;
         age = 0;
         gender = "undefined";
@@ -54,7 +66,7 @@ public class Person
      * @param age the age of this person
      * @param gender the identified gender of this person
      */
-    Person(String name, int age, String gender) {
+    public Person(String name, int age, String gender) {
         alive = true;           // Could have also written "this.alive = true;"
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
@@ -70,21 +82,26 @@ public class Person
      * The person dies (changing/modifying) the private, encapsulated 
      * property (alive) through this method
      */
-    void die() {
+    public void die() {
         alive = false;
     }
     
     /**
      * Outputs information about the person to the screen
      */
-    void talk() {
-        
+    public void talk() {
+        if (alive) {
+            System.out.println(name + " is " + age + " identifes as " + gender);
+        }
+        else {
+            System.out.println("Boooooo!");
+        }
     }
     
     /**
      * A person has a birthday (the age goes up by one)
      */
-    void birthday() {
+    private void birthday() {
         age++;
     }
     
