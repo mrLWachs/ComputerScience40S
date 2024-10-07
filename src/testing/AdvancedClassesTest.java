@@ -2,6 +2,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /*
@@ -52,6 +53,31 @@ public class AdvancedClassesTest
         // Person class that is modified to be "private" I do NOT have
         // access to that - for example:
         // person.gender = "male";
+        
+        // Try our overloaded, second constructor option
+        Person hugh = new Person("Hugh Jass",103,"female");
+        hugh.talk();
+        
+        // Instantiate (means create an "instance of") a student object
+        Student student = new Student();
+        student.talk();
+        // Because the "name" property (inherited from Person) is public (not
+        // encapsulated) we can change ("modify", "mutate") the property
+        // we cannot change gender because it is encapsulated (private)
+        student.name = "Stu Denty";
+        student.talk();
+        // We can also change some of the properties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.die();
+        student.talk();
+        
+        
+        
+        
+        
+        
+        
         
         
         
