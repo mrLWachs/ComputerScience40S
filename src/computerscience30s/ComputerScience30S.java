@@ -22,7 +22,13 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S 
 {
 
-    public static void main(String[] args) {     
+    public static void main(String[] args) {   
+        // "Call" a method (means you use the name of the method)
+        //learnIntroToJava();
+        learnMethods();
+    }
+
+    private static void learnIntroToJava() {
         // TODO code application logic here
         
         ///////////////////////////////////////////////////////////////////////
@@ -666,6 +672,20 @@ public class ComputerScience30S
         
         // Curly brackets (braces, parenthesis) { and } are important - all 
         // code goes between these two brackets  
+        
+    }
+
+    private static void learnMethods() {
+        System.out.println("Start learning methods...");
+        
+        // Methods (functions, procedures, actions) are named in a style like 
+        // variables are named (lowercase then camel casing), but use verb
+        // type words starting with lowercase then using camel casing the
+        // presense of round brackets ( ) indicate a method. We make methods
+        // for: (1) to break up a problem (2) reusability (3) to avoid 
+        // repeating code
+        
+        // Code to "jump" to a method, is "calling" the method (method call)
         
     }
 
