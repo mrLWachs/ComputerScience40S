@@ -23,4 +23,46 @@ public class Student extends Person
      */
     public Book book;
     
+    private int number;     // Class properties (and inherited other properties)  
+    private double gpa;     // Encapsulated property
+        
+    /**
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well)
+     */
+    public Student() {
+        super();
+        // The keyword "super" refers to the "super-class" or "parent" class
+        // in this case that is the Person class - by adding the round brackets
+        // we make a call to the super constructor           
+        gpa    = 0.0;
+        number = 1;
+        book   = new Book();   
+    }
+        
+    public Student(String name, int age, String gender, int number) {
+        
+    }
+    
+    public void cram() {
+        
+    }
+    
+    public void slackoff() {
+        
+    }
+    
+    public void study() {
+        
+    }
+    
+    public void talk() {
+        
+    }
+    
+    private void secret() {
+        
+    }
+        
 }
