@@ -704,10 +704,12 @@ public class ComputerScience30S
         write("Indianna Jones");
         write("Ant-man");
         
+        // You can have more than one, multiple parameters/arguments in a 
+        // method which are seperated with commas ","
         
         writeLotsOf("Dalmations",101);
         
-        
+        writeLotsOf("Problems", 99);
         
         
         
