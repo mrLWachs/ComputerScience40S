@@ -94,9 +94,19 @@ public class Student extends Person
         gpa *= 1.0001;
     }
     
-        
+    /**
+     * Talk is an "over-ride" (not overload) method means it when called will 
+     * run its code and not the code from the method it inherited. The "comment"
+     * the light bulb suggested "@Override" is a signal to NetBeans that 
+     * a method over-ride is taking place - this is also seen in NetBeans with 
+     * a target-like circle
+     */
+    @Override
     public void talk() {
-        
+        super.talk();                           // Invoking super class method
+        System.out.println("I am a student");
+        System.out.println("\tNumber: " + number);
+        System.out.println("\tGPA:    " + gpa);
     }
         
 }
