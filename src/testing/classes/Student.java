@@ -40,9 +40,25 @@ public class Student extends Person
         number = 1;
         book   = new Book();   
     }
-        
+       
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param gender the gender for this student
+     * @param number the student number for this student
+     */
     public Student(String name, int age, String gender, int number) {
-        
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the properties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name,age,gender);
+        // Now set the properties of "this" (the Student) class...
+        this.gpa    = 0.0;
+        this.number = number;
+        this.book   = new Book();
     }
     
     /**
