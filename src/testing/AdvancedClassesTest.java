@@ -3,6 +3,7 @@ package testing;
 
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -85,10 +86,7 @@ public class AdvancedClassesTest
         stewie.die();      // Inherited method from Person (parent/super) class
         stewie.talk();
         // stewie.secret(); // you cannot call encapsulated methods!
-        
-        
-        
-        
+       
         
         
         
