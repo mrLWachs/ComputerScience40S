@@ -733,6 +733,10 @@ public class ComputerScience30S
             write(thing);
         }
     }
+    
+    private static int giveMeNumber() {
+        
+    }
 
 }
 
@@ -808,3 +812,5 @@ public class ComputerScience30S
 //      mouse to jump to the method (even ones we don't write)
 // (18) If you write the "call" to a method, before writing the method 
 //      itself, the lightbulb (see tip 10) will help you write it
+// (19) On the left side window, the Navigator window helps find and jump to
+//      methods if you double click them
