@@ -22,12 +22,20 @@ import javax.swing.JOptionPane;
 public class ComputerScience30S 
 {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {   
         // "Call" a method (means you use the name of the method)
         //learnIntroToJava();
         learnMethods();
     }
 
+    /**
+     * Learn the content of the introduction unit (unit 1)
+     */
     private static void learnIntroToJava() {
         // TODO code application logic here
         
@@ -675,6 +683,9 @@ public class ComputerScience30S
         
     }
 
+    /**
+     * Learn the content of the methods unit (unit 2)
+     */
     private static void learnMethods() {
         System.out.println("Start learning methods...");
         
@@ -765,6 +776,8 @@ public class ComputerScience30S
      * @return random number between 1 and 10 (output)
      */
     private static int giveMeNumber() {
+        // Methods can have no outputs (the word "void") or can have ONE output
+        // which means the method will "return" that data type in the method
         int number = random(1,10);
         return number;
     }
