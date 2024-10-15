@@ -727,14 +727,28 @@ public class ComputerScience30S
         System.out.println("Completed learning methods!");
     }
 
+    /**
+     * Writes a star on the screen
+     */
     private static void writeStar() {
         System.out.println("*");
     }
 
+    /**
+     * Writes something on the screen
+     * 
+     * @param thing the something to write (input)
+     */
     private static void write(String thing) {
         System.out.println(thing);
     }
 
+    /**
+     * Writes something on the screen multiple times
+     * 
+     * @param thing the something to write
+     * @param times how many times to write it
+     */
     private static void writeLotsOf(String thing, int times) {
         // Methods can have no parameters, one parameter, or lots of parameters,
         // if it has more than one parameter, they are separated by commas
@@ -743,8 +757,30 @@ public class ComputerScience30S
         }
     }
     
+    /**
+     * Gives you a random number
+     * 
+     * @return random number between 1 and 10 (output)
+     */
     private static int giveMeNumber() {
-        return 7;
+        int number = random(1,10);
+        return number;
+    }
+
+    /**
+     * Generates a random number in a range between two numbers
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @return random number less than or equal to low and greater than or 
+     * equal to high
+     */
+    private static int random(int low, int high) {
+        double seed   = Math.random();
+        double L      = (low);
+        double H      = (high);
+        double number = ( H - L + 1 ) * seed + L;
+        return (int)number;
     }
 
 }
@@ -823,3 +859,8 @@ public class ComputerScience30S
 //      itself, the lightbulb (see tip 10) will help you write it
 // (19) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
+// (20) If you want to remove the auto-generated reminder when you use the
+//      lightbulb to create a method, go to Tools -> Templates, scroll down 
+//      and click on the "+" beside "Java", and then the "+" beside "code
+//      snippets", and select "Generated Method body" and remove the last line
+
