@@ -886,4 +886,9 @@ public class ComputerScience30S
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
+// (21) If you type /** before the method signature line it will automate
+//      which JavaDoc comments you should make
+// (22) If you have to rename a variable or a method, select the word (the name
+//      of the variable or method) and then press CTRL + R, then type in a
+//      new name
 
