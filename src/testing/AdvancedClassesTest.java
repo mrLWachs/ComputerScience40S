@@ -100,6 +100,17 @@ public class AdvancedClassesTest
         teacher.die();
         teacher.talk();
         
+        // The Object class - this class already exists (we don't write it)
+        // it is part of Java, all Java project "have it". Also, the
+        // Object class is the parent (super) class of ALL classes
+        
+        Object object1 = new Object();
+        
+        
+        
+        
+        
+        
         
         
         
