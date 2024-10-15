@@ -719,11 +719,12 @@ public class ComputerScience30S
         
         write("number is " + number);
         
+        // Overloaded methods are methods with the smae name, BUT different
+        // parameters / arguments
         
-        output("Hello World");
+        output("Hello");
         
         output("Good-bye","Learning Methods");
-        
         
         System.out.println("Completed learning methods!");
     }
