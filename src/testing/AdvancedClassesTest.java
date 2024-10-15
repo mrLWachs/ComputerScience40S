@@ -87,7 +87,10 @@ public class AdvancedClassesTest
         stewie.talk();
         // stewie.secret(); // you cannot call encapsulated methods!
        
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.talk();                 // Invoke (call) the inherited method
+        teacher.teach();
         
         
         
