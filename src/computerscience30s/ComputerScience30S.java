@@ -29,7 +29,7 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {   
         // "Call" a method (means you use the name of the method)
-        //learnIntroToJava();
+        learnIntroToJava();
         learnMethods();
     }
 
