@@ -122,7 +122,18 @@ public class AdvancedClassesTest
         // including the memory address (in hexadecimal code) where this object
         // is stored in this computer's memory 
         
+        System.out.println("O1 = " + object1.toString());
+        System.out.println("O2 = " + object2.toString());
+        System.out.println("O3 = " + object3.toString());
         
+        // The method (toString) is inherited by ALL sub classes (children)
+        // of the Object class - remember the Object class is the parent or
+        // super class of ALL classes - so they all inherit toString, including
+        // classes we write...
+        
+        System.out.println("Person  as a string = " + person.toString());
+        System.out.println("Student as a string = " + student.toString());
+        System.out.println("Teacher as a string = " + teacher.toString());
         
         
         
