@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import javax.swing.JOptionPane;
 import testing.classes.Person;
 import testing.classes.Student;
