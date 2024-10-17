@@ -84,5 +84,15 @@ public class Teacher extends Person
         // We have to watch for "out of bounds" error (exception)
         if (count >= MAX) count = 0;
     }
+    
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Teacher: " + super.toString();
+    }
 
 }

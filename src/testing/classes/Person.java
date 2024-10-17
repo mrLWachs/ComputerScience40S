@@ -105,9 +105,14 @@ public class Person
         age++;
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
     @Override
     public String toString() {
-        return "I am a person";
+        return "Person: " + super.toString();
     }
     
 }
