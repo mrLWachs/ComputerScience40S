@@ -115,5 +115,28 @@ public class Person
         return "Person: " + super.toString();
     }
     
+    public boolean equals(Object object) {
+        // If we just used a line like...
+        // return true;
+        // this would be a "shallow" comparison
+        
+        // We want to go "deeper" in this comparison...        
+        // First, "convert" (cast) the parameter to the same data type as 
+        // "this" particular class (Person)
+        Person that = (Person)object;
+        // Casting can work with class level objects (although a error might
+        // be "thrown" in some cases)
+        
+        if (this.alive != that.alive) return false;
+        // Let's go even deeper...        
+        if (this.age  != that.age)       return false;
+        if (this.name.equals(that.name)) return false;        
+        
+        // If we get through the above if statements, we can finally return 
+        // true (they are equal people) - remember, when you return from a 
+        // method, the method is over (no more lines of code execute)
+        return true;
+    }
+    
 }
 
