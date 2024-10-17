@@ -115,6 +115,13 @@ public class Person
         return "Person: " + super.toString();
     }
     
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
     public boolean equals(Object object) {
         // If we just used a line like...
         // return true;
