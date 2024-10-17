@@ -112,6 +112,10 @@ public class Person
      */
     @Override
     public String toString() {
+        // We are in charge of writing our own "toString()" method to override
+        // the Object class toString() method that we inherited from that 
+        // class. It is a good idea to get in the habit of overriding this 
+        // method with classes we create
         return "Person: " + super.toString();
     }
     
@@ -125,7 +129,7 @@ public class Person
     public boolean equals(Object object) {
         // If we just used a line like...
         // return true;
-        // this would be a "shallow" comparison
+        // Then this would be a "shallow" comparison
         
         // We want to go "deeper" in this comparison...        
         // First, "convert" (cast) the parameter to the same data type as 
