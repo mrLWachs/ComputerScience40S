@@ -42,22 +42,24 @@ public class AdvancedClassesTest
         // Change (or "modify" or"mutate") some properties (or "data")
         person.name = "per sony";
         person.age = 17;
+        
+        // If I try to change ("mutate") a property ("variable") of the
+        // Person class that is modified to be "private" (or encapsulated) 
+        // I do NOT have access to that - for example:
+        
         //person.gender = "non-binary";
-        // The gender property of the person object is encapsulated
         
         // Try to call (invoke) some of our other methods:
         person.talk();
         person.die();
         person.talk();
+        
         //person.birthday();
-        // birthday is private
         
-        // If I try to change ("mutate") a property ("variable") of the
-        // Person class that is modified to be "private" I do NOT have
-        // access to that - for example:
-        // person.gender = "male";
-        
-        // Try our overloaded, second constructor option
+        // Will not execute as the birthday() method is private (encapsulated)
+                
+        // Try our overloaded, second constructor option as build a second
+        // Person object...
         Person hugh = new Person("Hugh Jass",103,"female");
         hugh.talk();
         
