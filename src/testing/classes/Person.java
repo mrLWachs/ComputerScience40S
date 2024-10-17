@@ -105,5 +105,10 @@ public class Person
         age++;
     }
     
+    @Override
+    public String toString() {
+        return "I am a person";
+    }
+    
 }
 

@@ -135,6 +135,15 @@ public class AdvancedClassesTest
         System.out.println("Student as a string = " + student.toString());
         System.out.println("Teacher as a string = " + teacher.toString());
         
+        // Since the object class is also the super class of classes we DON'T
+        // write but are already part of java, they also inherit toString...
+        
+        String string = new String("squirrel");
+        System.out.println("String  as a string = " + string.toString());
+        
+        
+        
+        
         
         
         
