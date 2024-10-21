@@ -94,5 +94,22 @@ public class Teacher extends Person
     public String toString() {
         return "Teacher: " + super.toString();
     }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        Teacher that = (Teacher)object;
+        if (!super.equals(that)) return false;
+        // For fun, we could go mush deeper, for example...
+        for (int i = 0; i < that.count; i++) {
+            if (!that.students[i].equals(this.students[i])) return false;
+        }
+        return true;
+    }
 
 }

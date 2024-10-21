@@ -173,12 +173,22 @@ public class AdvancedClassesTest
         // Using our previously created Person objects with equals
         if (person.equals(hugh)) System.out.println("person==hugh");
         
+        // Now test "equals" with Student objects, and we will be over-riding 
+        // the equals method in the student class....        
+        Student student1 = new Student("1", 0, "1", 1);
+        Student student2 = new Student("2", 0, "2", 2);
+        Student student3 = new Student("3", 0, "3", 1);
+        if (student1.equals(student2)) System.out.println("S1==S2");
+        if (student2.equals(student3)) System.out.println("S2==S3");
+        if (student1.equals(student3)) System.out.println("S1==S3");
         
-        
-        
-        
-        
-        
+        // We have over-ridden the toString() and equals() methods in the
+        // Person, Student, and Teacher classes so that we can check how that 
+        // method is called over the object version of those methods. It is 
+        // useful to alter a NetBeanstemplate so those methods are always 
+        // over-ridden in every new class created (see the comment in 
+        // "ComputerScience40S.java" to do this). Now we also over-ride the 
+        // clone method...
         
         
         

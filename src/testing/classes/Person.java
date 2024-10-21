@@ -141,7 +141,7 @@ public class Person
         if (this.alive != that.alive) return false;
         // Let's go even deeper...        
         if (this.age  != that.age)       return false;
-        if (this.name.equals(that.name)) return false;        
+        if (!this.name.equals(that.name)) return false;        
         
         // If we get through the above if statements, we can finally return 
         // true (they are equal people) - remember, when you return from a 

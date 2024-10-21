@@ -118,5 +118,23 @@ public class Student extends Person
     public String toString() {
         return "Student: " + super.toString();
     }
+    
+    /**
+     * Deep comparison, determines if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        Student that = (Student)object;     // Cast our object as a Student
+        // Potentially we could have a "casting" error here (seen later)
+        // Compare the objects using the parent method
+        if (super.equals(that) == false) return false;
+        // Now check the Student properties (that we determine relevant)
+        if (that.gpa != this.gpa) return false;
+        // finally they are equal
+        return true;
+    }    
         
 }
