@@ -176,8 +176,8 @@ public class AdvancedClassesTest
         // Now test "equals" with Student objects, and we will be over-riding 
         // the equals method in the student class....        
         Student student1 = new Student("1", 0, "1", 1);
-        Student student2 = new Student("2", 0, "2", 2);
-        Student student3 = new Student("3", 0, "3", 1);
+        Student student2 = new Student("1", 0, "1", 1);
+        Student student3 = new Student("2", 0, "1", 1);
         if (student1.equals(student2)) System.out.println("S1==S2");
         if (student2.equals(student3)) System.out.println("S2==S3");
         if (student1.equals(student3)) System.out.println("S1==S3");
