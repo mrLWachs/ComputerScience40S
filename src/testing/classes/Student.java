@@ -151,8 +151,7 @@ public class Student extends Person
         that.gpa    = this.gpa;
         that.book   = this.book;
         // Now also clone (copy) properties from the super class (Person)
-        // We tried this, but got a casting error...
-        
+        // We tried this, but got a casting error...        
         // that = (Student)super.clone();
         
         // Instead, we tried the code below, but the encapsulated property 
