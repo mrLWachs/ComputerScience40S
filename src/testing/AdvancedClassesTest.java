@@ -190,6 +190,33 @@ public class AdvancedClassesTest
         // "ComputerScience40S.java" to do this). Now we also over-ride the 
         // clone method...
         
+        Person p1 = new Person("p1", 1, "female");
+        Person p2 = p1.clone();
+        System.out.println("P1 = " + p1.toString());
+        System.out.println("P2 = " + p2.toString());
+        p1.talk();
+        p2.talk();
+        p1.name = "Smith";
+        p1.talk();
+        p2.talk();
+        
+        Student student4 = student1.clone();
+        student1.talk();
+        student4.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

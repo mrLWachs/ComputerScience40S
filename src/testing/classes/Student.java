@@ -136,5 +136,34 @@ public class Student extends Person
         // finally they are equal
         return true;
     }    
+    
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {        
+        // Created a new Student object using new memory
+        Student that = new Student();
+        // Start copying over all the properties (from this class)
+        that.number = this.number;
+        that.gpa    = this.gpa;
+        that.book   = this.book;
+        // Now also clone (copy) properties from the super class (Person)
+        // We tried this, but got a casting error...
+        
+        // that = (Student)super.clone();
+        
+        // Instead, we tried the code below, but the encapsulated property 
+        // (gender) causes an issue...
+        that.age  = this.age;
+        that.name = this.name;
+        // that.gender = this.gender;
+        that.alive = this.alive;         
+        // Return the completed new object (our clone)
+        return that;
+    }
+    
         
 }

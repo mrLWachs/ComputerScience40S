@@ -149,5 +149,23 @@ public class Person
         return true;
     }
     
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Person clone() {
+        // Start by creating new memory and a new Person object
+        Person that = new Person();
+        // Now copy (clone) some of the properties
+        that.age    = this.age;
+        that.name   = this.name;
+        that.gender = this.gender;
+        that.alive  = this.alive;        
+        // Return the completed new object (our clone)
+        return that;
+    }
+    
 }
 
