@@ -112,4 +112,15 @@ public class Teacher extends Person
         return true;
     }
 
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Teacher clone() {
+        // Left as a shallow clone
+        return this;
+    }
+    
 }
