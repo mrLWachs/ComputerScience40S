@@ -27,6 +27,14 @@ public class Student extends Person
     private double gpa;     // Encapsulated property
         
     /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
+    
+    
+    /**
      * Default constructor, set class properties (including a call to the 
      * "super-constructor" from the parent class to set all of its properties 
      * as well)
@@ -38,7 +46,9 @@ public class Student extends Person
         // we make a call to the super constructor           
         gpa    = 0.0;
         number = 1;
-        book   = new Book();   
+        book   = new Book();  
+        // Change ("mutate") the static ("shared") property ("global variable")
+        total++;
     }
        
     /**
@@ -59,6 +69,7 @@ public class Student extends Person
         this.gpa    = 0.0;
         this.number = number;
         this.book   = new Book();
+        total++;
     }
     
     /**

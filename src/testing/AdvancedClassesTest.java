@@ -204,16 +204,37 @@ public class AdvancedClassesTest
         student1.talk();
         student4.talk();
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
         
+        System.out.println("student1 total students = " + student1.total);
+        System.out.println("student2 total students = " + student2.total);
+        System.out.println("student3 total students = " + student3.total);
+        System.out.println("student4 total students = " + student4.total);
+        System.out.println("student total students = " + student.total);
+        System.out.println("stewie total students = " + stewie.total);
         
+        System.out.println("Student total = " + Student.total);
         
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
         
-        
-        
-        
-        
-        
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
         
         
         
