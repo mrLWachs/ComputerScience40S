@@ -37,7 +37,13 @@ public class Person
      */
     private String gender;
     
-    boolean alive;
+    /** 
+     * Using the modifier word "protected" for a property or method means that
+     * property (or the method can be called) can be accessed by the class 
+     * itself (like private) and can be accessed by other class IF those classes
+     * are "related" to this class through inheritance (subclasses)
+     */
+    protected boolean alive;
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
@@ -175,6 +181,44 @@ public class Person
     public static void endTheWorld() {
         System.out.println("Booooooommmmm!!!!");
     }    
+    
+    /**
+     * Accessor method (or "getter" method) that give you (or "reads") the 
+     * alive state of this person object (which is a protected property of this  
+     * class which normally cannot be read outside the class). Sometimes you  
+     * write a accessor method so user outside the class can "read only" that 
+     * property without the ability to change that property
+     * 
+     * @return the person's alive state
+     */
+    public boolean getAlive() {
+        return alive;
+    }
+    
+    /**
+     * Another accessor method. Sometimes, we also write a "mutator" method to
+     * go with the accessor method. Sometimes we write a mutator without a  
+     * accessor.
+     * 
+     * @return the person's gender (to "see" or "access" it)
+     */
+    public String getGender() {
+        return gender;
+    }
+    
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated (protected)
+     * property of this person (which is a protected property of this class 
+     * which cannot be changed outside the class). Often programmers write error 
+     * checking code into mutator methods so the property cannot just be "set"
+     * to anything - but is error checked first
+     * 
+     * @param alive the new alive state to set (mutate) the property into
+     */
+    public void setAlive(boolean alive) {
+        // A programmer could potentially write error checking code here..
+        this.alive = alive;
+    }
     
 }
 
