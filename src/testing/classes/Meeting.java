@@ -2,18 +2,18 @@
 package testing.classes;
  
 /**
- * Doctor.java - description
+ * Meeting.java - description
  *
  * @author Mr. Wachs
- * @since Oct 22, 2024, 11:28:57 a.m.
+ * @since Oct 24, 2024, 11:54:17 a.m.
  */
-public class Doctor extends Person
+public class Meeting 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public Doctor() {
+    public Meeting() {
         
     }
      
@@ -24,7 +24,7 @@ public class Doctor extends Person
      */
     @Override
     public String toString() {
-        return "Doctor: " + super.toString();
+        return "Meeting: " + super.toString();
     }
    
     /**
@@ -44,7 +44,7 @@ public class Doctor extends Person
      * @return a "clone" of the object using new memory
      */
     @Override
-    public Doctor clone() {
+    public Meeting clone() {
         return this;
     }
     
