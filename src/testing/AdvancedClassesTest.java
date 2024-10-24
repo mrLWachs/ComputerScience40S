@@ -247,10 +247,6 @@ public class AdvancedClassesTest
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
         
-        String gender = person.getGender();
-        
-        
-        
         
         
         
