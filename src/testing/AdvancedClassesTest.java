@@ -213,9 +213,16 @@ public class AdvancedClassesTest
         System.out.println("student3 total students = " + student3.total);
         System.out.println("student4 total students = " + student4.total);
         System.out.println("student total students = " + student.total);
-        System.out.println("stewie total students = " + stewie.total);
-        
+        System.out.println("stewie total students = " + stewie.total);        
         System.out.println("Student total = " + Student.total);
+        
+        // Mutate (change) that static variable directly (in one instance)
+        Student.total = 10;
+        
+        // Output the static variable again - showing that it changed (mutated) 
+        // ALL the instances (all the student obejcts) since that varaible is
+        // modified to be static  
+        System.out.println("Stewie total = " + stewie.total);
         
         // Now we will call a static (shared) method from the objects 
         // (instances) of the Person class and the other classes that extend
@@ -235,6 +242,25 @@ public class AdvancedClassesTest
         // Not doing this...
         // JOptionPane jop = new JOptionPane();
         // jop.showMessageDialog(null,"");
+        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
