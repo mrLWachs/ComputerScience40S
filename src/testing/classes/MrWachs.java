@@ -11,10 +11,12 @@ public class MrWachs extends Teacher
 {
 
     /**
-     * Default constructor, set class properties
+     * Constructor method sets the class properties
+     * 
+     * @param name the name for Mr. Wachs
      */
-    public MrWachs() {
-        
+    public MrWachs(String name) {
+        super(name);
     }
      
     /**

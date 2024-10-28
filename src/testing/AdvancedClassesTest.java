@@ -3,6 +3,12 @@ package testing;
 
 /** Required API imports */
 import javax.swing.JOptionPane;
+import testing.classes.Doctor;
+import testing.classes.Athlete;
+import testing.classes.Husky;
+import testing.classes.Influencer;
+import testing.classes.MrWachs;
+import testing.classes.Piper;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -247,12 +253,38 @@ public class AdvancedClassesTest
         // autocomplete/intellisense will not show it - but it does show it in
         // autocomplete/intellisense from the Class name
         
+        // The "protected" modifier means this property of the Person class
+        // cannot be accessed from this class because this class is not 
+        // related to this class through inheritance (it is only related
+        // through association)
+        // person.alive = false;
         
+        // Calling an accessor (or getter) method on this object of the Person
+        // class (which is a private, encapsulated property)
+        System.out.println("Gender = " + person.getGender());
         
+        // Calling a mutator (or setter) method on this object which is a
+        // protected property
+        person.setAlive(false);
+        System.out.println("Person alive = " + person.getAlive());
         
+        // Instatiate (make an "instance" aka "object of that class)...
+        Doctor     doctor     = new Doctor();
+        Influencer influencer = new Influencer();
+        MrWachs    mrWachs    = new MrWachs("Mr. Wachs");
+        Husky      husky      = new Husky();
+        Piper      piper      = new Piper();
+        Athlete    athlete    = new Athlete();
+        // Intentially leaving out HighSchool
         
-        
-        
+        // Output these new objects, the "toString()" method is automatically 
+        // called by System.out.println() so we can just pass the object itself
+        System.out.println(doctor.toString());
+        System.out.println(influencer.toString());
+        System.out.println(mrWachs.toString());
+        System.out.println(husky.toString());
+        System.out.println(piper.toString());
+        System.out.println(athlete.toString());
         
         
         
