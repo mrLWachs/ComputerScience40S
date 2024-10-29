@@ -278,7 +278,7 @@ public class AdvancedClassesTest
         // Intentially leaving out HighSchool
         
         // Output these new objects, the "toString()" method is automatically 
-        // called by System.out.println() so we can just pass the object itself
+        // called by System.out.println() so we could just pass the object itself
         System.out.println(doctor.toString());
         System.out.println(influencer.toString());
         System.out.println(mrWachs.toString());

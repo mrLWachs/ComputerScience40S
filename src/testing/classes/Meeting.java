@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * Meeting.java - description
+ * Meeting.java - represents a meeting of people
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:54:17 a.m.

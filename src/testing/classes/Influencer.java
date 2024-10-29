@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * Influencer.java - description
+ * Influencer.java - represents a Influencer Person
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:54:31 a.m.

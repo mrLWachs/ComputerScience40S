@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * Husky.java - description
+ * Husky.java - represents a Husky HighSchool Student Person
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:55:23 a.m.

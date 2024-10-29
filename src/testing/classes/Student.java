@@ -174,6 +174,5 @@ public class Student extends Person
         // Return the completed new object (our clone)
         return that;
     }
-    
-        
+            
 }

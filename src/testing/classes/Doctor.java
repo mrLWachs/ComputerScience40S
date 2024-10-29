@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * Doctor.java - description
+ * Doctor.java - represents a Doctor Person
  *
  * @author Mr. Wachs
  * @since Oct 22, 2024, 11:28:57 a.m.

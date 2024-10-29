@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * Athlete.java - description
+ * Athlete.java - represents a Athlete Husky HighSchool Student Person.
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:55:32 a.m.

@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * HighSchool.java - description
+ * HighSchool.java - represents a HighSchool Student Person.
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:55:17 a.m.

@@ -2,7 +2,7 @@
 package testing.classes;
  
 /**
- * MrWachs.java - description
+ * MrWachs.java - represents a MrWachs Teacher Person
  *
  * @author Mr. Wachs
  * @since Oct 24, 2024, 11:55:05 a.m.
