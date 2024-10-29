@@ -7,6 +7,7 @@ import testing.classes.Doctor;
 import testing.classes.Athlete;
 import testing.classes.Husky;
 import testing.classes.Influencer;
+import testing.classes.Meeting;
 import testing.classes.MrWachs;
 import testing.classes.Piper;
 import testing.classes.Person;
@@ -286,12 +287,32 @@ public class AdvancedClassesTest
         System.out.println(piper.toString());
         System.out.println(athlete.toString());
         
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
         
-        
-        
-        
-        
-        
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism 
+        meeting.attend(person);
+        meeting.attend(hugh);        
+        meeting.attend(person1);
+        meeting.attend(person2);
+        meeting.attend(person3);
+        meeting.attend(p1);
+        meeting.attend(p2);        
+        meeting.attend(student);
+        meeting.attend(stewie);
+        meeting.attend(student1);
+        meeting.attend(student2);
+        meeting.attend(student3);
+        meeting.attend(student4);
+        meeting.attend(teacher);
+        meeting.attend(doctor);
+        meeting.attend(influencer);
+        meeting.attend(mrWachs);
+        meeting.attend(piper);
+        meeting.attend(husky);
+        meeting.attend(athlete);
         
         
         
