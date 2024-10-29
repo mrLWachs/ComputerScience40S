@@ -26,9 +26,20 @@ public class Meeting
      * Default constructor, set class properties
      */
     public Meeting() {
-        
+        MAX   = 500;
+        count = 0;
+        // Need to "build" (construct, instantiate) our array
+        members = new Person[MAX];
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array)
     }
     
+    /**
+     * Have a person attend the meeting
+     * 
+     * @param person a Person object to attend the meeting
+     */
     public void attend(Person person) {
         
     }
