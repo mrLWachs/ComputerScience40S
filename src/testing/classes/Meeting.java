@@ -82,9 +82,24 @@ public class Meeting
             // changing "person" each time through the loop to the next element
             // in order...
             
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
+                message += "\n";
+                
+                // Attach (concatinate) more information...
+                message += "\t" + member.toString();
+            }
         }
         
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //    Person member = members[i];
+        // }
         
+        message += "\n\n Ta da!";
+        
+        // Finally output that message
         System.out.println(message);
     }
 
