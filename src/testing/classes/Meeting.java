@@ -41,6 +41,10 @@ public class Meeting
      * @param person a Person object to attend the meeting
      */
     public void attend(Person person) {
+        // Assign (put, place) the person object (instance of the Person class)
+        // passed into this method's parameter into the first empty (unassigned)
+        // index (spot, element, location, subscript) of the array property
+        // of the Meeting class (global variable)    
         
     }
 
