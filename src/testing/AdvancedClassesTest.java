@@ -314,6 +314,14 @@ public class AdvancedClassesTest
         meeting.attend(husky);
         meeting.attend(athlete);
         
+        // Need to "hold a meeting" of all members
+        meeting.hold();
+        
+        
+        
+        
+        
+        
         
         
         
