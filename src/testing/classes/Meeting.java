@@ -44,8 +44,20 @@ public class Meeting
         // Assign (put, place) the person object (instance of the Person class)
         // passed into this method's parameter into the first empty (unassigned)
         // index (spot, element, location, subscript) of the array property
-        // of the Meeting class (global variable)    
+        // of the Meeting class (global variable)   
+        members[count] = person;
         
+        // Now advance the count
+        count++;
+        
+        // Potential out of bounds ("range") error with count, we fix with
+        if (count >= MAX) {
+            // Potentially we could make the array bigger (resize, 
+            // re-dimension) - however, whenever you do this it wipes out
+            // (recreates, re-dimensions) all array content. So let's just
+            // reassign the count
+            count = 0;
+        }
     }
 
 }
