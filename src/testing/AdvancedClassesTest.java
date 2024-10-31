@@ -5,6 +5,7 @@ package testing;
 import javax.swing.JOptionPane;
 import testing.classes.Doctor;
 import testing.classes.Athlete;
+import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Influencer;
 import testing.classes.Meeting;
@@ -317,8 +318,9 @@ public class AdvancedClassesTest
         // Need to "hold a meeting" of all members
         meeting.hold();
         
-        
-        
+        // Abstract classes can NOT ever be instantiated, for example:
+        // HighSchool highSchool = new HighSchool();
+        // Food food = new Food();
         
         
         
