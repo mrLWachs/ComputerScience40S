@@ -112,8 +112,8 @@ public class Meeting
         //    Person member = members[i];
         // }
         
-        message += "\n\n Ta da!";
-        
+        message += "\nWith " + Student.total + " students present!";
+                
         // Finally output that message
         System.out.println(message);
     }
