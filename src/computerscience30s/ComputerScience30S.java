@@ -821,6 +821,9 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE);
     }
 
+    /**
+     * Learn the content of the arrays unit (unit 3)
+     */
     private static void learnArrays() {
         System.out.println("Start learning arrays...");
         
