@@ -15,7 +15,37 @@ package testing.classes;
  */
 public abstract class Food 
 {
+    
+    /**
+     * Agreed upon food groups: 
+     * (0) Grains, (1) Protein, (2) Fruits, (3) Vegetables,
+     * (4) Dairy, (5) Other - "shared" constant array
+     */
+    public static final String[] GROUPS = {
+        "Grains",
+        "Protein",
+        "Fruits",
+        "Vegetables",
+        "Dairy",
+        "Other"
+    };
+        
+    /**
+     * Whether or not this 'food' item should be eaten
+     */
+    public boolean eatable;
+    
+    // Encapsulated property, which food group the 'food' item is part of
+    private int group;
+    
+    /**
+     * Available to this class and all children of this class, the flavour
+     * quality of the food
+     */ 
+    protected String flavour;
+    
 
+    
     /**
      * Default constructor, set class properties
      */
