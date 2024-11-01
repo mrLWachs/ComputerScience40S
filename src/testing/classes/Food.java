@@ -21,21 +21,17 @@ public abstract class Food
      * (0) Grains, (1) Protein, (2) Fruits, (3) Vegetables,
      * (4) Dairy, (5) Other - "shared" constant array
      */
-    public static final String[] GROUPS = {
-        "Grains",
-        "Protein",
-        "Fruits",
-        "Vegetables",
-        "Dairy",
-        "Other"
-    };
+    public static final String[] GROUPS =
+        { "Grains","Protein","Fruits","Vegetables","Dairy","Other" };
         
     /**
      * Whether or not this 'food' item should be eaten
      */
     public boolean eatable;
     
-    // Encapsulated property, which food group the 'food' item is part of
+    /**
+     * Encapsulated property, which food group the 'food' item is part of
+     */
     private int group;
     
     /**
@@ -66,7 +62,7 @@ public abstract class Food
         }
         else {
             prepare();
-            return GROUPS[group] + " it was " + flavour;
+            return GROUPS[group] + " was " + flavour;
         }
     }
     

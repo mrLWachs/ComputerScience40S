@@ -3,6 +3,7 @@ package testing;
 
 /** Required API imports */
 import javax.swing.JOptionPane;
+import testing.classes.Apple;
 import testing.classes.Doctor;
 import testing.classes.Athlete;
 import testing.classes.Husky;
@@ -321,7 +322,14 @@ public class AdvancedClassesTest
         // HighSchool highSchool = new HighSchool();
         // Food food = new Food();
         
+        // Instantiate an object from a child class of an abstract class
+        // using the abstract methods (that were made 'concrete') in that class 
         
+        Apple apple = new Apple();
+        apple.smell(1);
+        
+        // Test our apple object's eat method...
+        System.out.println(apple.eat());
         
         
         
