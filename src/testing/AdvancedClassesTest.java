@@ -326,10 +326,14 @@ public class AdvancedClassesTest
         // using the abstract methods (that were made 'concrete') in that class 
         
         Apple apple = new Apple();
-        apple.smell(1);
         
-        // Test our apple object's eat method...
+        // Now test the smell and eat methods...
+        apple.smell(1);
         System.out.println(apple.eat());
+        
+        Apple crabapple = new Apple();
+        crabapple.smell(5);
+        System.out.println(crabapple.eat());
         
         
         

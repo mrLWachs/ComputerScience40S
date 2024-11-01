@@ -28,7 +28,7 @@ public class Apple extends Food
      */
     @Override
     public void prepare() {
-        System.out.println("wash it first");
+        System.out.println("Wash the apple first");
     }
 
     /**
@@ -61,7 +61,7 @@ public class Apple extends Food
      */
     @Override
     public String eat() {
-        return "Eating Apple from " + super.eat();
+        return "Eating Apple" + super.eat();
     }
     
 }
