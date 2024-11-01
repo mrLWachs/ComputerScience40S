@@ -5,7 +5,6 @@ package testing;
 import javax.swing.JOptionPane;
 import testing.classes.Doctor;
 import testing.classes.Athlete;
-import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Influencer;
 import testing.classes.Meeting;
