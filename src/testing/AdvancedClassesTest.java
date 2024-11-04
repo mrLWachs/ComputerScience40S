@@ -327,18 +327,11 @@ public class AdvancedClassesTest
         // using the abstract methods (that were made 'concrete') in that class 
         
         Apple apple = new Apple();
-        
-        // Now test the smell and eat methods...
-        apple.smell(1);
-        System.out.println(apple.eat());
-        
-        Apple crabapple = new Apple();
-        crabapple.smell(5);
-        System.out.println(crabapple.eat());
-        
         CoffeCrisp bar = new CoffeCrisp();
+        
+        // Now test the smell method...
+        apple.smell(1);
         bar.smell(1);
-        System.out.println(bar.eat());
         
         // Call the polymorphic method which accepts the abstract object (Food)
         // as an argument. Since the abstract class cannot be instantiated,
