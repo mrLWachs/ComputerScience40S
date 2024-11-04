@@ -6,6 +6,7 @@ import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Doctor;
 import testing.classes.Athlete;
+import testing.classes.CoffeCrisp;
 import testing.classes.Husky;
 import testing.classes.Influencer;
 import testing.classes.Meeting;
@@ -334,6 +335,10 @@ public class AdvancedClassesTest
         Apple crabapple = new Apple();
         crabapple.smell(5);
         System.out.println(crabapple.eat());
+        
+        CoffeCrisp bar = new CoffeCrisp();
+        bar.smell(1);
+        System.out.println(bar.eat());
         
         
         
