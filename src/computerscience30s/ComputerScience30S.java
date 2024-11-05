@@ -1000,6 +1000,14 @@ public class ComputerScience30S
         // arrays can be outputted (returned) from a method - in other words:
         // Arrays can be INPUT(s) or OUTPUT from a method
         
+        output(array);      // Send a array to a method as a parameter
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -1008,6 +1016,10 @@ public class ComputerScience30S
         
         
         System.out.println("Completed learing arrays");
+    }
+
+    private static void output(int[] array) {
+        
     }
 
 }
