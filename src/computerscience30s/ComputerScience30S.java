@@ -973,8 +973,27 @@ public class ComputerScience30S
         //         +-----+-----+-----+
         //            0    ...   99
         
+        // To work with, and to "travel" (means to "visit" every spot) the 
+        // entire array, we use a loop!
         
+        // Specifically, the FOR loop!
         
+        // for loops were literally built for arrays
+        for (int i = 0; i < 100; i++) {
+            System.out.println(numbers[i]);
+        }
+        // The for loop is perfect because it automatically (when I type "for"
+        // and TAB) starts at 0, goes up by 1, is "less than" then ending 
+        // number (which can be the length)
+        
+        // When using the for loop with arrays, it is even BETTER to use a
+        // built-in feature of all arrays! All arrays have a ".length" feature
+        // for example 
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(i + " = " + numbers[i]);
+        }
+        // Tip: if type "for" TAB, then TAB AGAIN it jump to the ending value
+        // So if the array size changes, the loop adapts to it
         
         
         
@@ -1073,4 +1092,12 @@ public class ComputerScience30S
 // (22) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
+// (23) All arrays have a ".length" feature built in that you can have NetBeans
+//      autocomplete for you by typing the name of your array, then dot length
+//      (".length") which automatically gives you how many elements are in
+//      the array
+// (24) When writing for loops with array, if you type "for" then press TAB, 
+//      and then press TAB AGAIN it jump to the ending value (which should be 
+//      the ".length" of the array (so if the array size changes, the loop 
+//      adapts to it) - the loop variable "i" also represents the array "index"
 
