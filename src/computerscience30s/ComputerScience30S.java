@@ -930,6 +930,31 @@ public class ComputerScience30S
         // same time - on the same ONE line of code) - you can as an option,
         // put the "[]" beside the data type OR the array name
         
+        double[] coins = { 0.05, 0.10, 0.25, 1.00, 2.00 };
+        
+        //       +------+------+------+------+------+
+        // coins | 0.05 | 0.10 | 0.25 | 1.00 | 2.00 |  (has a length of 5)
+        //       +------+------+------+------+------+
+        //          0      1      2      3      4  
+        
+        // You can also create CONSTANT arrays that are pre-filled, the name
+        // we gives array should be a plural word (e.g. 'scores' (array name)
+        // not 'score' (variable name), 'names' not 'name', etc.) 
+        
+        final String[] OPTIONS = {
+            "New Game",
+            "Save Game",
+            "Quit"
+        };
+        
+        // When using arrays, use individual elements (spots, indices - the 
+        // plural of "index") of the array like regular variables, for example
+        
+        
+        
+        
+        
+        
         
         
         
