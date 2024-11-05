@@ -950,6 +950,29 @@ public class ComputerScience30S
         // When using arrays, use individual elements (spots, indices - the 
         // plural of "index") of the array like regular variables, for example
         
+        int[] numbers = new int[100];
+        
+        // Change (or "assign") a index (spot)
+        numbers[99] = 333;
+        
+        //         +-----+-----+-----+
+        // numbers |     | ... | 333 | (length is 100)
+        //         +-----+-----+-----+
+        //            0    ...   99
+        // Remember, the last index is always ONE LESS than the length
+        
+        // Output that spot
+        System.out.println(numbers[99]);
+        
+        // Perform equations with array indices like variables
+        numbers[0] = numbers[99] * 2;
+        System.out.println(numbers[0]);
+        
+        //         +-----+-----+-----+
+        // numbers | 666 | .?. | 333 | 
+        //         +-----+-----+-----+
+        //            0    ...   99
+        
         
         
         
