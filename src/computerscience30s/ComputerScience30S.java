@@ -1018,8 +1018,21 @@ public class ComputerScience30S
         System.out.println("Completed learing arrays");
     }
 
+    /**
+     * Output an array of integers in a dialog
+     * 
+     * @param array the array of integers
+     */
     private static void output(int[] array) {
-        
+        // Arrays can be a parameter (or one of the parameters)
+        String text = "Array = [";
+        // Loop (traverse) through the array and add the contents (what is 
+        // stored at each index) to the string
+        for (int i = 0; i < array.length; i++) {
+            text += array[i] + ",";
+        }        
+        text += "]";    // "+=" means the same as "text = text + ..."  
+        output(text);
     }
 
 }
