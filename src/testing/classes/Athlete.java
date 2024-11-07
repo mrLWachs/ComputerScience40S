@@ -64,9 +64,20 @@ public class Athlete extends Husky implements Hockey, PermissionForm
         if (name.equals(opponentName)) opponentScore++;
         if (name.equals(super.name))   homeScore++;
     }
-
+    
+    /**
+     * The passed period of hockey is over
+     *
+     * @param period the period number
+     */
     @Override
     public void endOfPeriod(int period) {
+        String output = "End of period " + period;
+        output += " and the score is "   + homeScore;
+        output += " for the "            + this.name;
+        output += " and "                + opponentScore;
+        output += " for the "            + opponentName;
+        System.out.println(output);
     }
 
     @Override
