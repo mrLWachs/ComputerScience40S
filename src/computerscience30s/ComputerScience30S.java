@@ -1008,7 +1008,7 @@ public class ComputerScience30S
         double[] examples = { 3.14, 0.01, 99.99, 9876.54321 };
         output(examples);
         
-        int[] randoms = random(1,10,50);
+        int[] randoms = random(1,10,50);    // Overload "random" method
         output(randoms);
         
         
