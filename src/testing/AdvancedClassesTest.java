@@ -11,6 +11,7 @@ import testing.classes.Husky;
 import testing.classes.Influencer;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
+import testing.classes.PermissionForm;
 import testing.classes.Piper;
 import testing.classes.Person;
 import testing.classes.Student;
@@ -350,10 +351,28 @@ public class AdvancedClassesTest
         // 'implement' the interface (these classes "follow the rules" of
         // the interface ("the set of rules").
         
+        Athlete owen = new Athlete("Owen Zalondek", 17);
+        owen.setOpponent("Jimmies");
+        for (int round = 1; round <= 4; round++) {
+            System.out.println("Round " + round);            
+            if (owen.haveYouGotItSigned() == PermissionForm.NOT_SIGNED) {
+                System.out.println("Can't play today!");
+                owen.sign();
+            }
+            else {
+                owen.score("Owen Zalondek");
+                owen.score("Owen Zalondek");
+                owen.score("Owen Zalondek");
+                owen.score("Jimmies");
+                owen.endOfPeriod(round);
+            }            
+        }
+        owen.champion = owen.WE_WON;
+        owen.consume(bar);
         
-        
-        
-        
+        // A generic is defined as a characteristic of or relating 
+        // to a class or group of things that is not specific. In 
+        // Java, we can use generic methods and generic classes
         
         
         

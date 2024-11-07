@@ -139,7 +139,7 @@ public class Athlete extends Husky implements Hockey, PermissionForm
      */
     @Override
     public boolean haveYouGotItSigned() {
-        return false;
+        return haveForm;
     }
      
 }
