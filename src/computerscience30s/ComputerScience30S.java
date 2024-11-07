@@ -1019,8 +1019,8 @@ public class ComputerScience30S
         // not needed to declare a matrix, but they might help in understanding 
         // it) - we make contants as a way to "visualize" what we are building
         
-        final int ROWS    = 3; // "dimension" going "down" (also like "y" axis)
-        final int COLUMNS = 4; // "dimension" going "across" (also like "x")
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
         
         // We declare (create) a matrix , by adding multiple sets of square
         // brackets (a set of brackets for each dimension)
@@ -1052,8 +1052,8 @@ public class ComputerScience30S
         System.out.println("Random character was " + character);
         
         // Create some constants for the characters
-        final char LOW  = 'a';
-        final char HIGH = 'z';
+        final char LOW  = '!';
+        final char HIGH = '~';
         
         // Fill our matrix (meaning put content in every location/index/spot
         // in the matrix) by traversing (travelling, 'visit' every spot) the
@@ -1070,10 +1070,11 @@ public class ComputerScience30S
             }
         }
         
+        // Output the matrix, by turning it into a string (use our method)
+        String text1 = toString(matrix);
+        System.out.println(text1);
         
-        
-        
-        
+        JOptionPane.showMessageDialog(null, text1);
         
         
         
