@@ -1052,6 +1052,19 @@ public class ComputerScience30S
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         System.out.println("Completed learing arrays");
     }
 
@@ -1113,11 +1126,24 @@ public class ComputerScience30S
         }
         return numbers;                     // Return completed array
     }
+    
+    /**
+     * Generates a random character between tow low and high characters
+     * 
+     * @param low lowest character in the range
+     * @param high highest character in the range
+     * @return random character in range
+     */
+    private static char random(char low, char high) {
+        return (char)random((int)low, (int)high);     // cast to int and back  
+    }
+    
+    
 
 }
 
-
 // NETBEANS TIPS:
+
 // ==============
 // (1)  To zoom in and out on the code, hold ALT and roll the mouse
 // (2)  Double click the top of a tab to hide side windows or show them
