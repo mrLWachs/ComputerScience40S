@@ -35,8 +35,8 @@ public class Athlete extends Husky implements Hockey, PermissionForm
      */
     public Athlete(String name, int age) {
         super();                    // Call super-constructor
-        super.name    = name;       // Modifying (mutating or changing) property
-        super.age     = age;
+        setName(name);       
+        super.age     = age;        // Modifying (mutating or changing) property
         opponentName  = "";
         opponentScore = 0;
         homeScore     = 0;
@@ -80,12 +80,24 @@ public class Athlete extends Husky implements Hockey, PermissionForm
         System.out.println(output);
     }
 
+    /**
+     * Mutator method, setting the name of the player
+     * 
+     * @param name setting the name of the player
+     */
     @Override
     public void setName(String name) {
+        super.name = name;
     }
 
+    /**
+     * Mutator setting the name of the opponent
+     * 
+     * @param name the name of this opponent
+     */
     @Override
     public void setOpponent(String name) {
+        opponentName = name;
     }
 
     @Override
