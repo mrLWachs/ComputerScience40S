@@ -21,10 +21,11 @@ public class Athlete extends Husky implements Hockey, PermissionForm
     private String opponentName;
     private int homeScore;
     private int opponentScore;
-    private boolean champion;
     
-    private final boolean WE_WON  = true;   // Encapsulated constants
-    private final boolean WE_LOST = false;
+    public boolean champion;
+    
+    public final boolean WE_WON  = true;   // Constants
+    public final boolean WE_LOST = false;
     
 
     /**
