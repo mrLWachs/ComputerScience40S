@@ -10,13 +10,7 @@ package testing.classes;
 public class Husky extends HighSchool
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public Husky() {
-        
-    }
-     
+
     /**
      * String representation of this object
      *

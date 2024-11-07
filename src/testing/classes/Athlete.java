@@ -16,16 +16,53 @@ package testing.classes;
  */
 public class Athlete extends Husky implements Hockey, PermissionForm
 {
+    
+    private boolean haveForm;       // Encapsulated properties (variables)
+    private String opponentName;
+    private int homeScore;
+    private int opponentScore;
+    private boolean champion;
+    
+    private final boolean WE_WON  = true;   // Encapsulated constants
+    private final boolean WE_LOST = false;
+    
 
+    /**
+     * Constructor, set class properties
+     * 
+     * @param name the name for this athlete
+     * @param age the age for this athlete
+     */
+    public Athlete(String name, int age) {
+        super();                    // Call super-constructor
+        super.name    = name;       // Modifying (mutating or changing) property
+        super.age     = age;
+        opponentName  = "";
+        opponentScore = 0;
+        homeScore     = 0;
+        champion      = WE_LOST;
+        haveForm      = PermissionForm.NOT_SIGNED;  // Using interface property
+    }
+    
     /**
      * Default constructor, set class properties
      */
     public Athlete() {
-        
+        // To have one constructor method call another class constructor method,
+        // you use the keyword "this" with round brackets
+        this("Jock",15);
     }
 
+    /**
+     * A team scoring a point
+     * 
+     * @param name the name of the team who scored
+     */
     @Override
     public void score(String name) {
+        System.out.println(name + " has scored");
+        if (name.equals(opponentName)) opponentScore++;
+        if (name.equals(super.name))   homeScore++;
     }
 
     @Override
