@@ -100,15 +100,42 @@ public class Athlete extends Husky implements Hockey, PermissionForm
         opponentName = name;
     }
 
+    /**
+     * Determines if the sports game is over (with a winner)
+     * 
+     * @return there was a winner (true) or not (false)
+     */
     @Override
     public boolean didIWin() {
-        return false;
+        if (champion) {
+            System.out.println(super.name + " is champion!");
+            return WE_WON;
+        }
+        else if (homeScore >= opponentScore) {
+            System.out.println(super.name + " wins!");
+            return WE_WON;
+        }
+        else {
+            System.out.println(opponentName + " wins!");
+            return WE_LOST;
+        }        
     }
 
+    /**
+     * Signing the permission form
+     */
     @Override
     public void sign() {
+        System.out.println(super.name + " has signed the form!");
+        haveForm = PermissionForm.SIGNED;
     }
 
+    /**
+     * Determines if the form has been signed or not (technically this is a  
+     * accessor method)
+     * 
+     * @return has been signed (true), or not (false)
+     */
     @Override
     public boolean haveYouGotItSigned() {
         return false;
