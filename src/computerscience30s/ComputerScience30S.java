@@ -1019,8 +1019,8 @@ public class ComputerScience30S
         // not needed to declare a matrix, but they might help in understanding 
         // it) - we make contants as a way to "visualize" what we are building
         
-        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
-        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
+        final int ROWS    = 3; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 4; // "dimension" going "across" (also like "x")
         
         // We declare (create) a matrix , by adding multiple sets of square
         // brackets (a set of brackets for each dimension)
@@ -1155,7 +1155,26 @@ public class ComputerScience30S
         return (char)random((int)low, (int)high);     // cast to int and back  
     }
     
-    
+    /**
+     * Change the matrix into a single string (for outputting)
+     * 
+     * @param matrix the 2D array of characters
+     * @return a single string representing the matrix
+     */
+    private static String toString(char[][] matrix) {
+        String text = "";   // Create string variable to store all values
+        // Use the nested for loops (with simplier varaibles names) and
+        // use the ".length" but also in the nested loop, we will use 
+        // the ".length" of that particular array
+        for (int r = 0; r < matrix.length; r++) {
+            for (int c = 0; c < matrix[r].length; c++) {
+                // Means the length of "this row"  
+                text = text + matrix[r][c] + " ";
+            }     
+            text = text + "\n";     // Add a line break after each row
+        }     
+        return text;            // Return the filled up string
+    }
 
 }
 
