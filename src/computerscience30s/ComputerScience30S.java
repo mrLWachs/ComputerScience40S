@@ -1011,7 +1011,19 @@ public class ComputerScience30S
         int[] randoms = random(1,10,50);    // Overload "random" method
         output(randoms);
         
+        // Multi-dimensional array (also known as a "array of arrays", or a 
+        // array filled with other arrays, 2D, etc.) - and also known as a 
+        // table, grid, or a MATRIX
         
+        // Create some constants to use when building the matrix (these are
+        // not needed to declare a matrix, but they might help in understanding 
+        // it) - we make contants as a way to "visualize" what we are building
+        
+        final int ROWS    = 30; // "dimension" going "down" (also like "y" axis)
+        final int COLUMNS = 40; // "dimension" going "across" (also like "x")
+        
+        // We declare (create) a matrix , by adding multiple sets of square
+        // brackets (a set of brackets for each dimension)
         
         
         
