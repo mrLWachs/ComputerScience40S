@@ -11,7 +11,10 @@ package computerscience30s;
  */
 import java.awt.Color;
 import java.awt.Font;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 /**
  * ComputerScience30s.java - the large in class example we continue to work on
@@ -1089,18 +1092,25 @@ public class ComputerScience30S
         // similar to the way we declare arrays, and using round brackets 
         // (implies a method? - we will study in the next unit 'classes') 
         
-        Color background = new Color(0,0,0);
+        // Temporary variables for the color in this example...
+        int red   = 0;
+        int green = 0;
+        int blue  = 0;
+        
+        // Create some colors
+        
+        Color background = new Color(red,green,blue);
         // The three numbers in "Color" are for red, green and blue values 
         // from 0 (no amount) up to 255 (the maximum amount of that color) 
         
         Color foreground = new Color(0,255,0);
         
-        // Fonts are done in a simlar way (import, declare an "object")
+        // Fonts are created in a simlar way (import, then declare an "object")
         
-        // Temporary variables for this example...
+        // Temporary variables for the font in this example...
         String name  = "Snap ITC";
-        int    style = Font.BOLD;
-        int    size  = 10;
+        int    style = Font.PLAIN;
+        int    size  = 20;
         
         // Create the font "object"
         Font font = new Font(name,style,size);
@@ -1126,20 +1136,26 @@ public class ComputerScience30S
         String image1 = first + middle + last;
         String image2 = "C:\\Users\\lawrence.wachs\\Downloads\\neo.gif";
         
+        // Now build (declare, instantiate) the image (Icon) objects
+        Icon icon1 = new ImageIcon(image1);
+        Icon icon2 = new ImageIcon(image2);        
+        // Create a "icon" for the image (icon is like a picturebox) and also 
+        // use "ImageIcon" - connected to the image name (which is the actual 
+        // image on our computer) 
+           
         // Another matrix, but they (matricies) can also be made with pre-set
-        // values (like 1D arrays)
-        
+        // values (like 1D arrays)        
         final char[][] TIC_TAC_TOE = {
             { 'X', 'O', 'X' },
             { 'O', 'X', 'O' },
             { 'X', 'O', 'X' }
         };
+        String text2 = toString(TIC_TAC_TOE);   // Turn matrix into a string
         
-        
-        
-        
-        
-        
+        // Call a method to display a "fancy" dialog
+        // (have a picture, formatted text: font, size, color)
+        output(text1,background,foreground,font,icon1,"The Matrix");
+        output(text2,background,foreground,font,icon2,"Tic-Tac-Toe");
         
         System.out.println("Completed learing arrays");
     }
@@ -1233,6 +1249,49 @@ public class ComputerScience30S
             text = text + "\n";     // Add a line break after each row
         }     
         return text;            // Return the filled up string
+    }
+
+    /**
+     * Displays a 'graphical' version of the message dialog (for JOptionPane)
+     * to the user, including a custom image, colors (background / foreground),
+     * new font (includes the type of font and the size) along with text and 
+     * title.
+     * 
+     * @param text what text to show in the dialog
+     * @param background the background color of the dialog
+     * @param foreground the foreground color (or text color) of the dialog
+     * @param font the font for the text in the dialog
+     * @param icon a image icon (picture) to display in the dialog
+     * @param title what to show at the top of the dialog
+     */
+    private static void output(
+            String text, 
+            Color  background, 
+            Color  foreground, 
+            Font   font, 
+            Icon   icon, 
+            String title) {
+        // Now need something that can display the fonts and colors - called a 
+        // "text area" (can use intellisense, with CTRL + SPACE, which 
+        // automatically imports it)  
+        JTextArea area = new JTextArea();
+        
+        // Now we add things into the area, using methods built into the text 
+        // area object
+        area.setText(text);
+        area.setBackground(background);
+        area.setForeground(foreground);
+        area.setFont(font);
+        
+        // Now we finally display the dialog box, BUT we USE the text area and 
+        // the image in the dialog as parameters
+        JOptionPane.showMessageDialog(
+                null, 
+                area, 
+                title, 
+                JOptionPane.PLAIN_MESSAGE, 
+                icon
+        );
     }
 
 }
