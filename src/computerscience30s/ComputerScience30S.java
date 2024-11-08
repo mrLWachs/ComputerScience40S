@@ -10,6 +10,7 @@ package computerscience30s;
  * needs to connect to another library (API) of code
  */
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JOptionPane;
 
 /**
@@ -1091,6 +1092,28 @@ public class ComputerScience30S
         Color background = new Color(0,0,0);
         // The three numbers in "Color" are for red, green and blue values 
         // from 0 (no amount) up to 255 (the maximum amount of that color) 
+        
+        Color foreground = new Color(0,255,0);
+        
+        // Fonts are done in a simlar way (import, declare an "object")
+        
+        // Temporary variables for this example...
+        String name  = "Snap ITC";
+        int    style = Font.BOLD;
+        int    size  = 10;
+        
+        // Create the font "object"
+        Font font = new Font(name,style,size);
+        // Inside the bracket we put the font name (must be installed on this 
+        // computer), style (e.g. plain, bold, underline, etc.) - uses a 
+        // CONSTANT style, and finally the font size (in points)
+        
+        // For image, we need an image file downloaded onto the computer and we  
+        // need the NAME of that image (name includes the ending part or 
+        // extension, and I also need the path to get to that image / folder).
+        // To do this, right click and go to properties and "Location" and 
+        // copy/paste. It will change the "\" to two "\\" and also type two of 
+        // those at the end...
         
         
         
