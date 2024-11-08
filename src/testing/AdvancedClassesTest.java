@@ -438,7 +438,11 @@ public class AdvancedClassesTest
      * @param item the item to output
      */
     private static <T> void output(T item) {
-        System.out.println("Worked");
+        String text = "Class name: ";
+        text += item.getClass().getSimpleName();
+        text += ", hash code: " + item.hashCode();
+        text += ", to String: " + item.toString();
+        System.out.println(text);
     }
     
     
