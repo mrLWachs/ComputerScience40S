@@ -9,6 +9,7 @@ package computerscience30s;
  * Required imports for the project - the lines below are added when your code
  * needs to connect to another library (API) of code
  */
+import java.awt.Color;
 import javax.swing.JOptionPane;
 
 /**
@@ -1074,7 +1075,27 @@ public class ComputerScience30S
         String text1 = toString(matrix);
         System.out.println(text1);
         
+        // Showed that string (the entire matrix) in a "regular" dialog
         JOptionPane.showMessageDialog(null, text1);
+        
+        // Now experiment (optional) to start looking at "graphics"
+        
+        // We set up some 'graphical' "things" to make the dialog more 
+        // interesting by 'importing' the code that does this (we are not 
+        // writing that specific code, we are 'using' others code)
+        
+        // Using capital letters and importing (using the lightbulb) and a line
+        // similar to the way we declare arrays, and using round brackets 
+        // (implies a method? - we will study in the next unit 'classes') 
+        
+        Color background = new Color(0,0,0);
+        // The three numbers in "Color" are for red, green and blue values 
+        // from 0 (no amount) up to 255 (the maximum amount of that color) 
+        
+        
+        
+        
+        
         
         
         
