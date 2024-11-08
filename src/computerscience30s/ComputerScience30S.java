@@ -1108,18 +1108,32 @@ public class ComputerScience30S
         // computer), style (e.g. plain, bold, underline, etc.) - uses a 
         // CONSTANT style, and finally the font size (in points)
         
-        // For image, we need an image file downloaded onto the computer and we  
+        // For images, we need an image file downloaded onto the computer and we  
         // need the NAME of that image (name includes the ending part or 
         // extension, and I also need the path to get to that image / folder).
         // To do this, right click and go to properties and "Location" and 
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...
         
+        String first = "C:\\Users\\lawrence.wachs\\Downloads\\";
+        // More commonly called "folder", "path", "directory"
+        String middle = "matrix";
+        // What the user usually enters
+        String last = ".gif";
+        // File "extension" or type
         
+        // Every file has a "first", "middle", and "last" name
+        String image1 = first + middle + last;
+        String image2 = "C:\\Users\\lawrence.wachs\\Downloads\\neo.gif";
         
+        // Another matrix, but they (matricies) can also be made with pre-set
+        // values (like 1D arrays)
         
-        
-        
+        final char[][] TIC_TAC_TOE = {
+            { 'X', 'O', 'X' },
+            { 'O', 'X', 'O' },
+            { 'X', 'O', 'X' }
+        };
         
         
         
