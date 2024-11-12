@@ -34,8 +34,8 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {   
         // "Call" a method (means you use the name of the method)
-        // learnIntroToJava();
-        // learnMethods();
+        learnIntroToJava();
+        learnMethods();
         learnArrays();
     }
 
@@ -1125,7 +1125,7 @@ public class ComputerScience30S
         // copy/paste. It will change the "\" to two "\\" and also type two of 
         // those at the end...
         
-        String first = "C:\\Users\\lawrence.wachs\\Downloads\\";
+        String first = "C:\\Computer Science\\ComputerScience30S\\";
         // More commonly called "folder", "path", "directory"
         String middle = "matrix";
         // What the user usually enters
@@ -1134,7 +1134,7 @@ public class ComputerScience30S
         
         // Every file has a "first", "middle", and "last" name
         String image1 = first + middle + last;
-        String image2 = "C:\\Users\\lawrence.wachs\\Downloads\\neo.gif";
+        String image2 = "C:\\Computer Science\\ComputerScience30S\\tic.gif";
         
         // Now build (declare, instantiate) the image (Icon) objects
         Icon icon1 = new ImageIcon(image1);
