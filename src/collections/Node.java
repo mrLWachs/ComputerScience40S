@@ -2,14 +2,41 @@
 package collections;
  
 /**
- * Node.java - description
+ * Node.java - a representation of a generic node for use with
+ * a LinkedList object, and could be "visualized" as:
+ * 
+ *                      NODE
+ *                +--------------+
+ * previous <---- |              |
+ *                |     data     |
+ *                |   (generic)  |
+ *                |              |----> next
+ *                +--------------+
  *
  * @author Mr. Wachs
+ * @param <T> The generic data type used in the class
  * @since Nov 18, 2024, 12:00:34 p.m.
  */
-public class Node 
+public class Node <T>
 {
 
+    /** The generic data type the node stores */
+    public T data;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * Default constructor, set class properties
      */
