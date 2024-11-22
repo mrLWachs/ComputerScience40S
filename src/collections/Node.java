@@ -34,19 +34,70 @@ public class Node <T>
     
     
     
-    
-    
-    
-    
-    
-    
-    
     /**
      * Default constructor, set class properties
      */
     public Node() {
-        
+        this(null,null,null);
+        // Instead of code like...
+        // data = null;
+        // next = null;
+        // previous = null;
     }
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     */
+    public Node(T data) {
+        this(data,null,null);
+        // Instead of code like...
+        // this.data = data;
+        // next = null;
+        // previous = null;
+    }
+    
+    /**
+     * Class constructor, sets the class properties
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     */
+    public Node(T data, Node next) {
+        // You can have one constructor method call another constructor method:
+        this(data,next,null);        
+        // Instead of code like...
+        // this.data = data;
+        // this.next = next;
+        // previous = null;
+    }
+    
+    /**
+     * Class constructor, sets the class properties. Another option when 
+     * creating multiple constructors (overloading) write the constructor with
+     * ALL the possible arguments first. You can use other constructors to 
+     * call this one.
+     * 
+     * @param data the node data (generic)
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
+     */
+    public Node(T data, Node next, Node previous) {
+        this.data = data;
+        this.next = next;
+        this.previous = previous;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
      
     /**
      * String representation of this object
