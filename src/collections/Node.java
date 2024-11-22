@@ -5,13 +5,13 @@ package collections;
  * Node.java - a representation of a generic node for use with
  * a LinkedList object, and could be "visualized" as:
  * 
- *                      NODE
- *                +--------------+
- * previous <---- |              |
- *                |     data     |
- *                |   (generic)  |
- *                |              |----> next
- *                +--------------+
+ *                          NODE
+ *                  +---+-----------+---+
+ *   previous <-------* |           |   |
+ *                  |   |    data   |   |
+ *                  |   | (generic) |   |
+ *                  |   |           | *------> next
+ *                  +---+-----------+---+
  *
  * @author Mr. Wachs
  * @param <T> The generic data type used in the class
