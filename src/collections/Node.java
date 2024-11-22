@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package collections;
  
+
 /**
  * Node.java - a representation of a generic node for use with
  * a LinkedList object, and could be "visualized" as:
@@ -31,31 +32,22 @@ public class Node <T>
     
     /** Link / pointer / reference to the previous (back) node */
     public Node previous;
-    
-    
-    
-    /**
-     * Default constructor, set class properties
-     */
-    public Node() {
-        this(null,null,null);
-        // Instead of code like...
-        // data = null;
-        // next = null;
-        // previous = null;
-    }
+      
     
     /**
-     * Class constructor, sets the class properties
+     * Class constructor, sets the class properties. Another option when 
+     * creating multiple constructors (overloading) write the constructor with
+     * ALL the possible arguments first. You can use other constructors to 
+     * call this one.
      * 
      * @param data the node data (generic)
+     * @param next reference to the next Node object
+     * @param previous reference to the previous Node object
      */
-    public Node(T data) {
-        this(data,null,null);
-        // Instead of code like...
-        // this.data = data;
-        // next = null;
-        // previous = null;
+    public Node(T data, Node next, Node previous) {
+        this.data     = data;
+        this.next     = next;
+        this.previous = previous;
     }
     
     /**
@@ -74,22 +66,23 @@ public class Node <T>
     }
     
     /**
-     * Class constructor, sets the class properties. Another option when 
-     * creating multiple constructors (overloading) write the constructor with
-     * ALL the possible arguments first. You can use other constructors to 
-     * call this one.
+     * Class constructor, sets the class properties
      * 
      * @param data the node data (generic)
-     * @param next reference to the next Node object
-     * @param previous reference to the previous Node object
      */
-    public Node(T data, Node next, Node previous) {
-        this.data = data;
-        this.next = next;
-        this.previous = previous;
+    public Node(T data) {
+        this(data,null);
+        // We call the constructor above... (which calls the other constructor)
     }
     
-     
+    /**
+     * Default constructor, set class properties
+     */
+    public Node() {
+        this(null);
+        // Once again, one constructor calls others...
+    }
+    
     /**
      * String representation of this object
      *
