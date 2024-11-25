@@ -139,4 +139,23 @@ public class Node <T>
         return new Node(this.data, this.next, this.previous);
     }
     
+    /**
+     * Frees up all memory used by this object, and it is called when this 
+     * object is "deleted" or "removed" or "destroyed"
+     */
+    @Override
+    public void finalize() {
+        
+        // The 'garbage collector' is how Java manages memory. References to 
+        // 'memory' locations (e.g. variables, objects, etc.) that do not 
+        // contain actual data (for example a null) can be considered 'garbage'
+        // wastes of memory and should be 'cleaned up'. This means the memory 
+        // can be 'freed up' so other parts of the program could use that 
+        // memory and the memory isn't wasted. Java does do this automatically
+        // (like C# it has "automatic garbage collection") when it 'finds the 
+        // time' in the execution cycle, but you can make Java do it 
+        // explicitly by running the line above.
+    }
+    
+    
 }
