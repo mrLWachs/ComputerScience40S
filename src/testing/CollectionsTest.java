@@ -44,10 +44,11 @@ public class CollectionsTest
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
         
+        h.finalize();
+        System.out.println("Node h = " + h.toString());
         
-        
-        
-        
+        Node x = null;
+        x.equals(e);
         
         
         
