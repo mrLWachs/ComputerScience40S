@@ -33,7 +33,16 @@ public class CollectionsTest
         System.out.println("Node c = " + c.toString());
         System.out.println("Node d = " + d.toString());
         
-        
+        // Clone a node...
+        System.out.println("\nTesting Node clone().........................\n");
+        Node<String> e = a.clone();
+        Node<String> f = b.clone();
+        Node<String> g = c.clone();
+        Node<String> h = d.clone();
+        System.out.println("Node e = " + e.toString());
+        System.out.println("Node f = " + f.toString());
+        System.out.println("Node g = " + g.toString());
+        System.out.println("Node h = " + h.toString());
         
         
         

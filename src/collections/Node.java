@@ -135,7 +135,8 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        // Annoynmous clone object created and returned
+        return new Node(this.data, this.next, this.previous);
     }
     
 }
