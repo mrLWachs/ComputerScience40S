@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing;
  
+import collections.LinkedList;
 import collections.Node;
 
 
@@ -83,6 +84,11 @@ public class CollectionsTest
         System.out.println("Node h = " + h.toString());
         
         
+        LinkedList<Integer> list1 = new LinkedList<>();
+        LinkedList<Integer> list2 = new LinkedList<>();
+        
+        System.out.println("L1 toString -> " + list1.toString());
+        System.out.println("L2 toString -> " + list2.toString());
         
         
         

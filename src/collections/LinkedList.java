@@ -138,27 +138,36 @@ public class LinkedList <T>
         }
         return current;                                 // Return reference       
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * String representation of this object
      *
      * @return The object represented as a String
      */
     @Override
-    public String toString() {
-        return "Linkedlist: " + super.toString();
+    public String toString() {        
+        if (isEmpty()) return "Empty LinkedList";       // No nodes to display
+        String text = "LinkedList [";                   // String to build up
+        // Start a reference (link) at the first (head) node (entry point)
+        Node current = head;                            // Start at head node
+        while (current.next != null) {          // Traverse (travel) the list
+            // Appending the node data to the string and a seperator comma
+            text += current.data.toString() + ",";   
+            current = current.next;                     // Move to next node
+        }
+        return text + current.data.toString() + "]";    // Send back the string        
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
    
     /**
      * Deep comparison, determines if two objects are "equal" in this context
