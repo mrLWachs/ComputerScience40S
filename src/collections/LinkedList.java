@@ -157,18 +157,7 @@ public class LinkedList <T>
         }
         return text + current.data.toString() + "]";    // Send back the string        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-   
+       
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -180,6 +169,26 @@ public class LinkedList <T>
         return super.equals(object);
     }
        
+    /**
+     * Inserts (adds) data (generic type) into the back (tail, end, etc) of
+     * this list
+     * 
+     * @param data the generic type to add in
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBack(T data) {
+        return false;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * a Deep clone, creates a duplicate object using new memory
      *
