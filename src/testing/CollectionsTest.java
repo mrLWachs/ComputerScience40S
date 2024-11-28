@@ -83,12 +83,27 @@ public class CollectionsTest
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
         
+        // Create a LinkedList object to test the constructor
+        System.out.println("\nTesting default LinkedList constructor.......\n"); 
         
         LinkedList<Integer> list1 = new LinkedList<>();
         LinkedList<Integer> list2 = new LinkedList<>();
         
+        // Test toString() method (before I add anything into the list)........
+        System.out.println("\nTesting toString, empty, size methods........\n");        
         System.out.println("L1 toString -> " + list1.toString());
         System.out.println("L2 toString -> " + list2.toString());
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
