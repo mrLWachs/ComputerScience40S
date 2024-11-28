@@ -166,8 +166,25 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> that = (LinkedList<T>)object;     // Cast object parameter        
+        if (this.size() != that.size()) return false;   // Not the same sizes
+        Node current1 = this.getFirstNode();            // Get reference to
+        Node current2 = that.getFirstNode();            // Nodes in each list  
+        while (current1 != null) {                      // Traverse lists
+            if (!current1.equals(current2)) {           // Not equal data 
+                return false;                           // Not equal lists
+            } 
+            current1 = current1.next;                   // Move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // Lists are equal      
     }
+    
+    
+    
+    
+    
+    
        
     /**
      * Inserts (adds) data (generic type) into the back (tail, end, etc) of
