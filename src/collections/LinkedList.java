@@ -234,6 +234,25 @@ public class LinkedList <T>
         return true;                        // Operation successful
     }
     
+    /**
+     * Accessor for the data at the specified index
+     *
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {
+        if (!inRange(index)) return null;   // Invalid index, return flag        
+        return (T)getNode(index).data;      // Get reference and retrieve data  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
