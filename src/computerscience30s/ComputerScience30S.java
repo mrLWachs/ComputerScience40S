@@ -34,9 +34,10 @@ public class ComputerScience30S
      */
     public static void main(String[] args) {   
         // "Call" a method (means you use the name of the method)
-        learnIntroToJava();
-        learnMethods();
-        learnArrays();
+//        learnIntroToJava();
+//        learnMethods();
+//        learnArrays();
+        learnClasses();
     }
 
     /**
@@ -1292,6 +1293,14 @@ public class ComputerScience30S
                 JOptionPane.PLAIN_MESSAGE, 
                 icon
         );
+    }
+
+    private static void learnClasses() {
+        System.out.println("Start learning classes...");
+        
+        
+        
+        System.out.println("Completed learning classes!");
     }
 
 }
