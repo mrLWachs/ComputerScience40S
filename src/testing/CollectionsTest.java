@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing;
  
+/** Required API imports */
 import collections.LinkedList;
 import collections.Node;
 
@@ -94,13 +95,38 @@ public class CollectionsTest
         System.out.println("L1 toString -> " + list1.toString());
         System.out.println("L2 toString -> " + list2.toString());
         
+        // Test isEmpty() method...............................................
+        System.out.println("L1 empty? -> " + list1.isEmpty());
+        System.out.println("L2 empty? -> " + list2.isEmpty());
         
+        // Test size() method..................................................
+        System.out.println("L1 size -> " + list1.size());
+        System.out.println("L2 size -> " + list2.size());
         
+        // More testing, explained in the outputs..............................
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest add (first to the back) of the list.....\n");        
+        System.out.println("addBack -> " + list1.addBack(51)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(50)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(-50)  + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(55)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(null) + "\t" + list1);
         
+        ////////////////////////////////////////////////////////////////////////        
+        System.out.println("\nTest add (second to the front) of the list...\n");        
+        System.out.println("addFront -> " + list1.addFront(80)   + "\t" + list1);
+        System.out.println("addFront -> " + list1.addFront(81)   + "\t" + list1);
+        System.out.println("addFront -> " + list1.addFront(-80)  + "\t" + list1);
+        System.out.println("addFront -> " + list1.addFront(88)   + "\t" + list1);
+        System.out.println("addFront -> " + list1.addFront(null) + "\t" + list1);
         
-        
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nRe-testing empty, size methods...............\n");  
+        System.out.println("L1 empty? -> " + list1.isEmpty() + "\t" + list1);
+        System.out.println("L2 empty? -> " + list2.isEmpty() + "\t" + list2);
+        System.out.println("L1 size -> "   + list1.size()    + "\t" + list1);
+        System.out.println("L2 size -> "   + list2.size()    + "\t" + list2);
         
         
         
