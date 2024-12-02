@@ -151,7 +151,13 @@ public class CollectionsTest
         System.out.println("List 2 = " + list2.toString());
         System.out.println("List1 == List2 -> " + list1.equals(list2));
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest clone method............................\n");
+        list2 = list1.clone();
+        System.out.println("List 1 = " + list1.toString());
+        System.out.println("List 2 = " + list2.toString());
+        System.out.println("Re-testing equals...");
+        System.out.println("List1 == List2 -> " + list1.equals(list2));
         
         
         
