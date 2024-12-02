@@ -1,4 +1,4 @@
-
+/** Required package class namespace */
 package computerscience30s;
  
 
@@ -19,14 +19,15 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
    
-    
-    
     void born() {
-        
+        alive = true;
+        age = 0;
+        name = "undefined";
+        gender = "undefined";
     }
     
     void die() {
-        
+        alive = false;
     }
     
     
@@ -35,13 +36,7 @@ public class Person
     }
     
     void birthday() {
-        
+        age++;
     }
-    
-    
-    
-    
-    
-    
-    
+        
 }
