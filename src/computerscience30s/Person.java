@@ -32,7 +32,12 @@ public class Person
     
     
     void talk() {
-        
+        if (alive == true) {
+            System.out.println(name + " is " + age + " identifes as " + gender);
+        }
+        else  {
+            System.out.println("Boooooooo!");
+        }
     }
     
     void birthday() {
