@@ -277,6 +277,33 @@ public class LinkedList <T>
         return that;                                // New list returned
     }
     
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        // First error check the data and index values
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        
+        // The simple index number calls a method we already have
+        if (index == length-1) return addBack(data);    // Add to the end 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        
+        // Next, set all 4 proper references to insert the new node
+        node.next = current.next;                       
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;
+        
+        // Finishing up, add to lenght class property and return successfull
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
     
     
     
