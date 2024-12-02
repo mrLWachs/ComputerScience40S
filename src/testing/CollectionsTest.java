@@ -7,7 +7,7 @@ import collections.Node;
 
 
 /**
- * CollectionsTest.java - description
+ * CollectionsTest.java - tests the concepts learned in this unit.
  *
  * @author Mr. Wachs
  * @since Nov 18, 2024, 11:55:31 a.m.
@@ -128,7 +128,12 @@ public class CollectionsTest
         System.out.println("L1 size -> "   + list1.size()    + "\t" + list1);
         System.out.println("L2 size -> "   + list2.size()    + "\t" + list2);
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest get method..............................\n");
+        for (int i = 0-1; i < list1.size()+1; i++) {
+            Integer value = list1.get(i);
+            System.out.println("Getting " + i + " = " + value + "\t" + list1);
+        }
         
         
         
