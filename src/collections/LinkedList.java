@@ -245,7 +245,20 @@ public class LinkedList <T>
         return (T)getNode(index).data;      // Get reference and retrieve data  
     }
     
-    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        if (!inRange(index)) return false;          // Invalid index
+        if (data == null)    return false;          // Invalid data
+        Node current = getNode(index);              // Get to node at index
+        current.data = data;                        // Change node data
+        return true;                                // Operation successful
+    }
     
     
     
