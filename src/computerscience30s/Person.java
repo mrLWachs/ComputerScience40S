@@ -47,6 +47,29 @@ public class Person
         gender = "undefined";
     }
     
+    /**
+     * Constructor method, sets the class properties. Constructor methods 
+     * should be public
+     * 
+     * @param newName the new name for this person
+     */
+    Person(String newName) {
+        alive = true;
+        age = 0;
+        name = newName;
+        gender = "undefined";
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // This method was originally written and then deleted (commented out)
     // because the new constructor method performs the same purpose....
     

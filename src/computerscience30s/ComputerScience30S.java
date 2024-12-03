@@ -1327,7 +1327,18 @@ public class ComputerScience30S
         person.die();
         person.talk();
         
-        
+        // Create (instantiate) another object with a different (overloaded) 
+        // constructor  
+        Person other = new Person("Another Name");
+        other.talk();
+                
+                
+                
+                
+                
+                
+                
+                
         
         
         
