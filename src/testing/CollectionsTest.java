@@ -195,6 +195,23 @@ public class CollectionsTest
                            "\t result \t"      + list1.addBefore(10,size) + 
                            "\t"                + list1.toString());
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest front and back methods..................\n");
+        System.out.println("Front of list 1 = " + list1.front() + "\t" + list1);
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 1 = " + list1.back() + "\t" + list1);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
+        System.out.println("Clear out list 2");
+        list2.clear();
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+        
+        
+        
         
         
         

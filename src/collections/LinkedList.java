@@ -328,6 +328,48 @@ public class LinkedList <T>
         return true;                                    // Opperation successful
     }
     
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // Wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // Wrapper method call
+    }
+    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // First node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // Last node
+    }
+    
+    
+    
+    
     
     
     
