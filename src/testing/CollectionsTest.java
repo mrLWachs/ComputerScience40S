@@ -201,8 +201,6 @@ public class CollectionsTest
         System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
         System.out.println("Back of list 1 = " + list1.back() + "\t" + list1);
         System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
-        System.out.println("Clear out list 2");
-        list2.clear();
         System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
         System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
         
