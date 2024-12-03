@@ -22,9 +22,13 @@ public class Person
     // inside the class and/or outside the class (words "private" and "public")
         
     public String name;
+    
     int age;
+    
     String gender;
+    
     boolean alive;
+    
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
    
