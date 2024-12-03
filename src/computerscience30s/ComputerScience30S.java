@@ -1332,7 +1332,9 @@ public class ComputerScience30S
         Person other = new Person("Another Name");
         other.talk();
                 
-                
+        // Another instance using the 3rd constructor option
+        Person third = new Person("Three Thurdy", 33, "non-binary");
+        third.talk();
                 
                 
                 

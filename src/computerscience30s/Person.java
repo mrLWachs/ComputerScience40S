@@ -21,7 +21,7 @@ public class Person
     // or not. Meaning is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
         
-    String name;
+    public String name;
     int age;
     String gender;
     boolean alive;
@@ -73,7 +73,7 @@ public class Person
         alive = true;
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
-        // for the name of the object (whcih will be created at a later time)
+        // for the name of the object (which will be created at a later time)
         this.age    = age;
         this.name   = name;
         this.gender = gender;
