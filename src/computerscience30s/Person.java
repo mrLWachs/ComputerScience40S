@@ -17,17 +17,17 @@ public class Person
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
     // We add a keyword to the front of the properties (modifier word) to
-    // determine if the property (variable, global varaible) is encapsulated
+    // determine if the property (variable, global variable) is encapsulated
     // or not. Meaning is the variable accessable (can be read and changed)
     // inside the class and/or outside the class (words "private" and "public")
         
     public String name;
     
-    int age;
+    private int age;        // Encapsulated this property
     
-    String gender;
+    public String gender; // Can be changed through methods
     
-    boolean alive;
+    private boolean alive;
     
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))
@@ -44,7 +44,7 @@ public class Person
      * create a Person object. The method sets all the class properties (global 
      * variables) to their starting values ("defaults").
      */
-    Person() {
+    public Person() {
         alive  = true;
         age    = 0;
         name   = "undefined";
@@ -57,7 +57,7 @@ public class Person
      * 
      * @param newName the new name for this person
      */
-    Person(String newName) {
+    public Person(String newName) {
         alive = true;
         age = 0;
         name = newName;
@@ -83,14 +83,6 @@ public class Person
         this.gender = gender;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
     // This method was originally written and then deleted (commented out)
     // because the new constructor method performs the same purpose....
     
@@ -105,14 +97,14 @@ public class Person
      * The person dies (changing/modifying) the property (alive) through 
      * this method
      */
-    void die() {
+    public void die() {
         alive = false;
     }
     
     /**
      * Outputs information about the person to the screen
      */
-    void talk() {
+    public void talk() {
         if (alive == true) {
             System.out.println(name + " is " + age + " identifes as " + gender);
         }
@@ -124,7 +116,7 @@ public class Person
     /**
      * Gives the person a birthday
      */
-    void birthday() {
+    public void birthday() {
         age++;
     }
         

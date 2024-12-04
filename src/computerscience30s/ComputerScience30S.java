@@ -1321,6 +1321,13 @@ public class ComputerScience30S
         // Use (call,invoke) other methods and change properties
         person.talk();
         person.name = "Personoy Personificaus";
+        
+        // Note: the "age" property was originally public but then it was
+        // "encapsulated" by making it a "private" so it can no longer be 
+        // accessed (read) or modified (changed) outside the class
+        
+        // person.age = 10;
+        
         person.gender = "person";
         person.birthday();
         person.talk();
