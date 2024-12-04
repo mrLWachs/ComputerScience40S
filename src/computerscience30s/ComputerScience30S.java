@@ -1344,6 +1344,8 @@ public class ComputerScience30S
         third.talk();
                 
                 
+        Student student = new Student();
+        student.talk();
                 
                 
                 
