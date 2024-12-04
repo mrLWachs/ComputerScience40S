@@ -11,7 +11,7 @@ import java.util.Arrays;
  * CollectionsTest.java - tests the concepts learned in this unit.
  *
  * @author Mr. Wachs
- * @since Nov 18, 2024, 11:55:31 a.m.
+ * @since December 2024
  */
 public class CollectionsTest 
 {

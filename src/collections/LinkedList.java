@@ -27,7 +27,7 @@ import java.lang.reflect.Array;
  *
  * @author Mr. Wachs
  * @param <T> The generic data type used in the class
- * @since May Nov 18, 2024, 12:00:39 p.m.
+ * @since December 2024
  */
 public class LinkedList <T>
 {
