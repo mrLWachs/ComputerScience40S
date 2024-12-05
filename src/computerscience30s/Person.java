@@ -114,10 +114,30 @@ public class Person
     }
     
     /**
+     * This method is a private method means it can be called (invoked)
+     * inside the class by other methods of the class. Private methods are
+     * rare and sometimes called "helper" or "utility" methods as they just 
+     * help other methods.
+     * 
      * Gives the person a birthday
      */
-    public void birthday() {
+    private void birthday() {
         age++;
+    }
+    
+    /**
+     * Gives the person a birthday, changes the encapsulated property (age).
+     * This is a overloaded method meaning multiple methods with the same 
+     * name but different parameters.
+     * 
+     * @param age home many birthdays to give the person
+     */
+    public void birthday(int age) {
+        for (int i = 0; i < age; i++) {
+            birthday();
+        }
+        // or you could just write...
+        // this.age = age;
     }
         
 }

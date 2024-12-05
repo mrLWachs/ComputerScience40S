@@ -40,6 +40,7 @@ public class Student extends Person
         // case is "Person) and you can use the keyword to change properties
         // (but not encapsulated/private ones) and call methods
         super.name = name;
+        super.gender = gender;
         
         
         // "this" is an explicit refernce to "this class"

@@ -1329,7 +1329,12 @@ public class ComputerScience30S
         
         // person.age = 10;
         
-        person.birthday();
+        // Note: this method was originally public but then it was
+        // "encapsulated" by making it a private (helper) method so it can 
+        // no longer be called (invoked) outside the class
+        
+        // person.birthday();
+        
         person.talk();
         person.die();
         person.talk();
