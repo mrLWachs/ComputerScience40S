@@ -1352,9 +1352,9 @@ public class ComputerScience30S
         // ones it inherited from the Person class)        
         Student student = new Student("Robert Studentson",17,"non-binary",123);
         student.talk();
-                
-                
-                
+        // Call (invoke) methods specifically for the student class        
+        student.study();
+        
                 
         
         
