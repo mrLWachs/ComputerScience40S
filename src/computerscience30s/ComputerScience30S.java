@@ -1345,7 +1345,7 @@ public class ComputerScience30S
                 
         // Create a Student object and call it's methods (including the 
         // ones it inherited from the Person class)        
-        Student student = new Student();
+        Student student = new Student("Robert Studentson",17,"non-binary",123);
         student.talk();
                 
                 
