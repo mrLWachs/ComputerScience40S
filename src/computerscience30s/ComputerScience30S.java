@@ -1321,6 +1321,7 @@ public class ComputerScience30S
         // Use (call,invoke) other methods and change properties
         person.talk();
         person.name = "Personoy Personificaus";
+        person.gender = "person";
         
         // Note: the "age" property was originally public but then it was
         // "encapsulated" by making it a "private" so it can no longer be 
@@ -1328,7 +1329,6 @@ public class ComputerScience30S
         
         // person.age = 10;
         
-        person.gender = "person";
         person.birthday();
         person.talk();
         person.die();
@@ -1343,7 +1343,8 @@ public class ComputerScience30S
         Person third = new Person("Three Thurdy", 33, "non-binary");
         third.talk();
                 
-                
+        // Create a Student object and call it's methods (including the 
+        // ones it inherited from the Person class)        
         Student student = new Student();
         student.talk();
                 
