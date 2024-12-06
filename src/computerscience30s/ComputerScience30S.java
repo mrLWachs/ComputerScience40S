@@ -1367,7 +1367,15 @@ public class ComputerScience30S
         Husky husky = new Husky("Havoc",17,"Husky",2665);
         husky.talk();
         
+        // Make a Teacher instance (an object)
+        Teacher teacher = new Teacher("Mr. Wachs");
         
+        // Assign student objects to this teacher 
+        // "give the teacher somne students"
+        teacher.students[0] = student;
+        
+        // Now call the method...
+        teacher.teach();
         
         
                 

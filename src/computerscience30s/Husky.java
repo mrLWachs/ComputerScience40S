@@ -26,7 +26,7 @@ public class Husky extends Student
      */
     public Husky(String name, int age, String gender, int number) {
         super(name, age, gender, number);           // calling super constructor
-        pride = true;                               // set internal property
+        this.pride = true;                          // set internal property
     }
 
     /**
@@ -36,7 +36,7 @@ public class Husky extends Student
     @Override
     public void talk() {
         super.talk();       // call to super talk(), it calls super talk() also
-        System.out.println("\t Pride is " + pride);
+        System.out.println("\t Pride is \t" + pride);
     }
     
 }
