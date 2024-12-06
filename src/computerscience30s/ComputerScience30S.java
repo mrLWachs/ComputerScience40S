@@ -1354,6 +1354,21 @@ public class ComputerScience30S
         student.talk();
         // Call (invoke) methods specifically for the student class        
         student.study();
+        student.talk();
+        student.slackOff();
+        student.talk();
+        student.cram();
+        student.talk();
+        // Still can call inherited methods
+        student.die();
+        student.talk();
+        
+        // Instantiate a Husky object
+        Husky husky = new Husky("Havoc",17,"Husky",2665);
+        husky.talk();
+        
+        
+        
         
                 
         
