@@ -1373,6 +1373,7 @@ public class ComputerScience30S
         // Assign student objects to this teacher 
         // "give the teacher somne students"
         teacher.students[0] = student;
+        teacher.students[1] = husky;
         
         // Now call the method...
         teacher.teach();

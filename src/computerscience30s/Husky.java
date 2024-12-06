@@ -36,7 +36,7 @@ public class Husky extends Student
     @Override
     public void talk() {
         super.talk();       // call to super talk(), it calls super talk() also
-        System.out.println("\t Pride is \t" + pride);
+        System.out.println("\tPride is \t" + pride);
     }
     
 }
