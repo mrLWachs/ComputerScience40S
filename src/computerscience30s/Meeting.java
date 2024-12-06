@@ -7,8 +7,8 @@ package computerscience30s;
  * polymorphism to allow any Person objects or children (sub-classes) of the 
  * Person class to be added to the array.
  *
- * @author YOUR NAME
- * @since May 10, 2024, 8:46:46 a.m.
+ * @author Mr. Wachs
+ * @since December 2024
  */
 public class Meeting 
 {

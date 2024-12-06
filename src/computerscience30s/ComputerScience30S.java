@@ -1378,12 +1378,18 @@ public class ComputerScience30S
         // Now call the method...
         teacher.teach();
         
+        // Build (declare, initiaize, instantiate) a Meeting object
+        Meeting meeting = new Meeting();
         
-                
+        // Calling our polymorphic method
+        meeting.attend(person);
+        meeting.attend(other);
+        meeting.attend(third);
+        meeting.attend(student);
+        meeting.attend(husky);
+        meeting.attend(teacher);
         
-        
-        
-        
+        meeting.hold();
         
         System.out.println("Completed learning classes!");
     }
