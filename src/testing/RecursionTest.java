@@ -44,7 +44,7 @@ public class RecursionTest
         // will call itself)
         
         final int MIN_EDGE = -1;
-        final int MAX_EDGE = 20;  // Beyond this we get an "overflow" error   
+        final int MAX_EDGE = 25;  // Beyond this we get an "overflow" error   
         
         // Loop through a series of tests (going through the "edge cases")
         for (int number = MIN_EDGE; number <= MAX_EDGE; number++) {
