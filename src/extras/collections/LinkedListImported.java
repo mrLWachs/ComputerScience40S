@@ -1,5 +1,5 @@
 
-package extras;
+package extras.collections;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ import java.util.*;
 public class LinkedListImported
 {
 
-    public static void main(String[] args) {
+    public LinkedListImported() {
         final int SIZE = 100;
         //int[] array = new int[SIZE];
         Integer[] array = new Integer[SIZE];
@@ -53,7 +53,7 @@ public class LinkedListImported
         Arrays.sort(array);
         System.out.println("Sort Array:\t\t" + Arrays.toString(array));
         /////////////////////////////////////////////////////////////////
-        linkedList = linkedList.reversed();
+        //linkedList = linkedList.re reversed();
         System.out.println("Reversed LinkedList:\t" + linkedList);
         /////////////////////////////////////////////////////////////////
         int value = array[SIZE/2];
@@ -69,6 +69,8 @@ public class LinkedListImported
         Integer[] a = (Integer[])vector.toArray(array);
         System.out.println("Vector to array:\t" + vector);
         System.out.println("Array:\t\t\t" + Arrays.toString(a));
+        /////////////////////////////////////////////////////////////////
+        UserInterface ui = new UserInterface();
     }
 
 }

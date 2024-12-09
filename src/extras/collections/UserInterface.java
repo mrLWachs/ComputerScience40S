@@ -1,5 +1,5 @@
 
-package extras;
+package extras.collections;
 
 import collections.LinkedList;
 import java.awt.event.KeyEvent;

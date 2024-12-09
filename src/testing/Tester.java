@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import extras.collections.LinkedListImported;
+
  
 /**
  * Tester.java - tests the concepts learned in all the units.
@@ -20,7 +22,8 @@ public class Tester
         RecursionTest unit1 = new RecursionTest();
         // Later we will add code here for unit 2 and 3...        
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
-        CollectionsTest     unit3 = new CollectionsTest();        
+        CollectionsTest     unit3 = new CollectionsTest(); 
+        LinkedListImported  extra = new LinkedListImported();
         System.out.println("Testing complete!");
     }
     
