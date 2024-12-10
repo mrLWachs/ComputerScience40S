@@ -26,30 +26,34 @@ public class ExtrasTest
      * Default constructor, set class properties
      */
     public ExtrasTest() {
-        final String TITLE = "Computer Science 40S: Extra Units and Learning";
-        final String TEXT  = "Please choose an bonus project...";
-        final String[] CHOICES = {
-            "Practical Collections example",
-            "Graphics and User Interfaces examples",
-            "Permanent Storage examples",
-            "Binary Trees",
-            "Sorting Algorithms",
-            "Searching Algorithms",
-            "Threading examples",
-            "Path finding examples",
-            "Quit"
-        };
-        Dialogs dialog = new Dialogs(TITLE);
-        String choice = dialog.choices(TEXT,CHOICES);
-        if      (choice.equals(CHOICES[0])) new CollectionsExtrasTest();
-        else if (choice.equals(CHOICES[1])) new GraphicsTest();
-        else if (choice.equals(CHOICES[2])) new StorageTest();
-        else if (choice.equals(CHOICES[3])) new TreesTest();
-        else if (choice.equals(CHOICES[4])) new SortingTest();
-        else if (choice.equals(CHOICES[5])) new SearchingTest();
-        else if (choice.equals(CHOICES[6])) new ThreadingTest();
-        else if (choice.equals(CHOICES[7])) new PathfindingTest();        
-        else System.exit(0); 
+        
+        new GraphicsTest();
+        
+        
+//        final String TITLE = "Computer Science 40S: Extra Units and Learning";
+//        final String TEXT  = "Please choose an bonus project...";
+//        final String[] CHOICES = {
+//            "Practical Collections example",
+//            "Graphics and User Interfaces examples",
+//            "Permanent Storage examples",
+//            "Binary Trees",
+//            "Sorting Algorithms",
+//            "Searching Algorithms",
+//            "Threading examples",
+//            "Path finding examples",
+//            "Quit"
+//        };
+//        Dialogs dialog = new Dialogs(TITLE);
+//        String choice = dialog.choices(TEXT,CHOICES);
+//        if      (choice.equals(CHOICES[0])) new CollectionsExtrasTest();
+//        else if (choice.equals(CHOICES[1])) new GraphicsTest();
+//        else if (choice.equals(CHOICES[2])) new StorageTest();
+//        else if (choice.equals(CHOICES[3])) new TreesTest();
+//        else if (choice.equals(CHOICES[4])) new SortingTest();
+//        else if (choice.equals(CHOICES[5])) new SearchingTest();
+//        else if (choice.equals(CHOICES[6])) new ThreadingTest();
+//        else if (choice.equals(CHOICES[7])) new PathfindingTest();        
+//        else System.exit(0); 
     }
     
 }
