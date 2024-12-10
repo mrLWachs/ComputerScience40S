@@ -3,7 +3,8 @@ package testing.extras.trees;
 
  
 /**
- * TreesTest.java - description
+ * TreesTest.java - a bonus example of binary trees. Further resources for this 
+ * topic can be found here:
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024

@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras;
 
+/** Required API imports */
 import testing.extras.collections.CollectionsExtrasTest;
 import testing.extras.graphics.GraphicsTest;
 import testing.extras.pathfinding.PathfindingTest;
@@ -12,10 +13,11 @@ import testing.extras.trees.TreesTest;
 
  
 /**
- * ExtrasTest.java - description
+ * ExtrasTest.java - some bonus content done at the end of the Computer 
+ * Science 40S course by student request
  *
  * @author Mr. Wachs
- * @since Dec. 9, 2024
+ * @since December 2024
  */
 public class ExtrasTest 
 {
@@ -24,8 +26,8 @@ public class ExtrasTest
      * Default constructor, set class properties
      */
     public ExtrasTest() {
-        final String TITLE = "CS40S: Extra Units and Learning";
-        final String TEXT  = "Please choose an extras project...";
+        final String TITLE = "Computer Science 40S: Extra Units and Learning";
+        final String TEXT  = "Please choose an bonus project...";
         final String[] CHOICES = {
             "Practical Collections example",
             "Graphics and User Interfaces examples",
@@ -35,7 +37,6 @@ public class ExtrasTest
             "Searching Algorithms",
             "Threading examples",
             "Path finding examples",
-            "Python examples",
             "Quit"
         };
         Dialogs dialog = new Dialogs(TITLE);

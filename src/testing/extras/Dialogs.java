@@ -420,6 +420,9 @@ public class Dialogs
         this.numbers     = new Numbers();
         this.area        = new JTextArea();
         this.scrollPane  = new JScrollPane();
+        area.setFont(font);
+        area.setBackground(background);
+        area.setForeground(foreground); 
     }
 
     /**

@@ -24,6 +24,7 @@ public class Tester
         // Later we will add code here for unit 2 and 3...        
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
         CollectionsTest     unit3 = new CollectionsTest(); 
+        // A bonus unit (not required)...
         ExtrasTest          extra = new ExtrasTest();
         System.out.println("Testing complete!");
     }
