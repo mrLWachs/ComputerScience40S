@@ -1,20 +1,20 @@
 /** Required package class namespace */
-package extras.pathfinding;
+package testing.extras.graphics;
 
  
 /**
- * PathfindingTest.java - description
+ * GraphicsTest.java - description
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024
  */
-public class PathfindingTest 
+public class GraphicsTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public PathfindingTest() {
+    public GraphicsTest() {
         System.out.println(this.getClass().getSimpleName());
     }
     

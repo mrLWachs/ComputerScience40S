@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package extras;
+package testing.extras;
 
 /** Required API imports */
 import tools.Numbers;

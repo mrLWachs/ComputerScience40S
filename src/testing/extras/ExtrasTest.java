@@ -1,14 +1,14 @@
 /** Required package class namespace */
-package extras;
+package testing.extras;
 
-import extras.collections.CollectionsExtrasTest;
-import extras.graphics.GraphicsTest;
-import extras.pathfinding.PathfindingTest;
-import extras.searching.SearchingTest;
-import extras.sorting.SortingTest;
-import extras.storage.StorageTest;
-import extras.threading.ThreadingTest;
-import extras.trees.TreesTest;
+import testing.extras.collections.CollectionsExtrasTest;
+import testing.extras.graphics.GraphicsTest;
+import testing.extras.pathfinding.PathfindingTest;
+import testing.extras.searching.SearchingTest;
+import testing.extras.sorting.SortingTest;
+import testing.extras.storage.StorageTest;
+import testing.extras.threading.ThreadingTest;
+import testing.extras.trees.TreesTest;
 
  
 /**

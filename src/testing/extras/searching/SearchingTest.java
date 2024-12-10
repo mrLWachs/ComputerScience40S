@@ -1,20 +1,20 @@
 /** Required package class namespace */
-package extras.storage;
+package testing.extras.searching;
 
  
 /**
- * StorageTest.java - description
+ * SearchingTest.java - description
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024
  */
-public class StorageTest 
+public class SearchingTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public StorageTest() {
+    public SearchingTest() {
         System.out.println(this.getClass().getSimpleName());
     }
     

@@ -1,20 +1,20 @@
 /** Required package class namespace */
-package extras.trees;
+package testing.extras.threading;
 
  
 /**
- * TreesTest.java - description
+ * ThreadingTest.java - description
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024
  */
-public class TreesTest 
+public class ThreadingTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public TreesTest() {
+    public ThreadingTest() {
         System.out.println(this.getClass().getSimpleName());
     }
     

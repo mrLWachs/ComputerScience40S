@@ -1,20 +1,20 @@
 /** Required package class namespace */
-package extras.threading;
+package testing.extras.sorting;
 
  
 /**
- * ThreadingTest.java - description
+ * SortingTest.java - description
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024
  */
-public class ThreadingTest 
+public class SortingTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public ThreadingTest() {
+    public SortingTest() {
         System.out.println(this.getClass().getSimpleName());
     }
     

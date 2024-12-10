@@ -1,20 +1,20 @@
 /** Required package class namespace */
-package extras.sorting;
+package testing.extras.trees;
 
  
 /**
- * SortingTest.java - description
+ * TreesTest.java - description
  *
  * @author Mr. Wachs
  * @since Dec. 9, 2024
  */
-public class SortingTest 
+public class TreesTest 
 {
 
     /**
      * Default constructor, set class properties
      */
-    public SortingTest() {
+    public TreesTest() {
         System.out.println(this.getClass().getSimpleName());
     }
     
