@@ -3,10 +3,11 @@ package testing.extras.searching;
 
  
 /**
- * SearchingTest.java - description
+ * SearchingTest.java - a bonus example of binary trees. Further resources for this 
+ * topic can be found here:
  *
  * @author Mr. Wachs
- * @since Dec. 9, 2024
+ * @since December 2024
  */
 public class SearchingTest 
 {

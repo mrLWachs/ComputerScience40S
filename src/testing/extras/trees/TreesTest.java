@@ -7,7 +7,7 @@ package testing.extras.trees;
  * topic can be found here:
  *
  * @author Mr. Wachs
- * @since Dec. 9, 2024
+ * @since December 2024
  */
 public class TreesTest 
 {

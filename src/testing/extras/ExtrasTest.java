@@ -26,10 +26,11 @@ public class ExtrasTest
      * Default constructor, set class properties
      */
     public ExtrasTest() {
-        
+        System.out.println("Extras content test starting...");
+        // Code to quickly run the desired test.......
         new GraphicsTest();
         
-        
+        // Code to choose which etras test to run...
 //        final String TITLE = "Computer Science 40S: Extra Units and Learning";
 //        final String TEXT  = "Please choose an bonus project...";
 //        final String[] CHOICES = {
@@ -54,6 +55,7 @@ public class ExtrasTest
 //        else if (choice.equals(CHOICES[6])) new ThreadingTest();
 //        else if (choice.equals(CHOICES[7])) new PathfindingTest();        
 //        else System.exit(0); 
+        System.out.println("Extras content test completed!");
     }
     
 }
