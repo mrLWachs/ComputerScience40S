@@ -20,7 +20,7 @@ public class CollectionsExtrasTest
      * Default constructor method
      */
     public CollectionsExtrasTest() {
-        final int SIZE = 100;               // Constant for the size of the ADTs
+        final int SIZE = 10;                // Constant for the size of the ADTs
         
         // Create an array data structure.......................................
         Integer[] array = new Integer[SIZE];    // Like int[] a = new int[SIZE];
@@ -28,7 +28,7 @@ public class CollectionsExtrasTest
         for (int i = 0; i < array.length; i++) {               // Traverse array
             array[i] = random.nextInt(SIZE);          // Fill with random values
         }
-        System.out.println("Array:\t" + Arrays.toString(array));      // Display
+        System.out.println("Array: " + Arrays.toString(array));       // Display
         // The use of the "Arrays" class and one of its methods (toString) for 
         // working with arrays
         
@@ -37,56 +37,61 @@ public class CollectionsExtrasTest
         for (Integer integer : array) {                         // Traverse list
             linkedList.add(integer);                              // Add to list
         }
-        System.out.println("LinkedList:\t\t" + linkedList);           // Display
+        System.out.println("LinkedList: " + linkedList);              // Display
         
         // Create an imported ArrayList data structure..........................
         ArrayList<Integer> arrayList = new ArrayList<>();
-        for (Integer integer : array) {
-            arrayList.add(integer);
+        for (Integer integer : array) {                         // Traverse list
+            arrayList.add(integer);                               // Add to list
         }
-        System.out.println("ArrayList:\t\t" + arrayList);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("ArrayList: " + arrayList);                // Display
+        
+        // Create an imported Stack data structure..............................
         Stack<Integer> stack = new Stack<>();
-        for (Integer integer : array) {
-            stack.push(integer);
+        for (Integer integer : array) {                        // Traverse stack
+            stack.push(integer);                              // Push onto stack
         }
-        System.out.println("Stack:\t\t\t" + stack);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("Stack: " + stack);                        // Display
+        
+        // Create an imported Vector data structure.............................
         Vector<Integer> vector = new Vector<>();
-        for (Integer integer : array) {
-            vector.add(integer);
+        for (Integer integer : array) {                       // Traverse vector
+            vector.add(integer);                                // Add to vector
         }
-        System.out.println("Vector:\t\t\t" + vector);
-        /////////////////////////////////////////////////////////////////        
+        System.out.println("Vector: " + vector);                      // Display
+        // Note: the "Vector" ADT is considered "obsolete" and is mostly now 
+        // replaced with the ArrayList ADT and Vector is considered a "legacy"
+        // data structure
+        
+        // Create an imported PriorityQueue data structure......................        
         PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
-        for (Integer integer : array) {
-            priorityQueue.add(integer);
+        for (Integer integer : array) {                        // Traverse Queue
+            priorityQueue.add(integer);                          // Add to Queue
         }
-        System.out.println("PriorityQueue:\t\t" + priorityQueue);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("PriorityQueue: " + priorityQueue);        // Display
+        
+        // Create an imported ArrayList data structure..........................
         System.out.println("\nNow some ADT methods...\n");
-        /////////////////////////////////////////////////////////////////
+        
+        // Now a variety of methods from these ADTs ............................
         Arrays.sort(array);
-        System.out.println("Sort Array:\t\t" + Arrays.toString(array));
-        /////////////////////////////////////////////////////////////////
-        //linkedList = linkedList.reversed();
-        //System.out.println("Reversed LinkedList:\t" + linkedList);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("Sort Array: " + Arrays.toString(array));
+        linkedList = linkedList.reversed();
+        System.out.println("Reversed LinkedList: " + linkedList);
         int value = array[SIZE/2];
         arrayList.remove(value);
-        System.out.println("ArrayList Remove " + value + ":\t" + arrayList);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("ArrayList Remove " + value + ": " + arrayList);
         Integer i = stack.pop();
-        System.out.println("Stack pop " + i + ":\t\t" + stack);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("Stack pop " + i + ": " + stack);
         vector.removeElementAt(2);
-        System.out.println("Vector remove 2:\t" + vector);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("Vector remove 2: " + vector);
         Integer[] a = (Integer[])vector.toArray(array);
-        System.out.println("Vector to array:\t" + vector);
-        System.out.println("Array:\t\t\t" + Arrays.toString(a));
-        /////////////////////////////////////////////////////////////////
-        UserInterface ui = new UserInterface();
+        System.out.println("Vector to array: " + vector);
+        System.out.println("Array: " + Arrays.toString(a));
+        
+        // Now a more practical use of the LinkedList class we created in a 
+        // user interface example...
+        new UserInterface();
     }
 
 }
