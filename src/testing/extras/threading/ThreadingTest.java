@@ -13,7 +13,7 @@ public class ThreadingTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor method
      */
     public ThreadingTest() {
         System.out.println(this.getClass().getSimpleName());

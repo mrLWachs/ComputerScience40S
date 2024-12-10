@@ -13,7 +13,7 @@ public class StorageTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor method
      */
     public StorageTest() {
         System.out.println(this.getClass().getSimpleName());

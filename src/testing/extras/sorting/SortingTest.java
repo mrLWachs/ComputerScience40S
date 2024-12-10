@@ -13,7 +13,7 @@ public class SortingTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor method
      */
     public SortingTest() {
         System.out.println(this.getClass().getSimpleName());

@@ -13,7 +13,7 @@ public class TreesTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor method
      */
     public TreesTest() {
         System.out.println(this.getClass().getSimpleName());

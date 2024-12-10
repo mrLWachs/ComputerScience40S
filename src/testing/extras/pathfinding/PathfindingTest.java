@@ -13,7 +13,7 @@ public class PathfindingTest
 {
 
     /**
-     * Default constructor, set class properties
+     * Default constructor method
      */
     public PathfindingTest() {
         System.out.println(this.getClass().getSimpleName());

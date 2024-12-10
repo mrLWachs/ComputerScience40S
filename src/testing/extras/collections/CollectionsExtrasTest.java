@@ -5,8 +5,10 @@ package testing.extras.collections;
 import java.util.*;
 
 /**
- * CollectionsExtrasTest.java - a bonus example of binary trees. Further resources for this 
- * topic can be found here:
+ * CollectionsExtrasTest.java - a bonus example of the collection unit code 
+ * used in a more practical way. It also show the imported LinkedList (and 
+ * other ADTs from the java.util collections framework). Further resources for 
+ * this topic can be found here:
  *
  * @author Mr. Wachs
  * @since December 2024
@@ -14,23 +16,30 @@ import java.util.*;
 public class CollectionsExtrasTest
 {
 
+    /**
+     * Default constructor method
+     */
     public CollectionsExtrasTest() {
-        final int SIZE = 100;
-        //int[] array = new int[SIZE];
-        Integer[] array = new Integer[SIZE];
-        Random random = new Random();
-        for (int i = 0; i < array.length; i++) {
-            array[i] = random.nextInt(SIZE);
+        final int SIZE = 100;               // Constant for the size of the ADTs
+        
+        // Create an array data structure.......................................
+        Integer[] array = new Integer[SIZE];    // Like int[] a = new int[SIZE];
+        Random random = new Random();                // For making random values
+        for (int i = 0; i < array.length; i++) {               // Traverse array
+            array[i] = random.nextInt(SIZE);          // Fill with random values
         }
-        String text = Arrays.toString(array);
-        System.out.println("Array:\t\t\t" + text);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("Array:\t" + Arrays.toString(array));      // Display
+        // The use of the "Arrays" class and one of its methods (toString) for 
+        // working with arrays
+        
+        // Create an imported LinkedList data structure.........................
         LinkedList<Integer> linkedList = new LinkedList<>();
-        for (Integer integer : array) {
-            linkedList.add(integer);
+        for (Integer integer : array) {                         // Traverse list
+            linkedList.add(integer);                              // Add to list
         }
-        System.out.println("LinkedList:\t\t" + linkedList);
-        /////////////////////////////////////////////////////////////////
+        System.out.println("LinkedList:\t\t" + linkedList);           // Display
+        
+        // Create an imported ArrayList data structure..........................
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (Integer integer : array) {
             arrayList.add(integer);
