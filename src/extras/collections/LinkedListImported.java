@@ -53,8 +53,8 @@ public class LinkedListImported
         Arrays.sort(array);
         System.out.println("Sort Array:\t\t" + Arrays.toString(array));
         /////////////////////////////////////////////////////////////////
-        //linkedList = linkedList.re reversed();
-        System.out.println("Reversed LinkedList:\t" + linkedList);
+        //linkedList = linkedList.reversed();
+        //System.out.println("Reversed LinkedList:\t" + linkedList);
         /////////////////////////////////////////////////////////////////
         int value = array[SIZE/2];
         arrayList.remove(value);
