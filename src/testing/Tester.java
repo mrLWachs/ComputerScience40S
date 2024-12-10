@@ -2,8 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import testing.extras.ExtrasTest;
-import testing.extras.collections.CollectionsExtrasTest;
 
  
 /**
