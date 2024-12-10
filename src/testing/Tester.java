@@ -2,7 +2,8 @@
 /** Required package class namespace */
 package testing;
 
-import extras.collections.LinkedListImported;
+import extras.ExtrasTest;
+import extras.collections.CollectionsExtrasTest;
 
  
 /**
@@ -23,7 +24,7 @@ public class Tester
         // Later we will add code here for unit 2 and 3...        
         AdvancedClassesTest unit2 = new AdvancedClassesTest();
         CollectionsTest     unit3 = new CollectionsTest(); 
-        LinkedListImported  extra = new LinkedListImported();
+        ExtrasTest          extra = new ExtrasTest();
         System.out.println("Testing complete!");
     }
     

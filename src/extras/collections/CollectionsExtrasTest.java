@@ -4,10 +4,10 @@ package extras.collections;
 import java.util.*;
 
 
-public class LinkedListImported
+public class CollectionsExtrasTest
 {
 
-    public LinkedListImported() {
+    public CollectionsExtrasTest() {
         final int SIZE = 100;
         //int[] array = new int[SIZE];
         Integer[] array = new Integer[SIZE];
