@@ -106,8 +106,8 @@ public class GraphicsTest
         
         // This can also involve some level of "prototyping"
         
-        // In a larger sense, this term in Computer Science is defined as: "A 
-        // prototype in software development is a simulation of how a real 
+        // In a larger sense, the term "prototype" in Computer Science is 
+        // defined as: "in software development is a simulation of how a real 
         // software product will look, work, and feel. Typically built early 
         // in the software development process, prototypes are primarily for
         // design feedback and user testing." - but here we can use the 
