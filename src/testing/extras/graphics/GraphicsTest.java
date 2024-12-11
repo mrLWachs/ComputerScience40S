@@ -2,6 +2,11 @@
 package testing.extras.graphics;
 
 /** Required API imports */
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
@@ -114,7 +119,50 @@ public class GraphicsTest
         // NetBeans designer to get the code values we want and then write 
         // more of the code ourselves in a hybrid (mixed) manner
         
+        // The next important thing is "interactivity", this means that we need
+        // to add "actions" (methods) to the controls/container. To do this,
+        // we need to understand three things:
+        // (1) We instantiate a Action Listener object - this is an object that 
+        //     is specific to a certain event (click, moving, drag and drop)
+        // (2) Assign an event (can be method) to that Action Listener (connect)
+        // (3) Assign the Action Listener to the object we want to "listen" to
         
+        // (1) First, create the action listener...        
+        ActionListener buttonClickListener = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // (2) Now written a method for the action (partially written
+                //     for me)
+                System.out.println("Clicked a button");
+            }
+        };
+        
+        // (3) Assign the specific listener to the object
+        button.addActionListener(buttonClickListener);
+        
+        // Or in the Visual NetBeans editor, this can be done is couple of ways:
+        //  - Sometimes, just double click the object (e.g. buttons)
+        //  - Or, right click the object in the desiger and selecet "Events"
+        //    and then pick the specific event you would like
+        
+        // Or, we could code it... (all 3 steps at once)
+        button.addMouseMotionListener(new MouseMotionListener() {
+            @Override
+            public void mouseDragged(MouseEvent e) {
+            }
+
+            @Override
+            public void mouseMoved(MouseEvent e) {
+                button.setBackground(Color.cyan);
+            }
+        });
+        
+        // What is often recommended is a "hybrid" approach, for example...
+        // (I will make the "frame/form" using the desiger, change some 
+        // properties, add action listener code - but tie in some of my own
+        // methods, etc.)
+        
+        new AdvancedUserInterface();        
     }
     
 }
