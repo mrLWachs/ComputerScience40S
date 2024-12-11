@@ -54,7 +54,7 @@ public class GraphicsTest
         // And call the methods of the imported container object, these 
         // will change (modify, mutate) some of the properties of this
         // object (like the size, etc.)
-        jframe.setSize(800, 500);
+        jframe.setSize(500, 300);
         jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         // Other potential options could include:
         //jframe.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -98,8 +98,8 @@ public class GraphicsTest
         // controls to the container, and a "properties" window to change
         // properties...
         
-        UserInterface ui = new UserInterface();
-        ui.setVisible(true);
+        SimpleDesigerUserInterface simpleUI = new SimpleDesigerUserInterface();
+        simpleUI.setVisible(true);
         
         // This can take some work "off your plate" and make development 
         // time "faster"

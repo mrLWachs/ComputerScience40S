@@ -21,6 +21,7 @@
             <word>pacman</word>
             <word>Quidditch</word>
             <word>Sweanesday</word>
+            <word>textbox</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

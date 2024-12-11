@@ -27,9 +27,8 @@ public class ExtrasTest
      */
     public ExtrasTest() {
         System.out.println("\nExtras content test starting...\n");
-        // Code to quickly run the desired test.......
-        new CollectionsExtrasTest();
-        //new GraphicsTest();
+        // Code to quickly run the desired test......./
+        new GraphicsTest();
         
         // Code to choose which etras test to run...
 //        final String TITLE = "Computer Science 40S: Extra Units and Learning";

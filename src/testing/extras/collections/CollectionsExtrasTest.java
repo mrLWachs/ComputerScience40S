@@ -9,6 +9,9 @@ import java.util.*;
  * used in a more practical way. It also show the imported LinkedList (and 
  * other ADTs from the java.util collections framework). Further resources for 
  * this topic can be found here:
+ *     - Formal documentation on collections framework: https://bit.ly/3ZNDsI4
+ *     - Start at slide 59 of this presentation: https://bit.ly/4gxrA2t
+ *     - Some other example of using this: https://bit.ly/3BdGegh
  *
  * @author Mr. Wachs
  * @since December 2024
@@ -70,10 +73,8 @@ public class CollectionsExtrasTest
         }
         System.out.println("PriorityQueue: " + priorityQueue);        // Display
         
-        // Create an imported ArrayList data structure..........................
-        System.out.println("\nNow some ADT methods...\n");
-        
         // Now a variety of methods from these ADTs ............................
+        System.out.println("\nNow some ADT methods...\n");
         Arrays.sort(array);
         System.out.println("Sort Array: " + Arrays.toString(array));
         linkedList = linkedList.reversed();
@@ -91,7 +92,7 @@ public class CollectionsExtrasTest
         
         // Now a more practical use of the LinkedList class we created in a 
         // user interface example...
-        new UserInterface();
+        new CollectionsUserInterface();
     }
 
 }

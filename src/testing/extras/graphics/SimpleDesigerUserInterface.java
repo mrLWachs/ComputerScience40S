@@ -1,21 +1,36 @@
-
 /** Required package class namespace */
 package testing.extras.graphics;
 
 
 /**
- * UserInterface.java - description
+ * SimpleDesigerUserInterface.java - this example uses the NetBeans designer  
+ * to help with building a layout quicker and without much coding. 
+ * 
+ * THE DESIGN
+ * ==========
+ * 
+ * The designer is used and a number of controls are added from the palette 
+ * and the properties of each are set using the properties window. If you
+ * are building a project in this way, I recommend that you should take the 
+ * time to right click every label and go to "Change Variable Name" and name 
+ * each control so that it is easier to identify them in code later.
+ * 
+ * THE CODE
+ * ========
+ * The code can be found below. You can switch between code and designer mode by
+ * clicking the "Source" and "Design" buttons just under the top of this tab.
+ 
  *
  * @author Mr. Wachs
  * @since December 2024
  */
-public class UserInterface extends javax.swing.JFrame 
+public class SimpleDesigerUserInterface extends javax.swing.JFrame 
 {
 
     /** 
      * Constructor method, creates new frame/form UserInterface 
      */
-    public UserInterface() {
+    public SimpleDesigerUserInterface() {
         initComponents();
     }
 
@@ -39,16 +54,16 @@ public class UserInterface extends javax.swing.JFrame
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(45, 45, 45)
-                .addComponent(jButton1)
-                .addContainerGap(280, Short.MAX_VALUE))
+                .addGap(149, 149, 149)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(148, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(jButton1)
-                .addContainerGap(209, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(149, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(109, 109, 109))
         );
 
         pack();
@@ -71,20 +86,21 @@ public class UserInterface extends javax.swing.JFrame
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(UserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SimpleDesigerUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(UserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SimpleDesigerUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(UserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SimpleDesigerUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(UserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SimpleDesigerUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new UserInterface().setVisible(true);
+                new SimpleDesigerUserInterface().setVisible(true);
             }
         });
     }

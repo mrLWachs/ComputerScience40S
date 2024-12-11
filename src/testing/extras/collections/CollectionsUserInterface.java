@@ -1,41 +1,69 @@
-
+/** Required package class namespace */
 package testing.extras.collections;
 
+/** Required API imports */
 import collections.LinkedList;
 import java.awt.event.KeyEvent;
 
 
-public class UserInterface extends javax.swing.JFrame 
+/**
+ * CollectionsUserInterface.java - a bonus example of the collection unit code 
+ * used in a more practical way. This is an example of a simple user interface
+ * created using the NetBeans designer and incorporating the LinkedList ADT
+ * we created in unit 4
+ *
+ * @author Mr. Wachs
+ * @since December 2024
+ */
+public class CollectionsUserInterface extends javax.swing.JFrame 
 {
 
+    /** The LinkedList ADT created in class */
     private LinkedList<String> list = new LinkedList<>();
     
-    public UserInterface() {
-        initComponents();
-        enterTextField.requestFocus();
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+    
+    /**
+     * Default constructor method 
+     */
+    public CollectionsUserInterface() {
+        initComponents();                        // Call NetBeans written method
+        enterTextField.requestFocus();                   // Put focus on textbox
+        this.setLocationRelativeTo(null);               // Center form on screen
+        this.setVisible(true);                           // Display form to user
     }
     
+    /**
+     * Add the text in the textbox into the LinkedList data structure
+     */
     private void addToList() {
-        String text = enterTextField.getText();  
-        list.add(text);
-        enterTextField.setText("");
-        enterTextField.requestFocus();  
+        String text = enterTextField.getText();         // Get text from textbox
+        list.add(text);                                 // Add to the LinkedList
+        enterTextField.setText("");                 // Clear text out of textbox
+        enterTextField.requestFocus();              // Put focus back on textbox
     }
         
+    /**
+     * Display the entire contents of the dynamic LinkedList ADT in the listbox
+     * control on the form
+     */
     public void showList() {
-        for (int i = 0; i < list.size(); i++) {
-            String text = list.get(i);
-            itemsList.add(text);
+        for (int i = 0; i < list.size(); i++) {           // Traverse LinkedList
+            String text = list.get(i);               // Get text from LinkedList
+            itemsList.add(text);                       // Add to listbox control
         }
     }
 
+    /**
+     * Action responding to the user pressing a key
+     * 
+     * @param event the specific key event pressed
+     */
     private void keypress(KeyEvent event) {
-        if (event.getKeyCode() == KeyEvent.VK_ENTER) {
-            addToList();
+        if (event.getKeyCode() == KeyEvent.VK_ENTER) {         // Only Enter key
+            addToList();                                  // Call to add to list
         }
     }
+    
     
     // <editor-fold defaultstate="collapsed" desc="NetBeans Generated Code">
     
