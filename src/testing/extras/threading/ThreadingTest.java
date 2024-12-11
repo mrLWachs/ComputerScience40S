@@ -5,7 +5,7 @@ package testing.extras.threading;
 /**
  * ThreadingTest.java - a bonus example of Threading. Further resources for this 
  * topic can be found here:
- *
+ * 
  * @author Mr. Wachs
  * @since December 2024
  */
