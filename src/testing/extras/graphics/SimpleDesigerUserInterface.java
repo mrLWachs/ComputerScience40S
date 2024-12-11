@@ -21,6 +21,8 @@ import java.awt.Color;
  * ========
  * The code can be found below. You can switch between code and designer mode by
  * clicking the "Source" and "Design" buttons just under the top of this tab.
+ * Also, when you add a Frame/Form, the NetBeans designer always adds a "main"
+ * method that you can keep or delete (I have deleted it from this form).
  
  *
  * @author Mr. Wachs
@@ -45,19 +47,19 @@ public class SimpleDesigerUserInterface extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        designerButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("EXIT");
-        jButton1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+        designerButton.setText("EXIT");
+        designerButton.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
-                jButton1MouseMoved(evt);
+                designerButtonMouseMoved(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        designerButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                designerButtonActionPerformed(evt);
             }
         });
 
@@ -67,32 +69,32 @@ public class SimpleDesigerUserInterface extends javax.swing.JFrame
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(designerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(254, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(designerButton, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(215, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void designerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_designerButtonActionPerformed
         // TODO add your handling code here:
         System.out.println("Another click");
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_designerButtonActionPerformed
 
-    private void jButton1MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseMoved
+    private void designerButtonMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_designerButtonMouseMoved
         // TODO add your handling code here:
-        jButton1.setBackground(Color.red);
-    }//GEN-LAST:event_jButton1MouseMoved
+        designerButton.setBackground(Color.red);
+    }//GEN-LAST:event_designerButtonMouseMoved
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton designerButton;
     // End of variables declaration//GEN-END:variables
 
 }

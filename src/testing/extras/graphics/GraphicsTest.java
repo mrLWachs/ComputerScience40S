@@ -17,6 +17,9 @@ import javax.swing.WindowConstants;
  * "graphics") and user interface (or "UI"). It starts with beginner concepts
  * and then advanced to more CS40S and beyond levels. Further resources for this 
  * topic can be found here:
+ * 
+ * 
+ * 
  *
  * @author Mr. Wachs
  * @since December 2024
@@ -160,7 +163,9 @@ public class GraphicsTest
         // What is often recommended is a "hybrid" approach, for example...
         // (I will make the "frame/form" using the desiger, change some 
         // properties, add action listener code - but tie in some of my own
-        // methods, etc.)
+        // methods, etc.). this will lead to more complete discussions around
+        // more advanced Computer Science and engineering concepts like
+        // "Software Design Patterns" - see: https://bit.ly/3VyalWH
         
         new AdvancedUserInterface();        
     }
