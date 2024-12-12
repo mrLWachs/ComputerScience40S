@@ -50,6 +50,7 @@ public class AdvancedUserInterface extends javax.swing.JFrame
                 allNamesList, 
                 enterButton, 
                 nameTextField, 
+                drawingPanel,
                 this);
     }
 
@@ -69,6 +70,7 @@ public class AdvancedUserInterface extends javax.swing.JFrame
         nameLabel = new javax.swing.JLabel();
         allNamesList = new java.awt.List();
         allNamesLabel = new javax.swing.JLabel();
+        drawingPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,6 +91,19 @@ public class AdvancedUserInterface extends javax.swing.JFrame
 
         allNamesLabel.setText("All Names:");
 
+        drawingPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout drawingPanelLayout = new javax.swing.GroupLayout(drawingPanel);
+        drawingPanel.setLayout(drawingPanelLayout);
+        drawingPanelLayout.setHorizontalGroup(
+            drawingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 473, Short.MAX_VALUE)
+        );
+        drawingPanelLayout.setVerticalGroup(
+            drawingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -105,20 +120,25 @@ public class AdvancedUserInterface extends javax.swing.JFrame
                             .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
                             .addComponent(enterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(drawingPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(nameLabel)
-                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(enterButton))
-                .addGap(18, 18, 18)
-                .addComponent(allNamesLabel)
-                .addGap(6, 6, 6)
-                .addComponent(allNamesList, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(drawingPanel, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(nameLabel)
+                            .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(enterButton))
+                        .addGap(18, 18, 18)
+                        .addComponent(allNamesLabel)
+                        .addGap(6, 6, 6)
+                        .addComponent(allNamesList, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -140,6 +160,7 @@ public class AdvancedUserInterface extends javax.swing.JFrame
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel allNamesLabel;
     private java.awt.List allNamesList;
+    private javax.swing.JPanel drawingPanel;
     private javax.swing.JButton enterButton;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JTextField nameTextField;

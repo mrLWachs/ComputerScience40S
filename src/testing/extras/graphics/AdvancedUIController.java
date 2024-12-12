@@ -4,6 +4,7 @@ package testing.extras.graphics;
 /** Required API imports */
 import javax.swing.JButton;
 import javax.swing.JTextField;
+import javax.swing.JPanel;
 import java.awt.List;
 import java.awt.event.MouseEvent;
 
@@ -26,6 +27,7 @@ public class AdvancedUIController
     private List                  allNamesList;
     private JButton               enterButton;
     private JTextField            nameTextField;
+    private JPanel                drawingPanel;
     private AdvancedUserInterface ui;    
     
     
@@ -36,16 +38,18 @@ public class AdvancedUIController
      * @param allNamesList the list box of all name
      * @param enterButton the button to enter a name into the list
      * @param nameTextField the text box to type a name into
+     * @param drawingPanel the panel the user can draw in
      * @param ui the user interface container
      */
     public AdvancedUIController(
-            List allNamesList,
-            JButton enterButton,
-            JTextField nameTextField,
+            List                  allNamesList,
+            JButton               enterButton,
+            JTextField            nameTextField,
+            JPanel                drawingPanel,
             AdvancedUserInterface ui) {
-        this.allNamesList  = allNamesList;          // Connnect the parameter 
+        this.allNamesList  = allNamesList;          // Connnect the parameters 
         this.enterButton   = enterButton;           // to the encapsulated 
-        this.nameTextField = nameTextField;         // property
+        this.nameTextField = nameTextField;         // properties
         this.ui            = ui;
         ui.setLocationRelativeTo(null);             // Center UI on screen
         ui.setResizable(false);                     // User cannot size frame
