@@ -17,9 +17,8 @@ import javax.swing.WindowConstants;
  * "graphics") and user interface (or "UI"). It starts with beginner concepts
  * and then advanced to more CS40S and beyond levels. Further resources for this 
  * topic can be found here:
- * 
- * 
- * 
+ *      - Lecture on topic: https://bit.ly/3VDn22h
+ *      - Older Example: https://bit.ly/3DmxqoM
  *
  * @author Mr. Wachs
  * @since December 2024
@@ -107,7 +106,6 @@ public class GraphicsTest
         // properties...
         
         SimpleDesigerUserInterface simpleUI = new SimpleDesigerUserInterface();
-        simpleUI.setVisible(true);
         
         // This can take some work "off your plate" and make development 
         // time "faster"
@@ -165,9 +163,10 @@ public class GraphicsTest
         // properties, add action listener code - but tie in some of my own
         // methods, etc.). this will lead to more complete discussions around
         // more advanced Computer Science and engineering concepts like
-        // "Software Design Patterns" - see: https://bit.ly/3VyalWH
+        // "Software Design Patterns" - see: 
         
-        new AdvancedUserInterface();        
+        new AdvancedUserInterface();           
+        // More comentary to follow on these other classes...
     }
     
 }

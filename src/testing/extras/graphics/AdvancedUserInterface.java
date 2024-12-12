@@ -1,25 +1,60 @@
-
 /** Required package class namespace */
 package testing.extras.graphics;
 
 
 /**
- * AdvancedUserInterface.java - description
+ * AdvancedUserInterface.java - often, developers separate the "logic" of the
+ * app (engine, controller, etc.) from the "design" (look, feel, visual, etc.).
+ * Controls/containers that come from the "swing library" (also named in the
+ * visual designer palette) are "extension" libraries and swing is considered
+ * a "lightweight" graphical library, those that come from the "AWT" library 
+ * are a "core" or "heavyweight" library. Further resources for this topic can
+ * be found here:
+ *      - References on differences between Swing and AWT: 
+ *              - https://bit.ly/3ZFM3eG
+ *              - https://bit.ly/49xTmcA
+ * 
+ * We also used the designer for the purpose of adding controls to the 
+ * container using the palettes, changing properties using the properties 
+ * window, and adding action listener events using the NetBeans designer. This
+ * optimized our work flow to create a "view" for the user to interact with. 
+ * However, the main logic of what the interactivity does was diverted to a
+ * "controller" class. The idea of separating the control from the view is one 
+ * of many programming techniques or "paradigms" that programmers could use 
+ * when working with user interfaces. Further resources for this topic can be
+ * found here:
+ *      - References on Software Design Patterns: 
+ *              - https://bit.ly/3VyalWH
+ *              - https://bit.ly/3ZQAd2A
+ *              - https://bit.ly/3BCUrTX
+ *              - Lecture Slides 24 - 28 here: https://bit.ly/3ZPKpIF
  *
  * @author Mr. Wachs
  * @since Dec 11, 2024, 11:58:46 a.m.
  */
 public class AdvancedUserInterface extends javax.swing.JFrame 
 {
+    
+    // The controller class object to "link" to
+    private AdvancedUIController controller;
 
     /** 
      * Constructor method, creates new frame/form AdvancedUserInterface 
      */
     public AdvancedUserInterface() {
         initComponents();
-        this.setVisible(true);
+        // Now instantiate the controller object, linking (or "wiring") it to
+        // the relevant controls the user will interact with through that 
+        // class' constructor method
+        controller = new AdvancedUIController(
+                allNamesList, 
+                enterButton, 
+                nameTextField, 
+                this);
     }
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Designer Generated Method">  
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -29,58 +64,87 @@ public class AdvancedUserInterface extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        nameTextField = new javax.swing.JTextField();
+        enterButton = new javax.swing.JButton();
+        nameLabel = new javax.swing.JLabel();
+        allNamesList = new java.awt.List();
+        allNamesLabel = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        enterButton.setText("ENTER");
+        enterButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enterButtonActionPerformed(evt);
+            }
+        });
+
+        nameLabel.setText("Name:");
+
+        allNamesList.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                allNamesListMouseClicked(evt);
+            }
+        });
+
+        allNamesLabel.setText("All Names:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(allNamesLabel)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(allNamesList, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(nameLabel)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(enterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(nameLabel)
+                    .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(enterButton))
+                .addGap(18, 18, 18)
+                .addComponent(allNamesLabel)
+                .addGap(6, 6, 6)
+                .addComponent(allNamesList, javax.swing.GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AdvancedUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AdvancedUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AdvancedUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AdvancedUserInterface.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    // </editor-fold> 
+    
+    private void enterButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enterButtonActionPerformed
+        controller.buttonClick();             // Call method in controller class
+    }//GEN-LAST:event_enterButtonActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new AdvancedUserInterface().setVisible(true);
-            }
-        });
-    }
+    private void allNamesListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_allNamesListMouseClicked
+        controller.listMouseClick(evt);       // Call method in controller class
+    }//GEN-LAST:event_allNamesListMouseClicked
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Designer Declared Objects"> 
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel allNamesLabel;
+    private java.awt.List allNamesList;
+    private javax.swing.JButton enterButton;
+    private javax.swing.JLabel nameLabel;
+    private javax.swing.JTextField nameTextField;
     // End of variables declaration//GEN-END:variables
 
+    // </editor-fold> 
+    
 }

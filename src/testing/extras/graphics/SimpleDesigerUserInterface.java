@@ -36,6 +36,7 @@ public class SimpleDesigerUserInterface extends javax.swing.JFrame
      */
     public SimpleDesigerUserInterface() {
         initComponents();
+        this.setVisible(true);
     }
 
     /** This method is called from within the constructor to
