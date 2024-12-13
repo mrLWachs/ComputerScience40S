@@ -30,7 +30,7 @@ package testing.extras.graphics;
  *              - Lecture Slides 24 - 28 here: https://bit.ly/3ZPKpIF
  *
  * @author Mr. Wachs
- * @since Dec 11, 2024, 11:58:46 a.m.
+ * @since December 2024
  */
 public class AdvancedUserInterface extends javax.swing.JFrame 
 {

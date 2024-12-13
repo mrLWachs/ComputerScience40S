@@ -15,11 +15,10 @@ import java.awt.event.MouseWheelEvent;
  * or "controller" or even the "brain" connected to the other class acting as 
  * the "design" or "body" or "view". Further resources for this topic can
  * be found here:
- *      - Java Graphics 2D: https://bit.ly/3ZScK0Q
  *      - Former Student using design patterns: https://bit.ly/3VoFtrg
  *
  * @author Mr. Wachs
- * @since Dec 12, 2024, 11:47:34 a.m.
+ * @since December 2024
  */
 public class AdvancedUIController 
 {
