@@ -60,7 +60,15 @@ public class AdvancedUIController
      * The enter button action
      */
     public void buttonClick() {
-        System.out.println("click");
+        String name = nameTextField.getText();         // Access text in textbox
+        if (name == null || name.equals("")) {                // Check that text
+            allNamesList.add("Please enter a name...");        // Add message
+        }
+        else {
+            allNamesList.add(name);                       // Add name to listbox
+        }
+        nameTextField.setText("");                          // Clear out textbox
+        nameTextField.requestFocus();               // Put focus back on textbox
     }
 
     /**
