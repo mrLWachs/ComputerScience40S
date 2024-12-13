@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras.storage;
 
+/** Required API imports */
 import collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -37,32 +38,54 @@ public class StorageTest
             "Big man stays lit-pure Xmas flex"            
         };        
         LinkedList<String> anotherPoem = new LinkedList<>(poem);
+                
+        // Let's create a proper file NAME to save our data TO and then read
+        // that same data FROM (we will "Hard code" this file name")
+        
+        // Let's create a proper file NAME.....................................
+        String first    = "C:\\temp\\";   // File "Path" (e.g. "c:/my docs...")
+        String middle   = "data";         // File name (e.g. "essay")
+        String last     = ".txt";         // File extention (e.g. ".doc" ".txt")
+        String fileName = first + middle + last;     // Full Name (concatinated)
+                
+        // Write ONE piece of data (the word) to that permanent file............   
+        
         // In order for file saving/opening to take place, an "error trap"
         // or "error handling" has to take place (try catch block)
-        
-        // "Hard code" a file to save to...
-        String first  = "c:\\temp\\";
-        String middle = "data";
-        String last   = ".txt";
-        String fileName = first + middle + last;
-        
         // Writing data (saving) to a permanent file
         try {
-            FileWriter  writer  = new FileWriter(fileName);
+            // Opening the "try" block (means "try this code"), this is the 
+            // "trap" we set to "try" some code, and if an error occurs (of 
+            // the type we are catching for) we "catch" that error and the  
+            // program keeps running.......................................... 
+            
+            // Create instance (object) of the classes needed and connect the 
+            // 2 classes with the file name we just made........................
+            FileWriter  writer  = new FileWriter(fileName);   // First object
             PrintWriter printer = new PrintWriter(writer);
-            printer.print(word);
-            printer.close();            
+            // Now write to the file............................................
+            printer.print(word);        // Call class method to write to file..   
+            // Sever (disconnect) from the file.................................
+            printer.close();                                // Close connection           
         }
         catch(IOException error) {
+            // Open the "catch" block, so if an error occurs in the "try" block
+            // of the type we defined (divide by zero..) the program will 
+            // not shut down, instead it will jump (branch) to this block (the 
+            // catch block).................................................... 
             System.out.println("IO error in saving...");
         }
         
+        // Now open the files (for the one with one line)...................... 
+        
         // Reading data (opening) from a permanent file
         try {
-            FileReader     reader = new FileReader(fileName);
-            BufferedReader buffer = new BufferedReader(reader);
-            word = buffer.readLine();
-            buffer.close();            
+            // Use of similar classes form similar APIs to read from files as 
+            // we used to write to files
+            FileReader     reader = new FileReader(fileName);       // Connect.....
+            BufferedReader buffer = new BufferedReader(reader); // Connect..... 
+            word = buffer.readLine();                           // Read line...
+            buffer.close();                                     // Close connect           
         }
         catch(IOException error) {
             System.out.println("IO error in opening...");
@@ -71,33 +94,39 @@ public class StorageTest
         // Test to see....
         System.out.println("I can see " + word);
         
-        // Multiple "lines"
+        // Do it again with the array (multiple lines)......................... 
+        
+        // Write multiple "lines" (the array)
         try {
-            FileWriter  writer  = new FileWriter(fileName);
-            PrintWriter printer = new PrintWriter(writer);
-            for (int i = 0; i < poem.length; i++) {
-                printer.println(poem[i]);
+            
+            FileWriter  writer  = new FileWriter(fileName);    // Link file
+            PrintWriter printer = new PrintWriter(writer); // and writer
+            // Use the enhanced for loop - which you can read as...
+            // "for every line in poem"
+            for (String line : poem) {  // Enhanced loop through array..  
+                printer.println(line);      // Writing one array index..
             }
-            printer.close();            
+            printer.close();            // Sever (close) file connection           
         }
-        catch(IOException error) {
-            System.out.println("IO error in saving...");
-        }
-        // And reading the array
-        try {
-            FileReader     reader = new FileReader(fileName);
-            BufferedReader buffer = new BufferedReader(reader);
-            String line = buffer.readLine();
-            while (line != null) {
-                line = buffer.readLine();
-                System.out.println("Line read: " + line);
-            }
-            buffer.close();            
-        }
-        catch(IOException error) {
-            System.out.println("IO error in opening...");
+        catch (IOException error) {                          // Catch error.....
+            System.out.println("File save error");           // Message user....
         }
         
+        // Read multiple "lines" (the array)
+        try {
+            FileReader     reader = new FileReader(fileName);    // Connect.....
+            BufferedReader buffer = new BufferedReader(reader); // Connect.....            
+            String line = buffer.readLine();                    // Read line...       
+            while (line != null) {                  // Loop until no inputs left
+                System.out.println("This line read was: " + line); // Output....
+                line = buffer.readLine();                        // Read again..
+            }
+            buffer.close();                                     // Close connect  
+        } 
+        catch (IOException error) {                          // Catch error.....
+            System.out.println("File open error");           // Message user....
+        }
+                
     }
     
 }
