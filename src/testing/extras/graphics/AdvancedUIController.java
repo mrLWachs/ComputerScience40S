@@ -7,12 +7,16 @@ import javax.swing.JTextField;
 import javax.swing.JPanel;
 import java.awt.List;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
 
 
 /**
  * AdvancedUIController.java - this class as acting as the "logic" or "engine"
  * or "controller" or even the "brain" connected to the other class acting as 
- * the "design" or "body" or "view"
+ * the "design" or "body" or "view". Further resources for this topic can
+ * be found here:
+ *      - Java Graphics 2D: https://bit.ly/3ZScK0Q
+ *      - Former Student using design patterns: https://bit.ly/3VoFtrg
  *
  * @author Mr. Wachs
  * @since Dec 12, 2024, 11:47:34 a.m.
@@ -29,6 +33,7 @@ public class AdvancedUIController
     private JTextField            nameTextField;
     private JPanel                drawingPanel;
     private AdvancedUserInterface ui;    
+    private Drawing               drawing;
     
     
     /**
@@ -51,6 +56,7 @@ public class AdvancedUIController
         this.enterButton   = enterButton;           // to the encapsulated 
         this.nameTextField = nameTextField;         // properties
         this.ui            = ui;
+        drawing            = new Drawing(drawingPanel);
         ui.setLocationRelativeTo(null);             // Center UI on screen
         ui.setResizable(false);                     // User cannot size frame
         ui.setVisible(true);                        // Show UI to user
@@ -72,13 +78,37 @@ public class AdvancedUIController
     }
 
     /**
-     * The mouse click action on the list box
+     * The mouse click event on the drawing panel 
      * 
-     * @param event the specific mouse click event
+     * NOTE: here again, the logic shifts to a specific class to handle the 
+     * logic of drawing on the panel. This idea of dividing the logic into 
+     * separate modules (or classes) of code can often make debugging easier
+     * 
+     * @param event the mouse click event
      */
-    public void listMouseClick(MouseEvent event) {
-        int button = event.getButton();
-        System.out.println("Button was " + button);
+    public void mouseClick(MouseEvent event) {
+        if (event.getButton() == MouseEvent.BUTTON1)               // Left click
+            drawing.drawOval();
+        else if (event.getButton() == MouseEvent.BUTTON3)         // Right click
+            drawing.drawRectangle();
+    }
+
+    /**
+     * The action of clicking and dragging the mouse over the drawing panel
+     * 
+     * @param event the mouse event
+     */
+    public void mouseDragged(MouseEvent event) {
+        drawing.drawLine(event);
+    }
+
+    /**
+     * The action of rolling the mouse wheel when over the drawing panel
+     * 
+     * @param event the mouse wheel event
+     */
+    public void mouseWheelMoved(MouseWheelEvent event) {
+        drawing.drawColors(event);
     }
     
 }

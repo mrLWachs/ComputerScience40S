@@ -61,18 +61,18 @@ public class GraphicsTest
         // And call the methods of the imported container object, these 
         // will change (modify, mutate) some of the properties of this
         // object (like the size, etc.)
-        jframe.setSize(500, 300);
+        jframe.setSize(450, 450);
         jframe.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         // Other potential options could include:
         //jframe.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
         //jframe.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         //jframe.setDefaultCloseOperation(WindowConstants.HIDE_ON_CLOSE);
-        jframe.setLocationRelativeTo(null);
+        jframe.setLocation(100, 100);
         jframe.setResizable(false);
         jframe.setVisible(true);
         
         // Now lets "build" (instantiate) some control objects
-        JButton button = new JButton("EXIT");
+        JButton button = new JButton("ENTER");
         
         // To add the control object into the container, first the container
         // needs to know "how" to "postion" the controls inside - to do this
@@ -86,10 +86,10 @@ public class GraphicsTest
         jframe.getContentPane().add(button);
         
         // Now change the properties of the button to position it
-        int x      = 250;
+        int x      = 150;
         int y      = 150;
         int width  = 100;
-        int height = 40;
+        int height = 100;
         
         button.setBounds(x, y, width, height);
         

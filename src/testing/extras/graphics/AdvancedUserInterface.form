@@ -84,9 +84,6 @@
       </Properties>
     </Component>
     <Component class="java.awt.List" name="allNamesList">
-      <Events>
-        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="allNamesListMouseClicked"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="allNamesLabel">
       <Properties>
@@ -101,6 +98,11 @@
           </Border>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="drawingPanelMouseDragged"/>
+        <EventHandler event="mouseWheelMoved" listener="java.awt.event.MouseWheelListener" parameters="java.awt.event.MouseWheelEvent" handler="drawingPanelMouseWheelMoved"/>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="drawingPanelMouseClicked"/>
+      </Events>
 
       <Layout>
         <DimensionLayout dim="0">

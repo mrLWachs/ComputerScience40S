@@ -83,15 +83,24 @@ public class AdvancedUserInterface extends javax.swing.JFrame
 
         nameLabel.setText("Name:");
 
-        allNamesList.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                allNamesListMouseClicked(evt);
-            }
-        });
-
         allNamesLabel.setText("All Names:");
 
         drawingPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        drawingPanel.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                drawingPanelMouseDragged(evt);
+            }
+        });
+        drawingPanel.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+            public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+                drawingPanelMouseWheelMoved(evt);
+            }
+        });
+        drawingPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                drawingPanelMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout drawingPanelLayout = new javax.swing.GroupLayout(drawingPanel);
         drawingPanel.setLayout(drawingPanelLayout);
@@ -151,9 +160,17 @@ public class AdvancedUserInterface extends javax.swing.JFrame
         controller.buttonClick();             // Call method in controller class
     }//GEN-LAST:event_enterButtonActionPerformed
 
-    private void allNamesListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_allNamesListMouseClicked
-        controller.listMouseClick(evt);       // Call method in controller class
-    }//GEN-LAST:event_allNamesListMouseClicked
+    private void drawingPanelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanelMouseClicked
+        controller.mouseClick(evt);
+    }//GEN-LAST:event_drawingPanelMouseClicked
+
+    private void drawingPanelMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanelMouseDragged
+        controller.mouseDragged(evt);
+    }//GEN-LAST:event_drawingPanelMouseDragged
+
+    private void drawingPanelMouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_drawingPanelMouseWheelMoved
+        controller.mouseWheelMoved(evt);
+    }//GEN-LAST:event_drawingPanelMouseWheelMoved
 
     // <editor-fold defaultstate="collapsed" desc="NetBeans Designer Declared Objects"> 
     
