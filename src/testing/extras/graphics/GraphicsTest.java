@@ -2,11 +2,16 @@
 package testing.extras.graphics;
 
 /** Required API imports */
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.WindowConstants;
@@ -81,6 +86,13 @@ public class GraphicsTest
         
         jframe.getContentPane().setLayout(null);
         // a "null" layout means the container does not take control
+        
+        // Other potential layout options could include:
+        // jframe.getContentPane().setLayout(new FlowLayout());
+        // jframe.getContentPane().setLayout(new BorderLayout());
+        // jframe.getContentPane().setLayout(new BoxLayout(jframe, 0));
+        // jframe.getContentPane().setLayout(new CardLayout());
+        // jframe.getContentPane().setLayout(new GridLayout());
         
         // Now add the control to the container
         jframe.getContentPane().add(button);
