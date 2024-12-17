@@ -27,10 +27,11 @@ public class ExtrasTest
      */
     public ExtrasTest() {
         System.out.println("\nExtras content test starting...\n");
-        // Code to quickly run the desired test......./
-        new GraphicsTest();
-        new StorageTest();
+        // Code to quickly run the desired test.......
         new TreesTest();
+        
+        
+        
         
         // Code to choose which etras test to run...
 //        final String TITLE = "Computer Science 40S: Extra Units and Learning";
@@ -44,6 +45,7 @@ public class ExtrasTest
 //            "Searching Algorithms",
 //            "Threading examples",
 //            "Path finding examples",
+//            "All examples...",
 //            "Quit"
 //        };
 //        Dialogs dialog = new Dialogs(TITLE);
@@ -55,9 +57,19 @@ public class ExtrasTest
 //        else if (choice.equals(CHOICES[4])) new SortingTest();
 //        else if (choice.equals(CHOICES[5])) new SearchingTest();
 //        else if (choice.equals(CHOICES[6])) new ThreadingTest();
-//        else if (choice.equals(CHOICES[7])) new PathfindingTest();        
+//        else if (choice.equals(CHOICES[7])) new PathfindingTest(); 
+//        else if (choice.equals(CHOICES[8])) {
+//            new CollectionsExtrasTest();
+//            new GraphicsTest();
+//            new StorageTest();
+//            new TreesTest();
+//            new SortingTest();
+//            new SearchingTest();
+//            new ThreadingTest();
+//            new PathfindingTest();
+//        }
 //        else System.exit(0); 
-        System.out.println("\nExtras content test completed!\n");
+//        System.out.println("\nExtras content test completed!\n");
     }
     
 }
