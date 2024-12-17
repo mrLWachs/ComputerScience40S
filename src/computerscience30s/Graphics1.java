@@ -26,6 +26,9 @@ public class Graphics1 extends javax.swing.JFrame
     public Graphics1() {
         initComponents();
         
+        // Add code after the call to the method in the line above (which do 
+        // not erase that line - which is a method call) - now add a line to   
+        // make the form (frame, container, window, etc.) appear to the user
         this.setVisible(true);        
     }
 
