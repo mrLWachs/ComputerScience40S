@@ -32,7 +32,10 @@ public class ComputerScience30S
      * 
      * @param args the command line arguments
      */
-    public static void main(String[] args) {  
+    public static void main(String[] args) { 
+        LearnGraphics learnGraphics = new LearnGraphics();
+        
+        
 //        // "Call" a method (means you use the name of the method)
 //        System.out.println("\nComputer Science 30S Example started...\n");
 //        final String[] OPTIONS = {
@@ -54,10 +57,7 @@ public class ComputerScience30S
 //            LearnGraphics learnGraphics = new LearnGraphics();
 //        }
 //        else                                System.exit(0);
-//        System.out.println("\nComputer Science 30S Example completed!\n"); 
-
-        
-        LearnGraphics learnGraphics = new LearnGraphics();
+//        System.out.println("\nComputer Science 30S Example completed!\n");
     }
 
     /**
