@@ -19,7 +19,8 @@ public class LearnGraphics
     public LearnGraphics() {
         System.out.println("Start learning Graphics...");
         
-        
+        Graphics1 graphics1 = new Graphics1();
+        Graphics2 graphics2 = new Graphics2();
         
         System.out.println("Completed learning Graphics!");
     }
