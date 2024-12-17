@@ -20,7 +20,11 @@ public class SearchingTest
      * Default constructor method
      */
     public SearchingTest() {
+        System.out.println("\nSearching Algorithms test starting...\n");
+        
         System.out.println(this.getClass().getSimpleName());
+                
+        System.out.println("\nSearching Algorithms test complete!\n");
     }
     
 }

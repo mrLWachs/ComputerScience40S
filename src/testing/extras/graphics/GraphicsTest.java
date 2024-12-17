@@ -35,6 +35,8 @@ public class GraphicsTest
      * Default constructor method
      */
     public GraphicsTest() {
+        System.out.println("\nGraphics and User Interfaces test starting...\n");
+        
         // Most if not all "graphics things" involve 2 main concepts:
         // (1) Container object(s)
         // (2) Object(s) - or: tools, controls, widgets (inside the container)
@@ -179,6 +181,8 @@ public class GraphicsTest
         
         new AdvancedUserInterface();           
         // More comentary to follow on these other classes...
+        
+        System.out.println("\nGraphics and User Interfaces test complete!\n");
     }
     
 }

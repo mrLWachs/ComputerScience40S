@@ -16,7 +16,11 @@ public class PathfindingTest
      * Default constructor method
      */
     public PathfindingTest() {
+        System.out.println("\nPath finding test starting...\n");
+        
         System.out.println(this.getClass().getSimpleName());
+        
+        System.out.println("\nPath finding test complete!\n");
     }
     
 }

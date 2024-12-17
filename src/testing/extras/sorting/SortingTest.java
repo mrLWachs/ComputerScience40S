@@ -20,7 +20,11 @@ public class SortingTest
      * Default constructor method
      */
     public SortingTest() {
+        System.out.println("\nSorting Algorithms test starting...\n");
+        
         System.out.println(this.getClass().getSimpleName());
+        
+        System.out.println("\nSorting Algorithms test complete!\n");
     }
     
 }

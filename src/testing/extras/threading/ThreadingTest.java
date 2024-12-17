@@ -16,7 +16,11 @@ public class ThreadingTest
      * Default constructor method
      */
     public ThreadingTest() {
+        System.out.println("\nThreading test starting...\n");
+        
         System.out.println(this.getClass().getSimpleName());
+        
+        System.out.println("\nThreading test complete!\n");
     }
     
 }

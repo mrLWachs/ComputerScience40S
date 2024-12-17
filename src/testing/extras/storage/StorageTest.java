@@ -31,6 +31,8 @@ public class StorageTest
      * Default constructor method
      */
     public StorageTest() {
+        System.out.println("\nPermanent Storage test starting...\n");
+        
         // First, we need some data to save...        
         String word = "Santa";        
         String[] poem = {
@@ -219,6 +221,8 @@ public class StorageTest
         // Now open (with casting) the list of Person objects and output
         people = (java.util.LinkedList<Person>)handler.openObject(lastFile);
         System.out.println(people);
+        
+        System.out.println("\nPermanent Storage test complete!\n");
     }
     
 }

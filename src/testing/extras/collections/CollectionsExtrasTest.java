@@ -23,6 +23,7 @@ public class CollectionsExtrasTest
      * Default constructor method
      */
     public CollectionsExtrasTest() {
+        System.out.println("\nCollections Extras test starting...\n");
         final int SIZE = 10;                // Constant for the size of the ADTs
         
         // Create an array data structure.......................................
@@ -93,6 +94,8 @@ public class CollectionsExtrasTest
         // Now a more practical use of the LinkedList class we created in a 
         // user interface example...
         new CollectionsUserInterface();
+        
+        System.out.println("\nCollections Extras test complete!\n");
     }
 
 }
