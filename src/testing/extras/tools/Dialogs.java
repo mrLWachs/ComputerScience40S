@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.extras.storage;
+package testing.extras.tools;
 
 /** Required API imports */
 import java.awt.Color;
@@ -22,7 +22,7 @@ import javax.swing.JTextArea;
  * Dialogs.java - a collection of useful methods for working with dialogs
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since December 2024
  */
 public class Dialogs
 {
@@ -63,10 +63,12 @@ public class Dialogs
         
     private final Font      DIALOG_FONT             = new 
         Font(FONT_NAMES[0], DEFAULT_TYPE, DIALOG_FONT_SIZE);
-    private final Color     DIALOG_BACKGROUND_COLOR = new 
-        Color(DIALOG_BACKGROUND_COLOR_RED, 
-              DIALOG_BACKGROUND_COLOR_GREEN, 
-              DIALOG_BACKGROUND_COLOR_BLUE);
+    private final Color     DIALOG_BACKGROUND_COLOR = 
+            new Color(
+                    DIALOG_BACKGROUND_COLOR_RED,
+                    DIALOG_BACKGROUND_COLOR_GREEN,
+                    DIALOG_BACKGROUND_COLOR_BLUE
+            );
     private final Dimension DIALOG_DIMENSION        = new 
         Dimension(DIALOG_WIDTH, DIALOG_HEIGHT);
        
@@ -338,7 +340,7 @@ public class Dialogs
     public String choices(String text, String[] options) {
         area.setText(text);
         Object object = JOptionPane.showInputDialog(parent, area, title, 
-                JOptionPane.QUESTION_MESSAGE, icon, options, options[0]);
+                JOptionPane.PLAIN_MESSAGE, icon, options, options[0]);
         if (object == null)  return "";
         else                 return object.toString();
     }
@@ -406,8 +408,8 @@ public class Dialogs
      */
     private void defaults() {
         this.parent      = null;
-        this.font        = DIALOG_FONT;
-        this.background  = DIALOG_BACKGROUND_COLOR;
+        this.font        = DEFAULT_FONT;
+        this.background  = DEFAULT_BACKGROUND_COLOR;
         this.foreground  = DEFAULT_FOREGROUND_COLOR;
         this.title       = DEFAULT_TITLE;
         this.parent      = DEFAULT_COMPONENT;
@@ -417,6 +419,9 @@ public class Dialogs
         this.numbers     = new Numbers();
         this.area        = new JTextArea();
         this.scrollPane  = new JScrollPane();
+        area.setFont(font);
+        area.setBackground(background);
+        area.setForeground(foreground); 
     }
 
     /**

@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.extras.storage;
+package testing.extras.tools;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -10,7 +10,7 @@ import collections.LinkedList;
  * Numbers.java - a collection of useful methods for working with numbers
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since December 2024
  */
 public class Numbers 
 {

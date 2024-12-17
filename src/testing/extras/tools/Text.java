@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.extras.trees;
+package testing.extras.tools;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -9,7 +9,7 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import testing.extras.storage.FileHandler;
-import tools.Numbers;
+import testing.extras.tools.Numbers;
 
 
 /**

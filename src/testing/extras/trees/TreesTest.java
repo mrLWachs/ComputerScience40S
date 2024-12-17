@@ -2,8 +2,9 @@
 package testing.extras.trees;
 
 /** Required API imports */
+import testing.extras.tools.Text;
 import collections.LinkedList;
-import tools.Numbers;
+import testing.extras.tools.Numbers;
 
  
 /**
@@ -28,7 +29,7 @@ public class TreesTest
         // Constants/variables for creating random values......................        
         final int MIN   = 10;
         final int MAX   = 99;
-        final int SIZE  = 5;        
+        final int SIZE  = 10;        
         Numbers numbers = new Numbers();
         
         // Creating some TreeNode objects......................................
@@ -78,7 +79,7 @@ public class TreesTest
         System.out.println("1st tree -> " + tree.inOrder().toString());
         System.out.println("2nd tree -> " + second.inOrder().toString());
         if (tree.equals(second)) System.out.println("1st==2nd");
-        else                      System.out.println("1st!=2nd");
+        else                     System.out.println("1st!=2nd");
         
         // Building a third tree (test clone) and test equals..................         
         BinaryTree<Integer> third = tree.clone();
@@ -88,7 +89,7 @@ public class TreesTest
         else                    System.out.println("1st!=3rd");
         
         // Build all our data structures from each other........................        
-        final int WORD_LENGTH = 5;
+        final int WORD_LENGTH = 3;
         Text text = new Text();
         
         // Create variable objects..............................................        
@@ -117,10 +118,13 @@ public class TreesTest
         // Now re-building array from LinkedList................................        
         array = list.toArray(array);
         
+        // Build a Binary tree from that list...................................
+        BinaryTree<String> fourth = new BinaryTree<>(list);
+        
         // Output array,list,tree again.............................        
         System.out.println(text.toString(array));
         System.out.println(list);
-        System.out.println(tree);
+        System.out.println(fourth);
         
         System.out.println("\nBinary Trees test complete!\n");
     }
