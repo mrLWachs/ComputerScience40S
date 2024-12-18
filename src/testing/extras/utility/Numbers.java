@@ -1,6 +1,6 @@
 
 /** Required package class namespace */
-package testing.extras.tools;
+package testing.extras.utility;
 
 /** Required API imports */
 import collections.LinkedList;
@@ -327,6 +327,21 @@ public class Numbers
             list.add(random(low, high));
         }
         return list;
+    }
+    
+    /**
+     * Generates a list of random doubles in the range between low and high
+     * 
+     * @param low the lowest number in the range
+     * @param high the highest number in the range
+     * @param places the number of decimal points to round off the double to
+     * @param size the size to make the list
+     * @return a list of random doubles
+     */
+    public LinkedList<Double> randomList(double low, double high, int places, 
+            int size) {
+        LinkedList<Double> list = randomList(low, high, size);
+        return round(list, places);
     }
     
     /**

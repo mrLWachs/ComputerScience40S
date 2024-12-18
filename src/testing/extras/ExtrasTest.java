@@ -39,7 +39,7 @@ public class ExtrasTest
         
         
         
-        // Code to choose which etras test to run...
+        // Code to choose which extras test to run...
 //        final String TITLE = "Computer Science 40S: Extra Units and Learning";
 //        final String TEXT  = "Please choose an bonus project...";
 //        final String[] CHOICES = {

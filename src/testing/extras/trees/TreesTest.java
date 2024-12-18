@@ -2,9 +2,9 @@
 package testing.extras.trees;
 
 /** Required API imports */
-import testing.extras.tools.Text;
+import testing.extras.utility.Text;
 import collections.LinkedList;
-import testing.extras.tools.Numbers;
+import testing.extras.utility.Numbers;
 
  
 /**
