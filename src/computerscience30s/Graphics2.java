@@ -24,7 +24,7 @@ public class Graphics2 extends JFrame
      * done in the "LearnGraphics" class constructor method
      */
     public Graphics2() {
-        this.setSize(600, 600);
+        this.setSize(380, 570);
         
         // Reveal design to user (this should be done last in constructor)
         this.setVisible(true);          // Make the frame (container) visible
