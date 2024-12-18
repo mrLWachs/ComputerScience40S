@@ -12,7 +12,18 @@ package computerscience30s;
  * "Source" and "Design". We will be using the editor's "Palette" and 
  * "Properties" windows to build and change the design and then adding code as 
  * needed. We will examine this frame and Graphics1 to compare doing the same 
- * things using a designer vs. writing all the code ourselves.
+ * things using a designer vs. writing all the code ourselves. 
+ * 
+ * NOTE: For those students who took the introductory Computer Science 20S 
+ * course and used Visual Studio and the C# programming language, an editor 
+ * like this should seem familiar to you. That IDE allows programmers to use
+ * the WYSIWYG editor without having to write all the code. Editors just write 
+ * code for you (both Visual Studio and this NetBeans editor) and "hide" that 
+ * code (either in a collapsed method in NetBeans, or in another class in 
+ * Visual studio). If you remember having to "name" all the objects in Visual
+ * Studio, you can also do this in NetBeans (although in this course that is not 
+ * required) by right clicking on each object and selecting "Change Variable
+ * Name..." and then typing in a new name. 
  *
  * @author Mr. Wachs
  * @since December 2024
@@ -66,8 +77,32 @@ public class Graphics1 extends javax.swing.JFrame
 
         jLabel1.setText("Hello World");
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField1KeyPressed(evt);
+            }
+        });
+
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/computerscience30s/image.gif"))); // NOI18N
         jLabel2.setToolTipText("");
+        jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseMoved(java.awt.event.MouseEvent evt) {
+                jLabel2MouseMoved(evt);
+            }
+        });
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,6 +145,39 @@ public class Graphics1 extends javax.swing.JFrame
         
         System.out.println("clicked a button");
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
+        // For other actions, like this, right click on the object in the 
+        // WYSIWYG ("What You See Is What You Get") designer and go to the
+        // menu -> Events -> then the action you wish to add
+        
+        jLabel1.setText("Key pressed was " + evt.getKeyCode());
+    }//GEN-LAST:event_jTextField1KeyPressed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        System.out.println("Textbox action happened - hitting ENTER");
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jLabel2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseEntered
+        // The event "mouseEntered" and "mouseExited" are like "hover" effects
+        // of the mouse being "over" (or entering the space) of this object and
+        // then exiting (or leaving the space) of this label object
+        
+        jTextField1.setVisible(false);
+    }//GEN-LAST:event_jLabel2MouseEntered
+
+    private void jLabel2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseExited
+        jTextField1.setVisible(true);
+    }//GEN-LAST:event_jLabel2MouseExited
+
+    private void jLabel2MouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseMoved
+        // Several different mouse events are accessible like this event 
+        // of the mouse moving over the object (the label image) and you can
+        // use the "evt" parameter to access events from the mouse like the 
+        // (x, y) cooordinate of it as it relates to the label
+        
+        jLabel1.setText("Mouse " + evt.getX() + "," + evt.getY());
+    }//GEN-LAST:event_jLabel2MouseMoved
 
     
     ////////////////////////////////////////////////////////////////////////////
