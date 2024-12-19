@@ -106,7 +106,7 @@ public class SortingTest {
      * @param array the array of items to sort 
      * @return a sorted array (from lowest to highest)
      */
-    private int[] bubbleSort(int[] array) {
+    public int[] bubbleSort(int[] array) {
         for (int i = 0; i < array.length; i++) {         // Traversing the array
             for (int j = 0; j < array.length - 1; j++) { // Traverse 1 less 
                 if (array[j] > array[j+1]) {             // Checking items
@@ -125,7 +125,7 @@ public class SortingTest {
      *
      * @param array the array of items to sort
      */
-    private int[] selectionSort(int[] array) {
+    public int[] selectionSort(int[] array) {
         // Create a new array, same size as the passed array
         int[] sorted = new int[array.length];
         // Make it a copy of that original
