@@ -28,14 +28,14 @@ public class ExtrasTest
     public ExtrasTest() {
         System.out.println("\nExtras content test starting...\n");
         // Code to quickly run the desired test.......        
-        new CollectionsExtrasTest();
-        new GraphicsTest();
-        new StorageTest();
-        new TreesTest();
-        new SortingTest();
+//        new CollectionsExtrasTest();
+//        new GraphicsTest();
+//        new StorageTest();
+//        new TreesTest();
+//        new SortingTest();
         new SearchingTest();
-        new ThreadingTest();
-        new PathfindingTest();
+//        new ThreadingTest();
+//        new PathfindingTest();
         
         
         
