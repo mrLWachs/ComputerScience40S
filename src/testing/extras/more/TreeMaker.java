@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras.more;
 
+/** Required API imports */
 import javax.swing.JPanel;
 
  
@@ -15,8 +16,12 @@ public class TreeMaker
 
     private JPanel pointsPanel;
     
+   
     /**
-     * Default constructor, set class properties
+     * Constructor method, sets class properties and connects parameters to 
+     * class properties
+     * 
+     * @param pointsPanel 
      */
     public TreeMaker(JPanel pointsPanel) {
         this.pointsPanel = pointsPanel;

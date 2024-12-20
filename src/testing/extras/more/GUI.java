@@ -1,12 +1,20 @@
-
+/** Required package class namespace */
 package testing.extras.more;
 
-
+/**
+ * GUI.java - 
+ *
+ * @author Mr. Wachs
+ * @since December 2024
+ */
 public class GUI extends javax.swing.JFrame 
 {
     
     private LogicController controller;
 
+    /** 
+     * Constructor method, creates new frame/form UserInterface 
+     */
     public GUI() {
         initComponents();
         controller = new LogicController( 

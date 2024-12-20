@@ -1,8 +1,7 @@
 /** Required package class namespace */
 package testing.extras.more;
 
-
-
+/** Required API imports */
 import collections.LinkedList;
 import java.io.File;
 import java.io.IOException;
@@ -56,7 +55,17 @@ public class LogicController
     
     
     /**
-     * Default constructor, set class properties
+     * Constructor method, sets class properties and connects parameters to 
+     * class properties
+     * 
+     * @param pointsList
+     * @param pointsPanel
+     * @param pointsScrollPane
+     * @param pointsSpinner
+     * @param threadTimeSpinner
+     * @param threadsList
+     * @param threadsScrollPane
+     * @param gui 
      */
     public LogicController(
             JList<String> pointsList, 

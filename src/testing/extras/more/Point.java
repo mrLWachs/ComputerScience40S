@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras.more;
 
+/** Required API imports */
 import java.awt.Color;
 import java.awt.Graphics;
 import java.io.Serializable;
@@ -35,6 +36,12 @@ public class Point implements Serializable
     private Graphics graphics; 
     
     
+    /**
+     * Constructor method, sets class properties and connects parameters to 
+     * class properties
+     * 
+     * @param pointsPanel 
+     */
     public Point(JPanel pointsPanel) {
         numbers = new Numbers();
         dialog = new Dialogs();

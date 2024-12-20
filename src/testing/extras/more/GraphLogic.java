@@ -1,7 +1,7 @@
 /** Required package class namespace */
 package testing.extras.more;
 
-
+/** Required API imports */
 import collections.LinkedList;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
@@ -25,6 +25,15 @@ public class GraphLogic
     private LinkedList<Point>        allPoints;
     
     
+    /** 
+     * Constructor method, sets class properties and connects parameters to 
+     * class properties
+     * 
+     * @param pointsPanel
+     * @param pointsScrollPane
+     * @param pointsList
+     * @param pointsListModel 
+     */
     public GraphLogic(
             JPanel                   pointsPanel, 
             JScrollPane              pointsScrollPane, 

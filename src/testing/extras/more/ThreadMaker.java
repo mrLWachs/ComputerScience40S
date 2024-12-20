@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras.more;
 
+/** Required API imports */
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.LinkedList;
@@ -27,6 +28,14 @@ public class ThreadMaker
     private int                      count;
     
     
+    /**
+     * Constructor method, sets class properties and connects parameters to 
+     * class properties
+     * 
+     * @param threadsScrollPane
+     * @param threadsList
+     * @param threadsListModel 
+     */
     public ThreadMaker(
             JScrollPane              threadsScrollPane, 
             JList<String>            threadsList,
