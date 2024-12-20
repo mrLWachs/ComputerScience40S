@@ -33,9 +33,6 @@ public class Graphics3 extends javax.swing.JFrame
     public Graphics3() {
         initComponents();
         setup();                // jump to custom method
-        this.setSize(950, 540);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
     }
 
     // NetBeans designer code below ...........................................
@@ -50,7 +47,6 @@ public class Graphics3 extends javax.swing.JFrame
     private void initComponents() {
 
         titlelabel = new java.awt.Label();
-        drawingPanel = new javax.swing.JPanel();
         filledOvalRadioButton = new javax.swing.JRadioButton();
         openOvalRadioButton = new javax.swing.JRadioButton();
         filledRectangleRadioButton = new javax.swing.JRadioButton();
@@ -63,16 +59,93 @@ public class Graphics3 extends javax.swing.JFrame
         backgroundColorButton = new javax.swing.JButton();
         clearButton = new javax.swing.JButton();
         starBurstButton = new javax.swing.JButton();
+        drawingPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Wachs FotoShopish");
         setResizable(false);
-        getContentPane().setLayout(null);
 
         titlelabel.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
         titlelabel.setText("Wachs FotoShopish");
-        getContentPane().add(titlelabel);
-        titlelabel.setBounds(10, 10, 867, 60);
+
+        filledOvalRadioButton.setText("Filled Oval");
+        filledOvalRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filledOvalRadioButtonActionPerformed(evt);
+            }
+        });
+
+        openOvalRadioButton.setText("Open Oval");
+        openOvalRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openOvalRadioButtonActionPerformed(evt);
+            }
+        });
+
+        filledRectangleRadioButton.setText("Filled Rectangle");
+        filledRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filledRectangleRadioButtonActionPerformed(evt);
+            }
+        });
+
+        openRectangleRadioButton.setText("Open Rectangle");
+        openRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openRectangleRadioButtonActionPerformed(evt);
+            }
+        });
+
+        threeDRectangleRadioButton.setText("3D Rectangle");
+        threeDRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                threeDRectangleRadioButtonActionPerformed(evt);
+            }
+        });
+
+        arcRadioButton.setText("Arc");
+        arcRadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                arcRadioButtonActionPerformed(evt);
+            }
+        });
+
+        brushSizeLabel.setText("Brush size:");
+        brushSizeLabel.setToolTipText("");
+
+        brushSizeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                brushSizeSpinnerStateChanged(evt);
+            }
+        });
+
+        foregroundColorButton.setText("Foreground Color");
+        foregroundColorButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                foregroundColorButtonActionPerformed(evt);
+            }
+        });
+
+        backgroundColorButton.setText("Background Color");
+        backgroundColorButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backgroundColorButtonActionPerformed(evt);
+            }
+        });
+
+        clearButton.setText("Clear");
+        clearButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearButtonActionPerformed(evt);
+            }
+        });
+
+        starBurstButton.setText("Star Burst");
+        starBurstButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                starBurstButtonActionPerformed(evt);
+            }
+        });
 
         drawingPanel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         drawingPanel.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -94,114 +167,74 @@ public class Graphics3 extends javax.swing.JFrame
         );
         drawingPanelLayout.setVerticalGroup(
             drawingPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 407, Short.MAX_VALUE)
         );
 
-        getContentPane().add(drawingPanel);
-        drawingPanel.setBounds(242, 81, 680, 410);
-
-        filledOvalRadioButton.setText("Filled Oval");
-        filledOvalRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                filledOvalRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(filledOvalRadioButton);
-        filledOvalRadioButton.setBounds(10, 81, 190, 21);
-
-        openOvalRadioButton.setText("Open Oval");
-        openOvalRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                openOvalRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(openOvalRadioButton);
-        openOvalRadioButton.setBounds(10, 114, 190, 21);
-
-        filledRectangleRadioButton.setText("Filled Rectangle");
-        filledRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                filledRectangleRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(filledRectangleRadioButton);
-        filledRectangleRadioButton.setBounds(10, 147, 220, 21);
-
-        openRectangleRadioButton.setText("Open Rectangle");
-        openRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                openRectangleRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(openRectangleRadioButton);
-        openRectangleRadioButton.setBounds(10, 180, 220, 21);
-
-        threeDRectangleRadioButton.setText("3D Rectangle");
-        threeDRectangleRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                threeDRectangleRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(threeDRectangleRadioButton);
-        threeDRectangleRadioButton.setBounds(10, 213, 220, 21);
-
-        arcRadioButton.setText("Arc");
-        arcRadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                arcRadioButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(arcRadioButton);
-        arcRadioButton.setBounds(10, 246, 170, 21);
-
-        brushSizeLabel.setText("Brush size:");
-        brushSizeLabel.setToolTipText("");
-        getContentPane().add(brushSizeLabel);
-        brushSizeLabel.setBounds(10, 288, 140, 30);
-
-        brushSizeSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                brushSizeSpinnerStateChanged(evt);
-            }
-        });
-        getContentPane().add(brushSizeSpinner);
-        brushSizeSpinner.setBounds(160, 290, 70, 22);
-
-        foregroundColorButton.setText("Foreground Color");
-        foregroundColorButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                foregroundColorButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(foregroundColorButton);
-        foregroundColorButton.setBounds(10, 337, 220, 34);
-
-        backgroundColorButton.setText("Background Color");
-        backgroundColorButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backgroundColorButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(backgroundColorButton);
-        backgroundColorButton.setBounds(10, 377, 220, 34);
-
-        clearButton.setText("Clear");
-        clearButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(clearButton);
-        clearButton.setBounds(10, 417, 220, 34);
-
-        starBurstButton.setText("Star Burst");
-        starBurstButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                starBurstButtonActionPerformed(evt);
-            }
-        });
-        getContentPane().add(starBurstButton);
-        starBurstButton.setBounds(10, 457, 220, 34);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(titlelabel, javax.swing.GroupLayout.PREFERRED_SIZE, 867, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(filledOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(openOvalRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(filledRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(openRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(threeDRectangleRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(arcRadioButton, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(brushSizeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(10, 10, 10)
+                                .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(foregroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(backgroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(starBurstButton, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(titlelabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(11, 11, 11)
+                        .addComponent(filledOvalRadioButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(openOvalRadioButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(filledRectangleRadioButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(openRectangleRadioButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(threeDRectangleRadioButton)
+                        .addGap(12, 12, 12)
+                        .addComponent(arcRadioButton)
+                        .addGap(21, 21, 21)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(brushSizeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(brushSizeSpinner, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(19, 19, 19)
+                        .addComponent(foregroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(backgroundColorButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(clearButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(starBurstButton, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(drawingPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -221,14 +254,6 @@ public class Graphics3 extends javax.swing.JFrame
     private void starBurstButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_starBurstButtonActionPerformed
         starBurst();            // jump to custom method
     }//GEN-LAST:event_starBurstButtonActionPerformed
-
-    private void drawingPanelMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanelMouseDragged
-        drag(evt);              // jump to custom method
-    }//GEN-LAST:event_drawingPanelMouseDragged
-
-    private void drawingPanelMouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_drawingPanelMouseWheelMoved
-        wheel(evt);             // jump to custom method
-    }//GEN-LAST:event_drawingPanelMouseWheelMoved
 
     private void filledOvalRadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filledOvalRadioButtonActionPerformed
         radio(filledOvalRadioButton,BRUSHES[0]);     // jump to custom method
@@ -257,6 +282,14 @@ public class Graphics3 extends javax.swing.JFrame
     private void brushSizeSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_brushSizeSpinnerStateChanged
         spinner();                          // jump to custom method
     }//GEN-LAST:event_brushSizeSpinnerStateChanged
+
+    private void drawingPanelMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_drawingPanelMouseDragged
+        drag(evt);              // jump to custom method
+    }//GEN-LAST:event_drawingPanelMouseDragged
+
+    private void drawingPanelMouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_drawingPanelMouseWheelMoved
+        wheel(evt);             // jump to custom method
+    }//GEN-LAST:event_drawingPanelMouseWheelMoved
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton arcRadioButton;
@@ -333,6 +366,9 @@ public class Graphics3 extends javax.swing.JFrame
                 tick();
             }
         });
+        this.setSize(950, 560);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
     /**
