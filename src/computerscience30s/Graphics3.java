@@ -22,7 +22,7 @@ import javax.swing.Timer;
  * type of application (a mini 'PhotoShop')
  *
  * @author Mr. Wachs 
- * @since 13-Dec-2018 
+ * @since December 2024 
  */
 public class Graphics3 extends javax.swing.JFrame 
 {
