@@ -1,26 +1,71 @@
 
-/** Required package class namespace */
+/** required package class namespace */
 package computerscience30s;
+
+/** required imports */
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Polygon;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseWheelEvent;
+import javax.swing.JColorChooser;
+import javax.swing.JRadioButton;
+import javax.swing.SpinnerNumberModel;
+import javax.swing.Timer;
 
 
 /**
- * Graphics3.java - description
+ * Graphics3.java - using the NetBeans visual designer in combination
+ * with our custom code (a 'hybrid' approach) to make a "mini final project" 
+ * type of application (a mini 'PhotoShop')
  *
- * @author Mr. Wachs
- * @since Dec 19, 2024, 9:09:01 a.m.
+ * @author Mr. Wachs 
+ * @since 13-Dec-2018 
  */
 public class Graphics3 extends javax.swing.JFrame 
 {
 
-    /** 
-     * Constructor method, creates new frame/form Graphics3 
+    // Global variables (properties) below ....................................
+    
+    // constants:
+    private final int MIN    = 2;       // for the brushes
+    private final int MAX    = 200;
+    private final int CHANGE = 5;
+    private final String[] BRUSHES = {
+        "filled oval", "open oval",
+        "filled rectangle", "open rectangle",
+        "3D rectangle", "arc"
+    };
+    
+    // primitive variables:
+    private String brush;
+    private int    size;
+    private int    currentX;
+    private int    currentY;
+    
+    // class object variables:
+    private Color              foreground;
+    private Color              background;
+    private Graphics           graphics;
+    private SpinnerNumberModel model;
+    private Timer              timer;
+    
+    
+    /**
+     * Default class constructor, sets class properties
      */
     public Graphics3() {
         initComponents();
-        
-        this.setSize(800, 800);
+        setup();                // jump to custom method
+        this.setSize(950, 540);
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
     }
 
+    // NetBeans designer code below ...........................................
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -30,81 +75,413 @@ public class Graphics3 extends javax.swing.JFrame
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        enemyLabel = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        lblHero = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jRadioButton5 = new javax.swing.JRadioButton();
+        jRadioButton6 = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
+        jSpinner1 = new javax.swing.JSpinner();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        titlelabel = new java.awt.Label();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Wachs FotoShopish");
+        setResizable(false);
         getContentPane().setLayout(null);
 
-        enemyLabel.setBackground(new java.awt.Color(255, 255, 0));
-        enemyLabel.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        enemyLabel.setForeground(new java.awt.Color(51, 51, 255));
-        enemyLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        enemyLabel.setText("ENEMY");
-        enemyLabel.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        enemyLabel.setOpaque(true);
-        getContentPane().add(enemyLabel);
-        enemyLabel.setBounds(80, 60, 202, 154);
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jPanel1MouseDragged(evt);
+            }
+        });
+        jPanel1.addMouseWheelListener(new java.awt.event.MouseWheelListener() {
+            public void mouseWheelMoved(java.awt.event.MouseWheelEvent evt) {
+                jPanel1MouseWheelMoved(evt);
+            }
+        });
 
-        jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 0, 51), 5, true));
-        jPanel1.setLayout(null);
-
-        lblHero.setBackground(new java.awt.Color(255, 255, 0));
-        lblHero.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
-        lblHero.setForeground(new java.awt.Color(51, 51, 255));
-        lblHero.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblHero.setText("HERO");
-        lblHero.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        lblHero.setOpaque(true);
-        jPanel1.add(lblHero);
-        lblHero.setBounds(40, 30, 202, 154);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 676, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(290, 230, 530, 410);
+        jPanel1.setBounds(242, 81, 680, 410);
+
+        jRadioButton1.setText("Filled Oval");
+        jRadioButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton1);
+        jRadioButton1.setBounds(10, 81, 190, 21);
+
+        jRadioButton2.setText("Open Oval");
+        jRadioButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton2);
+        jRadioButton2.setBounds(10, 114, 190, 21);
+
+        jRadioButton3.setText("Filled Rectangle");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton3);
+        jRadioButton3.setBounds(10, 147, 220, 21);
+
+        jRadioButton4.setText("Open Rectangle");
+        jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton4);
+        jRadioButton4.setBounds(10, 180, 220, 21);
+
+        jRadioButton5.setText("3D Rectangle");
+        jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton5ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton5);
+        jRadioButton5.setBounds(10, 213, 220, 21);
+
+        jRadioButton6.setText("Arc");
+        jRadioButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton6ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jRadioButton6);
+        jRadioButton6.setBounds(10, 246, 170, 21);
+
+        jLabel1.setText("Brush size:");
+        jLabel1.setToolTipText("");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(10, 288, 140, 30);
+
+        jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                jSpinner1StateChanged(evt);
+            }
+        });
+        getContentPane().add(jSpinner1);
+        jSpinner1.setBounds(160, 290, 70, 22);
+
+        jButton1.setText("Foreground Color");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(10, 337, 220, 34);
+
+        jButton2.setText("Background Color");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2);
+        jButton2.setBounds(10, 377, 220, 34);
+
+        jButton3.setText("Clear");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3);
+        jButton3.setBounds(10, 417, 220, 34);
+
+        jButton4.setText("Star Burst");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4);
+        jButton4.setBounds(10, 457, 220, 34);
+
+        titlelabel.setFont(new java.awt.Font("Arial", 1, 48)); // NOI18N
+        titlelabel.setText("Wachs FotoShopish");
+        getContentPane().add(titlelabel);
+        titlelabel.setBounds(10, 10, 867, 60);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Graphics3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setForeground();        // jump to custom method
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new Graphics3().setVisible(true);
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        setBackground();        // jump to custom method
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        clear();                // jump to custom method
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        starBurst();            // jump to custom method
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jPanel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel1MouseDragged
+        drag(evt);              // jump to custom method
+    }//GEN-LAST:event_jPanel1MouseDragged
+
+    private void jPanel1MouseWheelMoved(java.awt.event.MouseWheelEvent evt) {//GEN-FIRST:event_jPanel1MouseWheelMoved
+        wheel(evt);             // jump to custom method
+    }//GEN-LAST:event_jPanel1MouseWheelMoved
+
+    private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
+        radio(jRadioButton1,BRUSHES[0]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton1ActionPerformed
+
+    private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
+        radio(jRadioButton2,BRUSHES[1]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton2ActionPerformed
+
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        radio(jRadioButton3,BRUSHES[2]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
+    private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
+        radio(jRadioButton4,BRUSHES[3]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton4ActionPerformed
+
+    private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
+        radio(jRadioButton5,BRUSHES[4]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton5ActionPerformed
+
+    private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
+        radio(jRadioButton6,BRUSHES[5]);     // jump to custom method
+    }//GEN-LAST:event_jRadioButton6ActionPerformed
+
+    private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
+        spinner();                          // jump to custom method
+    }//GEN-LAST:event_jSpinner1StateChanged
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
+    private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JRadioButton jRadioButton6;
+    private javax.swing.JSpinner jSpinner1;
+    private java.awt.Label titlelabel;
+    // End of variables declaration//GEN-END:variables
+
+    // Custom methods below ...................................................
+    
+    /**
+     * Sets up the objects needed to draw the graphics eventually
+     */
+    private void setup() {
+        // setup the primitives
+        size     = MIN;
+        brush    = BRUSHES[0];
+        currentX = 0;
+        currentY = 0;
+        // setup the advanced data types
+        background = Color.white;
+        foreground = Color.black;
+        graphics   = jPanel1.getGraphics();
+        model      = (SpinnerNumberModel)jSpinner1.getModel();        
+        // assign them to the controls
+        model.setValue(size);
+        model.setStepSize(CHANGE);
+        model.setMaximum(MAX);
+        model.setMinimum(MIN);        
+        jRadioButton1.setSelected(true);        
+        graphics.setColor(foreground);
+        jPanel1.setBackground(background);
+        // setup the timer
+        timer = new Timer(100, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                tick();
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel enemyLabel;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblHero;
-    // End of variables declaration//GEN-END:variables
+    /**
+     * Sets the foreground color for the brushes
+     */
+    private void setForeground() {
+        timer.stop();                               // stop timer (if running)
+        foreground = JColorChooser.showDialog(this, 
+                "Choose a foreground color", foreground);   // dialog selection
+        if (foreground == null) {                           // nothing chosen
+            foreground = Color.black;                       // default color
+        }
+        graphics.setColor(foreground);                      // set chosen color
+    }
 
+    /**
+     * Set the background color of the drawing surface
+     */
+    private void setBackground() {
+        timer.stop();                               // stop timer (if running)
+        background = JColorChooser.showDialog(this, 
+                "Choose a background color", background);   // dialog selection
+        if (background == null) {                           // nothing chosen
+            background = Color.white;                       // default color
+        }
+        jPanel1.setBackground(background);                  // set chosen color
+    }
+
+    /**
+     * Clears the drawing surface of all graphics
+     */
+    private void clear() {
+        timer.stop();
+        jPanel1.repaint();
+    }
+
+    /**
+     * Starts a timer drawing random stars on the drawing surface
+     */
+    private void starBurst() {
+        jPanel1.repaint();
+        timer.start();
+    }
+
+    /**
+     * The event of dragging a mouse over the panel drawing area
+     * 
+     * @param evt the mouse event 
+     */
+    private void drag(MouseEvent evt) {
+        timer.stop();
+        int x = evt.getX()-(size/2);
+        int y = evt.getY()-(size/2);        
+        if      (brush.equals(BRUSHES[0])) 
+            graphics.fillOval(x, y, size, size);
+        else if (brush.equals(BRUSHES[1])) 
+            graphics.drawOval(x, y, size, size);
+        else if (brush.equals(BRUSHES[2])) 
+            graphics.fillRect(x, y, size, size);
+        else if (brush.equals(BRUSHES[3])) 
+            graphics.drawRect(x, y, size, size);
+        else if (brush.equals(BRUSHES[4])) 
+            graphics.fill3DRect(x, y, size, size,true);
+        else if (brush.equals(BRUSHES[5])) 
+            graphics.drawArc(x, y, size, size,45,120);        
+    }
+
+    /**
+     * The event of the mouse wheel spinning over the panel drawing area
+     * 
+     * @param evt the mouse wheel event 
+     */
+    private void wheel(MouseWheelEvent evt) {
+        timer.stop();
+        if (evt.getWheelRotation() < 0) size += CHANGE;
+        else                            size -= CHANGE;
+        if (size < MIN) size = MIN;
+        if (size > MAX) size = MAX;
+        model.setValue(size);
+    }
+
+    /**
+     * User selected a brush radio button
+     * 
+     * @param button the specific radio button selected
+     * @param brush the specific brush selected
+     */
+    private void radio(JRadioButton button, String brush) {
+        timer.stop();
+        JRadioButton[] buttons = {
+            jRadioButton1,jRadioButton2,jRadioButton3,
+            jRadioButton4,jRadioButton5,jRadioButton6
+        };
+        for (int i = 0; i < buttons.length; i++) {
+            buttons[i].setSelected(false);
+        }
+        button.setSelected(true);
+        this.brush = brush;
+    }
+
+    /**
+     * The event for the brush size spinner
+     */
+    private void spinner() {
+        if (timer != null) timer.stop();
+        size = (Integer)model.getNumber();
+    }
+
+    /**
+     * The event the timer runs on it's interval
+     */
+    private void tick() {
+        final int SPACE = 8;
+        final int POINTS = 10;
+        int w = jPanel1.getWidth() - (SPACE * 5);
+        int h = jPanel1.getHeight() - (SPACE * 5);
+        currentX = (int)((w-SPACE+1d)*Math.random()+SPACE);
+        currentY = (int)((h-SPACE+1d)*Math.random()+SPACE);
+        // all the points
+        int x1  = currentX;
+        int x2  = x1 + SPACE;
+        int x3  = x2 + SPACE;
+        int x4  = x3 + SPACE;
+        int x5  = x4 + SPACE;
+        int x6  = x5 - SPACE;
+        int x7  = x6 + SPACE;
+        int x8  = x7 - (SPACE * 2);
+        int x9  = x8 - (SPACE * 2);
+        int x10 = x9 + SPACE;
+        // all the y points
+        int y1  = currentY;
+        int y2  = y1;
+        int y3  = y2 - SPACE;
+        int y4  = y3 + SPACE;
+        int y5  = y4;
+        int y6  = y5 + SPACE;
+        int y7  = y6 + (SPACE * 2);
+        int y8  = y7 - SPACE;
+        int y9  = y8 + SPACE;
+        int y10 = y9 - (SPACE * 2);
+        // put all points in a array
+        int xPoints[] = {x1,x2,x3,x4,x5,x6,x7,x8,x9,x10};
+        int yPoints[] = {y1,y2,y3,y4,y5,y6,y7,y8,y9,y10};
+        int r = (int)((255d-0d+1d)*Math.random()+0d);
+        int g = (int)((255d-0d+1d)*Math.random()+0d);
+        int b = (int)((255d-0d+1d)*Math.random()+0d);
+        Color color = new Color(r, g, b);
+        Polygon polygon = new Polygon(xPoints, yPoints, POINTS);
+        graphics.setColor(color);
+        graphics.fillPolygon(polygon);
+    }
+    
 }

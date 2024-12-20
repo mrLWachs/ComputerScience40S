@@ -28,6 +28,7 @@ public class LearnGraphics
         // Create class objects for different examples
         Graphics1 graphics1 = new Graphics1();      // 1st GUI using designer 
         Graphics2 graphics2 = new Graphics2();      // 2nd GUI all coded
+        Graphics3 graphics3 = new Graphics3();      // 3rd GUI "hybrid" (mix)
         
         System.out.println("Completed learning Graphics!");
     }
