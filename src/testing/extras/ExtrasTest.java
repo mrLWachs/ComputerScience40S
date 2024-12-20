@@ -27,51 +27,40 @@ public class ExtrasTest
      */
     public ExtrasTest() {
         System.out.println("\nExtras content test starting...\n");
-        // Code to quickly run the desired test.......        
-//        new CollectionsExtrasTest();
-//        new GraphicsTest();
-//        new StorageTest();
-//        new TreesTest();
-//        new SortingTest();
-//        new SearchingTest();
-        new MoreExtras();
-        
-        
-        
         // Code to choose which extras test to run...
-//        final String TITLE = "Computer Science 40S: Extra Units and Learning";
-//        final String TEXT  = "Please choose an bonus project...";
-//        final String[] CHOICES = {
-//            "Practical Collections example",
-//            "Graphics and User Interfaces examples",
-//            "Permanent Storage examples",
-//            "Binary Trees",
-//            "Sorting Algorithms",
-//            "Searching Algorithms",
-//            "More extras examples",
-//            "All extras examples...",
-//            "Quit"
-//        };
-//        Dialogs dialog = new Dialogs(TITLE);
-//        String choice = dialog.choices(TEXT,CHOICES);
-//        if      (choice.equals(CHOICES[0])) new CollectionsExtrasTest();
-//        else if (choice.equals(CHOICES[1])) new GraphicsTest();
-//        else if (choice.equals(CHOICES[2])) new StorageTest();
-//        else if (choice.equals(CHOICES[3])) new TreesTest();
-//        else if (choice.equals(CHOICES[4])) new SortingTest();
-//        else if (choice.equals(CHOICES[5])) new SearchingTest();
-//        else if (choice.equals(CHOICES[6])) new MoreExtras();
-//        else if (choice.equals(CHOICES[7])) {
-//            new CollectionsExtrasTest();
-//            new GraphicsTest();
-//            new StorageTest();
-//            new TreesTest();
-//            new SortingTest();
-//            new SearchingTest();
-//            new MoreExtras();
-//        }
-//        else System.exit(0); 
-//        System.out.println("\nExtras content test completed!\n");
+        final String TITLE = "Computer Science 40S: Extra Units and Learning";
+        final String TEXT  = "Please choose an bonus project...";
+        final String[] CHOICES = {
+            "Practical Collections example",
+            "Graphics and User Interfaces examples",
+            "Permanent Storage examples",
+            "Binary Trees",
+            "Sorting Algorithms",
+            "Searching Algorithms",
+            "More extras examples",
+            "All extras examples...",
+            "Quit"
+        };
+        Dialogs dialog = new Dialogs(TITLE);
+        String choice = dialog.choices(TEXT,CHOICES);
+        if      (choice.equals(CHOICES[0])) new CollectionsExtrasTest();
+        else if (choice.equals(CHOICES[1])) new GraphicsTest();
+        else if (choice.equals(CHOICES[2])) new StorageTest();
+        else if (choice.equals(CHOICES[3])) new TreesTest();
+        else if (choice.equals(CHOICES[4])) new SortingTest();
+        else if (choice.equals(CHOICES[5])) new SearchingTest();
+        else if (choice.equals(CHOICES[6])) new MoreExtras();
+        else if (choice.equals(CHOICES[7])) {
+            new CollectionsExtrasTest();
+            new GraphicsTest();
+            new StorageTest();
+            new TreesTest();
+            new SortingTest();
+            new SearchingTest();
+            new MoreExtras();
+        }
+        else System.exit(0); 
+        System.out.println("\nExtras content test completed!\n");
     }
     
 }
