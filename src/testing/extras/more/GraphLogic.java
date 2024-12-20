@@ -1,8 +1,8 @@
 /** Required package class namespace */
 package testing.extras.more;
 
+
 import collections.LinkedList;
-import java.awt.Color;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;

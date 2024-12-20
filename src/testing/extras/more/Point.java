@@ -3,6 +3,7 @@ package testing.extras.more;
 
 import java.awt.Color;
 import java.awt.Graphics;
+import java.io.Serializable;
 import javax.swing.JPanel;
 import testing.extras.utility.Dialogs;
 import testing.extras.utility.Numbers;
@@ -14,7 +15,7 @@ import testing.extras.utility.Numbers;
  * @author Mr. Wachs
  * @since Dec. 19, 2024
  */
-public class Point 
+public class Point implements Serializable
 {
 
     private int x;
