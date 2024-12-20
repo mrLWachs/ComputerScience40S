@@ -78,7 +78,7 @@ public class CollectionsExtrasTest
         System.out.println("\nNow some ADT methods...\n");
         Arrays.sort(array);
         System.out.println("Sort Array: " + Arrays.toString(array));
-        linkedList = linkedList.reversed();
+        //linkedList = linkedList.reversed();
         System.out.println("Reversed LinkedList: " + linkedList);
         int value = array[SIZE/2];
         arrayList.remove(value);

@@ -26,6 +26,7 @@ public class SearchingTest
     public SearchingTest() {
         System.out.println("\nSearching Algorithms test starting...\n");
         
+        
         Text text = new Text();
         
         // Some data to sort (e.g. array. LinkedList, etc.).....................

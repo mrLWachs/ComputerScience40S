@@ -4,12 +4,12 @@ package testing.extras;
 /** Required API imports */
 import testing.extras.collections.CollectionsExtrasTest;
 import testing.extras.graphics.GraphicsTest;
-import testing.extras.pathfinding.PathfindingTest;
 import testing.extras.searching.SearchingTest;
 import testing.extras.sorting.SortingTest;
 import testing.extras.storage.StorageTest;
-import testing.extras.threading.ThreadingTest;
+import testing.extras.more.MoreExtras;
 import testing.extras.trees.TreesTest;
+import testing.extras.utility.Dialogs;
 
  
 /**
@@ -33,9 +33,8 @@ public class ExtrasTest
 //        new StorageTest();
 //        new TreesTest();
 //        new SortingTest();
-        new SearchingTest();
-//        new ThreadingTest();
-//        new PathfindingTest();
+//        new SearchingTest();
+        new MoreExtras();
         
         
         
@@ -49,9 +48,8 @@ public class ExtrasTest
 //            "Binary Trees",
 //            "Sorting Algorithms",
 //            "Searching Algorithms",
-//            "Threading examples",
-//            "Path finding examples",
-//            "All examples...",
+//            "More extras examples",
+//            "All extras examples...",
 //            "Quit"
 //        };
 //        Dialogs dialog = new Dialogs(TITLE);
@@ -62,17 +60,15 @@ public class ExtrasTest
 //        else if (choice.equals(CHOICES[3])) new TreesTest();
 //        else if (choice.equals(CHOICES[4])) new SortingTest();
 //        else if (choice.equals(CHOICES[5])) new SearchingTest();
-//        else if (choice.equals(CHOICES[6])) new ThreadingTest();
-//        else if (choice.equals(CHOICES[7])) new PathfindingTest(); 
-//        else if (choice.equals(CHOICES[8])) {
+//        else if (choice.equals(CHOICES[6])) new MoreExtras();
+//        else if (choice.equals(CHOICES[7])) {
 //            new CollectionsExtrasTest();
 //            new GraphicsTest();
 //            new StorageTest();
 //            new TreesTest();
 //            new SortingTest();
 //            new SearchingTest();
-//            new ThreadingTest();
-//            new PathfindingTest();
+//            new MoreExtras();
 //        }
 //        else System.exit(0); 
 //        System.out.println("\nExtras content test completed!\n");
