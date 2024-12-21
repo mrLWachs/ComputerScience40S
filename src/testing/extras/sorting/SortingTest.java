@@ -2,7 +2,8 @@
 package testing.extras.sorting;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.utility.Sort;
+import testing.extras.collections.LinkedList;
 import java.util.Arrays;
 import testing.extras.utility.Numbers;
 import testing.extras.utility.Text;

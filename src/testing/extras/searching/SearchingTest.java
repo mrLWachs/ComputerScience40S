@@ -2,8 +2,9 @@
 package testing.extras.searching;
 
 /** Required API imports */
-import collections.LinkedList;
-import testing.extras.sorting.Sort;
+import testing.extras.utility.Search;
+import testing.extras.collections.LinkedList;
+import testing.extras.utility.Sort;
 import testing.extras.utility.Numbers;
 import testing.extras.utility.Text;
 

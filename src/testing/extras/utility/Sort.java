@@ -1,9 +1,9 @@
 
 /** Required package class namespace */
-package testing.extras.sorting;
+package testing.extras.utility;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import java.lang.reflect.Array;
 
 
@@ -13,7 +13,7 @@ import java.lang.reflect.Array;
  * 
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
- * @since June 2023
+ * @since December 2024
  */
 public class Sort <T extends Comparable<T>> 
 {

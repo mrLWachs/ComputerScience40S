@@ -1,9 +1,9 @@
 
 /** Required package class namespace */
-package testing.extras.storage;
+package testing.extras.utility;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
-import testing.extras.utility.Dialogs;
 
 
 /**
@@ -22,7 +21,7 @@ import testing.extras.utility.Dialogs;
  *
  * @author Mr. Wachs 
  * @param <T> the generic data type to use
- * @since June 2023
+ * @since December 2024
  */
 public class FileHandler <T>
 {

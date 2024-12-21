@@ -2,7 +2,7 @@
 package testing.extras.more;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import java.io.File;
 import java.io.IOException;
 import java.net.URI;
@@ -13,9 +13,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSpinner;
-import testing.extras.searching.Search;
-import testing.extras.sorting.Sort;
-import testing.extras.storage.FileHandler;
+import testing.extras.utility.Search;
+import testing.extras.utility.Sort;
+import testing.extras.utility.FileHandler;
 import testing.extras.utility.Dialogs;
 
  

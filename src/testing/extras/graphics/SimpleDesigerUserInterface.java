@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing.extras.graphics;
 
+/** Required API imports */
 import java.awt.Color;
 
 

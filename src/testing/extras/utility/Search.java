@@ -1,9 +1,9 @@
 
 /** Required package class namespace */
-package testing.extras.searching;
+package testing.extras.utility;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 
 
 /**
@@ -12,7 +12,7 @@ import collections.LinkedList;
  * 
  * @author Mr. Wachs
  * @param <T> the generic object used in this class
- * @since June 2023
+ * @since December 2024
  */
 public class Search <T extends Comparable<T>>
 {

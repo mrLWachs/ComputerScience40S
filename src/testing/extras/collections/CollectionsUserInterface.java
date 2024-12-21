@@ -2,7 +2,6 @@
 package testing.extras.collections;
 
 /** Required API imports */
-import collections.LinkedList;
 import java.awt.event.KeyEvent;
 
 

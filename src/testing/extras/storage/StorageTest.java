@@ -2,7 +2,8 @@
 package testing.extras.storage;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.utility.FileHandler;
+import testing.extras.collections.LinkedList;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;

@@ -1,9 +1,8 @@
 
 /** Required package class namespace */
-package testing.extras.trees;
+package testing.extras.collections;
 
 /** Required API imports */
-import collections.LinkedList;
 import java.io.Serializable;
 
  
@@ -25,7 +24,7 @@ import java.io.Serializable;
  *
  * @author Mr. Wachs
  * @param <T> the generic data type used
- * @since June 2023
+ * @since December 2024
  */
 public class BinaryTree <T extends Comparable<T> > implements Serializable
 {

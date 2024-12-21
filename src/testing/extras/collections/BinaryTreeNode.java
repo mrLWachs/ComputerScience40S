@@ -1,5 +1,5 @@
 /** Required package class namespace */
-package testing.extras.trees;
+package testing.extras.collections;
 
 /** Required API imports */
 import java.io.Serializable;
@@ -21,7 +21,7 @@ import java.io.Serializable;
  *
  * @author Mr. Wachs
  * @param <T> Generic data property
- * @since June 2023
+ * @since December 2024
  */
 public class BinaryTreeNode <T extends Comparable<T> > implements Serializable
 {

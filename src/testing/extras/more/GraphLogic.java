@@ -2,7 +2,7 @@
 package testing.extras.more;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JPanel;

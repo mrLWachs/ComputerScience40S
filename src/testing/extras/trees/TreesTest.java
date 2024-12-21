@@ -2,8 +2,10 @@
 package testing.extras.trees;
 
 /** Required API imports */
+import testing.extras.collections.BinaryTree;
+import testing.extras.collections.BinaryTreeNode;
 import testing.extras.utility.Text;
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import testing.extras.utility.Numbers;
 
  
@@ -120,6 +122,7 @@ public class TreesTest
         
         // Build a Binary tree from that list...................................
         BinaryTree<String> fourth = new BinaryTree<>(list);
+        
         
         // Output array,list,tree again.............................        
         System.out.println(text.toString(array));

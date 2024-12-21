@@ -3,19 +3,18 @@
 package testing.extras.utility;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 import java.io.File;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
-import testing.extras.storage.FileHandler;
 
 
 /**
  * Text.java - a collection of useful methods for working with text
  *
  * @author Mr. Wachs
- * @since June 2023
+ * @since December 2024
  */
 public class Text 
 {

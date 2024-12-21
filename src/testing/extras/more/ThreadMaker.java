@@ -4,7 +4,7 @@ package testing.extras.more;
 /** Required API imports */
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.LinkedList;
+import testing.extras.collections.LinkedList;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
@@ -67,11 +67,11 @@ public class ThreadMaker
     }
 
     public void stopAll() {
-        for (Timer timer : timers) {
-            timer.stop();
+        for (int i = 0; i < timers.size(); i++) {
+            timers.get(i).stop();
         }
-        for (Thread thread : threads) {
-            thread.interrupt();
+        for (int i = 0; i < threads.size(); i++) {
+            threads.get(i).interrupt();
         }
         threadsListModel.removeAllElements();
     }

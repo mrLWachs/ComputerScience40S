@@ -3,7 +3,7 @@
 package testing.extras.utility;
 
 /** Required API imports */
-import collections.LinkedList;
+import testing.extras.collections.LinkedList;
 
  
 /**

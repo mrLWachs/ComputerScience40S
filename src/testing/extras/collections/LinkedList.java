@@ -1,7 +1,8 @@
 /** Required package class namespace */
-package collections;
+package testing.extras.collections;
  
 /** Required API imports */
+import java.io.Serializable;
 import java.lang.reflect.Array;
 
 
@@ -29,7 +30,7 @@ import java.lang.reflect.Array;
  * @param <T> The generic data type used in the class
  * @since December 2024
  */
-public class LinkedList <T>
+public class LinkedList <T> implements Serializable
 {
     
     /** 
