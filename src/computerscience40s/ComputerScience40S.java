@@ -21,7 +21,7 @@ public class ComputerScience40S
      */
     public static void main(String[] args) {
         System.out.println("Computer Science 40S starting...");    
-        
+         
         System.out.println("Computer Science 40S complete!");
     }
     
