@@ -1,6 +1,8 @@
 
 package computerscience40s;
 
+import testing.Tester;
+
 /**
  * ComputerScience40S.java - the large in class example we continue to work 
  * on in each unit adding example code on the new concepts of each unit 
@@ -21,13 +23,12 @@ public class ComputerScience40S
     public static void main(String[] args) {
         System.out.println("Computer Science 40S Example starting...");
         
-        
+        Tester tester = new Tester();
         
         System.out.println("Computer Science 40S Example completed!");
     }
     
 }
-
 
 // <editor-fold> 
 
@@ -206,4 +207,3 @@ public class ComputerScience40S
 //}
 
 // </editor-fold>
-
