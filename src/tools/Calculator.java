@@ -25,7 +25,7 @@ public class Calculator
         // BASE CASE - stops the recursion (stops the "looping" effect)
         if (number <= 1) return 1;        
         // RECURSIVE CASE - the method calls itself (like a "loop")
-        else             return 0;
+        else             return number * factorial(number-1);
     }
   
 

@@ -37,18 +37,6 @@ public class RecursionTest
         System.out.println(number + " factorial = " + answer);
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         // When testing, think of three scenarios:
             // (1) Typical case ("user"): do what they are told to do
             // (2) Edge cases (more than one): they "push" the edge
