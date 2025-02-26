@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
 
 /*
  * RecursionTest - tests the concepts learned in this unit. Recursion is 
@@ -28,6 +30,24 @@ public class RecursionTest
      */
     public RecursionTest() {
         System.out.println("Start learning recursion...");
+        
+        
+        int number = 5;
+        int answer = Calculator.factorial(number);        
+        System.out.println(number + " factorial = " + answer);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         // When testing, think of three scenarios:
             // (1) Typical case ("user"): do what they are told to do
