@@ -12,7 +12,7 @@ public class Calculator
 {
 
     /**
-     * Calculates the factorial (!) on a number using a recursive method.
+     * Calculates the factorial (n!) on a number using a recursive method.
      * Recursive methods need at minimum ONE BASE CASE (to stop the recursion),
      * but can have more than one. They also need to have at minimum ONE
      * RECURSIVE CASE (but they can have multiple recursive cases). Recursive
@@ -23,10 +23,13 @@ public class Calculator
      */
     public static int factorial(int number) {
         // BASE CASE - stops the recursion (stops the "looping" effect)
-        if (number <= 1) return 1;        
+        if (number <= 1) {
+            return 1;
+        }        
         // RECURSIVE CASE - the method calls itself (like a "loop")
-        else             return number * factorial(number-1);
+        else {
+            return number * factorial(number-1);
+        }
     }
   
-
 }
