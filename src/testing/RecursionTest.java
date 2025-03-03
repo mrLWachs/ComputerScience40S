@@ -64,7 +64,7 @@ public class RecursionTest
             for (long base = MIN_POWER; base <= MAX_POWER; base++) {
                 // Calculate (test this case) and display the test results
                 double answer = Calculator.power(base, exponent);
-                System.out.println("Base " + base + " to Exponent " + exponent +
+                System.out.println("Base " + base + " ^ Exponent " + exponent +
                                    " = " + answer);
             }
         }
