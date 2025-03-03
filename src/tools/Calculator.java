@@ -40,7 +40,11 @@ public class Calculator
      * @return the base^exponent
      */
     public static long power(long exponent, long base) {
-        return 0;
+        // Base case(s)...
+        if (exponent == 0) return 1;
+        if (exponent == 1) return base;
+        // Recursive case(s)...
+        return base * power(base, exponent - 1);
     }
   
 }
