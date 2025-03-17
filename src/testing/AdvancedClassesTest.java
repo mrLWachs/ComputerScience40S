@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package testing;
 
+import testing.classes.Person;
+
 
 /*
  * AdvancedClassesTest - tests the concepts learned in this unit.
@@ -25,7 +27,7 @@ public class AdvancedClassesTest
         
         // Using the class to create an object with the default constructor:
         // class object = call constructor method (default)   
-        
+        Person person = new Person();        
         
         
         
