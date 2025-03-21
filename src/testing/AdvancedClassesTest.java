@@ -29,6 +29,23 @@ public class AdvancedClassesTest
         // class object = call constructor method (default)   
         Person person = new Person();        
         
+        // The "Object" (in this case called "person" - lowercase "p") can also 
+        // be called a: instance, or even a "variable"
+        
+        // Call (invoke) one of our methods in this object ("instance") 
+        person.talk();
+        person.born();
+        
+        // We can also change (mutate) the properties of this object
+        person.name = "Per sony";
+        // person.age = 15; (we cannot change this encapsulated property)
+        person.gender = "male";
+        
+        // Recall our methods... (to see any changes)
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
         
         
         System.out.println("Completed learning Advanced Classes!");
