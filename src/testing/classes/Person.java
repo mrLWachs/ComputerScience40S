@@ -37,7 +37,16 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
-    public void born() {
+    
+    public Person() {
+        name   = "unidentifed";
+        age    = 0;
+        gender = "unidentifed";
+        alive  = true;
+    }
+    
+    
+    private void born() {
         name   = "unidentifed";
         age    = 0;
         gender = "unidentifed";

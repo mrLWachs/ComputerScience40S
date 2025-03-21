@@ -34,7 +34,8 @@ public class AdvancedClassesTest
         
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
-        person.born();
+        
+        //person.born();
         
         // We can also change (mutate) the properties of this object
         person.name = "Per sony";
