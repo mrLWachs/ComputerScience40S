@@ -38,7 +38,12 @@ public class AdvancedClassesTest
         
         // We can also change (mutate) the properties of this object
         person.name = "Per sony";
-        // person.age = 15; (we cannot change this encapsulated property)
+        
+        // If I try to change ("modify") a property ("variable") of the
+        // Person class that is set to be "private" I do NOT have
+        // access to that - for example:
+        // person.age = 15; // We cannot change this encapsulated property
+        
         person.gender = "male";
         
         // Recall our methods... (to see any changes)
