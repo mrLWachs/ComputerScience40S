@@ -2,6 +2,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /*
@@ -53,10 +54,24 @@ public class AdvancedClassesTest
         person.die();
         person.talk();
         
+        // Try our overloaded, second constructor option
+        // Instantiate (means create an "instance of") a person object
+        Person john = new Person("John Doe",17,"male");
+        john.talk();
         
-        
-        
-        
+        // Now we instantiated (created an object from the Student class) 
+        // creating a student object (or a student instance)
+        Student student = new Student();
+        student.talk();
+        // Because the "name" property (inherited from Person) is public (not
+        // encapsulated) we can change ("modify", "mutate") the property
+        // we cannot change gender because it is encapsulated (private)
+        student.name = "Stu Denty";
+        // We can also change some of the properties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.birthday();
+        student.talk();
         
         
         
