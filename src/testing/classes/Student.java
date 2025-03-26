@@ -26,7 +26,30 @@ public class Student extends Person
      */
     public Book book;
     
+    /**
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well)
+     */
+    public Student() {
+        super();
+        // The keyword "super" refers to the "super-class" or "parent" class
+        // in this case that is the Person class - by adding the round brackets
+        // we make a call to the super constructor          
+        number = 1;
+        gpa    = 0.0;
+        // The "Book" class we associate with here is instantiated into a
+        // book object
+        book = new Book();
+    }
     
+    
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        gpa += 0.3;
+    }
 
     
 
