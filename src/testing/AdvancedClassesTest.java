@@ -1,6 +1,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required imports */
 import testing.classes.Person;
 import testing.classes.Student;
 
@@ -35,45 +36,54 @@ public class AdvancedClassesTest
         
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
-        
-        //person.born();
-        
+                
         // We can also change (mutate) the properties of this object
         person.name = "Per sony";
+        person.gender = "male";
         
         // If I try to change ("modify") a property ("variable") of the
         // Person class that is set to be "private" I do NOT have
         // access to that - for example:
+        
         // person.age = 15; // We cannot change this encapsulated property
+                
+        // person.born();
         
-        person.gender = "male";
+        // This method was later made "private" as well so the method can no
+        // longer be called by this class outside the "Person" class (it is
+        // now a private, encapsulated, helper, utility method)
         
-        // Recall our methods... (to see any changes)
+        // Recall our methods... (to see the changes to the properties)
         person.birthday();
         person.talk();
         person.die();
         person.talk();
         
-        // Try our overloaded, second constructor option
-        // Instantiate (means create an "instance of") a person object
+        // Try our overloaded, second constructor option to instantiate (which 
+        // means to create an "instance of") another Person object
         Person john = new Person("John Doe",17,"male");
         john.talk();
         
-        // Now we instantiated (created an object from the Student class) 
-        // creating a student object (or a student instance)
+        // Now we instantiate (create an object from the Student class) 
+        // a Student object (or a Student instance) that inherts from the 
+        // Person class
         Student student = new Student();
         student.talk();
+        
         // Because the "name" property (inherited from Person) is public (not
         // encapsulated) we can change ("modify", "mutate") the property
         // we cannot change gender because it is encapsulated (private)
         student.name = "Stu Denty";
+        
         // We can also change some of the properties just for student (even
         // though they are encapsulated) by going through the methods that 
         // change them
         student.birthday();
         student.talk();
         
-        
+        // Create another student... (simple language)
+        Student stewie = new Student("Stewie Griffin", 1, "baby", 13);
+        stewie.talk();
         
         
         
