@@ -85,6 +85,4 @@ public class Student extends Person
         System.out.println("\t GPA:    \t" + gpa);
     }
     
-    
-
 }
