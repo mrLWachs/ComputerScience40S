@@ -84,7 +84,16 @@ public class AdvancedClassesTest
         // Create another student... (simple language)
         Student stewie = new Student("Stewie Griffin", 1, "baby", 13);
         stewie.talk();
-        
+        stewie.study();
+        stewie.talk();
+        stewie.cram();
+        stewie.talk();
+        stewie.slackOff();
+        stewie.talk();
+        // stewie.secret();   // you cannot call encapsulated methods!
+        // We can still call inherited methods...
+        stewie.die();
+        stewie.talk();
         
         
         
