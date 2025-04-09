@@ -4,6 +4,7 @@ package testing;
 /** Required imports */
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -90,10 +91,22 @@ public class AdvancedClassesTest
         stewie.talk();
         stewie.slackOff();
         stewie.talk();
-        // stewie.secret();   // you cannot call encapsulated methods!
-        // We can still call inherited methods...
+        
+        // You cannot call encapsulated (private) methods!
+        // stewie.secret();   
+        
+        // But, we can still call inherited methods...
         stewie.die();
         stewie.talk();
+        
+        
+        Teacher t1;
+        Teacher t2;
+        Teacher t3;
+        
+        
+        
+        
         
         
         

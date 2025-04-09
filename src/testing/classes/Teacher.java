@@ -28,6 +28,17 @@ public class Teacher extends Person
      */
     public Student[] students;
     
+    private int count;                     // How many students this teacher has
+    private final int MAX;                 // Constant for the maximum students
     
+    
+    
+    public Teacher() {
+        
+        
+        
+        MAX   = 100;                        // Set the constant to be locked
+        count = 0;                          // Set a variable to start
+    }
 
 }
