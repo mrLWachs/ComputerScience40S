@@ -65,8 +65,16 @@ public class Teacher extends Person
      * 
      * @param student the student object to add
      */
-    public void add(Student student) {
-        
+    public void add(Student student) {        
+        // Add the passed student (parameter) into the array at the first 
+        // available "slot" (or spot, index, element, location) - this is
+        // done by using the square brackets "[ ]" and placing the index 
+        // number in the brackets. Remember, arrays start the indexing at 
+        // zero and the last index is always one less than the size 
+        students[count] = student;  // Parameter is assigned to property
+        count++;                    // Move to the next index (for next time)
+        // We have to watch for "out of bounds" error (exception)
+        if (count >= MAX) count = 0;    
     }
     
     /**
