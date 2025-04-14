@@ -58,5 +58,23 @@ public class Teacher extends Person
         // but arrays of class level data (like this array of "Student" objects)
         // are initialized to "null" values         
     }
+    
+    /**
+     * Adds a new Student object (instance) to this Teacher object's array of 
+     * Student objects
+     * 
+     * @param student the student object to add
+     */
+    public void add(Student student) {
+        
+    }
+    
+    /**
+     * Teaches all the students this teacher has an association with by making
+     * them study (and makes all the students "smarter")
+     */
+    public void teach() {
+        
+    }
 
 }

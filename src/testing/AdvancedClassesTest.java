@@ -99,13 +99,15 @@ public class AdvancedClassesTest
         stewie.die();
         stewie.talk();
         
-        
-        Teacher t1;
-        Teacher t2;
-        Teacher t3;
-        
-        
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.talk();                 // Invoke (call) the inherited method
+        teacher.add(student);           // Associate object through method
+        teacher.add(stewie);            // or "Teacher has a Student"
+        teacher.teach();                // Call again (to see any changes)
+        teacher.birthday();             // Effect the associated objects
+        teacher.die();                  // See any more "effects" from 
+        teacher.talk();                 // calling these methods...  
         
         
         
