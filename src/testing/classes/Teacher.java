@@ -36,9 +36,12 @@ public class Teacher extends Person
     public Teacher() {
         
         
-        
-        MAX   = 100;                        // Set the constant to be locked
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
         count = 0;                          // Set a variable to start
+        MAX   = 100;                        // Set the constant to be locked
+        
+        
     }
 
 }
