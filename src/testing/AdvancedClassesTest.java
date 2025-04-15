@@ -109,7 +109,7 @@ public class AdvancedClassesTest
         teacher.die();                  // See any more "effects" from 
         teacher.talk();                 // calling these methods...  
         
-        
+        teacher.teach();
         
         
         
