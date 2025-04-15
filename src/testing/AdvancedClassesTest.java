@@ -108,8 +108,26 @@ public class AdvancedClassesTest
         teacher.birthday();             // Effect the associated objects
         teacher.die();                  // See any more "effects" from 
         teacher.talk();                 // calling these methods...  
-        
+        // See if the teacher object effected its associated class objects
+        // those being the two student objects...
         teacher.teach();
+        
+        // The Object class - this class already exists (we don't write it)
+        // it is part of Java, all Java project "have it". Also, the
+        // Object class is the parent (super) class of ALL classes
+        
+        Object object1 = new Object();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
