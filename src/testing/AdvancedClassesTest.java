@@ -117,7 +117,22 @@ public class AdvancedClassesTest
         // Object class is the parent (super) class of ALL classes
         
         Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = object2;
         
+        // All classes (including ones we create) inherit from the object class
+        // which is the parent (super) class of all classes  
+        
+        // Built into the object class are a number of methods that all other
+        // classes inherit. These include some that are not relevant in this 
+        // unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
+        
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory 
         
         
         
