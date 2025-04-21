@@ -111,4 +111,14 @@ public class Student extends Person
         System.out.println("\t GPA:    \t" + gpa);
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override    
+    public String toString() {
+        return "Over-ride Student from: " + super.toString();
+    }
+    
 }

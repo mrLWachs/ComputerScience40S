@@ -114,4 +114,14 @@ public class Person
         }
     }
     
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Over-ride Person from: " + super.toString();
+    }
+    
 }
