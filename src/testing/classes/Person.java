@@ -124,4 +124,8 @@ public class Person
         return "Over-ride Person from: " + super.toString();
     }
     
+    public boolean equals(Object object) {
+        return true;
+    }
+    
 }

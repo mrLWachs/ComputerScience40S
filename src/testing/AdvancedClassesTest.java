@@ -158,6 +158,39 @@ public class AdvancedClassesTest
         // over-ride version of "toString" method is called instead. We can 
         // over-ride the toString method on all our classes (Student, Teacher).
         
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)  
+                
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three
+        Person person1 = new Person();  // Creating a "new" memory address
+        Person person2 = person1;       // Same memory address as person1
+        Person person3 = person2;       // Same memory address as person1 and 2
+        
+        if (person1.equals(person2)) System.out.println("P1==P2");
+        if (person2.equals(person3)) System.out.println("P2==P3");
+        if (person1.equals(person3)) System.out.println("P1==P3");
+        
+        // Using our previously created Person objects with equals
+        if (person.equals(john)) System.out.println("person==john");
+        
+        // This also applies to the "String" class which obviously over-rides
+        // the "equals" method to compare the string lexographically...
+        String s1 = "cat";
+        String s2 = "cat";
+        if (s1.equals(s2)) System.out.println("S1==S2");
+        
+        
+        
+        
+        
+        
         
         
         
