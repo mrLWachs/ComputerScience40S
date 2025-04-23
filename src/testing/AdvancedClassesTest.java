@@ -190,7 +190,12 @@ public class AdvancedClassesTest
         // and Teacher classes to customize the "equality" of comparing 
         // those objects...
         
-        
+        Student student1 = new Student();
+        Student student2 = new Student();
+        Teacher teacher1 = new Teacher("teacher");
+        Teacher teacher2 = new Teacher("teacher");        
+        if (student1.equals(student2)) System.out.println("Students are equal!");
+        if (teacher1.equals(teacher2)) System.out.println("Teachers are equal!");
         
         
         

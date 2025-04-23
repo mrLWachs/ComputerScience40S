@@ -105,5 +105,22 @@ public class Teacher extends Person
         return "Teacher Over-riding from: " + super.toString();
     }
     
+    /**
+     * "Deeper" equals comparison, determines if two objects are "equal" in 
+     * this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // (1) cast into a Teacher object
+        Teacher that = (Teacher)object;
+        // (2) compare the properties we decide are important
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;
+        // (3) return equal (true) if passes the tests above
+        return true;
+    }
 
 }
