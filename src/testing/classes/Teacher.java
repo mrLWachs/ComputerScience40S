@@ -102,7 +102,7 @@ public class Teacher extends Person
      */
     @Override
     public String toString() {
-        return "Over-ride Teacher from: " + super.toString();
+        return "Teacher Over-riding from: " + super.toString();
     }
     
 

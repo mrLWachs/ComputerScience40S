@@ -118,7 +118,7 @@ public class Student extends Person
      */
     @Override    
     public String toString() {
-        return "Over-ride Student from: " + super.toString();
+        return "Student Over-riding from: " + super.toString();
     }
     
 }

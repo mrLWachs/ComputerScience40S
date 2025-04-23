@@ -186,6 +186,18 @@ public class AdvancedClassesTest
         String s2 = "cat";
         if (s1.equals(s2)) System.out.println("S1==S2");
         
+        // Now we can over-ride the "equals" method in the Person, Student,
+        // and Teacher classes to customize the "equality" of comparing 
+        // those objects...
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
