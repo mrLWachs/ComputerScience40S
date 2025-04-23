@@ -197,10 +197,16 @@ public class AdvancedClassesTest
         if (student1.equals(student2)) System.out.println("Students are equal!");
         if (teacher1.equals(teacher2)) System.out.println("Teachers are equal!");
         
+        // Now we will also over-ride the "clone" method in the 3 classes...
         
         
         
         
+        // Have over-ridden the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this).
         
         
         
