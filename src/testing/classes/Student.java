@@ -153,4 +153,17 @@ public class Student extends Person
         return true;        
     }
     
+    /**
+     * Deeper clone, create a duplicate object as "this" object using "new" 
+     * memory
+     * 
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public Student clone() {
+        // Created a new Student object using new memory
+        Student that = new Student();        
+        return that;
+    }
+    
 }

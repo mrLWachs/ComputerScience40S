@@ -199,6 +199,11 @@ public class AdvancedClassesTest
         
         // Now we will also over-ride the "clone" method in the 3 classes...
         
+        // Object clone1 = object1.clone();
+        // We cannot call the "clone" method directly from the "Object" class
+        
+        Person  clone2 = person1.clone();
+        Student clone3 = student1.clone();
         
         
         
