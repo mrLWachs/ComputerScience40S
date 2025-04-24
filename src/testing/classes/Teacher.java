@@ -133,7 +133,9 @@ public class Teacher extends Person
     public Teacher clone() {
         // Created a new Student object using new memory
         Teacher that = new Teacher(this.name);     
-        // Start copying over the properties...
+        // Start copying over the properties (from the "super" class "Person")
+        // that I want to (as I am in charge of what to clone) and am able to
+        // (as some of the properties are "private" or "encapsulated")
         that.gender = this.gender;
         // For the "students" array property, we will loop through the array 
         // and clone all the students
