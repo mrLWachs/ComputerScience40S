@@ -204,9 +204,15 @@ public class AdvancedClassesTest
         
         Person  clone2 = person1.clone();
         Student clone3 = student1.clone();
-        
-        
-        
+        Teacher clone4 = teacher1.clone();
+                
+        System.out.println("person1 : " + person1.toString());
+        System.out.println("clone of: " + clone2.toString());
+        System.out.println("student1: " + student1.toString());
+        System.out.println("clone of: " + clone3.toString());
+        System.out.println("teacher1: " + teacher1.toString());
+        System.out.println("clone of: " + clone4.toString());
+
         // Have over-ridden the toString() and equals() methods in the
         // person class so that we can check how that method is called over the 
         // object version of those methods. It is useful to alter a NetBeans
