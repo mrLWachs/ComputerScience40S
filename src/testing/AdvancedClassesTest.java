@@ -252,6 +252,28 @@ public class AdvancedClassesTest
         Student.endTheWorld();
         Teacher.endTheWorld();
         
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
+        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        // The "protected" modifier means this property of the Person class
+        // cannot be accessed from this class because this class is not 
+        // related to this class through inheritance (it is only related
+        // through association)
+        
+        // person.alive = false;
+        
+        
+        
+        
+        
+        
         
         
         
