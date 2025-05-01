@@ -270,17 +270,18 @@ public class AdvancedClassesTest
         // person.alive = false;
         
         // Calling an accessor (or getter) method on this object of the Person
-        // class (which is a private, encapsulated property)
+        // class (which is a private, encapsulated property)    
+        System.out.println("Gender = " + person.getGender());
         
-        String gender = person.getGender();
-        System.out.println("Gender = " + gender);
-        
-        // Calling a mutator (or setter) method on this object which is a
-        // protected property
-        
+        // Calling a mutator (or setter) method on this object's porperty
+        // (which is a protected property)        
         person.setAlive(false);
-        boolean alive = person.getAlive();
-        System.out.println("Alive = " + alive);
+        System.out.println("Alive = " + person.getAlive());
+        
+        
+        
+        
+        
         
         
         
