@@ -191,4 +191,18 @@ public class Person
         return alive;
     }
     
+    /**
+     * Mutator method (or "setters") that 'changes' the encapsulated (protected)
+     * property of this person (which is a protected property of this class 
+     * which cannot be changed outside the class). Often programmers write error 
+     * checking code into mutator methods so the property cannot just be "set"
+     * to anything - but is error checked first
+     * 
+     * @param alive the new alive state to set (mutate) the property into
+     */
+    public void setAlive(boolean alive) {
+        // A programmer could potentially write error checking code here..
+        this.alive = alive;
+    }
+    
 }
