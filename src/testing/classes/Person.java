@@ -151,4 +151,13 @@ public class Person
         // This is a useless, and very shallow clone
     }
     
+    /**
+     * A "static" method means the method is "shared" by all objects of the 
+     * class - it can also be called from the class itself, you can use the 
+     * class name then a dot to call static methods
+     */
+    public static void endTheWorld() {
+        System.out.println("Boom!!!!");
+    }
+    
 }

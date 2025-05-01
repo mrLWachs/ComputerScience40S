@@ -219,15 +219,38 @@ public class AdvancedClassesTest
         // template so those methods are always over-ridden in every new class 
         // created (see the comment in "ComputerScience40S.java" to do this).
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
         
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable  
+        System.out.println("Student total = " + student.total);
+        System.out.println("Student total = " + clone3.total);
         
+        // We create (instantiate) 2 more Student objects...
+        Student s4 = new Student();
+        Student s5 = new Student("5", 5, "5", 5);
+        System.out.println("Student total = " + s5.total);
         
+        // Use static variables/properties carefully, you can still modify 
+        // them and may have unexpected results
+        stewie.total = 10;
+        System.out.println("Student total = " + student.total);
         
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
-        
-        
-        
-        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
         
         
         
