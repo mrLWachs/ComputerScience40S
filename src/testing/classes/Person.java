@@ -167,4 +167,28 @@ public class Person
         System.out.println("Boom!!!!");
     }
     
+    /**
+     * Accessor method (or "getter" method) that give you (or "reads") the 
+     * gender of this person object (which is a private property of this class 
+     * which normally cannot be read outside the class). Sometimes you write a 
+     * accessor method so user outside the class can "read only" that property
+     * without the ability to change that property
+     * 
+     * @return the person's gender (to "see" or "access" it)
+     */
+    public String getGender() {
+        return gender;
+    }
+    
+    /**
+     * Another accessor method. Sometimes, we also write a "mutator" method to
+     * go with the accessor method. Sometimes we write a mutator without a  
+     * accessor.
+     * 
+     * @return the person's alive state
+     */
+    public boolean getAlive() {
+        return alive;
+    }
+    
 }

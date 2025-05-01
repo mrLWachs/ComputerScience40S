@@ -270,6 +270,7 @@ public class AdvancedClassesTest
         // person.alive = false;
         
         
+        String gender = person.getGender();
         
         
         
