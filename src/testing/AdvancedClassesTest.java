@@ -2,7 +2,13 @@
 package testing;
 
 /** Required imports */
+import testing.classes.Athlete;
+import testing.classes.DiskJockey;
+import testing.classes.Doctor;
+import testing.classes.Husky;
+import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -278,10 +284,24 @@ public class AdvancedClassesTest
         person.setAlive(false);
         System.out.println("Alive = " + person.getAlive());
         
+        // Instatiate (make an "instance" aka "object") of the classes...
         
+        Doctor     doctor  = new Doctor();
+        DiskJockey dj      = new DiskJockey();
+        MrWachs    mrWachs = new MrWachs();
+        Husky      husky   = new Husky();
+        Piper      piper   = new Piper();
+        Athlete    athlete = new Athlete();
+        // Intentially leaving out "HighSchool"
         
-        
-        
+        // Output these new objects, the "toString()" method is automatically 
+        // called by System.out.println() so we can just pass the object itself
+        System.out.println(doctor);
+        System.out.println(dj);
+        System.out.println(mrWachs);
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(athlete);
         
         
         

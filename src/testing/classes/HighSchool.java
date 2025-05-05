@@ -4,7 +4,7 @@ package testing.classes;
 /**
  * HighSchool.java - description
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 2, 2025, 10:08:46 a.m.
  */
 public class HighSchool extends Student
