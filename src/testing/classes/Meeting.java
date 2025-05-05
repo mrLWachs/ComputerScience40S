@@ -41,14 +41,43 @@ public class Meeting
      * @param person a Person object to attend the meeting
      */
     public void attend(Person person) {
+        // Assign (put, place) the person object (instance of the Person class)
+        // passed into this method's parameter into the first empty (unassigned)
+        // index (spot, element, location, subscript) of the array property
+        // of the Meeting class (global variable)        
+        members[count] = person;
         
+        // Now advance the count
+        count++;
+                
+        // Potential out of bounds ("range") error with count, we fix with
+        if (count >= MAX) {
+            // Potentially we could make the array bigger (resize, 
+            // re-dimension) - however, whenever you do this it wipes out
+            // (recreates, re-dimensions) all array content. So let's just
+            // reassign the count
+            count = 0;
+        }
     }
     
     /**
      * Hold the meeting for all members
      */
     public void hold() {
+        // Make a variable to hold a bunch of potential output data
+        String message = "Meeting is about to begin...\n";
         
+        // Now we loop through the entire array ("traverse" means to travel to 
+        // or visit every spot) from start (index zero) to the finish (index of 
+        // the length minus one) - using a NEW type of loop (a new "for" loop)
+        // called the "enhanced for loop". To create the enhanced for loop 
+        // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
+        // option that appears from the top, or type "fore" and TAB 
+        
+        
+        // Finally output that message
+        message += "\nMeeting is complete!";
+        System.out.println(message);
     }
      
 }
