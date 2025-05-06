@@ -73,6 +73,12 @@ public class Meeting
         // called the "enhanced for loop". To create the enhanced for loop 
         // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
         // option that appears from the top, or type "fore" and TAB 
+        
+        // Another example of an enhanced for loop...
+        // String dogs[] = { "golden", "lab", "poodle", "shitzu" };
+        // for (String dog : dogs) {
+            //// "for every dog in dogs"
+        // }
                 
         for (Person member : members) {
             // The enhanced for loop should be read as:
@@ -83,15 +89,10 @@ public class Meeting
             // in order...
             
             
+            
+            
+            
         }
-        
-        // Another example of an enhanced for loop...
-        /// String dogs[] = { "golden", "lab", "poodle", "shitzu" };
-        // for (String dog : dogs) {
-            // "for every dog in dogs"
-        // }
-        
-
         
         // Finally output that message
         message += "\nMeeting is complete!";
