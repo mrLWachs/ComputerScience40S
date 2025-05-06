@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * Husky.java - description
+ * Husky.java - represents a Husky HighSchool Student Person 
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 2, 2025, 10:08:52 a.m.
  */
 public class Husky extends HighSchool

@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * Piper.java - description
+ * Piper.java - represents a Piper HighSchool Student Person 
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 2, 2025, 10:09:14 a.m.
  */
 public class Piper extends HighSchool

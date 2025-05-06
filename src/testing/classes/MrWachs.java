@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * MrWachs.java - description
+ * MrWachs.java - represents a MrWachs Teacher Person 
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 2, 2025, 10:09:20 a.m.
  */
 public class MrWachs extends Teacher
