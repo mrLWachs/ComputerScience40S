@@ -79,7 +79,12 @@ public class Meeting
         // for (String dog : dogs) {
             //// "for every dog in dogs"
         // }
-                
+        
+        // For comparison, a regular for loop would be code like this:
+        // for (int i = 0; i < members.length; i++) {
+        //    Person member = members[i];
+        // }  
+        
         for (Person member : members) {
             // The enhanced for loop should be read as:
             // "for every member in members"
@@ -88,11 +93,14 @@ public class Meeting
             // changing "person" each time through the loop to the next element
             // in order...
             
-            
-            
-            
-            
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null")  
+            if (member != null) {
+                message += "\n" + "\t" + member.toString();
+            }     
         }
+        
+        
         
         // Finally output that message
         message += "\nMeeting is complete!";
