@@ -5,6 +5,7 @@ package testing;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
+import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
@@ -337,8 +338,8 @@ public class AdvancedClassesTest
         // Need to "hold a meeting" of all members        
         meeting.hold();
         
-        
-        
+        // Abstract classes can NOT ever be instantiated, for example:
+        // HighSchool highSchool = new HighSchool();
         
         
         
