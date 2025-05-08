@@ -16,19 +16,27 @@ package testing.classes;
 public abstract class Food 
 {
 
+    /**
+     * Agreed upon food groups: (0) Grains, (1) Dairy, (2) Protein, 
+     * (3) Fruits and Vegetables, (4) Other - "shared" constant array
+     */
     final String GROUPS[] = {
-        "grains",
-        "dairy",
-        "protein",
-        "fruits and vegatables",
-        "other"
+        "Grains",
+        "Dairy",
+        "Protein",
+        "Fruits and Vegatables",
+        "Other"
     };
     
-    int group;
     
     boolean eatable;
     
+    
+    int group;
+    
+    
     String flavour;
+    
     
     
 }
