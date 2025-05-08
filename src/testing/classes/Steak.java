@@ -14,7 +14,7 @@ public class Steak extends Food
      * Default constructor, set class properties
      */
     public Steak() {
-        super(3);                   // Call super-constructor, passing the group
+        super(2);                   // Call super-constructor, passing the group
         super.flavour = "Savory";   // Modifying our protected property
     }
 
