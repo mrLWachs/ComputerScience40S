@@ -20,7 +20,7 @@ public abstract class Food
      * Agreed upon food groups: (0) Grains, (1) Dairy, (2) Protein, 
      * (3) Fruits and Vegetables, (4) Other - "shared" constant array
      */
-    final String GROUPS[] = {
+    public static final String GROUPS[] = {
         "Grains",
         "Dairy",
         "Protein",
@@ -28,14 +28,19 @@ public abstract class Food
         "Other"
     };
     
+    /**
+     * Whether or not this 'food' item should be eaten
+     */
+    public boolean eatable;
     
-    boolean eatable;
+    // Encapsulated property, which food group the 'food' item is part of
+    private int group;
     
-    
-    int group;
-    
-    
-    String flavour;
+    /**
+     * Available to this class and all children of this class, the flavour
+     * quality of the food
+     */ 
+    protected String flavour;
     
     
     
