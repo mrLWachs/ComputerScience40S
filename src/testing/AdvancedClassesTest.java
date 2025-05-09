@@ -6,8 +6,6 @@ import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
-import testing.classes.Food;
-import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
@@ -360,7 +358,14 @@ public class AdvancedClassesTest
         mrWachs.consume(steak);
         mrWachs.consume(apple);
         
-        
+        // An Interface can be thought of "as a set of rules" - like a class
+        // but only contains method signatures (like abstract methods - but
+        // you don't have to use the word 'abstract' inside interfaces).
+        // Interfaces cannot be instantiated (made into objects like
+        // Sports sports = new Sports(); like abstract classes). Like an
+        // abstract class, interfaces are used by 'child' like classes that
+        // 'implement' the interface (these classes "follow the rules" of
+        // the interface ("the set of rules").
         
         
         
