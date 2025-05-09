@@ -12,8 +12,8 @@ package testing.classes;
  * create an instance of some class that 'implements' the interface. This 
  * means the other class "follows the rules" of that interface.
  *
- * @author YOUR NAME
- * @since May 7, 2024
+ * @author Mr. Wachs
+ * @since May 9, 2025, 10:05:59 a.m.
  */
 public interface Sports 
 {
