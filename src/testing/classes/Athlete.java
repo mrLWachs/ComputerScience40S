@@ -189,7 +189,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      */
     @Override
     public void violenceLevel(String level) {
-        System.out.println("Cheese rollers, you may " + level);
+        System.out.println("Cheese rollers, you are " + level);
         champion = WE_WON;
     }
     
