@@ -2,8 +2,10 @@
 package testing;
 
 /** Required imports */
+import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
+import testing.classes.Box;
 import testing.classes.DiskJockey;
 import testing.classes.Doctor;
 import testing.classes.Husky;
@@ -423,8 +425,61 @@ public class AdvancedClassesTest
         output(character);
         output(string1);
         output(athlete);        // Even objects of classes we created
+         
+        // Test the generic method on another "complex" object (that we don't
+        // create)...
+        JOptionPane joptionpane = new JOptionPane();
+        output(joptionpane);
+        
+        // This line uses "annonymous" object..
+        output(new Object());
         
         
+        // Generic class objects are not normally created this way...
+        // Box box1 = new Box(bool);
+        // Instead...
+                
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.
+        
+        Box<Boolean>   box1 = new Box<>(bool);
+        Box<Integer>   box2 = new Box<>(integer);
+        Box<Double>    box3 = new Box<>(doub);
+        Box<Character> box4 = new Box<>(character);
+        Box<String>    box5 = new Box<>(string1);
+        Box<Athlete>   box6 = new Box<>(athlete);
+        
+        // Peek in all the boxes..  
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
+        
+        // Open all the boxes...        
+        Boolean   newBoolean   = box1.open();
+        Integer   newInteger   = box2.open();
+        Double    newDouble    = box3.open();
+        Character newCharacter = box4.open();
+        String    newString    = box5.open();
+        Athlete   newAthlete   = box6.open();
+        
+        // Output all the newly returned data type objects...
+        output(newBoolean);
+        output(newInteger);
+        output(newDouble);
+        output(newCharacter);
+        output(newString);
+        output(newAthlete);
         
         
         
