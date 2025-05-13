@@ -13,7 +13,7 @@ package testing.classes;
  * @author Mr. Wachs
  * @since May 12, 2025
  */
-public class House <T, U>
+public class House <T extends Person, U>
 {
     
     /**
@@ -38,8 +38,15 @@ public class House <T, U>
      * @param items the array of generic items that are restricted to Food
      * objects or children of the Food class
      */
-    public <V> void party(V[] items) {
-        
+    public <V extends Food> void party(V[] items) {
+        System.out.print("Home owner: ");
+        System.out.print(homeOwner.name);
+        System.out.print(" and the contents of the house are: ");
+        System.out.println(contents.toString());
+        // Enhanced for loop ("For every item in items")
+        for (V item : items) {
+            homeOwner.consume(item);
+        }        
     }
     
 }
