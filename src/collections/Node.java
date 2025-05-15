@@ -87,18 +87,7 @@ public class Node <T>
         this.next = next;
         this.previous = previous;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+       
     /**
      * String representation of this object
      *
@@ -106,9 +95,33 @@ public class Node <T>
      */
     @Override
     public String toString() {
-        return "Node: " + super.toString();
+        String text = "data: ";
+        
+        // Display the data stored in the node (or null)
+        if (data == null)   text += "null";
+        else                text += data.toString();
+        
+        // Display the connection ("link") to the next node
+        text += "\t next: ";
+        if (next == null)   text += "null";
+        else                text += next.data.toString();
+        
+        // Display the connection ("link") to the previous node
+        text += "\t previous: ";
+        if (previous == null)   text += "null";
+        else                    text += previous.data.toString();
+        
+        // Add the memory address (from the Object super-class)        
+        String value = super.toString();            // Get memory address
+        int    begin = value.indexOf("@") + 1;      // Find where it begins
+        int    end   = value.length();              // Length of string
+        value = value.subSequence(begin, end).toString();   // Get sub-string
+        text += "\t Address: " + value;             // Add to text
+        
+        // Return all the text compiled
+        return text;
     }
-   
+       
     /**
      * Deep comparison, determines if two objects are "equal" in this context
      *
@@ -117,7 +130,23 @@ public class Node <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        // Error check first for nulls appearing whcih could cause crashes
+        if (this.data == null) return false;    // Data inside this object
+        if (object    == null) return false;    // Parameter sent to this method
+        // Convert (cast) the object parameter into a "Node" object
+        Node that = (Node)object;
+        if (that.data == null) return false;    // Data inside the parameter
+        // Now compare both data properties
+        return this.data.equals(that.data);
+        // Same kind of code as...
+//        T dataFromThisClass = (T)this.data;
+//        T dataFromParameter = (T)that.data;        
+//        if (dataFromThisClass.equals(dataFromParameter)) {
+//            return true;
+//        }
+//        else {
+//            return false;
+//        }
     }
        
     /**
@@ -127,7 +156,28 @@ public class Node <T>
      */
     @Override
     public Node clone() {
-        return this;
+        // Annoynmous clone object created and returned
+        return new Node(this.data, this.next, this.previous);
+    }
+    
+    /**
+     * Frees up all memory used by this object, and it is called when this 
+     * object is "deleted" or "removed" or "destroyed"
+     */
+    @Override
+    public void finalize() {
+        data = null;
+        next = previous = null;     // Simplified line of code
+        System.gc();
+        // The 'garbage collector' is how Java manages memory. References to 
+        // 'memory' locations (e.g. variables, objects, etc.) that do not 
+        // contain actual data (for example a null) can be considered 'garbage'
+        // wastes of memory and should be 'cleaned up'. This means the memory 
+        // can be 'freed up' so other parts of the program could use that 
+        // memory and the memory isn't wasted. Java does do this automatically
+        // (like C# it has "automatic garbage collection") when it 'finds the 
+        // time' in the execution cycle, but you can make Java do it 
+        // explicitly by running the line above.
     }
     
 }
