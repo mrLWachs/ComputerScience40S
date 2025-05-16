@@ -15,13 +15,14 @@ public class Tester
      * Default constructor, sets class properties
      */
     public Tester() {
-        System.out.println("Start testing...");
+//        System.out.println("Start testing...");
         
-        RecursionTest unit1 = new RecursionTest();
+//        RecursionTest unit1 = new RecursionTest();
         // Later we will add code here for unit 2 and 3...
-        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+//        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        CollectionsTest     unit3 = new CollectionsTest();
         
-        System.out.println("Completed testing!");
+//        System.out.println("Completed testing!");
     }
     
     
