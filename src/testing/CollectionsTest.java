@@ -30,7 +30,7 @@ public class CollectionsTest
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("Pros");
         Node<String> c = new Node<>("Joes", b);
-        Node<String> d = new Node<>("cat", c, b);
+        Node<String> d = new Node<>("Huskies", c, b);
         
         // Output our nodes...
         System.out.println("\nTesting Node toString()......................\n");
