@@ -26,7 +26,7 @@ package collections;
  * @param <T> The generic data type used in the class
  * @since May 2025
  */
-public class LinkedList 
+public class LinkedList <T>
 {
     
     /** Reference (link) to the first (front) node in the list (entry point) */
