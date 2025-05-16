@@ -28,7 +28,7 @@ package collections;
  */
 public class LinkedList <T>
 {
-    
+     
     /** Reference (link) to the first (front) node in the list (entry point) */
     private Node head;
     
