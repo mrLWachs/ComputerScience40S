@@ -1,8 +1,12 @@
 /** Required package class namespace */
 package testing;
  
+/** Required API imports */
+import collections.Node;
+
+
 /**
- * CollectionsTest.java - description
+ * CollectionsTest.java - tests the concepts learned in this unit.
  *
  * @author YOUR NAME
  * @since May 15, 2025, 10:11:48 a.m.
@@ -14,38 +18,16 @@ public class CollectionsTest
      * Default constructor, set class properties
      */
     public CollectionsTest() {
+        System.out.println("\nCollections testing begins...\n");
+        
+        // Create some node objects...
+        System.out.println("\nTesting Node constructors....................\n");
+        Node<String> a = new Node<>();
+        Node<String> b = new Node<>("Pros");
+        Node<String> c = new Node<>("Joes", b);
+        Node<String> d = new Node<>("Huskies", c, b);
+        
         
     }
      
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "CollectionsTest: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public CollectionsTest clone() {
-        return this;
-    }
-    
 }
