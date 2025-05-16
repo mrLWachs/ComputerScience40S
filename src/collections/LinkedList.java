@@ -42,22 +42,74 @@ public class LinkedList <T>
     private int length;
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /**
      * Default constructor, set class properties
      */
     public LinkedList() {
-        
+        finalize();
     }
      
+    /**
+     * Frees up all memory used by this object (Note: when you add the "final"
+     * modifier keyword to the method signature, it make it so that this method
+     * can NOT ever be overloaded)
+     */
+    @Override
+    public final void finalize() {
+        length = 0;                 // The length is set to zero
+        head = tail = null;         // References set to nulls
+        System.gc();                // Runs the garbage collector in Java
+    }
+    
+    /**
+     * Accessor method for the number of nodes in the list (the length is a 
+     * immutable encapsulated property of the class) - no mutator method will
+     * be written (so 'length' remains a read-only property from outside the 
+     * class)
+     * 
+     * @return the number of nodes in the list
+     */
+    public int size() {
+        return length;
+    }
+    
+    /**
+     * Determines if the list is empty (no nodes) or not
+     * 
+     * @return it is empty (true) or it does contain some data (false)
+     */
+    public boolean isEmpty() {   
+        // Could have written this method as...
+        // if (length == 0) {
+        //     return true;
+        // }
+        // else {
+        //     return false;
+        // }
+
+        // or...
+        // if (length == 0) 
+        //     return true;
+        // else 
+        //     return false;
+
+        // or...
+        // if (length == 0) return true;
+        // else             return false;
+        
+        // or ...
+        // if (length == 0) return true;
+        // return false;
+        
+        // Finally we write (with NetBeans lightbuld suggestions)...        
+        return length == 0;        
+    }
+    
+    
+    
+    
+    
+    
     /**
      * String representation of this object
      *
