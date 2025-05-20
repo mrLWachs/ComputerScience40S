@@ -158,19 +158,7 @@ public class LinkedList <T>
         }
         return current;                                 // Return reference
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
     /**
      * String representation of this object
      *
@@ -178,7 +166,16 @@ public class LinkedList <T>
      */
     @Override
     public String toString() {
-        return "LinkedList: " + super.toString();
+        if (isEmpty()) return "Empty LinkedList";       // No nodes to display
+        String text = "LinkedList [";                   // String to build up
+        // Start a reference (link) at the first (head) node (entry point)
+        Node current = head;                            // Start at head node
+        while (current.next != null) {          // Traverse (travel) the list
+            // Appending the node data to the string and a seperator comma
+            text += current.data.toString() + ",";   
+            current = current.next;                     // Move to next node
+        }
+        return text + current.data.toString() + "]";    // Send back the string 
     }
    
     /**
@@ -189,8 +186,30 @@ public class LinkedList <T>
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        LinkedList<T> that = (LinkedList<T>)object;     // Cast object parameter        
+        if (this.size() != that.size()) return false;   // Not the same sizes
+        Node current1 = this.getFirstNode();            // Get reference to
+        Node current2 = that.getFirstNode();            // Nodes in each list  
+        while (current1 != null) {                      // Traverse lists
+            if (!current1.equals(current2)) {           // Not equal data 
+                return false;                           // Not equal lists
+            } 
+            current1 = current1.next;                   // Move each reference
+            current2 = current2.next;                   // to next node
+        }
+        return true;                                    // Lists are equal
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
        
     /**
      * a Deep clone, creates a duplicate object using new memory
