@@ -9,7 +9,7 @@ import collections.LinkedList;
 /**
  * CollectionsTest.java - tests the concepts learned in this unit.
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 15, 2025, 10:11:48 a.m.
  */
 public class CollectionsTest 

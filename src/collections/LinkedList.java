@@ -105,6 +105,32 @@ public class LinkedList <T>
         return length == 0;        
     }
     
+    /**
+     * A private (encapsulated or "help") method to error check to see if the
+     * index is in range (or "in bounds") of the list
+     * 
+     * @param index the location (element, subscript) to check
+     * @return it is in range (true) or not (false)
+     */
+    private boolean inRange(int index) {
+        if (isEmpty())       return false;  // Empty list no valid index
+        if (index < 0)       return false;  // index before first valid number
+        if (index >= length) return false;  // index after last valid number
+        return true;                        // index valid
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
