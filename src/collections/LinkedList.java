@@ -175,7 +175,7 @@ public class LinkedList <T>
             text += current.data.toString() + ",";   
             current = current.next;                     // Move to next node
         }
-        return text + current.data.toString() + "]";    // Send back the string 
+        return text + current.data.toString() + "]";    // Send back the string
     }
    
     /**
@@ -200,7 +200,37 @@ public class LinkedList <T>
         return true;                                    // Lists are equal
     }
     
-    
+    /**
+     * Inserts (adds) data (generic type) into the back (tail, end, etc) of
+     * this list
+     * 
+     * @param data the generic type to add in
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBack(T data) {
+        if (data == null) return false;     // null data cannot be added   
+        Node<T> node = new Node<>(data);    // new (memory) Node object created
+        
+        // General programmer scenarios to consider:
+        //  (1) Typical case - what does a 'normal' user do?
+        //  (2) Edge case(s) - what if we pushing the edge/limits?
+        //  (3) Beyond the edge - what if we try to intentially crash this?
+        
+        // Scenarios for this method to consider:
+        //  (1) Empty list
+        //  (2) List of 1 or more nodes
+        
+        if (isEmpty()) {                    // Adding first node
+            head = tail = node;             // Set LinkedList references
+        }
+        else {                              // Subsequent nodes added
+            node.previous = tail;           // Link node to rest of list
+            tail.next = node;               // Connect rest of list to node
+            tail = node;                    // Reassign tail reference
+        }
+        length++;                           // Increase length environmental
+        return true;                        // Operation successful
+    }
     
     
     

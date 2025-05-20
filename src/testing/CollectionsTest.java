@@ -98,7 +98,13 @@ public class CollectionsTest
         System.out.println("L1 size -> " + list1.size());
         System.out.println("L2 size -> " + list2.size());
         
-        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest add (first to the back) of the list.....\n");        
+        System.out.println("addBack -> " + list1.addBack(51)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(50)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(-50)  + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(55)   + "\t" + list1);
+        System.out.println("addBack -> " + list1.addBack(null) + "\t" + list1);
         
         
         
