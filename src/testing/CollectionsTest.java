@@ -188,7 +188,74 @@ public class CollectionsTest
                            "\t result \t"      + list1.addBefore(10,size) + 
                            "\t"                + list1.toString());
         
+         ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest front and back methods..................\n");
+        System.out.println("Front of list 1 = " + list1.front() + "\t" + list1);
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 1 = " + list1.back() + "\t" + list1);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
+        System.out.println("Clear out list 2");
+        list2.clear();
+        System.out.println("Front of list 2 = " + list2.front() + "\t" + list2);
+        System.out.println("Back of list 2 = " + list2.back() + "\t" + list2);
         
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nCloning list 2 from list 1");
+        System.out.println("List2 before cloning = " + list2);
+        list2 = list1.clone();
+        System.out.println("List2 after a clone of List1...");
+        System.out.println("List2 = " + list2);
+        System.out.println("List1 = " + list1);
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest removeFront method......................\n");
+        size = list1.size()+1;
+        for (int i = 0; i < size; i++) {
+            System.out.print(list1.toString() + "\t");
+            Integer value = list1.removeFront();
+            System.out.println("Removing list 1 front = \t" + value);
+        }
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nCloning list 1 from list 2");
+        list1 = list2.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest removeBack method.......................\n");
+        size = list2.size()+1;
+        for (int i = 0; i < size; i++) {
+            System.out.print(list2.toString() + "\t");
+            Integer value = list2.removeBack();
+            System.out.println("Removing list 2 back = \t" + value);
+        }
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest remove method...........................\n");
+        size = list2.size()+1;
+        for (int i = size; i >= -1; i--) {
+            System.out.print(list1.toString() + "\t");
+            Integer value = list1.remove(i);
+            System.out.println("Removing from list 1 from index: \t" + i + 
+                               "\t removed: \t" + value);
+        }
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nCloning list 2 from list 1");
+        list2 = list1.clone();
+        
+        ////////////////////////////////////////////////////////////////////////
+        System.out.println("\nTest remove method...........................\n");
+        size = list2.size()+1;
+        for (int i = size; i >= -1; i--) {
+            System.out.print(list1.toString() + "\t");
+            Integer value = list1.remove(i);
+            System.out.println("Removing from list 1 from index: \t" + i + 
+                               "\t removed: \t" + value);
+        }        
     }
      
 }

@@ -369,5 +369,92 @@ public class LinkedList <T>
         return addAfter(data, index);                   // Wrapper method call
     }
     
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // First node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // Last node
+    }
+    
+    /**
+     * Wipes out all memory of all contents of the list
+     */
+    public void clear() {
+        Node current = head;                // Start at head of the list
+        while (current != null) {           // Traverse the list
+            Node next = current.next;       // Reference to the next node
+            current.finalize();             // Wipe all memory from the node
+            current = next;                 // Move to the next node
+        }
+        finalize();                         // Wipe all memory from the list
+    }
+    
+    /**
+     * Removes (deletes) the first (head) node of the list (mutator method)
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // No front to remove
+        T data = front();                       // Store head data
+        if (length == 1) finalize();            // One node list, wipe list
+        else {                
+            head = head.next;                   // Advanced head reference
+            head.previous.next = null;          // Cut old head reference
+            head.previous = null;               // Cut reference to old head
+            length--;                           // Reduce list length
+            System.gc();                        // Call system garbage collector
+        }        
+        return data;                            // Return stored data
+    }
+    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;             // No back to remove
+        T data = back();                        // Store tail data
+        if (length == 1) finalize();            // One node list, wipe list
+        else {                
+            tail = tail.previous;               // Advanced tail reference
+            tail.next.previous = null;          // Cut old tail reference
+            tail.next = null;                   // Cut reference to old tail
+            length--;                           // Reduce list length
+            System.gc();                        // Call system garbage collector
+        }
+        return data;                            // Return stored data
+    }
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // Not in range
+        if (index == 0)        return removeFront();    // Remove first
+        if (index == length-1) return removeBack();     // Remove last
+        Node current = getNode(index);                  // Get to index
+        current.next.previous = current.previous;       // Change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // Reduce list length
+        return (T)current.data;                         // Return index data
+    }
+    
     
 }
