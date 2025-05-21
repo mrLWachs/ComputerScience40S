@@ -1,6 +1,8 @@
 /** Required package class namespace */
 package collections;
  
+import java.lang.reflect.Array;
+
 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
@@ -40,6 +42,9 @@ public class LinkedList <T>
      * so it is an immutable encapsulated property
      */
     private int length;
+    
+    /** Flag to indicate a search was not found */
+    public final int NOT_FOUND = -1;
     
     
     /**
@@ -456,5 +461,355 @@ public class LinkedList <T>
         return (T)current.data;                         // Return index data
     }
     
+    /**
+     * Checks (searches) if the specified data is inside the list
+     * 
+     * @param data the data to check for
+     * @return data is in the list (true) or not (false)
+     */ 
+    public boolean contains(T data) {
+        if (data == null) return false;         // Invalid data to search for
+        Node current = head;                    // Start reference at head
+        while (current != null) {               // Traverse list
+            if (current.data.equals(data)) {    // Found first occurrence
+                return true;                    // Indicate found
+            }
+            current = current.next;             // Move to next node
+        }
+        return false;                           // Not found in list
+    } 
+    
+    /**
+     * Finds the node matching the data at the first occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of first occurrence or -1 (NOT_FOUND)
+     */
+    public int firstIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = head;                    // Start at head
+        int index = 0;                          // Start count at 0
+        while (current != null) {               // Traverse list
+            if (current.data.equals(data)) {    // Found first occurrence
+                return index;                   // Return location
+            }
+            current = current.next;             // Advance to next node
+            index++;                            // Advance count
+        }
+        return NOT_FOUND;                       // Data not found
+    }
+    
+    /**
+     * Finds the node matching the data at the last occurrence in the list
+     * and returns it's index or -1 (NOT_FOUND) if not in the list
+     * 
+     * @param data the node data to search for
+     * @return index of last occurrence or -1 (NOT_FOUND) 
+     */
+    public int lastIndexOf(T data) {
+        if (data == null) return NOT_FOUND;     // null data rejected
+        Node current = tail;                    // Start at head
+        int index = length-1;                   // Start count at total nodes
+        while (current != null) {               // Traverse list
+            if (current.data.equals(data)) {    // Found last occurrence
+                return index;                   // Return location
+            }
+            current = current.previous;         // Return to previous node
+            index--;                            // Decrease count
+        }
+        return NOT_FOUND;                       // Data not found
+    }
+    
+    /**
+     * The number of instances this data occurs in the list
+     * 
+     * @param data the data to search for
+     * @return the number of instances of the data
+     */
+    public int numberOf(T data) {
+        if (data == null) return 0;             // Reject null data
+        int counter = 0;                        // Start a counter
+        Node current = head;                    // Start at head of list
+        while (current != null) {               // Traverse list
+            if (current.data.equals(data)) {    // Item found in list
+                counter++;                      // Increase counter
+            }
+            current = current.next;             // Advance to next node
+        }
+        return counter;                         // Counter returned
+    }
+    
+    /**
+     * Accesses all occurrences of the passed data in the list and returns an
+     * integer array containing all index values the data occurred at
+     * 
+     * @param data the data to search for
+     * @return all indices location in an array or null if no indices
+     */
+    public int[] allIndices(T data) {
+        if (data == null)    return null;       // Reject null data
+        if (!contains(data)) return null;       // No data in the list
+        int size = numberOf(data);              // Get number of occurrences
+        int[] array = new int[size];            // Create array 
+        Node current = head;                    // Start at head
+        int counter = 0;                        // Start counter
+        for (int i = 0; i < length; i++) {      // Traverse list
+            if (current.data.equals(data)) {    // Item encountered
+                array[counter] = i;             // Insert index into array
+                counter++;                      // Increase counter
+                if (counter >= size) {
+                    return array;
+                }
+            }
+            current = current.next;             // Move to next node
+        }
+        return array;                           // Return completed array
+    }
+    
+    /**
+     * Deletes the first occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean remove(T data) {
+        if (data == null) return false;         // Nothing to remove
+        int index = firstIndexOf(data);         // Get first location
+        if (index == NOT_FOUND) return false;   // Not in list
+        remove(index);                          // Remove
+        return true;                            // Operation successful
+    }
+    
+    /**
+     * Deletes the last occurrence of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false) 
+     */
+    public boolean removeLast(T data) {
+        if (data == null) return false;         // Nothing to remove
+        int index = lastIndexOf(data);          // Get first location
+        if (index == NOT_FOUND) return false;   // Not in list
+        remove(index);                          // Remove
+        return true;                            // Operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the data in the list
+     * 
+     * @param data the node data to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T data) {
+        if (data == null)    return false;      // Nothing to remove
+        if (!contains(data)) return false;      // Not in list
+        while(contains(data)) {                 // Loop continuously
+            remove(data);                       // Removing the data
+        }
+        return true;                            // Operation successful
+    }
+    
+    /**
+     * Deletes all occurrences of the different data items in the array 
+     * from the list
+     * 
+     * @param items the node data array items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(T[] items) {
+         if (items == null)     return false;   // Invalid array
+         if (items.length == 0) return false;   // Invalid array
+         for (T item : items) {                 // Traverse array
+             removeAll(item);                   // Remove array item
+         }
+         return true;                           // Operation successful
+    } 
+   
+    /**
+     * Deletes all occurrences of the different data items in the passed
+     * list from the current list
+     * 
+     * @param list the LinkedList of items to remove
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean removeAll(LinkedList<T> list) {
+        if (list == null)   return false;           // Invalid list
+        if (list.isEmpty()) return false;           // Empty list
+        for (int i = 0; i < list.size(); i++) {     // Traverse list
+            removeAll(list.get(i));                 // Remove list item
+        }
+        return true;                                // Operation successful
+    }
+    
+    /**
+     * Checks the list to see if it contains all the items in the array
+     * 
+     * @param items the node data array items to check
+     * @return all items are in the array (true) or not (false)
+     */
+    public boolean containsAll(T[] items) {
+        if (items == null)     return false;    // Invalid array
+        if (items.length == 0) return false;    // Invalid array
+        for (T item : items) {                  // Traverse array
+            if (!contains(item)) return false;  // Item not in list
+        }
+        return true;                            // Operation successful
+    }
+    
+    /**
+     * Checks the list to see if it contains all the items in the array
+     * 
+     * @param list the LinkedList of items to check
+     * @return all items are in the list (true) or not (false)
+     */
+    public boolean containsAll(LinkedList<T> list) {
+        if (list == null)     return false;         // Invalid list
+        if (list.size() == 0) return false;         // Invalid list
+        for (int i = 0; i < list.size(); i++) {     // Traverse array
+            if (!contains((T)list.get(i))) 
+                return false;                       // Item not in list
+        }
+        return true;                                // Operation successful
+    }
+            
+    /**
+     * Appends all the items from the passed list to the end of the 
+     * current list
+     * 
+     * @param items the array to append on
+     */
+    public void addAll(T[] items) {
+        if (items == null) return;                  // Error check
+        for (int i = 0; i < items.length; i++) {    // Traverse array
+            this.add(items[i]);                     // Add array item
+        }
+    }
+    
+    /**
+     * Appends all the items from the passed list to the end of the 
+     * current list
+     * 
+     * @param list the Linked list to append on
+     */
+    public void addAll(LinkedList<T> list) {
+        if (list == null) return;                   // Error check
+        for (int i = 0; i < list.size(); i++) {     // Traverse list
+            this.add(list.get(i));                  // Get and add item
+        }
+    }
+   
+    /**
+     * Appends all the items from the passed list into the current list 
+     * after the passed index
+     * 
+     * @param items the array to append on
+     * @param index the index location to append from
+     */
+    public void addAll(T[] items, int index) {
+        if (items == null)   return;                // Error check
+        if (!inRange(index)) return;                // Error check
+        for (int i = 0; i < items.length; i++) {    // Traverse array
+            this.addAfter(items[i], index);         // Add array item after
+            index++;                                // Increase index
+        }
+    }
+    
+    /**
+     * Appends all the items from the passed list into the current list 
+     * after the passed index
+     * 
+     * @param list the Linked list to append on
+     * @param index the index location to append from
+     */
+    public void addAll(LinkedList<T> list, int index) {
+        if (list == null)    return;                // Error check
+        if (!inRange(index)) return;                // Error check
+        for (int i = 0; i < list.size(); i++) {     // Traverse list
+            this.addAfter(list.get(i), index);      // Get and add item after
+            index++;                                // Increase index
+        }
+    }
+    
+    /**
+    * Accesses a sub list from the main list based on the passed parameters
+    * 
+    * @param from the index to start the sublist from
+    * @param to the index to end the sub list at
+    * @return a sub list from the main list
+    */
+    public LinkedList<T> subList(int from, int to) {
+        if (!inRange(from)) return null;            // Index out of range
+        if (!inRange(to))   return null;            // Index out of range
+        if (from > to)      return null;            // Index not in line
+        LinkedList<T> list = new LinkedList<>();    // Create list
+        for (int i = from; i <= to; i++) {          // Traverse indices
+            list.add(this.get(i));                  // Add to list from list
+        }
+        return list;                                // Return new list
+    }
+    
+    /**
+     * Mutates the list into a list only matching the contents of the array
+     * 
+     * @param array the data objects to form the list from
+     */
+    public final void fromArray(T[] array) {
+        if (array == null) return;                  // Error check
+        finalize();                                 // Wipe list memory
+        for (T item : array) {                      // Traverse array
+            add(item);                              // Add array item
+        }
+    }
+    
+    /**
+     * Mutates list into a list only matching the contents of the other list
+     * 
+     * @param list the data objects to form the list from
+     */
+    public final void fromLinkedList(LinkedList<T> list) {
+        if (list == null) return;                   // Error check
+        finalize();                                 // Wipe list memory
+        for (int i = 0; i < list.size(); i++) {     // Traverse list
+            add(list.get(i));                       // Get and add item
+        }
+    }
+    
+    /**
+     * Returns an array that contains the same data as the list
+     * 
+     * @param array the data type array
+     * @return an array of generic type T
+     */
+    public T[] toArray(T[] array) {
+        if (array == null) return null;
+        array = (T[])(
+                Array.newInstance(
+                        array.getClass().getComponentType(), 
+                        length)
+                );                              // Create empty array
+        for (int i = 0; i < length; i++) {      // Traverse list
+            array[i] = get(i);                  // Add to array
+        }
+        return array;                           // Return completed array
+    }
+    
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param array the data objects to create the list from
+     */
+    public LinkedList(T[] array) {
+        fromArray(array);
+    }
+        
+    /**
+     * Constructor instantiates list from the passed data
+     * 
+     * @param list the data objects to create the list from
+     */
+    public LinkedList(LinkedList<T> list) {
+        fromLinkedList(list);
+    }
     
 }
