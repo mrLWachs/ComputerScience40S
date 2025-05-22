@@ -4,7 +4,9 @@ package testing;
 /** Required API imports */
 import collections.Node;
 import collections.LinkedList;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 
 
 /**
@@ -468,6 +470,35 @@ public class CollectionsTest
         ////////////////////////////////////////////////////////////////////////
         System.out.println("\nTesting the imported util LinkedList.........\n");
         
+        ArrayList<Character> arrayList = new ArrayList<>();
+        arrayList.add(new Character('a'));
+        arrayList.add(new Character('b'));
+        arrayList.add(new Character('c'));
+        arrayList.add(new Character('d'));
+        arrayList.add(new Character('e'));        
+        System.out.println("Imported ArrayList:\t" + arrayList.toString());
+        System.out.println("Using the enhanced for loop with this object...");
+        for (Character character : arrayList) {
+            System.out.print(character.toString() + " ");
+        }
+        System.out.println("");
+        System.out.println("Using an iterator object...");
+        Iterator i = arrayList.iterator();
+        while(i.hasNext()) {
+            System.out.print(i.next() + " ");
+        }
+        System.out.println("");
+        ////////////////////////////////////////////////////////////////////////
+        
+        // If we used the LinkedList from java.util API (Application Programming
+        // Interface) instead of the Node and LinkedList classes we wrote...
+        
+        java.util.LinkedList<Integer> importList = new java.util.LinkedList<>();
+        
+        
+        
+        
+        System.out.println("\nCollections testing complete!\n");
     }
      
 }
