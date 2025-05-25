@@ -26,11 +26,13 @@ public class UILogin extends javax.swing.JFrame
      * Constructor method, creates new frame/form GUI 
      */
     public UILogin() {
-        initComponents();
-        Database.open();
-        UIManager.start(this, 215, 230);
+        initComponents();                     // NetBeans designer method called
+        Database.open();              // Open saved database from permanent file
+        UIManager.start(this, 215, 230);            // Set UI look and show user
     }
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor Generated Code">
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -94,41 +96,49 @@ public class UILogin extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // </editor-fold> 
+    
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
+        // Verify the textbox data for the username and password fields
         if (UIManager.validate(this, usernameField, passwordField)) {
+            // Get data for creating (instantiating) a User object
             User user = UIManager.getUser(usernameField, passwordField);    
-            if (Database.isValid(user)) {
-                Message.showValid(user,this);    
-                UIManager.loadProject(this);
+            if (Database.isValid(user)) {                 // User is in database
+                Message.showValid(user,this);               // Message user this
+                UIManager.loadProject(this);               // Move to Project UI
             }
-            else {
+            else {                                    // User is not in database
                 Message.showInvalid(this, "Invalid username and/or password!");
-                UIManager.clear(usernameField,passwordField);
+                UIManager.clear(usernameField,passwordField);    // Clear inputs
             }
         }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void newUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newUserButtonActionPerformed
+        // Verify the textbox data for the username and password fields
         if (UIManager.validate(this, usernameField, passwordField)) {
+            // Get data for creating (instantiating) a User object
             User user = UIManager.getUser(usernameField, passwordField);       
-            if (Database.isValid(user)) {
-                Message.showAlreadyUser(user,this);
-                UIManager.clear(usernameField,passwordField);
+            if (Database.isValid(user)) {            // User already in database
+                Message.showAlreadyUser(user,this);         // Message user this
+                UIManager.clear(usernameField,passwordField);    // Clear inputs
             }
-            else {
-                if (Message.confirmNew(user,this)) {
-                    Message.showAdded(user,this);
-                    Database.add(user);
-                    UIManager.loadAllUsers(this);
+            else {                               // New user not in the database
+                if (Message.confirmNew(user,this)) {      // Confirm want to add
+                    Message.showAdded(user,this);           // Message user this
+                    Database.add(user);                  // Add user to database
+                    UIManager.loadAllUsers(this);        // Move to All Users UI
                 }               
             }
         }
     }//GEN-LAST:event_newUserButtonActionPerformed
 
     private void seeAllUsersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seeAllUsersButtonActionPerformed
-        UIManager.loadAllUsers(this);
+        UIManager.loadAllUsers(this);                    // Move to All Users UI
     }//GEN-LAST:event_seeAllUsersButtonActionPerformed
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor UI Controls">
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton loginButton;
     private javax.swing.JButton newUserButton;
@@ -139,4 +149,6 @@ public class UILogin extends javax.swing.JFrame
     private javax.swing.JLabel usernameLabel;
     // End of variables declaration//GEN-END:variables
 
+    // </editor-fold> 
+    
 }

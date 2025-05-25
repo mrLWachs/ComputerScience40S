@@ -17,11 +17,13 @@ public class UIAllUsers extends javax.swing.JFrame
      * Constructor method, creates new frame/form AllUsersUI 
      */
     public UIAllUsers() {
-        initComponents();
-        Database.addUsers(usersList);
-        UIManager.start(this, 445, 230);
+        initComponents();                     // NetBeans designer method called
+        Database.addUsers(usersList);             // Load all users into listbox
+        UIManager.start(this, 445, 230);            // Set UI look and show user
     }
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor Generated Code"> 
+    
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -80,30 +82,34 @@ public class UIAllUsers extends javax.swing.JFrame
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // </editor-fold> 
+    
     private void returnToLoginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnToLoginButtonActionPerformed
-        UIManager.loadLogin(this);
+        UIManager.loadLogin(this);                           // Move to Login UI
     }//GEN-LAST:event_returnToLoginButtonActionPerformed
 
     private void deleteSelectedUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteSelectedUserButtonActionPerformed
-        int index = usersList.getSelectedIndex();
-        if (index == -1) {
-            Message.showNotSelected(this);
+        int index = usersList.getSelectedIndex();      // Get user selected item
+        if (index == -1) {              // Error check the user made a selection
+            Message.showNotSelected(this);                  // Message user this
         }
-        else {            
-            if (Message.confirmDelete(this,index)) {
-                Database.remove(index);
-                Database.addUsers(usersList);
+        else {                                    // User made a valid selection
+            if (Message.confirmDelete(this,index)) {         // Confirm deletion
+                Database.remove(index);             // Remove user from database
+                Database.addUsers(usersList);     // Load all users into listbox
             }
         }        
     }//GEN-LAST:event_deleteSelectedUserButtonActionPerformed
 
     private void saveUserListButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveUserListButtonActionPerformed
-        if (Message.confirmSave(this)) {
-            Database.save();
-            UIManager.loadLogin(this);
+        if (Message.confirmSave(this)) {              // Confirm saving database 
+            Database.save();                  // Save database to permanent file
+            UIManager.loadLogin(this);                       // Move to Login UI
         }        
     }//GEN-LAST:event_saveUserListButtonActionPerformed
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor UI Controls">
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton deleteSelectedUserButton;
     private javax.swing.JLabel jLabel1;
@@ -113,4 +119,6 @@ public class UIAllUsers extends javax.swing.JFrame
     private java.awt.List usersList;
     // End of variables declaration//GEN-END:variables
 
+    // </editor-fold> 
+    
 }

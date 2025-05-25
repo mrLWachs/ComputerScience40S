@@ -16,10 +16,12 @@ public class UIProject extends javax.swing.JFrame {
      * Creates new form ProjectUI
      */
     public UIProject() {
-        initComponents();
-        UIManager.start(this, 420, 250);
+        initComponents();                     // NetBeans designer method called
+        UIManager.start(this, 420, 250);            // Set UI look and show user
     }
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor Generated Code">
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -54,12 +56,19 @@ public class UIProject extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    // </editor-fold> 
+    
     private void goBackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goBackButtonActionPerformed
-        UIManager.loadLogin(this);
+        UIManager.loadLogin(this);                           // Move to Login UI
     }//GEN-LAST:event_goBackButtonActionPerformed
 
+    // <editor-fold defaultstate="collapsed" desc="NetBeans Editor UI Controls">
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton goBackButton;
     private javax.swing.JLabel welcomeLabel;
     // End of variables declaration//GEN-END:variables
+
+    // </editor-fold> 
+    
 }

@@ -100,6 +100,7 @@ public abstract class Database
      * 
      */
     public static void open() {
+        if (users.isEmpty() == false) return;        
         try {
             users.clear();
             FileReader     reader = new FileReader("data.txt");
