@@ -4,7 +4,8 @@ package testing.project;
 
 
 /**
- * XXX.java - description
+ * UIProject.java - a user interface (UI) NetBeans designer class that has the 
+ * potential to be a project
  *
  * @author Mr. Wachs
  * @since May 24, 2025

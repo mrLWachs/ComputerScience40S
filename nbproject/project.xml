@@ -23,6 +23,7 @@
             <word>Quidditch</word>
             <word>Sweanesday</word>
             <word>textbox</word>
+            <word>util</word>
         </spellchecker-wordlist>
     </configuration>
 </project>

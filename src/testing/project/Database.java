@@ -12,7 +12,8 @@ import java.io.PrintWriter;
 
  
 /**
- * Database.java - description
+ * Database.java - an abstract class to manage a LinkedList representing a 
+ * database of users using static methods
  *
  * @author Mr. Wachs
  * @since May 24, 2025
@@ -29,8 +30,8 @@ public abstract class Database
      * @return 
      */
     public static boolean isValid(User user) {
-        for (int i = 0; i < Database.users.size(); i++) {
-            User existing = Database.users.get(i);
+        for (int i = 0; i < users.size(); i++) {
+            User existing = users.get(i);
             if (existing.equals(user)) {
                 return true;
             }
@@ -52,7 +53,7 @@ public abstract class Database
      */
     public static void addUsers(List usersList) {
         usersList.removeAll();
-        for (int i = 0; i < Database.users.size(); i++) {
+        for (int i = 0; i < users.size(); i++) {
             User user = users.get(i);
             String text = user.username + ", " + user.password;
             usersList.add(text);
@@ -83,7 +84,7 @@ public abstract class Database
         try {
             FileWriter  writer  = new FileWriter("data.txt");
             PrintWriter printer = new PrintWriter(writer);
-            for (int i = 0; i < Database.users.size(); i++) {
+            for (int i = 0; i < users.size(); i++) {
                 User user = users.get(i);
                 printer.println(user.username);
                 printer.println(user.password);

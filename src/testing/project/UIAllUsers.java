@@ -4,7 +4,8 @@ package testing.project;
 
 
 /**
- * XXX.java - description
+ * UIAllUsers.java - a user interface (UI) NetBeans designer class to show all 
+ * users in the database
  *
  * @author Mr. Wachs
  * @since May 24, 2025

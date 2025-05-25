@@ -7,7 +7,8 @@ import javax.swing.JOptionPane;
 
  
 /**
- * Message.java - description
+ * Message.java - an abstract class to send simple dialog messages to the user 
+ * using static methods
  *
  * @author Mr. Wachs
  * @since May 24, 2025

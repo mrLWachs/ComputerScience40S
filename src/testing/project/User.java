@@ -3,7 +3,7 @@ package testing.project;
 
  
 /**
- * User.java - description
+ * User.java - a class representing a program user with username and password
  *
  * @author Mr. Wachs
  * @since May 24, 2025

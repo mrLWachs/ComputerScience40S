@@ -4,7 +4,17 @@ package testing.project;
 
 
 /**
- * XXX.java - description
+ * UILogin.java - a user interface (UI) for the application user to login to a
+ * potential program. This class uses the NetBeans visual editor to design the
+ * UI, add controls (objects) from the pallette, and change properties using 
+ * the properties window of the NetBeans designer. However, much of the logic 
+ * for this program shifts to other classes and other UI classes such as:
+ *  - UIManager: a class to shift some of the UI logic for the various UIs
+ *  - Database: a class to manage a LinkedList representing a database of users
+ *  - Message: a class to send simple dialog messages to the user
+ *  - User: a class representing a program user with username and password
+ *  - UIAllUsers: a UI designer class to show all users in the database
+ *  - UIProject: a UI designer class that has the potential to be a project
  *
  * @author Mr. Wachs
  * @since May 24, 2025

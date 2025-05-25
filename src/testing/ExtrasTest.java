@@ -12,11 +12,15 @@ import java.util.PriorityQueue;
 import java.util.Set;
 import java.util.Stack;
 
+
 /**
- * ExtrasTest.java - description
+ * ExtrasTest.java - this class test "extras" examples of code from the concepts
+ * from the collections unit including showing the java.util API and the data
+ * structures it includes. As well, this code also tests a "mini project" which
+ * uses some of the concepts of the CS40S course
  *
  * @author Mr. Wachs
- * @since May 23, 2025, 8:51:07 a.m.
+ * @since May 23, 2025
  */
 public class ExtrasTest 
 {

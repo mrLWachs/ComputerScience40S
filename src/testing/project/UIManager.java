@@ -9,7 +9,8 @@ import javax.swing.JTextField;
 
  
 /**
- * UIManager.java - description
+ * UIManager.java - an abstract class to shift some of the UI logic for the 
+ * various UIs using static methods
  *
  * @author Mr. Wachs
  * @since May 24, 2025
