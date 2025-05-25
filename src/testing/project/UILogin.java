@@ -4,23 +4,21 @@ package testing.project;
 
 
 /**
- * GUI.java - description
+ * XXX.java - description
  *
  * @author Mr. Wachs
- * @since May 22, 2025, 10:23:52 a.m.
+ * @since May 24, 2025
  */
-public class LoginUI extends javax.swing.JFrame 
+public class UILogin extends javax.swing.JFrame 
 {
 
     /** 
      * Constructor method, creates new frame/form GUI 
      */
-    public LoginUI() {
+    public UILogin() {
         initComponents();
-        this.setResizable(false);
-        this.setSize(215, 230);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        Database.open();
+        UIManager.start(this, 215, 230);
     }
 
     /** This method is called from within the constructor to
@@ -34,13 +32,14 @@ public class LoginUI extends javax.swing.JFrame
 
         usernameLabel = new javax.swing.JLabel();
         passwordLabel = new javax.swing.JLabel();
-        usernameTextField = new javax.swing.JTextField();
-        passwordPasswordField = new javax.swing.JPasswordField();
+        usernameField = new javax.swing.JTextField();
+        passwordField = new javax.swing.JPasswordField();
         loginButton = new javax.swing.JButton();
         newUserButton = new javax.swing.JButton();
         seeAllUsersButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Database");
         getContentPane().setLayout(null);
 
         usernameLabel.setText("Username:");
@@ -50,10 +49,10 @@ public class LoginUI extends javax.swing.JFrame
         passwordLabel.setText("Password:");
         getContentPane().add(passwordLabel);
         passwordLabel.setBounds(10, 50, 90, 20);
-        getContentPane().add(usernameTextField);
-        usernameTextField.setBounds(100, 20, 90, 22);
-        getContentPane().add(passwordPasswordField);
-        passwordPasswordField.setBounds(100, 50, 90, 22);
+        getContentPane().add(usernameField);
+        usernameField.setBounds(100, 20, 90, 20);
+        getContentPane().add(passwordField);
+        passwordField.setBounds(100, 50, 90, 20);
 
         loginButton.setText("LOGIN");
         loginButton.addActionListener(new java.awt.event.ActionListener() {
@@ -86,26 +85,48 @@ public class LoginUI extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        AllUsersUI allUsersUI = new AllUsersUI();
-        this.dispose();
+        if (UIManager.validate(this, usernameField, passwordField)) {
+            User user = UIManager.getUser(usernameField, passwordField);    
+            if (Database.isValid(user)) {
+                Message.showValid(user,this);    
+                UIManager.loadProject(this);
+            }
+            else {
+                Message.showInvalid(this, "Invalid username and/or password!");
+                UIManager.clear(usernameField,passwordField);
+            }
+        }
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void newUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newUserButtonActionPerformed
-        // TODO add your handling code here:
+        if (UIManager.validate(this, usernameField, passwordField)) {
+            User user = UIManager.getUser(usernameField, passwordField);       
+            if (Database.isValid(user)) {
+                Message.showAlreadyUser(user,this);
+                UIManager.clear(usernameField,passwordField);
+            }
+            else {
+                if (Message.confirmNew(user,this)) {
+                    Message.showAdded(user,this);
+                    Database.add(user);
+                    UIManager.loadAllUsers(this);
+                }               
+            }
+        }
     }//GEN-LAST:event_newUserButtonActionPerformed
 
     private void seeAllUsersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_seeAllUsersButtonActionPerformed
-        // TODO add your handling code here:
+        UIManager.loadAllUsers(this);
     }//GEN-LAST:event_seeAllUsersButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton loginButton;
     private javax.swing.JButton newUserButton;
+    private javax.swing.JPasswordField passwordField;
     private javax.swing.JLabel passwordLabel;
-    private javax.swing.JPasswordField passwordPasswordField;
     private javax.swing.JButton seeAllUsersButton;
+    private javax.swing.JTextField usernameField;
     private javax.swing.JLabel usernameLabel;
-    private javax.swing.JTextField usernameTextField;
     // End of variables declaration//GEN-END:variables
 
 }

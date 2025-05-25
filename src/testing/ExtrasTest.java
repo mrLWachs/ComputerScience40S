@@ -2,7 +2,7 @@
 package testing;
  
 /** Required API imports */
-import testing.project.LoginUI;
+import testing.project.UILogin;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -94,7 +94,7 @@ public class ExtrasTest
         importList.removeLast();     // Retrieves / removes last element of list
         importList.removeLastOccurrence(6.7);     // Remove last value from list
         importList.retainAll(importList);              // Retains list from list
-        importList.reversed();     // Returns reverse-ordered view of collection
+        //importList.reversed();     // Returns reverse-ordered view of collection
         importList.set(0, 7.8);        // Replaces element at index with element
         importList.size();        // Returns the number of elements in this list
         importList.subList(2,4);         // Returns list in list between indices
@@ -118,23 +118,23 @@ public class ExtrasTest
         arrayList.add(0, 'b');      // Inserts element at  position in this list
         arrayList.addAll(arrayList);      // Appends all elements to end of list
         arrayList.addAll(0, arrayList);            // Inserts into list at index
-        arrayList.addFirst('c');                         // Add to front of list
-        arrayList.addLast('d');                            // Add to end of list
+        //arrayList.addFirst('c');                         // Add to front of list
+        //arrayList.addLast('d');                            // Add to end of list
         //arrayList.clear();                   // Removes all elements from list
         arrayList.clone();                                         // Clone list
         arrayList.contains('a');        // Returns true if list contains element
         arrayList.ensureCapacity(100);        // Increases capacity of ArrayList 
         arrayList.equals(arrayList);                          // Deep comparison
         arrayList.get(0);                     // Accessor of the specified index
-        arrayList.getFirst();          // Returns the first element in this list
-        arrayList.getLast();            // Returns the last element in this list
+        //arrayList.getFirst();          // Returns the first element in this list
+        //arrayList.getLast();            // Returns the last element in this list
         arrayList.indexOf('b');  // Returns index of first occurrence of element
         arrayList.isEmpty();  // Returns true if collection contains no elements
         arrayList.lastIndexOf('a');      // Returns element's last index in list
         //arrayList.remove('a');       // Retrieves and removes the head of list
         arrayList.remove(0);    // Removes element at specified position in list
         //arrayList.removeAll(arrayList);       // Removes all of list from list
-        arrayList.removeFirst();    // Retrieves / removes first element of list
+        //arrayList.removeFirst();    // Retrieves / removes first element of list
         arrayList.retainAll(arrayList);      // Retains only those items in list
         arrayList.set(0, 'a');         // Replaces element at index with element
         arrayList.size();         // Returns the number of elements in this list
@@ -154,15 +154,15 @@ public class ExtrasTest
         System.out.println("Testing the imported util Stack...");
         
         Stack<String> stack = new Stack<>();
-        stack.push("a");
+        stack.push("a");            // Pushes an item onto the top of this stack
         stack.push("b");
         stack.push("c");
         stack.push("d");
         stack.push("e");
-        stack.empty();
-        stack.peek();
-        stack.pop();
-        stack.search("a");
+        stack.empty();                           // Tests if this stack is empty
+        stack.peek();     // Looks at object at top of stack without removing it
+        stack.pop();            // Removes object at top of stack and returns it
+        stack.search("a");               //  Returns position of object on stack
         System.out.println("util.Stack: " + stack);
         
         ////////////////////////////////////////////////////////////////////////
@@ -184,13 +184,13 @@ public class ExtrasTest
         // i.e. the data item stored first will be accessed first
         ////////////////////////////////////////////////////////////////////////
         PriorityQueue<Integer> queue = new PriorityQueue<>();
-        queue.add(1);
+        queue.add(1);                     // Inserts element into priority queue
         queue.add(2);
         queue.add(3);
         queue.add(4);
         queue.add(5);        
-        queue.peek();
-        queue.poll(); 
+        queue.peek();           // Retrieves, but not removes, the head of queue
+        queue.poll();                 // Retrieves and removes the head of queue
         System.out.println("util.PriorityQueue: " + queue);
         
         ////////////////////////////////////////////////////////////////////////
@@ -227,9 +227,11 @@ public class ExtrasTest
         System.out.println("util.Map: " + map);        
         
         ////////////////////////////////////////////////////////////////////////
-        //  
+        // EXTRA: this is a small sample project used to incorperate several
+        // of the concepts from the CS40S course into a graphical user interface
+        // (GUI) sample
         ////////////////////////////////////////////////////////////////////////        
-        LoginUI ui = new LoginUI();
+        UILogin ui = new UILogin();
                 
         System.out.println("\nExtras testing complete!\n");
     }
