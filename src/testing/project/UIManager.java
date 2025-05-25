@@ -19,95 +19,80 @@ public abstract class UIManager
 {
 
     /**
+     * Start frame/form by setting some user look properties and then shows
+     * the form to the user
      * 
-     * @param frame
-     * @param width
-     * @param height 
+     * @param frame the frame to set
+     * @param width the width to make the frame
+     * @param height the height to make the frame 
      */
     public static void start(JFrame frame, int width, int height) {
-        frame.setResizable(false);
-        frame.setSize(width, height);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        frame.setResizable(false);                          // Frame not sizable
+        frame.setSize(width, height);                          // Set frame size
+        frame.setLocationRelativeTo(null);             // Center frame on screen
+        frame.setVisible(true);                            // Show frame to user
     }
 
     /**
+     * Checks the textbox for username and password to validate if they are 
+     * proper user inputs
      * 
-     * @param frame
-     * @param usernameField
-     * @param passwordField
-     * @return 
+     * @param frame the frame for these controls
+     * @param usernameField the text username field
+     * @param passwordField the text password field
+     * @return inputs are valid (true) or not (false)
      */
     public static boolean validate(JFrame frame, JTextField usernameField, 
             JPasswordField passwordField) {
-        if (isValid(usernameField) == false) {
-            Message.showInvalid(frame, "Username invalid");
-            clear(usernameField, passwordField);
-            return false;
+        String username = usernameField.getText();          // Get username text
+        if (username == null || username.equals("")) {     // Username not valid
+            Message.showInvalid(frame, "Username invalid");      // Message user
+            clear(usernameField, passwordField);            // Clear user inputs
+            return false;                              // Username input invalid
         }
-        else if (isValid(passwordField) == false) {
-            Message.showInvalid(frame,"Password invalid");
-            clear(usernameField, passwordField);
-            return false;
+        char[] characters = passwordField.getPassword();    // Get passwrod text
+        String password   = new String(characters);         // Convert to string
+        if (password == null || password.equals("")) {     // Password not valid
+            Message.showInvalid(frame,"Password invalid");       // Message user
+            clear(usernameField, passwordField);            // Clear user inputs
+            return false;                              // Password input invalid
         }
-        return true;
+        return true;                                         // All valid inputs
     }
     
     /**
+     * Gets the information from the user to instantiate a User object
      * 
-     * @param usernameField
-     * @return 
-     */
-    private static boolean isValid(JTextField usernameField) {
-        String username = usernameField.getText();
-        if (username == null)    return false;
-        if (username.equals("")) return false;
-        return true;
-    }
-
-    /**
-     * 
-     * @param passwordPasswordField
-     * @return 
-     */
-    private static boolean isValid(JPasswordField passwordPasswordField) {
-        char[] characters = passwordPasswordField.getPassword();
-        String password   = new String(characters);
-        if (password == null)    return false;
-        if (password.equals("")) return false;
-        return true;
-    }
-
-    /**
-     * 
-     * @param usernameField
-     * @param passwordField
-     * @return 
+     * @param usernameField the text username field
+     * @param passwordField the text password field
+     * @return a User object
      */
     public static User getUser(JTextField usernameField, 
             JPasswordField passwordField) {
-        String username   = usernameField.getText();
-        char[] characters = passwordField.getPassword();
-        String password   = new String(characters);
-        User   user       = new User(username, password);
+        String username   = usernameField.getText();        // Get username text
+        char[] characters = passwordField.getPassword();    // Get passwrod text
+        String password   = new String(characters);         // Convert to string
+        User   user       = new User(username, password);  // Create User object
         return user;
     }
 
     /**
+     * Clears the user inputs on the user interface 
      * 
-     * @param usernameField
-     * @param passwordField 
+     * @param usernameField the text username field
+     * @param passwordField the text password field 
      */
     public static void clear(JTextField usernameField, 
             JPasswordField passwordField) {
-        usernameField.setText("");
+        usernameField.setText("");              // Clear out text field controls
         passwordField.setText("");
-        usernameField.requestFocus();
+        usernameField.requestFocus();   // Put user focus on username text field
     }
 
     /**
+     * Load the project user interface and unload the current user interface
      * 
-     * @param frame 
+     * @param frame the current UI frame
      */
     public static void loadProject(JFrame frame) {
         UIProject projectUI = new UIProject();
@@ -115,8 +100,9 @@ public abstract class UIManager
     }
 
     /**
+     * Load the all users user interface and unload the current user interface
      * 
-     * @param frame 
+     * @param frame the current UI frame 
      */
     public static void loadAllUsers(JFrame frame) {
         UIAllUsers allUsersUI = new UIAllUsers();
@@ -124,8 +110,9 @@ public abstract class UIManager
     }
 
     /**
+     * Load the login user interface and unload the current user interface
      * 
-     * @param frame 
+     * @param frame the current UI frame 
      */
     public static void loadLogin(JFrame frame) {
         UILogin logInUI = new UILogin();
