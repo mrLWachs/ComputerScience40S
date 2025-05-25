@@ -11,10 +11,10 @@ package testing.project;
 public class User 
 {
     
-    /** */
+    /** The username property of this User object */
     public String username;
     
-    /** */
+    /** The password property of this User object */
     public String password;
     
     /**
@@ -26,25 +26,29 @@ public class User
     }
     
     /**
-     * 
-     * @return 
+     * String representation of this object
+     *
+     * @return The object represented as a String
      */
+    @Override
     public String toString() {
         return username + "\n" + password;
     }
     
     /**
-     * 
-     * @param object
-     * @return 
+     * Deep comparison, determines if two objects are "equal" in this context
+     *
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
      */
+    @Override
     public boolean equals(Object object) {
-        User that = (User)object;
+        User that = (User)object;            // Cast parameter into User object
         if (this.username.equals(that.username) &&
-            this.password.equals(that.password)) {
-            return true;
+            this.password.equals(that.password)) {    // Compare both properties
+            return true;                               // User objects are equal
         }
-        return false;
+        return false;                              // User objects are not equal
     }
     
 }
