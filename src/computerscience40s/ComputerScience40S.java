@@ -149,7 +149,7 @@ public class ComputerScience40S
 // (26) To view the same code editing window with two different views, go to
 //      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
 //
-// UNIT: Classes................................................................
+// UNIT 4: Classes..............................................................
 //
 // (27) To add a new class to a project, you can: (1) Click on File -> New File,
 //      and a dialog will appear and you select "Java" and "Java Class", click 
@@ -164,7 +164,37 @@ public class ComputerScience40S
 //      For example, methods use a red circle, properties use a blue square, 
 //      constructor methods use a orange diamond, private properties or methods
 //      use a "lock" icon, etc.
-// (29) To modify the template of all new classes, Tools -> Templates, scroll 
+//
+// UNIT 5: Graphics and User Interfaces (GUI)...................................
+//
+// (29) To have NetBeans help you build a user interface (UI) with a visual 
+//      designer similar to the one used in Visual Studio, you go to 
+//      "File -> New File" and  select "JFrame Form" and the UI editor will 
+//      appear
+// (30) To switch between code and the designer, use the buttons under the 
+//      name of the file with the tabs named "Source" and "Design"
+// (31) Use the editor's "Palette" and "Properties" windows to build and change
+//      the design and then adding code as needed by either double clicking the
+//      object you want to add code to, or right clicking the object and 
+//      selecting "Events" and then the action event you want
+// (32) To "name" all the objects in NetBeans (although in this course that is
+//      not required) right click on each object and selecting "Change Variable
+//      Name..." and then type in a new name
+// (33) The NetBeans visual designer adds a constructor method with a call to
+//      a method called "initComponents()" - do not erase this line as it sets
+//      up the UI for you
+// (34) The NetBeans WYSIWYG visual designer also adds a version of the "main"
+//      method to this class of code (each JFrame form when added also adds a 
+//      main method for each JFrame form (just like the original class file 
+//      when you build a project). You can certainly delete that original 
+//      project class file, and then the project will use a JFrame version of 
+//      main when the project runs (when you click the green triangle on the
+//      toolbar) or you can delete the main method and have other code call 
+//      this class's constructor to show the form
+//
+// UNIT: CS40S................................................................
+//
+// (35) To modify the template of all new classes, Tools -> Templates, scroll 
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
 //
