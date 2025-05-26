@@ -102,7 +102,7 @@ public abstract class Database
     }
 
     /**
-     * 
+     * Opens the database from a permanent file into the linked list
      */
     public static void open() {
         if (users.isEmpty() == false) return;    // When list is not empty, exit
