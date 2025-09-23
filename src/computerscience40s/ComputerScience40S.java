@@ -4,7 +4,7 @@ package computerscience40s;
 public class ComputerScience40S {
 
     public static void main(String[] args) {
-        
+        System.out.println("Start learning CS40S...");
     }
     
 }
@@ -13,8 +13,6 @@ public class ComputerScience40S {
 
 // TIPS - for using NetBeans, Java, and Mr. Wachs' Computer Science course:
 // ========================================================================
-//
-// UNIT 1: Introduction To Java.................................................
 //
 // UNIT 1: Introduction To Java.................................................
 //
