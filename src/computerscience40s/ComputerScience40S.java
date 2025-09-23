@@ -1,10 +1,25 @@
 
+/** Required package class namespace */
 package computerscience40s;
 
+/** Required API imports */
+import testing.Tester;
+
+/**
+ * ComputerScience40S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
+ *
+ * @author Mr. Wachs 
+ * @since February 24, 2025
+ */
 public class ComputerScience40S {
 
     public static void main(String[] args) {
         System.out.println("Start learning CS40S...");
+        Tester unit1 = new Tester();
+        System.out.println("Completed learning CS40S!");
     }
     
 }
