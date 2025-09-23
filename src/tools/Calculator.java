@@ -4,7 +4,7 @@ package tools;
 
 
 /*
- * Calculator - description
+ * Calculator - useful collection of methods for doing calculations.
  * 
  * @author Mr. Wachs
  * @since Sep 23, 2025

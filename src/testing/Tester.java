@@ -11,10 +11,14 @@ package testing;
 */
 public class Tester
 {
-
+    
+    /**
+     * Default constructor, sets class properties
+     */
     public Tester() {
         System.out.println("Start Testing...");
         RecursionTest unit1 = new RecursionTest();
+        // Later we will add code here for unit 2 and 3...
         System.out.println("Completed Testing!");
     }
 

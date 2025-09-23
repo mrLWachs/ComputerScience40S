@@ -12,7 +12,7 @@ import testing.Tester;
  * over the course
  *
  * @author Mr. Wachs 
- * @since February 24, 2025
+ * @since Sep 23, 2025
  */
 public class ComputerScience40S {
 
