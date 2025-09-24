@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import tools.Calculator;
+
 
 /*
  * RecursionTest - tests the concepts learned in this unit.
@@ -24,7 +26,28 @@ public class RecursionTest
             // (2) Edge cases (more than one): they "push" the edge
             // (3) Beyond the edge: "bad" users, trying to break things
         
+        final long LOWER_EDGE = -1;
+        final long UPPER_EDGE = 20;
+            
+        for (long i = LOWER_EDGE; i <= UPPER_EDGE; i++) {
+            long number = i;
+            long answer = Calculator.factorial(number);
+            System.out.println(number + " factorial = " + answer);
+        }
         
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            
+            
             
         System.out.println("Completed learing Recursion");
     }
