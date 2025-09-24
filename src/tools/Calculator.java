@@ -27,7 +27,7 @@ public class Calculator
         if (number <= 1) {
             return 1;
         }
-        // RECUSIVE CASE - the method calls itself (like a "loop")
+        // RECUSIVE CASE - the method calls itself (like a "looping" effect)
         else {
             return number * factorial(number - 1);
         }        
