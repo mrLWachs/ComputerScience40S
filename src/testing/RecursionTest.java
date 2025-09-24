@@ -25,10 +25,17 @@ public class RecursionTest
             // (1) Typical case ("user"): do what they are told to do
             // (2) Edge cases (more than one): they "push" the edge
             // (3) Beyond the edge: "bad" users, trying to break things
+            
+        System.out.println("Recursive factorials............................");
+        
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
         
         final long LOWER_EDGE = -1;
         final long UPPER_EDGE = 20;
             
+        // Loop through a series of tests (going through the "edge cases")
         for (long i = LOWER_EDGE; i <= UPPER_EDGE; i++) {
             long number = i;
             long answer = Calculator.factorial(number);
