@@ -44,16 +44,20 @@ public class RecursionTest
         
         System.out.println("Recursive powers................................");    
            
+        // Set the testing "edges"
+        final long MIN_POWER = 0;
+        final long MAX_POWER = 5;
         
-        
-        
-        
-        
-        
-        
-        
-            
-            
+        // Testing all the exponents (edges)
+        for (long exponent = MIN_POWER; exponent <= MAX_POWER; exponent++) {
+            // Nested loop increasing the bases (to the edges)
+            for (long base = MIN_POWER; base <= MAX_POWER; base++) {
+                // Calculate (test this case) and display the test results
+                double answer = Calculator.power(base, exponent);
+                System.out.println("Base " + base + " ^ Exponent " + exponent +
+                                   " = " + answer);
+            }
+        }
             
         System.out.println("Completed learing Recursion");
     }
