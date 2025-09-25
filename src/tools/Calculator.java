@@ -44,12 +44,22 @@ public class Calculator
         // BASE CASE(S)
         // =============
         
+        // Special base case for negative exponents and a base of zero (we can
+        // never divide by zero) - if a base of zero occurs, we need to return
+        // "something" we could use "flag" value (a rarely used value) 
+        if (exponent < 0 && base == 0) return Double.MIN_VALUE;
+                
         if (exponent == 0) return 1;
         if (exponent == 1) return base;
         
-        // RECURSIVE CASE
-        return base * power(base, exponent-1);
+        // RECURSIVE CASE(s):
+        // ==================
         
+        // Special recursive case for negative exponents
+        if (exponent < 0) return 1 / power(base, Math.abs(exponent));
+        
+        // Default recursive case (for positive exponents)
+        return base * power(base, exponent-1);
     }
     
 
