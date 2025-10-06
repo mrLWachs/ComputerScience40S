@@ -71,7 +71,7 @@ public class RecursionTest
             }
         }
             
-        System.out.println("Completed learing Recursion");
+        System.out.println("Completed learning Recursion");
     }
 
 }
