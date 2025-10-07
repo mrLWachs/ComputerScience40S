@@ -4,7 +4,11 @@ package testing.classes;
 
 
 /*
- * Person - description
+ * Person - represents ("models") a person. This is a class with (some 
+ * "things" or "properties" about the class - also known as adjectives, or 
+ * descriptors) and methods (things it can "do" or "verbs" or "actions"). 
+ * Classes can be created (instantiated) into objects (which are instances of 
+ * that class).
  * 
  * @author Mr. Wachs
  * @since Oct 6, 2025
