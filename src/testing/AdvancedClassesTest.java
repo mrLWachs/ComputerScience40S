@@ -2,6 +2,8 @@
 /** Required package class namespace */
 package testing;
 
+import testing.classes.Person;
+
 
 /*
  * AdvancedClassesTest - tests the concepts learned in this unit.
@@ -24,7 +26,9 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("Start learning Advanced Classes...");
         
+        Person person = new Person();
         
+        person.talk();
         
         System.out.println("Completed learning Advanced Classes!");
     }
