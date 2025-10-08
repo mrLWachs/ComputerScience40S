@@ -17,6 +17,11 @@ public class Person
 {
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
 
+    // We can add a keyword to the front of the properties (modifier word) to
+    // determine if the property (variable, global variable) is encapsulated
+    // or not. Meaning: is the variable accessable (can be read and changed)
+    // inside the class and/or outside the class (words "private" and "public")
+    
     String name;
     int age;
     boolean alive;
