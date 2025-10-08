@@ -15,7 +15,7 @@ package testing.classes;
 */
 public class Person
 {
-    // Properties: (things about it, adjectives, descriptors, variables, arrays)
+    // Properties: things about it, adjectives, descriptors, variables, arrays..
 
     // We can add a keyword to the front of the properties (modifier word) to
     // determine if the property (variable, global variable) is encapsulated
@@ -26,7 +26,7 @@ public class Person
     int age;
     boolean alive;
     
-    // Methods: (things it can do, verbs, actions, return, parameter(s))........
+    // Methods: things it can do, verbs, actions, return, parameter(s)..........
     
     void born() {
         name  = "unidentifed";

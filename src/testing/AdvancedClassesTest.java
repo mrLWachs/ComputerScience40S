@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required imports */
 import testing.classes.Person;
 
 
@@ -26,12 +27,12 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("Start learning Advanced Classes...");
         
-        // Using the class to create an object with the default constructor:
-        // class object = call constructor method (default)   
+        // Using the class (like a "cookie cutter") to create an object of that
+        // class (like a "cookie")
         Person person = new Person();
         
         // The "Object" (in this case called "person" - lowercase "p") can also 
-        // be called a: instance, or even a "variable"
+        // be called a "instance", or even a "variable"
         
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
