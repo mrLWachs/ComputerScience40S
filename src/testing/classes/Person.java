@@ -29,21 +29,33 @@ public class Person
     public String name;
     
     /**
-     * Properties that use the "modifier" word "private" will "encapsulate"
-     * this property so that it can only be accessed inside the class (like 
-     * a "private room") - this is the concept of encapsulation
+     * Properties that use the "modifier" keyword "private" will "encapsulate"
+     * this property.this means that this property (or method) can only be 
+     * accessed (read or changed) by the class itself (inside the class like
+     * a "private room") by other methods inside the class. Class outside of
+     * this one that are "communicating" or "using" this class can NOT access
+     * this. This is the concept of encapsulation
      */ 
     private int age;
     
     /**
-     * The keyword/modifier "private" means that this property (or method) can
-     * only be accessed (read or changed) by the class itself (inside the class)
-     * by other methods inside the class. Class outside of this one that are
-     * "communicating" or "using" this class can NOT access this.
+     * Another encapsulated property (field, variable/global variable)
      */
     private boolean alive;
     
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
+    
+    /**
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
+     */
+    public Person() {
+        born();     // Here we call (invoke) our private, utility, helper method
+    }
+    
     
     /**
      * A "private" method (also sometimes called a "utility" or "helper" method)

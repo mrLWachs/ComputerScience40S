@@ -37,12 +37,17 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
-        // Can NOT access private properties or methods...
-        // person.alive = false;
-        // person.age = 15;
-        // person.born();  // including methods that are encapsulated
+        // We can NOT access private properties or methods...
+        // If I try to change ("modify") a property ("variable") of the
+        // Person class that is set to be "private" I do NOT have
+        // access to that. With methods, you cannot call the private 
+        // (encapsuilated, utility, helper) methods outside the class...
         
-        // We CAN access public properties and we can call public methods...
+        // person.alive = false;        // Cannot change encapsulated properties
+        // person.age = 15;
+        // person.born();                    // Cannot call encapsulated methods 
+        
+        // We CAN access public properties and we CAN call public methods...
         person.name = "Per sony";
         person.birthday();
         person.talk();
