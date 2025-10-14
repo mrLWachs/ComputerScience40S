@@ -45,20 +45,35 @@ public class Person
     
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
     
-    void born() {
+    /**
+     * A "private" method (also sometimes called a "utility" or "helper" method)
+     * can only be called by other methods inside this class - not by any other
+     * classes
+     */
+    private void born() {
         name  = "unidentifed";
         age   = 0;
         alive = true;
     }
     
-    void die() {
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (alive) through this method
+     */
+    public void die() {
         alive = false;
     }
     
-    void birthday() {
+    /**
+     * A person has a birthday (the age goes up by one)
+     */
+    public void birthday() {
         age++;
     }
     
+    /**
+     * Outputs information about the person to the screen
+     */
     public void talk() {
         if (alive) {
             System.out.println(name + " is " + age);

@@ -37,10 +37,15 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
-        // Cannot access private properties or methods...
+        // Can NOT access private properties or methods...
         // person.alive = false;
+        // person.age = 15;
+        // person.born();  // including methods that are encapsulated
         
-        
+        // We CAN access public properties and we can call public methods...
+        person.name = "Per sony";
+        person.birthday();
+        person.talk();
         
         
         
