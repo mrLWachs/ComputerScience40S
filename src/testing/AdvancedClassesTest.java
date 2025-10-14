@@ -37,6 +37,9 @@ public class AdvancedClassesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
+        // Cannot access private properties or methods...
+        // person.alive = false;
+        
         
         
         

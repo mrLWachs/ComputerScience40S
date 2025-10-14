@@ -24,7 +24,14 @@ public class Person
     
     String name;
     int age;
-    boolean alive;
+    
+    /**
+     * The keyword/modifier "private" means that this property (or method) can
+     * only be accessed (read or changed) by the class itself (inside the class)
+     * by other methods inside the class. Class outside of this one that are
+     * "communicating" or "using" this class can NOT access this.
+     */
+    private boolean alive;
     
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
     
