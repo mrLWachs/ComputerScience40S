@@ -19,7 +19,7 @@ public class ComputerScience40S {
 
     public static void main(String[] args) {
         System.out.println("Start learning CS40S...");
-        Tester unit1 = new Tester();
+        Tester tester = new Tester();
         System.out.println("Completed learning CS40S!");
     }
     

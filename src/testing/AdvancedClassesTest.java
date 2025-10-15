@@ -52,6 +52,23 @@ public class AdvancedClassesTest
         person.birthday();
         person.talk();
         
+        // Try our overloaded, second constructor option to instantiate (which 
+        // means to create an "instance of") another Person object
+        
+        Person tom = new Person("Tom Williams",18,"male");
+        tom.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

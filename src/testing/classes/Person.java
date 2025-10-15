@@ -74,8 +74,8 @@ public class Person
         // Assign the parameter to the property (global variable of this class)
         // To do this, we use the keyword "this" which acts as a placeholder
         // for the name of the object (which will be created at a later time)
-        this.name = name;
-        this.age  = age;
+        this.name   = name;
+        this.age    = age;
         this.gender = gender;
     }
     
@@ -112,7 +112,7 @@ public class Person
      */
     public void talk() {
         if (alive) {
-            System.out.println(name + " is " + age);
+            System.out.println(name + " is " + age + " identifes as " + gender);
         }
         else {
             System.out.println("Booooooo!");
