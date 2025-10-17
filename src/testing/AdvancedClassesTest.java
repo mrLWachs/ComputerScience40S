@@ -4,6 +4,7 @@ package testing;
 
 /** Required imports */
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /*
@@ -58,11 +59,22 @@ public class AdvancedClassesTest
         Person tom = new Person("Tom Williams",18,"male");
         tom.talk();
         
+        // Now we instantiate (create an object from the Student class) 
+        // a Student object (or a Student instance) that inherts from the 
+        // Person class
+        Student student = new Student();
+        student.talk();
         
+        // We can also change some of the properties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.name = "Stu Denty";
+        student.birthday();
+        student.talk();
         
-        
-        
-        
+        // Create another student... (simple language)        
+        Student grand = new Student("Grandma Sweetie",72,"male",102);
+        grand.talk();
         
         
         
