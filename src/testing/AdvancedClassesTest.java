@@ -61,7 +61,7 @@ public class AdvancedClassesTest
         
         // Now we instantiate (create an object from the Student class) 
         // a Student object (or a Student instance) that inherts from the 
-        // Person class
+        // Person class - invoking our default constructor
         Student student = new Student();
         student.talk();
         
