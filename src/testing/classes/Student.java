@@ -63,5 +63,38 @@ public class Student extends Person
         gpa         = 0.0;
         book        = new Book();
     }
+    
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        gpa += 0.3;
+    }
+    
+    /**
+     * Slacking off lowers this student's average
+     */
+    public void slackOff() {
+        gpa -= 0.3;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+        secret();   // We call a private, encapsulated, helper, utility method
+    }
+    
+    /**
+     * This "secret" method is a private, encapsulated method. These types of 
+     * methods are sometimes called "helper" or "utility" methods as they can
+     * only be called by other methods inside this class
+     */
+    private void secret() {
+        gpa *= 1.0001;
+    }
 
 }
