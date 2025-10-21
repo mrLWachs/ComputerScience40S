@@ -75,7 +75,14 @@ public class AdvancedClassesTest
         // Create another student... (simple language)        
         Student grand = new Student("Grandma Sweetie",72,"male",102);
         grand.talk();
-        
+        grand.study();
+        grand.talk();
+        grand.slackOff();
+        grand.talk();
+        grand.cram();
+        grand.talk();
+        grand.die();
+        grand.talk();
         
         
         
