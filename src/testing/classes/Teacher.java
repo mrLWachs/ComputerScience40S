@@ -33,7 +33,16 @@ public class Teacher extends Person
     private final int MAX;                 // Constant for the maximum students
     
     
-    
+    /**
+     * Constructor, set class properties to the parameters
+     * 
+     * NOTE: if you write a class and do not write any constructor methods,
+     * then the code will "write one for you" (like our Book class) - BUT if 
+     * you write a constructor WITH parameter(s) then the code will NOT write 
+     * you a default constructor (but you could still write one)
+     * 
+     * @param name the name for this Teacher
+     */
     public Teacher(String name) {
         
     }
