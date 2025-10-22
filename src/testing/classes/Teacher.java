@@ -44,6 +44,18 @@ public class Teacher extends Person
      * @param name the name for this Teacher
      */
     public Teacher(String name) {
+        // First, construct a "Person" (the parent class)
+        super(name, 56, "teacher");
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
+        count = 0;
+        MAX   = 100;
+        
+        
+    }
+    
+    @Override
+    public void talk() {
         
     }
 

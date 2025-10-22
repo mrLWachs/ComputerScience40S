@@ -5,6 +5,7 @@ package testing;
 /** Required imports */
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -71,7 +72,7 @@ public class AdvancedClassesTest
         student.name = "Stu Denty";
         student.birthday();
         student.talk();
-        
+         
         // Create another student... (simple language)        
         Student grand = new Student("Grandma Sweetie",72,"male",102);
         grand.talk();
@@ -84,6 +85,8 @@ public class AdvancedClassesTest
         grand.die();
         grand.talk();
         
+        
+        Teacher t = new Teacher("");
         
         
         
