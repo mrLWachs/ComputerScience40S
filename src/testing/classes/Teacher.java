@@ -50,12 +50,28 @@ public class Teacher extends Person
         // the specific properties ("global variables")
         count = 0;
         MAX   = 100;
-        
-        
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size  
+        students = new Student[MAX];
+        // Note: an array of primitive data types (e.g. int, double, char, 
+        // boolean) will be initialized to simple values (like 0, false, etc.)
+        // but arrays of class level data (like this array of "Student" objects)
+        // are initialized to "null" values  
     }
     
+    /**
+     * Another example of a method over-ride which over-rides the talk method
+     * of the Person class (the parent class of Teacher)
+     */
     @Override
     public void talk() {
+        System.out.println(name + " the teacher is talking...");
+        System.out.println("Please quiet down, and now ever student needs");
+        System.out.println("to tell me about themselves...");
+        // To access an entire array we use a "for" loop, and the ".length"
+        // feature that is built into all arrays
+        
         
     }
 

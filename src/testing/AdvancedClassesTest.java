@@ -85,9 +85,9 @@ public class AdvancedClassesTest
         grand.die();
         grand.talk();
         
-        
-        Teacher t = new Teacher("");
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.talk();
         
         
         
