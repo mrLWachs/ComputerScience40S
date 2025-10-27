@@ -36,7 +36,7 @@ public class AdvancedClassesTest
         // The "Object" (in this case called "person" - lowercase "p") can also 
         // be called a "instance", or even a "variable"
         
-        // Call (invoke) one of our methods in this object ("instance") 
+        // We call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
         // We can NOT access private properties or methods...
@@ -55,8 +55,7 @@ public class AdvancedClassesTest
         person.talk();
         
         // Try our overloaded, second constructor option to instantiate (which 
-        // means to create an "instance of") another Person object
-        
+        // means to create an "instance of") another Person object        
         Person tom = new Person("Tom Williams",18,"male");
         tom.talk();
         
@@ -101,18 +100,17 @@ public class AdvancedClassesTest
         
         // Now new CS40S advanced classes content...............................
         
-        // The Object class - this class already exists (we don't write it)
-        // it is part of Java, all Java project "have it". Also, the
-        // Object class is the parent (super) class of ALL classes
-        
+        // The Object class - this class already exists (we don't write it) it 
+        // is part of Java, all Java project "have it". Also, the Object class 
+        // is the parent (super) class of ALL classes        
         Object object = new Object();
         
         // This class has NO properties, but does have methods that we can and
         // often SHOULD over-ride. All classes (including ones we create) 
-        // inherit from the object class which is the parent (super) class of 
+        // inherit from the object class, which is the parent (super) class of 
         // all classes. Built into the object class are a number of methods that
         // all other classes inherit. These include some that are not relevant
-        // in this unit, and others like the: 
+        // in this unit, and others like these: 
         //      toString()
         //      equals()
         //      clone()
