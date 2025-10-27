@@ -75,8 +75,14 @@ public class Teacher extends Person
             // By using the name of the array and then the square brackets 
             // "[ ]" and placing the index number (or the variable i) in those
             // square brackets it allows us to "access" (or use) that element 
-            // (spot) of the array
-            students[i].talk();
+            // (spot) of the array            
+            if (students[i] != null) {                  // Array spot not a null
+                // With arrays of "objects" (meaning not primitive data types, 
+                // but "class" level data types) all indices (plural of "index")
+                // in the array are initially set to "null"
+                students[i].study();                    // Make this spot study
+                students[i].talk();
+            }
         }
     }
     
