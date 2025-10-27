@@ -87,9 +87,46 @@ public class AdvancedClassesTest
         
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Ms. Teachery");
-        teacher.add(student);
-        teacher.add(grand);        
+        teacher.add(student);                 // Associate object through method
+        teacher.add(grand);                        // or "Teacher has a Student"
+        teacher.talk();                           // Invoke an overloaded method
+        teacher.birthday();                // Invoke (call) the inherited method
+        teacher.die();
+        // See if the teacher object effected its associated class objects
+        // those being the two student objects...
         teacher.talk();
+        
+        // Now the review of CS30S content (introduction: variables, conditional
+        // statements, looping and methods and arrays and classes)..............
+        
+        // Now new CS40S advanced classes content...............................
+        
+        // The Object class - this class already exists (we don't write it)
+        // it is part of Java, all Java project "have it". Also, the
+        // Object class is the parent (super) class of ALL classes
+        
+        Object object = new Object();
+        
+        // This class has NO properties, but does have methods that we can and
+        // often SHOULD over-ride. All classes (including ones we create) 
+        // inherit from the object class which is the parent (super) class of 
+        // all classes. Built into the object class are a number of methods that
+        // all other classes inherit. These include some that are not relevant
+        // in this unit, and others like the: 
+        //      toString()
+        //      equals()
+        //      clone()
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
