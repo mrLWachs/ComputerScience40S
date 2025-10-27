@@ -67,12 +67,35 @@ public class Teacher extends Person
     @Override
     public void talk() {
         System.out.println(name + " the teacher is talking...");
-        System.out.println("Please quiet down, and now ever student needs");
+        System.out.println("Please quiet down, and now every student needs");
         System.out.println("to tell me about themselves...");
         // To access an entire array we use a "for" loop, and the ".length"
         // feature that is built into all arrays
-        
-        
+        for (int i = 0; i < students.length; i++) {
+            // By using the name of the array and then the square brackets 
+            // "[ ]" and placing the index number (or the variable i) in those
+            // square brackets it allows us to "access" (or use) that element 
+            // (spot) of the array
+            students[i].talk();
+        }
+    }
+    
+    /**
+     * Adds a new Student object (instance) to this Teacher object's array of 
+     * Student objects
+     * 
+     * @param student the student object to add
+     */
+    public void add(Student student) {
+        // Add the passed student (parameter) into the array at the first 
+        // available "slot" (or spot, index, element, location) - this is
+        // done by using the square brackets "[ ]" and placing the index 
+        // number in the brackets. Remember, arrays start the indexing at 
+        // zero and the last index is always one less than the size 
+        students[count] = student;  // Parameter is assigned to property
+        count++;                    // Move to the next index (for next time)
+        // We have to watch for "out of bounds" error (exception)
+        if (count >= MAX) count = 0;
     }
 
 }
