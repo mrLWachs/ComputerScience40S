@@ -132,11 +132,21 @@ public class AdvancedClassesTest
         // classes (even our classes we wrote, for example "Person"). Then
         // all child classes inherit the "toString" method...
         
+        System.out.println("Person  as string is " + person.toString());
+        System.out.println("Student as string is " + student.toString());
+        System.out.println("Teacher as string is " + teacher.toString());
         
+        // This true for classes we don't write, that are built-in to Java (like
+        // the "String" class) as well...
         
+        String string = new String("gubernatorial");
+        System.out.println("String as a string is " + string.toString());
         
-        
-        
+        // So why is this last output not using the "toString" method it 
+        // inherited from "Object" which gives a memory address? The answer is 
+        // that the String class "over-rides" the toString method and that 
+        // over-ride version of "toString" method is called instead. We can 
+        // over-ride the toString method on all our classes (Student, Teacher).
         
         
         
