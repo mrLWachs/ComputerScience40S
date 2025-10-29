@@ -142,11 +142,26 @@ public class AdvancedClassesTest
         String string = new String("gubernatorial");
         System.out.println("String as a string is " + string.toString());
         
-        // So why is this last output not using the "toString" method it 
+        // So why is this last output not using the "toString()" method it 
         // inherited from "Object" which gives a memory address? The answer is 
         // that the String class "over-rides" the toString method and that 
-        // over-ride version of "toString" method is called instead. We can 
-        // over-ride the toString method on all our classes (Student, Teacher).
+        // over-ride version of "toString()" method is called instead. We can 
+        // and will over-ride the toString method on all our classes 
+        // (Person, Student, Teacher) and all classes to come (using another 
+        // modification to the NetBeans templates)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
