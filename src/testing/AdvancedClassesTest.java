@@ -147,8 +147,15 @@ public class AdvancedClassesTest
         // that the String class "over-rides" the toString method and that 
         // over-ride version of "toString()" method is called instead. We can 
         // and will over-ride the toString method on all our classes 
-        // (Person, Student, Teacher) and all classes to come (using another 
-        // modification to the NetBeans templates)
+        // (Person, Student, Teacher) and all classes to come. We will help to
+        // automate this process using another modification to the NetBeans 
+        // templates: (1) open the "ComputerScience40S.java" file from when
+        // we originally created this NetBeans project, (2) scroll down to the
+        // comments at the bottom of this file and comment 35 and follow its
+        // instructions (if you are missing these comments, go instead to this
+        // webpage: https://bit.ly/4nxivtB ). Now go back to the Person, 
+        // Student, and Teacher classes and add these three over-ride methods
+        // and then re-run this code to see the over-ride in the outputs
         
         
         
