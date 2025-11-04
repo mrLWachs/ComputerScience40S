@@ -126,7 +126,11 @@ public class Person
      */
     @Override
     public String toString() {
-        return "Person: " + super.toString();
+        // If we over-ride a method like toString(), then programmers can 
+        // customize this method to make it more practical and usable for 
+        // the scenario or problem being solved - if it is not over-ridden
+        // then the Object class inherited method (super class) is called 
+        return "Person: " + name + " is " + age + " -> " + super.toString();
     }
    
     /**
