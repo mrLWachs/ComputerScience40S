@@ -148,15 +148,10 @@ public class Student extends Person
         // with a few levels of comparison (some I will ignore)
         
         if (this.number != that.number) return false;
-        
-        
-        
-        
-        
-        
-        
-        
-        return super.equals(object);
+        if (this.gpa    != that.gpa)    return false;
+                
+        // Otherwise, if it passes the tests above...
+        return true;
     }
        
     /**

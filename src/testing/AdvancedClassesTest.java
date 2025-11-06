@@ -186,6 +186,9 @@ public class AdvancedClassesTest
         if (s1.equals(s2)) System.out.println("S1==S2");
         
         
+        Student student1 = new Student();
+        Student student2 = new Student();
+        if (student1.equals(student2)) System.out.println("Students are equal");
         
         
         
