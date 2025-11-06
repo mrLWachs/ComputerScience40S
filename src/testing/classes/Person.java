@@ -141,7 +141,11 @@ public class Person
      */
     @Override
     public boolean equals(Object object) {
-        return super.equals(object);
+        // The simpliest version of this over-ride method just makes all objects
+        // of type "Person" equal with no logical check of anything. Usually,
+        // over-riding this method means the programmer writes in custom logic
+        // usually examing class properties to determine "equality" or not
+        return true;
     }
        
     /**
