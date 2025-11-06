@@ -122,15 +122,29 @@ public class Teacher extends Person
      */
     @Override
     public boolean equals(Object object) {
-        // (1) cast into a Teacher object
+        // This will be a much "deeper" equals analysis
+        
+        // (1) First: cast into a Teacher object
         Teacher that = (Teacher)object;
-        // (2) compare the properties we decide are important
+        
+        // (2) Then: compare the properties we decide are important
         if (!this.name.equals(that.name))     return false;
         if (!this.gender.equals(that.gender)) return false;
-                
-        // if (this.age != that.age)             return false;
         
-        // (3) return equal (true) if passes the tests above
+        // NOTE: we cannot compare properties that are encapsulated (that are 
+        // marked private) like these internal and inherited properties.........  
+        
+        // if (this.MAX   != that.MAX)   return false;  // Teacher properties
+        // if (this.count != that.count) return false;
+        // if (this.age   != that.age)   return false;  // Inherited properties
+        // if (this.alive != that.alive) return false;
+        
+        // NOTE: we could also go much "deeper" by also comparing the two
+        // Student object arrays in both Teacher objects by looping through
+        // the two arrays and using the "equals()" method of each Student
+        // object stored in each array - but we will ignore that comparison        
+        
+        // (3) Finally: return equal (true) if passes all the tests above
         return true;
     }
        

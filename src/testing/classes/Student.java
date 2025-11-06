@@ -23,8 +23,8 @@ public class Student extends Person
      */
     public Book book;
     
-    private int number;     // Class properties (and inherited other properties)  
-    private double gpa;     // Encapsulated property
+    public int number;      // Class properties (and inherited other properties)  
+    public double gpa;     
     
 
     /**
@@ -141,7 +141,7 @@ public class Student extends Person
         Student that = (Student)object;
         
         // Now that we have a Student instance (called "that") we can compare
-        // it with the Student instance that "we" are cuyrrently running this 
+        // it with the Student instance that "we" are currently running this 
         // method inside of (using "this")
         
         // Compare the properties of "this and that"
