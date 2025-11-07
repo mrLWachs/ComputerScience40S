@@ -156,7 +156,7 @@ public class Teacher extends Person
     @Override
     public Teacher clone() {
         // A much "deeper" clone, create a "new" Teacher object in memory
-        // AND copies over that properties
+        // AND copies over the properties of the original into the clone
         Teacher that = new Teacher(this.name);
         // Start copying over the properties (from the "super" class "Person")
         // that I want to (as I am in charge of what to clone) and am able to
@@ -164,12 +164,12 @@ public class Teacher extends Person
         that.gender = this.gender;
         // For the "students" array property, we will loop through the array 
         // and clone all the students
-        for (int i = 0; i < MAX; i++) {
-            if (this.students[i] != null) {
-                that.students[i] = this.students[i].clone();
+        for (int i = 0; i < MAX; i++) {                        // Traverse array
+            if (this.students[i] != null) {                        // Check spot
+                that.students[i] = this.students[i].clone();    // Clone student
             }
         }
-        return that;
+        return that;                             // Return cloned Teacher object
     }
 
 }
