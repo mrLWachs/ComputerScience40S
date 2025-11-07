@@ -185,10 +185,33 @@ public class AdvancedClassesTest
         String s2 = "cat";        
         if (s1.equals(s2)) System.out.println("S1==S2");
         
-        
+        // Now we can over-ride the "equals" method in the Person, Student,
+        // and Teacher classes to customize the "equality" of comparing 
+        // those objects...
         Student student1 = new Student();
         Student student2 = new Student();
         if (student1.equals(student2)) System.out.println("Students are equal");
+        
+        Teacher teacher1 = new Teacher("teacher");
+        Teacher teacher2 = new Teacher("teacher");
+        if (teacher1.equals(teacher2)) System.out.println("Teachers are equal");
+        
+        // Now we will also over-ride the "clone" method in the 3 classes...
+        
+        // Object clone1 = object1.clone();
+        
+        // We cannot call the "clone" method directly from the "Object" class
+        // (but we can "over-ride" the clone() method in all sub-classes)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         

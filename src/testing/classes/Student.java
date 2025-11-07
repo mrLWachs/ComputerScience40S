@@ -161,7 +161,10 @@ public class Student extends Person
      */
     @Override
     public Student clone() {
-        return this;
+        // This we be a little "deeper" clone by creating new memory (or a 
+        // "new Student object) with that new memory
+        Student that = new Student();
+        return that;
     }
 
 }
