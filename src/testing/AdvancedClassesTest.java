@@ -140,23 +140,20 @@ public class AdvancedClassesTest
         // We will now output the 3 objects, using the "toString()" method
         // The toString() method of the object class outputs information
         // including the memory address (in hexadecimal code) where this object
-        // is stored in this computer's memory 
-        
+        // is stored in this computer's memory...         
         System.out.println("object1 as a string is " + object1.toString());
         System.out.println("object2 as a string is " + object2.toString());
         System.out.println("object3 as a string is " + object3.toString());
         
         // Since the "Object" class is the "parent" (or super-class) of ALL
         // classes (even our classes we wrote, for example "Person"). Then
-        // all child classes inherit the "toString" method...
-        
+        // all child classes inherit the "toString" method...        
         System.out.println("Person  as string is " + person.toString());
         System.out.println("Student as string is " + student.toString());
         System.out.println("Teacher as string is " + teacher.toString());
         
         // This true for classes we don't write, that are built-in to Java (like
-        // the "String" class) as well...
-        
+        // the "String" class) as well...        
         String string = new String("gubernatorial");
         System.out.println("String as a string is " + string.toString());
         
@@ -178,14 +175,13 @@ public class AdvancedClassesTest
         // The equals() method of the object class checks if two objects are
         // "equal" by using the "memory address" of each object and checks if 
         // the two objects being compared use the same address (true) or not 
-        // (false)  
-        
+        // (false)...
         if (object1.equals(object2)) System.out.println("O1==O2");
         if (object2.equals(object3)) System.out.println("O2==O3");
         if (object1.equals(object3)) System.out.println("O1==O3");
         
         // Now we will create 3 identifier names, but only one memory location
-        // for all three
+        // for all three...
         Person person1 = new Person();  // Creating a "new" memory address
         Person person2 = person1;       // Same memory address as person1
         Person person3 = person2;       // Same memory address as person1 and 2
@@ -194,7 +190,7 @@ public class AdvancedClassesTest
         if (person2.equals(person3)) System.out.println("P2==P3");
         if (person1.equals(person3)) System.out.println("P1==P3");
         
-        // Using our previously created Person objects with equals
+        // Using our previously created Person objects with equals..
         if (person.equals(tom)) System.out.println("person==tom");
         
         // This also applies to the "String" class which obviously over-rides
@@ -214,13 +210,10 @@ public class AdvancedClassesTest
         Teacher teacher2 = new Teacher("teacher");
         if (teacher1.equals(teacher2)) System.out.println("Teachers are equal");
         
-        // Now we will also over-ride the "clone" method in the 3 classes...
-        
-        // Object clone1 = object1.clone();
-        
+        // Now we will also over-ride the "clone" method in the 3 classes...        
+        // Object clone1 = object1.clone();        
         // We cannot call the "clone" method directly from the "Object" class
-        // (but we can "over-ride" the clone() method in all sub-classes)
-        
+        // (but we can "over-ride" the clone() method in all sub-classes)...        
         Person  clone2 = person1.clone();
         Student clone3 = student1.clone();
         Teacher clone4 = teacher1.clone();
@@ -237,12 +230,11 @@ public class AdvancedClassesTest
         
         // Using a static variable: these are variables get instantiated "once" 
         // and all objects "share" a reference to that same memory location 
-        // (meaning the "static" variable "belongs" to the class not the object)
-        
+        // (means the "static" variable "belongs" to the class not the object).        
         // We added a static variable to the Student class, and then outputted
         // it for two different objects of the Student class, and you will 
         // notice how we get the same output for each student instance as they 
-        // all "share" the same access to the same static variable  
+        // all "share" the same access to the same static variable ... 
         
         System.out.println("Student total = " + student.total);
         System.out.println("Student total = " + grand.total);
