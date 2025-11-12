@@ -203,12 +203,33 @@ public class AdvancedClassesTest
         // We cannot call the "clone" method directly from the "Object" class
         // (but we can "over-ride" the clone() method in all sub-classes)
         
+        Person  clone2 = person1.clone();
+        Student clone3 = student1.clone();
+        Teacher clone4 = teacher1.clone();
         
+        System.out.println("Person  1: " + person1.toString());
+        System.out.println("Clone   2: " + clone2.toString());
+        System.out.println("Student 1: " + student1.toString());
+        System.out.println("Clone   3: " + clone3.toString());
+        System.out.println("Teacher 1: " + teacher1.toString());
+        System.out.println("Clone   4: " + clone4.toString());
         
+        // Have over-ridden the toString() and equals() methods in the
+        // person class so that we can check how that method is called over the 
+        // object version of those methods. It is useful to alter a NetBeans
+        // template so those methods are always over-ridden in every new class 
+        // created (see the comment in "ComputerScience40S.java" to do this).
         
+        // Using a static variable, static variables get instantiated once and
+        // all objects share a reference to that same memory location (meaning
+        // the "static" variable "belongs" to the class not the object)
         
+        // Now output the static variable of each object and you will notice
+        // how we get the same output for each student instance as they all
+        // "share" the same access to the same static variable  
         
-        
+        System.out.println("Student total = " + student.total);
+        System.out.println("Student total = " + grand.total);
         
         
         

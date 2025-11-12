@@ -26,7 +26,14 @@ public class Student extends Person
     public int number;      // Class properties (and inherited other properties)  
     public double gpa;     
     
-
+    /**
+     * "static" property: the modifier word "static" simply means "shared" 
+     * meaning that ALL objects of this class share this ONE instance of this
+     * variable
+     */
+    public static int total;
+    
+    
     /**
      * Default constructor, set class properties (including a call to the 
      * "super-constructor" from the parent class to set all of its properties 
@@ -42,6 +49,8 @@ public class Student extends Person
         // The "Book" class we associate with here is instantiated into a
         // book object
         book = new Book();
+        // Change ("mutate") the static ("shared") property ("global variable")
+        total++;
     }
     
     /**
@@ -62,6 +71,7 @@ public class Student extends Person
         this.number = number;
         gpa         = 0.0;
         book        = new Book();
+        total++;
     }
     
     /**
