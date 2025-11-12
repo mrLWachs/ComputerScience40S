@@ -29,6 +29,9 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("Start learning Advanced Classes...");
         
+        // (1) REVIEW: Classes (properties and methods)
+        // =====================================================================
+        
         // Using the class (like a "cookie cutter") to create an object of that
         // class (like a "cookie")
         Person person = new Person();
@@ -39,11 +42,14 @@ public class AdvancedClassesTest
         // We call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
-        // We can NOT access private properties or methods...
-        // If I try to change ("modify") a property ("variable") of the
-        // Person class that is set to be "private" I do NOT have
-        // access to that. With methods, you cannot call the private 
-        // (encapsuilated, utility, helper) methods outside the class...
+        // (2) REVIEW: Encapsulation (private and public)
+        // =====================================================================
+        
+        // We can NOT access private properties or methods. If I try to change
+        // ("modify") a property ("variable") of the Person class that is set 
+        // to be "private" I do NOT have access to that. With methods, you
+        // cannot call the private (encapsuilated, utility, helper) methods 
+        // outside the class...
         
         // person.alive = false;        // Cannot change encapsulated properties
         // person.age = 15;
@@ -58,6 +64,9 @@ public class AdvancedClassesTest
         // means to create an "instance of") another Person object        
         Person tom = new Person("Tom Williams",18,"male");
         tom.talk();
+        
+        // (3) REVIEW: Inheritance (super and child class)
+        // =====================================================================
         
         // Now we instantiate (create an object from the Student class) 
         // a Student object (or a Student instance) that inherts from the 
@@ -84,6 +93,9 @@ public class AdvancedClassesTest
         grand.die();
         grand.talk();
         
+        // (4) REVIEW: Association ("has a" vs. "is a")
+        // =====================================================================
+        
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Ms. Teachery");
         teacher.add(student);                 // Associate object through method
@@ -95,15 +107,21 @@ public class AdvancedClassesTest
         // those being the two student objects...
         teacher.talk();
         
-        // Now the review of CS30S content (introduction: variables, conditional
-        // statements, looping and methods and arrays and classes)..............
+        // Now that the review of CS30S content (introduction: variables, 
+        // conditional statements, looping, methods, arrays and specifically 
+        // classes) is completed, we can now start looking at the new CS40S
+        // advanced classes content.............................................
         
-        // Now new CS40S advanced classes content...............................
+        // (5) ADVANCED: Object class
+        // =====================================================================
         
         // The Object class - this class already exists (we don't write it) it 
         // is part of Java, all Java project "have it". Also, the Object class 
         // is the parent (super) class of ALL classes        
         Object object = new Object();
+        
+        // (5) ADVANCED: toString, equals, clone
+        // =====================================================================
         
         // This class has NO properties, but does have methods that we can and
         // often SHOULD over-ride. All classes (including ones we create) 
@@ -214,19 +232,17 @@ public class AdvancedClassesTest
         System.out.println("Teacher 1: " + teacher1.toString());
         System.out.println("Clone   4: " + clone4.toString());
         
-        // Have over-ridden the toString() and equals() methods in the
-        // person class so that we can check how that method is called over the 
-        // object version of those methods. It is useful to alter a NetBeans
-        // template so those methods are always over-ridden in every new class 
-        // created (see the comment in "ComputerScience40S.java" to do this).
+        // (6) ADVANCED: static
+        // =====================================================================
         
-        // Using a static variable, static variables get instantiated once and
-        // all objects share a reference to that same memory location (meaning
-        // the "static" variable "belongs" to the class not the object)
+        // Using a static variable: these are variables get instantiated "once" 
+        // and all objects "share" a reference to that same memory location 
+        // (meaning the "static" variable "belongs" to the class not the object)
         
-        // Now output the static variable of each object and you will notice
-        // how we get the same output for each student instance as they all
-        // "share" the same access to the same static variable  
+        // We added a static variable to the Student class, and then outputted
+        // it for two different objects of the Student class, and you will 
+        // notice how we get the same output for each student instance as they 
+        // all "share" the same access to the same static variable  
         
         System.out.println("Student total = " + student.total);
         System.out.println("Student total = " + grand.total);

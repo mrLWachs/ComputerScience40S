@@ -16,6 +16,7 @@ package testing.classes;
 public class Person
 {
     // Properties: things about it, adjectives, descriptors, variables, arrays..
+    // =========================================================================
 
     // We can add a keyword to the front of the properties (modifier word) to
     // determine if the property (variable, global variable) is encapsulated
@@ -27,6 +28,7 @@ public class Person
      * changed outside of this class by anther class "using" this class
      */
     public String name;
+    public String gender;
     
     /**
      * Properties that use the "modifier" keyword "private" will "encapsulate"
@@ -34,19 +36,15 @@ public class Person
      * accessed (read or changed) by the class itself (inside the class like
      * a "private room") by other methods inside the class. Class outside of
      * this one that are "communicating" or "using" this class can NOT access
-     * this. This is the concept of encapsulation
+     * this. This is the concept of encapsulation. So we have "encapsulated" 
+     * these properties (aka fields, variables/global variables)
      */ 
     private int age;
-    
-    /**
-     * Another encapsulated property (field, variable/global variable)
-     */
     private boolean alive;
-    
-    public String gender;
-    
+        
     
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
+    // =========================================================================
     
     /**
      * Constructor method is a method that has (1) the same name as the class,
