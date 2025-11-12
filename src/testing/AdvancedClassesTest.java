@@ -247,7 +247,10 @@ public class AdvancedClassesTest
         System.out.println("Student total = " + student.total);
         System.out.println("Student total = " + grand.total);
         
-        
+        // Note: the word "total" is given a "warning" in NetBeans (the yellow
+        // squiggly line) because you normally access static properties from 
+        // the "class" refernce rahter than an object reference (but this code
+        // is still allowed)
         
         
         
