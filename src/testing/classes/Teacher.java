@@ -180,6 +180,5 @@ public class Teacher extends Person
     protected void yelling() {
         System.out.println("Ahhhhhhh!!!!!");
     }
-    
-    
+        
 }

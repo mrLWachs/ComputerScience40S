@@ -3,7 +3,6 @@
 package testing;
 
 /** Required imports */
-import javax.swing.JOptionPane;
 import testing.classes.MrWachs;
 import testing.classes.Person;
 import testing.classes.Student;
@@ -31,6 +30,7 @@ public class AdvancedClassesTest
     public AdvancedClassesTest() {
         System.out.println("Start learning Advanced Classes...");
         
+        // =====================================================================
         // (1) REVIEW: Classes (properties and methods)
         // =====================================================================
         
@@ -44,6 +44,7 @@ public class AdvancedClassesTest
         // We call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
+        // =====================================================================
         // (2) REVIEW: Encapsulation (private and public)
         // =====================================================================
         
@@ -67,6 +68,7 @@ public class AdvancedClassesTest
         Person tom = new Person("Tom Williams",18,"male");
         tom.talk();
         
+        // =====================================================================
         // (3) REVIEW: Inheritance (super and child class)
         // =====================================================================
         
@@ -95,6 +97,7 @@ public class AdvancedClassesTest
         grand.die();
         grand.talk();
         
+        // =====================================================================
         // (4) REVIEW: Association ("has a" vs. "is a")
         // =====================================================================
         
@@ -114,6 +117,7 @@ public class AdvancedClassesTest
         // classes) is completed, we can now start looking at the new CS40S
         // advanced classes content.............................................
         
+        // =====================================================================
         // (5) ADVANCED: Object class
         // =====================================================================
         
@@ -122,7 +126,8 @@ public class AdvancedClassesTest
         // is the parent (super) class of ALL classes        
         Object object = new Object();
         
-        // (5) ADVANCED: toString, equals, clone
+        // =====================================================================
+        // (6) ADVANCED: toString, equals, clone
         // =====================================================================
         
         // This class has NO properties, but does have methods that we can and
@@ -227,7 +232,8 @@ public class AdvancedClassesTest
         System.out.println("Teacher 1: " + teacher1.toString());
         System.out.println("Clone   4: " + clone4.toString());
         
-        // (6) ADVANCED: static
+        // =====================================================================
+        // (7) ADVANCED: static
         // =====================================================================
         
         // Using a static variable: these are variables get instantiated "once" 
@@ -289,16 +295,43 @@ public class AdvancedClassesTest
         // from the Class reference (class name) not the object reference 
         // (the names of the instances)
         
-        // (7) ADVANCED: protected
+        // =====================================================================
+        // (8) ADVANCED: protected
         // =====================================================================
         
-        // The "protected" modifier means this property of the Person class
-        // cannot be accessed from this class because this class is not 
-        // related to this class through inheritance (it is only related
-        // through association)
-        
+        // The "protected" modifier means the "alive" property of the "Person"
+        // class cannot be accessed from the "AdvancedClassesTest" class
+        // because it is not related to the "Person" class through inheritance
+        // (it is only related through association or "has a")
+
         // person.alive = false;
-        // Teacher.yelling();
+        
+        // Also, the "yelling()" method in the "Teacher" class is also a method 
+        // marked as "protected" which means that method cannot be called in 
+        // the "AdvancedClassesTest" class (as this class is only related 
+        // through association) and can only be called from classes (like the
+        // "MrWachs" class) that are related to the "Teacher" class through
+        // inheritance
+        
+        // teacher.yelling();
+        
+        // =====================================================================
+        // (9) ADVANCED: accessor and mutators
+        // =====================================================================
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
