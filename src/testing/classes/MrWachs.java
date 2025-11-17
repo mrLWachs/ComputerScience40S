@@ -12,6 +12,15 @@ public class MrWachs extends Teacher
 
     public MrWachs(String name) {
         super(name);
+        
+        // From classes, related through inheritance (MrWachs "is a" Teacher, 
+        // and Teacher "is a" Person - chained inheritance) we CAN access
+        // "protected" level properties (and methods)
+        super.alive = false;
+        
+        // Methods that are static can only be called from classes that are 
+        // related through inheritance
+        super.yelling();
     }
 
 

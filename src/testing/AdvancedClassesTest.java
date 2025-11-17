@@ -289,11 +289,16 @@ public class AdvancedClassesTest
         // from the Class reference (class name) not the object reference 
         // (the names of the instances)
         
+        // (7) ADVANCED: protected
+        // =====================================================================
         
+        // The "protected" modifier means this property of the Person class
+        // cannot be accessed from this class because this class is not 
+        // related to this class through inheritance (it is only related
+        // through association)
         
-        
-        
-        
+        // person.alive = false;
+        // Teacher.yelling();
         
         
         

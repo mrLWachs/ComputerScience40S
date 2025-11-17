@@ -171,5 +171,15 @@ public class Teacher extends Person
         }
         return that;                             // Return cloned Teacher object
     }
-
+    
+    /**
+     * A "protected" method, means this method can be called inside this class
+     * (like a private/utility method), BUT it can also be called by classes 
+     * related to this one through inheritance (bot not association)
+     */
+    protected void yelling() {
+        System.out.println("Ahhhhhhh!!!!!");
+    }
+    
+    
 }
