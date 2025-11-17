@@ -244,8 +244,20 @@ public class AdvancedClassesTest
         // the "class" refernce rahter than an object reference (but this code
         // is still allowed)
         
+        // Now create (instantiate) 2 more Student objects...
+        Student s4 = new Student();
+        System.out.println("S4 total = " + s4.total);
         
+        Student s5 = new Student("5",5,"5",5);        
+        System.out.println("S5 total = " + s5.total);
         
+        // Use static variables/properties carefully, you can still modify 
+        // them and may have unexpected results
+        grand.total = 10;
+        System.out.println("S5 total = " + s5.total);
+        
+        // Coming up, we will look at the dangers of making properties "public"
+        // and not encapsualting them when we look: accessors and mutators...
         
         
         
