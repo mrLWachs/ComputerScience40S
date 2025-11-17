@@ -7,15 +7,14 @@ package testing.classes;
  * @author Mr. Wachs
  * @since Oct 31, 2025, 9:14:28 AM
  */
-public class MrWachs 
+public class MrWachs extends Teacher
 {
 
-    /**
-     * Default constructor, set class properties
-     */
-    public MrWachs() {
-        
+    public MrWachs(String name) {
+        super(name);
     }
+
+
      
     /**
      * String representation of this object

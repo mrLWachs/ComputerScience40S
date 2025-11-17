@@ -3,6 +3,8 @@
 package testing;
 
 /** Required imports */
+import javax.swing.JOptionPane;
+import testing.classes.MrWachs;
 import testing.classes.Person;
 import testing.classes.Student;
 import testing.classes.Teacher;
@@ -258,6 +260,35 @@ public class AdvancedClassesTest
         
         // Coming up, we will look at the dangers of making properties "public"
         // and not encapsualting them when we look: accessors and mutators...
+        
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
+        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
+        Person.endTheWorld();
+        Student.endTheWorld();
+        Teacher.endTheWorld();
+        MrWachs.endTheWorld();
+        
+        // You have seen calling method like this before, for example in
+        // JOptionPane.showMessageDialog(null, "");
+        // Not doing this...
+        // JOptionPane jop = new JOptionPane();
+        // jop.showMessageDialog(null,"");
+        
+        // When we call static methods from the instances, the 
+        // autocomplete/intellisense will not show it - but it does show it in
+        // autocomplete/intellisense from the Class name
+        
+        // NOTE: we generally call static methods and access static properties 
+        // from the Class reference (class name) not the object reference 
+        // (the names of the instances)
+        
         
         
         
