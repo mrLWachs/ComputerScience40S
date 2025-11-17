@@ -32,11 +32,11 @@ public class MrWachs extends Teacher
         // From classes, related through inheritance (MrWachs "is a" Teacher, 
         // and Teacher "is a" Person - chained inheritance) we CAN access
         // "protected" level properties (and methods)
-        super.alive = false;
+        super.alive = false;                   // After all, he is "dead inside"
         
         // Methods that are static can only be called from classes that are 
         // related through inheritance
-        super.yelling();
+        super.yelling();                   // I mean what else does he really do
     }
 
 
