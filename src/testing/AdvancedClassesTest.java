@@ -233,7 +233,7 @@ public class AdvancedClassesTest
         System.out.println("Clone   4: " + clone4.toString());
         
         // =====================================================================
-        // (7) ADVANCED: static
+        // (7) ADVANCED: static modifier
         // =====================================================================
         
         // Using a static variable: these are variables get instantiated "once" 
@@ -296,7 +296,7 @@ public class AdvancedClassesTest
         // (the names of the instances)
         
         // =====================================================================
-        // (8) ADVANCED: protected
+        // (8) ADVANCED: protected modifier 
         // =====================================================================
         
         // The "protected" modifier means the "alive" property of the "Person"
@@ -316,7 +316,7 @@ public class AdvancedClassesTest
         // teacher.yelling();
         
         // =====================================================================
-        // (9) ADVANCED: accessor and mutators
+        // (9) ADVANCED: accessors and mutators
         // =====================================================================
         
         
