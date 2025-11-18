@@ -34,6 +34,14 @@ public class AdvancedClassesTest
         // (1) REVIEW: Classes (properties and methods)
         // =====================================================================
         
+        // A class is a way in code to combine properties and methods. Classes 
+        // can also "communicate" with other classes, and they are used to 
+        // model "things" in the "real" world. Properties: are things about 
+        // the class, or descriptors, or adjectives (they can also be seen as 
+        // "global variables" for the class). Methods: are things the class can 
+        // do, or actions, or verbs (they are written with parameters, return 
+        // types, etc.)
+        
         // Using the class (like a "cookie cutter") to create an object of that
         // class (like a "cookie")
         Person person = new Person();
@@ -47,6 +55,17 @@ public class AdvancedClassesTest
         // =====================================================================
         // (2) REVIEW: Encapsulation (private and public)
         // =====================================================================
+        
+        // A concept applied to both properties and methods of classes to 
+        // determine if they can be "used" only within the class or by other 
+        // classes "communicating" with this class. private - this modifier 
+        // word means the property can only be accessed and changed within the 
+        // class (not from other classes) and if used with methods, the methods 
+        // can only be called by other methods inside the class (sometimes call 
+        // "helper" or "utility" methods). public - this modifier word means the 
+        // property can be accessed and changed within the class and outside the 
+        // class (from other classes) and if used with methods, the methods can 
+        // be called anywhere (inside or outside the class)
         
         // We can NOT access private properties or methods. If I try to change
         // ("modify") a property ("variable") of the Person class that is set 
@@ -71,6 +90,14 @@ public class AdvancedClassesTest
         // =====================================================================
         // (3) REVIEW: Inheritance (super and child class)
         // =====================================================================
+        
+        // The ways two or more classes of code "communicate" with each other 
+        // to transfer data or represent (model) a "real world" relationship of 
+        // concepts. Inheritance - this is where one class "inherits" all the 
+        // properties and methods of the other class - like biology you can 
+        // have a parent (or "super" or "base") class and a child (or "sub") 
+        // class that inherits from the parent class - this is also simply put 
+        // as a "is a" relationship. 
         
         // Now we instantiate (create an object from the Student class) 
         // a Student object (or a Student instance) that inherts from the 
@@ -101,6 +128,11 @@ public class AdvancedClassesTest
         // (4) REVIEW: Association ("has a" vs. "is a")
         // =====================================================================
         
+        // Association - this is where one class and another class "use" one 
+        // another - this can be also classified as a "usage" (one class using
+        // the other), or "composition" (one class composed of another) 
+        // relationship - this is also simply put as a "has a" relationship
+        
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Ms. Teachery");
         teacher.add(student);                 // Associate object through method
@@ -122,16 +154,19 @@ public class AdvancedClassesTest
         // =====================================================================
         
         // The Object class - this class already exists (we don't write it) it 
-        // is part of Java, all Java project "have it". Also, the Object class 
-        // is the parent (super) class of ALL classes        
+        // is part of Java, all Java project "have it". It is "built-into" all 
+        // Java classes - it acts as the parent (or super-class) of all classes 
+        // (including the new ones we write) - which means all classes inherit 
+        // the methods of this class
+             
         Object object = new Object();
         
         // =====================================================================
         // (6) ADVANCED: toString, equals, clone
         // =====================================================================
         
-        // This class has NO properties, but does have methods that we can and
-        // often SHOULD over-ride. All classes (including ones we create) 
+        // The Object class has NO properties, but does have methods that we can
+        // and often SHOULD over-ride. All classes (including ones we create) 
         // inherit from the object class, which is the parent (super) class of 
         // all classes. Built into the object class are a number of methods that
         // all other classes inherit. These include some that are not relevant
@@ -299,6 +334,12 @@ public class AdvancedClassesTest
         // (8) ADVANCED: protected modifier 
         // =====================================================================
         
+        // This modifier word like public and private changes the encapsulation 
+        // level or properties and methods. Like the modifier private - the 
+        // protected modifier word means the property can only be accessed and 
+        // changed within the class BUT can also be accessed by any children 
+        // (sub classes) of this class (this is also true of methods)
+        
         // The "protected" modifier means the "alive" property of the "Person"
         // class cannot be accessed from the "AdvancedClassesTest" class
         // because it is not related to the "Person" class through inheritance
@@ -319,6 +360,16 @@ public class AdvancedClassesTest
         // (9) ADVANCED: accessors and mutators
         // =====================================================================
         
+        // These are the names given to two types of specific methods you can 
+        // write and are commonly written in other's code. Accessor - also known 
+        // as a "get" (or "getter") method, will always return a property value 
+        // that is being retrieved or "accessed" (usually one that is 
+        // encapsulated). Mutator - also known as a "set" (or "setter") method, 
+        // will always have a parameter(s) to modify (or "change") a property 
+        // value (often one that is encapsulated). Accessor / Mutators often 
+        // have error checking code so the properties can remain encapsulated 
+        // but still "used"
+        
         // Calling an accessor (or getter) method on this object of the Person
         // class (which is a private, encapsulated property)   
         int age = person.getAge();
@@ -331,6 +382,17 @@ public class AdvancedClassesTest
         // (which is a protected property) 
         teacher.setAlive(true);
         System.out.println("Teacher alive is " + teacher.getAlive());
+        
+        // =====================================================================
+        // (10) ADVANCED: polymorphism
+        // =====================================================================
+        
+        // Is the idea that our code can adapt or change ("morph") to many 
+        // ("poly") different types of objects. For example, a method that can 
+        // take a class type as a parameter will accept all objects of that type
+        // - but also all children (sub-class) objects of that class as well
+        
+        
         
         
         
