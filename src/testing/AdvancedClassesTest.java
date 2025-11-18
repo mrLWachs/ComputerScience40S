@@ -319,7 +319,8 @@ public class AdvancedClassesTest
         // (9) ADVANCED: accessors and mutators
         // =====================================================================
         
-        
+        int age = teacher.getAge();
+        System.out.println("Age is " + age);
         
         
         
