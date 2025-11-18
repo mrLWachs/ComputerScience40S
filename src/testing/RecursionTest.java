@@ -15,9 +15,9 @@ import tools.Calculator;
  * be used as an alternative to looping, or as a simpler way to solve 
  * specific problems. Recursion is not always the most efficient solution as 
  * it often consumes more memory than an iterative solution. Often recursion 
- * is ‘hidden’ by using a public method call that then calls a private 
+ * is 'hidden' by using a public method call that then calls a private 
  * recursive method to implement the recursion that eventually returns to the 
- * original method that then returns the result (this is known as a “wrapper” 
+ * original method that then returns the result (this is known as a "wrapper"
  * method).
  * 
  * @author Mr. Wachs
