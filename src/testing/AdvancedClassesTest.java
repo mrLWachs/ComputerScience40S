@@ -322,14 +322,15 @@ public class AdvancedClassesTest
         // Calling an accessor (or getter) method on this object of the Person
         // class (which is a private, encapsulated property)   
         int age = person.getAge();
-        System.out.println("Age is " + age);
+        System.out.println("Person age is " + age);
         // Now using the other (inherited) accessor method of a Teacher object
-        System.out.println("Alive is " + teacher.getAlive());
+        // which inherited the accessor method from its parent class
+        System.out.println("Teacher alive is " + teacher.getAlive());
         
         // Calling a mutator (or setter) method on this object's porperty
         // (which is a protected property) 
         teacher.setAlive(true);
-        System.out.println("Alive is " + person.getAlive());
+        System.out.println("Teacher alive is " + teacher.getAlive());
         
         
         
