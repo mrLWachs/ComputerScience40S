@@ -421,8 +421,14 @@ public class AdvancedClassesTest
         
         // Have person objects (instances of the Person class) and all 
         // children objects (classes that inherit from Person) will attend
-        // the meeting - through the concept of polymorphism 
+        // the meeting - through the concept of polymorphism
         meeting.attend(person);
+        
+        // NOTE: in NetBeans, if you remove the argument from the method call
+        // of a method like "attend()" (meaning remove the word "person") and
+        // leave empty brackets and then with your cursor between the brackets, 
+        // you press CTRL + SPACEBAR, NetBeans will show you all the potential 
+        // arguments that are valid for this method (up to a line)
         meeting.attend(athlete);
         meeting.attend(doctor);
         meeting.attend(dragQueen);
