@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * Meeting.java - description
+ * Meeting.java - represents a meeting of people
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Nov 19, 2025, 8:58:32 AM
  */
 public class Meeting 

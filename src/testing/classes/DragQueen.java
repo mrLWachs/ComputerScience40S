@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * DragQueen.java - description
+ * DragQueen.java - represents a Drag Queen Person
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Nov 19, 2025, 9:01:48 AM
  */
 public class DragQueen extends Person

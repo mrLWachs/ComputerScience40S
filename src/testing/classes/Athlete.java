@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * Athlete.java - description
+ * Athlete.java - represents a Athlete Husky HighSchool Student Person
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Nov 19, 2025, 8:58:49 AM
  */
 public class Athlete extends Husky

@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * HighSchool.java - description
+ * HighSchool.java - represents a high school student person
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Nov 19, 2025, 8:58:10 AM
  */
 public class HighSchool extends Student
