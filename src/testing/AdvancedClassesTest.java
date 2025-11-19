@@ -3,8 +3,14 @@
 package testing;
 
 /** Required imports */
+import testing.classes.Athlete;
+import testing.classes.Doctor;
+import testing.classes.DragQueen;
+import testing.classes.Husky;
+import testing.classes.Meeting;
 import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -392,11 +398,40 @@ public class AdvancedClassesTest
         // take a class type as a parameter will accept all objects of that type
         // - but also all children (sub-class) objects of that class as well
         
+        // Instatiate (make an "instance" aka "object") of the classes...
+        Doctor     doctor    = new Doctor();
+        DragQueen  dragQueen = new DragQueen();
+        MrWachs    mrWachs   = new MrWachs();
+        Husky      husky     = new Husky();
+        Piper      piper     = new Piper();
+        Athlete    athlete   = new Athlete();
+        // Intentially leaving out "HighSchool"
         
+        // Output these new objects, the "toString()" method is automatically 
+        // called by System.out.println() so we can just pass the object itself
+        System.out.println(doctor);
+        System.out.println(dragQueen);
+        System.out.println(mrWachs);
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(athlete);
         
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
         
-        
-        
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism 
+        meeting.attend(person);
+        meeting.attend(athlete);
+        meeting.attend(doctor);
+        meeting.attend(dragQueen);
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(grand);
+        meeting.attend(tom);
+        meeting.attend(teacher);        
+        meeting.attend(mrWachs);
         
         
         
