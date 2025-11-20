@@ -439,7 +439,7 @@ public class AdvancedClassesTest
         meeting.attend(teacher);        
         meeting.attend(mrWachs);
         
-        
+        meeting.hold();
         
         
         
