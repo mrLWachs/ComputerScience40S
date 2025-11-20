@@ -10,16 +10,25 @@ package testing.classes;
 public class Meeting 
 {
     
-    // The modifier words "private" encapsulates, "int" defines the data type
-    // of this name (or "variable", "property", "field")
-    private int count;      // How many people are attending
+    /**
+     * Simple phrasing: It represents how many people are attending the meeting
+     * Complex phrasing: the modifier words "private" encapsulates, "int" 
+     * defines the data type of this name (or "variable", "property", "field") 
+     */
+    private int count; 
     
-    // The modifier "final" turns the field into a constant
-    private final int MAX;  // The maximum the meeting can hold
+    /**
+     * Simple phrasing: The maximum number of people that can be at the meeting
+     * Complex phrasing: The modifier "final" turns the field into a constant
+     */
+    private final int MAX;
     
-    // Array (because of the square brackets) of class level objects, the
-    // Meeting "has a" (associated with) Person (an array of them)
-    private Person[] members;   // All the people at the meeting 
+    /**
+     * Simple phrasing: A "list/collection" of all the people at the meeting
+     * Complex phrasing: An array (because of square brackets) of class level
+     * objects, the Meeting "has a" (associated with) Person (an array of them)
+     */
+    private Person[] members;
     
     
     /**
