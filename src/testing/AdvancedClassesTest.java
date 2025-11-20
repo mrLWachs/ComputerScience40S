@@ -439,6 +439,48 @@ public class AdvancedClassesTest
         meeting.attend(teacher);        
         meeting.attend(mrWachs);
         
+        // =====================================================================
+        // (11) ADVANCED: enhanced for loop
+        // =====================================================================
+        
+        // In the Meeting class the hold() method, demonstrates the use of an 
+        // enhanced for loop. This is an alternative (not needed) way to 
+        // implement a for loop. It can be used with arrays (of objects) and 
+        // collections (next unit). IDEs (like NetBeans) can often write this 
+        // loop for you with CTRL + SPACE after writing "for" or type "fore" 
+        // and tab (and are often suggested to be used with the "light bulb").
+        // It should be "read" as "for every item in items...". It do not have 
+        // a counter variable, automatically "knows" where to start and stop 
+        // looping (to match the collection/array) and automatically advances 
+        // each time through the loop 
+        
+        // Here is a simple example of the enhanced for loop....................
+        
+        // String[] dogs = { "Golden Retriever", "German Shapard", "Poodle",
+        //                   "Husky", "Bulldog", "Pug", "Irish Wolfhound"};
+        
+        // Traditional for loop: would be...
+        // for (int i = 0; i < dogs.length; i++) {
+        //     System.out.println(dogs[i]);
+        // }
+        
+        // Enhanced for loop: would look like...
+        // for (String dog : dogs) {
+        //     System.out.println(dog);
+        // }
+        
+        // =====================================================================
+        // (12) ADVANCED: instanceof
+        // =====================================================================
+        
+        // In the Meeting class the hold() method, also demonstrates the use of
+        // the instanceof operator. This operator keyword is a way to determine
+        // if an object / instance "comes from" a certain class. It is kind of 
+        // like the "==" operator but for classes and objects. It can be used 
+        // in an "if" statement. You put the object / instance on the left hand 
+        // side (LHS) and the class type on the right hand side (RHS). It 
+        // "returns" a boolean (true / false)
+        
         meeting.hold();
         
         

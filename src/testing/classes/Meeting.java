@@ -74,20 +74,7 @@ public class Meeting
         // the length minus one) - using a NEW type of loop (a new "for" loop)
         // called the "enhanced for loop". To create the enhanced for loop 
         // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
-        // option that appears from the top, or type "fore" and TAB 
-                
-        // Here is a simple example first.......................................
-        // String[] dogs = { "Golden Retriever", "German Shapard", "Poodle",
-        //                   "Husky", "Bulldog", "Pug", "Irish Wolfhound"};
-        // Traditional way to loop would be...
-        // for (int i = 0; i < dogs.length; i++) {
-        //     System.out.println(dogs[i]);
-        // }
-        // The enhanced for loop would look like...
-        // for (String dog : dogs) {
-        //     System.out.println(dog);
-        // }
-        
+        // option that appears from the top, or type "fore" and TAB         
         for (Person member : members) {
             // The enhanced for loop should be read as:
             // "for every member in members"
@@ -99,10 +86,9 @@ public class Meeting
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
             if (member != null) {
+                message += "\n";                       // Add a line break first
                 
-                message += "\n";
-                
-                message += "\t Person ->";                
+                message += "\t Person ->";               
                 message += "\t" + member.toString();
             }
         }
