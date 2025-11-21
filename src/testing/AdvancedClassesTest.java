@@ -455,17 +455,14 @@ public class AdvancedClassesTest
         // looping (to match the collection/array) and automatically advances 
         // each time through the loop 
         
-        // Here is a simple example of the enhanced for loop....................
-        
+        // Here is a simple example of the enhanced for loop....................        
         // String[] dogs = { "Golden Retriever", "German Shapard", "Poodle",
-        //                   "Husky", "Bulldog", "Pug", "Irish Wolfhound"};
-        
-        // Traditional for loop: would be...
+        //                   "Husky", "Bulldog", "Pug", "Irish Wolfhound"};        
+        // TRADITIONAL FOR loop: would be.......................................
         // for (int i = 0; i < dogs.length; i++) {
         //     System.out.println(dogs[i]);
-        // }
-        
-        // Enhanced for loop: would look like...
+        // }        
+        // ENHANCED FOR loop: would look like...................................
         // for (String dog : dogs) {
         //     System.out.println(dog);
         // }
@@ -480,14 +477,45 @@ public class AdvancedClassesTest
         // like the "==" operator but for classes and objects. It can be used 
         // in an "if" statement. You put the object / instance on the left hand 
         // side (LHS) and the class type on the right hand side (RHS). It 
-        // "returns" a boolean (true / false)
+        // "returns" a boolean (true / false). For example:        
+        // if ("word" instanceof String) System.out.println("Yes!");
         
         meeting.hold();
         
-        // Abstract classes can NOT ever be instantiated, for example:
-        // HighSchool highSchool = new HighSchool();
+        // =====================================================================
+        // (13) ADVANCED: Abstraction
+        // =====================================================================
         
-               
+        // Abstraction is the quality of dealing with ideas rather than events.
+        // Like black box programming, is a process of hiding the implementation 
+        // details from the user – in Java, abstraction is achieved using 
+        // abstract classes (and Interfaces which we will study next). 
+        // Abstraction lets you focus on WHAT the object does instead of HOW it 
+        // does it. In Java,  an abstract class is a class which cannot be 
+        // instantiated – in other words, you define it as a class but cannot 
+        // use it to create an object. The purpose of doing this is to create a 
+        // class which acts as a parent class (base class) for subclasses 
+        // (child classes) but will not be needed to be instantiated in itself 
+        // – it must be extended and its methods implemented. To create an 
+        // abstract class, add the abstract modifier keyword in the class 
+        // definition, and once you have a abstract class, you can create 
+        // abstract methods within the abstract class. For example:
+        
+        // HighSchool highSchool = new HighSchool();      // Cannot instantiate!
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
