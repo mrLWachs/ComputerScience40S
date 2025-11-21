@@ -97,7 +97,22 @@ public class Meeting
             if (member != null) {
                 message += "\n";                       // Add a line break first
                 
-                message += "\t Person ->";               
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is true if the object 'comes from' that
+                // class (is a instance of that class type)  
+                
+                if (member instanceof Person)     message += "\t Person ->"; 
+                if (member instanceof Student)    message += "\t Student ->"; 
+                if (member instanceof Teacher)    message += "\t Teacher ->";
+                if (member instanceof Doctor)     message += "\t Doctor ->";
+                if (member instanceof DragQueen)  message += "\t DragQueen ->";
+                if (member instanceof MrWachs)    message += "\t MrWachs ->";
+                if (member instanceof HighSchool) message += "\t HighSchool ->";
+                if (member instanceof Husky)      message += "\t Husky ->";
+                if (member instanceof Piper)      message += "\t Piper ->";
+                if (member instanceof Athlete)    message += "\t Athlete ->";
+                              
                 message += "\t" + member.toString();
             }
         }
@@ -108,3 +123,32 @@ public class Meeting
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
