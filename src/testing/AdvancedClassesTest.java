@@ -6,7 +6,6 @@ package testing;
 import testing.classes.Athlete;
 import testing.classes.Doctor;
 import testing.classes.DragQueen;
-import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
