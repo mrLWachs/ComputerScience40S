@@ -15,7 +15,7 @@ public class Apple extends Food
      * Default constructor, set class properties
      */
     public Apple() {
-        
+        super(0);
     }
      
   
