@@ -501,7 +501,7 @@ public class AdvancedClassesTest
         // abstract methods within the abstract class. For example:
         
         // HighSchool highSchool = new HighSchool();      // Cannot instantiate!
-        
+        // Food food = new Food();
         
         
         

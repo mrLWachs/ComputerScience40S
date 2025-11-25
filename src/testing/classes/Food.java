@@ -39,11 +39,14 @@ public abstract class Food
     
     /**
      * Why write a constructor for a class that will never be instantiated, 
-     * which a abstract class can not. This is done for inheritance sake.
-     * NOTE: a default constructor is a constructor (no return type, same name 
-     * as the class) without any parameters - compilers (NetBeans) will write 
-     * a default constructor for you if you don't. But, if we write a 
-     * constructor with parameters, then it will not
+     * which a abstract class can not. This is done for inheritance sake and
+     * when the sub-classes call the super-constructor. NOTE: a default 
+     * constructor is a constructor (no return type, same name as the class) 
+     * without any parameters - compilers (NetBeans) will write a default 
+     * constructor for you if you don't. But, if we write a constructor with 
+     * parameters, then it will not
+     * 
+     * @param group which food group this food item belongs to
      */
     public Food(int group) {
         this.group = group;
