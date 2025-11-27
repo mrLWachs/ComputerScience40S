@@ -15,8 +15,8 @@ public class Apple extends Food
      * Default constructor, set class properties
      */
     public Apple() {
-        super(0);
+        super(0);              // Call super-constructor, passing the food group
+        
     }
-     
-  
+
 }
