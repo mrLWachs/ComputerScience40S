@@ -521,6 +521,20 @@ public class AdvancedClassesTest
         mrWachs.consume(apple);
         mrWachs.consume(cookie);
         
+        // =====================================================================
+        // (14) ADVANCED: Interfaces
+        // =====================================================================
+        
+        // Interface can be thought of "as a set of rules" - like a class, but 
+        // only contains method signatures. They are like abstract methods - but
+        // you don't have to use the word 'abstract' inside interfaces with 
+        // method signatures (they are always abstract). Like abstract classes,
+        // interfaces cannot be instantiated (made into objects like
+        // Sports sports = new Sports(); ). Alos like an abstract class, 
+        // interfaces are "used" by 'child' like classes that 'implement' the 
+        // interface (these classes "follow the rules" of the interface ("the 
+        // set of rules").
+        
         
         
         
