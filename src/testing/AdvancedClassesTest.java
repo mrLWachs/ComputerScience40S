@@ -511,8 +511,8 @@ public class AdvancedClassesTest
         Apple         apple  = new Apple();
         SweetieCookie cookie = new SweetieCookie();
         
-        apple.smell(1);
-        cookie.smell(2);
+        apple.smell(2);
+        cookie.smell(5);
         
         // Call the polymorphic method which accepts the abstract object (Food)
         // as an argument. Since the abstract class cannot be instantiated,
