@@ -7,13 +7,13 @@ package testing.classes;
  * @author Mr. Wachs
  * @since Nov 27, 2025, 9:25:44 AM
  */
-public class SweetieCookies extends Food
+public class SweetieCookie extends Food
 {
 
     /**
      * Default constructor, set class properties
      */
-    public SweetieCookies() {
+    public SweetieCookie() {
         super(4);                   // Call super-constructor, passing the group
         super.flavor = "Delicious";          // Modifying our protected property
     }

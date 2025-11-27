@@ -59,12 +59,12 @@ public abstract class Food
      * @return The output of how eating this "food" item went
      */
     public String eat() {
-        if (hasSpoiled()) {
+        if (hasSpoiled() == false) {
             return "Do not eat!";
         }
         else {
             prepare();
-            return "chomp chomp..." + GROUPS[group] + " was " + flavor;
+            return "chomp chomp... " + GROUPS[group] + " was " + flavor;
         }
     }
     
