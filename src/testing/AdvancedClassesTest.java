@@ -3,6 +3,8 @@
 package testing;
 
 /** Required imports */
+import static computerscience40s.ComputerScience40S.CYAN;
+import static computerscience40s.ComputerScience40S.RESET;
 import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.Doctor;
@@ -36,7 +38,7 @@ public class AdvancedClassesTest
      * instantiates the class (creates an "instance")
      */
     public AdvancedClassesTest() {
-        System.out.println("Start learning Advanced Classes...");
+        System.out.println(CYAN + "Start learning Advanced Classes..." + RESET);
         
         // =====================================================================
         // (1) REVIEW: Classes (properties and methods)
@@ -576,7 +578,7 @@ public class AdvancedClassesTest
         
         
         
-        System.out.println("Completed learning Advanced Classes!");
+        System.out.println(CYAN + "Completed learning Advanced Classes!" + RESET);
     }
 
 }

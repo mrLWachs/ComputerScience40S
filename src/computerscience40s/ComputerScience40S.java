@@ -15,12 +15,27 @@ import testing.Tester;
  * @author Mr. Wachs 
  * @since Sep 23, 2025
  */
-public class ComputerScience40S {
-
+public class ComputerScience40S 
+{
+    
+    /** Optional color constants for formatting standard outputs */
+    public static final String RESET  = "\033[0m";    
+    public static final String BLUE   = "\033[0;34m";  
+    public static final String RED    = "\033[0;31m";   
+    public static final String GREEN  = "\033[0;32m";  
+    public static final String CYAN   = "\033[0;36m";
+    public static final String PURPLE = "\033[0;35m";  
+      
+    
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        System.out.println("Start learning CS40S...");
+        System.out.println(BLUE + "Start learning CS40S..." + RESET);
         Tester tester = new Tester();
-        System.out.println("Completed learning CS40S!");
+        System.out.println(BLUE + "Completed learning CS40S!" + RESET);
     }
     
 }

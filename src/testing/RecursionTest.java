@@ -3,6 +3,8 @@
 package testing;
 
 /** Required code library (API) imports */
+import static computerscience40s.ComputerScience40S.GREEN;
+import static computerscience40s.ComputerScience40S.RESET;
 import tools.Calculator;
 
 
@@ -31,7 +33,7 @@ public class RecursionTest
      * one) - empty round brackets it is called the "default" constructor
      */
     public RecursionTest() {
-        System.out.println("Let's start learning Recursion");
+        System.out.println(GREEN + "Let's start learning Recursion" + RESET);
         
         // When testing, think of three scenarios:
             // (1) Typical case ("user"): do what they are told to do
@@ -71,7 +73,7 @@ public class RecursionTest
             }
         }
             
-        System.out.println("Completed learning Recursion");
+        System.out.println(GREEN + "Completed learning Recursion" + RESET);
     }
 
 }
