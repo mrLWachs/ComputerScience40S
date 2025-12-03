@@ -52,6 +52,7 @@ public enum Format
      */
     private final String value;
     
+    
     /**
      * Enums can have constructor methods. The constructor for this enum (class)
      * that is called above with the definition of the enum constants to set the 
