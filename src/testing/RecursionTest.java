@@ -3,8 +3,8 @@
 package testing;
 
 /** Required code library (API) imports */
-import static computerscience40s.ComputerScience40S.GREEN;
-import static computerscience40s.ComputerScience40S.RESET;
+import static tools.Format.GREEN;
+import static tools.Format.RESET;
 import tools.Calculator;
 
 

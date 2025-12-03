@@ -3,9 +3,9 @@
 package testing;
 
 /** Required imports */
-import static computerscience40s.ComputerScience40S.CYAN;
-import static computerscience40s.ComputerScience40S.RESET;
 import javax.swing.JOptionPane;
+import static tools.Format.CYAN;
+import static tools.Format.RESET;
 import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.Doctor;
@@ -600,17 +600,17 @@ public class AdvancedClassesTest
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
         
-        // Also String (which was always 'complex' using the captial 'S'
-        // to declare it) and its constructor method (usually not needed)..
+        // Also String (which was always 'complex' using the captial 'S' to 
+        // declare it) and its constructor method (usually not needed)..
         String string1 = new String("string");
         
         // Also creating (instantiating) other class level objects
         JOptionPane joptionpane = new JOptionPane();
         Athlete mike = new Athlete("Michael Wheeler");
         
-        // We have 7 different class level objects (instances of a class)
-        // and we are going to output these objects using ONE method...
-        // a "generic" method        
+        // We have 7 different class level objects (instances of a class) and 
+        // we are going to output these 7 different objects using ONE method... 
+        // a 'generic' method        
         output(bool);
         output(character);
         output(integer);
@@ -639,14 +639,13 @@ public class AdvancedClassesTest
     }
 
     /**
-     * Outputs a generic item with information about the data type.
-     * Generic methods use 'generic' references rather than specific
-     * references. You do not define the data type (the parameter) 
-     * when the method is created. Instead of defining the data
-     * type, a set of angle brackets "< >" is used with a single
-     * letter (usually capital "T") inside which acts as a 
-     * 'placeholder' for the data type which will be defined in
-     * the argument when the method is later called
+     * Outputs a generic item with information about the data type. Generic
+     * methods use 'generic' references rather than specific references. You do
+     * not define the data type (the parameter) when the method is created. 
+     * Instead of defining the data type, a set of angle brackets "< >" is used 
+     * with a single letter (usually capital "T") inside which acts as a 
+     * 'placeholder' for the data type which will be defined in the argument 
+     * when the method is later called
      * 
      * @param <T> the generic type used
      * @param item the item to output

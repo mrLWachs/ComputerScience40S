@@ -2,9 +2,10 @@
 /** Required package class namespace */
 package testing;
 
+import static tools.Format.RED;
+import static tools.Format.RESET;
+
 /** Required code library (API) imports */
-import static computerscience40s.ComputerScience40S.RED;
-import static computerscience40s.ComputerScience40S.RESET;
 
 
 /*
