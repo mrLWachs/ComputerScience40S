@@ -580,10 +580,20 @@ public class AdvancedClassesTest
         int     i = 0;
         double  d = 3.14;
         
-        // Now use the primatives with a more complex data type (class)
-        // called a 'wrapper' class from the primatives and use the 
-        // constructor methods of those wrapper classes passing the 
-        // primatives through the constructor methods 
+        // Now use the primatives with a more complex data type (class) called 
+        // a 'wrapper' class from the primatives and use the constructor methods
+        // of those wrapper classes passing the primatives through the 
+        // constructor methods. A wrapper class in Java is a class whose object
+        // 'wraps' or contains a primitive data type. Essentially, they allow 
+        // primitive types to be treated as objects. The wrapper classes provide
+        // several useful utility methods for converting between data types and 
+        // performing operations (e.g., Integer.parseInt() to convert a String 
+        // to an int. Autoboxing: is the automatic conversion that the Java 
+        // performs from a primitive type to its corresponding wrapper class 
+        // object (e.g. Integer obj = 100;). Unboxing: is the reverse process, 
+        // where Java automatically converts a wrapper class object back to its 
+        // corresponding primitive type (e.g. int num = obj; the Integer object
+        // obj is automatically converted back to an int value)
         Boolean bool = new Boolean(b);
         
         
