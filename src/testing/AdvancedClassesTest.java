@@ -8,6 +8,7 @@ import static tools.Format.CYAN;
 import static tools.Format.RESET;
 import testing.classes.Apple;
 import testing.classes.Athlete;
+import testing.classes.Box;
 import testing.classes.Doctor;
 import testing.classes.DragQueen;
 import testing.classes.Husky;
@@ -622,13 +623,55 @@ public class AdvancedClassesTest
         // We can even pass the method an "annoyomous" object
         output(new Object());
         
+        // Generic class objects are not normally created this way...
+        // Box box = new Box(bool);
+        // Instead...
         
+        // When using a class with a generic inside of it, and that
+        // class is being instantiated (creating an object), then 
+        // you define what type the generic is by using the angle 
+        // brackets "< >" with the data type (which must be a 
+        // 'class' type not a primitive) inside the brackets beside 
+        // the class name on the left hand side of the equals sign. 
+        // This is repeated on the right hand side of the equals 
+        // sign as well (but you can leave these angle brackets 
+        // empty - which is called the "diamond") before the round 
+        // brackets of the constructor method.
         
+        Box<Boolean>     box1 = new Box<>(bool);
+        Box<Character>   box2 = new Box<>(character);
+        Box<Integer>     box3 = new Box<>(integer);
+        Box<Double>      box4 = new Box<>(doub);
+        Box<String>      box5 = new Box<>(string1);
+        Box<JOptionPane> box6 = new Box<>(joptionpane);
+        Box<Athlete>     box7 = new Box<>(mike);
         
+        // Peek in all the boxes..  
+        box1.peek();
+        box2.peek();
+        box3.peek();
+        box4.peek();
+        box5.peek();
+        box6.peek();
+        box7.peek();
         
+        // Open all the boxes...        
+        Boolean     newBoolean    = box1.open();
+        Character   newCharacter  = box2.open();
+        Integer     newInteger    = box3.open();
+        Double      newDouble     = box4.open();
+        String      newString     = box5.open();
+        JOptionPane newOptionPane = box6.open();
+        Athlete     newAthlete    = box7.open();
         
-        
-        
+        // Output all the newly returned data type objects...
+        output(newBoolean);
+        output(newCharacter);
+        output(newInteger);
+        output(newDouble);
+        output(newString);
+        output(newOptionPane);
+        output(newAthlete);
         
         
         

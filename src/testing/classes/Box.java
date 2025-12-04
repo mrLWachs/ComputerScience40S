@@ -10,6 +10,7 @@ package testing.classes;
  * instantiated.
  *
  * @author Mr. Wachs
+ * @param <T> the generic type used through this class
  * @since Dec 3, 2025, 9:25:42 AM
  */
 public class Box <T>
