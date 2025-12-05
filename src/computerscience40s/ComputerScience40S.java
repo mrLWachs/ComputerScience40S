@@ -123,41 +123,41 @@ public class ComputerScience40S
 //
 // UNIT 2: Methods..............................................................
 //
-// (17) The + and - signs and gray lines along the side in NetBeans
+// (19) The + and - signs and gray lines along the side in NetBeans
 //      help to "expand" and "collapse" the method body (block of code)
 //      press CTRL and SHIFT and "-" it collapses all methods, and
 //      CTRL and SHIFT and "+" expands all code folds
-// (18) If you hold down the CTRL key, method calls become links with the
+// (20) If you hold down the CTRL key, method calls become links with the
 //      mouse to jump to the method (even ones we don't write)
-// (19) If you write the "call" to a method, before writing the method 
-//      itself, the lightbulb (see tip #11) will help you write it
-// (20) If you want to remove the auto-generated reminder when you use the
+// (21) If you write the "call" to a method, before writing the method 
+//      itself, the lightbulb (see tip #12) will help you write it
+// (22) If you want to remove the auto-generated reminder when you use the
 //      lightbulb to create a method, go to Tools -> Templates, scroll down 
 //      and click on the "+" beside "Java", and then the "+" beside "code
 //      snippets", and select "Generated Method body" and remove the last line
-// (21) On the left side window, the Navigator window helps find and jump to
+// (23) On the left side window, the Navigator window helps find and jump to
 //      methods if you double click them
-// (22) If you type /** before the method signature line it will automate
+// (24) If you type /** before the method signature line it will automate
 //      which JavaDoc comments you should make
-// (23) If you have to rename a variable or a method, select the word (the name
+// (25) If you have to rename a variable or a method, select the word (the name
 //      of the variable or method) and then press CTRL + R, then type in a
 //      new name
 //
 // UNIT 3: Arrays...............................................................
 //
-// (24) When your code "crashes" and an error takes place (run-time error) try
+// (26) When your code "crashes" and an error takes place (run-time error) try
 //      to READ what the error says down in the output window of NetBeans as
 //      it may offer clues on how to debug the error (and click on the links)
-// (25) When writing for loops with array, if you type "for" then press TAB, 
+// (27) When writing for loops with array, if you type "for" then press TAB, 
 //      and then press TAB AGAIN it jump to the ending value (which should be 
 //      the ".length" of the array (so if the array size changes, the loop 
 //      adapts to it) - the loop variable "i" also represents the array "index"
-// (26) To view the same code editing window with two different views, go to
+// (28) To view the same code editing window with two different views, go to
 //      the menu View -> Split -> Vertical (or Horizontal) and Clear when done
 //
 // UNIT 4: Classes..............................................................
 //
-// (27) To add a new class to a project, you can: (1) Click on File -> New File,
+// (29) To add a new class to a project, you can: (1) Click on File -> New File,
 //      and a dialog will appear and you select "Java" and "Java Class", click 
 //      next, give it a name (start with a capital letter and then use camel 
 //      casing), then click finish, (2)Click on the first button on the Toolbar 
@@ -165,7 +165,7 @@ public class ComputerScience40S
 //      click in "Projects" left side window in NetBeans on the "package" name
 //      (e.g. "computerscience30s") and then select "New" and "Java Class..." 
 //      from the flyout menus and then give the class a name and click finish
-// (28) The "Navigator" left side window when looking at classes uses custom
+// (30) The "Navigator" left side window when looking at classes uses custom
 //      colors and icons to identify specific pasts of the class at a glance. 
 //      For example, methods use a red circle, properties use a blue square, 
 //      constructor methods use a orange diamond, private properties or methods
@@ -173,23 +173,23 @@ public class ComputerScience40S
 //
 // UNIT 5: Graphics and User Interfaces (GUI)...................................
 //
-// (29) To have NetBeans help you build a user interface (UI) with a visual 
+// (31) To have NetBeans help you build a user interface (UI) with a visual 
 //      designer similar to the one used in Visual Studio, you go to 
 //      "File -> New File" and  select "JFrame Form" and the UI editor will 
 //      appear
-// (30) To switch between code and the designer, use the buttons under the 
+// (32) To switch between code and the designer, use the buttons under the 
 //      name of the file with the tabs named "Source" and "Design"
-// (31) Use the editor's "Palette" and "Properties" windows to build and change
+// (33) Use the editor's "Palette" and "Properties" windows to build and change
 //      the design and then adding code as needed by either double clicking the
 //      object you want to add code to, or right clicking the object and 
 //      selecting "Events" and then the action event you want
-// (32) To "name" all the objects in NetBeans (although in this course that is
+// (34) To "name" all the objects in NetBeans (although in this course that is
 //      not required) right click on each object and selecting "Change Variable
 //      Name..." and then type in a new name
-// (33) The NetBeans visual designer adds a constructor method with a call to
+// (35) The NetBeans visual designer adds a constructor method with a call to
 //      a method called "initComponents()" - do not erase this line as it sets
 //      up the UI for you
-// (34) The NetBeans WYSIWYG visual designer also adds a version of the "main"
+// (36) The NetBeans WYSIWYG visual designer also adds a version of the "main"
 //      method to this class of code (each JFrame form when added also adds a 
 //      main method for each JFrame form (just like the original class file 
 //      when you build a project). You can certainly delete that original 
@@ -200,7 +200,7 @@ public class ComputerScience40S
 //
 // UNIT: CS40S................................................................
 //
-// (35) To modify the template of all new classes, Tools -> Templates, scroll 
+// (37) To modify the template of all new classes, Tools -> Templates, scroll 
 //      down and click on the "+" beside "Java", select "Java Class" and use 
 //      ALL the code (uncommented) below:
 //
