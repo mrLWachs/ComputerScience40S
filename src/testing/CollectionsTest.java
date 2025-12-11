@@ -37,6 +37,12 @@ public class CollectionsTest
         // and manage memory better
         
         
+        
+        
+        
+        
+        
+        
         System.out.println(PURPLE + "Collections Test Completed!" + RESET);
     }
      
