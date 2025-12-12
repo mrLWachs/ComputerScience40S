@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing;
  
@@ -37,12 +38,36 @@ public class CollectionsTest
         // and easier to implement. Dynamic data structures are more flexible 
         // and manage memory better
         
+        // =====================================================================
+        // (2) THE NODE CLASS
+        // =====================================================================        
+        // A Node represents a single distinct unit of data that is used as a 
+        // building block for the upcoming LinkedList of collection data. It is 
+        // made as it's own distinct class so that we can define multiple 
+        // properties and methods. We have properties to store the data (which 
+        // will be generic data and therefore more universally useful as a data
+        // structure) and other properties to "link" this Node object to another 
+        // Node object (thus eventually forming a "chain" or "linked" list of 
+        // data). The property (or multiple properties) that "points" or "links"
+        // or "references" potentially another Node object makes this a 
+        // "self-referencing" class. The word "node" is borrowed from graph  
+        // theory in mathematics. We can also add methods for using this data 
+        // structure more effectively (like constructors, error checks, etc.)
+        
         // Create some node objects...
         System.out.println("\nTesting Node constructors....................\n");
         Node<String> a = new Node<>();
         Node<String> b = new Node<>("Pros");
         Node<String> c = new Node<>("Joes", b);
         Node<String> d = new Node<>("Huskies", c, b);
+        
+        // =====================================================================
+        // (3) NODE CLASS METHODS
+        // =====================================================================        
+        // The Node class has a number of useful methods including several 
+        // constructor methods, and over-ridden toString(), equals(), and 
+        // clone() methods - along with an over-ride on the finalize() method 
+        // from the Object class
         
         // Output our nodes...
         System.out.println("\nTesting Node toString()......................\n");
@@ -73,7 +98,7 @@ public class CollectionsTest
         System.out.println("Node g == c? -> " + g.equals(c));
         System.out.println("Node h == d? -> " + h.equals(d));
         
-        // finalize some nodes (wipe em out, "destroy" them, free up memory)
+        // Then finalize some nodes (wipe out, "destroy" them, free up memory)
         System.out.println("\nTesting Node finalize()......................\n");
         System.out.println("Node a = " + a.toString());
         System.out.println("Node b = " + b.toString());
@@ -99,6 +124,51 @@ public class CollectionsTest
         System.out.println("Node f = " + f.toString());
         System.out.println("Node g = " + g.toString());
         System.out.println("Node h = " + h.toString());
+        
+        // =====================================================================
+        // (4) THE LINKEDLIST CLASS
+        // =====================================================================        
+        // The LinkedList class is a collection of data objects (nodes) 
+        // "linked together" and where each Node object maintains a reference 
+        // (a "pointer") to the next Node object in the list. It is structured 
+        // into a class so that we can also add useful properties and methods 
+        // for using this abstract data type (ADT) effectively. It will allow 
+        // for more flexible operations over static data structures (like 
+        // arrays) like insertions, deletions, accessing (get), mutations (set),
+        // traversals, etc. It will also manage memory allocations dynamically
+        
+        // =====================================================================
+        // (5) SINGULAR AND DOUBLY LINKEDLIST 
+        // =====================================================================        
+        // Since LinkedList objects link together Node objects to form a "chain"
+        // The Node reference to "next" moves the list in one direction 
+        // (forward) from a starting point (like a one-way road) called a 
+        // singular LinkedList. If we use our Node references to next and 
+        // previous we can now move in two directions (forward and backwards) 
+        // from multiple starting points (like a two-way road) called a doubly 
+        // LinkedList
+        
+        // =====================================================================
+        // (6) LINKEDLIST ENTRY POINTS
+        // =====================================================================        
+        // In order to traverse (travel) through a LinkedList in addition to 
+        // eventually doing operations (like additions/deletions), we need an 
+        // entry point (or "points") to the list. The head is a "pointer" 
+        //reference property in the LinkedList class that allows access to the 
+        // very first Node. It acts as an entry point into the list, and if the
+        // list is empty, the head is set to null. The tail is another potential
+        // entry point that "points" to the last Node in the LinkedList (it is 
+        // also set to null on an empty list). Sometimes, the head and tail are 
+        // called by other identifier names like "start", "end", "front", 
+        // "back", etc.
+        
+        // =====================================================================
+        // (7) LINKEDLIST METHODS
+        // =====================================================================        
+        // The LinkedList class has a number of methods (public, private, and 
+        // protected), overloaded methods, wrapper methods, and constructor 
+        // option methods. They serve a number of functions such as adding, 
+        // deleting, accessors, mutators, traversals, and more.
         
         
         

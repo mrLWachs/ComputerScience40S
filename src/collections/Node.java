@@ -1,6 +1,8 @@
+
 /** Required package class namespace */
 package collections;
  
+
 /**
  * Node.java - a representation of a generic node for use with
  * a LinkedList object, and could be "visualized" as:
