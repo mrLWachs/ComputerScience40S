@@ -17,7 +17,7 @@ package collections;
  *
  * @author Mr. Wachs
  * @param <T> The generic data type used in the class
- * @since May 2025
+ * @since December 2025
  */
 public class Node <T>
 {
