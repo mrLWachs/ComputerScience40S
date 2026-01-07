@@ -14,6 +14,7 @@
 package computerscience40s;
 
 /** Required code library (API) imports */
+import finalproject.FinalProject;
 import tools.Format;
 import testing.Tester;
 
@@ -36,9 +37,12 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println(Format.BLUE + "Start learning CS40S..." + Format.RESET);
-        Tester tester = new Tester();
-        System.out.println(Format.BLUE + "Completed learning CS40S!" + Format.RESET);
+//        System.out.println(Format.BLUE + "Start learning CS40S..." + Format.RESET);
+//        Tester tester = new Tester();
+//        System.out.println(Format.BLUE + "Completed learning CS40S!" + Format.RESET);
+        
+        new FinalProject();
+        
     }
     
 }
