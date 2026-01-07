@@ -37,12 +37,15 @@ public class ComputerScience40S
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-//        System.out.println(Format.BLUE + "Start learning CS40S..." + Format.RESET);
-//        Tester tester = new Tester();
-//        System.out.println(Format.BLUE + "Completed learning CS40S!" + Format.RESET);
+        System.out.println(Format.BLUE + "Start learning CS40S..." + Format.RESET);
+        Tester tester = new Tester();
+        System.out.println(Format.BLUE + "Completed learning CS40S!" + Format.RESET);
         
+        // =====================================================================
+        // NOTE: The code below is the optional demonstration we did to show  
+        // some potential uses of our CS40S concepts in a 'mock' final project
+        // =====================================================================
         new FinalProject();
-        
     }
     
 }

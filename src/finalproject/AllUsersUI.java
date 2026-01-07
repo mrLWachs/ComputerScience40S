@@ -1,43 +1,54 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
+/** Required package class namespace */
 package finalproject;
 
+/** Required code library (API) imports */
 import javax.swing.JOptionPane;
 
+
 /**
- *
- * @author lawrence.wachs
+ * AllUsersUI.java - this second UI is for the user to modify the list of all
+ * users.
+ * 
+ * @author Mr. Wachs
+ * @since January 2026
  */
 public class AllUsersUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(AllUsersUI.class.getName());
+    private static final java.util.logging.Logger logger = 
+            java.util.logging.Logger.getLogger(AllUsersUI.class.getName());
 
+    
     /**
-     * Creates new form AllUsersUI
+     * Class constructor, it creates new form AllUsersUI using a call to the 
+     * designer written method "initComponents"
      */
     public AllUsersUI() {
         initComponents();
         
-        updateList();
+        // =====================================================================
+        updateList();                         // Call method to fill the listbox
         
-        
-        // Show the user the UI
-        this.setResizable(false);
-        this.setSize(475, 445);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        // Set other UI properties...      
+        this.setResizable(false);                       // Make form not sizable
+        this.setSize(475, 445);                                 // Set form size
+        this.setLocationRelativeTo(null);               // Center form on screen
+        this.setVisible(true);                              // Show form to user
+        // =====================================================================
     }
 
+    /**
+     * This method updates and fills the listbox control on the UI by looping
+     * through the LinkedList of users and adding them into the listbox
+     */
     private void updateList() {
-        // clear out the listbox
+        // Clear out the listbox first
         list1.removeAll();
         // Load all the users into the listbox
-        for (int i = 0; i < Globals.users.size(); i++) {
-            User user = Globals.users.get(i);
-            String information = user.toString();
-            list1.add(information);
+        for (int i = 0; i < Globals.users.size(); i++) {        // Traverse list
+            User user = Globals.users.get(i);       // Get user object from list
+            String information = user.toString();   // Get information from user
+            list1.add(information);                // Add information to listbox
         }
     }
 
@@ -96,28 +107,24 @@ public class AllUsersUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        new LoginUI();
-        this.dispose();
-        
+        // =====================================================================
+        new LoginUI();                 // Instantiate and show the previous form
+        this.dispose();                  // Dispose and hide current (this) form
+        // =====================================================================
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // =====================================================================
         JOptionPane.showMessageDialog(this, "Please upgrade for this feature!");
+        // =====================================================================
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        
-        // Get the user selection from the listbox
-        int index = list1.getSelectedIndex();
-        
-        // Remove that index from the linked list
-        Globals.users.remove(index);
-        
-        // update the listbox 
-        updateList();
-        
-        
+        // =====================================================================        
+        int index = list1.getSelectedIndex(); // Get user selection from listbox
+        Globals.users.remove(index);   // Remove that index from the linked list
+        updateList();                         // Call method to fill the listbox
+        // =====================================================================
     }//GEN-LAST:event_jButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

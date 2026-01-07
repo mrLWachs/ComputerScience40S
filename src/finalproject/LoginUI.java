@@ -1,29 +1,38 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
+/** Required package class namespace */
 package finalproject;
 
+/** Required code library (API) imports */
 import javax.swing.JOptionPane;
 
+
 /**
- *
- * @author lawrence.wachs
+ * LoginUI.java - this user interface (UI) built with the NetBeans visual
+ * designer.
+ * 
+ * @author Mr. Wachs
+ * @since January 2026
  */
 public class LoginUI extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginUI.class.getName());
+    private static final java.util.logging.Logger logger = 
+            java.util.logging.Logger.getLogger(LoginUI.class.getName());
 
+    
     /**
-     * Creates new form LoginUI
+     * Class constructor, it creates new form LoginUI using a call to the 
+     * designer written method "initComponents"
      */
     public LoginUI() {
         initComponents();
         
-        this.setResizable(false);
-        this.setSize(330, 300);
-        this.setLocationRelativeTo(null);
-        this.setVisible(true);
+        // =====================================================================
+        // Set other UI properties...        
+        this.setResizable(false);                       // Make form not sizable
+        this.setSize(330, 300);                                 // Set form size
+        this.setLocationRelativeTo(null);               // Center form on screen
+        this.setVisible(true);                              // Show form to user
+        // =====================================================================
     }
 
     /**
@@ -93,57 +102,62 @@ public class LoginUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void editUsersButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editUsersButtonActionPerformed
-        
-        new AllUsersUI();
-        this.dispose();
-        
+        // =====================================================================
+        new AllUsersUI();                  // Instantiate and show the next form
+        this.dispose();                  // Dispose and hide current (this) form
+        // =====================================================================
     }//GEN-LAST:event_editUsersButtonActionPerformed
 
     private void addUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addUserButtonActionPerformed
-
+        // =====================================================================
         // Get the user information from the UI controls (text and password
-        // fields)
+        // fields) and assign to variables and then into a User object        
+        String name = nameTextField.getText();                      // User name
+        char[] characters = passwordField.getPassword();        // User password
+        String password = new String(characters);  // Convert password to string
         
-        String name = nameTextField.getText();
-        char[] characters = passwordField.getPassword();
-        String password = new String(characters);
+        // Create a User object from variables using class constructor
+        User user = new User(name, password);
         
-        // Create a user object
-        User user = new User(name,password);
-        
-        // Add the user object to our linked list
+        // Add the new User object to our shared LinkedList object
         Globals.users.add(user);
         
         // Tell the user they were successful and clear the fields
-        JOptionPane.showMessageDialog(this, "Success!");
+        JOptionPane.showMessageDialog(this, "Success, user added!");
         nameTextField.setText("");
         passwordField.setText("");
-        
+        // =====================================================================
     }//GEN-LAST:event_addUserButtonActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-
+        // =====================================================================
         // Get the user information from the UI controls (text and password
-        // fields)
-        String name = nameTextField.getText();
-        char[] characters = passwordField.getPassword();
-        String password = new String(characters);
+        // fields) and assign to variables and then into a User object        
+        String name = nameTextField.getText();                      // User name
+        char[] characters = passwordField.getPassword();        // User password
+        String password = new String(characters);  // Convert password to string
         
-        // Create a user object
-        User currentUser = new User(name,password);
+        // Create a User object from variables using class constructor
+        User currentUser = new User(name, password);
         
-        // Search through the linked list of users for this user
-        for (int i = 0; i < Globals.users.size(); i++) {
-            User existingUser = Globals.users.get(i);
-            if (currentUser.equals(existingUser)) {
-                // Are in the database
-                JOptionPane.showMessageDialog(this, "User exists!");
-                System.exit(0);
+        // Search through the LinkedList  of users for this current user
+        for (int i = 0; i < Globals.users.size(); i++) {        // Traverse list
+            User existingUser = Globals.users.get(i);      // Get user from list
+            if (currentUser.equals(existingUser)) {      // Compare user objects
+                // Using the overloaded "equals" method of the User class, this
+                // indicates the current user matches with a user object that
+                // does exist in the database
+                JOptionPane.showMessageDialog(this, "User exists!"); 
+                System.exit(0);             
+                // Here we exit the program, but in a more realistic final 
+                // project, you would move to the next form of the project
             }
         }
         
+        // If the logic makes it through the loop of all users and does not
+        // match with any users, then the current user is not in the list
         JOptionPane.showMessageDialog(this, "User does not exist!");
-        
+        // =====================================================================
     }//GEN-LAST:event_loginButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -1,28 +1,30 @@
+
 /** Required package class namespace */
 package finalproject;
  
+
 /**
- * User.java - description
- *
- * @author YOUR NAME
- * @since Jan 7, 2026, 8:57:57 AM
+ * User.java - this class represents a user for our mock final project
+ * 
+ * @author Mr. Wachs
+ * @since January 2026
  */
 public class User 
 {
 
-    private String name;
-    private String password;
+    private String name;             // Encapsulated name property of this class
+    private String password;     // Encapsulated password property of this class
     
     
     /**
      * Default constructor, set class properties
      * 
-     * @param name
-     * @param password
+     * @param name the name for this user
+     * @param password the password for this user
      */
     public User(String name, String password) {
-        this.name = name;
-        this.password = password;
+        this.name     = name;      // Set passed parameter to the class property
+        this.password = password;  // Set passed parameter to the class property
     }
      
     /**
@@ -43,12 +45,13 @@ public class User
      */
     @Override
     public boolean equals(Object object) {
-        User that = (User)object;
+        User that = (User)object;             // Cast parameter into User object
         if (this.name.equalsIgnoreCase(that.name) &&
-            this.password.equalsIgnoreCase(that.password)) {
+            this.password.equalsIgnoreCase(that.password)) { 
+            // Compare both string properties, they must both match 
             return true;
         }
-        return false;
+        return false;                                 // Properties do not match
     }
        
     /**

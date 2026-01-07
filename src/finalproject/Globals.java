@@ -1,13 +1,18 @@
+
 /** Required package class namespace */
 package finalproject;
  
+/** Required code library (API) imports */
 import collections.LinkedList;
 
+
 /**
- * Globals.java - description
- *
- * @author YOUR NAME
- * @since Jan 7, 2026, 8:58:48 AM
+ * Globals.java - this class is used to store the shared (static) dynamic data
+ * structure (LinkedList) used by the other classes (the UIs) to store all the
+ * User objects
+ * 
+ * @author Mr. Wachs
+ * @since January 2026
  */
 public class Globals 
 {
