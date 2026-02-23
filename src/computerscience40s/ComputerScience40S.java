@@ -23,10 +23,8 @@ public class ComputerScience40S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         System.out.println("Computer Science 40S Example starting...");
-         
-         Tester tester = new Tester();
-         
+         System.out.println("Computer Science 40S Example starting...");         
+         Tester tester = new Tester();         
          System.out.println("Computer Science 40S Example complete!");
     }
     

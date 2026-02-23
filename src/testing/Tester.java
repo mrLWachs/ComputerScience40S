@@ -4,7 +4,8 @@ package testing;
 
 
 /*
- * Tester -  tests the concepts learned in all the units.
+ * Tester -  tests the concepts learned in all the units. The CS40S class 
+ * example
  * 
  * @author Mr. Wachs
  * @since Feb 23, 2026
