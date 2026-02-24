@@ -35,7 +35,7 @@ public class RecursionTest
         // This Java file ends in "Test" as will the other Java files for 
         // upcoming units - this hints at a higher level Computer Science 
         // topic that we are not studying in detail (and won't be assessed on)
-        // but is a topic if you are moving forward in Computer Science studies.
+        // but is a topic if you are moving forward in Computer Science studies:
         
         // "Unit Testing" is a Computer Science topic and is defined as:
         // Unit testing is the process of isolating and verifying the smallest 
