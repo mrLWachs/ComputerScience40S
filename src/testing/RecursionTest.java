@@ -2,6 +2,7 @@
 /** Required package class namespace */
 package testing;
 
+/** Required API imports */
 import tools.Calculator;
 
 
@@ -51,6 +52,12 @@ public class RecursionTest
             // (2) Edge cases (more than one): they "push" the edge
             // (3) Beyond the edge: "bad" users, trying to break things
         
+        System.out.println("Recursive factorials............................");
+        
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
+        
         final int LOWER_EDGE = -1;
         final int UPPER_EDGE = 20;
         
@@ -60,9 +67,6 @@ public class RecursionTest
             long answer = Calculator.factorial(number);
             System.out.println(number + " factorial = " + answer);
         }
-            
-            
-        
         
         
         
