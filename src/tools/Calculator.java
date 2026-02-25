@@ -32,6 +32,35 @@ public class Calculator
             return number * factorial(number-1);
         }        
     }
+    
+    /**
+     * Calculates the power of a base to it's exponent (recursively)
+     * 
+     * @param base the base of the power
+     * @param exponent the exponent of the power
+     * @return the base^exponent
+     */
+    public static double power(long exponent, long base) {
+        // BASE CASE(s):
+        // =============
+        
+        // Special base case for negative exponents and a base of zero (we can
+        // never divide by zero) - if a base of zero occurs, we need to return
+        // "something" we could use "flag" value (a rarely used value) 
+        if (exponent < 0 && base == 0) return Double.MIN_VALUE;
+        
+        if (exponent == 0) return 1;
+        if (exponent == 1) return base;
+        
+        // RECURSIVE CASE(s):
+        // ==================
+        
+        // Special recursive case for negative exponents
+        if (exponent < 0) return 1 / power(base, Math.abs(exponent));
+        
+        // Default recursive case (for positive exponents)
+        return base * power(exponent-1, base);  
+    }
 
 
 }

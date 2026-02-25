@@ -67,6 +67,28 @@ public class RecursionTest
             System.out.println(number + " factorial = " + answer);
         }     
         
+        System.out.println("Recursive powers.................................");
+        
+        // Set the testing "edges"
+        final long MIN = -5;
+        final long MAX = 10;
+        
+        // Test all the exponents (edges)
+        for (long exponent = MIN; exponent <= MAX; exponent++) {
+            // Nested loop increasing the bases (to the edges)
+            for (long base = MIN; base <= MAX; base++) {
+                // Calculate (test this case) and display the test results
+                double answer   = Calculator.power(exponent, base); 
+                System.out.println("Base " + base + " ^ exponent " + exponent +
+                                   " = " + answer);
+            }
+        }
+        
+        
+        
+        
+        
+        
         
         
         
