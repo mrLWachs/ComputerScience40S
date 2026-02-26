@@ -21,9 +21,25 @@ public class RecursionTest
     public RecursionTest() {
         System.out.println("Start Recursion...");
         
-        int number = 5;
-        long answer = Calculator.factorial(number);
-        System.out.println(number + " factorial = " + answer);
+        System.out.println("Recursive factorials............................");
+        
+        // Meaning we will write a METHOD to calculate (using the Calculator 
+        // class) the factorial of a number recursively (means the method
+        // will call itself)
+        
+        final int LOWER_EDGE = 0;
+        final int UPPER_EDGE = 20;
+        
+        // Loop through a series of tests (going through the "edge cases")  
+        for (int i = LOWER_EDGE; i <= UPPER_EDGE; i++) {
+            int number = i;
+            long answer = Calculator.factorial(number);
+            System.out.println(number + " factorial = " + answer);
+        }
+        
+        
+        
+        
         
         
         System.out.println("Recursion complete!");
