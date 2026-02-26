@@ -22,7 +22,7 @@ import tools.Calculator;
  * recursion is "hidden" by using a public method call that then calls a private 
  * recursive method to implement the recursion that eventually returns to the 
  * original method that then returns the result (this is known as a “wrapper” 
- * method).
+ * method). See: https://en.wikipedia.org/wiki/Recursion_(computer_science)
  * 
  * @author Mr. Wachs
  * @since Feb 23, 2026

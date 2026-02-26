@@ -10,7 +10,8 @@ import testing.Tester;
  * ComputerScience40S.java - the large in class example we continue to work 
  * on in each unit adding example code on the new concepts of each unit 
  * along with any in class requests for code examples that might come up 
- * over the course
+ * over the course. 
+ * See: https://mrwachs.wordpress.com/current-classes/computer-science-40s/
  *
  * @author Mr. Wachs 
  * @since February 23, 2026

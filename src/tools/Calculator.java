@@ -10,7 +10,8 @@ package tools;
  * "middleman," or "hiding" the fact another method is being called. It is 
  * analogous to a "candy wrapper" hiding the candy inside the packaging. It 
  * allows the method call to interact with existing code more easily or safely
- * without calling the original source method directly.
+ * without calling the original source method directly. 
+ * See: https://en.wikipedia.org/wiki/Wrapper_function
  * 
  * @author Mr. Wachs
  * @since Feb 23, 2026
