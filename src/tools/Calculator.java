@@ -4,7 +4,13 @@ package tools;
 
 
 /*
- * Calculator - useful collection of methods for doing calculations.
+ * Calculator - useful collection of methods for doing calculations. This class
+ * is an example of using "Wrapper" methods. A wrapper method is a method whose
+ * primary purpose is to call another method, essentially acting as a 
+ * "middleman," or "hiding" the fact another method is being called. It is 
+ * analogous to a "candy wrapper" hiding the candy inside the packaging. It 
+ * allows the method call to interact with existing code more easily or safely
+ * without calling the original source method directly.
  * 
  * @author Mr. Wachs
  * @since Feb 23, 2026
@@ -61,6 +67,5 @@ public class Calculator
         // Default recursive case (for positive exponents)
         return base * power(exponent-1, base);  
     }
-    
-    
+        
 }
