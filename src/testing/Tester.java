@@ -36,8 +36,8 @@ public class Tester
         System.out.println("Start testing...");
         
         RecursionTest unit1 = new RecursionTest();
-        // Later we will add code here for unit 2 and 3...        
-        AdvancedClassesTest unit2 = new AdvancedClassesTest();
+        // Later we will add code here for unit 2 and 3...  
+        AdvancedClasesTest unit2 = new AdvancedClasesTest();        
                 
         System.out.println("Completed testing!");
     }

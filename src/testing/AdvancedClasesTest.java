@@ -9,7 +9,7 @@ package testing;
  * @author Mr. Wachs
  * @since Mar 9, 2026
 */
-public class AdvancedClassesTest
+class AdvancedClasesTest
 {
 
     /**
@@ -21,12 +21,12 @@ public class AdvancedClassesTest
      * is created (or constructed), it makes an object from the class, or it
      * instantiates the class (creates an "instance")
      */
-    public AdvancedClassesTest() {
-        System.out.println("Starting Advanced Classes...");
+    public AdvancedClasesTest() {
+        System.out.println("Start Advanced Classes...");
         
         
         
-        System.out.println("Completed Advanced Clasess!");
+        System.out.println("Completed Advanced Classes!");
     }
     
 
