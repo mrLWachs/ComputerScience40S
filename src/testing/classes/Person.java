@@ -24,6 +24,10 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
+    /**
+     * Sets the class properties to "default" values simulating when a person 
+     * is born
+     */
     void born() {
         name   = "undefined";
         age    = 0;
@@ -31,10 +35,24 @@ public class Person
         alive  = true;
     }
     
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (alive) through this method
+     */
     void die() {
         alive = false;
     }
     
+    /**
+     * A person has a birthday (the age goes up by one)
+     */
+    void birthday() {
+        age++;
+    }  
+    
+    /**
+     * Outputs information about the person to the screen
+     */
     void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifies " + gender);
@@ -43,9 +61,5 @@ public class Person
             System.out.println("Boooooooo!");
         }
     }
-    
-    void birthday() {
-        age++;
-    }    
-    
+        
 }
