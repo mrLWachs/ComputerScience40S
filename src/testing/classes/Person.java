@@ -17,8 +17,35 @@ public class Person
 
     // Properties: (things about it, adjectives, descriptors, variables, arrays)
     
+    String name;
+    int age;
+    String gender;
+    boolean alive;
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
-
+    void born() {
+        name   = "undefined";
+        age    = 0;
+        gender = "undefined";
+        alive  = true;
+    }
+    
+    void die() {
+        alive = false;
+    }
+    
+    void talk() {
+        if (alive) {
+            System.out.println(name + " is " + age + " identifies " + gender);
+        }
+        else {
+            System.out.println("Boooooooo!");
+        }
+    }
+    
+    void birthday() {
+        age++;
+    }    
+    
 }
