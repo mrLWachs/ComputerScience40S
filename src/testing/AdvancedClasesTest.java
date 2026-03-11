@@ -38,7 +38,13 @@ class AdvancedClasesTest
         
         person.name = "Per Sony";
         person.gender = "non-binary";
-        person.age = 17;
+        
+        // If I try to change ("modify") a property ("variable") of the
+        // Person class that is set to be "private" I do NOT have
+        // access to that - for example:
+        
+        // person.age = 15; // We cannot change this encapsulated property
+        
         person.alive = true;
         
         person.talk();
