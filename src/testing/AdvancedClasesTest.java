@@ -33,12 +33,15 @@ class AdvancedClasesTest
         // The "Object" (in this case called "person" - lowercase "p") can also 
         // be called a: instance, or even a "variable"
         
+        // Call (invoke) one of our methods in this object ("instance") 
+        person.talk();
         
+        person.name = "Per Sony";
+        person.gender = "non-binary";
+        person.age = 17;
+        person.alive = true;
         
-        
-        
-        
-        
+        person.talk();
         
         
         
