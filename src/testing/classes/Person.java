@@ -55,6 +55,26 @@ public class Person
         alive  = true;
     }
     
+    /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties by assigning the passed
+     * parameter value into the object's (class) property (global variable) of
+     * the same name using the keyword "this"
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    public Person(String name, int age, String gender) {
+        alive  = true;           // Could have also written "this.alive = true;"
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (which will be created at a later time)        
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
+    }
+    
     
     /**
      * Sets the class properties to "default" values simulating when a person 
