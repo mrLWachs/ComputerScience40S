@@ -42,6 +42,21 @@ public class Person
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
     /**
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
+     */
+    public Person() {
+        name   = "undefined";
+        age    = 0;
+        gender = "undefined";
+        alive  = true;
+    }
+    
+    
+    /**
      * Sets the class properties to "default" values simulating when a person 
      * is born
      */
