@@ -36,18 +36,30 @@ class AdvancedClasesTest
         // Call (invoke) one of our methods in this object ("instance") 
         person.talk();
         
+        // We can also change (mutate) the properties of this object
         person.name = "Per Sony";
         person.gender = "non-binary";
         
         // If I try to change ("modify") a property ("variable") of the
-        // Person class that is set to be "private" I do NOT have
-        // access to that - for example:
+        // Person class that is set to be "private" I do NOT have access to 
+        // that - for example:
         
         // person.age = 15; // We cannot change this encapsulated property
         
-        person.alive = true;
-        
+        // Recall our methods... (to see the changes to the properties)
         person.talk();
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
+        // person.born();
+        
+        // This method was later made "private" as well so the method can no
+        // longer be called by this class outside the "Person" class (it is
+        // now a private, encapsulated, helper, utility method)
+        
+        
+        
         
         
         

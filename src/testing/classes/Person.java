@@ -41,6 +41,7 @@ public class Person
     
     // Methods: (things it can do, verbs, actions, return, parameter(s))........
     
+    
     /**
      * Constructor method is a method that has (1) the same name as the class,
      * (2) the name starts with a capital letter, (3) it has NO return type 
@@ -74,6 +75,7 @@ public class Person
         this.age    = age;
         this.gender = gender;
     }
+    
     
     
     /**

@@ -3,9 +3,12 @@ package testing.classes;
 
 
 /*
- * Teacher - description
+ * Teacher - represents a Teacher. This class uses inheritance to inherit
+ * the properties and methods from the Person class. This class also 
+ * "associates" with the Student class by making a reference to them within 
+ * the class. This is sometimes simplified as a "has a" relationship.
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Mar 12, 2026
 */
 public class Teacher
