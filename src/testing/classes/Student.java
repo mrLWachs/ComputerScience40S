@@ -22,7 +22,7 @@ public class Student extends Person
      * or "usage" with the student class
      */
     public Book book;
-    
+     
     private int number;     // Class properties (and inherited other properties)  
     private double gpa;     // Encapsulated property
     
