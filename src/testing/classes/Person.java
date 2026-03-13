@@ -76,13 +76,12 @@ public class Person
         this.gender = gender;
     }
     
-    
-    
     /**
-     * Sets the class properties to "default" values simulating when a person 
-     * is born
+     * A "private" method (also sometimes called a "utility" or "helper" method)
+     * can only be called by other methods inside this class - not by any other
+     * classes
      */
-    public void born() {
+    private void born() {
         name   = "undefined";
         age    = 0;
         gender = "undefined";
