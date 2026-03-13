@@ -61,14 +61,17 @@ class AdvancedClasesTest
         
         // Try our overloaded, second constructor option to instantiate (which 
         // means to create an "instance of") another Person object
-        Person joe = new Person("Joe Smoe", 17, "male");
-        joe.talk();
+        Person fhorhea = new Person("Fhorhea DeGuzmann", 37, "fluid");
+        fhorhea.talk();
         
         // Now we instantiate (create an object from the Student class) 
         // a Student object (or a Student instance) that inherts from the 
         // Person class
         Student student = new Student();
         student.talk();
+        
+        
+        
         
         
         

@@ -16,7 +16,7 @@ package testing.classes;
 */
 public class Student extends Person
 {
-
+    
     /**
      * Represents a book object (this object "has a" relationship (association)
      * or "usage" with the student class
@@ -42,6 +42,5 @@ public class Student extends Person
         // book object
         book = new Book();
     }
-    
 
 }
