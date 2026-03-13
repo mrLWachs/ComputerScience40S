@@ -27,11 +27,20 @@ public class Student extends Person
     private double gpa;     // Encapsulated property
     
     
+    /**
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well)
+     */
     public Student() {
         
+        // Set the properties of "this" class to default values
         number = 1;
         gpa    = 0.0;
-        book   = new Book();
+        
+        // The "Book" class we associate with here is instantiated into a
+        // book object
+        book = new Book();
     }
     
 
