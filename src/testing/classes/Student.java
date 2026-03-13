@@ -14,9 +14,25 @@ package testing.classes;
  * @author Mr. Wachs
  * @since Mar 12, 2026
 */
-public class Student
+public class Student extends Person
 {
 
+    /**
+     * Represents a book object (this object "has a" relationship (association)
+     * or "usage" with the student class
+     */
+    public Book book;
+    
+    private int number;     // Class properties (and inherited other properties)  
+    private double gpa;     // Encapsulated property
+    
+    
+    public Student() {
+        
+        number = 1;
+        gpa    = 0.0;
+        book   = new Book();
+    }
     
 
 }

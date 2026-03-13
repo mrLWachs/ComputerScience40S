@@ -2,6 +2,7 @@
 package testing;
 
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /*
@@ -58,9 +59,14 @@ class AdvancedClasesTest
         // longer be called by this class outside the "Person" class (it is
         // now a private, encapsulated, helper, utility method)
         
+        // Try our overloaded, second constructor option to instantiate (which 
+        // means to create an "instance of") another Person object
+        Person joe = new Person("Joe Smoe", 17, "male");
+        joe.talk();
         
         
-        
+        Student student = new Student();
+        student.talk();
         
         
         
