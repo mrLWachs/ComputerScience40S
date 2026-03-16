@@ -67,12 +67,11 @@ public class Student extends Person
         // (change) the encapsulated (private) properties on that super class
         // this sets all the properties of the parent (Person) object that 
         // the child (Student) cannot set
-        super(name,age,gender);
+        super(name, age, gender);
         // Now set the properties of "this" (the Student) class...
         gpa = 0.0;
         book = new Book();        
-        this.number = number;        
-        this.number = number;
+        this.number = number; 
     }
     
     /**
@@ -107,7 +106,5 @@ public class Student extends Person
     private void secret() {
         gpa *= 1.0001;
     }
-    
-    
 
 }
