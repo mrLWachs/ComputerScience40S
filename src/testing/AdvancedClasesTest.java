@@ -70,9 +70,34 @@ class AdvancedClasesTest
         Student student = new Student();
         student.talk();
         
+        // Because the "name" property (inherited from Person) is public (not
+        // encapsulated) we can change ("modify", "mutate") the property
+        // we cannot change age directly because it is encapsulated (private)
+        student.name = "Stu Denty";
         
+        // We can also change some of the properties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.birthday();
+        student.talk();
         
+        // Create another student... (simple language)
+        Student wave = new Student("Waverly Micron", 0, "photon", 299792458);
+        wave.talk();
+        wave.study();
+        wave.talk();
+        wave.cram();
+        wave.talk();
+        wave.slackOff();
+        wave.talk();
         
+        // You cannot call encapsulated (private) methods!
+        // wave.secret();
+        
+        // But, we can still call inherited methods...        
+        wave.birthday();
+        wave.die();
+        wave.talk();
         
         
         
