@@ -53,5 +53,61 @@ public class Student extends Person
         // book object
         book = new Book();
     }
+    
+    /**
+     * Constructor for the class, sets class properties
+     * 
+     * @param name the name for this student
+     * @param age the age for this student
+     * @param gender the gender for this student
+     * @param number the student number for this student
+     */
+    public Student(String name, int age, String gender, int number) {
+        // Use the super constructor in the parent class (Person) to modify
+        // (change) the encapsulated (private) properties on that super class
+        // this sets all the properties of the parent (Person) object that 
+        // the child (Student) cannot set
+        super(name,age,gender);
+        // Now set the properties of "this" (the Student) class...
+        gpa = 0.0;
+        book = new Book();        
+        this.number = number;        
+        this.number = number;
+    }
+    
+    /**
+     * Studying raises this student's average
+     */
+    public void study() {
+        gpa += 0.3;
+    }
+    
+    /**
+     * Slacking off lowers this student's average
+     */
+    public void slackOff() {
+        gpa -= 0.3;
+    }
+    
+    /**
+     * Cramming is intense studying
+     */
+    public void cram() {
+        for (int i = 0; i < 10; i++) {
+            study();
+        }
+        secret();   // We call a private, encapsulated, helper, utility method
+    }
+    
+    /**
+     * This "secret" method is a private, encapsulated method. These types of 
+     * methods are sometimes called "helper" or "utility" methods as they can
+     * only be called by other methods inside this class
+     */
+    private void secret() {
+        gpa *= 1.0001;
+    }
+    
+    
 
 }
