@@ -32,7 +32,18 @@ public class Student extends Person
      * "super-constructor" from the parent class to set all of its properties 
      * as well)
      */
-    public Student() {
+    public Student() {        
+        // We can access (not encapsulated - so public) properties of our
+        // super class (parent/base class) and give them default values as 
+        // a default constructor should do
+        // super.name   = "undefined";
+        // super.gender = "undefined";
+        // super.alive  = true;
+        
+        // But... this can also be accomplished by calling methods of the 
+        // parent class, specifically the parent constructor methods called
+        // the super constructor
+        super();
         
         // Set the properties of "this" class to default values
         number = 1;
