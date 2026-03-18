@@ -27,9 +27,9 @@ public class Teacher extends Person
      * the array.
      */
     public Student[] students;
-
+    
     private int count;                     // How many students this teacher has
-    private final int MAX;                  // Constant for the maximum students
+    private final int MAX;                 // Constant for the maximum students
     
     
     public Teacher(String name) {

@@ -106,7 +106,7 @@ public class Student extends Person
     private void secret() {
         gpa *= 1.0001;
     }
-    
+
     /**
      * Talk is an "over-ride" (not overload) method means it when called will 
      * run its code and not the code from the method it inherited. The "comment"
@@ -118,8 +118,18 @@ public class Student extends Person
     public void talk() {
         super.talk();                           // Invoking super class method
         System.out.println("I am a student");
-        System.out.println("\t Number: " + number);
+        System.out.println("\t number: " + number);
         System.out.println("\t GPA:    " + gpa);
     }
-
+        
 }
+
+
+
+
+
+
+
+
+
+
