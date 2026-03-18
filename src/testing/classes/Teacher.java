@@ -59,10 +59,17 @@ public class Teacher extends Person
         // are initialized to "null" values
     }
     
+    /**
+     * Another example of a method over-ride which over-rides the talk method
+     * of the Person class (the parent class of Teacher)
+     */
+    @Override
     public void talk() {
-        super.talk();
         System.out.println(name + " is talking, quiet down...");
-        System.out.println("Time for all you students to talk:");
+        System.out.println("\t It is time for all you students to talk:");
+        // To access an entire array we use a "for" loop, and the ".length"
+        // feature that is built into all arrays
+        
     }
 
 }
