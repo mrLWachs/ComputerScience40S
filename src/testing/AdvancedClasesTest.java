@@ -3,6 +3,7 @@ package testing;
 
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -144,7 +145,8 @@ class AdvancedClasesTest
         // the other), or "composition" (one class composed of another) 
         // relationship - this is also simply put as a "has a" relationship
         
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("teacher");
         
         
         
