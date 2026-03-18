@@ -147,7 +147,7 @@ class AdvancedClasesTest
         
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("teacher");
-        
+        teacher.talk();
         
         
         

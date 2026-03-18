@@ -58,5 +58,15 @@ public class Teacher extends Person
         // but arrays of class level data (like this array of "Student" objects)
         // are initialized to "null" values  
     }
+    
+    /**
+     * Another example of a method over-ride which over-rides the talk method
+     * of the Person class (the parent class of Teacher)
+     */
+    @Override
+    public void talk() {
+        System.out.println(name + " is talking, please be quiet...");
+        System.out.println("Now all you students need to participate:");
+    }
 
 }
