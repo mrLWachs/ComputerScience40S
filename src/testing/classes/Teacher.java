@@ -56,17 +56,13 @@ public class Teacher extends Person
         // Note: an array of primitive data types (e.g. int, double, char, 
         // boolean) will be initialized to simple values (like 0, false, etc.)
         // but arrays of class level data (like this array of "Student" objects)
-        // are initialized to "null" values  
+        // are initialized to "null" values
     }
     
-    /**
-     * Another example of a method over-ride which over-rides the talk method
-     * of the Person class (the parent class of Teacher)
-     */
-    @Override
     public void talk() {
-        System.out.println(name + " is talking, please be quiet...");
-        System.out.println("Now all you students need to participate:");
+        super.talk();
+        System.out.println(name + " is talking, quiet down...");
+        System.out.println("Time for all you students to talk:");
     }
 
 }

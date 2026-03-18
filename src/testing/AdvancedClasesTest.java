@@ -146,9 +146,8 @@ class AdvancedClasesTest
         // relationship - this is also simply put as a "has a" relationship
         
         // Instantiate a teacher object and associate it with a student object
-        Teacher teacher = new Teacher("teacher");
+        Teacher teacher = new Teacher("Albert Von Shnapsfickle");
         teacher.talk();
-        
         
         
         
