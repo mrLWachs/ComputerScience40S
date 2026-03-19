@@ -147,11 +147,20 @@ class AdvancedClasesTest
         
         // Instantiate a teacher object and associate it with a student object
         Teacher teacher = new Teacher("Albert Von Shnapsfickle");
-        teacher.talk();
-        teacher.add(student);
-        teacher.add(wave);
+        teacher.talk();                           // Invoke an overloaded method
+        teacher.add(student);                 // Associate object through method
+        teacher.add(wave);                         // or "Teacher has a Student"
+        // See if the teacher object is effected by its associated class objects
+        // (those being the two student objects...)
+        teacher.talk();                      // Reinvoking the overloaded method
+        teacher.birthday();
+        teacher.die();
         teacher.talk();
         
+        // Now that the review of CS30S content (introduction: variables, 
+        // conditional statements, looping, methods, arrays and specifically 
+        // classes) is completed, we can now start looking at the new CS40S
+        // advanced classes content.............................................
         
         
         
