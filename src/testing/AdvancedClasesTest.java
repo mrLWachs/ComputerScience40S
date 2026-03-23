@@ -162,7 +162,31 @@ class AdvancedClasesTest
         // classes) is completed, we can now start looking at the new CS40S
         // advanced classes content.............................................
         
+        // =====================================================================
+        // (5) ADVANCED: Object class
+        // =====================================================================
         
+        // The Object class - this class already exists (we don't write it) it 
+        // is part of Java, all Java project "have it". It is "built-into" all 
+        // Java classes - it acts as the parent (or super-class) of all classes 
+        // (including the new ones we write) - which means all classes inherit 
+        // the methods of this class
+                
+        Object object = new Object();
+        
+        // =====================================================================
+        // (6) ADVANCED: toString, equals, clone
+        // =====================================================================
+        
+        // The Object class has NO properties, but does have methods that we can
+        // and often SHOULD over-ride. All classes (including ones we create) 
+        // inherit from the object class, which is the parent (super) class of 
+        // all classes. Built into the object class are a number of methods that
+        // all other classes inherit. These include some that are not relevant
+        // in this unit, and others like these: 
+        //      toString()
+        //      equals()
+        //      clone()
         
         
         
