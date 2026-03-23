@@ -188,6 +188,19 @@ class AdvancedClasesTest
         //      equals()
         //      clone()
         
+        Object object1 = new Object();
+        Object object2 = new Object();
+        Object object3 = object2;
+        
+        // We will now output the 3 objects, using the "toString()" method
+        // The toString() method of the object class outputs information
+        // including the memory address (in hexadecimal code) where this object
+        // is stored in this computer's memory...   
+        
+        System.out.println("object1 as a string is " + object1.toString());
+        System.out.println("object2 as a string is " + object2.toString());
+        System.out.println("object3 as a string is " + object3.toString());
+        
         
         
         
