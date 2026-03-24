@@ -114,5 +114,15 @@ public class Person
             System.out.println("Boooooooo!");
         }
     }
+    
+    /**
+     * String representation of this object
+     *
+     * @return The object represented as a String
+     */
+    @Override
+    public String toString() {
+        return "Person Over-riding from " + super.toString();
+    }
         
 }
