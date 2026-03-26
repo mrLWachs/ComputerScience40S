@@ -233,6 +233,29 @@ class AdvancedClasesTest
         // Student, and Teacher classes and add these three over-ride methods
         // and then re-run this code to see the over-ride in the outputs
         
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)...
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
+        
+        // Now we will create 3 identifier names, but only one memory location
+        // for all three...
+        Person p1 = new Person();
+        Person p2 = p1;
+        Person p3 = p2;
+        
+        if (p1.equals(p2)) System.out.println("P1==P2");
+        if (p2.equals(p3)) System.out.println("P2==P3");
+        if (p1.equals(p3)) System.out.println("P1==P3");
+        
+        
+        
+        
+        
+        
         
         
         
