@@ -241,6 +241,12 @@ class AdvancedClasesTest
         if (object2.equals(object3)) System.out.println("O2==O3");
         if (object1.equals(object3)) System.out.println("O1==O3");
         
+        // This also applies to the "String" class which obviously over-rides
+        // the "equals" method to compare the string lexographically...
+        String string1 = "cat";
+        String string2 = "cat";        
+        if (string1.equals(string2)) System.out.println("string1==string2");
+        
         // Now we will create 3 identifier names, but only one memory location
         // for all three...
         Person p1 = new Person();
@@ -264,12 +270,6 @@ class AdvancedClasesTest
         Teacher t1 = new Teacher("teacher");
         Teacher t2 = new Teacher("teacher");
         if (t1.equals(t2)) System.out.println("t1==t2");
-        
-        // This also applies to the "String" class which obviously over-rides
-        // the "equals" method to compare the string lexographically...
-        String string1 = "cat";
-        String string2 = "cat";        
-        if (s1.equals(s2)) System.out.println("S1==S2");
         
         // Now we will also over-ride the "clone" method in the 3 classes...        
         // Object clone1 = object1.clone();        
