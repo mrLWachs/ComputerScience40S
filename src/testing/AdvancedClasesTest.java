@@ -251,11 +251,25 @@ class AdvancedClasesTest
         if (p2.equals(p3)) System.out.println("P2==P3");
         if (p1.equals(p3)) System.out.println("P1==P3");
         
+        // Using our previously created Person objects with equals..
+        if (person.equals(fhorhea)) System.out.println("person==fhorhea");
         
+        // Now we can over-ride the "equals" method in the Person, Student,
+        // and Teacher classes to customize the "equality" of comparing 
+        // those objects...
+        Student s1 = new Student();
+        Student s2 = new Student();
+        if (s1.equals(s2)) System.out.println("s1==s2");
         
+        Teacher t1 = new Teacher("teacher");
+        Teacher t2 = new Teacher("teacher");
+        if (t1.equals(t2)) System.out.println("t1==t2");
         
-        
-        
+        // This also applies to the "String" class which obviously over-rides
+        // the "equals" method to compare the string lexographically...
+        String string1 = "cat";
+        String string2 = "cat";        
+        if (s1.equals(s2)) System.out.println("S1==S2");
         
         
         
