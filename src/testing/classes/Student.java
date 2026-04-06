@@ -165,7 +165,8 @@ public class Student extends Person
     }
     
     /**
-     * Method clone, create a copy object 
+     * Deeper clone, create a duplicate object as "this" object using "new" 
+     * memory
      * 
      * @return a "clone" of the object 
      */

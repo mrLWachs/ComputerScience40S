@@ -130,7 +130,8 @@ public class Teacher extends Person
     }
     
     /**
-     * Method clone, create a copy object 
+     * Deep clone, create a duplicate object (has all the same properties) as 
+     * "this" object using "new" memory
      * 
      * @return a "clone" of the object 
      */
