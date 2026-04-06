@@ -125,5 +125,21 @@ public class Person
         return "Person Over-riding from " + super.toString();
     }
 
+    /**
+     * Equals comparison, determines if two objects are "equal" in this context
+     * 
+     * @param object the object to compare to
+     * @return the objects are "equal" (true) or not (false)
+     */
+    @Override
+    public boolean equals(Object object) {
+        // The simpliest version of this over-ride method just makes all objects
+        // of type "Person" equal with no logical check of anything. Usually,
+        // over-riding this method means the programmer writes in custom logic
+        // usually examing class properties to determine "equality" or not
+        return true;
+    }
+    
+    
     
 }
