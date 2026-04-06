@@ -132,50 +132,7 @@ public class Student extends Person
         return "Student Over-riding from " + super.toString();
     }
     
-    /**
-     * Equals comparison, determines if two objects are "equal" in this context
-     * 
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        // This will be a "deeper" comparison of two "Student" objects. 
-        // Normally, programmers will do this and choose which properties they
-        // will be comparing for determining equality
-        
-        // The first thing to do, is we notice the parameter is type "Object"
-        // we need that parameter to be a "Student" - to do this, we can
-        // "cast" the "Object" into a "Student"
-        
-        Student that = (Student)object;
-        
-        // Now that we have a Student instance (called "that") we can compare
-        // it with the Student instance that "we" are currently running this 
-        // method inside of (using "this")
-        
-        // Compare the properties of "this and that"
-        // with a few levels of comparison (some I will ignore)
-        
-        if (this.number != that.number) return false;
-        if (this.gpa    != that.gpa)    return false;
-        
-        // Otherwise, if it passes the tests above...
-        return true;
-    }
-    
-    /**
-     * Deeper clone, create a duplicate object as "this" object using "new" 
-     * memory
-     * 
-     * @return a "clone" of the object 
-     */
-    @Override
-    public Student clone() {
-        // Created a new Student object using new memory
-        Student that = new Student();
-        return that;        
-    }
+
     
 }
 

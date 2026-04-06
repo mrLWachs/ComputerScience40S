@@ -112,45 +112,6 @@ public class Teacher extends Person
         return "Teacher Over-riding from " + super.toString();
     }
     
-    /**
-     * Equals comparison, determines if two objects are "equal" in this context
-     * 
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        // (1) cast into a Teacher object
-        Teacher that = (Teacher)object;
-        // (2) compare the properties we decide are important
-        if (!this.name.equals(that.name))     return false;
-        if (!this.gender.equals(that.gender)) return false;
-        // (3) return equal (true) if passes the tests above
-        return true;
-    }
-    
-    /**
-     * Deep clone, create a duplicate object (has all the same properties) as 
-     * "this" object using "new" memory
-     * 
-     * @return a "clone" of the object 
-     */
-    @Override
-    public Teacher clone() {
-        // Created a new Student object using new memory
-        Teacher that = new Teacher(this.name);
-        // Start copying over the properties (from the "super" class "Person")
-        // that I want to (as I am in charge of what to clone) and am able to
-        // (as some of the properties are "private" or "encapsulated")
-        that.gender = this.gender;
-        // For the "students" array property, we will loop through the array 
-        // and clone all the students
-        for (int i = 0; i < MAX; i++) {
-            if (this.students[i] != null) {
-                that.students[i] = this.students[i].clone();
-            }
-        }
-        return that;
-    }
+
     
 }
