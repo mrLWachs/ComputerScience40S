@@ -139,6 +139,17 @@ public class Person
         // usually examing class properties to determine "equality" or not
         return true;
     }
-
+    
+    /**
+     * Method clone, create a copy object 
+     * 
+     * @return a "clone" of the object 
+     */
+    @Override
+    public Person clone() {
+        // The process of "cloning" means to create a "duplicate", or to "copy"
+        return this;
+        // This is a useless, and very shallow clone
+    }
     
 }
