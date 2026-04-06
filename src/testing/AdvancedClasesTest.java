@@ -271,7 +271,21 @@ class AdvancedClasesTest
         Teacher t2 = new Teacher("teacher");
         if (t1.equals(t2)) System.out.println("t1==t2");
         
+        // Now we will also over-ride the "clone" method in the 3 classes...        
+        // Object clone1 = object1.clone();        
+        // We cannot call the "clone" method directly from the "Object" class
+        // (but we can "over-ride" the clone() method in all sub-classes)...       
         
+        Person  c1 = p1.clone();
+        Student c2 = s1.clone();
+        Teacher c3 = t1.clone();
+        
+        System.out.println("P1: " + p1.toString());
+        System.out.println("C1: " + c1.toString());
+        System.out.println("S1: " + s1.toString());
+        System.out.println("C2: " + c2.toString());
+        System.out.println("T1: " + t1.toString());
+        System.out.println("C3: " + c3.toString());
         
         
         
