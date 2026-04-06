@@ -164,6 +164,18 @@ public class Student extends Person
         return true;
     }
     
+    /**
+     * Method clone, create a copy object 
+     * 
+     * @return a "clone" of the object 
+     */
+    @Override
+    public Student clone() {
+        // Created a new Student object using new memory
+        Student that = new Student();
+        return that;        
+    }
+    
 }
 
 
