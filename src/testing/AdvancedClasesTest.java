@@ -220,19 +220,10 @@ class AdvancedClasesTest
         
         // So why is this last output not using the "toString()" method it 
         // inherited from "Object" which gives a memory address? The answer is 
-        // that the String class "over-rides" the toString method and that 
-        // over-ride version of "toString()" method is called instead. We can 
-        // and will over-ride the toString method on all our classes 
-        // (Person, Student, Teacher) and all classes to come. We will help to
-        // automate this process using another modification to the NetBeans 
-        // templates: (1) open the "ComputerScience40S.java" file from when
-        // we originally created this NetBeans project, (2) scroll down to the
-        // comments at the bottom of this file and comment 35 and follow its
-        // instructions (if you are missing these comments, go instead to this
-        // webpage: https://bit.ly/4nxivtB ). Now go back to the Person, 
-        // Student, and Teacher classes and add these three over-ride methods
-        // and then re-run this code to see the over-ride in the outputs
-        
+        // that the String and JOptionPane classes both "over-ride" the 
+        // toString method and then that over-ride version of the "toString()" 
+        // method is called instead
+                
         // The equals() method of the object class checks if two objects are
         // "equal" by using the "memory address" of each object and checks if 
         // the two objects being compared use the same address (true) or not 
@@ -287,69 +278,28 @@ class AdvancedClasesTest
         System.out.println("T1: " + t1.toString());
         System.out.println("C3: " + c3.toString());
         
+        ////////////////////////////////////////////////////////////////////////
         // NOTE: At this point, Mr. Wachs advised all students in the CS40S
         // class to make a modification to a NetBeans template for all classes 
-        // in the future for this course. To modify the template of all new 
-        // classes, go to the menu: Tools -> Templates, then scroll down and 
-        // click on the "+" beside "Java", select "Java Class" and use ALL the 
-        // code (uncommented) below:
-       
-////////////////////////////////////////////////////////////////////////////////        
-
-//
-///** Required package class namespace */
-//package ${package};
-// 
-///**
-// * ${name}.java - description
-// *
-// * @author YOUR NAME
-// * @since ${date}, ${time}
-// */
-//public class ${name} 
-//{
-//
-//    /**
-//     * Default constructor, set class properties
-//     */
-//    public ${name}() {
-//        
-//    }
-//     
-//    /**
-//     * String representation of this object
-//     *
-//     * @return The object represented as a String
-//     */
-//    @Override
-//    public String toString() {
-//        return "${name}: " + super.toString();
-//    }
-//   
-//    /**
-//     * Deep comparison, determines if two objects are "equal" in this context
-//     *
-//     * @param object the object to compare to
-//     * @return the objects are "equal" (true) or not (false)
-//     */
-//    @Override
-//    public boolean equals(Object object) {
-//        return super.equals(object);
-//    }
-//       
-//    /**
-//     * a Deep clone, creates a duplicate object using new memory
-//     *
-//     * @return a "clone" of the object using new memory
-//     */
-//    @Override
-//    public ${name} clone() {
-//        return this;
-//    }
-//    
-//}
+        // in the future for this course. To do this, go to tip #38 in the 
+        // comments at the bottom of the "ComputerScience40S.java" file in 
+        // this project or on this GitHub page: https://bit.ly/4tyn4Hk
+        // and follow the instructions...
+        ////////////////////////////////////////////////////////////////////////
         
-////////////////////////////////////////////////////////////////////////////////                
+        // =====================================================================
+        // (7) ADVANCED: static modifier
+        // =====================================================================
+        
+        // Using a static variable: these are variables get instantiated "once" 
+        // and all objects "share" a reference to that same memory location 
+        // (means the "static" variable "belongs" to the class not the object).        
+        // We added a static variable to the Student class, and then outputted
+        // it for two different objects of the Student class, and you will 
+        // notice how we get the same output for each student instance as they 
+        // all "share" the same access to the same static variable ... 
+        
+        
         
         
         
