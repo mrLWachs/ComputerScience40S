@@ -287,9 +287,69 @@ class AdvancedClasesTest
         System.out.println("T1: " + t1.toString());
         System.out.println("C3: " + c3.toString());
         
+        // NOTE: At this point, Mr. Wachs advised all students in the CS40S
+        // class to make a modification to a NetBeans template for all classes 
+        // in the future for this course. To modify the template of all new 
+        // classes, go to the menu: Tools -> Templates, then scroll down and 
+        // click on the "+" beside "Java", select "Java Class" and use ALL the 
+        // code (uncommented) below:
+       
+////////////////////////////////////////////////////////////////////////////////        
+
+//
+///** Required package class namespace */
+//package ${package};
+// 
+///**
+// * ${name}.java - description
+// *
+// * @author YOUR NAME
+// * @since ${date}, ${time}
+// */
+//public class ${name} 
+//{
+//
+//    /**
+//     * Default constructor, set class properties
+//     */
+//    public ${name}() {
+//        
+//    }
+//     
+//    /**
+//     * String representation of this object
+//     *
+//     * @return The object represented as a String
+//     */
+//    @Override
+//    public String toString() {
+//        return "${name}: " + super.toString();
+//    }
+//   
+//    /**
+//     * Deep comparison, determines if two objects are "equal" in this context
+//     *
+//     * @param object the object to compare to
+//     * @return the objects are "equal" (true) or not (false)
+//     */
+//    @Override
+//    public boolean equals(Object object) {
+//        return super.equals(object);
+//    }
+//       
+//    /**
+//     * a Deep clone, creates a duplicate object using new memory
+//     *
+//     * @return a "clone" of the object using new memory
+//     */
+//    @Override
+//    public ${name} clone() {
+//        return this;
+//    }
+//    
+//}
         
-        
-        
+////////////////////////////////////////////////////////////////////////////////                
         
         
         
