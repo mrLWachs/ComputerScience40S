@@ -267,8 +267,28 @@ class AdvancedClasesTest
         // We cannot call the "clone" method directly from the "Object" class
         // (but we can "over-ride" the clone() method in all sub-classes)...       
         
+        Person  c1 = p1.clone();
+        Student c2 = s2.clone();
+        Teacher c3 = t2.clone();
         
+        System.out.println("C1: " + c1.toString());
+        System.out.println("P1: " + p1.toString());
+        System.out.println("C2: " + c2.toString());
+        System.out.println("S2: " + s2.toString());
+        System.out.println("C3: " + c3.toString());
+        System.out.println("T2: " + t2.toString());
         
+        // =====================================================================
+        // (7) ADVANCED: static modifier
+        // =====================================================================
+        
+        // Using a static variable: these are variables get instantiated "once" 
+        // and all objects "share" a reference to that same memory location 
+        // (means the "static" variable "belongs" to the class not the object).        
+        // We added a static variable to the Student class, and then outputted
+        // it for two different objects of the Student class, and you will 
+        // notice how we get the same output for each student instance as they 
+        // all "share" the same access to the same static variable ... 
         
         
         
