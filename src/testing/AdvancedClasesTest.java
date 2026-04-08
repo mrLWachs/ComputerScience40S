@@ -268,15 +268,24 @@ class AdvancedClasesTest
         // (but we can "over-ride" the clone() method in all sub-classes)...       
         
         Person  c1 = p1.clone();
-        Student c2 = s2.clone();
-        Teacher c3 = t2.clone();
+        Student c2 = s1.clone();
+        Teacher c3 = t1.clone();
         
-        System.out.println("C1: " + c1.toString());
         System.out.println("P1: " + p1.toString());
+        System.out.println("C1: " + c1.toString());
+        System.out.println("S1: " + s1.toString());
         System.out.println("C2: " + c2.toString());
-        System.out.println("S2: " + s2.toString());
+        System.out.println("T1: " + t1.toString());
         System.out.println("C3: " + c3.toString());
-        System.out.println("T2: " + t2.toString());
+        
+        ////////////////////////////////////////////////////////////////////////
+        // NOTE: At this point, Mr. Wachs advised all students in the CS40S
+        // class to make a modification to a NetBeans template for all classes 
+        // in the future for this course. To do this, go to tip #38 in the 
+        // comments at the bottom of the "ComputerScience40S.java" file in 
+        // this project or on this GitHub page: https://bit.ly/4tyn4Hk
+        // and follow the instructions...
+        ////////////////////////////////////////////////////////////////////////
         
         // =====================================================================
         // (7) ADVANCED: static modifier
@@ -289,6 +298,25 @@ class AdvancedClasesTest
         // it for two different objects of the Student class, and you will 
         // notice how we get the same output for each student instance as they 
         // all "share" the same access to the same static variable ... 
+        
+        System.out.println("Student total = " + student.total);
+        System.out.println("Student total = " + wave.total);
+        
+        // Note: the word "total" is given a "warning" in NetBeans (the yellow
+        // squiggly line) because you normally access static properties from 
+        // the "class" refernce rahter than an object reference (but this code
+        // is still allowed)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
