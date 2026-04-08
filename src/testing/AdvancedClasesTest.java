@@ -267,41 +267,6 @@ class AdvancedClasesTest
         // We cannot call the "clone" method directly from the "Object" class
         // (but we can "over-ride" the clone() method in all sub-classes)...       
         
-        Person  c1 = p1.clone();
-        Student c2 = s1.clone();
-        Teacher c3 = t1.clone();
-        
-        System.out.println("P1: " + p1.toString());
-        System.out.println("C1: " + c1.toString());
-        System.out.println("S1: " + s1.toString());
-        System.out.println("C2: " + c2.toString());
-        System.out.println("T1: " + t1.toString());
-        System.out.println("C3: " + c3.toString());
-        
-        ////////////////////////////////////////////////////////////////////////
-        // NOTE: At this point, Mr. Wachs advised all students in the CS40S
-        // class to make a modification to a NetBeans template for all classes 
-        // in the future for this course. To do this, go to tip #38 in the 
-        // comments at the bottom of the "ComputerScience40S.java" file in 
-        // this project or on this GitHub page: https://bit.ly/4tyn4Hk
-        // and follow the instructions...
-        ////////////////////////////////////////////////////////////////////////
-        
-        // =====================================================================
-        // (7) ADVANCED: static modifier
-        // =====================================================================
-        
-        // Using a static variable: these are variables get instantiated "once" 
-        // and all objects "share" a reference to that same memory location 
-        // (means the "static" variable "belongs" to the class not the object).        
-        // We added a static variable to the Student class, and then outputted
-        // it for two different objects of the Student class, and you will 
-        // notice how we get the same output for each student instance as they 
-        // all "share" the same access to the same static variable ... 
-        
-        System.out.println("Student total = " + student.total);
-        System.out.println("Student total = " + wave.total);
-        
         
         
         

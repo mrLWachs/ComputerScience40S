@@ -25,14 +25,7 @@ public class Student extends Person
      
     private int number;     // Class properties (and inherited other properties)  
     private double gpa;     // Encapsulated property
-    
-    /**
-     * "static" property: the modifier word "static" simply means "shared" 
-     * meaning that ALL objects of this class share this ONE instance of this
-     * variable
-     */
-    public static int total;
-    
+        
     
     /**
      * Default constructor, set class properties (including a call to the 
@@ -59,8 +52,6 @@ public class Student extends Person
         // The "Book" class we associate with here is instantiated into a
         // book object
         book = new Book();
-        // Change ("mutate") the static ("shared") property ("global variable")
-        total++;
     }
     
     /**
@@ -81,7 +72,6 @@ public class Student extends Person
         gpa = 0.0;
         book = new Book();        
         this.number = number; 
-        total++;
     }
     
     /**
@@ -172,19 +162,6 @@ public class Student extends Person
         
         // Otherwise, if it passes the tests above...
         return true;       
-    }
-
-    /**
-     * Deeper clone, create a duplicate object as "this" object using "new" 
-     * memory
-     * 
-     * @return a "clone" of the object 
-     */
-    @Override
-    public Student clone() {
-        // Created a new Student object using new memory
-        Student that = new Student();
-        return that;        
     }
     
 }
