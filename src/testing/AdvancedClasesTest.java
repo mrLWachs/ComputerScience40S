@@ -299,8 +299,8 @@ class AdvancedClasesTest
         // notice how we get the same output for each student instance as they 
         // all "share" the same access to the same static variable ... 
         
-        
-        
+        System.out.println("Student total = " + student.total);
+        System.out.println("Student total = " + wave.total);
         
         
         
