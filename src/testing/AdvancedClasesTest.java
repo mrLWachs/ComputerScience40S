@@ -307,14 +307,28 @@ class AdvancedClasesTest
         // the "class" refernce rahter than an object reference (but this code
         // is still allowed)
         
+        Student s6 = new Student();
+        System.out.println("S6 total = " + s6.total);
+        Student s7 = new Student("7", 7, "7", 7);
+        System.out.println("S7 total = " + s7.total);
         
+        // Use static variables/properties carefully, you can still modify 
+        // them and may have unexpected results
+        wave.total = 10;
+        System.out.println("S7 total = " + s7.total);
         
+        // Coming up, we will look at the dangers of making properties "public"
+        // and not encapsualting them when we look: accessors and mutators...
         
+        // Now we will call a static (shared) method from the objects 
+        // (instances) of the Person class and the other classes that extend
+        // ("is a") from Person and inherited this method
+        person.endTheWorld();
+        student.endTheWorld();
+        teacher.endTheWorld();
         
-        
-        
-        
-        
+        // You can invoke (call) static methods from the name of the class 
+        // itself, not just the instances (objects) of the class, for example
         
         
         
