@@ -365,6 +365,15 @@ class AdvancedClasesTest
         
         // person.alive = false;
         
+        // Also, the "yelling()" method in the "Teacher" class is also a method 
+        // marked as "protected" which means that method cannot be called in 
+        // the "AdvancedClassesTest" class (as this class is only related 
+        // through association) and can only be called from classes (like the
+        // "MrWachs" class) that are related to the "Teacher" class through
+        // inheritance
+        
+        // teacher.yelling();
+        
         
         
         
