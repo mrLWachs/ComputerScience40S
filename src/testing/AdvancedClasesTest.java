@@ -348,6 +348,24 @@ class AdvancedClasesTest
         // from the Class reference (class name) not the object reference 
         // (the names of the instances)
         
+        // =====================================================================
+        // (8) ADVANCED: protected modifier 
+        // =====================================================================
+        
+        // This modifier word like public and private changes the encapsulation 
+        // level or properties and methods. Like the modifier private - the 
+        // protected modifier word means the property can only be accessed and 
+        // changed within the class BUT can also be accessed by any children 
+        // (sub classes) of this class (this is also true of methods)
+        
+        // The "protected" modifier means the "alive" property of the "Person"
+        // class cannot be accessed from the "AdvancedClassesTest" class
+        // because it is not related to the "Person" class through inheritance
+        // (it is only related through association or "has a")
+        
+        // person.alive = false;
+        
+        
         
         
         
