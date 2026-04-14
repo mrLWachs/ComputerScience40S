@@ -187,6 +187,16 @@ public class Student extends Person
         return that;
     }
     
+    /**
+     * A method that "kills" a student
+     */
+    public void useComicSans() {
+        // Because the "Student" class is "related" through inheritance ("is a")
+        // to the "Person" class this protected property "alive" CAN be 
+        // accessed
+        super.alive = false;
+    }
+    
 }
 
 

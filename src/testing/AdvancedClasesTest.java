@@ -81,7 +81,11 @@ class AdvancedClasesTest
         
         // We CAN access public properties and we CAN call public methods...
         person.name = "Per sony";
-        person.gender = "non-binary";
+        
+        // We later had to comment this out as we were learning new things
+        // that effected it working properly
+        // person.gender = "non-binary";
+        
         person.birthday();
         person.talk();
         
@@ -374,6 +378,19 @@ class AdvancedClasesTest
         
         // teacher.yelling();
         
+        // =====================================================================
+        // (9) ADVANCED: accessors and mutators
+        // =====================================================================
+        
+        // These are the names given to two types of specific methods you can 
+        // write and are commonly written in other's code. Accessor - also known 
+        // as a "get" (or "getter") method, will always return a property value 
+        // that is being retrieved or "accessed" (usually one that is 
+        // encapsulated). Mutator - also known as a "set" (or "setter") method, 
+        // will always have a parameter(s) to modify (or "change") a property 
+        // value (often one that is encapsulated). Accessor / Mutators often 
+        // have error checking code so the properties can remain encapsulated 
+        // but still "used"
         
         
         

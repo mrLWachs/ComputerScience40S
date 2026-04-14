@@ -124,7 +124,14 @@ public class Teacher extends Person
         Teacher that = (Teacher)object;
         // (2) compare the properties we decide are important
         if (!this.name.equals(that.name))     return false;
-        if (!this.gender.equals(that.gender)) return false;
+        
+        // The original line was below, but we had to change this after making 
+        // the property private...     
+        // if (!this.gender.equals(that.gender)) return false;
+        
+        // We repaired this issue with encapsulation by using a accessor method:
+        if (!this.getGender().equals(that.getGender())) return false;
+        
         // (3) return equal (true) if passes the tests above
         return true;
     }
@@ -142,7 +149,15 @@ public class Teacher extends Person
         // Start copying over the properties (from the "super" class "Person")
         // that I want to (as I am in charge of what to clone) and am able to
         // (as some of the properties are "private" or "encapsulated")
-        that.gender = this.gender;
+        
+        // The original line was below, but we had to change this after making 
+        // the property private...
+        
+        // that.gender = this.gender;
+        
+        // We repaired this issue with encapsulation by using a mutator method:
+        that.setGender(this.getGender());
+                
         // For the "students" array property, we will loop through the array 
         // and clone all the students
         for (int i = 0; i < MAX; i++) {
