@@ -82,8 +82,8 @@ class AdvancedClasesTest
         // We CAN access public properties and we CAN call public methods...
         person.name = "Per sony";
         
-        // We later had to comment this out as we were learning new things
-        // that effected it working properly
+        // Later in this unit we had to go back and comment this next line out 
+        // as we were learning new things that effected it working properly:
         // person.gender = "non-binary";
         
         person.birthday();
@@ -318,8 +318,18 @@ class AdvancedClasesTest
         
         // Use static variables/properties carefully, you can still modify 
         // them and may have unexpected results
-        wave.total = 10;
-        System.out.println("S7 total = " + s7.total);
+        wave.total = 10;        
+        System.out.println("student total = " + student.total);
+        System.out.println("wave    total = " + wave.total);        
+        System.out.println("S1      total = " + s1.total);
+        System.out.println("S2      total = " + s2.total);
+        System.out.println("S5      total = " + c2.total);
+        System.out.println("S6      total = " + s6.total);
+        System.out.println("S7      total = " + s7.total);
+        
+        // Static properties can also be accessed DIRECTLY from the class 
+        // reference in addition to accessing them from obejcts of the class
+        System.out.println("Student total = " + Student.total);
         
         // Coming up, we will look at the dangers of making properties "public"
         // and not encapsualting them when we look: accessors and mutators...
