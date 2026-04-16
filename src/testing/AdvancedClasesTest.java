@@ -2,7 +2,13 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.Athlete;
+import testing.classes.CaveDiver;
+import testing.classes.Doctor;
+import testing.classes.Husky;
+import testing.classes.MrWachs;
 import testing.classes.Person;
+import testing.classes.Piper;
 import testing.classes.Student;
 import testing.classes.Teacher;
 
@@ -425,9 +431,23 @@ class AdvancedClasesTest
         // take a class type as a parameter will accept all objects of that type
         // - but also all children (sub-class) objects of that class as well
         
+        // Instatiate (make an "instance" aka "object") of the classes...
+        Doctor    doctor    = new Doctor();
+        MrWachs   mrWachs   = new MrWachs();
+        Husky     husky     = new Husky();
+        Piper     piper     = new Piper();
+        Athlete   athlete   = new Athlete();
+        CaveDiver caveDiver = new CaveDiver();
+        // Intentially leaving out "HighSchool"
         
-        
-        
+        // Output these new objects, the "toString()" method is automatically 
+        // called by System.out.println() so we can just pass the object itself
+        System.out.println(doctor);
+        System.out.println(mrWachs);
+        System.out.println(husky);
+        System.out.println(piper);
+        System.out.println(athlete);
+        System.out.println(caveDiver);
         
         
         
