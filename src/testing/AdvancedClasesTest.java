@@ -402,6 +402,36 @@ class AdvancedClasesTest
         // have error checking code so the properties can remain encapsulated 
         // but still "used"
         
+        // Calling an accessor (or getter) method on this object of the Person
+        // class (which is a private, encapsulated property)   
+        String gender = person.getGender();
+        System.out.println("Person gender is " + gender);
+        
+        // Now using the other (inherited) accessor method of a Teacher object
+        // which inherited the accessor method from its parent class (Person)
+        System.out.println("Teacher gender is " + teacher.getGender());
+        
+        // Calling a mutator (or setter) method on this object's porperty
+        // (which is a protected property) 
+        student.setAlive(false);
+        System.out.println("Student alive is " + student.getAlive());
+        
+        // =====================================================================
+        // (10) ADVANCED: polymorphism
+        // =====================================================================
+        
+        // Is the idea that our code can adapt or change ("morph") to many 
+        // ("poly") different types of objects. For example, a method that can 
+        // take a class type as a parameter will accept all objects of that type
+        // - but also all children (sub-class) objects of that class as well
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
