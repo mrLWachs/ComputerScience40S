@@ -417,7 +417,7 @@ class AdvancedClasesTest
         // which inherited the accessor method from its parent class (Person)
         System.out.println("Teacher gender is " + teacher.getGender());
         
-        // Calling a mutator (or setter) method on this object's porperty
+        // Calling a mutator (or setter) method on this object's property
         // (which is a protected property) 
         student.setAlive(false);
         System.out.println("Student alive is " + student.getAlive());
