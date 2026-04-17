@@ -8,14 +8,14 @@ package testing.classes;
  * @since Apr 16, 2026, 9:13:13 AM
  */
 public class Meeting 
-{
-    
+{    
+   
     /**
      * Simple phrasing: A "list/collection" of all the people at the meeting
      * Complex phrasing: An array (because of square brackets) of class level
      * objects, the Meeting "has a" (associated with) Person (an array of them)
      */
-    private Person[] members;
+    public Person[] members;
     
     /**
      * Simple phrasing: It represents how many people are attending the meeting
@@ -31,7 +31,6 @@ public class Meeting
     private final int MAX;
     
     
-
     /**
      * Default constructor, set class properties
      */
@@ -45,6 +44,7 @@ public class Meeting
         // objects/instances are yet in the array)
     }
     
+  
     public void attend(Person person) {
         
     }
