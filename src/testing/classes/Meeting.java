@@ -9,43 +9,44 @@ package testing.classes;
  */
 public class Meeting 
 {
+    
+    /**
+     * Simple phrasing: A "list/collection" of all the people at the meeting
+     * Complex phrasing: An array (because of square brackets) of class level
+     * objects, the Meeting "has a" (associated with) Person (an array of them)
+     */
+    private Person[] members;
+    
+    /**
+     * Simple phrasing: It represents how many people are attending the meeting
+     * Complex phrasing: the modifier words "private" encapsulates, "int" 
+     * defines the data type of this name (or "variable", "property", "field") 
+     */
+    private int count;
+    
+    /**
+     * Simple phrasing: The maximum number of people that can be at the meeting
+     * Complex phrasing: The modifier "final" turns the field into a constant
+     */
+    private final int MAX;
+    
+    
 
     /**
      * Default constructor, set class properties
      */
     public Meeting() {
+        MAX   = 500;
+        count = 0;
+        // Need to "build" (construct, instantiate) our array
+        members = new Person[MAX];
+        // However, although the array has its size now set up, all the index 
+        // values (spots in the array) are filled with "nulls" (no Person 
+        // objects/instances are yet in the array)
+    }
+    
+    public void attend(Person person) {
         
-    }
-     
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "Meeting: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public Meeting clone() {
-        return this;
     }
     
 }
