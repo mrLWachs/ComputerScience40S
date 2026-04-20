@@ -2,9 +2,9 @@
 package testing.classes;
  
 /**
- * Meeting.java - description
+ * Meeting.java - represents a meeting of people
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Apr 16, 2026, 9:13:13 AM
  */
 public class Meeting 
@@ -44,9 +44,30 @@ public class Meeting
         // objects/instances are yet in the array)
     }
     
-  
+    /**
+     * Have a person attend this meeting (technically a mutator method, because
+     * it will modify the mutable array property of this class)
+     * 
+     * @param person a Person object to attend the meeting
+     */
     public void attend(Person person) {
+        // Assign (put, place) the person object (instance of the Person class)
+        // passed into this method's parameter into the first empty (unassigned)
+        // index (spot, element, location, subscript) of the array property
+        // of the Meeting class (global variable)     
+        members[count] = person;
         
+         // Now advance the count
+        count++;
+        
+        // Potential out of bounds ("range") error with count, we fix with
+        if (count >= MAX) {
+            // Potentially we could make the array bigger (resize, 
+            // re-dimension) - however, whenever you do this it wipes out
+            // (recreates, re-dimensions) all array content. So let's just
+            // reassign the count
+            count = 0;
+        }
     }
     
 }

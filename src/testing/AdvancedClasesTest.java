@@ -6,6 +6,7 @@ import testing.classes.Athlete;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
 import testing.classes.Husky;
+import testing.classes.Meeting;
 import testing.classes.MrWachs;
 import testing.classes.Person;
 import testing.classes.Piper;
@@ -449,9 +450,20 @@ class AdvancedClasesTest
         System.out.println(athlete);
         System.out.println(caveDiver);
         
+        // Instantiate ("make an instance of") a meeting object (of that class)
+        Meeting meeting = new Meeting();
         
+        // Have person objects (instances of the Person class) and all 
+        // children objects (classes that inherit from Person) will attend
+        // the meeting - through the concept of polymorphism
+        meeting.attend(person);
         
-        
+        // NOTE: in NetBeans, if you remove the argument from the method call
+        // of a method like "attend()" (meaning remove the word "person") and
+        // leave empty brackets and then with your cursor between the brackets, 
+        // you press CTRL + SPACEBAR, NetBeans will show you all the potential 
+        // arguments that are valid for this method (up to a line)
+        meeting.attend(fhorhea);
         
         
         
