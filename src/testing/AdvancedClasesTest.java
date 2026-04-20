@@ -465,8 +465,8 @@ class AdvancedClasesTest
         // arguments that are valid for this method (up to a line)
         meeting.attend(fhorhea);
         meeting.attend(student);
-        meeting.attend(student);
         meeting.attend(wave);
+        meeting.attend(teacher);        
         meeting.attend(p1);
         meeting.attend(p2);
         meeting.attend(p3);
@@ -486,10 +486,37 @@ class AdvancedClasesTest
         meeting.attend(athlete);
         meeting.attend(caveDiver);
         
-      
+        // Now call the method in the Meeting class that goes over the next 
+        // two concepts of this unit...
+        
         meeting.hold();
         
+        // =====================================================================
+        // (11) ADVANCED: enhanced for loop
+        // =====================================================================
         
+        // In the Meeting class the hold() method, demonstrates the use of an 
+        // enhanced for loop. This is an alternative (not needed) way to 
+        // implement a for loop. It can be used with arrays (of objects) and 
+        // collections (next unit). IDEs (like NetBeans) can often write this 
+        // loop for you with CTRL + SPACE after writing "for" or type "fore" 
+        // and tab (and are often suggested to be used with the "light bulb").
+        // It should be "read" as "for every item in items...". It do not have 
+        // a counter variable, automatically "knows" where to start and stop 
+        // looping (to match the collection/array) and automatically advances 
+        // each time through the loop 
+        
+        // Here is a simple example of the enhanced for loop....................        
+        // String[] dogs = { "Golden Retriever", "German Shapard", "Poodle",
+        //                   "Husky", "Bulldog", "Pug", "Irish Wolfhound"};        
+        // TRADITIONAL FOR loop: would be.......................................
+        // for (int i = 0; i < dogs.length; i++) {
+        //     System.out.println(dogs[i]);
+        // }        
+        // ENHANCED FOR loop: would look like...................................
+        // for (String dog : dogs) {
+        //     System.out.println(dog);
+        // }
         
         
         
