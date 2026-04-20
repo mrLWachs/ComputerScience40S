@@ -70,4 +70,45 @@ public class Meeting
         }
     }
     
+    /**
+     * Hold the meeting for all members (technically this is a accessor method 
+     * because it "accesses" the encapsulated array property)
+     */
+    public void hold() {
+        // Make a variable to hold a bunch of potential output data
+        String message = "Meeting is about to begin...\n\n";
+        
+        // Now we loop through the entire array ("traverse" means to travel to 
+        // or visit every spot) from start (index zero) to the finish (index of 
+        // the length minus one) - using a NEW type of loop (a new "for" loop)
+        // called the "enhanced for loop". To create the enhanced for loop 
+        // use the shortcut: type "for" then CTRL + SPACE and pick the fourth 
+        // option that appears from the top, or type "fore" and TAB    
+        for (Person member : members) {
+            // The enhanced for loop should be read as:
+            // "for every member in members"
+            // The "member" object of type "Person" automatically goes through
+            // (traverses) from the start to the end of the array automatically
+            // changing "person" each time through the loop to the next element
+            // in order...
+            
+            member.talk();
+            
+        }
+        
+        // Below is another (simpler) example of the enhanced for loop with an 
+        // array of integers that loops through the array and can be read as 
+        // "for every integer in array" = "for (Integer integer : array)"
+        //
+        // int[] array = { 6, 7, 67, 0, -67 };  
+        // for (Integer integer : array) {
+        //    System.out.println(integer);
+        // }
+        
+        
+        // Finally output that message
+        message += "\n\nMeeting is complete!";
+        System.out.println(message);              
+    }
+    
 }

@@ -464,6 +464,36 @@ class AdvancedClasesTest
         // you press CTRL + SPACEBAR, NetBeans will show you all the potential 
         // arguments that are valid for this method (up to a line)
         meeting.attend(fhorhea);
+        meeting.attend(student);
+        meeting.attend(student);
+        meeting.attend(wave);
+        meeting.attend(p1);
+        meeting.attend(p2);
+        meeting.attend(p3);
+        meeting.attend(s1);
+        meeting.attend(s2);
+        meeting.attend(t1);
+        meeting.attend(t2);
+        meeting.attend(c1);
+        meeting.attend(c2);
+        meeting.attend(c3);
+        meeting.attend(s6);
+        meeting.attend(s7);
+        meeting.attend(doctor);
+        meeting.attend(mrWachs);
+        meeting.attend(husky);
+        meeting.attend(piper);
+        meeting.attend(athlete);
+        meeting.attend(caveDiver);
+        
+      
+        meeting.hold();
+        
+        
+        
+        
+        
+        
         
         
         
