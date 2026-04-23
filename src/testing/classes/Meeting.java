@@ -92,7 +92,19 @@ public class Meeting
             // changing "person" each time through the loop to the next element
             // in order...
             
-            member.talk();
+            // Only going to count people (Person objects) that "exist"
+            // (that are not a "null") 
+            if (member != null) {
+                message += "\n";                       // Add a line break first
+                
+                // The "instanceof" operator takes an object (instance) on the
+                // left hand side (LHS) and the class type on the right hand
+                // side (RHS) and it is true if the object 'comes from' that
+                // class (is a instance of that class type)
+                if (member instanceof Student) message += "...YOU RULE...";
+                
+                message += "\t" + member.toString();
+            }
             
         }
         
