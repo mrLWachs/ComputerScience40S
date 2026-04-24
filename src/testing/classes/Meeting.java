@@ -76,7 +76,7 @@ public class Meeting
      */
     public void hold() {
         // Make a variable to hold a bunch of potential output data
-        String message = "Meeting is about to begin...\n\n";
+        String message = "Meeting is about to begin...\n";
         
         // Now we loop through the entire array ("traverse" means to travel to 
         // or visit every spot) from start (index zero) to the finish (index of 
@@ -95,23 +95,24 @@ public class Meeting
             // Only going to count people (Person objects) that "exist"
             // (that are not a "null")  
             if (member != null) {
-                message += "\n";                       // Add a line break first
+                message += "\n\t";             // Add a line break and tab first
                 
                 // The "instanceof" operator takes an object (instance) on the
                 // left hand side (LHS) and the class type on the right hand
                 // side (RHS) and it is true if the object 'comes from' that
-                // class (is a instance of that class type)  
+                // class (is a instance of that class type)                  
+                if (member instanceof Athlete)    message += "Athlete    -> ";
+                if (member instanceof Piper)      message += "Piper      -> ";
+                if (member instanceof Husky)      message += "Husky      -> ";
+                if (member instanceof HighSchool) message += "HighSchool -> ";
+                if (member instanceof MrWachs)    message += "MrWachs    -> ";
+                if (member instanceof Teacher)    message += "Teacher    -> ";
+                if (member instanceof CaveDiver)  message += "CaveDiver  -> ";
+                if (member instanceof Doctor)     message += "Doctor     -> ";
+                if (member instanceof Student)    message += "Student    -> ";
+                if (member instanceof Person)     message += "Person     -> "; 
                 
-                if (member instanceof Person)     message += "\t Person ->"; 
-                if (member instanceof Student)    message += "\t Student ->"; 
-                if (member instanceof Teacher)    message += "\t Teacher ->";
-                if (member instanceof Doctor)     message += "\t Doctor ->";
-                if (member instanceof CaveDiver)  message += "\t CaveDiver ->";
-                if (member instanceof MrWachs)    message += "\t MrWachs ->";
-                if (member instanceof HighSchool) message += "\t HighSchool ->";
-                if (member instanceof Husky)      message += "\t Husky ->";
-                if (member instanceof Piper)      message += "\t Piper ->";
-                if (member instanceof Athlete)    message += "\t Athlete ->";
+                message += "Object";
             }
         }
         
@@ -123,8 +124,7 @@ public class Meeting
         // for (Integer integer : array) {
         //    System.out.println(integer);
         // }
-        
-        
+                
         // Finally output that message
         message += "\n\nMeeting is complete!";
         System.out.println(message);              
