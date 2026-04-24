@@ -93,14 +93,15 @@ public class Meeting
             // in order...
             
             // Only going to count people (Person objects) that "exist"
-            // (that are not a "null") 
+            // (that are not a "null")  
             if (member != null) {
                 message += "\n";                       // Add a line break first
                 
                 // The "instanceof" operator takes an object (instance) on the
                 // left hand side (LHS) and the class type on the right hand
                 // side (RHS) and it is true if the object 'comes from' that
-                // class (is a instance of that class type)
+                // class (is a instance of that class type)  
+                
                 if (member instanceof Person)     message += "\t Person ->"; 
                 if (member instanceof Student)    message += "\t Student ->"; 
                 if (member instanceof Teacher)    message += "\t Teacher ->";
@@ -111,8 +112,6 @@ public class Meeting
                 if (member instanceof Husky)      message += "\t Husky ->";
                 if (member instanceof Piper)      message += "\t Piper ->";
                 if (member instanceof Athlete)    message += "\t Athlete ->";
-                
-                message += "\t" + member.toString();
             }
         }
         
