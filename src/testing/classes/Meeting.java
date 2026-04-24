@@ -101,11 +101,19 @@ public class Meeting
                 // left hand side (LHS) and the class type on the right hand
                 // side (RHS) and it is true if the object 'comes from' that
                 // class (is a instance of that class type)
-                if (member instanceof Student) message += "...YOU RULE...";
+                if (member instanceof Person)     message += "\t Person ->"; 
+                if (member instanceof Student)    message += "\t Student ->"; 
+                if (member instanceof Teacher)    message += "\t Teacher ->";
+                if (member instanceof Doctor)     message += "\t Doctor ->";
+                if (member instanceof CaveDiver)  message += "\t CaveDiver ->";
+                if (member instanceof MrWachs)    message += "\t MrWachs ->";
+                if (member instanceof HighSchool) message += "\t HighSchool ->";
+                if (member instanceof Husky)      message += "\t Husky ->";
+                if (member instanceof Piper)      message += "\t Piper ->";
+                if (member instanceof Athlete)    message += "\t Athlete ->";
                 
                 message += "\t" + member.toString();
             }
-            
         }
         
         // Below is another (simpler) example of the enhanced for loop with an 
