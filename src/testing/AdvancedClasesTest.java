@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import testing.classes.Athlete;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
+import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
@@ -517,6 +518,39 @@ class AdvancedClasesTest
         // for (String dog : dogs) {
         //     System.out.println(dog);
         // }
+        
+        // =====================================================================
+        // (13) ADVANCED: Abstraction
+        // =====================================================================
+        
+        // Abstraction is the quality of dealing with ideas rather than events.
+        // Like black box programming, is a process of hiding the implementation 
+        // details from the user – in Java, abstraction is achieved using 
+        // abstract classes (and Interfaces which we will study next). 
+        // Abstraction lets you focus on WHAT the object does instead of HOW it 
+        // does it. In Java, an abstract class is a class which cannot be 
+        // instantiated – in other words, you define it as a class but cannot 
+        // use it to create an object. The purpose of doing this is to create a 
+        // class which acts as a parent class (base class) for subclasses 
+        // (child classes) but will not be needed to be instantiated in itself 
+        // – it must be extended and its methods implemented. To create an 
+        // abstract class, add the abstract modifier keyword in the class 
+        // definition, and once you have a abstract class, you can create 
+        // abstract methods within the abstract class. For example:
+        
+        // HighSchool highSchool = new HighSchool
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
