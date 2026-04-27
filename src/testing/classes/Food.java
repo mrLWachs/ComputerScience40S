@@ -52,4 +52,27 @@ public abstract class Food
         this.group = group;
     }
     
+    /**
+     * Prepares food to be eaten. By adding the modifier "abstract" to a method,
+     * it makes an abstract method - means the method has no code for the 
+     * body (no curly brackets) and ends in a semi-colon (it can have
+     * parameters and it can return a value)
+     */
+    public abstract void prepare();
+    
+    /**
+     * Determines if this 'food' item has spoiled - note: abstract methods
+     * can return things
+     * 
+     * @return the food has spoiled (true) or not (false)
+     */
+    public abstract boolean hasSpoiled();
+    
+    /**
+     * Smells the 'food' item - note: abstract methods can have parameter(s)
+     * 
+     * @param seconds how many seconds to smell it
+     */
+    public abstract void smell(int seconds);
+    
 }
