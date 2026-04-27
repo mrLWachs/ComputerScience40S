@@ -16,27 +16,27 @@ public abstract class Food
     public boolean eatable;
     
     /**
-     * Available to this class and all children of this class, the flavor
+     * Available to this class and all children of this class, the flavour
      * quality of the food
      */ 
     protected String flavor;
     
     /**
-     * Agreed upon food groups: (0) Grains, (1) Fruits and Vegetables, 
-     * (2) Protein, (3) Dairy, (4) Other - "shared" constant array
+     * Agreed upon food groups: (0) Dairy, (1) Grains, (2) Protein, 
+     * (3) Fruits and Vegetables, (4) Other - "shared" constant array
      */
     public static final String[] GROUPS = {
-        "Grains",
-        "Fruits and Vegatables",
-        "Proteins",
         "Dairy",
+        "Grains",
+        "Protein",
+        "Fruits and Vegatables",
         "Other"
     };
     
     /** Encapsulated property, which food group the 'food' item is part of */
     private int group;
-        
-
+    
+    
     /**
      * Why write a constructor for a class that will never be instantiated, 
      * which a abstract class can not. This is done for inheritance sake and
@@ -51,6 +51,7 @@ public abstract class Food
     public Food(int group) {
         this.group = group;
     }
+    
     
     /**
      * Prepares food to be eaten. By adding the modifier "abstract" to a method,
@@ -75,6 +76,7 @@ public abstract class Food
      */
     public abstract void smell(int seconds);
     
+    
     /**
      * How to eat this food object - note: abstract classes can ALSO have
      * "regular" methods and regular properties (not just abstract methods)
@@ -82,13 +84,13 @@ public abstract class Food
      * @return The output of how eating this "food" item went
      */
     public String eat() {
-        if (hasSpoiled() == true) {
+        if (hasSpoiled()) {
             return "Do not eat!";
         }
         else {
             prepare();
             return "chomp chomp... " + GROUPS[group] + " was " + flavor;
         }
-    }
+    }    
     
 }

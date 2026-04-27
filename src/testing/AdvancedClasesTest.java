@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import testing.classes.Athlete;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
+import testing.classes.Food;
 import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Meeting;
@@ -490,8 +491,6 @@ class AdvancedClasesTest
         // Now call the method in the Meeting class that goes over the next 
         // two concepts of this unit...
         
-        meeting.hold();
-        
         // =====================================================================
         // (11) ADVANCED: enhanced for loop
         // =====================================================================
@@ -519,6 +518,8 @@ class AdvancedClasesTest
         //     System.out.println(dog);
         // }
         
+        meeting.hold();
+        
         // =====================================================================
         // (13) ADVANCED: Abstraction
         // =====================================================================
@@ -539,7 +540,7 @@ class AdvancedClasesTest
         // abstract methods within the abstract class. For example:
         
         // HighSchool highSchool = new HighSchool
-        
+        // Food food = new Food();
         
         
         
