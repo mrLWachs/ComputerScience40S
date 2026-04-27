@@ -35,52 +35,21 @@ public abstract class Food
     
     /** Encapsulated property, which food group the 'food' item is part of */
     private int group;
-            
-    
-    
-    
-    
-    
-    
-    
-    
+        
 
     /**
-     * Default constructor, set class properties
+     * Why write a constructor for a class that will never be instantiated, 
+     * which a abstract class can not. This is done for inheritance sake and
+     * when the sub-classes call the super-constructor. NOTE: a default 
+     * constructor is a constructor (no return type, same name as the class) 
+     * without any parameters - compilers (NetBeans) will write a default 
+     * constructor for you if you don't. But, if we write a constructor with 
+     * parameters, then it will not
+     * 
+     * @param group which food group this food item belongs to
      */
-    public Food() {
-        
-    }
-     
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "Food: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public Food clone() {
-        return this;
+    public Food(int group) {
+        this.group = group;
     }
     
 }
