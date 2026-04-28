@@ -4,10 +4,9 @@ package testing;
 import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
+import testing.classes.BananaTiramisuTerracottaPie;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
-import testing.classes.Food;
-import testing.classes.HighSchool;
 import testing.classes.Husky;
 import testing.classes.Lasagna;
 import testing.classes.Meeting;
@@ -548,10 +547,12 @@ class AdvancedClasesTest
         // of the abstract class (Food) and using the abstract methods (that 
         // were made 'concrete') in those classes
         Apple   apple   = new Apple();
-        Lasagna lasagna = new Lasagna();
+        Lasagna lasagna = new Lasagna();        
+        BananaTiramisuTerracottaPie pie = new BananaTiramisuTerracottaPie();
         
-        apple.smell(2);
+        apple.smell(10);
         lasagna.smell(10);
+        pie.smell(1);
         
         // Call the polymorphic method which accepts the abstract object (Food)
         // as an argument. Since the abstract class cannot be instantiated,
@@ -559,7 +560,7 @@ class AdvancedClasesTest
         // (in other words, apple and lasagna instances)
         mrWachs.consume(apple);
         mrWachs.consume(lasagna);
-        
+        mrWachs.consume(pie);
         
         
         
