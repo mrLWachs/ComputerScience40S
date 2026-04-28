@@ -9,6 +9,7 @@ import testing.classes.Doctor;
 import testing.classes.Food;
 import testing.classes.HighSchool;
 import testing.classes.Husky;
+import testing.classes.Lasagna;
 import testing.classes.Meeting;
 import testing.classes.MrWachs;
 import testing.classes.Person;
@@ -546,11 +547,18 @@ class AdvancedClasesTest
         // Instantiate objects from the child classes (Apple and SweetieCookie)
         // of the abstract class (Food) and using the abstract methods (that 
         // were made 'concrete') in those classes
-        Apple apple = new Apple();
+        Apple   apple   = new Apple();
+        Lasagna lasagna = new Lasagna();
         
         apple.smell(2);
+        lasagna.smell(10);
         
-        
+        // Call the polymorphic method which accepts the abstract object (Food)
+        // as an argument. Since the abstract class cannot be instantiated,
+        // only children objects from the abstract class can be arguments
+        // (in other words, apple and steak instances)
+        mrWachs.consume(apple);
+        mrWachs.consume(lasagna);
         
         
         
