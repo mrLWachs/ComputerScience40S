@@ -2,6 +2,7 @@
 package testing;
 
 import javax.swing.JOptionPane;
+import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
@@ -542,7 +543,12 @@ class AdvancedClasesTest
         // HighSchool highSchool = new HighSchool
         // Food food = new Food();
         
+        // Instantiate objects from the child classes (Apple and SweetieCookie)
+        // of the abstract class (Food) and using the abstract methods (that 
+        // were made 'concrete') in those classes
+        Apple apple = new Apple();
         
+        apple.smell(2);
         
         
         
