@@ -43,7 +43,7 @@ public class Lasagna extends Food
      */
     @Override
     public void smell(int seconds) {
-        if (seconds > 5) super.eatable = false;
+        if (seconds < 5) super.eatable = false;
         else             super.eatable = true;
     }
 

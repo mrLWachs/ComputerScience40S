@@ -51,7 +51,7 @@ public class Apple extends Food
      */
     @Override
     public void smell(int seconds) {
-        if (seconds > 3) super.eatable = false;
+        if (seconds < 3) super.eatable = false;
         else             super.eatable = true;
     }
     

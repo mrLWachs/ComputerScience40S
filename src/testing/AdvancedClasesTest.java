@@ -556,7 +556,7 @@ class AdvancedClasesTest
         // Call the polymorphic method which accepts the abstract object (Food)
         // as an argument. Since the abstract class cannot be instantiated,
         // only children objects from the abstract class can be arguments
-        // (in other words, apple and steak instances)
+        // (in other words, apple and lasagna instances)
         mrWachs.consume(apple);
         mrWachs.consume(lasagna);
         
