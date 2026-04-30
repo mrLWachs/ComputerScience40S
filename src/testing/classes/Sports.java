@@ -13,7 +13,7 @@ package testing.classes;
  * means the other class "follows the rules" of that interface.
  *
  * @author Mr. Wachs
- * @since Apr 29, 2026, 10:33:46 AM
+ * @since Nov 28, 2025, 9:21:45 AM
  */
 public interface Sports 
 {
