@@ -33,13 +33,13 @@ public class Tester
      * Default constructor method, sets class properties
      */
     public Tester() {
-        System.out.println("Start testing...");
+        System.out.println("Start testing...\n");
         
         RecursionTest unit1 = new RecursionTest();
         // Later we will add code here for unit 2 and 3...  
         AdvancedClasesTest unit2 = new AdvancedClasesTest();        
                 
-        System.out.println("Completed testing!");
+        System.out.println("\nCompleted testing!");
     }
     
 }

@@ -68,7 +68,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      */
     @Override
     public void score(String name) {
-        System.out.println(name + " has scored a goal");
+        System.out.println("Hockey: " + name + " has scored a goal");
         if (name.equals(opponentName)) opponentScore++;
         if (name.equals(super.name))   homeScore++;
     }
@@ -136,7 +136,7 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
      */
     @Override
     public void roll() {
-        System.out.println("Roll that cheese down that hill!");
+        System.out.println("Cheese Rolling: Roll down that hill!");
     }
 
     /**
@@ -154,13 +154,23 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         }
     }
 
-    
+    /**
+     * Hopping along in potato sack racing 
+     * 
+     * @param inches how far you hopped
+     */
     @Override
     public void hop(int inches) {
+        System.out.println("Potato sack: Hop hop " + inches + " inches");
     }
 
+    /**
+     * Getting ready to race in potato sack racing 
+     * @param sack 
+     */
     @Override
     public void suitUp(String sack) {
+        System.out.println("Potato sack: getting into " + sack);
     }
     
 }

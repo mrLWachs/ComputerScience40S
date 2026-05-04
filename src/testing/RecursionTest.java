@@ -35,7 +35,7 @@ public class RecursionTest
      * one) - empty round brackets it is called the "default" constructor
      */
     public RecursionTest() {
-        System.out.println("Start Recursion...");
+        System.out.println("Start Recursion...\n");
         
         System.out.println("Recursive factorials............................");
         
@@ -70,7 +70,7 @@ public class RecursionTest
             }
         }
         
-        System.out.println("Recursion complete!");
+        System.out.println("\nRecursion complete!");
     }
     
 

@@ -37,7 +37,7 @@ class AdvancedClasesTest
      * instantiates the class (creates an "instance")
      */
     public AdvancedClasesTest() {
-        System.out.println("Start Advanced Classes...");
+        System.out.println("Start Advanced Classes...\n");
         
         // =====================================================================
         // (1) REVIEW: Classes (properties and methods)
@@ -562,8 +562,49 @@ class AdvancedClasesTest
         mrWachs.consume(lasagna);
         mrWachs.consume(pie);
         
+        // =====================================================================
+        // (14) ADVANCED: Interfaces
+        // =====================================================================
         
-        Athlete havoc = new Athlete();
+        // Interface can be thought of "as a set of rules" - like a class, but 
+        // only contains method signatures. They are like abstract methods - but
+        // you don't have to use the word 'abstract' inside interfaces with 
+        // method signatures (they are always abstract). Like abstract classes,
+        // interfaces cannot be instantiated (made into objects like
+        // Sports sports = new Sports(); ). Alos like an abstract class, 
+        // interfaces are "used" by 'child' like classes that 'implement' the 
+        // interface (these classes "follow the rules" of the interface ("the 
+        // set of rules").
+        
+        Athlete havoc = new Athlete();                       // Create an athlete
+        havoc.setOpponent("Pipers");                           // Set our opponent 
+        for (int round = 1; round <= 4; round++) {        // Compete in 4 rounds
+            System.out.println("HAVOC: Round " + round + "...");
+            if (havoc.haveYouGotItSigned()) {               // Check if can play?
+                if (round < 4) {
+                    havoc.score("Havoc");                          // Play hockey
+                    havoc.score("Havoc");                          // Score goals
+                    havoc.score("Pipers");
+                    havoc.endOfPeriod(round);                // See the scores...
+                }
+                else {
+                    System.out.println("HAVOC: Hockey is over, now we...");
+                    havoc.suitUp("Canvas bag");
+                    havoc.hop(20);
+                    havoc.roll();
+                    havoc.eat(false);
+                }
+            }
+            else {
+                havoc.sign();                           // Sign so they can play
+            }
+        }
+        System.out.println("HAVOC: now we check if we are a champion...");
+        if (havoc.didIWin()) havoc.consume(pie);    // Check if we won/celebrate
+        
+        // =====================================================================
+        // (15) ADVANCED: Generics
+        // =====================================================================
         
         
         
@@ -576,11 +617,7 @@ class AdvancedClasesTest
         
         
         
-        
-        
-        
-        
-        System.out.println("Completed Advanced Classes!");
+        System.out.println("\nCompleted Advanced Classes!");
     }
     
 
