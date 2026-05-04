@@ -563,6 +563,7 @@ class AdvancedClasesTest
         mrWachs.consume(pie);
         
         
+        Athlete havoc = new Athlete();
         
         
         
