@@ -131,14 +131,30 @@ public class Athlete extends Husky implements PermissionForm, Hockey,
         }
     }
 
+    /**
+     * Starts up a game of cheese rolling
+     */
     @Override
     public void roll() {
+        System.out.println("Roll that cheese down that hill!");
     }
 
+    /**
+     * The end of cheese rolling
+     * 
+     * @param didTheyThrowUp did they eat the cheese or not
+     */
     @Override
     public void eat(boolean didTheyThrowUp) {
+        if (didTheyThrowUp) {
+            System.out.println("Cheese Rolling: you lost");
+        }
+        else {
+            System.out.println("Cheese Rolling: you win");
+        }
     }
 
+    
     @Override
     public void hop(int inches) {
     }
