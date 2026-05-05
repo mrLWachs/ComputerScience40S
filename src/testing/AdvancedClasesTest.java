@@ -641,9 +641,31 @@ class AdvancedClasesTest
         Integer   integer   = new Integer(i);
         Double    doub      = new Double(d);
         
+        // Also String (which was always 'complex' using the captial 'S' to 
+        // declare it) and its constructor method (usually not needed)..
+        String string3 = new String("string");
         
+        // Also creating (instantiating) other class level objects
+        JOptionPane joptionpane = new JOptionPane();
+        Athlete mike = new Athlete();
         
+        // We have 7 different class level objects (instances of a class) and 
+        // we are going to output these 7 different objects using ONE method... 
+        // a 'generic' method        
+        output(bool);
+        output(character);
+        output(integer);
+        output(doub);
+        output(string1);
+        output(joptionpane);
+        output(mike);
         
+        // We can even pass the method an "annoyomous" object
+        output(new Object());
+        
+        // Generic class objects are not normally created this way...
+        // Box box = new Box(bool);
+        // Instead...
         
         
         
