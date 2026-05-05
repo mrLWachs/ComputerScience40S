@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import testing.classes.Apple;
 import testing.classes.Athlete;
 import testing.classes.BananaTiramisuTerracottaPie;
+import testing.classes.Box;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
 import testing.classes.Husky;
@@ -667,7 +668,7 @@ class AdvancedClasesTest
         // Box box = new Box(bool);
         // Instead...
         
-         // When using a class with a generic inside of it, and that
+        // When using a class with a generic inside of it, and that
         // class is being instantiated (creating an object), then 
         // you define what type the generic is by using the angle 
         // brackets "< >" with the data type (which must be a 
