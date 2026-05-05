@@ -576,16 +576,16 @@ class AdvancedClasesTest
         // interface (these classes "follow the rules" of the interface ("the 
         // set of rules").
         
-        Athlete havoc = new Athlete();                       // Create an athlete
-        havoc.setOpponent("Pipers");                           // Set our opponent 
+        Athlete havoc = new Athlete();                      // Create an athlete
+        havoc.setOpponent("Pipers");                         // Set our opponent 
         for (int round = 1; round <= 4; round++) {        // Compete in 4 rounds
             System.out.println("HAVOC: Round " + round + "...");
-            if (havoc.haveYouGotItSigned()) {               // Check if can play?
+            if (havoc.haveYouGotItSigned()) {              // Check if can play?
                 if (round < 4) {
-                    havoc.score("Havoc");                          // Play hockey
-                    havoc.score("Havoc");                          // Score goals
+                    havoc.score("Havoc");                         // Play hockey
+                    havoc.score("Havoc");                         // Score goals
                     havoc.score("Pipers");
-                    havoc.endOfPeriod(round);                // See the scores...
+                    havoc.endOfPeriod(round);               // See the scores...
                 }
                 else {
                     System.out.println("HAVOC: Hockey is over, now we...");
@@ -605,6 +605,38 @@ class AdvancedClasesTest
         // =====================================================================
         // (15) ADVANCED: Generics
         // =====================================================================
+        
+        // Generics are a way to work with non-specific data types through 
+        // generic methods and generic classes. Instead of over-loading methods 
+        // or having a defined data type in the class, the generic acts as a 
+        // "placeholder" for what will later be defined. To use generics, type 
+        // < T > with any single letter in the brackets (which will later be 
+        // replaced with the actual data type). Generics work on any class 
+        // level data type. A generic is defined as a characteristic of or 
+        // relating to a class or group of things that is not specific. In Java,
+        // we can use generic methods and generic classes
+        
+        // Let us start by creating simple ("primitive") data types 
+        boolean b = true;
+        char    c = 'a';
+        int     i = 0;
+        double  d = 3.14;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
