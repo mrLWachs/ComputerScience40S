@@ -8,6 +8,8 @@ import testing.classes.BananaTiramisuTerracottaPie;
 import testing.classes.Box;
 import testing.classes.CaveDiver;
 import testing.classes.Doctor;
+import testing.classes.Food;
+import testing.classes.House;
 import testing.classes.Husky;
 import testing.classes.Lasagna;
 import testing.classes.Meeting;
@@ -714,24 +716,15 @@ class AdvancedClasesTest
         output(newOptionPane);
         output(newAthlete);
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        // OPTIONAL: does not need to be in your submitted example..............
+        House<MrWachs,Meeting> house = new House<>();
+        // Associate the objects that match with the generics
+        house.homeOwner = mrWachs;
+        house.contents = meeting;
+        // Create an array of Food objects
+        Food[] fridge = { apple, pie, lasagna };
+        // Test our generic method
+        house.party(fridge);
         
         System.out.println("\nCompleted Advanced Classes!");
     }
