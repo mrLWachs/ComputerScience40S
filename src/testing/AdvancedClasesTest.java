@@ -580,13 +580,14 @@ class AdvancedClasesTest
         // set of rules").
         
         Athlete havoc = new Athlete();                      // Create an athlete
+        havoc.setName("Huskies");
         havoc.setOpponent("Pipers");                         // Set our opponent 
         for (int round = 1; round <= 4; round++) {        // Compete in 4 rounds
             System.out.println("HAVOC: Round " + round + "...");
             if (havoc.haveYouGotItSigned()) {              // Check if can play?
                 if (round < 4) {
-                    havoc.score("Havoc");                         // Play hockey
-                    havoc.score("Havoc");                         // Score goals
+                    havoc.score("Huskies");                       // Play hockey
+                    havoc.score("Huskies");                       // Score goals
                     havoc.score("Pipers");
                     havoc.endOfPeriod(round);               // See the scores...
                 }
@@ -659,7 +660,7 @@ class AdvancedClasesTest
         output(character);
         output(integer);
         output(doub);
-        output(string1);
+        output(string3);
         output(joptionpane);
         output(mike);
         
@@ -685,7 +686,7 @@ class AdvancedClasesTest
         Box<Character>   box2 = new Box<>(character);
         Box<Integer>     box3 = new Box<>(integer);
         Box<Double>      box4 = new Box<>(doub);
-        Box<String>      box5 = new Box<>(string1);
+        Box<String>      box5 = new Box<>(string3);
         Box<JOptionPane> box6 = new Box<>(joptionpane);
         Box<Athlete>     box7 = new Box<>(mike);
         
@@ -722,11 +723,11 @@ class AdvancedClasesTest
         house.homeOwner = mrWachs;
         house.contents = meeting;
         // Create an array of Food objects
-        Food[] fridge = { apple, pie, lasagna };
+        Food[] fridge = { apple, lasagna, pie };
         // Test our generic method
         house.party(fridge);
-        
-        System.out.println("\nCompleted Advanced Classes!");
+          
+        System.out.println("\nCompleted learning Advanced Classes!");
     }
 
     /**
