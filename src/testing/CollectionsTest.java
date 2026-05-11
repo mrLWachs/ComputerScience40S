@@ -2,9 +2,9 @@
 package testing;
  
 /**
- * CollectionsTest.java - description
+ * CollectionsTest.java - tests the concepts learned in this unit.
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 8, 2026, 10:43:14 AM
  */
 public class CollectionsTest 
@@ -15,37 +15,8 @@ public class CollectionsTest
      */
     public CollectionsTest() {
         
+        
+        
     }
      
-    /**
-     * String representation of this object
-     *
-     * @return The object represented as a String
-     */
-    @Override
-    public String toString() {
-        return "CollectionsTest: " + super.toString();
-    }
-   
-    /**
-     * Deep comparison, determines if two objects are "equal" in this context
-     *
-     * @param object the object to compare to
-     * @return the objects are "equal" (true) or not (false)
-     */
-    @Override
-    public boolean equals(Object object) {
-        return super.equals(object);
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public CollectionsTest clone() {
-        return this;
-    }
-    
 }

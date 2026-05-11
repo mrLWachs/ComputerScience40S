@@ -4,7 +4,7 @@ package collections;
 /**
  * Node.java - description
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 8, 2026, 10:43:46 AM
  */
 public class Node 

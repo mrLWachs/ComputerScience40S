@@ -4,7 +4,7 @@ package collections;
 /**
  * LinkedList.java - description
  *
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since May 8, 2026, 10:43:53 AM
  */
 public class LinkedList 
