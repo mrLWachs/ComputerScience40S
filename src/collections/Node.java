@@ -1,14 +1,53 @@
 /** Required package class namespace */
 package collections;
  
+
 /**
- * Node.java - description
+ * Node.java - a representation of a generic node for use with
+ * a LinkedList object, and could be "visualized" as:
+ * 
+ *                      NODE
+ *                +--------------+
+ * previous <---- |              |
+ *                |     data     |
+ *                |   (generic)  |
+ *                |              |----> next
+ *                +--------------+
  *
  * @author Mr. Wachs
+ * @param <T> The generic data type used in the class
  * @since May 8, 2026, 10:43:46 AM
  */
-public class Node 
+public class Node <T>
 {
+    
+    /** The generic data type the node stores */
+    public T data;
+    
+    /** 
+     * Self reference (pointer, link) to the next node that 'will' be
+     * in a 'chain' (linked list)
+     */
+    public Node next;
+    
+    /** Link / pointer / reference to the previous (back) node */
+    public Node previous;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     /**
      * Default constructor, set class properties
