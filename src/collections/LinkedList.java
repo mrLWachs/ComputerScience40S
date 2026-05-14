@@ -42,8 +42,7 @@ public class LinkedList <T>
     
     /** Flag to indicate a search was not found */
     public final int NOT_FOUND = -1;
-    
-      
+          
 
     /**
      * Default constructor, set class properties
