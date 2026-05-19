@@ -256,4 +256,48 @@ public class LinkedList <T>
         return true;                        // Operation successful
     }    
 
+    /**
+     * Accessor for the data at the specified index
+     *
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {
+        if (!inRange(index)) return null;   // Invalid index, return flag        
+        return (T)getNode(index).data;      // Get reference and retrieve data  
+    }
+    
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        if (!inRange(index)) return false;          // Invalid index
+        if (data == null)    return false;          // Invalid data
+        Node current = getNode(index);              // Get to node at index
+        current.data = data;                        // Change node data
+        return true;                                // Operation successful
+    }
+      
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // Create new list memory
+        for (int i = 0; i < this.length; i++) {     // Traverse list
+            that.addBack((T)this.get(i));
+            // This one line is the same as...
+            // T data = (T)this.get(i);
+            // that.addBack(data);
+        }        
+        return that;                                // New list returned
+    }
+    
+    
 }
