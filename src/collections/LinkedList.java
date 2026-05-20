@@ -1,9 +1,7 @@
 /** Required package class namespace */
 package collections;
  
-/* Required API imports */
 import java.lang.reflect.Array;
-
 
 /**
  * LinkedList.java - an implementation of a linked list abstract (advanced)
