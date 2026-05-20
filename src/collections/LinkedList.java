@@ -256,9 +256,207 @@ public class LinkedList <T>
         return true;                        // Operation successful
     }    
 
+    /**
+     * Accessor for the data at the specified index
+     *
+     * @param index the index location to access
+     * @return the data (or null) at the index
+     */
+    public T get(int index) {
+        if (!inRange(index)) return null;   // Invalid index, return flag        
+        return (T)getNode(index).data;      // Get reference and retrieve data  
+    }
     
+    /**
+     * Mutator method sets the index location to the new data
+     * 
+     * @param index the index location to mutate
+     * @param data the new data to mutate into
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean set(int index, T data) {
+        if (!inRange(index)) return false;          // Invalid index
+        if (data == null)    return false;          // Invalid data
+        Node current = getNode(index);              // Get to node at index
+        current.data = data;                        // Change node data
+        return true;                                // Operation successful
+    }
+      
+    /**
+     * a Deep clone, creates a duplicate object using new memory
+     *
+     * @return a "clone" of the object using new memory
+     */
+    @Override
+    public LinkedList clone() {
+        LinkedList<T> that = new LinkedList<>();    // Create new list memory
+        for (int i = 0; i < this.length; i++) {     // Traverse list
+            that.addBack((T)this.get(i));
+            // This one line is the same as...
+            // T data = (T)this.get(i);
+            // that.addBack(data);
+        }        
+        return that;                                // New list returned
+    }
     
+    /**
+     * Inserts data as a new node after the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert after
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addAfter(T data, int index) {
+        // First error check the data and index values
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        
+        // The simple index number calls a method we already have
+        if (index == length-1) return addBack(data);    // Add to the end 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        
+        // Next, set all 4 proper references to insert the new node
+        node.next = current.next;                       
+        current.next.previous = node;
+        current.next = node;
+        node.previous = current;
+        
+        // Finishing up, add to lenght class property and return successfull
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
+        
+    /**
+     * Inserts data as a new node before the passed index
+     * 
+     * @param data the data type to insert
+     * @param index the index location to insert before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean addBefore(T data, int index) {
+        if (data == null)      return false;            // Invalid data to add
+        if (!inRange(index))   return false;            // Index out of range
+        if (index == 0) return addFront(data);          // Add to the head 
+        Node<T> node = new Node<>(data);                // Create node object
+        Node current = getNode(index);                  // Get to index spot
+        // Copy and paste the addAfter method and then applied "dual" opperation
+        // logic on all the references below ("next" becomes "previous", etc.)
+        node.previous = current.previous;                       
+        current.previous.next = node;
+        current.previous = node;
+        node.next = current;
+        length++;                                       // Increase length
+        return true;                                    // Opperation successful
+    }
     
+    /**
+     * Adds the data to the back of the list (wrapper method)
+     * 
+     * @param data the data to add
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data) {
+        return addBack(data);                           // Wrapper method call
+    }
+    
+    /**
+     * Adds the data before the passed index (wrapper method)
+     * 
+     * @param data the data to add
+     * @param index the index location to add before
+     * @return the operation was successful (true) or not (false)
+     */
+    public boolean add(T data, int index) {
+        return addAfter(data, index);                   // Wrapper method call
+    }
+    
+    /**
+     * Accesses the first, head, front data in the list
+     * 
+     * @return the head data
+     */
+    public T front() {
+        return get(0);                              // First node
+    }
+    
+    /**
+     * Accesses the last, tail, back data in the list
+     * 
+     * @return the tail data
+     */
+    public T back() {
+        return get(length-1);                       // Last node
+    }
+    
+    /**
+     * Wipes out all memory of all contents of the list
+     */
+    public void clear() {
+        Node current = head;                // Start at head of the list
+        while (current != null) {           // Traverse the list
+            Node next = current.next;       // Reference to the next node
+            current.finalize();             // Wipe all memory from the node
+            current = next;                 // Move to the next node
+        }
+        finalize();                         // Wipe all memory from the list
+    }
+    
+    /**
+     * Removes (deletes) the first (head) node of the list (mutator method)
+     * 
+     * @return the data in the first node (or null)
+     */
+    public T removeFront() {
+        if (isEmpty()) return null;             // No front to remove
+        T data = front();                       // Store head data
+        if (length == 1) finalize();            // One node list, wipe list
+        else {                
+            head = head.next;                   // Advanced head reference
+            head.previous.next = null;          // Cut old head reference
+            head.previous = null;               // Cut reference to old head
+            length--;                           // Reduce list length
+            System.gc();                        // Call system garbage collector
+        }        
+        return data;                            // Return stored data
+    }
+    
+    /**
+     * Removes (deletes) the last (tail) node of the list
+     * 
+     * @return the data in the last node (or null)
+     */
+    public T removeBack() {
+        if (isEmpty()) return null;             // No back to remove
+        T data = back();                        // Store tail data
+        if (length == 1) finalize();            // One node list, wipe list
+        else {                
+            tail = tail.previous;               // Advanced tail reference
+            tail.next.previous = null;          // Cut old tail reference
+            tail.next = null;                   // Cut reference to old tail
+            length--;                           // Reduce list length
+            System.gc();                        // Call system garbage collector
+        }
+        return data;                            // Return stored data
+    }
+    
+    /**
+     * Deletes the node at the specified index and mutates the list
+     * 
+     * @param index the index location to remove
+     * @return the data at the specified index (or null)
+     */
+    public T remove(int index) {
+        if (!inRange(index))   return null;             // Not in range
+        if (index == 0)        return removeFront();    // Remove first
+        if (index == length-1) return removeBack();     // Remove last
+        Node current = getNode(index);                  // Get to index
+        current.next.previous = current.previous;       // Change references
+        current.previous.next = current.next;
+        current.next = current.previous = null;        
+        length--;                                       // Reduce list length
+        return (T)current.data;                         // Return index data
+    }
     
     
     
