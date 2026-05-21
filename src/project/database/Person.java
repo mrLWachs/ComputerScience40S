@@ -4,8 +4,8 @@ package project.database;
 /**
  * Person.java - description
  *
- * @author YOUR NAME
- * @since May 21, 2026, 9:03:20 AM
+ * @author Mr. Wachs
+ * @since May 2026
  */
 public abstract class Person 
 {

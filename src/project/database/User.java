@@ -2,10 +2,10 @@
 package project.database;
  
 /**
- * User.java - description
+ * User.java - 
  *
- * @author YOUR NAME
- * @since May 21, 2026, 9:03:28 AM
+ * @author Mr. Wachs
+ * @since May 2026
  */
 public class User extends Person
 {
@@ -24,8 +24,8 @@ public class User extends Person
     }
     
     public User(String username, String password, int age) {
-        setName(username);
-        setPassword(password);
+        super.setName(username);
+        this.setPassword(password);
         // ignoring the age...
     }
      
