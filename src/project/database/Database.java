@@ -25,6 +25,7 @@ public class Database
     public static void addNewUser(String username, String password) {
         User user = new User(username, password, 0);
         users.add(user);
+        System.out.println(users.toString());
     }
     
 }

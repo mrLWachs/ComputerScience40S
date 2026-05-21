@@ -9,10 +9,7 @@ package project.database;
  */
 public class User extends Person
 {
-    
-    private static int count;
-    private int index;
-    
+
     private String password;
     
     
@@ -30,8 +27,6 @@ public class User extends Person
         setName(username);
         setPassword(password);
         // ignoring the age...
-        count++;
-        index = count;
     }
      
     /**
@@ -41,7 +36,7 @@ public class User extends Person
      */
     @Override
     public String toString() {
-        return "User " + index + ": " + super.getName() + ", " + password;
+        return super.getName() + ", " + password;
     }
    
     /**
