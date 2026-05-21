@@ -2,7 +2,7 @@
 package project.database;
  
 /**
- * User.java - represents a program user
+ * User.java - (concrete class) represents a program User that "is a" Person
  *
  * @author Mr. Wachs
  * @since May 2026

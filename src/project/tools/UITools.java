@@ -5,7 +5,7 @@ package project.tools;
 import javax.swing.JFrame;
 
 /**
- * UITools.java - description
+ * UITools.java - an abstract class with static methods for working with forms
  *
  * @author Mr. Wachs
  * @since May 2026
@@ -13,9 +13,14 @@ import javax.swing.JFrame;
 public abstract class UITools 
 {
 
+    /**
+     * Static method to set properties of a form (JFrame) when it is created
+     * 
+     * @param frame the form to set
+     */
     public static void setForm(JFrame frame) {
-        frame.setResizable(false); 
-        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);                // Do not allow user to resize
+        frame.setLocationRelativeTo(null);       // Center form on user's screen
         frame.setVisible(true);                     // Set UI look and show user
     }
     

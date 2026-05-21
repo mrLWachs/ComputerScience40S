@@ -2,9 +2,11 @@
 package project.database;
  
 /**
- * Person.java - represents a person (like a profile for a game or for a 
- * database of people signed up for a service) and various properties (some 
- * seen in this example, but other potentials like email, phone number, etc.)
+ * Person.java - abstract class (cannot be instantiated but creates a "contract"
+ * with any child classes that inherit from this one) and represents a person 
+ * (like a profile for a game or for a database of people signed up for a 
+ * service) and various properties (some seen in this example, but other 
+ * potentials like email, phone number, etc.)
  *
  * @author Mr. Wachs
  * @since May 2026
