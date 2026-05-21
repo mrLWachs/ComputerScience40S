@@ -2,7 +2,7 @@
 package project.database;
  
 /**
- * User.java - 
+ * User.java - represents a program user
  *
  * @author Mr. Wachs
  * @since May 2026
@@ -10,25 +10,42 @@ package project.database;
 public class User extends Person
 {
 
-    private String password;
+    private String password;                   // Encapsulated password property
     
     
+    /**
+     * Class constructor sets class properties
+     * 
+     * @param username the User's username property
+     * @param password the User's password property
+     * @param age the User's age property (not used for this demo)
+     */
+    public User(String username, String password, int age) {
+        super.setName(username);                             // Inherited method
+        this.setPassword(password);                            // Mutator method
+        // We are ignoring the age...
+    }
+    
+    /**
+     * Accessor method for the password property
+     * 
+     * @return the User's password property
+     */
     @Override
     public String getPassword() {
         return password;
     }
 
+    /**
+     * Mutator method for the password property
+     * 
+     * @param password the password property to set
+     */
     @Override
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    public User(String username, String password, int age) {
-        super.setName(username);
-        this.setPassword(password);
-        // ignoring the age...
-    }
-     
+         
     /**
      * String representation of this object
      *
@@ -47,26 +64,16 @@ public class User extends Person
      */
     @Override
     public boolean equals(Object object) {
-        User that = (User)object;
-        String username1 = this.getName();
-        String username2 = that.getName();
-        String password1 = this.password;
+        User that = (User)object;             // Cast parameter into User object
+        String username1 = this.getName();      // Retrieve (with accessors) the
+        String username2 = that.getName();       // usernames and passwords from
+        String password1 = this.password;                   // both User objects
         String password2 = that.password;
         if (username1.equals(username2) &&
-            password1.equals(password2)) {
-            return true;
+            password1.equals(password2)) {           // Ensure both are the same
+            return true;                                    // Valid equal users
         }        
-        return false;
-    }
-       
-    /**
-     * a Deep clone, creates a duplicate object using new memory
-     *
-     * @return a "clone" of the object using new memory
-     */
-    @Override
-    public User clone() {
-        return this;
+        return false;                                         // Not equal users
     }
 
 }
