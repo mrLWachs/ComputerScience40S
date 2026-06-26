@@ -26,7 +26,7 @@ public class ComputerScience40S {
      */
     public static void main(String[] args) {
         System.out.println("Computer Science 40S Example starting...\n"); 
-        Tester tester = new Tester();
+        Tester tester = new Tester();  
         System.out.println("\nComputer Science 40S Example complete!");
         LogIn login = new LogIn();
     }
