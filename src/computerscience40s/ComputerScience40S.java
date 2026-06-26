@@ -1,37 +1,17 @@
 
-/** Required namespace for the project */
 package computerscience40s;
 
-/** Required API imports */
-import project.ui.LogIn;
-import testing.Tester;
 
-
-/**
- * ComputerScience40S.java - the large in class example we continue to work 
- * on in each unit adding example code on the new concepts of each unit 
- * along with any in class requests for code examples that might come up 
- * over the course. 
- * See: https://mrwachs.wordpress.com/current-classes/computer-science-40s/
- *
- * @author Mr. Wachs 
- * @since February 23, 2026
- */
 public class ComputerScience40S {
 
-    /**
-     * Main method for the project
-     * 
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        System.out.println("Computer Science 40S Example starting...\n"); 
-        Tester tester = new Tester();  
-        System.out.println("\nComputer Science 40S Example complete!");
-        LogIn login = new LogIn();
+        
     }
     
 }
+
+
+
 
 // <editor-fold> 
 
