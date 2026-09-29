@@ -10,6 +10,13 @@ package testing;
 */
 public class RecursionTest
 {
-
+    
+    public RecursionTest() {
+        System.out.println("Start learning Recursion...");
+        
+        
+        
+        System.out.println("Completed learning Recursion!");
+    }
 
 }

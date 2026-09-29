@@ -1,19 +1,48 @@
+// =============================================================================
+// COMPUTER SCIENCE 40S CLASS EXAMPLE
+// =============================================================================
+// NOTE: This is the "in-class" example Mr. Wachs will be constantly adding 
+// code to as we learn each unit of the Computer Science 40S course. By the 
+// end of this course, it will have example code and comments explaining each 
+// concept of each unit of this intermediate Computer Science course. You can
+// always use this example as a learning reference. This example will always
+// be demonstrated during lessons in class and then this code will always be 
+// shared on Mr. Wachs' GitHub page here: https://bit.ly/4s14qb1
 
+
+/** Required package class namespace */
 package computerscience40s;
 
+/** Required code library (API) imports */
+import testing.Tester;
 
+/**
+ * ComputerScience40S.java - the large in class example we continue to work 
+ * on in each unit adding example code on the new concepts of each unit 
+ * along with any in class requests for code examples that might come up 
+ * over the course
+ *
+ * @author Mr. Wachs 
+ * @since Sep 29, 2026
+ */
 public class ComputerScience40S {
 
+    /**
+     * Main method for the project
+     * 
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        
+        System.out.println("Start CS40S...");        
+        Tester tester = new Tester();        
+        System.out.println("Completed CS40S!");
     }
     
 }
 
 
 
-
-// <editor-fold> 
+// <editor-fold defaultstate="collapsed" desc="Tips and Tricks"> 
 
 // =============================================================================
 // TIPS: for using NetBeans, Java, GitHub, and Mr. Wachs' course:
