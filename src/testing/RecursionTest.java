@@ -3,7 +3,7 @@ package testing;
 
 
 /*
- * RecursionTest - description
+ * RecursionTest - tests the concepts learned in this unit. 
  * 
  * @author Mr. Wachs
  * @since Sep 29, 2026
