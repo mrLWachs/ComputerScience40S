@@ -11,6 +11,9 @@ package testing;
 public class Tester
 {
 
+    /**
+     * Default constructor method runs when the class is made into an object
+     */
     public Tester() {
         System.out.println("Start testing...");        
         RecursionTest unit1 = new RecursionTest();  
