@@ -51,7 +51,10 @@ public class RecursionTest
         System.out.println("Recursive powers................................");   
         
         
-            
+        int    base     = 5;
+        int    exponent = 3;
+        double answer   = Calculator.power(base, exponent);
+        System.out.println(base + " to exponent " + exponent + " = " + answer);
             
             
             
