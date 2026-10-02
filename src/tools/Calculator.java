@@ -38,5 +38,4 @@ public class Calculator
         return base * power(base, exponent-1);
     }
 
-
 }
