@@ -11,5 +11,13 @@ package testing;
 public class AdvancedClassesTest
 {
 
+    public AdvancedClassesTest() {
+        System.out.println("Start learning Advanced Classes...");
+        
+        
+        
+        System.out.println("Completed learning Advanced Classes!");
+    }
+    
 
 }
