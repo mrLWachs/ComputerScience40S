@@ -18,31 +18,52 @@ public class Person
     // Properties: things about it, adjectives, descriptors, variables, arrays..
     // =========================================================================
 
+    /**
+     * Properties that use the "modifier" word "public" can be accessed and
+     * changed outside of this class by another class "using" this class
+     */
+    public String name;
     
-    String name;
-    String gender;
-    int age;
-    boolean alive;
+    public String gender;
+    
+    /**
+     * Properties that use the "modifier" keyword "private" will "encapsulate"
+     * this property.this means that this property (or method) can only be 
+     * accessed (read or changed) by the class itself (inside the class like
+     * a "private room") by other methods inside the class. Class outside of
+     * this one that are "communicating" or "using" this class can NOT access
+     * this. This is the concept of encapsulation. So we have "encapsulated" 
+     * these properties (aka fields, variables/global variables)
+     */ 
+    private int age;
+    
+    private boolean alive;
 
+    
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
     // =========================================================================
     
-    void born() {
+    /**
+     * A "private" method (also sometimes called a "utility" or "helper" method)
+     * can only be called by other methods inside this class - not by any other
+     * classes
+     */
+    private void born() {
         name   = "unidentified";
         age    = 0;
         alive  = true;
         gender = "unidentified";        
     }
     
-    void die() {
+    public void die() {
         alive = false;
     }
     
-    void birthday() {
+    public void birthday() {
         age++;
     }
     
-    void talk() {
+    public void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifes " + gender);
         }
