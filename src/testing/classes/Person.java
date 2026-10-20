@@ -27,5 +27,28 @@ public class Person
     // Methods: things it can do, verbs, actions, return, parameter(s)..........
     // =========================================================================
     
+    void born() {
+        name   = "unidentified";
+        age    = 0;
+        alive  = true;
+        gender = "unidentified";        
+    }
+    
+    void die() {
+        alive = false;
+    }
+    
+    void birthday() {
+        age++;
+    }
+    
+    void talk() {
+        if (alive) {
+            System.out.println(name + " is " + age + " identifes " + gender);
+        }
+        else {
+            System.out.println("Boooooo!");
+        }
+    }
     
 }

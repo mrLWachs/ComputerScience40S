@@ -1,6 +1,9 @@
 /** Required package class namespace */
 package testing;
 
+/** Required imports */
+import testing.classes.Person;
+
 
 /*
  * AdvancedClassesTest - tests the concepts learned in this unit.
@@ -25,6 +28,20 @@ public class AdvancedClassesTest
         // "global variables" for the class). Methods: are things the class can 
         // do, or actions, or verbs (they are written with parameters, return 
         // types, etc.)
+        
+        // Using the class (like a "cookie cutter") to create an object of that
+        // class (like a "cookie")
+        Person person = new Person();
+        
+        // The "Object" (in this case called "person" - lowercase "p") can also 
+        // be called a "instance", or even a "variable"
+        
+        
+        
+        
+        
+        
+        
         
         
         System.out.println("Completed learning Advanced Classes!");
