@@ -44,6 +44,17 @@ public class Person
     // =========================================================================
     
     /**
+     * Constructor method is a method that has (1) the same name as the class,
+     * (2) the name starts with a capital letter, (3) it has NO return type 
+     * (not even the word "void"). These methods are called when the class is
+     * used to build (construct, instantiate) an object. Constructor methods 
+     * with NO parameters are called default constructors
+     */
+    public Person() {
+        born();     // Here we call (invoke) our private, utility, helper method
+    }    
+    
+    /**
      * A "private" method (also sometimes called a "utility" or "helper" method)
      * can only be called by other methods inside this class - not by any other
      * classes
