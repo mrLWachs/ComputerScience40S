@@ -36,6 +36,42 @@ public class AdvancedClassesTest
         // The "Object" (in this case called "person" - lowercase "p") can also 
         // be called a "instance", or even a "variable"
         
+        // =====================================================================
+        // (2) REVIEW: Encapsulation (private and public)
+        // =====================================================================
+        
+        // A concept applied to both properties and methods of classes to 
+        // determine if they can be "used" only within the class or by other 
+        // classes "communicating" with this class. private - this modifier 
+        // word means the property can only be accessed and changed within the 
+        // class (not from other classes) and if used with methods, the methods 
+        // can only be called by other methods inside the class (sometimes call 
+        // "helper" or "utility" methods). public - this modifier word means the 
+        // property can be accessed and changed within the class and outside the 
+        // class (from other classes) and if used with methods, the methods can 
+        // be called anywhere (inside or outside the class)
+        
+        // We can NOT access private properties or methods. If I try to change
+        // ("modify") a property ("variable") of the Person class that is set 
+        // to be "private" I do NOT have access to that. With methods, you
+        // cannot call the private (encapsuilated, utility, helper) methods 
+        // outside the class...
+        
+        // We call (invoke) one of our methods in this object ("instance") 
+        person.talk();
+        
+        // person.alive = false;        // Cannot change encapsulated properties
+        // person.age = 15;
+        // person.born();                    // Cannot call encapsulated methods 
+        
+        // We CAN access public properties and we CAN call public methods...
+        person.name = "Bartholomew Simpson";
+        person.gender = "Cartoon";
+        person.birthday();
+        person.talk();
+        person.die();
+        person.talk();
+        
         
         
         

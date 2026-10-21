@@ -33,9 +33,9 @@ public class ComputerScience40S {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Start CS40S...");        
+        //System.out.println("Start CS40S...");        
         Tester tester = new Tester();        
-        System.out.println("Completed CS40S!");
+        //System.out.println("Completed CS40S!");
     }
     
 }
