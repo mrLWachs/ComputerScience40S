@@ -24,6 +24,7 @@ public class Person
      */
     public String name;
     
+    /** The identified gender of this person */
     public String gender;
     
     /**
@@ -66,14 +67,24 @@ public class Person
         gender = "unidentified";        
     }
     
+    /**
+     * The person dies (changing/modifying) the private, encapsulated 
+     * property (alive) through this method
+     */
     public void die() {
         alive = false;
     }
     
+    /**
+     * A person has a birthday (the age goes up by one)
+     */
     public void birthday() {
         age++;
     }
     
+    /**
+     * Outputs information about the person to the screen
+     */
     public void talk() {
         if (alive) {
             System.out.println(name + " is " + age + " identifes " + gender);
