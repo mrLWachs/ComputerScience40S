@@ -66,7 +66,14 @@ public class Person
      * @param gender the identified gender of this person
      */
     public Person(String name, int age, String gender) {
+        alive = true;           // Could have also written "this.alive = true;"
         
+        // Assign the parameter to the property (global variable of this class)
+        // To do this, we use the keyword "this" which acts as a placeholder
+        // for the name of the object (which will be created at a later time)
+        this.name   = name;
+        this.age    = age;
+        this.gender = gender;
     }
     
     /**
