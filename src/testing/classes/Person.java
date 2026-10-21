@@ -56,6 +56,20 @@ public class Person
     }    
     
     /**
+     * Overloaded (methods with the same name, different parameters) 
+     * constructor method, sets the class properties by assigning the passed
+     * parameter value into the object's (class) property (global variable) of
+     * the same name using the keyword "this"
+     * 
+     * @param name the name of this person
+     * @param age the age of this person
+     * @param gender the identified gender of this person
+     */
+    public Person(String name, int age, String gender) {
+        
+    }
+    
+    /**
      * A "private" method (also sometimes called a "utility" or "helper" method)
      * can only be called by other methods inside this class - not by any other
      * classes
