@@ -1,3 +1,4 @@
+
 /** Required package class namespace */
 package testing.classes;
 
@@ -11,7 +12,7 @@ package testing.classes;
  * This is a "is a" relationship, so a "Student is a Person", and this class  
  * inherits all properties and methods from the "parent" (super) class. 
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Oct 26, 2026
 */
 public class Student extends Person
