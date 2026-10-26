@@ -72,6 +72,16 @@ public class AdvancedClassesTest
         person.die();
         person.talk();
         
+        // Try our overloaded, second constructor option to instantiate (which 
+        // means to create an "instance of") another Person object 
+        
+        Person x = new Person()
+        
+        
+        
+        
+        
+        
         
         
         
