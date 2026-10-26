@@ -75,9 +75,20 @@ public class AdvancedClassesTest
         // Try our overloaded, second constructor option to instantiate (which 
         // means to create an "instance of") another Person object 
         
-        Person x = new Person()
+        Person nigel = new Person("Nigel Thornberry",75,"mustache");
+        nigel.talk();
+         
+        // =====================================================================
+        // (3) REVIEW: Inheritance (super and child class)
+        // =====================================================================
         
-        
+        // The ways two or more classes of code "communicate" with each other 
+        // to transfer data or represent (model) a "real world" relationship of 
+        // concepts. Inheritance - this is where one class "inherits" all the 
+        // properties and methods of the other class - like biology you can 
+        // have a parent (or "super" or "base") class and a child (or "sub") 
+        // class that inherits from the parent class - this is also simply put 
+        // as a "is a" relationship. 
         
         
         
