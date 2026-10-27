@@ -25,11 +25,11 @@ public class Student extends Person
     public Book book;
 
     /*
-     * If you do not write a default constructor within a class, The IDE 
-     * normally writes one for you when it compiles your code. If you do write 
-     * a default constructor then the IDE no longer writes one. Also if you 
-     * write a constructor with parameters then the ID also no longer writes a 
-     * default constructor. 
+     * NOTE: If you do NOT write a default constructor within a class, The IDE 
+     * (or "compiler") normally writes one for you when it compiles your code. 
+     * If you do write a default constructor then the IDE no longer writes one. 
+     * Also if you write a constructor with parameters then the ID also no 
+     * longer writes a default constructor for you. 
      */
     
     public Student() {
