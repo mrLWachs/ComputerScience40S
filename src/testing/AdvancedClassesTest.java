@@ -4,6 +4,7 @@ package testing;
 
 /** Required imports */
 import testing.classes.Person;
+import testing.classes.Student;
 
 
 /*
@@ -91,9 +92,18 @@ public class AdvancedClassesTest
         // class that inherits from the parent class - this is also simply put 
         // as a "is a" relationship. 
         
+        // Now we instantiate (create an object from the Student class) 
+        // a Student object (or a Student instance) that inherts from the 
+        // Person class - invoking our default constructor
+        Student student = new Student();
+        student.talk();
         
-        
-        
+        // We can also change some of the properties just for student (even
+        // though they are encapsulated) by going through the methods that 
+        // change them
+        student.name = "Stu Denty";
+        student.birthday();
+        student.talk();
         
         
         
