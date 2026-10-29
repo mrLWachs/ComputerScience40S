@@ -23,7 +23,10 @@ public class Student extends Person
      * or "usage" with the student class
      */
     public Book book;
-
+    
+    public int number;      // Class properties (and inherited other properties) 
+    public double gpa;
+    
     /*
      * NOTE: If you do NOT write a default constructor within a class, The IDE 
      * (or "compiler") normally writes one for you when it compiles your code. 
@@ -32,8 +35,32 @@ public class Student extends Person
      * longer writes a default constructor for you. 
      */
     
+    
+    /**
+     * Default constructor, set class properties (including a call to the 
+     * "super-constructor" from the parent class to set all of its properties 
+     * as well)
+     */
     public Student() {
         
+        
+        number = 1;
+        gpa    = 0.0;
+        // The "Book" class we associate with here is instantiated into a
+        // book object
+        book = new Book();
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
