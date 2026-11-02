@@ -42,8 +42,13 @@ public class Student extends Person
      * as well)
      */
     public Student() {
-        
-        
+        // The keyword "super" refers to the "super-class" or "parent" class
+        // in this case that is the Person class - by adding the round brackets
+        // we make a call to the super constructor. For example:  
+        // super.name = "Student";            // We can access/modify properties 
+        // super.birthday();                     // We can invoke (call) methods
+        super();              // Call the "super constructor" of the parent class
+        // And we can still modify the properties of this child class
         number = 1;
         gpa    = 0.0;
         // The "Book" class we associate with here is instantiated into a
