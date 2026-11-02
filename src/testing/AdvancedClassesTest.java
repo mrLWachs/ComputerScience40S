@@ -105,6 +105,30 @@ public class AdvancedClassesTest
         student.birthday();
         student.talk();
         
+        // Create another student... (simple language)  
+        Student rue = new Student("Rue Bennett", 17, "cisgender female", 911);
+        rue.talk();         
+        rue.study();                       // Student class methods being called
+        rue.talk();
+        rue.slackOff();
+        rue.talk();
+        rue.cram();
+        rue.talk();
+        rue.birthday();                         // Inherited method being called
+        rue.talk();
+        rue.die();
+        rue.talk();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
