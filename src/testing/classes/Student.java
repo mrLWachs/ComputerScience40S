@@ -27,14 +27,14 @@ public class Student extends Person
     public int number;      // Class properties (and inherited other properties) 
     public double gpa;
     
+    
     /*
      * NOTE: If you do NOT write a default constructor within a class, The IDE 
      * (or "compiler") normally writes one for you when it compiles your code. 
      * If you do write a default constructor then the IDE no longer writes one. 
      * Also if you write a constructor with parameters then the ID also no 
      * longer writes a default constructor for you. 
-     */
-    
+     */    
     
     /**
      * Default constructor, set class properties (including a call to the 
@@ -47,13 +47,10 @@ public class Student extends Person
         // we make a call to the super constructor. For example:  
         // super.name = "Student";            // We can access/modify properties 
         // super.birthday();                     // We can invoke (call) methods
-        super();              // Call the "super constructor" of the parent class
-        // And we can still modify the properties of this child class
-        number = 1;
-        gpa    = 0.0;
-        // The "Book" class we associate with here is instantiated into a
-        // book object
-        book = new Book();
+        super();             // Call the "super constructor" of the parent class        
+        number = 1;                               // And we can still modify the
+        gpa    = 0.0;                          // properties of this child class
+        book   = new Book();   // Book class object associated with instantiated
     }
     
     /**
