@@ -8,7 +8,7 @@ package testing.classes;
  * "associates" with the Student class by making a reference to them within 
  * the class. This is sometimes simplified as a "has a" relationship.
  * 
- * @author YOUR NAME
+ * @author Mr. Wachs
  * @since Nov 3, 2026
 */
 public class Teacher extends Person
@@ -32,10 +32,25 @@ public class Teacher extends Person
     private final int MAX;                  // Constant for the maximum students
     
     
+    /**
+     * Constructor, set class properties to the parameters
+     * 
+     * @param name the name for this Teacher
+     */
     public Teacher(String name) {
-        super(name, 57, "teacher");
+        super(name, 57, "teacher");   // 1st Construct a "Person" (parent class)
+        // We also have to initialize (give the properties starting values)
+        // the specific properties ("global variables")
         count = 0;
         MAX   = 100;
+        // When creating (declaring) arrays, you use the "new" keyword, you use
+        // the square brackets "[ ]" and the size of the array is stated when
+        // it is declared as arrays are locked into that maximum size  
+        students = new Student[MAX];
+        // Note: an array of primitive data types (e.g. int, double, char, 
+        // boolean) will be initialized to simple values (like 0, false, etc.)
+        // but arrays of class level data (like this array of "Student" objects)
+        // are initialized to "null" values  
     }
     
     public void add(Student student) {
