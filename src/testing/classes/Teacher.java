@@ -71,8 +71,22 @@ public class Teacher extends Person
         if (count >= MAX) count = 0;
     }
     
-    public void teach() {
-        
+    /**
+     * Another example of a method over-ride which over-rides the talk method
+     * of the Person class (the parent class of Teacher)
+     */
+    @Override
+    public void talk() {
+        System.out.println(name + " the " + super.gender + " is talking...");
+        // To access an entire array we use a "for" loop, and the ".length"
+        // feature that is built into all arrays
+        for (int i = 0; i < students.length; i++) {
+            // By using the name of the array and then the square brackets 
+            // "[ ]" and placing the index number (or the variable i) in those
+            // square brackets it allows us to "access" (or use) that element 
+            // (spot) of the array 
+            students[i].talk();            
+        }
     }
 
 }
