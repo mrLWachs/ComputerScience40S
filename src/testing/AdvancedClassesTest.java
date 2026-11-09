@@ -5,6 +5,7 @@ package testing;
 /** Required imports */
 import testing.classes.Person;
 import testing.classes.Student;
+import testing.classes.Teacher;
 
 
 /*
@@ -119,12 +120,25 @@ public class AdvancedClassesTest
         rue.die();
         rue.talk();
         
+        // =====================================================================
+        // (4) REVIEW: Association ("has a" vs. "is a")
+        // =====================================================================
         
+        // Association - this is where one class and another class "use" one 
+        // another - this can be also classified as a "usage" (one class using
+        // the other), or "composition" (one class composed of another) 
+        // relationship - this is also simply put as a "has a" relationship
         
-        
-        
-        
-        
+        // Instantiate a teacher object and associate it with a student object
+        Teacher teacher = new Teacher("Ms. Teachery");
+        teacher.add(student);
+        teacher.add(rue);                        // or "Teacher has a Student"
+        teacher.talk();                           // Invoke an overloaded method
+        teacher.birthday();                // Invoke (call) the inherited method
+        teacher.die();
+        // See if the teacher object effected its associated class objects
+        // those being the two student objects...
+        teacher.talk();
         
         
         
