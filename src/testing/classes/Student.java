@@ -118,7 +118,7 @@ public class Student extends Person
      */
     @Override
     public String toString() {
-        return null;
+        return "Student -> " + super.toString();
     }
     
     /**

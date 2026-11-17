@@ -186,7 +186,7 @@ public class AdvancedClassesTest
         // Since the "Object" class is the "parent" (or super-class) of ALL
         // classes (even our classes we wrote, for example "Person"). Then
         // all child classes inherit the "toString" method...    
-        System.out.println("Person as a string is  " + person.toString());
+        System.out.println("Person  as a string is " + person.toString());
         System.out.println("Student as a string is " + student.toString());
         System.out.println("Teacher as a string is " + teacher.toString());
         
@@ -209,6 +209,15 @@ public class AdvancedClassesTest
         // webpage: https://bit.ly/4nxivtB ). Now go back to the Person, 
         // Student, and Teacher classes and add these three over-ride methods
         // and then re-run this code to see the over-ride in the outputs
+        
+        // The equals() method of the object class checks if two objects are
+        // "equal" by using the "memory address" of each object and checks if 
+        // the two objects being compared use the same address (true) or not 
+        // (false)...
+        
+        if (object1.equals(object2)) System.out.println("O1==O2");
+        if (object2.equals(object3)) System.out.println("O2==O3");
+        if (object1.equals(object3)) System.out.println("O1==O3");
         
         
         
