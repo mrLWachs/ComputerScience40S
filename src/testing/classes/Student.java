@@ -129,6 +129,12 @@ public class Student extends Person
      */
     @Override
     public boolean equals(Object object) {
+        // This will be a "deeper" comparison of two "Student" objects. 
+        // Normally, programmers will do this and choose which properties they
+        // will be comparing for determining equality
+        
+        
+        
         return false;
     }
     

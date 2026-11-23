@@ -148,7 +148,9 @@ public class Person
      */
     @Override
     public Person clone() {
+        // The process of "cloning" means to create a "duplicate", or to "copy"
         return this;
+        // This is a useless, and very "shallow" clone
     }
     
 }
