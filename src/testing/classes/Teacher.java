@@ -113,7 +113,46 @@ public class Teacher extends Person
      */
     @Override
     public boolean equals(Object object) {
-        return false;
+        // This will be a much "deeper" equals analysis
+        
+        // (1) First: cast into a Teacher object
+        Teacher that = (Teacher)object;
+        
+        // (2) Then: compare the properties we decide are important
+        if (!this.name.equals(that.name))     return false;
+        if (!this.gender.equals(that.gender)) return false;
+        
+        // NOTE: we cannot compare properties that are encapsulated (that are 
+        // marked private) like these internal and inherited properties.........  
+        
+        // if (this.MAX   != that.MAX)   return false;  // Teacher properties
+        // if (this.count != that.count) return false;
+        // if (this.age   != that.age)   return false;  // Inherited properties
+        // if (this.alive != that.alive) return false;
+        
+        // Check the array lengths
+        if (this.students.length != that.students.length) return false;
+        
+        // NOTE: we now go much "deeper" by also comparing the two Student
+        // object arrays in both Teacher objects by looping through
+        // the two arrays and checking each spot (for nulls)
+        for (int i = 0; i < this.students.length; i++) {
+            if (this.students[i] != null && that.students[i] == null) {
+                return false;       // returning breaks the loop and method
+            }
+            else if (that.students[i] != null && this.students[i] == null) {
+                return false;       
+            }
+            else if (that.students[i] != null && this.students[i] != null) {
+                // We have student objects in both array at the same spot
+                if (!that.students[i].equals(this.students[i])) {
+                    return false;             // Different students at this spot
+                }
+            }
+        }
+        
+        // (3) Finally: return equal (true) if passes all the tests above
+        return true;
     }
     
     /**

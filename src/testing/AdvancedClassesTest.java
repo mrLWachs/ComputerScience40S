@@ -242,8 +242,30 @@ public class AdvancedClassesTest
         // classes to customize the "equality" of comparing those objects...
         Student student1 = new Student();
         Student student2 = new Student();
-        if (student1.equals(student2))  System.out.println("Students equal");
+        student2.slackOff();
+        if (student1.equals(student2))  System.out.println("Students ARE equal");
         else                            System.out.println("Students NOT equal");
+        
+        Teacher teacher1 = new Teacher("teacher");
+        Teacher teacher2 = new Teacher("teacher");
+        // Ways to make the 2 teachers NOT equal
+        // teacher2.name = "Fraud";
+        // teacher2.gender = "annoying";
+        // teacher2.students = new Student[10];
+        // teacher2.students[4] = new Student();
+        // teacher1.students[4] = new Student("s", 0, "s", 0);        
+        if (teacher1.equals(teacher2)) System.out.println("Teachers ARE equal");
+        else                           System.out.println("Teachers NOT equal");
+                                  
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
