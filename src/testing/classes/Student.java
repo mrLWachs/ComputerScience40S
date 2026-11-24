@@ -133,9 +133,24 @@ public class Student extends Person
         // Normally, programmers will do this and choose which properties they
         // will be comparing for determining equality
         
+        // The first thing to do, is we notice the parameter is type "Object"
+        // we need that parameter to be a "Student" - to do this, we can
+        // "cast" the "Object" into a "Student"
         
+        Student that = (Student)object;
         
-        return false;
+        // Now that we have a Student instance (called "that") we can compare
+        // it with the Student instance that "we" are currently running this 
+        // method inside of (using "this")
+        
+        // Compare the properties of "this and that"
+        // with a few levels of comparison (some I will ignore)
+        
+        if (this.number != that.number) return false;
+        if (this.gpa    != that.gpa)    return false;
+        
+        // Otherwise, if it passes the tests above...
+        return true;
     }
     
     /**
